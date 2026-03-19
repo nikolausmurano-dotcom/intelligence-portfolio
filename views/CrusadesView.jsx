@@ -9,32 +9,32 @@
 // Legacy (lasting impact on East-West relations).
 
 
-// ── Palette: Illuminated Manuscript — aged vellum & gold leaf ──────
+// ── Palette: Illuminated Manuscript — aged parchment & gold leaf ─────
 const C = {
-  bg:      '#1a1610',
-  card:    'rgba(22,20,16,.94)',
-  cardBd:  'rgba(176,132,58,.16)',
-  tx:      '#d4caba',
-  tx2:     '#9a8e78',
-  tx3:     '#605848',
-  accent:  '#b0843a',
-  accentDm:'#8e6a28',
-  accentBg:'rgba(176,132,58,.08)',
-  gold:    '#d4a850',
-  goldDm:  '#b08830',
+  bg:      '#f0ebe0',
+  card:    'rgba(245,240,229,.96)',
+  cardBd:  'rgba(140,100,40,.22)',
+  tx:      '#3a2a1a',
+  tx2:     '#6a5a44',
+  tx3:     '#9a8a70',
+  accent:  '#8e6a28',
+  accentDm:'#7a5818',
+  accentBg:'rgba(142,106,40,.10)',
+  gold:    '#a08020',
+  goldDm:  '#886810',
   red:     '#a84038',
   redDm:   '#802820',
-  redBg:   'rgba(168,64,56,.07)',
-  blue:    '#4878a0',
-  blueDm:  '#385880',
-  blueBg:  'rgba(72,120,160,.07)',
-  green:   '#5a8a50',
-  greenDm: '#406a38',
-  greenBg: 'rgba(90,138,80,.07)',
+  redBg:   'rgba(168,64,56,.08)',
+  blue:    '#3a6888',
+  blueDm:  '#2a5070',
+  blueBg:  'rgba(58,104,136,.08)',
+  green:   '#3a7838',
+  greenDm: '#2a5a28',
+  greenBg: 'rgba(58,120,56,.08)',
   cross:   '#c44030',
   crescent:'#38a070',
-  line:    'rgba(176,132,58,.14)',
-  vellum:  '#2a2418',
+  line:    'rgba(140,100,40,.18)',
+  vellum:  '#e8e0d0',
 };
 const Mono  = "'IBM Plex Mono',monospace";
 const Serif = "'Source Serif 4','EB Garamond',Georgia,serif";
@@ -48,7 +48,7 @@ function ManuscriptDivider({ color }) {
   return (
     <div style={{ textAlign: 'center', margin: '20px 0', overflow: 'hidden' }}>
       <svg width="100%" height="14" viewBox="0 0 500 14" preserveAspectRatio="xMidYMid meet"
-        style={{ display: 'block', maxWidth: 480, margin: '0 auto', opacity: 0.3 }}>
+        style={{ display: 'block', maxWidth: 480, margin: '0 auto', opacity: 0.45 }}>
         {/* Left flourish */}
         <path d="M60 7 Q50 2 40 7 Q30 12 20 7 Q10 2 0 7" fill="none" stroke={c} strokeWidth=".8" />
         <line x1="60" y1="7" x2="200" y2="7" stroke={c} strokeWidth=".6" />
@@ -118,7 +118,7 @@ function DropCap({ children, color }) {
 // Cross and crescent decorative elements
 function CrossCrescentDecor({ style: extraStyle }) {
   return (
-    <svg width="60" height="20" viewBox="0 0 60 20" style={Object.assign({ opacity: 0.15 }, extraStyle || {})}>
+    <svg width="60" height="20" viewBox="0 0 60 20" style={Object.assign({ opacity: 0.3 }, extraStyle || {})}>
       {/* Cross */}
       <line x1="12" y1="3" x2="12" y2="17" stroke={C.cross} strokeWidth="1.2" />
       <line x1="6" y1="8" x2="18" y2="8" stroke={C.cross} strokeWidth="1.2" />
@@ -760,7 +760,7 @@ function CrusadesView({ setView }) {
   const TipBox = (key) => {
     if (tipId !== key) return null;
     return (
-      <div style={{ padding: '10px 14px', background: 'rgba(10,8,7,.94)', border: '1px solid rgba(176,132,58,.15)', borderRadius: 3, maxWidth: 440, fontSize: 11, color: 'rgba(212,202,186,.65)', lineHeight: 1.65, margin: '6px 0 10px' }}>
+      <div style={{ padding: '10px 14px', background: 'rgba(235,228,215,.94)', border: '1px solid rgba(140,100,40,.18)', borderRadius: 3, maxWidth: 440, fontSize: 11, color: 'rgba(58,42,26,.65)', lineHeight: 1.65, margin: '6px 0 10px' }}>
         {CR_TIPS[key]}
       </div>
     );
@@ -2153,7 +2153,7 @@ function CrusadesView({ setView }) {
       {/* Top bar */}
       <div style={{
         position: 'sticky', top: 0, zIndex: 100,
-        background: C.bg + 'f0', backdropFilter: 'blur(12px)',
+        background: C.bg + 'f0', backdropFilter: 'blur(8px)',
         borderBottom: 'none', padding: '8px 24px',
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',
       }}>

@@ -8,37 +8,37 @@
 // Self-contained React component using Babel in-browser transpilation.
 // Globals: useState, useCallback, useMemo from React
 
-// -- Palette: UN Mediation Chamber — UN blue (#4b92db) with white ──
+// -- Palette: UN Mediation Chamber — diplomatic white paper ──────────
 const PC_C = {
-  bg:      '#040810',
-  card:    'rgba(8,14,24,.94)',
-  cardBd:  'rgba(75,146,219,.12)',
-  tx:      '#c8d0dc',
-  tx2:     '#94a4b8',
-  tx3:     '#6a7a90',
+  bg:      '#f0f4f8',
+  card:    'rgba(248,250,252,.96)',
+  cardBd:  'rgba(60,120,190,.16)',
+  tx:      '#1a2030',
+  tx2:     '#4a5a70',
+  tx3:     '#7a8a9a',
   accent:  '#4b92db',
   accentDm:'#3070b0',
-  accentBg:'rgba(75,146,219,.07)',
-  green:   '#48a060',
-  greenDm: '#307840',
-  greenBg: 'rgba(72,160,96,.07)',
-  amber:   '#c0a040',
-  amberDm: '#907830',
-  amberBg: 'rgba(192,160,64,.07)',
-  red:     '#b05050',
-  redDm:   '#883838',
-  redBg:   'rgba(176,80,80,.07)',
-  blue:    '#5080b0',
-  blueDm:  '#386088',
-  blueBg:  'rgba(80,128,176,.07)',
-  olive:   '#889850',
-  oliveDm: '#687838',
-  oliveBg: 'rgba(136,152,80,.07)',
-  line:    'rgba(75,146,219,.10)',
+  accentBg:'rgba(75,146,219,.10)',
+  green:   '#2a8848',
+  greenDm: '#1a6830',
+  greenBg: 'rgba(42,136,72,.08)',
+  amber:   '#987820',
+  amberDm: '#786010',
+  amberBg: 'rgba(152,120,32,.08)',
+  red:     '#a04040',
+  redDm:   '#782828',
+  redBg:   'rgba(160,64,64,.08)',
+  blue:    '#3870a0',
+  blueDm:  '#285878',
+  blueBg:  'rgba(56,112,160,.08)',
+  olive:   '#687838',
+  oliveDm: '#506028',
+  oliveBg: 'rgba(104,120,56,.08)',
+  line:    'rgba(60,120,190,.14)',
   unBlue:  '#4b92db',
-  white:   '#e8ecf4',
-  gold:    '#c0a850',
-  goldGlow:'rgba(192,168,80,.04)',
+  white:   '#1a2030',
+  gold:    '#987828',
+  goldGlow:'rgba(152,120,40,.06)',
 };
 const PC_SERIF = "'Source Serif 4','EB Garamond',Georgia,serif";
 const PC_SANS  = "'Inter',Helvetica,sans-serif";
@@ -46,7 +46,7 @@ const PC_MONO  = "'IBM Plex Mono',monospace";
 
 // -- Dove/olive branch watermark SVG ────────────────────────────────
 const DoveWatermark = () => React.createElement('svg', {
-  style: { position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 500, height: 400, opacity: 0.015, pointerEvents: 'none', zIndex: 0 },
+  style: { position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 500, height: 400, opacity: 0.05, pointerEvents: 'none', zIndex: 0 },
   viewBox: '0 0 500 400'
 },
   // Dove body
@@ -367,7 +367,7 @@ function PeaceView({ setView }) {
   function Tip({ id }) {
     if (tipId !== id || !PEACE_TIPS[id]) return null;
     return (
-      <div style={{ padding: '10px 14px', background: 'rgba(8,10,10,.92)', border: '1px solid ' + C.accent + '25', borderRadius: 3, maxWidth: 440, fontSize: 11, fontFamily: PC_MONO, color: C.tx2, lineHeight: 1.65, margin: '6px 0 10px' }}>
+      <div style={{ padding: '10px 14px', background: 'rgba(235,240,245,.92)', border: '1px solid ' + C.accent + '25', borderRadius: 3, maxWidth: 440, fontSize: 11, fontFamily: PC_MONO, color: C.tx2, lineHeight: 1.65, margin: '6px 0 10px' }}>
         {PEACE_TIPS[id]}
       </div>
     );
@@ -594,7 +594,7 @@ function PeaceView({ setView }) {
         <div style={{ overflowX: 'auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '130px repeat(4, 1fr)', gap: 2, minWidth: 700 }}>
             {/* Header */}
-            <div style={{ padding: 8, background: 'rgba(8,14,24,.6)' }} />
+            <div style={{ padding: 8, background: 'rgba(232,238,244,.6)' }} />
             {TJ_APPROACHES.map(a => (
               <div key={a.id} style={{ padding: '10px 8px', background: C.accentBg, borderRadius: 2, textAlign: 'center' }}>
                 <div style={{ fontFamily: PC_MONO, fontSize: 11, fontWeight: 600, color: C.accent, letterSpacing: '.04em' }}>{a.name}</div>
@@ -605,7 +605,7 @@ function PeaceView({ setView }) {
             {/* Rows */}
             {TJ_OUTCOMES.map(outcome => (
               <React.Fragment key={outcome}>
-                <div style={{ padding: '10px 8px', background: 'rgba(8,14,24,.6)', display: 'flex', alignItems: 'center' }}>
+                <div style={{ padding: '10px 8px', background: 'rgba(232,238,244,.6)', display: 'flex', alignItems: 'center' }}>
                   <span style={{ fontFamily: PC_MONO, fontSize: 10, fontWeight: 600, color: C.tx2, letterSpacing: '.04em', textTransform: 'uppercase' }}>{outcome}</span>
                 </div>
                 {TJ_APPROACHES.map(a => {
@@ -616,7 +616,7 @@ function PeaceView({ setView }) {
                     <div key={cellKey}>
                       <button onClick={() => setJusticeExpanded(isOpen ? null : cellKey)} style={{
                         width: '100%', padding: '10px 8px', cursor: 'pointer', textAlign: 'center',
-                        background: isOpen ? 'rgba(75,146,219,.08)' : 'rgba(8,14,24,.4)',
+                        background: isOpen ? 'rgba(75,146,219,.10)' : 'rgba(232,238,244,.4)',
                         border: isOpen ? `1px solid ${C.accent}44` : `1px solid rgba(75,146,219,.06)`,
                         borderRadius: 2, transition: 'all .15s',
                       }}>
@@ -810,7 +810,7 @@ function PeaceView({ setView }) {
               disabled={simSubmitted}
               style={{
                 padding: '12px 14px', textAlign: 'left',
-                background: inSeq ? `${phase.color}12` : 'rgba(10,18,18,.94)',
+                background: inSeq ? `${phase.color}12` : 'rgba(238,242,246,.94)',
                 border: `1px solid ${inSeq ? phase.color + '40' : C.cardBd}`,
                 borderLeft: `3px solid ${inSeq ? phase.color : C.accent + '30'}`,
                 borderRadius: '0 4px 4px 0', cursor: simSubmitted ? 'default' : 'pointer',
@@ -1018,7 +1018,7 @@ function PeaceView({ setView }) {
         </div>
 
         {/* Case header — diplomatic communique style */}
-        <div style={{ marginBottom: 20, background: 'rgba(10,18,18,.94)', border: '1px solid ' + C.cardBd, borderTop: '3px solid ' + cs.color + '60', borderRadius: '0 0 6px 6px', padding: '18px 18px 16px', position: 'relative' }}>
+        <div style={{ marginBottom: 20, background: 'rgba(238,242,246,.94)', border: '1px solid ' + C.cardBd, borderTop: '3px solid ' + cs.color + '60', borderRadius: '0 0 6px 6px', padding: '18px 18px 16px', position: 'relative' }}>
           <div style={{ position: 'absolute', top: 10, right: 14 }}>
             <LaurelWreath size={32} style={{ opacity: 0.06 }} />
           </div>
@@ -1124,7 +1124,7 @@ function PeaceView({ setView }) {
           const key = `tool_${activeTool}_${i}`;
           const open = expandedSections[key];
           return (
-            <div key={key} style={{ background: 'rgba(10,18,18,.94)', border: `1px solid ${C.cardBd}`, borderLeft: `3px solid ${TOOLKIT[activeTool].color}30`, borderRadius: '0 4px 4px 0', overflow: 'hidden' }}>
+            <div key={key} style={{ background: 'rgba(238,242,246,.94)', border: `1px solid ${C.cardBd}`, borderLeft: `3px solid ${TOOLKIT[activeTool].color}30`, borderRadius: '0 4px 4px 0', overflow: 'hidden' }}>
               <button
                 onClick={() => toggleSection(key)}
                 style={{

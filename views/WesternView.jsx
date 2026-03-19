@@ -7,31 +7,31 @@
 // on key questions), Legacy (modern relevance and enduring tensions).
 
 
-// ── Palette: Warm marble & stone — philosophical academy aesthetic ──
+// ── Palette: Warm marble & stone — classical academy on white marble ──
 const C = {
-  bg:      '#0e0c08',
-  card:    'rgba(22,20,14,.88)',
-  cardBd:  'rgba(140,124,88,.16)',
-  tx:      '#e0d8c8',
-  tx2:     '#c0b89c',
-  tx3:     '#90856d',
-  accent:  '#a09060',
-  accentDm:'#806c48',
-  accentBg:'rgba(160,144,96,.06)',
-  gold:    '#d0b868',
-  goldDm:  '#b09840',
-  red:     '#a85848',
-  redDm:   '#884030',
-  redBg:   'rgba(168,88,72,.07)',
-  blue:    '#6080a8',
-  blueDm:  '#486888',
-  blueBg:  'rgba(96,128,168,.06)',
-  green:   '#608868',
-  greenDm: '#487048',
-  greenBg: 'rgba(96,136,104,.06)',
-  line:    'rgba(140,124,88,.10)',
-  marble:  'rgba(200,190,160,.03)',
-  column:  'rgba(160,144,96,.08)',
+  bg:      '#f5f3ef',
+  card:    'rgba(250,248,244,.96)',
+  cardBd:  'rgba(120,104,68,.20)',
+  tx:      '#2a2820',
+  tx2:     '#5a5440',
+  tx3:     '#8a8068',
+  accent:  '#806c48',
+  accentDm:'#6a5838',
+  accentBg:'rgba(128,108,72,.10)',
+  gold:    '#a08830',
+  goldDm:  '#887020',
+  red:     '#984838',
+  redDm:   '#783828',
+  redBg:   'rgba(152,72,56,.08)',
+  blue:    '#4a6890',
+  blueDm:  '#3a5878',
+  blueBg:  'rgba(74,104,144,.08)',
+  green:   '#487850',
+  greenDm: '#386038',
+  greenBg: 'rgba(72,120,80,.08)',
+  line:    'rgba(120,104,68,.15)',
+  marble:  'rgba(160,140,100,.06)',
+  column:  'rgba(120,104,68,.10)',
 };
 const Serif = "'EB Garamond','Source Serif 4',Georgia,serif";
 const Sans  = "'Inter',Helvetica,sans-serif";
@@ -39,7 +39,7 @@ const Mono  = "'IBM Plex Mono',monospace";
 
 // ── SVG Decorative Elements ────────────────────────────────────────
 const GreekKeyBorder = ({width}) => (
-  <svg style={{width: width || '100%', height: '16px', opacity: 0.12}} viewBox="0 0 400 16" preserveAspectRatio="none">
+  <svg style={{width: width || '100%', height: '16px', opacity: 0.25}} viewBox="0 0 400 16" preserveAspectRatio="none">
     {[0,40,80,120,160,200,240,280,320,360].map(x => (
       <path key={x} d={'M'+x+' 0 L'+x+' 12 L'+(x+8)+' 12 L'+(x+8)+' 4 L'+(x+16)+' 4 L'+(x+16)+' 16 L'+(x+24)+' 16 L'+(x+24)+' 4 L'+(x+32)+' 4 L'+(x+32)+' 0 L'+(x+40)+' 0'}
         fill="none" stroke="rgba(160,144,96,.8)" strokeWidth="1.5"/>
@@ -49,7 +49,7 @@ const GreekKeyBorder = ({width}) => (
 
 const ColumnDecor = ({side}) => (
   <div style={{
-    position:'absolute',top:0,[side]:0,width:'30px',height:'100%',pointerEvents:'none',opacity:0.04,
+    position:'absolute',top:0,[side]:0,width:'30px',height:'100%',pointerEvents:'none',opacity:0.08,
     background:'linear-gradient(to '+(side==='left'?'right':'left')+', rgba(160,144,96,.3), transparent)',
   }}>
     <svg style={{width:'100%',height:'100%'}} viewBox="0 0 30 800" preserveAspectRatio="xMidYMin slice">
@@ -67,13 +67,13 @@ const ColumnDecor = ({side}) => (
 
 const MarbleTexture = () => (
   <div style={{
-    position:'fixed',top:0,left:0,right:0,bottom:0,pointerEvents:'none',zIndex:0,opacity:0.015,
+    position:'fixed',top:0,left:0,right:0,bottom:0,pointerEvents:'none',zIndex:0,opacity:0.04,
     backgroundImage: 'radial-gradient(ellipse at 20% 40%, rgba(200,190,160,.5) 0%, transparent 40%), radial-gradient(ellipse at 70% 60%, rgba(180,170,140,.3) 0%, transparent 35%), radial-gradient(ellipse at 50% 20%, rgba(160,144,96,.4) 0%, transparent 30%)',
   }}/>
 );
 
 const LaurelDecor = () => (
-  <svg style={{position:'absolute',top:10,right:20,width:'50px',height:'60px',opacity:0.04,pointerEvents:'none'}} viewBox="0 0 50 60">
+  <svg style={{position:'absolute',top:10,right:20,width:'50px',height:'60px',opacity:0.10,pointerEvents:'none'}} viewBox="0 0 50 60">
     {/* Left branch */}
     <path d="M25 55 Q15 40 12 25" fill="none" stroke="rgba(160,144,96,1)" strokeWidth="1.5"/>
     {[45,38,31,24].map((y,i) => <ellipse key={'l'+i} cx={14-i*1.5} cy={y} rx="5" ry="3" fill="none" stroke="rgba(96,136,104,.6)" strokeWidth="0.8" transform={'rotate(-20,'+(14-i*1.5)+','+y+')'}/>)}
@@ -365,7 +365,7 @@ function WesternView({ setView }) {
   function Tip({ id }) {
     if (tipId !== id || !WESTERN_TIPS[id]) return null;
     return (
-      <div style={{ padding: '10px 14px', background: 'rgba(11,10,8,.92)', border: '1px solid ' + C.accent + '25', borderRadius: 3, maxWidth: 440, fontSize: 11, fontFamily: Mono, color: C.tx2, lineHeight: 1.65, margin: '6px 0 10px' }}>
+      <div style={{ padding: '10px 14px', background: 'rgba(240,238,232,.92)', border: '1px solid ' + C.accent + '25', borderRadius: 3, maxWidth: 440, fontSize: 11, fontFamily: Mono, color: C.tx2, lineHeight: 1.65, margin: '6px 0 10px' }}>
         {WESTERN_TIPS[id]}
       </div>
     );
@@ -1472,13 +1472,13 @@ function WesternView({ setView }) {
       {/* Warm marble radial */}
       <div style={{
         position:'fixed',top:0,left:0,right:0,bottom:0,pointerEvents:'none',zIndex:0,
-        background:'radial-gradient(ellipse at 50% 40%, rgba(160,144,96,.06) 0%, transparent 60%)',
+        background:'radial-gradient(ellipse at 50% 40%, rgba(160,144,96,.08) 0%, transparent 60%)',
       }}/>
 
       {/* Top bar — pediment styling */}
       <div style={{
         position: 'sticky', top: 0, zIndex: 100,
-        background: 'linear-gradient(180deg, rgba(14,12,8,.97) 0%, rgba(14,12,8,.93) 100%)',
+        background: 'linear-gradient(180deg, rgba(245,243,239,.97) 0%, rgba(245,243,239,.93) 100%)',
         backdropFilter: 'blur(12px)',
         borderBottom: '1px solid ' + C.line, padding: '8px 24px',
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',

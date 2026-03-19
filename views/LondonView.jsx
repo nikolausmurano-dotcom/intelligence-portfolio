@@ -8,35 +8,35 @@
 // per site), Reflections (what each taught about historical research).
 
 
-// ── Palette: Victorian fog & aged paper — research archive aesthetic ──
+// ── Palette: Victorian fog & aged paper — British Museum reading room ──
 const C = {
-  bg:      '#0a0c10',
-  card:    'rgba(14,16,22,.88)',
-  cardBd:  'rgba(88,100,132,.16)',
-  tx:      '#d0d4e0',
-  tx2:     '#a0a8b8',
-  tx3:     '#6a7488',
-  accent:  '#5870a0',
-  accentDm:'#405878',
-  accentBg:'rgba(88,112,160,.06)',
-  gold:    '#c0a868',
-  goldDm:  '#a08848',
-  red:     '#905050',
-  redDm:   '#703838',
-  redBg:   'rgba(144,80,80,.06)',
-  green:   '#508868',
-  greenDm: '#386848',
-  greenBg: 'rgba(80,136,104,.06)',
-  blue:    '#5888b8',
-  blueDm:  '#4068a0',
-  blueBg:  'rgba(88,136,184,.06)',
-  teal:    '#488898',
-  tealDm:  '#306878',
-  tealBg:  'rgba(72,136,152,.06)',
-  line:    'rgba(88,100,132,.10)',
-  parchment: 'rgba(180,160,120,.04)',
-  ink:     'rgba(30,35,50,.8)',
-  sepia:   '#a09070',
+  bg:      '#e8e6e2',
+  card:    'rgba(242,240,236,.96)',
+  cardBd:  'rgba(70,80,100,.18)',
+  tx:      '#2a2e30',
+  tx2:     '#505860',
+  tx3:     '#808890',
+  accent:  '#405878',
+  accentDm:'#304868',
+  accentBg:'rgba(64,88,120,.10)',
+  gold:    '#907838',
+  goldDm:  '#786028',
+  red:     '#804040',
+  redDm:   '#602828',
+  redBg:   'rgba(128,64,64,.08)',
+  green:   '#3a7858',
+  greenDm: '#285838',
+  greenBg: 'rgba(58,120,88,.08)',
+  blue:    '#406898',
+  blueDm:  '#305880',
+  blueBg:  'rgba(64,104,152,.08)',
+  teal:    '#387080',
+  tealDm:  '#285868',
+  tealBg:  'rgba(56,112,128,.08)',
+  line:    'rgba(70,80,100,.15)',
+  parchment: 'rgba(160,140,100,.08)',
+  ink:     'rgba(30,35,50,.7)',
+  sepia:   '#786848',
 };
 const Serif = "'EB Garamond','Source Serif 4',Georgia,serif";
 const Sans  = "'Inter',Helvetica,sans-serif";
@@ -44,20 +44,20 @@ const Mono  = "'IBM Plex Mono',monospace";
 
 // ── SVG Decorative Elements ────────────────────────────────────────
 const ParliamentSilhouette = () => (
-  <svg style={{position:'absolute',bottom:0,right:0,width:'400px',height:'200px',opacity:0.02,pointerEvents:'none'}} viewBox="0 0 400 200">
+  <svg style={{position:'absolute',bottom:0,right:0,width:'400px',height:'200px',opacity:0.06,pointerEvents:'none'}} viewBox="0 0 400 200">
     {/* Big Ben tower */}
     <rect x="320" y="20" width="24" height="180" fill="currentColor"/>
     <rect x="316" y="16" width="32" height="8" fill="currentColor"/>
     <polygon points="332,0 316,16 348,16" fill="currentColor"/>
-    <rect x="326" y="50" width="12" height="16" rx="6" fill="rgba(10,12,16,1)"/>
+    <rect x="326" y="50" width="12" height="16" rx="6" fill="rgba(232,230,226,1)"/>
     {/* Parliament building */}
     <rect x="40" y="100" width="280" height="100" fill="currentColor"/>
     <rect x="36" y="95" width="288" height="8" fill="currentColor"/>
     {/* Windows */}
     {[60,90,120,150,180,210,240,270,290].map(x => (
       <g key={x}>
-        <rect x={x} y={120} width="10" height="18" rx="5" fill="rgba(10,12,16,1)"/>
-        <rect x={x} y={150} width="10" height="18" rx="5" fill="rgba(10,12,16,1)"/>
+        <rect x={x} y={120} width="10" height="18" rx="5" fill="rgba(232,230,226,1)"/>
+        <rect x={x} y={150} width="10" height="18" rx="5" fill="rgba(232,230,226,1)"/>
       </g>
     ))}
     {/* Victoria Tower */}
@@ -72,7 +72,7 @@ const ParliamentSilhouette = () => (
 
 const RainTexture = () => (
   <div style={{
-    position:'fixed',top:0,left:0,right:0,bottom:0,pointerEvents:'none',zIndex:0,opacity:0.012,
+    position:'fixed',top:0,left:0,right:0,bottom:0,pointerEvents:'none',zIndex:0,opacity:0.03,
     backgroundImage: 'repeating-linear-gradient(100deg, transparent 0px, transparent 4px, rgba(120,140,180,.3) 4px, rgba(120,140,180,.3) 4.5px, transparent 4.5px, transparent 20px)',
     backgroundSize: '20px 100%',
   }}/>
@@ -81,7 +81,7 @@ const RainTexture = () => (
 const FogOverlay = () => (
   <div style={{
     position:'fixed',top:0,left:0,right:0,bottom:0,pointerEvents:'none',zIndex:0,
-    background:'radial-gradient(ellipse at 30% 50%, rgba(80,90,110,.08) 0%, transparent 50%), radial-gradient(ellipse at 70% 30%, rgba(60,70,90,.06) 0%, transparent 40%), linear-gradient(180deg, rgba(10,12,16,.3) 0%, transparent 30%, transparent 70%, rgba(10,12,16,.4) 100%)',
+    background:'radial-gradient(ellipse at 30% 50%, rgba(160,170,190,.12) 0%, transparent 50%), radial-gradient(ellipse at 70% 30%, rgba(140,150,170,.08) 0%, transparent 40%), linear-gradient(180deg, rgba(210,208,204,.3) 0%, transparent 30%, transparent 70%, rgba(210,208,204,.2) 100%)',
   }}/>
 );
 
@@ -403,7 +403,7 @@ function LondonView({ setView }) {
   function Tip({ id }) {
     if (tipId !== id || !LONDON_TIPS[id]) return null;
     return (
-      <div style={{ padding: '10px 14px', background: 'rgba(8,9,12,.92)', border: '1px solid ' + C.accent + '25', borderRadius: 3, maxWidth: 440, fontSize: 11, fontFamily: Mono, color: C.tx2, lineHeight: 1.65, margin: '6px 0 10px' }}>
+      <div style={{ padding: '10px 14px', background: 'rgba(228,226,220,.92)', border: '1px solid ' + C.accent + '25', borderRadius: 3, maxWidth: 440, fontSize: 11, fontFamily: Mono, color: C.tx2, lineHeight: 1.65, margin: '6px 0 10px' }}>
         {LONDON_TIPS[id]}
       </div>
     );
@@ -1550,7 +1550,7 @@ function LondonView({ setView }) {
           <div style={{ display: 'flex', gap: 8, marginBottom: 12 }}>
             <input value={methodQuestion} onChange={e => setMethodQuestion(e.target.value)} placeholder="e.g., How did colonial policy decisions shape ethnic identity in Kenya?" style={{
               flex: 1, padding: '10px 14px', borderRadius: 4, fontFamily: Sans, fontSize: 13,
-              background: 'rgba(14,16,22,.6)', border: '1px solid ' + C.line, color: C.tx,
+              background: 'rgba(225,222,216,.6)', border: '1px solid ' + C.line, color: C.tx,
               outline: 'none',
             }} />
             <button onClick={() => doMethodRecommendation(methodQuestion)} style={{
@@ -1676,7 +1676,7 @@ function LondonView({ setView }) {
                 <div style={{ fontFamily: Serif, fontSize: 13, color: C.tx2, marginBottom: 8 }}>{criterion.question}</div>
                 <textarea value={userAnswer} onChange={e => setSourceAnswers(prev => ({ ...prev, [answerKey]: e.target.value }))} placeholder="Write your assessment..." style={{
                   width: '100%', minHeight: 60, padding: '8px 12px', borderRadius: 4,
-                  background: 'rgba(14,16,22,.6)', border: '1px solid ' + C.line, color: C.tx,
+                  background: 'rgba(225,222,216,.6)', border: '1px solid ' + C.line, color: C.tx,
                   fontFamily: Sans, fontSize: 12, lineHeight: 1.6, resize: 'vertical', outline: 'none',
                   boxSizing: 'border-box',
                 }} />
@@ -1724,7 +1724,7 @@ function LondonView({ setView }) {
       {/* Top bar — Victorian letterhead */}
       <div style={{
         position: 'sticky', top: 0, zIndex: 100,
-        background: 'linear-gradient(180deg, rgba(10,12,16,.97) 0%, rgba(10,12,16,.93) 100%)',
+        background: 'linear-gradient(180deg, rgba(232,230,226,.97) 0%, rgba(232,230,226,.93) 100%)',
         backdropFilter: 'blur(12px)',
         borderBottom: '1px solid ' + C.line, padding: '8px 24px',
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',

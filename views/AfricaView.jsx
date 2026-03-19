@@ -8,35 +8,35 @@
 // Algeria, India, South Africa). Self-contained React component.
 
 
-// ── Palette: Field research station — warm earth & savanna ──────────
+// ── Palette: Field notebook — warm earth & sand on light ground ──────
 const C = {
-  bg:      '#0c0806',
-  card:    'rgba(20,16,12,.88)',
-  cardBd:  'rgba(160,104,48,.16)',
-  tx:      '#e0d4c0',
-  tx2:     '#c0b498',
-  tx3:     '#8b7b63',
-  accent:  '#b87838',
-  accentDm:'#905828',
-  accentBg:'rgba(184,120,56,.06)',
-  gold:    '#c8a050',
-  goldDm:  '#a88030',
+  bg:      '#f0e8dc',
+  card:    'rgba(245,240,230,.96)',
+  cardBd:  'rgba(130,84,38,.20)',
+  tx:      '#2a2018',
+  tx2:     '#5a4a38',
+  tx3:     '#8a7a64',
+  accent:  '#905828',
+  accentDm:'#784818',
+  accentBg:'rgba(144,88,40,.10)',
+  gold:    '#9a7828',
+  goldDm:  '#806018',
   red:     '#b84038',
   redDm:   '#882820',
-  redBg:   'rgba(184,64,56,.06)',
-  green:   '#488838',
-  greenDm: '#306828',
-  greenBg: 'rgba(72,136,56,.06)',
-  blue:    '#4878a0',
-  blueDm:  '#385888',
-  blueBg:  'rgba(72,120,160,.07)',
-  ochre:   '#c09040',
-  ocrBg:   'rgba(192,144,64,.07)',
-  line:    'rgba(160,104,48,.10)',
+  redBg:   'rgba(184,64,56,.08)',
+  green:   '#387828',
+  greenDm: '#285818',
+  greenBg: 'rgba(56,120,40,.08)',
+  blue:    '#38688a',
+  blueDm:  '#284870',
+  blueBg:  'rgba(56,104,138,.08)',
+  ochre:   '#987030',
+  ocrBg:   'rgba(152,112,48,.08)',
+  line:    'rgba(130,84,38,.16)',
   kenyaBlack: '#1a1a1a',
   kenyaRed:   '#bb2020',
   kenyaGreen: '#006b3f',
-  ruled:   'rgba(160,120,80,.06)',
+  ruled:   'rgba(130,100,60,.10)',
 };
 const Mono  = "'IBM Plex Mono',monospace";
 const Serif = "'Source Serif 4','EB Garamond',Georgia,serif";
@@ -44,7 +44,7 @@ const Sans  = "'Inter',Helvetica,sans-serif";
 
 // ── SVG Decorative Elements ────────────────────────────────────────
 const AcaciaTree = () => (
-  <svg style={{position:'absolute',bottom:60,right:30,width:'200px',height:'180px',opacity:0.03,pointerEvents:'none'}} viewBox="0 0 200 180">
+  <svg style={{position:'absolute',bottom:60,right:30,width:'200px',height:'180px',opacity:0.08,pointerEvents:'none'}} viewBox="0 0 200 180">
     {/* Trunk */}
     <line x1="100" y1="180" x2="100" y2="80" stroke="rgba(120,80,40,1)" strokeWidth="4"/>
     <line x1="100" y1="120" x2="70" y2="90" stroke="rgba(120,80,40,1)" strokeWidth="2.5"/>
@@ -57,7 +57,7 @@ const AcaciaTree = () => (
 );
 
 const SavannaHorizon = () => (
-  <svg style={{position:'absolute',bottom:0,left:0,width:'100%',height:'200px',opacity:0.025,pointerEvents:'none'}} viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice">
+  <svg style={{position:'absolute',bottom:0,left:0,width:'100%',height:'200px',opacity:0.06,pointerEvents:'none'}} viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice">
     <path d="M0 200 L0 140 Q200 120 400 135 Q600 150 800 130 Q1000 110 1200 125 L1200 200Z" fill="rgba(160,104,48,.6)"/>
     <path d="M0 200 L0 160 Q300 145 600 155 Q900 165 1200 150 L1200 200Z" fill="rgba(120,80,40,.4)"/>
     {/* Grass tufts */}
@@ -510,7 +510,7 @@ function AfricaView({ setView }) {
   const TipBox = (key) => {
     if (tipId !== key) return null;
     return (
-      <div style={{ padding: '10px 14px', background: 'rgba(10,8,7,.94)', border: '1px solid rgba(160,104,48,.15)', borderRadius: 3, maxWidth: 440, fontSize: 11, color: 'rgba(216,204,184,.65)', lineHeight: 1.65, margin: '6px 0 10px' }}>
+      <div style={{ padding: '10px 14px', background: 'rgba(235,228,215,.94)', border: '1px solid rgba(130,84,38,.18)', borderRadius: 3, maxWidth: 440, fontSize: 11, color: 'rgba(42,32,24,.65)', lineHeight: 1.65, margin: '6px 0 10px' }}>
         {AF_TIPS[key]}
       </div>
     );
@@ -1165,7 +1165,7 @@ function AfricaView({ setView }) {
         <div style={{ overflowX: 'auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '140px repeat(4, 1fr)', gap: 2, minWidth: 700 }}>
             {/* Corner */}
-            <div style={{ padding: 8, background: 'rgba(20,16,12,.6)', borderRadius: '4px 0 0 0' }} />
+            <div style={{ padding: 8, background: 'rgba(232,224,210,.6)', borderRadius: '4px 0 0 0' }} />
             {/* State headers */}
             {GOV_STATES.map(s => (
               <div key={s.id} style={{ padding: '10px 8px', background: 'rgba(184,120,56,.06)', borderRadius: 2, textAlign: 'center' }}>
@@ -1178,7 +1178,7 @@ function AfricaView({ setView }) {
             {/* Rows */}
             {GOV_FACTORS.map(f => (
               <React.Fragment key={f.id}>
-                <div style={{ padding: '10px 8px', background: 'rgba(20,16,12,.6)', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <div style={{ padding: '10px 8px', background: 'rgba(232,224,210,.6)', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                   <div style={{ fontFamily: Mono, fontSize: 10, fontWeight: 600, color: C.tx2, letterSpacing: '.04em', textTransform: 'uppercase' }}>{f.label}</div>
                   <div style={{ fontFamily: Sans, fontSize: 9, color: C.tx3, marginTop: 2, lineHeight: 1.4 }}>{f.desc}</div>
                 </div>
@@ -1189,7 +1189,7 @@ function AfricaView({ setView }) {
                     <div key={s.id + '-' + f.id}>
                       <button onClick={() => setGovSelected(isOpen ? null : s.id + '-' + f.id)} style={{
                         width: '100%', padding: '10px 8px', cursor: 'pointer', textAlign: 'center',
-                        background: isOpen ? 'rgba(184,120,56,.10)' : 'rgba(20,16,12,.4)',
+                        background: isOpen ? 'rgba(144,88,40,.10)' : 'rgba(232,224,210,.4)',
                         border: isOpen ? '1px solid ' + C.accentDm : '1px solid rgba(160,104,48,.06)',
                         borderRadius: 2, transition: 'all .15s',
                       }}>
@@ -1333,7 +1333,7 @@ function AfricaView({ setView }) {
       {/* Top bar — field station header */}
       <div style={{
         position: 'sticky', top: 0, zIndex: 100,
-        background: 'linear-gradient(180deg, rgba(12,8,6,.97) 0%, rgba(12,8,6,.93) 100%)',
+        background: 'linear-gradient(180deg, rgba(240,232,220,.97) 0%, rgba(240,232,220,.93) 100%)',
         backdropFilter: 'blur(12px)',
         borderBottom: '1px solid ' + C.line, padding: '8px 24px',
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',
@@ -1471,7 +1471,7 @@ function AfricaView({ setView }) {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 10 }}>
             {PROVENANCE.map(p => (
               <div key={p.label} style={{
-                background: 'rgba(20,16,12,.85)',
+                background: 'rgba(240,234,222,.85)',
                 border: '1px solid ' + C.cardBd,
                 borderRadius: 2, padding: '10px 14px',
                 position: 'relative',

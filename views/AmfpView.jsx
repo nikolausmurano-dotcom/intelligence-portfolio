@@ -10,31 +10,31 @@
 // Globals: useState, useCallback, useMemo, useRef from React
 
 
-// ── Palette: Oval Office navy — presidential authority ──────────────
+// ── Palette: Federal document — Library of Congress white ────────────
 const C = {
-  bg:      '#040818',
-  card:    'rgba(8,14,32,.90)',
-  cardBd:  'rgba(60,90,140,.18)',
-  tx:      '#d0d8e8',
-  tx2:     '#9cacc8',
-  tx3:     '#6878a0',
-  blue:    '#4070a8',
-  blueDm:  '#2a5080',
-  blueBg:  'rgba(64,112,168,.07)',
-  navy:    '#0c1830',
-  gold:    '#d4b850',
-  goldDm:  '#b09830',
-  goldBg:  'rgba(212,184,80,.06)',
+  bg:      '#f0f2f5',
+  card:    'rgba(250,251,253,.96)',
+  cardBd:  'rgba(50,70,110,.16)',
+  tx:      '#1a2040',
+  tx2:     '#4a5878',
+  tx3:     '#7888a0',
+  blue:    '#3a6090',
+  blueDm:  '#2a4870',
+  blueBg:  'rgba(58,96,144,.08)',
+  navy:    '#d8dce8',
+  gold:    '#a08820',
+  goldDm:  '#887010',
+  goldBg:  'rgba(160,136,32,.08)',
   red:     '#b83838',
   redDm:   '#8a2828',
-  redBg:   'rgba(184,56,56,.06)',
-  green:   '#48886a',
-  greenDm: '#306850',
-  greenBg: 'rgba(72,136,106,.07)',
-  cream:   '#e8dcc0',
-  white:   '#e0e4f0',
-  line:    'rgba(60,90,140,.12)',
-  stripe:  'rgba(184,56,56,.04)',
+  redBg:   'rgba(184,56,56,.07)',
+  green:   '#38785a',
+  greenDm: '#285840',
+  greenBg: 'rgba(56,120,90,.08)',
+  cream:   '#6a5830',
+  white:   '#1a2040',
+  line:    'rgba(50,70,110,.14)',
+  stripe:  'rgba(184,56,56,.05)',
 };
 const Serif = "'Source Serif 4','EB Garamond',Georgia,serif";
 const Sans  = "'Inter',Helvetica,sans-serif";
@@ -42,7 +42,7 @@ const Mono  = "'IBM Plex Mono',monospace";
 
 // ── SVG Decorative Elements ────────────────────────────────────────
 const EagleWatermark = () => (
-  <svg style={{position:'absolute',top:'50%',left:'50%',transform:'translate(-50%,-50%)',width:'500px',height:'500px',opacity:0.018,pointerEvents:'none'}} viewBox="0 0 200 200">
+  <svg style={{position:'absolute',top:'50%',left:'50%',transform:'translate(-50%,-50%)',width:'500px',height:'500px',opacity:0.05,pointerEvents:'none'}} viewBox="0 0 200 200">
     {/* Great Seal Eagle silhouette */}
     <path d="M100 30 Q80 40 60 55 Q40 70 35 85 Q30 100 40 110 L55 105 L70 115 L85 108 L100 120 L115 108 L130 115 L145 105 L160 110 Q170 100 165 85 Q160 70 140 55 Q120 40 100 30Z" fill="currentColor"/>
     <path d="M100 120 L100 160 L80 170 L100 165 L120 170 L100 160Z" fill="currentColor"/>
@@ -62,7 +62,7 @@ const EagleWatermark = () => (
 
 const StarsPattern = () => (
   <div style={{
-    position:'fixed',top:0,left:0,right:0,bottom:0,pointerEvents:'none',zIndex:0,opacity:0.02,
+    position:'fixed',top:0,left:0,right:0,bottom:0,pointerEvents:'none',zIndex:0,opacity:0.04,
     backgroundImage: 'radial-gradient(circle, rgba(200,210,240,.5) 1px, transparent 1px)',
     backgroundSize: '80px 80px',
   }}/>
@@ -348,7 +348,7 @@ function AmfpView({ setView }) {
   const TipBox = (key) => {
     if (tipId !== key) return null;
     return (
-      <div style={{ padding: '10px 14px', background: 'rgba(7,9,14,.94)', border: '1px solid rgba(58,96,144,.18)', borderRadius: 3, maxWidth: 440, fontSize: 11, color: 'rgba(204,212,224,.65)', lineHeight: 1.65, margin: '6px 0 10px' }}>
+      <div style={{ padding: '10px 14px', background: 'rgba(235,238,242,.94)', border: '1px solid rgba(50,70,110,.18)', borderRadius: 3, maxWidth: 440, fontSize: 11, color: 'rgba(26,32,64,.65)', lineHeight: 1.65, margin: '6px 0 10px' }}>
         {AM_TIPS[key]}
       </div>
     );
@@ -490,12 +490,12 @@ function AmfpView({ setView }) {
 
         {/* Era briefing card — executive order styling */}
         <div style={{
-          background: 'linear-gradient(180deg, rgba(8,14,32,.94) 0%, rgba(12,18,38,.90) 100%)',
+          background: 'linear-gradient(180deg, rgba(240,242,245,.94) 0%, rgba(238,240,244,.90) 100%)',
           border: '1px solid ' + C.cardBd,
           borderRadius: 2, padding: 28, marginBottom: 16,
           borderTop: '3px solid rgba(212,184,80,.2)',
           position: 'relative',
-          boxShadow: '0 4px 24px rgba(0,0,0,.3), inset 0 1px 0 rgba(212,184,80,.05)',
+          boxShadow: '0 4px 24px rgba(0,0,0,.08), inset 0 1px 0 rgba(212,184,80,.08)',
         }}>
           {/* Gold corner accents */}
           <div style={{position:'absolute',top:0,left:0,width:20,height:20,borderLeft:'2px solid rgba(212,184,80,.15)',borderTop:'2px solid rgba(212,184,80,.15)'}}/>
@@ -1224,7 +1224,7 @@ function AmfpView({ setView }) {
         </div>
 
         {/* SVG Pendulum */}
-        <svg viewBox={'0 0 ' + svgW + ' ' + svgH} style={{ width: '100%', height: 'auto', background: 'rgba(8,14,32,.5)', borderRadius: 6, border: '1px solid ' + C.line, marginBottom: 16 }}>
+        <svg viewBox={'0 0 ' + svgW + ' ' + svgH} style={{ width: '100%', height: 'auto', background: 'rgba(230,234,242,.5)', borderRadius: 6, border: '1px solid ' + C.line, marginBottom: 16 }}>
           {/* Arc */}
           <path d={'M ' + (pivotX - armLen * Math.sin(75 * Math.PI / 180)) + ' ' + (pivotY + armLen * Math.cos(75 * Math.PI / 180)) +
             ' A ' + armLen + ' ' + armLen + ' 0 0 1 ' + (pivotX + armLen * Math.sin(75 * Math.PI / 180)) + ' ' + (pivotY + armLen * Math.cos(75 * Math.PI / 180))}
@@ -1483,13 +1483,13 @@ function AmfpView({ setView }) {
       {/* Navy radial glow */}
       <div style={{
         position:'fixed',top:0,left:0,right:0,bottom:0,pointerEvents:'none',zIndex:0,
-        background:'radial-gradient(ellipse at 50% 30%, rgba(40,60,100,.12) 0%, transparent 60%)',
+        background:'radial-gradient(ellipse at 50% 30%, rgba(180,195,220,.15) 0%, transparent 60%)',
       }}/>
 
       {/* Top bar — presidential seal styling */}
       <div style={{
         position: 'sticky', top: 6, zIndex: 100,
-        background: 'linear-gradient(180deg, rgba(4,8,24,.97) 0%, rgba(8,14,32,.95) 100%)',
+        background: 'linear-gradient(180deg, rgba(240,242,245,.97) 0%, rgba(240,242,245,.95) 100%)',
         backdropFilter: 'blur(12px)',
         borderBottom: '2px solid rgba(212,184,80,.15)', padding: '8px 24px',
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',
