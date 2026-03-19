@@ -1192,6 +1192,661 @@ function CIAnalysisView({ setView }) {
         )}
 
         {/* ═══════════════════════════════════════════════════════════ */}
+        {/* ── TRADECRAFT FAILURE ANALYSIS MODE ────────────────────── */}
+        {/* ═══════════════════════════════════════════════════════════ */}
+        {viewMode === 'tradecraft' && (
+          <div>
+            <h2 style={{ fontFamily: CI_SERIF, fontSize: 22, fontWeight: 600, color: C.tx, marginBottom: 4 }}>
+              Tradecraft Failure Analysis Engine
+            </h2>
+            <p style={{ fontFamily: CI_MONO, fontSize: 11, color: C.redDm, marginBottom: 6, letterSpacing: '.06em' }}>CASE FILE DATABASE // CI POST-MORTEM ANALYSIS</p>
+            <p style={{ fontSize: 13, color: C.tx2, lineHeight: 1.6, maxWidth: '65ch', marginBottom: 20 }}>
+              Select any two cases to generate a structured comparison of vulnerabilities exploited, detection failures, and common CI gaps. The goal is not historical trivia -- it is pattern recognition across decades of penetration operations.
+            </p>
+
+            {/* Case selection grid */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8, marginBottom: 20 }}>
+              {TRADECRAFT_CASES.map(function(tc) {
+                var isSelected = tcSelected.indexOf(tc.id) !== -1;
+                var canSelect = tcSelected.length < 2 || isSelected;
+                return React.createElement('button', {
+                  key: tc.id,
+                  onClick: function() {
+                    setTcShowComparison(false);
+                    if (isSelected) {
+                      setTcSelected(tcSelected.filter(function(x) { return x !== tc.id; }));
+                    } else if (canSelect) {
+                      setTcSelected(tcSelected.concat([tc.id]));
+                    }
+                  },
+                  style: {
+                    textAlign: 'left', padding: 0, cursor: canSelect ? 'pointer' : 'default',
+                    background: isSelected ? C.blueBg : C.card,
+                    border: '2px solid ' + (isSelected ? C.blue : C.cardBd),
+                    borderRadius: 2, color: C.tx, opacity: canSelect ? 1 : 0.4,
+                    overflow: 'hidden', boxShadow: '2px 3px 8px rgba(0,0,0,.25)',
+                  }
+                },
+                  React.createElement('div', { style: { background: 'rgba(200,184,136,.07)', borderBottom: '1px solid rgba(120,110,90,.12)', padding: '4px 14px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' } },
+                    React.createElement('span', { style: { fontFamily: CI_MONO, fontSize: 10, fontWeight: 700, letterSpacing: '.1em', color: '#a09060' } }, tc.agency + ' // ' + tc.years),
+                    isSelected && React.createElement(RedStamp, { text: 'SELECTED', size: 8 })
+                  ),
+                  React.createElement('div', { style: { padding: 12 } },
+                    React.createElement('p', { style: { fontWeight: 600, fontSize: 14, marginBottom: 2, color: C.tx } }, tc.name),
+                    React.createElement('p', { style: { fontSize: 11, color: C.tx2, marginBottom: 6 } }, tc.vulnerability),
+                    React.createElement('div', { style: { display: 'flex', gap: 8 } },
+                      React.createElement('span', { style: { fontFamily: CI_MONO, fontSize: 10, color: C.red, padding: '2px 6px', background: C.redBg, borderRadius: 2 } }, tc.timeToDetect + ' undetected'),
+                      React.createElement('span', { style: { fontFamily: CI_MONO, fontSize: 10, color: C.blue, padding: '2px 6px', background: C.blueBg, borderRadius: 2 } }, tc.detection.split(';')[0].substring(0, 40) + '...')
+                    )
+                  )
+                );
+              })}
+            </div>
+
+            {/* Compare button */}
+            {tcSelected.length === 2 && !tcShowComparison && React.createElement('button', {
+              onClick: function() { setTcShowComparison(true); },
+              style: { marginBottom: 20, padding: '10px 24px', background: C.blue, border: 'none', borderRadius: 4, color: '#fff', fontFamily: CI_MONO, fontSize: 11, fontWeight: 600, cursor: 'pointer' }
+            }, 'COMPARE: ' + TRADECRAFT_CASES.find(function(c) { return c.id === tcSelected[0]; }).name + ' vs ' + TRADECRAFT_CASES.find(function(c) { return c.id === tcSelected[1]; }).name)}
+
+            {/* Comparison panel */}
+            {tcShowComparison && tcSelected.length === 2 && (function() {
+              var case1 = TRADECRAFT_CASES.find(function(c) { return c.id === tcSelected[0]; });
+              var case2 = TRADECRAFT_CASES.find(function(c) { return c.id === tcSelected[1]; });
+              var common = case1.commonVulns.filter(function(v) { return case2.commonVulns.indexOf(v) !== -1; });
+              var unique1 = case1.commonVulns.filter(function(v) { return case2.commonVulns.indexOf(v) === -1; });
+              var unique2 = case2.commonVulns.filter(function(v) { return case1.commonVulns.indexOf(v) === -1; });
+
+              return React.createElement('div', { style: { marginBottom: 20 } },
+                // Common vulnerabilities header
+                React.createElement(DossierCard, { tab: 'COMPARATIVE ANALYSIS', stamp: 'CI POST-MORTEM', style: { marginBottom: 12 } },
+                  common.length > 0 && React.createElement('div', { style: { marginBottom: 16 } },
+                    React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 11, color: C.red, marginBottom: 8, letterSpacing: '.06em' } }, 'COMMON VULNERABILITIES (' + common.length + ')'),
+                    common.map(function(v) {
+                      return React.createElement('div', { key: v, style: { padding: '6px 10px', background: C.redBg, border: '1px solid ' + C.red + '30', borderRadius: 4, marginBottom: 4 } },
+                        React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 12, color: C.red, fontWeight: 700 } }, TRADECRAFT_VULN_LABELS[v] || v),
+                        React.createElement('p', { style: { fontSize: 11, color: C.tx2, lineHeight: 1.5, marginTop: 2 } }, 'Present in both ' + case1.name + ' (' + case1.agency + ') and ' + case2.name + ' (' + case2.agency + '). This pattern persisted across ' + (case1.yearsActive + case2.yearsActive) + ' combined years of undetected espionage.')
+                      );
+                    })
+                  ),
+                  React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 11, color: C.tx3, marginBottom: 8, letterSpacing: '.06em' } }, 'SYSTEMIC FINDING'),
+                  React.createElement('p', { style: { fontSize: 12, color: C.tx, lineHeight: 1.6 } },
+                    common.length > 0
+                      ? 'These ' + common.length + ' shared vulnerabilities are not coincidences. They represent structural CI weaknesses that persisted across agencies (' + case1.agency + ', ' + case2.agency + '), decades (' + case1.years + ', ' + case2.years + '), and adversary services. Any CI reform that does not address these specific gaps is incomplete.'
+                      : 'These two cases exploited entirely different vulnerability classes. This demonstrates that CI programs must defend against a wide attack surface -- fixing one category of vulnerability does not protect against others.'
+                  )
+                ),
+
+                // Side-by-side detail
+                React.createElement('div', { style: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 } },
+                  [case1, case2].map(function(cs, idx) {
+                    var uniqueVulns = idx === 0 ? unique1 : unique2;
+                    return React.createElement(DossierCard, { key: cs.id, tab: cs.name.toUpperCase(), stamp: cs.agency },
+                      React.createElement('div', { style: { marginBottom: 10 } },
+                        React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 10, color: C.tx3, marginBottom: 4 } }, 'DETECTION METHOD'),
+                        React.createElement('p', { style: { fontSize: 11, color: C.tx, lineHeight: 1.5 } }, cs.detection)
+                      ),
+                      React.createElement('div', { style: { marginBottom: 10 } },
+                        React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 10, color: C.tx3, marginBottom: 4 } }, 'DAMAGE ASSESSMENT'),
+                        React.createElement('p', { style: { fontSize: 11, color: C.tx, lineHeight: 1.5 } }, cs.damage)
+                      ),
+                      React.createElement('div', { style: { marginBottom: 10 } },
+                        React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 10, color: C.red, marginBottom: 4 } }, 'WHAT SHOULD HAVE CAUGHT THEM'),
+                        React.createElement('p', { style: { fontSize: 11, color: C.tx, lineHeight: 1.5 } }, cs.shouldHaveCaught)
+                      ),
+                      uniqueVulns.length > 0 && React.createElement('div', null,
+                        React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 10, color: C.blue, marginBottom: 4 } }, 'UNIQUE VULNERABILITIES'),
+                        uniqueVulns.map(function(v) {
+                          return React.createElement('span', { key: v, style: { display: 'inline-block', padding: '2px 6px', margin: '0 4px 4px 0', background: C.blueBg, border: '1px solid ' + C.blue + '30', borderRadius: 2, fontFamily: CI_MONO, fontSize: 10, color: C.blue } }, TRADECRAFT_VULN_LABELS[v] || v);
+                        })
+                      )
+                    );
+                  })
+                )
+              );
+            })()}
+
+            {/* Individual case deep-dive when one is selected */}
+            {tcSelected.length === 1 && (function() {
+              var cs = TRADECRAFT_CASES.find(function(c) { return c.id === tcSelected[0]; });
+              return React.createElement(DossierCard, { tab: 'CASE FILE // ' + cs.name.toUpperCase(), stamp: cs.agency, style: { marginBottom: 16 } },
+                React.createElement('div', { style: { display: 'grid', gridTemplateColumns: '120px 1fr', gap: '4px 12px', fontSize: 12 } },
+                  React.createElement('span', { style: { fontFamily: CI_MONO, fontSize: 10, color: C.tx3 } }, 'AGENCY'),
+                  React.createElement('span', { style: { color: C.tx } }, cs.agency),
+                  React.createElement('span', { style: { fontFamily: CI_MONO, fontSize: 10, color: C.tx3 } }, 'PERIOD'),
+                  React.createElement('span', { style: { color: C.tx } }, cs.years + ' (' + cs.yearsActive + ' years active)'),
+                  React.createElement('span', { style: { fontFamily: CI_MONO, fontSize: 10, color: C.tx3 } }, 'VULNERABILITY'),
+                  React.createElement('span', { style: { color: C.red } }, cs.vulnerability),
+                  React.createElement('span', { style: { fontFamily: CI_MONO, fontSize: 10, color: C.tx3 } }, 'DETECTION'),
+                  React.createElement('span', { style: { color: C.tx } }, cs.detection),
+                  React.createElement('span', { style: { fontFamily: CI_MONO, fontSize: 10, color: C.tx3 } }, 'TIME TO DETECT'),
+                  React.createElement('span', { style: { color: C.amber, fontWeight: 600 } }, cs.timeToDetect),
+                  React.createElement('span', { style: { fontFamily: CI_MONO, fontSize: 10, color: C.tx3 } }, 'DAMAGE'),
+                  React.createElement('span', { style: { color: C.tx } }, cs.damage)
+                ),
+                React.createElement('div', { style: { marginTop: 12, padding: '8px 10px', background: C.redBg, borderRadius: 4, borderLeft: '3px solid ' + C.red } },
+                  React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 10, color: C.red, marginBottom: 4 } }, 'WHAT SHOULD HAVE CAUGHT THEM'),
+                  React.createElement('p', { style: { fontSize: 11, color: C.tx, lineHeight: 1.6 } }, cs.shouldHaveCaught)
+                ),
+                React.createElement('div', { style: { marginTop: 8, display: 'flex', gap: 4, flexWrap: 'wrap' } },
+                  cs.commonVulns.map(function(v) {
+                    return React.createElement('span', { key: v, style: { padding: '2px 6px', background: C.blueBg, border: '1px solid ' + C.blue + '30', borderRadius: 2, fontFamily: CI_MONO, fontSize: 10, color: C.blue } }, TRADECRAFT_VULN_LABELS[v] || v);
+                  })
+                )
+              );
+            })()}
+          </div>
+        )}
+
+        {/* ═══════════════════════════════════════════════════════════ */}
+        {/* ── DECEPTION DETECTION MODE ────────────────────────────── */}
+        {/* ═══════════════════════════════════════════════════════════ */}
+        {viewMode === 'deception' && (
+          <div>
+            <h2 style={{ fontFamily: CI_SERIF, fontSize: 22, fontWeight: 600, color: C.tx, marginBottom: 4 }}>
+              Deception Detection Framework
+            </h2>
+            <p style={{ fontFamily: CI_MONO, fontSize: 11, color: C.greenDm, marginBottom: 6, letterSpacing: '.06em' }}>CIA DECEPTION ANALYSIS METHODOLOGY // FIVE-LENS EVALUATION</p>
+            <p style={{ fontSize: 13, color: C.tx2, lineHeight: 1.6, maxWidth: '65ch', marginBottom: 16 }}>
+              Evaluate each intelligence report through five analytical lenses. Assign your ratings, then reveal whether the report is genuine, deception, or ambiguous. The goal is to develop the instinct for recognizing fabricated intelligence before it reaches policymakers.
+            </p>
+
+            {/* Reference scales */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8, marginBottom: 20 }}>
+              <DossierCard tab="SOURCE RELIABILITY SCALE" stamp="REF">
+                {DECEPTION_SOURCE_SCALE.map(function(s) {
+                  return React.createElement('div', { key: s.grade, style: { display: 'grid', gridTemplateColumns: '28px 100px 1fr', gap: 6, padding: '3px 0', borderBottom: '1px solid ' + C.line, fontSize: 11 } },
+                    React.createElement('span', { style: { fontFamily: CI_MONO, fontWeight: 700, color: s.grade <= 'B' ? C.green : s.grade <= 'D' ? C.amber : C.red } }, s.grade),
+                    React.createElement('span', { style: { color: C.tx } }, s.label),
+                    React.createElement('span', { style: { color: C.tx3, fontSize: 10 } }, s.criteria)
+                  );
+                })}
+              </DossierCard>
+              <DossierCard tab="INFORMATION CREDIBILITY SCALE" stamp="REF">
+                {DECEPTION_INFO_SCALE.map(function(s) {
+                  return React.createElement('div', { key: s.num, style: { display: 'grid', gridTemplateColumns: '28px 100px 1fr', gap: 6, padding: '3px 0', borderBottom: '1px solid ' + C.line, fontSize: 11 } },
+                    React.createElement('span', { style: { fontFamily: CI_MONO, fontWeight: 700, color: s.num <= 2 ? C.green : s.num <= 4 ? C.amber : C.red } }, String(s.num)),
+                    React.createElement('span', { style: { color: C.tx } }, s.label),
+                    React.createElement('span', { style: { color: C.tx3, fontSize: 10 } }, s.criteria)
+                  );
+                })}
+              </DossierCard>
+            </div>
+
+            {/* Scenario tabs */}
+            <div style={{ display: 'flex', gap: 4, marginBottom: 16 }}>
+              {DECEPTION_SCENARIOS.map(function(sc, idx) {
+                var active = decScenario === idx;
+                return React.createElement('button', {
+                  key: sc.id,
+                  onClick: function() { setDecScenario(idx); },
+                  style: {
+                    padding: '6px 14px', background: active ? C.greenBg : 'transparent',
+                    border: '1px solid ' + (active ? C.green : C.line), borderRadius: 2,
+                    fontFamily: CI_MONO, fontSize: 10, color: active ? C.green : C.tx3,
+                    cursor: 'pointer', fontWeight: 700, letterSpacing: '.04em',
+                  }
+                }, 'SCENARIO ' + (idx + 1));
+              })}
+            </div>
+
+            {/* Active scenario */}
+            {(function() {
+              var sc = DECEPTION_SCENARIOS[decScenario];
+              var evalKey = sc.id;
+              var ev = decEvals[evalKey] || {};
+              var revealed = decRevealed[evalKey];
+
+              return React.createElement('div', null,
+                React.createElement(DossierCard, { tab: sc.title, stamp: 'EVALUATE', style: { marginBottom: 16 } },
+                  React.createElement('p', { style: { fontSize: 13, color: C.tx, lineHeight: 1.7, marginBottom: 12 } }, sc.description)
+                ),
+
+                // Five lenses evaluation
+                React.createElement('div', { style: { display: 'grid', gap: 8, marginBottom: 16 } },
+                  // Lens 1: Source reliability
+                  React.createElement('div', { style: { padding: 12, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 4, borderLeft: '3px solid ' + C.green } },
+                    React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 11, color: C.green, marginBottom: 6 } }, 'LENS 1: SOURCE RELIABILITY'),
+                    React.createElement('div', { style: { display: 'flex', gap: 4 } },
+                      DECEPTION_SOURCE_SCALE.map(function(s) {
+                        var isActive = ev.source === s.grade;
+                        return React.createElement('button', {
+                          key: s.grade,
+                          onClick: function() { setDecEvals(function(prev) { var next = Object.assign({}, prev); next[evalKey] = Object.assign({}, ev, { source: s.grade }); return next; }); },
+                          style: {
+                            padding: '6px 12px', fontFamily: CI_MONO, fontSize: 12, fontWeight: 700,
+                            background: isActive ? C.green : 'transparent',
+                            border: '1px solid ' + (isActive ? C.green : C.line),
+                            color: isActive ? '#fff' : C.tx3, borderRadius: 2, cursor: 'pointer',
+                          }
+                        }, s.grade);
+                      })
+                    )
+                  ),
+
+                  // Lens 2: Information credibility
+                  React.createElement('div', { style: { padding: 12, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 4, borderLeft: '3px solid ' + C.blue } },
+                    React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 11, color: C.blue, marginBottom: 6 } }, 'LENS 2: INFORMATION CREDIBILITY'),
+                    React.createElement('div', { style: { display: 'flex', gap: 4 } },
+                      DECEPTION_INFO_SCALE.map(function(s) {
+                        var isActive = ev.credibility === s.num;
+                        return React.createElement('button', {
+                          key: s.num,
+                          onClick: function() { setDecEvals(function(prev) { var next = Object.assign({}, prev); next[evalKey] = Object.assign({}, ev, { credibility: s.num }); return next; }); },
+                          style: {
+                            padding: '6px 12px', fontFamily: CI_MONO, fontSize: 12, fontWeight: 700,
+                            background: isActive ? C.blue : 'transparent',
+                            border: '1px solid ' + (isActive ? C.blue : C.line),
+                            color: isActive ? '#fff' : C.tx3, borderRadius: 2, cursor: 'pointer',
+                          }
+                        }, String(s.num));
+                      })
+                    )
+                  ),
+
+                  // Lens 3: Deception indicators
+                  React.createElement('div', { style: { padding: 12, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 4, borderLeft: '3px solid ' + C.amber } },
+                    React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 11, color: C.amber, marginBottom: 6 } }, 'LENS 3: DECEPTION INDICATORS'),
+                    DECEPTION_INDICATORS.map(function(ind) {
+                      var flags = ev.flags || {};
+                      var isChecked = flags[ind.id];
+                      return React.createElement('div', { key: ind.id, style: { display: 'flex', gap: 8, alignItems: 'flex-start', padding: '4px 0' } },
+                        React.createElement('button', {
+                          onClick: function() {
+                            setDecEvals(function(prev) {
+                              var next = Object.assign({}, prev);
+                              var newFlags = Object.assign({}, flags);
+                              newFlags[ind.id] = !isChecked;
+                              next[evalKey] = Object.assign({}, ev, { flags: newFlags });
+                              return next;
+                            });
+                          },
+                          style: {
+                            width: 18, height: 18, flexShrink: 0, marginTop: 1,
+                            background: isChecked ? C.amber : 'transparent',
+                            border: '1px solid ' + (isChecked ? C.amber : C.line),
+                            borderRadius: 2, cursor: 'pointer', color: '#fff',
+                            fontFamily: CI_MONO, fontSize: 11, fontWeight: 700,
+                            display: 'flex', alignItems: 'center', justifyContent: 'center',
+                          }
+                        }, isChecked ? 'X' : ''),
+                        React.createElement('div', null,
+                          React.createElement('p', { style: { fontSize: 12, color: C.tx, fontWeight: 600 } }, ind.label),
+                          React.createElement('p', { style: { fontSize: 10, color: C.tx3, lineHeight: 1.5 } }, ind.desc)
+                        )
+                      );
+                    })
+                  ),
+
+                  // Lens 4: Channel analysis
+                  React.createElement('div', { style: { padding: 12, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 4, borderLeft: '3px solid ' + C.manila } },
+                    React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 11, color: C.manila, marginBottom: 6 } }, 'LENS 4: CHANNEL ANALYSIS'),
+                    React.createElement('p', { style: { fontSize: 12, color: C.tx, lineHeight: 1.6, marginBottom: 8 } }, sc.channel),
+                    React.createElement('div', { style: { display: 'flex', gap: 4 } },
+                      ['Clean', 'Suspect', 'Compromised'].map(function(ch) {
+                        var isActive = ev.channel === ch;
+                        return React.createElement('button', {
+                          key: ch,
+                          onClick: function() { setDecEvals(function(prev) { var next = Object.assign({}, prev); next[evalKey] = Object.assign({}, ev, { channel: ch }); return next; }); },
+                          style: {
+                            padding: '6px 14px', fontFamily: CI_MONO, fontSize: 11,
+                            background: isActive ? (ch === 'Clean' ? C.green : ch === 'Suspect' ? C.amber : C.red) : 'transparent',
+                            border: '1px solid ' + (isActive ? (ch === 'Clean' ? C.green : ch === 'Suspect' ? C.amber : C.red) : C.line),
+                            color: isActive ? '#fff' : C.tx3, borderRadius: 2, cursor: 'pointer',
+                          }
+                        }, ch);
+                      })
+                    )
+                  ),
+
+                  // Lens 5: Cui bono
+                  React.createElement('div', { style: { padding: 12, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 4, borderLeft: '3px solid ' + C.red } },
+                    React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 11, color: C.red, marginBottom: 6 } }, 'LENS 5: CUI BONO'),
+                    React.createElement('p', { style: { fontSize: 12, color: C.tx, lineHeight: 1.6, marginBottom: 8 } }, sc.cuiBono),
+                    React.createElement('div', { style: { display: 'flex', gap: 4 } },
+                      ['Neutral', 'Benefits Adversary', 'Benefits Us'].map(function(cb) {
+                        var isActive = ev.cuiBono === cb;
+                        return React.createElement('button', {
+                          key: cb,
+                          onClick: function() { setDecEvals(function(prev) { var next = Object.assign({}, prev); next[evalKey] = Object.assign({}, ev, { cuiBono: cb }); return next; }); },
+                          style: {
+                            padding: '6px 14px', fontFamily: CI_MONO, fontSize: 11,
+                            background: isActive ? C.blue : 'transparent',
+                            border: '1px solid ' + (isActive ? C.blue : C.line),
+                            color: isActive ? '#fff' : C.tx3, borderRadius: 2, cursor: 'pointer',
+                          }
+                        }, cb);
+                      })
+                    )
+                  )
+                ),
+
+                // Reveal button
+                !revealed && React.createElement('button', {
+                  onClick: function() { setDecRevealed(function(prev) { var next = Object.assign({}, prev); next[evalKey] = true; return next; }); },
+                  style: { padding: '10px 24px', background: C.green, border: 'none', borderRadius: 4, color: '#fff', fontFamily: CI_MONO, fontSize: 11, fontWeight: 600, cursor: 'pointer' }
+                }, 'REVEAL ASSESSMENT'),
+
+                // Revealed result
+                revealed && React.createElement(DossierCard, { tab: 'ASSESSMENT RESULT', stamp: sc.isDeception === true ? 'DECEPTION' : sc.isDeception === false ? 'GENUINE' : 'AMBIGUOUS', style: { marginTop: 16 } },
+                  React.createElement('div', { style: { padding: '8px 10px', background: sc.isDeception === true ? C.redBg : sc.isDeception === false ? C.greenBg : C.amberBg, borderRadius: 4, marginBottom: 12 } },
+                    React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 14, fontWeight: 700, color: sc.isDeception === true ? C.red : sc.isDeception === false ? C.green : C.amber, marginBottom: 4 } },
+                      sc.isDeception === true ? 'THIS IS A DECEPTION OPERATION' : sc.isDeception === false ? 'THIS IS GENUINE INTELLIGENCE' : 'THIS CASE IS GENUINELY AMBIGUOUS'
+                    )
+                  ),
+                  React.createElement('p', { style: { fontSize: 12, color: C.tx, lineHeight: 1.7 } }, sc.explanation)
+                )
+              );
+            })()}
+          </div>
+        )}
+
+        {/* ═══════════════════════════════════════════════════════════ */}
+        {/* ── DAMAGE ASSESSMENT MODE ──────────────────────────────── */}
+        {/* ═══════════════════════════════════════════════════════════ */}
+        {viewMode === 'damage' && (function() {
+          var levelWeight = (DAMAGE_CLASSIFICATION_LEVELS.find(function(l) { return l.value === dmgLevel; }) || {}).weight || 2;
+          var rawScore = Math.min(100, Math.round(
+            (dmgYears * 2.2) +
+            (levelWeight * 8) +
+            (dmgSources * 1.5) +
+            (dmgPrograms * 2.5) +
+            (dmgMethods * 4)
+          ));
+
+          var intLoss = dmgSources > 0
+            ? dmgSources + ' human sources compromised (assume ' + Math.round(dmgSources * 0.4) + ' executed or imprisoned, ' + Math.round(dmgSources * 0.3) + ' doubled, remainder burned)'
+            : 'No direct source compromise identified';
+          var methodLoss = dmgMethods > 0
+            ? dmgMethods + ' technical collection methods exposed. Adversary will develop countermeasures within 6-18 months. Estimated ' + Math.round(dmgMethods * 15) + '% reduction in SIGINT/IMINT coverage of target.'
+            : 'No technical methods compromised';
+          var programLoss = dmgPrograms > 0
+            ? dmgPrograms + ' classified programs revealed. ' + Math.round(dmgPrograms * 0.6) + ' will require restructuring. ' + Math.round(dmgPrograms * 0.3) + ' may need termination. Estimated ' + (dmgPrograms * 3) + '-' + (dmgPrograms * 8) + ' months to restore capability.'
+            : 'No program compromise';
+
+          var opImpact = dmgSources > 10
+            ? 'Catastrophic: entire networks likely rolled up. All operations in target country suspended pending damage assessment. Expect 12-24 month stand-down.'
+            : dmgSources > 5
+            ? 'Severe: multiple networks compromised. Operations degraded for 6-12 months. Emergency contact protocols activated for remaining assets.'
+            : dmgSources > 0
+            ? 'Significant: individual sources lost. Targeted operations affected. Remaining network integrity uncertain pending assessment.'
+            : 'Limited operational impact from direct source loss. Focus on methods and programs.';
+
+          var strategicImpact = levelWeight >= 3
+            ? 'Adversary gains detailed understanding of collection priorities, analytical conclusions, and policy vulnerabilities. Strategic surprise capability is degraded. National-level reassessment required.'
+            : 'Adversary gains tactical intelligence advantage. Strategic posture impact is manageable with remediation.';
+
+          var remCost = '$' + Math.round((dmgSources * 2 + dmgPrograms * 15 + dmgMethods * 25 + dmgYears * 1.5) * (levelWeight * 0.8)) + 'M estimated';
+
+          // Find precedent comparison
+          var closestAbove = null;
+          var closestBelow = null;
+          DAMAGE_PRECEDENTS.forEach(function(p) {
+            if (p.score >= rawScore && (!closestAbove || p.score < closestAbove.score)) closestAbove = p;
+            if (p.score <= rawScore && (!closestBelow || p.score > closestBelow.score)) closestBelow = p;
+          });
+
+          return React.createElement('div', null,
+            React.createElement('h2', { style: { fontFamily: CI_SERIF, fontSize: 22, fontWeight: 600, color: C.tx, marginBottom: 4 } }, 'Damage Assessment Calculator'),
+            React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 11, color: C.redDm, marginBottom: 6, letterSpacing: '.06em' } }, 'CI DAMAGE ASSESSMENT PROTOCOL // STRUCTURED ANALYSIS'),
+            React.createElement('p', { style: { fontSize: 13, color: C.tx2, lineHeight: 1.6, maxWidth: '65ch', marginBottom: 20 } },
+              'When a penetration agent is identified, the CI team must assess the damage before remediation can begin. Adjust the parameters below to model a compromise scenario and generate a structured damage assessment with precedent comparison.'
+            ),
+
+            // Input controls
+            React.createElement(DossierCard, { tab: 'COMPROMISE PARAMETERS', stamp: 'INPUT', style: { marginBottom: 16 } },
+              React.createElement('div', { style: { display: 'grid', gap: 14 } },
+                // Years of access
+                React.createElement('div', null,
+                  React.createElement('div', { style: { display: 'flex', justifyContent: 'space-between', marginBottom: 4 } },
+                    React.createElement('span', { style: { fontFamily: CI_MONO, fontSize: 11, color: C.tx3 } }, 'YEARS OF ACCESS'),
+                    React.createElement('span', { style: { fontFamily: CI_MONO, fontSize: 12, color: C.amber, fontWeight: 700 } }, dmgYears + ' years')
+                  ),
+                  React.createElement('input', { type: 'range', min: 1, max: 30, value: dmgYears, onChange: function(e) { setDmgYears(Number(e.target.value)); }, style: { width: '100%', accentColor: C.amber } })
+                ),
+                // Classification level
+                React.createElement('div', null,
+                  React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 11, color: C.tx3, marginBottom: 4 } }, 'CLASSIFICATION LEVEL ACCESSED'),
+                  React.createElement('div', { style: { display: 'flex', gap: 4 } },
+                    DAMAGE_CLASSIFICATION_LEVELS.map(function(lv) {
+                      var isActive = dmgLevel === lv.value;
+                      return React.createElement('button', {
+                        key: lv.value,
+                        onClick: function() { setDmgLevel(lv.value); },
+                        style: {
+                          padding: '6px 12px', fontFamily: CI_MONO, fontSize: 10, fontWeight: 700,
+                          background: isActive ? C.red : 'transparent',
+                          border: '1px solid ' + (isActive ? C.red : C.line),
+                          color: isActive ? '#fff' : C.tx3, borderRadius: 2, cursor: 'pointer',
+                        }
+                      }, lv.label);
+                    })
+                  )
+                ),
+                // Sources compromised
+                React.createElement('div', null,
+                  React.createElement('div', { style: { display: 'flex', justifyContent: 'space-between', marginBottom: 4 } },
+                    React.createElement('span', { style: { fontFamily: CI_MONO, fontSize: 11, color: C.tx3 } }, 'SOURCES COMPROMISED'),
+                    React.createElement('span', { style: { fontFamily: CI_MONO, fontSize: 12, color: C.red, fontWeight: 700 } }, dmgSources)
+                  ),
+                  React.createElement('input', { type: 'range', min: 0, max: 50, value: dmgSources, onChange: function(e) { setDmgSources(Number(e.target.value)); }, style: { width: '100%', accentColor: C.red } })
+                ),
+                // Programs revealed
+                React.createElement('div', null,
+                  React.createElement('div', { style: { display: 'flex', justifyContent: 'space-between', marginBottom: 4 } },
+                    React.createElement('span', { style: { fontFamily: CI_MONO, fontSize: 11, color: C.tx3 } }, 'PROGRAMS REVEALED'),
+                    React.createElement('span', { style: { fontFamily: CI_MONO, fontSize: 12, color: C.amber, fontWeight: 700 } }, dmgPrograms)
+                  ),
+                  React.createElement('input', { type: 'range', min: 0, max: 20, value: dmgPrograms, onChange: function(e) { setDmgPrograms(Number(e.target.value)); }, style: { width: '100%', accentColor: C.amber } })
+                ),
+                // Technical methods exposed
+                React.createElement('div', null,
+                  React.createElement('div', { style: { display: 'flex', justifyContent: 'space-between', marginBottom: 4 } },
+                    React.createElement('span', { style: { fontFamily: CI_MONO, fontSize: 11, color: C.tx3 } }, 'TECHNICAL COLLECTION METHODS EXPOSED'),
+                    React.createElement('span', { style: { fontFamily: CI_MONO, fontSize: 12, color: C.blue, fontWeight: 700 } }, dmgMethods)
+                  ),
+                  React.createElement('input', { type: 'range', min: 0, max: 10, value: dmgMethods, onChange: function(e) { setDmgMethods(Number(e.target.value)); }, style: { width: '100%', accentColor: C.blue } })
+                )
+              )
+            ),
+
+            // Damage score
+            React.createElement('div', { style: { textAlign: 'center', marginBottom: 16, padding: 16, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 4 } },
+              React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 11, color: C.tx3, marginBottom: 4 } }, 'COMPOSITE DAMAGE SCORE'),
+              React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 48, fontWeight: 900, color: rawScore >= 80 ? C.red : rawScore >= 50 ? C.amber : C.green } }, rawScore + '/100'),
+              React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 12, color: rawScore >= 80 ? C.red : rawScore >= 50 ? C.amber : C.green, fontWeight: 700 } },
+                rawScore >= 80 ? 'CATASTROPHIC' : rawScore >= 60 ? 'SEVERE' : rawScore >= 40 ? 'SIGNIFICANT' : rawScore >= 20 ? 'MODERATE' : 'LIMITED'
+              )
+            ),
+
+            // Structured assessment output
+            React.createElement('div', { style: { display: 'grid', gap: 8, marginBottom: 16 } },
+              [
+                { label: 'INTELLIGENCE LOSS', content: intLoss + ' ' + methodLoss + ' ' + programLoss, color: C.red },
+                { label: 'OPERATIONAL IMPACT', content: opImpact, color: C.amber },
+                { label: 'STRATEGIC IMPACT', content: strategicImpact, color: C.blue },
+                { label: 'REMEDIATION COST ESTIMATE', content: remCost + '. Includes source relocation, program restructuring, method replacement, personnel re-vetting, and CI investigation costs. Does not include opportunity cost of lost intelligence.', color: C.green },
+              ].map(function(section) {
+                return React.createElement('div', { key: section.label, style: { padding: 12, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 4, borderLeft: '3px solid ' + section.color } },
+                  React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 11, color: section.color, marginBottom: 6 } }, section.label),
+                  React.createElement('p', { style: { fontSize: 12, color: C.tx, lineHeight: 1.6 } }, section.content)
+                );
+              })
+            ),
+
+            // Precedent comparison bar
+            React.createElement(DossierCard, { tab: 'PRECEDENT COMPARISON', stamp: 'HISTORICAL' },
+              React.createElement('div', { style: { position: 'relative', height: 40, background: 'linear-gradient(to right, ' + C.green + '20, ' + C.amber + '20, ' + C.red + '20)', borderRadius: 4, marginBottom: 12 } },
+                // Precedent markers
+                DAMAGE_PRECEDENTS.map(function(p) {
+                  return React.createElement('div', { key: p.name, style: { position: 'absolute', left: p.score + '%', top: 0, transform: 'translateX(-50%)', textAlign: 'center' } },
+                    React.createElement('div', { style: { width: 2, height: 24, background: C.tx3, margin: '0 auto' } }),
+                    React.createElement('span', { style: { fontFamily: CI_MONO, fontSize: 9, color: C.tx3, whiteSpace: 'nowrap' } }, p.name)
+                  );
+                }),
+                // Current score marker
+                React.createElement('div', { style: { position: 'absolute', left: rawScore + '%', top: -4, transform: 'translateX(-50%)', textAlign: 'center', zIndex: 2 } },
+                  React.createElement('div', { style: { width: 12, height: 12, background: C.red, borderRadius: '50%', border: '2px solid #fff', margin: '0 auto' } }),
+                  React.createElement('span', { style: { fontFamily: CI_MONO, fontSize: 10, color: C.red, fontWeight: 700, whiteSpace: 'nowrap' } }, 'YOUR SCENARIO')
+                )
+              ),
+              closestBelow && closestAbove && React.createElement('p', { style: { fontSize: 12, color: C.tx2, lineHeight: 1.6 } },
+                'This scenario falls between ' + closestBelow.name + ' (score ' + closestBelow.score + ') and ' + closestAbove.name + ' (score ' + closestAbove.score + ') in terms of assessed damage to national security.'
+              ),
+              closestBelow && !closestAbove && React.createElement('p', { style: { fontSize: 12, color: C.red, lineHeight: 1.6, fontWeight: 600 } },
+                'This scenario exceeds all historical precedents in the database. Damage assessment: catastrophic and unprecedented.'
+              )
+            )
+          );
+        })()}
+
+        {/* ═══════════════════════════════════════════════════════════ */}
+        {/* ── MOSCOW RULES MODE ──────────────────────────────────── */}
+        {/* ═══════════════════════════════════════════════════════════ */}
+        {viewMode === 'moscow' && (
+          <div>
+            <h2 style={{ fontFamily: CI_SERIF, fontSize: 22, fontWeight: 600, color: C.tx, marginBottom: 4 }}>
+              The Moscow Rules
+            </h2>
+            <p style={{ fontFamily: CI_MONO, fontSize: 11, color: C.amberDm, marginBottom: 6, letterSpacing: '.06em' }}>CIA OPERATIONAL DOCTRINE // DENIED AREA TRADECRAFT</p>
+            <p style={{ fontSize: 13, color: C.tx2, lineHeight: 1.6, maxWidth: '65ch', marginBottom: 16 }}>
+              The ten rules that governed CIA operations inside the Soviet Union. Each rule exists because someone died when it was violated. Study the rules, then test your ability to apply them in operational scenarios.
+            </p>
+
+            {/* Toggle: Rules reference vs Scenarios */}
+            <div style={{ display: 'flex', gap: 4, marginBottom: 20 }}>
+              <button onClick={function() { setMrShowRules(true); }} style={{
+                padding: '8px 18px', fontFamily: CI_MONO, fontSize: 10, fontWeight: 700,
+                background: mrShowRules ? C.amberBg : 'transparent',
+                border: '1px solid ' + (mrShowRules ? C.amber : C.line),
+                color: mrShowRules ? C.amber : C.tx3, borderRadius: 2, cursor: 'pointer',
+                letterSpacing: '.06em',
+              }}>RULES REFERENCE</button>
+              <button onClick={function() { setMrShowRules(false); }} style={{
+                padding: '8px 18px', fontFamily: CI_MONO, fontSize: 10, fontWeight: 700,
+                background: !mrShowRules ? C.amberBg : 'transparent',
+                border: '1px solid ' + (!mrShowRules ? C.amber : C.line),
+                color: !mrShowRules ? C.amber : C.tx3, borderRadius: 2, cursor: 'pointer',
+                letterSpacing: '.06em',
+              }}>OPERATIONAL SCENARIOS</button>
+            </div>
+
+            {/* Rules reference */}
+            {mrShowRules && React.createElement('div', { style: { display: 'grid', gap: 8 } },
+              MOSCOW_RULES.map(function(rule) {
+                return React.createElement(DossierCard, { key: rule.num, tab: 'RULE ' + rule.num, stamp: 'DOCTRINE', padding: 12 },
+                  React.createElement('p', { style: { fontFamily: CI_SERIF, fontSize: 16, fontWeight: 700, color: C.cream, marginBottom: 8 } }, rule.rule),
+                  React.createElement('div', { style: { marginBottom: 8 } },
+                    React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 10, color: C.amber, marginBottom: 4 } }, 'WHY THIS RULE EXISTS'),
+                    React.createElement('p', { style: { fontSize: 11, color: C.tx2, lineHeight: 1.6 } }, rule.why)
+                  ),
+                  React.createElement('div', { style: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 } },
+                    React.createElement('div', { style: { padding: 8, background: C.redBg, borderRadius: 4, borderLeft: '2px solid ' + C.red } },
+                      React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 10, color: C.red, marginBottom: 4 } }, 'VIOLATION'),
+                      React.createElement('p', { style: { fontSize: 10, color: C.tx2, lineHeight: 1.5 } }, rule.violation)
+                    ),
+                    React.createElement('div', { style: { padding: 8, background: C.greenBg, borderRadius: 4, borderLeft: '2px solid ' + C.green } },
+                      React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 10, color: C.green, marginBottom: 4 } }, 'SAVED BY THE RULE'),
+                      React.createElement('p', { style: { fontSize: 10, color: C.tx2, lineHeight: 1.5 } }, rule.saved)
+                    )
+                  )
+                );
+              })
+            )}
+
+            {/* Operational scenarios */}
+            {!mrShowRules && React.createElement('div', null,
+              // Scenario navigation
+              React.createElement('div', { style: { display: 'flex', gap: 4, marginBottom: 16 } },
+                MOSCOW_SCENARIOS.map(function(sc, idx) {
+                  var answered = mrAnswers[sc.id] !== undefined;
+                  var correct = mrRevealed[sc.id] && mrAnswers[sc.id] === sc.correctRule;
+                  return React.createElement('button', {
+                    key: sc.id,
+                    onClick: function() { setMrScenarioIdx(idx); },
+                    style: {
+                      padding: '6px 14px', fontFamily: CI_MONO, fontSize: 10, fontWeight: 700,
+                      background: mrScenarioIdx === idx ? C.amberBg : 'transparent',
+                      border: '1px solid ' + (mrScenarioIdx === idx ? C.amber : answered ? (correct ? C.green : C.red) : C.line),
+                      color: mrScenarioIdx === idx ? C.amber : answered ? (correct ? C.green : C.red) : C.tx3,
+                      borderRadius: 2, cursor: 'pointer',
+                    }
+                  }, 'SCENARIO ' + (idx + 1) + (answered ? (correct ? ' [CORRECT]' : ' [INCORRECT]') : ''));
+                })
+              ),
+
+              // Active scenario
+              (function() {
+                var sc = MOSCOW_SCENARIOS[mrScenarioIdx];
+                var answer = mrAnswers[sc.id];
+                var revealed = mrRevealed[sc.id];
+                var correct = answer === sc.correctRule;
+
+                return React.createElement('div', null,
+                  React.createElement(DossierCard, { tab: 'OPERATIONAL SCENARIO ' + (mrScenarioIdx + 1), stamp: 'EXERCISE', style: { marginBottom: 16 } },
+                    React.createElement('p', { style: { fontSize: 13, color: C.tx, lineHeight: 1.7 } }, sc.situation)
+                  ),
+
+                  !revealed && React.createElement('div', null,
+                    React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 11, color: C.tx3, marginBottom: 8 } }, 'WHICH MOSCOW RULE APPLIES?'),
+                    React.createElement('div', { style: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 4 } },
+                      MOSCOW_RULES.map(function(rule) {
+                        var isSelected = answer === rule.num;
+                        return React.createElement('button', {
+                          key: rule.num,
+                          onClick: function() { setMrAnswers(function(prev) { var next = Object.assign({}, prev); next[sc.id] = rule.num; return next; }); },
+                          style: {
+                            textAlign: 'left', padding: '8px 10px',
+                            background: isSelected ? C.amberBg : C.card,
+                            border: '1px solid ' + (isSelected ? C.amber : C.cardBd),
+                            borderRadius: 2, cursor: 'pointer', color: C.tx,
+                          }
+                        },
+                          React.createElement('span', { style: { fontFamily: CI_MONO, fontSize: 11, color: isSelected ? C.amber : C.tx3, fontWeight: 700 } }, 'Rule ' + rule.num + ': '),
+                          React.createElement('span', { style: { fontSize: 12 } }, rule.rule)
+                        );
+                      })
+                    ),
+                    answer !== undefined && React.createElement('button', {
+                      onClick: function() { setMrRevealed(function(prev) { var next = Object.assign({}, prev); next[sc.id] = true; return next; }); },
+                      style: { marginTop: 12, padding: '10px 24px', background: C.amber, border: 'none', borderRadius: 4, color: '#000', fontFamily: CI_MONO, fontSize: 11, fontWeight: 600, cursor: 'pointer' }
+                    }, 'SUBMIT ANSWER')
+                  ),
+
+                  revealed && React.createElement('div', { style: { padding: 16, background: correct ? C.greenBg : C.redBg, border: '1px solid ' + (correct ? C.green : C.red) + '40', borderRadius: 4 } },
+                    React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 14, fontWeight: 700, color: correct ? C.green : C.red, marginBottom: 8 } },
+                      correct ? 'CORRECT' : 'INCORRECT -- The correct answer is Rule ' + sc.correctRule + ': ' + MOSCOW_RULES.find(function(r) { return r.num === sc.correctRule; }).rule
+                    ),
+                    React.createElement('p', { style: { fontSize: 12, color: C.tx, lineHeight: 1.7 } }, sc.explanation)
+                  )
+                );
+              })(),
+
+              // Score summary
+              (function() {
+                var totalAnswered = Object.keys(mrRevealed).length;
+                var totalCorrect = MOSCOW_SCENARIOS.filter(function(sc) {
+                  return mrRevealed[sc.id] && mrAnswers[sc.id] === sc.correctRule;
+                }).length;
+                if (totalAnswered === 0) return null;
+                return React.createElement('div', { style: { marginTop: 20, padding: 12, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 4, textAlign: 'center' } },
+                  React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 11, color: C.tx3, marginBottom: 4 } }, 'OPERATIONAL READINESS SCORE'),
+                  React.createElement('p', { style: { fontFamily: CI_MONO, fontSize: 28, fontWeight: 900, color: totalCorrect === totalAnswered ? C.green : totalCorrect >= Math.ceil(totalAnswered / 2) ? C.amber : C.red } },
+                    totalCorrect + '/' + totalAnswered
+                  ),
+                  React.createElement('p', { style: { fontSize: 11, color: C.tx2 } },
+                    totalCorrect === 5 ? 'Perfect score. You would survive Moscow.' :
+                    totalCorrect >= 4 ? 'Strong operational instinct. Minor gaps in doctrine application.' :
+                    totalCorrect >= 3 ? 'Adequate. Additional tradecraft training recommended before denied-area assignment.' :
+                    'Significant gaps in operational doctrine. Review all ten rules before field deployment.'
+                  )
+                );
+              })()
+            )}
+          </div>
+        )}
+
+        {/* ═══════════════════════════════════════════════════════════ */}
         {/* ── CASE MODE (original content) ─────────────────────────── */}
         {/* ═══════════════════════════════════════════════════════════ */}
         {viewMode === 'case' && (

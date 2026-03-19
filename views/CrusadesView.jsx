@@ -730,6 +730,30 @@ function CrusadesView({ setView }) {
   const [csYear, setCsYear] = useState(1144);
   const [csHover, setCsHover] = useState(null);
 
+  // Supply mode state
+  const [supplyExpanded, setSupplyExpanded] = useState(null);
+  const [supplyChoices, setSupplyChoices] = useState({ armySize: null, supplyMethod: null, route: null, season: null });
+  var supplyResult = useMemo(function() {
+    var c = supplyChoices;
+    if (!c.armySize || !c.supplyMethod || !c.route || !c.season) return null;
+    for (var i = 0; i < SUPPLY_MATCH_RULES.length; i++) {
+      if (SUPPLY_MATCH_RULES[i].match(c)) {
+        var camp = SUPPLY_CAMPAIGNS.find(function(x) { return x.id === SUPPLY_MATCH_RULES[i].campaignId; });
+        return { campaign: camp, note: SUPPLY_MATCH_RULES[i].note };
+      }
+    }
+    var defCamp = SUPPLY_CAMPAIGNS.find(function(x) { return x.id === SUPPLY_DEFAULT_MATCH.campaignId; });
+    return { campaign: defCamp, note: SUPPLY_DEFAULT_MATCH.note };
+  }, [supplyChoices]);
+
+  // Balance mode state
+  const [balanceDimension, setBalanceDimension] = useState(null);
+
+  // Coexistence mode state
+  const [coexAspect, setCoexAspect] = useState(null);
+  const [coexScenario, setCoexScenario] = useState(0);
+  const [coexVotes, setCoexVotes] = useState({});
+
   const revealedCount = useMemo(() => Object.keys(revealedMap).length, [revealedMap]);
 
   // ── Scholarly tooltip renderer & icons ─────────────────────────
@@ -951,6 +975,9 @@ function CrusadesView({ setView }) {
       { key: 'perspectives', label: 'Perspectives', icon: '\u2696' },
       { key: 'legacy',       label: 'Legacy',       icon: '\uD83C\uDFDB' },
       { key: 'quiz',         label: "Commander\u2019s Choice", icon: '\u2726' },
+      { key: 'supply',       label: 'Logistics',    icon: '\u2042' },
+      { key: 'balance',      label: 'Military Balance', icon: '\u2720' },
+      { key: 'coexistence',  label: 'Coexistence',  icon: '\u2668' },
     ];
     return (
       <div style={{
@@ -1701,6 +1728,410 @@ function CrusadesView({ setView }) {
     );
   }, [quizAnswers, quizRevealed]);
 
+  // ── Supply / Logistics Renderer ──────────────────────────────────
+  var renderSupply = useCallback(function() {
+    var choiceCount = [supplyChoices.armySize, supplyChoices.supplyMethod, supplyChoices.route, supplyChoices.season].filter(Boolean).length;
+    return React.createElement('div', null,
+      // Header
+      React.createElement('div', { style: { fontFamily: Mono, fontSize: 12, letterSpacing: '.06em', color: C.accentDm, marginBottom: 6 } },
+        'CRUSADER LOGISTICS FAILURE ANALYZER'
+      ),
+      React.createElement(ManuscriptDivider, { color: C.accentDm }),
+      React.createElement('div', { style: { fontFamily: Serif, fontSize: 14, color: C.tx2, lineHeight: 1.75, marginBottom: 20, maxWidth: 720 } },
+        React.createElement(DropCap, null, 'Most Crusades failed not because of combat but because of logistics. Armies that won every battle still lost campaigns when they could not feed themselves, pay their debts, or survive the terrain. This analyzer examines five campaigns through the lens of supply, transport, finance, and environmental intelligence.')
+      ),
+
+      // Campaign cards
+      SUPPLY_CAMPAIGNS.map(function(sc) {
+        var isOpen = supplyExpanded === sc.id;
+        return React.createElement('div', { key: sc.id, style: {
+          marginBottom: 12, background: C.card, border: '1px solid ' + (isOpen ? C.accentDm : C.cardBd),
+          borderRadius: 6, overflow: 'hidden', transition: 'border-color .15s',
+        }},
+          // Header button
+          React.createElement('button', {
+            onClick: function() { setSupplyExpanded(isOpen ? null : sc.id); },
+            style: {
+              width: '100%', display: 'flex', alignItems: 'center', gap: 14,
+              padding: '16px 20px', cursor: 'pointer', background: 'none', border: 'none', textAlign: 'left',
+            }
+          },
+            React.createElement('div', { style: {
+              width: 10, height: 10, borderRadius: '50%', background: sc.verdictColor, flexShrink: 0, opacity: 0.7,
+            }}),
+            React.createElement('div', { style: { flex: 1 } },
+              React.createElement('div', { style: { fontFamily: Serif, fontSize: 16, fontWeight: 600, color: C.tx } }, sc.name),
+              React.createElement('div', { style: { fontFamily: Mono, fontSize: 11, color: sc.verdictColor, letterSpacing: '.04em' } }, sc.verdict)
+            ),
+            React.createElement('span', { style: {
+              fontFamily: Mono, fontSize: 14, color: C.tx3, transition: 'transform .15s',
+              transform: isOpen ? 'rotate(90deg)' : 'rotate(0)',
+            }}, '\u25B6')
+          ),
+
+          // Expanded detail
+          isOpen && React.createElement('div', { style: { borderTop: '1px solid ' + C.line, padding: '16px 20px' } },
+            // Stats grid
+            React.createElement('div', { style: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 } },
+              [
+                { label: 'DISTANCE', val: sc.distance },
+                { label: 'ARMY SIZE', val: sc.armySize },
+                { label: 'SUPPLY METHOD', val: sc.supplyMethod },
+                { label: 'ROUTE', val: sc.route },
+              ].map(function(s) {
+                return React.createElement('div', { key: s.label, style: { padding: '8px 12px', background: C.accentBg, borderRadius: 4, border: '1px solid ' + C.line } },
+                  React.createElement('div', { style: { fontFamily: Mono, fontSize: 10, letterSpacing: '.06em', color: C.accentDm, marginBottom: 4 } }, s.label),
+                  React.createElement('div', { style: { fontFamily: Sans, fontSize: 12, color: C.tx, lineHeight: 1.5 } }, s.val)
+                );
+              })
+            ),
+            React.createElement('div', { style: { fontFamily: Mono, fontSize: 10, letterSpacing: '.06em', color: C.accentDm, marginBottom: 2 } }, 'CAMPAIGN SEASON'),
+            React.createElement('div', { style: { fontFamily: Sans, fontSize: 12, color: C.tx2, lineHeight: 1.5, marginBottom: 16 } }, sc.season),
+
+            // Narrative sections
+            [
+              { label: 'THE LOGISTICAL CHALLENGE', text: sc.challenge, color: C.red },
+              { label: 'THE COMMANDER\'S PLAN', text: sc.commanderPlan, color: C.blue },
+              { label: 'WHAT ACTUALLY HAPPENED', text: sc.whatHappened, color: C.gold },
+              { label: 'STRUCTURAL REASON FOR OUTCOME', text: sc.structuralReason, color: C.green },
+            ].map(function(sec) {
+              return React.createElement('div', { key: sec.label, style: { marginBottom: 14 } },
+                React.createElement('div', { style: { fontFamily: Mono, fontSize: 10, letterSpacing: '.06em', color: sec.color, marginBottom: 4 } }, sec.label),
+                React.createElement('div', { style: { fontFamily: Serif, fontSize: 13, color: C.tx, lineHeight: 1.75, paddingLeft: 12, borderLeft: '2px solid ' + sec.color + '44' } }, sec.text)
+              );
+            })
+          )
+        );
+      }),
+
+      // Interactive configurator
+      React.createElement('div', { style: {
+        marginTop: 24, padding: 20, background: C.card, border: '1px solid ' + C.accent + '33',
+        borderRadius: 8,
+      }},
+        React.createElement('div', { style: { fontFamily: Mono, fontSize: 12, letterSpacing: '.06em', color: C.accent, marginBottom: 4 } },
+          'CAMPAIGN CONFIGURATOR'
+        ),
+        React.createElement('div', { style: { fontFamily: Serif, fontSize: 13, color: C.tx2, lineHeight: 1.6, marginBottom: 16 } },
+          'Adjust four variables to see which historical Crusade your configuration most closely resembles \u2014 and therefore what your likely outcome would be.'
+        ),
+
+        // Progress
+        React.createElement('div', { style: { display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 } },
+          React.createElement('span', { style: { fontFamily: Mono, fontSize: 11, color: C.tx3 } }, 'CONFIGURED'),
+          React.createElement('div', { style: { flex: 1, maxWidth: 140, height: 4, background: C.line, borderRadius: 2 } },
+            React.createElement('div', { style: { width: (choiceCount / 4 * 100) + '%', height: '100%', borderRadius: 2, background: choiceCount === 4 ? C.green : C.accent, transition: 'width .3s' } })
+          ),
+          React.createElement('span', { style: { fontFamily: Mono, fontSize: 11, color: choiceCount === 4 ? C.green : C.accent } }, choiceCount + '/4')
+        ),
+
+        // Variable selectors
+        SUPPLY_VARIABLES.map(function(sv) {
+          return React.createElement('div', { key: sv.id, style: { marginBottom: 14 } },
+            React.createElement('div', { style: { fontFamily: Mono, fontSize: 11, letterSpacing: '.06em', color: C.accentDm, marginBottom: 6 } }, sv.label.toUpperCase()),
+            React.createElement('div', { style: { display: 'flex', gap: 6, flexWrap: 'wrap' } },
+              sv.options.map(function(opt) {
+                var sel = supplyChoices[sv.id] === opt.id;
+                return React.createElement('button', {
+                  key: opt.id,
+                  onClick: function() {
+                    setSupplyChoices(function(prev) {
+                      var next = {};
+                      for (var k in prev) next[k] = prev[k];
+                      next[sv.id] = opt.id;
+                      return next;
+                    });
+                  },
+                  style: {
+                    padding: '8px 14px', borderRadius: 4, cursor: 'pointer',
+                    border: '1px solid ' + (sel ? C.accent : C.line),
+                    background: sel ? C.accentBg : 'transparent',
+                    color: sel ? C.accent : C.tx3,
+                    fontFamily: Sans, fontSize: 12, textAlign: 'left',
+                    flex: '1 1 auto', minWidth: 140,
+                  }
+                },
+                  React.createElement('div', { style: { fontWeight: 600, marginBottom: 2 } }, opt.label),
+                  React.createElement('div', { style: { fontSize: 11, opacity: 0.7 } }, opt.desc)
+                );
+              })
+            )
+          );
+        }),
+
+        // Result
+        supplyResult && React.createElement('div', { style: {
+          marginTop: 16, padding: 16, background: supplyResult.campaign.verdictColor + '11',
+          border: '1px solid ' + supplyResult.campaign.verdictColor + '33', borderRadius: 6,
+        }},
+          React.createElement('div', { style: { fontFamily: Mono, fontSize: 11, letterSpacing: '.06em', color: supplyResult.campaign.verdictColor, marginBottom: 6 } },
+            'YOUR CONFIGURATION RESEMBLES: ' + supplyResult.campaign.name.toUpperCase()
+          ),
+          React.createElement('div', { style: { fontFamily: Mono, fontSize: 12, color: supplyResult.campaign.verdictColor, marginBottom: 10 } },
+            'PREDICTED OUTCOME: ' + supplyResult.campaign.verdict
+          ),
+          React.createElement('div', { style: { fontFamily: Serif, fontSize: 13, color: C.tx, lineHeight: 1.75 } },
+            supplyResult.note
+          )
+        )
+      )
+    );
+  }, [supplyExpanded, supplyChoices, supplyResult]);
+
+  // ── Military Balance Renderer ──────────────────────────────────────
+  var renderBalance = useCallback(function() {
+    // Radar chart dimensions
+    var cx = 150, cy = 150, r = 120;
+    var dims = MILITARY_DIMENSIONS;
+    var n = dims.length;
+
+    function polarX(idx, val) { var angle = (Math.PI * 2 * idx / n) - Math.PI / 2; return cx + r * (val / 100) * Math.cos(angle); }
+    function polarY(idx, val) { var angle = (Math.PI * 2 * idx / n) - Math.PI / 2; return cy + r * (val / 100) * Math.sin(angle); }
+
+    var crusaderPoints = dims.map(function(d, i) { return polarX(i, d.crusaderScore) + ',' + polarY(i, d.crusaderScore); }).join(' ');
+    var muslimPoints = dims.map(function(d, i) { return polarX(i, d.muslimScore) + ',' + polarY(i, d.muslimScore); }).join(' ');
+
+    var selectedDim = balanceDimension ? dims.find(function(d) { return d.id === balanceDimension; }) : null;
+
+    return React.createElement('div', null,
+      React.createElement('div', { style: { fontFamily: Mono, fontSize: 12, letterSpacing: '.06em', color: C.accentDm, marginBottom: 6 } },
+        'MILITARY BALANCE COMPARATOR'
+      ),
+      React.createElement(ManuscriptDivider, { color: C.accentDm }),
+      React.createElement('div', { style: { fontFamily: Serif, fontSize: 14, color: C.tx2, lineHeight: 1.75, marginBottom: 20, maxWidth: 720 } },
+        React.createElement(DropCap, null, 'The military balance between Crusader and Muslim forces was not a simple equation. Each side held decisive advantages in specific domains. This comparator maps those advantages across six dimensions and reveals why the Crusader states survived for 200 years \u2014 and why they ultimately fell.')
+      ),
+
+      // Radar chart + legend
+      React.createElement('div', { style: { display: 'flex', gap: 24, flexWrap: 'wrap', marginBottom: 24 } },
+        // SVG radar
+        React.createElement('div', { style: { background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 8, padding: 16 } },
+          React.createElement('svg', { viewBox: '0 0 300 300', style: { width: 300, display: 'block' } },
+            // Grid rings
+            [20, 40, 60, 80, 100].map(function(pct) {
+              var pts = [];
+              for (var i = 0; i < n; i++) pts.push(polarX(i, pct) + ',' + polarY(i, pct));
+              return React.createElement('polygon', { key: pct, points: pts.join(' '), fill: 'none', stroke: C.line, strokeWidth: 0.5 });
+            }),
+            // Axis lines
+            dims.map(function(d, i) {
+              return React.createElement('line', { key: d.id, x1: cx, y1: cy, x2: polarX(i, 100), y2: polarY(i, 100), stroke: C.line, strokeWidth: 0.5 });
+            }),
+            // Crusader polygon
+            React.createElement('polygon', { points: crusaderPoints, fill: C.cross + '22', stroke: C.cross, strokeWidth: 1.5 }),
+            // Muslim polygon
+            React.createElement('polygon', { points: muslimPoints, fill: C.crescent + '22', stroke: C.crescent, strokeWidth: 1.5 }),
+            // Labels + clickable dots
+            dims.map(function(d, i) {
+              var lx = polarX(i, 115);
+              var ly = polarY(i, 115);
+              var isActive = balanceDimension === d.id;
+              return React.createElement('g', { key: d.id, style: { cursor: 'pointer' }, onClick: function() { setBalanceDimension(isActive ? null : d.id); } },
+                React.createElement('circle', { cx: polarX(i, d.crusaderScore), cy: polarY(i, d.crusaderScore), r: isActive ? 5 : 3, fill: C.cross }),
+                React.createElement('circle', { cx: polarX(i, d.muslimScore), cy: polarY(i, d.muslimScore), r: isActive ? 5 : 3, fill: C.crescent }),
+                React.createElement('text', {
+                  x: lx, y: ly, textAnchor: 'middle', dominantBaseline: 'middle',
+                  fill: isActive ? C.accent : C.tx3, fontSize: 8, fontFamily: Mono,
+                  fontWeight: isActive ? 700 : 400,
+                }, d.label)
+              );
+            })
+          )
+        ),
+
+        // Legend
+        React.createElement('div', { style: { flex: 1, minWidth: 220 } },
+          React.createElement('div', { style: { fontFamily: Mono, fontSize: 11, letterSpacing: '.06em', color: C.tx3, marginBottom: 10 } }, 'LEGEND'),
+          React.createElement('div', { style: { display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 } },
+            React.createElement('div', { style: { width: 14, height: 14, background: C.cross + '44', border: '2px solid ' + C.cross, borderRadius: 2 } }),
+            React.createElement('span', { style: { fontFamily: Mono, fontSize: 12, color: C.cross } }, 'Crusader Forces')
+          ),
+          React.createElement('div', { style: { display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 } },
+            React.createElement('div', { style: { width: 14, height: 14, background: C.crescent + '44', border: '2px solid ' + C.crescent, borderRadius: 2 } }),
+            React.createElement('span', { style: { fontFamily: Mono, fontSize: 12, color: C.crescent } }, 'Muslim Forces')
+          ),
+          React.createElement('div', { style: { fontFamily: Sans, fontSize: 12, color: C.tx3, lineHeight: 1.6, marginBottom: 12 } },
+            'Click any dimension on the radar chart to see detailed analysis with battle examples.'
+          ),
+          // Dimension list
+          dims.map(function(d) {
+            var isActive = balanceDimension === d.id;
+            return React.createElement('button', {
+              key: d.id,
+              onClick: function() { setBalanceDimension(isActive ? null : d.id); },
+              style: {
+                display: 'flex', alignItems: 'center', gap: 8, width: '100%', textAlign: 'left',
+                padding: '6px 10px', marginBottom: 4, borderRadius: 4, cursor: 'pointer',
+                border: '1px solid ' + (isActive ? C.accent : 'transparent'),
+                background: isActive ? C.accentBg : 'transparent',
+              }
+            },
+              React.createElement('div', { style: { width: 6, height: 6, borderRadius: '50%', background: d.advantage.indexOf('Crusader') >= 0 ? C.cross : d.advantage.indexOf('Muslim') >= 0 ? C.crescent : C.gold } }),
+              React.createElement('span', { style: { fontFamily: Mono, fontSize: 11, color: isActive ? C.accent : C.tx2, flex: 1 } }, d.label),
+              React.createElement('span', { style: { fontFamily: Mono, fontSize: 10, color: C.tx3 } }, d.advantage)
+            );
+          })
+        )
+      ),
+
+      // Selected dimension detail
+      selectedDim && React.createElement('div', { style: {
+        background: C.card, border: '1px solid ' + C.accentDm, borderRadius: 8, padding: 20, marginBottom: 20,
+      }},
+        React.createElement('div', { style: { display: 'flex', alignItems: 'baseline', gap: 12, marginBottom: 12 } },
+          React.createElement('span', { style: { fontFamily: Serif, fontSize: 20, fontWeight: 600, color: C.tx } }, selectedDim.label),
+          React.createElement('span', { style: { fontFamily: Mono, fontSize: 11, color: selectedDim.advantage.indexOf('Crusader') >= 0 ? C.cross : selectedDim.advantage.indexOf('Muslim') >= 0 ? C.crescent : C.gold } },
+            'Advantage: ' + selectedDim.advantage
+          )
+        ),
+        // Score bars
+        React.createElement('div', { style: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 } },
+          React.createElement('div', null,
+            React.createElement('div', { style: { fontFamily: Mono, fontSize: 10, color: C.cross, marginBottom: 4 } }, '\u271A CRUSADER: ' + selectedDim.crusaderScore + '/100'),
+            React.createElement('div', { style: { height: 6, background: C.line, borderRadius: 3 } },
+              React.createElement('div', { style: { width: selectedDim.crusaderScore + '%', height: '100%', borderRadius: 3, background: C.cross, transition: 'width .3s' } })
+            )
+          ),
+          React.createElement('div', null,
+            React.createElement('div', { style: { fontFamily: Mono, fontSize: 10, color: C.crescent, marginBottom: 4 } }, '\u262A MUSLIM: ' + selectedDim.muslimScore + '/100'),
+            React.createElement('div', { style: { height: 6, background: C.line, borderRadius: 3 } },
+              React.createElement('div', { style: { width: selectedDim.muslimScore + '%', height: '100%', borderRadius: 3, background: C.crescent, transition: 'width .3s' } })
+            )
+          )
+        ),
+        React.createElement('div', { style: { fontFamily: Serif, fontSize: 13, color: C.tx, lineHeight: 1.75, marginBottom: 14 } }, selectedDim.analysis),
+        React.createElement('div', { style: { padding: '10px 14px', background: C.accentBg, borderRadius: 4, border: '1px solid ' + C.line } },
+          React.createElement('div', { style: { fontFamily: Mono, fontSize: 10, letterSpacing: '.06em', color: C.accentDm, marginBottom: 4 } }, 'BATTLE EXAMPLES'),
+          React.createElement('div', { style: { fontFamily: Sans, fontSize: 12, color: C.tx2, lineHeight: 1.6 } }, selectedDim.battles)
+        )
+      ),
+
+      // Key insight
+      React.createElement('div', { style: {
+        padding: '16px 20px', background: C.accentBg, border: '1px solid ' + C.accent + '22', borderRadius: 6,
+      }},
+        React.createElement('div', { style: { fontFamily: Mono, fontSize: 11, letterSpacing: '.06em', color: C.accent, marginBottom: 6 } }, 'KEY INSIGHT: WHY 200 YEARS?'),
+        React.createElement('div', { style: { fontFamily: Serif, fontSize: 13, color: C.tx, lineHeight: 1.75 } }, BALANCE_INSIGHT)
+      )
+    );
+  }, [balanceDimension]);
+
+  // ── Coexistence Renderer ───────────────────────────────────────────
+  var renderCoexistence = useCallback(function() {
+    var scenario = COEXISTENCE_SCENARIOS[coexScenario];
+    var totalVotes = Object.keys(coexVotes).length;
+
+    return React.createElement('div', null,
+      React.createElement('div', { style: { fontFamily: Mono, fontSize: 12, letterSpacing: '.06em', color: C.accentDm, marginBottom: 6 } },
+        'INTERFAITH COEXISTENCE ANALYZER'
+      ),
+      React.createElement(ManuscriptDivider, { color: C.accentDm }),
+      React.createElement('div', { style: { fontFamily: Serif, fontSize: 14, color: C.tx2, lineHeight: 1.75, marginBottom: 20, maxWidth: 720 } },
+        React.createElement(DropCap, null, 'The Crusader states were not merely theaters of war. For nearly 200 years, Christians, Muslims, and Jews lived alongside each other in a complex web of trade, law, language, and material culture. This analyzer examines the structures of daily coexistence and asks the essential question: was the dominant pattern cooperation or conflict?')
+      ),
+
+      // Aspect cards
+      React.createElement('div', { style: { fontFamily: Mono, fontSize: 11, letterSpacing: '.06em', color: C.accentDm, marginBottom: 10 } }, 'FIVE ASPECTS OF DAILY LIFE'),
+      COEXISTENCE_ASPECTS.map(function(asp) {
+        var isOpen = coexAspect === asp.id;
+        return React.createElement('div', { key: asp.id, style: {
+          marginBottom: 10, background: C.card, border: '1px solid ' + (isOpen ? C.accentDm : C.cardBd),
+          borderRadius: 6, overflow: 'hidden', transition: 'border-color .15s',
+        }},
+          React.createElement('button', {
+            onClick: function() { setCoexAspect(isOpen ? null : asp.id); },
+            style: {
+              width: '100%', display: 'flex', alignItems: 'center', gap: 14,
+              padding: '14px 18px', cursor: 'pointer', background: 'none', border: 'none', textAlign: 'left',
+            }
+          },
+            React.createElement('span', { style: { fontSize: 18, width: 36, height: 36, display: 'flex', alignItems: 'center', justifyContent: 'center', background: C.accentBg, borderRadius: 6, border: '1px solid ' + C.line, flexShrink: 0 } }, asp.icon),
+            React.createElement('div', { style: { flex: 1 } },
+              React.createElement('div', { style: { fontFamily: Serif, fontSize: 15, fontWeight: 600, color: C.tx } }, asp.label)
+            ),
+            React.createElement('span', { style: { fontFamily: Mono, fontSize: 14, color: C.tx3, transition: 'transform .15s', transform: isOpen ? 'rotate(90deg)' : 'rotate(0)' } }, '\u25B6')
+          ),
+          isOpen && React.createElement('div', { style: { borderTop: '1px solid ' + C.line, padding: '16px 18px' } },
+            React.createElement('div', { style: { fontFamily: Serif, fontSize: 13, color: C.tx, lineHeight: 1.75, marginBottom: 14 } }, asp.analysis),
+            React.createElement('div', { style: { padding: '10px 14px', background: C.blueBg, borderRadius: 4, border: '1px solid ' + C.blueDm + '22' } },
+              React.createElement('div', { style: { fontFamily: Mono, fontSize: 10, letterSpacing: '.06em', color: C.blue, marginBottom: 4 } }, 'COMPARATIVE NOTE'),
+              React.createElement('div', { style: { fontFamily: Sans, fontSize: 12, color: C.tx2, lineHeight: 1.6 } }, asp.comparison)
+            )
+          )
+        );
+      }),
+
+      // Primary source scenarios
+      React.createElement('div', { style: { marginTop: 28 } },
+        React.createElement('div', { style: { fontFamily: Mono, fontSize: 11, letterSpacing: '.06em', color: C.accentDm, marginBottom: 10 } }, 'PRIMARY SOURCE SCENARIOS'),
+        React.createElement('div', { style: { fontFamily: Serif, fontSize: 13, color: C.tx2, lineHeight: 1.6, marginBottom: 16 } },
+          'Three episodes from primary sources. For each, evaluate whether the dominant pattern is cooperation or conflict. The answer reveals why the Crusader states are historically unique.'
+        ),
+
+        // Scenario selector
+        React.createElement('div', { style: { display: 'flex', gap: 6, marginBottom: 16 } },
+          COEXISTENCE_SCENARIOS.map(function(sc, i) {
+            var isSel = coexScenario === i;
+            return React.createElement('button', {
+              key: sc.id, onClick: function() { setCoexScenario(i); },
+              style: {
+                flex: 1, padding: '8px 12px', borderRadius: 4, cursor: 'pointer',
+                border: '1px solid ' + (isSel ? C.accent : C.line),
+                background: isSel ? C.accentBg : 'transparent',
+                color: isSel ? C.accent : C.tx3,
+                fontFamily: Mono, fontSize: 11, textAlign: 'center',
+              }
+            }, 'Source ' + (i + 1));
+          })
+        ),
+
+        // Active scenario
+        React.createElement('div', { style: {
+          background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 8, padding: 20, position: 'relative',
+        }},
+          React.createElement(MedievalCardBorder, null),
+          React.createElement('div', { style: { fontFamily: Mono, fontSize: 10, letterSpacing: '.06em', color: C.tx3, marginBottom: 4 } }, scenario.source),
+          React.createElement('div', { style: { fontFamily: Serif, fontSize: 18, fontWeight: 600, color: C.tx, marginBottom: 12 } }, scenario.title),
+          React.createElement('div', { style: { fontFamily: Serif, fontSize: 13, color: C.tx, lineHeight: 1.75, marginBottom: 16, paddingLeft: 14, borderLeft: '3px solid ' + C.accent + '44' } }, scenario.narrative),
+
+          // Vote buttons
+          React.createElement('div', { style: { fontFamily: Mono, fontSize: 11, letterSpacing: '.06em', color: C.accentDm, marginBottom: 8 } }, 'YOUR EVALUATION'),
+          !coexVotes[scenario.id] ? React.createElement('div', { style: { display: 'flex', gap: 8 } },
+            React.createElement('button', {
+              onClick: function() { setCoexVotes(function(prev) { var n = {}; for (var k in prev) n[k] = prev[k]; n[scenario.id] = 'cooperation'; return n; }); },
+              style: { flex: 1, padding: '10px 14px', borderRadius: 4, cursor: 'pointer', border: '1px solid ' + C.crescent + '44', background: 'transparent', color: C.crescent, fontFamily: Mono, fontSize: 12 }
+            }, 'Cooperation'),
+            React.createElement('button', {
+              onClick: function() { setCoexVotes(function(prev) { var n = {}; for (var k in prev) n[k] = prev[k]; n[scenario.id] = 'conflict'; return n; }); },
+              style: { flex: 1, padding: '10px 14px', borderRadius: 4, cursor: 'pointer', border: '1px solid ' + C.cross + '44', background: 'transparent', color: C.cross, fontFamily: Mono, fontSize: 12 }
+            }, 'Conflict')
+          ) : React.createElement('div', null,
+            React.createElement('div', { style: {
+              fontFamily: Mono, fontSize: 12, marginBottom: 8,
+              color: coexVotes[scenario.id] === 'cooperation' ? C.crescent : C.cross,
+            }}, 'You evaluated: ' + coexVotes[scenario.id].toUpperCase()),
+            React.createElement('div', { style: {
+              padding: '12px 16px', background: C.accentBg, borderRadius: 4, border: '1px solid ' + C.line,
+            }},
+              React.createElement('div', { style: { fontFamily: Mono, fontSize: 10, letterSpacing: '.06em', color: C.accent, marginBottom: 4 } }, 'INTERPRETATION'),
+              React.createElement('div', { style: { fontFamily: Serif, fontSize: 13, color: C.tx, lineHeight: 1.75 } }, scenario.interpretation)
+            )
+          )
+        ),
+
+        // Synthesis (appears after voting on all 3)
+        totalVotes >= 3 && React.createElement('div', { style: {
+          marginTop: 20, padding: '16px 20px', background: C.accentBg, border: '1px solid ' + C.accent + '22', borderRadius: 6,
+        }},
+          React.createElement('div', { style: { fontFamily: Mono, fontSize: 11, letterSpacing: '.06em', color: C.accent, marginBottom: 6 } }, 'SYNTHESIS: THE ANSWER IS BOTH'),
+          React.createElement('div', { style: { fontFamily: Serif, fontSize: 13, color: C.tx, lineHeight: 1.75 } },
+            'The Crusader states were simultaneously zones of coexistence and zones of violence. Trade flourished alongside massacre. Legal pluralism coexisted with systematic discrimination. Physicians shared knowledge while armies burned each other\'s cities. This is not a contradiction \u2014 it is the defining characteristic of frontier societies throughout history. The Crusader states were not unique in experiencing interfaith contact; they were unique in the intensity and duration of that contact, compressed into a narrow coastal strip where cooperation and conflict were not alternatives but coexisting realities. Usama ibn Munqidh\'s memoir captures this perfectly: he records genuine friendships with Templars in the same text where he describes Frankish barbarism. Both were true. The historical error is choosing one narrative over the other. The complexity is the point.'
+          )
+        )
+      )
+    );
+  }, [coexAspect, coexScenario, coexVotes]);
+
   // ── Main Render ────────────────────────────────────────────────────
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.tx, fontFamily: Sans, position: 'relative', overflow: 'hidden' }} ref={topRef}>
@@ -1827,6 +2258,9 @@ function CrusadesView({ setView }) {
         {mode === 'perspectives' && renderPerspectives()}
         {mode === 'legacy' && renderLegacy()}
         {mode === 'quiz' && renderQuiz()}
+        {mode === 'supply' && renderSupply()}
+        {mode === 'balance' && renderBalance()}
+        {mode === 'coexistence' && renderCoexistence()}
 
         {/* Manuscript divider before provenance */}
         <ManuscriptDivider />

@@ -392,6 +392,11 @@ function LondonView({ setView }) {
   const [revealedFindings, setRevealedFindings] = useState({});
   const [selectedDoc, setSelectedDoc] = useState(null);
   const [tipId, setTipId] = useState(null);
+  const [methodQuestion, setMethodQuestion] = useState('');
+  const [methodRecommendation, setMethodRecommendation] = useState(null);
+  const [sourceDoc, setSourceDoc] = useState(0);
+  const [sourceAnswers, setSourceAnswers] = useState({});
+  const [sourceRevealed, setSourceRevealed] = useState({});
   const topRef = useRef(null);
 
   // ── Scholarly Micro-Icons & Tooltip ──────────────────────────
@@ -463,6 +468,8 @@ function LondonView({ setView }) {
       { id: 'methods', label: 'Methods', desc: '5 Methodologies' },
       { id: 'reflections', label: 'Reflections', desc: 'Lessons Learned' },
       { id: 'archive', label: 'Archive', desc: '3 Facsimiles' },
+      { id: 'method', label: 'Method Tool', desc: 'Compare & Recommend' },
+      { id: 'source', label: 'Source Criticism', desc: 'Evaluate Sources' },
     ];
     return (
       <div style={{ display: 'flex', gap: 4, marginBottom: 24, flexWrap: 'wrap' }}>

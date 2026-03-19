@@ -356,6 +356,9 @@ function WesternView({ setView }) {
   const [graphSelectedNode, setGraphSelectedNode] = useState(null);
   const [graphActiveTrace, setGraphActiveTrace] = useState(null);
   const [tipId, setTipId] = useState(null);
+  const [applyDilemma, setApplyDilemma] = useState(0);
+  const [applyVotes, setApplyVotes] = useState({});
+  const [lineageConcept, setLineageConcept] = useState(null);
   const topRef = useRef(null);
 
   // ── Scholarly Micro-Icons & Tooltip ──────────────────────────
@@ -421,6 +424,8 @@ function WesternView({ setView }) {
       { id: 'debates', label: 'Debates', desc: '5 Key Questions' },
       { id: 'legacy', label: 'Legacy', desc: 'Modern Relevance' },
       { id: 'graph', label: 'Graph', desc: 'Intellectual Lineage' },
+      { id: 'apply', label: 'Apply', desc: 'Modern Dilemmas' },
+      { id: 'lineage', label: 'Lineage', desc: 'Concept Genealogy' },
     ];
     return (
       <div style={{ display: 'flex', gap: 4, marginBottom: 24 }}>
@@ -1217,6 +1222,247 @@ function WesternView({ setView }) {
     );
   }, [graphSelectedEdge, graphSelectedNode, graphActiveTrace]);
 
+  // ── Apply Philosophy to Modern Dilemma ─────────────────────────────
+  const APPLY_DILEMMAS = useMemo(() => [
+    {
+      id: 'surveillance', title: 'AI Mass Surveillance',
+      scenario: 'A democratic government proposes deploying AI-powered facial recognition across all public spaces, arguing it will reduce violent crime by 40%. Civil liberties organizations warn this creates a permanent panopticon. The technology has a 2% false positive rate, disproportionately affecting minority populations.',
+      responses: [
+        { thinker: 'Plato', position: 'If the surveillance is administered by those who genuinely know the Good \u2014 philosopher-guardians who use data wisely \u2014 it could serve justice. The real question is not whether to surveil but whether the rulers possess wisdom. The guardians in the Republic already live under complete transparency; why not extend this to the city? But if ignorant demagogues control the system, it becomes a tool of the Cave, deepening illusion rather than revealing truth.' },
+        { thinker: 'Aristotle', position: 'This is a question of the mean between extremes. Total surveillance is excess (tyranny); zero surveillance is deficiency (chaos). The virtuous policy employs targeted, proportionate monitoring with judicial oversight. The 2% false positive rate reveals a practical defect: the system fails the test of equity (epieikeia). A just policy must account for differential impact on communities.' },
+        { thinker: 'Aquinas', position: 'Human law must serve the common good and conform to natural law, which protects human dignity. Surveillance that treats persons as objects to be monitored rather than rational agents with inherent dignity violates natural law regardless of its utilitarian benefits. However, if the surveillance is genuinely directed toward the common good and includes proportionate safeguards, it may be permissible under the principle of double effect \u2014 the intended good (safety) may justify the unintended side effect (privacy loss).' },
+        { thinker: 'Machiavelli', position: 'The effective ruler asks: does this work? If AI surveillance actually reduces crime by 40%, the prince who refuses to deploy it is responsible for the preventable violence. The 2% false positive rate is a political problem, not a moral one \u2014 manage it through targeted compensation and public messaging. The real danger is not surveillance itself but being perceived as tyrannical. Deploy it quietly, incrementally, and ensure the benefits are visible.' },
+        { thinker: 'Hobbes', position: 'The sovereign\'s primary obligation is the security of the commonwealth. In the state of nature, there is no privacy \u2014 only fear. Subjects surrendered their natural liberty precisely to obtain the security that surveillance provides. Those who protest surveillance while demanding safety contradict themselves. The sovereign must have the power to watch, or the Leviathan is blind.' },
+        { thinker: 'Locke', position: 'Government exists to protect natural rights, including the right to be free from arbitrary interference. Mass surveillance without individual suspicion violates the social contract. No rational person would consent to permanent monitoring as a condition of citizenship. The 2% false positive rate means thousands of innocent people will be wrongly flagged \u2014 a violation of due process. If the government deploys this, the people retain the right to resist.' },
+      ],
+    },
+    {
+      id: 'inequality', title: 'Extreme Wealth Inequality',
+      scenario: 'A nation\'s top 0.1% owns more wealth than the bottom 50%. Social mobility has declined for three decades. A proposed wealth tax of 2% annually on assets above $50 million would fund universal healthcare and education. Opponents argue it violates property rights, will trigger capital flight, and punishes success.',
+      responses: [
+        { thinker: 'Plato', position: 'Extreme wealth inequality is a symptom of a diseased city \u2014 one ruled by appetite rather than reason. In the Republic, guardians own no property at all, because wealth corrupts judgment. The wealthy who oppose redistribution are prisoners in Plato\'s Cave, mistaking accumulation for the Good. A philosopher-ruler would redistribute not out of envy but because concentrated wealth prevents citizens from pursuing the virtuous life.' },
+        { thinker: 'Aristotle', position: 'The middle class is the anchor of a stable polity. When wealth concentrates at the extremes, the city splits into two hostile factions \u2014 the rich who fear expropriation and the poor who desire it. This is the path to revolution or tyranny. A moderate wealth tax that strengthens the middle class serves political stability and the common good. Property rights are important but not absolute \u2014 they exist to serve the polis, not the reverse.' },
+        { thinker: 'Aquinas', position: 'Private property is legitimate under natural law, but it carries a social obligation. Aquinas argues (following Aristotle) that private ownership is permissible for incentive and stewardship reasons, but the use of property must serve the common good. In extreme necessity, taking from the wealthy to feed the starving is not theft \u2014 it is justice. A wealth tax that funds basic human needs (health, education) conforms to the natural law requirement that goods ultimately serve all.' },
+        { thinker: 'Machiavelli', position: 'The prince must keep the people satisfied and the nobles manageable. Extreme inequality breeds the dangerous kind of discontent that produces revolution. But confiscating wealth from the powerful creates determined enemies. The effective ruler taxes just enough to fund popular programs (bread and circuses) while keeping the wealthy class aligned through favorable trade policies. Never make the mistake of being both hated by the rich and untrusted by the poor.' },
+        { thinker: 'Hobbes', position: 'The sovereign\'s power includes the right to tax as necessary to maintain the commonwealth. There is no natural right to property that precedes the sovereign \u2014 property exists only because the Leviathan enforces it. If extreme inequality threatens civil peace, the sovereign may redistribute to prevent the return of the state of nature. Capital flight is a form of rebellion against sovereign authority.' },
+        { thinker: 'Locke', position: 'Property is a natural right created when individuals mix their labor with nature. Taxation requires consent through legitimate legislative process. A democratically enacted wealth tax is legitimate if it serves the public good and follows due process. But Locke also argues that property rights have a natural limit: no one may claim more than they can use while others lack basic necessities. The question is whether $50 million exceeds Locke\'s sufficiency condition.' },
+      ],
+    },
+    {
+      id: 'disobedience', title: 'Climate Civil Disobedience',
+      scenario: 'Climate activists block major highways, disrupt oil company operations, and vandalize SUV dealerships to protest government inaction on climate change. They argue the democratic process has failed: despite scientific consensus, governments continue subsidizing fossil fuels. Their actions are illegal but nonviolent (against property, not persons).',
+      responses: [
+        { thinker: 'Plato', position: 'Socrates chose to drink the hemlock rather than flee Athens, because violating the city\'s laws \u2014 even unjust ones \u2014 destroys the social order that makes philosophy possible. But Socrates also spent his life challenging the city\'s beliefs. The activists\' error is not their cause but their method: they act from passion rather than reason. True political change requires educating the rulers, not blocking highways. If the democratic process fails, it is because citizens lack wisdom, not because they lack roadblocks.' },
+        { thinker: 'Aristotle', position: 'A well-ordered polity has mechanisms for addressing grievances within the constitutional framework. Civil disobedience that circumvents these mechanisms undermines the rule of law, which is the foundation of the good life. However, Aristotle acknowledges that constitutions can become corrupted. If the democratic process has been captured by oligarchic interests (fossil fuel lobbies), the activists may be attempting to restore the proper balance. The question is proportionality: does the disruption serve the common good or merely express frustration?' },
+        { thinker: 'Aquinas', position: 'An unjust law is no law at all. If government climate policy violates natural law by knowingly permitting the destruction of creation \u2014 the common heritage of all humanity \u2014 then resistance may be justified. But Aquinas insists that resistance must be proportionate, directed at the unjust law rather than the legal system as a whole, and unlikely to produce greater disorder than the injustice it opposes. Vandalizing dealerships fails this test; peacefully blocking emissions does not necessarily fail it.' },
+        { thinker: 'Machiavelli', position: 'The activists should ask: does this work? Do highway blockages actually change government policy, or do they alienate potential supporters and provide the government with a pretext for repression? Machiavelli would counsel strategic calculation: target actions that create political leverage, build coalitions with powerful interests (insurance companies threatened by climate risk, military planners concerned about resource conflicts), and avoid actions that make your cause look disruptive rather than just.' },
+        { thinker: 'Hobbes', position: 'Civil disobedience is a step toward the state of nature. Every person who decides which laws to obey based on private judgment undermines the sovereign\'s authority. If climate activists may block highways for their cause, then anti-vaccine activists may block hospitals for theirs. The sovereign alone determines what constitutes the public good. If the democratic process is inadequate, the solution is to improve the sovereign\'s knowledge, not to challenge sovereign authority from below.' },
+        { thinker: 'Locke', position: 'The people retain the right to resist when government betrays the trust for which it was established. If government knowingly subsidizes the destruction of the conditions for human life (a right more fundamental than property), it has broken the social contract. Locke would distinguish between property damage (defensible as a form of political expression) and violence against persons (never defensible). The activists are exercising the Lockean right of resistance \u2014 but they must accept legal consequences, as this legitimizes rather than undermines their moral claim.' },
+      ],
+    },
+  ], []);
+
+  const renderApply = useCallback(() => {
+    const dilemma = APPLY_DILEMMAS[applyDilemma];
+    const votedThinker = applyVotes[dilemma.id];
+    const voteCount = Object.keys(applyVotes).length;
+    return (
+      <div>
+        <div style={{ fontFamily: Mono, fontSize: 12, letterSpacing: '.06em', color: C.accentDm, marginBottom: 6 }}>
+          APPLY PHILOSOPHY TO MODERN DILEMMA
+        </div>
+        <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx2, lineHeight: 1.7, marginBottom: 16, maxWidth: 720 }}>
+          Three contemporary dilemmas, each analyzed through all six thinkers{'\u2019'} frameworks. These are not guesses about what dead philosophers might say {'\u2014'} they are rigorous applications of documented positions. Read all six, then vote for the most persuasive.
+        </div>
+
+        {/* Dilemma selector */}
+        <div style={{ display: 'flex', gap: 4, marginBottom: 20 }}>
+          {APPLY_DILEMMAS.map((d, i) => (
+            <button key={d.id} onClick={() => setApplyDilemma(i)} style={{
+              flex: 1, padding: '10px 12px', borderRadius: 4, cursor: 'pointer',
+              background: i === applyDilemma ? C.accentBg : 'transparent',
+              border: i === applyDilemma ? '1px solid ' + C.accentDm : '1px solid ' + C.line,
+              textAlign: 'center', transition: 'all .15s',
+            }}>
+              <span style={{ fontFamily: Mono, fontSize: 11, fontWeight: 600, color: i === applyDilemma ? C.accent : C.tx3, display: 'block' }}>{d.title}</span>
+            </button>
+          ))}
+        </div>
+
+        {/* Scenario */}
+        <div style={{ background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 10, padding: '20px 24px', marginBottom: 16 }}>
+          <div style={{ fontFamily: Mono, fontSize: 11, letterSpacing: '.06em', color: C.accentDm, marginBottom: 8 }}>THE DILEMMA</div>
+          <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx, lineHeight: 1.75 }}>{dilemma.scenario}</div>
+        </div>
+
+        {/* Thinker responses */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+          {dilemma.responses.map(r => {
+            const isVoted = votedThinker === r.thinker;
+            const colors = { Plato: '#a08040', Aristotle: '#6080a0', Aquinas: '#a06030', Machiavelli: '#c04040', Hobbes: '#505080', Locke: '#408060' };
+            const clr = colors[r.thinker] || C.accent;
+            return (
+              <div key={r.thinker} style={{
+                background: isVoted ? clr + '12' : C.card,
+                border: '1px solid ' + (isVoted ? clr + '66' : C.cardBd),
+                borderRadius: 8, padding: '16px 20px', transition: 'all .15s',
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 8 }}>
+                  <span style={{ fontFamily: Mono, fontSize: 12, fontWeight: 600, color: clr, letterSpacing: '.04em' }}>{r.thinker.toUpperCase()}</span>
+                  <button onClick={() => setApplyVotes(prev => ({ ...prev, [dilemma.id]: r.thinker }))} style={{
+                    padding: '4px 12px', borderRadius: 4, cursor: 'pointer',
+                    background: isVoted ? clr + '22' : 'transparent',
+                    border: '1px solid ' + (isVoted ? clr : C.line),
+                    fontFamily: Mono, fontSize: 10, color: isVoted ? clr : C.tx3,
+                    letterSpacing: '.04em',
+                  }}>
+                    {isVoted ? 'SELECTED' : 'MOST PERSUASIVE'}
+                  </button>
+                </div>
+                <div style={{ fontFamily: Serif, fontSize: 13, color: C.tx, lineHeight: 1.75 }}>{r.position}</div>
+              </div>
+            );
+          })}
+        </div>
+
+        {voteCount > 0 && (
+          <div style={{ marginTop: 16, padding: '12px 16px', background: C.accentBg, borderRadius: 6, border: '1px solid ' + C.line }}>
+            <span style={{ fontFamily: Mono, fontSize: 11, color: C.accentDm, letterSpacing: '.06em' }}>
+              YOUR SELECTIONS: {Object.entries(applyVotes).map(([k, v]) => v).join(', ')} ({voteCount}/3 dilemmas)
+            </span>
+          </div>
+        )}
+      </div>
+    );
+  }, [applyDilemma, applyVotes, APPLY_DILEMMAS]);
+
+  // ── Intellectual Lineage Tracker ──────────────────────────────────
+  const LINEAGE_CONCEPTS = useMemo(() => [
+    {
+      id: 'democracy', name: 'Representative Democracy', modern: 'Elected legislatures, universal suffrage, majority rule with minority rights',
+      genealogy: [
+        { thinker: 'Aristotle', contribution: 'Classified democracy as a deviant form of polity, but argued the many can collectively possess wisdom exceeding any individual. His mixed constitution (polity) combines democratic and oligarchic elements \u2014 the direct ancestor of representative government.' },
+        { thinker: 'Locke', contribution: 'Government by consent of the governed. Legislative supremacy. The right of the majority to bind the minority through elected representatives. The people retain the right to replace a government that fails them.' },
+        { thinker: 'Aquinas (indirect)', contribution: 'The principle that law must serve the common good, not the ruler\'s interest, provides a moral foundation for democratic accountability that purely procedural theories lack.' },
+      ],
+    },
+    {
+      id: 'social_contract', name: 'Social Contract', modern: 'Constitutions, referendums, the idea that government legitimacy requires popular consent',
+      genealogy: [
+        { thinker: 'Hobbes', contribution: 'Invented the modern social contract as a thought experiment: rational individuals in a state of nature agree to surrender liberty for security. Government authority is artificial, not natural or divine. This was revolutionary \u2014 it made political authority conditional on performance.' },
+        { thinker: 'Locke', contribution: 'Transformed Hobbes\'s absolutist contract into a limited one: people consent to protect pre-existing natural rights. The contract is revocable. Government that violates its terms may be legitimately overthrown. This version directly produced the American and French revolutions.' },
+      ],
+    },
+    {
+      id: 'natural_law', name: 'Natural Law / Human Rights', modern: 'Universal Declaration of Human Rights, international humanitarian law, constitutional rights',
+      genealogy: [
+        { thinker: 'Aquinas', contribution: 'Formalized natural law as rational participation in eternal law. Key insight: moral truths accessible to reason, binding on all humans regardless of culture or faith. "An unjust law is no law at all" \u2014 the foundation of civil disobedience from MLK to Mandela.' },
+        { thinker: 'Locke', contribution: 'Secularized natural law into natural rights: life, liberty, property. These rights precede government and cannot be legitimately surrendered. Jefferson\'s Declaration of Independence is almost verbatim Locke.' },
+        { thinker: 'Aristotle (indirect)', contribution: 'Natural justice (dikaion physikon) as distinct from conventional justice. The idea that some principles are right everywhere, not just where local law says so.' },
+      ],
+    },
+    {
+      id: 'separation', name: 'Separation of Powers', modern: 'Executive, legislative, judicial branches; checks and balances; federalism',
+      genealogy: [
+        { thinker: 'Locke', contribution: 'Distinguished legislative (supreme), executive (subordinate), and federative (foreign affairs) powers. Insisted that the same persons must not hold legislative and executive power simultaneously. Madison\'s Federalist No. 47 cites Locke and Montesquieu directly.' },
+        { thinker: 'Aristotle', contribution: 'Mixed constitution theory: the best practicable regime combines democratic, oligarchic, and monarchical elements so that no single class dominates. This is the conceptual ancestor of institutional checks and balances.' },
+        { thinker: 'Montesquieu (via Locke)', contribution: 'Added judicial independence as a distinct power. But Montesquieu was explicitly building on Locke\'s framework and Aristotle\'s mixed constitution.' },
+      ],
+    },
+    {
+      id: 'realpolitik', name: 'Realpolitik / Political Realism', modern: 'International relations realism, balance of power, national interest over ideology',
+      genealogy: [
+        { thinker: 'Machiavelli', contribution: 'Broke politics free from moral philosophy. "The effectual truth of the thing" matters more than "the imagination of it." Power, interest, and strategic calculation \u2014 not virtue or divine mandate \u2014 determine political outcomes. Every realist IR theorist (Morgenthau, Waltz, Mearsheimer) descends from this.' },
+        { thinker: 'Hobbes', contribution: 'Extended Machiavelli\'s domestic realism to the international sphere: sovereign states in a state of nature, with no authority above them. International anarchy \u2014 the foundational assumption of structural realism \u2014 is Hobbes\'s state of nature scaled up.' },
+        { thinker: 'Thucydides (pre-Machiavelli)', contribution: '"The strong do what they can and the weak suffer what they must." The Melian Dialogue is the ur-text of political realism, 2,000 years before Machiavelli.' },
+      ],
+    },
+    {
+      id: 'consent', name: 'Government by Consent', modern: 'Elections, legitimacy crises, revolution, peaceful transfer of power',
+      genealogy: [
+        { thinker: 'Locke', contribution: 'The foundational argument: legitimate authority requires the consent of the governed. Consent is ongoing, not one-time. Government that loses consent may be lawfully resisted. This is the philosophical engine of every democratic revolution.' },
+        { thinker: 'Hobbes', contribution: 'Paradoxically, Hobbes also grounds sovereignty in consent \u2014 but consent driven by fear in the state of nature, and irrevocable once given. Hobbes\'s consent is a one-time deal; Locke\'s is a continuing relationship. The tension between these two versions defines modern debates about emergency powers.' },
+        { thinker: 'Aquinas (indirect)', contribution: 'Political authority serves the common good by divine and natural design, but rulers who manifestly violate the common good may be resisted. This provides a theological foundation for consent theory that precedes Hobbes and Locke by centuries.' },
+      ],
+    },
+  ], []);
+
+  const renderLineage = useCallback(() => {
+    const selected = lineageConcept ? LINEAGE_CONCEPTS.find(c => c.id === lineageConcept) : null;
+    return (
+      <div>
+        <div style={{ fontFamily: Mono, fontSize: 12, letterSpacing: '.06em', color: C.accentDm, marginBottom: 6 }}>
+          INTELLECTUAL LINEAGE TRACKER
+        </div>
+        <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx2, lineHeight: 1.7, marginBottom: 16, maxWidth: 720 }}>
+          Every modern political institution traces to specific thinkers in this tradition. Click a concept to see its intellectual genealogy {'\u2014'} which thinkers contributed which ideas, and how ancient arguments became institutional reality.
+        </div>
+
+        {/* Concept grid */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: 8, marginBottom: 20 }}>
+          {LINEAGE_CONCEPTS.map(c => {
+            const isActive = lineageConcept === c.id;
+            return (
+              <button key={c.id} onClick={() => setLineageConcept(isActive ? null : c.id)} style={{
+                padding: '14px 16px', borderRadius: 6, cursor: 'pointer', textAlign: 'left',
+                background: isActive ? C.accentBg : C.card,
+                border: '1px solid ' + (isActive ? C.accentDm : C.cardBd),
+                transition: 'all .15s',
+              }}>
+                <div style={{ fontFamily: Serif, fontSize: 14, fontWeight: 600, color: isActive ? C.accent : C.tx, marginBottom: 4 }}>{c.name}</div>
+                <div style={{ fontFamily: Sans, fontSize: 11, color: C.tx3, lineHeight: 1.5 }}>{c.modern}</div>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Genealogy detail */}
+        {selected && (
+          <div style={{ background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 10, overflow: 'hidden' }}>
+            <div style={{ padding: '20px 24px', borderBottom: '1px solid ' + C.line }}>
+              <div style={{ fontFamily: Serif, fontSize: 20, fontWeight: 700, color: C.tx, marginBottom: 4 }}>{selected.name}</div>
+              <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2, lineHeight: 1.6 }}>Modern form: {selected.modern}</div>
+            </div>
+            <div style={{ padding: '20px 24px' }}>
+              <div style={{ fontFamily: Mono, fontSize: 11, letterSpacing: '.06em', color: C.accentDm, marginBottom: 12 }}>INTELLECTUAL GENEALOGY</div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+                {selected.genealogy.map((g, i) => {
+                  const colors = { Plato: '#a08040', Aristotle: '#6080a0', 'Aquinas': '#a06030', 'Aquinas (indirect)': '#a06030', Machiavelli: '#c04040', Hobbes: '#505080', Locke: '#408060', 'Aristotle (indirect)': '#6080a0', 'Montesquieu (via Locke)': '#408060', 'Thucydides (pre-Machiavelli)': '#7a6850' };
+                  const clr = colors[g.thinker] || C.accent;
+                  return (
+                    <div key={i} style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
+                      <div style={{
+                        flex: '0 0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4,
+                      }}>
+                        <div style={{
+                          width: 10, height: 10, borderRadius: '50%', background: clr,
+                          border: '2px solid ' + clr + '44',
+                        }} />
+                        {i < selected.genealogy.length - 1 && (
+                          <div style={{ width: 1, height: 40, background: C.line }} />
+                        )}
+                      </div>
+                      <div style={{ flex: 1 }}>
+                        <div style={{ fontFamily: Mono, fontSize: 12, fontWeight: 600, color: clr, letterSpacing: '.04em', marginBottom: 4 }}>{g.thinker.toUpperCase()}</div>
+                        <div style={{ fontFamily: Serif, fontSize: 13, color: C.tx, lineHeight: 1.75 }}>{g.contribution}</div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {!selected && (
+          <div style={{ padding: '24px', textAlign: 'center', color: C.tx3, fontFamily: Serif, fontSize: 14, fontStyle: 'italic' }}>
+            Select a modern concept above to trace its intellectual genealogy back through the Western tradition.
+          </div>
+        )}
+      </div>
+    );
+  }, [lineageConcept, LINEAGE_CONCEPTS]);
+
   // ── Main Render ─────────────────────────────────────────────────────
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.tx, fontFamily: Sans, position: 'relative', overflow: 'hidden' }} ref={topRef}>
@@ -1340,6 +1586,8 @@ function WesternView({ setView }) {
         {mode === 'debates' && renderDebates()}
         {mode === 'legacy' && renderLegacy()}
         {mode === 'graph' && renderGraph()}
+        {mode === 'apply' && renderApply()}
+        {mode === 'lineage' && renderLineage()}
 
         {/* Provenance Strip — academy references */}
         <div style={{ marginTop: 16 }}>

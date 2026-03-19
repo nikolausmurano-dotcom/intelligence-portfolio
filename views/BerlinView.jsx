@@ -5,9 +5,12 @@
 // pressure analysis. The wall's construction, existence, and fall are
 // presented through the lens of Cold War strategic calculus — each side's
 // decision-making, escalation dynamics, and the signals that preceded
-// the wall's fall. Four modes: Phases (chronological), Intelligence
+// the wall's fall. Eight modes: Phases (chronological), Intelligence
 // (espionage operations), Counterfactuals (what-if divergences),
-// Pressure Graph (interactive SVG escalation timeline 1945-1989).
+// Pressure Graph (interactive SVG escalation timeline 1945-1989),
+// Escalation (crisis calculator with counterfactuals), Escape Routes
+// (tunnel/method analyzer), Stasi Machine (surveillance state anatomy),
+// Collapse Signals (regime failure detector with Politburo simulation).
 // Self-contained React component using Babel in-browser transpilation.
 // Globals: useState, useCallback, useMemo from React
 
@@ -825,17 +828,17 @@ function BerlinView({ setView }) {
     return (
       <div>
         <BarbedWireSVG />
-        <div style={{ display: 'flex', gap: 0, marginBottom: 24 }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 0, marginBottom: 24 }}>
           {modes.map((m, mi) => (
             <button
               key={m.id}
               onClick={() => setMode(m.id)}
               style={{
-                flex: 1, padding: '10px 12px', borderRadius: 0, cursor: 'pointer',
+                flex: '1 0 auto', minWidth: 110, padding: '10px 12px', borderRadius: 0, cursor: 'pointer',
                 background: mode === m.id ? 'rgba(112,128,144,.1)' : 'transparent',
                 border: '2px solid ' + (mode === m.id ? 'rgba(112,128,144,.3)' : 'rgba(100,105,115,.1)'),
-                borderLeft: mi > 0 ? 'none' : undefined,
                 textAlign: 'center', transition: 'all .15s ease',
+                marginRight: -2, marginBottom: -2,
               }}
             >
               <span style={{
@@ -1713,6 +1716,717 @@ function BerlinView({ setView }) {
     );
   }, [selectedPressureEvt]);
 
+  // ── Escalation Calculator Renderer ──────────────────────────────
+  const renderEscalation = useCallback(() => {
+    const crisis = CRISES[escSelectedCrisis];
+    const cf = crisis.counterfactual;
+    const showCf = escCounterfactual === crisis.id;
+    const escColors = ['#508868','#508868','#508868','#b8a060','#b8a060','#b8a060','#b04048','#b04048','#b04048','#b04048'];
+    const nuclearLabels = ['None','Negligible','Very Low','Low','Moderate','Significant','High','Very High','Extreme','Maximum'];
+    return (
+      <div>
+        <StencilHeader color={C.accentDm}>BERLIN CRISIS ESCALATION CALCULATOR -- 5 CRISES ON A UNIFIED FRAMEWORK</StencilHeader>
+        <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx2, lineHeight: 1.7, marginBottom: 20, maxWidth: 720 }}>
+          Each Berlin crisis followed a pattern: provocation, escalation, peak tension, and de-escalation mechanism.
+          This instrument maps all five crises onto a common 1-10 escalation scale, allowing direct comparison of
+          intensity, nuclear risk, and the specific decision that prevented catastrophe.
+        </div>
+
+        {/* Crisis selector */}
+        <div style={{ display: 'flex', gap: 0, marginBottom: 20, overflowX: 'auto', paddingBottom: 4 }}>
+          {CRISES.map((c, i) => (
+            <button key={c.id} onClick={() => { setEscSelectedCrisis(i); setEscCounterfactual(null); }} style={{
+              flex: '0 0 auto', padding: '8px 14px', borderRadius: 0, cursor: 'pointer',
+              background: i === escSelectedCrisis ? 'rgba(112,128,144,.1)' : 'transparent',
+              border: '2px solid ' + (i === escSelectedCrisis ? 'rgba(112,128,144,.3)' : 'rgba(100,105,115,.1)'),
+              borderLeft: i > 0 ? 'none' : undefined, transition: 'all .12s ease', whiteSpace: 'nowrap',
+            }}>
+              <span style={{ fontFamily: Mono, fontSize: 10, fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', color: i === escSelectedCrisis ? C.accent : C.tx3, display: 'block' }}>{c.period}</span>
+              <span style={{ fontFamily: Mono, fontSize: 10, color: i === escSelectedCrisis ? C.tx2 : C.tx3 }}>{c.name}</span>
+            </button>
+          ))}
+        </div>
+
+        {/* Crisis detail card */}
+        <div style={{ background: C.card, border: '3px solid rgba(100,105,115,.2)', padding: 28, marginBottom: 16, boxShadow: '4px 4px 0 rgba(0,0,0,.2)' }}>
+          <div style={{ marginBottom: 16 }}>
+            <h2 style={{ fontFamily: Mono, fontSize: 22, fontWeight: 900, color: C.tx, marginBottom: 6, letterSpacing: '.04em', textTransform: 'uppercase' }}>{crisis.name}</h2>
+            <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2, lineHeight: 1.65 }}>{crisis.period}</div>
+          </div>
+
+          {/* Escalation & Nuclear gauges */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 20 }}>
+            <div>
+              <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3, letterSpacing: '.08em', marginBottom: 8 }}>ESCALATION LEVEL</div>
+              <div style={{ display: 'flex', gap: 3, alignItems: 'flex-end', height: 40 }}>
+                {Array.from({ length: 10 }, (_, i) => (
+                  <div key={i} style={{
+                    flex: 1, height: (i + 1) * 4, borderRadius: 2,
+                    background: i < crisis.escalation ? escColors[i] : C.line, transition: 'background .3s',
+                  }} />
+                ))}
+              </div>
+              <div style={{ fontFamily: Mono, fontSize: 14, fontWeight: 700, color: escColors[crisis.escalation - 1], marginTop: 6 }}>
+                {crisis.escalation}/10 {crisis.escalation >= 9 ? 'MAXIMUM' : crisis.escalation >= 7 ? 'CRITICAL' : crisis.escalation >= 5 ? 'ELEVATED' : 'MODERATE'}
+              </div>
+            </div>
+            <div>
+              <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3, letterSpacing: '.08em', marginBottom: 8 }}>NUCLEAR RISK ASSESSMENT</div>
+              <div style={{ display: 'flex', gap: 3, alignItems: 'flex-end', height: 40 }}>
+                {Array.from({ length: 10 }, (_, i) => (
+                  <div key={i} style={{
+                    flex: 1, height: (i + 1) * 4, borderRadius: 2,
+                    background: i < crisis.nuclearRisk ? C.red : C.line, transition: 'background .3s',
+                  }} />
+                ))}
+              </div>
+              <div style={{ fontFamily: Mono, fontSize: 14, fontWeight: 700, color: crisis.nuclearRisk >= 5 ? C.red : C.gold, marginTop: 6 }}>
+                {crisis.nuclearRisk}/10 {nuclearLabels[crisis.nuclearRisk]}
+              </div>
+            </div>
+          </div>
+
+          <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx, lineHeight: 1.75, marginBottom: 20 }}>{crisis.desc}</div>
+
+          {/* Decision points */}
+          <div style={{ marginBottom: 20 }}>
+            <div style={{ fontFamily: Mono, fontSize: 12, letterSpacing: '.06em', color: C.gold, marginBottom: 10, fontWeight: 600 }}>KEY DECISION POINTS</div>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+              {crisis.decisionPoints.map((dp, i) => (
+                <li key={i} style={{ fontFamily: Sans, fontSize: 12, color: C.tx2, lineHeight: 1.65, padding: '6px 0 6px 16px', borderLeft: '2px solid ' + C.goldDm, marginBottom: 4 }}>{dp}</li>
+              ))}
+            </ul>
+          </div>
+
+          {/* De-escalation */}
+          <div style={{ background: C.greenBg, padding: '14px 18px', border: '2px solid ' + C.greenDm, borderLeft: '4px solid ' + C.green, marginBottom: 20 }}>
+            <StencilHeader color={C.green}>DE-ESCALATION MECHANISM</StencilHeader>
+            <div style={{ fontFamily: Serif, fontSize: 13, color: '#b0c8b8', lineHeight: 1.75 }}>{crisis.deescalation}</div>
+          </div>
+
+          {/* Counterfactual toggle */}
+          {!showCf ? (
+            <button onClick={() => setEscCounterfactual(crisis.id)} style={{
+              width: '100%', padding: '14px 20px', borderRadius: 6, background: C.redBg, border: '1px solid ' + C.redDm,
+              color: C.red, fontFamily: Mono, fontSize: 12, letterSpacing: '.04em', cursor: 'pointer', transition: 'all .15s ease',
+            }}>
+              ENGAGE COUNTERFACTUAL: {cf.label.toUpperCase()}
+            </button>
+          ) : (
+            <div>
+              <StencilHeader color={C.red}>COUNTERFACTUAL: {cf.label.toUpperCase()}</StencilHeader>
+
+              {/* SVG comparison chart */}
+              <div style={{ background: 'rgba(8,9,14,.6)', borderRadius: 4, padding: '16px 12px', marginBottom: 16 }}>
+                <svg viewBox="0 0 500 160" style={{ width: '100%', maxWidth: 500, display: 'block', margin: '0 auto' }}>
+                  <text x={10} y={14} style={{ fontFamily: Mono, fontSize: 10, fill: C.tx3 }}>ESCALATION TRAJECTORY (5 PHASES)</text>
+                  {/* Baseline */}
+                  {cf.baseline.map((v, i) => {
+                    var x = 50 + i * 100;
+                    return React.createElement('g', { key: 'b' + i },
+                      React.createElement('rect', { x: x, y: 140 - v * 12, width: 35, height: v * 12, fill: C.accent, opacity: 0.6, rx: 2 }),
+                      i < cf.baseline.length - 1 && React.createElement('line', { x1: x + 35, y1: 140 - v * 12 + 6, x2: x + 65 + 50, y2: 140 - cf.baseline[i + 1] * 12 + 6, stroke: C.accent, strokeWidth: 1, opacity: 0.3, strokeDasharray: '3 2' }),
+                    );
+                  })}
+                  {/* Altered */}
+                  {cf.altered.map((v, i) => {
+                    var x = 50 + i * 100 + 38;
+                    return React.createElement('g', { key: 'a' + i },
+                      React.createElement('rect', { x: x, y: 140 - v * 12, width: 35, height: v * 12, fill: C.red, opacity: 0.6, rx: 2 }),
+                      i < cf.altered.length - 1 && React.createElement('line', { x1: x + 35, y1: 140 - v * 12 + 6, x2: x + 62 + 50, y2: 140 - cf.altered[i + 1] * 12 + 6, stroke: C.red, strokeWidth: 1, opacity: 0.3, strokeDasharray: '3 2' }),
+                    );
+                  })}
+                  {/* Phase labels */}
+                  {['Provoc.', 'Escalate', 'Peak', 'Response', 'Outcome'].map((l, i) => (
+                    <text key={l} x={50 + i * 100 + 36} y={155} textAnchor="middle" style={{ fontFamily: Mono, fontSize: 9, fill: C.tx3 }}>{l}</text>
+                  ))}
+                  {/* Crisis threshold line */}
+                  <line x1={40} y1={140 - 8 * 12} x2={490} y2={140 - 8 * 12} stroke={C.red} strokeWidth={0.8} strokeDasharray="4 3" opacity={0.5} />
+                  <text x={492} y={140 - 8 * 12 + 3} style={{ fontFamily: Mono, fontSize: 8, fill: C.red, opacity: 0.7 }}>NUCLEAR</text>
+                  {/* Legend */}
+                  <rect x={50} y={28} width={12} height={8} fill={C.accent} opacity={0.6} rx={1} />
+                  <text x={66} y={36} style={{ fontFamily: Mono, fontSize: 9, fill: C.tx3 }}>Historical baseline</text>
+                  <rect x={200} y={28} width={12} height={8} fill={C.red} opacity={0.6} rx={1} />
+                  <text x={216} y={36} style={{ fontFamily: Mono, fontSize: 9, fill: C.tx3 }}>Counterfactual trajectory</text>
+                </svg>
+              </div>
+
+              <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx, lineHeight: 1.75, paddingLeft: 16, borderLeft: '3px solid ' + C.redDm }}>{cf.consequence}</div>
+            </div>
+          )}
+        </div>
+
+        {/* Comparative overview */}
+        <div style={{ background: C.card, border: '2px solid ' + C.cardBd, padding: '16px 20px', boxShadow: '3px 3px 0 rgba(0,0,0,.15)' }}>
+          <StencilHeader color={C.tx3}>COMPARATIVE ESCALATION PROFILE -- ALL 5 CRISES</StencilHeader>
+          <div style={{ overflowX: 'auto' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: Mono, fontSize: 11 }}>
+              <thead>
+                <tr>
+                  {['Crisis', 'Year', 'Escalation', 'Nuclear Risk', 'De-escalation Type'].map(h => (
+                    <th key={h} style={{ textAlign: 'left', padding: '8px 10px', borderBottom: '2px solid ' + C.line, color: C.tx3, letterSpacing: '.06em', fontWeight: 600 }}>{h}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {CRISES.map((c, i) => (
+                  <tr key={c.id} onClick={() => setEscSelectedCrisis(i)} style={{ cursor: 'pointer', background: i === escSelectedCrisis ? 'rgba(112,128,144,.06)' : 'transparent' }}>
+                    <td style={{ padding: '8px 10px', borderBottom: '1px solid ' + C.line, color: C.tx }}>{c.name}</td>
+                    <td style={{ padding: '8px 10px', borderBottom: '1px solid ' + C.line, color: C.tx2 }}>{c.period}</td>
+                    <td style={{ padding: '8px 10px', borderBottom: '1px solid ' + C.line }}>
+                      <span style={{ color: escColors[c.escalation - 1], fontWeight: 700 }}>{c.escalation}/10</span>
+                    </td>
+                    <td style={{ padding: '8px 10px', borderBottom: '1px solid ' + C.line }}>
+                      <span style={{ color: c.nuclearRisk >= 5 ? C.red : c.nuclearRisk >= 3 ? C.gold : C.green, fontWeight: 700 }}>{c.nuclearRisk}/10</span>
+                    </td>
+                    <td style={{ padding: '8px 10px', borderBottom: '1px solid ' + C.line, color: C.tx2 }}>
+                      {c.id === 'blockade48' ? 'Economic endurance' : c.id === 'uprising53' ? 'Military suppression' : c.id === 'ultimatum58' ? 'Deadline expiry' : c.id === 'wall61' ? 'Wall as stabilizer' : 'Backchannel diplomacy'}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    );
+  }, [escSelectedCrisis, escCounterfactual]);
+
+  // ── Escape Route Analyzer Renderer ────────────────────────────
+  const renderTunnels = useCallback(() => {
+    // Calculate survival probability
+    const calcSurvival = (route, year, team, awareness) => {
+      var base = { tunnel: 27, vehicle: 63, checkpoint: 54, swim: 35, balloon: 38, ram: 25 }[route] || 40;
+      // Year factor: fortifications increased over time
+      if (year <= 1963) base += 20;
+      else if (year <= 1970) base += 8;
+      else if (year <= 1980) base -= 5;
+      else if (year <= 1985) base -= 15;
+      else base -= 10;
+      // Team size: solo slightly better for deception, worse for tunnel
+      if (team === 'solo') base += (route === 'checkpoint' ? 8 : route === 'tunnel' ? -10 : 3);
+      if (team === 'large') base += (route === 'tunnel' ? 5 : -12);
+      // Stasi awareness
+      if (awareness === 'medium') base -= 15;
+      if (awareness === 'high') base -= 35;
+      if (awareness === 'compromised') base -= 55;
+      return Math.max(2, Math.min(95, base));
+    };
+    var survivalPct = calcSurvival(escapeRoute, tunnelYear, escapeTeam, stasiAwareness);
+    var survivalColor = survivalPct >= 60 ? C.green : survivalPct >= 30 ? C.gold : C.red;
+
+    return (
+      <div>
+        <StencilHeader color={C.accentDm}>ESCAPE ROUTE ANALYZER -- BERLIN WALL 1961-1989</StencilHeader>
+        <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx2, lineHeight: 1.7, marginBottom: 20, maxWidth: 720 }}>
+          Between 1961 and 1989, an estimated 5,000 people successfully escaped across the Berlin Wall, while
+          at least 140 were killed in the attempt. The methods ranged from hand-dug tunnels to hot air balloons.
+          This instrument models escape probability based on historical success rates across methods, time periods,
+          and Stasi countermeasure escalation.
+        </div>
+
+        {/* Tunnel cross-section SVG */}
+        <div style={{ background: C.card, border: '2px solid ' + C.cardBd, padding: '16px 12px', marginBottom: 16, boxShadow: '3px 3px 0 rgba(0,0,0,.15)' }}>
+          <div style={{ fontFamily: Mono, fontSize: 11, letterSpacing: '.08em', color: C.tx3, marginBottom: 10 }}>TYPICAL ESCAPE TUNNEL CROSS-SECTION (e.g. TUNNEL 57, 1964)</div>
+          <svg viewBox="0 0 700 220" style={{ width: '100%', maxWidth: 700, display: 'block', margin: '0 auto' }}>
+            {/* Ground surface */}
+            <rect x={0} y={0} width={700} height={60} fill="rgba(80,70,50,.15)" />
+            <line x1={0} y1={60} x2={700} y2={60} stroke={C.tx3} strokeWidth={1.5} />
+            <text x={10} y={20} style={{ fontFamily: Mono, fontSize: 10, fill: C.tx3 }}>WEST BERLIN</text>
+            <text x={500} y={20} style={{ fontFamily: Mono, fontSize: 10, fill: C.tx3 }}>EAST BERLIN</text>
+            {/* Death strip */}
+            <rect x={280} y={0} width={140} height={60} fill="rgba(176,64,72,.08)" />
+            <text x={310} y={20} style={{ fontFamily: Mono, fontSize: 9, fill: C.red, letterSpacing: '.06em' }}>DEATH STRIP</text>
+            {/* Wall */}
+            <rect x={280} y={10} width={8} height={50} fill={C.tx3} opacity={0.6} />
+            <rect x={412} y={10} width={8} height={50} fill={C.tx3} opacity={0.6} />
+            <text x={284} y={8} style={{ fontFamily: Mono, fontSize: 8, fill: C.tx3 }}>WALL</text>
+            <text x={416} y={8} style={{ fontFamily: Mono, fontSize: 8, fill: C.tx3 }}>WALL</text>
+            {/* Underground */}
+            <rect x={0} y={60} width={700} height={160} fill="rgba(40,35,25,.2)" />
+            {/* Tunnel path */}
+            <path d="M 80 100 L 80 170 C 80 185 100 190 120 190 L 560 190 C 580 190 600 185 600 170 L 600 120" fill="none" stroke={C.gold} strokeWidth={2} strokeDasharray="6 3" />
+            {/* Entry shaft (West) */}
+            <rect x={72} y={60} width={16} height={42} fill="rgba(184,160,96,.15)" stroke={C.goldDm} strokeWidth={1} />
+            <text x={52} y={56} style={{ fontFamily: Mono, fontSize: 8, fill: C.gold }}>ENTRY</text>
+            <text x={48} y={88} style={{ fontFamily: Mono, fontSize: 7, fill: C.tx3 }}>Bakery</text>
+            {/* Exit shaft (East) */}
+            <rect x={592} y={60} width={16} height={62} fill="rgba(184,160,96,.15)" stroke={C.goldDm} strokeWidth={1} />
+            <text x={572} y={56} style={{ fontFamily: Mono, fontSize: 8, fill: C.gold }}>EXIT</text>
+            <text x={568} y={136} style={{ fontFamily: Mono, fontSize: 7, fill: C.tx3 }}>Toilet bldg</text>
+            {/* Measurements */}
+            <line x1={80} y1={200} x2={600} y2={200} stroke={C.tx3} strokeWidth={0.5} />
+            <text x={340} y={212} textAnchor="middle" style={{ fontFamily: Mono, fontSize: 10, fill: C.accent }}>145 meters</text>
+            <line x1={650} y1={60} x2={650} y2={190} stroke={C.tx3} strokeWidth={0.5} />
+            <text x={660} y={130} style={{ fontFamily: Mono, fontSize: 10, fill: C.accent, writingMode: 'vertical-lr' }}>12m deep</text>
+            {/* Tunnel dimensions */}
+            <text x={300} y={182} style={{ fontFamily: Mono, fontSize: 9, fill: C.goldDm }}>70cm wide x 90cm high -- crawl only</text>
+            {/* Guard tower */}
+            <rect x={340} y={24} width={14} height={36} fill={C.tx3} opacity={0.3} />
+            <rect x={336} y={18} width={22} height={8} fill={C.tx3} opacity={0.3} />
+            <text x={340} y={14} style={{ fontFamily: Mono, fontSize: 7, fill: C.red }}>TOWER</text>
+          </svg>
+        </div>
+
+        {/* Famous tunnels */}
+        <div style={{ background: C.card, border: '2px solid ' + C.cardBd, padding: '16px 20px', marginBottom: 16, boxShadow: '3px 3px 0 rgba(0,0,0,.15)' }}>
+          <StencilHeader color={C.goldDm}>NOTABLE TUNNEL OPERATIONS</StencilHeader>
+          {TUNNEL_PROFILE.famous.map(t => (
+            <div key={t.name} style={{ borderBottom: '1px solid ' + C.line, padding: '10px 0' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
+                <span style={{ fontFamily: Mono, fontSize: 13, fontWeight: 700, color: C.tx }}>{t.name} ({t.year})</span>
+                <span style={{ fontFamily: Mono, fontSize: 11, color: C.green }}>{t.escapees} escaped</span>
+              </div>
+              <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3, marginBottom: 4 }}>{t.length}m long / {t.depth}m deep</div>
+              <div style={{ fontFamily: Sans, fontSize: 12, color: C.tx2, lineHeight: 1.6 }}>{t.method}</div>
+            </div>
+          ))}
+        </div>
+
+        {/* Method comparison */}
+        <div style={{ background: C.card, border: '2px solid ' + C.cardBd, padding: '16px 20px', marginBottom: 16, boxShadow: '3px 3px 0 rgba(0,0,0,.15)' }}>
+          <StencilHeader color={C.tx3}>ESCAPE METHOD COMPARISON -- SUCCESS RATES</StencilHeader>
+          <div style={{ overflowX: 'auto' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: Mono, fontSize: 11 }}>
+              <thead>
+                <tr>
+                  {['Method', 'Attempts', 'Successful', 'People Freed', 'Success Rate', 'Peak Years'].map(h => (
+                    <th key={h} style={{ textAlign: 'left', padding: '8px 10px', borderBottom: '2px solid ' + C.line, color: C.tx3, letterSpacing: '.06em', fontWeight: 600 }}>{h}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {ESCAPE_METHODS.map(m => (
+                  <tr key={m.id} style={{ background: escapeRoute === m.id ? 'rgba(112,128,144,.06)' : 'transparent', cursor: 'pointer' }} onClick={() => setEscapeRoute(m.id)}>
+                    <td style={{ padding: '8px 10px', borderBottom: '1px solid ' + C.line, color: C.tx }}>{m.icon} {m.label}</td>
+                    <td style={{ padding: '8px 10px', borderBottom: '1px solid ' + C.line, color: C.tx2 }}>{m.total}</td>
+                    <td style={{ padding: '8px 10px', borderBottom: '1px solid ' + C.line, color: C.green }}>{m.successful}</td>
+                    <td style={{ padding: '8px 10px', borderBottom: '1px solid ' + C.line, color: C.tx2 }}>{m.people}</td>
+                    <td style={{ padding: '8px 10px', borderBottom: '1px solid ' + C.line }}>
+                      <span style={{ color: (m.successful / m.total * 100) >= 50 ? C.green : (m.successful / m.total * 100) >= 25 ? C.gold : C.red, fontWeight: 700 }}>{Math.round(m.successful / m.total * 100)}%</span>
+                    </td>
+                    <td style={{ padding: '8px 10px', borderBottom: '1px solid ' + C.line, color: C.tx3 }}>{m.peakYears}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* Stasi countermeasures timeline */}
+        <div style={{ background: C.card, border: '2px solid ' + C.cardBd, padding: '16px 20px', marginBottom: 16, boxShadow: '3px 3px 0 rgba(0,0,0,.15)' }}>
+          <StencilHeader color={C.red}>STASI COUNTERMEASURE ESCALATION</StencilHeader>
+          {STASI_COUNTERMEASURES.map((cm, i) => (
+            <div key={i} style={{ display: 'flex', gap: 14, padding: '10px 0', borderBottom: '1px solid ' + C.line }}>
+              <div style={{ fontFamily: Mono, fontSize: 12, fontWeight: 700, color: C.red, minWidth: 40 }}>{cm.year}</div>
+              <div>
+                <div style={{ fontFamily: Mono, fontSize: 12, color: C.tx, fontWeight: 600 }}>{cm.measure}</div>
+                <div style={{ fontFamily: Sans, fontSize: 12, color: C.tx2, lineHeight: 1.6 }}>{cm.desc}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Interactive Escape Planner */}
+        <div style={{ background: C.card, border: '3px solid ' + C.goldDm, padding: 24, marginBottom: 16, boxShadow: '4px 4px 0 rgba(0,0,0,.2)' }}>
+          <StencilHeader color={C.gold}>ESCAPE PROBABILITY CALCULATOR</StencilHeader>
+          <div style={{ fontFamily: Serif, fontSize: 13, color: C.tx2, lineHeight: 1.7, marginBottom: 16 }}>
+            Select parameters to estimate survival probability based on historical data.
+            The model weights method effectiveness, border fortification level by year, team logistics, and Stasi awareness.
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 16, marginBottom: 20 }}>
+            {/* Route selector */}
+            <div>
+              <div style={{ fontFamily: Mono, fontSize: 10, color: C.tx3, letterSpacing: '.08em', marginBottom: 6 }}>ESCAPE METHOD</div>
+              {ESCAPE_METHODS.map(m => (
+                <button key={m.id} onClick={() => setEscapeRoute(m.id)} style={{
+                  display: 'block', width: '100%', padding: '4px 8px', marginBottom: 3, cursor: 'pointer', textAlign: 'left',
+                  background: escapeRoute === m.id ? 'rgba(184,160,96,.1)' : 'transparent',
+                  border: '1px solid ' + (escapeRoute === m.id ? C.goldDm : C.line), fontFamily: Mono, fontSize: 11, color: escapeRoute === m.id ? C.gold : C.tx3,
+                }}>
+                  {m.icon} {m.label}
+                </button>
+              ))}
+            </div>
+
+            {/* Year selector */}
+            <div>
+              <div style={{ fontFamily: Mono, fontSize: 10, color: C.tx3, letterSpacing: '.08em', marginBottom: 6 }}>YEAR: {tunnelYear}</div>
+              <input type="range" min={1961} max={1989} value={tunnelYear} onChange={e => setTunnelYear(Number(e.target.value))} style={{ width: '100%', accentColor: C.gold }} />
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontFamily: Mono, fontSize: 10, color: C.tx3 }}>
+                <span>1961</span><span>1975</span><span>1989</span>
+              </div>
+              <div style={{ fontFamily: Sans, fontSize: 11, color: C.tx2, marginTop: 6 }}>
+                {tunnelYear <= 1963 ? 'Early fortification. Gaps remain. Relatively high success rates.' :
+                 tunnelYear <= 1970 ? 'Fortifications improving. Stasi informant network expanding.' :
+                 tunnelYear <= 1980 ? 'Mature border. SM-70 devices. Electronic surveillance.' :
+                 'Near-impenetrable fortification. Most escapes via forged documents or diplomatic channels.'}
+              </div>
+            </div>
+
+            {/* Team size */}
+            <div>
+              <div style={{ fontFamily: Mono, fontSize: 10, color: C.tx3, letterSpacing: '.08em', marginBottom: 6 }}>TEAM SIZE</div>
+              {[['solo', 'Solo (1 person)'], ['small', 'Small (2-5 people)'], ['large', 'Large (6+ people)']].map(([val, label]) => (
+                <button key={val} onClick={() => setEscapeTeam(val)} style={{
+                  display: 'block', width: '100%', padding: '4px 8px', marginBottom: 3, cursor: 'pointer', textAlign: 'left',
+                  background: escapeTeam === val ? 'rgba(184,160,96,.1)' : 'transparent',
+                  border: '1px solid ' + (escapeTeam === val ? C.goldDm : C.line), fontFamily: Mono, fontSize: 11, color: escapeTeam === val ? C.gold : C.tx3,
+                }}>
+                  {label}
+                </button>
+              ))}
+            </div>
+
+            {/* Stasi awareness */}
+            <div>
+              <div style={{ fontFamily: Mono, fontSize: 10, color: C.tx3, letterSpacing: '.08em', marginBottom: 6 }}>STASI AWARENESS</div>
+              {[['low', 'Low -- no file opened'], ['medium', 'Medium -- OPK file exists'], ['high', 'High -- under OV surveillance'], ['compromised', 'Compromised -- informant in group']].map(([val, label]) => (
+                <button key={val} onClick={() => setStasiAwareness(val)} style={{
+                  display: 'block', width: '100%', padding: '4px 8px', marginBottom: 3, cursor: 'pointer', textAlign: 'left',
+                  background: stasiAwareness === val ? 'rgba(176,64,72,.1)' : 'transparent',
+                  border: '1px solid ' + (stasiAwareness === val ? C.redDm : C.line), fontFamily: Mono, fontSize: 11, color: stasiAwareness === val ? C.red : C.tx3,
+                }}>
+                  {label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Result */}
+          <div style={{ textAlign: 'center', padding: '20px 0', borderTop: '2px solid ' + C.line }}>
+            <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3, letterSpacing: '.1em', marginBottom: 8 }}>ESTIMATED SURVIVAL PROBABILITY</div>
+            <div style={{ fontFamily: Mono, fontSize: 48, fontWeight: 900, color: survivalColor, textShadow: '2px 2px 0 rgba(0,0,0,.3)' }}>{survivalPct}%</div>
+            <div style={{ width: '60%', height: 8, background: C.line, borderRadius: 4, margin: '12px auto', overflow: 'hidden' }}>
+              <div style={{ width: survivalPct + '%', height: '100%', borderRadius: 4, background: survivalColor, transition: 'all .4s ease' }} />
+            </div>
+            <div style={{ fontFamily: Serif, fontSize: 13, color: C.tx2, maxWidth: 500, margin: '0 auto', lineHeight: 1.7 }}>
+              {survivalPct >= 60 ? 'Favorable conditions. Historical data suggests a majority of attempts under these parameters succeeded.' :
+               survivalPct >= 30 ? 'Moderate risk. Approximately one in three attempts under these conditions resulted in capture or death.' :
+               survivalPct >= 10 ? 'High risk. Most attempts under these conditions ended in arrest, injury, or death.' :
+               'Near-suicidal. The combination of method, timing, and Stasi awareness makes success virtually impossible.'}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }, [escapeRoute, tunnelYear, escapeTeam, stasiAwareness]);
+
+  // ── Stasi Surveillance State Renderer ─────────────────────────
+  const renderStasi = useCallback(() => {
+    var scenario = STASI_SCENARIOS[stasiScenario];
+    var currentLevel = STASI_LEVELS[stasiLevel];
+
+    return (
+      <div>
+        <StencilHeader color={C.accentDm}>SURVEILLANCE STATE ANATOMY -- THE STASI AS INSTRUMENT</StencilHeader>
+        <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx2, lineHeight: 1.7, marginBottom: 20, maxWidth: 720 }}>
+          The Ministry for State Security was not merely an intelligence service but a tool of total social control.
+          With 91,000 full-time employees and 173,000 unofficial informants in a country of 16.4 million, the Stasi
+          achieved a density of surveillance unmatched in human history. This instrument traces the machinery from
+          the subject's perspective -- revealing the gap between what the dissident knew and what was actually happening.
+        </div>
+
+        {/* Statistics panel */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 12, marginBottom: 20 }}>
+          {[
+            { label: 'Full-time employees', value: '91,000', sub: '0.55% of population' },
+            { label: 'Unofficial informants', value: '173,000', sub: 'Inoffizielle Mitarbeiter' },
+            { label: 'Surveillance ratio', value: '1 : 63', sub: 'One informant per 63 citizens' },
+            { label: 'Files preserved', value: '111 km', sub: 'Linear shelf space of documents' },
+            { label: 'Persons with files', value: '5.6 million', sub: '34% of population' },
+            { label: 'Daily mail opened', value: '90,000', sub: 'Photographed and resealed' },
+          ].map(s => (
+            <div key={s.label} style={{ background: C.card, border: '2px solid ' + C.cardBd, padding: '12px 16px', boxShadow: '2px 2px 0 rgba(0,0,0,.1)' }}>
+              <div style={{ fontFamily: Mono, fontSize: 10, letterSpacing: '.08em', color: C.tx3, marginBottom: 4 }}>{s.label.toUpperCase()}</div>
+              <div style={{ fontFamily: Mono, fontSize: 22, fontWeight: 900, color: C.red, marginBottom: 2 }}>{s.value}</div>
+              <div style={{ fontFamily: Sans, fontSize: 11, color: C.tx3 }}>{s.sub}</div>
+            </div>
+          ))}
+        </div>
+
+        {/* Surveillance density comparison */}
+        <div style={{ background: C.card, border: '2px solid ' + C.cardBd, padding: '16px 20px', marginBottom: 16, boxShadow: '3px 3px 0 rgba(0,0,0,.15)' }}>
+          <StencilHeader color={C.tx3}>SURVEILLANCE DENSITY COMPARISON -- CITIZENS PER AGENT</StencilHeader>
+          <svg viewBox="0 0 600 120" style={{ width: '100%', maxWidth: 600, display: 'block', margin: '0 auto' }}>
+            {[
+              { name: 'Stasi (DDR)', ratio: 63, color: C.red },
+              { name: 'KGB (USSR)', ratio: 595, color: C.gold },
+              { name: 'Gestapo (Nazi Germany)', ratio: 2000, color: C.tx3 },
+              { name: 'FBI (USA, est.)', ratio: 10400, color: C.accent },
+            ].map((s, i) => {
+              var barW = Math.max(8, (10400 / s.ratio) * 2.5);
+              return (
+                <g key={s.name}>
+                  <text x={200} y={22 + i * 28} textAnchor="end" style={{ fontFamily: Mono, fontSize: 10, fill: C.tx2 }}>{s.name}</text>
+                  <rect x={210} y={12 + i * 28} width={Math.min(barW, 380)} height={16} fill={s.color} opacity={0.7} rx={2} />
+                  <text x={215 + Math.min(barW, 380)} y={24 + i * 28} style={{ fontFamily: Mono, fontSize: 10, fill: s.color, fontWeight: 700 }}>1:{s.ratio}</text>
+                </g>
+              );
+            })}
+          </svg>
+          <div style={{ fontFamily: Sans, fontSize: 11, color: C.tx3, textAlign: 'center', marginTop: 4 }}>
+            Shorter bar = more agents per citizen = denser surveillance. The Stasi was 32x denser than the Gestapo.
+          </div>
+        </div>
+
+        {/* Interactive dissident scenario */}
+        <div style={{ background: C.card, border: '3px solid ' + C.redDm, padding: 24, marginBottom: 16, boxShadow: '4px 4px 0 rgba(0,0,0,.2)' }}>
+          <StencilHeader color={C.red}>DISSIDENT SCENARIO: WHAT THE STASI DOES TO YOU</StencilHeader>
+          <div style={{ fontFamily: Serif, fontSize: 13, color: C.tx2, lineHeight: 1.7, marginBottom: 16 }}>
+            Select a dissident profile. Then step through the 6 levels of Stasi response. At each level,
+            see the critical gap between what the subject KNEW and what was ACTUALLY happening.
+            This gap -- between perceived and actual surveillance -- was the Stasi's most powerful weapon.
+          </div>
+
+          {/* Scenario selector */}
+          <div style={{ display: 'flex', gap: 8, marginBottom: 16 }}>
+            {STASI_SCENARIOS.map((sc, i) => (
+              <button key={i} onClick={() => { setStasiScenario(i); setStasiLevel(0); }} style={{
+                flex: 1, padding: '10px 12px', cursor: 'pointer',
+                background: stasiScenario === i ? 'rgba(176,64,72,.1)' : 'transparent',
+                border: '2px solid ' + (stasiScenario === i ? C.redDm : C.line), borderRadius: 0,
+              }}>
+                <div style={{ fontFamily: Mono, fontSize: 11, fontWeight: 700, color: stasiScenario === i ? C.red : C.tx3 }}>{sc.name}</div>
+                <div style={{ fontFamily: Sans, fontSize: 10, color: C.tx3, marginTop: 2 }}>{sc.profile.slice(0, 60)}...</div>
+              </button>
+            ))}
+          </div>
+
+          {/* Profile & trigger */}
+          <div style={{ background: 'rgba(176,64,72,.04)', padding: '12px 16px', border: '1px solid ' + C.redDm, marginBottom: 16 }}>
+            <div style={{ fontFamily: Serif, fontSize: 13, color: C.tx, lineHeight: 1.6, marginBottom: 6 }}>{scenario.profile}</div>
+            <div style={{ fontFamily: Mono, fontSize: 11, color: C.red, marginTop: 8 }}>TRIGGER: {scenario.trigger}</div>
+          </div>
+
+          {/* Level progression */}
+          <div style={{ display: 'flex', gap: 4, marginBottom: 16 }}>
+            {STASI_LEVELS.map((lv, i) => (
+              <button key={i} onClick={() => setStasiLevel(i)} style={{
+                flex: 1, padding: '8px 4px', cursor: 'pointer', borderRadius: 0,
+                background: i <= stasiLevel ? 'rgba(176,64,72,' + (0.05 + i * 0.04) + ')' : 'transparent',
+                border: '2px solid ' + (i === stasiLevel ? C.red : i < stasiLevel ? C.redDm : C.line),
+              }}>
+                <div style={{ fontFamily: Mono, fontSize: 9, fontWeight: 700, letterSpacing: '.06em', color: i <= stasiLevel ? C.red : C.tx3 }}>L{i + 1}</div>
+                <div style={{ fontFamily: Mono, fontSize: 8, color: i <= stasiLevel ? C.tx2 : C.tx3 }}>{lv.code}</div>
+              </button>
+            ))}
+          </div>
+
+          {/* Current level detail */}
+          <div style={{ marginBottom: 16 }}>
+            <div style={{ fontFamily: Mono, fontSize: 16, fontWeight: 900, color: C.red, marginBottom: 4 }}>LEVEL {stasiLevel + 1}: {currentLevel.name}</div>
+            <div style={{ fontFamily: Mono, fontSize: 11, color: C.redDm, marginBottom: 12 }}>{currentLevel.code} -- {currentLevel.official}</div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 16 }}>
+              {/* What the dissident knew */}
+              <div style={{ background: 'rgba(80,136,104,.06)', padding: '14px 16px', border: '2px solid ' + C.greenDm, borderLeft: '4px solid ' + C.green }}>
+                <div style={{ fontFamily: Mono, fontSize: 11, letterSpacing: '.06em', color: C.green, marginBottom: 8, fontWeight: 600 }}>WHAT YOU KNEW</div>
+                <div style={{ fontFamily: Serif, fontSize: 13, color: '#b0c8b8', lineHeight: 1.75 }}>{currentLevel.known}</div>
+              </div>
+              {/* What was actually happening */}
+              <div style={{ background: 'rgba(176,64,72,.06)', padding: '14px 16px', border: '2px solid ' + C.redDm, borderLeft: '4px solid ' + C.red }}>
+                <div style={{ fontFamily: Mono, fontSize: 11, letterSpacing: '.06em', color: C.red, marginBottom: 8, fontWeight: 600 }}>WHAT WAS ACTUALLY HAPPENING</div>
+                <div style={{ fontFamily: Serif, fontSize: 13, color: '#c8b0b0', lineHeight: 1.75 }}>{currentLevel.actual}</div>
+              </div>
+            </div>
+
+            {/* The gap */}
+            <div style={{ background: 'rgba(184,160,96,.06)', padding: '14px 18px', border: '2px solid ' + C.goldDm, borderLeft: '4px solid ' + C.gold }}>
+              <div style={{ fontFamily: Mono, fontSize: 11, letterSpacing: '.06em', color: C.gold, marginBottom: 8, fontWeight: 600 }}>THE PERCEPTION GAP</div>
+              <div style={{ fontFamily: Serif, fontSize: 13, color: '#c8c0b4', lineHeight: 1.75 }}>{currentLevel.gap}</div>
+            </div>
+          </div>
+
+          {/* Navigation */}
+          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <button onClick={() => setStasiLevel(Math.max(0, stasiLevel - 1))} disabled={stasiLevel === 0} style={{
+              padding: '8px 20px', cursor: stasiLevel === 0 ? 'default' : 'pointer', fontFamily: Mono, fontSize: 11,
+              background: 'transparent', border: '1px solid ' + (stasiLevel === 0 ? C.line : C.tx3), color: stasiLevel === 0 ? C.tx3 : C.tx2,
+            }}>
+              PREVIOUS LEVEL
+            </button>
+            <button onClick={() => setStasiLevel(Math.min(5, stasiLevel + 1))} disabled={stasiLevel === 5} style={{
+              padding: '8px 20px', cursor: stasiLevel === 5 ? 'default' : 'pointer', fontFamily: Mono, fontSize: 11,
+              background: stasiLevel === 5 ? 'transparent' : 'rgba(176,64,72,.1)', border: '1px solid ' + (stasiLevel === 5 ? C.line : C.redDm), color: stasiLevel === 5 ? C.tx3 : C.red,
+            }}>
+              {stasiLevel === 5 ? 'FILE CLOSED' : 'ESCALATE TO LEVEL ' + (stasiLevel + 2)}
+            </button>
+          </div>
+        </div>
+
+        {/* Key insight */}
+        <div style={{ background: C.accentBg, border: '1px solid ' + C.accentDm, borderRadius: 8, padding: '18px 22px' }}>
+          <div style={{ fontFamily: Mono, fontSize: 11, letterSpacing: '.08em', color: C.accentDm, marginBottom: 8 }}>ANALYTICAL INSIGHT</div>
+          <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx, lineHeight: 1.8 }}>
+            The Stasi's power was not primarily violence but uncertainty. A dissident under Zersetzung
+            experienced a world that seemed to malfunction around them -- careers stalling, relationships
+            failing, objects moving -- without any visible cause. The genius and horror of the system
+            was that it made the subject doubt their own perception of reality. This is what distinguishes
+            the Stasi from cruder security services: they understood that controlling someone's
+            interpretation of events is more effective than controlling the events themselves.
+          </div>
+        </div>
+      </div>
+    );
+  }, [stasiScenario, stasiLevel]);
+
+  // ── Regime Collapse Signal Detector Renderer ──────────────────
+  const renderSignals = useCallback(() => {
+    var signal = COLLAPSE_SIGNALS[signalStep];
+    var choiceForStep = signalChoices[signalStep];
+
+    // After October 1989 (step 3+), no choice saves the regime
+    var pointOfNoReturn = signalStep >= 3;
+
+    return (
+      <div>
+        <StencilHeader color={C.accentDm}>REGIME COLLAPSE SIGNAL DETECTOR -- 6 MONTHS BEFORE THE WALL FELL</StencilHeader>
+        <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx2, lineHeight: 1.7, marginBottom: 20, maxWidth: 720 }}>
+          The Wall fell because of a cascade of signals that the SED leadership misread at every stage.
+          This instrument places you in the Politburo. At each signal, you choose: crack down, reform, or ignore.
+          The analytical lesson: by October 1989, NO choice could save the regime. The window for reform
+          had closed in June. The system was structurally incapable of the adaptation that survival required.
+        </div>
+
+        {/* Signal timeline */}
+        <div style={{ display: 'flex', gap: 4, marginBottom: 20 }}>
+          {COLLAPSE_SIGNALS.map((s, i) => {
+            var isActive = i === signalStep;
+            var isPast = i < signalStep;
+            var hasChoice = signalChoices[i] !== undefined;
+            return (
+              <button key={i} onClick={() => setSignalStep(i)} style={{
+                flex: 1, padding: '10px 6px', cursor: 'pointer', borderRadius: 0,
+                background: isActive ? 'rgba(176,64,72,.1)' : isPast ? 'rgba(112,128,144,.06)' : 'transparent',
+                border: '2px solid ' + (isActive ? C.red : isPast ? C.accentDm : C.line),
+                position: 'relative',
+              }}>
+                <div style={{ fontFamily: Mono, fontSize: 9, fontWeight: 700, color: isActive ? C.red : isPast ? C.accent : C.tx3 }}>
+                  {s.date.split(',')[0]}
+                </div>
+                <div style={{ fontFamily: Mono, fontSize: 8, color: C.tx3, marginTop: 2 }}>
+                  {s.event.length > 18 ? s.event.slice(0, 16) + '..' : s.event}
+                </div>
+                {hasChoice && (
+                  <div style={{ position: 'absolute', top: -4, right: -4, width: 8, height: 8, borderRadius: 4, background: C.gold }} />
+                )}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Signal detail */}
+        <div style={{ background: C.card, border: '3px solid ' + (pointOfNoReturn ? C.red : C.cardBd), padding: 28, marginBottom: 16, boxShadow: '4px 4px 0 rgba(0,0,0,.2)' }}>
+          {pointOfNoReturn && (
+            <div style={{ fontFamily: Mono, fontSize: 12, letterSpacing: '.1em', color: C.red, marginBottom: 12, padding: '6px 12px', background: C.redBg, border: '1px solid ' + C.redDm, display: 'inline-block' }}>
+              POINT OF NO RETURN -- NO CHOICE SAVES THE REGIME
+            </div>
+          )}
+
+          <div style={{ marginBottom: 16 }}>
+            <div style={{ fontFamily: Mono, fontSize: 12, color: C.tx3, letterSpacing: '.06em', marginBottom: 4 }}>{signal.date}</div>
+            <h2 style={{ fontFamily: Mono, fontSize: 20, fontWeight: 900, color: C.tx, marginBottom: 8, letterSpacing: '.04em', textTransform: 'uppercase' }}>{signal.event}</h2>
+            <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx, lineHeight: 1.75 }}>{signal.detail}</div>
+          </div>
+
+          {/* SED thinking */}
+          <div style={{ background: C.eastBg, padding: '14px 18px', border: '2px solid ' + C.eastDm, borderLeft: '4px solid ' + C.east, marginBottom: 16 }}>
+            <StencilHeader color={C.east}>SED POLITBURO ASSESSMENT</StencilHeader>
+            <div style={{ fontFamily: Serif, fontSize: 13, color: '#b0bcc8', lineHeight: 1.75 }}>{signal.sedThought}</div>
+          </div>
+
+          {/* Three columns: could have / actually did / why wrong */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 12, marginBottom: 20 }}>
+            <div style={{ background: C.greenBg, padding: '12px 14px', border: '1px solid ' + C.greenDm }}>
+              <div style={{ fontFamily: Mono, fontSize: 10, color: C.green, letterSpacing: '.06em', marginBottom: 6, fontWeight: 600 }}>COULD HAVE DONE</div>
+              <div style={{ fontFamily: Sans, fontSize: 12, color: '#b0c8b8', lineHeight: 1.65 }}>{signal.couldHave}</div>
+            </div>
+            <div style={{ background: C.goldBg, padding: '12px 14px', border: '1px solid ' + C.goldDm }}>
+              <div style={{ fontFamily: Mono, fontSize: 10, color: C.gold, letterSpacing: '.06em', marginBottom: 6, fontWeight: 600 }}>ACTUALLY DID</div>
+              <div style={{ fontFamily: Sans, fontSize: 12, color: '#c8c0b4', lineHeight: 1.65 }}>{signal.actuallyDid}</div>
+            </div>
+            <div style={{ background: C.redBg, padding: '12px 14px', border: '1px solid ' + C.redDm }}>
+              <div style={{ fontFamily: Mono, fontSize: 10, color: C.red, letterSpacing: '.06em', marginBottom: 6, fontWeight: 600 }}>WHY THEY CHOSE WRONG</div>
+              <div style={{ fontFamily: Sans, fontSize: 12, color: '#c8b0b0', lineHeight: 1.65 }}>{signal.whyWrong}</div>
+            </div>
+          </div>
+
+          {/* Interactive: choose your response */}
+          <div style={{ borderTop: '2px solid ' + C.line, paddingTop: 16 }}>
+            <div style={{ fontFamily: Mono, fontSize: 12, letterSpacing: '.08em', color: C.gold, marginBottom: 12, fontWeight: 600 }}>
+              YOU ARE AN SED POLITBURO MEMBER. CHOOSE YOUR RESPONSE:
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+              {signal.options.map((opt, oi) => {
+                var isChosen = choiceForStep === oi;
+                var borderColor = isChosen ? (opt.viable ? C.green : C.red) : C.line;
+                return (
+                  <div key={oi}>
+                    <button onClick={() => {
+                      setSignalChoices(prev => ({ ...prev, [signalStep]: oi }));
+                      setSignalRevealed(prev => ({ ...prev, [signalStep + '-' + oi]: true }));
+                    }} style={{
+                      width: '100%', padding: '12px 16px', cursor: 'pointer', textAlign: 'left',
+                      background: isChosen ? (opt.viable ? C.greenBg : C.redBg) : 'transparent',
+                      border: '2px solid ' + borderColor, borderRadius: 0, transition: 'all .15s ease',
+                    }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <span style={{ fontFamily: Mono, fontSize: 12, fontWeight: 700, color: isChosen ? (opt.viable ? C.green : C.red) : C.tx }}>{opt.label}</span>
+                        {isChosen && (
+                          <span style={{ fontFamily: Mono, fontSize: 10, letterSpacing: '.06em', color: opt.viable ? C.green : C.red, padding: '2px 8px', border: '1px solid ' + (opt.viable ? C.greenDm : C.redDm), borderRadius: 3 }}>
+                            {opt.outcome}
+                          </span>
+                        )}
+                      </div>
+                    </button>
+                    {signalRevealed[signalStep + '-' + oi] && (
+                      <div style={{ padding: '10px 16px', background: 'rgba(8,9,14,.4)', borderLeft: '3px solid ' + (opt.viable ? C.greenDm : C.redDm), marginTop: 4 }}>
+                        <div style={{ fontFamily: Serif, fontSize: 13, color: C.tx2, lineHeight: 1.7 }}>{opt.effect}</div>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+
+        {/* Navigation */}
+        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 16 }}>
+          <button onClick={() => setSignalStep(Math.max(0, signalStep - 1))} disabled={signalStep === 0} style={{
+            padding: '8px 20px', cursor: signalStep === 0 ? 'default' : 'pointer', fontFamily: Mono, fontSize: 11,
+            background: 'transparent', border: '1px solid ' + (signalStep === 0 ? C.line : C.tx3), color: signalStep === 0 ? C.tx3 : C.tx2,
+          }}>
+            PREVIOUS SIGNAL
+          </button>
+          <span style={{ fontFamily: Mono, fontSize: 12, color: C.tx3, alignSelf: 'center' }}>SIGNAL {signalStep + 1} OF {COLLAPSE_SIGNALS.length}</span>
+          <button onClick={() => setSignalStep(Math.min(COLLAPSE_SIGNALS.length - 1, signalStep + 1))} disabled={signalStep === COLLAPSE_SIGNALS.length - 1} style={{
+            padding: '8px 20px', cursor: signalStep === COLLAPSE_SIGNALS.length - 1 ? 'default' : 'pointer', fontFamily: Mono, fontSize: 11,
+            background: signalStep === COLLAPSE_SIGNALS.length - 1 ? 'transparent' : 'rgba(176,64,72,.1)', border: '1px solid ' + (signalStep === COLLAPSE_SIGNALS.length - 1 ? C.line : C.redDm), color: signalStep === COLLAPSE_SIGNALS.length - 1 ? C.tx3 : C.red,
+          }}>
+            {signalStep === COLLAPSE_SIGNALS.length - 1 ? 'THE WALL FALLS' : 'NEXT SIGNAL'}
+          </button>
+        </div>
+
+        {/* Key insight */}
+        <div style={{ background: C.accentBg, border: '1px solid ' + C.accentDm, borderRadius: 8, padding: '18px 22px' }}>
+          <div style={{ fontFamily: Mono, fontSize: 11, letterSpacing: '.08em', color: C.accentDm, marginBottom: 8 }}>ANALYTICAL INSIGHT</div>
+          <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx, lineHeight: 1.8 }}>
+            The SED had multiple opportunities to adapt between May and October 1989. But the regime
+            suffered from what political scientists call "structural rigidity" -- its institutions
+            were designed to prevent exactly the kind of change that survival now required. The party
+            could not reform without dissolving the basis of its own legitimacy. By the time Krenz
+            replaced Honecker on October 18, the window for controlled reform had been closed for
+            four months. The Wall did not fall because of Schabowski's mistake. It fell because a
+            system built on the premise that history had ended discovered that history was still moving.
+          </div>
+        </div>
+      </div>
+    );
+  }, [signalStep, signalChoices, signalRevealed]);
+
   // ── Main Render ─────────────────────────────────────────────────
   return (
     <div style={{
@@ -1870,6 +2584,10 @@ function BerlinView({ setView }) {
         {mode === 'intelligence' && renderIntelligence()}
         {mode === 'counterfactuals' && renderCounterfactuals()}
         {mode === 'pressure' && renderPressureGraph()}
+        {mode === 'escalation' && renderEscalation()}
+        {mode === 'tunnels' && renderTunnels()}
+        {mode === 'stasi' && renderStasi()}
+        {mode === 'signals' && renderSignals()}
 
         {/* Provenance */}
         <BarbedWireSVG />

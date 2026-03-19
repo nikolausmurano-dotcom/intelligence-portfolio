@@ -345,6 +345,109 @@ const MODES = [
   { id: 'timeline',     label: 'Timeline',      icon: '\u{1F4CA}' },
   { id: 'casestudy',    label: 'Case Study',    icon: '\u{1F50D}' },
   { id: 'comparative',  label: 'Comparative',   icon: '\u{1F310}' },
+  { id: 'governance',   label: 'Governance',    icon: '\u2690' },
+  { id: 'land',         label: 'Land Reform',   icon: '\u2692' },
+];
+
+// ── Governance Comparison Data ──────────────────────────────────────
+const GOV_STATES = [
+  { id: 'kenya', name: 'Kenya', indep: '1963', leader: 'Kenyatta', path: 'Ethnic coalition / authoritarian hybrid' },
+  { id: 'tanzania', name: 'Tanzania', indep: '1961', leader: 'Nyerere', path: 'Single-party socialism (Ujamaa)' },
+  { id: 'nigeria', name: 'Nigeria', indep: '1960', leader: 'Balewa/Azikiwe', path: 'Federal democracy, military coups' },
+  { id: 'botswana', name: 'Botswana', indep: '1966', leader: 'Khama', path: 'Stable multiparty democracy' },
+];
+const GOV_FACTORS = [
+  { id: 'democracy', label: 'Democracy Quality', desc: 'Electoral competition, press freedom, judicial independence, peaceful transfers of power' },
+  { id: 'growth', label: 'Economic Growth', desc: 'GDP trajectory, industrialization, inequality, dependence on primary exports' },
+  { id: 'ethnic', label: 'Ethnic Management', desc: 'How ethnic diversity was governed: integration, suppression, federalism, or rotation' },
+  { id: 'corruption', label: 'Corruption Control', desc: 'Institutional constraints on rent-seeking, transparency, rule of law' },
+  { id: 'stability', label: 'Political Stability', desc: 'Absence of coups, civil war, political violence, constitutional crises' },
+];
+const GOV_MATRIX = {
+  kenya: {
+    democracy: { rating: 'low-medium', color: '#c09040', evidence: 'Single-party state 1969-1991 (KANU). Multiparty restored 1991 under donor pressure. Contested elections in 2007 led to 1,133 deaths. 2010 constitution improved checks and balances. 2022 election: first peaceful transfer via Supreme Court ruling. Freedom House 2024: Partly Free (48/100).' },
+    growth: { rating: 'medium', color: '#c09040', evidence: 'Initial settler-economy growth (6%+ in 1960s). Nyayo-era stagnation (1980s structural adjustment). Vision 2030 drove infrastructure investment. 2024 GDP ~$115B, strongest in East Africa. But top 10% own 48% of income. Agriculture still 33% of GDP.' },
+    ethnic: { rating: 'low', color: '#b84038', evidence: 'Kenyatta (Kikuyu) favored co-ethnics in land allocation and civil service. Moi (Kalenjin) redistributed patronage. Ethnic voting blocs remain the primary unit of political organization. 2007 violence was ethnically organized (Kalenjin vs Kikuyu in Rift Valley). The 2010 devolution (47 counties) was designed to reduce zero-sum ethnic competition for the presidency.' },
+    corruption: { rating: 'low', color: '#b84038', evidence: 'Consistently ranked in bottom quartile of Transparency International CPI. Goldenberg scandal (1990s): $600M+ in fictitious gold exports. Anglo-Leasing (2000s): ghost security contracts. EACC (Ethics and Anti-Corruption Commission) widely seen as toothless. Devolution created 47 new patronage networks.' },
+    stability: { rating: 'medium', color: '#c09040', evidence: 'No successful military coup (unlike most of Africa). But: political assassinations (Tom Mboya 1969, J.M. Kariuki 1975), attempted coup 1982, post-election violence 2007-08. Generally stable by continental standards, with constitutional transfers of power since 2002.' },
+  },
+  tanzania: {
+    democracy: { rating: 'low-medium', color: '#c09040', evidence: 'Single-party (CCM/TANU) from 1965 to 1992. Multiparty nominally since 1992 but CCM has won every election. Opposition harassed under Magufuli (2015-2021). Hassan (post-2021) opened some space. Freedom House 2024: Partly Free (35/100). Parliament and judiciary lack genuine independence.' },
+    growth: { rating: 'low-medium', color: '#c09040', evidence: 'Ujamaa villagization (1967-1985) devastated agricultural productivity. GDP per capita declined through 1980s. Liberalization post-1986 improved growth (6-7% sustained since 2000). But from a very low base: 2024 GDP/capita ~$1,200. Mining and tourism increasingly important.' },
+    ethnic: { rating: 'high', color: '#488838', evidence: 'Nyerere deliberately built a national identity transcending ethnicity: Swahili as national language, villagization that mixed ethnic groups, no ethnic census categories, rotation of leadership. Tanzania has 120+ ethnic groups but none dominates politically. Ethnic violence is rare. This is Nyerere\'s most enduring achievement.' },
+    corruption: { rating: 'medium', color: '#c09040', evidence: 'Better than Kenya but significant problems. EPA scandal (2008): $133M from central bank. Magufuli\'s anti-corruption drive was popular but selective (targeting rivals). TI CPI consistently higher than Kenya and Nigeria. Civil service relatively professionalized compared to neighbors.' },
+    stability: { rating: 'high', color: '#488838', evidence: 'No coup, no civil war, no ethnic violence on the mainland. Only conflict: Zanzibar separatism (periodic election violence). CCM dominance provides stability but at the cost of democratic competition. Peaceful transition from Magufuli to Hassan (2021) after Magufuli\'s death in office.' },
+  },
+  nigeria: {
+    democracy: { rating: 'low-medium', color: '#c09040', evidence: 'First Republic collapsed in 1966 coup. Military rule 1966-1979, 1983-1999. Current Fourth Republic (1999-present) has held six elections. But: widespread vote-buying, ballot manipulation, and security force interference. 2023 election widely disputed. Freedom House 2024: Partly Free (43/100).' },
+    growth: { rating: 'medium', color: '#c09040', evidence: 'Largest economy in Africa (GDP ~$475B, rebased 2014). But oil-dependent (90% of exports, 50% of revenue). Oil wealth concentrated in the Niger Delta while North is among poorest regions globally. GDP/capita ~$2,000 masks extreme inequality. Manufacturing sector declined since 1980s (Dutch disease).' },
+    ethnic: { rating: 'low', color: '#b84038', evidence: 'Three dominant groups (Hausa-Fulani, Yoruba, Igbo) + 250 minority groups. Biafran War (1967-70): 1-3 million dead. Federal system with 36 states designed to break ethnic blocs but created new ones. Informal power-sharing (North-South presidential rotation). Boko Haram insurgency since 2009 has ethnic-religious dimensions.' },
+    corruption: { rating: 'very low', color: '#b84038', evidence: 'Sani Abacha reportedly stole $3-5 billion during 1993-1998 rule. EFCC (Economic and Financial Crimes Commission) has made high-profile arrests but critics call it a political tool. Oil sector opacity: $20B "missing" from NNPC (2014 Sanusi report). TI CPI: consistently bottom decile globally.' },
+    stability: { rating: 'low', color: '#b84038', evidence: 'Six successful coups (1966 x2, 1975, 1983, 1985, 1993). Civil war (Biafra, 1967-70). Niger Delta militancy (2000s). Boko Haram insurgency (2009-present: 40,000+ killed, 2M displaced). Farmer-herder violence in Middle Belt. Secessionist movements (IPOB). The most volatile large state in Africa.' },
+  },
+  botswana: {
+    democracy: { rating: 'high', color: '#488838', evidence: 'Multiparty democracy since independence (1966). BDP won every election 1966-2019 but in genuinely competitive contests. First party-transfer of power in 2024 (opposition coalition won). Freedom House 2024: Free (72/100). Independent judiciary, free press, functioning parliament. The "African exception" in democratic governance.' },
+    growth: { rating: 'high', color: '#488838', evidence: 'Fastest-growing economy in the world 1966-1990 (averaging 7.7% annually). Diamond revenue (Debswana partnership with De Beers) managed through sovereign wealth fund. GDP/capita ~$7,500 (upper-middle income). But: extreme inequality (Gini ~0.53), HIV/AIDS epidemic (20%+ prevalence), diamond dependence.' },
+    ethnic: { rating: 'medium-high', color: '#488838', evidence: 'Tswana majority (~79%) reduces the salience of ethnic competition compared to deeply divided societies. But: Basarwa (San) face discrimination and land dispossession. Kalanga and other minorities argue for greater recognition. Less a success of ethnic management than a demographic advantage.' },
+    corruption: { rating: 'high', color: '#488838', evidence: 'Directorate on Corruption and Economic Crime (DCEC) established 1994. TI CPI consistently ranked best or second-best in Africa. Civil service professionalism built early. Diamond revenue managed through transparent institutional framework. Not corruption-free but dramatically better than continental average.' },
+    stability: { rating: 'very high', color: '#488838', evidence: 'No coup, no civil war, no political violence, no state of emergency since independence. Every presidential transition has been constitutional. BDF (military) professionalized and apolitical. The longest continuous democracy in Africa. Stability may be partly structural (small population of 2.3M, homogeneous, mineral wealth) rather than purely institutional.' },
+  },
+};
+
+// ── Land Reform Data ────────────────────────────────────────────────
+const LAND_CASES = [
+  {
+    id: 'kenya_land',
+    country: 'Kenya',
+    approach: 'Willing-Buyer, Willing-Seller',
+    period: '1963-present',
+    description: 'At independence, the Kenyatta government chose a market-based land transfer mechanism: white settlers would sell land voluntarily, purchased with British government loans. The scheme was designed to reassure settlers, maintain agricultural productivity, and attract continued investment. In practice, land redistribution was captured by political elites. Kenyatta and his inner circle acquired vast holdings in the former White Highlands. Ordinary Kikuyu, Kalenjin, and other groups who had been displaced by colonialism received little. The Kipipiri and Nyandarua settlement schemes allocated small plots but without adequate support services.',
+    outcomes: [
+      { label: 'Redistribution', rating: 'Failure', color: '#b84038', detail: 'By 2010, Kenya\'s top 5% owned 63% of arable land. The landless remained landless. The Ndung\'u Report (2004) documented systematic illegal allocation of public land to political elites across four decades.' },
+      { label: 'Productivity', rating: 'Mixed', color: '#c09040', detail: 'Large farms maintained export crop production (tea, coffee, horticulture). But smallholder plots were too small for commercial viability, leading to subdivision into uneconomic units across generations.' },
+      { label: 'Stability', rating: 'Destabilizing', color: '#b84038', detail: 'Unresolved land grievances directly fueled the 2007 post-election violence. Kalenjin mobs targeted Kikuyu "settlers" in the Rift Valley, echoing colonial-era dispossession. The 2010 constitution created a National Land Commission, but implementation stalled.' },
+      { label: 'Justice', rating: 'Failure', color: '#b84038', detail: 'Those who fought for land in the Mau Mau uprising were least likely to receive it. Political loyalists who had collaborated with the colonial regime were rewarded. The willing-buyer model preserved colonial-era inequalities under a veneer of market legitimacy.' },
+    ],
+  },
+  {
+    id: 'zimbabwe_land',
+    country: 'Zimbabwe',
+    approach: 'Forced Redistribution (Fast Track)',
+    period: '2000-present',
+    description: 'Zimbabwe followed Kenya\'s willing-buyer model from 1980 to 2000 under the Lancaster House agreement, which protected white land ownership for 10 years. By 2000, 4,500 white commercial farmers still owned 70% of the best farmland. Mugabe\'s "Fast Track Land Reform Program" (FTLRP) authorized forcible seizure of white-owned farms, often led by war veterans. Between 2000 and 2010, virtually all white-owned commercial farms were confiscated.',
+    outcomes: [
+      { label: 'Redistribution', rating: 'Achieved', color: '#488838', detail: 'Land ownership transformed: 170,000+ families received land. White commercial farming effectively ended. The most comprehensive land redistribution in post-colonial African history.' },
+      { label: 'Productivity', rating: 'Catastrophic', color: '#b84038', detail: 'Agricultural output collapsed 60-80% (varies by crop). Zimbabwe went from regional breadbasket to food importer. Tobacco production fell from 237M kg (2000) to 48M kg (2008). Technical knowledge, capital, and market access disappeared with departing farmers.' },
+      { label: 'Stability', rating: 'Destabilizing', color: '#b84038', detail: 'Farm invasions were accompanied by political violence against opposition supporters. The economy collapsed (hyperinflation reaching 79.6 billion percent in November 2008). 3-4 million Zimbabweans emigrated. The land reform became inseparable from authoritarian consolidation.' },
+      { label: 'Justice', rating: 'Contested', color: '#c09040', detail: 'Land redistribution addressed a genuine colonial injustice (the 1930 Land Apportionment Act). But: much prime land went to Mugabe\'s political allies, not to the landless. War veterans received farms they lacked capital to develop. Justice for one group created injustice for another.' },
+    ],
+  },
+  {
+    id: 'sa_land',
+    country: 'South Africa',
+    approach: 'Constitutional Process (Pending)',
+    period: '1994-present',
+    description: 'The 1913 Natives Land Act confined black South Africans to 13% of the land (later 7%). The ANC government adopted a three-pronged approach: restitution (returning land to those dispossessed after 1913), redistribution (purchasing white land for black farmers), and tenure reform (securing rights for farm workers and communal land occupants). The original target was to redistribute 30% of white-owned agricultural land by 2014.',
+    outcomes: [
+      { label: 'Redistribution', rating: 'Failure', color: '#b84038', detail: 'By 2018, only 8-10% of commercial farmland had been transferred (against the 30% target). The willing-seller model inflated land prices. Government capacity to process claims was inadequate. 7,000 restitution claims from the 1990s remain unresolved.' },
+      { label: 'Productivity', rating: 'Mixed', color: '#c09040', detail: 'Many redistributed farms failed: 90% of land reform projects were unproductive by some estimates. Lack of post-transfer support (capital, training, infrastructure, market access) was the primary cause. Some restitution beneficiaries leased land back to former white owners.' },
+      { label: 'Stability', rating: 'Fragile', color: '#c09040', detail: 'The EFF\'s call for "expropriation without compensation" (adopted as ANC policy in 2018, constitutional amendment stalled in 2021) reflects growing frustration. Farm murders, while statistically complex, became a political flashpoint. Land remains the most emotionally charged issue in South African politics.' },
+      { label: 'Justice', rating: 'Incomplete', color: '#c09040', detail: 'The constitutional process was designed to balance justice with stability and property rights. It has achieved neither full justice nor full stability. The fundamental question remains unresolved: how do you reverse 300 years of dispossession within a constitutional framework that protects property rights?' },
+    ],
+  },
+  {
+    id: 'tanzania_land',
+    country: 'Tanzania',
+    approach: 'Ujamaa Villagization',
+    period: '1967-1985',
+    description: 'Nyerere\'s ujamaa ("familyhood") policy nationalized all land and relocated rural populations into planned villages. Between 1973 and 1976, approximately 11 million people were moved, often by force. The program aimed to create collective farming communities, provide social services efficiently, and eliminate the "exploitative" landlord class. All land became public property held in trust by the president.',
+    outcomes: [
+      { label: 'Redistribution', rating: 'Radical', color: '#488838', detail: 'The landlord class was eliminated. No individual owns land in Tanzania (only "rights of occupancy"). This prevented the elite land-grabbing that plagued Kenya and Zimbabwe. The 1999 Land Act and Village Land Act formalized customary land rights within the public ownership framework.' },
+      { label: 'Productivity', rating: 'Catastrophic', color: '#b84038', detail: 'Collective farming failed comprehensively. Agricultural output per capita declined throughout the 1970s. Tanzania became dependent on food imports and aid. Forced relocation destroyed existing farming knowledge adapted to local conditions. The "villagization" program is a textbook case of high-modernist state planning overriding local knowledge (James Scott\'s "Seeing Like a State" uses Tanzania as a central example).' },
+      { label: 'Stability', rating: 'Stabilizing', color: '#488838', detail: 'Despite economic failure, ujamaa contributed to national unity. Shared Swahili language, shared ideology, and the absence of a landed aristocracy prevented the ethnic land conflicts that devastated Kenya and Zimbabwe. Tanzania has never had ethnically motivated land violence.' },
+      { label: 'Justice', rating: 'Partial', color: '#c09040', detail: 'Ujamaa addressed the justice question by eliminating private land ownership entirely. This was just in principle but devastating in practice. The forced relocations themselves were unjust (11 million people moved against their will). The long-term legacy is ambiguous: egalitarian in land access, authoritarian in method, economically destructive.' },
+    ],
+  },
 ];
 
 // ── Scholarly micro-content ──────────────────────────────────────
@@ -363,6 +466,9 @@ function AfricaView({ setView }) {
   const [activeCase, setCase]     = useState(null);
   const [activeComp, setComp]     = useState(null);
   const [tlHover, setTlHover]     = useState(null);
+  const [govSelected, setGovSelected] = useState(null);
+  const [landSelected, setLandSelected] = useState(0);
+  const [landOutcomeOpen, setLandOutcomeOpen] = useState({});
   const topRef                    = useRef(null);
 
   // Track explored items for progress bar
@@ -1043,6 +1149,163 @@ function AfricaView({ setView }) {
     );
   }, [tlHover]);
 
+  // ── Governance Comparison Renderer ─────────────────────────────────
+  const renderGovernance = useCallback(() => {
+    const ratingColors = { 'very high': C.green, 'high': C.green, 'medium-high': C.green, 'medium': C.gold, 'low-medium': C.gold, 'low': C.red, 'very low': C.red };
+    return (
+      <div>
+        <div style={{ fontFamily: Mono, fontSize: 12, letterSpacing: '.06em', color: C.accentDm, marginBottom: 6 }}>
+          POST-COLONIAL GOVERNANCE COMPARISON
+        </div>
+        <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx2, lineHeight: 1.7, marginBottom: 16, maxWidth: 720 }}>
+          Four African states that gained independence within five years of each other chose radically different governance paths. The same structural inheritance {'\u2014'} arbitrary borders, extractive economies, weak institutions {'\u2014'} produced divergent outcomes depending on leadership choices, ethnic demography, and resource endowments. Click any cell to see the evidence.
+        </div>
+
+        {/* Matrix header */}
+        <div style={{ overflowX: 'auto' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '140px repeat(4, 1fr)', gap: 2, minWidth: 700 }}>
+            {/* Corner */}
+            <div style={{ padding: 8, background: 'rgba(20,16,12,.6)', borderRadius: '4px 0 0 0' }} />
+            {/* State headers */}
+            {GOV_STATES.map(s => (
+              <div key={s.id} style={{ padding: '10px 8px', background: 'rgba(184,120,56,.06)', borderRadius: 2, textAlign: 'center' }}>
+                <div style={{ fontFamily: Mono, fontSize: 12, fontWeight: 600, color: C.accent, letterSpacing: '.04em' }}>{s.name}</div>
+                <div style={{ fontFamily: Sans, fontSize: 10, color: C.tx3, marginTop: 2 }}>{s.indep} | {s.leader}</div>
+                <div style={{ fontFamily: Sans, fontSize: 9, color: C.tx3, marginTop: 1, fontStyle: 'italic' }}>{s.path}</div>
+              </div>
+            ))}
+
+            {/* Rows */}
+            {GOV_FACTORS.map(f => (
+              <React.Fragment key={f.id}>
+                <div style={{ padding: '10px 8px', background: 'rgba(20,16,12,.6)', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                  <div style={{ fontFamily: Mono, fontSize: 10, fontWeight: 600, color: C.tx2, letterSpacing: '.04em', textTransform: 'uppercase' }}>{f.label}</div>
+                  <div style={{ fontFamily: Sans, fontSize: 9, color: C.tx3, marginTop: 2, lineHeight: 1.4 }}>{f.desc}</div>
+                </div>
+                {GOV_STATES.map(s => {
+                  const cell = GOV_MATRIX[s.id][f.id];
+                  const isOpen = govSelected === s.id + '-' + f.id;
+                  return (
+                    <div key={s.id + '-' + f.id}>
+                      <button onClick={() => setGovSelected(isOpen ? null : s.id + '-' + f.id)} style={{
+                        width: '100%', padding: '10px 8px', cursor: 'pointer', textAlign: 'center',
+                        background: isOpen ? 'rgba(184,120,56,.10)' : 'rgba(20,16,12,.4)',
+                        border: isOpen ? '1px solid ' + C.accentDm : '1px solid rgba(160,104,48,.06)',
+                        borderRadius: 2, transition: 'all .15s',
+                      }}>
+                        <span style={{
+                          fontFamily: Mono, fontSize: 11, fontWeight: 600,
+                          color: cell.color, letterSpacing: '.04em', textTransform: 'uppercase',
+                        }}>
+                          {cell.rating}
+                        </span>
+                      </button>
+                      {isOpen && (
+                        <div style={{
+                          padding: '8px 10px', background: 'rgba(184,120,56,.04)',
+                          border: '1px solid ' + C.line, borderTop: 'none', borderRadius: '0 0 4px 4px',
+                        }}>
+                          <div style={{ fontFamily: Sans, fontSize: 11, color: C.tx2, lineHeight: 1.65 }}>
+                            {cell.evidence}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </React.Fragment>
+            ))}
+          </div>
+        </div>
+
+        {/* Synthesis */}
+        <div style={{ marginTop: 20, padding: '14px 18px', background: C.accentBg, borderRadius: 6, border: '1px solid ' + C.line }}>
+          <div style={{ fontFamily: Mono, fontSize: 11, letterSpacing: '.06em', color: C.accentDm, marginBottom: 6 }}>ANALYTICAL TAKEAWAY</div>
+          <div style={{ fontFamily: Serif, fontSize: 13, color: C.tx, lineHeight: 1.75 }}>
+            Botswana{'\u2019'}s success and Nigeria{'\u2019'}s instability are often treated as opposites, but the comparison is misleading without controlling for structural variables: Botswana has 2.3 million people, one dominant ethnic group, and diamond wealth managed by a small elite. Nigeria has 220 million people, 250+ ethnic groups, and oil wealth contested by powerful regional blocs. Kenya and Tanzania provide the more illuminating comparison: similar colonial inheritance, similar demographics, radically different choices about ethnicity, land, and political economy {'\u2014'} with consequences still unfolding sixty years later.
+          </div>
+        </div>
+      </div>
+    );
+  }, [govSelected]);
+
+  // ── Land Reform Renderer ──────────────────────────────────────────
+  const renderLandReform = useCallback(() => {
+    const lc = LAND_CASES[landSelected];
+    return (
+      <div>
+        <div style={{ fontFamily: Mono, fontSize: 12, letterSpacing: '.06em', color: C.accentDm, marginBottom: 6 }}>
+          LAND REFORM ANALYZER {'\u2014'} THE UNFINISHED BUSINESS OF DECOLONIZATION
+        </div>
+        <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx2, lineHeight: 1.7, marginBottom: 16, maxWidth: 720 }}>
+          Land is the central unresolved question of post-colonial Africa. Colonial regimes dispossessed indigenous populations to create settler economies. Every newly independent state faced the same dilemma: how to reverse dispossession without destroying agricultural productivity, triggering capital flight, or rewarding political allies instead of the genuinely landless. Four countries, four approaches, four sets of trade-offs.
+        </div>
+
+        {/* Country selector */}
+        <div style={{ display: 'flex', gap: 4, marginBottom: 20 }}>
+          {LAND_CASES.map((lcase, i) => (
+            <button key={lcase.id} onClick={() => { setLandSelected(i); setLandOutcomeOpen({}); }} style={{
+              flex: 1, padding: '10px 12px', borderRadius: 4, cursor: 'pointer',
+              background: i === landSelected ? C.accentBg : 'transparent',
+              border: i === landSelected ? '1px solid ' + C.accentDm : '1px solid ' + C.line,
+              textAlign: 'center', transition: 'all .15s',
+            }}>
+              <div style={{ fontFamily: Mono, fontSize: 12, fontWeight: 600, color: i === landSelected ? C.accent : C.tx3 }}>{lcase.country}</div>
+              <div style={{ fontFamily: Sans, fontSize: 10, color: C.tx3, marginTop: 2 }}>{lcase.approach}</div>
+            </button>
+          ))}
+        </div>
+
+        {/* Case card */}
+        <div style={{ background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 10, overflow: 'hidden' }}>
+          <div style={{ padding: '20px 24px', borderBottom: '1px solid ' + C.line }}>
+            <div style={{ fontFamily: Serif, fontSize: 20, fontWeight: 700, color: C.tx, marginBottom: 4 }}>{lc.country}: {lc.approach}</div>
+            <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3, letterSpacing: '.04em' }}>{lc.period}</div>
+          </div>
+          <div style={{ padding: '20px 24px' }}>
+            <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx, lineHeight: 1.75, marginBottom: 20 }}>
+              {lc.description}
+            </div>
+
+            <div style={{ fontFamily: Mono, fontSize: 11, letterSpacing: '.06em', color: C.accentDm, marginBottom: 10 }}>OUTCOMES</div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+              {lc.outcomes.map(o => {
+                const isOpen = landOutcomeOpen[lc.id + '-' + o.label];
+                return (
+                  <div key={o.label}>
+                    <button onClick={() => setLandOutcomeOpen(prev => ({ ...prev, [lc.id + '-' + o.label]: !isOpen }))} style={{
+                      width: '100%', display: 'flex', alignItems: 'center', gap: 12, padding: '12px 16px',
+                      background: isOpen ? 'rgba(184,120,56,.06)' : 'transparent',
+                      border: '1px solid ' + (isOpen ? C.accentDm : C.line), borderRadius: 6,
+                      cursor: 'pointer', textAlign: 'left', transition: 'all .15s',
+                    }}>
+                      <span style={{ fontFamily: Mono, fontSize: 12, fontWeight: 600, color: C.tx2, flex: '0 0 120px' }}>{o.label}</span>
+                      <span style={{ fontFamily: Mono, fontSize: 12, fontWeight: 600, color: o.color, letterSpacing: '.04em' }}>{o.rating}</span>
+                      <span style={{ marginLeft: 'auto', fontFamily: Mono, fontSize: 12, color: C.tx3, transition: 'transform .15s', transform: isOpen ? 'rotate(90deg)' : 'rotate(0)' }}>{'\u25B6'}</span>
+                    </button>
+                    {isOpen && (
+                      <div style={{ padding: '10px 16px', background: 'rgba(184,120,56,.03)', border: '1px solid ' + C.line, borderTop: 'none', borderRadius: '0 0 6px 6px' }}>
+                        <div style={{ fontFamily: Sans, fontSize: 12, color: C.tx2, lineHeight: 1.7 }}>{o.detail}</div>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+
+        {/* Comparative summary */}
+        <div style={{ marginTop: 20, padding: '14px 18px', background: C.accentBg, borderRadius: 6, border: '1px solid ' + C.line }}>
+          <div style={{ fontFamily: Mono, fontSize: 11, letterSpacing: '.06em', color: C.accentDm, marginBottom: 6 }}>THE LAND DILEMMA</div>
+          <div style={{ fontFamily: Serif, fontSize: 13, color: C.tx, lineHeight: 1.75 }}>
+            Kenya{'\u2019'}s market approach preserved productivity but failed to redistribute. Zimbabwe{'\u2019'}s forced seizure achieved redistribution but destroyed productivity. South Africa{'\u2019'}s constitutional process achieved neither. Tanzania{'\u2019'}s nationalization eliminated the land question by eliminating private ownership {'\u2014'} at the cost of agricultural collapse. No country has solved the trilemma of justice, productivity, and stability simultaneously. This remains the defining structural challenge of post-colonial African political economy.
+          </div>
+        </div>
+      </div>
+    );
+  }, [landSelected, landOutcomeOpen]);
+
   // ── Mode content dispatch ─────────────────────────────────────────
   const modeContent = useMemo(() => {
     switch (mode) {
@@ -1050,9 +1313,11 @@ function AfricaView({ setView }) {
       case 'timeline':    return renderTimeline();
       case 'casestudy':   return renderCaseStudy();
       case 'comparative': return renderComparative();
+      case 'governance':  return renderGovernance();
+      case 'land':        return renderLandReform();
       default:            return null;
     }
-  }, [mode, renderHistorical, renderTimeline, renderCaseStudy, renderComparative]);
+  }, [mode, renderHistorical, renderTimeline, renderCaseStudy, renderComparative, renderGovernance, renderLandReform]);
 
   // ── Main Render ───────────────────────────────────────────────────
   return (

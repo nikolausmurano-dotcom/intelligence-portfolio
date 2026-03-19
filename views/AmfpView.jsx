@@ -332,6 +332,13 @@ function AmfpView({ setView }) {
   const svgRef = useRef(null);
   const topRef = useRef(null);
 
+  // Pendulum mode state
+  const [pendulumSelected, setPendulumSelected] = useState(null);
+
+  // Power mode state
+  const [powerScenario, setPowerScenario] = useState(0);
+  const [powerEra, setPowerEra] = useState('current');
+
   // Toggle impact reveal per doctrine era
   const toggleImpact = useCallback((id) => {
     setRevealedImpacts(prev => ({ ...prev, [id]: !prev[id] }));
@@ -411,6 +418,8 @@ function AmfpView({ setView }) {
       { id: 'cases', label: 'Case Studies', desc: 'Key Events' },
       { id: 'themes', label: 'Themes', desc: 'Recurring Patterns' },
       { id: 'doctrinemap', label: 'Doctrine Map', desc: 'SVG Timeline' },
+      { id: 'pendulum', label: 'Pendulum', desc: 'Isol. vs Interv.' },
+      { id: 'power', label: 'Projection', desc: 'Cost Calculator' },
     ];
     return (
       <div style={{ display: 'flex', gap: 4, marginBottom: 24 }}>
@@ -1134,6 +1143,334 @@ function AmfpView({ setView }) {
     );
   }, [selectedBand, cursorYear]);
 
+  // ── Pendulum Renderer ──────────────────────────────────────────
+  const PENDULUM_POINTS = useMemo(() => [
+    { id: 'p1', year: 1789, label: 'Washington\'s Farewell', angle: -70, pole: 'isolationism',
+      trigger: 'Founding of the republic; fear of European entanglements',
+      policy: 'Neutrality proclamation, no permanent alliances, focus on continental development',
+      duration: '~1789-1823 (34 years)',
+      ended: 'Monroe Doctrine asserted hemispheric interest, beginning tentative outward turn' },
+    { id: 'p2', year: 1823, label: 'Monroe Doctrine', angle: -40, pole: 'isolationism',
+      trigger: 'Latin American independence movements; European recolonization threat',
+      policy: 'Hemispheric non-interference claim. Still isolationist re: Europe, but asserting regional sphere',
+      duration: '~1823-1846 (23 years)',
+      ended: 'Mexican-American War demonstrated willingness to use force for expansion' },
+    { id: 'p3', year: 1846, label: 'Mexican-American War', angle: -10, pole: 'transitional',
+      trigger: 'Manifest Destiny ideology; Texas annexation; Polk\'s expansionism',
+      policy: 'Continental expansion by force. Not yet overseas intervention, but aggressive territorial acquisition',
+      duration: '~1846-1865 (19 years)',
+      ended: 'Civil War turned focus inward; post-war reconstruction absorbed national energy' },
+    { id: 'p4', year: 1865, label: 'Post-Civil War Retrenchment', angle: -50, pole: 'isolationism',
+      trigger: 'Exhaustion from Civil War; Reconstruction demands; industrial growth',
+      policy: 'Inward focus. Building transcontinental railroad, settling West, industrializing. Foreign policy minimal.',
+      duration: '~1865-1898 (33 years)',
+      ended: 'Spanish-American War -- the explosion of overseas interventionism' },
+    { id: 'p5', year: 1898, label: 'Spanish-American War', angle: 60, pole: 'interventionism',
+      trigger: 'USS Maine, yellow journalism, strategic interest in Caribbean/Pacific, Mahan\'s sea power thesis',
+      policy: 'First overseas empire: Philippines, Puerto Rico, Guam, Cuba protectorate. Dramatic swing to global power projection.',
+      duration: '~1898-1920 (22 years)',
+      ended: 'Senate rejected League of Nations; war weariness triggered isolationist backlash' },
+    { id: 'p6', year: 1904, label: 'Roosevelt Corollary', angle: 70, pole: 'interventionism',
+      trigger: 'Venezuelan crisis; European debt collection in Latin America; Panama Canal',
+      policy: 'US as international police power in Western Hemisphere. Maximum interventionist extension of Monroe Doctrine.',
+      duration: '~1904-1913 (9 years, within broader interventionist era)',
+      ended: 'Wilson shifted from "big stick" to moral internationalism, then back to intervention (WWI)' },
+    { id: 'p7', year: 1917, label: 'Wilson\'s WWI Entry', angle: 55, pole: 'interventionism',
+      trigger: 'Unrestricted submarine warfare; Zimmermann Telegram; Wilson\'s "make the world safe for democracy"',
+      policy: 'First massive overseas military deployment. 2 million troops to Europe. League of Nations proposal.',
+      duration: '~1917-1920 (3 years of war, then rapid retrenchment)',
+      ended: 'Senate rejected Versailles Treaty/League; public turned sharply isolationist' },
+    { id: 'p8', year: 1920, label: 'Interwar Isolationism', angle: -65, pole: 'isolationism',
+      trigger: 'Disillusionment with WWI; Senate rejection of League; Nye Committee (arms dealers profited from war)',
+      policy: 'Neutrality Acts (1935-37), Kellogg-Briand Pact (outlawing war), refusal to join League or World Court',
+      duration: '~1920-1941 (21 years)',
+      ended: 'Pearl Harbor made isolationism politically impossible overnight' },
+    { id: 'p9', year: 1941, label: 'Pearl Harbor / WWII', angle: 75, pole: 'interventionism',
+      trigger: 'Japanese attack eliminated isolationist argument; Hitler declared war on US',
+      policy: 'Total war mobilization. 16 million in uniform. Global two-theater campaign. Atomic weapons. UN founding.',
+      duration: '~1941-1945 (4 years of war, then permanent global posture)',
+      ended: 'Never fully ended -- transitioned directly into Cold War interventionism' },
+    { id: 'p10', year: 1947, label: 'Truman Doctrine / Cold War', angle: 65, pole: 'interventionism',
+      trigger: 'Soviet expansion; containment theory (Kennan); Greek/Turkish crisis',
+      policy: 'Permanent global alliance system. NATO, SEATO, CENTO. Forward-deployed forces worldwide. Nuclear deterrence.',
+      duration: '~1947-1975 (28 years until Vietnam collapse)',
+      ended: 'Vietnam War discredited interventionism; Nixon Doctrine pulled back from direct engagement' },
+    { id: 'p11', year: 1975, label: 'Post-Vietnam Retrenchment', angle: -25, pole: 'isolationism',
+      trigger: 'Fall of Saigon; War Powers Act; Church Committee; public distrust of military intervention',
+      policy: 'Partial retrenchment. Carter human rights focus. Reagan re-armed but used proxies (contras, mujahideen) not direct intervention.',
+      duration: '~1975-1991 (16 years)',
+      ended: 'Gulf War demonstrated renewed willingness for large-scale deployment; Soviet collapse removed constraint' },
+    { id: 'p12', year: 1991, label: 'Unipolar Moment', angle: 50, pole: 'interventionism',
+      trigger: 'Soviet collapse; Gulf War success; "end of history" thesis; sole superpower status',
+      policy: 'Humanitarian intervention (Somalia, Bosnia, Kosovo), democracy promotion, NATO expansion, then 9/11 maximalism (Afghanistan, Iraq).',
+      duration: '~1991-2021 (30 years)',
+      ended: 'Afghanistan withdrawal (2021); rising public opposition to "forever wars"; pivot toward great power competition and selective engagement' },
+  ], []);
+
+  const renderPendulum = useCallback(() => {
+    var selected = pendulumSelected !== null ? PENDULUM_POINTS.find(function(p) { return p.id === pendulumSelected; }) : null;
+    var svgW = 700;
+    var svgH = 400;
+    var pivotX = svgW / 2;
+    var pivotY = 40;
+    var armLen = 300;
+
+    return (
+      <div>
+        <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx2, lineHeight: 1.6, marginBottom: 20 }}>
+          American foreign policy swings between isolationism and interventionism in roughly 20-30 year cycles.
+          Click any point on the pendulum arc to see what triggered each swing, what the policy looked like,
+          and what ended it. The pattern is remarkably consistent across 237 years.
+        </div>
+
+        {/* SVG Pendulum */}
+        <svg viewBox={'0 0 ' + svgW + ' ' + svgH} style={{ width: '100%', height: 'auto', background: 'rgba(8,14,32,.5)', borderRadius: 6, border: '1px solid ' + C.line, marginBottom: 16 }}>
+          {/* Arc */}
+          <path d={'M ' + (pivotX - armLen * Math.sin(75 * Math.PI / 180)) + ' ' + (pivotY + armLen * Math.cos(75 * Math.PI / 180)) +
+            ' A ' + armLen + ' ' + armLen + ' 0 0 1 ' + (pivotX + armLen * Math.sin(75 * Math.PI / 180)) + ' ' + (pivotY + armLen * Math.cos(75 * Math.PI / 180))}
+            fill="none" stroke="rgba(60,90,140,.15)" strokeWidth="1" strokeDasharray="4,4"/>
+          {/* Pivot */}
+          <circle cx={pivotX} cy={pivotY} r="4" fill={C.gold}/>
+          {/* Labels */}
+          <text x={pivotX - armLen * Math.sin(65 * Math.PI / 180) - 10} y={pivotY + armLen * Math.cos(65 * Math.PI / 180)}
+            textAnchor="end" fill={C.blue} style={{fontSize:11,fontFamily:Mono,fontWeight:700}}>ISOLATIONISM</text>
+          <text x={pivotX + armLen * Math.sin(65 * Math.PI / 180) + 10} y={pivotY + armLen * Math.cos(65 * Math.PI / 180)}
+            textAnchor="start" fill={C.red} style={{fontSize:11,fontFamily:Mono,fontWeight:700}}>INTERVENTIONISM</text>
+          <text x={pivotX} y={svgH - 10} textAnchor="middle" fill={C.tx3} style={{fontSize:10,fontFamily:Mono}}>CENTER (selective engagement)</text>
+
+          {/* Data points */}
+          {PENDULUM_POINTS.map(function(pt) {
+            var rad = pt.angle * Math.PI / 180;
+            var px = pivotX + armLen * Math.sin(rad);
+            var py = pivotY + armLen * Math.cos(rad);
+            var isSelected = pendulumSelected === pt.id;
+            var dotColor = pt.angle < -20 ? C.blue : (pt.angle > 20 ? C.red : C.gold);
+            return (
+              <g key={pt.id} onClick={function() { setPendulumSelected(isSelected ? null : pt.id); }} style={{cursor:'pointer'}}>
+                {isSelected && <line x1={pivotX} y1={pivotY} x2={px} y2={py} stroke={dotColor} strokeWidth="1.5" opacity="0.5"/>}
+                <circle cx={px} cy={py} r={isSelected ? 8 : 5} fill={dotColor} opacity={isSelected ? 1 : 0.7}
+                  stroke={isSelected ? '#fff' : 'none'} strokeWidth="1.5"/>
+                <text x={px} y={py - 10} textAnchor="middle" fill={isSelected ? '#fff' : C.tx3}
+                  style={{fontSize:8,fontFamily:Mono,pointerEvents:'none'}}>
+                  {pt.year}
+                </text>
+              </g>
+            );
+          })}
+
+          {/* Connecting line through points in chronological order */}
+          <polyline
+            points={PENDULUM_POINTS.map(function(pt) {
+              var rad = pt.angle * Math.PI / 180;
+              return (pivotX + armLen * Math.sin(rad)) + ',' + (pivotY + armLen * Math.cos(rad));
+            }).join(' ')}
+            fill="none" stroke="rgba(212,184,80,.15)" strokeWidth="1"/>
+        </svg>
+
+        {/* Selected point detail */}
+        {selected && (
+          <div style={{ padding: 16, background: C.card, border: '1px solid ' + C.line, borderRadius: 6, marginBottom: 16 }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 8 }}>
+              <div style={{ fontFamily: Serif, fontSize: 18, color: selected.angle < -20 ? C.blue : (selected.angle > 20 ? C.red : C.gold) }}>
+                {selected.label} ({selected.year})
+              </div>
+              <div style={{ fontFamily: Mono, fontSize: 12, color: C.tx3 }}>
+                {selected.pole.toUpperCase()}
+              </div>
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+              <div>
+                <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3, letterSpacing: 1, marginBottom: 4 }}>TRIGGER</div>
+                <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2, lineHeight: 1.6 }}>{selected.trigger}</div>
+              </div>
+              <div>
+                <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3, letterSpacing: 1, marginBottom: 4 }}>POLICY</div>
+                <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2, lineHeight: 1.6 }}>{selected.policy}</div>
+              </div>
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginTop: 12, borderTop: '1px solid ' + C.line, paddingTop: 12 }}>
+              <div>
+                <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3, letterSpacing: 1, marginBottom: 4 }}>DURATION</div>
+                <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2, lineHeight: 1.6 }}>{selected.duration}</div>
+              </div>
+              <div>
+                <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3, letterSpacing: 1, marginBottom: 4 }}>WHAT ENDED IT</div>
+                <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2, lineHeight: 1.6 }}>{selected.ended}</div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Analytical insight */}
+        <div style={{ padding: 12, background: C.goldBg, border: '1px solid rgba(212,184,80,.15)', borderRadius: 4 }}>
+          <div style={{ fontFamily: Mono, fontSize: 11, color: C.gold, letterSpacing: 1, marginBottom: 4 }}>ANALYTICAL PATTERN</div>
+          <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2, lineHeight: 1.6 }}>
+            The pendulum swings with striking regularity: isolationist phases average ~25 years, interventionist
+            phases average ~20 years. Each interventionist phase ends with public exhaustion and overreach
+            (WWI disillusionment, Vietnam syndrome, post-Iraq fatigue). Each isolationist phase ends with a shock
+            that makes withdrawal impossible (Pearl Harbor, Soviet expansion, 9/11). The current post-Afghanistan
+            moment resembles previous retrenchments -- suggesting the next interventionist swing may be triggered
+            by a crisis the current consensus cannot absorb.
+          </div>
+        </div>
+      </div>
+    );
+  }, [pendulumSelected, PENDULUM_POINTS]);
+
+  // ── Power Projection Renderer ─────────────────────────────────────
+  const POWER_SCENARIOS = useMemo(() => [
+    { id: 'gulf', label: 'Persian Gulf Deployment',
+      desc: 'Maintaining carrier strike group presence in the Persian Gulf to deter Iran and protect oil shipping lanes.',
+      eras: {
+        coldwar: { ships: 25, personnel: 35000, dailyCost: 18, deployDays: 14, chainKm: 12000, label: 'Cold War (1980s)' },
+        post911: { ships: 40, personnel: 65000, dailyCost: 55, deployDays: 10, chainKm: 12000, label: 'Post-9/11 (2003)' },
+        current: { ships: 15, personnel: 20000, dailyCost: 35, deployDays: 12, chainKm: 12000, label: 'Current (2024)' },
+      }},
+    { id: 'nato', label: 'NATO Reinforcement',
+      desc: 'Surging forces to Eastern Europe in response to Russian aggression. Requires transatlantic logistics chain.',
+      eras: {
+        coldwar: { ships: 60, personnel: 300000, dailyCost: 120, deployDays: 7, chainKm: 6000, label: 'Cold War (pre-positioned)' },
+        post911: { ships: 20, personnel: 30000, dailyCost: 25, deployDays: 21, chainKm: 6000, label: 'Post-9/11 (reduced posture)' },
+        current: { ships: 35, personnel: 80000, dailyCost: 65, deployDays: 14, chainKm: 6000, label: 'Current (post-Ukraine)' },
+      }},
+    { id: 'pacific', label: 'Pacific Pivot',
+      desc: 'Repositioning forces to the Western Pacific to counter Chinese military buildup. The Indo-Pacific rebalance.',
+      eras: {
+        coldwar: { ships: 45, personnel: 100000, dailyCost: 50, deployDays: 5, chainKm: 8000, label: 'Cold War (forward-based)' },
+        post911: { ships: 30, personnel: 60000, dailyCost: 40, deployDays: 10, chainKm: 9000, label: 'Post-9/11 (distracted)' },
+        current: { ships: 60, personnel: 90000, dailyCost: 80, deployDays: 8, chainKm: 9000, label: 'Current (priority theater)' },
+      }},
+    { id: 'humanitarian', label: 'Humanitarian Intervention',
+      desc: 'Rapid deployment for disaster relief or civilian protection. Requires different capabilities than combat operations.',
+      eras: {
+        coldwar: { ships: 8, personnel: 5000, dailyCost: 5, deployDays: 7, chainKm: 'varies', label: 'Cold War (rare)' },
+        post911: { ships: 12, personnel: 15000, dailyCost: 12, deployDays: 5, chainKm: 'varies', label: 'Post-9/11 (2004 tsunami)' },
+        current: { ships: 10, personnel: 8000, dailyCost: 10, deployDays: 4, chainKm: 'varies', label: 'Current (contested access)' },
+      }},
+  ], []);
+
+  const renderPower = useCallback(() => {
+    var scenario = POWER_SCENARIOS[powerScenario];
+    var eraData = scenario.eras[powerEra];
+    var eraKeys = ['coldwar', 'post911', 'current'];
+
+    return (
+      <div>
+        <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx2, lineHeight: 1.6, marginBottom: 20 }}>
+          Power projection is not abstract -- it has concrete costs in ships, personnel, dollars, and time.
+          Select a scenario and compare across eras to see how American force projection capabilities and
+          costs have changed.
+        </div>
+
+        {/* Scenario selector */}
+        <div style={{ display: 'flex', gap: 6, marginBottom: 16, flexWrap: 'wrap' }}>
+          {POWER_SCENARIOS.map(function(s, i) {
+            var active = powerScenario === i;
+            return (
+              <button key={s.id} onClick={function() { setPowerScenario(i); }}
+                style={{ flex: '1 1 auto', minWidth: 120, padding: '8px 14px', borderRadius: 4, cursor: 'pointer',
+                  background: active ? C.blueBg : 'transparent',
+                  border: active ? '1px solid ' + C.blueDm : '1px solid ' + C.line,
+                  fontFamily: Mono, fontSize: 12, color: active ? C.blue : C.tx3, textAlign: 'center', transition: 'all .15s ease' }}>
+                {s.label}
+              </button>
+            );
+          })}
+        </div>
+
+        <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2, lineHeight: 1.5, marginBottom: 16, padding: 12, background: C.card, border: '1px solid ' + C.line, borderRadius: 4 }}>
+          {scenario.desc}
+        </div>
+
+        {/* Era selector */}
+        <div style={{ display: 'flex', gap: 6, marginBottom: 20 }}>
+          {eraKeys.map(function(ek) {
+            var active = powerEra === ek;
+            var eLabel = ek === 'coldwar' ? 'Cold War' : (ek === 'post911' ? 'Post-9/11' : 'Current');
+            return (
+              <button key={ek} onClick={function() { setPowerEra(ek); }}
+                style={{ flex: 1, padding: '8px 12px', borderRadius: 4, cursor: 'pointer',
+                  background: active ? C.goldBg : 'transparent',
+                  border: active ? '1px solid ' + C.goldDm : '1px solid ' + C.line,
+                  fontFamily: Mono, fontSize: 12, color: active ? C.gold : C.tx3, transition: 'all .15s ease' }}>
+                {eLabel}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Metrics display */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 12, marginBottom: 16 }}>
+          {[
+            { label: 'SHIPS REQUIRED', value: eraData.ships, unit: 'vessels', maxVal: 80, color: C.blue },
+            { label: 'PERSONNEL', value: eraData.personnel, unit: 'troops', maxVal: 350000, color: C.gold },
+            { label: 'DAILY COST', value: eraData.dailyCost, unit: '$M/day', maxVal: 150, color: C.red },
+          ].map(function(m) {
+            var pct = Math.min(100, (m.value / m.maxVal) * 100);
+            return (
+              <div key={m.label} style={{ padding: 14, background: C.card, border: '1px solid ' + C.line, borderRadius: 4 }}>
+                <div style={{ fontFamily: Mono, fontSize: 10, color: C.tx3, letterSpacing: 1, marginBottom: 6 }}>{m.label}</div>
+                <div style={{ fontFamily: Serif, fontSize: 24, color: m.color, marginBottom: 4 }}>
+                  {typeof m.value === 'number' ? m.value.toLocaleString() : m.value}
+                </div>
+                <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3 }}>{m.unit}</div>
+                <div style={{ marginTop: 8, height: 6, background: 'rgba(60,90,140,.1)', borderRadius: 3 }}>
+                  <div style={{ height: '100%', width: pct + '%', background: m.color, borderRadius: 3, transition: 'width .3s ease', opacity: 0.7 }}/>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 }}>
+          <div style={{ padding: 14, background: C.card, border: '1px solid ' + C.line, borderRadius: 4 }}>
+            <div style={{ fontFamily: Mono, fontSize: 10, color: C.tx3, letterSpacing: 1, marginBottom: 6 }}>TIME TO DEPLOY</div>
+            <div style={{ fontFamily: Serif, fontSize: 24, color: C.blue }}>{eraData.deployDays} days</div>
+            <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3 }}>from order to operational</div>
+          </div>
+          <div style={{ padding: 14, background: C.card, border: '1px solid ' + C.line, borderRadius: 4 }}>
+            <div style={{ fontFamily: Mono, fontSize: 10, color: C.tx3, letterSpacing: 1, marginBottom: 6 }}>LOGISTICAL CHAIN</div>
+            <div style={{ fontFamily: Serif, fontSize: 24, color: C.gold }}>{eraData.chainKm}{typeof eraData.chainKm === 'number' ? ' km' : ''}</div>
+            <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3 }}>supply line length</div>
+          </div>
+        </div>
+
+        {/* Cross-era comparison bar chart */}
+        <div style={{ padding: 16, background: C.card, border: '1px solid ' + C.line, borderRadius: 6, marginBottom: 16 }}>
+          <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3, letterSpacing: 1, marginBottom: 12 }}>CROSS-ERA COMPARISON: DAILY COST ($M)</div>
+          <svg viewBox="0 0 500 120" style={{ width: '100%', height: 'auto' }}>
+            {eraKeys.map(function(ek, i) {
+              var d = scenario.eras[ek];
+              var barW = Math.min(400, (d.dailyCost / 150) * 400);
+              var yPos = 10 + i * 35;
+              var eLabel = ek === 'coldwar' ? 'Cold War' : (ek === 'post911' ? 'Post-9/11' : 'Current');
+              var barColor = ek === powerEra ? C.gold : 'rgba(60,90,140,.4)';
+              return (
+                <g key={ek}>
+                  <text x="0" y={yPos + 12} fill={ek === powerEra ? C.gold : C.tx3} style={{fontSize:10,fontFamily:Mono}}>{eLabel}</text>
+                  <rect x="80" y={yPos} width={barW} height={18} rx="2" fill={barColor} opacity="0.7"/>
+                  <text x={80 + barW + 8} y={yPos + 13} fill={C.tx2} style={{fontSize:11,fontFamily:Mono}}>${d.dailyCost}M/day</text>
+                </g>
+              );
+            })}
+          </svg>
+        </div>
+
+        {/* Structural insight */}
+        <div style={{ padding: 12, background: C.redBg, border: '1px solid rgba(184,56,56,.15)', borderRadius: 4 }}>
+          <div style={{ fontFamily: Mono, fontSize: 11, color: C.red, letterSpacing: 1, marginBottom: 4 }}>STRUCTURAL OBSERVATION</div>
+          <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2, lineHeight: 1.6 }}>
+            Power projection costs have increased dramatically even as force sizes decreased. The US spends more
+            per deployed soldier than any nation in history. Technology has replaced personnel but not reduced
+            total cost. The logistical tail (supply chain) now exceeds the combat force in both size and cost.
+            This means the US can project overwhelming force -- but not cheaply, not quickly, and not indefinitely.
+            Every deployment is a fiscal decision as much as a strategic one.
+          </div>
+        </div>
+      </div>
+    );
+  }, [powerScenario, powerEra, POWER_SCENARIOS]);
+
   // ── Main Render ───────────────────────────────────────────────
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.tx, fontFamily: Sans, position: 'relative', overflow: 'hidden' }} ref={topRef}>
@@ -1259,6 +1596,8 @@ function AmfpView({ setView }) {
         {mode === 'cases' && renderCases()}
         {mode === 'themes' && renderThemes()}
         {mode === 'doctrinemap' && renderDoctrineMap()}
+        {mode === 'pendulum' && renderPendulum()}
+        {mode === 'power' && renderPower()}
 
         {/* Provenance Strip — presidential library styling */}
         <div style={{

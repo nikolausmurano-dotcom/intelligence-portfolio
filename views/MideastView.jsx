@@ -375,6 +375,16 @@ function MideastView({ setView }) {
   const [narrativeSide, setNarrativeSide] = useState('both'); // 'israeli', 'palestinian', 'both'
   const topRef = useRef(null);
 
+  // Negotiations mode state
+  const [negoSelected, setNegoSelected] = useState(0);
+  const [negoUserAnswers, setNegoUserAnswers] = useState({});
+  const [negoRevealed, setNegoRevealed] = useState({});
+
+  // Water mode state
+  const [waterPopGrowth, setWaterPopGrowth] = useState(1.0);
+  const [waterRainReduction, setWaterRainReduction] = useState(0);
+  const [waterSelectedSource, setWaterSelectedSource] = useState(null);
+
   // Territory map state
   const [mapPeriodIdx, setMapPeriodIdx] = useState(0);
   const [selectedRegion, setSelectedRegion] = useState(null);
@@ -462,6 +472,8 @@ function MideastView({ setView }) {
       { id: 'narratives', label: 'Narratives', desc: 'Side-by-Side' },
       { id: 'documents', label: 'Documents', desc: '4 Key Texts' },
       { id: 'territory', label: 'Territory', desc: 'Control Map' },
+      { id: 'negotiations', label: 'Negotiations', desc: 'Failure Analysis' },
+      { id: 'water', label: 'Water', desc: 'Resource Conflict' },
     ];
     return (
       <div style={{ display: 'flex', gap: 4, marginBottom: 24 }}>
@@ -1356,6 +1368,379 @@ function MideastView({ setView }) {
     );
   }, [mapPeriodIdx, selectedRegion, isPlaying]);
 
+  // ── Negotiations Renderer ──────────────────────────────────────────
+  const NEGOTIATIONS = useMemo(() => [
+    { id: 'camp_david', name: 'Camp David 2000', year: 2000,
+      parties: 'Barak / Arafat / Clinton',
+      offered: 'Israel offered ~91% of West Bank, Palestinian state with limited sovereignty, shared arrangements in Jerusalem, Israeli retention of major settlement blocs, no return to 1967 borders in Jerusalem.',
+      rejected: 'Palestinians rejected: no contiguous state, no sovereignty over East Jerusalem (including Haram al-Sharif/Temple Mount), no right of return, security zones fragmenting territory.',
+      obstacles: ['jerusalem', 'refugees', 'borders', 'security'],
+      why: 'The offer required Palestinians to accept permanent Israeli control over the Old City and refugee renunciation without compensation framework. Barak presented it as take-it-or-leave-it. The gaps on Jerusalem and refugees were unbridgeable within the summit format.' },
+    { id: 'taba', name: 'Taba 2001', year: 2001,
+      parties: 'Negotiating teams (post-Camp David)',
+      offered: 'Closest to agreement ever reached: ~97% of West Bank with land swaps, shared sovereignty in Jerusalem Old City, limited refugee return (tens of thousands over years), international force in Jordan Valley.',
+      rejected: 'Ran out of time. Israeli elections ended talks. Barak lost to Sharon. Neither side formally rejected the other\'s position -- the political calendar killed it.',
+      obstacles: ['jerusalem', 'refugees'],
+      why: 'Taba demonstrated that professional negotiators COULD bridge most gaps. But negotiations required political cover that neither leader had. Barak was a lame duck; Arafat could not sell partial refugee return. Structural obstacle: democratic legitimacy timelines vs negotiation timelines.' },
+    { id: 'annapolis', name: 'Annapolis 2007', year: 2007,
+      parties: 'Olmert / Abbas / Bush',
+      offered: 'Olmert offered 93.5% of West Bank with 5.8% land swap, division of Jerusalem along demographic lines (Jewish neighborhoods to Israel, Arab to Palestine), international trusteeship for Old City, symbolic refugee return of 5,000 over 5 years.',
+      rejected: 'Abbas never formally responded. The offer was verbal, never written. Abbas later said he could not accept without studying maps he was shown but not given. Olmert resigned over corruption charges.',
+      obstacles: ['jerusalem', 'refugees', 'borders'],
+      why: 'The most generous offer in the conflict\'s history died because of domestic politics on both sides. Olmert lacked political legitimacy (corruption scandal). Abbas feared being seen as the leader who traded away refugee rights. Structure: leaders who can negotiate lack mandates; leaders with mandates cannot negotiate.' },
+    { id: 'kerry', name: 'Kerry Framework 2013-14', year: 2013,
+      parties: 'Netanyahu / Abbas / Kerry',
+      offered: 'Kerry proposed: 1967 lines with swaps, phased Israeli withdrawal, Palestinian capital in East Jerusalem, security arrangements with international presence, agreed compensation mechanism for refugees (no mass return).',
+      rejected: 'Netanyahu rejected 1967 baseline. Abbas rejected no right of return. Settlement expansion continued throughout talks. Both sides accused the other of bad faith. Israel released prisoners as talks incentive, then announced new settlements.',
+      obstacles: ['jerusalem', 'refugees', 'borders', 'security'],
+      why: 'All four structural obstacles were active simultaneously. Netanyahu\'s coalition included settlers who would topple government over concessions. Abbas could not survive politically accepting refugee compensation-not-return. Nine months of talks produced zero written agreements. Structure: coalition politics make territorial compromise coalition-ending.' },
+    { id: 'trump', name: 'Trump Plan 2020', year: 2020,
+      parties: 'Trump / Netanyahu (Palestinians excluded)',
+      offered: 'Palestinian state on ~70% of West Bank (non-contiguous), Israeli sovereignty over Jordan Valley and all settlements, Jerusalem as undivided Israeli capital, no refugee return, Palestinian capital in Abu Dis (outside Jerusalem municipal boundary).',
+      rejected: 'Palestinians rejected entirely and refused to participate. Plan was developed with Israeli input only. Offered less than any previous proposal. International community largely dismissed it.',
+      obstacles: ['jerusalem', 'refugees', 'borders', 'security'],
+      why: 'Demonstrated that bypassing one party produces proposals the other cannot accept. The plan gave Israel everything it wanted on all four structural issues, making Palestinian acceptance structurally impossible. Revealed that "deal-making" frameworks fail when they ignore the structural equilibrium both sides must accept.' },
+  ], []);
+
+  const STRUCTURAL_OBSTACLES = useMemo(() => ({
+    jerusalem: { label: 'Jerusalem', color: C.accent, desc: 'Both sides claim sovereignty over the Old City. Religious sites (Haram al-Sharif/Temple Mount) cannot be divided without alienating core constituencies on both sides.' },
+    refugees: { label: 'Refugees', color: C.blue, desc: 'Right of return for ~5.9 million registered refugees. Israel sees mass return as demographic threat to Jewish state; Palestinians see it as fundamental right under international law.' },
+    borders: { label: 'Borders', color: C.olive, desc: '1967 lines vs current settlement reality. 700,000+ settlers in West Bank and East Jerusalem create facts on the ground that make contiguous Palestinian state increasingly difficult.' },
+    security: { label: 'Security', color: C.red, desc: 'Israel demands demilitarized Palestinian state, control of airspace, Jordan Valley presence. Palestinians see these as negating sovereignty. Neither side trusts the other to maintain agreements.' },
+  }), []);
+
+  const renderNegotiations = useCallback(() => {
+    const nego = NEGOTIATIONS[negoSelected];
+    var obstacleKeys = ['jerusalem', 'refugees', 'borders', 'security'];
+    var userAnswerSet = negoUserAnswers[nego.id] || {};
+    var isRevealed = negoRevealed[nego.id];
+    var userCorrect = 0;
+    var userTotal = Object.keys(userAnswerSet).length;
+    if (isRevealed) {
+      obstacleKeys.forEach(function(k) { if (userAnswerSet[k] && nego.obstacles.indexOf(k) !== -1) userCorrect++; });
+    }
+    var allNegosRevealed = NEGOTIATIONS.filter(function(n) { return negoRevealed[n.id]; }).length;
+
+    return (
+      <div>
+        {/* Insight banner */}
+        {allNegosRevealed === 5 && (
+          <div style={{ padding: 16, marginBottom: 20, background: 'rgba(196,160,64,.08)', border: '1px solid rgba(196,160,64,.2)', borderRadius: 4 }}>
+            <div style={{ fontFamily: Serif, fontSize: 15, color: C.accent, marginBottom: 6 }}>Pattern Revealed: Structural Lock-In</div>
+            <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2, lineHeight: 1.6 }}>
+              Across 20 years and 5 major attempts, the same 4 structural obstacles blocked every negotiation.
+              Personalities changed (Barak, Olmert, Netanyahu, Arafat, Abbas), mediators changed (Clinton, Bush, Kerry, Trump),
+              formats changed (summits, frameworks, unilateral plans) -- but Jerusalem, refugees, borders, and security
+              remained immovable. This is not a failure of diplomacy; it is a structural equilibrium that diplomacy alone cannot break.
+            </div>
+          </div>
+        )}
+
+        {/* Negotiation selector */}
+        <div style={{ display: 'flex', gap: 4, marginBottom: 20, flexWrap: 'wrap' }}>
+          {NEGOTIATIONS.map(function(n, i) {
+            var active = i === negoSelected;
+            var done = negoRevealed[n.id];
+            return (
+              <button key={n.id} onClick={function() { setNegoSelected(i); }}
+                style={{ flex: '1 1 auto', minWidth: 100, padding: '8px 10px', borderRadius: 4, cursor: 'pointer',
+                  background: active ? C.accentBg : 'transparent',
+                  border: active ? '1px solid ' + C.accentDm : '1px solid ' + C.line,
+                  textAlign: 'center', transition: 'all .15s ease' }}>
+                <span style={{ fontFamily: Mono, fontSize: 11, fontWeight: 600, color: active ? C.accent : C.tx3, display: 'block' }}>
+                  {n.year}
+                </span>
+                <span style={{ fontFamily: Sans, fontSize: 11, color: done ? C.olive : C.tx3 }}>
+                  {n.name} {done ? ' [done]' : ''}
+                </span>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Selected negotiation detail */}
+        <div style={{ background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6, padding: 20, marginBottom: 16 }}>
+          <div style={{ fontFamily: Serif, fontSize: 18, color: C.accent, marginBottom: 4 }}>{nego.name}</div>
+          <div style={{ fontFamily: Mono, fontSize: 12, color: C.tx3, marginBottom: 12 }}>{nego.parties}</div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 16 }}>
+            <div>
+              <div style={{ fontFamily: Mono, fontSize: 11, color: C.olive, marginBottom: 4, letterSpacing: 1 }}>WHAT WAS OFFERED</div>
+              <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2, lineHeight: 1.6 }}>{nego.offered}</div>
+            </div>
+            <div>
+              <div style={{ fontFamily: Mono, fontSize: 11, color: C.red, marginBottom: 4, letterSpacing: 1 }}>WHAT WAS REJECTED / WHAT HAPPENED</div>
+              <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2, lineHeight: 1.6 }}>{nego.rejected}</div>
+            </div>
+          </div>
+
+          {/* Interactive obstacle identification */}
+          <div style={{ borderTop: '1px solid ' + C.line, paddingTop: 16 }}>
+            <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3, marginBottom: 10, letterSpacing: 1 }}>
+              WHICH STRUCTURAL OBSTACLES BLOCKED THIS NEGOTIATION? (select all that apply)
+            </div>
+            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 12 }}>
+              {obstacleKeys.map(function(key) {
+                var ob = STRUCTURAL_OBSTACLES[key];
+                var selected = userAnswerSet[key];
+                var correct = isRevealed && nego.obstacles.indexOf(key) !== -1;
+                var wrong = isRevealed && selected && nego.obstacles.indexOf(key) === -1;
+                var bgColor = isRevealed ? (correct ? 'rgba(122,144,80,.15)' : (wrong ? 'rgba(168,80,64,.15)' : 'transparent')) : (selected ? 'rgba(196,160,64,.1)' : 'transparent');
+                var bdColor = isRevealed ? (correct ? C.oliveDm : (wrong ? C.redDm : C.line)) : (selected ? C.accentDm : C.line);
+                return (
+                  <button key={key} disabled={isRevealed}
+                    onClick={function() {
+                      setNegoUserAnswers(function(prev) {
+                        var copy = Object.assign({}, prev);
+                        var inner = Object.assign({}, copy[nego.id] || {});
+                        if (inner[key]) { delete inner[key]; } else { inner[key] = true; }
+                        copy[nego.id] = inner;
+                        return copy;
+                      });
+                    }}
+                    style={{ padding: '8px 16px', borderRadius: 4, cursor: isRevealed ? 'default' : 'pointer',
+                      background: bgColor, border: '1px solid ' + bdColor, transition: 'all .15s ease', opacity: isRevealed && !correct && !selected ? 0.5 : 1 }}>
+                    <span style={{ fontFamily: Mono, fontSize: 12, color: ob.color }}>{ob.label}</span>
+                  </button>
+                );
+              })}
+            </div>
+            {!isRevealed && (
+              <button onClick={function() { setNegoRevealed(function(prev) { var c = Object.assign({}, prev); c[nego.id] = true; return c; }); }}
+                style={{ padding: '8px 20px', borderRadius: 4, cursor: 'pointer', background: C.accentBg, border: '1px solid ' + C.accentDm, fontFamily: Mono, fontSize: 12, color: C.accent }}>
+                Reveal Answer
+              </button>
+            )}
+            {isRevealed && (
+              <div style={{ marginTop: 8 }}>
+                <div style={{ fontFamily: Mono, fontSize: 12, color: C.tx3, marginBottom: 6 }}>
+                  Your accuracy: {userCorrect}/{nego.obstacles.length} obstacles correctly identified
+                </div>
+                <div style={{ fontFamily: Mono, fontSize: 11, color: C.terra, marginBottom: 8, letterSpacing: 1 }}>WHY IT FAILED (STRUCTURAL ANALYSIS)</div>
+                <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx, lineHeight: 1.6, padding: 12, background: C.sandLight, borderRadius: 4 }}>
+                  {nego.why}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Obstacle reference */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+          {obstacleKeys.map(function(key) {
+            var ob = STRUCTURAL_OBSTACLES[key];
+            var hitCount = NEGOTIATIONS.filter(function(n) { return n.obstacles.indexOf(key) !== -1; }).length;
+            return (
+              <div key={key} style={{ padding: 12, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 4 }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
+                  <span style={{ fontFamily: Mono, fontSize: 12, color: ob.color }}>{ob.label}</span>
+                  <span style={{ fontFamily: Mono, fontSize: 11, color: C.tx3 }}>Blocked {hitCount}/5 negotiations</span>
+                </div>
+                <div style={{ fontFamily: Sans, fontSize: 12, color: C.tx3, lineHeight: 1.5 }}>{ob.desc}</div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Progress */}
+        <div style={{ marginTop: 16, textAlign: 'center', fontFamily: Mono, fontSize: 12, color: C.tx3 }}>
+          Negotiations analyzed: {allNegosRevealed}/5
+        </div>
+      </div>
+    );
+  }, [negoSelected, negoUserAnswers, negoRevealed, NEGOTIATIONS, STRUCTURAL_OBSTACLES]);
+
+  // ── Water Renderer ────────────────────────────────────────────────
+  const WATER_SOURCES = useMemo(() => [
+    { id: 'jordan', name: 'Jordan River', baseFlow: 1287, israelShare: 0.60, palShare: 0.03, jordanShare: 0.37,
+      controller: 'Israel (since 1967)',
+      x: 320, y: 60, w: 40, h: 220,
+      desc: 'Israel diverts most of the upper Jordan via the National Water Carrier (1964). Palestinians have no access. Jordan gets a fixed allocation under the 1994 peace treaty. The river\'s flow has dropped ~90% at its southern end.' },
+    { id: 'galilee', name: 'Sea of Galilee', baseFlow: 630, israelShare: 1.0, palShare: 0.0, jordanShare: 0.0,
+      controller: 'Israel (exclusive)',
+      x: 280, y: 40, w: 80, h: 50,
+      desc: 'Israel\'s largest freshwater reservoir. Entirely within Israeli territory. Supplies ~25% of Israel\'s water. Water levels have dropped critically in drought years, prompting desalination investment.' },
+    { id: 'mountain', name: 'Mountain Aquifer', baseFlow: 679, israelShare: 0.80, palShare: 0.20, jordanShare: 0.0,
+      controller: 'Israel (military control of recharge zones)',
+      x: 140, y: 120, w: 120, h: 140,
+      desc: 'Three sub-basins under the West Bank highlands. Israel extracts ~80% despite the aquifer recharging primarily from Palestinian territory. Palestinians need Israeli permits to drill wells. The aquifer is being over-extracted by both sides.' },
+    { id: 'coastal', name: 'Coastal Aquifer', baseFlow: 450, israelShare: 0.20, palShare: 0.80, jordanShare: 0.0,
+      controller: 'Gaza (depleted/contaminated)',
+      x: 60, y: 200, w: 100, h: 100,
+      desc: 'Gaza\'s primary water source. Over-pumped to crisis levels: 96% of water exceeds WHO safety standards. Seawater intrusion and sewage contamination make it largely undrinkable. The UN warned it would be unusable by 2020 -- it already is.' },
+  ], []);
+
+  const renderWater = useCallback(() => {
+    var popFactor = waterPopGrowth;
+    var rainFactor = 1 - (waterRainReduction / 100);
+    var totalDemandIsrael = 1800 * popFactor;
+    var totalDemandPal = 450 * popFactor;
+    var totalSupply = WATER_SOURCES.reduce(function(sum, s) { return sum + s.baseFlow * rainFactor; }, 0);
+    var israelSupply = WATER_SOURCES.reduce(function(sum, s) { return sum + s.baseFlow * rainFactor * s.israelShare; }, 0);
+    var palSupply = WATER_SOURCES.reduce(function(sum, s) { return sum + s.baseFlow * rainFactor * s.palShare; }, 0);
+    var israelGap = Math.max(0, totalDemandIsrael - israelSupply);
+    var palGap = Math.max(0, totalDemandPal - palSupply);
+    var selected = waterSelectedSource ? WATER_SOURCES.find(function(s) { return s.id === waterSelectedSource; }) : null;
+
+    return (
+      <div>
+        <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx2, lineHeight: 1.6, marginBottom: 20 }}>
+          Water is the hidden dimension of the Israeli-Palestinian conflict. Control over aquifers and rivers
+          determines which communities can grow, which agriculture survives, and who holds structural leverage.
+          Adjust population growth and rainfall to see how climate change transforms a political dispute into an existential one.
+        </div>
+
+        {/* SVG Water Map */}
+        <div style={{ display: 'flex', gap: 20, marginBottom: 20 }}>
+          <div style={{ flex: '0 0 420px' }}>
+            <svg viewBox="0 0 420 380" style={{ width: '100%', height: 'auto', background: 'rgba(20,16,8,.5)', borderRadius: 6, border: '1px solid ' + C.cardBd }}>
+              {/* West Bank outline */}
+              <path d="M150 50 L300 50 L320 120 L310 200 L280 280 L200 320 L140 280 L120 200 L130 120Z" fill="rgba(122,144,80,.06)" stroke="rgba(122,144,80,.2)" strokeWidth="1" strokeDasharray="4,4"/>
+              <text x="210" y="180" textAnchor="middle" fill={C.tx3} style={{fontSize:10,fontFamily:Mono}}>West Bank</text>
+              {/* Gaza strip */}
+              <path d="M50 200 L90 200 L90 310 L50 310Z" fill="rgba(168,80,64,.06)" stroke="rgba(168,80,64,.2)" strokeWidth="1" strokeDasharray="4,4"/>
+              <text x="70" y="260" textAnchor="middle" fill={C.tx3} style={{fontSize:9,fontFamily:Mono}}>Gaza</text>
+              {/* Mediterranean */}
+              <rect x="0" y="0" width="45" height="380" fill="rgba(80,128,168,.04)"/>
+              <text x="22" y="190" textAnchor="middle" fill="rgba(80,128,168,.3)" style={{fontSize:10,fontFamily:Mono}} transform="rotate(-90,22,190)">Mediterranean</text>
+
+              {/* Water sources */}
+              {WATER_SOURCES.map(function(src) {
+                var isSelected = waterSelectedSource === src.id;
+                var adjustedFlow = src.baseFlow * rainFactor;
+                var fillOpacity = 0.12 + (adjustedFlow / 1400) * 0.25;
+                return (
+                  <g key={src.id} onClick={function() { setWaterSelectedSource(isSelected ? null : src.id); }} style={{cursor:'pointer'}}>
+                    {src.id === 'jordan' ? (
+                      <path d={'M' + src.x + ' ' + src.y + ' Q' + (src.x+10) + ' ' + (src.y+src.h/2) + ' ' + (src.x-5) + ' ' + (src.y+src.h)}
+                        fill="none" stroke={'rgba(80,128,168,' + (0.3 + fillOpacity) + ')'} strokeWidth={isSelected ? 6 : 4}/>
+                    ) : src.id === 'galilee' ? (
+                      <ellipse cx={src.x+src.w/2} cy={src.y+src.h/2} rx={src.w/2} ry={src.h/2}
+                        fill={'rgba(80,128,168,' + fillOpacity + ')'} stroke={isSelected ? C.accent : 'rgba(80,128,168,.3)'} strokeWidth={isSelected ? 2 : 1}/>
+                    ) : (
+                      <rect x={src.x} y={src.y} width={src.w} height={src.h} rx="8"
+                        fill={'rgba(80,128,168,' + fillOpacity + ')'} stroke={isSelected ? C.accent : 'rgba(80,128,168,.2)'} strokeWidth={isSelected ? 2 : 1}/>
+                    )}
+                    <text x={src.id === 'jordan' ? src.x + 20 : src.x + src.w/2} y={src.id === 'jordan' ? src.y + src.h/2 + 4 : src.y + src.h/2 + 4}
+                      textAnchor="middle" fill={isSelected ? C.accent : C.tx2} style={{fontSize:10,fontFamily:Mono,pointerEvents:'none'}}>
+                      {src.name}
+                    </text>
+                    <text x={src.id === 'jordan' ? src.x + 20 : src.x + src.w/2} y={src.id === 'jordan' ? src.y + src.h/2 + 18 : src.y + src.h/2 + 18}
+                      textAnchor="middle" fill={C.tx3} style={{fontSize:9,fontFamily:Mono,pointerEvents:'none'}}>
+                      {Math.round(adjustedFlow)} MCM/yr
+                    </text>
+                  </g>
+                );
+              })}
+            </svg>
+          </div>
+
+          {/* Controls and metrics */}
+          <div style={{ flex: 1 }}>
+            {/* Sliders */}
+            <div style={{ marginBottom: 20 }}>
+              <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3, marginBottom: 6, letterSpacing: 1 }}>POPULATION GROWTH MULTIPLIER: {popFactor.toFixed(1)}x</div>
+              <input type="range" min="1.0" max="3.0" step="0.1" value={waterPopGrowth}
+                onChange={function(e) { setWaterPopGrowth(parseFloat(e.target.value)); }}
+                style={{ width: '100%', accentColor: C.accent }} />
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontFamily: Mono, fontSize: 10, color: C.tx3 }}>
+                <span>Current</span><span>2x (2040s)</span><span>3x (2060s)</span>
+              </div>
+            </div>
+            <div style={{ marginBottom: 20 }}>
+              <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3, marginBottom: 6, letterSpacing: 1 }}>RAINFALL REDUCTION: {waterRainReduction}%</div>
+              <input type="range" min="0" max="40" step="5" value={waterRainReduction}
+                onChange={function(e) { setWaterRainReduction(parseInt(e.target.value)); }}
+                style={{ width: '100%', accentColor: C.blue }} />
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontFamily: Mono, fontSize: 10, color: C.tx3 }}>
+                <span>Current</span><span>-20% (moderate)</span><span>-40% (severe)</span>
+              </div>
+            </div>
+
+            {/* Gap meters */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 }}>
+              <div style={{ padding: 12, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 4 }}>
+                <div style={{ fontFamily: Mono, fontSize: 11, color: C.blue, letterSpacing: 1 }}>ISRAEL</div>
+                <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2, marginTop: 4 }}>Supply: {Math.round(israelSupply)} MCM/yr</div>
+                <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2 }}>Demand: {Math.round(totalDemandIsrael)} MCM/yr</div>
+                <div style={{ fontFamily: Mono, fontSize: 13, color: israelGap > 0 ? C.red : C.olive, marginTop: 4 }}>
+                  Gap: {israelGap > 0 ? '-' + Math.round(israelGap) : 'Surplus'}
+                </div>
+                <div style={{ marginTop: 6, height: 6, background: 'rgba(80,128,168,.1)', borderRadius: 3 }}>
+                  <div style={{ height: '100%', width: Math.min(100, (israelSupply / totalDemandIsrael) * 100) + '%', background: israelGap > 0 ? C.red : C.olive, borderRadius: 3, transition: 'width .3s ease' }}/>
+                </div>
+                <div style={{ fontFamily: Mono, fontSize: 10, color: C.tx3, marginTop: 2 }}>Note: Israel offsets via desalination (~585 MCM/yr)</div>
+              </div>
+              <div style={{ padding: 12, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 4 }}>
+                <div style={{ fontFamily: Mono, fontSize: 11, color: C.olive, letterSpacing: 1 }}>PALESTINE</div>
+                <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2, marginTop: 4 }}>Supply: {Math.round(palSupply)} MCM/yr</div>
+                <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2 }}>Demand: {Math.round(totalDemandPal)} MCM/yr</div>
+                <div style={{ fontFamily: Mono, fontSize: 13, color: palGap > 0 ? C.red : C.olive, marginTop: 4 }}>
+                  Gap: {palGap > 0 ? '-' + Math.round(palGap) : 'Surplus'}
+                </div>
+                <div style={{ marginTop: 6, height: 6, background: 'rgba(122,144,80,.1)', borderRadius: 3 }}>
+                  <div style={{ height: '100%', width: Math.min(100, (palSupply / totalDemandPal) * 100) + '%', background: palGap > 0 ? C.red : C.olive, borderRadius: 3, transition: 'width .3s ease' }}/>
+                </div>
+                <div style={{ fontFamily: Mono, fontSize: 10, color: C.tx3, marginTop: 2 }}>No desalination capacity in Gaza or West Bank</div>
+              </div>
+            </div>
+
+            {/* Per-capita comparison */}
+            <div style={{ padding: 12, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 4 }}>
+              <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3, letterSpacing: 1, marginBottom: 6 }}>PER CAPITA DAILY (liters)</div>
+              <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontFamily: Mono, fontSize: 11, color: C.blue }}>Israel: ~280 L/day</div>
+                  <div style={{ height: 8, background: 'rgba(80,128,168,.15)', borderRadius: 4, marginTop: 4 }}>
+                    <div style={{ height: '100%', width: '93%', background: C.blue, borderRadius: 4 }}/>
+                  </div>
+                </div>
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontFamily: Mono, fontSize: 11, color: C.olive }}>Palestine: ~73 L/day</div>
+                  <div style={{ height: 8, background: 'rgba(122,144,80,.15)', borderRadius: 4, marginTop: 4 }}>
+                    <div style={{ height: '100%', width: '24%', background: C.olive, borderRadius: 4 }}/>
+                  </div>
+                </div>
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3 }}>WHO minimum: 100 L/day</div>
+                  <div style={{ height: 8, background: 'rgba(196,160,64,.15)', borderRadius: 4, marginTop: 4 }}>
+                    <div style={{ height: '100%', width: '33%', background: C.accent, borderRadius: 4 }}/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Selected source detail */}
+        {selected && (
+          <div style={{ padding: 16, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6, marginBottom: 12 }}>
+            <div style={{ fontFamily: Serif, fontSize: 16, color: C.accent, marginBottom: 4 }}>{selected.name}</div>
+            <div style={{ fontFamily: Mono, fontSize: 12, color: C.tx3, marginBottom: 8 }}>Controller: {selected.controller}</div>
+            <div style={{ display: 'flex', gap: 16, marginBottom: 8 }}>
+              <div style={{ fontFamily: Mono, fontSize: 12, color: C.blue }}>Israel: {Math.round(selected.israelShare * 100)}%</div>
+              <div style={{ fontFamily: Mono, fontSize: 12, color: C.olive }}>Palestine: {Math.round(selected.palShare * 100)}%</div>
+              {selected.jordanShare > 0 && <div style={{ fontFamily: Mono, fontSize: 12, color: C.terra }}>Jordan: {Math.round(selected.jordanShare * 100)}%</div>}
+            </div>
+            <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2, lineHeight: 1.6 }}>{selected.desc}</div>
+          </div>
+        )}
+
+        {/* Structural insight */}
+        <div style={{ padding: 12, background: 'rgba(168,80,64,.05)', border: '1px solid rgba(168,80,64,.15)', borderRadius: 4 }}>
+          <div style={{ fontFamily: Mono, fontSize: 11, color: C.red, letterSpacing: 1, marginBottom: 4 }}>STRUCTURAL INSIGHT</div>
+          <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2, lineHeight: 1.6 }}>
+            Water asymmetry is self-reinforcing. Israel controls the sources and has invested in desalination;
+            Palestinians cannot build infrastructure under occupation. Climate change does not create the conflict --
+            it amplifies a structural inequality that already exists. At 2x population with -20% rainfall,
+            Palestinian supply drops below survival thresholds while Israeli supply remains manageable through technology.
+            Water is not just a resource issue -- it is a sovereignty issue.
+          </div>
+        </div>
+      </div>
+    );
+  }, [waterPopGrowth, waterRainReduction, waterSelectedSource, WATER_SOURCES]);
+
   // ── Main Render ───────────────────────────────────────────────────
   return (
     <div style={{ minHeight: '100vh', background: 'linear-gradient(180deg, #141008 0%, #1a150e 30%, #141008 100%)', color: C.tx, fontFamily: Sans, position: 'relative' }} ref={topRef}>
@@ -1481,6 +1866,8 @@ function MideastView({ setView }) {
         {mode === 'narratives' && renderNarratives()}
         {mode === 'documents' && renderDocuments()}
         {mode === 'territory' && renderTerritory()}
+        {mode === 'negotiations' && renderNegotiations()}
+        {mode === 'water' && renderWater()}
 
         {/* Provenance Strip */}
         <IslamicArchPattern />

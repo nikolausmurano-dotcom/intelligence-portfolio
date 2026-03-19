@@ -367,6 +367,14 @@ function EastAsiaView({ setView }) {
   const playTimerRef = useRef(null);
   const topRef = useRef(null);
 
+  // Alliance mode state
+  const [allianceCrisis, setAllianceCrisis] = useState(null);
+  const [allianceHover, setAllianceHover] = useState(null);
+
+  // Nuclear mode state
+  const [nuclearScenario, setNuclearScenario] = useState('baseline');
+  const [nuclearShowDetail, setNuclearShowDetail] = useState(null);
+
   // ── Scholarly tooltip renderer & icons ─────────────────────────
   const TipBox = (key) => {
     if (tipId !== key) return null;
@@ -441,6 +449,8 @@ function EastAsiaView({ setView }) {
     { key: 'comparative', label: 'COMPARATIVE', icon: '\u2696' },
     { key: 'traditions',  label: 'TRADITIONS',  icon: '\u262F' },
     { key: 'innovation',  label: 'INNOVATION',  icon: '\u2699' },
+    { key: 'alliance',    label: 'ALLIANCES',   icon: '\u26A1' },
+    { key: 'nuclear',     label: 'DETERRENCE',  icon: '\u2622' },
   ];
 
   const ModeSwitch = useCallback(() => (
@@ -1239,6 +1249,306 @@ function EastAsiaView({ setView }) {
     );
   }, [selectedFlow, playIndex, sortedFlows, nodeById, flowColor]);
 
+  // ── Alliance Renderer ───────────────────────────────────────────
+  const ALLIANCE_NODES = useMemo(() => [
+    { id: 'us', label: 'United States', x: 100, y: 180, color: '#4a6a9a', r: 28 },
+    { id: 'japan', label: 'Japan', x: 300, y: 80, color: C.vermillion, r: 22 },
+    { id: 'skorea', label: 'South Korea', x: 320, y: 180, color: '#5a8a6a', r: 20 },
+    { id: 'philippines', label: 'Philippines', x: 340, y: 290, color: '#7a8a5a', r: 18 },
+    { id: 'australia', label: 'Australia', x: 200, y: 320, color: '#8a7a4a', r: 20 },
+    { id: 'china', label: 'China', x: 500, y: 160, color: C.vermillion, r: 28 },
+    { id: 'nkorea', label: 'North Korea', x: 480, y: 60, color: '#8a4a4a', r: 18 },
+    { id: 'russia', label: 'Russia', x: 520, y: 280, color: '#6a5a8a', r: 22 },
+  ], []);
+
+  const ALLIANCES = useMemo(() => [
+    { from: 'us', to: 'japan', label: 'US-Japan Treaty (1960)', type: 'mutual_defense',
+      obligation: 'Mutual defense under Article V. US maintains 50,000+ troops in Japan. Covers Senkaku/Diaoyu islands.',
+      tested_by: ['taiwan', 'senkaku'] },
+    { from: 'us', to: 'skorea', label: 'US-ROK Alliance (1953)', type: 'mutual_defense',
+      obligation: 'Mutual defense. 28,500 US troops in Korea. OPCON transfer pending. Nuclear umbrella.',
+      tested_by: ['korea'] },
+    { from: 'us', to: 'philippines', label: 'MDT (1951) + EDCA', type: 'mutual_defense',
+      obligation: 'Mutual defense treaty. Enhanced Defense Cooperation Agreement (2014) allows US bases. Tested by South China Sea disputes.',
+      tested_by: ['scs'] },
+    { from: 'us', to: 'australia', label: 'ANZUS + AUKUS', type: 'mutual_defense',
+      obligation: 'ANZUS treaty (1951) plus AUKUS nuclear submarine deal (2021). Five Eyes intelligence sharing.',
+      tested_by: ['taiwan', 'scs'] },
+    { from: 'china', to: 'nkorea', label: 'Friendship Treaty (1961)', type: 'strategic',
+      obligation: 'Mutual aid and cooperation. China provides ~90% of NK trade. Buffer state logic: China cannot accept unified US-allied Korea on its border.',
+      tested_by: ['korea'] },
+    { from: 'china', to: 'russia', label: 'Strategic Partnership', type: 'strategic',
+      obligation: 'No formal alliance but "no limits" partnership (2022). Joint military exercises. Convergent interest in countering US alliance network.',
+      tested_by: ['taiwan', 'scs'] },
+  ], []);
+
+  const CRISES = useMemo(() => [
+    { id: 'taiwan', label: 'Taiwan Contingency',
+      desc: 'China attempts forced reunification with Taiwan. Activates US-Japan (rear-area support, bases), US-Australia (intelligence, logistics), tests whether US would fight a nuclear power over a non-ally it is not treaty-bound to defend. China-Russia partnership provides diplomatic cover. Most dangerous scenario in the system.',
+      activates: ['us','japan','australia','china','russia'] },
+    { id: 'korea', label: 'Korean Peninsula',
+      desc: 'North Korean provocation or collapse. Activates US-ROK alliance directly. Japan provides rear-area bases. China faces dilemma: intervene to preserve buffer state or accept reunification? Russia has secondary interests. The scenario where Cold War-era alliances most directly apply.',
+      activates: ['us','skorea','japan','china','nkorea'] },
+    { id: 'scs', label: 'South China Sea',
+      desc: 'Armed clash between China and Philippines over disputed features (Second Thomas Shoal, Scarborough). Tests US-Philippines MDT in ambiguous territorial waters. Would Japan invoke collective self-defense? Would Australia participate? China-Russia coordination constrains US naval flexibility.',
+      activates: ['us','philippines','australia','china','russia'] },
+    { id: 'senkaku', label: 'Senkaku/Diaoyu Crisis',
+      desc: 'China escalates over disputed islands administered by Japan. Tests Article V of US-Japan treaty directly -- the only scenario where the alliance is unambiguously triggered. Japan\'s self-defense forces would engage first. Tests whether US extended deterrence is credible against Chinese nuclear capability.',
+      activates: ['us','japan','china'] },
+  ], []);
+
+  const renderAlliance = useCallback(() => {
+    var activeCrisis = allianceCrisis ? CRISES.find(function(c) { return c.id === allianceCrisis; }) : null;
+    var activeNodes = activeCrisis ? activeCrisis.activates : [];
+
+    return (
+      <div>
+        <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx2, lineHeight: 1.6, marginBottom: 20 }}>
+          East Asian security is structured around two competing alliance networks that developed during the Cold War
+          and persist today. Toggle crisis scenarios to see which alliances activate -- and where the gaps in commitment lie.
+        </div>
+
+        {/* Crisis toggles */}
+        <div style={{ display: 'flex', gap: 6, marginBottom: 20, flexWrap: 'wrap' }}>
+          {CRISES.map(function(cr) {
+            var active = allianceCrisis === cr.id;
+            return (
+              <button key={cr.id} onClick={function() { setAllianceCrisis(active ? null : cr.id); }}
+                style={{ padding: '8px 16px', borderRadius: 4, cursor: 'pointer',
+                  background: active ? C.redBg : 'transparent',
+                  border: active ? '1px solid ' + C.redDm : '1px solid ' + C.line,
+                  fontFamily: Mono, fontSize: 12, color: active ? C.red : C.tx3, transition: 'all .15s ease' }}>
+                {cr.label} {active ? '(active)' : ''}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* SVG Alliance Network */}
+        <svg viewBox="0 0 620 380" style={{ width: '100%', height: 'auto', background: 'rgba(18,12,10,.5)', borderRadius: 6, border: '1px solid ' + C.cardBd, marginBottom: 16 }}>
+          {/* Alliance lines */}
+          {ALLIANCES.map(function(a) {
+            var fromNode = ALLIANCE_NODES.find(function(n) { return n.id === a.from; });
+            var toNode = ALLIANCE_NODES.find(function(n) { return n.id === a.to; });
+            var isTested = activeCrisis && a.tested_by.indexOf(allianceCrisis) !== -1;
+            var isHovered = allianceHover === a.from + '-' + a.to;
+            return (
+              <g key={a.from + '-' + a.to}
+                onMouseEnter={function() { setAllianceHover(a.from + '-' + a.to); }}
+                onMouseLeave={function() { setAllianceHover(null); }}
+                style={{cursor:'pointer'}}>
+                <line x1={fromNode.x} y1={fromNode.y} x2={toNode.x} y2={toNode.y}
+                  stroke={isTested ? C.vermillion : (a.type === 'mutual_defense' ? 'rgba(74,106,154,.5)' : 'rgba(138,74,74,.4)')}
+                  strokeWidth={isTested ? 3 : (isHovered ? 2.5 : 1.5)}
+                  strokeDasharray={a.type === 'strategic' ? '6,4' : 'none'}/>
+                {isHovered && (
+                  <text x={(fromNode.x + toNode.x) / 2} y={(fromNode.y + toNode.y) / 2 - 8}
+                    textAnchor="middle" fill={C.gold} style={{fontSize:9,fontFamily:Mono}}>
+                    {a.label}
+                  </text>
+                )}
+              </g>
+            );
+          })}
+          {/* Nodes */}
+          {ALLIANCE_NODES.map(function(node) {
+            var isActive = activeNodes.indexOf(node.id) !== -1;
+            return (
+              <g key={node.id}>
+                <circle cx={node.x} cy={node.y} r={node.r}
+                  fill={isActive ? node.color : 'rgba(40,30,20,.6)'}
+                  stroke={isActive ? node.color : 'rgba(160,120,80,.2)'}
+                  strokeWidth={isActive ? 2 : 1}
+                  opacity={activeCrisis ? (isActive ? 1 : 0.3) : 0.8}/>
+                <text x={node.x} y={node.y + 4} textAnchor="middle" fill={isActive ? '#fff' : C.tx3}
+                  style={{fontSize:9,fontFamily:Mono,pointerEvents:'none',fontWeight:isActive?700:400}}>
+                  {node.id === 'nkorea' ? 'DPRK' : node.id === 'skorea' ? 'ROK' : node.id.toUpperCase()}
+                </text>
+                <text x={node.x} y={node.y + node.r + 14} textAnchor="middle" fill={C.tx3}
+                  style={{fontSize:8,fontFamily:Sans,pointerEvents:'none'}}>
+                  {node.label}
+                </text>
+              </g>
+            );
+          })}
+          {/* Legend */}
+          <g transform="translate(10, 350)">
+            <line x1="0" y1="0" x2="30" y2="0" stroke="rgba(74,106,154,.5)" strokeWidth="2"/>
+            <text x="35" y="4" fill={C.tx3} style={{fontSize:9,fontFamily:Mono}}>Mutual Defense Treaty</text>
+            <line x1="200" y1="0" x2="230" y2="0" stroke="rgba(138,74,74,.4)" strokeWidth="2" strokeDasharray="6,4"/>
+            <text x="235" y="4" fill={C.tx3} style={{fontSize:9,fontFamily:Mono}}>Strategic Partnership</text>
+          </g>
+        </svg>
+
+        {/* Crisis detail */}
+        {activeCrisis && (
+          <div style={{ padding: 16, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6, marginBottom: 16 }}>
+            <div style={{ fontFamily: Serif, fontSize: 16, color: C.vermillion, marginBottom: 8 }}>{activeCrisis.label}</div>
+            <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2, lineHeight: 1.6 }}>{activeCrisis.desc}</div>
+            <div style={{ marginTop: 12, fontFamily: Mono, fontSize: 11, color: C.tx3, letterSpacing: 1 }}>
+              ALLIANCES ACTIVATED: {ALLIANCES.filter(function(a) { return a.tested_by.indexOf(allianceCrisis) !== -1; }).map(function(a) { return a.label; }).join(' | ')}
+            </div>
+          </div>
+        )}
+
+        {/* Alliance detail cards */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+          {ALLIANCES.map(function(a) {
+            return (
+              <div key={a.from + '-' + a.to} style={{ padding: 12, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 4 }}>
+                <div style={{ fontFamily: Mono, fontSize: 12, color: a.type === 'mutual_defense' ? '#4a6a9a' : C.cherry, marginBottom: 4 }}>{a.label}</div>
+                <div style={{ fontFamily: Mono, fontSize: 10, color: C.tx3, marginBottom: 4, letterSpacing: 1 }}>{a.type === 'mutual_defense' ? 'FORMAL TREATY' : 'STRATEGIC ALIGNMENT'}</div>
+                <div style={{ fontFamily: Sans, fontSize: 12, color: C.tx2, lineHeight: 1.5 }}>{a.obligation}</div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }, [allianceCrisis, allianceHover, ALLIANCE_NODES, ALLIANCES, CRISES]);
+
+  // ── Nuclear Deterrence Renderer ────────────────────────────────────
+  const NUCLEAR_FORCES = useMemo(() => ({
+    china: { label: 'China (PRC)', warheads: 500, icbm: 350, slbm: 72, bombers: 20,
+      secondStrike: 'Growing -- road-mobile ICBMs, 6 Jin-class SSBNs, hardened silos',
+      strategy: 'Minimum deterrence / No First Use (declared). Rapidly modernizing toward assured retaliation capability. Building 300+ new ICBM silos in western China.',
+      color: C.vermillion },
+    nkorea: { label: 'North Korea (DPRK)', warheads: 50, icbm: 6, slbm: 2, bombers: 0,
+      secondStrike: 'Minimal -- small arsenal, no confirmed reliable SLBM capability, vulnerable to first strike',
+      strategy: 'Existential deterrence. Nukes are regime survival guarantee. Can probably hit US mainland (Hwasong-17 ICBM tested 2022) but reliability uncertain. Small enough arsenal that decapitation strike is theoretically possible.',
+      color: '#8a4a4a' },
+    us_extended: { label: 'US Extended Deterrence', warheads: 5500, icbm: 400, slbm: 280, bombers: 60,
+      secondStrike: 'Overwhelming -- nuclear triad, 14 Ohio-class SSBNs, global C2 network',
+      strategy: 'Extended deterrence: US nuclear umbrella covers Japan, South Korea, Australia. The credibility problem: would the US trade Los Angeles for Tokyo? For Seoul? Nuclear sharing discussions with South Korea ongoing.',
+      color: '#4a6a9a' },
+  }), []);
+
+  const DETERRENCE_SCENARIOS = useMemo(() => [
+    { id: 'baseline', label: 'Current State',
+      desc: 'China modernizing toward ~1500 warheads by 2035. DPRK arsenal growing slowly. US maintains overwhelming superiority but faces credibility questions on extended deterrence.',
+      stability: 'Moderately stable. US superiority clear but China approaching assured retaliation. DPRK arsenal too small for stable deterrence (incentivizes use-it-or-lose-it under pressure).' },
+    { id: 'taiwan_crisis', label: 'Taiwan Crisis',
+      desc: 'China signals willingness to use force. US must decide whether to intervene knowing China has nuclear escalation option. The "stability-instability paradox": nuclear weapons may make conventional war MORE likely (because escalation to nuclear is so costly, both sides assume the other will not escalate, emboldening conventional aggression).',
+      stability: 'Unstable. Nuclear weapons paradoxically enable conventional conflict. Neither side wants nuclear war but both may miscalculate about the other\'s escalation threshold.' },
+    { id: 'nk_collapse', label: 'DPRK Collapse',
+      desc: 'Regime instability raises question of loose nukes and command-and-control breakdown. US and China both want to secure nuclear materials but have opposite strategic goals (US: reunification under Seoul; China: buffer state preservation). Race to secure nukes could trigger accidental confrontation.',
+      stability: 'Highly unstable. Multiple actors, unclear command authority, first-mover advantage for whoever secures weapons first.' },
+    { id: 'rok_nuclear', label: 'South Korea Goes Nuclear',
+      desc: 'ROK develops independent nuclear capability (70%+ public support in polls). Undermines US alliance logic, could trigger Japan nuclearization (cascade). Demonstrates limits of extended deterrence credibility.',
+      stability: 'Destabilizing cascade. More nuclear actors = more potential failure points. Arms race dynamics accelerate. NPT framework collapses in East Asia.' },
+  ], []);
+
+  const renderNuclear = useCallback(() => {
+    var scenario = DETERRENCE_SCENARIOS.find(function(s) { return s.id === nuclearScenario; });
+    var forces = NUCLEAR_FORCES;
+
+    return (
+      <div>
+        <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx2, lineHeight: 1.6, marginBottom: 20 }}>
+          Nuclear deterrence in East Asia involves three actors with fundamentally different force structures,
+          strategies, and credibility problems. This is structural analysis of deterrence stability -- not advocacy
+          for any position.
+        </div>
+
+        {/* Scenario selector */}
+        <div style={{ display: 'flex', gap: 6, marginBottom: 20, flexWrap: 'wrap' }}>
+          {DETERRENCE_SCENARIOS.map(function(s) {
+            var active = nuclearScenario === s.id;
+            return (
+              <button key={s.id} onClick={function() { setNuclearScenario(s.id); }}
+                style={{ padding: '8px 16px', borderRadius: 4, cursor: 'pointer',
+                  background: active ? 'rgba(204,51,51,.08)' : 'transparent',
+                  border: active ? '1px solid ' + C.redDm : '1px solid ' + C.line,
+                  fontFamily: Mono, fontSize: 12, color: active ? C.red : C.tx3, transition: 'all .15s ease' }}>
+                {s.label}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Force comparison SVG */}
+        <div style={{ background: 'rgba(18,12,10,.5)', borderRadius: 6, border: '1px solid ' + C.cardBd, padding: 20, marginBottom: 16 }}>
+          <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3, letterSpacing: 1, marginBottom: 12 }}>FORCE COMPARISON (estimated deployed warheads)</div>
+          <svg viewBox="0 0 600 200" style={{ width: '100%', height: 'auto' }}>
+            {Object.keys(forces).map(function(key, i) {
+              var f = forces[key];
+              var barWidth = Math.min(520, (f.warheads / 5500) * 520);
+              var yPos = 20 + i * 60;
+              var isSelected = nuclearShowDetail === key;
+              return (
+                <g key={key} onClick={function() { setNuclearShowDetail(isSelected ? null : key); }} style={{cursor:'pointer'}}>
+                  <text x="0" y={yPos + 4} fill={f.color} style={{fontSize:11,fontFamily:Mono}}>{f.label}</text>
+                  <rect x="0" y={yPos + 10} width={barWidth} height={16} rx="2" fill={f.color} opacity={isSelected ? 1 : 0.6}/>
+                  <text x={barWidth + 8} y={yPos + 22} fill={C.tx2} style={{fontSize:11,fontFamily:Mono}}>{f.warheads} warheads</text>
+                  {/* Breakdown indicators */}
+                  <g transform={'translate(0, ' + (yPos + 32) + ')'}>
+                    <text x="0" y="0" fill={C.tx3} style={{fontSize:9,fontFamily:Mono}}>ICBM: {f.icbm}</text>
+                    <text x="80" y="0" fill={C.tx3} style={{fontSize:9,fontFamily:Mono}}>SLBM: {f.slbm}</text>
+                    <text x="150" y="0" fill={C.tx3} style={{fontSize:9,fontFamily:Mono}}>Bombers: {f.bombers}</text>
+                  </g>
+                </g>
+              );
+            })}
+          </svg>
+        </div>
+
+        {/* Selected force detail */}
+        {nuclearShowDetail && (
+          <div style={{ padding: 16, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6, marginBottom: 16 }}>
+            <div style={{ fontFamily: Serif, fontSize: 16, color: forces[nuclearShowDetail].color, marginBottom: 8 }}>
+              {forces[nuclearShowDetail].label}
+            </div>
+            <div style={{ marginBottom: 8 }}>
+              <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3, letterSpacing: 1, marginBottom: 4 }}>SECOND-STRIKE CAPABILITY</div>
+              <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2, lineHeight: 1.5 }}>{forces[nuclearShowDetail].secondStrike}</div>
+            </div>
+            <div>
+              <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3, letterSpacing: 1, marginBottom: 4 }}>STRATEGY</div>
+              <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2, lineHeight: 1.5 }}>{forces[nuclearShowDetail].strategy}</div>
+            </div>
+          </div>
+        )}
+
+        {/* Scenario analysis */}
+        <div style={{ padding: 16, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6, marginBottom: 16 }}>
+          <div style={{ fontFamily: Serif, fontSize: 16, color: C.gold, marginBottom: 8 }}>{scenario.label}</div>
+          <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2, lineHeight: 1.6, marginBottom: 12 }}>{scenario.desc}</div>
+          <div style={{ borderTop: '1px solid ' + C.line, paddingTop: 10 }}>
+            <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3, letterSpacing: 1, marginBottom: 4 }}>STABILITY ASSESSMENT</div>
+            <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx, lineHeight: 1.6 }}>{scenario.stability}</div>
+          </div>
+        </div>
+
+        {/* Credibility matrix */}
+        <div style={{ padding: 16, background: 'rgba(204,51,51,.04)', border: '1px solid rgba(204,51,51,.12)', borderRadius: 4 }}>
+          <div style={{ fontFamily: Mono, fontSize: 11, color: C.red, letterSpacing: 1, marginBottom: 8 }}>THE CREDIBILITY PROBLEM</div>
+          <div style={{ fontFamily: Sans, fontSize: 13, color: C.tx2, lineHeight: 1.6, marginBottom: 12 }}>
+            Extended deterrence requires that adversaries believe the US would risk its own cities to defend allies.
+            The fundamental question: would the US trade San Francisco for Taipei? Seattle for Seoul? This is not rhetoric --
+            it is the structural question that determines whether deterrence holds or fails.
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 8 }}>
+            {[
+              { ally: 'Japan', credibility: 'High', reason: 'Formal treaty, 50K troops, deep integration, Senkaku commitment explicit' },
+              { ally: 'South Korea', credibility: 'High', reason: 'Formal treaty, 28K troops, wartime OPCON, but ROK nuclear hedging signals doubt' },
+              { ally: 'Taiwan', credibility: 'Ambiguous', reason: 'No formal treaty, strategic ambiguity policy, One China framework constrains commitment' },
+            ].map(function(item) {
+              return (
+                <div key={item.ally} style={{ padding: 10, background: C.card, borderRadius: 4, border: '1px solid ' + C.cardBd }}>
+                  <div style={{ fontFamily: Mono, fontSize: 12, color: C.gold, marginBottom: 2 }}>{item.ally}</div>
+                  <div style={{ fontFamily: Mono, fontSize: 11, color: item.credibility === 'Ambiguous' ? C.cherry : C.green, marginBottom: 4 }}>
+                    Credibility: {item.credibility}
+                  </div>
+                  <div style={{ fontFamily: Sans, fontSize: 11, color: C.tx3, lineHeight: 1.4 }}>{item.reason}</div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    );
+  }, [nuclearScenario, nuclearShowDetail, NUCLEAR_FORCES, DETERRENCE_SCENARIOS]);
+
   // ── Main Render ─────────────────────────────────────────────────
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.tx, fontFamily: Sans, position: 'relative', overflow: 'hidden' }} ref={topRef}>
@@ -1352,6 +1662,8 @@ function EastAsiaView({ setView }) {
         {mode === 'comparative' && renderComparative()}
         {mode === 'traditions' && renderTraditions()}
         {mode === 'innovation' && renderInnovation()}
+        {mode === 'alliance' && renderAlliance()}
+        {mode === 'nuclear' && renderNuclear()}
 
         {/* Provenance strip — ink stamp styling */}
         <div style={{
