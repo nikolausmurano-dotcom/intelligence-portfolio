@@ -550,7 +550,7 @@ function WarTheoryView({ setView }) {
                       fontFamily: WT_MONO, fontSize: 9, color: c.color, letterSpacing: '.02em',
                       whiteSpace: 'nowrap',
                     }}>
-                      {c.name.split('(')[0].trim()}
+                      {c.name.split('(' /* ) */)[0].trim()}
                     </button>
                   ))}
                 </div>

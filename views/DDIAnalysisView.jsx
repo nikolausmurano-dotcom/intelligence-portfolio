@@ -1723,7 +1723,7 @@ function DDIAnalysisView({ setView }) {
                     var aColor = aScore >= 75 ? C.green : aScore >= 45 ? C.gold : C.red;
                     return (
                       <div key={a.id} style={{ padding: 10, background: C.card, border: `1px solid ${a.id === al.id ? C.blue : C.cardBd}`, borderRadius: 3, textAlign: 'center' }}>
-                        <div style={{ fontFamily: Mono, fontSize: 9, color: C.tx2, marginBottom: 4 }}>{a.name.split('(')[0].trim()}</div>
+                        <div style={{ fontFamily: Mono, fontSize: 9, color: C.tx2, marginBottom: 4 }}>{a.name.split('(' /* ) */)[0].trim()}</div>
                         <div style={{ fontFamily: Serif, fontSize: 22, fontWeight: 700, color: aColor }}>{aScore}</div>
                         <div style={{ height: 3, background: C.line, borderRadius: 2, marginTop: 4 }}>
                           <div style={{ height: '100%', width: aScore + '%', background: aColor, borderRadius: 2 }} />

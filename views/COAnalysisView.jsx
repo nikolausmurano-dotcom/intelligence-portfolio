@@ -1470,7 +1470,7 @@ function COAnalysisView({ setView }) {
                       var count = GAPS_JUDGMENTS.filter(function(j) { return j.sourcing === opt.id; }).length;
                       return (
                         <div key={opt.id} style={{ textAlign: 'center', padding: 10, background: C.card, borderRadius: 3, borderTop: `3px solid ${opt.color}` }}>
-                          <div style={{ ...sMono, fontSize: 9, color: opt.color }}>{opt.label.split('(')[0].trim()}</div>
+                          <div style={{ ...sMono, fontSize: 9, color: opt.color }}>{opt.label.split('(' /* ) */)[0].trim()}</div>
                           <div style={{ ...sMono, fontSize: 22, fontWeight: 700, color: opt.color }}>{count}</div>
                         </div>
                       );
