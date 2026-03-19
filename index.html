@@ -2505,6 +2505,7 @@ function AboutView(_abtRef) {
   var session = _abtRef && _abtRef.session;
   var profileMode = useState("overview");
   var activePhase = useState(null);
+  var activeInterest = useState(null);
   var matrixHighlight = useState(null);
   var matrixTooltip = useState(null);
   var predictionsState = useState({ H1: null, H2: null, H3: null, H4: null });
@@ -2512,6 +2513,7 @@ function AboutView(_abtRef) {
 
   var mode = profileMode[0], setMode = profileMode[1];
   var phase = activePhase[0], setPhase = activePhase[1];
+  var interest = activeInterest[0], setInterest = activeInterest[1];
   var mxHL = matrixHighlight[0], setMxHL = matrixHighlight[1];
   var mxTT = matrixTooltip[0], setMxTT = matrixTooltip[1];
   var predictions = predictionsState[0], setPredictions = predictionsState[1];
@@ -2593,7 +2595,7 @@ function AboutView(_abtRef) {
       var active = mode === t.key;
       return React.createElement("button", {
         key: t.key,
-        onClick: function() { setMode(t.key); setPhase(null); setMxHL(null); setMxTT(null); if (t.key !== "research") { setPredictions({ H1: null, H2: null, H3: null, H4: null }); setPredictionsRevealed(false); } },
+        onClick: function() { setMode(t.key); setPhase(null); setInterest(null); setMxHL(null); setMxTT(null); if (t.key !== "research") { setPredictions({ H1: null, H2: null, H3: null, H4: null }); setPredictionsRevealed(false); } },
         onMouseEnter: function(e) { if (!active) { e.currentTarget.style.transform = "scale(1.02)"; e.currentTarget.style.background = "rgba(138,180,220,.07)"; } },
         onMouseLeave: function(e) { if (!active) { e.currentTarget.style.transform = "scale(1)"; e.currentTarget.style.background = "rgba(138,180,220,.03)"; } },
         style: {
@@ -2643,66 +2645,206 @@ function AboutView(_abtRef) {
   }
 
   /* Mode: Trajectory */
+  var interests = [
+    { tag: "CHESS", years: "2008-12", start: 2008, end: 2012, title: "Chess (Competitive)", works: ["Bobby Fischer Teaches Chess", "My System (Nimzowitsch)", "Kasparov's My Great Predecessors series", "Tournament play: USCF rated"], connection: "Pattern recognition and positional thinking under time pressure -- directly applicable to structured analytic techniques and adversary modeling in intelligence analysis." },
+    { tag: "RUS.LIT", years: "2010-14", start: 2010, end: 2014, title: "Russian Literature & Film", works: ["Dostoevsky: Crime and Punishment, The Brothers Karamazov, Notes from Underground", "Tolstoy: War and Peace, Anna Karenina", "Bulgakov: The Master and Margarita", "Soviet cinema: Tarkovsky (Stalker, Andrei Rublev), Eisenstein (Alexander Nevsky)"], connection: "Deep immersion in Russian cultural psychology -- understanding how literature shaped national identity, messianic thinking, and the tension between Westernizers and Slavophiles. Fed directly into later study of Russian strategic culture and information warfare doctrine." },
+    { tag: "MIL.HIST", years: "2012-16", start: 2012, end: 2016, title: "Military History", works: ["Clausewitz: On War", "Sun Tzu: The Art of War", "Keegan: The Face of Battle", "Weatherford: Genghis Khan and the Making of the Modern World", "Beevor: Stalingrad, The Fall of Berlin", "Chandler: The Campaigns of Napoleon"], connection: "Analytical frameworks for understanding conflict dynamics, center-of-gravity analysis, and operational art. The Mongol campaigns taught speed, adaptability, and intelligence superiority -- themes that recur in modern hybrid warfare." },
+    { tag: "INTL.AFF", years: "2014-18", start: 2014, end: 2018, title: "International Affairs", works: ["Following Syrian civil war evolution (2011-present)", "Russia's annexation of Crimea and Donbas conflict (2014)", "Rise and territorial collapse of ISIS (2014-2019)", "Mearsheimer: The Tragedy of Great Power Politics", "Kissinger: World Order"], connection: "Real-time tracking of geopolitical crises built the habit of monitoring open-source indicators, assessing competing narratives, and understanding how regional conflicts connect to great-power competition. Motivated the shift from humanitarian work toward security studies." },
+    { tag: "INTEL.ST", years: "2016-20", start: 2016, end: 2020, title: "Intelligence Studies (Self-Directed)", works: ["Heuer: Psychology of Intelligence Analysis", "Lowenthal: Intelligence: From Secrets to Policy", "Weiner: Legacy of Ashes (CIA history)", "Andrew: The Secret World (history of intelligence)", "Jervis: Why Intelligence Fails"], connection: "Systematic self-education in intelligence theory and methodology before formal graduate study. Reading Heuer's work on cognitive biases became the seed for the Cognitive Firewalls capstone. This period solidified the decision to apply to Georgetown's Applied Intelligence program." },
+    { tag: "COG.SEC", years: "2018-22", start: 2018, end: 2022, title: "Cognitive Security & AI", works: ["Kahneman: Thinking, Fast and Slow", "Rid: Active Measures (disinformation history)", "Singer & Brooking: LikeWar", "Tetlock: Superforecasting", "GPT-2/3 release and AI safety discourse"], connection: "Convergence of behavioral science, information warfare research, and emerging AI capabilities. This synthesis became the intellectual foundation for the capstone thesis -- studying whether structured analytic techniques can defend LLM-assisted analysis from adversarial manipulation." },
+    { tag: "FICTION", years: "2020-24", start: 2020, end: 2024, title: "Creative Writing (Trilogy)", works: ["Historical fiction trilogy set across three civilizational turning points", "Research-intensive worldbuilding spanning Mongol, Ottoman, and Cold War periods", "Narrative structure as analytical exercise in causal reasoning"], connection: "Fiction writing as a form of structured scenario construction -- building plausible alternative histories requires the same skills as intelligence forecasting: understanding actor motivations, identifying decision points, and tracing second-order effects." },
+    { tag: "APPL.INT", years: "2022-26", start: 2022, end: 2026, title: "Applied Intelligence (Georgetown)", works: ["Georgetown SFS curriculum: analytic tradecraft, OSINT, counterintelligence", "ICD-203/206 standards and structured writing", "Multi-agent AI experimental design (capstone)", "Red Teaming and ACH methodology"], connection: "Formal graduate education synthesizing every prior interest: Russian studies informs adversary analysis, military history provides operational frameworks, intelligence studies provide methodology, cognitive security becomes the capstone, and creative writing sharpens the analytic narrative." }
+  ];
+
+  /* Map career phase year ranges to interest overlap */
+  function parseYearRange(str) {
+    if (!str) return { start: 2020, end: 2021 };
+    var parts = str.split("-");
+    var s = parseInt(parts[0].length === 2 ? "20" + parts[0] : parts[0]);
+    if (parts.length < 2 || !parts[1]) return { start: s, end: s + 1 };
+    var e = parseInt(parts[1].length === 2 ? "20" + parts[1] : parts[1]);
+    return { start: s, end: e };
+  }
+  function rangesOverlap(a, b) {
+    return a.start < b.end && b.start < a.end;
+  }
+
   function renderTrajectory() {
-    var svgW = 800, baseY = 80, gap = (svgW - 60) / phases.length;
+    var svgW = 800, careerY = 60, interestY = 170, gap = (svgW - 100) / phases.length, iGap = (svgW - 100) / interests.length;
+    /* Find which interests overlap with the selected career phase */
+    var overlappingInterests = [];
+    if (phase !== null) {
+      var cr = parseYearRange(phases[phase].years);
+      interests.forEach(function(int, idx) {
+        if (rangesOverlap(cr, { start: int.start, end: int.end })) { overlappingInterests.push(idx); }
+      });
+    }
+    /* Find which career phases overlap with the selected interest */
+    var overlappingCareer = [];
+    if (interest !== null) {
+      var ir = { start: interests[interest].start, end: interests[interest].end };
+      phases.forEach(function(p, idx) {
+        var cr2 = parseYearRange(p.years);
+        if (rangesOverlap(ir, cr2)) { overlappingCareer.push(idx); }
+      });
+    }
     return React.createElement("div", null,
-      React.createElement("p", { style: { fontSize: 9, fontFamily: mono, letterSpacing: ".14em", color: "rgba(138,180,220,.4)", textTransform: "uppercase", margin: "0 0 14px", fontWeight: 600 } }, "CAREER TRAJECTORY // 6 OPERATIONAL PHASES"),
-      React.createElement("svg", { viewBox: "0 0 800 160", style: { width: "100%", display: "block", marginBottom: 20 } },
-        React.createElement("line", { x1: 60, y1: baseY, x2: svgW - 40, y2: baseY, style: { stroke: "rgba(138,180,220,.15)", strokeWidth: 2 } }),
+      React.createElement("p", { style: { fontSize: 9, fontFamily: mono, letterSpacing: ".14em", color: "rgba(138,180,220,.4)", textTransform: "uppercase", margin: "0 0 14px", fontWeight: 600 } }, "CAREER TRAJECTORY // 6 OPERATIONAL PHASES + INTELLECTUAL INTERESTS"),
+      React.createElement("div", { style: { display: "flex", gap: 16, marginBottom: 12, flexWrap: "wrap" } },
+        React.createElement("div", { style: { display: "flex", alignItems: "center", gap: 6 } },
+          React.createElement("span", { style: { width: 10, height: 10, borderRadius: "50%", background: "rgba(138,180,220,.25)", border: "1px solid rgba(138,180,220,.5)", display: "inline-block" } }),
+          React.createElement("span", { style: { fontSize: 9, fontFamily: mono, color: "rgba(138,180,220,.5)", letterSpacing: ".06em" } }, "CAREER PHASE")
+        ),
+        React.createElement("div", { style: { display: "flex", alignItems: "center", gap: 6 } },
+          React.createElement("span", { style: { width: 10, height: 10, borderRadius: "50%", background: "rgba(218,165,32,.2)", border: "1px solid rgba(218,165,32,.5)", display: "inline-block" } }),
+          React.createElement("span", { style: { fontSize: 9, fontFamily: mono, color: "rgba(218,165,32,.5)", letterSpacing: ".06em" } }, "INTELLECTUAL INTEREST")
+        ),
+        React.createElement("div", { style: { display: "flex", alignItems: "center", gap: 6 } },
+          React.createElement("span", { style: { width: 16, height: 0, borderTop: "1px dashed rgba(190,190,210,.3)", display: "inline-block" } }),
+          React.createElement("span", { style: { fontSize: 9, fontFamily: mono, color: "rgba(190,190,210,.35)", letterSpacing: ".06em" } }, "TEMPORAL OVERLAP")
+        )
+      ),
+      React.createElement("svg", { viewBox: "0 0 800 230", style: { width: "100%", display: "block", marginBottom: 20 } },
+        /* Track labels */
+        React.createElement("text", { x: 10, y: careerY + 4, style: { fill: "rgba(138,180,220,.3)", fontFamily: mono, fontSize: 7, letterSpacing: ".1em", textTransform: "uppercase" } }, "CAREER"),
+        React.createElement("text", { x: 10, y: interestY + 4, style: { fill: "rgba(218,165,32,.3)", fontFamily: mono, fontSize: 7, letterSpacing: ".1em", textTransform: "uppercase" } }, "INTERESTS"),
+        /* Career track line */
+        React.createElement("line", { x1: 60, y1: careerY, x2: svgW - 40, y2: careerY, style: { stroke: "rgba(138,180,220,.15)", strokeWidth: 2 } }),
+        /* Interest track line */
+        React.createElement("line", { x1: 60, y1: interestY, x2: svgW - 40, y2: interestY, style: { stroke: "rgba(218,165,32,.12)", strokeWidth: 2 } }),
+        /* Dashed connection lines between overlapping career and interest nodes */
+        phases.map(function(p, pi) {
+          var cr = parseYearRange(p.years);
+          var cMid = (cr.start + cr.end) / 2;
+          var ccx = 60 + pi * gap;
+          return interests.map(function(int, ii) {
+            if (!rangesOverlap(cr, { start: int.start, end: int.end })) return null;
+            var icx = 60 + ii * iGap;
+            var isHighlighted = (phase === pi) || (interest === ii);
+            return React.createElement("line", {
+              key: "conn_" + pi + "_" + ii,
+              x1: ccx, y1: careerY + 18, x2: icx, y2: interestY - 18,
+              style: { stroke: isHighlighted ? "rgba(200,190,140,.4)" : "rgba(190,190,210,.08)", strokeWidth: isHighlighted ? 1.5 : 0.5, strokeDasharray: "4 3", transition: "all .3s" }
+            });
+          });
+        }),
+        /* Career nodes */
         phases.map(function(p, i) {
           var cx = 60 + i * gap;
           var active = phase === i;
-          return React.createElement("g", { key: p.tag, onClick: function() { setPhase(phase === i ? null : i); }, style: { cursor: "pointer" } },
-            React.createElement("circle", { cx: cx, cy: baseY, r: active ? 18 : 14, style: { fill: active ? "rgba(138,180,220,.2)" : "rgba(138,180,220,.06)", stroke: active ? "#8ab4dc" : "rgba(138,180,220,.25)", strokeWidth: active ? 2 : 1, transition: "all .2s" } }),
-            React.createElement("text", { x: cx, y: baseY + 4, textAnchor: "middle", style: { fill: active ? "#8ab4dc" : "rgba(220,230,240,.7)", fontFamily: mono, fontSize: 8, fontWeight: 700, letterSpacing: ".04em", pointerEvents: "none" } }, p.tag),
-            React.createElement("text", { x: cx, y: baseY + 36, textAnchor: "middle", style: { fill: "rgba(190,190,210,.45)", fontFamily: mono, fontSize: 8, letterSpacing: ".04em", pointerEvents: "none" } }, p.years)
+          var dimmed = interest !== null && overlappingCareer.indexOf(i) === -1;
+          var highlighted = interest !== null && overlappingCareer.indexOf(i) !== -1;
+          return React.createElement("g", { key: p.tag, onClick: function() { setPhase(phase === i ? null : i); setInterest(null); }, style: { cursor: "pointer" } },
+            React.createElement("circle", { cx: cx, cy: careerY, r: active ? 18 : 14, style: { fill: active ? "rgba(138,180,220,.2)" : highlighted ? "rgba(138,180,220,.12)" : "rgba(138,180,220,.06)", stroke: active ? "#8ab4dc" : highlighted ? "rgba(138,180,220,.5)" : "rgba(138,180,220,.25)", strokeWidth: active ? 2 : highlighted ? 1.5 : 1, transition: "all .2s", opacity: dimmed ? 0.35 : 1 } }),
+            React.createElement("text", { x: cx, y: careerY + 4, textAnchor: "middle", style: { fill: active ? "#8ab4dc" : dimmed ? "rgba(220,230,240,.3)" : "rgba(220,230,240,.7)", fontFamily: mono, fontSize: 8, fontWeight: 700, letterSpacing: ".04em", pointerEvents: "none" } }, p.tag),
+            React.createElement("text", { x: cx, y: careerY + 32, textAnchor: "middle", style: { fill: dimmed ? "rgba(190,190,210,.2)" : "rgba(190,190,210,.45)", fontFamily: mono, fontSize: 7, letterSpacing: ".04em", pointerEvents: "none" } }, p.years)
+          );
+        }),
+        /* Interest nodes */
+        interests.map(function(int, i) {
+          var cx = 60 + i * iGap;
+          var active = interest === i;
+          var dimmed = phase !== null && overlappingInterests.indexOf(i) === -1;
+          var highlighted = phase !== null && overlappingInterests.indexOf(i) !== -1;
+          return React.createElement("g", { key: int.tag, onClick: function() { setInterest(interest === i ? null : i); setPhase(null); }, style: { cursor: "pointer" } },
+            React.createElement("circle", { cx: cx, cy: interestY, r: active ? 18 : 14, style: { fill: active ? "rgba(218,165,32,.2)" : highlighted ? "rgba(218,165,32,.12)" : "rgba(218,165,32,.05)", stroke: active ? "#daa520" : highlighted ? "rgba(218,165,32,.55)" : "rgba(218,165,32,.25)", strokeWidth: active ? 2 : highlighted ? 1.5 : 1, transition: "all .2s", opacity: dimmed ? 0.35 : 1 } }),
+            React.createElement("text", { x: cx, y: interestY + 4, textAnchor: "middle", style: { fill: active ? "#daa520" : dimmed ? "rgba(218,165,32,.25)" : "rgba(218,165,32,.7)", fontFamily: mono, fontSize: 6.5, fontWeight: 700, letterSpacing: ".03em", pointerEvents: "none" } }, int.tag),
+            React.createElement("text", { x: cx, y: interestY + 32, textAnchor: "middle", style: { fill: dimmed ? "rgba(218,165,32,.15)" : "rgba(218,165,32,.4)", fontFamily: mono, fontSize: 7, letterSpacing: ".04em", pointerEvents: "none" } }, int.years)
           );
         })
       ),
-      phase === null && React.createElement("div", { style: { padding: "20px 24px", background: "rgba(138,180,220,.03)", border: "1px solid rgba(138,180,220,.15)", borderRadius: 2 } },
-        React.createElement("p", { style: { fontSize: 9, fontFamily: mono, letterSpacing: ".14em", color: "rgba(138,180,220,.4)", textTransform: "uppercase", margin: "0 0 14px", fontWeight: 600 } }, "CAREER SUMMARY"),
+      /* Default summary (no selection) */
+      phase === null && interest === null && React.createElement("div", { style: { padding: "20px 24px", background: "rgba(138,180,220,.03)", border: "1px solid rgba(138,180,220,.15)", borderRadius: 2 } },
+        React.createElement("p", { style: { fontSize: 9, fontFamily: mono, letterSpacing: ".14em", color: "rgba(138,180,220,.4)", textTransform: "uppercase", margin: "0 0 14px", fontWeight: 600 } }, "DUAL-TRACK SUMMARY"),
         React.createElement("div", { style: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 16 } },
           [
             { label: "YEARS OF FIELD EXPERIENCE", value: "11", sub: "2010 -- 2021" },
             { label: "OPERATIONAL DOMAINS", value: "5", sub: "EM, Refugee, Intl Justice, Public Health, Community Dev" },
-            { label: "STAKEHOLDER TYPES COORDINATED", value: "8+", sub: "LE, Fire, Hospital, Landlords, Employers, Interpreters, UN, Physicians" },
-            { label: "OPERATIONAL PHASES", value: "6", sub: "Select a phase above for IC relevance" }
+            { label: "INTELLECTUAL THREADS", value: "8", sub: "Chess to Georgetown -- 18 years of converging interests" },
+            { label: "OPERATIONAL PHASES", value: "6", sub: "Select a node above for details" }
           ].map(function(item) {
             return React.createElement("div", { key: item.label, style: { padding: "12px 14px", background: "rgba(138,180,220,.03)", border: "1px solid rgba(138,180,220,.08)", borderRadius: 2 } },
               React.createElement("div", { style: { display: "flex", alignItems: "baseline", gap: 8, marginBottom: 4 } },
                 React.createElement("span", { style: { fontSize: 22, fontFamily: mono, color: "#8ab4dc", fontWeight: 700 } }, item.value),
                 React.createElement("span", { style: { fontSize: 9, fontFamily: mono, color: "rgba(138,180,220,.4)", letterSpacing: ".1em", textTransform: "uppercase", fontWeight: 600 } }, item.label)
               ),
-              React.createElement("p", { style: { fontSize: 10, fontFamily: mono, color: "rgba(40,40,50,.65)", margin: 0, lineHeight: 1.5 } }, item.sub)
+              React.createElement("p", { style: { fontSize: 10, fontFamily: mono, color: "rgba(200,210,225,.5)", margin: 0, lineHeight: 1.5 } }, item.sub)
             );
           })
         ),
-        React.createElement("p", { style: { fontSize: 10, fontFamily: mono, color: "rgba(138,180,220,.35)", margin: 0, textAlign: "center", letterSpacing: ".06em" } }, "Select a phase above to see IC relevance assessment")
+        React.createElement("p", { style: { fontSize: 10, fontFamily: mono, color: "rgba(138,180,220,.35)", margin: 0, textAlign: "center", letterSpacing: ".06em" } }, "Select a career phase (top row) or intellectual interest (bottom row) to explore connections")
       ),
+      /* Career phase detail panel */
       phase !== null && (function() {
         var p = phases[phase];
-        return React.createElement("div", { style: { padding: "20px 24px", background: "rgba(138,180,220,.03)", border: "1px solid rgba(138,180,220,.15)", borderRadius: 2 } },
-          React.createElement("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 14 } },
-            React.createElement("div", null,
-              React.createElement("p", { style: { fontSize: 14, fontFamily: mono, color: "rgba(220,230,240,.9)", fontWeight: 600, margin: "0 0 4px" } }, p.title),
-              React.createElement("p", { style: { fontSize: 11, fontFamily: mono, color: "rgba(190,190,210,.5)", margin: 0 } }, p.years + " // " + p.duration)
+        return React.createElement("div", null,
+          React.createElement("div", { style: { padding: "20px 24px", background: "rgba(138,180,220,.03)", border: "1px solid rgba(138,180,220,.15)", borderRadius: 2, marginBottom: 12 } },
+            React.createElement("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 14 } },
+              React.createElement("div", null,
+                React.createElement("p", { style: { fontSize: 14, fontFamily: mono, color: "rgba(220,230,240,.9)", fontWeight: 600, margin: "0 0 4px" } }, p.title),
+                React.createElement("p", { style: { fontSize: 11, fontFamily: mono, color: "rgba(190,190,210,.5)", margin: 0 } }, p.years + " // " + p.duration)
+              ),
+              React.createElement("span", { style: { fontSize: 10, fontFamily: mono, color: "rgba(138,180,220,.5)", letterSpacing: ".08em", fontWeight: 600 } }, "PHASE " + String(phase + 1).padStart(2, "0"))
             ),
-            React.createElement("span", { style: { fontSize: 10, fontFamily: mono, color: "rgba(138,180,220,.5)", letterSpacing: ".08em", fontWeight: 600 } }, "PHASE " + String(phase + 1).padStart(2, "0"))
-          ),
-          React.createElement("p", { style: { fontSize: 9, fontFamily: mono, letterSpacing: ".12em", color: "rgba(138,180,220,.4)", textTransform: "uppercase", margin: "0 0 8px", fontWeight: 600 } }, "KEY COMPETENCIES DEVELOPED"),
-          React.createElement("div", { style: { display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 16 } },
-            p.comps.map(function(c) {
-              return React.createElement("span", { key: c, style: { padding: "4px 12px", background: "rgba(138,180,220,.06)", border: "1px solid rgba(138,180,220,.15)", fontSize: 10, fontFamily: mono, color: "rgba(220,230,240,.7)", letterSpacing: ".03em" } }, c);
-            })
-          ),
-          React.createElement("p", { style: { fontSize: 9, fontFamily: mono, letterSpacing: ".12em", color: "rgba(138,180,220,.4)", textTransform: "uppercase", margin: "0 0 6px", fontWeight: 600 } }, "IC RELEVANCE ASSESSMENT"),
-          React.createElement("p", { style: { fontSize: 12, fontFamily: mono, color: "rgba(200,210,225,.7)", lineHeight: 1.6, margin: "0 0 14px" } }, p.ic),
-          React.createElement("div", { style: { display: "flex", alignItems: "center", gap: 12 } },
-            React.createElement("span", { style: { fontSize: 9, fontFamily: mono, color: "rgba(138,180,220,.4)", letterSpacing: ".1em", fontWeight: 600, minWidth: 80 } }, "RELEVANCE"),
-            React.createElement("div", { style: { flex: 1, height: 8, background: "rgba(138,180,220,.08)", borderRadius: 1, position: "relative", overflow: "hidden" } },
-              React.createElement("div", { style: { position: "absolute", top: 0, left: 0, height: "100%", width: p.score + "%", background: p.score >= 80 ? "#8ab4dc" : p.score >= 60 ? "rgba(138,180,220,.5)" : "rgba(138,180,220,.3)", transition: "width .3s" } })
+            React.createElement("p", { style: { fontSize: 9, fontFamily: mono, letterSpacing: ".12em", color: "rgba(138,180,220,.4)", textTransform: "uppercase", margin: "0 0 8px", fontWeight: 600 } }, "KEY COMPETENCIES DEVELOPED"),
+            React.createElement("div", { style: { display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 16 } },
+              p.comps.map(function(c) {
+                return React.createElement("span", { key: c, style: { padding: "4px 12px", background: "rgba(138,180,220,.06)", border: "1px solid rgba(138,180,220,.15)", fontSize: 10, fontFamily: mono, color: "rgba(220,230,240,.7)", letterSpacing: ".03em" } }, c);
+              })
             ),
-            React.createElement("span", { style: { fontSize: 11, fontFamily: mono, color: "#8ab4dc", fontWeight: 700, minWidth: 30, textAlign: "right" } }, p.score)
+            React.createElement("p", { style: { fontSize: 9, fontFamily: mono, letterSpacing: ".12em", color: "rgba(138,180,220,.4)", textTransform: "uppercase", margin: "0 0 6px", fontWeight: 600 } }, "IC RELEVANCE ASSESSMENT"),
+            React.createElement("p", { style: { fontSize: 12, fontFamily: mono, color: "rgba(200,210,225,.7)", lineHeight: 1.6, margin: "0 0 14px" } }, p.ic),
+            React.createElement("div", { style: { display: "flex", alignItems: "center", gap: 12 } },
+              React.createElement("span", { style: { fontSize: 9, fontFamily: mono, color: "rgba(138,180,220,.4)", letterSpacing: ".1em", fontWeight: 600, minWidth: 80 } }, "RELEVANCE"),
+              React.createElement("div", { style: { flex: 1, height: 8, background: "rgba(138,180,220,.08)", borderRadius: 1, position: "relative", overflow: "hidden" } },
+                React.createElement("div", { style: { position: "absolute", top: 0, left: 0, height: "100%", width: p.score + "%", background: p.score >= 80 ? "#8ab4dc" : p.score >= 60 ? "rgba(138,180,220,.5)" : "rgba(138,180,220,.3)", transition: "width .3s" } })
+              ),
+              React.createElement("span", { style: { fontSize: 11, fontFamily: mono, color: "#8ab4dc", fontWeight: 700, minWidth: 30, textAlign: "right" } }, p.score)
+            )
+          ),
+          overlappingInterests.length > 0 && React.createElement("div", { style: { padding: "14px 20px", background: "rgba(218,165,32,.03)", border: "1px solid rgba(218,165,32,.15)", borderRadius: 2 } },
+            React.createElement("p", { style: { fontSize: 9, fontFamily: mono, letterSpacing: ".12em", color: "rgba(218,165,32,.5)", textTransform: "uppercase", margin: "0 0 10px", fontWeight: 600 } }, "PARALLEL INTELLECTUAL INTERESTS (" + overlappingInterests.length + ")"),
+            React.createElement("div", { style: { display: "flex", gap: 8, flexWrap: "wrap" } },
+              overlappingInterests.map(function(idx) {
+                var int = interests[idx];
+                return React.createElement("span", { key: int.tag, onClick: function() { setInterest(idx); setPhase(null); }, style: { padding: "5px 14px", background: "rgba(218,165,32,.06)", border: "1px solid rgba(218,165,32,.2)", fontSize: 10, fontFamily: mono, color: "rgba(218,165,32,.7)", letterSpacing: ".03em", cursor: "pointer", transition: "all .2s" } }, int.tag + " (" + int.years + ")");
+              })
+            )
+          )
+        );
+      })(),
+      /* Interest detail panel */
+      interest !== null && (function() {
+        var int = interests[interest];
+        return React.createElement("div", null,
+          React.createElement("div", { style: { padding: "20px 24px", background: "rgba(218,165,32,.03)", border: "1px solid rgba(218,165,32,.2)", borderRadius: 2, marginBottom: 12 } },
+            React.createElement("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 14 } },
+              React.createElement("div", null,
+                React.createElement("p", { style: { fontSize: 14, fontFamily: mono, color: "#daa520", fontWeight: 600, margin: "0 0 4px" } }, int.title),
+                React.createElement("p", { style: { fontSize: 11, fontFamily: mono, color: "rgba(218,165,32,.45)", margin: 0 } }, int.years)
+              ),
+              React.createElement("span", { style: { fontSize: 10, fontFamily: mono, color: "rgba(218,165,32,.45)", letterSpacing: ".08em", fontWeight: 600 } }, "INTEREST " + String(interest + 1).padStart(2, "0") + " / " + String(interests.length).padStart(2, "0"))
+            ),
+            React.createElement("p", { style: { fontSize: 9, fontFamily: mono, letterSpacing: ".12em", color: "rgba(218,165,32,.45)", textTransform: "uppercase", margin: "0 0 10px", fontWeight: 600 } }, "KEY WORKS & INFLUENCES"),
+            React.createElement("div", { style: { marginBottom: 16 } },
+              int.works.map(function(w, wi) {
+                return React.createElement("div", { key: wi, style: { display: "flex", gap: 8, padding: "4px 0", borderBottom: "1px solid rgba(218,165,32,.06)" } },
+                  React.createElement("span", { style: { fontSize: 10, fontFamily: mono, color: "rgba(218,165,32,.3)", fontWeight: 600, flexShrink: 0, minWidth: 16 } }, String(wi + 1).padStart(2, "0")),
+                  React.createElement("span", { style: { fontSize: 11, fontFamily: mono, color: "rgba(220,230,240,.7)", lineHeight: 1.5 } }, w)
+                );
+              })
+            ),
+            React.createElement("p", { style: { fontSize: 9, fontFamily: mono, letterSpacing: ".12em", color: "rgba(218,165,32,.45)", textTransform: "uppercase", margin: "0 0 6px", fontWeight: 600 } }, "CONNECTION TO TRAJECTORY"),
+            React.createElement("p", { style: { fontSize: 12, fontFamily: mono, color: "rgba(200,210,225,.7)", lineHeight: 1.65, margin: 0 } }, int.connection)
+          ),
+          overlappingCareer.length > 0 && React.createElement("div", { style: { padding: "14px 20px", background: "rgba(138,180,220,.03)", border: "1px solid rgba(138,180,220,.15)", borderRadius: 2 } },
+            React.createElement("p", { style: { fontSize: 9, fontFamily: mono, letterSpacing: ".12em", color: "rgba(138,180,220,.4)", textTransform: "uppercase", margin: "0 0 10px", fontWeight: 600 } }, "CONCURRENT CAREER PHASES (" + overlappingCareer.length + ")"),
+            React.createElement("div", { style: { display: "flex", gap: 8, flexWrap: "wrap" } },
+              overlappingCareer.map(function(idx) {
+                var cp = phases[idx];
+                return React.createElement("span", { key: cp.tag, onClick: function() { setPhase(idx); setInterest(null); }, style: { padding: "5px 14px", background: "rgba(138,180,220,.06)", border: "1px solid rgba(138,180,220,.2)", fontSize: 10, fontFamily: mono, color: "rgba(138,180,220,.7)", letterSpacing: ".03em", cursor: "pointer", transition: "all .2s" } }, cp.tag + " (" + cp.years + ")");
+              })
+            )
           )
         );
       })()

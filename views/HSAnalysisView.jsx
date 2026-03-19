@@ -1006,7 +1006,7 @@ function HSAnalysisView({ setView }) {
       <div style={{ position: 'sticky', top: 0, zIndex: 100, background: 'rgba(10,8,8,.96)', backdropFilter: 'blur(12px)', borderBottom: '2px solid rgba(200,140,40,.2)', padding: '0' }}>
         <div style={{ height: 3, background: 'repeating-linear-gradient(90deg, #d88030 0px, #d88030 40px, transparent 40px, transparent 44px)' }} />
         <div style={{ padding: '8px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <button onClick={() => setView('coursework')} style={{ background: 'none', border: 'none', color: C.tx3, fontFamily: HS_MONO, fontSize: 11, cursor: 'pointer' }}>\<- Back</button>
+          <button onClick={() => setView('coursework')} style={{ background: 'none', border: 'none', color: C.tx3, fontFamily: HS_MONO, fontSize: 11, cursor: 'pointer' }}>{"<-"} Back</button>
           <span style={{ fontFamily: HS_MONO, fontSize: 12, color: C.orange, letterSpacing: '.12em' }}>EOC // MPAI 6745 // HOMELAND SECURITY & INTELLIGENCE</span>
           <div style={{ display: 'flex', gap: 6 }}>
             {['exercise', 'hotwash', 'doctrine', 'ics', 'risk', 'interagency'].map(m => (
