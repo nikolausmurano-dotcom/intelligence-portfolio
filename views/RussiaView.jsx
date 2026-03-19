@@ -842,6 +842,17 @@ function RussiaView({ setView }) {
   const [breaksSelected, setBreaksSelected] = useState(null);
   const [breaksBreakpoint, setBreaksBreakpoint] = useState(null);
 
+  // Contract (Authoritarian Social Contract Dashboard)
+  const [contractSelected, setContractSelected] = useState(null);
+  const [contractExplanation, setContractExplanation] = useState(null);
+
+  // Briefing (Briefing Prep Generator)
+  const [briefAudience, setBriefAudience] = useState("european_defense");
+  const [briefTopic, setBriefTopic] = useState("ukraine_trajectory");
+  const [briefDuration, setBriefDuration] = useState("30");
+  const [briefDetailMode, setBriefDetailMode] = useState("brief");
+  const [briefExpanded, setBriefExpanded] = useState({});
+
   // ── Scholarly micro-icon tooltip content ────────────────
   var tooltipContent = {
     dome: "The onion dome emerged in Muscovy around the 13th century \u2014 its shape may derive from the need to shed heavy snow loads. By Ivan III\u2019s reign, the domes of the Moscow Kremlin cathedrals (rebuilt 1475\u20131508 by Italian architects under Ivan\u2019s direction) had become the architectural signature of Orthodox power.",
@@ -1341,6 +1352,8 @@ function RussiaView({ setView }) {
     { id: "advocate",       label: "Advocate",         icon: "\u2620" },
     { id: "lexicon",        label: "Lexicon",          icon: "\u0416" },
     { id: "breaks",         label: "Breaks",           icon: "\u26a0" },
+    { id: "contract",       label: "Contract",         icon: "\u2611" },
+    { id: "briefing",       label: "Briefing",         icon: "\u2709" },
   ];
   var modeSwitcher = React.createElement("div", {
     style: {
@@ -5171,6 +5184,564 @@ function RussiaView({ setView }) {
     );
   }
 
+  // ── CONTRACT: Authoritarian Social Contract Dashboard ────────────
+  function renderContract() {
+    var CONTRACT_TERMS = [
+      {
+        id: "living_standards",
+        name: "Rising Living Standards",
+        segments: [
+          { start: 2000, end: 2014, status: "delivered", label: "Real wages doubled, poverty halved from 29% to 11%, consumer economy emerged. Oil revenues funded public sector pay rises and pension increases. A new middle class appeared in Moscow and St. Petersburg." },
+          { start: 2014, end: 2022, status: "strained", label: "Sanctions after Crimea + oil price collapse halved real disposable income growth. Ruble lost 50% of value in 2014-15. Real wages stagnated 2014-2018, partial recovery 2019-2021. Inflation eroded gains for lower-income Russians." },
+          { start: 2022, end: 2026, status: "broken", label: "War economy: military spending at 40% of federal budget (2025). Inflation running 8-9%. Labor shortages from mobilization and emigration driving wage growth in nominal terms, but real purchasing power declining. Import substitution failing in consumer goods. Quality of life measurably declining outside defense sector." },
+        ],
+      },
+      {
+        id: "physical_security",
+        name: "Physical Security",
+        segments: [
+          { start: 2000, end: 2022, status: "delivered", label: "Chechnya pacified (brutally). Apartment bombings stopped. Street crime declined dramatically through 2000s-2010s. Russians felt physically safer than at any point since the Soviet era. Terrorism incidents declined after 2004 Beslan." },
+          { start: 2022, end: 2026, status: "broken", label: "Catastrophically broken. Estimated 1.28 million Russian military casualties by March 2026 (killed, wounded, captured, missing). Loss rate approximately 40,000/month in late 2025. Partial mobilization (September 2022) shattered the illusion that war would not touch ordinary families. Drone strikes reaching Russian territory. Kursk incursion demonstrated territorial vulnerability." },
+        ],
+      },
+      {
+        id: "no_1990s",
+        name: "No Return to 1990s Chaos",
+        segments: [
+          { start: 2000, end: 2022, status: "delivered", label: "This was the deepest emotional chord. The 1990s trauma (hyperinflation, oligarch theft, state collapse, Chechen wars, poverty) made stability the paramount value. Putin delivered predictability: pensions paid on time, salaries not months in arrears, no gang wars in the streets." },
+          { start: 2022, end: 2026, status: "strained", label: "Partial mobilization and war economy introduced 1990s-adjacent anxieties: sons being drafted, economic uncertainty, emigration of educated class. But crucially NOT 1990s-level chaos: no hyperinflation, no state collapse, no gang warfare. The regime can still argue it is holding the line against chaos, even if the margin has narrowed." },
+        ],
+      },
+      {
+        id: "national_pride",
+        name: "National Pride / Great Power Status",
+        segments: [
+          { start: 2000, end: 2014, status: "delivered", label: "Sochi Olympics (2014), G8 membership, energy superpower narrative, military modernization. Russians felt their country mattered on the world stage again after the humiliation of the 1990s." },
+          { start: 2014, end: 2022, status: "delivered", label: "Crimea annexation produced genuine popular euphoria (86% approval). Syria intervention (2015) demonstrated global military reach. Nuclear modernization. World Cup 2018. The pride narrative was sustained and deepened." },
+          { start: 2022, end: 2026, status: "strained", label: "Mixed signals. International isolation (sanctions, ICC warrant, sport bans) vs. domestic narrative of standing up to the West. BRICS expansion provides alternative status framework. Nuclear posturing maintains great power self-image. Domestic polls still show majority support for great power narrative, but the evidence base is increasingly strained." },
+        ],
+      },
+      {
+        id: "apolitical",
+        name: "\"You Don't Have to Care About Politics\"",
+        segments: [
+          { start: 2000, end: 2022, status: "delivered", label: "Successful depoliticization of Russian society. The implicit deal: we handle politics, you handle your private life. Consumer culture, foreign travel, social media usage all grew while political engagement declined. Turnout managed, opposition marginalized, most Russians genuinely uninterested in politics." },
+          { start: 2022, end: 2026, status: "broken", label: "Impossible to maintain when your son, husband, or brother is drafted. Mobilization (300,000 called up September 2022, ongoing covert recruitment) forced politics into every household. War casualties create families with direct political grievances. Emigration of 500,000-700,000 (mostly young, educated) was itself a political act. The war made apoliticism impossible." },
+        ],
+      },
+      {
+        id: "personal_freedom",
+        name: "Personal Freedom (Within Limits)",
+        segments: [
+          { start: 2000, end: 2014, status: "delivered", label: "Russians could travel abroad, use the internet relatively freely, start businesses, consume Western culture. Political freedom was curtailed but personal freedom was broadly maintained. The deal was explicit: don't challenge the regime politically and you can live as you wish." },
+          { start: 2014, end: 2022, status: "strained", label: "NGO 'foreign agent' laws (2012, expanded), protest crackdowns (Bolotnaya 2012, Navalny protests 2017-2021), internet restrictions (VPN blocks, Telegram ban attempt), independent media closures. The space for personal freedom was narrowing but still recognizable." },
+          { start: 2022, end: 2026, status: "broken", label: "Martial law provisions, 15-year sentences for 'discrediting' the military, mass emigration pressure, social media monitoring, denunciation culture returning. Personal freedom severely eroded: what you say, post, or share can result in prosecution. The 'within limits' qualifier has expanded to consume most of the freedom it was supposed to protect." },
+        ],
+      },
+    ];
+
+    var statusColor = function(s) {
+      return s === "delivered" ? RU_C.green : s === "strained" ? RU_C.gold : RU_C.red;
+    };
+    var statusLabel = function(s) {
+      return s === "delivered" ? "DELIVERED" : s === "strained" ? "STRAINED" : "BROKEN";
+    };
+
+    var termsDelivered = 0;
+    var termsBroken = 0;
+    var termsStrained = 0;
+    CONTRACT_TERMS.forEach(function(t) {
+      var last = t.segments[t.segments.length - 1];
+      if (last.status === "delivered") termsDelivered++;
+      else if (last.status === "broken") termsBroken++;
+      else termsStrained++;
+    });
+
+    var EXPLANATIONS = [
+      { id: "A", label: "Repression is sufficient to suppress dissent", detail: "The coercive apparatus (FSB, Rosgvardiya, police, courts) has been dramatically expanded since 2022. Protest is effectively criminalized. Independent media destroyed. Opposition leaders dead (Navalny), imprisoned, or exiled. The cost of dissent is now 15 years in prison. This explanation argues that raw coercion can substitute for legitimacy indefinitely. Counter-evidence: No authoritarian regime has maintained pure coercion without some legitimacy source for more than 10-15 years. The costs of repression compound over time." },
+      { id: "B", label: "The 1990s trauma makes ANY order preferable to chaos", detail: "Russians aged 40+ carry deep psychological scars from the 1990s collapse. The fear of state failure is more powerful than dissatisfaction with state performance. Putin's implicit argument -- 'without me, the 1990s return' -- resonates precisely because it is empirically grounded in living memory. Counter-evidence: This effect is generational. Russians under 30 have no memory of the 1990s. As the traumatized generation ages out, this brake on political action will weaken. Timeline: 10-15 years before the 1990s cohort loses demographic dominance." },
+      { id: "C", label: "Nationalist war framing has temporarily replaced the old contract", detail: "The war has created a new implicit contract: 'We are fighting for Russia's survival against NATO encirclement. Personal sacrifices are patriotic duty, not contract violations.' This transforms broken promises into acceptable wartime costs. The Great Patriotic War (WWII) narrative provides the cultural template. Counter-evidence: WWII framing worked because the threat was existential and visible (German invasion). The Ukraine war does not map cleanly: Russia invaded, is not defending its territory (Kursk notwithstanding), and the enemy is not at the gates of Moscow. The framing is sustainable only as long as the war can be presented as defensive." },
+      { id: "D", label: "There is no organized opposition capable of capitalizing", detail: "Even if millions are dissatisfied, dissatisfaction without organization produces nothing. Navalny's network was destroyed. Civil society was gutted. There is no alternative power center, no credible alternative leader, no institutional channel for opposition. Dissatisfaction is atomized and individual. Counter-evidence: This is the strongest explanation but also the most historically fragile. In 1989, there was no organized opposition in East Germany either. The Stasi had penetrated everything. Then the Berlin Wall fell in weeks. Authoritarian regimes appear stable until suddenly they are not. The absence of visible opposition is not evidence of regime stability -- it may be evidence of how quickly things can change when a trigger event occurs." },
+    ];
+
+    var timelineStart = 2000;
+    var timelineEnd = 2026;
+    var totalYears = timelineEnd - timelineStart;
+
+    return React.createElement("div", { style: { marginTop: 12 } },
+      React.createElement("h3", { style: { fontFamily: RU_Serif, fontSize: 22, color: RU_C.gold, marginBottom: 4 } }, "Authoritarian Social Contract Dashboard"),
+      React.createElement("p", { style: { fontFamily: RU_Serif, fontSize: 14, color: RU_C.tx2, lineHeight: 1.7, marginBottom: 24 } },
+        "The social contract Putin made with the Russian public: \"I give you stability, rising wages, national pride. You give me power and don't ask questions.\" Track delivery status of 6 contract terms across the Putin era (2000-2026)."
+      ),
+      // Timeline bars
+      React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 12, marginBottom: 32 } },
+        CONTRACT_TERMS.map(function(term) {
+          return React.createElement("div", { key: term.id, style: { background: RU_C.card, border: "1px solid " + RU_C.line, borderRadius: 8, padding: "14px 18px" } },
+            React.createElement("div", { style: { fontFamily: RU_Sans, fontSize: 13, fontWeight: 700, color: RU_C.tx, marginBottom: 8 } }, term.name),
+            // Year axis
+            React.createElement("div", { style: { display: "flex", justifyContent: "space-between", marginBottom: 4 } },
+              [2000, 2005, 2010, 2015, 2020, 2025].map(function(y) {
+                return React.createElement("span", { key: y, style: { fontFamily: RU_Mono, fontSize: 9, color: RU_C.tx3 } }, y);
+              })
+            ),
+            // Bar
+            React.createElement("div", { style: { display: "flex", height: 28, borderRadius: 4, overflow: "hidden", border: "1px solid " + RU_C.line, cursor: "pointer" } },
+              term.segments.map(function(seg, si) {
+                var widthPct = ((seg.end - seg.start) / totalYears * 100) + "%";
+                var sc = statusColor(seg.status);
+                var isSelected = contractSelected === term.id + "-" + si;
+                return React.createElement("div", {
+                  key: si,
+                  onClick: function() { setContractSelected(isSelected ? null : term.id + "-" + si); },
+                  style: {
+                    width: widthPct,
+                    height: "100%",
+                    background: sc + (isSelected ? "40" : "25"),
+                    borderRight: si < term.segments.length - 1 ? "1px solid " + RU_C.bg : "none",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    transition: "background .2s",
+                    position: "relative",
+                  },
+                },
+                  React.createElement("span", { style: { fontFamily: RU_Sans, fontSize: 10, fontWeight: 600, color: sc, letterSpacing: 0.5 } }, statusLabel(seg.status))
+                );
+              })
+            ),
+            // Expanded detail
+            contractSelected && contractSelected.indexOf(term.id) === 0 ? (function() {
+              var si = parseInt(contractSelected.split("-")[1]);
+              var seg = term.segments[si];
+              var sc = statusColor(seg.status);
+              return React.createElement("div", { style: { marginTop: 10, padding: 14, background: sc + "10", border: "1px solid " + sc + "30", borderRadius: 6 } },
+                React.createElement("div", { style: { fontFamily: RU_Sans, fontSize: 11, fontWeight: 700, color: sc, marginBottom: 4, letterSpacing: 1 } }, statusLabel(seg.status) + " (" + seg.start + "-" + seg.end + ")"),
+                React.createElement("div", { style: { fontFamily: RU_Serif, fontSize: 13, color: RU_C.tx2, lineHeight: 1.7 } }, seg.label)
+              );
+            })() : null
+          );
+        })
+      ),
+      // Contract Status Assessment
+      React.createElement("div", { style: { background: RU_C.card, border: "1px solid " + RU_C.line, borderRadius: 8, padding: 24, marginBottom: 28 } },
+        React.createElement("div", { style: { fontFamily: RU_Sans, fontSize: 12, fontWeight: 700, color: RU_C.tx3, letterSpacing: 1.5, marginBottom: 16 } }, "CONTRACT STATUS ASSESSMENT"),
+        React.createElement("div", { style: { display: "flex", gap: 24, flexWrap: "wrap", marginBottom: 20 } },
+          React.createElement("div", { style: { textAlign: "center" } },
+            React.createElement("div", { style: { fontFamily: RU_Mono, fontSize: 32, fontWeight: 700, color: RU_C.green } }, termsDelivered),
+            React.createElement("div", { style: { fontFamily: RU_Sans, fontSize: 11, color: RU_C.tx3, marginTop: 2 } }, "Terms Delivered")
+          ),
+          React.createElement("div", { style: { textAlign: "center" } },
+            React.createElement("div", { style: { fontFamily: RU_Mono, fontSize: 32, fontWeight: 700, color: RU_C.gold } }, termsStrained),
+            React.createElement("div", { style: { fontFamily: RU_Sans, fontSize: 11, color: RU_C.tx3, marginTop: 2 } }, "Terms Strained")
+          ),
+          React.createElement("div", { style: { textAlign: "center" } },
+            React.createElement("div", { style: { fontFamily: RU_Mono, fontSize: 32, fontWeight: 700, color: RU_C.red } }, termsBroken),
+            React.createElement("div", { style: { fontFamily: RU_Sans, fontSize: 11, color: RU_C.tx3, marginTop: 2 } }, "Terms Broken")
+          )
+        ),
+        React.createElement("div", { style: { background: RU_C.redBg, border: "1px solid " + RU_C.red + "30", borderRadius: 6, padding: 16, marginBottom: 16 } },
+          React.createElement("div", { style: { fontFamily: RU_Sans, fontSize: 11, fontWeight: 700, color: RU_C.red, letterSpacing: 1, marginBottom: 6 } }, "HISTORICAL PRECEDENT"),
+          React.createElement("div", { style: { fontFamily: RU_Serif, fontSize: 13, color: RU_C.tx2, lineHeight: 1.7 } },
+            "When the Soviet social contract broke in the late 1980s (economic stagnation + Afghanistan casualties + Chernobyl), the regime fell within 5 years. The current contract is objectively broken on " + termsBroken + " of 6 terms and strained on " + termsStrained + " more. The parallel is not exact -- the Soviet system was ideologically exhausted in ways Putin's is not -- but the structural similarity is notable."
+          )
+        )
+      ),
+      // Key analytical question
+      React.createElement("div", { style: { background: RU_C.card, border: "1px solid " + RU_C.gold + "30", borderRadius: 8, padding: 24 } },
+        React.createElement("div", { style: { fontFamily: RU_Sans, fontSize: 12, fontWeight: 700, color: RU_C.gold, letterSpacing: 1.5, marginBottom: 8 } }, "KEY ANALYTICAL QUESTION"),
+        React.createElement("div", { style: { fontFamily: RU_Serif, fontSize: 15, color: RU_C.tx, lineHeight: 1.7, marginBottom: 20 } },
+          "The contract is objectively broken on " + termsBroken + " of 6 terms. Why hasn't this produced political consequences? Four possible explanations:"
+        ),
+        React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 10 } },
+          EXPLANATIONS.map(function(ex) {
+            var isOpen = contractExplanation === ex.id;
+            return React.createElement("div", {
+              key: ex.id,
+              style: { background: isOpen ? RU_C.goldBg : "transparent", border: "1px solid " + (isOpen ? RU_C.gold + "40" : RU_C.line), borderRadius: 6, overflow: "hidden", transition: "all .2s" },
+            },
+              React.createElement("div", {
+                onClick: function() { setContractExplanation(isOpen ? null : ex.id); },
+                style: { padding: "12px 16px", cursor: "pointer", display: "flex", alignItems: "flex-start", gap: 10 },
+              },
+                React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 14, fontWeight: 700, color: RU_C.gold, flexShrink: 0 } }, ex.id + ")"),
+                React.createElement("span", { style: { fontFamily: RU_Sans, fontSize: 13, color: isOpen ? RU_C.tx : RU_C.tx2, fontWeight: isOpen ? 600 : 400 } }, ex.label)
+              ),
+              isOpen ? React.createElement("div", { style: { padding: "0 16px 16px 42px" } },
+                React.createElement("div", { style: { fontFamily: RU_Serif, fontSize: 13, color: RU_C.tx2, lineHeight: 1.8 } }, ex.detail)
+              ) : null
+            );
+          })
+        )
+      )
+    );
+  }
+
+  // ── BRIEFING: Briefing Prep Generator ──────────────────────────
+  function renderBriefing() {
+    var AUDIENCES = [
+      { id: "european_defense", label: "European Defense Ministry" },
+      { id: "us_congressional", label: "US Congressional Staffers" },
+      { id: "corporate_risk", label: "Corporate Risk Assessment" },
+      { id: "academic", label: "Academic Conference" },
+      { id: "journalism", label: "Journalism Interview" },
+    ];
+    var TOPICS = [
+      { id: "ukraine_trajectory", label: "Ukraine War Trajectory" },
+      { id: "domestic_stability", label: "Russian Domestic Stability" },
+      { id: "nato_russia", label: "NATO-Russia Dynamics" },
+      { id: "hybrid_warfare", label: "Russian Hybrid Warfare" },
+      { id: "energy_coercion", label: "Energy Coercion" },
+      { id: "china_russia", label: "China-Russia Relationship" },
+    ];
+    var DURATIONS = [
+      { id: "15", label: "15 min" },
+      { id: "30", label: "30 min" },
+      { id: "45", label: "45 min" },
+      { id: "60", label: "60 min" },
+    ];
+
+    var isPolicyAudience = briefAudience === "european_defense" || briefAudience === "us_congressional" || briefAudience === "corporate_risk";
+
+    // Pre-built briefing skeletons
+    var BRIEFINGS = {
+      "european_defense|ukraine_trajectory": {
+        title: "Ukraine War Trajectory -- European Defense Ministry (30 min)",
+        judgments: [
+          {
+            text: "Russia cannot achieve its maximalist objectives (regime change in Kyiv, NATO withdrawal from Eastern Europe) but retains capacity to sustain the current war of attrition for 2-3 more years.",
+            confidence: "HIGH",
+            evidence: [
+              "Russian defense spending at 40% of federal budget (2025) is unsustainable beyond 2027-2028 without structural economic damage.",
+              "Russian casualty rate of approximately 40,000/month exceeds recruitment capacity; covert mobilization ongoing but insufficient.",
+              "Russian defense industrial base producing 3x pre-war output but still below consumption rate for precision munitions.",
+            ],
+            contrarian: [
+              "Russia's war economy may prove more resilient than Western models predict -- Soviet precedent shows command economies can sustain wartime production for decades at the cost of living standards.",
+              "Chinese economic support (purchasing Russian energy above market rates, providing dual-use technology) may extend Russia's timeline significantly beyond 2028.",
+            ],
+          },
+          {
+            text: "A negotiated settlement is possible in 2026-2027 but will require both sides to accept outcomes they currently reject publicly.",
+            confidence: "MODERATE",
+            evidence: [
+              "Backchannel communications between Moscow and Washington have intensified since late 2025.",
+              "Russian economic indicators suggest growing pressure for settlement: labor shortages, inflation, capital flight.",
+            ],
+            contrarian: [
+              "Putin has no incentive to negotiate from a position that would be perceived domestically as defeat -- the political costs of an unsatisfactory peace may exceed the costs of continued war.",
+            ],
+          },
+          {
+            text: "European NATO members face a 3-5 year window of elevated Russian conventional threat, peaking if/when the Ukraine war concludes and Russian forces reconstitute.",
+            confidence: "HIGH",
+            evidence: [
+              "Russian military doctrine treats post-conflict reconstitution as a strategic priority.",
+              "Baltic states remain vulnerable during the NATO force buildup period (2024-2028).",
+              "Russian hybrid warfare capabilities (cyber, sabotage, political interference) are operational regardless of the Ukraine war status.",
+            ],
+            contrarian: [
+              "Russian conventional forces have been so degraded by the Ukraine war that meaningful reconstitution will take 7-10 years, not 3-5.",
+            ],
+          },
+        ],
+        policyOptions: [
+          "Accelerate ammunition production to sustain Ukrainian defensive operations through 2027.",
+          "Pre-position NATO rapid reaction forces in Baltic states to deter opportunistic Russian escalation during any ceasefire negotiations.",
+          "Develop sanctions off-ramp framework tied to verifiable Russian withdrawal milestones.",
+        ],
+        questions: [
+          "What is the realistic timeline for Ukrainian counteroffensive capability and what equipment is needed?",
+          "How should European defense planning account for a possible US disengagement from NATO support?",
+          "What are the indicators that Russia is preparing for escalation beyond Ukraine (Baltic probes, Moldovan destabilization)?",
+        ],
+        classifiedNote: "Open source covers force disposition and economic indicators. Classified sources needed for: Russian leadership decision-making dynamics, specific intelligence on Russian military readiness timelines, and details of backchannel negotiations.",
+      },
+      "us_congressional|domestic_stability": {
+        title: "Russian Domestic Stability -- US Congressional Staffers (15 min)",
+        judgments: [
+          {
+            text: "The Putin regime is stable in the short term (12-18 months) but faces compounding structural pressures that create medium-term vulnerability (3-5 years).",
+            confidence: "HIGH",
+            evidence: [
+              "No organized opposition exists; Navalny's network destroyed, civil society gutted.",
+              "Security apparatus (FSB, Rosgvardiya) remains loyal and well-resourced.",
+              "However: war casualties creating millions of grievance-bearing families, brain drain of 500-700K educated Russians, defense spending crowding out social services.",
+            ],
+            contrarian: [
+              "Authoritarian regimes rarely collapse from domestic pressure alone -- external shock (military defeat, succession crisis) is typically the trigger.",
+            ],
+          },
+          {
+            text: "Succession planning is the single greatest vulnerability in the Russian political system.",
+            confidence: "HIGH",
+            evidence: [
+              "Putin (age 73) has no designated successor and has systematically prevented any figure from accumulating independent power.",
+              "Historical pattern: every Russian leadership transition since 1725 has been contested, violent, or both.",
+            ],
+            contrarian: [
+              "The 'sistema' (informal power network) may be capable of managing a transition without external visibility, as it did in 1999 (Yeltsin to Putin).",
+            ],
+          },
+          {
+            text: "Sanctions are degrading Russian economic capacity but are not, by themselves, sufficient to produce regime change.",
+            confidence: "HIGH",
+            evidence: [
+              "Russian GDP contracted only 2.1% in 2022 despite unprecedented sanctions, recovered partially in 2023-2024.",
+              "Sanctions evasion through third countries (UAE, Turkey, Central Asia, China) remains extensive.",
+            ],
+            contrarian: [
+              "Sanctions effects are cumulative and may reach a tipping point when deferred maintenance (infrastructure, technology) creates cascading failures.",
+            ],
+          },
+        ],
+        policyOptions: [
+          "Maintain sanctions pressure while targeting specific evasion networks through third-country enforcement.",
+          "Invest in Russian-language independent media broadcasting to maintain information access for Russian citizens.",
+          "Develop contingency planning for Russian political instability scenarios (succession crisis, regional fragmentation).",
+        ],
+        questions: [
+          "What is the US strategy if Putin dies or is incapacitated -- do we have a framework for engaging a successor regime?",
+          "Are sanctions actually working or are we just punishing Russian civilians while elites evade through Dubai and Istanbul?",
+          "What is the risk of Russian domestic instability producing loose nuclear materials or unauthorized nuclear use?",
+        ],
+        classifiedNote: "Open source covers economic data, demographic trends, and protest indicators. Classified sources needed for: Putin's health status, elite factional dynamics, and specific intelligence on succession planning within the Kremlin.",
+      },
+      "corporate_risk|energy_coercion": {
+        title: "Energy Coercion -- Corporate Risk Assessment (45 min)",
+        judgments: [
+          {
+            text: "Russia's capacity for energy coercion against Europe has been permanently reduced by the destruction of Nord Stream pipelines and European diversification, but residual leverage remains significant in specific markets.",
+            confidence: "HIGH",
+            evidence: [
+              "European LNG import capacity expanded from 150 bcm to 220+ bcm (2022-2025).",
+              "Russian pipeline gas deliveries to Europe fell from 155 bcm (2021) to approximately 15 bcm (2025).",
+              "However: Central/Eastern European countries remain more exposed; nuclear fuel supply chains still Russia-dependent for several EU members.",
+            ],
+            contrarian: [
+              "A severe winter combined with Asian LNG demand surge could still create European energy vulnerability, particularly if remaining Russian gas flows through Ukraine are cut (transit agreement expired December 2024).",
+            ],
+          },
+          {
+            text: "Russian energy revenue has been redirected to Asian markets, maintaining fiscal viability but at significantly lower margins and with increased buyer leverage.",
+            confidence: "HIGH",
+            evidence: [
+              "Russian oil exports to China and India doubled post-2022 but at discounts of 15-30% to Brent benchmark.",
+              "Russian federal budget increasingly dependent on non-energy revenue and reserve fund drawdowns.",
+              "Yamal LNG and Arctic LNG-2 projects face technology access challenges from sanctions on Western equipment.",
+            ],
+            contrarian: [
+              "If oil prices rise above $100/barrel due to Middle East instability, Russian fiscal position improves significantly regardless of discount levels.",
+            ],
+          },
+          {
+            text: "Corporate entities with Russian energy exposure face regulatory, reputational, and operational risks that will persist regardless of conflict resolution.",
+            confidence: "MODERATE",
+            evidence: [
+              "Secondary sanctions risk for entities facilitating Russian energy trade is increasing.",
+              "ESG frameworks increasingly classify Russian energy partnerships as material governance risks.",
+            ],
+            contrarian: [
+              "A negotiated settlement in Ukraine could rapidly rehabilitate Russian energy partnerships, particularly in gas -- the infrastructure still exists and European demand has not disappeared, only been redirected at higher cost.",
+            ],
+          },
+          {
+            text: "The nuclear fuel supply chain represents an underappreciated corporate risk: Russia controls 44% of global uranium enrichment capacity.",
+            confidence: "HIGH",
+            evidence: [
+              "Rosatom remains unsanctioned. Multiple EU nuclear utilities depend on VVER fuel assemblies that only Rosatom produces.",
+              "Westinghouse and Framatome are developing alternative fuel assemblies but commercial availability is 2027-2028 at earliest.",
+            ],
+            contrarian: [
+              "Sanctioning Rosatom would create more disruption for Western nuclear operators than for Russia in the short term.",
+            ],
+          },
+        ],
+        policyOptions: [
+          "Conduct supply chain audit of all Russian energy dependencies including nuclear fuel, enrichment services, and critical mineral inputs.",
+          "Develop hedging strategies for energy price volatility driven by Russian supply disruption scenarios.",
+          "Evaluate regulatory exposure under current and anticipated secondary sanctions regimes.",
+          "Establish scenario-based contingency plans for both conflict escalation (energy supply disruption) and resolution (market rebalancing).",
+        ],
+        questions: [
+          "What is the financial exposure if Russian gas transit through Ukraine is permanently terminated?",
+          "How should we assess the risk of investing in alternative energy infrastructure that may become stranded assets if Russian energy returns to European markets post-conflict?",
+          "What is the timeline for regulatory action on nuclear fuel supply diversification and what are the cost implications?",
+        ],
+        classifiedNote: "Open source covers market data, trade flows, regulatory frameworks, and corporate disclosures. Classified sources would add: intelligence on Russian energy policy decision-making, specific sanctions evasion schemes, and advance knowledge of regulatory actions. Most corporate risk assessment can be conducted entirely on open source.",
+      },
+    };
+
+    var briefKey = briefAudience + "|" + briefTopic;
+    var activeBriefing = BRIEFINGS[briefKey] || null;
+
+    var toggleSection = function(key) {
+      var next = Object.assign({}, briefExpanded);
+      next[key] = !next[key];
+      setBriefExpanded(next);
+    };
+
+    var renderSection = function(title, content, sectionKey) {
+      var isOpen = !!briefExpanded[sectionKey];
+      return React.createElement("div", { key: sectionKey, style: { marginBottom: 8, border: "1px solid " + RU_C.line, borderRadius: 6, overflow: "hidden" } },
+        React.createElement("div", {
+          onClick: function() { toggleSection(sectionKey); },
+          style: { padding: "10px 14px", cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "center", background: isOpen ? RU_C.goldBg : "transparent", transition: "background .2s" },
+        },
+          React.createElement("span", { style: { fontFamily: RU_Sans, fontSize: 12, fontWeight: 700, color: isOpen ? RU_C.gold : RU_C.tx3, letterSpacing: 1 } }, title),
+          React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 12, color: RU_C.tx3 } }, isOpen ? "[-]" : "[+]")
+        ),
+        isOpen ? React.createElement("div", { style: { padding: "12px 14px", borderTop: "1px solid " + RU_C.line } }, content) : null
+      );
+    };
+
+    var renderJudgment = function(j, idx) {
+      var confColor = j.confidence === "HIGH" ? RU_C.green : j.confidence === "MODERATE" ? RU_C.gold : RU_C.red;
+      var jKey = "j-" + idx;
+      var isDetailed = briefDetailMode === "detailed";
+      return React.createElement("div", { key: jKey, style: { marginBottom: 16, padding: 14, background: confColor + "08", border: "1px solid " + confColor + "25", borderRadius: 6 } },
+        React.createElement("div", { style: { display: "flex", alignItems: "center", gap: 8, marginBottom: 6 } },
+          React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 10, fontWeight: 700, color: confColor, padding: "2px 8px", background: confColor + "20", borderRadius: 3, letterSpacing: 1 } }, j.confidence),
+          React.createElement("span", { style: { fontFamily: RU_Sans, fontSize: 11, color: RU_C.tx3 } }, "Confidence")
+        ),
+        React.createElement("div", { style: { fontFamily: RU_Serif, fontSize: 14, color: RU_C.tx, lineHeight: 1.7, marginBottom: isDetailed ? 12 : 0 } }, j.text),
+        isDetailed ? React.createElement(React.Fragment, null,
+          renderSection("SUPPORTING EVIDENCE (" + j.evidence.length + ")", React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 8 } },
+            j.evidence.map(function(e, ei) {
+              return React.createElement("div", { key: ei, style: { display: "flex", gap: 8, alignItems: "flex-start" } },
+                React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 11, color: RU_C.gold, flexShrink: 0, marginTop: 2 } }, "[" + (ei + 1) + "]"),
+                React.createElement("span", { style: { fontFamily: RU_Sans, fontSize: 12, color: RU_C.tx2, lineHeight: 1.6 } }, e)
+              );
+            })
+          ), jKey + "-evidence"),
+          renderSection("ALTERNATIVE VIEWS (" + j.contrarian.length + ")", React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 8 } },
+            j.contrarian.map(function(c, ci) {
+              return React.createElement("div", { key: ci, style: { display: "flex", gap: 8, alignItems: "flex-start" } },
+                React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 11, color: RU_C.red, flexShrink: 0, marginTop: 2 } }, "ALT"),
+                React.createElement("span", { style: { fontFamily: RU_Sans, fontSize: 12, color: RU_C.tx2, lineHeight: 1.6 } }, c)
+              );
+            })
+          ), jKey + "-contrarian")
+        ) : null
+      );
+    };
+
+    return React.createElement("div", { style: { marginTop: 12 } },
+      React.createElement("h3", { style: { fontFamily: RU_Serif, fontSize: 22, color: RU_C.gold, marginBottom: 4 } }, "Briefing Prep Generator"),
+      React.createElement("p", { style: { fontFamily: RU_Serif, fontSize: 14, color: RU_C.tx2, lineHeight: 1.7, marginBottom: 20 } },
+        "Select audience, topic, and duration to generate a structured briefing skeleton with key judgments, evidence, alternative views, and anticipated questions."
+      ),
+      // Selectors
+      React.createElement("div", { style: { display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16, marginBottom: 24 } },
+        // Audience
+        React.createElement("div", { style: { background: RU_C.card, border: "1px solid " + RU_C.line, borderRadius: 8, padding: 14 } },
+          React.createElement("div", { style: { fontFamily: RU_Sans, fontSize: 11, fontWeight: 700, color: RU_C.tx3, letterSpacing: 1, marginBottom: 8 } }, "AUDIENCE"),
+          AUDIENCES.map(function(a) {
+            var sel = briefAudience === a.id;
+            return React.createElement("div", {
+              key: a.id,
+              onClick: function() { setBriefAudience(a.id); setBriefExpanded({}); },
+              style: { padding: "6px 10px", marginBottom: 4, borderRadius: 4, cursor: "pointer", background: sel ? RU_C.gold + "20" : "transparent", border: "1px solid " + (sel ? RU_C.gold + "40" : "transparent"), fontFamily: RU_Sans, fontSize: 12, color: sel ? RU_C.gold : RU_C.tx2, fontWeight: sel ? 600 : 400, transition: "all .2s" },
+            }, a.label);
+          })
+        ),
+        // Topic
+        React.createElement("div", { style: { background: RU_C.card, border: "1px solid " + RU_C.line, borderRadius: 8, padding: 14 } },
+          React.createElement("div", { style: { fontFamily: RU_Sans, fontSize: 11, fontWeight: 700, color: RU_C.tx3, letterSpacing: 1, marginBottom: 8 } }, "TOPIC"),
+          TOPICS.map(function(t) {
+            var sel = briefTopic === t.id;
+            return React.createElement("div", {
+              key: t.id,
+              onClick: function() { setBriefTopic(t.id); setBriefExpanded({}); },
+              style: { padding: "6px 10px", marginBottom: 4, borderRadius: 4, cursor: "pointer", background: sel ? RU_C.gold + "20" : "transparent", border: "1px solid " + (sel ? RU_C.gold + "40" : "transparent"), fontFamily: RU_Sans, fontSize: 12, color: sel ? RU_C.gold : RU_C.tx2, fontWeight: sel ? 600 : 400, transition: "all .2s" },
+            }, t.label);
+          })
+        ),
+        // Duration + Mode
+        React.createElement("div", { style: { background: RU_C.card, border: "1px solid " + RU_C.line, borderRadius: 8, padding: 14 } },
+          React.createElement("div", { style: { fontFamily: RU_Sans, fontSize: 11, fontWeight: 700, color: RU_C.tx3, letterSpacing: 1, marginBottom: 8 } }, "DURATION"),
+          React.createElement("div", { style: { display: "flex", gap: 6, marginBottom: 16, flexWrap: "wrap" } },
+            DURATIONS.map(function(d) {
+              var sel = briefDuration === d.id;
+              return React.createElement("button", {
+                key: d.id,
+                onClick: function() { setBriefDuration(d.id); },
+                style: { padding: "6px 14px", borderRadius: 4, cursor: "pointer", background: sel ? RU_C.gold + "20" : "transparent", border: "1px solid " + (sel ? RU_C.gold + "40" : RU_C.line), fontFamily: RU_Sans, fontSize: 12, color: sel ? RU_C.gold : RU_C.tx2, fontWeight: sel ? 600 : 400 },
+              }, d.label);
+            })
+          ),
+          React.createElement("div", { style: { fontFamily: RU_Sans, fontSize: 11, fontWeight: 700, color: RU_C.tx3, letterSpacing: 1, marginBottom: 8 } }, "DETAIL LEVEL"),
+          React.createElement("div", { style: { display: "flex", gap: 6 } },
+            [{ id: "brief", label: "BRIEF" }, { id: "detailed", label: "DETAILED" }].map(function(m) {
+              var sel = briefDetailMode === m.id;
+              return React.createElement("button", {
+                key: m.id,
+                onClick: function() { setBriefDetailMode(m.id); },
+                style: { padding: "6px 14px", borderRadius: 4, cursor: "pointer", background: sel ? RU_C.gold + "20" : "transparent", border: "1px solid " + (sel ? RU_C.gold + "40" : RU_C.line), fontFamily: RU_Mono, fontSize: 11, color: sel ? RU_C.gold : RU_C.tx2, fontWeight: sel ? 700 : 400, letterSpacing: 1 },
+              }, m.label);
+            })
+          )
+        )
+      ),
+      // Briefing content
+      activeBriefing ? React.createElement("div", { style: { marginBottom: 20 } },
+        // Title bar
+        React.createElement("div", { style: { background: RU_C.gold + "12", border: "1px solid " + RU_C.gold + "30", borderRadius: "8px 8px 0 0", padding: "14px 18px", borderBottom: "none" } },
+          React.createElement("div", { style: { fontFamily: RU_Sans, fontSize: 14, fontWeight: 700, color: RU_C.gold } }, activeBriefing.title),
+          React.createElement("div", { style: { fontFamily: RU_Sans, fontSize: 11, color: RU_C.tx3, marginTop: 4 } }, "Duration: " + briefDuration + " minutes | Detail: " + briefDetailMode.toUpperCase())
+        ),
+        // Judgments
+        React.createElement("div", { style: { background: RU_C.card, border: "1px solid " + RU_C.line, borderRadius: "0 0 8px 8px", padding: 18 } },
+          React.createElement("div", { style: { fontFamily: RU_Sans, fontSize: 12, fontWeight: 700, color: RU_C.tx3, letterSpacing: 1.5, marginBottom: 14 } }, "KEY JUDGMENTS (" + activeBriefing.judgments.length + ")"),
+          activeBriefing.judgments.map(function(j, i) { return renderJudgment(j, i); }),
+          // Policy options
+          isPolicyAudience && activeBriefing.policyOptions ? renderSection("RECOMMENDED POLICY OPTIONS (" + activeBriefing.policyOptions.length + ")", React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 8 } },
+            activeBriefing.policyOptions.map(function(p, pi) {
+              return React.createElement("div", { key: pi, style: { display: "flex", gap: 8, alignItems: "flex-start" } },
+                React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 11, color: RU_C.green, flexShrink: 0, marginTop: 2 } }, "OPT " + (pi + 1)),
+                React.createElement("span", { style: { fontFamily: RU_Sans, fontSize: 12, color: RU_C.tx2, lineHeight: 1.6 } }, p)
+              );
+            })
+          ), "policy") : null,
+          // Anticipated questions
+          renderSection("ANTICIPATED QUESTIONS (" + activeBriefing.questions.length + ")", React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 10 } },
+            activeBriefing.questions.map(function(q, qi) {
+              return React.createElement("div", { key: qi, style: { display: "flex", gap: 8, alignItems: "flex-start" } },
+                React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 11, color: RU_C.gold, flexShrink: 0, marginTop: 2 } }, "Q" + (qi + 1)),
+                React.createElement("span", { style: { fontFamily: RU_Serif, fontSize: 13, color: RU_C.tx2, lineHeight: 1.6, fontStyle: "italic" } }, q)
+              );
+            })
+          ), "questions"),
+          // Classification note
+          renderSection("CLASSIFIED vs OPEN SOURCE", React.createElement("div", { style: { fontFamily: RU_Sans, fontSize: 12, color: RU_C.tx2, lineHeight: 1.7 } },
+            activeBriefing.classifiedNote
+          ), "classified")
+        )
+      ) :
+      // Template for non-pre-built combinations
+      React.createElement("div", { style: { background: RU_C.card, border: "1px solid " + RU_C.line, borderRadius: 8, padding: 24, textAlign: "center" } },
+        React.createElement("div", { style: { fontFamily: RU_Sans, fontSize: 12, fontWeight: 700, color: RU_C.tx3, letterSpacing: 1.5, marginBottom: 12 } }, "BRIEFING SKELETON TEMPLATE"),
+        React.createElement("div", { style: { fontFamily: RU_Serif, fontSize: 14, color: RU_C.tx2, lineHeight: 1.7, marginBottom: 20, maxWidth: 600, margin: "0 auto 20px" } },
+          "Pre-built briefing content is available for 3 combinations: European defense / Ukraine trajectory, US congressional / Domestic stability, and Corporate risk / Energy coercion. For this combination, use the following structure:"
+        ),
+        React.createElement("div", { style: { textAlign: "left", maxWidth: 500, margin: "0 auto" } },
+          [
+            "1. KEY JUDGMENTS: Draft 3-5 assessments with HIGH/MODERATE/LOW confidence tags. Each judgment should be one declarative sentence that a policymaker can act on.",
+            "2. SUPPORTING EVIDENCE: 2-3 specific, sourced data points per judgment. Prefer quantitative over qualitative.",
+            "3. ALTERNATIVE VIEWS: 1-2 contrarian perspectives per judgment. These demonstrate analytical rigor, not weakness.",
+            isPolicyAudience ? "4. POLICY OPTIONS: 2-4 actionable recommendations tied to judgments. Each should specify who acts, what they do, and by when." : null,
+            (isPolicyAudience ? "5" : "4") + ". ANTICIPATED QUESTIONS: List 3 questions this audience will definitely ask. Prepare 2-minute responses for each.",
+            (isPolicyAudience ? "6" : "5") + ". CLASSIFICATION: Note what can be discussed in open session vs. what requires restricted settings.",
+          ].filter(Boolean).map(function(item, i) {
+            return React.createElement("div", { key: i, style: { fontFamily: RU_Sans, fontSize: 12, color: RU_C.tx2, lineHeight: 1.7, marginBottom: 10, paddingLeft: 8, borderLeft: "2px solid " + RU_C.gold + "30" } }, item);
+          })
+        ),
+        React.createElement("div", { style: { fontFamily: RU_Sans, fontSize: 11, color: RU_C.tx3, marginTop: 16, fontStyle: "italic" } },
+          "Tip: Select one of the pre-built combinations to see a fully worked example of this structure in action."
+        )
+      )
+    );
+  }
+
   return React.createElement("div", {
     style: {
       minHeight: "100vh",
@@ -5285,7 +5856,9 @@ function RussiaView({ setView }) {
       mode === "breaks"          && renderBreaks(),
       mode === "compare"         && renderCompare(),
       mode === "correlate"       && renderCorrelate(),
-      mode === "scenario"        && renderScenario()
+      mode === "scenario"        && renderScenario(),
+      mode === "contract"        && renderContract(),
+      mode === "briefing"        && renderBriefing()
     )
   );
 }

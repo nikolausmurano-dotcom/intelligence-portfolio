@@ -280,6 +280,286 @@ const ACH_CELL_LABELS = {
   'II': 'Strongly Inconsistent',
 };
 
+// ── Tradecraft Failure Analysis Data ─────────────────────────
+
+const TRADECRAFT_CASES = [
+  {
+    id: 'ames', name: 'Aldrich Ames', agency: 'CIA', years: '1985-1994', yearsActive: 9,
+    vulnerability: 'Polygraph over-reliance and compartmentation failure',
+    detection: 'Joint CIA-FBI mole hunt team; financial investigation triggered by lifestyle inconsistencies',
+    timeToDetect: '9 years',
+    damage: 'At least 10 CIA sources executed or imprisoned. Compromise of virtually all CIA operations against the Soviet Union. Estimated $4.6 million in payments received.',
+    shouldHaveCaught: 'Ames drove a Jaguar, paid cash for a $540,000 house, and had unexplained deposits totaling $1.5 million -- all while earning $60,000/year. Basic financial monitoring of cleared personnel would have flagged him within 2 years. He passed two polygraphs because the CIA treated the polygraph as definitive rather than as one data point among many. His alcohol problems and poor work performance were documented but never correlated with CI risk indicators.',
+    commonVulns: ['financial_monitoring', 'polygraph_reliance', 'lifestyle_audit', 'compartmentation']
+  },
+  {
+    id: 'hanssen', name: 'Robert Hanssen', agency: 'FBI', years: '1979-2001', yearsActive: 22,
+    vulnerability: 'FBI had no internal CI program -- structurally blind to insider threat from its own agents',
+    detection: 'Defector from Russian intelligence identified Hanssen through a file obtained by the SVR; FBI paid $7 million for the file',
+    timeToDetect: '22 years',
+    damage: 'Compromised dozens of human sources, multiple technical collection programs, the FBI counterintelligence budget, and the existence of a secret tunnel under the Soviet embassy. Three sources executed.',
+    shouldHaveCaught: 'Hanssen used dead drops in Northern Virginia parks -- classic KGB tradecraft. The FBI had no polygraph program for its own agents until after his arrest. He accessed files outside his portfolio 5,000+ times on ACS (Automated Case Support). The FBI information security architecture had no audit trail for agent queries. His coworkers noticed suspicious behavior but the FBI culture made reporting peers unthinkable.',
+    commonVulns: ['no_internal_ci', 'access_audit', 'polygraph_reliance', 'cultural_blind_spot']
+  },
+  {
+    id: 'philby', name: 'Kim Philby', agency: 'MI6', years: '1934-1963', yearsActive: 29,
+    vulnerability: 'Social class as security clearance -- the old boy network substituted trust for verification',
+    detection: 'Accumulated circumstantial evidence; confronted by MI6 colleague Nicholas Elliott in 1963; fled to Moscow before arrest',
+    timeToDetect: '29 years (intermittent suspicion from 1951)',
+    damage: 'Compromised MI6 and CIA operations across the Middle East, Eastern Europe, and the Balkans. Betrayed Albanian and Ukrainian resistance operations, leading to deaths of hundreds of agents. As head of Section IX (anti-Soviet), he effectively ran MI6 counterintelligence for Soviet benefit.',
+    shouldHaveCaught: 'Philby was suspected as early as 1951 after Burgess and Maclean defected. MI6 investigated and cleared him -- twice. His Cambridge connections and upper-class background provided social immunity. A genuine vetting system based on behavior rather than pedigree would have caught him. His alcoholism, erratic behavior, and three marriages to women with Communist connections were all dismissed as eccentricities.',
+    commonVulns: ['social_class_immunity', 'cultural_blind_spot', 'inadequate_vetting', 'compartmentation']
+  },
+  {
+    id: 'montes', name: 'Ana Montes', agency: 'DIA', years: '1985-2001', yearsActive: 16,
+    vulnerability: 'No dead drops, no unusual travel, no financial anomalies -- she memorized classified information and typed reports on a personal laptop at home',
+    detection: 'NSA analyst discovered coded shortwave radio communications; DIA colleague who knew Montes recognized behavioral patterns matching a described Cuban spy',
+    timeToDetect: '16 years',
+    damage: 'Compromised US intelligence collection on Cuba for 16 years. Revealed identities of US intelligence officers. Passed information about US military operations. Considered one of the most damaging spies in US history by the DIA.',
+    shouldHaveCaught: 'Montes had no dead drops, no bank accounts, no unusual travel -- she defeated every traditional CI detection method. She memorized data at work, went home, typed it into an encrypted laptop, transmitted via shortwave burst, and destroyed the files. A behavioral analysis program focused on access patterns versus need-to-know might have flagged her. She accessed files on topics far outside her assigned portfolio, but DIA had no system to detect this.',
+    commonVulns: ['access_audit', 'behavioral_analysis', 'need_to_know_enforcement', 'digital_tradecraft']
+  },
+  {
+    id: 'chin', name: 'Larry Wu-Tai Chin', agency: 'CIA', years: '1952-1985', yearsActive: 33,
+    vulnerability: 'Language officer with access to raw intelligence -- minimal oversight of translation staff',
+    detection: 'Defector Yu Zhensan (Chinese MSS deputy director) identified Chin in 1985',
+    timeToDetect: '33 years',
+    damage: 'Passed classified National Intelligence Estimates, CIA analytical reports, and internal policy documents to China for over three decades. Compromised US understanding of Chinese strategic intentions during the Korean War, Vietnam War, and normalization period.',
+    shouldHaveCaught: 'Chin had lavish real estate investments ($700,000+ in property by 1981) wildly inconsistent with a GS-7 translator salary. He traveled frequently to Hong Kong and Toronto for meetings with Chinese handlers. The CIA conducted virtually no CI screening of support staff, especially translators -- the assumption was that analysts and case officers were the targets. Financial monitoring and travel pattern analysis would have flagged Chin decades earlier.',
+    commonVulns: ['financial_monitoring', 'support_staff_oversight', 'lifestyle_audit', 'travel_pattern']
+  },
+  {
+    id: 'howard', name: 'Edward Lee Howard', agency: 'CIA', years: '1984-1986', yearsActive: 2,
+    vulnerability: 'CIA fired a case officer trained for Moscow station without adequate security measures -- then failed to surveil him effectively',
+    detection: 'Vitaly Yurchenko defected and identified Howard as a source; FBI placed Howard under surveillance but he escaped using a jack-in-the-box dummy',
+    timeToDetect: '1 year (but he escaped)',
+    damage: 'Compromised CIA Moscow station operations. Revealed identity of Adolf Tolkachev, one of CIA\'s most valuable Cold War assets, who was subsequently executed. Exposed CIA surveillance detection and countersurveillance techniques used in Moscow.',
+    shouldHaveCaught: 'Howard was fired from CIA after failing a polygraph that revealed drug use and petty theft. Despite knowing he had been trained in Moscow operations tradecraft, the CIA simply let him go with no debriefing restrictions and no surveillance. When the FBI finally placed him under watch, he defeated a two-car surveillance team using an SDR and a dummy his wife propped in the car seat. The fundamental failure was releasing a trained operative with knowledge of Moscow sources without any containment plan.',
+    commonVulns: ['post_termination_security', 'surveillance_failure', 'containment_protocol', 'personnel_security']
+  },
+  {
+    id: 'nicholson', name: 'Harold Nicholson', agency: 'CIA', years: '1994-1996', yearsActive: 2,
+    vulnerability: 'Post-Ames reforms were incomplete -- focused on financial monitoring but missed tradecraft indicators',
+    detection: 'Failed polygraph in 1995; subsequent investigation found classified documents and unexplained income',
+    timeToDetect: '2 years',
+    damage: 'Compromised identities of CIA case officers and trainees. Passed information about CIA training methods and intelligence priorities to Russian SVR. Revealed CIA operations and assets in multiple countries.',
+    shouldHaveCaught: 'Nicholson began spying during the post-Ames reform period, proving the reforms were insufficient. He was caught by the polygraph -- one of the few cases where it actually worked. But he had been photographing classified documents in his office for months before the polygraph flagged him. The CIA had installed new financial monitoring after Ames, but Nicholson routed payments through a son\'s bank account. The lesson: reforms targeted at the last spy miss the next one.',
+    commonVulns: ['reform_gaps', 'financial_monitoring', 'document_access_audit', 'pattern_adaptation']
+  },
+  {
+    id: 'pollard', name: 'Jonathan Pollard', agency: 'Navy (NIS)', years: '1984-1985', yearsActive: 1.5,
+    vulnerability: 'Allied espionage complicates CI -- intelligence sharing frameworks create access without adequate controls',
+    detection: 'Co-worker noticed Pollard removing classified documents; NIS investigation confirmed unauthorized document removal',
+    timeToDetect: '18 months',
+    damage: 'Passed over 1 million pages of classified documents to Israel, including signals intelligence, satellite imagery, and military assessments of Arab states. Compromised NSA collection methods and CIA source identities in the Middle East.',
+    shouldHaveCaught: 'Pollard removed suitcases of classified documents from NIS facilities. He had been denied SCI access at a previous agency for security concerns, but this information was not shared when he transferred to NIS. He showed documents to his fiancee (no clearance) and bragged about his access. A co-worker reported suspicious behavior and was initially ignored. The case exposed the unique CI challenge of allied espionage: Israel was not an adversary, making traditional CI frameworks ineffective.',
+    commonVulns: ['document_removal', 'inter_agency_records', 'allied_espionage', 'co_worker_reporting']
+  },
+];
+
+const TRADECRAFT_VULN_LABELS = {
+  financial_monitoring: 'Financial Monitoring Gap',
+  polygraph_reliance: 'Polygraph Over-reliance',
+  lifestyle_audit: 'Lifestyle Audit Failure',
+  compartmentation: 'Compartmentation Breakdown',
+  no_internal_ci: 'No Internal CI Program',
+  access_audit: 'Access Pattern Audit Gap',
+  cultural_blind_spot: 'Institutional Cultural Blind Spot',
+  social_class_immunity: 'Social Class as Clearance',
+  inadequate_vetting: 'Inadequate Vetting Process',
+  behavioral_analysis: 'Behavioral Analysis Gap',
+  need_to_know_enforcement: 'Need-to-Know Not Enforced',
+  digital_tradecraft: 'Digital Tradecraft Undetected',
+  support_staff_oversight: 'Support Staff Under-monitored',
+  travel_pattern: 'Travel Pattern Not Analyzed',
+  post_termination_security: 'Post-Termination Security Gap',
+  surveillance_failure: 'Surveillance Execution Failure',
+  containment_protocol: 'No Containment Protocol',
+  personnel_security: 'Personnel Security Gap',
+  reform_gaps: 'Incomplete CI Reform',
+  document_access_audit: 'Document Access Not Audited',
+  pattern_adaptation: 'Adversary Adapted to Reforms',
+  document_removal: 'Physical Document Removal',
+  inter_agency_records: 'Inter-agency Records Not Shared',
+  allied_espionage: 'Allied Espionage Blind Spot',
+  co_worker_reporting: 'Co-worker Reports Ignored',
+};
+
+// ── Deception Detection Framework Data ───────────────────────
+
+const DECEPTION_SOURCE_SCALE = [
+  { grade: 'A', label: 'Reliable', criteria: 'History of valid reporting; access confirmed through independent means; no known deception history' },
+  { grade: 'B', label: 'Usually Reliable', criteria: 'Mostly accurate past reporting; access probable but not independently confirmed; minor discrepancies in record' },
+  { grade: 'C', label: 'Fairly Reliable', criteria: 'Limited reporting history; some reports confirmed, others unverifiable; access plausible but uncertain' },
+  { grade: 'D', label: 'Not Usually Reliable', criteria: 'Significant inaccuracies in past reporting; questionable access; possible fabrication in record' },
+  { grade: 'E', label: 'Unreliable', criteria: 'History of fabrication or deception; no confirmed access; known connections to hostile services' },
+  { grade: 'F', label: 'Cannot Be Judged', criteria: 'No reporting history; new source; insufficient data to evaluate reliability' },
+];
+
+const DECEPTION_INFO_SCALE = [
+  { num: 1, label: 'Confirmed', criteria: 'Corroborated by independent sources using different collection methods (HUMINT + SIGINT + IMINT)' },
+  { num: 2, label: 'Probably True', criteria: 'Consistent with known facts; corroborated by one independent source; logically coherent' },
+  { num: 3, label: 'Possibly True', criteria: 'Not confirmed or denied; consistent with some known facts; could be true but insufficient evidence' },
+  { num: 4, label: 'Doubtful', criteria: 'Inconsistent with some known facts; contradicted by one source; possible but unlikely' },
+  { num: 5, label: 'Improbable', criteria: 'Contradicted by multiple sources; inconsistent with established patterns; likely false' },
+  { num: 6, label: 'Cannot Be Judged', criteria: 'No basis for evaluating truth; first reporting on this topic; no reference points' },
+];
+
+const DECEPTION_INDICATORS = [
+  { id: 'too_good', label: 'Too Good to Be True', desc: 'Does the intelligence answer a priority question almost perfectly? Deception operators target known intelligence gaps.' },
+  { id: 'gap_fill', label: 'Perfect Gap Fill', desc: 'Does it conveniently fill a known collection gap? Adversaries study what we need and fabricate to fill it.' },
+  { id: 'no_contradiction', label: 'Contradicts Nothing', desc: 'Information that contradicts nothing may be designed to slide past analytical filters. Genuine intelligence usually creates some friction.' },
+  { id: 'single_source', label: 'Single Source Only', desc: 'Can this only be verified through the source that provided it? Deception often relies on unfalsifiable claims.' },
+  { id: 'timing', label: 'Convenient Timing', desc: 'Did this arrive just when we needed it most? Deception operators time their feed to maximize acceptance.' },
+];
+
+const DECEPTION_SCENARIOS = [
+  {
+    id: 'clean',
+    title: 'Report JADE-117: Military Readiness Assessment',
+    description: 'A source with 4 years of validated reporting provides a military readiness assessment of an adversary brigade. The assessment shows 73% readiness -- below full capability but above minimum deployment threshold. It includes specific equipment shortfalls (3 of 12 APCs in maintenance, fuel reserves at 8 days instead of standard 14) and personnel numbers that match satellite-observed barracks occupancy within 5%. The report contradicts a previous assessment from another source that estimated 85% readiness.',
+    isDeception: false,
+    explanation: 'This is genuine intelligence. The 73% figure is specific but not dramatic. It partially contradicts another source (friction). The equipment details are granular and checkable against imagery. The barracks correlation provides independent verification. A deception operator would be unlikely to provide information that contradicts a previous report they could not control, or to offer verifiable details that could expose the fabrication.',
+    channel: 'Established dead drop with 4-year track record. Source initiated contact on routine schedule. No deviation from standard protocol.',
+    cuiBono: 'If believed, this suggests the brigade is not ready for immediate offensive operations but could deploy with 2-3 weeks preparation. This is a nuanced assessment that does not strongly favor any single policy response.',
+  },
+  {
+    id: 'deception',
+    title: 'Report AMBER-042: Weapons Program Intelligence',
+    description: 'A walk-in source at an allied embassy provides documents showing an adversary has abandoned a suspected weapons development program. The documents include internal memos, budget reallocations away from the program, and a directive to repurpose the facility for civilian research. The source claims to be a disillusioned scientist who wants to prevent unnecessary conflict. The documents perfectly address the intelligence community\'s top collection priority on this target.',
+    isDeception: true,
+    explanation: 'This is a deception operation. The intelligence perfectly fills the top collection priority (classic deception targeting). The walk-in volunteered exactly what we wanted to hear. The documents are too comprehensive -- an internal memo, budget data, AND a directive (deception operators provide multiple reinforcing pieces). The "disillusioned scientist" motivation is a standard cover story. Most critically: if believed, this intelligence would cause us to reduce collection on the weapons program -- which is the adversary\'s objective.',
+    channel: 'Walk-in at allied embassy. No prior relationship. Source approached the defense attache at a diplomatic reception. Requested no future contact -- "too dangerous."',
+    cuiBono: 'If believed, the intelligence community would downgrade the weapons program as a collection priority, reduce satellite coverage, and potentially brief policymakers that the threat has diminished. The adversary benefits enormously from reduced scrutiny.',
+  },
+  {
+    id: 'ambiguous',
+    title: 'Report GRANITE-209: Political Leadership Assessment',
+    description: 'A source who has provided mixed-quality reporting over 2 years reports that a senior adversary official is engaged in a power struggle with the military establishment and may be open to back-channel negotiations. The source provides one intercepted communication fragment (which NSA confirms is authentic) and two meeting summaries that cannot be independently verified. The political dynamics described are plausible but represent a more optimistic scenario than the consensus analytical view.',
+    isDeception: 'ambiguous',
+    explanation: 'This case is genuinely ambiguous -- the hallmark of effective intelligence analysis. The NSA-confirmed intercept fragment is real, but it may have been deliberately allowed to be intercepted (a technique called "feeding the loop"). The unverifiable meeting summaries could be genuine or fabricated. The political dynamics are plausible, which cuts both ways. The source\'s mixed record means neither trust nor distrust is warranted. A CI analyst must hold this in suspension -- neither accepting nor rejecting -- and task additional collection to resolve the ambiguity.',
+    channel: 'Established source with mixed record. Reporting delivered through standard channel but with unusual urgency. Source requested a meeting to "discuss something sensitive" rather than using dead drop.',
+    cuiBono: 'If believed, the assessment could lead to diplomatic outreach at a moment of perceived adversary weakness. This could benefit policymakers who favor engagement, but it could also be a trap to extract concessions or to identify who in the adversary government is being targeted by intelligence collection.',
+  },
+];
+
+// ── Damage Assessment Calculator Data ────────────────────────
+
+const DAMAGE_CLASSIFICATION_LEVELS = [
+  { value: 'CONFIDENTIAL', label: 'CONFIDENTIAL', weight: 1, desc: 'Damage to national security' },
+  { value: 'SECRET', label: 'SECRET', weight: 2, desc: 'Serious damage to national security' },
+  { value: 'TS', label: 'TOP SECRET', weight: 3, desc: 'Exceptionally grave damage to national security' },
+  { value: 'TS-SCI', label: 'TS/SCI', weight: 4, desc: 'Compartmented intelligence sources and methods' },
+];
+
+const DAMAGE_PRECEDENTS = [
+  { name: 'Pollard', sources: 0, programs: 5, methods: 3, years: 1.5, level: 'TS-SCI', score: 34 },
+  { name: 'Nicholson', sources: 12, programs: 3, methods: 2, years: 2, level: 'TS-SCI', score: 48 },
+  { name: 'Howard', sources: 2, programs: 4, methods: 5, years: 2, level: 'TS-SCI', score: 52 },
+  { name: 'Montes', sources: 8, programs: 6, methods: 4, years: 16, level: 'TS-SCI', score: 71 },
+  { name: 'Ames', sources: 25, programs: 12, methods: 6, years: 9, level: 'TS-SCI', score: 89 },
+  { name: 'Hanssen', sources: 30, programs: 15, methods: 8, years: 22, level: 'TS-SCI', score: 95 },
+  { name: 'Philby', sources: 40, programs: 18, methods: 7, years: 29, level: 'TS', score: 98 },
+];
+
+// ── Moscow Rules Data ────────────────────────────────────────
+
+var MOSCOW_RULES = [
+  {
+    num: 1, rule: 'Assume nothing.',
+    why: 'In a denied area, every assumption is a potential death sentence. The KGB\'s Second Chief Directorate assumed CIA officers would follow patterns -- so any pattern you establish becomes a trap. Assuming a meeting site is clean, a route is clear, or a contact is unmonitored is how officers and their assets get killed.',
+    violation: 'In 1985, CIA officer Edward Lee Howard assumed his surveillance detection route was clean because he had run it successfully three times before. The KGB had identified his route and stationed watchers at key chokepoints. When Howard ran the same route a fourth time, they were waiting. He narrowly escaped arrest -- but his asset, Adolf Tolkachev, was not as fortunate.',
+    saved: 'A CIA case officer in Moscow in 1982, suspecting his apartment was bugged, assumed nothing about any room being private. He communicated with his wife exclusively through written notes that were immediately burned. When the KGB later confronted him with transcripts of his apartment conversations, they had only trivial domestic exchanges -- nothing operational.',
+  },
+  {
+    num: 2, rule: 'Technology is always against you.',
+    why: 'The KGB invested massively in technical surveillance. Microphones in embassy walls, tracking powder on doorknobs, infrared beacons in vehicles, SIGINT coverage of every radio frequency. Any electronic device you carry is a potential beacon. Your car has been accessed. Your phone is monitored. Your typewriter ribbon has been photographed.',
+    violation: 'The 2010 Russian Illegals case (the "Spies Next Door") was cracked partly because the SVR\'s encrypted steganographic communications -- hidden in images on public websites -- were identified by FBI technical analysts. The agents assumed their digital tradecraft was unbreakable. Technology betrayed them.',
+    saved: 'CIA officers in Moscow used the "DISCUS" concealment device -- a small container that looked like an ordinary rock -- for dead drops. When KGB surveillance teams swept areas after suspected dead drop activity, the rock passed visual inspection. Low-technology solutions defeated high-technology surveillance.',
+  },
+  {
+    num: 3, rule: 'Never go against your gut.',
+    why: 'Your subconscious processes environmental data faster than your conscious mind. If something feels wrong -- a person who appears twice, a car that slows down, a contact who seems nervous -- your gut is detecting a pattern your brain has not yet articulated. In denied areas, this instinct is your primary early warning system.',
+    violation: 'CIA officer Aldrich Ames ignored his own discomfort when his Soviet handler, Sergey Chuvakhin, began asking unusually specific questions about CIA operations. Ames rationalized that Chuvakhin was just being thorough. In fact, the KGB was using Chuvakhin to verify information Ames had already provided -- testing his honesty as a source. Ames\'s gut was right, but he suppressed it because acting on it would mean confronting what he had become.',
+    saved: 'In 1978, a CIA officer scheduled to meet an asset at a Moscow restaurant felt uneasy when he noticed a patron reading a newspaper too intently -- the man had not turned a page in 20 minutes. The officer aborted the meeting, later discovering the KGB had deployed a static surveillance team to the restaurant after receiving a tip. Trusting the gut saved the asset\'s life.',
+  },
+  {
+    num: 4, rule: 'Always be counter-surveillance aware.',
+    why: 'The KGB\'s Seventh Directorate (surveillance) deployed teams of 20-40 watchers per target. They used foot surveillance, vehicle surveillance, static observation posts, and technical means simultaneously. A CIA officer in Moscow was surveilled virtually every moment outside the embassy. Counter-surveillance awareness means always knowing who is around you, what is normal, and what has changed.',
+    violation: 'Martha Peterson, a CIA case officer in Moscow, was arrested in 1977 while servicing a dead drop. She had not detected that the KGB was already aware of the dead drop location -- they had been surveilling it for weeks after their own source inside the CIA (later identified as a KGB asset) revealed the location. Her counter-surveillance routine was good but could not detect static surveillance that was already in place before she arrived.',
+    saved: 'A CIA officer in Leningrad noticed that the same Volga sedan appeared on three separate occasions during his SDR, each time with a different driver but the same distinctive dent in the rear bumper. He aborted the operation, returned to the consulate, and reported the surveillance. The KGB team was rotated out within the week -- their cover was blown.',
+  },
+  {
+    num: 5, rule: 'Vary your pattern and stay within your cover.',
+    why: 'Patterns are vulnerabilities. If you always take the same route to work, always shop at the same store, always jog the same trail -- the surveillance team builds a baseline. Any deviation from that baseline triggers intensified coverage. But you must also stay within your cover: a diplomat who suddenly starts visiting industrial areas raises questions that no cover story can answer.',
+    violation: 'CIA officer Richard Miller (FBI, technically) established a pattern of meeting his Soviet handler at the same restaurant in Los Angeles on the same day each month. The FBI identified the pattern through routine surveillance of Soviet intelligence officers, then correlated Miller\'s presence with the handler\'s known schedule. Pattern created the connection that unraveled the espionage.',
+    saved: 'A CIA case officer in East Berlin varied her shopping routine across 14 different stores in 8 neighborhoods, never visiting the same store on the same day of the week. Her dead drops were serviced within the natural pattern of these shopping trips. KGB surveillance teams were unable to distinguish operational activity from normal shopping behavior because no deviation existed.',
+  },
+  {
+    num: 6, rule: 'Do not harass the opposition.',
+    why: 'Aggressive counterintelligence provokes aggressive responses. If you make the KGB feel threatened, they escalate. They increase surveillance, expel diplomats, arrest suspected assets, and tighten security around their own operations. The goal is to operate without the adversary ever knowing you are operating. Restraint is tradecraft.',
+    violation: 'In 1986, the US Marine Embassy Guard scandal erupted after Sergeant Clayton Lonetree confessed to allowing KGB agents access to the US Embassy in Moscow. The subsequent aggressive CI response -- including stripping the embassy to bare walls in search of bugs -- alerted the KGB to exactly how much the US knew about their technical penetration. The KGB adjusted their methods accordingly.',
+    saved: 'Throughout the 1970s, CIA ran a series of HUMINT operations in Moscow using extremely restrained tradecraft. Officers never attempted to photograph Soviet installations, never ran aggressive SDRs that would signal operational activity, and never attempted to recruit Soviet officials directly. Instead, they used deep-cover officers who lived as ordinary diplomats. The KGB\'s Seventh Directorate, receiving no signals of aggressive activity, allocated surveillance resources to more visible targets.',
+  },
+  {
+    num: 7, rule: 'Keep your options open.',
+    why: 'Every operation needs an abort plan, an escape route, and a fallback position. If a meeting site is compromised, you need a backup. If your cover identity is questioned, you need a plausible explanation that does not require lying. If an asset is arrested, you need a plan to protect the rest of the network. Rigidity kills.',
+    violation: 'In the 1960s, Colonel Oleg Penkovsky (GRB/CIA asset) had a single communication channel: dead drops serviced by a British businessman, Greville Wynne. When the KGB identified Wynne, they rolled up the entire operation in a single stroke because there was no backup channel. Penkovsky was executed in 1963.',
+    saved: 'CIA operations in Poland during the 1980s maintained three independent communication channels for each asset: dead drops, brush passes through different intermediaries, and shortwave radio. When Polish SB (security service) compromised one channel, the CIA immediately shifted to the backup without losing any assets. The redundancy built into the operation saved the entire network.',
+  },
+  {
+    num: 8, rule: 'Any operation can be aborted. If it feels wrong, abort.',
+    why: 'The sunk cost fallacy kills intelligence officers. You have spent months planning a meeting, your asset has critical information, the window is narrow -- but something is wrong. A car parked where it should not be. A light on in a window that is usually dark. The asset is 3 minutes late. Abort. The intelligence can be collected later. The asset cannot be un-arrested.',
+    violation: 'In 1985, CIA case officer William Buckley did not abort a meeting in Beirut despite multiple warning signs -- unusual vehicular traffic near the meeting site, a contact who arrived by a different route than planned, and local informants reporting increased militia activity. Buckley was kidnapped by Hezbollah, tortured for over a year, and killed. The intelligence he was meeting to collect was routine.',
+    saved: 'A CIA officer in Moscow aborted a dead drop servicing in 1983 when she noticed a maintenance truck parked near the drop site that had not been there during her reconnaissance 2 hours earlier. She walked past the site without stopping. The next day, she learned through NSA SIGINT that the KGB had deployed a quick-reaction team to the area based on a tip. The abort saved both her and the asset.',
+  },
+  {
+    num: 9, rule: 'Prepare your escape routes.',
+    why: 'If you are compromised, you need to leave the country within hours. Embassy shelter buys time but is not an exit. The KGB surveilled all airports, train stations, and border crossings. An escape route must use alternative means: overland through difficult terrain, by boat, or through third-country connections that the adversary has not mapped.',
+    violation: 'When CIA officer Edward Lee Howard fled FBI surveillance in 1985, his escape succeeded because he had prepared extensively -- but the FBI had not prepared at all. Howard used a dummy (a "jack-in-the-box" device) to deceive the two-car surveillance team, then drove to a different city, flew to Helsinki, and reached Moscow. The FBI had no contingency plan for his escape despite knowing he was a flight risk.',
+    saved: 'During the exfiltration of Colonel Oleg Gordievsky from the Soviet Union in 1985, MI6 executed Operation PIMLICO -- a meticulously planned escape route through Finland. Gordievsky hid in the trunk of a diplomatic vehicle, survived KGB border checkpoints (including sniffer dogs, which were defeated by a bag of crisps and dirty nappies), and reached Helsinki. The escape route had been planned and rehearsed for two years before it was needed.',
+  },
+  {
+    num: 10, rule: 'Once is an accident, twice is a coincidence, three times is an enemy action.',
+    why: 'Intelligence officers are trained to see patterns. But humans also see patterns where none exist (apophenia). This rule provides calibration: one anomaly is noise, two anomalies are interesting, three anomalies are a signal. Applied correctly, it prevents both paranoia (reacting to every shadow) and complacency (ignoring genuine indicators).',
+    violation: 'Before Aldrich Ames was identified, CIA lost multiple assets in the Soviet Union over a period of months. Each loss was individually explained: one was a communications failure, another was attributed to sloppy tradecraft, a third was blamed on a KGB counterintelligence success. It took the CIA years to connect these "coincidences" into a pattern that indicated a mole. Three times was enemy action -- but institutional reluctance to believe in a penetration agent delayed the diagnosis.',
+    saved: 'In 1987, a CIA officer in Vienna noticed three anomalies over two weeks: a source\'s scheduled dead drop was empty (first time in 14 months), the source\'s wife was seen entering the Soviet embassy (she had no known connection), and the source missed a signal window. By the third anomaly, the officer triggered an emergency extraction. The source and his family were out of the country within 48 hours. Two days later, Austrian authorities reported the source\'s name on a Soviet arrest warrant.',
+  },
+];
+
+var MOSCOW_SCENARIOS = [
+  {
+    id: 'sc1',
+    situation: 'You are a CIA case officer in Moscow. You have a scheduled meeting with an asset at a cafe. During your SDR, you notice the same woman in a red coat at two separate locations over 90 minutes. She appears to be shopping both times. You are 15 minutes from the meeting site.',
+    correctRule: 10,
+    explanation: 'Once is an accident, twice is a coincidence. You have two sightings of the same person -- not yet three. However, combined with the high-threat environment (Moscow), even two is enough to heighten alert. A disciplined officer would continue the SDR with intensified awareness and abort at the third sighting. Rule 10 provides the framework: you are at "coincidence" level and approaching "enemy action."',
+  },
+  {
+    id: 'sc2',
+    situation: 'You are preparing to service a dead drop in a Moscow park. You have rehearsed the route four times. When you arrive at the park entrance, everything looks normal, but you feel an unexplained sense of unease. Nothing specific -- no visible surveillance, no anomalies in the environment. Just a feeling.',
+    correctRule: 3,
+    explanation: 'Never go against your gut. Your subconscious is processing environmental data that your conscious mind has not yet articulated. Perhaps a baseline noise (birds, traffic) has changed. Perhaps a shadow is in the wrong place. In a denied area, your gut is a survival instrument. The intelligence can wait. Abort.',
+  },
+  {
+    id: 'sc3',
+    situation: 'You have been running an asset in Leningrad for 8 months. You always meet on Thursdays at one of three restaurants. Your SDRs always start from the consulate and follow one of two routes. Your asset always arrives first and orders tea. The operation has been successful -- seven intelligence packages received with no security incidents.',
+    correctRule: 5,
+    explanation: 'Vary your pattern and stay within your cover. Eight months of Thursdays, three restaurants, two SDR routes, and a tea-ordering asset -- this is a pattern that any competent surveillance team would have mapped by month three. The success itself is dangerous because it breeds complacency. Randomize meeting days, expand the restaurant list, create new SDR routes, and change the asset\'s arrival protocol.',
+  },
+  {
+    id: 'sc4',
+    situation: 'Your asset has just provided intelligence that a senior military official is planning to defect. This is extraordinarily valuable -- your career-defining recruitment. The asset wants to meet again in 48 hours to provide documents. But the meeting site he proposes is in a neighborhood you have never visited, and the time is 11 PM -- well outside your normal activity pattern.',
+    correctRule: 8,
+    explanation: 'Any operation can be aborted. If it feels wrong, abort. The intelligence is tempting, but everything about this meeting is wrong: unfamiliar location, unusual time, outside your pattern, and extreme urgency from the asset. This could be a provocation (the asset has been turned) or a trap (the KGB is using the asset as bait). Propose an alternative meeting on your terms, at a known location, during normal hours. If the asset insists on his conditions, that itself is a warning.',
+  },
+  {
+    id: 'sc5',
+    situation: 'You discover that your personal laptop -- which you use only for non-classified personal correspondence -- has been accessed. A file you did not create appears in your documents folder. It contains what appears to be a harmless family photo, but the file size (4.2 MB) is suspiciously large for the image resolution.',
+    correctRule: 2,
+    explanation: 'Technology is always against you. The file is almost certainly a steganographic container -- data hidden within an image file. The oversized file indicates hidden payload. Your laptop has been compromised, likely through physical access while you were away from your residence. The KGB may be using your personal device as a covert communication channel to frame you, to exfiltrate data, or to monitor your activity. Report immediately through secure channels. Do not delete the file -- it is evidence.',
+  },
+];
+
 // ── Component ────────────────────────────────────────────────
 
 function CIAnalysisView({ setView }) {
@@ -295,11 +575,33 @@ function CIAnalysisView({ setView }) {
   const [tipId, setTipId] = useState(null);
 
   // ACH Lab state
-  const [viewMode, setViewMode] = useState('case'); // 'case' | 'achlab'
+  const [viewMode, setViewMode] = useState('case'); // 'case' | 'achlab' | 'tradecraft' | 'deception' | 'damage' | 'moscow'
   const [labMatrix, setLabMatrix] = useState({});
   const [labShowExpert, setLabShowExpert] = useState(false);
   const [labSelectedEvidence, setLabSelectedEvidence] = useState(null);
   const [labHoveredCell, setLabHoveredCell] = useState(null);
+
+  // Tradecraft mode state
+  const [tcSelected, setTcSelected] = useState([]);
+  const [tcShowComparison, setTcShowComparison] = useState(false);
+
+  // Deception mode state
+  const [decScenario, setDecScenario] = useState(0);
+  const [decEvals, setDecEvals] = useState({});
+  const [decRevealed, setDecRevealed] = useState({});
+
+  // Damage mode state
+  const [dmgYears, setDmgYears] = useState(5);
+  const [dmgLevel, setDmgLevel] = useState('SECRET');
+  const [dmgSources, setDmgSources] = useState(5);
+  const [dmgPrograms, setDmgPrograms] = useState(3);
+  const [dmgMethods, setDmgMethods] = useState(2);
+
+  // Moscow Rules mode state
+  const [mrScenarioIdx, setMrScenarioIdx] = useState(0);
+  const [mrAnswers, setMrAnswers] = useState({});
+  const [mrRevealed, setMrRevealed] = useState({});
+  const [mrShowRules, setMrShowRules] = useState(true);
 
   const C = CI_PALETTE;
 
@@ -534,26 +836,30 @@ function CIAnalysisView({ setView }) {
       {/* Classification banner — BOTTOM (fixed) */}
       <ClassificationBanner position="fixed-bottom" />
 
-        {/* Mode tabs: Case vs ACH Lab — file folder tabs */}
-        <div style={{ display: 'flex', gap: 0, marginBottom: 20 }}>
-          <button onClick={() => setViewMode('case')} style={{
-            padding: '8px 20px', background: viewMode === 'case' ? 'rgba(200,184,136,.06)' : 'transparent',
-            border: `2px solid ${viewMode === 'case' ? C.redDm : C.line}`,
-            borderBottom: viewMode === 'case' ? '2px solid transparent' : `2px solid ${C.line}`,
-            borderRadius: '2px 2px 0 0', color: viewMode === 'case' ? C.red : C.tx3,
-            fontFamily: CI_MONO, fontSize: 10, cursor: 'pointer', fontWeight: 700, letterSpacing: '.06em', textTransform: 'uppercase',
-          }}>
-            Operation BRICKWALL
-          </button>
-          <button onClick={() => setViewMode('achlab')} style={{
-            padding: '8px 20px', background: viewMode === 'achlab' ? 'rgba(200,184,136,.06)' : 'transparent',
-            border: `2px solid ${viewMode === 'achlab' ? C.amberDm : C.line}`,
-            borderBottom: viewMode === 'achlab' ? '2px solid transparent' : `2px solid ${C.line}`,
-            borderRadius: '2px 2px 0 0', color: viewMode === 'achlab' ? C.amber : C.tx3,
-            fontFamily: CI_MONO, fontSize: 10, cursor: 'pointer', fontWeight: 700, letterSpacing: '.06em', textTransform: 'uppercase',
-          }}>
-            ACH Lab // The MERIDIAN Mole
-          </button>
+        {/* Mode tabs — file folder tabs */}
+        <div style={{ display: 'flex', gap: 0, marginBottom: 20, flexWrap: 'wrap' }}>
+          {[
+            { id: 'case', label: 'Operation BRICKWALL', color: C.redDm, activeColor: C.red },
+            { id: 'achlab', label: 'ACH Lab', color: C.amberDm, activeColor: C.amber },
+            { id: 'tradecraft', label: 'Failure Analysis', color: C.blueDm, activeColor: C.blue },
+            { id: 'deception', label: 'Deception Detection', color: C.greenDm, activeColor: C.green },
+            { id: 'damage', label: 'Damage Assessment', color: C.redDm, activeColor: C.red },
+            { id: 'moscow', label: 'Moscow Rules', color: C.amberDm, activeColor: C.amber },
+          ].map(function(tab) {
+            var active = viewMode === tab.id;
+            return React.createElement('button', {
+              key: tab.id,
+              onClick: function() { setViewMode(tab.id); },
+              style: {
+                padding: '8px 14px', background: active ? 'rgba(200,184,136,.06)' : 'transparent',
+                border: '2px solid ' + (active ? tab.color : C.line),
+                borderBottom: active ? '2px solid transparent' : '2px solid ' + C.line,
+                borderRadius: '2px 2px 0 0', color: active ? tab.activeColor : C.tx3,
+                fontFamily: CI_MONO, fontSize: 10, cursor: 'pointer', fontWeight: 700,
+                letterSpacing: '.06em', textTransform: 'uppercase',
+              }
+            }, tab.label);
+          })}
         </div>
 
         {/* ═══════════════════════════════════════════════════════════ */}

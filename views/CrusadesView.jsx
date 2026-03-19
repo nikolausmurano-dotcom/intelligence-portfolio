@@ -469,6 +469,250 @@ const CR_TIPS = {
   assassins: "The Nizari Ismailis, pejoratively called 'Assassins' by their enemies (possibly from 'hashishin,' though the etymology is disputed), operated history's most sophisticated targeted killing program from their fortress at Alamut (1090-1256). Their leader, the 'Old Man of the Mountain,' deployed fidai (self-sacrificing agents) who would spend months or years infiltrating a target's household before striking. The strategic logic was elegant: rather than fielding armies they could not afford, the Nizaris achieved deterrence through the credible threat of assassination. Their most famous operation -- the murder of Conrad of Montferrat in 1192, just days after his election as King of Jerusalem -- demonstrated that no leader was beyond reach. Marco Polo's account of drug-induced paradise gardens is almost certainly fabrication.",
 };
 
+// ── Supply / Logistics Data ─────────────────────────────────────────
+var SUPPLY_CAMPAIGNS = [
+  {
+    id: 'first',
+    name: 'First Crusade (1096-1099)',
+    verdict: 'SUCCESS despite logistics',
+    verdictColor: C.green,
+    distance: '~3,000 km overland from Constantinople to Jerusalem',
+    armySize: '~60,000 departed, ~20,000 reached Jerusalem',
+    supplyMethod: 'Foraging, Byzantine resupply (Alexios I), local plunder',
+    route: 'Overland through Anatolia, then south through Syria',
+    season: 'Departed August 1096, arrived Jerusalem June 1099',
+    challenge: 'No supply chain whatsoever. The army lived off the land and depended on Byzantine goodwill that evaporated after Antioch. Starvation at Antioch was so severe that chroniclers recorded cannibalism at Ma\'arra. Disease killed more than combat. The army shrank by two-thirds before reaching Jerusalem.',
+    commanderPlan: 'There was no unified logistical plan. Each contingent (Bohemond, Raymond, Godfrey, Robert) managed its own supplies. The Byzantines provided initial support expecting the Crusaders to return conquered territory. The "plan" was faith and improvisation.',
+    whatHappened: 'The army survived through a combination of Byzantine aid (until relations collapsed), local Christian communities providing food, plunder of Muslim towns, and sheer attrition removing mouths to feed. The survivors who reached Jerusalem were hardened, desperate, and just numerous enough to storm the walls.',
+    structuralReason: 'Muslim political fragmentation was the key. No unified force could cut the Crusader supply line because there was no supply line to cut. The Seljuk successor states, Fatimid Egypt, and local emirs each dealt with the Crusaders independently. The First Crusade succeeded not because of logistics but because the strategic environment forgave logistical failure.',
+  },
+  {
+    id: 'second',
+    name: 'Second Crusade (1147-1149)',
+    verdict: 'FAILURE -- dual route disaster',
+    verdictColor: C.red,
+    distance: '~2,800 km (Conrad III via Anatolia), ~3,200 km (Louis VII via coast)',
+    armySize: '~50,000 Germans + ~30,000 French, ~70,000 total',
+    supplyMethod: 'Split columns, each foraging independently',
+    route: 'Conrad III: direct Anatolian crossing. Louis VII: coastal Anatolian route.',
+    season: 'Departed May-June 1147, disastrous autumn/winter crossing',
+    challenge: 'Two enormous armies tried to cross Anatolia separately. Neither could forage enough for its size. The Byzantines under Manuel I were hostile -- they had learned from the First Crusade that Crusader armies were as dangerous to allies as enemies. Seljuk light cavalry harassed constantly.',
+    commanderPlan: 'Conrad III attempted a rapid crossing of central Anatolia to reach Crusader territory quickly. Louis VII chose the longer but supposedly safer coastal route. Both assumed Byzantine markets would supply them. Neither coordinated with the other.',
+    whatHappened: 'Conrad\'s army was annihilated at the Battle of Dorylaeum (October 1147) -- Seljuk horse archers destroyed the column in detail. Louis\'s army survived the crossing but was badly mauled, losing most of its baggage. The remnants combined at Antioch but could not agree on a target. The ill-conceived attack on Damascus (July 1148) failed in four days, partly because the local Crusader lords had existing treaties with Damascus that the newcomers ignored.',
+    structuralReason: 'Army size exceeded carrying capacity. The First Crusade succeeded with ~35,000 combatants reaching Syria. The Second Crusade tried to move twice that number through the same territory, which could not support them. Additionally, Muslim unity had improved -- Zengi had already taken Edessa (1144), demonstrating coordinated resistance. The fundamental lesson: larger armies are not better if the logistical environment cannot sustain them.',
+  },
+  {
+    id: 'third_supply',
+    name: 'Third Crusade (1189-1192)',
+    verdict: 'PARTIAL SUCCESS -- maritime innovation',
+    verdictColor: C.gold,
+    distance: '~3,500 km by sea from Marseilles/Messina to Acre',
+    armySize: '~17,000 English/French, ~15,000 Germans (Barbarossa, lost en route)',
+    supplyMethod: 'Maritime supply via Richard I\'s fleet; Barbarossa overland (failed)',
+    route: 'Richard: sea via Sicily and Cyprus. Philip II: sea direct. Barbarossa: overland (drowned).',
+    season: 'Departed 1190, operations 1191-1192 (coastal campaign avoided interior heat)',
+    challenge: 'Frederick Barbarossa proved the overland route was now impossible -- he drowned crossing the Saleph River and his army disintegrated. Richard I recognized that only maritime logistics could sustain a Crusade. But ships could only supply coastal operations, not an inland march to Jerusalem.',
+    commanderPlan: 'Richard\'s genius was logistical as much as tactical. He assembled a fleet of ~200 ships, conquered Cyprus en route (creating a permanent supply base), and conducted the entire campaign along the coast where his fleet could resupply the army. He never attempted to march inland to Jerusalem because he understood the supply mathematics.',
+    whatHappened: 'The maritime approach worked brilliantly for coastal operations. Richard retook Acre, won at Arsuf, and secured the coast from Tyre to Jaffa. But Jerusalem lay 50 km inland. Richard marched toward it twice and turned back both times, not from cowardice but from logistical realism: he could take Jerusalem but not hold it without supply lines. The Treaty of Jaffa was a logistical compromise.',
+    structuralReason: 'Richard solved the supply problem for coastal warfare but could not solve it for inland operations. This was the fundamental paradox of later Crusading: maritime logistics gave reliable access to the coast, but Jerusalem was not on the coast. The strategic problem was unsolvable within the available technology. This is why no subsequent Crusade retook Jerusalem.',
+  },
+  {
+    id: 'fourth_supply',
+    name: 'Fourth Crusade (1202-1204)',
+    verdict: 'DIVERTED -- logistics of debt',
+    verdictColor: C.red,
+    distance: 'Venice to Egypt (planned), Venice to Constantinople (actual)',
+    armySize: '~12,000 (expected 33,500 -- only 1/3 showed up)',
+    supplyMethod: 'Venetian transport contract (85,000 marks)',
+    route: 'Planned: Venice to Alexandria. Actual: Venice to Zara to Constantinople.',
+    season: 'Assembled Venice summer 1202, sacked Constantinople April 1204',
+    challenge: 'Pope Innocent III\'s plan targeted Egypt, the center of Ayyubid power. The Crusaders contracted with Venice for transport: 85,000 silver marks for ships to carry 33,500 men and 4,500 horses. But only ~12,000 Crusaders arrived. The debt was unpayable. Venice held the army hostage.',
+    commanderPlan: 'The original plan was strategically sound: strike Egypt to destroy Ayyubid power at its economic base, then negotiate Jerusalem\'s return from a position of strength. The Venetian contract was supposed to provide the logistical foundation that previous overland Crusades had lacked.',
+    whatHappened: 'Venice\'s Doge Dandolo offered to defer the debt if the Crusaders first attacked Zara (a Venetian commercial rival on the Adriatic), then diverted to Constantinople where a deposed Byzantine prince promised 200,000 marks. Each diversion created a new debt. The Crusade became a debt-driven spiral that ended in the sack of Constantinople -- the richest Christian city in the world.',
+    structuralReason: 'The Fourth Crusade demonstrates that logistics is not just food and transport -- it is finance. The Venetian contract created a debt trap that gave commercial interests control over a religious military expedition. When the Crusaders could not pay, they lost strategic autonomy. Every subsequent decision was driven by the need to service debt, not achieve military objectives. The logistics of finance can be as fatal as the logistics of supply.',
+  },
+  {
+    id: 'fifth',
+    name: 'Fifth Crusade (1217-1221)',
+    verdict: 'FAILURE -- environment as enemy',
+    verdictColor: C.red,
+    distance: 'Acre to Damietta (Egypt), ~500 km by sea',
+    armySize: '~30,000 at peak (rotating contingents from multiple nations)',
+    supplyMethod: 'Maritime supply to Damietta, then attempted river advance up the Nile',
+    route: 'Sea from Acre to Damietta, then up the Nile Delta toward Cairo',
+    season: 'Captured Damietta November 1219, advanced south summer 1221 (fatal error)',
+    challenge: 'The Fifth Crusade correctly targeted Egypt but underestimated the Nile itself. Damietta was captured after a long siege, but the real objective was Cairo. The route south ran along Nile channels through flat delta terrain where the Egyptians controlled the water systems.',
+    commanderPlan: 'Cardinal Pelagius (papal legate commanding) rejected Sultan al-Kamil\'s extraordinary offer to trade Jerusalem for Damietta. Pelagius believed God would grant total victory and ordered an advance on Cairo up the Nile in July 1221. The army was to follow the river, maintaining supply by boat.',
+    whatHappened: 'Al-Kamil opened the sluice gates. The annual Nile flood, perfectly predictable to any Egyptian, turned the delta into a swamp. The Crusader army was trapped between rising waters and Egyptian forces. Supply boats could not navigate the flooded channels. The entire army was forced to surrender. Damietta was returned. The Crusade gained nothing.',
+    structuralReason: 'Environmental intelligence is logistics. The Nile flood cycle was common knowledge in Egypt but unknown to European commanders. Pelagius advanced in July -- the worst possible month -- because he did not understand the terrain he was fighting in. Al-Kamil did not need to defeat the Crusaders in battle; he let the river do it. This pattern recurs throughout military history: armies that do not understand local environmental conditions lose to those who do.',
+  },
+];
+
+var SUPPLY_VARIABLES = [
+  { id: 'armySize', label: 'Army Size', options: [
+    { id: 'small', label: 'Small (<20,000)', desc: 'Easier to feed, harder to fight' },
+    { id: 'medium', label: 'Medium (20-40,000)', desc: 'Balanced force, marginal supply' },
+    { id: 'large', label: 'Large (>40,000)', desc: 'Overwhelming force, unsustainable logistics' },
+  ]},
+  { id: 'supplyMethod', label: 'Supply Method', options: [
+    { id: 'forage', label: 'Foraging/Plunder', desc: 'No supply chain, depends on terrain' },
+    { id: 'maritime', label: 'Maritime Supply', desc: 'Reliable but limits you to the coast' },
+    { id: 'contract', label: 'Commercial Contract', desc: 'Professional but creates debt dependency' },
+  ]},
+  { id: 'route', label: 'Route', options: [
+    { id: 'overland', label: 'Overland (Anatolia)', desc: 'Direct but hostile, no supply' },
+    { id: 'coastal', label: 'Coastal March', desc: 'Longer but fleet can resupply' },
+    { id: 'sea', label: 'Full Maritime', desc: 'Fast but depends on ports and weather' },
+  ]},
+  { id: 'season', label: 'Campaign Season', options: [
+    { id: 'spring', label: 'Spring Departure', desc: 'Arrive summer, heat but good sailing' },
+    { id: 'summer', label: 'Summer Campaign', desc: 'Peak heat, disease risk, but dry roads' },
+    { id: 'autumn', label: 'Autumn/Winter', desc: 'Cooler but rains, floods, short days' },
+  ]},
+];
+
+// Mapping: each combination of choices maps to a closest-match campaign
+var SUPPLY_MATCH_RULES = [
+  // First Crusade: large + forage + overland + any
+  { match: function(c) { return c.armySize === 'large' && c.supplyMethod === 'forage' && c.route === 'overland'; }, campaignId: 'second', note: 'Your configuration closely mirrors the Second Crusade: a massive army foraging overland. Conrad III and Louis VII proved this combination is catastrophic. The terrain cannot sustain armies of this size without a supply chain.' },
+  { match: function(c) { return c.armySize === 'small' && c.supplyMethod === 'forage' && c.route === 'overland'; }, campaignId: 'first', note: 'A smaller army foraging overland most closely matches the First Crusade. You might succeed -- but only if Muslim political fragmentation prevents coordinated resistance. The First Crusade was unrepeatable precisely because that condition never recurred.' },
+  { match: function(c) { return c.supplyMethod === 'maritime' && c.route === 'coastal'; }, campaignId: 'third_supply', note: 'Maritime supply along the coast matches Richard I\'s Third Crusade approach. This is the most sustainable configuration, but it constrains you to coastal objectives. Jerusalem remains 50 km inland -- logistically unreachable.' },
+  { match: function(c) { return c.supplyMethod === 'maritime' && c.route === 'sea'; }, campaignId: 'fifth', note: 'Full maritime to a distant target matches the Fifth Crusade\'s Damietta expedition. Sea supply works for the landing but breaks down when you advance inland, especially if you do not understand local environmental conditions.' },
+  { match: function(c) { return c.supplyMethod === 'contract'; }, campaignId: 'fourth_supply', note: 'Commercial transport contracts match the Fourth Crusade. When you depend on a commercial partner (Venice), your strategic autonomy is subordinated to their financial interests. Debt becomes the real enemy.' },
+  { match: function(c) { return c.armySize === 'medium' && c.supplyMethod === 'forage'; }, campaignId: 'first', note: 'A medium-sized army foraging matches the First Crusade\'s effective strength in Syria (~35,000). This can work if the political environment is favorable, but it is a gamble on enemy disunity.' },
+  { match: function(c) { return c.route === 'overland' && c.season === 'autumn'; }, campaignId: 'second', note: 'Overland in autumn/winter matches the Second Crusade\'s fatal timing. Conrad III\'s army was destroyed crossing Anatolia in autumn rains and early winter. The combination of mud, cold, and Seljuk harassment is lethal.' },
+  { match: function(c) { return c.armySize === 'large' && c.season === 'summer'; }, campaignId: 'fifth', note: 'A large army campaigning in summer resembles the Fifth Crusade\'s advance up the Nile in July. Heat, disease, and environmental hazards (floods, swamps) destroy large armies that cannot adapt to local conditions.' },
+];
+
+// Fallback
+var SUPPLY_DEFAULT_MATCH = { campaignId: 'third_supply', note: 'Your configuration has elements of multiple historical campaigns. The closest sustainable model is Richard I\'s Third Crusade: maritime logistics supporting coastal operations. Any deviation toward overland routes, massive armies, or commercial debt reintroduces the failure modes that doomed the Second, Fourth, and Fifth Crusades.' };
+
+// ── Military Balance Data ──────────────────────────────────────────
+var MILITARY_DIMENSIONS = [
+  {
+    id: 'heavy_cav',
+    label: 'Heavy Cavalry',
+    crusaderScore: 90,
+    muslimScore: 35,
+    advantage: 'Crusader',
+    analysis: 'The Frankish knight was the most powerful individual combatant on the medieval battlefield. A charge by armored heavy cavalry could shatter any formation. At Arsuf (1191), Richard I\'s cavalry charge broke Saladin\'s center decisively. The knight\'s weakness was heat, fatigue, and the inability to pursue nimble horse archers. Once committed, a charge could not be recalled. At Hattin (1187), Saladin exploited this by provoking premature charges that left Crusader infantry exposed.',
+    battles: 'Arsuf (1191): Richard\'s disciplined charge shattered Ayyubid center. Hattin (1187): Crusader cavalry charges failed against Saladin\'s tactical patience. Dorylaeum (1097): Norman heavy cavalry broke Seljuk encirclement.',
+  },
+  {
+    id: 'light_cav',
+    label: 'Light Cavalry',
+    crusaderScore: 25,
+    muslimScore: 85,
+    advantage: 'Muslim',
+    analysis: 'Turkic horse archers were the defining Muslim military advantage. They could harass, encircle, and attrit Crusader columns without ever committing to close combat. The composite bow fired from horseback gave them range and mobility that European cavalry could not match. The feigned retreat -- firing while riding away -- was devastatingly effective against undisciplined Crusaders. Only commanders who maintained strict march discipline (like Richard I) could neutralize this advantage.',
+    battles: 'Hattin (1187): Turkic horse archers dehydrated and demoralized the Crusader column before the main engagement. Myriokephalon (1176): Seljuk light cavalry ambushed Byzantine heavy cavalry in a mountain pass. Mongol campaigns (1250s-60s): demonstrated horse archer supremacy at scale.',
+  },
+  {
+    id: 'siege',
+    label: 'Siege Capability',
+    crusaderScore: 65,
+    muslimScore: 70,
+    advantage: 'Roughly equal (Muslim edge by 13th C)',
+    analysis: 'Siege warfare saw the most technological cross-pollination. Crusaders brought Western siege tower and battering ram techniques; Muslims contributed the counterweight trebuchet (manjaniq), Greek fire, and undermining expertise. By the 13th century, the Mamluks had decisively surpassed Crusader siege capability. At Acre (1291), al-Ashraf Khalil deployed trebuchets of unprecedented size that could reduce Crusader fortifications that had withstood a century of assault.',
+    battles: 'Antioch (1097-98): 8-month Crusader siege, resolved by treachery not technology. Acre (1189-91): 2-year siege required both naval blockade and land assault. Acre (1291): Mamluk siege engines overwhelmed the strongest Crusader fortifications in weeks.',
+  },
+  {
+    id: 'naval',
+    label: 'Naval Power',
+    crusaderScore: 80,
+    muslimScore: 40,
+    advantage: 'Crusader (Italian republics)',
+    analysis: 'The Italian maritime republics -- Venice, Genoa, Pisa -- gave the Crusader states their most decisive strategic advantage. Italian fleets controlled the eastern Mediterranean, enabling reinforcement, supply, and trade that kept the coastal Crusader states alive. Fatimid and later Ayyubid fleets were competent but could not match Italian naval technology or commercial organization. This naval superiority is why the Crusader states survived as a coastal strip for 200 years even after losing inland territory.',
+    battles: 'Siege of Acre (1189-91): Crusader naval blockade was decisive. Richard I\'s fleet enabled the coastal march strategy. Fourth Crusade (1202-04): Venice\'s fleet was the most powerful naval force in the Mediterranean.',
+  },
+  {
+    id: 'fortification',
+    label: 'Fortification',
+    crusaderScore: 85,
+    muslimScore: 55,
+    advantage: 'Crusader (until Mamluk era)',
+    analysis: 'Crusader castle-building in the Levant produced the finest medieval fortifications ever constructed. Krak des Chevaliers, Kerak, Beaufort, and Margat were concentric castles that could withstand prolonged siege with small garrisons. A single castle could control an entire region. The Hospitallers held Krak des Chevaliers with 2,000 men against armies of 20,000+. But the Mamluks eventually developed siege techniques that could reduce even these fortresses, and by the 1260s-80s, Baybars was systematically demolishing the castle network.',
+    battles: 'Krak des Chevaliers: held by Hospitallers 1142-1271, finally taken by Baybars through negotiated surrender. Kerak: withstood multiple Ayyubid sieges. Beaufort: captured by Saladin 1190, Mamluks 1268.',
+  },
+  {
+    id: 'logistics_sust',
+    label: 'Logistics Sustainability',
+    crusaderScore: 30,
+    muslimScore: 85,
+    advantage: 'Muslim (decisive)',
+    analysis: 'This was the dimension that ultimately determined the outcome of the Crusades. Muslim forces operated on interior lines with local supply, familiar terrain, and populations that supported them (or at least did not resist). Crusader forces depended on maritime resupply from Europe, reinforcements that arrived irregularly, and a hostile or indifferent local population. Every Crusader campaign was a logistical race against time. Muslim commanders could simply wait. Saladin\'s strategy at the Third Crusade was essentially logistical patience: outlast Richard\'s ability to sustain operations far from home.',
+    battles: 'Hattin (1187): Saladin used water denial as a logistical weapon. Third Crusade (1189-92): Richard could not sustain an inland march to Jerusalem. Fifth Crusade (1221): Nile flood destroyed Crusader supply lines.',
+  },
+];
+
+var BALANCE_INSIGHT = 'The Crusader states survived for nearly 200 years (1098-1291) not because of overall military superiority -- they were inferior in light cavalry, logistics, and increasingly in siege capability. They survived because of three factors: (1) Muslim political disunity prevented coordinated responses until Saladin, (2) Italian naval supremacy kept the coast supplied, and (3) the castle network multiplied defensive capability. When Saladin unified Egypt and Syria (1174-1186), he eliminated factor (1). The Mamluks, who succeeded the Ayyubids, then developed the siege capability to eliminate factor (3). By 1291, only Italian naval power remained -- enough to evacuate survivors from Acre, but not enough to sustain the Crusader states.';
+
+// ── Coexistence Data ───────────────────────────────────────────────
+var COEXISTENCE_ASPECTS = [
+  {
+    id: 'trade',
+    label: 'Trade & Commerce',
+    icon: '\u2696',
+    analysis: 'The Crusader states were commercial enterprises as much as religious colonies. Italian merchant quarters (fondachi) in Acre, Tyre, and Tripoli created the infrastructure for East-West trade that predated and outlasted the Crusades themselves. Muslims, Christians, and Jews traded in shared markets (suqs). The Venetian quarter in Acre was essentially an autonomous commercial zone. Trade continued even during active hostilities -- a fact that scandalized religious authorities on both sides. Saladin\'s truce with Italian merchants guaranteed commercial access even as he planned to destroy the Crusader states militarily.',
+    comparison: 'The Italian fondaco system anticipated the later Ottoman capitulations and European extraterritorial concessions in the 19th century. The principle was identical: foreign merchants receive autonomous legal and commercial rights within a host territory in exchange for trade revenue.',
+  },
+  {
+    id: 'law',
+    label: 'Legal Pluralism',
+    icon: '\u2696',
+    analysis: 'The Kingdom of Jerusalem operated a system of parallel courts: the High Court for Frankish nobility (using the Assizes of Jerusalem), the Court of the Bourgeois for Frankish commoners, and separate courts for Muslim, Eastern Christian, and Jewish communities that applied their own religious law. This was not tolerance in the modern sense -- it was administrative pragmatism. The Crusader lords lacked the population to impose uniform law and needed local communities to function economically.',
+    comparison: 'This closely parallels the later Ottoman millet system, where each religious community (Greek Orthodox, Armenian, Jewish) governed its own personal law under Ottoman sovereignty. Both systems recognized that multi-confessional societies require legal flexibility. The key difference: the Ottoman millet system was a conscious policy of imperial governance, while the Crusader system was improvised from necessity.',
+  },
+  {
+    id: 'language',
+    label: 'Language & Communication',
+    icon: '\u270E',
+    analysis: 'The Crusader states were genuinely multilingual. Arabic was the language of commerce, agriculture, and daily interaction with local populations. Latin was the language of ecclesiastical administration and formal documents. Old French (langue d\'oil) was the language of the Frankish aristocracy and the courts. Greek persisted among Eastern Christian communities. The dragoman (interpreter, from Arabic tarjuman) was an essential figure in Crusader administration. Second-generation Franks (poulains) often spoke Arabic fluently, which newly arrived Crusaders from Europe found shocking.',
+    comparison: 'This multilingual environment mirrors other frontier societies: Moorish Spain (Arabic, Castilian, Hebrew, Romance), Norman Sicily (Arabic, Greek, Latin), and later Ottoman Constantinople (Turkish, Greek, Armenian, Ladino). Linguistic diversity in the Crusader states was a sign of genuine cultural contact, not merely coexistence.',
+  },
+  {
+    id: 'architecture',
+    label: 'Architecture & Material Culture',
+    icon: '\u2302',
+    analysis: 'Crusader architecture in the Levant is a remarkable hybrid of Romanesque and Islamic traditions. The Church of the Holy Sepulchre in its Crusader-era form combines Romanesque structural elements with Islamic decorative patterns. Crusader castles incorporated Muslim defensive innovations (machicolations, bent entrances, concentric walls). Domestic architecture adopted Islamic features: interior courtyards, pointed arches, decorative stonework, and sophisticated water systems. These techniques were then exported back to Europe -- Edward I\'s Welsh castles directly adopted Crusader concentric design.',
+    comparison: 'The architectural synthesis parallels Mudeejar art in Spain, where Christian patrons employed Muslim artisans to create hybrid buildings. In both cases, the military conflict did not prevent aesthetic and technical exchange. Architecture was a domain where practical superiority overrode religious boundaries.',
+  },
+  {
+    id: 'medicine',
+    label: 'Medicine & Learning',
+    icon: '\u2625',
+    analysis: 'Islamic medicine was vastly superior to European medicine in the 12th century. Ibn Sina\'s Canon of Medicine was the authoritative text, and Crusader physicians eventually adopted Islamic diagnostic and pharmacological practices. Usama ibn Munqidh records both horrifying examples of Frankish medicine (a knight\'s leg amputated when a poultice might have saved it) and examples of Franks seeking Muslim physicians. The Hospitaller order operated hospitals that drew on both Western and Islamic medical traditions, creating institutions that were among the most advanced in the medieval world.',
+    comparison: 'Usama ibn Munqidh\'s famous anecdote about Frankish medicine illustrates the dynamic: a Frankish physician treated a woman\'s headache with a cross-shaped incision in her skull, killing her. A Muslim physician had been treating her successfully with diet. Yet within decades, Crusader physicians were studying Arabic medical texts. The exchange was real but uneven and often painful.',
+  },
+];
+
+var COEXISTENCE_SCENARIOS = [
+  {
+    id: 'usama_temple',
+    source: 'Usama ibn Munqidh, Kitab al-I\'tibar (c. 1175)',
+    title: 'The Templar and the Prayer',
+    narrative: 'Usama describes visiting the al-Aqsa Mosque (then the Templar headquarters) to pray. The Templars, who knew him as a diplomatic visitor, allowed him to use a corner to pray toward Mecca. A newly arrived Crusader -- unfamiliar with local customs -- seized Usama and tried to force him to pray facing east in the Christian manner. The Templars intervened, apologized, and explained that the newcomer "had just arrived from the land of the Franks and had never seen anyone praying except eastward."',
+    tension: 'coexistence',
+    interpretation: 'This episode captures the duality perfectly. The established Templars had developed working relationships with Muslims that included religious accommodation. But every new wave of Crusaders from Europe brought people who had no experience of interfaith coexistence and saw any Muslim practice as threatening. The Crusader states existed in constant tension between acculturated residents and zealous newcomers.',
+  },
+  {
+    id: 'fulcher_settlement',
+    source: 'Fulcher of Chartres, Historia Hierosolymitana (c. 1127)',
+    title: 'Becoming Eastern',
+    narrative: 'Fulcher, a chaplain who settled in Jerusalem, wrote with wonder about how Franks had adapted: "We who were Occidentals have now become Orientals. He who was a Roman or a Frank has in this land been made into a Galilean or a Palestinian. He who was of Rheims or Chartres has now become a citizen of Tyre or Antioch. We have already forgotten the places of our birth." He describes Franks who married local women, spoke multiple languages, and lived in ways unrecognizable to their European relatives.',
+    tension: 'coexistence',
+    interpretation: 'Fulcher documents genuine cultural transformation, not mere conquest. The poulains (second-generation Franks) developed a hybrid identity that was neither European nor Muslim but something new. This challenges the narrative of the Crusades as purely destructive. The Crusader states produced a creole society with its own culture, customs, and identity.',
+  },
+  {
+    id: 'william_massacre',
+    source: 'William of Tyre, Historia (c. 1170s)',
+    title: 'The Massacre at Jerusalem (1099)',
+    narrative: 'William of Tyre, writing decades later, describes the fall of Jerusalem with ambivalence. He records the massacre of Muslim and Jewish inhabitants with detail that suggests discomfort: the Temple Mount running with blood, civilians killed without distinction, the Jewish community burned alive in their synagogue. William was born in the Crusader states and understood both the triumphalism of the conquest and its moral cost. His account is notably more restrained than the exultant descriptions by participants like Raymond of Aguilers.',
+    tension: 'violence',
+    interpretation: 'William\'s account reveals that even within Crusader society, the massacre was recognized as problematic. The first generation celebrated the conquest as divine vindication. By William\'s time (born c. 1130), Crusader intellectuals understood that the massacre had created a permanent grievance. The coexistence that developed in the 12th century existed in the shadow of 1099 -- both sides knew what had happened and what could happen again.',
+  },
+];
+
 // ═════════════════════════════════════════════════════════════════════
 //  CrusadesView Component
 // ═════════════════════════════════════════════════════════════════════

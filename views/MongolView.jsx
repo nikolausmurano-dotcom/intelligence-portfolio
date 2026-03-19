@@ -467,6 +467,20 @@ function MongolView({ setView }) {
   const [tipId, setTipId] = useState(null);
   const topRef = useRef(null);
 
+  // ── Logistics Calculator State ──────────────────────────────────
+  var [logArmySize, setLogArmySize] = useState(60000);
+  var [logDistance, setLogDistance] = useState(2000);
+  var [logTerrain, setLogTerrain] = useState('steppe');
+  var [logSeason, setLogSeason] = useState('summer');
+
+  // ── Doctrine Analyzer State ─────────────────────────────────────
+  var [doctrineSelected, setDoctrineSelected] = useState(0);
+  var [battleScenario, setBattleScenario] = useState(null);
+  var [battleChoice, setBattleChoice] = useState({});
+
+  // ── Empire Sustainability State ─────────────────────────────────
+  var [empireCell, setEmpireCell] = useState(null);
+
   // ── Scholarly Micro-Icons & Tooltip ──────────────────────────────
   function Tip({ id }) {
     if (tipId !== id || !MONGOL_TIPS[id]) return null;

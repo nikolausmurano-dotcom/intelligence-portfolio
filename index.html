@@ -40,6 +40,7 @@ html, body { width: 100%; height: 100%; background: #050610; font-family: 'Inter
 <script type="text/babel" src="views/BerlinView.jsx"></script>
 <script type="text/babel" src="views/AfricaView.jsx"></script>
 <script type="text/babel" src="views/WarTheoryView.jsx"></script>
+<script type="text/babel" src="views/HolocaustView.jsx"></script>
 <script type="text/babel" src="views/EmtView.jsx"></script>
 <script type="text/babel" src="views/PeaceView.jsx"></script>
 <script type="text/babel" src="views/WesternView.jsx"></script>
@@ -852,6 +853,9 @@ const ENTRIES = [
   { id: "wartheory", code: "PCS/SOC", title: "War Theory & Sociology of Violence", sub: "Clausewitz Trinity · State Violence · Organized Killing", accent: "#905040",
     detail: "Clausewitz's remarkable trinity, Weber's monopoly on violence, organized killing as social process, genocide studies, and civilian targeting logic. Applied to modern hybrid warfare analysis.",
     deliverables: ["Theoretical analysis: Clausewitz's trinity applied to modern hybrid warfare"], tools: ["Strategic Theory", "Sociological Analysis"] },
+  { id: "holocaust", code: "HIST 232", title: "War and the Holocaust in Europe", sub: "Bloodlands · Mechanisms of Genocide · Perpetrator Psychology · Early Warning", accent: "#8a7848",
+    detail: "Analytical study of the Holocaust through Snyder's geographic overlap thesis, Browning's perpetrator psychology, Hilberg's bureaucratic analysis, and Stanton's early warning framework. Five interactive analytical instruments for understanding the structural conditions of mass violence.",
+    deliverables: ["Analytical instruments: Bloodlands overlap engine, mechanism risk profiler, radicalization timeline, perpetrator scenario analysis, genocide early warning assessment"], tools: ["Comparative Genocide Studies", "Atrocity Prevention Frameworks", "Intelligence Warning"] },
   { id: "peace", code: "PCS", title: "Practices of Peace & Conflict", sub: "Conflict Resolution · Reconciliation · DDR · Transitional Justice", accent: "#408080",
     detail: "Track I and II diplomacy, truth commissions, transitional justice frameworks, DDR (Disarmament, Demobilization, Reintegration) programs, and post-conflict institutional reconstruction.",
     deliverables: ["Case study: DDR program design for post-conflict stabilization"], tools: ["Conflict Resolution Frameworks", "Transitional Justice"] },
@@ -2141,6 +2145,7 @@ function courseOverlay(ctx, w, h, t, mx, my, sceneId, cache) {
     for (let i = 0; i < (L[sceneId]||[]).length; i++) gTxt(L[sceneId][i], w * (.18 + i * .28), h * .08, "rgba(180,160,120,.2)", 10, "center");
   }
   else if (sceneId === 'wartheory') gTxt("CLAUSEWITZ TRINITY: PEOPLE · ARMY · GOVERNMENT", w * .5, h * .08, "rgba(140,100,60,.15)", 10, "center");
+  else if (sceneId === 'holocaust') gTxt("BLOODLANDS · MECHANISMS · CHRONOLOGY · PERPETRATORS · WARNING", w * .5, h * .08, "rgba(138,120,72,.15)", 10, "center");
   else if (sceneId === 'peace') gTxt("CONFLICT RESOLUTION · RECONCILIATION · PEACEBUILDING", w * .5, h * .08, "rgba(80,160,140,.15)", 10, "center");
   else if (sceneId === 'russia') gTxt("TSARDOM · ORTHODOXY · EXPANSION · BOYAR COUNCIL", w * .5, h * .08, "rgba(120,100,180,.15)", 10, "center");
   else if (sceneId === 'amfp') gTxt("MONROE DOCTRINE · MANIFEST DESTINY · 1776–1916", w * .5, h * .08, "rgba(60,96,140,.15)", 10, "center");
@@ -5459,7 +5464,7 @@ function CourseworkView({ setView }) {
   const [subIdx, setSubIdx] = useState(0);
   const [fading, setFading] = useState(false);
   const [showDetail, setShowDetail] = useState(false);
-  const [viewMode, setViewMode] = useState('carousel');
+  const [viewMode, setViewMode] = useState('grid');
   const [gridPulse, setGridPulse] = useState(null);
 
   const sec = SEC[secIdx];
@@ -5511,7 +5516,7 @@ function CourseworkView({ setView }) {
     co:"co-analysis", et:"et-analysis", cm:"cm-analysis", hs:"hs-analysis", at:"at-analysis", ic:"ic-analysis", ct:"ct-analysis",
     mongol:"mongol-view", russia:"russia-view", crusades:"crusades-view", eastasia:"eastasia-view",
     mideast:"mideast-view", amfp:"amfp-view", berlin:"berlin-view", africa:"africa-view",
-    wartheory:"wartheory-view", peace:"peace-view", western:"western-view", london:"london-view",
+    wartheory:"wartheory-view", holocaust:"holocaust-view", peace:"peace-view", western:"western-view", london:"london-view",
     emt:"emt-view", uscri:"uscri-view", cicc:"cicc-view", pharm:"pharm-view", respite:"respite-view", habitat:"habitat-view"
   };
 
@@ -5545,6 +5550,7 @@ function CourseworkView({ setView }) {
     berlin: (ac) => <GridIcon courseId="berlin"><rect x="12" y="18" width="4" height="18" stroke={ac} strokeWidth="1" fill={ac} fillOpacity=".1"/><rect x="24" y="18" width="4" height="18" stroke={ac} strokeWidth="1" fill={ac} fillOpacity=".1"/><rect x="18" y="22" width="4" height="14" stroke={ac} strokeWidth="1" fill={ac} fillOpacity=".08"/><path d="M8 18h24" stroke={ac} strokeWidth="1.5"/><path d="M10 18V14l10-10 10 10v4" stroke={ac} strokeWidth="1.3" fill="none"/><line x1="14" y1="18" x2="14" y2="14" stroke={ac} strokeWidth=".8" opacity=".4"/><line x1="20" y1="18" x2="20" y2="10" stroke={ac} strokeWidth=".8" opacity=".4"/><line x1="26" y1="18" x2="26" y2="14" stroke={ac} strokeWidth=".8" opacity=".4"/></GridIcon>,
     africa: (ac) => <GridIcon courseId="africa"><path d="M20 4L8 20l12 16 12-16z" stroke={ac} strokeWidth="1.4" fill={ac} fillOpacity=".1"/><line x1="10" y1="20" x2="20" y2="8" stroke={ac} strokeWidth="1" opacity=".4"/><line x1="30" y1="20" x2="20" y2="8" stroke={ac} strokeWidth="1" opacity=".4"/><line x1="14" y1="26" x2="26" y2="26" stroke={ac} strokeWidth=".8" opacity=".3"/></GridIcon>,
     wartheory: (ac) => <GridIcon courseId="wartheory"><line x1="8" y1="34" x2="20" y2="10" stroke={ac} strokeWidth="1.8"/><line x1="32" y1="34" x2="20" y2="10" stroke={ac} strokeWidth="1.8"/><line x1="6" y1="36" x2="14" y2="30" stroke={ac} strokeWidth="1.2" opacity=".5"/><line x1="34" y1="36" x2="26" y2="30" stroke={ac} strokeWidth="1.2" opacity=".5"/><circle cx="20" cy="10" r="2" fill={ac} opacity=".4"/></GridIcon>,
+    holocaust: (ac) => <GridIcon courseId="holocaust"><line x1="10" y1="8" x2="10" y2="36" stroke={ac} strokeWidth="1.3" opacity=".5"/><line x1="16" y1="8" x2="16" y2="36" stroke={ac} strokeWidth="1.3" opacity=".5"/><line x1="22" y1="8" x2="22" y2="36" stroke={ac} strokeWidth="1.3" opacity=".5"/><line x1="28" y1="8" x2="28" y2="36" stroke={ac} strokeWidth="1.3" opacity=".5"/><line x1="6" y1="14" x2="34" y2="14" stroke={ac} strokeWidth=".8" opacity=".3"/><line x1="6" y1="22" x2="34" y2="22" stroke={ac} strokeWidth=".8" opacity=".3"/><line x1="6" y1="30" x2="34" y2="30" stroke={ac} strokeWidth=".8" opacity=".3"/><circle cx="20" cy="22" r="6" stroke={ac} strokeWidth="1.5" fill="none" opacity=".4"/></GridIcon>,
     peace: (ac) => <GridIcon courseId="peace"><path d="M20 10c-6 0-10 4-10 8 0 6 10 16 10 16s10-10 10-16c0-4-4-8-10-8z" stroke={ac} strokeWidth="1" fill="none" opacity=".3"/><path d="M20 6c-4 0-6 3-6 5 0 4 6 8 6 8s6-4 6-8c0-2-2-5-6-5z" stroke={ac} strokeWidth="1.3" fill={ac} fillOpacity=".15"/><path d="M16 14c2 1 4 1 4 1s0-2 2-4" stroke={ac} strokeWidth=".8" fill="none" opacity=".4"/><line x1="12" y1="10" x2="8" y2="8" stroke={ac} strokeWidth="1" opacity=".3"/><line x1="28" y1="10" x2="32" y2="8" stroke={ac} strokeWidth="1" opacity=".3"/></GridIcon>,
     western: (ac) => <GridIcon courseId="western"><circle cx="20" cy="14" r="6" stroke={ac} strokeWidth="1.3" fill={ac} fillOpacity=".08"/><circle cx="18" cy="13" r="2" fill={ac} opacity=".5"/><circle cx="22" cy="13" r="2" fill={ac} opacity=".5"/><path d="M16 17c1 1 3 2 4 2s3-1 4-2" stroke={ac} strokeWidth=".8" fill="none" opacity=".4"/><path d="M12 10c-2-4 0-6 2-6" stroke={ac} strokeWidth="1.2" fill="none" opacity=".5"/><path d="M28 10c2-4 0-6-2-6" stroke={ac} strokeWidth="1.2" fill="none" opacity=".5"/><path d="M10 20c2 4 6 8 10 12 4-4 8-8 10-12" stroke={ac} strokeWidth="1.2" fill={ac} fillOpacity=".06"/></GridIcon>,
     london: (ac) => <GridIcon courseId="london"><rect x="16" y="8" width="8" height="28" stroke={ac} strokeWidth="1.3" fill={ac} fillOpacity=".08"/><circle cx="20" cy="14" r="4" stroke={ac} strokeWidth="1.2" fill="none"/><line x1="20" y1="12" x2="20" y2="14" stroke={ac} strokeWidth="1"/><line x1="20" y1="14" x2="22" y2="14" stroke={ac} strokeWidth="1"/><path d="M16 8l-4-4h-2v4h6z" stroke={ac} strokeWidth="1" fill={ac} fillOpacity=".12"/><path d="M24 8l4-4h2v4h-6z" stroke={ac} strokeWidth="1" fill={ac} fillOpacity=".12"/><line x1="20" y1="4" x2="20" y2="8" stroke={ac} strokeWidth="1.5"/><circle cx="20" cy="3" r="1.5" fill={ac} opacity=".4"/></GridIcon>,
@@ -5668,7 +5674,7 @@ function CourseworkView({ setView }) {
 
       {/* ── CENTER COURSE TITLE (visible when detail collapsed) ── */}
       {!showDetail && !fading && c.id !== 'at' && (
-        <div style={{ position: "absolute", top: "38%", left: "50%", transform: "translate(-50%, -50%)", zIndex: 12, textAlign: "center", pointerEvents: "none", maxWidth: 600 }}>
+        <div style={{ position: "absolute", top: "55%", left: "50%", transform: "translate(-50%, -50%)", zIndex: 12, textAlign: "center", pointerEvents: "none", maxWidth: 600 }}>
           <p style={{ fontFamily: mono, fontSize: 11, color: c.accent + "88", letterSpacing: ".12em", textTransform: "uppercase", marginBottom: 8 }}>{c.code}</p>
           <h2 style={{ fontFamily: serif, fontSize: 36, fontWeight: 700, color: "rgba(245,245,252,.8)", letterSpacing: "-.01em", lineHeight: 1.15, margin: 0, textShadow: "0 2px 20px rgba(0,0,0,.8)" }}>{c.title}</h2>
 {/* helper text removed */}
@@ -5752,6 +5758,8 @@ function CourseworkView({ setView }) {
           {c.id === 'africa' && <button onClick={(e) => { e.stopPropagation(); setView('africa-view'); }} style={{ display: "block", margin: "16px 0 6px", padding: "12px 28px", background: `${c.accent}15`, border: `1px solid ${c.accent}40`, borderRadius: 6, color: c.accent, fontSize: 14, fontFamily: mono, fontWeight: 600, cursor: "pointer", letterSpacing: ".04em", transition: "all .25s" }}>Enter the Decolonization Analyzer →</button>}
 
           {c.id === 'wartheory' && <button onClick={(e) => { e.stopPropagation(); setView('wartheory-view'); }} style={{ display: "block", margin: "16px 0 6px", padding: "12px 28px", background: `${c.accent}15`, border: `1px solid ${c.accent}40`, borderRadius: 6, color: c.accent, fontSize: 14, fontFamily: mono, fontWeight: 600, cursor: "pointer", letterSpacing: ".04em", transition: "all .25s" }}>Enter the Clausewitz Trinity Analyzer →</button>}
+
+          {c.id === 'holocaust' && <button onClick={(e) => { e.stopPropagation(); setView('holocaust-view'); }} style={{ display: "block", margin: "16px 0 6px", padding: "12px 28px", background: `${c.accent}15`, border: `1px solid ${c.accent}40`, borderRadius: 6, color: c.accent, fontSize: 14, fontFamily: mono, fontWeight: 600, cursor: "pointer", letterSpacing: ".04em", transition: "all .25s" }}>Enter the Holocaust Analytical Instruments →</button>}
 
           {c.id === 'peace' && <button onClick={(e) => { e.stopPropagation(); setView('peace-view'); }} style={{ display: "block", margin: "16px 0 6px", padding: "12px 28px", background: `${c.accent}15`, border: `1px solid ${c.accent}40`, borderRadius: 6, color: c.accent, fontSize: 14, fontFamily: mono, fontWeight: 600, cursor: "pointer", letterSpacing: ".04em", transition: "all .25s" }}>Enter the Peace Process Simulator →</button>}
 
@@ -7787,6 +7795,7 @@ function Portfolio() {
       {view === 'berlin-view' && typeof BerlinView !== 'undefined' && React.createElement(BerlinView, {setView})}
       {view === 'africa-view' && typeof AfricaView !== 'undefined' && React.createElement(AfricaView, {setView})}
       {view === 'wartheory-view' && typeof WarTheoryView !== 'undefined' && React.createElement(WarTheoryView, {setView})}
+      {view === 'holocaust-view' && typeof HolocaustView !== 'undefined' && React.createElement(HolocaustView, {setView})}
       {view === 'emt-view' && typeof EmtView !== 'undefined' && React.createElement(EmtView, {setView})}
       {view === 'peace-view' && typeof PeaceView !== 'undefined' && React.createElement(PeaceView, {setView})}
       {view === 'western-view' && typeof WesternView !== 'undefined' && React.createElement(WesternView, {setView})}

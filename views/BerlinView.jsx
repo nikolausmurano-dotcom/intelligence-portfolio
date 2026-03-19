@@ -382,6 +382,301 @@ const PRESSURE_ANNOTATIONS = [
   { startYear: 1979, endYear: 1985, label: 'Second Cold War', color: 'rgba(204,56,56,.10)' },
 ];
 
+// ── Escalation Calculator Data ───────────────────────────────────
+const CRISES = [
+  {
+    id: 'blockade48', name: 'Berlin Blockade', period: '1948-49',
+    escalation: 7, nuclearRisk: 2,
+    desc: 'Stalin blockades all road/rail/canal access to West Berlin. 2.5 million civilians face starvation. Truman chooses airlift over armed convoy.',
+    decisionPoints: [
+      'Truman rejects armed convoy (avoids direct confrontation)',
+      'Stalin allows air corridors to remain open (preserves deniability)',
+      'Airlift succeeds beyond expectations (277,000 flights)',
+    ],
+    deescalation: 'Stalin lifts blockade May 1949 after 318 days. Face-saving: framed as response to Western "concessions" at CFM. Real reason: blockade backfired -- united Western allies and accelerated NATO formation.',
+    counterfactual: {
+      label: 'What if Truman had sent an armed convoy?',
+      baseline: [7, 8, 9, 8, 6],
+      altered: [7, 9, 10, 10, 9],
+      consequence: 'Armed convoys through Soviet checkpoints would have forced a shooting decision. Soviet forces outnumbered Western troops in Berlin 10:1. A firefight at Helmstedt or Marienborn could have escalated to general war in Europe within 48 hours. The nuclear monopoly (US only) would have been the ultimate backstop, but Truman had shown at Hiroshima he would use atomic weapons. Soviet planners knew this. Probability of nuclear use: 15-25%.',
+    },
+  },
+  {
+    id: 'uprising53', name: 'June 1953 Uprising', period: 'June 17, 1953',
+    escalation: 6, nuclearRisk: 1,
+    desc: 'East German workers strike over raised production quotas. Protests spread to 700 cities. Soviet tanks crush the uprising. At least 55 killed, 15,000 arrested.',
+    decisionPoints: [
+      'Ulbricht raises work quotas by 10% (triggers crisis)',
+      'Workers march on government buildings (spontaneous escalation)',
+      'Soviets deploy T-34 tanks in East Berlin (military suppression)',
+      'Eisenhower does NOT intervene (accepts Soviet sphere)',
+    ],
+    deescalation: 'Brute force. Soviet military commander declares martial law. The uprising collapses within 48 hours. Beria briefly considers abandoning the DDR entirely, but is arrested weeks later. The lesson for Moscow: the DDR cannot survive without Soviet military backing.',
+    counterfactual: {
+      label: 'What if Eisenhower had airdropped weapons to the strikers?',
+      baseline: [4, 6, 6, 4, 3],
+      altered: [4, 6, 8, 9, 8],
+      consequence: 'The CIA had RIAS (Radio in the American Sector) broadcasting to East Berlin. Arming the insurgents would have transformed a labor dispute into a proxy war inside Soviet-occupied territory. The Soviets had 22 divisions in East Germany. Western forces in Berlin totaled 12,000. An armed uprising backed by Western weapons would have given Moscow justification for a broader military response, potentially sealing the Berlin border 8 years early and triggering a European crisis.',
+    },
+  },
+  {
+    id: 'ultimatum58', name: 'Khrushchev Ultimatum', period: 'Nov 1958 - 1961',
+    escalation: 8, nuclearRisk: 5,
+    desc: 'Khrushchev demands Western withdrawal from Berlin within 6 months, threatening to sign a separate peace treaty with the DDR that would void Western access rights.',
+    decisionPoints: [
+      'Khrushchev sets 6-month deadline (coercive diplomacy)',
+      'Eisenhower refuses to negotiate under threat (deterrence)',
+      'Deadline passes without action (Khrushchev blinks)',
+      'Kennedy meets Khrushchev at Vienna (June 1961) -- bullied on Berlin',
+    ],
+    deescalation: 'The ultimatum expired repeatedly without enforcement. Khrushchev used Berlin as leverage for broader negotiations. The crisis dragged for 3 years because neither side could accept the other\'s terms. Resolution came only through the Wall -- a unilateral Soviet/DDR action that bypassed the diplomatic impasse.',
+    counterfactual: {
+      label: 'What if Khrushchev had actually signed a separate DDR peace treaty?',
+      baseline: [5, 8, 7, 6, 5],
+      altered: [5, 8, 9, 10, 9],
+      consequence: 'A separate treaty would have transferred control of Western access routes to the DDR -- a state the West did not recognize. Western convoys would have faced DDR checkpoints instead of Soviet ones. Refusing DDR authority while using DDR roads creates an impossible legal situation. The West would have had to choose: accept DDR sovereignty (abandoning the legal basis for their presence) or force passage (risking military confrontation). This was Khrushchev\'s strongest card, and the fact that he never played it suggests he understood the escalation risk was uncontrollable.',
+    },
+  },
+  {
+    id: 'wall61', name: 'Wall Construction', period: 'Aug 13, 1961',
+    escalation: 9, nuclearRisk: 4,
+    desc: 'At 1:00 AM, 40,000 troops deploy barbed wire across 156km of the Berlin border. Families separated overnight. The West watches.',
+    decisionPoints: [
+      'Khrushchev authorizes Operation Rose (strategic decision)',
+      'Ulbricht deploys troops at 1:00 AM (tactical execution)',
+      'Kennedy does NOT mobilize (strategic restraint)',
+      'Brandt denounces Western inaction (political fracture)',
+    ],
+    deescalation: 'The Wall itself WAS the de-escalation. It solved Khrushchev\'s refugee crisis without requiring Western concessions. Kennedy recognized this: a defensive wall was preferable to an offensive move. The temperature dropped because the Wall removed the pressure that was driving the crisis -- the hemorrhage of East German citizens.',
+    counterfactual: {
+      label: 'What if JFK had sent tanks to the Wall on August 13?',
+      baseline: [6, 9, 7, 5, 4],
+      altered: [6, 9, 10, 10, 8],
+      consequence: 'The initial barbed wire could have been bulldozed in hours. But 40,000 East German troops backed by Soviet divisions stood behind it. American tanks crossing into the Soviet sector would have been the first direct US-Soviet ground confrontation of the Cold War. Khrushchev had told Kennedy at Vienna that Berlin was worth nuclear war. With both leaders under domestic pressure to show strength, the escalation ladder had very few rungs left. Historians estimate 20-30% probability of nuclear exchange within 72 hours of direct ground contact.',
+    },
+  },
+  {
+    id: 'checkpoint61', name: 'Checkpoint Charlie Standoff', period: 'Oct 27-28, 1961',
+    escalation: 10, nuclearRisk: 7,
+    desc: 'US and Soviet tanks face each other at 100m with live ammunition for 16 hours. The closest the Cold War came to shooting war in Europe.',
+    decisionPoints: [
+      'Clay deploys M48 Pattons (escalation to demonstrate resolve)',
+      'Soviets match with T-55 tanks (reciprocal escalation)',
+      'Kennedy activates RFK-Bolshakov backchannel (parallel de-escalation)',
+      'Khrushchev withdraws first, one tank at a time (face-saving retreat)',
+    ],
+    deescalation: 'Backchannel diplomacy. Robert Kennedy met Soviet intelligence officer Georgi Bolshakov and conveyed: if the Soviets pull back, we will follow. The choreography was precise -- one tank at a time, alternating sides. The backchannel worked because it bypassed both bureaucracies and allowed direct leader-to-leader communication.',
+    counterfactual: {
+      label: 'What if a nervous soldier had fired a shot at Checkpoint Charlie?',
+      baseline: [7, 10, 8, 5, 4],
+      altered: [7, 10, 10, 10, 10],
+      consequence: 'An accidental discharge at 100m range between tanks with live ammunition would have triggered immediate return fire. Tank-on-tank engagement in a narrow Berlin street would have killed soldiers on both sides within seconds. Once blood was spilled, the political pressure on both leaders to respond would have been immense. Khrushchev could not be seen retreating after Soviet soldiers were killed. Kennedy could not withdraw after American casualties. The escalation from tactical incident to strategic crisis could have taken hours. Berlin would have become the Sarajevo of the nuclear age.',
+    },
+  },
+];
+
+// ── Escape Route Analyzer Data ──────────────────────────────────
+const ESCAPE_METHODS = [
+  { id: 'tunnel', label: 'Tunnel', total: 70, successful: 19, people: 300, peakYears: '1962-1965', icon: '\u26CF' },
+  { id: 'vehicle', label: 'Hidden in vehicle', total: 245, successful: 155, people: 289, peakYears: '1961-1975', icon: '\u2693' },
+  { id: 'checkpoint', label: 'Checkpoint deception', total: 180, successful: 98, people: 115, peakYears: '1961-1989', icon: '\u2694' },
+  { id: 'swim', label: 'Swimming (Spree/canals)', total: 120, successful: 42, people: 48, peakYears: '1961-1971', icon: '\u2604' },
+  { id: 'balloon', label: 'Balloon/ultralight', total: 8, successful: 3, people: 9, peakYears: '1979-1983', icon: '\u2605' },
+  { id: 'ram', label: 'Ramming barriers', total: 55, successful: 14, people: 17, peakYears: '1961-1975', icon: '\u26A1' },
+];
+
+const ESCAPE_TIMELINE = [
+  { year: 1961, escapes: 8, failed: 3, deaths: 5, note: 'First year -- border not yet fully fortified. Many cross through gaps.' },
+  { year: 1962, escapes: 14, failed: 8, deaths: 8, note: 'Tunnel digging begins. Peter Fechter shot at the Wall (Aug 17) -- bleeds to death in the death strip while Western media watches.' },
+  { year: 1963, escapes: 11, failed: 12, deaths: 4, note: 'Stasi intensifies informant recruitment among would-be escapees.' },
+  { year: 1964, escapes: 15, failed: 10, deaths: 3, note: 'Tunnel 57: 57 people escape through 145m tunnel in two nights (Oct). Largest single tunnel escape.' },
+  { year: 1965, escapes: 9, failed: 14, deaths: 6, note: 'Ground sensors deployed along border. Tunnel detection improves dramatically.' },
+  { year: 1970, escapes: 5, failed: 9, deaths: 2, note: 'Ostpolitik creates legal emigration channels, reducing incentive for risky escapes.' },
+  { year: 1975, escapes: 3, failed: 7, deaths: 1, note: 'SM-70 automatic firing devices installed on border fence. Self-shooting installations.' },
+  { year: 1979, escapes: 4, failed: 5, deaths: 1, note: 'Strelczyk/Wetzel families escape by homemade hot air balloon (Sep 16). 28 minutes airborne.' },
+  { year: 1983, escapes: 2, failed: 8, deaths: 1, note: 'Border fortifications near-impenetrable. Most successful escapes now use forged documents.' },
+  { year: 1986, escapes: 2, failed: 6, deaths: 0, note: 'SM-70 devices removed under Western pressure. But death strip expanded, watchtowers upgraded.' },
+  { year: 1989, escapes: 1, failed: 2, deaths: 1, note: 'Chris Gueffroy shot Feb 6 -- last person killed at the Wall. 9 months later, the Wall opens.' },
+];
+
+const STASI_COUNTERMEASURES = [
+  { year: 1961, measure: 'Border sealed', desc: 'Barbed wire, then concrete. Initial fortification crude but effective. 156km of border.' },
+  { year: 1962, measure: 'Death strip created', desc: 'Buildings demolished to create open killing zone. Trip wires, raked sand to show footprints.' },
+  { year: 1963, measure: 'Informant saturation', desc: 'IMs (unofficial collaborators) recruited among escape networks. Many tunnels betrayed from inside.' },
+  { year: 1965, measure: 'Ground sensors', desc: 'Seismic and acoustic sensors detect underground digging. Tunnel success rate drops sharply.' },
+  { year: 1970, measure: 'Expanded border guard force', desc: '47,000 border troops. Guard dogs, searchlights, vehicle barriers. Shoot-to-kill order formalized.' },
+  { year: 1975, measure: 'SM-70 auto-firing devices', desc: 'Spring-loaded fragmentation mines on border fence. Triggered by touch. Removed 1984 under Western pressure.' },
+  { year: 1980, measure: 'Fortification generation 4', desc: 'Concrete wall 3.6m high, smooth rounded top (ungrippable). Anti-vehicle trenches. Signal fences.' },
+  { year: 1985, measure: 'Electronic surveillance grid', desc: 'Infrared sensors, low-light cameras, computerized alarm systems. Nearly zero-gap coverage.' },
+];
+
+const TUNNEL_PROFILE = {
+  famous: [
+    { name: 'Tunnel 29', year: 1962, length: 137, depth: 12, escapees: 29, method: 'Hand-dug from West to East. Financed by NBC documentary crew.' },
+    { name: 'Tunnel 57', year: 1964, length: 145, depth: 12, escapees: 57, method: 'Engineering students from FU Berlin. Took 6 months. One guard killed.' },
+    { name: 'Senior Citizens\' Tunnel', year: 1972, length: 98, depth: 8, escapees: 5, method: 'Retirees aged 62-81. Dug from a chicken coop. 17 months of digging.' },
+  ],
+};
+
+// ── Stasi Surveillance State Data ───────────────────────────────
+const STASI_STATS = {
+  fullTime: 91000,
+  informants: 173000,
+  totalPop: 16400000,
+  ratioToGestapo: { stasi: 63, gestapo: 2000, kgb: 595, fbi: 10400 },
+  filesKm: 111,
+  filesPersons: 5600000,
+  smellSamples: 5000,
+  phoneTaps: 100000,
+  mailOpened: 90000,
+  budgetPctGDP: 1.3,
+};
+
+const STASI_SCENARIOS = [
+  {
+    name: 'The Writer',
+    profile: 'A poet who reads unapproved manuscripts at private apartment gatherings. Audience of 15-30 people.',
+    trigger: 'A poem circulated at a reading contains oblique criticism of the Wall.',
+  },
+  {
+    name: 'The Pastor',
+    profile: 'A Lutheran minister who allows peace groups to meet in church basement. Shelters conscientious objectors.',
+    trigger: 'Church peace vigil attracts 200 people and Western media attention.',
+  },
+  {
+    name: 'The Engineer',
+    profile: 'A factory engineer who submits a formal complaint about production quota manipulation to party leadership.',
+    trigger: 'Complaint letter copied and circulated among coworkers. 40 signatures collected.',
+  },
+];
+
+const STASI_LEVELS = [
+  {
+    code: 'OPK', name: 'File Opened',
+    official: 'Operative Personenkontrolle -- preliminary assessment. The subject is placed under observation.',
+    actual: 'Your name enters the system. A file is created. Your mail is now opened and photographed. Your phone may be tapped. You do not know this.',
+    known: 'Nothing. You continue your life normally.',
+    gap: 'The Stasi already knows your daily schedule, your close friends, your family members. They have photographed your apartment building. They have identified your workplace supervisor and begun assessing whether they can be recruited as an informant.',
+  },
+  {
+    code: 'OV', name: 'Surveillance Initiated',
+    official: 'Operativer Vorgang -- full operational case. Dedicated case officer assigned. Budget allocated.',
+    actual: 'A team is now watching you. Observation posts established near your home and workplace. Your garbage is collected and analyzed. Your visitors are photographed and identified.',
+    known: 'Perhaps a vague feeling of being watched. A car parked too often on your street. But nothing concrete. You dismiss it as paranoia.',
+    gap: 'You are under 24-hour surveillance. Your apartment may have been entered while you were at work -- they are expert locksmiths. Listening devices may have been installed. Your closest friend has been approached and asked to report on your conversations.',
+  },
+  {
+    code: 'IM-PLANT', name: 'Informants Planted',
+    official: 'Inoffizielle Mitarbeiter recruited from the subject\'s social circle. Minimum 2 IMs per target.',
+    actual: 'Someone you trust -- a colleague, a neighbor, perhaps a friend from your university days -- is now reporting every conversation to a case officer. They meet their handler weekly. They write detailed reports about your emotional state, your opinions, your plans.',
+    known: 'You may notice a friend asking unusually probing questions. Or a new colleague who is very interested in your political opinions. But the Stasi selects IMs for their ability to appear natural. You almost certainly do not suspect.',
+    gap: 'The Stasi now has an inside view of your private thoughts. They know what you say to your spouse at dinner. They know your doubts, your fears, your moments of courage. This information shapes their next move.',
+  },
+  {
+    code: 'ZERSETZUNG', name: 'Decomposition Begins',
+    official: 'Zersetzung -- systematic destruction of the subject\'s personal and professional life through covert means.',
+    actual: 'Your career stalls. A promotion is blocked for vague reasons. Your child is denied university admission. Anonymous letters arrive suggesting your spouse is unfaithful. Your car breaks down repeatedly. Objects in your apartment are subtly rearranged -- a book moved, a drawer left slightly open. You begin to doubt your own memory.',
+    known: 'You know something is wrong. Life seems to be unraveling. But there is no visible enemy, no arrest, no accusation. You may suspect the Stasi, but you cannot prove anything. Your friends distance themselves -- some because they have been told to, others because your growing anxiety makes you difficult to be around.',
+    gap: 'Every misfortune is engineered. The Stasi has contacted your employer, your landlord, your spouse\'s workplace. The anonymous letters were written by your case officer. The car was sabotaged. The moved objects are a deliberate psychological technique called "silent house search" -- designed to make you feel watched without giving you evidence.',
+  },
+  {
+    code: 'ARREST', name: 'Arrest & Interrogation',
+    official: 'Subject taken to Untersuchungshaftanstalt Hohenschonhausen for interrogation.',
+    actual: 'Arrested at dawn. Driven in a windowless van along a deliberately confusing route. Placed in a cell with no windows, constant fluorescent light, and a camera. Interrogation sessions last 8-12 hours. The interrogator knows everything about you -- your file is hundreds of pages. They use what your informant friends told them to break you psychologically.',
+    known: 'Now you know. The full weight of the state is visible. But even now, you do not know who among your friends informed on you. That uncertainty -- who can you trust? -- is the Stasi\'s most powerful weapon even after arrest.',
+    gap: 'The interrogation is not about extracting information. They already have it. It is about breaking your will and obtaining a confession that justifies what they have already decided. The outcome was determined before you entered the room.',
+  },
+  {
+    code: 'DISPOSITION', name: 'Imprisonment or Forced Emigration',
+    official: 'Subject sentenced or expelled from the DDR. File closed.',
+    actual: 'Two outcomes: 1-8 years in Bautzen prison, or forced emigration to West Germany. Many dissidents were secretly sold to the West for hard currency -- the DDR earned 3.5 billion DM from this human trade. Your friends in the East are warned: association with you is now itself suspicious.',
+    known: 'If imprisoned, you know everything. If emigrated, you know you have been expelled but may spend years wondering who betrayed you. The Stasi files, opened after 1990, finally answer that question -- often devastatingly.',
+    gap: 'The system has processed you. Your case file is archived. The informants who reported on you continue their lives, carrying the secret. Some feel guilty. Some feel justified. Many will not learn that their reports have been preserved until the files open in the 1990s.',
+  },
+];
+
+// ── Regime Collapse Signal Detector Data ─────────────────────────
+const COLLAPSE_SIGNALS = [
+  {
+    date: 'May 2, 1989', event: 'Hungary Opens Border Fence',
+    detail: 'Hungary begins dismantling its border fence with Austria. The Iron Curtain develops a hole. East Germans can now reach the West by traveling through Hungary -- a route the DDR cannot control without Hungarian cooperation.',
+    sedThought: 'The SED Politburo dismisses it as a Hungarian internal matter. They trust the fraternal socialist relationship. Key error: they do not understand that Gorbachev has signaled to Budapest that Soviet intervention is off the table.',
+    couldHave: 'Close the DDR-Czechoslovak border (the transit route to Hungary). This would have been internally consistent but diplomatically catastrophic -- imprisoning your own citizens from visiting fraternal socialist states.',
+    actuallyDid: 'Nothing. They watched and complained through diplomatic channels.',
+    whyWrong: 'They still believed in the permanence of the bloc. If Hungary was opening up, that was Hungary\'s problem. The DDR\'s border was secure. This was a failure of structural imagination.',
+    options: [
+      { label: 'Close DDR-Czech border', outcome: 'DELAYED', effect: 'Slows exodus but creates domestic fury. Citizens cannot visit allied states. International condemnation. Buys 3-6 months.', viable: true },
+      { label: 'Negotiate with Hungary to close the gap', outcome: 'FAILED', effect: 'Hungary is pursuing its own reform agenda. They refuse. Gorbachev backs Budapest. The DDR has no leverage.', viable: false },
+      { label: 'Ignore it', outcome: 'ACTUAL', effect: 'The exodus begins slowly, then accelerates. By September, thousands are fleeing through Hungary daily.', viable: false },
+    ],
+  },
+  {
+    date: 'June 4, 1989', event: 'Solidarity Wins Polish Elections',
+    detail: 'Solidarity wins 99 of 100 Senate seats in semi-free elections. The first non-communist government in the Eastern Bloc since 1948. The Brezhnev Doctrine is dead in practice.',
+    sedThought: 'Honecker is furious but impotent. He considers cutting relations with Poland. Some Politburo members begin private conversations about the future, but no formal discussion occurs.',
+    couldHave: 'Begin controlled reform from above. Offer limited elections, economic liberalization, travel permissions. Co-opt the opposition before it organizes.',
+    actuallyDid: 'Honecker congratulated the Chinese on Tiananmen Square (same day). The Politburo doubled down on orthodoxy.',
+    whyWrong: 'This was the last moment when reform from above might have preserved the regime in modified form. By congratulating Beijing\'s crackdown while Warsaw embraced democracy, the SED placed itself on the wrong side of history within its own bloc.',
+    options: [
+      { label: 'Begin controlled reform', outcome: 'POSSIBLE', effect: 'Opens political space. Risk: reforms accelerate beyond control (the Gorbachev problem). But the regime might have survived in modified form. This is the only window.', viable: true },
+      { label: 'Crack down (Tiananmen model)', outcome: 'CATASTROPHIC', effect: 'Military suppression of any protests. International isolation. Gorbachev withdraws support. The regime survives as a pariah state, maybe 2-3 more years.', viable: true },
+      { label: 'Maintain orthodoxy', outcome: 'ACTUAL', effect: 'The regime rigidifies while the world changes around it. By September, it will be too late for reform.', viable: false },
+    ],
+  },
+  {
+    date: 'Sep 10, 1989', event: 'Hungary Opens Border to Austria',
+    detail: 'Hungary formally opens its western border. 13,000 East Germans cross to Austria in 3 days. The dam has broken. East Germans camp in West German embassies in Prague and Warsaw.',
+    sedThought: 'Panic. Honecker is hospitalized (gallbladder surgery, but also political paralysis). The Politburo debates but cannot agree on a response. Some want martial law. Others want to let people leave (good riddance to troublemakers).',
+    couldHave: 'Announce immediate travel reform -- limited Western travel permits. Steal the opposition\'s main demand.',
+    actuallyDid: 'Allowed "special trains" from Prague embassy to the West, but routed them through DDR territory as a face-saving gesture. Citizens on the trains threw their DDR passports onto the tracks.',
+    whyWrong: 'The special trains were intended to show sovereignty but became symbols of humiliation. Every passport thrown from a train window was a vote of no confidence. The regime was hemorrhaging legitimacy by the hour.',
+    options: [
+      { label: 'Announce travel reform', outcome: 'INSUFFICIENT', effect: 'Might slow the exodus. But the demand has evolved: people no longer want to visit the West, they want to change the East. Travel reform alone will not satisfy.', viable: true },
+      { label: 'Seal all borders', outcome: 'SIEGE', effect: 'Turning the DDR into a complete prison. Diplomatic isolation. Economic collapse (dependent on West German trade credits). Gorbachev cuts support. Regime collapses violently within 12 months.', viable: false },
+      { label: 'Allow orderly emigration', outcome: 'ACTUAL', effect: 'Each departure weakens the state further. The people leaving are the young, the skilled, the ambitious. The DDR is aging and shrinking in real time.', viable: false },
+    ],
+  },
+  {
+    date: 'Oct 9, 1989', event: 'Leipzig Monday Demonstration',
+    detail: '70,000 march in Leipzig. The Stasi has assembled armed units, hospitals have been told to prepare for mass casualties, blood supplies stockpiled. A Tiananmen-scale crackdown is operationally prepared.',
+    sedThought: 'Honecker (now back) demands a "Chinese solution." But Egon Krenz, the heir apparent, and local SED leaders in Leipzig recognize that Gorbachev will not support a massacre. The Leipzig Six (local politicians and conductors) negotiate with security forces.',
+    couldHave: 'Order the crackdown. The troops are ready. The hospitals are ready. This is the regime\'s last clear military option.',
+    actuallyDid: 'Local SED officials and security commanders chose restraint. The demonstration passed peacefully. The following Monday: 120,000 marched. Then 300,000. The momentum became unstoppable.',
+    whyWrong: 'The Politburo was paralyzed between Honecker\'s hardline demands and reality on the ground. By NOT shooting, they revealed that the threat of force was a bluff. Every subsequent demonstration was larger because people knew: they will not fire.',
+    options: [
+      { label: 'Order Tiananmen-style crackdown', outcome: 'PYRRHIC', effect: 'Hundreds killed. International isolation. Gorbachev publicly condemns. Soviet troops in DDR remain in barracks. The regime survives months, not years. Civil war possible.', viable: false },
+      { label: 'Negotiate with demonstrators', outcome: 'ACTUAL', effect: 'Opens dialogue. But dialogue legitimizes the opposition. The regime cannot offer enough to satisfy demands without dissolving itself.', viable: true },
+      { label: 'Replace Honecker immediately', outcome: 'DELAYED', effect: 'Krenz replaces Honecker on Oct 18 anyway. But earlier replacement might have created a reform window. Problem: Krenz is not a reformer, he is Honecker\'s chosen successor. No Gorbachev exists in the SED.', viable: true },
+    ],
+  },
+  {
+    date: 'Nov 4, 1989', event: 'Alexanderplatz Demonstration',
+    detail: '500,000 gather at Alexanderplatz -- the largest demonstration in DDR history. Speakers include writers, actors, and reform communists. The crowd demands free elections, free press, and the end of SED monopoly on power.',
+    sedThought: 'Krenz (now General Secretary, replacing Honecker Oct 18) tries to position himself as a reformer. The Politburo frantically drafts new travel regulations. They know they must offer something or lose everything. But they cannot agree on how much freedom to permit.',
+    couldHave: 'Announce free elections for spring 1990. Accept multi-party democracy. Transform the SED into a social democratic party.',
+    actuallyDid: 'Drafted confusing travel regulations that required applications, permits, and bureaucratic approval. Satisfied no one. Five days later, Schabowski would accidentally announce something far more radical.',
+    whyWrong: 'The Politburo was drafting regulations for a country that no longer believed in regulations. The gap between what the regime offered (managed travel permits) and what the people demanded (freedom) was unbridgeable. Any reform short of free elections was insufficient. But free elections would end the SED\'s rule -- which is the one thing the Politburo existed to prevent.',
+    options: [
+      { label: 'Announce free elections', outcome: 'SURRENDER', effect: 'The regime dissolves itself through democratic process. SED loses power within months. But it is orderly, legitimate, and preserves some institutional continuity. This is essentially what happened in March 1990 anyway.', viable: true },
+      { label: 'Offer travel reform', outcome: 'ACTUAL', effect: 'The regulations drafted over the next 5 days are the ones Schabowski will accidentally announce on November 9. The reform is real but bureaucratic. It satisfies no one. Events overtake the process.', viable: false },
+      { label: 'Resign en masse', outcome: 'CHAOS', effect: 'Power vacuum. Who governs? The demonstrators have no organizational structure. Round table negotiations would follow, but in a more chaotic context than the orderly transition that actually occurred.', viable: false },
+    ],
+  },
+  {
+    date: 'Nov 9, 1989', event: 'Schabowski\'s Press Conference',
+    detail: 'At 6:53 PM, Politburo spokesman Gunter Schabowski announces new travel regulations. Asked "when do they take effect?" he shuffles his papers and says "immediately, without delay." He had not been briefed on the details. The regulations were not supposed to take effect until the next day, with orderly processing. Within hours, thousands surge to border crossings. At 11:30 PM, guards at Bornholmer Strasse open the gates.',
+    sedThought: 'Chaos. Schabowski did not understand what he was announcing. Krenz was not informed until it was too late. The border guards received no orders. Colonel Harald Jager at Bornholmer Strasse made the decision to open the gates himself -- overwhelmed by the crowd and unwilling to order his men to fire.',
+    couldHave: 'Nothing. By November 9, no decision by the SED leadership could have changed the outcome. The question was not WHETHER the Wall would open but HOW -- orderly or chaotic.',
+    actuallyDid: 'An accidental press conference statement triggered a spontaneous opening. The regime lost control of its own policy announcement.',
+    whyWrong: 'The regime was already dead. It just had not stopped moving yet. Schabowski\'s mistake did not cause the fall of the Wall -- it caused the fall of the Wall to happen on November 9 instead of November 10 or November 15. The fundamental dynamic was irreversible.',
+    options: [
+      { label: 'Implement regulations as planned (next day)', outcome: 'DELAYED 24H', effect: 'The Wall opens on November 10 instead of November 9. The regulations require applications and permits. Within days, the bureaucratic process is overwhelmed. The result is the same.', viable: true },
+      { label: 'Revoke the travel regulations', outcome: 'IMPOSSIBLE', effect: 'Schabowski has said "immediately" on live television. The announcement has been broadcast globally. Revoking it would require using force against civilians at the border crossings. There are no orders to fire. There is no one to give them.', viable: false },
+      { label: 'Let events unfold', outcome: 'ACTUAL', effect: 'The Wall opens. Germany reunifies within a year. The Cold War ends. The 20th century\'s most consequential accident.', viable: true },
+    ],
+  },
+];
+
 // ── Scholarly micro-content ──────────────────────────────────────
 const B_TIPS = {
   tunnel: "Between 1961 and 1989, at least 70 escape tunnels were dug under the Berlin Wall, though most were discovered before completion. Tunnel 57, dug in 1964 by a group led by engineering students, was the longest at 145 meters and ran 12 meters deep. It enabled 57 people to escape in two nights before an East German informant betrayed it. The most famous tunnel operation was not an escape but an intelligence operation: the CIA/MI6 'Berlin Tunnel' (Operation Gold/Stopwatch, 1953-1956) tapped Soviet military communications from a tunnel running from the American sector into East Berlin. The KGB knew about the tunnel from the start -- their mole George Blake had revealed it -- but let it operate for 11 months to protect Blake's cover. The intelligence collected was voluminous but strategically compromised.",
@@ -400,6 +695,19 @@ function BerlinView({ setView }) {
   const [revealedAnalyses, setRevealedAnalyses] = useState({});
   const [selectedPressureEvt, setSelectedPressureEvt] = useState(null);
   const topRef = useRef(null);
+
+  // ── New instrument states ───────────────────────────────────────
+  const [escSelectedCrisis, setEscSelectedCrisis] = useState(0);
+  const [escCounterfactual, setEscCounterfactual] = useState(null);
+  const [tunnelYear, setTunnelYear] = useState(1975);
+  const [escapeRoute, setEscapeRoute] = useState('tunnel');
+  const [escapeTeam, setEscapeTeam] = useState('small');
+  const [stasiAwareness, setStasiAwareness] = useState('low');
+  const [stasiLevel, setStasiLevel] = useState(0);
+  const [stasiScenario, setStasiScenario] = useState(0);
+  const [signalStep, setSignalStep] = useState(0);
+  const [signalChoices, setSignalChoices] = useState({});
+  const [signalRevealed, setSignalRevealed] = useState({});
 
   // ── Scholarly tooltip renderer & icons ─────────────────────────
   const TipBox = (key) => {
@@ -509,6 +817,10 @@ function BerlinView({ setView }) {
       { id: 'intelligence', label: 'Intelligence', desc: '5 Espionage Ops' },
       { id: 'counterfactuals', label: 'Counterfactuals', desc: '4 Divergences' },
       { id: 'pressure', label: 'Pressure Graph', desc: '14 Events, 1945\u201389' },
+      { id: 'escalation', label: 'Escalation', desc: '5 Crises Modeled' },
+      { id: 'tunnels', label: 'Escape Routes', desc: 'Tunnel & Methods' },
+      { id: 'stasi', label: 'Stasi Machine', desc: 'Surveillance Anatomy' },
+      { id: 'signals', label: 'Collapse Signals', desc: '6 Missed Warnings' },
     ];
     return (
       <div>
