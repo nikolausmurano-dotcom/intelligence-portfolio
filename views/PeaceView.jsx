@@ -351,6 +351,16 @@ function PeaceView({ setView }) {
   const [spoilerRevealed, setSpoilerRevealed] = useState({});
   const [justiceExpanded, setJusticeExpanded] = useState(null);
 
+  // ── Mediation technique selector state ──────────────────
+  const [medScenario, setMedScenario] = useState(0);
+  const [medChoices, setMedChoices] = useState({});
+  const [medRevealed, setMedRevealed] = useState({});
+
+  // ── Peace process timeline state ────────────────────────
+  const [tlSort, setTlSort] = useState('duration');
+  const [tlFactor, setTlFactor] = useState('none');
+  const [tlExpanded, setTlExpanded] = useState(null);
+
   const C = PC_C;
 
   // ── Scholarly Micro-Icons & Tooltip ──────────────────────────
@@ -422,6 +432,8 @@ function PeaceView({ setView }) {
     { id: 'toolkit',   label: 'Toolkit',      icon: '\u2692' },
     { id: 'spoiler',   label: 'Spoilers',     icon: '\u26A0' },
     { id: 'justice',   label: 'Justice',      icon: '\u2696' },
+    { id: 'mediation', label: 'Mediation',    icon: '\u2637' },
+    { id: 'timeline',  label: 'Timeline',     icon: '\u23F1' },
   ];
 
   // -- Spoiler Management Simulator -----------------------------------
@@ -1159,6 +1171,243 @@ function PeaceView({ setView }) {
     </div>
   );
 
+  // -- Mediation Technique Selector ──────────────────────────────────
+  const renderMediation = () => {
+    const MED_SCENARIOS = [
+      { id: 'territorial', name: 'Territorial Dispute', context: 'Two neighboring states claim the same border region. Both have historical and ethnic ties to the area. Sporadic border clashes have killed 200+ people. An international border commission exists but lacks enforcement power. Neither side can achieve military victory.', bgColor: C.blue,
+        approaches: {
+          facilitative: { fit: 'medium', reason: 'Facilitative mediation helps when parties can talk but need process management. Here, the power asymmetry and sovereignty stakes make pure facilitation insufficient -- the mediator needs to propose solutions, not just manage dialogue.' },
+          evaluative: { fit: 'high', reason: 'Evaluative mediation fits well. The mediator can reference international law (uti possidetis juris), precedent from similar disputes (Eritrea-Ethiopia Boundary Commission), and propose boundary demarcation with independent verification. The legitimacy of legal frameworks gives evaluative judgments traction.' },
+          transformative: { fit: 'low', reason: 'Transformative mediation focuses on relationship change and empowerment. While important long-term, territorial disputes are fundamentally about sovereignty and control -- transformation without a concrete border solution leaves the core issue unresolved.' },
+          shuttle: { fit: 'high', reason: 'Shuttle diplomacy is often essential in territorial disputes where direct contact is politically toxic. The mediator can explore concessions privately that neither side can offer publicly. Kissinger\'s Sinai shuttle (1974-75) is the paradigm case.' },
+          track_two: { fit: 'medium', reason: 'Track-two can prepare the ground by allowing academics and retired officials to explore creative solutions (joint sovereignty zones, phased handovers, resource-sharing agreements) that official negotiators cannot publicly consider.' },
+        },
+      },
+      { id: 'ethnic', name: 'Ethnic Violence', context: 'A multi-ethnic state has experienced escalating intercommunal violence. The dominant ethnic group controls the military and government. A minority group has formed armed militias after a massacre of 300 civilians. Neighboring states are arming proxies. 50,000 displaced.', bgColor: C.red,
+        approaches: {
+          facilitative: { fit: 'low', reason: 'Pure facilitation fails here because the power asymmetry is too great. The dominant group has no incentive to make concessions in a facilitated process where the mediator cannot apply pressure. The minority group will not trust a process that treats unequal parties as equal.' },
+          evaluative: { fit: 'medium', reason: 'Evaluative mediation can invoke international humanitarian law and R2P norms. However, evaluative judgments against the dominant group may cause them to withdraw. Works best when backed by credible threat of sanctions or intervention.' },
+          transformative: { fit: 'high', reason: 'Transformative mediation addresses the deeper relational dynamics: dehumanization, historical grievances, identity threats. Lederach\'s "moral imagination" framework is built for this context. Must be combined with security guarantees, but relationship transformation is the long-term key.' },
+          shuttle: { fit: 'high', reason: 'Essential when direct contact could trigger violence or political backlash. The mediator can build separate trust with each community, identify moderates within the dominant group, and construct a framework before bringing parties together. Zartman\'s "ripeness" assessment is critical before attempting direct talks.' },
+          track_two: { fit: 'high', reason: 'Track-two is critical here. Religious leaders, women\'s organizations, and civil society can create cross-ethnic dialogue spaces that armed actors cannot. The Northern Ireland model shows track-two can sustain contact when official channels collapse.' },
+        },
+      },
+      { id: 'resource', name: 'Resource Competition', context: 'Three countries share a major river basin. Upstream country is building a massive dam that will reduce downstream water flow by 40%. Downstream countries depend on the river for agriculture feeding 30 million people. Diplomatic relations are deteriorating. Climate change is reducing overall water availability.', bgColor: C.green,
+        approaches: {
+          facilitative: { fit: 'high', reason: 'Facilitative mediation excels in resource disputes because the parties often share underlying interests (water security, economic development) even when positions conflict. A skilled facilitator can reframe zero-sum water allocation into positive-sum water management. The 1995 Mekong Agreement used facilitative processes.' },
+          evaluative: { fit: 'high', reason: 'Evaluative mediation can apply international water law (UN Watercourses Convention 1997, Helsinki Rules). The "equitable and reasonable utilization" and "no significant harm" principles provide frameworks for expert-driven allocation. Technical hydrological assessments give evaluative mediators strong analytical ground.' },
+          transformative: { fit: 'low', reason: 'Transformative mediation is less suited to resource disputes, which are fundamentally technical and distributional rather than relational. The parties are not in an identity conflict -- they have a practical resource allocation problem that requires engineering and legal solutions.' },
+          shuttle: { fit: 'medium', reason: 'Shuttle diplomacy is useful early in the process when direct negotiation is politically difficult. The upstream country may resist multilateral formats where it is outnumbered. However, the technical complexity of water-sharing eventually requires joint sessions with engineers and hydrologists.' },
+          track_two: { fit: 'medium', reason: 'Track-two involving water engineers, agricultural scientists, and environmental NGOs can generate creative technical solutions (water banking, seasonal flow agreements, joint dam management) before politicians engage. The Indus Waters Treaty (1960) benefited from extensive technical track-two work.' },
+        },
+      },
+    ];
+    var scenario = MED_SCENARIOS[medScenario];
+    var APPROACHES = [
+      { id: 'facilitative', name: 'Facilitative', desc: 'Mediator manages the process but does not suggest solutions. Empowers parties to generate their own agreement. Based on Fisher/Ury\'s principled negotiation.' },
+      { id: 'evaluative', name: 'Evaluative', desc: 'Mediator assesses the merits of each side\'s position and proposes solutions based on legal or normative frameworks. More directive than facilitative.' },
+      { id: 'transformative', name: 'Transformative', desc: 'Mediator focuses on changing the relationship between parties -- building empathy, recognition, and empowerment. Based on Bush & Folger\'s relational framework.' },
+      { id: 'shuttle', name: 'Shuttle Diplomacy', desc: 'Mediator meets each side separately, carrying proposals back and forth. Allows face-saving concessions and private exploration of positions. Kissinger\'s model.' },
+      { id: 'track_two', name: 'Track-Two Diplomacy', desc: 'Unofficial channels involving non-state actors (academics, religious leaders, civil society). Creates space for creative solutions without official commitment.' },
+    ];
+    var choiceKey = scenario.id;
+    var userChoice = medChoices[choiceKey];
+    var isRevealed = medRevealed[choiceKey];
+    return (
+      <div>
+        <div style={{ padding: 16, background: C.card, border: '1px solid ' + C.cardBd, borderLeft: '3px solid ' + C.accent, marginBottom: 16, borderRadius: 6 }}>
+          <p style={{ fontFamily: PC_MONO, fontSize: 10, color: C.accent, letterSpacing: '.12em', marginBottom: 8 }}>MEDIATION TECHNIQUE SELECTOR</p>
+          <p style={{ fontSize: 13, color: C.tx, lineHeight: 1.7, marginBottom: 8 }}>
+            Select a conflict scenario and choose the mediation approach you believe is most appropriate. The system evaluates each approach's fit using Zartman's ripeness theory, Fisher and Ury's principled negotiation framework, and Lederach's conflict transformation model.
+          </p>
+        </div>
+        <div style={{ display: 'flex', gap: 6, marginBottom: 16 }}>
+          {MED_SCENARIOS.map(function(s, si) {
+            var active = medScenario === si;
+            return (
+              <button key={s.id} onClick={function() { setMedScenario(si); }}
+                style={{ flex: 1, padding: '10px 12px', textAlign: 'center', fontFamily: PC_MONO, fontSize: 11, cursor: 'pointer', background: active ? s.bgColor + '18' : 'transparent', border: '1px solid ' + (active ? s.bgColor : C.line), color: active ? C.tx : C.tx3, borderRadius: 4 }}>
+                {s.name}
+              </button>
+            );
+          })}
+        </div>
+        <div style={{ padding: 14, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6, marginBottom: 16 }}>
+          <div style={{ fontFamily: PC_MONO, fontSize: 9, color: scenario.bgColor, marginBottom: 6 }}>SCENARIO BRIEFING</div>
+          <p style={{ fontSize: 13, color: C.tx, lineHeight: 1.7 }}>{scenario.context}</p>
+        </div>
+        <div style={{ fontFamily: PC_MONO, fontSize: 10, color: C.tx3, marginBottom: 8 }}>SELECT YOUR APPROACH:</div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 16 }}>
+          {APPROACHES.map(function(a) {
+            var selected = userChoice === a.id;
+            var fitData = isRevealed ? scenario.approaches[a.id] : null;
+            var fitColor = fitData ? (fitData.fit === 'high' ? C.green : fitData.fit === 'medium' ? C.amber : C.red) : C.tx3;
+            return (
+              <div key={a.id} style={{ padding: 12, background: selected ? C.accentBg : C.card, border: '1px solid ' + (selected ? C.accent : C.cardBd), borderRadius: 4, cursor: isRevealed ? 'default' : 'pointer' }}
+                onClick={function() { if (!isRevealed) { setMedChoices(function(prev) { var c = Object.assign({}, prev); c[choiceKey] = a.id; return c; }); } }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <div>
+                    <span style={{ fontFamily: PC_MONO, fontSize: 12, color: selected ? C.accent : C.tx, fontWeight: 600 }}>{a.name}</span>
+                    <p style={{ fontSize: 11, color: C.tx2, lineHeight: 1.5, marginTop: 4 }}>{a.desc}</p>
+                  </div>
+                  {fitData && (
+                    <span style={{ fontFamily: PC_MONO, fontSize: 10, padding: '3px 8px', borderRadius: 3, background: fitColor + '18', color: fitColor, border: '1px solid ' + fitColor + '40', whiteSpace: 'nowrap', marginLeft: 12 }}>
+                      {fitData.fit.toUpperCase()} FIT
+                    </span>
+                  )}
+                </div>
+                {fitData && (
+                  <p style={{ fontSize: 11, color: C.tx2, lineHeight: 1.6, marginTop: 8, paddingTop: 8, borderTop: '1px solid ' + C.line }}>{fitData.reason}</p>
+                )}
+              </div>
+            );
+          })}
+        </div>
+        {!isRevealed && userChoice && (
+          <button onClick={function() { setMedRevealed(function(prev) { var c = Object.assign({}, prev); c[choiceKey] = true; return c; }); }}
+            style={{ padding: '8px 20px', fontFamily: PC_MONO, fontSize: 11, cursor: 'pointer', background: C.accentBg, border: '1px solid ' + C.accent, color: C.accent, borderRadius: 3 }}>
+            Evaluate All Approaches
+          </button>
+        )}
+        {isRevealed && (
+          <div style={{ padding: 14, background: C.accentBg, border: '1px solid ' + C.accent + '30', borderRadius: 3, marginTop: 16 }}>
+            <div style={{ fontFamily: PC_MONO, fontSize: 10, color: C.accent, marginBottom: 6 }}>FRAMEWORK REFERENCE</div>
+            <p style={{ fontSize: 12, color: C.tx, lineHeight: 1.7 }}>
+              Zartman's ripeness theory holds that mediation succeeds only when parties reach a "mutually hurting stalemate" and perceive a "way out." The choice of technique must match the conflict's ripeness. Fisher and Ury's "Getting to Yes" (1981) established principled negotiation: focus on interests not positions, generate options for mutual gain, use objective criteria. Lederach's conflict transformation framework extends beyond settlement to address relational and structural causes of violence.
+            </p>
+            <p style={{ fontSize: 10, color: C.tx3, fontFamily: PC_MONO, marginTop: 8, lineHeight: 1.6 }}>
+              Zartman, "Ripe for Resolution" (1989). Fisher & Ury, "Getting to Yes" (1981). Lederach, "The Moral Imagination" (2005). Bush & Folger, "The Promise of Mediation" (1994). Bercovitch, "International Mediation" (1996).
+            </p>
+          </div>
+        )}
+      </div>
+    );
+  };
+
+  // -- Peace Process Duration Analyzer ──────────────────────────────
+  const renderTimeline = () => {
+    var PROCESSES = [
+      { id: 'ireland', name: 'Northern Ireland', years: 30, start: 1968, end: 1998, outcome: 'Success (Good Friday Agreement)', status: 'resolved', factors: { complexity: 'medium', spoilers: 'high', external: 'high', institutions: 'strong', identity: 'high' }, note: 'Track-II contacts from 1972. Multiple failed ceasefires. Creative constitutional engineering. Decommissioning took until 2005. Legacy justice issues unresolved 25+ years later.' },
+      { id: 'colombia', name: 'Colombia (FARC)', years: 52, start: 1964, end: 2016, outcome: 'Success (Havana Agreement)', status: 'resolved', factors: { complexity: 'high', spoilers: 'high', external: 'medium', institutions: 'medium', identity: 'medium' }, note: 'Multiple failed negotiations (1984, 1991, 1999). Havana talks 2012-2016. Initial referendum rejected the agreement (50.2% No). Revised agreement ratified by Congress. Implementation ongoing with significant challenges.' },
+      { id: 'palestine', name: 'Israel-Palestine', years: 75, start: 1948, end: null, outcome: 'Ongoing / No resolution', status: 'ongoing', factors: { complexity: 'extreme', spoilers: 'extreme', external: 'extreme', institutions: 'weak', identity: 'extreme' }, note: 'Oslo Accords (1993) created interim framework but no final status agreement. Camp David (2000) and Annapolis (2007) failed. Settlement expansion, Gaza conflicts, and political fragmentation have progressively narrowed the space for negotiation.' },
+      { id: 'mozambique', name: 'Mozambique', years: 2, start: 1990, end: 1992, outcome: 'Success (Rome Agreement)', status: 'resolved', factors: { complexity: 'low', spoilers: 'low', external: 'medium', institutions: 'weak', identity: 'low' }, note: 'Mediated by the Community of Sant\'Egidio (Catholic lay organization). Cold War end removed external drivers. Both parties exhausted. Relatively clean bilateral conflict without ethnic dimension made resolution simpler.' },
+      { id: 'bosnia', name: 'Bosnia', years: 3, start: 1992, end: 1995, outcome: 'Imposed (Dayton Agreement)', status: 'frozen', factors: { complexity: 'high', spoilers: 'high', external: 'high', institutions: 'weak', identity: 'extreme' }, note: 'NATO intervention forced the parties to Dayton. Agreement imposed rather than negotiated. Created dysfunctional governance structure that persists. Ethnic divisions institutionalized. Technically at peace but functionally divided.' },
+      { id: 'rwanda', name: 'Rwanda', years: 4, start: 1990, end: 1994, outcome: 'Failed (Arusha) / Military victory', status: 'failed_then_imposed', factors: { complexity: 'extreme', spoilers: 'extreme', external: 'low', institutions: 'weak', identity: 'extreme' }, note: 'Arusha Accords (1993) were comprehensive on paper but failed catastrophically. Extremist spoilers launched genocide. RPF military victory ended the genocide. Post-genocide justice via Gacaca courts processed 1.9 million cases.' },
+      { id: 'aceh', name: 'Aceh (Indonesia)', years: 29, start: 1976, end: 2005, outcome: 'Success (Helsinki MoU)', status: 'resolved', factors: { complexity: 'medium', spoilers: 'medium', external: 'low', institutions: 'medium', identity: 'high' }, note: 'The 2004 tsunami created a humanitarian crisis that opened a window for peace. Former Finnish President Ahtisaari mediated. The disaster shifted the cost-benefit calculation for both sides. A natural disaster as catalyst for peace is analytically significant.' },
+      { id: 'srilanka', name: 'Sri Lanka', years: 26, start: 1983, end: 2009, outcome: 'Military victory (no negotiated peace)', status: 'military_end', factors: { complexity: 'high', spoilers: 'high', external: 'medium', institutions: 'medium', identity: 'extreme' }, note: 'Norwegian-mediated ceasefire (2002) collapsed by 2006. Government chose military solution over negotiation. LTTE defeated in 2009 with significant civilian casualties. No transitional justice process. Underlying grievances largely unaddressed.' },
+    ];
+    var sorted = PROCESSES.slice().sort(function(a, b) {
+      if (tlSort === 'duration') return b.years - a.years;
+      if (tlSort === 'start') return a.start - b.start;
+      if (tlSort === 'outcome') return (a.status > b.status ? 1 : -1);
+      return 0;
+    });
+    var maxYears = 80;
+    var FACTORS = [
+      { id: 'none', label: 'No adjustment' },
+      { id: 'complexity', label: 'Conflict complexity' },
+      { id: 'spoilers', label: 'Spoiler intensity' },
+      { id: 'external', label: 'External involvement' },
+      { id: 'institutions', label: 'Institutional strength' },
+      { id: 'identity', label: 'Identity dimension' },
+    ];
+    var factorScale = { low: 0.2, medium: 0.5, high: 0.75, extreme: 1.0, strong: 0.3, weak: 0.8 };
+    return (
+      <div>
+        <div style={{ padding: 16, background: C.card, border: '1px solid ' + C.cardBd, borderLeft: '3px solid ' + C.gold, marginBottom: 16, borderRadius: 6 }}>
+          <p style={{ fontFamily: PC_MONO, fontSize: 10, color: C.gold, letterSpacing: '.12em', marginBottom: 8 }}>PEACE PROCESS DURATION ANALYZER</p>
+          <p style={{ fontSize: 13, color: C.tx, lineHeight: 1.7 }}>
+            Comparing 8 peace processes by duration and outcome. Adjustable factors reveal what accelerates or decelerates resolution. The core insight: longer processes are not necessarily worse -- rushed agreements (Arusha, Dayton) often fail or produce frozen conflicts, while patient processes (Northern Ireland, Aceh) can produce durable peace.
+          </p>
+        </div>
+        <div style={{ display: 'flex', gap: 12, marginBottom: 16, flexWrap: 'wrap' }}>
+          <div>
+            <div style={{ fontFamily: PC_MONO, fontSize: 9, color: C.tx3, marginBottom: 4 }}>SORT BY</div>
+            <div style={{ display: 'flex', gap: 4 }}>
+              {[['duration','Duration'],['start','Start year'],['outcome','Outcome']].map(function(s) {
+                return (
+                  <button key={s[0]} onClick={function() { setTlSort(s[0]); }}
+                    style={{ padding: '4px 10px', fontFamily: PC_MONO, fontSize: 10, cursor: 'pointer', background: tlSort === s[0] ? C.accentBg : 'transparent', border: '1px solid ' + (tlSort === s[0] ? C.accent : C.line), color: tlSort === s[0] ? C.accent : C.tx3, borderRadius: 3 }}>
+                    {s[1]}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+          <div>
+            <div style={{ fontFamily: PC_MONO, fontSize: 9, color: C.tx3, marginBottom: 4 }}>HIGHLIGHT FACTOR</div>
+            <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
+              {FACTORS.map(function(f) {
+                return (
+                  <button key={f.id} onClick={function() { setTlFactor(f.id); }}
+                    style={{ padding: '4px 10px', fontFamily: PC_MONO, fontSize: 10, cursor: 'pointer', background: tlFactor === f.id ? C.accentBg : 'transparent', border: '1px solid ' + (tlFactor === f.id ? C.accent : C.line), color: tlFactor === f.id ? C.accent : C.tx3, borderRadius: 3 }}>
+                    {f.label}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+        {sorted.map(function(p) {
+          var barWidth = Math.min(p.years / maxYears * 100, 100);
+          var statusColor = p.status === 'resolved' ? C.green : p.status === 'ongoing' ? C.amber : p.status === 'frozen' ? C.blue : C.red;
+          var factorVal = tlFactor !== 'none' && p.factors[tlFactor] ? p.factors[tlFactor] : null;
+          var factorColor = factorVal ? (factorScale[factorVal] > 0.7 ? C.red : factorScale[factorVal] > 0.4 ? C.amber : C.green) : null;
+          var expanded = tlExpanded === p.id;
+          return (
+            <div key={p.id} style={{ padding: 12, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 4, marginBottom: 8, cursor: 'pointer' }}
+              onClick={function() { setTlExpanded(expanded ? null : p.id); }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                  <span style={{ fontFamily: PC_MONO, fontSize: 12, color: C.tx, fontWeight: 600 }}>{p.name}</span>
+                  <span style={{ fontFamily: PC_MONO, fontSize: 10, padding: '2px 6px', borderRadius: 2, background: statusColor + '18', color: statusColor, border: '1px solid ' + statusColor + '40' }}>
+                    {p.status === 'resolved' ? 'RESOLVED' : p.status === 'ongoing' ? 'ONGOING' : p.status === 'frozen' ? 'FROZEN' : 'FAILED'}
+                  </span>
+                  {factorVal && (
+                    <span style={{ fontFamily: PC_MONO, fontSize: 9, padding: '2px 6px', borderRadius: 2, background: factorColor + '18', color: factorColor }}>
+                      {tlFactor}: {factorVal}
+                    </span>
+                  )}
+                </div>
+                <span style={{ fontFamily: PC_MONO, fontSize: 11, color: C.tx2 }}>{p.years}{p.end ? '' : '+'} years ({p.start}-{p.end || 'present'})</span>
+              </div>
+              <div style={{ height: 8, background: 'rgba(255,255,255,.04)', borderRadius: 4, overflow: 'hidden', marginBottom: 4 }}>
+                <div style={{ width: barWidth + '%', height: '100%', background: statusColor, borderRadius: 4, opacity: 0.7 }} />
+              </div>
+              <div style={{ fontSize: 11, color: C.tx2 }}>{p.outcome}</div>
+              {expanded && (
+                <div style={{ marginTop: 10, paddingTop: 10, borderTop: '1px solid ' + C.line }}>
+                  <p style={{ fontSize: 12, color: C.tx, lineHeight: 1.7, marginBottom: 10 }}>{p.note}</p>
+                  <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+                    {Object.entries(p.factors).map(function(entry) {
+                      var fKey = entry[0]; var fVal = entry[1];
+                      var fc = factorScale[fVal] > 0.7 ? C.red : factorScale[fVal] > 0.4 ? C.amber : C.green;
+                      return (
+                        <div key={fKey} style={{ padding: '4px 8px', background: fc + '10', border: '1px solid ' + fc + '30', borderRadius: 3 }}>
+                          <span style={{ fontFamily: PC_MONO, fontSize: 9, color: C.tx3 }}>{fKey}: </span>
+                          <span style={{ fontFamily: PC_MONO, fontSize: 10, color: fc }}>{fVal}</span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+            </div>
+          );
+        })}
+        <div style={{ padding: 14, background: C.accentBg, border: '1px solid ' + C.accent + '30', borderRadius: 3, marginTop: 16 }}>
+          <div style={{ fontFamily: PC_MONO, fontSize: 10, color: C.accent, marginBottom: 6 }}>KEY INSIGHT</div>
+          <p style={{ fontSize: 12, color: C.tx, lineHeight: 1.7 }}>
+            Mozambique resolved in 2 years; Colombia took 52. But Mozambique's agreement held because the conflict was bilateral, non-ethnic, and the Cold War's end removed external drivers. Colombia's longer process reflected genuine complexity -- multiple armed groups, narco-economics, land reform, and transitional justice all had to be addressed. Rwanda's "quick" Arusha process (3 years) produced an agreement that collapsed into genocide. Dayton "resolved" Bosnia in 3 years but created a dysfunctional state. Duration is not the measure of success -- durability is.
+          </p>
+          <p style={{ fontSize: 10, color: C.tx3, fontFamily: PC_MONO, marginTop: 8, lineHeight: 1.6 }}>
+            Stedman, "Implementing Peace Agreements in Civil Wars" (2002). Darby & Mac Ginty, "The Management of Peace Processes" (2000). Fortna, "Does Peacekeeping Work?" (2008). Walter, "Committing to Peace" (2002).
+          </p>
+        </div>
+      </div>
+    );
+  };
+
   // -- Main Return — UN Mediation Chamber ────────────────────────────
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.tx, padding: '40px 20px', fontFamily: PC_SANS, position: 'relative', overflow: 'hidden' }}>
@@ -1238,6 +1487,8 @@ function PeaceView({ setView }) {
         {mode === 'toolkit' && renderToolkit()}
         {mode === 'spoiler' && renderSpoiler()}
         {mode === 'justice' && renderJustice()}
+        {mode === 'mediation' && renderMediation()}
+        {mode === 'timeline' && renderTimeline()}
 
         {/* Provenance */}
         <div style={{ marginTop: 40, paddingTop: 16, borderTop: `1px solid ${C.line}` }}>

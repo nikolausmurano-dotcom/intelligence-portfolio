@@ -398,6 +398,14 @@ function PSAnalysisView({ setView }) {
   const [debiasingTexts, setDebiasingTexts] = useState({});
   const [debiasingRevealed, setDebiasingRevealed] = useState({});
 
+  // ── Anchoring lab state ─────────────────────────────────
+  const [anchorEstimates, setAnchorEstimates] = useState({});
+  const [anchorRevealed, setAnchorRevealed] = useState({});
+
+  // ── System 1/2 diagnostic state ─────────────────────────
+  const [sysAnswers, setSysAnswers] = useState({});
+  const [sysRevealed, setSysRevealed] = useState(false);
+
   const C = PS_PALETTE;
 
   // Scholarly tooltip renderer
@@ -727,7 +735,7 @@ function PSAnalysisView({ setView }) {
 
         {/* Mode tabs — Lab station selector */}
         <div style={{ display: 'flex', gap: 4, marginBottom: 20, flexWrap: 'wrap', padding: '8px 0', borderBottom: '1px solid rgba(40,80,140,.06)' }}>
-          {[['challenge','EXPERIMENT','Challenge'],['review','DATA REVIEW','Review All'],['tradecraft','REFERENCE','SAT Library'],['biasmap','TOPOLOGY','Bias Map'],['calibration','FORECAST','Calibration'],['debiasing','WORKSHOP','Debiasing']].map(([id,tag,label]) => (
+          {[['challenge','EXPERIMENT','Challenge'],['review','DATA REVIEW','Review All'],['tradecraft','REFERENCE','SAT Library'],['biasmap','TOPOLOGY','Bias Map'],['calibration','FORECAST','Calibration'],['debiasing','WORKSHOP','Debiasing'],['anchoring','ANCHOR LAB','Anchoring'],['system','DUAL PROCESS','System 1/2']].map(([id,tag,label]) => (
             <button key={id} onClick={() => setViewMode(id)} style={{
               padding: '8px 16px', background: viewMode === id ? 'rgba(26,58,106,.12)' : 'transparent',
               border: viewMode === id ? '1px solid ' + C.purple : '1px solid rgba(40,80,140,.08)',
@@ -1219,6 +1227,206 @@ function PSAnalysisView({ setView }) {
                   </div>
                 )}
               </div>
+            </div>
+          );
+        })()}
+
+        {/* ── ANCHORING MODE ── */}
+        {viewMode === 'anchoring' && (() => {
+          var ANCHOR_TASKS = [
+            { id: 'a1', question: 'What percentage of African nations are members of the United Nations?', anchor: 65, anchorLabel: 'The wheel landed on 65.', controlMean: 25, anchoredMean: 45, actual: 28, source: 'Tversky & Kahneman, "Judgment Under Uncertainty" (1974). Subjects who saw the anchor of 65 estimated 45% on average; those who saw 10 estimated 25%.' },
+            { id: 'a2', question: 'In what year did Attila the Hun first invade Western Europe?', anchor: 900, anchorLabel: 'Consider: was it before or after 900 AD?', controlMean: 375, anchoredMean: 629, actual: 451, source: 'Adapted from Strack & Mussweiler (1997). Even absurd anchors (900 AD for an event in the 400s) shift estimates toward the anchor.' },
+            { id: 'a3', question: 'What is the average temperature in San Francisco in January (in Fahrenheit)?', anchor: 558, anchorLabel: 'Is it higher or lower than 558 degrees?', controlMean: 51, anchoredMean: 56, actual: 51, source: 'Adapted from Epley & Gilovich (2006). Even obviously absurd anchors produce measurable adjustment effects because System 1 generates an initial response anchored to the number before System 2 can correct.' },
+          ];
+          return (
+            <div>
+              <div style={{ padding: 16, background: C.card, border: '1px solid ' + C.cardBd, borderLeft: '3px solid ' + C.steel, marginBottom: 16, borderRadius: 6 }}>
+                <p style={{ fontFamily: PS_MONO, fontSize: 10, color: C.steel, letterSpacing: '.12em', marginBottom: 8 }}>ANCHORING DEMONSTRATION LAB</p>
+                <p style={{ fontSize: 13, color: C.tx, lineHeight: 1.7, marginBottom: 16 }}>
+                  Each task below presents an arbitrary anchor number before asking you to estimate a quantity. Your estimate will be compared to control group data from Tversky and Kahneman's original experiments. The lesson: knowing about anchoring does not protect you from it.
+                </p>
+              </div>
+              {ANCHOR_TASKS.map(function(task, ti) {
+                var est = anchorEstimates[task.id];
+                var rev = anchorRevealed[task.id];
+                var estNum = parseFloat(est);
+                var anchorPull = !isNaN(estNum) ? Math.abs(estNum - task.controlMean) / Math.max(1, Math.abs(task.anchoredMean - task.controlMean)) * 100 : 0;
+                var pullCapped = Math.min(anchorPull, 200);
+                return (
+                  <div key={task.id} style={{ padding: 16, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6, marginBottom: 12 }}>
+                    <div style={{ fontFamily: PS_MONO, fontSize: 10, color: C.purple, marginBottom: 8 }}>TASK {ti + 1} OF {ANCHOR_TASKS.length}</div>
+                    <div style={{ padding: 10, background: C.amberBg, border: '1px solid ' + C.amber + '30', borderRadius: 3, marginBottom: 12 }}>
+                      <p style={{ fontFamily: PS_MONO, fontSize: 11, color: C.amber }}>{task.anchorLabel}</p>
+                    </div>
+                    <p style={{ fontSize: 14, color: C.tx, lineHeight: 1.7, marginBottom: 12, fontWeight: 600 }}>{task.question}</p>
+                    <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginBottom: 12 }}>
+                      <input type="number" value={est || ''} disabled={rev}
+                        onChange={function(e) { setAnchorEstimates(function(prev) { var c = Object.assign({}, prev); c[task.id] = e.target.value; return c; }); }}
+                        placeholder="Your estimate..."
+                        style={{ width: 140, padding: '6px 10px', fontFamily: PS_MONO, fontSize: 13, background: C.card, color: C.tx, border: '1px solid ' + C.line, borderRadius: 3 }} />
+                      {!rev && est && (
+                        <button onClick={function() { setAnchorRevealed(function(prev) { var c = Object.assign({}, prev); c[task.id] = true; return c; }); }}
+                          style={{ padding: '6px 14px', fontFamily: PS_MONO, fontSize: 10, cursor: 'pointer', background: C.purpleBg, border: '1px solid ' + C.purple, color: C.purple, borderRadius: 3 }}>
+                          Reveal Analysis
+                        </button>
+                      )}
+                    </div>
+                    {rev && !isNaN(estNum) && (
+                      <div style={{ padding: 14, background: 'rgba(0,0,0,.2)', border: '1px solid ' + C.line, borderRadius: 3 }}>
+                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: 12, marginBottom: 14 }}>
+                          <div>
+                            <div style={{ fontFamily: PS_MONO, fontSize: 9, color: C.tx3, marginBottom: 4 }}>YOUR ESTIMATE</div>
+                            <div style={{ fontFamily: PS_MONO, fontSize: 18, color: C.tx }}>{estNum}</div>
+                          </div>
+                          <div>
+                            <div style={{ fontFamily: PS_MONO, fontSize: 9, color: C.tx3, marginBottom: 4 }}>ACTUAL ANSWER</div>
+                            <div style={{ fontFamily: PS_MONO, fontSize: 18, color: C.green }}>{task.actual}</div>
+                          </div>
+                          <div>
+                            <div style={{ fontFamily: PS_MONO, fontSize: 9, color: C.tx3, marginBottom: 4 }}>CONTROL GROUP</div>
+                            <div style={{ fontFamily: PS_MONO, fontSize: 18, color: C.steel }}>{task.controlMean}</div>
+                          </div>
+                          <div>
+                            <div style={{ fontFamily: PS_MONO, fontSize: 9, color: C.tx3, marginBottom: 4 }}>ANCHORED GROUP</div>
+                            <div style={{ fontFamily: PS_MONO, fontSize: 18, color: C.amber }}>{task.anchoredMean}</div>
+                          </div>
+                        </div>
+                        <div style={{ marginBottom: 10 }}>
+                          <div style={{ fontFamily: PS_MONO, fontSize: 9, color: C.tx3, marginBottom: 4 }}>ANCHOR INFLUENCE: {pullCapped.toFixed(0)}%</div>
+                          <div style={{ height: 6, background: 'rgba(255,255,255,.05)', borderRadius: 3, overflow: 'hidden' }}>
+                            <div style={{ width: Math.min(pullCapped, 100) + '%', height: '100%', background: pullCapped > 75 ? C.red : pullCapped > 40 ? C.amber : C.green, borderRadius: 3 }} />
+                          </div>
+                          <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 2 }}>
+                            <span style={{ fontFamily: PS_MONO, fontSize: 8, color: C.tx3 }}>0% (no pull)</span>
+                            <span style={{ fontFamily: PS_MONO, fontSize: 8, color: C.tx3 }}>100% (full anchoring)</span>
+                          </div>
+                        </div>
+                        <p style={{ fontSize: 11, color: C.tx2, lineHeight: 1.65, marginTop: 8 }}>
+                          {pullCapped > 75 ? 'Your estimate was strongly influenced by the anchor. ' : pullCapped > 40 ? 'Your estimate shows moderate anchoring effects. ' : pullCapped > 10 ? 'Your estimate shows mild anchoring influence. ' : 'Your estimate was close to the control group mean, showing minimal anchoring. '}
+                          {estNum > task.controlMean === (task.anchor > task.controlMean) ? 'Your estimate was pulled in the direction of the anchor, which is the classic anchoring pattern.' : 'Interestingly, your estimate moved against the anchor direction, but this is rare in experimental settings.'}
+                        </p>
+                        <p style={{ fontSize: 10, color: C.tx3, lineHeight: 1.6, marginTop: 8, fontFamily: PS_MONO }}>{task.source}</p>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+              <div style={{ padding: 14, background: C.purpleBg, border: '1px solid ' + C.purple + '30', borderRadius: 3, marginTop: 16 }}>
+                <div style={{ fontFamily: PS_MONO, fontSize: 10, color: C.purple, marginBottom: 6 }}>KEY INSIGHT</div>
+                <p style={{ fontSize: 12, color: C.tx, lineHeight: 1.7 }}>
+                  Anchoring is one of the most robust findings in cognitive psychology. In intelligence analysis, first reports, initial estimates, and preliminary assessments all function as anchors. Subsequent revisions are almost always insufficient because adjustment requires effortful System 2 processing while the anchor operates through automatic System 1 mechanisms. The SAT countermeasure is the Key Assumptions Check, which forces analysts to explicitly surface and challenge the anchoring values embedded in their assessments.
+                </p>
+                <p style={{ fontSize: 10, color: C.tx3, lineHeight: 1.6, marginTop: 8, fontFamily: PS_MONO }}>
+                  Tversky & Kahneman (1974), "Judgment under Uncertainty: Heuristics and Biases." Science 185(4157). Epley & Gilovich (2006), "The Anchoring-and-Adjustment Heuristic." Psychological Science 17(4).
+                </p>
+              </div>
+            </div>
+          );
+        })()}
+
+        {/* ── SYSTEM 1/2 MODE ── */}
+        {viewMode === 'system' && (() => {
+          var SYS_QUESTIONS = [
+            { id: 's1', prompt: 'A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?', s1answer: '10 cents', s2answer: '5 cents', options: ['5 cents', '10 cents', '15 cents', '55 cents'], correct: '5 cents', explanation: 'System 1 instantly generates "10 cents" because $1.10 minus $1.00 feels right. But if the ball costs 10 cents, the bat costs $1.10 (10 cents + $1.00), making the total $1.20. The correct answer requires algebraic thinking (System 2): ball = x, bat = x + $1.00, so x + x + $1.00 = $1.10, therefore x = $0.05.', source: 'Frederick (2005), Cognitive Reflection Test. Over 50% of students at MIT and Princeton gave the intuitive wrong answer.' },
+            { id: 's2', prompt: 'Linda is 31, single, outspoken, and very bright. She majored in philosophy. As a student she was deeply concerned with issues of discrimination and social justice. Which is more probable? (A) Linda is a bank teller, or (B) Linda is a bank teller and is active in the feminist movement.', s1answer: 'B', s2answer: 'A', options: ['A: Bank teller', 'B: Bank teller AND feminist'], correct: 'A: Bank teller', explanation: 'System 1 constructs a coherent story: Linda sounds like a feminist, so "bank teller and feminist" feels more probable. But this violates the conjunction rule of probability: P(A and B) can never exceed P(A). Every feminist bank teller is also a bank teller, so A must be at least as probable as B. This is the conjunction fallacy.', source: 'Tversky & Kahneman (1983). 85-90% of respondents chose B, including statistically trained graduate students.' },
+            { id: 's3', prompt: 'In a city, 85% of taxis are Green and 15% are Blue. A witness to a hit-and-run identified the taxi as Blue. Tests show witnesses correctly identify taxi color 80% of the time. What is the probability the taxi was actually Blue?', s1answer: '80%', s2answer: '41%', options: ['41%', '80%', '15%', '68%'], correct: '41%', explanation: 'System 1 anchors on the witness reliability (80%) and ignores the base rate (only 15% of taxis are Blue). Bayes\' theorem: P(Blue|ID Blue) = P(ID Blue|Blue) * P(Blue) / P(ID Blue) = 0.80 * 0.15 / (0.80 * 0.15 + 0.20 * 0.85) = 0.12 / 0.29 = 0.41. Base rate neglect is one of the most consequential biases in intelligence analysis.', source: 'Kahneman & Tversky (1972). Base rate neglect. Replicated hundreds of times across domains.' },
+            { id: 's4', prompt: 'If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?', s1answer: '100 minutes', s2answer: '5 minutes', options: ['5 minutes', '20 minutes', '100 minutes', '500 minutes'], correct: '5 minutes', explanation: 'System 1 pattern-matches: 5-5-5, so 100-100-100. But each machine makes one widget in 5 minutes. So 100 machines each make one widget in the same 5 minutes. The machines work in parallel, not in sequence. This is another item from Frederick\'s Cognitive Reflection Test.', source: 'Frederick (2005), Cognitive Reflection Test item 2.' },
+            { id: 's5', prompt: 'A disease affects 1 in 1,000 people. A test for the disease has a 5% false positive rate and no false negatives. You test positive. What is the probability you actually have the disease?', s1answer: '95%', s2answer: 'About 2%', options: ['About 2%', '50%', '95%', '99%'], correct: 'About 2%', explanation: 'System 1 focuses on the test accuracy (95%) and ignores the base rate (0.1%). In a population of 1,000: 1 true positive, about 50 false positives (5% of 999). So P(disease | positive) = 1/51 = roughly 2%. Most physicians get this wrong. In intelligence, this is why a "95% reliable" source reporting a rare event should not produce high confidence.', source: 'Casscells, Schoenberger & Graboys (1978). Only 18% of Harvard Medical School faculty answered correctly.' },
+            { id: 's6', prompt: 'You see a person reading the New York Times on the subway. Is this person more likely to have a PhD or to not have a PhD?', s1answer: 'PhD', s2answer: 'No PhD', options: ['PhD holder', 'Non-PhD holder'], correct: 'Non-PhD holder', explanation: 'System 1 uses representativeness: NYT readers seem intellectual, PhDs are intellectual, so PhD feels right. But base rates matter enormously: less than 2% of Americans hold PhDs, while millions of non-PhD-holders read the NYT. Even if PhD holders are 10x more likely to read the NYT, the vastly larger non-PhD population means most NYT readers on any given subway car do not hold PhDs.', source: 'Adapted from Kahneman, Thinking, Fast and Slow (2011), Chapter 14-15.' },
+            { id: 's7', prompt: 'In four pages of a novel (about 2,000 words), how many 7-letter words would you expect to end in "-ing"?', s1answer: 'More than words with "n" as 6th letter', s2answer: 'Fewer (it is a subset)', options: ['About 5-10', 'About 13-15', 'About 0-3', 'It depends on the novel'], correct: 'About 5-10', explanation: 'When Tversky and Kahneman asked this question alongside "how many 7-letter words have n as the 6th letter," people estimated far more "-ing" words. But every 7-letter word ending in "-ing" also has "n" as its 6th letter. The "-ing" category is a subset, yet it feels larger because "-ing" words are easier to retrieve from memory (availability heuristic). System 1 substitutes ease of recall for frequency.', source: 'Tversky & Kahneman (1983), "Extensional versus Intuitive Reasoning."' },
+            { id: 's8', prompt: 'A study found that cities with more churches have higher crime rates. What is the most likely explanation?', s1answer: 'Religion causes crime', s2answer: 'Both correlate with population size', options: ['Religion promotes crime', 'Criminals seek churches', 'Both correlate with city size', 'Churches attract criminals'], correct: 'Both correlate with city size', explanation: 'System 1 seeks causal narratives: churches cause crime or crime causes churches. System 2 recognizes the confounding variable: larger cities have both more churches and more crime. This is the correlation-causation fallacy, one of the most common errors in intelligence analysis. When two variables correlate, the explanation is often a third variable driving both.', source: 'Adapted from standard statistics pedagogy. See Kahneman, TFAS (2011), Chapter 5 on causal thinking.' },
+          ];
+          var s1count = 0;
+          var s2count = 0;
+          var answered = 0;
+          SYS_QUESTIONS.forEach(function(q) {
+            if (sysAnswers[q.id]) {
+              answered++;
+              if (sysAnswers[q.id] === q.correct) { s2count++; }
+              else if (sysAnswers[q.id] === q.options.find(function(o) { return o !== q.correct; })) { s1count++; }
+              else { s1count++; }
+            }
+          });
+          return (
+            <div>
+              <div style={{ padding: 16, background: C.card, border: '1px solid ' + C.cardBd, borderLeft: '3px solid ' + C.green, marginBottom: 16, borderRadius: 6 }}>
+                <p style={{ fontFamily: PS_MONO, fontSize: 10, color: C.green, letterSpacing: '.12em', marginBottom: 8 }}>SYSTEM 1 / SYSTEM 2 DIAGNOSTIC</p>
+                <p style={{ fontSize: 13, color: C.tx, lineHeight: 1.7, marginBottom: 8 }}>
+                  Eight questions designed to test whether your intuitive response (System 1) matches the correct analytical answer (System 2). Based on Kahneman's "Thinking, Fast and Slow" and Frederick's Cognitive Reflection Test. Each question has a seductive wrong answer that System 1 generates instantly -- the right answer requires deliberate System 2 engagement.
+                </p>
+                {sysRevealed && (
+                  <div style={{ display: 'flex', gap: 16, padding: 10, background: 'rgba(0,0,0,.2)', borderRadius: 3 }}>
+                    <div>
+                      <div style={{ fontFamily: PS_MONO, fontSize: 9, color: C.tx3 }}>SYSTEM 2 (CORRECT)</div>
+                      <div style={{ fontFamily: PS_MONO, fontSize: 22, color: C.green }}>{s2count}/{answered}</div>
+                    </div>
+                    <div>
+                      <div style={{ fontFamily: PS_MONO, fontSize: 9, color: C.tx3 }}>SYSTEM 1 (INTUITIVE)</div>
+                      <div style={{ fontFamily: PS_MONO, fontSize: 22, color: C.red }}>{answered - s2count}/{answered}</div>
+                    </div>
+                    <div>
+                      <div style={{ fontFamily: PS_MONO, fontSize: 9, color: C.tx3 }}>RATIO</div>
+                      <div style={{ fontFamily: PS_MONO, fontSize: 22, color: C.amber }}>{answered > 0 ? (s2count / answered * 100).toFixed(0) : 0}%</div>
+                    </div>
+                  </div>
+                )}
+              </div>
+              {SYS_QUESTIONS.map(function(q, qi) {
+                var userAns = sysAnswers[q.id];
+                var isCorrect = userAns === q.correct;
+                return (
+                  <div key={q.id} style={{ padding: 14, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6, marginBottom: 10 }}>
+                    <div style={{ fontFamily: PS_MONO, fontSize: 9, color: C.tx3, marginBottom: 6 }}>Q{qi + 1} OF 8</div>
+                    <p style={{ fontSize: 13, color: C.tx, lineHeight: 1.7, marginBottom: 12 }}>{q.prompt}</p>
+                    <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 8 }}>
+                      {q.options.map(function(opt) {
+                        var selected = userAns === opt;
+                        var showResult = sysRevealed && userAns;
+                        var optColor = showResult ? (opt === q.correct ? C.green : selected ? C.red : C.tx3) : selected ? C.purple : C.tx3;
+                        return (
+                          <button key={opt} onClick={function() { if (!sysRevealed) { setSysAnswers(function(prev) { var c = Object.assign({}, prev); c[q.id] = opt; return c; }); } }}
+                            style={{
+                              padding: '6px 14px', fontFamily: PS_MONO, fontSize: 11, cursor: sysRevealed ? 'default' : 'pointer',
+                              background: selected ? (showResult ? (isCorrect ? C.greenBg : C.redBg) : C.purpleBg) : 'transparent',
+                              border: '1px solid ' + (selected ? optColor : C.line),
+                              color: optColor, borderRadius: 3,
+                              fontWeight: showResult && opt === q.correct ? 700 : 400,
+                            }}>
+                            {opt} {showResult && opt === q.correct ? ' [correct]' : ''}
+                          </button>
+                        );
+                      })}
+                    </div>
+                    {sysRevealed && userAns && (
+                      <div style={{ padding: 10, background: 'rgba(0,0,0,.15)', borderRadius: 3, marginTop: 8 }}>
+                        <div style={{ fontFamily: PS_MONO, fontSize: 9, color: isCorrect ? C.green : C.red, marginBottom: 4 }}>{isCorrect ? 'SYSTEM 2 ENGAGED' : 'SYSTEM 1 CAPTURED'}</div>
+                        <div style={{ fontSize: 11, color: C.tx2, marginBottom: 4 }}>
+                          <span style={{ color: C.red }}>System 1 answer: {q.s1answer}</span> | <span style={{ color: C.green }}>System 2 answer: {q.s2answer}</span>
+                        </div>
+                        <p style={{ fontSize: 11, color: C.tx2, lineHeight: 1.6 }}>{q.explanation}</p>
+                        <p style={{ fontSize: 10, color: C.tx3, fontFamily: PS_MONO, marginTop: 6 }}>{q.source}</p>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+              {!sysRevealed && answered >= 4 && (
+                <button onClick={function() { setSysRevealed(true); }}
+                  style={{ padding: '10px 24px', fontFamily: PS_MONO, fontSize: 11, cursor: 'pointer', background: C.greenBg, border: '1px solid ' + C.green, color: C.green, borderRadius: 3 }}>
+                  Reveal All Results ({answered}/8 answered)
+                </button>
+              )}
+              {sysRevealed && (
+                <div style={{ padding: 14, background: C.purpleBg, border: '1px solid ' + C.purple + '30', borderRadius: 3, marginTop: 16 }}>
+                  <div style={{ fontFamily: PS_MONO, fontSize: 10, color: C.purple, marginBottom: 6 }}>DIAGNOSTIC INTERPRETATION</div>
+                  <p style={{ fontSize: 12, color: C.tx, lineHeight: 1.7 }}>
+                    {s2count >= 7 ? 'Exceptional System 2 engagement. You overrode intuitive responses on most questions. This level of cognitive reflection is rare -- only about 5% of the general population scores 7+ on extended CRT batteries.' : s2count >= 5 ? 'Above average System 2 engagement. You caught several intuitive traps but System 1 still captured you on some questions. In intelligence analysis, structured techniques (ACH, Key Assumptions Check) serve as external System 2 scaffolding for exactly these situations.' : s2count >= 3 ? 'Mixed performance typical of most adults. System 1 dominated on several questions. This is normal -- the questions are specifically designed to trigger intuitive errors. The implication for intelligence analysis: default judgment processes are System 1 processes, and SATs exist to force System 2 engagement.' : 'System 1 dominated most responses. This is not unusual -- these questions are calibrated to trigger intuitive errors in the majority of respondents, including experts. The critical insight: intelligence analysis requires deliberate System 2 engagement through structured analytic techniques because System 1 will generate confident but wrong answers.'}
+                  </p>
+                  <p style={{ fontSize: 10, color: C.tx3, lineHeight: 1.6, marginTop: 8, fontFamily: PS_MONO }}>
+                    Kahneman, "Thinking, Fast and Slow" (2011). Frederick, "Cognitive Reflection and Decision Making" (2005). Stanovich & West, "Individual Differences in Reasoning" (2000). Applied to intelligence: Heuer, "Psychology of Intelligence Analysis" (1999), Ch. 2-3.
+                  </p>
+                </div>
+              )}
             </div>
           );
         })()}

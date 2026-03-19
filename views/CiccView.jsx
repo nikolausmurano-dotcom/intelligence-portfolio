@@ -359,6 +359,15 @@ function CiccView({ setView }) {
   const [selectedNonParty, setSelectedNonParty] = useState(null);
   const [selectedWithdrew, setSelectedWithdrew] = useState(null);
 
+  // Trial Strategy Simulator state
+  const [trialCharges, setTrialCharges] = useState({});
+  const [trialEvidence, setTrialEvidence] = useState({});
+  const [trialJurisdiction, setTrialJurisdiction] = useState({});
+  const [trialSubmitted, setTrialSubmitted] = useState(false);
+
+  // Enforcement Gap Analyzer state
+  const [enforcementCase, setEnforcementCase] = useState(0);
+
   // ── Scholarly Micro-Icons & Tooltip ──────────────────────────
   function Tip({ id }) {
     if (tipId !== id || !CICC_TIPS[id]) return null;
@@ -414,6 +423,8 @@ function CiccView({ setView }) {
     { id: 'framework', label: 'Framework', desc: 'Rome Statute' },
     { id: 'jurisdiction', label: 'Jurisdiction', desc: 'Decision Tree' },
     { id: 'map', label: 'Map', desc: 'Member States' },
+    { id: 'trial', label: 'Trial', desc: 'Strategy Sim' },
+    { id: 'enforcement', label: 'Enforcement', desc: 'Cooperation Gap' },
   ];
 
   // ── Analysis Renderer ─────────────────────────────────────
@@ -1037,6 +1048,373 @@ function CiccView({ setView }) {
     );
   };
 
+  // ── Trial Strategy Simulator ─────────────────────────────────
+  const TRIAL_SCENARIO = useMemo(() => ({
+    title: 'The Darfur Situation (Sudan)',
+    background: 'Between 2003-2008, the Sudanese government and allied Janjaweed militias conducted a systematic campaign of violence against the Fur, Masalit, and Zaghawa ethnic groups in Darfur. Villages were bombed by government aircraft, then attacked by ground forces who killed, raped, and displaced civilian populations. An estimated 300,000 people were killed and 2.7 million displaced. The UN Security Council referred the situation to the ICC in 2005 (Resolution 1593).',
+    charges: [
+      { id: 'genocide', label: 'Genocide (Art. 6)', correct: true, explanation: 'Genocide requires proving "intent to destroy, in whole or in part, a national, ethnical, racial or religious group." The OTP charged al-Bashir with genocide based on evidence of systematic targeting of the Fur, Masalit, and Zaghawa as ethnic groups. The Pre-Trial Chamber initially declined the genocide charge (2009) but reversed on appeal (2010), accepting that genocidal intent could be inferred from the pattern of destruction.' },
+      { id: 'crimes_humanity', label: 'Crimes Against Humanity (Art. 7)', correct: true, explanation: 'Requires a "widespread or systematic attack directed against any civilian population." The Darfur campaign meets this threshold clearly: government-organized, targeting civilians across a region over years. The OTP charged murder, extermination, forcible transfer, torture, and rape as crimes against humanity. This is the most straightforward charge category for Darfur.' },
+      { id: 'war_crimes', label: 'War Crimes (Art. 8)', correct: true, explanation: 'War crimes require an armed conflict (present in Darfur between government and rebel forces) and violations of the laws of war: intentionally directing attacks against civilians, pillaging, destroying civilian objects. The deliberate bombing of villages with no military targets constitutes a clear war crime. The OTP charged multiple war crimes including attacking civilians and pillaging.' },
+      { id: 'aggression', label: 'Crime of Aggression (Art. 8bis)', correct: false, explanation: 'The crime of aggression applies to the "planning, preparation, initiation or execution of an act of aggression by a State against the sovereignty of another State." Darfur is an internal conflict -- Sudan attacking its own population. Aggression is a state-to-state crime and does not apply here. Additionally, the ICC only activated aggression jurisdiction in 2018, after the Darfur referral.' },
+    ],
+    evidence: [
+      { id: 'witness', label: 'Witness Testimony', correct: true, priority: 'high', explanation: 'Survivor and insider testimony is critical for proving command responsibility and mens rea (criminal intent). The OTP collected testimony from displaced persons in Chad, defectors from the Sudanese military, and humanitarian workers. Challenge: witnesses in refugee camps face intimidation, and the ICC cannot compel witnesses to testify from non-party states.' },
+      { id: 'documents', label: 'Government Documents', correct: true, priority: 'high', explanation: 'Internal government communications, military orders, and intelligence reports can prove the chain of command from al-Bashir to ground-level perpetrators. The OTP obtained intercepted communications and leaked intelligence documents. Challenge: Sudan refused all cooperation, making document access extremely limited. Most documents came from defectors and intelligence services of cooperating states.' },
+      { id: 'satellite', label: 'Satellite Imagery', correct: true, priority: 'medium', explanation: 'Satellite imagery from UNOSAT and commercial providers documented village destruction: before/after images showing systematic burning patterns. This evidence corroborates witness testimony about the timing and scale of attacks. It cannot prove who ordered the attacks but establishes the physical fact of destruction. The OTP used satellite evidence extensively to prove "widespread" under crimes against humanity.' },
+      { id: 'forensic', label: 'Forensic Evidence', correct: true, priority: 'low', explanation: 'Mass graves, ballistic analysis, and DNA evidence could definitively prove killings. However, the ICC had no access to Darfur for forensic investigation -- Sudan refused entry. The absence of forensic evidence is itself significant: it demonstrates the enforcement gap. The OTP relied on testimonial and documentary evidence instead.' },
+      { id: 'social_media', label: 'Social Media Posts', correct: false, priority: 'n/a', explanation: 'The Darfur campaign occurred primarily in 2003-2008, before widespread social media use in Sudan. Open-source intelligence from social media has become important in later ICC investigations (Myanmar, Ukraine), but it was not a significant evidence category for Darfur. The ICC has since developed protocols for authenticating social media evidence under the Rome Statute.' },
+    ],
+    jurisdictionHurdles: [
+      { id: 'non_party', label: 'Sudan is not an ICC member state', correct: true, significance: 'critical', explanation: 'Sudan never ratified the Rome Statute. The ICC only has jurisdiction because the UN Security Council referred the situation under Chapter VII of the UN Charter (Art. 13(b) of the Rome Statute). This is significant because UNSC referrals are political -- China and Russia could have vetoed. The referral was adopted 11-0 with 4 abstentions (US, China, Algeria, Brazil).' },
+      { id: 'head_of_state', label: 'Defendant is sitting head of state', correct: true, significance: 'critical', explanation: 'Al-Bashir was President of Sudan when indicted. Article 27 of the Rome Statute explicitly removes head-of-state immunity. However, customary international law generally grants sitting heads of state immunity from foreign courts. The tension between Art. 27 (no immunity at the ICC) and customary law (immunity from arrest by other states) created the enforcement crisis: states claimed they could not arrest al-Bashir because customary immunity protected him during state visits.' },
+      { id: 'cooperation', label: 'No state cooperation for arrest', correct: true, significance: 'critical', explanation: 'Despite the arrest warrant (2009), al-Bashir traveled freely to ICC member states including South Africa, Jordan, Chad, and Kenya without arrest. Each visit was a direct violation of these states\' Rome Statute obligations. The ICC referred South Africa and Jordan to the ASP for non-compliance, but no sanctions were imposed. The structural problem: the ICC has no police force and cannot compel arrest.' },
+      { id: 'complementarity', label: 'Sudan conducting domestic proceedings', correct: false, significance: 'low', explanation: 'Sudan did not conduct genuine domestic proceedings against al-Bashir or other ICC indictees. The complementarity challenge was not a real jurisdictional hurdle in this case. Sudan\'s Special Criminal Court on the Events in Darfur was widely recognized as a sham tribunal with no independence from the executive branch. The Pre-Trial Chamber found no admissibility challenge under Article 17.' },
+    ],
+    actualStrategy: 'The OTP focused on command responsibility (Art. 28) -- proving that al-Bashir ordered or knew about the attacks and failed to prevent them. The prosecution relied heavily on the "organizational policy" doctrine: the systematic pattern of government aircraft bombing followed by Janjaweed ground attacks across dozens of villages demonstrated state policy, not isolated incidents. The charge strategy was incremental: crimes against humanity and war crimes first (2008), genocide added on appeal (2010). Evidence was primarily testimonial and documentary due to zero cooperation from Sudan.',
+  }), []);
+
+  const renderTrialSim = useCallback(() => {
+    var chargeCount = Object.keys(trialCharges).length;
+    var evidenceCount = Object.keys(trialEvidence).length;
+    var jurisdictionCount = Object.keys(trialJurisdiction).length;
+
+    function toggleItem(setter, id) {
+      setter(function(prev) {
+        var next = Object.assign({}, prev);
+        if (next[id]) { delete next[id]; } else { next[id] = true; }
+        return next;
+      });
+    }
+
+    var correctCharges = TRIAL_SCENARIO.charges.filter(function(c) { return c.correct; }).length;
+    var userCorrectCharges = TRIAL_SCENARIO.charges.filter(function(c) { return c.correct && trialCharges[c.id]; }).length;
+    var userWrongCharges = TRIAL_SCENARIO.charges.filter(function(c) { return !c.correct && trialCharges[c.id]; }).length;
+
+    var correctEvidence = TRIAL_SCENARIO.evidence.filter(function(e) { return e.correct; }).length;
+    var userCorrectEvidence = TRIAL_SCENARIO.evidence.filter(function(e) { return e.correct && trialEvidence[e.id]; }).length;
+
+    var correctJuris = TRIAL_SCENARIO.jurisdictionHurdles.filter(function(j) { return j.correct; }).length;
+    var userCorrectJuris = TRIAL_SCENARIO.jurisdictionHurdles.filter(function(j) { return j.correct && trialJurisdiction[j.id]; }).length;
+
+    return (
+      <div>
+        <div style={{ fontFamily: Mono, fontSize: 12, letterSpacing: '.06em', color: C.accentDm, marginBottom: 6 }}>
+          ICC TRIAL STRATEGY SIMULATOR
+        </div>
+        <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx2, lineHeight: 1.7, marginBottom: 20, maxWidth: 720 }}>
+          Build an ICC prosecution strategy for the Darfur situation. Select the appropriate
+          charges, identify the evidence types needed, and assess jurisdictional hurdles. Then
+          compare your strategy to the actual OTP approach. Based on ICC-02/05 (Prosecutor v.
+          Omar al-Bashir).
+        </div>
+
+        {/* Scenario background */}
+        <LegalCard caseNo="02/05">
+          <div style={{ fontFamily: Serif, fontSize: 16, fontWeight: 600, color: C.tx, marginBottom: 10 }}>
+            {TRIAL_SCENARIO.title}
+          </div>
+          <div style={{ fontFamily: Serif, fontSize: 13, color: C.tx2, lineHeight: 1.75, padding: 14, background: 'rgba(48,112,160,.04)', borderRadius: 4, borderLeft: '3px solid ' + C.accent }}>
+            {TRIAL_SCENARIO.background}
+          </div>
+        </LegalCard>
+
+        {/* Step 1: Charges */}
+        <div style={{ marginTop: 20, padding: 16, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6 }}>
+          <div style={{ fontFamily: Mono, fontSize: 11, color: C.accent, letterSpacing: '.06em', marginBottom: 10 }}>
+            STEP 1: SELECT CHARGES ({chargeCount} selected)
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+            {TRIAL_SCENARIO.charges.map(function(ch) {
+              var selected = !!trialCharges[ch.id];
+              return (
+                <div key={ch.id}>
+                  <button onClick={function() { if (!trialSubmitted) toggleItem(setTrialCharges, ch.id); }} style={{
+                    width: '100%', textAlign: 'left', padding: '10px 14px', cursor: trialSubmitted ? 'default' : 'pointer',
+                    background: selected ? 'rgba(48,112,160,.08)' : 'transparent',
+                    border: '1px solid ' + (selected ? C.accent : C.line), borderRadius: 4,
+                    fontFamily: Sans, fontSize: 13, color: selected ? C.tx : C.tx2,
+                  }}>
+                    <span style={{ fontFamily: Mono, fontSize: 10, marginRight: 8, color: selected ? C.accent : C.tx3 }}>[{selected ? 'X' : ' '}]</span>
+                    {ch.label}
+                  </button>
+                  {trialSubmitted && (
+                    <div style={{ margin: '4px 0 4px 16px', padding: '8px 12px', borderLeft: '3px solid ' + (ch.correct === selected ? C.green : C.red), background: 'rgba(0,0,0,.2)', borderRadius: '0 3px 3px 0' }}>
+                      <span style={{ fontFamily: Mono, fontSize: 10, color: ch.correct === selected ? C.green : C.red, letterSpacing: '.08em' }}>
+                        {ch.correct ? (selected ? 'CORRECT -- CHARGED' : 'MISSED -- SHOULD HAVE CHARGED') : (selected ? 'INCORRECT -- NOT APPLICABLE' : 'CORRECT -- NOT CHARGED')}
+                      </span>
+                      <div style={{ fontFamily: Serif, fontSize: 11, color: C.tx2, lineHeight: 1.7, marginTop: 4 }}>{ch.explanation}</div>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Step 2: Evidence */}
+        <div style={{ marginTop: 12, padding: 16, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6 }}>
+          <div style={{ fontFamily: Mono, fontSize: 11, color: C.accent, letterSpacing: '.06em', marginBottom: 10 }}>
+            STEP 2: IDENTIFY EVIDENCE TYPES ({evidenceCount} selected)
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+            {TRIAL_SCENARIO.evidence.map(function(ev) {
+              var selected = !!trialEvidence[ev.id];
+              return (
+                <div key={ev.id}>
+                  <button onClick={function() { if (!trialSubmitted) toggleItem(setTrialEvidence, ev.id); }} style={{
+                    width: '100%', textAlign: 'left', padding: '10px 14px', cursor: trialSubmitted ? 'default' : 'pointer',
+                    background: selected ? 'rgba(48,112,160,.08)' : 'transparent',
+                    border: '1px solid ' + (selected ? C.accent : C.line), borderRadius: 4,
+                    fontFamily: Sans, fontSize: 13, color: selected ? C.tx : C.tx2,
+                  }}>
+                    <span style={{ fontFamily: Mono, fontSize: 10, marginRight: 8, color: selected ? C.accent : C.tx3 }}>[{selected ? 'X' : ' '}]</span>
+                    {ev.label}
+                    {ev.correct && <span style={{ fontFamily: Mono, fontSize: 9, color: C.yellow, marginLeft: 8 }}>Priority: {ev.priority}</span>}
+                  </button>
+                  {trialSubmitted && (
+                    <div style={{ margin: '4px 0 4px 16px', padding: '8px 12px', borderLeft: '3px solid ' + (ev.correct === selected ? C.green : C.red), background: 'rgba(0,0,0,.2)', borderRadius: '0 3px 3px 0' }}>
+                      <div style={{ fontFamily: Serif, fontSize: 11, color: C.tx2, lineHeight: 1.7 }}>{ev.explanation}</div>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Step 3: Jurisdiction */}
+        <div style={{ marginTop: 12, padding: 16, background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6 }}>
+          <div style={{ fontFamily: Mono, fontSize: 11, color: C.accent, letterSpacing: '.06em', marginBottom: 10 }}>
+            STEP 3: JURISDICTIONAL HURDLES ({jurisdictionCount} selected)
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+            {TRIAL_SCENARIO.jurisdictionHurdles.map(function(jh) {
+              var selected = !!trialJurisdiction[jh.id];
+              return (
+                <div key={jh.id}>
+                  <button onClick={function() { if (!trialSubmitted) toggleItem(setTrialJurisdiction, jh.id); }} style={{
+                    width: '100%', textAlign: 'left', padding: '10px 14px', cursor: trialSubmitted ? 'default' : 'pointer',
+                    background: selected ? 'rgba(48,112,160,.08)' : 'transparent',
+                    border: '1px solid ' + (selected ? C.accent : C.line), borderRadius: 4,
+                    fontFamily: Sans, fontSize: 13, color: selected ? C.tx : C.tx2,
+                  }}>
+                    <span style={{ fontFamily: Mono, fontSize: 10, marginRight: 8, color: selected ? C.accent : C.tx3 }}>[{selected ? 'X' : ' '}]</span>
+                    {jh.label}
+                  </button>
+                  {trialSubmitted && (
+                    <div style={{ margin: '4px 0 4px 16px', padding: '8px 12px', borderLeft: '3px solid ' + (jh.correct === selected ? C.green : C.red), background: 'rgba(0,0,0,.2)', borderRadius: '0 3px 3px 0' }}>
+                      <span style={{ fontFamily: Mono, fontSize: 10, color: jh.correct ? C.yellow : C.tx3, letterSpacing: '.06em' }}>
+                        {jh.correct ? 'Significance: ' + jh.significance : 'Not a real hurdle'}
+                      </span>
+                      <div style={{ fontFamily: Serif, fontSize: 11, color: C.tx2, lineHeight: 1.7, marginTop: 4 }}>{jh.explanation}</div>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Submit / Results */}
+        {!trialSubmitted ? (
+          <div style={{ textAlign: 'center', marginTop: 16 }}>
+            <button onClick={function() { setTrialSubmitted(true); }} style={{
+              padding: '10px 32px', cursor: 'pointer', border: '1px solid ' + C.accent, borderRadius: 4,
+              background: 'rgba(48,112,160,.1)', color: C.accent, fontFamily: Mono, fontSize: 12, letterSpacing: '.06em',
+            }}>
+              SUBMIT PROSECUTION STRATEGY
+            </button>
+          </div>
+        ) : (
+          <div style={{ marginTop: 16, padding: 16, background: 'rgba(48,112,160,.04)', border: '1px solid rgba(48,112,160,.15)', borderRadius: 6 }}>
+            <div style={{ fontFamily: Mono, fontSize: 11, color: C.accent, letterSpacing: '.06em', marginBottom: 10 }}>
+              STRATEGY COMPARISON: YOUR APPROACH vs. ACTUAL OTP
+            </div>
+            <div style={{ display: 'flex', gap: 12, marginBottom: 12, flexWrap: 'wrap' }}>
+              <div style={{ flex: 1, minWidth: 100, textAlign: 'center', padding: 10, background: C.card, borderRadius: 4 }}>
+                <div style={{ fontFamily: Mono, fontSize: 10, color: C.tx3, marginBottom: 4 }}>CHARGES</div>
+                <div style={{ fontFamily: Mono, fontSize: 18, fontWeight: 700, color: userWrongCharges > 0 ? C.yellow : C.green }}>{userCorrectCharges}/{correctCharges}</div>
+              </div>
+              <div style={{ flex: 1, minWidth: 100, textAlign: 'center', padding: 10, background: C.card, borderRadius: 4 }}>
+                <div style={{ fontFamily: Mono, fontSize: 10, color: C.tx3, marginBottom: 4 }}>EVIDENCE</div>
+                <div style={{ fontFamily: Mono, fontSize: 18, fontWeight: 700, color: C.green }}>{userCorrectEvidence}/{correctEvidence}</div>
+              </div>
+              <div style={{ flex: 1, minWidth: 100, textAlign: 'center', padding: 10, background: C.card, borderRadius: 4 }}>
+                <div style={{ fontFamily: Mono, fontSize: 10, color: C.tx3, marginBottom: 4 }}>HURDLES</div>
+                <div style={{ fontFamily: Mono, fontSize: 18, fontWeight: 700, color: C.green }}>{userCorrectJuris}/{correctJuris}</div>
+              </div>
+            </div>
+            <div style={{ fontFamily: Mono, fontSize: 10, color: C.gold, letterSpacing: '.06em', marginBottom: 6 }}>ACTUAL OTP STRATEGY</div>
+            <div style={{ fontFamily: Serif, fontSize: 12, color: C.tx2, lineHeight: 1.7 }}>{TRIAL_SCENARIO.actualStrategy}</div>
+            <div style={{ textAlign: 'center', marginTop: 12 }}>
+              <button onClick={function() { setTrialCharges({}); setTrialEvidence({}); setTrialJurisdiction({}); setTrialSubmitted(false); }} style={{
+                padding: '6px 20px', cursor: 'pointer', border: '1px solid ' + C.line, borderRadius: 3,
+                background: 'transparent', color: C.tx3, fontFamily: Mono, fontSize: 11,
+              }}>RESET</button>
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  }, [trialCharges, trialEvidence, trialJurisdiction, trialSubmitted, TRIAL_SCENARIO]);
+
+  // ── ICC Enforcement Gap Analyzer ───────────────────────────
+  const ENFORCEMENT_CASES = useMemo(() => [
+    {
+      name: 'Omar al-Bashir (Sudan)',
+      warrant: 'March 2009 / July 2010', charges: 'Genocide, Crimes Against Humanity, War Crimes',
+      status: 'Surrendered to ICC (Jan 2024) after Sudanese civil war shifted power',
+      cooperated: ['Jordan (refused - referred to ASP)', 'South Africa (refused - referred to ASP)', 'Malawi', 'Chad', 'DRC', 'Kenya', 'Djibouti', 'Uganda'],
+      refused: ['South Africa (2015 -- let al-Bashir leave despite court order)', 'Jordan (2017 -- hosted al-Bashir at Arab League summit)', 'Chad (2010, 2013 -- hosted despite obligation)', 'Kenya (2010 -- hosted AU summit)', 'Djibouti (2011)', 'Uganda (2016)', 'Malawi (2011)', 'DRC (2014)'],
+      years_at_large: 14,
+      detail: 'Al-Bashir was the ICC\'s most-wanted fugitive for 14 years. He traveled to ICC member states at least 12 times without arrest. The ICC referred South Africa and Jordan to the ASP for non-compliance, but no sanctions were imposed. His eventual surrender resulted from the 2023 Sudanese civil war, not ICC enforcement. The case exposed the fundamental structural weakness: the ICC depends on state cooperation it cannot compel.',
+    },
+    {
+      name: 'Vladimir Putin (Russia)',
+      warrant: 'March 2023', charges: 'War Crime: unlawful deportation of children from Ukraine',
+      status: 'At large -- sitting head of state of nuclear-armed P5 member',
+      cooperated: [],
+      refused: ['Mongolia (Sept 2024 -- hosted Putin despite Rome Statute obligation)', 'UAE, Saudi Arabia, India, China (non-party states -- no obligation)'],
+      years_at_large: 3,
+      detail: 'The first arrest warrant against a sitting head of state of a UN Security Council permanent member. Russia is not an ICC party and does not recognize the court\'s jurisdiction. Putin has traveled internationally since the warrant, visiting only non-party states or states unlikely to cooperate. Mongolia, as an ICC member state, was obligated to arrest Putin during his September 2024 visit but did not. The case tests whether the ICC can function when the accused controls one of the five UNSC veto powers.',
+    },
+    {
+      name: 'Joseph Kony (Uganda/LRA)',
+      warrant: 'July 2005', charges: 'Crimes Against Humanity, War Crimes (child soldiers, murder, sexual enslavement)',
+      status: 'At large -- believed hiding in Darfur/CAR border region',
+      cooperated: ['Uganda (limited cooperation -- complex because Uganda self-referred)', 'U.S. AFRICOM (military advisors to track Kony, 2011-2017)'],
+      refused: ['Sudan (harbored LRA elements)', 'DRC (limited capacity, not refusal)', 'CAR (limited capacity)'],
+      years_at_large: 21,
+      detail: 'The ICC\'s first-ever arrest warrant. 21 years later, Kony remains at large -- the longest-outstanding ICC warrant. The LRA moved across 4 countries (Uganda, DRC, CAR, South Sudan), exploiting the ICC\'s inability to project power across borders. The U.S. deployed military advisors (Operation Observant Compass, 2011-2017) but failed to capture Kony. The case demonstrates that even with military support from a superpower, the ICC cannot apprehend a fugitive operating in ungoverned spaces.',
+    },
+    {
+      name: 'Saif al-Islam Gaddafi (Libya)',
+      warrant: 'June 2011', charges: 'Crimes Against Humanity (murder, persecution during 2011 uprising)',
+      status: 'At large in Libya -- claims immunity as political figure',
+      cooperated: [],
+      refused: ['Libya (multiple governments have refused surrender, claiming domestic jurisdiction)'],
+      years_at_large: 15,
+      detail: 'Captured by Libyan militia in 2011 but never surrendered to the ICC. Libya challenged admissibility, arguing it would try Gaddafi domestically. The ICC rejected Libya\'s challenge (2013), finding Libya unable to carry out genuine proceedings. Despite this ruling, Libya never surrendered Gaddafi. He was reportedly "tried" in absentia by a Tripoli court (2015) and sentenced to death, then pardoned by a rival government. Gaddafi now operates as a political figure in western Libya. The case shows that even when the ICC wins admissibility arguments, it has no mechanism to enforce surrender.',
+    },
+    {
+      name: 'Benjamin Netanyahu & Yoav Gallant (Israel)',
+      warrant: 'November 2024', charges: 'War Crimes, Crimes Against Humanity (starvation as method of warfare, murder, persecution in Gaza)',
+      status: 'At large -- sitting head of government of U.S. ally',
+      cooperated: [],
+      refused: ['United States (threatened sanctions against ICC personnel)', 'Hungary (invited Netanyahu, refused to honor warrant)', 'Argentina, Italy, Czech Republic (signaled non-cooperation)'],
+      years_at_large: 1,
+      detail: 'The warrant against a leader of a U.S.-allied democracy created unprecedented political pressure on the ICC. The U.S. Congress passed legislation threatening sanctions against ICC staff. Multiple European ICC member states signaled they would not arrest Netanyahu, creating a Western enforcement double standard: the same states that demanded al-Bashir\'s arrest now refuse to arrest an allied leader. The case represents the ICC\'s legitimacy crisis: selective enforcement based on geopolitical alignment undermines the universalist premise of international criminal law.',
+    },
+  ], []);
+
+  const renderEnforcement = useCallback(() => {
+    var ec = ENFORCEMENT_CASES[enforcementCase];
+    var totalWarrantYears = ENFORCEMENT_CASES.reduce(function(sum, c) { return sum + c.years_at_large; }, 0);
+    var avgYears = (totalWarrantYears / ENFORCEMENT_CASES.length).toFixed(1);
+    var totalRefusals = ENFORCEMENT_CASES.reduce(function(sum, c) { return sum + c.refused.length; }, 0);
+
+    return (
+      <div>
+        <div style={{ fontFamily: Mono, fontSize: 12, letterSpacing: '.06em', color: C.accentDm, marginBottom: 6 }}>
+          ICC ENFORCEMENT GAP ANALYZER
+        </div>
+        <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx2, lineHeight: 1.7, marginBottom: 20, maxWidth: 720 }}>
+          The ICC has no police force, no army, and no power to compel arrest. It depends entirely
+          on voluntary state cooperation under Article 89 of the Rome Statute. This instrument
+          examines 5 cases with outstanding or long-delayed warrants to expose the structural
+          enforcement deficit at the heart of international criminal justice.
+        </div>
+
+        {/* Aggregate stats */}
+        <div style={{ display: 'flex', gap: 12, marginBottom: 20, flexWrap: 'wrap' }}>
+          <div style={{ flex: 1, minWidth: 120, padding: 12, background: 'rgba(160,72,72,.06)', border: '1px solid rgba(160,72,72,.15)', borderRadius: 6, textAlign: 'center' }}>
+            <div style={{ fontFamily: Mono, fontSize: 10, color: C.red, letterSpacing: '.08em', marginBottom: 4 }}>AVG YEARS AT LARGE</div>
+            <div style={{ fontFamily: Mono, fontSize: 28, fontWeight: 700, color: C.red }}>{avgYears}</div>
+          </div>
+          <div style={{ flex: 1, minWidth: 120, padding: 12, background: 'rgba(184,160,48,.06)', border: '1px solid rgba(184,160,48,.15)', borderRadius: 6, textAlign: 'center' }}>
+            <div style={{ fontFamily: Mono, fontSize: 10, color: C.yellow, letterSpacing: '.08em', marginBottom: 4 }}>TOTAL REFUSALS</div>
+            <div style={{ fontFamily: Mono, fontSize: 28, fontWeight: 700, color: C.yellow }}>{totalRefusals}</div>
+          </div>
+          <div style={{ flex: 1, minWidth: 120, padding: 12, background: 'rgba(48,112,160,.06)', border: '1px solid rgba(48,112,160,.15)', borderRadius: 6, textAlign: 'center' }}>
+            <div style={{ fontFamily: Mono, fontSize: 10, color: C.accent, letterSpacing: '.08em', marginBottom: 4 }}>ARREST RATE</div>
+            <div style={{ fontFamily: Mono, fontSize: 28, fontWeight: 700, color: C.accent }}>20%</div>
+            <div style={{ fontFamily: Sans, fontSize: 10, color: C.tx3 }}>1 of 5 surrendered (al-Bashir)</div>
+          </div>
+        </div>
+
+        {/* Case selector */}
+        <div style={{ display: 'flex', gap: 4, marginBottom: 20, flexWrap: 'wrap' }}>
+          {ENFORCEMENT_CASES.map(function(c, i) {
+            return (
+              <button key={c.name} onClick={function() { setEnforcementCase(i); }} style={{
+                flex: 1, minWidth: 100, padding: '8px 4px', cursor: 'pointer', border: 'none', borderRadius: 4,
+                background: i === enforcementCase ? 'rgba(48,112,160,.12)' : 'rgba(48,80,140,.04)',
+                borderBottom: i === enforcementCase ? '2px solid ' + C.accent : '2px solid transparent',
+              }}>
+                <span style={{ fontFamily: Mono, fontSize: 10, color: i === enforcementCase ? C.accent : C.tx3, display: 'block' }}>
+                  {c.name.split(' (')[0]}
+                </span>
+                <span style={{ fontFamily: Sans, fontSize: 9, color: C.tx3 }}>{c.years_at_large}yr</span>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Case detail */}
+        <LegalCard caseNo={'ENF-' + (enforcementCase + 1)}>
+          <div style={{ fontFamily: Serif, fontSize: 18, fontWeight: 600, color: C.tx, marginBottom: 4 }}>{ec.name}</div>
+          <div style={{ fontFamily: Mono, fontSize: 11, color: C.accent, marginBottom: 4 }}>WARRANT: {ec.warrant}</div>
+          <div style={{ fontFamily: Mono, fontSize: 11, color: C.yellow, marginBottom: 12 }}>CHARGES: {ec.charges}</div>
+
+          <div style={{ fontFamily: Mono, fontSize: 11, color: ec.status.includes('At large') ? C.red : C.green, marginBottom: 16, padding: '6px 10px', background: ec.status.includes('At large') ? C.redBg : C.greenBg, borderRadius: 3, display: 'inline-block' }}>
+            STATUS: {ec.status}
+          </div>
+
+          <div style={{ fontFamily: Serif, fontSize: 13, color: C.tx2, lineHeight: 1.75, marginBottom: 16, padding: 14, background: 'rgba(48,112,160,.04)', borderRadius: 4, borderLeft: '3px solid ' + C.accent }}>
+            {ec.detail}
+          </div>
+
+          {/* Cooperation / Refusal lists */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+            <div style={{ padding: 12, background: C.redBg, borderRadius: 4, border: '1px solid rgba(160,72,72,.15)' }}>
+              <div style={{ fontFamily: Mono, fontSize: 10, color: C.red, letterSpacing: '.08em', marginBottom: 8 }}>
+                NON-COOPERATION ({ec.refused.length})
+              </div>
+              {ec.refused.length === 0 ? (
+                <div style={{ fontFamily: Sans, fontSize: 11, color: C.tx3, fontStyle: 'italic' }}>No documented refusals (warrant too recent)</div>
+              ) : ec.refused.map(function(r, i) {
+                return <div key={i} style={{ fontFamily: Sans, fontSize: 11, color: C.tx2, marginBottom: 3, paddingLeft: 8, borderLeft: '2px solid ' + C.red }}>{r}</div>;
+              })}
+            </div>
+            <div style={{ padding: 12, background: C.greenBg, borderRadius: 4, border: '1px solid rgba(56,160,96,.15)' }}>
+              <div style={{ fontFamily: Mono, fontSize: 10, color: C.green, letterSpacing: '.08em', marginBottom: 8 }}>
+                COOPERATION ({ec.cooperated.length})
+              </div>
+              {ec.cooperated.length === 0 ? (
+                <div style={{ fontFamily: Sans, fontSize: 11, color: C.tx3, fontStyle: 'italic' }}>No state has cooperated</div>
+              ) : ec.cooperated.map(function(r, i) {
+                return <div key={i} style={{ fontFamily: Sans, fontSize: 11, color: C.tx2, marginBottom: 3, paddingLeft: 8, borderLeft: '2px solid ' + C.green }}>{r}</div>;
+              })}
+            </div>
+          </div>
+
+          <div style={{ marginTop: 12, fontFamily: Mono, fontSize: 11, color: C.yellow, textAlign: 'center' }}>
+            TIME AT LARGE: {ec.years_at_large} year{ec.years_at_large !== 1 ? 's' : ''}
+          </div>
+        </LegalCard>
+
+        {/* Analytical note */}
+        <div style={{ marginTop: 20, padding: 16, background: 'rgba(212,160,48,.04)', borderRadius: 4, borderLeft: '3px solid ' + C.amber }}>
+          <div style={{ fontFamily: Mono, fontSize: 10, color: C.amber, letterSpacing: '.08em', marginBottom: 6 }}>STRUCTURAL ANALYSIS</div>
+          <div style={{ fontFamily: Serif, fontSize: 12, color: C.tx2, lineHeight: 1.7 }}>
+            The ICC enforcement gap is not a bug -- it is a design feature of the Rome Statute system. States negotiated a court without enforcement power because no state would ratify a treaty that allowed an international body to conduct arrests on sovereign territory. The result is a court that can investigate, indict, and try, but cannot compel the accused to appear. Of the ICC's 30+ arrest warrants issued since 2005, fewer than half have resulted in custody -- and most of those were voluntary surrenders by defendants seeking legitimacy or facing domestic political collapse. The enforcement deficit is worst precisely when it matters most: against sitting heads of state with functioning security apparatuses. This is the central paradox of international criminal justice -- the court has jurisdiction over the most powerful, but power to arrest only the weakest.
+          </div>
+        </div>
+      </div>
+    );
+  }, [enforcementCase, ENFORCEMENT_CASES]);
+
   // ── Main Render ────────────────────────────────────────────
   return (
     <div style={{
@@ -1169,6 +1547,8 @@ function CiccView({ setView }) {
         {mode === 'framework' && renderFramework()}
         {mode === 'jurisdiction' && renderJurisdiction()}
         {mode === 'map' && renderMap()}
+        {mode === 'trial' && renderTrialSim()}
+        {mode === 'enforcement' && renderEnforcement()}
 
         <div style={{
           marginTop: 48, padding: 20, borderTop: '1px solid ' + C.line,

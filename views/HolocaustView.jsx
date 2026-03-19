@@ -375,6 +375,13 @@ function HolocaustView({ setView }) {
   // Never Again state
   const [naCaseKey, setNaCaseKey] = useState('myanmar');
   const [activeStages, setActiveStages] = useState({});
+  // Resistance state
+  const [resScenario, setResScenario] = useState(0);
+  const [resChoices, setResChoices] = useState({});
+  const [resRevealed, setResRevealed] = useState({});
+  // Bystander state
+  const [byProfile, setByProfile] = useState(0);
+  const [byExpanded, setByExpanded] = useState(null);
 
   const TABS = [
     { key: 'bloodlands', label: 'Bloodlands' },
@@ -382,6 +389,8 @@ function HolocaustView({ setView }) {
     { key: 'chronology', label: 'Chronology' },
     { key: 'perpetrators', label: 'Perpetrators' },
     { key: 'neveragain', label: 'Never Again' },
+    { key: 'resistance', label: 'Resistance' },
+    { key: 'bystander', label: 'Bystanders' },
   ];
 
   const riskCount = Object.values(activeRisks).filter(Boolean).length;
@@ -997,6 +1006,285 @@ function HolocaustView({ setView }) {
 
 
   // ═══════════════════════════════════════════════════════════════════
+  //  TAB 6: RESISTANCE — Decision Analyzer
+  // ═══════════════════════════════════════════════════════════════════
+
+  function renderResistance() {
+    var RES_SCENARIOS = [
+      { id: 'ghetto_info', name: 'Information Vacuum (1941-42)',
+        context: 'You are in the Lodz Ghetto, 1942. Rumors circulate about "resettlement to the East." The Judenrat chairman, Chaim Rumkowski, urges compliance, believing labor makes the ghetto indispensable. You have heard fragmentary reports of mass killings but no confirmation. The Germans have told you resettlement means work camps.',
+        constraints: [
+          'No reliable information about destinations -- the term "Auschwitz" means nothing to you in 1942',
+          'Nazi deception was systematic: postcards were forced from victims upon arrival, Red Cross inspections were staged (Theresienstadt)',
+          'Rumkowski\'s "work saves lives" strategy had empirical support -- productive ghettos survived longer',
+          'Resistance meant not just your death but collective punishment of the entire ghetto',
+          'No weapons, no military training, no allied contact, no escape routes through hostile territory',
+        ],
+        options: [
+          { id: 'comply', label: 'Comply with deportation orders', analysis: 'This was the majority response, and it was rational given available information. Without knowledge of the Final Solution, compliance with "resettlement" appeared to maximize survival probability. Rumkowski\'s strategy of making the ghetto economically indispensable did extend Lodz\'s existence longer than any other major ghetto (until August 1944).' },
+          { id: 'hide', label: 'Attempt to hide within the ghetto', analysis: 'Hiding was attempted by thousands. In the Warsaw Ghetto, an estimated 20,000-30,000 Jews went into hiding during the 1942 deportations. Success required shelter, food supplies, non-Jewish contacts, and extraordinary luck. Most were eventually discovered.' },
+          { id: 'resist', label: 'Organize armed resistance', analysis: 'Armed resistance required weapons (almost impossible to obtain), organization (under constant surveillance), and the willingness to trigger collective punishment. The Warsaw Ghetto Uprising (April 1943) occurred only AFTER 300,000 had already been deported to Treblinka -- the fighters knew they were going to die and chose the manner of their death.' },
+          { id: 'flee', label: 'Attempt to escape to the countryside', analysis: 'Escape required passing as non-Jewish (language, appearance, documents), finding shelter in hostile territory where harboring Jews was punishable by death for the entire family, and surviving without resources. In Poland, the countryside was overwhelmingly hostile. Some escaped to forests and joined partisan groups, but survival rates were extremely low.' },
+        ],
+        actualResistance: 'In Lodz, there was no armed uprising. Rumkowski\'s compliance strategy failed: in August 1944, the entire remaining ghetto population (67,000) was deported to Auschwitz. The question is not "why didn\'t they resist?" but "how could they have known?"',
+      },
+      { id: 'hostage', name: 'Hostage Dynamics (Warsaw 1942)',
+        context: 'You are a member of the Jewish underground in Warsaw, July 1942. The Great Deportation has begun: 6,000-10,000 people per day are being sent to Treblinka. You have managed to obtain 10 pistols and a few grenades. If you attack the deportation apparatus, the Germans will accelerate killing and target the fighters\' families first.',
+        constraints: [
+          'Hostage dynamics: resistance in one location triggered collective punishment in others',
+          '10 pistols against the Wehrmacht -- military calculus makes armed resistance suicidal',
+          'The underground has intelligence that deportees are being killed, but most ghetto residents do not believe it',
+          'Many residents still believe labor deportation is survivable -- resistance undermines their coping strategy',
+          'If you fight now with 10 pistols, you lose the ability to fight later with more weapons',
+        ],
+        options: [
+          { id: 'fight_now', label: 'Attack the deportation points immediately', analysis: 'Morally compelling but strategically catastrophic in July 1942. With 10 pistols against thousands of armed soldiers, the uprising would be crushed in hours. The underground chose to wait, build strength, and fight in April 1943 -- by which time 300,000 had been deported but the remaining fighters had acquired more weapons and built bunker networks.' },
+          { id: 'document', label: 'Focus on documenting and transmitting evidence', analysis: 'This is what Oneg Shabbat (Emanuel Ringelblum\'s archive) chose to do. They collected testimonies, statistics, and documents, buried them in milk cans and metal boxes. Two of three caches were recovered after the war. This was a form of resistance: ensuring the truth survived even if the people did not.' },
+          { id: 'smuggle', label: 'Smuggle people out and build weapons cache', analysis: 'This was the ZOB (Jewish Fighting Organization) strategy from July 1942 to April 1943. They smuggled weapons through the sewers, built bunker networks, established contacts with the Polish Home Army (which provided minimal support), and trained fighters. When they finally fought in April 1943, they held out for 27 days -- longer than the Polish army lasted against the Wehrmacht in 1939.' },
+          { id: 'negotiate', label: 'Attempt to negotiate with the Judenrat for delay', analysis: 'The Judenrat (Jewish Council) was itself a hostage institution. Adam Czerniakow, head of the Warsaw Judenrat, was ordered to sign deportation lists. When he was told children would be included, he committed suicide on July 23, 1942. The Judenrat had no negotiating leverage -- it existed to implement German orders under the illusion of self-governance.' },
+        ],
+        actualResistance: 'The ZOB chose to wait, accumulate weapons, and fight when they could inflict maximum damage. The Warsaw Ghetto Uprising (April 19 - May 16, 1943) was not an attempt to survive but an assertion of agency: "We shall not go to our deaths like sheep." They killed approximately 20 German soldiers and held the ghetto for 27 days.',
+      },
+      { id: 'camp', name: 'Death Camp Conditions (Sobibor 1943)',
+        context: 'You are a prisoner in Sobibor extermination camp. New arrivals are killed within hours. You are alive only because you were selected for the Sonderkommando -- forced labor in the killing apparatus. You know you will be killed when you are no longer useful. A group of Soviet Jewish POWs has arrived and they have military training.',
+        constraints: [
+          'The camp is surrounded by minefields, barbed wire, and watchtowers with machine guns',
+          'Guards outnumber prisoners with weapons by 50:1',
+          'Any escape attempt triggers the execution of remaining prisoners',
+          'The surrounding Polish countryside offers no safe haven -- local population may turn you in',
+          'You have been systematically starved, are physically weakened, and have no weapons beyond hidden knives',
+        ],
+        options: [
+          { id: 'mass_revolt', label: 'Organize a mass revolt to overwhelm the guards', analysis: 'This is what happened at Sobibor on October 14, 1943. Led by Soviet POW Alexander Pechersky, prisoners killed 11 SS officers with axes and knives, seized weapons from the armory, and approximately 300 of 600 prisoners escaped through the minefields. About 50 survived the war. The camp was demolished by the Germans afterward.' },
+          { id: 'selective_escape', label: 'Plan individual escapes through the fence', analysis: 'Individual escape was attempted at multiple camps. At Sobibor, a few prisoners escaped before the uprising, but the minefields and hostile countryside made survival nearly impossible without organization. The collective revolt was chosen because individual escape could not save the group.' },
+          { id: 'sabotage', label: 'Sabotage the killing machinery', analysis: 'Sabotage occurred at several camps. At Auschwitz, the Sonderkommando revolt (October 7, 1944) destroyed Crematorium IV using smuggled gunpowder. Four women who smuggled the gunpowder (Roza Robota, Ella Gartner, Regina Safirsztajn, Esther Wajcblum) were executed. Sabotage slowed but could not stop the killing machinery.' },
+          { id: 'endure', label: 'Endure and hope for Allied liberation', analysis: 'Waiting for liberation was rational only if you believed the Allies would arrive in time AND that the Germans would not kill all witnesses before retreating. At Sobibor, there was no evidence that liberation was imminent (the Eastern Front was still hundreds of kilometers away in October 1943). The Germans systematically killed Sonderkommando members to eliminate witnesses.' },
+        ],
+        actualResistance: 'The Sobibor revolt succeeded in its primary goal: breaking the camp. The revolt at Treblinka (August 2, 1943) followed a similar pattern. The Auschwitz Sonderkommando revolt (October 7, 1944) destroyed one crematorium. These were acts of extraordinary courage by people who had witnessed the worst of human capacity and chose to fight despite impossible odds.',
+      },
+      { id: 'forest', name: 'Forest Partisans (Belarus 1942)',
+        context: 'You have escaped from the Minsk Ghetto to the forests of Belarus. You have found a group of 20 Jewish escapees, including women, children, and elderly. Soviet partisan groups operate nearby but are hostile to Jews and sometimes murder Jewish refugees. You must decide how to organize your group for survival.',
+        constraints: [
+          'Soviet partisan commanders sometimes refuse to accept Jews, especially non-combatants',
+          'Women, children, and elderly are considered "useless mouths" by military partisan units',
+          'The forests offer cover but no food, shelter, or medical supplies in winter',
+          'German anti-partisan sweeps systematically comb the forests with thousands of troops',
+          'Local peasants may betray your location for rewards or under threat',
+        ],
+        options: [
+          { id: 'family_camp', label: 'Establish a hidden family camp for all', analysis: 'This is what the Bielski partisans chose. Tuvia Bielski insisted on accepting ALL Jews -- fighters, families, elderly, children. By war\'s end, the Bielski camp sheltered 1,236 people, making it the largest rescue of Jews by Jews during the Holocaust. The camp had workshops, a school, a mill, and a hospital. Bielski\'s rule: "I would rather save one old Jewish woman than kill ten German soldiers."' },
+          { id: 'fighters_only', label: 'Form a fighting unit (combatants only)', analysis: 'Many Jewish partisan groups chose this path out of necessity. Fighting units could move quickly, carry weapons, and conduct operations. But abandoning non-combatants meant condemning them to death. Some groups split: fighters operated separately but supplied food to family camps. The moral calculus was agonizing.' },
+          { id: 'join_soviets', label: 'Seek integration with Soviet partisan brigades', analysis: 'Joining Soviet partisans offered military structure, weapons, and intelligence networks. But Soviet units were often antisemitic. Jewish partisans faced discrimination, were given the most dangerous assignments, and some were murdered by their supposed allies. Integration meant subordinating Jewish concerns to Soviet military objectives.' },
+          { id: 'border_escape', label: 'Attempt to cross borders to neutral territory', analysis: 'Crossing hundreds of kilometers of German-occupied territory with a group including children and elderly was nearly impossible. Some individuals made it to Sweden, Switzerland, or Spain, but organized group escape across Europe was logistically impossible. The forests, for all their dangers, offered the only viable refuge.' },
+        ],
+        actualResistance: 'The Bielski partisans represent one of the most remarkable stories of the Holocaust. By choosing rescue over revenge, Tuvia Bielski saved more Jews than Schindler. Other forest groups -- the Vilna FPO remnants, the Kovpak partisans, the Atlas group -- fought with extraordinary courage in impossible conditions.',
+      },
+      { id: 'sonderkommando', name: 'Moral Impossibility (Auschwitz 1944)',
+        context: 'You are a member of the Auschwitz Sonderkommando -- prisoners forced to operate the gas chambers and crematoria. You witness the murder of thousands daily. You know you will be killed and replaced every few months. Female prisoners in the Weichsel-Union munitions factory have been smuggling tiny amounts of gunpowder to your group. You have enough to damage one crematorium.',
+        constraints: [
+          'You handle the bodies of the murdered -- including, sometimes, people from your own community',
+          'The SS will execute your entire Kommando when the smuggling is discovered',
+          'Destroying one crematorium does not stop the killing -- three others remain operational',
+          'The Soviet Army is advancing but still months away from Auschwitz',
+          'The four women smuggling gunpowder will certainly be tortured and executed if caught',
+        ],
+        options: [
+          { id: 'revolt', label: 'Launch the revolt now with available explosives', analysis: 'On October 7, 1944, the Sonderkommando of Crematorium IV revolted. They set the crematorium on fire using the smuggled gunpowder, killed several SS guards, and cut through the fence. All 250 rebels were killed. Crematorium IV was destroyed and never rebuilt. The four women who smuggled the gunpowder were hanged on January 6, 1945 -- 20 days before liberation.' },
+          { id: 'wait', label: 'Wait for more explosives to destroy multiple crematoria', analysis: 'Waiting risked the entire conspiracy being discovered. The SS periodically killed and replaced Sonderkommando members. The group that planned the revolt knew their time was running out. The decision to act with insufficient resources was a response to the certainty of death -- they chose when and how.' },
+          { id: 'document', label: 'Bury written testimonies for posterity', analysis: 'Several Sonderkommando members did exactly this. Zalmen Gradowski, Leyb Langfus, and Zalmen Lewental buried manuscripts in the grounds of the crematoria. These were discovered after the war and represent the only eyewitness accounts from inside the gas chambers. Writing was itself an act of resistance against the Nazi goal of total erasure.' },
+          { id: 'smuggle_out', label: 'Focus on smuggling evidence to the outside world', analysis: 'Photographs were smuggled out of Auschwitz by the Sonderkommando in August 1944 -- four blurred images taken at enormous risk, showing bodies being burned in open pits. These are the only photographic evidence taken by victims from inside the killing process. The photographs reached the Polish resistance but did not change Allied policy.' },
+        ],
+        actualResistance: 'The Sonderkommando revolt and the buried testimonies represent resistance at the extreme boundary of human experience. These were people who had been forced to participate in the murder process and who chose, at the cost of their lives, to fight back, bear witness, or both. The question "why didn\'t they resist?" is answered by the question "what more could resistance possibly mean?"',
+      },
+    ];
+    var scenario = RES_SCENARIOS[resScenario];
+    var choiceKey = scenario.id;
+    var userChoice = resChoices[choiceKey];
+    var isRevealed = resRevealed[choiceKey];
+
+    return React.createElement('div', null,
+      // Header
+      React.createElement('div', { style: { padding: 16, background: HC.bgCard, border: '1px solid ' + HC.cardBd, borderLeft: '3px solid ' + HC.red, marginBottom: 16, borderRadius: 4 } },
+        React.createElement('p', { style: { fontFamily: HMono, fontSize: 10, color: HC.red, letterSpacing: '.12em', marginBottom: 8 } }, 'RESISTANCE DECISION ANALYZER'),
+        React.createElement('p', { style: { fontSize: 13, fontFamily: HSerif, color: HC.tx, lineHeight: 1.7 } },
+          '"Why didn\'t they resist?" is the most asked and most misunderstood question about the Holocaust. This instrument presents the actual constraints Jews faced in five scenarios. Evaluate the options and see why organized resistance was structurally nearly impossible -- and why the resistance that DID occur was extraordinary.'
+        )
+      ),
+      // Scenario selector
+      React.createElement('div', { style: { display: 'flex', gap: 4, marginBottom: 16, flexWrap: 'wrap' } },
+        RES_SCENARIOS.map(function(s, si) {
+          var active = resScenario === si;
+          return React.createElement('button', { key: s.id, onClick: function() { setResScenario(si); },
+            style: { flex: '1 1 auto', padding: '8px 10px', fontFamily: HMono, fontSize: 10, cursor: 'pointer',
+              background: active ? HC.red + '18' : 'transparent', border: '1px solid ' + (active ? HC.red : HC.cardBd),
+              color: active ? HC.accent : HC.tx3, borderRadius: 3, textAlign: 'center', minWidth: 100 }
+          }, s.name);
+        })
+      ),
+      // Context
+      React.createElement('div', { style: { padding: 14, background: HC.bgCard, border: '1px solid ' + HC.cardBd, borderRadius: 4, marginBottom: 12 } },
+        React.createElement('div', { style: { fontFamily: HMono, fontSize: 9, color: HC.accent, marginBottom: 6 } }, 'SCENARIO CONTEXT'),
+        React.createElement('p', { style: { fontSize: 13, fontFamily: HSerif, color: HC.tx, lineHeight: 1.7 } }, scenario.context)
+      ),
+      // Constraints
+      React.createElement('div', { style: { padding: 14, background: HC.warnBg, border: '1px solid ' + HC.warn + '30', borderRadius: 4, marginBottom: 16 } },
+        React.createElement('div', { style: { fontFamily: HMono, fontSize: 9, color: HC.warn, marginBottom: 8 } }, 'STRUCTURAL CONSTRAINTS'),
+        scenario.constraints.map(function(c, ci) {
+          return React.createElement('div', { key: ci, style: { display: 'flex', gap: 8, marginBottom: 4 } },
+            React.createElement('span', { style: { fontFamily: HMono, fontSize: 10, color: HC.warn, flexShrink: 0 } }, (ci + 1) + '.'),
+            React.createElement('p', { style: { fontSize: 12, fontFamily: HSerif, color: HC.tx, lineHeight: 1.6 } }, c)
+          );
+        })
+      ),
+      // Options
+      React.createElement('div', { style: { fontFamily: HMono, fontSize: 9, color: HC.tx3, marginBottom: 8 } }, 'WHAT WOULD YOU DO?'),
+      scenario.options.map(function(opt) {
+        var selected = userChoice === opt.id;
+        return React.createElement('div', { key: opt.id,
+          onClick: function() { if (!isRevealed) { setResChoices(function(prev) { var c = Object.assign({}, prev); c[choiceKey] = opt.id; return c; }); } },
+          style: { padding: 12, background: selected ? HC.accentBg : HC.bgCard, border: '1px solid ' + (selected ? HC.accent : HC.cardBd), borderRadius: 4, marginBottom: 8, cursor: isRevealed ? 'default' : 'pointer' }
+        },
+          React.createElement('span', { style: { fontFamily: HMono, fontSize: 12, color: selected ? HC.accent : HC.tx, fontWeight: 600 } }, opt.label),
+          isRevealed ? React.createElement('p', { style: { fontSize: 12, fontFamily: HSerif, color: HC.tx2, lineHeight: 1.65, marginTop: 8, paddingTop: 8, borderTop: '1px solid ' + HC.line } }, opt.analysis) : null
+        );
+      }),
+      // Reveal button
+      !isRevealed && userChoice ? React.createElement('button', {
+        onClick: function() { setResRevealed(function(prev) { var c = Object.assign({}, prev); c[choiceKey] = true; return c; }); },
+        style: { padding: '8px 20px', fontFamily: HMono, fontSize: 11, cursor: 'pointer', background: HC.accentBg, border: '1px solid ' + HC.accent, color: HC.accent, borderRadius: 3, marginBottom: 16 }
+      }, 'Reveal Historical Analysis') : null,
+      // Actual resistance
+      isRevealed ? React.createElement('div', { style: { padding: 14, background: HC.bgCard, border: '1px solid ' + HC.red + '30', borderLeft: '3px solid ' + HC.red, borderRadius: 4, marginTop: 16 } },
+        React.createElement('div', { style: { fontFamily: HMono, fontSize: 10, color: HC.red, marginBottom: 6 } }, 'WHAT ACTUALLY HAPPENED'),
+        React.createElement('p', { style: { fontSize: 12, fontFamily: HSerif, color: HC.tx, lineHeight: 1.7 } }, scenario.actualResistance),
+        React.createElement('p', { style: { fontSize: 10, fontFamily: HMono, color: HC.tx3, marginTop: 10, lineHeight: 1.6 } },
+          'Sources: Arad, "Ghetto in Flames" (1980). Gutman, "Resistance: The Warsaw Ghetto Uprising" (1994). Rashke, "Escape from Sobibor" (1982). Greif, "We Wept Without Tears: Testimonies of the Jewish Sonderkommando" (2005). Tec, "Defiance: The Bielski Partisans" (1993).'
+        )
+      ) : null
+    );
+  }
+
+
+  // ═══════════════════════════════════════════════════════════════════
+  //  TAB 7: BYSTANDER — Spectrum Analyzer
+  // ═══════════════════════════════════════════════════════════════════
+
+  function renderBystander() {
+    var RESCUER_PROFILES = [
+      { id: 'wallenberg', name: 'Raoul Wallenberg', country: 'Sweden / Hungary', motivation: 'Professional / Humanitarian',
+        riskLevel: 'extreme', saved: '~20,000-100,000',
+        story: 'Swedish diplomat who arrived in Budapest in July 1944 and issued thousands of "protective passports" (Schutzpasse). Created safe houses under Swedish diplomatic protection. Personally confronted Adolf Eichmann. Intervened at deportation trains, pulling people off by claiming they had Swedish papers. Disappeared into Soviet custody in January 1945; believed to have died in Soviet prison.',
+        motivationType: 'professional', factors: ['Diplomatic immunity provided protection most rescuers lacked', 'Swedish government support gave institutional backing', 'Arrived late (1944) when the outcome of the war was clear', 'Personal courage far exceeded his diplomatic mandate'] },
+      { id: 'sendler', name: 'Irena Sendler', country: 'Poland', motivation: 'Moral / Professional',
+        riskLevel: 'extreme', saved: '~2,500 children',
+        story: 'Polish social worker who used her access to the Warsaw Ghetto (as a health worker authorized to check for typhus) to smuggle children out in ambulances, toolboxes, suitcases, and through sewer pipes. Kept a list of children\'s real names in jars buried under a tree to reunite them with families after the war. Arrested by the Gestapo in 1943, tortured (legs and feet broken), sentenced to death. Rescued by Zegota (underground) through bribery. Continued rescue work under a false identity.',
+        motivationType: 'moral', factors: ['Pre-war social work connections provided infrastructure', 'Professional role gave legitimate access to the ghetto', 'Operated within organized network (Zegota)', 'Accepted torture rather than reveal children\'s locations'] },
+      { id: 'schindler', name: 'Oskar Schindler', country: 'Germany / Poland', motivation: 'Situational / Evolving',
+        riskLevel: 'high', saved: '~1,200',
+        story: 'German industrialist and Nazi Party member who initially employed Jews as cheap labor in his enamelware factory. Gradually transformed from war profiteer to rescuer. Used his factory as a cover to protect Jewish workers, spending his entire fortune bribing officials. Created a famous list of "essential workers" to prevent their deportation to Auschwitz. Died penniless in 1974.',
+        motivationType: 'situational', factors: ['Started as opportunist, not humanitarian -- moral evolution over time', 'Nazi Party membership and business connections provided cover', 'Personal relationships with individual workers triggered empathy', 'Used the system\'s own logic (economic productivity) to subvert it'] },
+      { id: 'chambon', name: 'Le Chambon-sur-Lignon', country: 'France', motivation: 'Religious / Communal',
+        riskLevel: 'high', saved: '~3,500',
+        story: 'An entire village of French Huguenots (Protestants) who sheltered Jews and other refugees throughout the occupation. Led by Pastor Andre Trocme and his wife Magda. The village had a collective memory of religious persecution (Huguenots were persecuted for centuries in Catholic France). When asked why they helped, villagers consistently replied: "It was the natural thing to do." The conspiracy of silence involved the entire community -- no one betrayed the refugees.',
+        motivationType: 'religious', factors: ['Collective action, not individual heroism -- an entire community participated', 'Huguenot history of persecution created empathic identification', 'Rural isolation provided geographic protection', 'Pastor Trocme provided moral leadership but the village chose collectively'] },
+      { id: 'sugihara', name: 'Chiune Sugihara', country: 'Japan / Lithuania', motivation: 'Moral / Professional',
+        riskLevel: 'high', saved: '~6,000-10,000',
+        story: 'Japanese consul in Kaunas, Lithuania who issued thousands of transit visas to Jewish refugees in 1940, defying explicit orders from Tokyo. Wrote visas by hand for 18-20 hours a day for weeks. Continued writing visas from the train window as he was recalled to Japan. Dismissed from diplomatic service after the war. Not honored by Japan until decades later.',
+        motivationType: 'moral', factors: ['Defied his own government\'s direct orders', 'No personal connection to Jewish community', 'Cultural context: disobedience was extremely stigmatized in Japanese society', 'Paid career cost for decades -- not a "costless" moral gesture'] },
+    ];
+    var SPECTRUM_POSITIONS = [
+      { label: 'Perpetrator', desc: 'Active participation in killing, deportation, or persecution', color: '#8b3030', pct: 5 },
+      { label: 'Collaborator', desc: 'Assisted perpetrators through denunciation, property seizure, or administrative support', color: '#a05040', pct: 10 },
+      { label: 'Passive Bystander', desc: 'Witnessed persecution without acting -- neither helping nor harming', color: '#808060', pct: 70 },
+      { label: 'Sympathizer', desc: 'Expressed private sympathy but took no action due to fear or indifference', color: '#607848', pct: 10 },
+      { label: 'Rescuer', desc: 'Actively risked personal safety to save persecuted individuals', color: '#3a5878', pct: 5 },
+    ];
+    var profile = RESCUER_PROFILES[byProfile];
+    return React.createElement('div', null,
+      // Header
+      React.createElement('div', { style: { padding: 16, background: HC.bgCard, border: '1px solid ' + HC.cardBd, borderLeft: '3px solid ' + HC.blue, marginBottom: 16, borderRadius: 4 } },
+        React.createElement('p', { style: { fontFamily: HMono, fontSize: 10, color: HC.blue, letterSpacing: '.12em', marginBottom: 8 } }, 'BYSTANDER SPECTRUM ANALYZER'),
+        React.createElement('p', { style: { fontSize: 13, fontFamily: HSerif, color: HC.tx, lineHeight: 1.7 } },
+          'Yad Vashem has honored approximately 28,000 Righteous Among the Nations -- non-Jews who risked their lives to save Jews. This instrument maps the spectrum from perpetrator to rescuer and examines the factors that pushed individuals toward each end. The analytical question: what made some people act when the overwhelming majority did not?'
+        )
+      ),
+      // Spectrum bar
+      React.createElement('div', { style: { padding: 14, background: HC.bgCard, border: '1px solid ' + HC.cardBd, borderRadius: 4, marginBottom: 16 } },
+        React.createElement('div', { style: { fontFamily: HMono, fontSize: 9, color: HC.tx3, marginBottom: 8 } }, 'THE BYSTANDER SPECTRUM'),
+        React.createElement('div', { style: { display: 'flex', height: 24, borderRadius: 3, overflow: 'hidden', marginBottom: 8 } },
+          SPECTRUM_POSITIONS.map(function(sp) {
+            return React.createElement('div', { key: sp.label, style: { width: sp.pct + '%', background: sp.color, display: 'flex', alignItems: 'center', justifyContent: 'center' } },
+              React.createElement('span', { style: { fontFamily: HMono, fontSize: 8, color: '#fff', whiteSpace: 'nowrap', overflow: 'hidden' } }, sp.pct > 8 ? sp.label : '')
+            );
+          })
+        ),
+        React.createElement('div', { style: { display: 'flex', justifyContent: 'space-between' } },
+          SPECTRUM_POSITIONS.map(function(sp) {
+            return React.createElement('div', { key: sp.label, style: { flex: '0 0 ' + sp.pct + '%', textAlign: 'center' } },
+              React.createElement('div', { style: { fontFamily: HMono, fontSize: 8, color: sp.color } }, sp.pct + '%'),
+              React.createElement('div', { style: { fontSize: 9, color: HC.tx3, lineHeight: 1.3, marginTop: 2 } }, sp.desc)
+            );
+          })
+        )
+      ),
+      // Profile selector
+      React.createElement('div', { style: { fontFamily: HMono, fontSize: 9, color: HC.tx3, marginBottom: 8 } }, 'RESCUER PROFILES'),
+      React.createElement('div', { style: { display: 'flex', gap: 4, marginBottom: 16, flexWrap: 'wrap' } },
+        RESCUER_PROFILES.map(function(p, pi) {
+          var active = byProfile === pi;
+          return React.createElement('button', { key: p.id, onClick: function() { setByProfile(pi); },
+            style: { padding: '8px 12px', fontFamily: HMono, fontSize: 10, cursor: 'pointer',
+              background: active ? HC.blue + '18' : 'transparent', border: '1px solid ' + (active ? HC.blue : HC.cardBd),
+              color: active ? HC.accent : HC.tx3, borderRadius: 3 }
+          }, p.name);
+        })
+      ),
+      // Profile detail
+      React.createElement('div', { style: { padding: 16, background: HC.bgCard, border: '1px solid ' + HC.cardBd, borderRadius: 4, marginBottom: 12 } },
+        React.createElement('div', { style: { display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 12 } },
+          React.createElement('div', null,
+            React.createElement('h3', { style: { fontSize: 18, fontFamily: HSerif, color: HC.bone, fontWeight: 400, marginBottom: 4 } }, profile.name),
+            React.createElement('span', { style: { fontFamily: HMono, fontSize: 10, color: HC.tx2 } }, profile.country)
+          ),
+          React.createElement('div', { style: { textAlign: 'right' } },
+            React.createElement('div', { style: { fontFamily: HMono, fontSize: 18, color: HC.accent } }, profile.saved),
+            React.createElement('div', { style: { fontFamily: HMono, fontSize: 9, color: HC.tx3 } }, 'LIVES SAVED')
+          )
+        ),
+        React.createElement('div', { style: { display: 'flex', gap: 12, marginBottom: 14 } },
+          React.createElement('div', { style: { padding: '4px 8px', background: HC.blue + '18', border: '1px solid ' + HC.blue + '40', borderRadius: 3 } },
+            React.createElement('span', { style: { fontFamily: HMono, fontSize: 9, color: HC.tx3 } }, 'MOTIVATION: '),
+            React.createElement('span', { style: { fontFamily: HMono, fontSize: 10, color: HC.blue } }, profile.motivation)
+          ),
+          React.createElement('div', { style: { padding: '4px 8px', background: (profile.riskLevel === 'extreme' ? HC.red : HC.warn) + '18', border: '1px solid ' + (profile.riskLevel === 'extreme' ? HC.red : HC.warn) + '40', borderRadius: 3 } },
+            React.createElement('span', { style: { fontFamily: HMono, fontSize: 9, color: HC.tx3 } }, 'RISK: '),
+            React.createElement('span', { style: { fontFamily: HMono, fontSize: 10, color: profile.riskLevel === 'extreme' ? HC.red : HC.warn } }, profile.riskLevel.toUpperCase())
+          )
+        ),
+        React.createElement('p', { style: { fontSize: 13, fontFamily: HSerif, color: HC.tx, lineHeight: 1.7, marginBottom: 14 } }, profile.story),
+        React.createElement('div', { style: { fontFamily: HMono, fontSize: 9, color: HC.accent, marginBottom: 6 } }, 'ANALYTICAL FACTORS'),
+        profile.factors.map(function(f, fi) {
+          return React.createElement('div', { key: fi, style: { display: 'flex', gap: 8, marginBottom: 4 } },
+            React.createElement('span', { style: { fontFamily: HMono, fontSize: 10, color: HC.accent, flexShrink: 0 } }, '\u2022'),
+            React.createElement('p', { style: { fontSize: 12, fontFamily: HSerif, color: HC.tx2, lineHeight: 1.6 } }, f)
+          );
+        })
+      ),
+      // Bottom analysis
+      React.createElement('div', { style: { padding: 14, background: HC.accentBg, border: '1px solid ' + HC.accent + '30', borderRadius: 4, marginTop: 16 } },
+        React.createElement('div', { style: { fontFamily: HMono, fontSize: 10, color: HC.accent, marginBottom: 6 } }, 'WHAT MADE RESCUERS DIFFERENT?'),
+        React.createElement('p', { style: { fontSize: 12, fontFamily: HSerif, color: HC.tx, lineHeight: 1.7 } },
+          'Sociologist Samuel Oliner (himself a rescued child) found that rescuers shared key traits: a strong sense of personal agency, an inclusive moral framework that extended beyond in-group boundaries, and often a history of being outsiders themselves. But situational factors mattered enormously: access to resources, geographic location, institutional cover, and the simple accident of being asked. Many rescuers reported that they did not make a single dramatic decision but rather took small steps that escalated into full commitment. The bystander majority was not necessarily callous -- many were paralyzed by fear, constrained by circumstances, or simply never confronted with a direct opportunity to act.'
+        ),
+        React.createElement('p', { style: { fontSize: 10, fontFamily: HMono, color: HC.tx3, marginTop: 10, lineHeight: 1.6 } },
+          'Sources: Oliner & Oliner, "The Altruistic Personality" (1988). Fogelman, "Conscience and Courage" (1994). Monroe, "The Heart of Altruism" (1996). Todorov, "The Fragility of Goodness" (2001). Yad Vashem Righteous Among the Nations database.'
+        )
+      )
+    );
+  }
+
+
+  // ═══════════════════════════════════════════════════════════════════
   //  MAIN LAYOUT
   // ═══════════════════════════════════════════════════════════════════
 
@@ -1064,6 +1352,8 @@ function HolocaustView({ setView }) {
       tab === 'chronology' ? renderChronology() : null,
       tab === 'perpetrators' ? renderPerpetrators() : null,
       tab === 'neveragain' ? renderNeverAgain() : null,
+      tab === 'resistance' ? renderResistance() : null,
+      tab === 'bystander' ? renderBystander() : null,
     ),
 
     // Footer

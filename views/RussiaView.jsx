@@ -5363,7 +5363,7 @@ function RussiaView({ setView }) {
                 onClick: function() { setContractExplanation(isOpen ? null : ex.id); },
                 style: { padding: "12px 16px", cursor: "pointer", display: "flex", alignItems: "flex-start", gap: 10 },
               },
-                React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 14, fontWeight: 700, color: RU_C.gold, flexShrink: 0 } }, ex.id + ")"),
+                React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 14, fontWeight: 700, color: RU_C.gold, flexShrink: 0 } }, ex.id + ")" /* ( */),
                 React.createElement("span", { style: { fontFamily: RU_Sans, fontSize: 13, color: isOpen ? RU_C.tx : RU_C.tx2, fontWeight: isOpen ? 600 : 400 } }, ex.label)
               ),
               isOpen ? React.createElement("div", { style: { padding: "0 16px 16px 42px" } },
