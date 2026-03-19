@@ -792,6 +792,7 @@ const SCENES = {
   hs: { grain: 'dark', type: 'infrastructure', accent: [200, 60, 80], sectors: ["Energy", "Water", "Transport", "Comms", "Health", "Finance"] },
   cicc: { grain: 'cold', type: 'institutional', accent: [48, 112, 160], bg: "#040810", globe: true, vectors: ["ICC", "UNSC", "State Parties", "Prosecution"], podium: true },
   respite: { grain: 'cold', type: 'institutional', accent: [96, 112, 128], bg: "#06080e", globe: false, cycle: null, podium: false },
+  holocaust: { grain: 'cold', type: 'imperial', sky: [[0, "#060606"], [.3, "#0c0c0c"], [.6, "#121210"], [1, "#18180e"]], cc: [14, 14, 12], arch: (ctx, w, h) => { ctx.strokeStyle = "rgba(80,70,50,.06)"; ctx.lineWidth = 1; for (let i = 0; i < 7; i++) { const bx = w * (.1 + i * .12), by = h * .35, bw = 28, bh = 55; ctx.strokeRect(bx, by, bw, bh); ctx.strokeRect(bx + 4, by + 4, bw - 8, bh - 12); } ctx.strokeStyle = "rgba(120,100,60,.04)"; ctx.beginPath(); ctx.moveTo(w * .05, h * .32); ctx.lineTo(w * .95, h * .32); ctx.stroke(); ctx.moveTo(w * .05, h * .92); ctx.lineTo(w * .95, h * .92); ctx.stroke(); ctx.fillStyle = "rgba(80,70,50,.03)"; ctx.font = "italic 9px serif"; ctx.textAlign = "center"; ctx.fillText("Zachor", w * .5, h * .28); }, figures: [{ x: .2, y: .84, sc: .7, sp: .15, ph: 0, c: "rgba(14,14,12,0.85)" }, { x: .35, y: .85, sc: .6, sp: .12, ph: .8, c: "rgba(14,14,12,0.85)" }, { x: .5, y: .84, sc: .65, sp: .1, ph: 1.6, c: "rgba(14,14,12,0.85)" }, { x: .65, y: .85, sc: .55, sp: .14, ph: 2.4, c: "rgba(14,14,12,0.85)" }], particleType: 'dust', groundCol: "rgba(10,10,8,1)" },
   ct: { grain: 'dark', type: 'surveillance', accent: [200, 60, 40], stamp: "THREAT ANALYSIS", motif: 'eye', baseBg: "#0a0404", figures: [{ x: .2, y: .82, sc: 1, ph: 0 }, { x: .45, y: .85, sc: .9, ph: 1.2 }, { x: .7, y: .84, sc: .95, ph: 2.5, mir: true }, { x: .88, y: .86, sc: .8, ph: 3.5, mir: true }] },
 };
 
@@ -5622,8 +5623,8 @@ function CourseworkView({ setView }) {
   // Section definitions: Georgetown=12, Colgate=12, Professional=6
   const SEC = useMemo(() => [
     { label: "GEORGETOWN UNIVERSITY", tag: "GTN", sub: "Master of Professional Studies in Applied Intelligence · 4.0 GPA · Expected May 2026", start: 0, len: 12, accent: "#e89020" },
-    { label: "COLGATE UNIVERSITY", tag: "COL", sub: "B.A. History & Peace and Conflict Studies · Hamilton, NY · 2009–2013", start: 12, len: 12, accent: "#c4883a" },
-    { label: "PROFESSIONAL EXPERIENCE", tag: "PRO", sub: "Field Operations · Crisis Response · International Service", start: 24, len: 6, accent: "#cc2020" },
+    { label: "COLGATE UNIVERSITY", tag: "COL", sub: "B.A. History & Peace and Conflict Studies · Hamilton, NY · 2009–2013", start: 12, len: 13, accent: "#c4883a" },
+    { label: "PROFESSIONAL EXPERIENCE", tag: "PRO", sub: "Field Operations · Crisis Response · International Service", start: 25, len: 6, accent: "#cc2020" },
   ], []);
 
   const [secIdx, setSecIdx] = useState(0);
@@ -5788,8 +5789,8 @@ function CourseworkView({ setView }) {
 
   const gridSections = [
     { label: "GEORGETOWN UNIVERSITY", tag: "GTN", accent: "#e89020", courses: COURSES.slice(0, 12) },
-    { label: "COLGATE UNIVERSITY", tag: "COL", accent: "#c4883a", courses: COURSES.slice(12, 24) },
-    { label: "PROFESSIONAL EXPERIENCE", tag: "PRO", accent: "#cc2020", courses: COURSES.slice(24, 30) },
+    { label: "COLGATE UNIVERSITY", tag: "COL", accent: "#c4883a", courses: COURSES.slice(12, 25) },
+    { label: "PROFESSIONAL EXPERIENCE", tag: "PRO", accent: "#cc2020", courses: COURSES.slice(25, 31) },
   ];
 
   const renderGrid = () => (
