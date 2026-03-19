@@ -7,30 +7,30 @@
 // Self-contained React component using Babel in-browser transpilation.
 // Globals: useState, useCallback, useMemo from React
 
-// ── Palette: Kremlin + Orthodox — deep red-black with Byzantine gold ─────────
+// ── Palette: Imperial Parchment — warm ivory with gold leaf & dark ink ────────
 const RU_C = {
-  bg:      "#10080a",
-  card:    "rgba(24,12,16,.92)",
-  cardBd:  "rgba(180,140,60,.2)",
-  tx:      "#e8dcc8",
-  tx2:     "#c0a888",
-  tx3:     "#8a7058",
-  gold:    "#d4a847",
-  goldDm:  "#a88030",
-  goldBg:  "rgba(212,168,71,.08)",
+  bg:      "#f5f0e6",
+  card:    "rgba(250,247,240,.95)",
+  cardBd:  "rgba(180,140,60,.3)",
+  tx:      "#2a1a0a",
+  tx2:     "#5a4a3a",
+  tx3:     "#8a7a6a",
+  gold:    "#b8922a",
+  goldDm:  "#96750e",
+  goldBg:  "rgba(184,146,42,.1)",
   red:     "#8b1c23",
   redDm:   "#6b1520",
-  redBg:   "rgba(139,28,35,.1)",
+  redBg:   "rgba(139,28,35,.08)",
   blue:    "#1a2855",
   blueDm:  "#142040",
-  blueBg:  "rgba(26,40,85,.1)",
+  blueBg:  "rgba(26,40,85,.08)",
   green:   "#2d6b4a",
   greenDm: "#1e4a35",
-  greenBg: "rgba(45,107,74,.08)",
-  bronze:  "#b09050",
-  ivory:   "#f0e8d0",
+  greenBg: "rgba(45,107,74,.06)",
+  bronze:  "#8a6e30",
+  ivory:   "#faf7f0",
   kremlin: "#6b1c23",
-  line:    "rgba(180,140,60,.15)",
+  line:    "rgba(120,90,30,.2)",
 };
 const RU_Serif = "'Source Serif 4','EB Garamond',Georgia,serif";
 const RU_Sans  = "'Inter',Helvetica,sans-serif";
@@ -40,11 +40,11 @@ const RU_Mono  = "'IBM Plex Mono',monospace";
 var RU_DEFS_SVG = '<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0"><defs>' +
   '<filter id="ruParchment"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feBlend in="SourceGraphic" mode="multiply"/></filter>' +
   '<pattern id="ruFiligree" width="60" height="60" patternUnits="userSpaceOnUse">' +
-    '<path d="M30 0 Q35 5 30 10 Q25 5 30 0Z" fill="none" stroke="rgba(196,168,98,.08)" stroke-width=".5"/>' +
-    '<path d="M0 30 Q5 35 10 30 Q5 25 0 30Z" fill="none" stroke="rgba(196,168,98,.06)" stroke-width=".5"/>' +
-    '<path d="M60 30 Q55 35 50 30 Q55 25 60 30Z" fill="none" stroke="rgba(196,168,98,.06)" stroke-width=".5"/>' +
-    '<path d="M30 60 Q35 55 30 50 Q25 55 30 60Z" fill="none" stroke="rgba(196,168,98,.08)" stroke-width=".5"/>' +
-    '<circle cx="30" cy="30" r="1" fill="rgba(196,168,98,.04)"/>' +
+    '<path d="M30 0 Q35 5 30 10 Q25 5 30 0Z" fill="none" stroke="rgba(140,110,40,.12)" stroke-width=".5"/>' +
+    '<path d="M0 30 Q5 35 10 30 Q5 25 0 30Z" fill="none" stroke="rgba(140,110,40,.10)" stroke-width=".5"/>' +
+    '<path d="M60 30 Q55 35 50 30 Q55 25 60 30Z" fill="none" stroke="rgba(140,110,40,.10)" stroke-width=".5"/>' +
+    '<path d="M30 60 Q35 55 30 50 Q25 55 30 60Z" fill="none" stroke="rgba(140,110,40,.12)" stroke-width=".5"/>' +
+    '<circle cx="30" cy="30" r="1" fill="rgba(140,110,40,.08)"/>' +
   '</pattern>' +
   '</defs></svg>';
 
@@ -93,7 +93,7 @@ function RuCornerOrnaments() {
 function RuOnionDomeSkyline() {
   return React.createElement("svg", {
     viewBox: "0 0 800 120",
-    style: { position: "absolute", bottom: 0, left: 0, width: "100%", height: 120, opacity: 0.04, pointerEvents: "none" },
+    style: { position: "absolute", bottom: 0, left: 0, width: "100%", height: 120, opacity: 0.1, pointerEvents: "none" },
     preserveAspectRatio: "xMidYMax meet",
   },
     React.createElement("path", { d: "M80 120 L80 70 Q80 40 90 30 Q100 20 100 10 Q100 20 110 30 Q120 40 120 70 L120 120", fill: RU_C.gold }),
@@ -191,7 +191,7 @@ var RU_DATES = [
 function RuStBasilsSilhouette() {
   return React.createElement("svg", {
     viewBox: "0 0 200 100",
-    style: { position: "absolute", bottom: 0, right: 40, width: 200, height: 100, opacity: 0.035, pointerEvents: "none" },
+    style: { position: "absolute", bottom: 0, right: 40, width: 200, height: 100, opacity: 0.09, pointerEvents: "none" },
     preserveAspectRatio: "xMidYMax meet",
   },
     // Central tall dome
@@ -497,7 +497,7 @@ function RuDateMarkers() {
       return React.createElement("div", {
         key: d.year,
         style: {
-          fontFamily: RU_Mono, fontSize: 9, color: "rgba(196,168,98,.1)",
+          fontFamily: RU_Mono, fontSize: 9, color: "rgba(140,110,40,.2)",
           textAlign: "right", letterSpacing: ".5px", lineHeight: 1.2,
         },
       },
@@ -1191,7 +1191,7 @@ function RussiaView({ setView }) {
       style: {
         padding: "12px 16px",
         background: "rgba(12,10,8,.95)",
-        border: "1px solid rgba(196,168,98,.2)",
+        border: "1px solid rgba(140,110,40,.2)",
         borderRadius: 4,
         maxWidth: 400,
         fontSize: 12,
@@ -1241,7 +1241,7 @@ function RussiaView({ setView }) {
     RuStBasilsSilhouette(),
     // Romanov Double-Headed Eagle watermark (center)
     React.createElement("div", { style: { position: "absolute", top: 10, left: "50%", transform: "translateX(-50%)" } },
-      RuRomanovEagle({ size: 120, opacity: 0.04 })
+      RuRomanovEagle({ size: 120, opacity: 0.10 })
     ),
     // Ornamental top border
     React.createElement("svg", { width: "100%", height: 8, viewBox: "0 0 600 8", preserveAspectRatio: "xMidYMid meet", style: { display: "block", marginBottom: 16, opacity: 0.3 } },
@@ -1295,28 +1295,28 @@ function RussiaView({ setView }) {
       style: { display: "flex", justifyContent: "center", gap: 24, marginTop: 10 },
     },
       React.createElement("span", {
-        style: { fontFamily: "'Times New Roman', serif", fontSize: 16, color: "rgba(196,168,98,.25)", fontStyle: "italic", letterSpacing: ".12em" },
+        style: { fontFamily: "'Times New Roman', serif", fontSize: 16, color: "rgba(140,110,40,.25)", fontStyle: "italic", letterSpacing: ".12em" },
       }, "\u0422\u0440\u0435\u0442\u0438\u0439 \u0420\u0438\u043C"),
       React.createElement("span", {
-        style: { fontFamily: "'Times New Roman', serif", fontSize: 14, color: "rgba(196,168,98,.15)", letterSpacing: ".08em" },
+        style: { fontFamily: "'Times New Roman', serif", fontSize: 14, color: "rgba(140,110,40,.15)", letterSpacing: ".08em" },
       }, "\u2014"),
       React.createElement("span", {
-        style: { fontFamily: "'Times New Roman', serif", fontSize: 16, color: "rgba(196,168,98,.25)", fontStyle: "italic", letterSpacing: ".12em" },
+        style: { fontFamily: "'Times New Roman', serif", fontSize: 16, color: "rgba(140,110,40,.25)", fontStyle: "italic", letterSpacing: ".12em" },
       }, "\u041C\u043E\u0441\u043A\u0432\u0430"),
       React.createElement("span", {
-        style: { fontFamily: "'Times New Roman', serif", fontSize: 14, color: "rgba(196,168,98,.15)", letterSpacing: ".08em" },
+        style: { fontFamily: "'Times New Roman', serif", fontSize: 14, color: "rgba(140,110,40,.15)", letterSpacing: ".08em" },
       }, "\u2014"),
       React.createElement("span", {
-        style: { fontFamily: "'Times New Roman', serif", fontSize: 16, color: "rgba(196,168,98,.25)", fontStyle: "italic", letterSpacing: ".12em" },
+        style: { fontFamily: "'Times New Roman', serif", fontSize: 16, color: "rgba(140,110,40,.25)", fontStyle: "italic", letterSpacing: ".12em" },
       }, "\u0421\u0430\u043C\u043E\u0434\u0435\u0440\u0436\u0430\u0432\u0438\u0435")
     ),
     // Filofei's full Third Rome doctrine quote
     React.createElement("div", {
-      style: { textAlign: "center", marginTop: 6, fontFamily: "'Times New Roman', serif", fontSize: 11, color: "rgba(196,168,98,.12)", fontStyle: "italic", letterSpacing: ".06em", lineHeight: 1.5 },
+      style: { textAlign: "center", marginTop: 6, fontFamily: "'Times New Roman', serif", fontSize: 11, color: "rgba(140,110,40,.12)", fontStyle: "italic", letterSpacing: ".06em", lineHeight: 1.5 },
     }, "\u041C\u043E\u0441\u043A\u0432\u0430 \u2014 \u0422\u0440\u0435\u0442\u0438\u0439 \u0420\u0438\u043C, \u0430 \u0447\u0435\u0442\u0432\u0451\u0440\u0442\u043E\u043C\u0443 \u043D\u0435 \u0431\u044B\u0432\u0430\u0442\u044C"),
     // Nicholas I's triad
     React.createElement("div", {
-      style: { textAlign: "center", marginTop: 3, fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(196,168,98,.09)", letterSpacing: ".08em" },
+      style: { textAlign: "center", marginTop: 3, fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(140,110,40,.09)", letterSpacing: ".08em" },
     }, "\u0421\u0430\u043C\u043E\u0434\u0435\u0440\u0436\u0430\u0432\u0438\u0435, \u041F\u0440\u0430\u0432\u043E\u0441\u043B\u0430\u0432\u0438\u0435, \u041D\u0430\u0440\u043E\u0434\u043D\u043E\u0441\u0442\u044C"),
     React.createElement("div", {
       style: { display: "flex", gap: 8, marginTop: 16, flexWrap: "wrap", justifyContent: "center" },
@@ -1380,7 +1380,7 @@ function RussiaView({ setView }) {
         fontFamily: RU_Sans,
         fontSize: 13,
         fontWeight: active ? 600 : 400,
-        color: active ? RU_C.bg : RU_C.tx2,
+        color: active ? "#faf7f0" : RU_C.tx2,
         background: active ? RU_C.gold : "transparent",
         transition: "all .2s",
         letterSpacing: 0.3,
@@ -1481,11 +1481,11 @@ function RussiaView({ setView }) {
 
       // "Tretiy Rim" (Third Rome) marginalia for Ivan III
       tp.id === "ivan3" && React.createElement("div", {
-        style: { textAlign: "center", fontFamily: "'Times New Roman', serif", fontSize: 14, color: "rgba(196,168,98,.15)", fontStyle: "italic", letterSpacing: ".1em", marginBottom: 12 },
+        style: { textAlign: "center", fontFamily: "'Times New Roman', serif", fontSize: 14, color: "rgba(140,110,40,.15)", fontStyle: "italic", letterSpacing: ".1em", marginBottom: 12 },
       }, "\u0422\u0440\u0435\u0442\u0438\u0439 \u0420\u0438\u043C \u2014 Third Rome"),
       // "Zemsky Sobor" for Time of Troubles
       tp.id === "troubles" && React.createElement("div", {
-        style: { textAlign: "center", fontFamily: "'Times New Roman', serif", fontSize: 12, color: "rgba(196,168,98,.12)", fontStyle: "italic", letterSpacing: ".08em", marginBottom: 8 },
+        style: { textAlign: "center", fontFamily: "'Times New Roman', serif", fontSize: 12, color: "rgba(140,110,40,.12)", fontStyle: "italic", letterSpacing: ".08em", marginBottom: 8 },
       }, "\u0417\u0435\u043C\u0441\u043A\u0438\u0439 \u0421\u043E\u0431\u043E\u0440 \u2014 Assembly of the Land"),
       // content sections
       RuSection({ title: "Historical Context", color: RU_C.blue },
@@ -1501,18 +1501,18 @@ function RussiaView({ setView }) {
       RuKremlinMerlonDivider({ color: RU_C.tx3 }),
       // "Vechnaya pamyat" (Eternal memory) near legacy section
       React.createElement("div", {
-        style: { textAlign: "right", fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(196,168,98,.1)", fontStyle: "italic", marginTop: -8, marginBottom: 4, letterSpacing: ".08em" },
+        style: { textAlign: "right", fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(140,110,40,.1)", fontStyle: "italic", marginTop: -8, marginBottom: 4, letterSpacing: ".08em" },
       }, "\u0412\u0435\u0447\u043D\u0430\u044F \u043F\u0430\u043C\u044F\u0442\u044C"),
       // Bronze Horseman near Peter's section, Samovar near cultural content
       tp.id === "peter" && React.createElement("div", { style: { display: "flex", justifyContent: "flex-end", marginTop: -12, marginBottom: 8 } },
-        RuBronzeHorseman({ opacity: 0.06 }),
+        RuBronzeHorseman({ opacity: 0.12 }),
         React.createElement("div", { style: { marginLeft: 8 } },
-          RuSamovar({ size: 20, opacity: 0.06 })
+          RuSamovar({ size: 20, opacity: 0.12 })
         )
       ),
       // "Okno v Evropu" (Window to Europe) near Peter
       tp.id === "peter" && React.createElement("div", {
-        style: { textAlign: "center", fontFamily: "'Times New Roman', serif", fontSize: 11, color: "rgba(196,168,98,.12)", fontStyle: "italic", marginBottom: 8, letterSpacing: ".06em" },
+        style: { textAlign: "center", fontFamily: "'Times New Roman', serif", fontSize: 11, color: "rgba(140,110,40,.12)", fontStyle: "italic", marginBottom: 8, letterSpacing: ".06em" },
       }, "\u041E\u043A\u043D\u043E \u0432 \u0415\u0432\u0440\u043E\u043F\u0443 \u2014 Window to Europe"),
       // "Oprichnina" in old-style near Ivan IV
       tp.id === "ivan4" && React.createElement("div", {
@@ -1520,19 +1520,19 @@ function RussiaView({ setView }) {
       }, "\u041E\u043F\u0440\u0438\u0447\u043D\u0438\u043D\u0430"),
       // Hammer and Sickle near the legacy section for Bolshevik continuity references
       tp.id === "ivan4" && React.createElement("div", { style: { textAlign: "right", marginBottom: 4 } },
-        RuHammerSickle({ size: 16, opacity: 0.05 })
+        RuHammerSickle({ size: 16, opacity: 0.10 })
       ),
       // "Sudebnik" near Ivan III (legal code)
       tp.id === "ivan3" && React.createElement("div", {
-        style: { textAlign: "center", fontFamily: "'Times New Roman', serif", fontSize: 12, color: "rgba(196,168,98,.12)", fontStyle: "italic", marginBottom: 8, letterSpacing: ".08em" },
+        style: { textAlign: "center", fontFamily: "'Times New Roman', serif", fontSize: 12, color: "rgba(140,110,40,.12)", fontStyle: "italic", marginBottom: 8, letterSpacing: ".08em" },
       }, "\u0421\u0443\u0434\u0435\u0431\u043D\u0438\u043A 1497"),
       // "Zemsky Sobor" near the Troubles section (governance)
       tp.id === "troubles" && React.createElement("div", {
-        style: { textAlign: "center", fontFamily: "'Times New Roman', serif", fontSize: 12, color: "rgba(196,168,98,.12)", fontStyle: "italic", marginBottom: 8, letterSpacing: ".08em" },
+        style: { textAlign: "center", fontFamily: "'Times New Roman', serif", fontSize: 12, color: "rgba(140,110,40,.12)", fontStyle: "italic", marginBottom: 8, letterSpacing: ".08em" },
       }, "\u0417\u0435\u043C\u0441\u043A\u0438\u0439 \u0421\u043E\u0431\u043E\u0440 1613"),
       // Danilevsky quote near East-West content
       tp.id === "kievan" && React.createElement("div", {
-        style: { textAlign: "center", fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(196,168,98,.1)", fontStyle: "italic", marginBottom: 8, letterSpacing: ".06em" },
+        style: { textAlign: "center", fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(140,110,40,.1)", fontStyle: "italic", marginBottom: 8, letterSpacing: ".06em" },
       }, "\u0420\u043E\u0441\u0441\u0438\u044F \u2014 \u043D\u0435 \u0415\u0432\u0440\u043E\u043F\u0430 \u2014 Danilevsky"),
 
       // ── Scholarly post-imperial easter eggs & date badges ──────────
@@ -1544,12 +1544,12 @@ function RussiaView({ setView }) {
           style: { fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(139,28,35,.12)", fontStyle: "italic", letterSpacing: ".1em" },
         }, "\u0427\u0435\u043A\u0438\u0441\u0442 \u2014 The sword and shield of the Party"),
         React.createElement("span", {
-          style: { fontFamily: RU_Mono, fontSize: 8, color: "rgba(196,168,98,.12)" },
+          style: { fontFamily: RU_Mono, fontSize: 8, color: "rgba(140,110,40,.12)" },
         }, "1565 \u2192 1917 \u2192 1991")
       ),
       // Stolypin's necktie reference near reform/terror tension
       tp.id === "ivan4" && React.createElement("div", {
-        style: { textAlign: "right", fontFamily: "'Times New Roman', serif", fontSize: 9, color: "rgba(196,168,98,.08)", fontStyle: "italic", marginBottom: 4, letterSpacing: ".06em" },
+        style: { textAlign: "right", fontFamily: "'Times New Roman', serif", fontSize: 9, color: "rgba(140,110,40,.08)", fontStyle: "italic", marginBottom: 4, letterSpacing: ".06em" },
       }, "\u0421\u0442\u043E\u043B\u044B\u043F\u0438\u043D\u0441\u043A\u0438\u0439 \u0433\u0430\u043B\u0441\u0442\u0443\u043A \u2014 reform and repression, always twinned"),
       // Gulag reference near state violence theme
       tp.id === "ivan4" && React.createElement("div", {
@@ -1559,43 +1559,43 @@ function RussiaView({ setView }) {
       tp.id === "troubles" && React.createElement("div", {
         style: { display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 8 },
       },
-        React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 9, padding: "2px 6px", border: "1px solid rgba(196,168,98,.12)", borderRadius: 3, color: "rgba(196,168,98,.2)" } }, "1598 \u0421\u043C\u0443\u0442\u0430"),
-        React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 9, padding: "2px 6px", border: "1px solid rgba(196,168,98,.12)", borderRadius: 3, color: "rgba(196,168,98,.2)" } }, "1613 \u0420\u043E\u043C\u0430\u043D\u043E\u0432\u044B"),
-        React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 9, padding: "2px 6px", border: "1px solid rgba(196,168,98,.12)", borderRadius: 3, color: "rgba(196,168,98,.2)" } }, "1825 \u0414\u0435\u043A\u0430\u0431\u0440\u0438\u0441\u0442\u044B")
+        React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 9, padding: "2px 6px", border: "1px solid rgba(140,110,40,.12)", borderRadius: 3, color: "rgba(140,110,40,.2)" } }, "1598 \u0421\u043C\u0443\u0442\u0430"),
+        React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 9, padding: "2px 6px", border: "1px solid rgba(140,110,40,.12)", borderRadius: 3, color: "rgba(140,110,40,.2)" } }, "1613 \u0420\u043E\u043C\u0430\u043D\u043E\u0432\u044B"),
+        React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 9, padding: "2px 6px", border: "1px solid rgba(140,110,40,.12)", borderRadius: 3, color: "rgba(140,110,40,.2)" } }, "1825 \u0414\u0435\u043A\u0430\u0431\u0440\u0438\u0441\u0442\u044B")
       ),
       // "Vse slozhno" meta-comment
       tp.id === "troubles" && React.createElement("div", {
-        style: { textAlign: "right", fontFamily: "'Times New Roman', serif", fontSize: 9, color: "rgba(196,168,98,.08)", fontStyle: "italic", marginBottom: 6 },
+        style: { textAlign: "right", fontFamily: "'Times New Roman', serif", fontSize: 9, color: "rgba(140,110,40,.08)", fontStyle: "italic", marginBottom: 6 },
       }, "\u0412\u0441\u0435 \u0441\u043B\u043E\u0436\u043D\u043E"),
       // Peter's reform chain — Table of Ranks, Zemstvo connections
       tp.id === "peter" && React.createElement("div", {
         style: { display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 8 },
       },
-        React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 8, padding: "2px 5px", border: "1px solid rgba(196,168,98,.1)", borderRadius: 3, color: "rgba(196,168,98,.15)" } }, "1722 \u0422\u0430\u0431\u0435\u043B\u044C"),
-        React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 8, padding: "2px 5px", border: "1px solid rgba(196,168,98,.1)", borderRadius: 3, color: "rgba(196,168,98,.15)" } }, "1864 \u0417\u0435\u043C\u0441\u0442\u0432\u043E"),
-        React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 8, padding: "2px 5px", border: "1px solid rgba(196,168,98,.1)", borderRadius: 3, color: "rgba(196,168,98,.15)" } }, "1861 \u041E\u0441\u0432\u043E\u0431\u043E\u0436\u0434\u0435\u043D\u0438\u0435"),
-        React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 8, padding: "2px 5px", border: "1px solid rgba(196,168,98,.1)", borderRadius: 3, color: "rgba(196,168,98,.15)" } }, "1881 \u0423\u0431\u0438\u0439\u0441\u0442\u0432\u043E"),
-        React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 8, padding: "2px 5px", border: "1px solid rgba(196,168,98,.1)", borderRadius: 3, color: "rgba(196,168,98,.15)" } }, "1905 \u041A\u0440\u043E\u0432\u044C")
+        React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 8, padding: "2px 5px", border: "1px solid rgba(140,110,40,.1)", borderRadius: 3, color: "rgba(140,110,40,.15)" } }, "1722 \u0422\u0430\u0431\u0435\u043B\u044C"),
+        React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 8, padding: "2px 5px", border: "1px solid rgba(140,110,40,.1)", borderRadius: 3, color: "rgba(140,110,40,.15)" } }, "1864 \u0417\u0435\u043C\u0441\u0442\u0432\u043E"),
+        React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 8, padding: "2px 5px", border: "1px solid rgba(140,110,40,.1)", borderRadius: 3, color: "rgba(140,110,40,.15)" } }, "1861 \u041E\u0441\u0432\u043E\u0431\u043E\u0436\u0434\u0435\u043D\u0438\u0435"),
+        React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 8, padding: "2px 5px", border: "1px solid rgba(140,110,40,.1)", borderRadius: 3, color: "rgba(140,110,40,.15)" } }, "1881 \u0423\u0431\u0438\u0439\u0441\u0442\u0432\u043E"),
+        React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 8, padding: "2px 5px", border: "1px solid rgba(140,110,40,.1)", borderRadius: 3, color: "rgba(140,110,40,.15)" } }, "1905 \u041A\u0440\u043E\u0432\u044C")
       ),
       // Potemkin village reference near Peter (state display vs reality)
       tp.id === "peter" && React.createElement("div", {
-        style: { textAlign: "center", fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(196,168,98,.1)", fontStyle: "italic", marginBottom: 6, letterSpacing: ".06em" },
+        style: { textAlign: "center", fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(140,110,40,.1)", fontStyle: "italic", marginBottom: 6, letterSpacing: ".06em" },
       }, "\u041F\u043E\u0442\u0451\u043C\u043A\u0438\u043D\u0441\u043A\u0438\u0435 \u0434\u0435\u0440\u0435\u0432\u043D\u0438 \u2014 the state as performance"),
       // Pale of Settlement reference near Ivan III (territorial themes)
       tp.id === "ivan3" && React.createElement("div", {
-        style: { textAlign: "right", fontFamily: "'Times New Roman', serif", fontSize: 9, color: "rgba(196,168,98,.08)", fontStyle: "italic", marginBottom: 4, letterSpacing: ".06em" },
+        style: { textAlign: "right", fontFamily: "'Times New Roman', serif", fontSize: 9, color: "rgba(140,110,40,.08)", fontStyle: "italic", marginBottom: 4, letterSpacing: ".06em" },
       }, "\u0427\u0435\u0440\u0442\u0430 \u043E\u0441\u0435\u0434\u043B\u043E\u0441\u0442\u0438 \u2014 boundaries within the empire"),
       // Mongol legacy — Pugachev's rebellion date badge
       tp.id === "mongol" && React.createElement("div", {
         style: { display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 8 },
       },
-        React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 8, padding: "2px 5px", border: "1px solid rgba(196,168,98,.1)", borderRadius: 3, color: "rgba(196,168,98,.15)" } }, "1380 \u041A\u0443\u043B\u0438\u043A\u043E\u0432\u043E"),
-        React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 8, padding: "2px 5px", border: "1px solid rgba(196,168,98,.1)", borderRadius: 3, color: "rgba(196,168,98,.15)" } }, "1480 \u0423\u0433\u0440\u0430"),
-        React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 8, padding: "2px 5px", border: "1px solid rgba(196,168,98,.1)", borderRadius: 3, color: "rgba(196,168,98,.15)" } }, "1773 \u041F\u0443\u0433\u0430\u0447\u0451\u0432")
+        React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 8, padding: "2px 5px", border: "1px solid rgba(140,110,40,.1)", borderRadius: 3, color: "rgba(140,110,40,.15)" } }, "1380 \u041A\u0443\u043B\u0438\u043A\u043E\u0432\u043E"),
+        React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 8, padding: "2px 5px", border: "1px solid rgba(140,110,40,.1)", borderRadius: 3, color: "rgba(140,110,40,.15)" } }, "1480 \u0423\u0433\u0440\u0430"),
+        React.createElement("span", { style: { fontFamily: RU_Mono, fontSize: 8, padding: "2px 5px", border: "1px solid rgba(140,110,40,.1)", borderRadius: 3, color: "rgba(140,110,40,.15)" } }, "1773 \u041F\u0443\u0433\u0430\u0447\u0451\u0432")
       ),
       // Narodnaya Volya / People's Will near Kievan (foreshadowing)
       tp.id === "kievan" && React.createElement("div", {
-        style: { textAlign: "left", fontFamily: "'Times New Roman', serif", fontSize: 9, color: "rgba(196,168,98,.06)", fontStyle: "italic", marginBottom: 4, letterSpacing: ".06em" },
+        style: { textAlign: "left", fontFamily: "'Times New Roman', serif", fontSize: 9, color: "rgba(140,110,40,.06)", fontStyle: "italic", marginBottom: 4, letterSpacing: ".06em" },
       }, "\u041D\u0430\u0440\u043E\u0434\u043D\u0430\u044F \u0432\u043E\u043B\u044F \u2014 the people\u2019s will, from 988 to 1881 to 1991"),
 
       // sources
@@ -1655,7 +1655,7 @@ function RussiaView({ setView }) {
     return React.createElement("div", { style: { color: RU_C.gold, position: "relative" } },
       // Subtle Romanov eagle behind the section
       React.createElement("div", { style: { position: "absolute", top: 100, right: -10, pointerEvents: "none" } },
-        RuRomanovEagle({ size: 100, opacity: 0.02 })
+        RuRomanovEagle({ size: 100, opacity: 0.08 })
       ),
       React.createElement("div", {
         style: {
@@ -1697,7 +1697,7 @@ function RussiaView({ setView }) {
           })
         ),
         React.createElement("div", {
-          style: { textAlign: "center", fontFamily: "'Times New Roman', serif", fontSize: 9, color: "rgba(196,168,98,.08)", fontStyle: "italic", marginTop: 6, letterSpacing: ".06em" },
+          style: { textAlign: "center", fontFamily: "'Times New Roman', serif", fontSize: 9, color: "rgba(140,110,40,.08)", fontStyle: "italic", marginTop: 6, letterSpacing: ".06em" },
         }, "\u0412\u0441\u0435 \u0441\u043B\u043E\u0436\u043D\u043E \u2014 It\u2019s complicated")
       ),
 
@@ -1877,29 +1877,29 @@ function RussiaView({ setView }) {
                 },
                   theme.title,
                   theme.id === "autocracy" && iconKremlin(),
-                  theme.id === "autocracy" && React.createElement("span", { style: { marginLeft: 8, fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(196,168,98,.15)", fontStyle: "italic" } }, "\u0421\u0430\u043C\u043E\u0434\u0435\u0440\u0436\u0430\u0432\u0438\u0435"),
+                  theme.id === "autocracy" && React.createElement("span", { style: { marginLeft: 8, fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(140,110,40,.15)", fontStyle: "italic" } }, "\u0421\u0430\u043C\u043E\u0434\u0435\u0440\u0436\u0430\u0432\u0438\u0435"),
                   theme.id === "religion" && iconOnionDome(),
                   theme.id === "religion" && iconCross(),
-                  theme.id === "religion" && React.createElement("span", { style: { marginLeft: 6, fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(196,168,98,.15)", fontStyle: "italic" } }, "\u041F\u0440\u0430\u0432\u043E\u0441\u043B\u0430\u0432\u0438\u0435"),
+                  theme.id === "religion" && React.createElement("span", { style: { marginLeft: 6, fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(140,110,40,.15)", fontStyle: "italic" } }, "\u041F\u0440\u0430\u0432\u043E\u0441\u043B\u0430\u0432\u0438\u0435"),
                   theme.id === "expansion" && iconHorse(),
-                  theme.id === "expansion" && React.createElement("span", { style: { marginLeft: 6 } }, RuTroikaSilhouette({ opacity: 0.06, style: { width: 60, height: 25, display: "inline-block", verticalAlign: "middle" } })),
+                  theme.id === "expansion" && React.createElement("span", { style: { marginLeft: 6 } }, RuTroikaSilhouette({ opacity: 0.12, style: { width: 60, height: 25, display: "inline-block", verticalAlign: "middle" } })),
                   theme.id === "westVsEast" && iconEagle(),
-                  theme.id === "westVsEast" && React.createElement("span", { style: { marginLeft: 6, fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(196,168,98,.15)", fontStyle: "italic" } }, "\u041E\u043A\u043D\u043E \u0432 \u0415\u0432\u0440\u043E\u043F\u0443"),
+                  theme.id === "westVsEast" && React.createElement("span", { style: { marginLeft: 6, fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(140,110,40,.15)", fontStyle: "italic" } }, "\u041E\u043A\u043D\u043E \u0432 \u0415\u0432\u0440\u043E\u043F\u0443"),
                   theme.id === "terror" && iconOprichnina(),
-                  theme.id === "terror" && React.createElement("span", { style: { marginLeft: 6 } }, RuHammerSickle({ size: 14, opacity: 0.08 })),
+                  theme.id === "terror" && React.createElement("span", { style: { marginLeft: 6 } }, RuHammerSickle({ size: 14, opacity: 0.15 })),
                   theme.id === "terror" && iconSwordShield(),
                   theme.id === "terror" && iconPrisonBars(),
                   theme.id === "terror" && React.createElement("span", { style: { marginLeft: 6, fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(139,28,35,.12)", fontStyle: "italic" } }, "\u0412\u0440\u0430\u0433 \u043D\u0430\u0440\u043E\u0434\u0430"),
                   theme.id === "autocracy" && iconSwordShield(),
-                  theme.id === "autocracy" && React.createElement("span", { style: { marginLeft: 6, fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(196,168,98,.12)", fontStyle: "italic" } }, "\u0422\u0430\u0431\u0435\u043B\u044C \u043E \u0440\u0430\u043D\u0433\u0430\u0445"),
+                  theme.id === "autocracy" && React.createElement("span", { style: { marginLeft: 6, fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(140,110,40,.12)", fontStyle: "italic" } }, "\u0422\u0430\u0431\u0435\u043B\u044C \u043E \u0440\u0430\u043D\u0433\u0430\u0445"),
                   theme.id === "expansion" && iconTank(),
                   theme.id === "expansion" && iconTractor(),
-                  theme.id === "expansion" && React.createElement("span", { style: { marginLeft: 6, fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(196,168,98,.12)", fontStyle: "italic" } }, "\u0414\u0435\u043D\u044C \u041F\u043E\u0431\u0435\u0434\u044B"),
+                  theme.id === "expansion" && React.createElement("span", { style: { marginLeft: 6, fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(140,110,40,.12)", fontStyle: "italic" } }, "\u0414\u0435\u043D\u044C \u041F\u043E\u0431\u0435\u0434\u044B"),
                   theme.id === "westVsEast" && iconBrokenCrown(),
                   theme.id === "westVsEast" && iconWall(),
                   theme.id === "westVsEast" && iconMicrophone(),
-                  theme.id === "westVsEast" && React.createElement("span", { style: { marginLeft: 6, fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(196,168,98,.12)", fontStyle: "italic" } }, "\u041F\u0435\u0440\u0435\u0441\u0442\u0440\u043E\u0439\u043A\u0430"),
-                  theme.id === "religion" && React.createElement("span", { style: { marginLeft: 6, fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(196,168,98,.12)", fontStyle: "italic" } }, "\u0413\u043B\u0430\u0441\u043D\u043E\u0441\u0442\u044C")
+                  theme.id === "westVsEast" && React.createElement("span", { style: { marginLeft: 6, fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(140,110,40,.12)", fontStyle: "italic" } }, "\u041F\u0435\u0440\u0435\u0441\u0442\u0440\u043E\u0439\u043A\u0430"),
+                  theme.id === "religion" && React.createElement("span", { style: { marginLeft: 6, fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(140,110,40,.12)", fontStyle: "italic" } }, "\u0413\u043B\u0430\u0441\u043D\u043E\u0441\u0442\u044C")
                 ),
                 React.createElement("div", {
                   style: { fontSize: 11, fontFamily: RU_Mono, color: RU_C.tx3, marginTop: 2 },
@@ -2020,7 +2020,7 @@ function RussiaView({ setView }) {
       },
         // Romanov eagle watermark behind synthesis
         React.createElement("div", { style: { position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" } },
-          RuRomanovEagle({ size: 160, opacity: 0.025 })
+          RuRomanovEagle({ size: 160, opacity: 0.08 })
         ),
         React.createElement("div", {
           style: { fontSize: 11, fontFamily: RU_Mono, textTransform: "uppercase", letterSpacing: 1.5, color: RU_C.gold, marginBottom: 12, display: "flex", alignItems: "center" },
@@ -2088,8 +2088,8 @@ function RussiaView({ setView }) {
               onClick: function(e) { e.stopPropagation(); setActiveTooltip(activeTooltip === item.tip ? null : item.tip); },
               style: {
                 fontFamily: RU_Mono, fontSize: 9, padding: "3px 7px",
-                border: "1px solid " + (activeTooltip === item.tip ? RU_C.gold + "66" : "rgba(196,168,98,.15)"),
-                borderRadius: 3, color: activeTooltip === item.tip ? RU_C.gold : "rgba(196,168,98,.25)",
+                border: "1px solid " + (activeTooltip === item.tip ? RU_C.gold + "66" : "rgba(140,110,40,.15)"),
+                borderRadius: 3, color: activeTooltip === item.tip ? RU_C.gold : "rgba(140,110,40,.25)",
                 cursor: "pointer", transition: "all .2s",
                 background: activeTooltip === item.tip ? RU_C.goldBg : "transparent",
               },
@@ -2115,8 +2115,8 @@ function RussiaView({ setView }) {
               onClick: function(e) { e.stopPropagation(); setActiveTooltip(activeTooltip === item.tip ? null : item.tip); },
               style: {
                 fontFamily: RU_Mono, fontSize: 9, padding: "3px 7px",
-                border: "1px solid " + (activeTooltip === item.tip ? RU_C.gold + "66" : "rgba(196,168,98,.15)"),
-                borderRadius: 3, color: activeTooltip === item.tip ? RU_C.gold : "rgba(196,168,98,.25)",
+                border: "1px solid " + (activeTooltip === item.tip ? RU_C.gold + "66" : "rgba(140,110,40,.15)"),
+                borderRadius: 3, color: activeTooltip === item.tip ? RU_C.gold : "rgba(140,110,40,.25)",
                 cursor: "pointer", transition: "all .2s",
                 background: activeTooltip === item.tip ? RU_C.goldBg : "transparent",
               },
@@ -2206,7 +2206,7 @@ function RussiaView({ setView }) {
         ),
         // Famous Russian quotes in Cyrillic
         React.createElement("div", {
-          style: { marginTop: 8, padding: "10px 14px", background: "rgba(196,168,98,.03)", borderRadius: 4, borderLeft: "2px solid rgba(196,168,98,.12)" },
+          style: { marginTop: 8, padding: "10px 14px", background: "rgba(140,110,40,.03)", borderRadius: 4, borderLeft: "2px solid rgba(140,110,40,.12)" },
         },
           React.createElement("div", { style: { fontFamily: RU_Mono, fontSize: 9, color: RU_C.tx3, marginBottom: 6, letterSpacing: 1 } }, "VOICES FROM THE ARCHIVE"),
           [
@@ -2221,10 +2221,10 @@ function RussiaView({ setView }) {
           ].map(function(q, qi) {
             return React.createElement("div", {
               key: qi,
-              style: { fontFamily: "'Times New Roman', serif", fontSize: 11, color: "rgba(196,168,98,.18)", fontStyle: "italic", marginBottom: 3, lineHeight: 1.5 },
+              style: { fontFamily: "'Times New Roman', serif", fontSize: 11, color: "rgba(140,110,40,.18)", fontStyle: "italic", marginBottom: 3, lineHeight: 1.5 },
             },
               React.createElement("span", null, q.text),
-              React.createElement("span", { style: { fontSize: 9, marginLeft: 6, color: "rgba(196,168,98,.12)" } }, q.attr)
+              React.createElement("span", { style: { fontSize: 9, marginLeft: 6, color: "rgba(140,110,40,.12)" } }, q.attr)
             );
           })
         ),
@@ -2251,8 +2251,8 @@ function RussiaView({ setView }) {
               onClick: function(e) { e.stopPropagation(); setActiveTooltip(activeTooltip === item.tip ? null : item.tip); },
               style: {
                 fontFamily: RU_Mono, fontSize: 10, padding: "3px 8px",
-                border: "1px solid " + (activeTooltip === item.tip ? RU_C.gold + "55" : "rgba(196,168,98,.12)"),
-                borderRadius: 3, color: activeTooltip === item.tip ? RU_C.gold : "rgba(196,168,98,.2)",
+                border: "1px solid " + (activeTooltip === item.tip ? RU_C.gold + "55" : "rgba(140,110,40,.12)"),
+                borderRadius: 3, color: activeTooltip === item.tip ? RU_C.gold : "rgba(140,110,40,.2)",
                 cursor: "pointer", transition: "all .2s",
                 background: activeTooltip === item.tip ? RU_C.goldBg : "transparent",
               },
@@ -2314,14 +2314,14 @@ function RussiaView({ setView }) {
     return React.createElement("div", { style: { color: RU_C.gold, position: "relative" } },
       // Faberge egg decorative element near quiz
       React.createElement("div", { style: { position: "absolute", top: -10, right: 20 } },
-        RuFabergeEgg({ size: 36, opacity: 0.07 })
+        RuFabergeEgg({ size: 36, opacity: 0.14 })
       ),
       // Orthodox crosses scattered
       React.createElement("div", { style: { position: "absolute", top: 60, right: 8 } },
-        RuOrthodoxCross({ size: 14, opacity: 0.08 })
+        RuOrthodoxCross({ size: 14, opacity: 0.14 })
       ),
       React.createElement("div", { style: { position: "absolute", top: 200, left: -20 } },
-        RuOrthodoxCross({ size: 12, opacity: 0.06 })
+        RuOrthodoxCross({ size: 12, opacity: 0.12 })
       ),
       // intro banner
       React.createElement("div", {
@@ -2545,11 +2545,11 @@ function RussiaView({ setView }) {
       },
         // Matryoshka in corner of score summary
         React.createElement("div", { style: { position: "absolute", top: 12, right: 16 } },
-          RuMatryoshka({ size: 24, opacity: 0.06 })
+          RuMatryoshka({ size: 24, opacity: 0.12 })
         ),
         // Samovar in other corner
         React.createElement("div", { style: { position: "absolute", bottom: 12, right: 16 } },
-          RuSamovar({ size: 18, opacity: 0.05 })
+          RuSamovar({ size: 18, opacity: 0.10 })
         ),
         React.createElement("div", {
           style: { fontSize: 11, fontFamily: RU_Mono, textTransform: "uppercase", letterSpacing: 1.5, color: RU_C.gold, marginBottom: 10 },
@@ -2584,7 +2584,7 @@ function RussiaView({ setView }) {
       renderTooltip(),
       // Troika silhouette — three-horse sleigh for the expansion/territory section
       React.createElement("div", { style: { position: "relative", float: "right", marginTop: -30 } },
-        RuTroikaSilhouette({ opacity: 0.08 })
+        RuTroikaSilhouette({ opacity: 0.14 })
       ),
       React.createElement("div", {
         style: { background: RU_C.card, border: "1px solid " + RU_C.cardBd, borderRadius: 8, padding: 24 },
@@ -2681,13 +2681,13 @@ function RussiaView({ setView }) {
         ].map(function(d) {
           return React.createElement("span", {
             key: d.yr,
-            style: { fontFamily: RU_Mono, fontSize: 8, padding: "2px 5px", border: "1px solid rgba(196,168,98,.1)", borderRadius: 2, color: "rgba(196,168,98,.18)" },
+            style: { fontFamily: RU_Mono, fontSize: 8, padding: "2px 5px", border: "1px solid rgba(140,110,40,.1)", borderRadius: 2, color: "rgba(140,110,40,.18)" },
           }, d.yr + " " + d.lbl);
         })
       ),
       // Cyrillic territorial phrase
       React.createElement("div", {
-        style: { textAlign: "center", fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(196,168,98,.08)", fontStyle: "italic", marginTop: 8, letterSpacing: ".06em" },
+        style: { textAlign: "center", fontFamily: "'Times New Roman', serif", fontSize: 10, color: "rgba(140,110,40,.08)", fontStyle: "italic", marginTop: 8, letterSpacing: ".06em" },
       }, "\u0421\u043E\u0431\u0438\u0440\u0430\u043D\u0438\u0435 \u0437\u0435\u043C\u0435\u043B\u044C \u0440\u0443\u0441\u0441\u043A\u0438\u0445 \u2014 the gathering of the Russian lands")
       )
     );
@@ -3413,7 +3413,7 @@ function RussiaView({ setView }) {
             var y2 = isDown ? toLayer.y : toLayer.y + 70;
             var midY = (y1 + y2) / 2;
             var selected = vorySelectedFlow === i;
-            var arrowColor = selected ? RU_C.gold : "rgba(196,168,98,.3)";
+            var arrowColor = selected ? RU_C.gold : "rgba(140,110,40,.3)";
             return React.createElement("g", {
               key: i,
               onClick: function() { setVorySelectedFlow(selected ? null : i); },
@@ -3572,7 +3572,7 @@ function RussiaView({ setView }) {
             return React.createElement("line", {
               key: "e" + i,
               x1: nodeA.x, y1: nodeA.y, x2: nodeB.x, y2: nodeB.y,
-              stroke: selected ? RU_C.gold : "rgba(196,168,98,.12)",
+              stroke: selected ? RU_C.gold : "rgba(140,110,40,.12)",
               strokeWidth: selected ? 2.5 : 0.8,
               style: { cursor: "pointer" },
               onClick: function() { setKompSelectedEdge(selected ? null : i); },
@@ -4723,7 +4723,7 @@ function RussiaView({ setView }) {
   var marginalia = React.createElement("div", {
     style: {
       position: "fixed", left: 6, top: "50%", transform: "translateY(-50%) rotate(-90deg)",
-      fontFamily: "'Times New Roman', serif", fontSize: 13, color: "rgba(196,168,98,.08)",
+      fontFamily: "'Times New Roman', serif", fontSize: 13, color: "rgba(140,110,40,.15)",
       letterSpacing: "0.3em", whiteSpace: "nowrap", pointerEvents: "none", zIndex: 1,
     },
   }, RU_MARGINALIA.join("  \u2022  "));
@@ -4732,7 +4732,7 @@ function RussiaView({ setView }) {
   var marginaliaR = React.createElement("div", {
     style: {
       position: "fixed", right: 6, top: "50%", transform: "translateY(-50%) rotate(90deg)",
-      fontFamily: "'Times New Roman', serif", fontSize: 13, color: "rgba(196,168,98,.08)",
+      fontFamily: "'Times New Roman', serif", fontSize: 13, color: "rgba(140,110,40,.15)",
       letterSpacing: "0.3em", whiteSpace: "nowrap", pointerEvents: "none", zIndex: 1,
     },
   }, RU_MARGINALIA_EXT.concat(RU_MARGINALIA.slice().reverse()).join("  \u2022  "));
@@ -4763,7 +4763,7 @@ function RussiaView({ setView }) {
         style: {
           position: "fixed", top: -10, left: left + "%",
           width: size, height: size, borderRadius: "50%",
-          background: "#e0dcd4", opacity: opacity,
+          background: "#c8b890", opacity: opacity * 0.5,
           animation: anim + " " + duration + "s linear " + delay + "s infinite",
           pointerEvents: "none", zIndex: 2,
         },
@@ -5758,15 +5758,15 @@ function RussiaView({ setView }) {
     React.createElement("div", {
       style: {
         position: "fixed", inset: 0, pointerEvents: "none", zIndex: 3,
-        background: "radial-gradient(ellipse at center, transparent 55%, rgba(180,200,220,.04) 70%, rgba(160,180,200,.08) 85%, rgba(140,160,180,.12) 95%)",
-        boxShadow: "inset 0 0 80px rgba(180,200,220,.06), inset 0 0 160px rgba(160,180,200,.03)",
+        background: "radial-gradient(ellipse at center, transparent 55%, rgba(180,150,100,.04) 70%, rgba(160,130,80,.08) 85%, rgba(140,110,60,.12) 95%)",
+        boxShadow: "inset 0 0 80px rgba(180,150,100,.06), inset 0 0 160px rgba(160,130,80,.03)",
       },
     }),
     // SVG parchment noise overlay
     React.createElement("div", {
       style: {
         position: "fixed", top: 0, left: 0, right: 0, bottom: 0,
-        backgroundImage: "url(\"data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="4" stitchTiles="stitch"/></filter><rect width="200" height="200" filter="url(#n)" opacity=".025"/></svg>') + "\")",
+        backgroundImage: "url(\"data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="4" stitchTiles="stitch"/></filter><rect width="200" height="200" filter="url(#n)" opacity=".04"/></svg>') + "\")",
         pointerEvents: "none", zIndex: 0,
       },
     }),
@@ -5775,7 +5775,7 @@ function RussiaView({ setView }) {
       style: {
         position: "fixed", top: 0, left: 0, right: 0, bottom: 0,
         border: "3px solid transparent",
-        borderImage: "url(\"data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"><path d="M30 0 Q35 5 30 10 Q25 5 30 0Z" fill="none" stroke="rgba(196,168,98,.18)" stroke-width=".8"/><path d="M0 30 Q5 35 10 30 Q5 25 0 30Z" fill="none" stroke="rgba(196,168,98,.14)" stroke-width=".8"/><path d="M60 30 Q55 35 50 30 Q55 25 60 30Z" fill="none" stroke="rgba(196,168,98,.14)" stroke-width=".8"/><path d="M30 60 Q35 55 30 50 Q25 55 30 60Z" fill="none" stroke="rgba(196,168,98,.18)" stroke-width=".8"/><circle cx="30" cy="30" r="1.5" fill="rgba(196,168,98,.08)"/></svg>') + "\") 30 round",
+        borderImage: "url(\"data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"><path d="M30 0 Q35 5 30 10 Q25 5 30 0Z" fill="none" stroke="rgba(140,110,40,.25)" stroke-width=".8"/><path d="M0 30 Q5 35 10 30 Q5 25 0 30Z" fill="none" stroke="rgba(140,110,40,.20)" stroke-width=".8"/><path d="M60 30 Q55 35 50 30 Q55 25 60 30Z" fill="none" stroke="rgba(140,110,40,.20)" stroke-width=".8"/><path d="M30 60 Q35 55 30 50 Q25 55 30 60Z" fill="none" stroke="rgba(140,110,40,.25)" stroke-width=".8"/><circle cx="30" cy="30" r="1.5" fill="rgba(140,110,40,.12)"/></svg>') + "\") 30 round",
         pointerEvents: "none", zIndex: 2,
       },
     }),
@@ -5783,7 +5783,7 @@ function RussiaView({ setView }) {
     React.createElement("div", {
       style: {
         position: "fixed", top: 8, left: 8, right: 8, bottom: 8,
-        border: "1px solid rgba(196,168,98,.12)",
+        border: "1px solid rgba(140,110,40,.18)",
         pointerEvents: "none", zIndex: 2,
       },
     }),
@@ -5793,33 +5793,33 @@ function RussiaView({ setView }) {
     RuDateMarkers(),
     // Scattered Orthodox crosses (decorative, low opacity)
     React.createElement("div", { style: { position: "fixed", left: 24, top: "15%", pointerEvents: "none", zIndex: 1 } },
-      RuOrthodoxCross({ size: 16, opacity: 0.06 })
+      RuOrthodoxCross({ size: 16, opacity: 0.12 })
     ),
     React.createElement("div", { style: { position: "fixed", left: 30, top: "45%", pointerEvents: "none", zIndex: 1 } },
-      RuOrthodoxCross({ size: 12, opacity: 0.04 })
+      RuOrthodoxCross({ size: 12, opacity: 0.09 })
     ),
     React.createElement("div", { style: { position: "fixed", left: 22, top: "75%", pointerEvents: "none", zIndex: 1 } },
-      RuOrthodoxCross({ size: 14, opacity: 0.05 })
+      RuOrthodoxCross({ size: 14, opacity: 0.10 })
     ),
     // Matryoshka near bottom-left corner
     React.createElement("div", { style: { position: "fixed", left: 14, bottom: 40, pointerEvents: "none", zIndex: 1 } },
-      RuMatryoshka({ size: 22, opacity: 0.04 })
+      RuMatryoshka({ size: 22, opacity: 0.09 })
     ),
     // Hammer and Sickle near bottom-right (historical context)
     React.createElement("div", { style: { position: "fixed", right: 40, bottom: 30, pointerEvents: "none", zIndex: 1 } },
-      RuHammerSickle({ size: 18, opacity: 0.03 })
+      RuHammerSickle({ size: 18, opacity: 0.07 })
     ),
     // Faberge egg near top-right
     React.createElement("div", { style: { position: "fixed", right: 50, top: "20%", pointerEvents: "none", zIndex: 1 } },
-      RuFabergeEgg({ size: 28, opacity: 0.03 })
+      RuFabergeEgg({ size: 28, opacity: 0.07 })
     ),
     // Additional Cyrillic ghost text: Chekist lineage
     React.createElement("div", {
-      style: { position: "fixed", bottom: 8, left: "50%", transform: "translateX(-50%)", fontFamily: "'Times New Roman', serif", fontSize: 9, color: "rgba(196,168,98,.04)", letterSpacing: ".15em", whiteSpace: "nowrap", pointerEvents: "none", zIndex: 1 },
+      style: { position: "fixed", bottom: 8, left: "50%", transform: "translateX(-50%)", fontFamily: "'Times New Roman', serif", fontSize: 9, color: "rgba(140,110,40,.1)", letterSpacing: ".15em", whiteSpace: "nowrap", pointerEvents: "none", zIndex: 1 },
     }, "\u041E\u0445\u0440\u0430\u043D\u0430 \u2022 \u0427\u041A \u2022 \u041D\u041A\u0412\u0414 \u2022 \u041A\u0413\u0411 \u2022 \u0424\u0421\u0411 \u2014 the sword and the shield, unbroken"),
     // Ghosted security service phrase near top
     React.createElement("div", {
-      style: { position: "fixed", top: 8, left: "50%", transform: "translateX(-50%)", fontFamily: "'Times New Roman', serif", fontSize: 8, color: "rgba(196,168,98,.03)", letterSpacing: ".2em", whiteSpace: "nowrap", pointerEvents: "none", zIndex: 1 },
+      style: { position: "fixed", top: 8, left: "50%", transform: "translateX(-50%)", fontFamily: "'Times New Roman', serif", fontSize: 8, color: "rgba(140,110,40,.08)", letterSpacing: ".2em", whiteSpace: "nowrap", pointerEvents: "none", zIndex: 1 },
     }, "\u0413\u043E\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u043E \u2014 \u044D\u0442\u043E \u044F"),
     // Main content
     React.createElement("div", {
