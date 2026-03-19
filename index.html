@@ -6689,6 +6689,8 @@ function SimulationView(props) {
   var leafletMapRef = useRef(null);
   var leafletLayersRef = useRef(null);
   var [activeExploit, setActiveExploit] = useState(null);
+  var [natoRole, setNatoRole] = useState(null);
+  var [natoDecisions, setNatoDecisions] = useState({});
 
   // Leaflet map initialization
   useEffect(function() {
@@ -7127,6 +7129,304 @@ function SimulationView(props) {
     { date: "DAY 3 1200", label: "COMMUNIQUE DRAFT", description: "Control provides three communique options: cautious (no attribution), firm (characterization without naming), escalatory (direct attribution with consequences).", inject: "Select and negotiate communique language. Build consensus across divergent positions.", status: {consult:"ELEVATED",attrib:"PARTIAL",messaging:"RECOVERING",alignment:"CONVERGING"}, consultation: "ELEVATED", consultColor: "#dc2020", consultPct: 90, attribution: "PARTIAL", attrColor: "#dc5030", messaging: "RECOVERING", msgColor: "#e89020", alignment: "CONVERGING", alignColor: "#80b030" },
     { date: "DAY 3 1600", label: "DEBRIEF", description: "Exercise concludes. After-action review: what worked, what broke, what would you do differently?", inject: "AAR: score consultation discipline, messaging coherence, attribution caution, alliance management.", status: {consult:"RESOLVED",attrib:"ASSESSED",messaging:"POST-EXERCISE",alignment:"ASSESSED"}, consultation: "RESOLVED", consultColor: "#30b050", consultPct: 100, attribution: "ASSESSED", attrColor: "#30b050", messaging: "POST-EXERCISE", msgColor: "#30b050", alignment: "ASSESSED", alignColor: "#30b050" },
   ];
+
+  // ─── NATO ROLE DEFINITIONS AND PER-PHASE CONTENT ───
+  var NATO_ROLES = {
+    nac: {
+      title: "NAC CHAIR (Ambassador)",
+      shortTitle: "NAC CHAIR",
+      job: "Build consensus among 31 allies with divergent interests",
+      sees: "All diplomatic cables, member state positions, draft communiques",
+      decides: "When to convene, what language to approve, how to handle dissent",
+      tension: "Speed vs consensus",
+      color: "#4080cc",
+      icon: "CHAIR"
+    },
+    stratcom: {
+      title: "STRATCOM DIRECTOR",
+      shortTitle: "STRATCOM",
+      job: "Control the public narrative under incomplete information",
+      sees: "Media monitoring, social media velocity, press demands, approved talking points",
+      decides: "What to say publicly, when to brief press, how to handle leaks",
+      tension: "Transparency vs operational security",
+      color: "#cc8040",
+      icon: "MEDIA"
+    },
+    intel: {
+      title: "INTELLIGENCE CHIEF (NCIRC)",
+      shortTitle: "INTEL CHIEF",
+      job: "Provide attribution assessment under political pressure",
+      sees: "Technical forensics, SIGINT intercepts, HUMINT reports, allied intel sharing",
+      decides: "Confidence levels, what to share with allies, how to caveat findings",
+      tension: "Accuracy vs timeliness",
+      color: "#40a0cc",
+      icon: "INTEL"
+    },
+    military: {
+      title: "SACEUR (Military Commander)",
+      shortTitle: "SACEUR",
+      job: "Adjust military posture without escalating",
+      sees: "Force readiness, eFP status, exercise schedules, Russian force movements",
+      decides: "Whether to raise alert levels, reposition forces, activate contingency plans",
+      tension: "Deterrence vs provocation",
+      color: "#cc4040",
+      icon: "MIL"
+    },
+    political: {
+      title: "MEMBER STATE PM (Political Leader)",
+      shortTitle: "MEMBER STATE PM",
+      job: "Balance alliance solidarity with domestic politics",
+      sees: "Domestic polls, parliamentary pressure, economic exposure, bilateral relations",
+      decides: "Whether to support strong language, contribute forces, risk political capital",
+      tension: "Alliance loyalty vs domestic survival",
+      color: "#80b030",
+      icon: "POL"
+    }
+  };
+
+  var NATO_ROLE_PHASES = {
+    // PHASE 0 — BASELINE
+    0: {
+      nac: {
+        briefing: "Morning brief: All 31 Permanent Representatives confirmed for routine session. Two capitals have flagged upcoming domestic elections that may constrain future commitments. One Eastern flank ally is requesting a bilateral with you before the session on 'a matter of concern.'",
+        options: ["Take the bilateral meeting before session", "Proceed directly to routine agenda", "Request a written brief from the requesting ally first"],
+        consequences: ["You learn early about intelligence concerns but risk appearing to play favorites.", "Efficient, but you may miss early warning signals from the flank.", "Bureaucratically safe but delays your situational awareness by hours."],
+        scoring: "Situational awareness vs procedural fairness"
+      },
+      stratcom: {
+        briefing: "Media landscape calm. Your monitoring team flags a 12% uptick in Russian-language bot activity on Baltic Twitter. Three journalists have requested routine background briefings. NATO exercise 'Steadfast Defender' press package is drafted.",
+        options: ["Pre-position messaging about the exercise to shape narrative space", "Issue standard 'no comment on exercises' line", "Brief select trusted journalists on background about bot activity"],
+        consequences: ["Gets ahead of the story but draws attention to exercise when none was needed.", "Safe but leaves narrative vacuum for adversary to fill.", "Builds trust with key journalists; risk of premature leak about bot monitoring."],
+        scoring: "Narrative preparation without overreaction"
+      },
+      intel: {
+        briefing: "Routine NCIRC morning report. SIGINT collection shows normal Russian military communications patterns. However, one HUMINT asset in Moscow reports 'unusual meetings' at GRU headquarters -- specifics unclear. Two allied services have shared routine threat assessments; nothing elevated.",
+        options: ["Flag the HUMINT report to NAC as 'watch item'", "Request additional collection on the GRU activity before sharing", "File it as routine -- single-source uncorroborated reporting"],
+        consequences: ["Raises awareness early but may trigger premature political reaction.", "Thorough but costs 12-24 hours of collection time.", "Analytically sound but you may lose the initiative if something develops."],
+        scoring: "Intelligence discipline under ambiguity"
+      },
+      military: {
+        briefing: "Force readiness nominal. eFP battlegroups at routine posture. Quarterly readiness report shows 87% equipment availability across NATO Response Force. Russian Western Military District conducting announced exercise near Pskov. Baltic Air Policing reports normal intercept rates.",
+        options: ["Order a quiet readiness review of eFP units", "Maintain routine posture, no changes", "Request enhanced ISR collection on the Russian exercise"],
+        consequences: ["Prudent preparation but may leak and signal concern where none is warranted.", "Normal operating procedure. No flags raised.", "Additional intelligence without force posture change -- measured response."],
+        scoring: "Preparedness without escalation"
+      },
+      political: {
+        briefing: "Your approval rating is 38%. Opposition party is leading polls by 6 points. Energy prices are up 14% this quarter -- your finance minister is demanding budget cuts, including defense. Your ambassador to NATO has flagged 'nothing unusual' in Brussels. Weekend papers ran an editorial calling NATO 'an expensive American protection racket.'",
+        options: ["Call your NATO ambassador for a private assessment", "Focus on the domestic budget crisis -- NATO can wait", "Publicly reaffirm NATO commitment to counter the editorial"],
+        consequences: ["Builds your situational awareness without political cost.", "Rational prioritization but you may be blindsided later.", "Spends political capital on defense when the public cares about energy prices."],
+        scoring: "Strategic attention allocation"
+      }
+    },
+    // PHASE 1 — INCIDENT REPORT
+    1: {
+      nac: {
+        briefing: "Three capitals are calling for immediate Article 5 invocation. Two (Germany, France) are urging restraint. The affected member state's ambassador is emotional and demanding immediate collective response. Turkey's representative is using this to raise unrelated bilateral issues.",
+        options: ["Convene emergency session immediately with open agenda", "Request 24-hour consultation window before formal session", "Bilateral calls to key capitals first, then convene"],
+        consequences: ["Shows urgency but risks chaotic session with positions not yet formed.", "Buys time for positions to settle but appears slow to the affected ally.", "Builds pre-session consensus but takes 6-8 hours and excludes smaller allies."],
+        scoring: "Consensus speed and durability"
+      },
+      stratcom: {
+        briefing: "CNN is running 'NATO UNDER ATTACK' chyron. 47 million social media impressions in 2 hours. Russian state media claims 'NATO's own incompetence caused the disruption.' Three press agencies have called demanding comment. Your approved talking points are 12 hours old.",
+        options: ["Hold press conference now with interim statement", "Issue written statement only -- 'monitoring the situation'", "Background brief select journalists off the record"],
+        consequences: ["Controls the narrative cycle but you may commit to positions before facts are clear.", "Safe but 'monitoring' language will be mocked as weak.", "Shapes coverage without official commitment; risk of 'senior NATO official says' headlines."],
+        scoring: "Narrative control without overcommitting"
+      },
+      intel: {
+        briefing: "NCIRC has initial forensics: attack vector consistent with APT-28 (GRU) toolkit but using commercially available exploit code. Could be state, could be criminal, could be false flag. Five Eyes are sharing -- UK GCHQ says 'probable state actor.' Estonian CERT says 'definitely Russia.' French DGSE says 'insufficient evidence.'",
+        options: ["Share all findings with full NAC -- let them see the ambiguity", "Produce a sanitized summary at 'low confidence' for attribution", "Wait for additional forensics before any assessment (48-hour hold)"],
+        consequences: ["Transparent but raw intel may confuse political decision-makers.", "Gives NAC something to work with while protecting sources and methods.", "Analytically rigorous but politically untenable -- NAC is meeting now."],
+        scoring: "Analytical integrity under political pressure"
+      },
+      military: {
+        briefing: "eFP Estonia reports communications degradation affecting their tactical networks. The incident may have C2 implications for forward-deployed forces. SHAPE recommends moving to 'enhanced vigilance.' Russian forces in Kaliningrad have not changed posture. Baltic Air Policing remains routine.",
+        options: ["Raise eFP alert level to 'enhanced vigilance' immediately", "Order quiet communications redundancy measures without posture change", "Wait for NAC political guidance before any military action"],
+        consequences: ["Protects the force but visible posture change may appear escalatory.", "Practical fix without political signal -- buys time.", "Politically correct but leaves forces potentially vulnerable."],
+        scoring: "Force protection vs escalation management"
+      },
+      political: {
+        briefing: "Your intelligence service is telling you 'probably state-sponsored.' Your defense minister wants to invoke Article 5. Your foreign minister says 'let's not overreact.' Opposition leader just tweeted: 'Where is the PM while NATO is under attack?' Three allied leaders have called you in the last hour.",
+        options: ["Issue strong public statement supporting the affected ally", "Call the affected ally's PM privately to express solidarity", "Request a parliamentary briefing before taking any position"],
+        consequences: ["Visible solidarity but commits you before attribution is clear.", "Personal diplomacy without public commitment -- buys time.", "Democratically sound but slow -- media will say you're hiding."],
+        scoring: "Speed of solidarity response"
+      }
+    },
+    // PHASE 3 — LEAKED STATEMENT
+    3: {
+      nac: {
+        briefing: "The leaked draft statement names Russia explicitly. The leaking capital is unrepentant -- their foreign minister went on TV and said 'the evidence is clear.' Five allies have called you to complain about being blindsided. The Russian ambassador has requested an urgent meeting, calling the leaked statement 'reckless provocation.'",
+        options: ["Publicly rebuke the leaking capital and reaffirm NAC process", "Quietly absorb the leak and focus on building an agreed position", "Use the leak as leverage -- 'since it is public, let us formalize it'"],
+        consequences: ["Upholds procedure but publicly splits the Alliance during a crisis.", "Diplomatic but rewards bad behavior -- others may leak next time.", "Judo move that turns the crisis into momentum, but not all allies agree with the leaked language."],
+        scoring: "Procedural discipline vs crisis momentum"
+      },
+      stratcom: {
+        briefing: "The leaked statement has been amplified by Russian media as proof of 'NATO aggression.' Your carefully crafted messaging is now irrelevant -- the leaked language is THE story. 6 allied spokespeople have given contradictory statements. Social media is a dumpster fire of competing narratives.",
+        options: ["Emergency coordination call with all 31 spokespeople to align", "Lean into the leaked language -- make it the official position", "Pivot narrative to 'Alliance consultation is ongoing -- watch what we do, not leaks'"],
+        consequences: ["Restores coordination but takes 4-6 hours and some will refuse to walk back.", "Bold but may alienate allies who disagree with the leaked attribution.", "Sophisticated but requires all spokespeople to actually stay on message."],
+        scoring: "Crisis communications recovery"
+      },
+      intel: {
+        briefing: "The leaked statement cited intelligence that has not been through the NAC intelligence review process. The cited assessment overstated your confidence level. Media is now treating 'intelligence confirms Russia' as fact. Your actual assessment is still 'moderate confidence.' Allied intelligence chiefs are calling you -- some angry, some supportive.",
+        options: ["Issue formal correction through NAC channels -- 'our assessment remains moderate confidence'", "Stay silent and let the political process sort it out", "Brief trusted journalists on background that the leaked assessment was premature"],
+        consequences: ["Upholds analytic integrity but publicly contradicts an ally during a crisis.", "Avoids bureaucratic war but lets a false confidence level stand as fact.", "Corrects the record informally but 'senior intelligence official' headlines will follow."],
+        scoring: "Analytic integrity under political contamination"
+      },
+      military: {
+        briefing: "The leaked statement has triggered Russian military signaling -- two Tu-95 bombers are now flying near Baltic airspace. Kaliningrad garrison has raised its readiness level. Your intelligence says this is 'standard signaling behavior' but the political environment is now charged. SHAPE is asking whether to request additional air policing rotations.",
+        options: ["Request additional air policing assets and publicize it as 'routine rotation'", "Monitor Russian activity but hold military posture steady", "Recommend NATO-Russia military deconfliction hotline activation"],
+        consequences: ["Reinforces deterrence but adds military pressure during a diplomatic crisis.", "Calm and measured but leaves eFP units feeling exposed.", "De-escalatory signal that shows strategic maturity -- but some allies will see it as weakness."],
+        scoring: "Military signaling calibration"
+      },
+      political: {
+        briefing: "Your ambassador tells you the leaked statement was from a close ally. If you publicly support it, you strengthen that relationship but lock yourself into a position. If you oppose it, you look divided. Your parliament is demanding a statement. The opposition says you are 'sleepwalking into a crisis.'",
+        options: ["Publicly support the leaked statement to show strength", "Issue a measured statement: 'We are consulting with allies on appropriate response'", "Call the leaking PM directly and demand coordination before any more public statements"],
+        consequences: ["Decisive but premature -- attribution may not hold up.", "Buys time but looks weak domestically.", "Strong bilateral move but may not stay private."],
+        scoring: "Bilateral relationship management"
+      }
+    },
+    // PHASE 5 — TECH ASSESSMENT
+    5: {
+      nac: {
+        briefing: "The cybersecurity firm report is now public. Media says 'experts confirm state attack' but the actual language is hedged. You have three camps in the NAC: hawks wanting immediate response, moderates wanting more evidence, and cautious allies wanting to avoid confrontation. The SecGen is looking to you to propose a way forward.",
+        options: ["Table a compromise: 'characterize without attributing' -- describe the attack without naming the attacker", "Call for a formal vote on attribution language", "Propose a 'graduated response framework' -- agree on triggers for escalating language"],
+        consequences: ["Elegant diplomatic solution that may satisfy no one fully.", "Forcing function but you may lose the vote and the loss would be public.", "Sophisticated but complex -- may be seen as stalling."],
+        scoring: "Diplomatic creativity under pressure"
+      },
+      stratcom: {
+        briefing: "The firm's report says 'consistent with but not conclusive.' Every major outlet is running 'EXPERTS CONFIRM STATE ATTACK.' Your correction attempts are being drowned out. Russian media is now running 'NATO manufacturing evidence.' Social media sentiment has shifted -- 34% of English-language posts are now pro-Russian counter-narrative.",
+        options: ["Release a technical explainer: 'What we know, what we do not know, what we are investigating'", "Hold a press conference with the firm's actual analysts to let them speak for themselves", "Ignore the media distortion and focus messaging on Alliance unity instead"],
+        consequences: ["Educates the public but may look like you are downplaying the threat.", "Powerful but the firm may say things you cannot control.", "Changes the frame but abandons the attribution narrative."],
+        scoring: "Messaging under information pollution"
+      },
+      intel: {
+        briefing: "Your own classified assessment says 'moderate-to-high confidence, state-directed.' But you have a sourcing problem: your highest-confidence indicators come from a single allied service that won't let you share. The public firm report uses different methodology and reaches a similar conclusion through different evidence. You are being asked for a definitive assessment.",
+        options: ["Issue a joint assessment with the allied service at 'high confidence' with caveats", "Release your own assessment at 'moderate confidence' to maintain analytic independence", "Request permission to brief NAC on the classified indicators in a restricted session"],
+        consequences: ["Strongest assessment but depends on a single allied source.", "Honest but 'moderate' will be read as 'they are not sure' by politicians.", "Best of both worlds but the allied service may refuse compartmented sharing."],
+        scoring: "Source protection vs decision support"
+      },
+      military: {
+        briefing: "The tech assessment confirms the attack targeted communications infrastructure. Your J-6 (communications) says NATO's own networks are vulnerable to the same attack vector. SHAPE wants to activate cyber defense contingency plans. Meanwhile, the Russian exercise near Pskov has expanded -- 3 additional battalion tactical groups have arrived.",
+        options: ["Activate cyber defense measures and order network hardening across all NATO systems", "Focus on defensive cyber only -- no posture changes on conventional forces", "Recommend dual response: cyber defense plus repositioning eFP reserves"],
+        consequences: ["Comprehensive but visible cyber defense activation may signal NATO vulnerability.", "Measured but ignores the conventional force buildup.", "Most complete response but may be seen as overreaction to a single cyber incident."],
+        scoring: "Multi-domain threat assessment"
+      },
+      political: {
+        briefing: "The tech report is dominating news. Your intelligence briefing says 'moderate-to-high confidence of state involvement.' Your coalition partner is threatening to leave the government if you 'provoke Russia.' Your defense minister is on live TV saying 'we must respond with strength.' You have a cabinet meeting in 2 hours.",
+        options: ["Back your defense minister publicly and commit to Alliance response", "Publicly call for 'measured, evidence-based response' to split the difference", "Call an emergency cabinet meeting to force your coalition partner to take a position"],
+        consequences: ["Shows strength but may break your coalition.", "Bland but keeps the coalition together for now.", "Forces a domestic reckoning -- your coalition partner must choose."],
+        scoring: "Domestic coalition management"
+      }
+    },
+    // PHASE 7 — SECOND INCIDENT
+    7: {
+      nac: {
+        briefing: "A second incident in another member state changes the calculus entirely. Three allies are now calling this a 'campaign' not an 'incident.' The Article 5 invocation caucus has grown from 3 to 8 capitals. The cautious bloc has shrunk but is digging in. You are running out of procedural options to delay a decision.",
+        options: ["Put Article 5 language on the table as a discussion item", "Propose Article 4 consultation as a middle step before any Article 5 discussion", "Call an informal 'retreat' session -- no agenda, no minutes, candid discussion only"],
+        consequences: ["Confronts the question directly but may fail and the failure would be catastrophic.", "Buys time but the hawk caucus will see it as betrayal.", "Creative approach that allows honest discussion without procedural commitments."],
+        scoring: "Crisis escalation management"
+      },
+      stratcom: {
+        briefing: "Second incident has gone viral. '#NATOArticle5' is trending globally. Every news organization is leading with 'Is this the moment NATO goes to war?' Your messaging discipline has completely collapsed -- at least 9 allies have given conflicting public statements in the last 4 hours. Russian media is running 'NATO hysteria proves Western aggression.'",
+        options: ["Emergency 31-nation spokesperson call with mandatory talking points -- no freelancing", "SecGen solo press conference to become the single voice of the Alliance", "Controlled leak of 'behind the scenes Alliance unity' narrative to trusted journalists"],
+        consequences: ["Necessary but some spokespeople will ignore or resist mandatory lines.", "Strongest option but concentrates all risk on one person -- any stumble is catastrophic.", "Subtle but cannot control how journalists use the information."],
+        scoring: "Crisis communications discipline"
+      },
+      intel: {
+        briefing: "The second incident uses a different attack vector -- possibly different attacker, possibly same attacker with different tools, possibly copycat. Your analysts are split. Five Eyes assessment is 'probably coordinated.' Estonian CERT says 'definitely the same actor.' Your best technical analyst says 'I need 72 more hours.' NAC wants an answer now.",
+        options: ["Assess as 'coordinated campaign at moderate confidence' -- your best professional judgment", "Present two competing hypotheses to NAC and let them understand the uncertainty", "Fast-track analysis: pull all resources, 24-hour sprint to produce a definitive assessment"],
+        consequences: ["Gives NAC a basis for decision but 'moderate confidence' may not be enough.", "Intellectually honest but politicians may see uncertainty as weakness.", "May produce answers but rushed analysis risks errors that cannot be walked back."],
+        scoring: "Analytical speed vs rigor"
+      },
+      military: {
+        briefing: "Second incident targeting energy sector raises the stakes. SHAPE assesses that if comms AND energy are being targeted, the next logical target is military logistics or C2. Russian forces near Pskov have gone to communications silence -- ominous but could be exercise-related. Three eFP nations want to activate their national contingency plans.",
+        options: ["Recommend moving to NATO Crisis Response System level DELTA", "Authorize eFP nations to activate national plans while keeping NATO posture at BRAVO", "Order enhanced ISR and prepare contingency options without changing alert level"],
+        consequences: ["Maximum readiness but visible escalation that may trigger Russian counter-escalation.", "Pragmatic compromise but creates patchwork of national vs NATO readiness levels.", "Intelligence-led response but forces remain at lower readiness."],
+        scoring: "Escalation ladder management"
+      },
+      political: {
+        briefing: "Second incident has changed everything domestically. Your opposition leader just gave a press conference saying 'we stand with NATO.' Your coalition partner who threatened to leave is now silent. Public opinion has shifted -- 62% now support 'strong NATO response.' But your intelligence briefing warns that escalation could lead to conventional confrontation.",
+        options: ["Seize the domestic political moment -- announce full support for collective response", "Use the domestic unity to push for a measured, proportionate response", "Call allied leaders to build a coalition-within-the-coalition for a specific response package"],
+        consequences: ["Maximum political capital deployment -- but what specific response?", "Squanders the rally-around-the-flag moment by appearing too cautious.", "Most strategic option but takes time you may not have."],
+        scoring: "Political capital deployment"
+      }
+    },
+    // PHASE 8 — COMMUNIQUE DRAFT
+    8: {
+      nac: {
+        briefing: "Three communique drafts are on the table. CAUTIOUS: 'We note the incidents and will continue to monitor.' FIRM: 'We characterize these acts as hostile without naming the perpetrator and announce enhanced vigilance.' ESCALATORY: 'We attribute these attacks to Russia and invoke Article 4 consultations with full response options.' You need consensus on one.",
+        options: ["Push for FIRM as the consensus position with targeted amendments", "Propose a hybrid: FIRM language with a private annex that is more ESCALATORY", "Let each camp present their case and call for a straw poll"],
+        consequences: ["Most likely to achieve consensus but neither side will be fully satisfied.", "Sophisticated but the private annex may leak.", "Democratic but a straw poll that goes wrong will entrench positions."],
+        scoring: "Consensus-building under pressure"
+      },
+      stratcom: {
+        briefing: "You will need to present whatever the NAC agrees to as a unified Alliance position. If it is CAUTIOUS, media will say NATO is weak. If it is FIRM, you need to explain what 'characterize without naming' actually means. If it is ESCALATORY, you need to manage the global panic. You have 90 minutes to prepare messaging for any outcome.",
+        options: ["Prepare three separate press packages for each possible outcome", "Draft a master narrative that frames ANY outcome as 'Alliance strength'", "Pre-brief two trusted journalists that 'whatever the language, the signal is unified response'"],
+        consequences: ["Operationally sound but spreads your team thin.", "Best messaging strategy but requires real rhetorical skill.", "Shapes the frame in advance -- but only works if NAC actually is unified."],
+        scoring: "Contingency communications planning"
+      },
+      intel: {
+        briefing: "NAC is asking you to attach an intelligence assessment to whichever communique they choose. If CAUTIOUS: you can provide 'ongoing assessment.' If FIRM: you need to support 'characterization' with evidence. If ESCALATORY: you need to stand behind 'attribution.' Your actual confidence is moderate-to-high. High enough for FIRM, maybe not for ESCALATORY.",
+        options: ["Support FIRM with a confidence-calibrated annex that can be upgraded later", "Provide the same assessment regardless of communique -- let the analysts speak for themselves", "Draft two versions: one for FIRM, one conditional for ESCALATORY with caveats"],
+        consequences: ["Aligns intelligence with political needs without overstepping.", "Analytically pure but may not give politicians what they need.", "Flexible but maintaining two versions may signal internal disagreement."],
+        scoring: "Intelligence-policy interface management"
+      },
+      military: {
+        briefing: "SHAPE has prepared response options for each communique level. CAUTIOUS: maintain current posture. FIRM: enhanced air policing, additional ISR, cyber defense activation. ESCALATORY: surge eFP to brigade level, activate NATO Response Force elements, request allied force contributions. The SecGen wants your recommendation.",
+        options: ["Recommend FIRM military measures regardless of political language chosen", "Match military response precisely to the communique level selected", "Propose a graduated implementation: begin FIRM measures immediately, prepare ESCALATORY as contingency"],
+        consequences: ["Shows military readiness without waiting for politics -- but may outrun the NAC.", "Coherent policy-military alignment but may be too cautious if CAUTIOUS is chosen.", "Most sophisticated approach but requires NAC to agree to a 'dual-track' framework."],
+        scoring: "Military-political coherence"
+      },
+      political: {
+        briefing: "Your ambassador says the communique will likely be FIRM. Your defense minister wants ESCALATORY. Your foreign minister is comfortable with FIRM. The opposition is now fully supportive of 'whatever NATO decides.' This is the moment to shape the final language -- what instruction do you give your ambassador?",
+        options: ["Instruct: support FIRM but add language on 'future escalatory measures if incidents continue'", "Instruct: push for ESCALATORY -- this is the moment to show resolve", "Instruct: support whatever emerges -- Alliance unity matters more than specific language"],
+        consequences: ["Hedges your bets -- firm now with escalation option preserved.", "Maximum resolve but may isolate you if consensus goes the other way.", "Prioritizes unity but abdicates leadership."],
+        scoring: "Strategic instruction quality"
+      }
+    }
+  };
+
+  // Consequence texts for phases without full role content (2, 4, 6, 9)
+  var NATO_ROLE_GENERIC_HEADERS = {
+    nac: "NAC CHAIR perspective: How does this phase affect your consensus-building effort?",
+    stratcom: "STRATCOM perspective: What does this phase mean for your public narrative?",
+    intel: "INTEL CHIEF perspective: How does this development affect your attribution assessment?",
+    military: "SACEUR perspective: What are the force posture implications?",
+    political: "MEMBER STATE PM perspective: How does this play domestically?"
+  };
+
+  // Scoring rubrics per role
+  var NATO_ROLE_SCORING = {
+    nac: {
+      criteria: ["Consensus Durability", "Procedural Integrity", "Crisis Tempo Management"],
+      excellent: "You maintained Alliance cohesion through the crisis. Your consensus-building preserved unity without sacrificing speed. The agreed position reflects genuine agreement, not forced compliance. The process you ran will survive scrutiny in after-action review.",
+      good: "You achieved a workable consensus but some allies feel steamrolled or sidelined. The communique language holds but may not survive sustained pressure. Process discipline was adequate but improvised at key moments.",
+      mixed: "The Alliance reached a position but it is fragile. Key allies publicly dissented or were excluded from key consultations. The process broke down at critical junctures. The consensus may not hold through implementation."
+    },
+    stratcom: {
+      criteria: ["Narrative Control", "Messaging Consistency", "Public Confidence"],
+      excellent: "You controlled the narrative arc from incident through response. Messaging remained coherent despite the leak, the media frenzy, and the second incident. Public confidence in NATO's competence and resolve is high. The adversary's counter-narrative failed to gain traction.",
+      good: "You recovered from early messaging failures and established a credible narrative. Some inconsistencies between allied spokespersons persisted but were managed. The adversary scored some narrative points but did not dominate.",
+      mixed: "Messaging discipline collapsed at multiple points. Allied spokespersons contradicted each other publicly. The media narrative was driven by leaks and adversary framing rather than your communications strategy."
+    },
+    intel: {
+      criteria: ["Attribution Accuracy", "Analytic Integrity", "Decision Support Quality"],
+      excellent: "Your assessments were calibrated to evidence, properly caveated, and delivered when decision-makers needed them. You resisted pressure to overstate confidence. Your intelligence-policy interface was professional and productive. Sources and methods were protected.",
+      good: "Your assessments supported decision-making but were occasionally stretched beyond what the evidence supported. Some pressure from politicians affected your analytic framing. Sources and methods were mostly protected.",
+      mixed: "Your assessments were either too hedged to be useful or too confident for the evidence. The intelligence-policy boundary was blurred. Decision-makers either ignored your assessments or weaponized them for political purposes."
+    },
+    military: {
+      criteria: ["Force Readiness", "Escalation Control", "Deterrence Credibility"],
+      excellent: "You maintained force readiness without triggering an escalation spiral. Your posture adjustments were proportionate, reversible, and communicated clearly to both allies and adversaries. Deterrence was reinforced without provocation. The military instrument remained a tool of policy, not a driver of it.",
+      good: "You protected the force and maintained readiness but some posture changes were visible and may have contributed to escalation dynamics. The military-political coordination was adequate but not seamless.",
+      mixed: "Force posture was either too passive (leaving units exposed) or too aggressive (contributing to escalation). Military actions outran political decision-making or lagged dangerously behind the threat."
+    },
+    political: {
+      criteria: ["Domestic Credibility", "Alliance Solidarity", "Strategic Judgment"],
+      excellent: "You balanced domestic politics with alliance solidarity. Your coalition held, your public supported the response, and your allies viewed you as a responsible, constructive partner. You deployed political capital at the right moments and preserved it when spending it would have been wasteful.",
+      good: "You maintained your domestic position and supported the Alliance but made some suboptimal tradeoffs. Your coalition is strained but intact. Allies view you as generally supportive but occasionally unreliable.",
+      mixed: "You either sacrificed domestic credibility for alliance solidarity or vice versa. Your coalition is fractured, your public is confused about your position, or your allies view you as a problem rather than a partner."
+    }
+  };
 
   var NATO_UNITS = [
     { id: "nato_hq", name: "NATO HQ Brussels", size: "NAC in session", type: "hq", equipment: "North Atlantic Council", hq: "Brussels, Belgium", positions: [{x:220,y:220},{x:220,y:220},{x:220,y:220},{x:220,y:220},{x:220,y:220},{x:220,y:220},{x:220,y:220},{x:220,y:220},{x:220,y:220},{x:220,y:220}], axis: "nato_cmd", sizeClass: "team" },
@@ -7568,7 +7868,7 @@ function SimulationView(props) {
     // Scenario selector
     React.createElement("div", { style: { display: "flex", gap: 8, marginBottom: 16 } },
       React.createElement("button", {
-        onClick: function() { setScenario('ukraine'); setMapPhase(0); setAutoPlay(false); setHoveredUnit(null); setMapZoom(1); setMapPan({x:0,y:0}); },
+        onClick: function() { setScenario('ukraine'); setMapPhase(0); setAutoPlay(false); setHoveredUnit(null); setMapZoom(1); setMapPan({x:0,y:0}); setNatoRole(null); setNatoDecisions({}); },
         style: {
           flex: 1, padding: "10px 14px",
           border: "1px solid " + (scenario === 'ukraine' ? "rgba(138,180,220,.5)" : "rgba(255,255,255,.1)"),
@@ -7580,7 +7880,7 @@ function SimulationView(props) {
         }
       }, "UKRAINE 2022 -- INTELLIGENCE BUILDUP"),
       React.createElement("button", {
-        onClick: function() { setScenario('nato'); setMapPhase(0); setAutoPlay(false); setHoveredUnit(null); setMapZoom(1); setMapPan({x:0,y:0}); },
+        onClick: function() { setScenario('nato'); setMapPhase(0); setAutoPlay(false); setHoveredUnit(null); setMapZoom(1); setMapPan({x:0,y:0}); setNatoRole(null); setNatoDecisions({}); },
         style: {
           flex: 1, padding: "10px 14px",
           border: "1px solid " + (scenario === 'nato' ? "rgba(138,180,220,.5)" : "rgba(255,255,255,.1)"),
@@ -7591,6 +7891,72 @@ function SimulationView(props) {
           cursor: "pointer", transition: "all .2s", letterSpacing: ".06em", textAlign: "center"
         }
       }, "NATO CONSULTATION -- HYBRID WARFARE TTX")
+    ),
+
+    // ─── NATO ROLE SELECTION SCREEN ───
+    scenario === 'nato' && !natoRole && React.createElement("div", { style: { padding: "32px 0" } },
+      React.createElement("div", { style: { textAlign: "center", marginBottom: 24 } },
+        React.createElement("div", { style: { fontSize: 9, fontFamily: mono, color: "rgba(200,160,40,.7)", letterSpacing: ".18em", marginBottom: 8, fontWeight: 700 } }, "NATO RESTRICTED // EXERCISE"),
+        React.createElement("h2", { style: { fontSize: 22, fontFamily: mono, color: accent, fontWeight: 700, margin: "0 0 8px", letterSpacing: ".06em" } }, "SELECT YOUR ROLE"),
+        React.createElement("p", { style: { fontSize: 13, fontFamily: body2, color: dimText, maxWidth: 600, margin: "0 auto", lineHeight: 1.6 } },
+          "You will experience the same 10-phase crisis from your chosen perspective. Each role sees different information, faces different decisions, and is scored on different criteria. Play all 5 roles to see the full picture.")
+      ),
+      React.createElement("div", { style: { display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 12, maxWidth: 900, margin: "0 auto" } },
+        Object.keys(NATO_ROLES).map(function(roleKey) {
+          var role = NATO_ROLES[roleKey];
+          return React.createElement("button", {
+            key: roleKey,
+            onClick: function() { setNatoRole(roleKey); setNatoDecisions({}); setMapPhase(0); },
+            style: {
+              padding: "20px 18px", textAlign: "left", cursor: "pointer", transition: "all .2s",
+              background: "rgba(6,8,16,.9)", border: "1px solid " + role.color + "44",
+              borderLeft: "3px solid " + role.color, borderRadius: 4,
+              display: "flex", flexDirection: "column", gap: 8
+            },
+            onMouseEnter: function(e) { e.currentTarget.style.background = role.color + "12"; e.currentTarget.style.borderColor = role.color + "88"; },
+            onMouseLeave: function(e) { e.currentTarget.style.background = "rgba(6,8,16,.9)"; e.currentTarget.style.borderColor = role.color + "44"; }
+          },
+            React.createElement("div", { style: { display: "flex", alignItems: "center", gap: 8 } },
+              React.createElement("span", { style: { fontSize: 9, fontFamily: mono, color: role.color, fontWeight: 700, letterSpacing: ".08em", padding: "2px 6px", border: "1px solid " + role.color + "55", borderRadius: 2, background: role.color + "15" } }, role.icon),
+              React.createElement("span", { style: { fontSize: 14, fontFamily: mono, color: role.color, fontWeight: 700, letterSpacing: ".04em" } }, role.title)
+            ),
+            React.createElement("div", { style: { fontSize: 12, fontFamily: body2, color: brightText, lineHeight: 1.5 } },
+              React.createElement("strong", { style: { color: "rgba(220,228,240,.6)", fontFamily: mono, fontSize: 8, letterSpacing: ".1em" } }, "YOUR JOB: "),
+              role.job
+            ),
+            React.createElement("div", { style: { fontSize: 11, fontFamily: body2, color: dimText, lineHeight: 1.5 } },
+              React.createElement("strong", { style: { color: "rgba(220,228,240,.5)", fontFamily: mono, fontSize: 8, letterSpacing: ".1em" } }, "YOU SEE: "),
+              role.sees
+            ),
+            React.createElement("div", { style: { fontSize: 11, fontFamily: body2, color: dimText, lineHeight: 1.5 } },
+              React.createElement("strong", { style: { color: "rgba(220,228,240,.5)", fontFamily: mono, fontSize: 8, letterSpacing: ".1em" } }, "YOU DECIDE: "),
+              role.decides
+            ),
+            React.createElement("div", { style: { fontSize: 10, fontFamily: mono, color: role.color, fontWeight: 600, letterSpacing: ".04em", marginTop: 4, padding: "4px 8px", background: role.color + "0a", borderRadius: 2 } },
+              "KEY TENSION: " + role.tension)
+          );
+        })
+      )
+    ),
+
+    // ─── MAIN SCENARIO CONTENT (gated: Ukraine always shows, NATO only when role selected) ───
+    (scenario !== 'nato' || natoRole) && React.createElement(React.Fragment, null,
+
+    // SWITCH ROLE button (NATO only, when role is selected)
+    scenario === 'nato' && natoRole && React.createElement("div", { style: { display: "flex", alignItems: "center", gap: 12, padding: "8px 0", borderBottom: "1px solid rgba(255,255,255,.06)", marginBottom: 8 } },
+      React.createElement("div", { style: { display: "flex", alignItems: "center", gap: 6, flex: 1 } },
+        React.createElement("span", { style: { fontSize: 9, fontFamily: mono, color: NATO_ROLES[natoRole].color, fontWeight: 700, letterSpacing: ".08em", padding: "2px 6px", border: "1px solid " + NATO_ROLES[natoRole].color + "55", borderRadius: 2, background: NATO_ROLES[natoRole].color + "15" } }, NATO_ROLES[natoRole].icon),
+        React.createElement("span", { style: { fontSize: 12, fontFamily: mono, color: NATO_ROLES[natoRole].color, fontWeight: 700, letterSpacing: ".04em" } }, "PLAYING AS: " + NATO_ROLES[natoRole].shortTitle),
+        Object.keys(natoDecisions).length > 0 && React.createElement("span", { style: { fontSize: 9, fontFamily: mono, color: dimText, marginLeft: 8 } }, Object.keys(natoDecisions).length + "/10 decisions made")
+      ),
+      React.createElement("button", {
+        onClick: function() { setNatoRole(null); setNatoDecisions({}); setMapPhase(0); setAutoPlay(false); },
+        style: {
+          padding: "5px 12px", border: "1px solid rgba(255,255,255,.15)", borderRadius: 3,
+          background: "rgba(255,255,255,.04)", color: dimText, fontSize: 9, fontFamily: mono,
+          fontWeight: 600, cursor: "pointer", letterSpacing: ".06em", transition: "all .15s"
+        }
+      }, "SWITCH ROLE")
     ),
 
     // TOP classification banner
@@ -7804,10 +8170,110 @@ function SimulationView(props) {
     // Phase description
     React.createElement("div", { style: { padding: "8px 0 16px" } },
       React.createElement("p", { style: { fontSize: 13, fontFamily: body2, color: "rgba(200,206,220,.6)", margin: 0, lineHeight: 1.6, maxWidth: 700 } }, curPhase.description),
-      scenario === 'nato' && curPhase.inject ? React.createElement("div", { style: { marginTop: 8, padding: "8px 12px", background: "rgba(138,180,220,.06)", border: "1px solid rgba(138,180,220,.15)", borderRadius: 4 } },
-        React.createElement("p", { style: { fontSize: 8, fontFamily: mono, color: accent, letterSpacing: ".12em", margin: "0 0 4px", textTransform: "uppercase", fontWeight: 700 } }, "INJECT / PLAYER ACTION REQUIRED"),
-        React.createElement("p", { style: { fontSize: 12, fontFamily: body2, color: "rgba(200,210,225,.7)", margin: 0, lineHeight: 1.5 } }, curPhase.inject)
-      ) : null
+
+      // ─── NATO ROLE-SPECIFIC BRIEFING & DECISIONS ───
+      scenario === 'nato' && natoRole && (function() {
+        var rolePhaseData = NATO_ROLE_PHASES[mapPhase] && NATO_ROLE_PHASES[mapPhase][natoRole];
+        var roleColor = NATO_ROLES[natoRole].color;
+        var roleName = NATO_ROLES[natoRole].shortTitle;
+        var hasDecision = natoDecisions[mapPhase] !== undefined;
+        var chosenIdx = natoDecisions[mapPhase];
+
+        // DEBRIEF phase (phase 9) — show scoring
+        if (mapPhase === 9) {
+          var totalDecisions = Object.keys(natoDecisions).length;
+          var roleScore = NATO_ROLE_SCORING[natoRole];
+          var rating = totalDecisions >= 5 ? "excellent" : (totalDecisions >= 3 ? "good" : "mixed");
+          return React.createElement("div", { style: { marginTop: 12 } },
+            React.createElement("div", { style: { padding: "16px 18px", background: "rgba(6,8,16,.95)", border: "1px solid " + roleColor + "44", borderLeft: "3px solid " + roleColor, borderRadius: 4 } },
+              React.createElement("div", { style: { fontSize: 9, fontFamily: mono, color: roleColor, letterSpacing: ".12em", fontWeight: 700, marginBottom: 12 } }, "AFTER-ACTION ASSESSMENT -- " + roleName),
+              React.createElement("div", { style: { display: "flex", gap: 12, marginBottom: 16, flexWrap: "wrap" } },
+                React.createElement("div", { style: { padding: "8px 14px", background: roleColor + "12", border: "1px solid " + roleColor + "33", borderRadius: 3, textAlign: "center" } },
+                  React.createElement("div", { style: { fontSize: 22, fontFamily: mono, color: roleColor, fontWeight: 700 } }, totalDecisions + "/10"),
+                  React.createElement("div", { style: { fontSize: 8, fontFamily: mono, color: dimText, letterSpacing: ".1em", marginTop: 2 } }, "DECISIONS MADE")
+                ),
+                React.createElement("div", { style: { padding: "8px 14px", background: (rating === "excellent" ? "rgba(48,176,80,.12)" : rating === "good" ? "rgba(232,144,32,.12)" : "rgba(220,80,48,.12)"), border: "1px solid " + (rating === "excellent" ? "rgba(48,176,80,.33)" : rating === "good" ? "rgba(232,144,32,.33)" : "rgba(220,80,48,.33)"), borderRadius: 3, textAlign: "center" } },
+                  React.createElement("div", { style: { fontSize: 16, fontFamily: mono, color: (rating === "excellent" ? "#30b050" : rating === "good" ? "#e89020" : "#dc5030"), fontWeight: 700 } }, rating.toUpperCase()),
+                  React.createElement("div", { style: { fontSize: 8, fontFamily: mono, color: dimText, letterSpacing: ".1em", marginTop: 2 } }, "OVERALL RATING")
+                )
+              ),
+              React.createElement("div", { style: { marginBottom: 12 } },
+                React.createElement("div", { style: { fontSize: 9, fontFamily: mono, color: dimText, letterSpacing: ".1em", marginBottom: 6, fontWeight: 600 } }, "SCORED ON:"),
+                React.createElement("div", { style: { display: "flex", gap: 8, flexWrap: "wrap" } },
+                  roleScore.criteria.map(function(c, ci) {
+                    return React.createElement("span", { key: ci, style: { fontSize: 10, fontFamily: mono, color: roleColor, padding: "3px 8px", background: roleColor + "12", border: "1px solid " + roleColor + "33", borderRadius: 2, letterSpacing: ".04em" } }, c);
+                  })
+                )
+              ),
+              React.createElement("p", { style: { fontSize: 12, fontFamily: body2, color: "rgba(200,210,225,.7)", lineHeight: 1.7, margin: 0 } }, roleScore[rating]),
+              totalDecisions < 10 && React.createElement("p", { style: { fontSize: 11, fontFamily: mono, color: "rgba(200,206,220,.4)", marginTop: 12, fontStyle: "italic" } }, "Tip: Replay the scenario and make decisions at every phase to get a more complete assessment.")
+            )
+          );
+        }
+
+        // Phases with full role content
+        if (rolePhaseData) {
+          return React.createElement("div", { style: { marginTop: 12 } },
+            // Role-specific briefing
+            React.createElement("div", { style: { padding: "12px 16px", background: roleColor + "08", border: "1px solid " + roleColor + "22", borderLeft: "3px solid " + roleColor, borderRadius: 4, marginBottom: 10 } },
+              React.createElement("div", { style: { display: "flex", alignItems: "center", gap: 6, marginBottom: 8 } },
+                React.createElement("span", { style: { fontSize: 8, fontFamily: mono, color: roleColor, fontWeight: 700, letterSpacing: ".1em", padding: "1px 5px", border: "1px solid " + roleColor + "44", borderRadius: 2 } }, NATO_ROLES[natoRole].icon),
+                React.createElement("span", { style: { fontSize: 9, fontFamily: mono, color: roleColor, fontWeight: 700, letterSpacing: ".1em" } }, roleName + " BRIEFING")
+              ),
+              React.createElement("p", { style: { fontSize: 12, fontFamily: body2, color: "rgba(200,210,225,.75)", lineHeight: 1.6, margin: 0 } }, rolePhaseData.briefing)
+            ),
+            // Decision options or chosen decision
+            !hasDecision ? React.createElement("div", { style: { marginTop: 8 } },
+              React.createElement("div", { style: { fontSize: 8, fontFamily: mono, color: accent, letterSpacing: ".12em", marginBottom: 8, fontWeight: 700 } }, "YOUR DECISION -- " + rolePhaseData.scoring.toUpperCase()),
+              React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 6 } },
+                rolePhaseData.options.map(function(opt, oi) {
+                  return React.createElement("button", {
+                    key: oi,
+                    onClick: function() {
+                      var next = Object.assign({}, natoDecisions);
+                      next[mapPhase] = oi;
+                      setNatoDecisions(next);
+                    },
+                    style: {
+                      padding: "10px 14px", textAlign: "left", cursor: "pointer", transition: "all .2s",
+                      background: "rgba(6,8,16,.8)", border: "1px solid rgba(255,255,255,.1)",
+                      borderRadius: 3, color: brightText, fontSize: 12, fontFamily: body2,
+                      lineHeight: 1.5
+                    },
+                    onMouseEnter: function(e) { e.currentTarget.style.borderColor = roleColor + "66"; e.currentTarget.style.background = roleColor + "0c"; },
+                    onMouseLeave: function(e) { e.currentTarget.style.borderColor = "rgba(255,255,255,.1)"; e.currentTarget.style.background = "rgba(6,8,16,.8)"; }
+                  },
+                    React.createElement("span", { style: { fontSize: 10, fontFamily: mono, color: roleColor, fontWeight: 700, marginRight: 8 } }, String.fromCharCode(65 + oi) + "."),
+                    opt
+                  );
+                })
+              )
+            ) : React.createElement("div", { style: { marginTop: 8 } },
+              React.createElement("div", { style: { fontSize: 8, fontFamily: mono, color: "#30b050", letterSpacing: ".12em", marginBottom: 6, fontWeight: 700 } }, "DECISION RECORDED"),
+              React.createElement("div", { style: { padding: "10px 14px", background: roleColor + "0c", border: "1px solid " + roleColor + "33", borderLeft: "3px solid " + roleColor, borderRadius: 3, marginBottom: 8 } },
+                React.createElement("span", { style: { fontSize: 10, fontFamily: mono, color: roleColor, fontWeight: 700, marginRight: 8 } }, String.fromCharCode(65 + chosenIdx) + "."),
+                React.createElement("span", { style: { fontSize: 12, fontFamily: body2, color: brightText } }, rolePhaseData.options[chosenIdx])
+              ),
+              React.createElement("div", { style: { padding: "8px 12px", background: "rgba(48,176,80,.06)", border: "1px solid rgba(48,176,80,.15)", borderRadius: 3 } },
+                React.createElement("span", { style: { fontSize: 8, fontFamily: mono, color: "#30b050", fontWeight: 700, letterSpacing: ".1em", marginRight: 6 } }, "CONSEQUENCE:"),
+                React.createElement("span", { style: { fontSize: 11, fontFamily: body2, color: "rgba(200,210,225,.65)", lineHeight: 1.5 } }, rolePhaseData.consequences[chosenIdx])
+              )
+            )
+          );
+        }
+
+        // Phases without full role content — show role-flavor header + generic inject
+        return React.createElement("div", { style: { marginTop: 12 } },
+          React.createElement("div", { style: { padding: "8px 12px", background: roleColor + "08", border: "1px solid " + roleColor + "22", borderLeft: "3px solid " + roleColor, borderRadius: 4, marginBottom: 8 } },
+            React.createElement("p", { style: { fontSize: 11, fontFamily: body2, color: roleColor, margin: 0, lineHeight: 1.5, fontStyle: "italic" } }, NATO_ROLE_GENERIC_HEADERS[natoRole])
+          ),
+          curPhase.inject ? React.createElement("div", { style: { padding: "8px 12px", background: "rgba(138,180,220,.06)", border: "1px solid rgba(138,180,220,.15)", borderRadius: 4 } },
+            React.createElement("p", { style: { fontSize: 8, fontFamily: mono, color: accent, letterSpacing: ".12em", margin: "0 0 4px", textTransform: "uppercase", fontWeight: 700 } }, "INJECT / PLAYER ACTION REQUIRED"),
+            React.createElement("p", { style: { fontSize: 12, fontFamily: body2, color: "rgba(200,210,225,.7)", margin: 0, lineHeight: 1.5 } }, curPhase.inject)
+          ) : null
+        );
+      })(),
+
     ),
 
     // Legend - scenario-aware
@@ -7879,6 +8345,7 @@ function SimulationView(props) {
 
     // BOTTOM classification banner
     classBanner
+    ) // end of React.Fragment gate for role selection
   );
 }
 
