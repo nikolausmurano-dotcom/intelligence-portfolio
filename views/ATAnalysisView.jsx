@@ -314,6 +314,22 @@ function ATAnalysisView({ setView }) {
     </svg>
   );
 
+  // ── Network node positions (must be at component level, not inside renderNetwork) ──
+  const nodePositions = useMemo(() => {
+    const positions = {};
+    const communityOffsets = { ops: { cx: 30, cy: 45 }, finance: { cx: 70, cy: 35 }, enabler: { cx: 70, cy: 70 } };
+    NETWORK_NODES.forEach((n, i) => {
+      const offset = communityOffsets[n.community] || { cx: 50, cy: 50 };
+      const angle = (i * 2.4) + (n.community === 'ops' ? 0 : n.community === 'finance' ? 2 : 4);
+      const radius = 12 + (1 - n.centrality) * 15;
+      positions[n.id] = {
+        x: offset.cx + Math.cos(angle) * radius,
+        y: offset.cy + Math.sin(angle) * radius,
+      };
+    });
+    return positions;
+  }, []);
+
   // ── Weighted score computation ───────────────────────────────
   const weightedScores = useMemo(() => {
     const totalWeight = Object.values(decisionWeights).reduce((s, w) => s + w, 0);
@@ -559,22 +575,6 @@ function ATAnalysisView({ setView }) {
   const renderNetwork = () => {
     const communityColors = { ops: C.blue, finance: C.amber, enabler: C.red };
     const selectedNode = networkSelectedNode ? NETWORK_NODES.find(n => n.id === networkSelectedNode) : null;
-
-    // Compute node positions in a force-directed-like layout
-    const nodePositions = useMemo(() => {
-      const positions = {};
-      const communityOffsets = { ops: { cx: 30, cy: 45 }, finance: { cx: 70, cy: 35 }, enabler: { cx: 70, cy: 70 } };
-      NETWORK_NODES.forEach((n, i) => {
-        const offset = communityOffsets[n.community] || { cx: 50, cy: 50 };
-        const angle = (i * 2.4) + (n.community === 'ops' ? 0 : n.community === 'finance' ? 2 : 4);
-        const radius = 12 + (1 - n.centrality) * 15;
-        positions[n.id] = {
-          x: offset.cx + Math.cos(angle) * radius,
-          y: offset.cy + Math.sin(angle) * radius,
-        };
-      });
-      return positions;
-    }, []);
 
     return React.createElement('div', null,
       SectionHeading({ title: 'Network Analysis: Relationship Mapping', subtitle: 'Examine the network graph of persons of interest. Click nodes to inspect. Filter by community to reveal cell structure. Identify hubs, bridges, and critical nodes.' }),
