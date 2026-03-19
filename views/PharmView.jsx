@@ -310,6 +310,11 @@ function PharmView({ setView }) {
   const [expandedTier, setExpandedTier] = useState(null);
   const [showColdChainReveal, setShowColdChainReveal] = useState(false);
   const [tipId, setTipId] = useState(null);
+  const [adverseIdx, setAdverseIdx] = useState(0);
+  const [adverseAnswers, setAdverseAnswers] = useState({});
+  const [adverseRevealed, setAdverseRevealed] = useState({});
+  const [equityAllocation, setEquityAllocation] = useState({ hcw: 20, elderly: 20, essential: 15, highrisk: 20, adult: 15, pediatric: 10 });
+  const [equitySubmitted, setEquitySubmitted] = useState(false);
 
   // ── Scholarly Micro-Icons & Tooltip ──────────────────────────
   function Tip({ id }) {
@@ -368,6 +373,8 @@ function PharmView({ setView }) {
       { id: 'coldchain', label: 'Cold Chain', desc: 'Storage Logistics' },
       { id: 'tempgraph', label: 'Temp Graph', desc: 'Temperature Monitor' },
       { id: 'protocols', label: 'Protocols', desc: 'Adverse Reactions' },
+      { id: 'adverse', label: 'VAERS Lab', desc: 'Event Investigation' },
+      { id: 'equity', label: 'Equity', desc: 'Distribution Ethics' },
     ];
     return (
       <div style={{ display: 'flex', gap: 2, marginBottom: 24, borderBottom:'1px solid rgba(48,160,64,.12)' }}>
@@ -1022,6 +1029,315 @@ function PharmView({ setView }) {
     );
   }, [showColdChainReveal]);
 
+  // ── Adverse Event Investigation data ────────────────────────
+  const VAERS_CASES = useMemo(() => [
+    {
+      id: 0, title: 'Post-mRNA Myocarditis',
+      report: 'A 19-year-old male college student presents to the ED 3 days after receiving his second dose of BNT162b2 (Pfizer-BioNTech COVID-19 vaccine). Chief complaint: chest pain worse with deep breathing, fatigue. Troponin elevated (1.2 ng/mL), CRP elevated (48 mg/L). ECG shows diffuse ST elevation. Cardiac MRI confirms myocarditis with preserved ejection fraction (55%). No prior cardiac history, no recent viral illness, no substance use. Symptoms resolve with NSAIDs over 5 days.',
+      assessment: {
+        causality: 'Probable (Bradford Hill: temporal association strong, biological plausibility established via mRNA mechanism, consistency with epidemiologic signal in young males, dose-response seen with dose 2 > dose 1)',
+        severity: 'Grade 2 (Moderate) -- hospitalization required, no long-term sequelae, resolved with standard treatment',
+        reporting: 'Mandatory VAERS report required per CDC reporting requirements for myocarditis/pericarditis following mRNA vaccines. Also reportable to V-safe.',
+        management: 'NSAIDs for symptom management. Restrict physical activity for 3-6 months per ACC/AHA guidelines. Follow-up cardiac MRI at 3 months. Discussion regarding risk-benefit of additional doses.',
+      },
+      bradfordHill: { temporality: 4, strength: 3, consistency: 4, plausibility: 4, specificity: 3, gradient: 3 },
+    },
+    {
+      id: 1, title: 'Anaphylaxis Following First Dose',
+      report: 'A 42-year-old female with known allergy to polyethylene glycol (PEG) in cosmetics receives first dose of mRNA-1273 (Moderna COVID-19 vaccine). Within 8 minutes: urticaria, facial angioedema, wheezing, hypotension (BP 78/50), tachycardia (HR 128). Epinephrine 0.3mg IM administered x2. Transferred to ED. History significant for prior anaphylaxis to a colonoscopy prep solution (which contains PEG). Resolved with epinephrine and IV fluids. Discharged after 6-hour observation.',
+      assessment: {
+        causality: 'Definite (Bradford Hill: immediate temporal association, known mechanism via PEG hypersensitivity -- PEG is an excipient in both mRNA vaccines, prior PEG allergy documented, Brighton Collaboration Level 1 certainty for anaphylaxis classification)',
+        severity: 'Grade 3 (Severe) -- life-threatening reaction requiring emergency intervention. Potential Grade 4 if epinephrine had been delayed.',
+        reporting: 'Mandatory VAERS report. Anaphylaxis is a Table Injury under the National Childhood Vaccine Injury Act (NCVIA) when occurring within 4 hours. Patient should be referred to the Countermeasures Injury Compensation Program (CICP).',
+        management: 'Immediate epinephrine per anaphylaxis protocol. Absolute contraindication to further doses of PEG-containing vaccines. Refer to allergist for PEG skin testing. May consider Ad26.COV2.S (J&J) which uses polysorbate 80 instead of PEG, under allergist supervision.',
+      },
+      bradfordHill: { temporality: 5, strength: 5, consistency: 5, plausibility: 5, specificity: 4, gradient: 4 },
+    },
+    {
+      id: 2, title: 'Temporal but Unlikely Causal',
+      report: 'A 67-year-old male with history of hypertension, Type 2 diabetes, BMI 34, and 40-pack-year smoking history suffers a myocardial infarction (STEMI) 12 days after receiving Ad26.COV2.S (J&J COVID-19 vaccine). Cardiac catheterization reveals 95% occlusion of the LAD with chronic atherosclerotic disease in multiple vessels. Patient had missed his statin and antihypertensive medications for 2 weeks prior to the event. Family history positive for MI (father at age 58).',
+      assessment: {
+        causality: 'Unlikely (Bradford Hill: temporal association present but weak at 12 days, no biological plausibility for vaccine-induced atherosclerotic MI, strong alternative explanation via established cardiovascular risk factors, no epidemiologic signal for STEMI post-vaccination in large-scale studies)',
+        severity: 'Grade 4 (Life-threatening) -- STEMI with emergency PCI required. However, causality assessment is separate from severity.',
+        reporting: 'VAERS report appropriate for completeness (any serious adverse event following vaccination should be reported regardless of suspected causality). The causality assessment is made by epidemiologists, not the reporter.',
+        management: 'Standard STEMI protocol. Medication compliance counseling. No vaccine-specific management changes. Future COVID-19 vaccination is NOT contraindicated -- this event is unrelated to vaccination.',
+      },
+      bradfordHill: { temporality: 2, strength: 1, consistency: 1, plausibility: 1, specificity: 1, gradient: 1 },
+    },
+  ], []);
+
+  const renderAdverse = useCallback(() => {
+    var caseData = VAERS_CASES[adverseIdx];
+    var answers = adverseAnswers[adverseIdx] || {};
+    var isRevealed = adverseRevealed[adverseIdx];
+    var fields = ['causality', 'severity', 'reporting', 'management'];
+
+    return (
+      <div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}>
+          <div style={{ width: 4, height: 28, background: C.red, borderRadius: 2 }} />
+          <h2 style={{ fontFamily: Serif, fontSize: 20, fontWeight: 700, color: C.tx, margin: 0 }}>
+            Adverse Event Investigation
+          </h2>
+        </div>
+        <p style={{ fontFamily: Serif, fontSize: 13, color: C.tx2, lineHeight: 1.65, marginBottom: 16, maxWidth: 680 }}>
+          Three VAERS-style case reports. Evaluate causality using Bradford Hill criteria, assess severity (Grade 1-5), determine reporting obligations, and recommend clinical management.
+        </p>
+
+        {/* Case selector */}
+        <div style={{ display: 'flex', gap: 4, marginBottom: 16 }}>
+          {VAERS_CASES.map((c, i) => (
+            <button key={i} onClick={() => setAdverseIdx(i)} style={{
+              flex: 1, padding: '8px 10px', borderRadius: 4, cursor: 'pointer', textAlign: 'center',
+              background: adverseIdx === i ? C.redBg : 'transparent',
+              border: adverseIdx === i ? '1px solid ' + C.redDm : '1px solid ' + C.line,
+            }}>
+              <span style={{ fontFamily: Mono, fontSize: 11, fontWeight: 600, color: adverseIdx === i ? C.red : C.tx3, display: 'block' }}>Case {i + 1}</span>
+              <span style={{ fontFamily: Sans, fontSize: 9, color: C.tx3 }}>{c.title.split(' ').slice(0, 2).join(' ')}</span>
+            </button>
+          ))}
+        </div>
+
+        {/* Case report */}
+        <div style={{
+          background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6,
+          padding: 16, marginBottom: 16, borderTop: '3px solid ' + C.red,
+        }}>
+          <div style={{ fontFamily: Mono, fontSize: 10, letterSpacing: '.1em', color: C.redDm, marginBottom: 6 }}>VAERS CASE REPORT</div>
+          <h3 style={{ fontFamily: Serif, fontSize: 16, color: C.tx, marginBottom: 10 }}>{caseData.title}</h3>
+          <p style={{ fontFamily: Serif, fontSize: 12, color: C.tx2, lineHeight: 1.7, borderLeft: '3px solid ' + C.line, paddingLeft: 12 }}>
+            {caseData.report}
+          </p>
+        </div>
+
+        {/* Bradford Hill radar (simplified bar chart) */}
+        <div style={{ background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6, padding: 16, marginBottom: 16 }}>
+          <div style={{ fontFamily: Mono, fontSize: 10, letterSpacing: '.08em', color: C.tx3, marginBottom: 10 }}>BRADFORD HILL CRITERIA STRENGTH</div>
+          {Object.entries(caseData.bradfordHill).map(([key, val]) => (
+            <div key={key} style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
+              <span style={{ fontFamily: Mono, fontSize: 11, color: C.tx3, minWidth: 90, textTransform: 'capitalize' }}>{key}</span>
+              <div style={{ flex: 1, height: 6, background: C.line, borderRadius: 3, maxWidth: 200, overflow: 'hidden' }}>
+                <div style={{ width: (val / 5 * 100) + '%', height: '100%', background: val >= 4 ? C.accent : val >= 3 ? C.yellow : C.tx3, borderRadius: 3 }} />
+              </div>
+              <span style={{ fontFamily: Mono, fontSize: 11, color: val >= 4 ? C.accent : C.tx3, fontWeight: 600 }}>{val}/5</span>
+            </div>
+          ))}
+        </div>
+
+        {/* User assessment fields */}
+        <div style={{ background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6, padding: 16, marginBottom: 16 }}>
+          <div style={{ fontFamily: Mono, fontSize: 10, letterSpacing: '.08em', color: C.accentDm, marginBottom: 10 }}>YOUR ASSESSMENT</div>
+          {fields.map(f => (
+            <div key={f} style={{ marginBottom: 12 }}>
+              <label style={{ fontFamily: Mono, fontSize: 11, color: C.tx3, display: 'block', marginBottom: 4, textTransform: 'uppercase', letterSpacing: '.06em' }}>{f}</label>
+              <textarea
+                value={answers[f] || ''}
+                onChange={e => {
+                  var val = e.target.value;
+                  setAdverseAnswers(prev => {
+                    var next = Object.assign({}, prev);
+                    if (!next[adverseIdx]) next[adverseIdx] = {};
+                    next[adverseIdx] = Object.assign({}, next[adverseIdx], { [f]: val });
+                    return next;
+                  });
+                }}
+                rows={2}
+                style={{
+                  width: '100%', padding: '8px 10px', borderRadius: 4,
+                  background: 'rgba(0,0,0,.2)', border: '1px solid ' + C.line,
+                  color: C.tx, fontFamily: Sans, fontSize: 12, resize: 'vertical',
+                  lineHeight: 1.5,
+                }}
+                placeholder={'Enter your ' + f + ' assessment...'}
+              />
+            </div>
+          ))}
+          {!isRevealed && (
+            <button onClick={() => setAdverseRevealed(prev => ({ ...prev, [adverseIdx]: true }))} style={{
+              padding: '8px 20px', borderRadius: 4, cursor: 'pointer',
+              background: C.accentBg, border: '1px solid ' + C.accentDm, color: C.accent,
+              fontFamily: Mono, fontSize: 11,
+            }}>
+              REVEAL CDC EXPERT ASSESSMENT
+            </button>
+          )}
+        </div>
+
+        {/* Expert assessment */}
+        {isRevealed && (
+          <div style={{ background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6, padding: 16, borderTop: '3px solid ' + C.accent }}>
+            <div style={{ fontFamily: Mono, fontSize: 10, letterSpacing: '.1em', color: C.accent, marginBottom: 10 }}>CDC EXPERT ASSESSMENT</div>
+            {fields.map(f => (
+              <div key={f} style={{ marginBottom: 12, padding: '8px 12px', background: C.accentBg, borderRadius: 4, borderLeft: '3px solid ' + C.accentDm }}>
+                <div style={{ fontFamily: Mono, fontSize: 10, color: C.accentDm, marginBottom: 4, textTransform: 'uppercase', letterSpacing: '.06em' }}>{f}</div>
+                <p style={{ fontFamily: Serif, fontSize: 12, color: C.tx2, lineHeight: 1.7, margin: 0 }}>{caseData.assessment[f]}</p>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  }, [adverseIdx, adverseAnswers, adverseRevealed, VAERS_CASES]);
+
+  // ── Equity Analyzer data ──────────────────────────────────────
+  const EQUITY_GROUPS = useMemo(() => [
+    { id: 'hcw', label: 'Healthcare Workers', population: 18000000, mortalityRate: 0.002, exposureRisk: 5, essentiality: 5, vulnerability: 2, color: C.blue },
+    { id: 'elderly', label: 'Elderly (65+)', population: 54000000, mortalityRate: 0.054, exposureRisk: 3, essentiality: 2, vulnerability: 5, color: C.red },
+    { id: 'essential', label: 'Essential Workers', population: 45000000, mortalityRate: 0.003, exposureRisk: 4, essentiality: 4, vulnerability: 2, color: C.yellow },
+    { id: 'highrisk', label: 'High-Risk Conditions', population: 42000000, mortalityRate: 0.035, exposureRisk: 3, essentiality: 2, vulnerability: 4, color: C.purple },
+    { id: 'adult', label: 'General Adult (18-64)', population: 160000000, mortalityRate: 0.001, exposureRisk: 3, essentiality: 3, vulnerability: 1, color: C.accent },
+    { id: 'pediatric', label: 'Pediatric (5-17)', population: 50000000, mortalityRate: 0.00002, exposureRisk: 3, essentiality: 1, vulnerability: 1, color: C.blueDm },
+  ], []);
+
+  const renderEquity = useCallback(() => {
+    var totalPct = Object.values(equityAllocation).reduce((s, v) => s + v, 0);
+    var totalDoses = 50000000; // 50M doses available
+
+    var computeOutcome = function(alloc) {
+      var livesSaved = 0;
+      var equityScore = 0;
+      EQUITY_GROUPS.forEach(function(g) {
+        var pct = alloc[g.id] || 0;
+        var doses = Math.round(totalDoses * pct / 100);
+        var coverage = Math.min(1, doses / g.population);
+        var saved = Math.round(g.population * g.mortalityRate * coverage * 0.9); // 90% efficacy
+        livesSaved += saved;
+        equityScore += coverage * g.vulnerability;
+      });
+      equityScore = Math.round(equityScore / EQUITY_GROUPS.length * 100) / 100;
+      return { livesSaved: livesSaved, equityScore: equityScore };
+    };
+
+    var utilitarian = { hcw: 5, elderly: 40, essential: 5, highrisk: 35, adult: 10, pediatric: 5 };
+    var equityWeighted = { hcw: 15, elderly: 25, essential: 15, highrisk: 25, adult: 15, pediatric: 5 };
+    var userOutcome = computeOutcome(equityAllocation);
+    var utilOutcome = computeOutcome(utilitarian);
+    var eqOutcome = computeOutcome(equityWeighted);
+
+    return (
+      <div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}>
+          <div style={{ width: 4, height: 28, background: C.purple, borderRadius: 2 }} />
+          <h2 style={{ fontFamily: Serif, fontSize: 20, fontWeight: 700, color: C.tx, margin: 0 }}>
+            Vaccine Distribution Equity Analyzer
+          </h2>
+        </div>
+        <p style={{ fontFamily: Serif, fontSize: 13, color: C.tx2, lineHeight: 1.65, marginBottom: 16, maxWidth: 680 }}>
+          You have 50 million vaccine doses to allocate across 6 population groups. Adjust percentages to optimize for either maximum lives saved (utilitarian) or equitable access (vulnerability-weighted). See how your strategy compares.
+        </p>
+
+        {/* Allocation sliders */}
+        <div style={{ background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6, padding: 16, marginBottom: 16 }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 12 }}>
+            <span style={{ fontFamily: Mono, fontSize: 10, letterSpacing: '.08em', color: C.accentDm }}>ALLOCATION (%)</span>
+            <span style={{
+              fontFamily: Mono, fontSize: 11, fontWeight: 600,
+              color: totalPct === 100 ? C.accent : C.red,
+            }}>
+              Total: {totalPct}% {totalPct !== 100 ? '(must equal 100%)' : ''}
+            </span>
+          </div>
+          {EQUITY_GROUPS.map(g => (
+            <div key={g.id} style={{ marginBottom: 10 }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
+                <span style={{ fontFamily: Sans, fontSize: 12, color: C.tx }}>{g.label}</span>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                  <span style={{ fontFamily: Mono, fontSize: 10, color: C.tx3 }}>Pop: {(g.population / 1000000).toFixed(0)}M</span>
+                  <span style={{ fontFamily: Mono, fontSize: 10, color: C.tx3 }}>Mort: {(g.mortalityRate * 100).toFixed(2)}%</span>
+                  <span style={{ fontFamily: Mono, fontSize: 12, fontWeight: 700, color: g.color, minWidth: 30, textAlign: 'right' }}>{equityAllocation[g.id]}%</span>
+                </div>
+              </div>
+              <input type="range" min="0" max="60" value={equityAllocation[g.id]}
+                onChange={e => {
+                  var val = parseInt(e.target.value);
+                  setEquityAllocation(prev => ({ ...prev, [g.id]: val }));
+                }}
+                style={{ width: '100%', accentColor: g.color }}
+              />
+            </div>
+          ))}
+
+          {totalPct === 100 && !equitySubmitted && (
+            <button onClick={() => setEquitySubmitted(true)} style={{
+              padding: '8px 20px', borderRadius: 4, cursor: 'pointer',
+              background: C.accentBg, border: '1px solid ' + C.accentDm, color: C.accent,
+              fontFamily: Mono, fontSize: 11, marginTop: 8,
+            }}>
+              ANALYZE MY ALLOCATION
+            </button>
+          )}
+        </div>
+
+        {/* Results comparison */}
+        {equitySubmitted && totalPct === 100 && (
+          <div>
+            {/* Three-way comparison */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10, marginBottom: 16 }}>
+              {[
+                { label: 'Your Allocation', outcome: userOutcome, color: C.accent },
+                { label: 'Utilitarian Optimal', outcome: utilOutcome, color: C.red },
+                { label: 'Equity-Weighted', outcome: eqOutcome, color: C.purple },
+              ].map(s => (
+                <div key={s.label} style={{
+                  background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6,
+                  padding: 14, textAlign: 'center', borderTop: '3px solid ' + s.color,
+                }}>
+                  <div style={{ fontFamily: Mono, fontSize: 10, color: s.color, letterSpacing: '.06em', marginBottom: 6 }}>{s.label.toUpperCase()}</div>
+                  <div style={{ fontFamily: Mono, fontSize: 22, fontWeight: 700, color: C.tx }}>{(s.outcome.livesSaved / 1000).toFixed(0)}K</div>
+                  <div style={{ fontFamily: Sans, fontSize: 10, color: C.tx3 }}>lives saved</div>
+                  <div style={{ marginTop: 6 }}>
+                    <span style={{ fontFamily: Mono, fontSize: 14, fontWeight: 600, color: s.color }}>{s.outcome.equityScore.toFixed(2)}</span>
+                    <div style={{ fontFamily: Sans, fontSize: 10, color: C.tx3 }}>equity score</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Group-by-group breakdown */}
+            <div style={{ background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6, padding: 16, marginBottom: 16 }}>
+              <div style={{ fontFamily: Mono, fontSize: 10, letterSpacing: '.08em', color: C.tx3, marginBottom: 10 }}>DOSES PER GROUP</div>
+              <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                <thead>
+                  <tr>
+                    <th style={{ fontFamily: Mono, fontSize: 10, color: C.tx3, textAlign: 'left', padding: '4px 8px', borderBottom: '1px solid ' + C.line }}>Group</th>
+                    <th style={{ fontFamily: Mono, fontSize: 10, color: C.tx3, textAlign: 'right', padding: '4px 8px', borderBottom: '1px solid ' + C.line }}>Your %</th>
+                    <th style={{ fontFamily: Mono, fontSize: 10, color: C.tx3, textAlign: 'right', padding: '4px 8px', borderBottom: '1px solid ' + C.line }}>Doses</th>
+                    <th style={{ fontFamily: Mono, fontSize: 10, color: C.tx3, textAlign: 'right', padding: '4px 8px', borderBottom: '1px solid ' + C.line }}>Coverage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {EQUITY_GROUPS.map(g => {
+                    var doses = Math.round(totalDoses * equityAllocation[g.id] / 100);
+                    var coverage = Math.min(100, Math.round(doses / g.population * 100));
+                    return (
+                      <tr key={g.id}>
+                        <td style={{ fontFamily: Sans, fontSize: 11, color: C.tx, padding: '4px 8px', borderBottom: '1px solid ' + C.line }}>{g.label}</td>
+                        <td style={{ fontFamily: Mono, fontSize: 11, color: g.color, textAlign: 'right', padding: '4px 8px', borderBottom: '1px solid ' + C.line }}>{equityAllocation[g.id]}%</td>
+                        <td style={{ fontFamily: Mono, fontSize: 11, color: C.tx2, textAlign: 'right', padding: '4px 8px', borderBottom: '1px solid ' + C.line }}>{(doses / 1000000).toFixed(1)}M</td>
+                        <td style={{ fontFamily: Mono, fontSize: 11, color: coverage >= 80 ? C.accent : C.tx3, textAlign: 'right', padding: '4px 8px', borderBottom: '1px solid ' + C.line }}>{coverage}%</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+
+            {/* Analysis note */}
+            <div style={{ background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6, padding: 16, borderTop: '3px solid ' + C.purple }}>
+              <div style={{ fontFamily: Mono, fontSize: 10, letterSpacing: '.1em', color: C.purpleDm, marginBottom: 8 }}>ETHICAL FRAMEWORK ANALYSIS</div>
+              <p style={{ fontFamily: Serif, fontSize: 12, color: C.tx2, lineHeight: 1.7, marginBottom: 10 }}>
+                The utilitarian approach maximizes total lives saved by prioritizing groups with the highest mortality rates (elderly, high-risk conditions). The equity-weighted approach distributes more broadly, ensuring no group is left without meaningful access, even if it saves fewer total lives.
+              </p>
+              <p style={{ fontFamily: Serif, fontSize: 12, color: C.tx2, lineHeight: 1.7, marginBottom: 0 }}>
+                The CDC's Advisory Committee on Immunization Practices (ACIP) used a hybrid framework balancing four principles: maximizing benefits and minimizing harms, promoting justice, mitigating health inequities, and promoting transparency. Real-world allocation was Phase 1a (healthcare workers + long-term care), 1b (75+ and essential workers), 1c (65-74 and high-risk), then general population -- a compromise between pure utility and equity.
+              </p>
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  }, [equityAllocation, equitySubmitted, EQUITY_GROUPS]);
+
   // ── Main Render ────────────────────────────────────────────
   return (
     <div style={{
@@ -1130,6 +1446,8 @@ function PharmView({ setView }) {
         {mode === 'coldchain' && renderColdChain()}
         {mode === 'tempgraph' && renderTempGraph()}
         {mode === 'protocols' && renderProtocols()}
+        {mode === 'adverse' && renderAdverse()}
+        {mode === 'equity' && renderEquity()}
 
         <div style={{
           marginTop: 48, padding: 20, borderTop: '1px solid ' + C.line,

@@ -346,6 +346,10 @@ function PeaceView({ setView }) {
   const [expandedSections, setExpandedSections] = useState({});
   const [seqHover, setSeqHover] = useState(null);
   const [tipId, setTipId] = useState(null);
+  const [spoilerCase, setSpoilerCase] = useState(0);
+  const [spoilerChoices, setSpoilerChoices] = useState({});
+  const [spoilerRevealed, setSpoilerRevealed] = useState({});
+  const [justiceExpanded, setJusticeExpanded] = useState(null);
 
   const C = PC_C;
 
@@ -413,10 +417,232 @@ function PeaceView({ setView }) {
 
   const MODES = [
     { id: 'simulator', label: 'Simulator',    icon: '\u2699' },
-    { id: 'sequence',  label: 'Sequence',     icon: '\→' },
+    { id: 'sequence',  label: 'Sequence',     icon: '\u2192' },
     { id: 'cases',     label: 'Case Studies', icon: '\u2316' },
     { id: 'toolkit',   label: 'Toolkit',      icon: '\u2692' },
+    { id: 'spoiler',   label: 'Spoilers',     icon: '\u26A0' },
+    { id: 'justice',   label: 'Justice',      icon: '\u2696' },
   ];
+
+  // -- Spoiler Management Simulator -----------------------------------
+  const SPOILER_CASES = useMemo(() => [
+    {
+      id: 'nireland', name: 'Northern Ireland (1994-1998)',
+      context: 'The Northern Ireland peace process culminated in the 1998 Good Friday Agreement. Multiple spoiler groups threatened the process at every stage.',
+      spoilers: [
+        { name: 'Real IRA', type: 'Total spoiler', goal: 'Rejected any settlement short of united Ireland. Broke from Provisional IRA when Sinn Fein entered negotiations.', keyAct: 'Omagh bombing (August 1998): 29 killed, 220 injured \u2014 the deadliest single attack of the Troubles, perpetrated AFTER the Agreement was signed.' },
+        { name: 'Loyalist Volunteer Force (LVF)', type: 'Total spoiler', goal: 'Opposed any accommodation with Republicans. Billy Wright faction rejected Combined Loyalist Military Command ceasefire.', keyAct: 'Sectarian assassinations of Catholics to provoke IRA retaliation and collapse the ceasefire.' },
+        { name: 'Ian Paisley / DUP', type: 'Limited spoiler (initially)', goal: 'Opposed specific terms (prisoner release, Sinn Fein in government without IRA decommissioning) but not the concept of agreement itself.', keyAct: 'Led "No" campaign in 1998 referendum. Eventually entered power-sharing government with Sinn Fein in 2007 \u2014 demonstrating spoiler transformation.' },
+      ],
+      strategies: {
+        accommodate: { result: 'Mixed success. Accommodating the DUP eventually worked (Paisley became First Minister alongside McGuinness in 2007). But accommodating total spoilers like the Real IRA was impossible \u2014 their goals were non-negotiable. The key lesson: accommodation works with limited spoilers whose demands can be partially met.', effectiveness: 'medium' },
+        marginalize: { result: 'Effective against total spoilers. The Real IRA was isolated through intelligence operations, community rejection (Omagh bombing turned public opinion decisively against them), and cross-border security cooperation. The LVF was marginalized through arrests and internal factional collapse. Marginalization requires that the spoiler lacks broad community support.', effectiveness: 'high' },
+        socialize: { result: 'The defining success of the process. Sinn Fein/IRA were socialized from armed movement to political party through incremental inclusion: ceasefire, talks participation, electoral politics, power-sharing. The critical mechanism was making political participation more rewarding than armed struggle. Took 15+ years.', effectiveness: 'high' },
+      },
+    },
+    {
+      id: 'colombia', name: 'Colombia (2012-2016)',
+      context: 'The Santos-FARC peace process (2012-2016) negotiated an end to 52 years of armed conflict. Multiple actors had interests in continuing war.',
+      spoilers: [
+        { name: 'Alvaro Uribe / Centro Democratico', type: 'Limited spoiler', goal: 'Former president opposed the terms of the agreement (transitional justice provisions, FARC political participation) rather than peace itself. Led the "No" campaign in the 2016 plebiscite.', keyAct: 'Successfully campaigned for "No" in the October 2016 plebiscite (50.2% to 49.8%), forcing renegotiation of the agreement.' },
+        { name: 'ELN (National Liberation Army)', type: 'Greedy spoiler', goal: 'The second-largest guerrilla group was excluded from FARC negotiations. Used the peace process to expand into territory vacated by demobilizing FARC.', keyAct: 'Continued attacks during FARC negotiations, including the 2017 bombing of a Bogota police academy (22 killed). Began and broke off its own peace talks repeatedly.' },
+        { name: 'FARC Dissident Factions', type: 'Total spoiler', goal: 'FARC commanders who rejected the peace deal (Ivan Marquez, Jesus Santrich) re-armed, citing government non-compliance. Approximately 2,500 fighters refused to demobilize.', keyAct: 'Ivan Marquez announced re-armament in August 2019. Dissidents now control significant drug trafficking territory in eastern Colombia and Venezuela border regions.' },
+      ],
+      strategies: {
+        accommodate: { result: 'Worked with Uribe to a degree \u2014 the agreement was renegotiated after the plebiscite defeat, incorporating some opposition concerns (reduced transitional justice concessions). But accommodation emboldened Uribe\'s maximalist demands and weakened the agreement. Did not work with FARC dissidents whose real interest was drug trafficking, not politics.', effectiveness: 'low-medium' },
+        marginalize: { result: 'Attempted against FARC dissidents through military operations, with limited success. Dissidents retreated to Venezuela border regions beyond state control. ELN has proven resistant to marginalization due to decentralized structure. Marginalization requires state territorial control that Colombia lacks in key regions.', effectiveness: 'low' },
+        socialize: { result: 'The core strategy with FARC-EP. The FARC transformed into a political party (Comunes), won guaranteed congressional seats, and former commanders entered electoral politics. But socialization is incomplete: reintegration programs are underfunded, former combatants face assassination (over 300 killed since 2016), and the party has minimal electoral support. Socialization without security guarantees fails.', effectiveness: 'medium' },
+      },
+    },
+    {
+      id: 'ssoudan', name: 'South Sudan (2005-2016)',
+      context: 'The 2005 Comprehensive Peace Agreement ended Sudan\'s north-south civil war and led to South Sudan\'s independence in 2011. But peace between the new country\'s factions proved impossible to sustain.',
+      spoilers: [
+        { name: 'Riek Machar / SPLM-IO', type: 'Greedy spoiler', goal: 'Sought greater power-sharing within the new state. Alternated between political opposition and armed rebellion depending on whether his demands were met. Ethnic Nuer base vs. Dinka-dominated government.', keyAct: 'The December 2013 crisis: Kiir accused Machar of coup attempt; Machar denied it. Presidential guard killed Nuer civilians in Juba, triggering civil war. 400,000 killed, 4 million displaced.' },
+        { name: 'Salva Kiir\'s hardliners', type: 'Inside spoiler', goal: 'Elements within Kiir\'s government who benefited from war economy (oil revenue, arms procurement, land seizures). Peace threatened their economic interests.', keyAct: 'Systematic obstruction of the 2015 and 2018 peace agreements through delayed implementation, continued military operations during ceasefires, and refusal to integrate opposition forces into the national army.' },
+        { name: 'Ethnic militias (multiple)', type: 'Total spoilers', goal: 'Various community-based militias (Murle, Shilluk, Nuer factions) pursued localized ethnic cleansing and cattle-raiding objectives unrelated to the national peace process.', keyAct: 'The 2013-2016 ethnic massacres in Unity State, Bor, and Malakal involved militias that were nominally aligned with one side but pursued autonomous ethnic agendas.' },
+      ],
+      strategies: {
+        accommodate: { result: 'Repeatedly attempted and repeatedly failed. Machar was made Vice President (2005, 2016), but accommodation of his power demands without institutional reform created a patronage structure dependent on personal relationships rather than rules. When personal trust collapsed, so did the peace. Accommodating greedy spoilers without binding institutions creates fragile peace.', effectiveness: 'very low' },
+        marginalize: { result: 'Attempted by Kiir against Machar (removal as VP in 2013, military campaign 2013-2015). Failed because Machar retained ethnic Nuer support and external backing (Sudan). Marginalization of a spoiler with a genuine constituency produces civil war, not peace. This is the key lesson of South Sudan.', effectiveness: 'very low' },
+        socialize: { result: 'Never seriously attempted. The international community provided mediation and threatened sanctions but did not invest in the institutional transformation required for socialization. There was no equivalent of Northern Ireland\'s decade-long patient process of building trust through incremental confidence-building measures. South Sudan went from ceasefire directly to power-sharing without the intermediate steps that make socialization possible.', effectiveness: 'not attempted' },
+      },
+    },
+  ], []);
+
+  const renderSpoiler = () => {
+    const sc = SPOILER_CASES[spoilerCase];
+    const strategies = ['accommodate', 'marginalize', 'socialize'];
+    const stratLabels = { accommodate: 'Accommodate', marginalize: 'Marginalize', socialize: 'Socialize' };
+    const stratDescs = { accommodate: 'Give the spoiler what they want (partially or fully) to bring them into the process.', marginalize: 'Isolate the spoiler through military, intelligence, or political means to reduce their capacity to disrupt.', socialize: 'Gradually transform the spoiler from armed actor to political actor through sustained engagement and incentives.' };
+    const effColors = { high: C.green, medium: C.amber, 'low-medium': C.amber, low: C.red, 'very low': C.red, 'not attempted': C.tx3 };
+    return (
+      <div>
+        <div style={{ fontFamily: PC_MONO, fontSize: 12, letterSpacing: '.06em', color: C.accent + '88', marginBottom: 6 }}>SPOILER MANAGEMENT SIMULATOR</div>
+        <div style={{ fontFamily: PC_SERIF, fontSize: 14, color: C.tx2, lineHeight: 1.7, marginBottom: 16, maxWidth: 720 }}>
+          Based on Stephen Stedman{'\u2019'}s spoiler theory (1997). Every peace process generates actors who benefit from continued conflict. The mediator{'\u2019'}s challenge: identify the spoilers, classify their type, and choose the right management strategy. The wrong choice can collapse the entire process.
+        </div>
+
+        {/* Case selector */}
+        <div style={{ display: 'flex', gap: 4, marginBottom: 20 }}>
+          {SPOILER_CASES.map((s, i) => (
+            <button key={s.id} onClick={() => { setSpoilerCase(i); }} style={{
+              flex: 1, padding: '10px 12px', borderRadius: 4, cursor: 'pointer',
+              background: i === spoilerCase ? C.accentBg : 'transparent',
+              border: i === spoilerCase ? `1px solid ${C.accent}44` : `1px solid ${C.line}`,
+              textAlign: 'center', transition: 'all .15s',
+            }}>
+              <div style={{ fontFamily: PC_MONO, fontSize: 11, fontWeight: 600, color: i === spoilerCase ? C.accent : C.tx3 }}>{s.name}</div>
+            </button>
+          ))}
+        </div>
+
+        {/* Context */}
+        <div style={{ background: C.card, border: `1px solid ${C.cardBd}`, borderRadius: 10, padding: '20px 24px', marginBottom: 16 }}>
+          <div style={{ fontFamily: PC_MONO, fontSize: 11, letterSpacing: '.06em', color: C.accent + '88', marginBottom: 8 }}>CONTEXT</div>
+          <div style={{ fontFamily: PC_SERIF, fontSize: 14, color: C.tx, lineHeight: 1.75 }}>{sc.context}</div>
+        </div>
+
+        {/* Spoilers */}
+        <div style={{ fontFamily: PC_MONO, fontSize: 11, letterSpacing: '.06em', color: C.accent + '88', marginBottom: 10 }}>IDENTIFIED SPOILERS</div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 20 }}>
+          {sc.spoilers.map(sp => (
+            <div key={sp.name} style={{ background: C.card, border: `1px solid ${C.cardBd}`, borderRadius: 8, padding: '14px 18px' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                <span style={{ fontFamily: PC_MONO, fontSize: 12, fontWeight: 600, color: C.tx }}>{sp.name}</span>
+                <span style={{ fontFamily: PC_MONO, fontSize: 10, color: sp.type.includes('Total') ? C.red : sp.type.includes('Greedy') ? C.amber : C.blue, letterSpacing: '.04em', textTransform: 'uppercase' }}>{sp.type}</span>
+              </div>
+              <div style={{ fontFamily: PC_SANS, fontSize: 12, color: C.tx2, lineHeight: 1.6, marginBottom: 4 }}>{sp.goal}</div>
+              <div style={{ fontFamily: PC_SANS, fontSize: 11, color: C.red, lineHeight: 1.5, fontStyle: 'italic' }}>Key act: {sp.keyAct}</div>
+            </div>
+          ))}
+        </div>
+
+        {/* Strategy selection */}
+        <div style={{ fontFamily: PC_MONO, fontSize: 11, letterSpacing: '.06em', color: C.accent + '88', marginBottom: 10 }}>CHOOSE YOUR MANAGEMENT STRATEGY</div>
+        <div style={{ display: 'flex', gap: 8, marginBottom: 16 }}>
+          {strategies.map(s => {
+            const chosen = spoilerChoices[sc.id] === s;
+            return (
+              <button key={s} onClick={() => { setSpoilerChoices(prev => ({ ...prev, [sc.id]: s })); setSpoilerRevealed(prev => ({ ...prev, [sc.id]: true })); }} style={{
+                flex: 1, padding: '14px 16px', borderRadius: 6, cursor: 'pointer',
+                background: chosen ? C.accentBg : C.card,
+                border: chosen ? `1px solid ${C.accent}66` : `1px solid ${C.cardBd}`,
+                textAlign: 'left', transition: 'all .15s',
+              }}>
+                <div style={{ fontFamily: PC_MONO, fontSize: 12, fontWeight: 600, color: chosen ? C.accent : C.tx2, marginBottom: 4 }}>{stratLabels[s]}</div>
+                <div style={{ fontFamily: PC_SANS, fontSize: 11, color: C.tx3, lineHeight: 1.5 }}>{stratDescs[s]}</div>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Results */}
+        {spoilerRevealed[sc.id] && (
+          <div style={{ background: C.card, border: `1px solid ${C.cardBd}`, borderRadius: 10, padding: '20px 24px' }}>
+            <div style={{ fontFamily: PC_MONO, fontSize: 11, letterSpacing: '.06em', color: C.accent + '88', marginBottom: 12 }}>HISTORICAL OUTCOMES BY STRATEGY</div>
+            {strategies.map(s => {
+              const outcome = sc.strategies[s];
+              const isChosen = spoilerChoices[sc.id] === s;
+              return (
+                <div key={s} style={{ marginBottom: 12, padding: '12px 16px', background: isChosen ? 'rgba(75,146,219,.06)' : 'transparent', borderRadius: 6, border: isChosen ? `1px solid ${C.accent}33` : '1px solid transparent' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
+                    <span style={{ fontFamily: PC_MONO, fontSize: 11, fontWeight: 600, color: C.tx2, letterSpacing: '.04em' }}>{stratLabels[s]} {isChosen ? '(YOUR CHOICE)' : ''}</span>
+                    <span style={{ fontFamily: PC_MONO, fontSize: 10, color: effColors[outcome.effectiveness] || C.tx3, letterSpacing: '.04em' }}>EFFECTIVENESS: {outcome.effectiveness.toUpperCase()}</span>
+                  </div>
+                  <div style={{ fontFamily: PC_SANS, fontSize: 12, color: C.tx2, lineHeight: 1.7 }}>{outcome.result}</div>
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
+    );
+  };
+
+  // -- Transitional Justice Comparator --------------------------------
+  const TJ_APPROACHES = useMemo(() => [
+    { id: 'nuremberg', name: 'Nuremberg (Prosecution)', country: 'Germany', period: '1945-1949', mechanism: 'International Military Tribunal: criminal prosecution of major perpetrators by victorious Allied powers. Established individual criminal responsibility for crimes against peace, war crimes, and crimes against humanity.', accountability: { rating: 'High (for top leaders)', color: C.green, detail: '24 defendants tried, 12 sentenced to death, 7 imprisoned. Subsequent Nuremberg trials prosecuted 185 additional defendants (doctors, judges, industrialists). But: vast majority of Nazi perpetrators were never prosecuted. Denazification programs reached further but were inconsistently applied and largely abandoned by 1951.' }, reconciliation: { rating: 'Low', color: C.red, detail: 'Nuremberg was perceived by many Germans as "victors\' justice" rather than genuine accountability. The trials did not produce national soul-searching; that came decades later (the 1960s Auschwitz trials, the 1968 student movement). The prosecutorial model identifies individual guilt but does not address collective responsibility or social reconciliation.' }, stability: { rating: 'High (with caveats)', color: C.green, detail: 'Germany became a stable democracy, but this was driven by Allied occupation, Marshall Plan economics, and Cold War geopolitics rather than by the trials themselves. The stability argument for Nuremberg is that it delegitimized the Nazi regime legally and symbolically, preventing rehabilitation of Nazi ideology. Counter-argument: many former Nazis were quietly reintegrated into West German institutions.' }, precedent: { rating: 'Foundational', color: C.green, detail: 'Established: (1) individual criminal responsibility under international law; (2) crimes against humanity as a legal category; (3) "following orders" is not a defense; (4) heads of state can be prosecuted. The Nuremberg principles became the foundation of the ICC Rome Statute (1998). Every subsequent international tribunal traces its legitimacy to Nuremberg.' } },
+    { id: 'trc', name: 'South Africa (Truth & Reconciliation)', country: 'South Africa', period: '1996-2003', mechanism: 'Truth and Reconciliation Commission (TRC): public hearings where perpetrators of apartheid-era human rights violations could receive amnesty in exchange for full and truthful disclosure. Victims testified publicly about their suffering.', accountability: { rating: 'Low-Medium', color: C.amber, detail: '7,112 amnesty applications received; 1,500 granted. Those denied amnesty could theoretically face prosecution, but almost none were. The ANC negotiated the TRC framework because prosecution of apartheid security forces would have triggered a military coup. Accountability was deliberately sacrificed for peaceful transition. Archbishop Tutu argued that "restorative justice" (repairing relationships) was more appropriate than retributive justice for South Africa\'s circumstances.' }, reconciliation: { rating: 'Medium-High', color: C.green, detail: 'The TRC\'s greatest achievement was creating a shared, undeniable factual record of apartheid\'s violence. Public hearings broadcast nationally forced white South Africans to confront testimonies they could no longer deny. But: many victims felt betrayed by amnesty for their torturers. Reparations were inadequate (R30,000 one-time payment). Reconciliation at the political level did not translate to economic justice.' }, stability: { rating: 'High', color: C.green, detail: 'South Africa avoided the civil war that many predicted. The TRC contributed to this by providing a mechanism for dealing with the past that satisfied enough actors on all sides. The transition from apartheid to democracy was remarkably peaceful, though the TRC was one factor among many (Mandela\'s leadership, negotiated constitutional settlement, economic continuity).' }, precedent: { rating: 'Influential', color: C.green, detail: 'The TRC model was adopted (with variations) in Sierra Leone, Liberia, East Timor, Canada (residential schools), and 40+ other countries. Established truth-telling as a complement or alternative to prosecution. Demonstrated that amnesty-for-truth can work in specific circumstances. Critics argue the model has been applied too uncritically in contexts where conditions differ from South Africa\'s.' } },
+    { id: 'gacaca', name: 'Rwanda (Gacaca / Hybrid)', country: 'Rwanda', period: '2001-2012', mechanism: 'Gacaca courts: community-based justice system adapted from traditional Rwandan dispute resolution. 12,000 courts processed approximately 1.9 million cases related to the 1994 genocide. Complemented by the International Criminal Tribunal for Rwanda (ICTR) in Arusha for senior perpetrators.', accountability: { rating: 'High (breadth)', color: C.green, detail: '1.9 million cases processed by gacaca courts \u2014 the most extensive transitional justice program in history. But quality of justice was uneven: community judges had limited training, procedural protections were minimal, and false accusations were used to settle personal scores. The ICTR convicted 61 individuals including former PM Kambanda. RPF crimes (Kagame\'s forces killed tens of thousands of Hutu civilians) were explicitly excluded from gacaca jurisdiction.' }, reconciliation: { rating: 'Contested', color: C.amber, detail: 'The Rwandan government claims gacaca promoted reconciliation through community-level truth-telling and reintegration of perpetrators. Independent research is more skeptical: mandatory participation, government control of the narrative, and prohibition of ethnic identification ("we are all Rwandans") may suppress rather than resolve intergroup tensions. Reconciliation under authoritarianism is difficult to assess because dissent is punished.' }, stability: { rating: 'High (authoritarian)', color: C.amber, detail: 'Rwanda under Kagame is remarkably stable and economically growing. But stability is maintained through authoritarian control: opposition is suppressed, media is controlled, ethnic discussion is criminalized. The question is whether this is sustainable stability (genuine reconciliation) or suppressed instability (ethnic tensions controlled but unresolved). The 2024 election gave Kagame 99.2% of the vote \u2014 a number that raises obvious questions.' }, precedent: { rating: 'Unique', color: C.amber, detail: 'Gacaca has not been replicated elsewhere because it was uniquely adapted to Rwandan conditions: a pre-existing traditional justice system, government willingness to mobilize the entire population, and the specific characteristics of genocide (mass participation requiring mass justice). Its lessons are context-dependent rather than universally applicable.' } },
+    { id: 'jep', name: 'Colombia (Special Jurisdiction)', country: 'Colombia', period: '2017-present', mechanism: 'Special Jurisdiction for Peace (JEP): judicial body created by the 2016 peace agreement to investigate and judge conflict-related crimes. Combines elements of prosecution, truth-telling, and restorative justice. Those who confess fully receive reduced sentences of "effective restrictions on liberty" (5-8 years) rather than prison.', accountability: { rating: 'Medium (evolving)', color: C.amber, detail: 'JEP has opened macro-cases covering kidnapping, false positives (military extrajudicial killings), sexual violence, and recruitment of children. Former FARC commanders have testified publicly about crimes, a first in Latin American peace processes. But: the system is slow (no final sentences yet as of 2024), underfunded, and politically contested. Uribe\'s supporters argue it provides impunity; victims\' groups argue it provides insufficient reparation.' }, reconciliation: { rating: 'Low-Medium', color: C.amber, detail: 'The JEP\'s public hearings have produced extraordinary moments of acknowledgment and apology by former combatants. But Colombia remains deeply polarized about the peace agreement itself. Reconciliation in a country where 9 million people were victimized by the conflict (internal displacement, 260,000 killed, 80,000 disappeared) requires economic transformation that the peace agreement has not yet delivered.' }, stability: { rating: 'Fragile', color: C.amber, detail: 'The peace agreement survived a change of government (Duque, 2018-2022, was skeptical but did not dismantle it; Petro, 2022-present, supports it). But: 300+ former combatants assassinated, FARC dissidents control drug trafficking territory, ELN negotiations have stalled, and coca cultivation increased after the agreement. The peace is holding but not consolidating.' }, precedent: { rating: 'Innovative', color: C.green, detail: 'The JEP is the most sophisticated transitional justice mechanism ever designed, combining criminal investigation, truth-telling, victim participation, and calibrated sanctions within a single institution. If it works, it demonstrates that accountability and peace are not necessarily incompatible \u2014 the central question of transitional justice. Its success or failure will shape how future peace agreements handle this tension.' } },
+  ], []);
+
+  const TJ_OUTCOMES = ['accountability', 'reconciliation', 'stability', 'precedent'];
+
+  const renderJustice = () => {
+    return (
+      <div>
+        <div style={{ fontFamily: PC_MONO, fontSize: 12, letterSpacing: '.06em', color: C.accent + '88', marginBottom: 6 }}>TRANSITIONAL JUSTICE COMPARATOR</div>
+        <div style={{ fontFamily: PC_SERIF, fontSize: 14, color: C.tx2, lineHeight: 1.7, marginBottom: 16, maxWidth: 720 }}>
+          Four approaches to the same impossible question: after mass atrocity, how does a society achieve accountability for perpetrators, healing for victims, and stability for the future {'\u2014'} when these three goals frequently conflict? Click any cell for the evidence.
+        </div>
+
+        {/* Matrix */}
+        <div style={{ overflowX: 'auto' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '130px repeat(4, 1fr)', gap: 2, minWidth: 700 }}>
+            {/* Header */}
+            <div style={{ padding: 8, background: 'rgba(8,14,24,.6)' }} />
+            {TJ_APPROACHES.map(a => (
+              <div key={a.id} style={{ padding: '10px 8px', background: C.accentBg, borderRadius: 2, textAlign: 'center' }}>
+                <div style={{ fontFamily: PC_MONO, fontSize: 11, fontWeight: 600, color: C.accent, letterSpacing: '.04em' }}>{a.name}</div>
+                <div style={{ fontFamily: PC_SANS, fontSize: 9, color: C.tx3, marginTop: 2 }}>{a.country} | {a.period}</div>
+              </div>
+            ))}
+
+            {/* Rows */}
+            {TJ_OUTCOMES.map(outcome => (
+              <React.Fragment key={outcome}>
+                <div style={{ padding: '10px 8px', background: 'rgba(8,14,24,.6)', display: 'flex', alignItems: 'center' }}>
+                  <span style={{ fontFamily: PC_MONO, fontSize: 10, fontWeight: 600, color: C.tx2, letterSpacing: '.04em', textTransform: 'uppercase' }}>{outcome}</span>
+                </div>
+                {TJ_APPROACHES.map(a => {
+                  const cell = a[outcome];
+                  const cellKey = a.id + '-' + outcome;
+                  const isOpen = justiceExpanded === cellKey;
+                  return (
+                    <div key={cellKey}>
+                      <button onClick={() => setJusticeExpanded(isOpen ? null : cellKey)} style={{
+                        width: '100%', padding: '10px 8px', cursor: 'pointer', textAlign: 'center',
+                        background: isOpen ? 'rgba(75,146,219,.08)' : 'rgba(8,14,24,.4)',
+                        border: isOpen ? `1px solid ${C.accent}44` : `1px solid rgba(75,146,219,.06)`,
+                        borderRadius: 2, transition: 'all .15s',
+                      }}>
+                        <span style={{ fontFamily: PC_MONO, fontSize: 10, fontWeight: 600, color: cell.color, letterSpacing: '.04em' }}>{cell.rating}</span>
+                      </button>
+                      {isOpen && (
+                        <div style={{ padding: '8px 10px', background: 'rgba(75,146,219,.04)', border: `1px solid ${C.line}`, borderTop: 'none', borderRadius: '0 0 4px 4px' }}>
+                          <div style={{ fontFamily: PC_SANS, fontSize: 11, color: C.tx2, lineHeight: 1.65 }}>{cell.detail}</div>
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </React.Fragment>
+            ))}
+          </div>
+        </div>
+
+        {/* Mechanism descriptions */}
+        <div style={{ marginTop: 16, display: 'flex', flexDirection: 'column', gap: 8 }}>
+          {TJ_APPROACHES.map(a => (
+            <div key={a.id} style={{ padding: '10px 14px', background: C.card, border: `1px solid ${C.cardBd}`, borderRadius: 6 }}>
+              <div style={{ fontFamily: PC_MONO, fontSize: 11, fontWeight: 600, color: C.accent, letterSpacing: '.04em', marginBottom: 4 }}>{a.name} {'\u2014'} MECHANISM</div>
+              <div style={{ fontFamily: PC_SANS, fontSize: 12, color: C.tx2, lineHeight: 1.6 }}>{a.mechanism}</div>
+            </div>
+          ))}
+        </div>
+
+        {/* Synthesis */}
+        <div style={{ marginTop: 16, padding: '14px 18px', background: C.accentBg, borderRadius: 6, border: `1px solid ${C.line}` }}>
+          <div style={{ fontFamily: PC_MONO, fontSize: 11, letterSpacing: '.06em', color: C.accent + '88', marginBottom: 6 }}>THE TRANSITIONAL JUSTICE DILEMMA</div>
+          <div style={{ fontFamily: PC_SERIF, fontSize: 13, color: C.tx, lineHeight: 1.75 }}>
+            No society has achieved perfect accountability, full reconciliation, and lasting stability simultaneously. Nuremberg prioritized accountability at the expense of reconciliation. South Africa prioritized reconciliation at the expense of accountability. Rwanda achieved stability through authoritarian control. Colombia is attempting the most ambitious synthesis but remains fragile. The honest conclusion: transitional justice is not a solvable problem but a managed tension, and the "right" approach depends on the specific balance of power, the scale of atrocity, and the political constraints at the moment of transition.
+          </div>
+        </div>
+      </div>
+    );
+  };
 
   // -- Render: Sequence (SVG Pipeline) -----------------------------------
   const renderSequence = () => {
@@ -1010,6 +1236,8 @@ function PeaceView({ setView }) {
         {mode === 'sequence' && renderSequence()}
         {mode === 'cases' && renderCases()}
         {mode === 'toolkit' && renderToolkit()}
+        {mode === 'spoiler' && renderSpoiler()}
+        {mode === 'justice' && renderJustice()}
 
         {/* Provenance */}
         <div style={{ marginTop: 40, paddingTop: 16, borderTop: `1px solid ${C.line}` }}>

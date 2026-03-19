@@ -84,6 +84,8 @@ const AT_TABS = [
   { id: 'thematic', num: '3', title: 'Thematic Coding', icon: '\u25A3', color: AT_C.purple },
   { id: 'decision', num: '4', title: 'Decision Support', icon: '\u25C7', color: AT_C.amber },
   { id: 'convergence', num: '\u03A3', title: 'Convergence', icon: '\u2A4E', color: AT_C.copper },
+  { id: 'linchpin', num: 'L', title: 'Linchpin Analysis', icon: '\u2693', color: AT_C.red },
+  { id: 'sat_lab', num: 'S', title: 'SAT Selection', icon: '\u2694', color: AT_C.teal },
 ];
 
 // ── Scenario: The Meridian Network ───────────────────────────────
@@ -250,6 +252,11 @@ function ATAnalysisView({ setView }) {
   const [decisionSelectedCOA, setDecisionSelectedCOA] = useState(null);
   const [methodComplete, setMethodComplete] = useState({ spatial: false, network: false, thematic: false, decision: false });
   const [convergenceRevealed, setConvergenceRevealed] = useState(false);
+  const [linchpinAssumptions, setLinchpinAssumptions] = useState({});
+  const [linchpinRevealed, setLinchpinRevealed] = useState(false);
+  const [satLabIdx, setSatLabIdx] = useState(0);
+  const [satLabAnswers, setSatLabAnswers] = useState({});
+  const [satLabRevealed, setSatLabRevealed] = useState({});
 
   const C = AT_C;
 
@@ -1047,6 +1054,297 @@ function ATAnalysisView({ setView }) {
     );
   };
 
+  // ── Linchpin Analysis data ────────────────────────────────────
+  const LINCHPIN_SCENARIO = useMemo(() => ({
+    title: 'MERIDIAN NETWORK: Strategic Assessment',
+    briefing: 'Based on 18 months of multi-INT collection, the IC assesses that the Meridian Network is a state-sponsored smuggling operation directed by Corath intelligence services, using commercial cover to move restricted dual-use technology components to a fourth-party state developing a clandestine weapons program. The recommended COA is a coordinated law enforcement disruption operation across all three countries.',
+    assumptions: [
+      {
+        id: 'A1', label: 'State sponsorship',
+        description: 'The network is directed by Corath intelligence services rather than being a purely criminal enterprise.',
+        confidence: 'MODERATE',
+        evidenceFor: ['HUMINT source reports direct contact between POI NAVARRO and Corath intelligence officer', 'Financial trails lead to government-adjacent shell companies', 'Operational security exceeds typical criminal sophistication'],
+        evidenceAgainst: ['NAVARRO has documented criminal history predating any government ties', 'No SIGINT directly links Corath government to network operations', 'Similar networks have been run by organized crime without state involvement'],
+        impactIfWrong: 'If the network is criminal rather than state-sponsored, a diplomatic disruption approach is wrong -- law enforcement action alone would be appropriate. Diplomatic pressure on Corath government would be misdirected and could damage relations over a false accusation.',
+        vulnerability: 4,
+      },
+      {
+        id: 'A2', label: 'Dual-use technology destination',
+        description: 'The smuggled materials are destined for a weapons program in a fourth-party state.',
+        confidence: 'LOW',
+        evidenceFor: ['Cargo manifests include items on dual-use control lists', 'End-user certificates appear forged', 'Destination country has known procurement patterns for weapons programs'],
+        evidenceAgainst: ['No direct evidence of final delivery to weapons facilities', 'Items also have legitimate civilian applications', 'Supply chain analysis shows only 3 of 47 shipments contain controlled items'],
+        impactIfWrong: 'If the materials are for civilian use, the entire threat assessment is inflated. Resources would be better spent on actual proliferation networks. Intelligence community credibility would be damaged, echoing Iraq WMD failures.',
+        vulnerability: 5,
+      },
+      {
+        id: 'A3', label: 'Network organizational structure',
+        description: 'The network operates as a single coordinated entity with centralized command.',
+        confidence: 'MODERATE',
+        evidenceFor: ['Network analysis shows centralized communication patterns through 3 hub nodes', 'Timing of shipments across countries suggests coordination', 'Financial flows converge to common shell company architecture'],
+        evidenceAgainst: ['Hub nodes may be independent brokers used by multiple groups', 'Communication patterns could reflect supplier-customer relationships, not command hierarchy', 'Only 15 of 23 persons of interest have confirmed mutual connections'],
+        impactIfWrong: 'If the "network" is actually multiple independent groups using common brokers, a coordinated disruption will only affect one group while alerting others. Targeting strategy needs to account for possible modular structure.',
+        vulnerability: 3,
+      },
+      {
+        id: 'A4', label: 'Allied cooperation feasibility',
+        description: 'Aldoria and Brevenia will cooperate in a coordinated disruption if presented with our intelligence.',
+        confidence: 'MODERATE',
+        evidenceFor: ['Both countries are signatories to nonproliferation treaties', 'Previous cooperation on organized crime operations', 'Diplomatic relationships are stable'],
+        evidenceAgainst: ['Aldoria has significant trade relationship with Corath -- may resist antagonizing', 'HUMINT suggests one Corath customs official is compromised -- unclear if Aldoria/Brevenia have similar compromises', 'Intelligence sharing could expose our collection methods'],
+        impactIfWrong: 'If allies do not cooperate, unilateral action is limited to diplomatic and financial tools. A failed coordination attempt would tip off the network through allied leaks. Fallback plan is needed.',
+        vulnerability: 3,
+      },
+    ],
+  }), []);
+
+  const renderLinchpin = () => {
+    var vuln = LINCHPIN_SCENARIO.assumptions.map(function(a) {
+      var userRating = linchpinAssumptions[a.id];
+      return { id: a.id, label: a.label, systemVuln: a.vulnerability, userVuln: userRating ? userRating.vulnerability : null };
+    });
+    var mostVulnerable = LINCHPIN_SCENARIO.assumptions.reduce(function(max, a) { return a.vulnerability > max.vulnerability ? a : max; }, LINCHPIN_SCENARIO.assumptions[0]);
+
+    return React.createElement('div', null,
+      SectionHeading({ title: 'Linchpin Analysis Executor', subtitle: 'Identify the key assumptions your assessment depends on. Rate each for confidence, evidence strength, and impact if wrong. The most vulnerable linchpin is where your analysis could break.' }),
+
+      // Scenario briefing
+      React.createElement('div', { style: { background: C.manila, border: '1px solid ' + C.line, borderRadius: 6, padding: 16, marginBottom: 20, borderLeft: '3px solid ' + C.copper } },
+        React.createElement('div', { style: { fontFamily: AT_Mono, fontSize: 10, letterSpacing: '.1em', color: C.copperDm, marginBottom: 6 } }, 'ANALYTIC LINE UNDER REVIEW'),
+        React.createElement('p', { style: { fontFamily: AT_Serif, fontSize: 13, color: C.tx, lineHeight: 1.7, margin: 0 } }, LINCHPIN_SCENARIO.briefing)
+      ),
+
+      // Assumptions grid
+      LINCHPIN_SCENARIO.assumptions.map(function(a) {
+        var userRating = linchpinAssumptions[a.id] || {};
+        var isRated = userRating.vulnerability !== undefined;
+        return React.createElement('div', { key: a.id, style: { background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6, padding: 16, marginBottom: 12, borderLeft: '4px solid ' + (a.vulnerability >= 4 ? C.red : a.vulnerability >= 3 ? C.amber : C.green) } },
+          React.createElement('div', { style: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 } },
+            React.createElement('div', null,
+              React.createElement('span', { style: { fontFamily: AT_Mono, fontSize: 11, fontWeight: 700, color: C.copper, marginRight: 8 } }, a.id),
+              React.createElement('span', { style: { fontFamily: AT_Sans, fontSize: 14, fontWeight: 600, color: C.tx } }, a.label)
+            ),
+            React.createElement('span', { style: { fontFamily: AT_Mono, fontSize: 10, padding: '2px 8px', borderRadius: 3, background: a.confidence === 'HIGH' ? C.greenBg : a.confidence === 'MODERATE' ? C.amberBg : C.redBg, color: a.confidence === 'HIGH' ? C.green : a.confidence === 'MODERATE' ? C.amber : C.red } }, a.confidence + ' CONFIDENCE')
+          ),
+          React.createElement('p', { style: { fontFamily: AT_Serif, fontSize: 12, color: C.tx2, lineHeight: 1.7, marginBottom: 12 } }, a.description),
+
+          // Evidence for/against
+          React.createElement('div', { style: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 12 } },
+            React.createElement('div', { style: { padding: 10, background: C.greenBg, borderRadius: 4 } },
+              React.createElement('div', { style: { fontFamily: AT_Mono, fontSize: 10, color: C.green, marginBottom: 6, letterSpacing: '.06em' } }, 'EVIDENCE FOR'),
+              a.evidenceFor.map(function(e, ei) {
+                return React.createElement('div', { key: ei, style: { fontFamily: AT_Sans, fontSize: 11, color: C.tx2, lineHeight: 1.6, padding: '3px 0', borderBottom: ei < a.evidenceFor.length - 1 ? '1px solid rgba(90,154,106,.1)' : 'none' } }, '+ ' + e);
+              })
+            ),
+            React.createElement('div', { style: { padding: 10, background: C.redBg, borderRadius: 4 } },
+              React.createElement('div', { style: { fontFamily: AT_Mono, fontSize: 10, color: C.red, marginBottom: 6, letterSpacing: '.06em' } }, 'EVIDENCE AGAINST'),
+              a.evidenceAgainst.map(function(e, ei) {
+                return React.createElement('div', { key: ei, style: { fontFamily: AT_Sans, fontSize: 11, color: C.tx2, lineHeight: 1.6, padding: '3px 0', borderBottom: ei < a.evidenceAgainst.length - 1 ? '1px solid rgba(176,80,80,.1)' : 'none' } }, '- ' + e);
+              })
+            )
+          ),
+
+          // User vulnerability rating
+          React.createElement('div', { style: { display: 'flex', alignItems: 'center', gap: 8, padding: '8px 0', borderTop: '1px solid ' + C.line } },
+            React.createElement('span', { style: { fontFamily: AT_Mono, fontSize: 11, color: C.tx3, minWidth: 120 } }, 'VULNERABILITY:'),
+            [1, 2, 3, 4, 5].map(function(v) {
+              return React.createElement('button', {
+                key: v,
+                onClick: function() {
+                  setLinchpinAssumptions(function(prev) { var next = Object.assign({}, prev); next[a.id] = { vulnerability: v }; return next; });
+                },
+                style: {
+                  width: 32, height: 32, borderRadius: 4, cursor: 'pointer',
+                  background: isRated && userRating.vulnerability === v ? (v >= 4 ? C.redBg : v >= 3 ? C.amberBg : C.greenBg) : 'transparent',
+                  border: isRated && userRating.vulnerability === v ? '2px solid ' + (v >= 4 ? C.red : v >= 3 ? C.amber : C.green) : '1px solid ' + C.line,
+                  fontFamily: AT_Mono, fontSize: 13, fontWeight: 700,
+                  color: isRated && userRating.vulnerability === v ? (v >= 4 ? C.red : v >= 3 ? C.amber : C.green) : C.tx3,
+                }
+              }, v);
+            }),
+            React.createElement('span', { style: { fontFamily: AT_Sans, fontSize: 10, color: C.tx3, marginLeft: 4 } }, '1=solid  5=critical')
+          ),
+
+          // Impact if wrong (shown after reveal)
+          linchpinRevealed && React.createElement('div', { style: { marginTop: 10, padding: '10px 12px', background: C.amberBg, borderRadius: 4, border: '1px solid rgba(196,160,64,.15)' } },
+            React.createElement('div', { style: { fontFamily: AT_Mono, fontSize: 10, color: C.amber, marginBottom: 4, letterSpacing: '.06em' } }, 'IMPACT IF WRONG (System: ' + a.vulnerability + '/5)'),
+            React.createElement('p', { style: { fontFamily: AT_Serif, fontSize: 12, color: C.tx2, lineHeight: 1.7, margin: 0 } }, a.impactIfWrong)
+          )
+        );
+      }),
+
+      // Reveal / summary
+      Object.keys(linchpinAssumptions).length >= 3 && !linchpinRevealed && React.createElement('button', {
+        onClick: function() { setLinchpinRevealed(true); },
+        style: { padding: '10px 24px', borderRadius: 4, cursor: 'pointer', background: C.copperBg, border: '1px solid ' + C.copper, color: C.copper, fontFamily: AT_Mono, fontSize: 12, letterSpacing: '.06em', marginTop: 8 }
+      }, 'REVEAL VULNERABILITY ASSESSMENT'),
+
+      linchpinRevealed && React.createElement('div', { style: { background: C.card, border: '2px solid ' + C.red + '40', borderRadius: 6, padding: 20, marginTop: 16, borderTop: '4px solid ' + C.red } },
+        React.createElement('div', { style: { fontFamily: AT_Mono, fontSize: 11, letterSpacing: '.1em', color: C.red, marginBottom: 10 } }, 'MOST VULNERABLE LINCHPIN'),
+        React.createElement('h3', { style: { fontFamily: AT_Serif, fontSize: 18, color: C.tx, marginBottom: 8 } }, mostVulnerable.id + ': ' + mostVulnerable.label),
+        React.createElement('p', { style: { fontFamily: AT_Serif, fontSize: 13, color: C.tx2, lineHeight: 1.7, marginBottom: 12 } }, mostVulnerable.impactIfWrong),
+        React.createElement('p', { style: { fontFamily: AT_Sans, fontSize: 12, color: C.tx3, lineHeight: 1.65, borderTop: '1px solid ' + C.line, paddingTop: 12 } },
+          'Linchpin analysis was developed by the CIA\'s Directorate of Intelligence to identify the assumptions most likely to be wrong and most consequential if they are. The technique forces analysts to make implicit assumptions explicit and subject them to structured evaluation. The most vulnerable linchpin -- the one with the weakest evidence base and highest impact if wrong -- is where collection and analysis resources should be concentrated.'
+        )
+      )
+    );
+  };
+
+  // ── SAT Selection Lab data ─────────────────────────────────────
+  const SAT_MENU = useMemo(() => [
+    { id: 'ach', name: 'Analysis of Competing Hypotheses (ACH)', short: 'ACH' },
+    { id: 'kac', name: 'Key Assumptions Check', short: 'KAC' },
+    { id: 'rht', name: 'Red Hat / Team A-Team B', short: 'Red Hat' },
+    { id: 'pma', name: 'Pre-Mortem Analysis', short: 'Pre-Mortem' },
+    { id: 'swot', name: 'SWOT Analysis', short: 'SWOT' },
+    { id: 'scn', name: 'Scenario Generation / What-If', short: 'Scenarios' },
+    { id: 'ccm', name: 'Cross-Impact / Consistency Matrix', short: 'Cross-Impact' },
+    { id: 'cwa', name: 'Chronologies and Timelines', short: 'Chronology' },
+    { id: 'dia', name: 'Devil\'s Advocacy', short: 'Devil\'s Adv.' },
+    { id: 'ind', name: 'Indicators / Signposts of Change', short: 'Indicators' },
+  ], []);
+
+  const SAT_PROBLEMS = useMemo(() => [
+    {
+      id: 0, title: 'Multiple Competing Explanations',
+      desc: 'Three explanations exist for why Country X suddenly increased military spending by 40%: (1) response to neighbor\'s missile test, (2) internal power consolidation by new defense minister, (3) preparation for offensive operations. You have evidence that partially supports all three.',
+      best: 'ach',
+      explanation: 'ACH is purpose-built for this problem: multiple hypotheses, evidence that partially supports each, and a need to identify which hypothesis is most consistent with all available evidence while identifying the diagnostically most valuable evidence. It forces you to evaluate evidence against ALL hypotheses simultaneously rather than anchoring on one.',
+      suboptimal: { rht: 'Red Hat is better for challenging a single prevailing view, not comparing three equally plausible hypotheses.', kac: 'KAC tests assumptions underlying a single assessment, but here you need to compare across hypotheses.', swot: 'SWOT is a strategic planning tool, not an evidence evaluation method.' },
+    },
+    {
+      id: 1, title: 'Long-Standing Institutional Consensus',
+      desc: 'For 15 years, the IC has assessed that Country Y\'s nuclear program is for civilian energy purposes only. Recent ambiguous indicators (new facility construction, personnel movements) could support either interpretation. The institutional position is deeply entrenched.',
+      best: 'kac',
+      explanation: 'Key Assumptions Check directly targets the 15-year institutional consensus by forcing analysts to articulate the foundational assumptions that support the existing assessment, evaluate the evidence base for each, and identify which assumptions are most vulnerable to being wrong. This is the exact problem KAC was designed for: questioning long-standing group consensus.',
+      suboptimal: { ach: 'ACH could work but is less targeted -- the problem here is not multiple hypotheses but entrenched assumptions beneath a single dominant view.', dia: 'Devil\'s Advocacy helps challenge but is less structured than KAC for systematically identifying and testing specific assumptions.', pma: 'Pre-Mortem imagines failure of a plan, not failure of an assessment.' },
+    },
+    {
+      id: 2, title: 'Planning for Collection Gaps',
+      desc: 'Your team must anticipate what would signal that a ceasefire in a regional conflict is about to collapse. You need to identify the 5-7 most important observable indicators that would provide early warning, and determine what collection platforms to task.',
+      best: 'ind',
+      explanation: 'Indicators and Signposts of Change is specifically designed to identify observable, concrete indicators that would signal a change in the assessed situation. It forces analysts to move from vague warning criteria to specific, monitorable events -- exactly what collection managers need to task sensors and sources.',
+      suboptimal: { scn: 'Scenario generation explores possible futures but doesn\'t produce specific monitorable indicators.', ach: 'ACH evaluates existing evidence, it doesn\'t generate future-looking indicator lists.', cwa: 'Chronologies organize past events but don\'t project future warning indicators.' },
+    },
+    {
+      id: 3, title: 'Policy Failure Anticipation',
+      desc: 'The NSC is about to launch a diplomatic initiative to negotiate a trade agreement with a historically adversarial state. Your analytic team has been asked to identify what could go wrong and recommend risk mitigation measures before the initiative begins.',
+      best: 'pma',
+      explanation: 'Pre-Mortem Analysis is purpose-built for this: imagine the initiative has already failed, then work backward to identify why. It overcomes optimism bias that typically afflicts teams supporting policy initiatives. By assuming failure and generating explanations, analysts surface risks that standard forward-looking analysis would miss.',
+      suboptimal: { swot: 'SWOT identifies weaknesses but lacks the cognitive power of assuming failure first.', rht: 'Red Hat would argue against the initiative but doesn\'t systematically generate failure modes.', scn: 'Scenarios are broader -- Pre-Mortem specifically targets failure of a defined plan.' },
+    },
+    {
+      id: 4, title: 'Adversary Perspective Required',
+      desc: 'Your intelligence service has developed a new counterintelligence protocol to detect moles. Before implementation, leadership wants to understand how a sophisticated adversary intelligence service would attempt to defeat or circumvent the new protocol.',
+      best: 'rht',
+      explanation: 'Red Hat / Team A-Team B analysis explicitly tasks analysts to adopt the adversary\'s perspective, mindset, and doctrine. This is not about evaluating evidence (ACH) or questioning assumptions (KAC) -- it\'s about thinking like the opposition. Red Teaming produces insights about adversary tradecraft, operational patterns, and exploitation strategies that no other SAT generates.',
+      suboptimal: { dia: 'Devil\'s Advocacy argues against your position but doesn\'t adopt the adversary\'s specific perspective and capabilities.', ach: 'ACH compares hypotheses but doesn\'t simulate adversary decision-making.', pma: 'Pre-Mortem assumes your plan failed but doesn\'t model how the adversary would cause that failure.' },
+    },
+  ], []);
+
+  const renderSatLab = () => {
+    var problem = SAT_PROBLEMS[satLabIdx];
+    var userAnswer = satLabAnswers[satLabIdx];
+    var isRevealed = satLabRevealed[satLabIdx];
+    var correctCount = Object.keys(satLabAnswers).filter(function(k) { return satLabAnswers[k] === SAT_PROBLEMS[k].best; }).length;
+
+    return React.createElement('div', null,
+      SectionHeading({ title: 'SAT Selection Advisor', subtitle: 'Five analytical problems, ten structured analytic techniques. For each problem, select the most appropriate SAT. The insight: different problems require different tools.' }),
+
+      // Problem selector
+      React.createElement('div', { style: { display: 'flex', gap: 4, marginBottom: 20 } },
+        SAT_PROBLEMS.map(function(p, i) {
+          var answered = satLabAnswers[i] !== undefined;
+          var correct = answered && satLabAnswers[i] === p.best;
+          return React.createElement('button', {
+            key: i, onClick: function() { setSatLabIdx(i); },
+            style: {
+              flex: 1, padding: '8px 6px', borderRadius: 4, cursor: 'pointer', textAlign: 'center',
+              background: satLabIdx === i ? C.tealBg : 'transparent',
+              border: satLabIdx === i ? '1px solid ' + C.teal : '1px solid ' + C.line,
+            }
+          },
+            React.createElement('span', { style: { fontFamily: AT_Mono, fontSize: 11, fontWeight: 600, color: satLabIdx === i ? C.teal : C.tx3, display: 'block' } }, 'P-' + (i + 1)),
+            React.createElement('span', { style: { fontFamily: AT_Sans, fontSize: 10, color: answered ? (correct ? C.green : C.red) : C.tx3 } }, answered ? (correct ? '\u2713' : '\u2717') : '\u2014')
+          );
+        })
+      ),
+
+      // Current problem
+      React.createElement('div', { style: { background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6, padding: 20, marginBottom: 16, borderTop: '3px solid ' + C.teal, position: 'relative' } },
+        React.createElement(PushpinSVG),
+        React.createElement('div', { style: { fontFamily: AT_Mono, fontSize: 10, letterSpacing: '.1em', color: C.tealDm, marginBottom: 6 } }, 'ANALYTIC PROBLEM ' + (satLabIdx + 1) + ' OF 5'),
+        React.createElement('h3', { style: { fontFamily: AT_Serif, fontSize: 16, color: C.tx, marginBottom: 10, fontWeight: 600 } }, problem.title),
+        React.createElement('p', { style: { fontFamily: AT_Serif, fontSize: 13, color: C.tx2, lineHeight: 1.7, marginBottom: 16, borderLeft: '3px solid ' + C.line, paddingLeft: 12 } }, problem.desc),
+
+        // SAT selection grid
+        React.createElement('div', { style: { fontFamily: AT_Mono, fontSize: 10, letterSpacing: '.08em', color: C.tx3, marginBottom: 8 } }, 'SELECT THE BEST SAT:'),
+        React.createElement('div', { style: { display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(170px, 1fr))', gap: 6 } },
+          SAT_MENU.map(function(sat) {
+            var isSelected = userAnswer === sat.id;
+            var isCorrect = isRevealed && sat.id === problem.best;
+            var isWrong = isRevealed && isSelected && sat.id !== problem.best;
+            return React.createElement('button', {
+              key: sat.id,
+              onClick: function() {
+                if (!userAnswer) {
+                  setSatLabAnswers(function(prev) { return Object.assign({}, prev, { [satLabIdx]: sat.id }); });
+                }
+              },
+              style: {
+                padding: '8px 10px', borderRadius: 4, cursor: userAnswer ? 'default' : 'pointer', textAlign: 'left',
+                background: isCorrect ? C.greenBg : isWrong ? C.redBg : isSelected ? C.tealBg : 'transparent',
+                border: isCorrect ? '2px solid ' + C.green : isWrong ? '2px solid ' + C.red : isSelected ? '1px solid ' + C.teal : '1px solid ' + C.line,
+                opacity: userAnswer && !isSelected && !isCorrect ? 0.4 : 1,
+              }
+            },
+              React.createElement('span', { style: { fontFamily: AT_Mono, fontSize: 11, fontWeight: 600, color: isCorrect ? C.green : isWrong ? C.red : isSelected ? C.teal : C.tx3, display: 'block' } }, sat.short),
+              React.createElement('span', { style: { fontFamily: AT_Sans, fontSize: 10, color: C.tx3 } }, sat.name)
+            );
+          })
+        ),
+
+        // Reveal
+        userAnswer && !isRevealed && React.createElement('button', {
+          onClick: function() { setSatLabRevealed(function(prev) { return Object.assign({}, prev, { [satLabIdx]: true }); }); },
+          style: { marginTop: 12, padding: '8px 20px', borderRadius: 4, cursor: 'pointer', background: C.tealBg, border: '1px solid ' + C.teal, color: C.teal, fontFamily: AT_Mono, fontSize: 11 }
+        }, 'REVEAL ANSWER')
+      ),
+
+      // Expert explanation
+      isRevealed && React.createElement('div', null,
+        React.createElement('div', { style: { background: C.greenBg, border: '1px solid rgba(90,154,106,.15)', borderRadius: 6, padding: 16, marginBottom: 12 } },
+          React.createElement('div', { style: { fontFamily: AT_Mono, fontSize: 10, letterSpacing: '.08em', color: C.green, marginBottom: 6 } }, 'BEST SAT: ' + SAT_MENU.find(function(s) { return s.id === problem.best; }).name.toUpperCase()),
+          React.createElement('p', { style: { fontFamily: AT_Serif, fontSize: 12, color: C.tx2, lineHeight: 1.7, margin: 0 } }, problem.explanation)
+        ),
+
+        // Why others are suboptimal
+        React.createElement('div', { style: { background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6, padding: 16 } },
+          React.createElement('div', { style: { fontFamily: AT_Mono, fontSize: 10, letterSpacing: '.08em', color: C.tx3, marginBottom: 8 } }, 'WHY OTHER CHOICES ARE SUBOPTIMAL'),
+          Object.entries(problem.suboptimal).map(function(entry) {
+            var satId = entry[0]; var reason = entry[1];
+            var satName = SAT_MENU.find(function(s) { return s.id === satId; });
+            return React.createElement('div', { key: satId, style: { padding: '6px 0', borderBottom: '1px solid ' + C.line, display: 'flex', gap: 8 } },
+              React.createElement('span', { style: { fontFamily: AT_Mono, fontSize: 11, color: C.amber, minWidth: 80 } }, satName ? satName.short : satId),
+              React.createElement('span', { style: { fontFamily: AT_Sans, fontSize: 11, color: C.tx2, lineHeight: 1.6 } }, reason)
+            );
+          })
+        )
+      ),
+
+      // Score summary
+      Object.keys(satLabAnswers).length === 5 && React.createElement('div', { style: { background: C.card, border: '2px solid ' + (correctCount >= 4 ? C.green : correctCount >= 3 ? C.amber : C.red) + '40', borderRadius: 6, padding: 20, marginTop: 16, textAlign: 'center' } },
+        React.createElement('div', { style: { fontFamily: AT_Mono, fontSize: 36, fontWeight: 700, color: correctCount >= 4 ? C.green : correctCount >= 3 ? C.amber : C.red } }, correctCount + '/5'),
+        React.createElement('div', { style: { fontFamily: AT_Sans, fontSize: 13, color: C.tx2, marginTop: 4 } }, 'Correct SAT Selections'),
+        React.createElement('p', { style: { fontFamily: AT_Serif, fontSize: 12, color: C.tx3, lineHeight: 1.65, marginTop: 12, maxWidth: 500, marginLeft: 'auto', marginRight: 'auto' } },
+          correctCount === 5 ? 'Perfect score. You demonstrate strong understanding of when to apply each SAT -- a critical skill that separates effective analysts from those who apply techniques mechanically.'
+          : correctCount >= 3 ? 'Good performance. You understand the general categories of SATs but some problem-technique pairings need refinement. Review the suboptimal explanations for the ones you missed.'
+          : 'SAT selection is as important as SAT execution. Applying the wrong technique wastes time and can produce misleading confidence. Study the Heuer & Pherson taxonomy of when each technique is most effective.'
+        )
+      )
+    );
+  };
+
   // ══════════════════════════════════════════════════════════════
   // MAIN RENDER
   // ══════════════════════════════════════════════════════════════
@@ -1057,6 +1355,8 @@ function ATAnalysisView({ setView }) {
       case 'thematic': return renderThematic();
       case 'decision': return renderDecision();
       case 'convergence': return renderConvergence();
+      case 'linchpin': return renderLinchpin();
+      case 'sat_lab': return renderSatLab();
       default: return null;
     }
   };

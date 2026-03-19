@@ -383,10 +383,20 @@ function PSAnalysisView({ setView }) {
   const [userAnswers, setUserAnswers] = useState({});
   const [revealed, setRevealed] = useState(new Set());
   const [showSATDetail, setShowSATDetail] = useState(null);
-  const [viewMode, setViewMode] = useState('challenge'); // challenge | review | tradecraft | biasmap
+  const [viewMode, setViewMode] = useState('challenge'); // challenge | review | tradecraft | biasmap | calibration | debiasing
   const [selectedBiasNode, setSelectedBiasNode] = useState(null);
   const [highlightedPath, setHighlightedPath] = useState(null);
   const [tipId, setTipId] = useState(null);
+
+  // ── Calibration trainer state ────────────────────────────
+  const [calAnswers, setCalAnswers] = useState({});
+  const [calRevealed, setCalRevealed] = useState(false);
+
+  // ── Debiasing workshop state ─────────────────────────────
+  const [debiasingStep, setDebiasingStep] = useState(0);
+  const [debiasingIds, setDebiasingIds] = useState({});
+  const [debiasingTexts, setDebiasingTexts] = useState({});
+  const [debiasingRevealed, setDebiasingRevealed] = useState({});
 
   const C = PS_PALETTE;
 
@@ -717,7 +727,7 @@ function PSAnalysisView({ setView }) {
 
         {/* Mode tabs — Lab station selector */}
         <div style={{ display: 'flex', gap: 4, marginBottom: 20, flexWrap: 'wrap', padding: '8px 0', borderBottom: '1px solid rgba(40,80,140,.06)' }}>
-          {[['challenge','EXPERIMENT','Challenge'],['review','DATA REVIEW','Review All'],['tradecraft','REFERENCE','SAT Library'],['biasmap','TOPOLOGY','Bias Map']].map(([id,tag,label]) => (
+          {[['challenge','EXPERIMENT','Challenge'],['review','DATA REVIEW','Review All'],['tradecraft','REFERENCE','SAT Library'],['biasmap','TOPOLOGY','Bias Map'],['calibration','FORECAST','Calibration'],['debiasing','WORKSHOP','Debiasing']].map(([id,tag,label]) => (
             <button key={id} onClick={() => setViewMode(id)} style={{
               padding: '8px 16px', background: viewMode === id ? 'rgba(26,58,106,.12)' : 'transparent',
               border: viewMode === id ? '1px solid ' + C.purple : '1px solid rgba(40,80,140,.08)',
@@ -956,6 +966,262 @@ function PSAnalysisView({ setView }) {
 
         {/* ── BIAS MAP MODE ── */}
         {viewMode === 'biasmap' && renderBiasMap()}
+
+        {/* ── CALIBRATION MODE ── */}
+        {viewMode === 'calibration' && (() => {
+          var CAL_QUESTIONS = [
+            { id: 'q1', text: 'A randomly selected country in the UN General Assembly is a democracy (Freedom House "Free" rating).', actual: 44, source: 'Freedom House 2024: 84/193 = 43.5% of member states rated "Free"' },
+            { id: 'q2', text: 'A cyber attack attributed to a state actor targets critical infrastructure within 12 months of a diplomatic crisis with that state.', actual: 32, source: 'CFR Cyber Operations Tracker: ~32% of state-attributed cyber operations follow diplomatic tensions within 12 months' },
+            { id: 'q3', text: 'An intelligence estimate assessed with "high confidence" proves correct within 5 years.', actual: 78, source: 'Mandel & Barnes (2014) review of NIE accuracy: ~78% of high-confidence judgments validated' },
+            { id: 'q4', text: 'A country with nuclear weapons uses them in a conflict in the next 50 years.', actual: 8, source: 'Expert survey estimates cluster around 5-15%; median ~8% (Sandberg & Bostrom, 2008; updated surveys)' },
+            { id: 'q5', text: 'A HUMINT source recruited by a foreign intelligence service is actually a double agent.', actual: 18, source: 'Historical analysis suggests 15-20% of recruited agents may be doubles or fabricators (Bearden & Risen estimates)' },
+            { id: 'q6', text: 'Diplomatic negotiations between two adversarial states result in a signed agreement within 2 years of initiation.', actual: 35, source: 'UCDP negotiation dataset: ~35% of formal negotiations between adversaries produce signed agreements' },
+            { id: 'q7', text: 'An authoritarian leader who has been in power 10+ years is removed from power within the next 5 years.', actual: 22, source: 'Archigos dataset analysis: ~22% of leaders with 10+ year tenure lose power within 5 years' },
+            { id: 'q8', text: 'A country experiencing mass protests (100K+) undergoes regime change within 1 year.', actual: 28, source: 'Chenoweth & Stephan civil resistance data: ~28% of mass protest movements achieve regime change within 12 months' },
+            { id: 'q9', text: 'An OSINT investigation correctly identifies a covert military operation before official acknowledgment.', actual: 55, source: 'Post-2014 track record: Bellingcat, commercial satellite, and social media analysis identify ~55% of significant covert military activities' },
+            { id: 'q10', text: 'A sanctions regime achieves its stated policy objective within 5 years.', actual: 34, source: 'Hufbauer et al. (2007) sanctions effectiveness dataset: ~34% success rate across all episodes' },
+          ];
+
+          var answered = Object.keys(calAnswers).length;
+          var allAnswered = answered === CAL_QUESTIONS.length;
+
+          // Calibration curve computation
+          var calCurve = null;
+          if (calRevealed) {
+            var buckets = [[],[],[],[],[]]; // 0-20, 21-40, 41-60, 61-80, 81-100
+            CAL_QUESTIONS.forEach(function(q) {
+              var userP = calAnswers[q.id] || 50;
+              var bi = Math.min(4, Math.floor(userP / 20.01));
+              // Was the user "right"? Measure as closeness
+              var error = Math.abs(userP - q.actual);
+              buckets[bi].push({ userP: userP, actual: q.actual, error: error });
+            });
+            calCurve = buckets.map(function(b, bi) {
+              var midpoint = bi * 20 + 10;
+              if (b.length === 0) return { midpoint: midpoint, meanActual: null, count: 0 };
+              var meanActual = Math.round(b.reduce(function(s, x) { return s + x.actual; }, 0) / b.length);
+              return { midpoint: midpoint, meanActual: meanActual, count: b.length };
+            });
+          }
+          var brierScore = calRevealed ? (CAL_QUESTIONS.reduce(function(s, q) {
+            var p = (calAnswers[q.id] || 50) / 100;
+            var a = q.actual / 100;
+            return s + Math.pow(p - a, 2);
+          }, 0) / CAL_QUESTIONS.length).toFixed(3) : null;
+          var superforecasterBrier = '0.060';
+
+          return (
+            <div>
+              <div style={{ padding: 16, background: C.card, border: `1px solid ${C.cardBd}`, borderLeft: `3px solid ${C.purple}`, marginBottom: 16, borderRadius: 6 }}>
+                <p style={{ fontFamily: PS_MONO, fontSize: 10, color: C.purple, letterSpacing: '.12em', marginBottom: 8 }}>FORECAST CALIBRATION TRAINER</p>
+                <p style={{ fontSize: 13, color: C.tx, lineHeight: 1.7, marginBottom: 16 }}>
+                  For each statement, estimate the probability (0-100%) that it is true. After all 10 answers, see your calibration curve and Brier score compared to Tetlock's superforecaster benchmark. Well-calibrated forecasters assign probabilities that match real-world base rates.
+                </p>
+
+                {CAL_QUESTIONS.map(function(q, qi) {
+                  var val = calAnswers[q.id];
+                  var hasVal = val !== undefined;
+                  return (
+                    <div key={q.id} style={{ padding: '10px 12px', marginBottom: 6, background: calRevealed ? (Math.abs((val||50) - q.actual) <= 15 ? C.greenBg : C.redBg) : 'rgba(0,0,0,.15)', border: `1px solid ${C.line}`, borderRadius: 3 }}>
+                      <p style={{ fontSize: 12, color: C.tx, lineHeight: 1.5, marginBottom: 6 }}>
+                        <span style={{ fontFamily: PS_MONO, fontSize: 10, color: C.purple, marginRight: 6 }}>Q{qi+1}.</span>
+                        {q.text}
+                      </p>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                        <input type="range" min={0} max={100} value={val || 50}
+                          disabled={calRevealed}
+                          onChange={function(e) { var nv = parseInt(e.target.value); setCalAnswers(function(prev) { var c = Object.assign({}, prev); c[q.id] = nv; return c; }); }}
+                          style={{ flex: 1, accentColor: C.purple, cursor: calRevealed ? 'default' : 'pointer' }}
+                        />
+                        <span style={{ fontFamily: PS_MONO, fontSize: 14, color: C.purple, fontWeight: 700, minWidth: 40, textAlign: 'right' }}>{hasVal ? val + '%' : '--'}</span>
+                      </div>
+                      {calRevealed && (
+                        <div style={{ marginTop: 6 }}>
+                          <div style={{ fontFamily: PS_MONO, fontSize: 11, color: C.amber }}>Actual: {q.actual}% | Your estimate: {val||50}% | Error: {Math.abs((val||50) - q.actual)}pp</div>
+                          <p style={{ fontSize: 10, color: C.tx3, lineHeight: 1.5, marginTop: 2 }}>{q.source}</p>
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+
+                {!calRevealed && (
+                  <button onClick={function() { if (allAnswered) setCalRevealed(true); }}
+                    disabled={!allAnswered}
+                    style={{
+                      marginTop: 12, padding: '8px 20px', fontFamily: PS_MONO, fontSize: 11, cursor: allAnswered ? 'pointer' : 'not-allowed',
+                      background: allAnswered ? C.purpleBg : 'transparent', border: `1px solid ${allAnswered ? C.purple : C.line}`,
+                      color: allAnswered ? C.purple : C.tx3, borderRadius: 3,
+                    }}>
+                    {allAnswered ? 'Reveal Calibration Results' : 'Answer all 10 questions (' + answered + '/10)'}
+                  </button>
+                )}
+
+                {calRevealed && (
+                  <div style={{ marginTop: 16, padding: 14, background: 'rgba(0,0,0,.2)', border: `1px solid ${C.line}`, borderRadius: 6 }}>
+                    <div style={{ fontFamily: PS_MONO, fontSize: 10, color: C.purple, letterSpacing: '.1em', marginBottom: 10 }}>CALIBRATION RESULTS</div>
+
+                    {/* Brier score */}
+                    <div style={{ display: 'flex', gap: 16, marginBottom: 16 }}>
+                      <div style={{ textAlign: 'center', padding: 12, background: C.card, border: `1px solid ${C.cardBd}`, borderRadius: 3, flex: 1 }}>
+                        <div style={{ fontFamily: PS_MONO, fontSize: 9, color: C.tx3 }}>YOUR BRIER SCORE</div>
+                        <div style={{ fontFamily: PS_MONO, fontSize: 24, fontWeight: 700, color: parseFloat(brierScore) < 0.1 ? C.green : parseFloat(brierScore) < 0.2 ? C.amber : C.red }}>{brierScore}</div>
+                        <div style={{ fontSize: 10, color: C.tx3 }}>Lower is better (0 = perfect)</div>
+                      </div>
+                      <div style={{ textAlign: 'center', padding: 12, background: C.card, border: `1px solid ${C.cardBd}`, borderRadius: 3, flex: 1 }}>
+                        <div style={{ fontFamily: PS_MONO, fontSize: 9, color: C.tx3 }}>SUPERFORECASTER BENCHMARK</div>
+                        <div style={{ fontFamily: PS_MONO, fontSize: 24, fontWeight: 700, color: C.green }}>{superforecasterBrier}</div>
+                        <div style={{ fontSize: 10, color: C.tx3 }}>Tetlock (2015) Good Judgment Project</div>
+                      </div>
+                    </div>
+
+                    {/* Calibration curve as text-based bar chart */}
+                    <div style={{ fontFamily: PS_MONO, fontSize: 10, color: C.tx3, marginBottom: 8 }}>CALIBRATION CURVE (predicted vs actual)</div>
+                    {calCurve && calCurve.map(function(b) {
+                      if (b.count === 0) return null;
+                      return (
+                        <div key={b.midpoint} style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
+                          <span style={{ fontFamily: PS_MONO, fontSize: 10, color: C.tx3, width: 50, textAlign: 'right' }}>{b.midpoint-10}-{b.midpoint+10}%</span>
+                          <div style={{ flex: 1, height: 12, background: C.line, borderRadius: 2, position: 'relative' }}>
+                            <div style={{ position: 'absolute', left: b.meanActual + '%', top: 0, bottom: 0, width: 3, background: C.green, borderRadius: 1 }} />
+                            <div style={{ position: 'absolute', left: b.midpoint + '%', top: 0, bottom: 0, width: 3, background: C.purple, borderRadius: 1 }} />
+                          </div>
+                          <span style={{ fontFamily: PS_MONO, fontSize: 9, color: C.tx2, width: 80 }}>actual:{b.meanActual}% n={b.count}</span>
+                        </div>
+                      );
+                    })}
+                    <div style={{ display: 'flex', gap: 12, marginTop: 6, fontSize: 9, color: C.tx3 }}>
+                      <span><span style={{ display: 'inline-block', width: 8, height: 8, background: C.purple, borderRadius: 1, marginRight: 3 }} />Predicted</span>
+                      <span><span style={{ display: 'inline-block', width: 8, height: 8, background: C.green, borderRadius: 1, marginRight: 3 }} />Actual</span>
+                    </div>
+
+                    <p style={{ fontSize: 11, color: C.tx2, lineHeight: 1.6, marginTop: 12 }}>
+                      {parseFloat(brierScore) < 0.08 ? 'Excellent calibration. Your probability estimates closely match real-world base rates. This level of calibration approaches the superforecaster benchmark from Tetlock\'s Good Judgment Project.' : parseFloat(brierScore) < 0.15 ? 'Moderate calibration. Some of your estimates diverged from actual base rates. Review questions where your error exceeded 20 percentage points to identify systematic biases.' : 'Poor calibration. Your estimates showed significant divergence from base rates, suggesting possible overconfidence or anchoring effects. Forecasting skill improves with practice and explicit base rate consideration.'}
+                    </p>
+
+                    <button onClick={function() { setCalAnswers({}); setCalRevealed(false); }}
+                      style={{ marginTop: 10, padding: '6px 14px', fontFamily: PS_MONO, fontSize: 10, background: 'transparent', border: `1px solid ${C.purple}`, color: C.purple, cursor: 'pointer', borderRadius: 3 }}>
+                      Reset Calibration
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+          );
+        })()}
+
+        {/* ── DEBIASING MODE ── */}
+        {viewMode === 'debiasing' && (() => {
+          var DEBIASING_ITEMS = [
+            { id: 'd1', judgment: 'Based on the last three successful operations in this region, we assess with high confidence that the next operation will also succeed.', bias: 'Representativeness / Base Rate Neglect', biasId: 'representativeness', explanation: 'Three successes is too small a sample to establish high confidence. This ignores the base rate of operational success across all regions and conditions. The analyst is treating a small, non-random sample as representative of future outcomes.', debiased: 'While three recent operations succeeded, the overall base rate for similar operations in comparable environments is approximately 60%. We assess with moderate confidence that conditions remain favorable, but note that operational outcomes are sensitive to factors (weather, counterintelligence, force posture) that vary independently of past results.' },
+            { id: 'd2', judgment: 'The adversary has not moved forces in three weeks. We therefore assess they have abandoned their offensive plans.', bias: 'Absence of Evidence / Mirror Imaging', biasId: 'absence', explanation: 'Absence of observed activity is not evidence of intent to stand down. The analyst is projecting their own decision-making framework onto the adversary ("if I hadn\'t moved forces for three weeks, I would have given up"). The adversary may be in an operational pause, deception posture, or waiting for conditions to change.', debiased: 'No significant force movements have been detected in three weeks. We assess this could indicate (a) a deliberate operational pause while logistics are reconstituted, (b) a shift to a deception posture, or (c) a genuine de-escalation. Continued SIGINT monitoring of command traffic and GEOINT of supply depots would help discriminate between these hypotheses.' },
+            { id: 'd3', judgment: 'Our original assessment that this program was peaceful was reinforced by last month\'s inspection visit, which found no violations. We maintain our assessment with increased confidence.', bias: 'Anchoring / Confirmation Bias', biasId: 'anchoring', explanation: 'The analyst is anchored to the initial assessment and treating confirmatory evidence (no violations found) as more diagnostic than it is. Inspections have known limitations (declared sites only, advance notice). The absence of violations at inspected sites does not confirm the absence of undeclared activities elsewhere.', debiased: 'The latest inspection visit found no violations at declared sites, which is consistent with our baseline assessment but is not independently diagnostic. Inspection coverage remains limited to declared facilities with advance notice. We maintain our assessment at the same confidence level as before, noting that the inspection neither confirmed nor disconfirmed the possibility of undeclared activities at other locations.' },
+            { id: 'd4', judgment: 'Sources unanimously report that the leadership is unified and committed to the current strategy. We assess with high confidence there are no internal divisions.', bias: 'Source Groupthink / Availability Bias', biasId: 'groupthink', explanation: 'When all sources report the same thing, it could indicate either (a) reality or (b) all sources have access to the same information tier and are reflecting the leadership\'s curated narrative. Unanimous reporting should increase suspicion, not confidence, especially in authoritarian regimes where dissent is hidden.', debiased: 'All current sources report leadership unity, but we note that our source access is concentrated among officials who interact with the leadership\'s public-facing activities. We assess with moderate confidence that the leadership presents as unified. However, internal divisions in authoritarian systems are typically invisible until they manifest as action. We lack penetration of inner-circle deliberations that would enable higher confidence.' },
+            { id: 'd5', judgment: 'This operation closely matches the playbook used by Group X in their 2019 campaign. We assess with high confidence that Group X is responsible.', bias: 'Pattern Matching / Fundamental Attribution Error', biasId: 'patternmatch', explanation: 'TTP similarity alone is insufficient for high-confidence attribution. TTPs can be copied, shared, or sold between groups (false flag operations). The analyst is over-attributing based on pattern match without considering alternative explanations: a copycat, a shared toolkit vendor, or deliberate deception.', debiased: 'The observed TTPs are consistent with Group X\'s documented playbook from 2019. However, we note that Group X\'s tools were partially leaked in 2020, and at least two other groups have been observed using similar techniques. We assess with moderate confidence that Group X is a likely responsible party, but cannot exclude a false-flag or shared-tooling scenario without additional corroborating evidence from non-TTP indicators (infrastructure, timing, strategic intent).' },
+          ];
+
+          var BIAS_OPTIONS = ['Anchoring', 'Confirmation Bias', 'Representativeness / Base Rate Neglect', 'Absence of Evidence / Mirror Imaging', 'Source Groupthink / Availability Bias', 'Pattern Matching / Fundamental Attribution Error', 'Hindsight Bias', 'Bandwagon Effect'];
+          var item = DEBIASING_ITEMS[debiasingStep];
+          var isRevealed = debiasingRevealed[item.id];
+          var userBiasChoice = debiasingIds[item.id];
+          var userDebiasedText = debiasingTexts[item.id] || '';
+          var biasCorrect = userBiasChoice === item.bias;
+
+          return (
+            <div>
+              <div style={{ padding: 16, background: C.card, border: `1px solid ${C.cardBd}`, borderLeft: `3px solid ${C.amber}`, marginBottom: 16, borderRadius: 6 }}>
+                <p style={{ fontFamily: PS_MONO, fontSize: 10, color: C.amber, letterSpacing: '.12em', marginBottom: 8 }}>COGNITIVE DEBIASING WORKSHOP</p>
+                <p style={{ fontSize: 13, color: C.tx, lineHeight: 1.7, marginBottom: 16 }}>
+                  Each analytic judgment below contains an embedded cognitive bias. Your task: (1) identify the specific bias from the dropdown, and (2) write a debiased version of the judgment. Then compare your work to the expert assessment and model debiased text.
+                </p>
+
+                {/* Step navigation */}
+                <div style={{ display: 'flex', gap: 4, marginBottom: 16 }}>
+                  {DEBIASING_ITEMS.map(function(d, di) {
+                    var done = debiasingRevealed[d.id];
+                    return (
+                      <button key={d.id} onClick={function() { setDebiasingStep(di); }}
+                        style={{
+                          padding: '6px 12px', fontFamily: PS_MONO, fontSize: 10, cursor: 'pointer',
+                          background: debiasingStep === di ? C.amberBg : done ? C.greenBg : 'transparent',
+                          border: `1px solid ${debiasingStep === di ? C.amber : done ? C.green : C.line}`,
+                          color: debiasingStep === di ? C.amber : done ? C.green : C.tx3, borderRadius: 3,
+                        }}>
+                        {di + 1}
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Judgment card */}
+                <div style={{ padding: 14, background: 'rgba(0,0,0,.2)', border: `1px solid ${C.line}`, borderRadius: 3, marginBottom: 16 }}>
+                  <div style={{ fontFamily: PS_MONO, fontSize: 9, color: C.tx3, marginBottom: 6 }}>ANALYTIC JUDGMENT {debiasingStep + 1} OF {DEBIASING_ITEMS.length}</div>
+                  <p style={{ fontSize: 14, color: C.tx, lineHeight: 1.7, fontStyle: 'italic' }}>"{item.judgment}"</p>
+                </div>
+
+                {/* Step 1: Identify bias */}
+                <div style={{ marginBottom: 16 }}>
+                  <div style={{ fontFamily: PS_MONO, fontSize: 10, color: C.purple, marginBottom: 6 }}>STEP 1: IDENTIFY THE BIAS</div>
+                  <select value={userBiasChoice || ''} disabled={isRevealed}
+                    onChange={function(e) { setDebiasingIds(function(prev) { var c = Object.assign({}, prev); c[item.id] = e.target.value; return c; }); }}
+                    style={{ width: '100%', padding: '8px 10px', fontFamily: PS_MONO, fontSize: 12, background: C.card, color: C.tx, border: `1px solid ${C.line}`, borderRadius: 3 }}>
+                    <option value="">-- Select a cognitive bias --</option>
+                    {BIAS_OPTIONS.map(function(b) { return React.createElement('option', { key: b, value: b }, b); })}
+                  </select>
+                </div>
+
+                {/* Step 2: Write debiased version */}
+                <div style={{ marginBottom: 16 }}>
+                  <div style={{ fontFamily: PS_MONO, fontSize: 10, color: C.purple, marginBottom: 6 }}>STEP 2: WRITE A DEBIASED VERSION</div>
+                  <textarea value={userDebiasedText} disabled={isRevealed} placeholder="Write a debiased version of this judgment that addresses the identified bias..."
+                    onChange={function(e) { setDebiasingTexts(function(prev) { var c = Object.assign({}, prev); c[item.id] = e.target.value; return c; }); }}
+                    style={{ width: '100%', minHeight: 80, padding: 10, fontFamily: PS_MONO, fontSize: 11, background: C.card, color: C.tx, border: `1px solid ${C.line}`, borderRadius: 3, resize: 'vertical', lineHeight: 1.6 }}
+                  />
+                </div>
+
+                {/* Reveal button */}
+                {!isRevealed && (
+                  <button onClick={function() { setDebiasingRevealed(function(prev) { var c = Object.assign({}, prev); c[item.id] = true; return c; }); }}
+                    disabled={!userBiasChoice}
+                    style={{
+                      padding: '8px 20px', fontFamily: PS_MONO, fontSize: 11, cursor: userBiasChoice ? 'pointer' : 'not-allowed',
+                      background: userBiasChoice ? C.purpleBg : 'transparent', border: `1px solid ${userBiasChoice ? C.purple : C.line}`,
+                      color: userBiasChoice ? C.purple : C.tx3, borderRadius: 3,
+                    }}>
+                    Reveal Expert Assessment
+                  </button>
+                )}
+
+                {/* Expert assessment reveal */}
+                {isRevealed && (
+                  <div style={{ marginTop: 12, padding: 14, background: 'rgba(0,0,0,.2)', border: `1px solid ${C.line}`, borderRadius: 3 }}>
+                    <div style={{ marginBottom: 12 }}>
+                      <div style={{ fontFamily: PS_MONO, fontSize: 10, color: biasCorrect ? C.green : C.red, marginBottom: 4 }}>
+                        BIAS IDENTIFICATION: {biasCorrect ? 'CORRECT' : 'INCORRECT'}
+                      </div>
+                      <div style={{ fontSize: 12, color: C.tx, marginBottom: 4 }}>
+                        <span style={{ fontWeight: 600 }}>Actual bias: </span>{item.bias}
+                      </div>
+                      <p style={{ fontSize: 11, color: C.tx2, lineHeight: 1.6 }}>{item.explanation}</p>
+                    </div>
+
+                    <div style={{ borderTop: `1px solid ${C.line}`, paddingTop: 12 }}>
+                      <div style={{ fontFamily: PS_MONO, fontSize: 10, color: C.amber, marginBottom: 6 }}>MODEL DEBIASED VERSION</div>
+                      <p style={{ fontSize: 12, color: C.tx, lineHeight: 1.7, fontStyle: 'italic', padding: 10, background: C.amberBg, borderRadius: 3, border: `1px solid ${C.amber}30` }}>"{item.debiased}"</p>
+                    </div>
+
+                    <div style={{ marginTop: 12, padding: 10, background: C.purpleBg, borderRadius: 3, border: `1px solid ${C.purple}30` }}>
+                      <div style={{ fontFamily: PS_MONO, fontSize: 9, color: C.purple, marginBottom: 4 }}>DEBIASING QUALITY RUBRIC</div>
+                      <div style={{ fontSize: 11, color: C.tx2, lineHeight: 1.6 }}>
+                        {userDebiasedText.length > 100 && userDebiasedText.toLowerCase().indexOf('confidence') >= 0 ? 'Your debiased version includes calibrated confidence language -- a key indicator of analytic rigor.' : userDebiasedText.length > 50 ? 'Your response addresses the judgment but could benefit from explicit confidence calibration and alternative hypothesis consideration.' : 'Consider providing a more detailed debiased version that includes confidence levels, alternative explanations, and explicit acknowledgment of analytic limitations.'}
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          );
+        })()}
       </div>
     </div>
   );

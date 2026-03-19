@@ -458,10 +458,19 @@ function CYAnalysisView({ setView }) {
   const [defensesApplied, setDefensesApplied] = useState(new Set());
   const [showDiamond, setShowDiamond] = useState(false);
   const [finalChoice, setFinalChoice] = useState(null); // 'disrupt' | 'observe'
-  const [viewMode, setViewMode] = useState('replay'); // 'replay' | 'forensics' | 'debrief'
+  const [viewMode, setViewMode] = useState('replay'); // 'replay' | 'forensics' | 'debrief' | 'hunt' | 'attribution'
   const [expandedAttribution, setExpandedAttribution] = useState(new Set());
   const [expandedLesson, setExpandedLesson] = useState(new Set());
   const [tipId, setTipId] = useState(null);
+
+  // ── Hunt mode state ──────────────────────────────────────
+  const [huntExamined, setHuntExamined] = useState({});   // { hostId: Set<evidenceType> }
+  const [huntGuess, setHuntGuess] = useState(null);
+  const [huntRevealed, setHuntRevealed] = useState(false);
+
+  // ── Attribution mode state ───────────────────────────────
+  const [attrFactors, setAttrFactors] = useState({ ttp: 50, infra: 50, timing: 50, motive: 50, sigint: 50, defector: 50 });
+  const [attrCompare, setAttrCompare] = useState(null);
 
   const C = CY_PALETTE;
 
@@ -696,8 +705,8 @@ function CYAnalysisView({ setView }) {
 
         /* Mode tabs — terminal tabs */
         React.createElement('div', { style: { display: 'flex', gap: 0, marginBottom: 20, borderBottom: '1px solid ' + C.green + '15' } },
-          ['replay', 'forensics', 'iocgraph', 'debrief'].map(function(m, mi) {
-            var labels = { replay: '> replay', forensics: '> forensics', iocgraph: '> ioc_graph', debrief: '> debrief' };
+          ['replay', 'forensics', 'iocgraph', 'debrief', 'hunt', 'attribution'].map(function(m, mi) {
+            var labels = { replay: '> replay', forensics: '> forensics', iocgraph: '> ioc_graph', debrief: '> debrief', hunt: '> hunt', attribution: '> attrib' };
             return React.createElement('button', {
               key: m,
               onClick: function() { setViewMode(m); },
@@ -1234,7 +1243,265 @@ function CYAnalysisView({ setView }) {
               )
             )
           )
-        )
+        ),
+
+        /* ================================================================ */
+        /* MODE: HUNT — Threat Hunting Playbook                             */
+        /* ================================================================ */
+        viewMode === 'hunt' && (function() {
+          var HUNT_HOSTS = [
+            { id: 'ws01', name: 'WS-ACCT-01', role: 'Accounting Workstation', ip: '10.0.2.14' },
+            { id: 'ws02', name: 'WS-ENGR-07', role: 'Engineering Workstation', ip: '10.0.3.22' },
+            { id: 'ws03', name: 'SRV-DC-01', role: 'Domain Controller', ip: '10.0.1.5' },
+            { id: 'ws04', name: 'SRV-FILE-02', role: 'File Server', ip: '10.0.1.12' },
+            { id: 'ws05', name: 'WS-EXEC-03', role: 'Executive Laptop', ip: '10.0.4.8' },
+            { id: 'ws06', name: 'SRV-WEB-01', role: 'Web Server (DMZ)', ip: '172.16.0.5' },
+            { id: 'ws07', name: 'WS-HR-02', role: 'HR Workstation', ip: '10.0.2.31' },
+            { id: 'ws08', name: 'SRV-MAIL-01', role: 'Mail Server', ip: '10.0.1.20' },
+          ];
+          var COMPROMISED = 'ws05';
+          var EVIDENCE_TYPES = ['dns', 'process', 'registry', 'netflow', 'hashes'];
+          var EVIDENCE_LABELS = { dns: 'DNS Logs', process: 'Process Trees', registry: 'Registry Keys', netflow: 'Network Flows', hashes: 'File Hashes' };
+          var EVIDENCE_DATA = {
+            ws01: { dns: 'Normal internal DNS queries to dc01.corp.local, windows update servers. No anomalies.', process: 'excel.exe, outlook.exe, chrome.exe — standard user processes. No suspicious parent-child chains.', registry: 'No persistence keys outside baseline. Standard Office MRU entries.', netflow: '80% traffic to internal file shares, 20% to internet via proxy. Normal volume.', hashes: 'All binaries match known-good SHA256 from NIST NSRL database.' },
+            ws02: { dns: 'Heavy DNS to GitHub, Stack Overflow, npm registries. Developer baseline traffic.', process: 'vscode.exe, node.exe, docker.exe — engineering toolchain. Elevated but expected.', registry: 'Docker service autorun keys present (expected). No anomalous Run keys.', netflow: 'High-bandwidth transfers to internal Git server. Expected for build processes.', hashes: 'Custom compiled binaries present but match CI/CD pipeline output hashes.' },
+            ws03: { dns: 'Authoritative DNS server — high query volume is baseline. AXFR zone transfers to secondary DC normal.', process: 'lsass.exe, ntds.exe, dns.exe — expected DC processes. Kerberos TGT issuance within normal range.', registry: 'Group Policy templates current. AdminSDHolder consistent with baseline.', netflow: 'LDAP/Kerberos traffic to all domain hosts. Replication traffic to backup DC.', hashes: 'System binaries match Microsoft catalog. No unsigned DLLs in System32.' },
+            ws04: { dns: 'Queries to DC for authentication. No external DNS requests (expected — server role).', process: 'smbd, backup_agent — file serving and backup. Scheduled AV scan process visible.', registry: 'Share ACLs consistent with last Group Policy push. No new services.', netflow: 'SMB traffic from 23 hosts (normal). Backup replication to offsite at 0200.', hashes: 'Backup agent and AV signatures current. All DLLs in known-good catalog.' },
+            ws05: { dns: 'ANOMALY: Periodic DNS queries to xn--80ak6aa92e.com (Punycode encoded) every 47 seconds. Pattern consistent with DNS-based C2 beaconing. Also querying svchost-update[.]microsofthelp[.]services — a domain mimicking legitimate MSFT infrastructure, registered 72 hours ago.', process: 'ANOMALY: svchost.exe spawned powershell.exe which spawned cmd.exe -> whoami, net group "domain admins", nltest /dclist:. This is a classic post-exploitation enumeration chain. Parent PID does not match any legitimate service.', registry: 'ANOMALY: HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run contains entry "WindowsSecurityHealth" pointing to C:\\Users\\exec03\\AppData\\Local\\Temp\\health_svc.dll — unsigned DLL with creation timestamp matching the first DNS beacon.', netflow: 'ANOMALY: 4.2MB exfiltrated to 185.220.101.xx (Tor exit node) over HTTPS at 0247 local. Additional encrypted traffic to 91.234.xx.xx:8443 (non-standard port) during business hours, consistent with C2 session activity.', hashes: 'ANOMALY: health_svc.dll SHA256 matches no known binary in NSRL, VirusTotal, or internal repository. Entropy analysis: 7.92/8.0 (packed/encrypted). Import table references VirtualAlloc, CreateRemoteThread — injection indicators.' },
+            ws06: { dns: 'External DNS queries from web visitors (expected). Internal queries to DC for authentication.', process: 'httpd, php-fpm, mysql — standard LAMP stack. WAF module loaded and active.', registry: 'N/A (Linux host). Crontab entries match deployment automation. No anomalies in /etc/init.d.', netflow: 'HTTP/HTTPS inbound from internet (expected). Outbound only to internal API server and logging.', hashes: 'Web application files match deployment SHA manifest from last CI/CD push.' },
+            ws07: { dns: 'Standard queries to DC and internet HR platforms (Workday, ADP). No anomalies.', process: 'chrome.exe, workday_client.exe, outlook.exe — HR baseline. PDF viewer for employee documents.', registry: 'Standard Office persistence. No unexpected Run/RunOnce entries.', netflow: 'HTTPS to HR SaaS platforms. Internal traffic to file server for employee records.', hashes: 'All binaries match known-good. No unsigned executables in user profile directories.' },
+            ws08: { dns: 'MX record lookups, SPF/DKIM verification queries. High volume baseline for mail processing.', process: 'postfix, dovecot, clamav, spamassassin — standard mail stack. AV scanning all attachments.', registry: 'N/A (Linux). Mail queue processing normal. TLS certificates current.', netflow: 'SMTP inbound/outbound (expected). Internal IMAP connections from user workstations.', hashes: 'Mail server binaries match package manager checksums. SpamAssassin rules updated 6h ago.' },
+          };
+
+          var examined = huntExamined;
+          var setExamined = function(hostId, evType) {
+            setHuntExamined(function(prev) {
+              var copy = Object.assign({}, prev);
+              if (!copy[hostId]) copy[hostId] = [];
+              if (copy[hostId].indexOf(evType) === -1) copy[hostId] = copy[hostId].concat([evType]);
+              return copy;
+            });
+          };
+          var totalChecks = Object.values(examined).reduce(function(s, arr) { return s + arr.length; }, 0);
+          var compromisedChecks = (examined[COMPROMISED] || []).length;
+          var huntScore = huntRevealed ? (huntGuess === COMPROMISED ? Math.max(1, 6 - compromisedChecks) : 0) : null;
+
+          return React.createElement(React.Fragment, null,
+            React.createElement(TerminalCard, { title: 'THREAT HUNTING PLAYBOOK', ledColor: C.red, style: { marginBottom: 16 } },
+              React.createElement('p', { style: { fontSize: 12, color: C.tx, lineHeight: 1.7, marginBottom: 12 } },
+                'Your SOC has received an alert: one host on this network is compromised. You have 8 hosts and 5 evidence types to examine. Efficient hunters find the compromise using the fewest evidence checks. Examine evidence, identify the compromised host, and submit your finding.'
+              ),
+              React.createElement('p', { style: { fontFamily: CY_MONO, fontSize: 11, color: C.amber, marginBottom: 4 } }, 'EVIDENCE CHECKS USED: ' + totalChecks + ' / 40'),
+              React.createElement('div', { style: { height: 4, background: C.line, borderRadius: 2, marginBottom: 16 } },
+                React.createElement('div', { style: { height: '100%', width: Math.min(100, totalChecks * 2.5) + '%', background: totalChecks > 20 ? C.red : totalChecks > 10 ? C.amber : C.green, borderRadius: 2, transition: 'width .3s' } })
+              ),
+
+              /* Host grid */
+              React.createElement('div', { style: { display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 6, marginBottom: 16 } },
+                HUNT_HOSTS.map(function(h) {
+                  var hostEvidence = examined[h.id] || [];
+                  var isSelected = huntGuess === h.id;
+                  return React.createElement('div', {
+                    key: h.id,
+                    onClick: function() { if (!huntRevealed) setHuntGuess(h.id); },
+                    style: {
+                      padding: '8px 10px', background: isSelected ? C.greenBg : C.card, cursor: huntRevealed ? 'default' : 'pointer',
+                      border: '1px solid ' + (isSelected ? C.green : (huntRevealed && h.id === COMPROMISED ? C.red : C.cardBd)),
+                      borderRadius: 0,
+                    }
+                  },
+                    React.createElement('div', { style: { fontFamily: CY_MONO, fontSize: 10, color: isSelected ? C.green : C.tx, fontWeight: 600, marginBottom: 2 } }, h.name),
+                    React.createElement('div', { style: { fontSize: 10, color: C.tx2, marginBottom: 4 } }, h.role),
+                    React.createElement('div', { style: { fontSize: 9, color: C.tx3, fontFamily: CY_MONO } }, h.ip),
+                    React.createElement('div', { style: { display: 'flex', gap: 2, marginTop: 4 } },
+                      EVIDENCE_TYPES.map(function(e) {
+                        return React.createElement('div', { key: e, style: { width: 8, height: 8, borderRadius: 1, background: hostEvidence.indexOf(e) >= 0 ? C.cyan : C.line } });
+                      })
+                    ),
+                    huntRevealed && h.id === COMPROMISED && React.createElement('div', { style: { fontFamily: CY_MONO, fontSize: 9, color: C.red, marginTop: 4, fontWeight: 700 } }, 'COMPROMISED')
+                  );
+                })
+              ),
+
+              /* Evidence examination panel */
+              !huntRevealed && huntGuess && React.createElement('div', { style: { marginBottom: 12 } },
+                React.createElement('div', { style: { fontFamily: CY_MONO, fontSize: 11, color: C.green, marginBottom: 8 } }, '> Examining: ' + HUNT_HOSTS.find(function(h) { return h.id === huntGuess; }).name),
+                React.createElement('div', { style: { display: 'flex', gap: 4, marginBottom: 8, flexWrap: 'wrap' } },
+                  EVIDENCE_TYPES.map(function(ev) {
+                    var checked = (examined[huntGuess] || []).indexOf(ev) >= 0;
+                    return React.createElement('button', {
+                      key: ev,
+                      onClick: function() { setExamined(huntGuess, ev); },
+                      style: {
+                        padding: '4px 10px', fontFamily: CY_MONO, fontSize: 10, cursor: 'pointer',
+                        background: checked ? C.cyanBg : 'transparent',
+                        border: '1px solid ' + (checked ? C.cyan : C.line),
+                        color: checked ? C.cyan : C.tx3, borderRadius: 0,
+                      }
+                    }, EVIDENCE_LABELS[ev]);
+                  })
+                ),
+                /* Show examined evidence */
+                (examined[huntGuess] || []).map(function(ev) {
+                  return React.createElement('div', { key: ev, style: { padding: '8px 10px', marginBottom: 4, background: C.card, border: '1px solid ' + C.cardBd, borderLeft: '3px solid ' + C.cyan } },
+                    React.createElement('div', { style: { fontFamily: CY_MONO, fontSize: 9, color: C.cyan, marginBottom: 4, letterSpacing: '.08em' } }, EVIDENCE_LABELS[ev].toUpperCase()),
+                    React.createElement('p', { style: { fontSize: 11, color: EVIDENCE_DATA[huntGuess][ev].indexOf('ANOMALY') >= 0 ? C.red : C.tx2, lineHeight: 1.6, fontFamily: CY_MONO } }, EVIDENCE_DATA[huntGuess][ev])
+                  );
+                })
+              ),
+
+              /* Submit / results */
+              !huntRevealed && React.createElement('button', {
+                onClick: function() { if (huntGuess) setHuntRevealed(true); },
+                disabled: !huntGuess,
+                style: {
+                  padding: '8px 20px', fontFamily: CY_MONO, fontSize: 11, cursor: huntGuess ? 'pointer' : 'not-allowed',
+                  background: huntGuess ? C.redBg : 'transparent', border: '1px solid ' + (huntGuess ? C.red : C.line),
+                  color: huntGuess ? C.red : C.tx3, borderRadius: 0, letterSpacing: '.06em',
+                }
+              }, '> SUBMIT FINDING'),
+
+              huntRevealed && React.createElement('div', { style: { padding: 12, background: huntGuess === COMPROMISED ? 'rgba(32,238,80,.06)' : 'rgba(238,48,48,.06)', border: '1px solid ' + (huntGuess === COMPROMISED ? C.green : C.red), marginTop: 12 } },
+                React.createElement('div', { style: { fontFamily: CY_MONO, fontSize: 14, fontWeight: 700, color: huntGuess === COMPROMISED ? C.green : C.red, marginBottom: 8 } },
+                  huntGuess === COMPROMISED ? 'CORRECT IDENTIFICATION' : 'INCORRECT -- Target was ' + HUNT_HOSTS.find(function(h) { return h.id === COMPROMISED; }).name
+                ),
+                React.createElement('div', { style: { fontFamily: CY_MONO, fontSize: 11, color: C.tx, marginBottom: 8 } },
+                  'Evidence checks used: ' + totalChecks + '. ' + (huntGuess === COMPROMISED ? 'Hunt score: ' + huntScore + '/5 (fewer checks = better tradecraft)' : 'Review the IOC patterns on WS-EXEC-03 to understand what you missed.')
+                ),
+                React.createElement('div', { style: { fontFamily: CY_MONO, fontSize: 11, color: C.amber, lineHeight: 1.7 } },
+                  'IOC summary for WS-EXEC-03: DNS beaconing to Punycode-encoded C2 domain at 47-second intervals. Suspicious svchost->powershell->cmd enumeration chain. Unsigned DLL persisted via Run key with packed entropy (7.92/8.0). 4.2MB exfiltration to Tor exit node. All five evidence types contained anomalies consistent with APT post-exploitation activity.'
+                ),
+                React.createElement('button', {
+                  onClick: function() { setHuntExamined({}); setHuntGuess(null); setHuntRevealed(false); },
+                  style: { marginTop: 10, padding: '6px 16px', fontFamily: CY_MONO, fontSize: 10, background: 'transparent', border: '1px solid ' + C.green, color: C.green, cursor: 'pointer', borderRadius: 0 }
+                }, '> RESET HUNT')
+              )
+            )
+          );
+        })(),
+
+        /* ================================================================ */
+        /* MODE: ATTRIBUTION — Attribution Confidence Builder               */
+        /* ================================================================ */
+        viewMode === 'attribution' && (function() {
+          var ATTR_FACTORS = [
+            { id: 'ttp', label: 'TTP Match', desc: 'Do observed TTPs match a known threat actor profile? High overlap with documented tradecraft increases confidence.' },
+            { id: 'infra', label: 'Infrastructure Overlap', desc: 'Does C2 infrastructure reuse IP ranges, domains, or certificates associated with prior campaigns by a specific actor?' },
+            { id: 'timing', label: 'Timing / Tempo', desc: 'Does the operational tempo align with the working hours, holidays, or geopolitical timeline of a suspected state actor?' },
+            { id: 'motive', label: 'Geopolitical Motive', desc: 'Does the target selection and timing align with known strategic interests of the suspected sponsor?' },
+            { id: 'sigint', label: 'SIGINT Corroboration', desc: 'Do signals intelligence intercepts link the operation to a specific unit, organization, or state program?' },
+            { id: 'defector', label: 'Defector / HUMINT', desc: 'Has a defector, insider, or human source provided direct testimony linking the operation to a specific actor?' },
+          ];
+          var FACTOR_WEIGHTS = { ttp: 0.20, infra: 0.20, timing: 0.10, motive: 0.15, sigint: 0.20, defector: 0.15 };
+          var composite = Math.round(
+            ATTR_FACTORS.reduce(function(sum, f) { return sum + attrFactors[f.id] * FACTOR_WEIGHTS[f.id]; }, 0)
+          );
+          var confLevel = composite >= 80 ? 'HIGH' : composite >= 50 ? 'MODERATE' : 'LOW';
+          var confColor = composite >= 80 ? C.green : composite >= 50 ? C.amber : C.red;
+
+          var REAL_CASES = [
+            { id: 'solarwinds', name: 'SolarWinds (2020)', level: 'HIGH', score: 88, factors: { ttp: 90, infra: 75, timing: 80, motive: 95, sigint: 92, defector: 60 }, notes: 'USG formally attributed to SVR (APT29). Strong TTP match, SIGINT corroboration, clear geopolitical motive. Infrastructure reuse was deliberately minimized by the actor.' },
+            { id: 'sony', name: 'Sony Hack (2014)', level: 'HIGH', score: 82, factors: { ttp: 85, infra: 80, timing: 75, motive: 90, sigint: 85, defector: 40 }, notes: 'FBI attributed to North Korea (Lazarus Group). Strong infrastructure overlap with prior DPRK operations. Clear retaliatory motive (The Interview). Limited HUMINT corroboration.' },
+            { id: 'dnc', name: 'DNC Hack (2016)', level: 'HIGH', score: 85, factors: { ttp: 95, infra: 85, timing: 85, motive: 90, sigint: 80, defector: 50 }, notes: 'IC consensus: GRU Units 26165/74455. CrowdStrike TTP analysis, Guccifer 2.0 infrastructure analysis, Dutch SIGINT access to GRU cameras. Strong multi-INT convergence.' },
+            { id: 'opm', name: 'OPM Breach (2015)', level: 'MODERATE', score: 68, factors: { ttp: 75, infra: 60, timing: 65, motive: 85, sigint: 55, defector: 30 }, notes: 'Attributed to China (MSS-linked). TTP overlap with Deep Panda/APT30. Strong motive (counterintelligence value of SF-86 data). Limited public SIGINT evidence. No known defector testimony.' },
+          ];
+
+          return React.createElement(React.Fragment, null,
+            React.createElement(TerminalCard, { title: 'ATTRIBUTION CONFIDENCE BUILDER', ledColor: C.amber, style: { marginBottom: 16 } },
+              React.createElement('p', { style: { fontSize: 12, color: C.tx, lineHeight: 1.7, marginBottom: 16 } },
+                'Given a cyber operation, evaluate six attribution factors by adjusting each slider. The composite attribution confidence updates live using a weighted model. Compare your assessment to real-world cases where the IC made public attributions.'
+              ),
+
+              /* Factor sliders */
+              React.createElement('div', { style: { display: 'grid', gap: 10, marginBottom: 20 } },
+                ATTR_FACTORS.map(function(f) {
+                  var val = attrFactors[f.id];
+                  var barColor = val >= 80 ? C.green : val >= 50 ? C.amber : C.red;
+                  return React.createElement('div', { key: f.id, style: { padding: '10px 12px', background: C.card, border: '1px solid ' + C.cardBd } },
+                    React.createElement('div', { style: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 } },
+                      React.createElement('span', { style: { fontFamily: CY_MONO, fontSize: 11, color: C.tx, fontWeight: 600 } }, f.label),
+                      React.createElement('span', { style: { fontFamily: CY_MONO, fontSize: 12, color: barColor, fontWeight: 700 } }, val + '%')
+                    ),
+                    React.createElement('p', { style: { fontSize: 10, color: C.tx3, marginBottom: 6, lineHeight: 1.5 } }, f.desc),
+                    React.createElement('input', {
+                      type: 'range', min: 0, max: 100, value: val,
+                      onChange: function(e) {
+                        var nv = parseInt(e.target.value);
+                        setAttrFactors(function(prev) { var c = Object.assign({}, prev); c[f.id] = nv; return c; });
+                      },
+                      style: { width: '100%', accentColor: barColor, cursor: 'pointer' }
+                    }),
+                    React.createElement('div', { style: { display: 'flex', justifyContent: 'space-between', fontFamily: CY_MONO, fontSize: 9, color: C.tx3 } },
+                      React.createElement('span', null, '0 — No evidence'),
+                      React.createElement('span', null, '100 — Confirmed')
+                    )
+                  );
+                })
+              ),
+
+              /* Composite confidence display */
+              React.createElement('div', { style: { padding: 16, background: confColor + '08', border: '2px solid ' + confColor, textAlign: 'center', marginBottom: 20 } },
+                React.createElement('div', { style: { fontFamily: CY_MONO, fontSize: 9, color: confColor, letterSpacing: '.12em', marginBottom: 4 } }, 'COMPOSITE ATTRIBUTION CONFIDENCE'),
+                React.createElement('div', { style: { fontFamily: CY_MONO, fontSize: 36, fontWeight: 700, color: confColor } }, composite + '%'),
+                React.createElement('div', { style: { fontFamily: CY_MONO, fontSize: 14, color: confColor, letterSpacing: '.1em' } }, confLevel + ' CONFIDENCE'),
+                React.createElement('div', { style: { height: 6, background: C.line, borderRadius: 3, marginTop: 12 } },
+                  React.createElement('div', { style: { height: '100%', width: composite + '%', background: confColor, borderRadius: 3, transition: 'all .3s' } })
+                ),
+                React.createElement('div', { style: { display: 'flex', justifyContent: 'space-between', fontFamily: CY_MONO, fontSize: 8, color: C.tx3, marginTop: 4 } },
+                  React.createElement('span', null, 'LOW'), React.createElement('span', null, 'MODERATE'), React.createElement('span', null, 'HIGH')
+                )
+              ),
+
+              /* Weight breakdown */
+              React.createElement('div', { style: { fontFamily: CY_MONO, fontSize: 10, color: C.tx3, marginBottom: 16 } },
+                'Factor weights: TTP 20% | Infrastructure 20% | SIGINT 20% | Motive 15% | Defector 15% | Timing 10%'
+              ),
+
+              /* Real case comparisons */
+              React.createElement('div', { style: { fontFamily: CY_MONO, fontSize: 12, color: C.amber, marginBottom: 10, letterSpacing: '.06em' } }, '> CASE COMPARISON'),
+              React.createElement('div', { style: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 } },
+                REAL_CASES.map(function(rc) {
+                  var isExpanded = attrCompare === rc.id;
+                  return React.createElement('div', {
+                    key: rc.id,
+                    onClick: function() { setAttrCompare(isExpanded ? null : rc.id); },
+                    style: {
+                      padding: 12, background: C.card, border: '1px solid ' + (isExpanded ? C.amber : C.cardBd),
+                      cursor: 'pointer', borderRadius: 0,
+                    }
+                  },
+                    React.createElement('div', { style: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 } },
+                      React.createElement('span', { style: { fontFamily: CY_MONO, fontSize: 11, color: C.tx, fontWeight: 600 } }, rc.name),
+                      React.createElement('span', { style: {
+                        fontFamily: CY_MONO, fontSize: 10, padding: '2px 6px',
+                        background: rc.level === 'HIGH' ? C.greenBg : C.amberBg,
+                        color: rc.level === 'HIGH' ? C.green : C.amber,
+                        border: '1px solid ' + (rc.level === 'HIGH' ? C.green + '30' : C.amber + '30'),
+                      } }, rc.level + ' (' + rc.score + '%)')
+                    ),
+                    isExpanded && React.createElement('div', { style: { marginTop: 8 } },
+                      React.createElement('p', { style: { fontSize: 11, color: C.tx2, lineHeight: 1.6, marginBottom: 8 } }, rc.notes),
+                      React.createElement('div', { style: { display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 4 } },
+                        ATTR_FACTORS.map(function(f) {
+                          var caseVal = rc.factors[f.id];
+                          var userVal = attrFactors[f.id];
+                          var diff = userVal - caseVal;
+                          return React.createElement('div', { key: f.id, style: { padding: '4px 6px', background: 'rgba(0,0,0,.3)' } },
+                            React.createElement('div', { style: { fontFamily: CY_MONO, fontSize: 8, color: C.tx3 } }, f.label),
+                            React.createElement('div', { style: { fontFamily: CY_MONO, fontSize: 11, color: C.tx } }, caseVal + '%'),
+                            React.createElement('div', { style: { fontFamily: CY_MONO, fontSize: 9, color: diff > 0 ? C.green : diff < 0 ? C.red : C.tx3 } },
+                              (diff > 0 ? '+' : '') + diff + ' vs yours'
+                            )
+                          );
+                        })
+                      )
+                    )
+                  );
+                })
+              )
+            )
+          );
+        })()
       )
     )
   );

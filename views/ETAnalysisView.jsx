@@ -391,12 +391,16 @@ function ETAnalysisView({ setView }) {
   const Serif = ET_Serif;
   const Sans = ET_Sans;
 
-  const [mode, setMode] = React.useState('challenge'); // challenge | review | framework | ladder
+  const [mode, setMode] = React.useState('challenge'); // challenge | review | framework | ladder | trolley | oversight
   const [currentRung, setCurrentRung] = React.useState(0);
   const [evaluations, setEvaluations] = React.useState({});
   const [decisions, setDecisions] = React.useState({});
   const [revealed, setRevealed] = React.useState({});
   const [tipId, setTipId] = React.useState(null);
+  const [trolleyIdx, setTrolleyIdx] = React.useState(0);
+  const [trolleyChoices, setTrolleyChoices] = React.useState({});
+  const [trolleyRevealed, setTrolleyRevealed] = React.useState({});
+  const [oversightDim, setOversightDim] = React.useState(null);
 
   const topRef = React.useRef(null);
 
@@ -1260,6 +1264,8 @@ function ETAnalysisView({ setView }) {
       { id: 'ladder', label: 'Ladder', desc: 'SVG Visualization' },
       { id: 'review', label: 'Review', desc: 'Your Results' },
       { id: 'framework', label: 'Framework', desc: '7 Criteria Reference' },
+      { id: 'trolley', label: 'Trolley', desc: 'Ethical Dilemmas' },
+      { id: 'oversight', label: 'Oversight', desc: '5-Nation Comparison' },
     ];
     return (
       <div style={{ display: 'flex', gap: 4, marginBottom: 20 }}>
@@ -1283,6 +1289,434 @@ function ETAnalysisView({ setView }) {
       </div>
     );
   }, [mode]);
+
+  // ── Trolley Problems data ─────────────────────────────────────
+  const TROLLEY_DILEMMAS = React.useMemo(() => [
+    {
+      id: 0, title: 'The Targeted Strike',
+      scenario: 'Intelligence confirms a high-value terrorist leader is meeting in a residential compound. A drone strike will almost certainly kill him, but the compound houses 8-12 civilians including children. The leader is planning an imminent attack expected to kill 50+ people. No ground operation is feasible in the timeline.',
+      options: [
+        { label: 'Authorize the strike', framework: 'Utilitarian', analysis: 'The utilitarian calculus favors action: 50+ lives saved vs. 8-12 lost. This reasoning underpins proportionality doctrine in Just War Theory. However, it treats lives as fungible units, ignoring the moral distinction between combatants and non-combatants that is central to international humanitarian law.' },
+        { label: 'Delay and seek alternatives', framework: 'Deontological', analysis: 'Kant\'s categorical imperative prohibits using civilians as mere means to an end. The deontological position holds that deliberately accepting civilian casualties makes you morally culpable regardless of outcome. The "doctrine of double effect" attempts to reconcile this by distinguishing intended vs. foreseen consequences.' },
+        { label: 'Cancel and accept the risk', framework: 'Virtue Ethics', analysis: 'A virtue ethicist asks: what kind of person/institution do we become by normalizing civilian casualties? The precedent set shapes institutional character. Intelligence agencies that routinely accept collateral damage risk what Aristotle called moral corruption through habit -- each decision makes the next easier.' },
+      ],
+    },
+    {
+      id: 1, title: 'The Bulk Collection Dilemma',
+      scenario: 'A signals intelligence program can collect metadata on all communications in a foreign country with which you have a mutual defense treaty. Analysis of this data would likely reveal a mole in your own intelligence service who has been leaking operations, resulting in agent deaths. However, the program collects on millions of innocent allied citizens and, if exposed, would severely damage the alliance.',
+      options: [
+        { label: 'Implement bulk collection', framework: 'Utilitarian', analysis: 'The expected value is positive: finding the mole saves lives and preserves future operations. Metadata collection is arguably less intrusive than content interception. The NSA\'s STELLARWIND program used similar reasoning. However, the utility calculation must include the probability and cost of exposure -- the Snowden disclosures showed these costs are catastrophic and enduring.' },
+        { label: 'Targeted collection only', framework: 'Deontological', analysis: 'Mass surveillance violates the privacy rights of millions who are neither suspects nor threats. Bellaby\'s "right intention" criterion requires that intelligence collection target genuine threats, not entire populations. The ECHR\'s Weber and Saravia v. Germany established that bulk collection requires proportionality safeguards that are structurally impossible when collecting everything.' },
+        { label: 'Inform the ally and investigate jointly', framework: 'Virtue Ethics', analysis: 'Trust and reciprocity are virtues that sustain alliances. Secretly surveilling an ally corrodes the institutional virtue of good faith. A joint investigation honors the relationship even at the cost of operational efficiency. The Five Eyes alliance functions precisely because of trust -- violating it undermines the entire intelligence-sharing architecture.' },
+      ],
+    },
+    {
+      id: 2, title: 'The Burned Source',
+      scenario: 'Your most productive human source inside a hostile government reports that a terrorist attack on your homeland is being planned, but the intelligence is single-source and unverified. Acting on the intelligence will almost certainly reveal the source\'s identity, leading to their execution. Not acting risks the attack succeeding. The source did not consent to being exposed.',
+      options: [
+        { label: 'Act on the intelligence immediately', framework: 'Utilitarian', analysis: 'If the attack is genuine, preventing mass casualties outweighs one life. But single-source intelligence has a high false positive rate -- the Iraq WMD case demonstrated how single-source reporting (CURVEBALL) can drive catastrophic decisions. The utilitarian must discount by the probability the intelligence is accurate, which is inherently unknown for single-source reporting.' },
+        { label: 'Seek corroboration before acting', framework: 'Deontological', analysis: 'The duty of care to sources is a foundational obligation in intelligence ethics. Sources accept risk based on an implicit contract of protection. Breaching that contract instrumentalizes the source -- using them as a means to security. The CIA\'s "duty of care" doctrine holds that source protection is a categorical obligation, not a factor to be weighed.' },
+        { label: 'Warn through alternative channels that obscure the source', framework: 'Virtue Ethics', analysis: 'Creative problem-solving that honors multiple obligations reflects practical wisdom (phronesis). Intelligence professionals who develop sophisticated warning mechanisms demonstrate the virtue of craft excellence while preserving institutional trustworthiness. However, "alternative channels" may not exist, and the attempt to obscure sourcing may itself introduce deception into partner relationships.' },
+      ],
+    },
+    {
+      id: 3, title: 'The Allied Espionage Question',
+      scenario: 'Your service has the technical capability to penetrate the encrypted communications of a close ally\'s defense ministry. Doing so would reveal whether the ally is secretly negotiating a defense pact with your strategic adversary -- information critical to your national security. The ally is a democracy with shared values, a treaty partner, and a major trading partner.',
+      options: [
+        { label: 'Conduct the operation', framework: 'Utilitarian', analysis: 'National security interests may justify espionage even against allies when vital interests are at stake. The Pollard case (Israel/US) and the Merkel phone-tapping (US/Germany) show that allies routinely spy on each other. The utilitarian argues that the information asymmetry itself is a threat -- if the ally IS negotiating with your adversary, not knowing is strategically dangerous.' },
+        { label: 'Decline and rely on diplomatic channels', framework: 'Deontological', analysis: 'Espionage against allies violates the implicit norms of alliance relationships. Bellaby\'s "just cause" criterion requires that the target pose a genuine threat -- and an ally exploring diplomatic options is exercising sovereignty, not threatening you. The categorical imperative asks: could you universalize ally-on-ally espionage? If every ally spied on every other, the alliance system collapses.' },
+      ],
+    },
+    {
+      id: 4, title: 'The Enhanced Interrogation Scenario',
+      scenario: 'A captured operative of a terrorist cell claims to know the location of a radiological device planted in a major city, set to detonate in 36 hours. Standard interrogation has produced no actionable intelligence in 12 hours. Enhanced techniques (sleep deprivation, stress positions, waterboarding) might extract the information. The operative may be lying about having the information to increase his perceived value.',
+      options: [
+        { label: 'Authorize enhanced techniques', framework: 'Utilitarian', analysis: 'The "ticking bomb" scenario is the strongest case for enhanced interrogation: the stakes are catastrophic and the timeline is urgent. However, the Senate Intelligence Committee\'s 2014 study of the CIA program found that enhanced techniques produced no unique intelligence that prevented attacks. The utilitarian calculation is undermined by the empirical evidence that torture produces unreliable intelligence -- subjects say whatever stops the pain.' },
+        { label: 'Continue standard interrogation only', framework: 'Deontological', analysis: 'The absolute prohibition on torture is one of the few jus cogens norms in international law -- it cannot be derogated under any circumstances. The UN Convention Against Torture, Common Article 3 of the Geneva Conventions, and the Eighth Amendment all prohibit cruel treatment regardless of the stakes. The deontological position holds that some acts are inherently wrong, and no consequence can justify them.' },
+        { label: 'Pursue all non-coercive alternatives simultaneously', framework: 'Virtue Ethics', analysis: 'The virtue ethics perspective asks what kind of institution permits torture and what kind of people carry it out. The CIA\'s enhanced interrogation program caused documented psychological harm to interrogators as well as subjects. Aristotle\'s concept of moral injury suggests that performing cruel acts damages the character of the actor, creating institutional pathology that extends far beyond the individual case.' },
+      ],
+    },
+  ], []);
+
+  // ── Trolley Renderer ──────────────────────────────────────────
+  const renderTrolley = React.useCallback(() => {
+    const dilemma = TROLLEY_DILEMMAS[trolleyIdx];
+    const chosen = trolleyChoices[trolleyIdx];
+    const isRevealed = trolleyRevealed[trolleyIdx];
+
+    return (
+      <div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
+          <div style={{ width: 4, height: 28, background: C.gold, borderRadius: 2 }} />
+          <h2 style={{ fontFamily: Serif, fontSize: 22, fontWeight: 700, color: C.tx, margin: 0 }}>
+            Intelligence Ethics Trolley Problems
+          </h2>
+        </div>
+        <p style={{ fontFamily: Serif, fontSize: 13, color: C.tx2, lineHeight: 1.65, marginBottom: 20, maxWidth: 680 }}>
+          Five ethical dilemmas drawn from real intelligence contexts. Each forces a choice between competing moral frameworks. There are no clean answers -- only trade-offs that reveal your ethical reasoning.
+        </p>
+
+        {/* Dilemma navigation */}
+        <div style={{ display: 'flex', gap: 4, marginBottom: 20 }}>
+          {TROLLEY_DILEMMAS.map((d, i) => (
+            <button key={i} onClick={() => setTrolleyIdx(i)} style={{
+              flex: 1, padding: '6px 8px', borderRadius: 4, cursor: 'pointer',
+              background: trolleyIdx === i ? C.goldBg : 'transparent',
+              border: trolleyIdx === i ? '1px solid ' + C.goldDm : '1px solid ' + C.line,
+              textAlign: 'center',
+            }}>
+              <span style={{ fontFamily: Mono, fontSize: 11, fontWeight: 600, color: trolleyIdx === i ? C.gold : C.tx3, display: 'block' }}>
+                {i + 1}
+              </span>
+              <span style={{ fontFamily: Sans, fontSize: 10, color: C.tx3 }}>
+                {trolleyChoices[i] !== undefined ? '\u2713' : '\u2014'}
+              </span>
+            </button>
+          ))}
+        </div>
+
+        {/* Current dilemma */}
+        <div style={{
+          background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6,
+          padding: 24, marginBottom: 20, borderTop: '3px solid ' + C.gold,
+        }}>
+          <div style={{ fontFamily: Mono, fontSize: 10, letterSpacing: '.12em', color: C.goldDm, marginBottom: 8 }}>
+            DILEMMA {trolleyIdx + 1} OF 5
+          </div>
+          <h3 style={{ fontFamily: Serif, fontSize: 18, color: C.tx, marginBottom: 12, fontWeight: 600 }}>
+            {dilemma.title}
+          </h3>
+          <p style={{ fontFamily: Serif, fontSize: 13, color: C.tx2, lineHeight: 1.7, marginBottom: 20, borderLeft: '3px solid ' + C.line, paddingLeft: 14 }}>
+            {dilemma.scenario}
+          </p>
+
+          {/* Options */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+            {dilemma.options.map((opt, oi) => {
+              const isChosen = chosen === oi;
+              return (
+                <div key={oi}>
+                  <button onClick={() => {
+                    if (chosen === undefined) {
+                      setTrolleyChoices(prev => ({ ...prev, [trolleyIdx]: oi }));
+                    }
+                  }} style={{
+                    width: '100%', textAlign: 'left', padding: '12px 16px', borderRadius: 4, cursor: chosen === undefined ? 'pointer' : 'default',
+                    background: isChosen ? C.goldBg : 'transparent',
+                    border: isChosen ? '2px solid ' + C.gold : '1px solid ' + C.line,
+                    opacity: chosen !== undefined && !isChosen ? 0.5 : 1,
+                  }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                      <span style={{
+                        fontFamily: Mono, fontSize: 11, fontWeight: 700,
+                        color: isChosen ? C.gold : C.tx3, minWidth: 20,
+                      }}>
+                        {String.fromCharCode(65 + oi)}
+                      </span>
+                      <span style={{ fontFamily: Sans, fontSize: 13, color: C.tx, fontWeight: 500 }}>
+                        {opt.label}
+                      </span>
+                      <span style={{
+                        fontFamily: Mono, fontSize: 10, color: C.tx3, marginLeft: 'auto',
+                        padding: '2px 8px', borderRadius: 3, background: C.line,
+                      }}>
+                        {opt.framework}
+                      </span>
+                    </div>
+                  </button>
+                  {/* Show analysis after reveal */}
+                  {isRevealed && (
+                    <div style={{
+                      marginTop: 6, padding: '10px 16px 10px 36px',
+                      background: isChosen ? 'rgba(196,160,64,.04)' : 'transparent',
+                      borderLeft: '2px solid ' + (isChosen ? C.gold : C.line),
+                      borderRadius: '0 4px 4px 0',
+                    }}>
+                      <div style={{ fontFamily: Mono, fontSize: 10, color: isChosen ? C.gold : C.tx3, marginBottom: 4, letterSpacing: '.08em' }}>
+                        {opt.framework.toUpperCase()} ANALYSIS
+                      </div>
+                      <p style={{ fontFamily: Serif, fontSize: 12, color: C.tx2, lineHeight: 1.7, margin: 0 }}>
+                        {opt.analysis}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Reveal button */}
+          {chosen !== undefined && !isRevealed && (
+            <button onClick={() => setTrolleyRevealed(prev => ({ ...prev, [trolleyIdx]: true }))} style={{
+              marginTop: 16, padding: '10px 24px', borderRadius: 4, cursor: 'pointer',
+              background: C.goldBg, border: '1px solid ' + C.goldDm, color: C.gold,
+              fontFamily: Mono, fontSize: 12, letterSpacing: '.05em',
+            }}>
+              REVEAL ALL FRAMEWORK ANALYSES
+            </button>
+          )}
+
+          {/* Navigation */}
+          <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 20, paddingTop: 12, borderTop: '1px solid ' + C.line }}>
+            <button onClick={() => setTrolleyIdx(Math.max(0, trolleyIdx - 1))} disabled={trolleyIdx === 0} style={{
+              padding: '6px 16px', borderRadius: 4, cursor: trolleyIdx === 0 ? 'not-allowed' : 'pointer',
+              background: 'transparent', border: '1px solid ' + C.line, color: C.tx3,
+              fontFamily: Mono, fontSize: 11, opacity: trolleyIdx === 0 ? 0.3 : 1,
+            }}>
+              {'\u2190'} Previous
+            </button>
+            <button onClick={() => setTrolleyIdx(Math.min(4, trolleyIdx + 1))} disabled={trolleyIdx === 4} style={{
+              padding: '6px 16px', borderRadius: 4, cursor: trolleyIdx === 4 ? 'not-allowed' : 'pointer',
+              background: 'transparent', border: '1px solid ' + C.line, color: C.tx3,
+              fontFamily: Mono, fontSize: 11, opacity: trolleyIdx === 4 ? 0.3 : 1,
+            }}>
+              Next {'\u2192'}
+            </button>
+          </div>
+        </div>
+
+        {/* Completion summary */}
+        {Object.keys(trolleyChoices).length === 5 && (
+          <div style={{
+            background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6,
+            padding: 20, borderTop: '3px solid ' + C.green,
+          }}>
+            <div style={{ fontFamily: Mono, fontSize: 11, letterSpacing: '.1em', color: C.green, marginBottom: 10 }}>
+              ETHICAL PROFILE SUMMARY
+            </div>
+            {(() => {
+              var frameworkCounts = { Utilitarian: 0, Deontological: 0, 'Virtue Ethics': 0 };
+              TROLLEY_DILEMMAS.forEach((d, i) => {
+                var c = trolleyChoices[i];
+                if (c !== undefined && d.options[c]) frameworkCounts[d.options[c].framework]++;
+              });
+              var dominant = Object.entries(frameworkCounts).sort((a, b) => b[1] - a[1])[0];
+              return (
+                <div>
+                  <div style={{ display: 'flex', gap: 16, marginBottom: 12 }}>
+                    {Object.entries(frameworkCounts).map(([fw, ct]) => (
+                      <div key={fw} style={{ flex: 1, textAlign: 'center', padding: '8px 0', background: C.line, borderRadius: 4 }}>
+                        <div style={{ fontFamily: Mono, fontSize: 18, fontWeight: 700, color: ct === dominant[1] ? C.gold : C.tx3 }}>{ct}</div>
+                        <div style={{ fontFamily: Sans, fontSize: 11, color: C.tx2 }}>{fw}</div>
+                      </div>
+                    ))}
+                  </div>
+                  <p style={{ fontFamily: Serif, fontSize: 13, color: C.tx2, lineHeight: 1.7 }}>
+                    Your dominant framework: <strong style={{ color: C.gold }}>{dominant[0]}</strong>. In real intelligence ethics, no single framework is sufficient. The Bellaby framework integrates elements of all three, requiring both consequentialist proportionality analysis and deontological rights constraints, guided by virtue-based institutional integrity.
+                  </p>
+                </div>
+              );
+            })()}
+          </div>
+        )}
+      </div>
+    );
+  }, [trolleyIdx, trolleyChoices, trolleyRevealed, TROLLEY_DILEMMAS]);
+
+  // ── Oversight Architecture data ───────────────────────────────
+  const OVERSIGHT_COUNTRIES = React.useMemo(() => [
+    { code: 'US', name: 'United States', flag: 'US' },
+    { code: 'UK', name: 'United Kingdom', flag: 'UK' },
+    { code: 'DE', name: 'Germany', flag: 'DE' },
+    { code: 'AU', name: 'Australia', flag: 'AU' },
+    { code: 'IL', name: 'Israel', flag: 'IL' },
+  ], []);
+
+  const OVERSIGHT_DIMS = React.useMemo(() => [
+    {
+      id: 'legislative', label: 'Legislative Oversight',
+      desc: 'How effectively does the legislature oversee intelligence activities?',
+      ratings: {
+        US: { score: 4, label: 'Strong', detail: 'SSCI and HPSCI have subpoena power, budget authority, and covert action notification requirements under the National Security Act. Gang of Eight briefings for most sensitive programs. Post-Church Committee reforms established robust statutory framework.' },
+        UK: { score: 3, label: 'Moderate', detail: 'Intelligence and Security Committee (ISC) has statutory basis since 1994, reformed in 2013 with power to require information. However, members are appointed by PM (not elected by Parliament), and the committee has been criticized for being too close to the agencies it oversees.' },
+        DE: { score: 5, label: 'Very Strong', detail: 'Parliamentary Control Panel (PKGr) has constitutional basis, cross-party membership, and can compel testimony. The G-10 Commission provides additional judicial-legislative hybrid oversight of communications surveillance. Post-NSA scandal reforms in 2016 significantly strengthened oversight powers.' },
+        AU: { score: 3, label: 'Moderate', detail: 'Parliamentary Joint Committee on Intelligence and Security (PJCIS) reviews legislation and administration but has limited operational oversight. Inspector-General of Intelligence and Security (IGIS) fills gaps. Recent reforms expanded PJCIS remit but access to operational detail remains constrained.' },
+        IL: { score: 2, label: 'Weak', detail: 'Knesset Subcommittee on Intelligence has limited powers and access. No statutory notification requirements for covert action. Oversight is largely reactive, responding to scandals rather than conducting systematic review. The security establishment maintains significant autonomy from legislative scrutiny.' },
+      },
+    },
+    {
+      id: 'judicial', label: 'Judicial Review',
+      desc: 'What judicial mechanisms authorize and review intelligence collection?',
+      ratings: {
+        US: { score: 4, label: 'Strong', detail: 'Foreign Intelligence Surveillance Court (FISC) reviews warrant applications under FISA. Post-Snowden USA FREEDOM Act reformed bulk collection. However, FISC operates ex parte (only government appears), approval rate exceeds 99%, and court opinions were classified until recently.' },
+        UK: { score: 4, label: 'Strong', detail: 'Investigatory Powers Tribunal (IPT) adjudicates complaints about surveillance. The Investigatory Powers Act 2016 requires "double-lock" -- both Secretary of State warrant and Judicial Commissioner approval. This dual authorization is considered a model system internationally.' },
+        DE: { score: 4, label: 'Strong', detail: 'Federal Constitutional Court (BVerfG) has repeatedly struck down surveillance laws as unconstitutional. The 2020 BND Act ruling required individualized judicial authorization for foreign surveillance. German courts have been more willing to constrain intelligence powers than courts in any other Five Eyes-adjacent country.' },
+        AU: { score: 3, label: 'Moderate', detail: 'Attorney-General issues warrants for domestic intelligence (ASIO), not a judge. ASIS foreign operations require ministerial authorization only. The 2017 review recommended judicial warrant authorization but this has not been fully implemented.' },
+        IL: { score: 2, label: 'Weak', detail: 'No dedicated intelligence court. Supreme Court has jurisdiction but rarely intervenes in security matters, deferring to military/intelligence judgment. The legal framework relies heavily on emergency regulations dating to the British Mandate period, which provide broad executive discretion.' },
+      },
+    },
+    {
+      id: 'ig', label: 'Inspector General',
+      desc: 'How robust is the internal accountability mechanism?',
+      ratings: {
+        US: { score: 5, label: 'Very Strong', detail: 'Each agency has a statutory Inspector General with independent investigative authority. The IC IG coordinates across agencies. IGs can receive whistleblower complaints, conduct audits, and report to Congress. The system is the most developed IG architecture in any democracy.' },
+        UK: { score: 3, label: 'Moderate', detail: 'The Investigatory Powers Commissioner\'s Office (IPCO) inspects agency compliance with warrants and authorizations. Annual reports are published. However, IPCO is more of an audit function than an investigative body -- it verifies compliance rather than proactively investigating misconduct.' },
+        DE: { score: 3, label: 'Moderate', detail: 'The Federal Commissioner for Data Protection (BfDI) has oversight authority over intelligence data handling. Individual agency internal review mechanisms exist but vary in independence and effectiveness. The system is more fragmented than the US IG model.' },
+        AU: { score: 4, label: 'Strong', detail: 'The Inspector-General of Intelligence and Security (IGIS) has broad jurisdiction, own-motion inquiry power, and statutory independence. The IGIS model is considered one of the stronger IG systems internationally, with the ability to investigate any intelligence activity without requiring a complaint.' },
+        IL: { score: 2, label: 'Weak', detail: 'The State Comptroller has general oversight authority but limited intelligence expertise. Mossad and Shin Bet have internal review mechanisms but these are not independent. No dedicated intelligence inspector general exists with statutory authority to investigate across agencies.' },
+      },
+    },
+    {
+      id: 'whistleblower', label: 'Whistleblower Protection',
+      desc: 'Are intelligence employees protected when reporting wrongdoing?',
+      ratings: {
+        US: { score: 3, label: 'Moderate', detail: 'Intelligence Community Whistleblower Protection Act provides channels for reporting to Congress, but protection is limited compared to other federal employees. IC whistleblowers cannot file in court; they must use internal channels. The Snowden case demonstrated the gap between statutory protection and practical reality.' },
+        UK: { score: 2, label: 'Weak', detail: 'Official Secrets Act criminalizes unauthorized disclosures with no public interest defense. Intelligence employees who report externally face prosecution. The Katharine Gun case (GCHQ translator who leaked Iraq war intelligence) demonstrated the legal risks. Internal channels exist but are perceived as ineffective.' },
+        DE: { score: 3, label: 'Moderate', detail: 'EU Whistleblower Directive (2019) implemented into German law provides protections, but intelligence services have carve-outs for classified information. BND employees can report to PKGr through protected channels. Practical protection depends heavily on institutional culture, which varies by agency.' },
+        AU: { score: 3, label: 'Moderate', detail: 'Public Interest Disclosure Act provides a framework, and IGIS can receive protected disclosures. However, the Intelligence Services Act criminalizes unauthorized disclosures with penalties up to 10 years imprisonment, creating a chilling effect. The Witness K case (prosecution for exposing Timor-Leste bugging) illustrated the limits.' },
+        IL: { score: 1, label: 'Very Weak', detail: 'No formal whistleblower protection for intelligence employees. Military censorship (the Censor) controls publication of security-related information. Internal reporting channels exist within agencies but offer no statutory protection against retaliation. The culture strongly discourages external reporting.' },
+      },
+    },
+    {
+      id: 'classification', label: 'Classification Authority',
+      desc: 'How well does the classification system balance secrecy with accountability?',
+      ratings: {
+        US: { score: 3, label: 'Moderate', detail: 'Executive Order 13526 governs classification with mandatory declassification review (MDR) and the Interagency Security Classification Appeals Panel (ISCAP). However, massive overclassification is widely acknowledged -- an estimated 50-90% of classified material does not warrant protection. The system enables secrecy to shield embarrassment rather than sources.' },
+        UK: { score: 3, label: 'Moderate', detail: 'Government Security Classifications (2014) simplified to three tiers (Official, Secret, Top Secret) from the previous more complex system. 30-year rule (now 20-year) governs declassification. Freedom of Information Act has national security exemptions. The system is simpler but the exemptions are broad.' },
+        DE: { score: 4, label: 'Strong', detail: 'Federal Security Screening Act governs classification. Strong freedom of information law (IFG) with limited security exemptions. The Federal Archives Act requires systematic declassification after 30 years with narrower exemptions than Anglo-Saxon systems. Constitutional Court has ruled that classification cannot be used to evade democratic accountability.' },
+        AU: { score: 3, label: 'Moderate', detail: 'Protective Security Policy Framework governs classification. Archives Act requires 20-year declassification review but agencies can exempt national security records. The "neither confirm nor deny" doctrine is applied broadly. Recent reforms aim to reduce overclassification but implementation is ongoing.' },
+        IL: { score: 2, label: 'Weak', detail: 'Military Censor reviews all publications for security content. Archives Law allows 50-year classification with extensions. Declassification is slow and discretionary. The system prioritizes secrecy over transparency to a greater degree than comparable democracies, reflecting the ongoing security environment.' },
+      },
+    },
+  ], []);
+
+  // ── Oversight Renderer ────────────────────────────────────────
+  const renderOversight = React.useCallback(() => {
+    var scoreColors = function(s) {
+      if (s >= 5) return C.green;
+      if (s >= 4) return '#5a9a6a';
+      if (s >= 3) return C.amber;
+      if (s >= 2) return '#c08040';
+      return C.red;
+    };
+    var barWidth = function(s) { return (s / 5 * 100) + '%'; };
+
+    return (
+      <div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
+          <div style={{ width: 4, height: 28, background: C.blue, borderRadius: 2 }} />
+          <h2 style={{ fontFamily: Serif, fontSize: 22, fontWeight: 700, color: C.tx, margin: 0 }}>
+            Oversight Architecture Analyzer
+          </h2>
+        </div>
+        <p style={{ fontFamily: Serif, fontSize: 13, color: C.tx2, lineHeight: 1.65, marginBottom: 20, maxWidth: 680 }}>
+          Compare intelligence oversight mechanisms across five democracies. Each dimension is rated 1-5 based on statutory authority, practical effectiveness, and institutional independence. Click any cell for detailed analysis.
+        </p>
+
+        {/* Matrix table */}
+        <div style={{ overflowX: 'auto', marginBottom: 20 }}>
+          <table style={{ borderCollapse: 'collapse', width: '100%' }}>
+            <thead>
+              <tr>
+                <th style={{ padding: '8px 12px', fontFamily: Mono, fontSize: 11, color: C.tx3, textAlign: 'left', borderBottom: '2px solid ' + C.line, letterSpacing: '.06em' }}>
+                  DIMENSION
+                </th>
+                {OVERSIGHT_COUNTRIES.map(c => (
+                  <th key={c.code} style={{ padding: '8px 12px', fontFamily: Mono, fontSize: 11, color: C.tx3, textAlign: 'center', borderBottom: '2px solid ' + C.line, letterSpacing: '.06em', minWidth: 80 }}>
+                    {c.code}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {OVERSIGHT_DIMS.map(dim => (
+                <tr key={dim.id}>
+                  <td style={{ padding: '10px 12px', fontFamily: Sans, fontSize: 12, color: C.tx, borderBottom: '1px solid ' + C.line, fontWeight: 500, cursor: 'pointer' }}
+                      onClick={() => setOversightDim(oversightDim === dim.id ? null : dim.id)}>
+                    {dim.label}
+                    <div style={{ fontFamily: Sans, fontSize: 11, color: C.tx3, marginTop: 2 }}>{dim.desc}</div>
+                  </td>
+                  {OVERSIGHT_COUNTRIES.map(ctry => {
+                    var r = dim.ratings[ctry.code];
+                    return (
+                      <td key={ctry.code} style={{
+                        padding: '10px 8px', textAlign: 'center', borderBottom: '1px solid ' + C.line,
+                        cursor: 'pointer',
+                        background: oversightDim === dim.id ? 'rgba(196,160,64,.03)' : 'transparent',
+                      }} onClick={() => setOversightDim(oversightDim === dim.id ? null : dim.id)}>
+                        <div style={{ fontFamily: Mono, fontSize: 16, fontWeight: 700, color: scoreColors(r.score), marginBottom: 2 }}>
+                          {r.score}
+                        </div>
+                        <div style={{ fontFamily: Sans, fontSize: 10, color: C.tx3 }}>{r.label}</div>
+                        <div style={{ height: 3, background: C.line, borderRadius: 2, marginTop: 4, overflow: 'hidden' }}>
+                          <div style={{ width: barWidth(r.score), height: '100%', background: scoreColors(r.score), borderRadius: 2 }} />
+                        </div>
+                      </td>
+                    );
+                  })}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Expanded dimension detail */}
+        {oversightDim && (() => {
+          var dim = OVERSIGHT_DIMS.find(d => d.id === oversightDim);
+          if (!dim) return null;
+          return (
+            <div style={{
+              background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6,
+              padding: 20, marginBottom: 20, borderTop: '3px solid ' + C.blue,
+            }}>
+              <div style={{ fontFamily: Mono, fontSize: 10, letterSpacing: '.12em', color: C.blueDm, marginBottom: 8 }}>
+                DETAILED COMPARISON: {dim.label.toUpperCase()}
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+                {OVERSIGHT_COUNTRIES.map(ctry => {
+                  var r = dim.ratings[ctry.code];
+                  return (
+                    <div key={ctry.code} style={{
+                      padding: '12px 14px', background: 'rgba(0,0,0,.15)', borderRadius: 4,
+                      borderLeft: '3px solid ' + scoreColors(r.score),
+                    }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
+                        <span style={{ fontFamily: Mono, fontSize: 12, fontWeight: 700, color: C.tx }}>{ctry.name}</span>
+                        <span style={{ fontFamily: Mono, fontSize: 11, color: scoreColors(r.score), fontWeight: 600 }}>{r.score}/5 {r.label}</span>
+                      </div>
+                      <p style={{ fontFamily: Serif, fontSize: 12, color: C.tx2, lineHeight: 1.7, margin: 0 }}>
+                        {r.detail}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })()}
+
+        {/* Country aggregate scores */}
+        <div style={{
+          background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6,
+          padding: 20, borderTop: '3px solid ' + C.gold,
+        }}>
+          <div style={{ fontFamily: Mono, fontSize: 10, letterSpacing: '.12em', color: C.goldDm, marginBottom: 12 }}>
+            AGGREGATE OVERSIGHT STRENGTH
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+            {OVERSIGHT_COUNTRIES.map(ctry => {
+              var total = OVERSIGHT_DIMS.reduce((sum, dim) => sum + dim.ratings[ctry.code].score, 0);
+              var pct = total / 25 * 100;
+              return (
+                <div key={ctry.code} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                  <span style={{ fontFamily: Mono, fontSize: 12, color: C.tx, minWidth: 100 }}>{ctry.name}</span>
+                  <div style={{ flex: 1, height: 8, background: C.line, borderRadius: 4, overflow: 'hidden' }}>
+                    <div style={{ width: pct + '%', height: '100%', background: scoreColors(Math.round(total / 5)), borderRadius: 4, transition: 'width .3s ease' }} />
+                  </div>
+                  <span style={{ fontFamily: Mono, fontSize: 12, fontWeight: 700, color: scoreColors(Math.round(total / 5)), minWidth: 40, textAlign: 'right' }}>
+                    {total}/25
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+          <p style={{ fontFamily: Serif, fontSize: 12, color: C.tx3, lineHeight: 1.65, marginTop: 14, borderTop: '1px solid ' + C.line, paddingTop: 12 }}>
+            Germany scores highest due to strong constitutional court oversight and post-reunification reforms. The United States has the most developed IG system but weaker whistleblower protections. Israel scores lowest, reflecting the tension between security imperatives and democratic accountability in an ongoing-conflict environment.
+          </p>
+        </div>
+      </div>
+    );
+  }, [oversightDim, OVERSIGHT_COUNTRIES, OVERSIGHT_DIMS]);
 
   // ── Main render ─────────────────────────────────────────────────
   return (
@@ -1371,6 +1805,8 @@ function ETAnalysisView({ setView }) {
         {mode === 'ladder' && renderLadderSVG()}
         {mode === 'review' && renderReview()}
         {mode === 'framework' && renderFramework()}
+        {mode === 'trolley' && renderTrolley()}
+        {mode === 'oversight' && renderOversight()}
       </div>
     </div>
   );

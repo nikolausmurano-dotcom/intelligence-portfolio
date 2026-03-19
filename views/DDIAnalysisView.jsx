@@ -324,6 +324,18 @@ function DDIAnalysisView({ setView }) {
   const [tipId, setTipId] = useState(null);
   const topRef = useRef(null);
 
+  // ── Top-level mode: lab | crisis | alliance ──────────────
+  const [topMode, setTopMode] = useState('lab');
+
+  // ── Crisis Decision Simulator state ──────────────────────
+  const [crisisId, setCrisisId] = useState(0);
+  const [crisisStep, setCrisisStep] = useState(0);
+  const [crisisChoices, setCrisisChoices] = useState([]);
+
+  // ── Alliance Reliability Calculator state ────────────────
+  const [allianceId, setAllianceId] = useState(0);
+  const [allianceFactors, setAllianceFactors] = useState({ threat: 50, institutional: 50, domestic: 50, asymmetric: 50, credibility: 50 });
+
   const C = DDI_C;
 
   // Scholarly tooltip renderer
@@ -1445,8 +1457,285 @@ function DDIAnalysisView({ setView }) {
           </div>
         </div>
 
-        <PhaseNav />
-        {renderPhase()}
+        {/* Top-level mode switcher */}
+        <div style={{ display: 'flex', gap: 4, marginBottom: 20, borderBottom: `1px solid ${C.line}`, paddingBottom: 10 }}>
+          {[['lab','Policy Lab'],['crisis','Crisis Simulator'],['alliance','Alliance Calculator']].map(([id,lbl]) => (
+            <button key={id} onClick={() => setTopMode(id)} style={{
+              padding: '6px 14px', borderRadius: 3, cursor: 'pointer',
+              background: topMode === id ? C.goldBg : 'transparent',
+              border: `1px solid ${topMode === id ? C.gold : C.line}`,
+              color: topMode === id ? C.gold : C.tx3,
+              fontFamily: Mono, fontSize: 11, fontWeight: 600, letterSpacing: '.04em',
+            }}>
+              {lbl}
+            </button>
+          ))}
+        </div>
+
+        {topMode === 'lab' && (
+          <div>
+            <PhaseNav />
+            {renderPhase()}
+          </div>
+        )}
+
+        {/* ════════════════════════════════════════════════════ */}
+        {/* CRISIS DECISION SIMULATOR                           */}
+        {/* ════════════════════════════════════════════════════ */}
+        {topMode === 'crisis' && (() => {
+          const CRISES = [
+            { id: 'cuban', name: 'Cuban Missile Crisis (1962)', context: 'U-2 reconnaissance reveals Soviet MRBM sites under construction in Cuba. Operational missiles could strike Washington in 13 minutes. Soviet ships carrying additional missiles are en route. The President has convened the ExComm.',
+              steps: [
+                { prompt: 'Soviet missiles are confirmed in Cuba. What is your initial recommendation to the President?',
+                  options: [
+                    { text: 'Immediate surgical air strike on missile sites', consequence: 'Military favors this. Risk: Soviet casualties trigger escalation. JFK rejected this partly because the Air Force could not guarantee destroying all missiles. Framework: Realist -- eliminate the threat through force.', framework: 'realist', score: 40 },
+                    { text: 'Naval blockade ("quarantine") of Cuba', consequence: 'Buys time for diplomacy while demonstrating resolve. Shifts the escalation decision to Khrushchev -- does he try to run the blockade? Framework: Liberal institutionalist -- coercive diplomacy within international legal norms.', framework: 'liberal', score: 85 },
+                    { text: 'Full-scale invasion of Cuba', consequence: 'Most aggressive option. Unknown to ExComm: 42,000 Soviet troops with tactical nuclear weapons were already on the island. An invasion would likely have triggered nuclear use. Framework: Realist -- maximize military advantage.', framework: 'realist', score: 15 },
+                    { text: 'Open diplomatic channel to Moscow immediately', consequence: 'Risks appearing weak while missiles become operational. However, Dobrynin back-channel ultimately proved essential. Framework: Constructivist -- reshape adversary perceptions through dialogue.', framework: 'constructivist', score: 55 },
+                  ] },
+                { prompt: 'Day 6: A U-2 is shot down over Cuba. Pilot Major Anderson killed. The Air Force is demanding immediate retaliation strikes. What do you advise?',
+                  options: [
+                    { text: 'Authorize retaliatory strikes on SAM sites', consequence: 'Escalation ladder: air strikes on Cuba could trigger Soviet response against Jupiter missiles in Turkey. McNamara feared this cascade. Framework: Realist -- proportional military response.', framework: 'realist', score: 30 },
+                    { text: 'Ignore the shoot-down and continue negotiation', consequence: 'JFK chose this path, partly because he suspected the shoot-down was unauthorized by Moscow. Restraint under provocation proved critical. Framework: Liberal -- prioritize diplomatic resolution over military tit-for-tat.', framework: 'liberal', score: 80 },
+                    { text: 'Issue a 24-hour ultimatum for missile removal', consequence: 'High risk of boxing Khrushchev into a corner where he cannot back down without losing face domestically. Time pressure removes options. Framework: Realist/compellent -- force rapid compliance.', framework: 'realist', score: 35 },
+                  ] },
+              ] },
+            { id: 'suez', name: 'Suez Crisis (1956)', context: 'Egypt has nationalized the Suez Canal. Britain and France, in secret coordination with Israel, are planning military intervention. The US was not consulted. Eisenhower faces a crisis with NATO allies acting unilaterally in a former colonial zone.',
+              steps: [
+                { prompt: 'Britain and France have launched airstrikes against Egypt without informing the US. How do you advise the President?',
+                  options: [
+                    { text: 'Support the allies publicly to preserve NATO unity', consequence: 'Rewards unilateral aggression and undermines the UN Charter principles the US claims to uphold. Alienates the entire Arab world. Framework: Realist -- alliance maintenance above all.', framework: 'realist', score: 25 },
+                    { text: 'Condemn the invasion at the UN and demand ceasefire', consequence: 'Eisenhower chose this, siding against allies. Demonstrated US commitment to international law over colonial interests. Damaged Anglo-French relations for years but gained credibility in the developing world. Framework: Liberal institutionalist -- rules-based order.', framework: 'liberal', score: 80 },
+                    { text: 'Private pressure on allies while maintaining public neutrality', consequence: 'Avoids public rupture but may be too slow. Canal operations are being disrupted daily. Framework: Constructivist -- preserve alliance identity while reshaping norms privately.', framework: 'constructivist', score: 55 },
+                  ] },
+                { prompt: 'The Soviet Union has threatened "rocket attacks" on London and Paris unless forces withdraw. The threat may be a bluff, but it introduces nuclear risk. What now?',
+                  options: [
+                    { text: 'Warn the Soviets that any attack on NATO allies triggers Article 5', consequence: 'Extends nuclear deterrence to cover an operation the US opposes. Creates bizarre scenario of defending allies from Soviet retaliation for a war the US condemns. Framework: Realist -- credible alliance commitment regardless.', framework: 'realist', score: 40 },
+                    { text: 'Use Soviet threat as additional leverage to force British-French withdrawal', consequence: 'Eisenhower did exactly this, plus threatened to dump British pound sterling reserves. Economic coercion combined with Soviet pressure forced withdrawal. Framework: Liberal -- use institutions and economic leverage.', framework: 'liberal', score: 85 },
+                    { text: 'Propose joint US-Soviet peacekeeping force for the Canal Zone', consequence: 'Dangerous: gives Soviets a foothold in the Middle East, exactly what containment doctrine aims to prevent. Framework: Constructivist -- but miscalculates Soviet intentions.', framework: 'constructivist', score: 20 },
+                  ] },
+              ] },
+            { id: 'kosovo', name: 'Kosovo Intervention (1999)', context: 'Serbian forces are conducting ethnic cleansing operations against Kosovar Albanians. Reports of mass killings in Racak. Diplomatic efforts at Rambouillet have failed. Russia opposes any intervention. The UN Security Council is deadlocked.',
+              steps: [
+                { prompt: 'Rambouillet negotiations have collapsed. Serbia refuses to stop operations in Kosovo. 800,000 refugees are fleeing. The UNSC will not authorize force. What do you recommend?',
+                  options: [
+                    { text: 'Proceed with NATO airstrikes without UN authorization', consequence: 'This is what happened. Legally controversial ("illegal but legitimate" per the Independent International Commission). Set a precedent that humanitarian intervention could bypass the Security Council. Framework: Liberal -- R2P norm emergence over sovereignty.', framework: 'liberal', score: 75 },
+                    { text: 'Continue diplomatic pressure and economic sanctions', consequence: 'Sanctions have not stopped Milosevic. Every day of delay means more civilians killed or displaced. Srebrenica (1995) demonstrated the cost of inaction. Framework: Constructivist -- norms matter but enforcement without UN is illegitimate.', framework: 'constructivist', score: 30 },
+                    { text: 'Seek a UNGA "Uniting for Peace" resolution as alternative legitimacy', consequence: 'Creative legal approach but takes time. General Assembly resolutions are non-binding. Meanwhile, ethnic cleansing continues. Framework: Liberal institutionalist -- maintain legal legitimacy.', framework: 'liberal', score: 50 },
+                    { text: 'Deploy ground forces for a rapid intervention', consequence: 'Clark and Blair favored this. Pentagon strongly opposed -- mountainous terrain, no clear exit strategy. Political risk of casualties very high. Framework: Realist -- decisive military force to achieve political objective.', framework: 'realist', score: 45 },
+                  ] },
+                { prompt: 'NATO airstrikes have been ongoing for 6 weeks but Milosevic has not capitulated. Bombing has intensified but ground option is still off the table. China\'s embassy in Belgrade was accidentally bombed. Pressure to end the campaign is mounting.',
+                  options: [
+                    { text: 'Escalate: begin planning ground invasion to force compliance', consequence: 'Threat of ground forces was likely the factor that finally changed Milosevic\'s calculus. Blair pushed hard for this. Credible threat of escalation, not just airpower, compels surrender. Framework: Realist -- demonstrate willingness to escalate.', framework: 'realist', score: 70 },
+                    { text: 'Negotiate through Russian intermediary (Chernomyrdin)', consequence: 'This is what worked. Ahtisaari-Chernomyrdin mediation gave Milosevic a face-saving exit through Russian involvement. Framework: Constructivist -- adversary needs a path to compliance that preserves dignity.', framework: 'constructivist', score: 80 },
+                    { text: 'Declare mission accomplished and accept partition', consequence: 'Rewards ethnic cleansing. Sends signal that aggression works if you can outlast NATO\'s political will. Framework: Realist -- accept limitations of military instrument.', framework: 'realist', score: 15 },
+                  ] },
+              ] },
+          ];
+
+          var crisis = CRISES[crisisId];
+          var step = crisis.steps[crisisStep];
+          var hasChosen = crisisChoices[crisisStep] !== undefined;
+          var totalScore = crisisChoices.reduce(function(s, ci, idx) {
+            return s + (CRISES[crisisId].steps[idx] ? CRISES[crisisId].steps[idx].options[ci].score : 0);
+          }, 0);
+          var maxScore = crisis.steps.length * 100;
+          var FRAMEWORK_COLORS = { realist: C.red, liberal: C.blue, constructivist: C.green };
+
+          return (
+            <div>
+              <div style={{ padding: 16, background: C.card, border: `1px solid ${C.cardBd}`, borderLeft: `3px solid ${C.gold}`, marginBottom: 16, borderRadius: 4 }}>
+                <div style={{ fontFamily: Mono, fontSize: 10, color: C.gold, letterSpacing: '.12em', marginBottom: 8 }}>CRISIS DECISION SIMULATOR</div>
+                <p style={{ fontFamily: Serif, fontSize: 14, color: C.tx, lineHeight: 1.7, marginBottom: 12 }}>
+                  You are the National Security Advisor. At each decision point, choose your recommended course of action. See how different theoretical frameworks -- realist, liberal institutionalist, and constructivist -- would approach the same dilemma. Your choices are scored against historical outcomes.
+                </p>
+
+                {/* Crisis selector */}
+                <div style={{ display: 'flex', gap: 4, marginBottom: 16 }}>
+                  {CRISES.map((c, ci) => (
+                    <button key={c.id} onClick={() => { setCrisisId(ci); setCrisisStep(0); setCrisisChoices([]); }} style={{
+                      padding: '6px 12px', fontFamily: Mono, fontSize: 10, cursor: 'pointer',
+                      background: crisisId === ci ? C.goldBg : 'transparent',
+                      border: `1px solid ${crisisId === ci ? C.gold : C.line}`,
+                      color: crisisId === ci ? C.gold : C.tx3, borderRadius: 3,
+                    }}>
+                      {c.name}
+                    </button>
+                  ))}
+                </div>
+
+                {/* Context */}
+                <div style={{ padding: 12, background: 'rgba(0,0,0,.2)', border: `1px solid ${C.line}`, marginBottom: 16, borderRadius: 3 }}>
+                  <div style={{ fontFamily: Mono, fontSize: 9, color: C.gold, letterSpacing: '.1em', marginBottom: 6 }}>SITUATION BRIEFING</div>
+                  <p style={{ fontSize: 13, color: C.tx, lineHeight: 1.7 }}>{crisis.context}</p>
+                </div>
+
+                {/* Decision step */}
+                <div style={{ marginBottom: 16 }}>
+                  <div style={{ fontFamily: Mono, fontSize: 10, color: C.tx3, marginBottom: 6 }}>DECISION POINT {crisisStep + 1} OF {crisis.steps.length}</div>
+                  <p style={{ fontFamily: Serif, fontSize: 15, color: C.tx, lineHeight: 1.6, marginBottom: 12, fontWeight: 600 }}>{step.prompt}</p>
+
+                  <div style={{ display: 'grid', gap: 8 }}>
+                    {step.options.map((opt, oi) => {
+                      var chosen = crisisChoices[crisisStep] === oi;
+                      var fwColor = FRAMEWORK_COLORS[opt.framework] || C.tx3;
+                      return (
+                        <div key={oi} onClick={() => { if (!hasChosen) { var nc = crisisChoices.slice(); nc[crisisStep] = oi; setCrisisChoices(nc); } }}
+                          style={{
+                            padding: 12, cursor: hasChosen ? 'default' : 'pointer', borderRadius: 3,
+                            background: chosen ? fwColor + '10' : C.card,
+                            border: `1px solid ${chosen ? fwColor : C.cardBd}`,
+                          }}>
+                          <p style={{ fontSize: 13, color: C.tx, lineHeight: 1.5, marginBottom: hasChosen ? 8 : 0 }}>{opt.text}</p>
+                          {hasChosen && (
+                            <div>
+                              <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginBottom: 6 }}>
+                                <span style={{ fontFamily: Mono, fontSize: 9, padding: '2px 6px', background: fwColor + '15', color: fwColor, border: `1px solid ${fwColor}30`, borderRadius: 2 }}>{opt.framework.toUpperCase()}</span>
+                                <span style={{ fontFamily: Mono, fontSize: 11, color: opt.score >= 70 ? C.green : opt.score >= 40 ? C.gold : C.red, fontWeight: 700 }}>Score: {opt.score}/100</span>
+                              </div>
+                              <p style={{ fontSize: 12, color: C.tx2, lineHeight: 1.6 }}>{opt.consequence}</p>
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {/* Navigation */}
+                {hasChosen && crisisStep < crisis.steps.length - 1 && (
+                  <button onClick={() => setCrisisStep(crisisStep + 1)} style={{
+                    padding: '8px 20px', fontFamily: Mono, fontSize: 11, cursor: 'pointer',
+                    background: C.goldBg, border: `1px solid ${C.gold}`, color: C.gold, borderRadius: 3,
+                  }}>Next Decision Point {'\u2192'}</button>
+                )}
+
+                {hasChosen && crisisStep === crisis.steps.length - 1 && (
+                  <div style={{ padding: 12, background: C.goldBg, border: `1px solid ${C.gold}`, borderRadius: 3, marginTop: 12 }}>
+                    <div style={{ fontFamily: Mono, fontSize: 12, color: C.gold, fontWeight: 700, marginBottom: 6 }}>CRISIS RESOLUTION -- TOTAL SCORE: {totalScore}/{maxScore}</div>
+                    <p style={{ fontSize: 12, color: C.tx, lineHeight: 1.6 }}>
+                      {totalScore >= maxScore * 0.7 ? 'Strong decision-making. Your choices aligned well with historical outcomes and demonstrated awareness of escalation dynamics.' : totalScore >= maxScore * 0.4 ? 'Mixed results. Some decisions matched effective historical responses while others introduced significant risk.' : 'High-risk choices. Review the framework analysis to understand why alternative approaches may have been more effective.'}
+                    </p>
+                    <button onClick={() => { setCrisisStep(0); setCrisisChoices([]); }} style={{
+                      marginTop: 8, padding: '6px 14px', fontFamily: Mono, fontSize: 10, background: 'transparent', border: `1px solid ${C.gold}`, color: C.gold, cursor: 'pointer', borderRadius: 3,
+                    }}>Reset Crisis</button>
+                  </div>
+                )}
+              </div>
+            </div>
+          );
+        })()}
+
+        {/* ════════════════════════════════════════════════════ */}
+        {/* ALLIANCE RELIABILITY CALCULATOR                     */}
+        {/* ════════════════════════════════════════════════════ */}
+        {topMode === 'alliance' && (() => {
+          const ALLIANCES = [
+            { id: 'nato', name: 'NATO (US-Europe)', est: 1949, type: 'Multilateral collective defense', baseline: { threat: 75, institutional: 95, domestic: 65, asymmetric: 60, credibility: 85 }, notes: 'Most institutionalized alliance in history. Article 5 invoked once (9/11). Burden-sharing disputes are chronic but institutional depth compensates. Key test: would NATO respond to a Baltic incursion?' },
+            { id: 'us_japan', name: 'US-Japan Alliance', est: 1951, type: 'Bilateral hub-spoke', baseline: { threat: 80, institutional: 80, domestic: 60, asymmetric: 75, credibility: 80 }, notes: 'Anchored by shared threat perception (China, DPRK). Article 9 constraints are loosening but domestic support for military action remains limited. Asymmetric: Japan depends on US extended deterrence.' },
+            { id: 'us_israel', name: 'US-Israel Relationship', est: 1948, type: 'Strategic partnership (no formal treaty)', baseline: { threat: 70, institutional: 55, domestic: 80, asymmetric: 70, credibility: 90 }, notes: 'No formal mutual defense treaty. Relationship sustained by domestic political support (AIPAC), shared intelligence, and qualitative military edge (QME) commitment. Uniquely resilient to bilateral disagreements.' },
+            { id: 'fvey', name: 'Five Eyes (FVEY)', est: 1941, type: 'Intelligence sharing alliance', baseline: { threat: 70, institutional: 90, domestic: 50, asymmetric: 55, credibility: 75 }, notes: 'Deepest intelligence sharing arrangement in history. UKUSA Agreement (1946). Operates below public visibility. Reliability measured by willingness to share sensitive sources and methods, not military commitment.' },
+          ];
+
+          var FACTORS = [
+            { id: 'threat', label: 'Shared Threat Perception', desc: 'Do alliance members agree on who the threat is and how urgent it is? Divergent threat perception is the #1 predictor of alliance dissolution.' },
+            { id: 'institutional', label: 'Institutional Depth', desc: 'How formalized is the alliance? Integrated command structures, standing secretariats, regular exercises, and codified decision procedures increase reliability.' },
+            { id: 'domestic', label: 'Domestic Political Support', desc: 'Do domestic publics in member states support the alliance and its commitments? Democracies are constrained by public opinion on use of force.' },
+            { id: 'asymmetric', label: 'Asymmetric Dependence', desc: 'How balanced is the dependence? Highly asymmetric alliances (one side depends far more) create abandonment/entrapment dilemmas (Snyder).' },
+            { id: 'credibility', label: 'Credibility of Commitment', desc: 'Would the guarantor actually honor its commitment in a crisis? Credibility depends on reputation, sunk costs, and the perceived costs of reneging.' },
+          ];
+
+          var al = ALLIANCES[allianceId];
+          var composite = Math.round(FACTORS.reduce(function(s, f) { return s + allianceFactors[f.id]; }, 0) / FACTORS.length);
+          var relLevel = composite >= 75 ? 'HIGH' : composite >= 45 ? 'MODERATE' : 'LOW';
+          var relColor = composite >= 75 ? C.green : composite >= 45 ? C.gold : C.red;
+
+          return (
+            <div>
+              <div style={{ padding: 16, background: C.card, border: `1px solid ${C.cardBd}`, borderLeft: `3px solid ${C.blue}`, marginBottom: 16, borderRadius: 4 }}>
+                <div style={{ fontFamily: Mono, fontSize: 10, color: C.blue, letterSpacing: '.12em', marginBottom: 8 }}>ALLIANCE RELIABILITY CALCULATOR</div>
+                <p style={{ fontFamily: Serif, fontSize: 14, color: C.tx, lineHeight: 1.7, marginBottom: 16 }}>
+                  Select an alliance and rate five reliability factors. The composite score estimates alliance reliability under stress. Compare your assessment to baseline expert ratings and across alliances. Based on Glenn Snyder's alliance security dilemma framework.
+                </p>
+
+                {/* Alliance selector */}
+                <div style={{ display: 'flex', gap: 4, marginBottom: 16, flexWrap: 'wrap' }}>
+                  {ALLIANCES.map((a, ai) => (
+                    <button key={a.id} onClick={() => { setAllianceId(ai); setAllianceFactors(a.baseline); }} style={{
+                      padding: '6px 12px', fontFamily: Mono, fontSize: 10, cursor: 'pointer',
+                      background: allianceId === ai ? C.blueBg : 'transparent',
+                      border: `1px solid ${allianceId === ai ? C.blue : C.line}`,
+                      color: allianceId === ai ? C.blue : C.tx3, borderRadius: 3,
+                    }}>
+                      {a.name}
+                    </button>
+                  ))}
+                </div>
+
+                {/* Alliance info */}
+                <div style={{ padding: 10, background: 'rgba(0,0,0,.2)', border: `1px solid ${C.line}`, marginBottom: 16, borderRadius: 3 }}>
+                  <div style={{ fontFamily: Mono, fontSize: 9, color: C.tx3 }}>EST. {al.est} | {al.type}</div>
+                  <p style={{ fontSize: 12, color: C.tx2, lineHeight: 1.6, marginTop: 6 }}>{al.notes}</p>
+                </div>
+
+                {/* Factor sliders */}
+                <div style={{ display: 'grid', gap: 10, marginBottom: 20 }}>
+                  {FACTORS.map(function(f) {
+                    var val = allianceFactors[f.id];
+                    var baseVal = al.baseline[f.id];
+                    var barColor = val >= 70 ? C.green : val >= 40 ? C.gold : C.red;
+                    return (
+                      <div key={f.id} style={{ padding: '10px 12px', background: 'rgba(0,0,0,.15)', border: `1px solid ${C.line}`, borderRadius: 3 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
+                          <span style={{ fontFamily: Mono, fontSize: 11, color: C.tx, fontWeight: 600 }}>{f.label}</span>
+                          <span style={{ fontFamily: Mono, fontSize: 12, color: barColor, fontWeight: 700 }}>{val}</span>
+                        </div>
+                        <p style={{ fontSize: 10, color: C.tx3, marginBottom: 6, lineHeight: 1.5 }}>{f.desc}</p>
+                        <input type="range" min={0} max={100} value={val}
+                          onChange={(e) => { var nv = parseInt(e.target.value); setAllianceFactors(prev => ({ ...prev, [f.id]: nv })); }}
+                          style={{ width: '100%', accentColor: barColor, cursor: 'pointer' }}
+                        />
+                        <div style={{ display: 'flex', justifyContent: 'space-between', fontFamily: Mono, fontSize: 9, color: C.tx3 }}>
+                          <span>0 -- Unreliable</span>
+                          <span style={{ color: C.tx3 }}>Baseline: {baseVal}</span>
+                          <span>100 -- Ironclad</span>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {/* Composite score */}
+                <div style={{ padding: 16, background: relColor + '08', border: `2px solid ${relColor}`, textAlign: 'center', marginBottom: 16, borderRadius: 3 }}>
+                  <div style={{ fontFamily: Mono, fontSize: 9, color: relColor, letterSpacing: '.1em', marginBottom: 4 }}>ALLIANCE RELIABILITY SCORE</div>
+                  <div style={{ fontFamily: Serif, fontSize: 38, fontWeight: 700, color: relColor }}>{composite}</div>
+                  <div style={{ fontFamily: Mono, fontSize: 12, color: relColor }}>{relLevel} RELIABILITY</div>
+                  <div style={{ height: 6, background: C.line, borderRadius: 3, marginTop: 10 }}>
+                    <div style={{ height: '100%', width: composite + '%', background: relColor, borderRadius: 3, transition: 'all .3s' }} />
+                  </div>
+                </div>
+
+                {/* Cross-alliance comparison */}
+                <div style={{ fontFamily: Mono, fontSize: 10, color: C.gold, letterSpacing: '.08em', marginBottom: 10 }}>CROSS-ALLIANCE COMPARISON</div>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 6 }}>
+                  {ALLIANCES.map(function(a) {
+                    var aScore = Math.round(FACTORS.reduce(function(s, f) { return s + a.baseline[f.id]; }, 0) / FACTORS.length);
+                    var aColor = aScore >= 75 ? C.green : aScore >= 45 ? C.gold : C.red;
+                    return (
+                      <div key={a.id} style={{ padding: 10, background: C.card, border: `1px solid ${a.id === al.id ? C.blue : C.cardBd}`, borderRadius: 3, textAlign: 'center' }}>
+                        <div style={{ fontFamily: Mono, fontSize: 9, color: C.tx2, marginBottom: 4 }}>{a.name.split('(')[0].trim()}</div>
+                        <div style={{ fontFamily: Serif, fontSize: 22, fontWeight: 700, color: aColor }}>{aScore}</div>
+                        <div style={{ height: 3, background: C.line, borderRadius: 2, marginTop: 4 }}>
+                          <div style={{ height: '100%', width: aScore + '%', background: aColor, borderRadius: 2 }} />
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          );
+        })()}
       </div>
     </div>
   );

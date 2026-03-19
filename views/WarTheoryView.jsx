@@ -353,6 +353,12 @@ function WarTheoryView({ setView }) {
   // Classify mode state
   const [selectedClassify, setSelectedClassify] = useState(null);
 
+  // Apply mode state
+  const [applyFWRatings, setApplyFWRatings] = useState({});
+
+  // Escalation mode state
+  const [escalationSelected, setEscalationSelected] = useState(null);
+
   const CC = WT_C;
   const fw = FRAMEWORKS[activeFW];
 
@@ -389,7 +395,209 @@ function WarTheoryView({ setView }) {
     { id: 'synthesis',   label: 'Synthesis',     icon: '\u2261' },
     { id: 'trinity',     label: 'Trinity',       icon: '\u25B3' },
     { id: 'classify',    label: 'Classify',      icon: '\u2316' },
+    { id: 'apply',       label: 'Apply',         icon: '\u2694' },
+    { id: 'escalation',  label: 'Escalation',    icon: '\u25B2' },
   ];
+
+  // -- Apply Theory to Current War ------------------------------------
+  const UKRAINE_FRAMEWORKS = useMemo(() => [
+    { id: 'clausewitz', name: 'Clausewitz', framework: 'War as Politics by Other Means',
+      analysis: 'The Ukraine war is textbook Clausewitz. Russia\'s invasion is a continuation of policy by other means \u2014 Putin\'s stated goal of preventing NATO expansion and reasserting control over the post-Soviet space. The war demonstrates the Clausewitzian trinity in full operation: Russian popular passion (nationalist mobilization, Z symbol), military chance and friction (the failed northern campaign, logistical disasters, Ukrainian adaptation), and governmental rational purpose (though Putin\'s rationality is debated). Clausewitz would emphasize that the war\'s escalation dynamics reflect the tendency toward the "absolute" \u2014 each side must match or exceed the other\'s commitment, creating a ratchet effect. The key Clausewitzian question: what is the political object, and is the military means proportionate to it? Russia\'s maximalist political goals (regime change, then territorial acquisition) have proven disproportionate to its military capabilities.',
+      strength: 'Clausewitz explains WHY the war happens (political objectives drive military action) and why it escalates (the reciprocal nature of violence). His framework correctly predicted that Russia\'s initial "limited" operation would either succeed quickly or escalate indefinitely.',
+      weakness: 'Clausewitz assumes rational political direction of war. If Putin\'s objectives are not rationally calibrated to capabilities \u2014 if the war is driven by ideology, personal psychology, or domestic political survival rather than strategic calculation \u2014 then the Clausewitzian framework underestimates the danger of irrational escalation.',
+    },
+    { id: 'thucydides', name: 'Thucydides', framework: 'Thucydides Trap / Structural Realism',
+      analysis: 'Graham Allison\'s "Thucydides Trap" thesis argues that war becomes likely when a rising power threatens a ruling power. Applied to Ukraine: Russia is a declining power attempting to arrest its decline by preventing the further expansion of the Western alliance system. This inverts the classical formulation (Sparta feared rising Athens), but the structural logic is similar \u2014 power transitions create windows of opportunity and desperation. Thucydides would emphasize that the underlying cause is structural (the post-Cold War expansion of NATO into former Soviet space) while the immediate triggers (Maidan, Crimea, Donbas) are pretexts. The "truest cause" is fear: Russia fears permanent strategic marginalization if Ukraine integrates into Western institutions.',
+      strength: 'Thucydides explains the DEEP CAUSE of the war \u2014 not Putin\'s personal decisions but the structural dynamics of a shifting power balance in Europe. This framework correctly identifies that the war is about the post-Cold War European order, not just about Ukraine.',
+      weakness: 'Structural realism is better at explaining why wars happen in general than why THIS war happened at THIS time. The Thucydides Trap model does not explain why Russia invaded in 2022 rather than 2014, 2008, or never. Individual agency (Putin\'s decision-making, COVID isolation, intelligence failures) matters in ways structural theories cannot capture.',
+    },
+    { id: 'justwar', name: 'Just War Theory', framework: 'Jus ad Bellum / Jus in Bello',
+      analysis: 'Just War Theory provides the sharpest moral assessment. Russia\'s invasion fails every jus ad bellum criterion: (1) Just cause \u2014 preventing NATO expansion is not a just cause for aggressive war; (2) Right intention \u2014 territorial conquest is not a defensive purpose; (3) Legitimate authority \u2014 contested (Putin\'s decision was not endorsed by genuine democratic process); (4) Last resort \u2014 diplomatic options were not exhausted; (5) Proportionality \u2014 the destruction vastly exceeds any threatened harm; (6) Reasonable chance of success \u2014 increasingly doubtful. Russia\'s conduct also violates jus in bello: deliberate attacks on civilian infrastructure (energy grid bombing), deportation of children, documented war crimes in Bucha and elsewhere. Ukraine\'s defensive war satisfies jus ad bellum criteria, though specific Ukrainian actions (cluster munitions use, attacks on Russian territory) raise jus in bello questions.',
+      strength: 'Just War Theory provides a MORAL FRAMEWORK that other theories lack. It identifies Russia\'s invasion as unjust aggression \u2014 a clear conclusion that purely descriptive frameworks cannot reach. It also provides criteria for evaluating Ukrainian conduct, preventing the assumption that the just side in a war can do no wrong.',
+      weakness: 'Just War Theory tells us who is right but not what will happen. It cannot predict military outcomes, explain strategic dynamics, or guide policy beyond moral judgment. A war can be perfectly unjust and still succeed, or perfectly just and still be lost. The framework needs supplementation by strategic analysis.',
+    },
+    { id: 'creveld', name: 'van Creveld', framework: 'Transformation of War',
+      analysis: 'Martin van Creveld argued that the Clausewitzian paradigm of interstate war fought by regular armies for political objectives is being replaced by "non-trinitarian" warfare: insurgencies, terrorism, ethnic conflict, and state collapse. The Ukraine war appears to REFUTE van Creveld \u2014 it is a large-scale conventional interstate war with massed armor, artillery duels, and trench lines reminiscent of 1916. However, van Creveld would note the non-state elements: Wagner Group (private military company), Chechen Kadyrovtsy, foreign volunteer brigades, partisan warfare in occupied territories, and the cyber domain. The war is a hybrid: conventional in its primary form but deeply intertwined with irregular, privatized, and informational warfare.',
+      strength: 'Van Creveld\'s framework captures the HYBRID NATURE of the conflict \u2014 the way conventional and unconventional warfare coexist. Wagner Group, drone warfare, information operations, and economic warfare (sanctions, energy weaponization) demonstrate that modern war transcends the Clausewitzian interstate model.',
+      weakness: 'The Ukraine war has largely vindicated traditional military analysis: logistics, artillery, combined arms maneuver, and industrial mobilization remain decisive. Van Creveld\'s prediction that conventional interstate war was obsolete appears premature. The framework overestimates the transformation of war and underestimates the persistence of traditional military dynamics.',
+    },
+    { id: 'keegan', name: 'Keegan', framework: 'Cultural History of War',
+      analysis: 'John Keegan argued that war is a cultural phenomenon \u2014 different societies fight differently because their military traditions reflect their broader cultural values. Applied to Ukraine: Russian military culture emphasizes mass, firepower, and acceptance of casualties (the "Russian way of war" from Kursk to Grozny). Ukrainian military culture has been transformed since 2014 by NATO training, mission command doctrine, and a decentralized initiative-based approach alien to Russian hierarchical tradition. The cultural mismatch helps explain Russian failures: a military culture that punishes subordinate initiative cannot adapt when plans fail. Keegan would also emphasize the "face of battle" \u2014 the experience of individual soldiers \u2014 and the role of morale, cohesion, and motivation. Ukrainian soldiers fighting for national survival show higher morale than Russian conscripts unclear on why they are fighting.',
+      strength: 'Keegan explains HOW the war is fought and WHY military performance differs between the two sides. Cultural factors (initiative, morale, adaptability) explain outcomes that purely material analysis (number of tanks, artillery rounds) cannot.',
+      weakness: 'Cultural explanations risk stereotyping entire militaries. The Russian military has shown adaptation in some areas (drone warfare, defensive fortification). Cultural analysis also has difficulty explaining change: how did Ukrainian military culture transform so rapidly between 2014 and 2022? Culture is usually treated as slow-moving, but institutional reform can override cultural inertia.',
+    },
+  ], []);
+
+  const renderApplyToWar = useCallback(() => {
+    const ratedCount = Object.keys(applyFWRatings).length;
+    return (
+      <div>
+        <div style={{ fontFamily: WT_MONO, fontSize: 12, letterSpacing: '.06em', color: CC.accent + '88', marginBottom: 6 }}>APPLY THEORY TO CURRENT WAR: UKRAINE</div>
+        <div style={{ fontFamily: WT_SERIF, fontSize: 14, color: CC.tx2, lineHeight: 1.7, marginBottom: 16, maxWidth: 720 }}>
+          The same conflict, five different frameworks, five different interpretations. This demonstrates the central methodological lesson of war theory: your analytical framework determines what you see. Read all five analyses, then rate which framework you find most useful for understanding this conflict.
+        </div>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+          {UKRAINE_FRAMEWORKS.map(fw => {
+            const rating = applyFWRatings[fw.id];
+            const ratings = [1, 2, 3, 4, 5];
+            return (
+              <div key={fw.id} style={{ background: CC.card, border: `1px solid ${CC.cardBd}`, borderRadius: 10, overflow: 'hidden' }}>
+                <div style={{ padding: '16px 20px', borderBottom: `1px solid ${CC.line}` }}>
+                  <div style={{ fontFamily: WT_MONO, fontSize: 12, fontWeight: 600, color: CC.accent, letterSpacing: '.04em' }}>{fw.name}: {fw.framework}</div>
+                </div>
+                <div style={{ padding: '16px 20px' }}>
+                  <div style={{ fontFamily: WT_SERIF, fontSize: 13, color: CC.tx, lineHeight: 1.75, marginBottom: 12 }}>{fw.analysis}</div>
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 12 }}>
+                    <div style={{ padding: '10px 14px', background: CC.greenBg, borderRadius: 4, border: `1px solid ${CC.line}` }}>
+                      <div style={{ fontFamily: WT_MONO, fontSize: 9, color: CC.greenDm, letterSpacing: '.06em', marginBottom: 4 }}>STRENGTH</div>
+                      <div style={{ fontFamily: WT_SANS, fontSize: 11, color: CC.tx2, lineHeight: 1.6 }}>{fw.strength}</div>
+                    </div>
+                    <div style={{ padding: '10px 14px', background: CC.redBg, borderRadius: 4, border: `1px solid ${CC.line}` }}>
+                      <div style={{ fontFamily: WT_MONO, fontSize: 9, color: CC.redDm, letterSpacing: '.06em', marginBottom: 4 }}>WEAKNESS</div>
+                      <div style={{ fontFamily: WT_SANS, fontSize: 11, color: CC.tx2, lineHeight: 1.6 }}>{fw.weakness}</div>
+                    </div>
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <span style={{ fontFamily: WT_MONO, fontSize: 10, color: CC.tx3, letterSpacing: '.04em' }}>USEFULNESS:</span>
+                    {ratings.map(r => (
+                      <button key={r} onClick={() => setApplyFWRatings(prev => ({ ...prev, [fw.id]: r }))} style={{
+                        width: 28, height: 28, borderRadius: 4, cursor: 'pointer',
+                        background: rating === r ? CC.accent + '22' : 'transparent',
+                        border: `1px solid ${rating >= r ? CC.accent : CC.line}`,
+                        fontFamily: WT_MONO, fontSize: 11, color: rating >= r ? CC.accent : CC.tx3,
+                      }}>{r}</button>
+                    ))}
+                    {rating && <span style={{ fontFamily: WT_MONO, fontSize: 10, color: CC.accent, marginLeft: 8 }}>{rating}/5</span>}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {ratedCount === 5 && (
+          <div style={{ marginTop: 16, padding: '14px 18px', background: CC.accentBg, borderRadius: 6, border: `1px solid ${CC.line}` }}>
+            <div style={{ fontFamily: WT_MONO, fontSize: 11, letterSpacing: '.06em', color: CC.accent + '88', marginBottom: 6 }}>YOUR RANKINGS COMPLETE</div>
+            <div style={{ fontFamily: WT_SERIF, fontSize: 13, color: CC.tx, lineHeight: 1.75 }}>
+              {(() => {
+                const sorted = Object.entries(applyFWRatings).sort((a, b) => b[1] - a[1]);
+                const topId = sorted[0][0];
+                const topFW = UKRAINE_FRAMEWORKS.find(f => f.id === topId);
+                return 'You rated "' + topFW.name + '" highest. This suggests you prioritize ' + (topId === 'clausewitz' ? 'political-strategic analysis' : topId === 'thucydides' ? 'structural/systemic explanation' : topId === 'justwar' ? 'moral evaluation' : topId === 'creveld' ? 'attention to warfare\'s transformation' : 'cultural-experiential understanding') + '. No single framework is sufficient \u2014 the most complete analysis combines all five.';
+              })()}
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  }, [applyFWRatings, UKRAINE_FRAMEWORKS]);
+
+  // -- Escalation Dynamics Model --------------------------------------
+  const ESCALATION_LADDER = useMemo(() => [
+    { rung: 1, label: 'Diplomatic protest / recall of ambassador', zone: 'Subcrisis Maneuvering', zoneColor: CC.green },
+    { rung: 2, label: 'Economic sanctions / trade restrictions', zone: 'Subcrisis Maneuvering', zoneColor: CC.green },
+    { rung: 3, label: 'Military mobilization / force repositioning', zone: 'Subcrisis Maneuvering', zoneColor: CC.green },
+    { rung: 4, label: 'Proxy conflict / covert military operations', zone: 'Traditional Crisis', zoneColor: CC.gold },
+    { rung: 5, label: 'Limited conventional engagement / border clashes', zone: 'Traditional Crisis', zoneColor: CC.gold },
+    { rung: 6, label: 'Major conventional war / sustained combat', zone: 'Traditional Crisis', zoneColor: CC.gold },
+    { rung: 7, label: 'Deliberate escalation to break stalemate', zone: 'Intense Crisis', zoneColor: CC.red },
+    { rung: 8, label: 'Strategic infrastructure attacks (energy, communications)', zone: 'Intense Crisis', zoneColor: CC.red },
+    { rung: 9, label: 'Attacks on homeland / civilian population centers', zone: 'Intense Crisis', zoneColor: CC.red },
+    { rung: 10, label: 'Tactical nuclear weapon use / demonstration', zone: 'Nuclear Threshold', zoneColor: '#c040c0' },
+    { rung: 11, label: 'Limited nuclear exchange (military targets)', zone: 'Nuclear Threshold', zoneColor: '#c040c0' },
+    { rung: 12, label: 'General nuclear war / countervalue targeting', zone: 'Nuclear Threshold', zoneColor: '#c040c0' },
+  ], []);
+
+  const ESCALATION_CRISES = useMemo(() => [
+    { id: 'cuba', name: 'Cuban Missile Crisis (1962)', rung: 5, detail: 'Reached rung 5: US naval quarantine of Cuba was a limited military engagement. Both sides signaled willingness to go higher (Soviet submarines had nuclear torpedoes; US had invasion plans). Resolved at rung 5 through backchannel negotiation (Jupiter missile withdrawal). Key lesson: direct communication between leaders prevented miscalculation. Closest the Cold War came to nuclear exchange.', color: CC.blue },
+    { id: 'berlin', name: 'Berlin Crises (1948, 1961)', rung: 3, detail: 'Peaked at rung 3: military mobilization and force repositioning (Berlin Airlift 1948; tank standoff at Checkpoint Charlie 1961). Neither side was willing to initiate combat over Berlin because both understood escalation to nuclear war was the likely endpoint. The Berlin Wall (1961) was an escalation in political terms but a de-escalation in military terms: it stabilized the boundary and reduced the risk of accidental confrontation.', color: CC.teal },
+    { id: 'kargil', name: 'Kargil War (1999)', rung: 5, detail: 'India-Pakistan conventional war in Kashmir reached rung 5 (sustained combat along the Line of Control). Both states were nuclear-armed, creating escalation risk. Pakistan\'s nuclear capability deterred India from crossing the LoC into Pakistan-administered Kashmir, demonstrating how nuclear weapons can simultaneously cap escalation (preventing full-scale war) and enable it (Pakistan initiated the crisis believing nuclear deterrence would protect it from Indian retaliation).', color: CC.gold },
+    { id: 'georgia', name: 'Russia-Georgia War (2008)', rung: 6, detail: 'Brief conventional war reached rung 6: Russian forces invaded Georgian territory, occupied South Ossetia and Abkhazia, and advanced toward Tbilisi before stopping. NATO condemned but did not intervene militarily. The crisis demonstrated that Russia was willing to use conventional force against a non-NATO neighbor and that the Western response would be limited to diplomatic protest (rung 1). This calculus directly informed Putin\'s decision-making regarding Ukraine.', color: CC.green },
+    { id: 'ukraine', name: 'Ukraine War (2022-present)', rung: 8, detail: 'Currently at rung 8: sustained conventional war (rung 6) with deliberate escalation through strategic infrastructure attacks on energy grid, dam destruction, and systematic targeting of civilian areas (rung 8-9). Nuclear threats have been issued but not acted upon. The war demonstrates escalation dynamics in real time: each side incrementally crosses thresholds (Western arms deliveries, Russian mobilization, drone warfare, ATACMS, North Korean troops) in a pattern Schelling described as "the threat that leaves something to chance."', color: CC.red },
+  ], []);
+
+  const renderEscalation = useCallback(() => {
+    const selected = escalationSelected ? ESCALATION_CRISES.find(c => c.id === escalationSelected) : null;
+    return (
+      <div>
+        <div style={{ fontFamily: WT_MONO, fontSize: 12, letterSpacing: '.06em', color: CC.accent + '88', marginBottom: 6 }}>ESCALATION DYNAMICS MODEL</div>
+        <div style={{ fontFamily: WT_SERIF, fontSize: 14, color: CC.tx2, lineHeight: 1.7, marginBottom: 16, maxWidth: 720 }}>
+          Based on Thomas Schelling{'\u2019'}s escalation theory ("Arms and Influence," 1966) and Herman Kahn{'\u2019'}s escalation ladder ("On Escalation," 1965). Twelve rungs from diplomatic protest to nuclear exchange. Five historical crises plotted on the ladder. The critical insight: escalation is not a smooth slope but a series of thresholds, each representing a qualitative change in the nature of the conflict.
+        </div>
+
+        {/* Escalation ladder */}
+        <div style={{ display: 'flex', gap: 20 }}>
+          {/* Ladder */}
+          <div style={{ flex: '0 0 420px' }}>
+            {ESCALATION_LADDER.slice().reverse().map(step => {
+              const crisisHere = ESCALATION_CRISES.filter(c => c.rung === step.rung);
+              const isHighlighted = selected && selected.rung === step.rung;
+              return (
+                <div key={step.rung} style={{
+                  display: 'flex', alignItems: 'center', gap: 8, padding: '6px 10px',
+                  background: isHighlighted ? step.zoneColor + '15' : 'transparent',
+                  borderLeft: '3px solid ' + step.zoneColor + (isHighlighted ? '' : '44'),
+                  marginBottom: 2, borderRadius: '0 4px 4px 0', transition: 'all .15s',
+                }}>
+                  <span style={{ fontFamily: WT_MONO, fontSize: 11, fontWeight: 600, color: step.zoneColor, width: 20, textAlign: 'center' }}>{step.rung}</span>
+                  <span style={{ fontFamily: WT_SANS, fontSize: 11, color: isHighlighted ? CC.tx : CC.tx2, flex: 1, lineHeight: 1.4 }}>{step.label}</span>
+                  {crisisHere.map(c => (
+                    <button key={c.id} onClick={() => setEscalationSelected(escalationSelected === c.id ? null : c.id)} style={{
+                      padding: '2px 8px', borderRadius: 3, cursor: 'pointer',
+                      background: escalationSelected === c.id ? c.color + '22' : 'transparent',
+                      border: `1px solid ${c.color}66`,
+                      fontFamily: WT_MONO, fontSize: 9, color: c.color, letterSpacing: '.02em',
+                      whiteSpace: 'nowrap',
+                    }}>
+                      {c.name.split('(')[0].trim()}
+                    </button>
+                  ))}
+                </div>
+              );
+            })}
+
+            {/* Zone legend */}
+            <div style={{ display: 'flex', gap: 12, marginTop: 12, flexWrap: 'wrap' }}>
+              {[{ label: 'Subcrisis', color: CC.green }, { label: 'Traditional Crisis', color: CC.gold }, { label: 'Intense Crisis', color: CC.red }, { label: 'Nuclear', color: '#c040c0' }].map(z => (
+                <div key={z.label} style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                  <div style={{ width: 8, height: 8, borderRadius: 2, background: z.color }} />
+                  <span style={{ fontFamily: WT_MONO, fontSize: 9, color: CC.tx3, letterSpacing: '.04em' }}>{z.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Detail panel */}
+          <div style={{ flex: 1 }}>
+            {selected ? (
+              <div style={{ background: CC.card, border: `1px solid ${CC.cardBd}`, borderRadius: 10, padding: '20px 24px' }}>
+                <div style={{ fontFamily: WT_MONO, fontSize: 12, fontWeight: 600, color: selected.color, letterSpacing: '.04em', marginBottom: 4 }}>{selected.name}</div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12 }}>
+                  <span style={{ fontFamily: WT_MONO, fontSize: 11, color: CC.tx3 }}>PEAK ESCALATION:</span>
+                  <span style={{ fontFamily: WT_MONO, fontSize: 14, fontWeight: 700, color: selected.color }}>RUNG {selected.rung}</span>
+                  <span style={{ fontFamily: WT_SANS, fontSize: 11, color: CC.tx3 }}>of 12</span>
+                </div>
+                <div style={{ fontFamily: WT_SERIF, fontSize: 13, color: CC.tx, lineHeight: 1.75 }}>{selected.detail}</div>
+              </div>
+            ) : (
+              <div style={{ padding: '24px', textAlign: 'center', color: CC.tx3, fontFamily: WT_SERIF, fontSize: 14, fontStyle: 'italic' }}>
+                Select a crisis on the ladder to see its escalation analysis. Note how each crisis reached a different rung {'\u2014'} and how the de-escalation mechanisms differed in each case.
+              </div>
+            )}
+
+            {/* Current Russia-NATO assessment */}
+            <div style={{ marginTop: 16, padding: '14px 18px', background: CC.redBg, borderRadius: 6, border: `1px solid ${CC.line}` }}>
+              <div style={{ fontFamily: WT_MONO, fontSize: 11, letterSpacing: '.06em', color: CC.red, marginBottom: 6 }}>CURRENT ASSESSMENT: RUSSIA-NATO DYNAMICS</div>
+              <div style={{ fontFamily: WT_SERIF, fontSize: 13, color: CC.tx, lineHeight: 1.75 }}>
+                The Russia-Ukraine war sits at rung 8 (strategic infrastructure attacks) with periodic signals toward rung 10 (nuclear threats). The critical dynamic is what Schelling called {'\u201C'}the threat that leaves something to chance{'\u201D'}: neither side explicitly chooses to cross the nuclear threshold, but each escalatory step increases the probability of accidental or unauthorized crossing. NATO{'\u2019'}s involvement creates a parallel escalation ladder: arms deliveries, intelligence sharing, training, and sanctions represent rungs 2-4 of a separate NATO-Russia escalation sequence. The question is whether these two ladders remain separate or merge.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }, [escalationSelected, ESCALATION_LADDER, ESCALATION_CRISES]);
 
   // -- Handle conflict click on trinity
   const handleConflictClick = useCallback((conflict) => {
@@ -1091,6 +1299,12 @@ function WarTheoryView({ setView }) {
 
         {/* Classify Mode */}
         {mode === 'classify' && renderClassify()}
+
+        {/* Apply Mode */}
+        {mode === 'apply' && renderApplyToWar()}
+
+        {/* Escalation Mode */}
+        {mode === 'escalation' && renderEscalation()}
 
         {/* Provenance */}
         <div style={{ marginTop: 40, paddingTop: 16, borderTop: `1px solid ${CC.line}` }}>

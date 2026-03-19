@@ -283,7 +283,7 @@ const HS_TIPS = {
 // ── Component ─────────────────────────────────────────────
 
 function HSAnalysisView({ setView }) {
-  const [mode, setMode] = useState('exercise');     // exercise | hotwash | doctrine | ics
+  const [mode, setMode] = useState('exercise');     // exercise | hotwash | doctrine | ics | risk | interagency
   const [icsSelected, setIcsSelected] = useState(null);
   const [currentInject, setCurrentInject] = useState(0);
   const [selectedActions, setSelectedActions] = useState({});  // {injectId: [actionIds]}
@@ -291,6 +291,14 @@ function HSAnalysisView({ setView }) {
   const [completed, setCompleted] = useState(new Set());       // completed inject ids
   const [showAgencyDetail, setShowAgencyDetail] = useState(null);
   const [tipId, setTipId] = useState(null);
+
+  // ── Risk Assessor state ──────────────────────────────────
+  const [riskRatings, setRiskRatings] = useState({});
+  const [riskRevealed, setRiskRevealed] = useState(false);
+
+  // ── Interagency Coordinator state ────────────────────────
+  const [iaRoles, setIaRoles] = useState({});
+  const [iaRevealed, setIaRevealed] = useState(false);
 
   const C = HS_C;
 
@@ -1001,12 +1009,12 @@ function HSAnalysisView({ setView }) {
           <button onClick={() => setView('coursework')} style={{ background: 'none', border: 'none', color: C.tx3, fontFamily: HS_MONO, fontSize: 11, cursor: 'pointer' }}>\<- Back</button>
           <span style={{ fontFamily: HS_MONO, fontSize: 12, color: C.orange, letterSpacing: '.12em' }}>EOC // MPAI 6745 // HOMELAND SECURITY & INTELLIGENCE</span>
           <div style={{ display: 'flex', gap: 6 }}>
-            {['exercise', 'hotwash', 'doctrine', 'ics'].map(m => (
+            {['exercise', 'hotwash', 'doctrine', 'ics', 'risk', 'interagency'].map(m => (
               <button key={m} onClick={() => setMode(m)} style={{
                 padding: '4px 10px', borderRadius: 1,
-                background: mode === m ? (m === 'exercise' ? C.redBg : m === 'hotwash' ? C.orangeBg : m === 'ics' ? C.greenBg : C.blueBg) : 'transparent',
-                border: `1px solid ${mode === m ? (m === 'exercise' ? C.red : m === 'hotwash' ? C.orange : m === 'ics' ? C.green : C.blue) : C.line}`,
-                color: mode === m ? (m === 'exercise' ? C.red : m === 'hotwash' ? C.orange : m === 'ics' ? C.green : C.blue) : C.tx3,
+                background: mode === m ? (m === 'exercise' ? C.redBg : m === 'hotwash' ? C.orangeBg : m === 'ics' ? C.greenBg : m === 'risk' ? C.amberBg : m === 'interagency' ? C.blueBg : C.blueBg) : 'transparent',
+                border: `1px solid ${mode === m ? (m === 'exercise' ? C.red : m === 'hotwash' ? C.orange : m === 'ics' ? C.green : m === 'risk' ? C.amber : m === 'interagency' ? C.cyan : C.blue) : C.line}`,
+                color: mode === m ? (m === 'exercise' ? C.red : m === 'hotwash' ? C.orange : m === 'ics' ? C.green : m === 'risk' ? C.amber : m === 'interagency' ? C.cyan : C.blue) : C.tx3,
                 fontFamily: HS_MONO, fontSize: 10, cursor: 'pointer', textTransform: 'uppercase', letterSpacing: '.08em',
               }}>
                 {m}
@@ -1059,6 +1067,244 @@ function HSAnalysisView({ setView }) {
         {mode === 'hotwash' && renderHotwash()}
         {mode === 'doctrine' && renderDoctrine()}
         {mode === 'ics' && renderICSChart()}
+
+        {/* ════════════════════════════════════════════════ */}
+        {/* RISK MODE — Critical Infrastructure Risk Assessor */}
+        {/* ════════════════════════════════════════════════ */}
+        {mode === 'risk' && (() => {
+          var RISK_SECTORS = [
+            { id: 'energy', name: 'Energy', desc: 'Power generation, transmission, oil/gas pipelines, fuel supply', dhs: { threat: 75, vuln: 65, consequence: 90 } },
+            { id: 'water', name: 'Water & Wastewater', desc: 'Drinking water systems, wastewater treatment, dams', dhs: { threat: 55, vuln: 70, consequence: 80 } },
+            { id: 'telecom', name: 'Communications', desc: 'Telecommunications, internet backbone, broadcast media', dhs: { threat: 70, vuln: 60, consequence: 75 } },
+            { id: 'financial', name: 'Financial Services', desc: 'Banking, securities, insurance, payment systems', dhs: { threat: 80, vuln: 45, consequence: 85 } },
+            { id: 'transport', name: 'Transportation', desc: 'Aviation, rail, maritime, highway, mass transit', dhs: { threat: 65, vuln: 55, consequence: 70 } },
+            { id: 'health', name: 'Healthcare & Public Health', desc: 'Hospitals, pharmaceutical supply chain, pandemic response', dhs: { threat: 60, vuln: 75, consequence: 85 } },
+          ];
+          var RISK_DIMS = [
+            { id: 'threat', label: 'Threat Likelihood', desc: 'How likely is a deliberate attack or natural hazard affecting this sector?' },
+            { id: 'vuln', label: 'Vulnerability', desc: 'How exposed is the sector to attack? Consider physical security, cyber hygiene, and redundancy.' },
+            { id: 'consequence', label: 'Consequence', desc: 'What is the cascading impact if this sector is disrupted? Consider deaths, economic damage, and second-order effects.' },
+          ];
+
+          var allRated = RISK_SECTORS.every(function(s) { return riskRatings[s.id] && RISK_DIMS.every(function(d) { return riskRatings[s.id][d.id] !== undefined; }); });
+
+          return (
+            <div>
+              <div style={{ padding: 16, background: C.card, border: `1px solid ${C.cardBd}`, borderTop: `3px solid ${C.amber}`, marginBottom: 16, borderRadius: 1 }}>
+                <div style={{ fontFamily: HS_MONO, fontSize: 11, color: C.amber, letterSpacing: '.12em', marginBottom: 8 }}>CRITICAL INFRASTRUCTURE RISK ASSESSOR</div>
+                <p style={{ fontSize: 13, color: C.tx, lineHeight: 1.7, marginBottom: 16 }}>
+                  Rate each of the 6 critical infrastructure sectors on three dimensions: threat likelihood, vulnerability, and consequence. The composite risk score follows the DHS National Infrastructure Protection Plan (NIPP) risk equation: Risk = Threat x Vulnerability x Consequence. Compare your assessment to DHS baseline ratings.
+                </p>
+
+                {RISK_SECTORS.map(function(sector) {
+                  var ratings = riskRatings[sector.id] || {};
+                  var composite = (ratings.threat || 0) * (ratings.vuln || 0) * (ratings.consequence || 0) / 10000;
+                  var dhsComposite = sector.dhs.threat * sector.dhs.vuln * sector.dhs.consequence / 10000;
+                  var riskColor = composite >= 40 ? C.red : composite >= 20 ? C.amber : C.green;
+
+                  return (
+                    <div key={sector.id} style={{ padding: 12, marginBottom: 8, background: 'rgba(0,0,0,.15)', border: `1px solid ${C.line}`, borderRadius: 1 }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                        <div>
+                          <span style={{ fontFamily: HS_MONO, fontSize: 12, color: C.tx, fontWeight: 600 }}>{sector.name}</span>
+                          <span style={{ fontSize: 11, color: C.tx3, marginLeft: 8 }}>{sector.desc}</span>
+                        </div>
+                        <span style={{ fontFamily: HS_MONO, fontSize: 14, color: riskColor, fontWeight: 700 }}>{composite.toFixed(1)}</span>
+                      </div>
+
+                      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 8 }}>
+                        {RISK_DIMS.map(function(dim) {
+                          var val = ratings[dim.id] || 50;
+                          var dimColor = val >= 70 ? C.red : val >= 40 ? C.amber : C.green;
+                          return (
+                            <div key={dim.id}>
+                              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 2 }}>
+                                <span style={{ fontFamily: HS_MONO, fontSize: 9, color: C.tx3 }}>{dim.label}</span>
+                                <span style={{ fontFamily: HS_MONO, fontSize: 10, color: dimColor }}>{val}</span>
+                              </div>
+                              <input type="range" min={0} max={100} value={val} disabled={riskRevealed}
+                                onChange={function(e) {
+                                  var nv = parseInt(e.target.value);
+                                  setRiskRatings(function(prev) {
+                                    var c = Object.assign({}, prev);
+                                    if (!c[sector.id]) c[sector.id] = {};
+                                    c[sector.id] = Object.assign({}, c[sector.id]);
+                                    c[sector.id][dim.id] = nv;
+                                    return c;
+                                  });
+                                }}
+                                style={{ width: '100%', accentColor: dimColor, cursor: riskRevealed ? 'default' : 'pointer' }}
+                              />
+                            </div>
+                          );
+                        })}
+                      </div>
+
+                      {riskRevealed && (
+                        <div style={{ marginTop: 8, paddingTop: 6, borderTop: `1px solid ${C.line}`, display: 'flex', gap: 16 }}>
+                          <span style={{ fontFamily: HS_MONO, fontSize: 10, color: C.tx3 }}>DHS Baseline: T={sector.dhs.threat} V={sector.dhs.vuln} C={sector.dhs.consequence}</span>
+                          <span style={{ fontFamily: HS_MONO, fontSize: 10, color: C.amber }}>DHS Risk: {dhsComposite.toFixed(1)}</span>
+                          <span style={{ fontFamily: HS_MONO, fontSize: 10, color: Math.abs(composite - dhsComposite) < 10 ? C.green : C.red }}>Delta: {(composite - dhsComposite).toFixed(1)}</span>
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+
+                {!riskRevealed && (
+                  <button onClick={function() { if (allRated) setRiskRevealed(true); }}
+                    style={{
+                      marginTop: 12, padding: '8px 20px', fontFamily: HS_MONO, fontSize: 11,
+                      cursor: allRated ? 'pointer' : 'not-allowed',
+                      background: allRated ? C.amberBg : 'transparent',
+                      border: `1px solid ${allRated ? C.amber : C.line}`,
+                      color: allRated ? C.amber : C.tx3, borderRadius: 1,
+                    }}>
+                    Compare to DHS NIPP Baseline
+                  </button>
+                )}
+
+                {riskRevealed && (
+                  <div style={{ marginTop: 12 }}>
+                    <button onClick={function() { setRiskRatings({}); setRiskRevealed(false); }}
+                      style={{ padding: '6px 14px', fontFamily: HS_MONO, fontSize: 10, background: 'transparent', border: `1px solid ${C.amber}`, color: C.amber, cursor: 'pointer', borderRadius: 1 }}>
+                      Reset Assessment
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+          );
+        })()}
+
+        {/* ════════════════════════════════════════════════ */}
+        {/* INTERAGENCY MODE — Coordination Simulator        */}
+        {/* ════════════════════════════════════════════════ */}
+        {mode === 'interagency' && (() => {
+          var IA_SCENARIO = {
+            name: 'Hurricane-Induced Chemical Plant Explosion',
+            desc: 'A Category 4 hurricane has struck the Texas Gulf Coast. Storm surge has breached containment at a petrochemical facility, causing an explosion and releasing chlorine gas. 50,000 residents are in the evacuation zone. Three first responders are injured. A foreign national working at the plant is missing and may have sabotaged containment — FBI is assessing.',
+          };
+          var IA_AGENCIES = [
+            { id: 'fbi', name: 'FBI', authorities: ['PDD-39 (lead for crisis management of terrorism)', '28 CFR Part 0.85 (WMD/CBRN investigation authority)', 'National Security Letters'], desc: 'Federal Bureau of Investigation. Lead federal agency for crisis management in terrorism/sabotage scenarios under PDD-39. Investigative and intelligence authority.' },
+            { id: 'dhs', name: 'DHS/FEMA', authorities: ['Stafford Act (disaster declarations)', 'HSPD-5 (domestic incident management)', 'National Response Framework'], desc: 'Department of Homeland Security / FEMA. Consequence management lead under HSPD-5. Coordinates federal support to state/local authorities via ESFs.' },
+            { id: 'fema', name: 'FEMA (Regional)', authorities: ['Stafford Act Section 502 (federal assistance)', 'ESF #5 (Emergency Management)', 'Defense Production Act (resource allocation)'], desc: 'FEMA Regional Administrator. Coordinates emergency support functions, manages federal assistance, activates regional response teams.' },
+            { id: 'dod', name: 'DoD (NORTHCOM)', authorities: ['Posse Comitatus Act LIMITATIONS', 'DSCA / DoDD 3025.18 (defense support)', 'Insurrection Act (10 USC 251-255) — presidential authority only'], desc: 'U.S. Northern Command. Provides defense support to civil authorities. CANNOT enforce civil law (Posse Comitatus). Requires SecDef approval for most actions.' },
+            { id: 'local', name: 'State/Local (TX Governor)', authorities: ['10th Amendment (police powers)', 'Texas Division of Emergency Management', 'National Guard (state active duty — under Governor)'], desc: 'Texas Governor and state emergency management. State has primary responsibility under federalism. Governor controls National Guard in state active duty status.' },
+          ];
+          var ROLE_OPTIONS = ['Lead Agency', 'Support Agency'];
+          var CORRECT_ROLES = {
+            fbi: 'Lead Agency',     // PDD-39: FBI leads crisis management when sabotage suspected
+            dhs: 'Support Agency',  // HSPD-5: DHS coordinates consequence management
+            fema: 'Support Agency', // Stafford Act: FEMA supports under DHS coordination
+            dod: 'Support Agency',  // DSCA: DoD supports, never leads (Posse Comitatus)
+            local: 'Lead Agency',   // Federalism: state has primary authority; FBI leads federal piece
+          };
+          var DOCTRINAL_NOTES = {
+            fbi: 'Under PDD-39, the FBI is the lead federal agency for crisis management when a terrorist or sabotage nexus is suspected. The missing foreign national triggers this authority. FBI leads the investigation while DHS/FEMA manages consequence management.',
+            dhs: 'Under HSPD-5 and the National Response Framework, DHS coordinates the overall federal response for consequence management. However, when a terrorism nexus exists, the FBI assumes lead for the crisis management component. DHS/FEMA handles the disaster response piece.',
+            fema: 'FEMA activates Emergency Support Functions under the NRF. The Stafford Act governs disaster declarations and federal assistance. FEMA does not "lead" — it coordinates federal support to the state. The Governor must request a declaration.',
+            dod: 'DoD provides defense support to civil authorities (DSCA) but is strictly prohibited from law enforcement under the Posse Comitatus Act. The Insurrection Act allows the President to use military for law enforcement, but this is an extreme measure not applicable here. National Guard in state active duty (under Governor) is not subject to Posse Comitatus.',
+            local: 'Under the 10th Amendment, the state has primary responsibility for public safety. The Governor controls the Texas National Guard in state active duty status. Federal agencies support but do not supplant state authority unless the state requests or a federal crime is involved.',
+          };
+
+          var allAssigned = IA_AGENCIES.every(function(a) { return iaRoles[a.id]; });
+          var correct = iaRevealed ? IA_AGENCIES.filter(function(a) { return iaRoles[a.id] === CORRECT_ROLES[a.id]; }).length : 0;
+
+          return (
+            <div>
+              <div style={{ padding: 16, background: C.card, border: `1px solid ${C.cardBd}`, borderTop: `3px solid ${C.cyan}`, marginBottom: 16, borderRadius: 1 }}>
+                <div style={{ fontFamily: HS_MONO, fontSize: 11, color: C.cyan, letterSpacing: '.12em', marginBottom: 8 }}>INTERAGENCY COORDINATION SIMULATOR</div>
+                <p style={{ fontSize: 13, color: C.tx, lineHeight: 1.7, marginBottom: 12 }}>
+                  Read the crisis scenario below. For each of the 5 agencies, assign either "Lead Agency" or "Support Agency" based on which agency has legal authority for this specific scenario. Then see which agency actually has doctrinal authority under Stafford Act, PDD-39, and HSPD-5.
+                </p>
+
+                {/* Scenario briefing */}
+                <div style={{ padding: 12, background: C.redBg, border: `1px solid ${C.red}30`, marginBottom: 16, borderRadius: 1 }}>
+                  <div style={{ fontFamily: HS_MONO, fontSize: 10, color: C.red, letterSpacing: '.1em', marginBottom: 6 }}>SCENARIO: {IA_SCENARIO.name.toUpperCase()}</div>
+                  <p style={{ fontSize: 12, color: C.tx, lineHeight: 1.7 }}>{IA_SCENARIO.desc}</p>
+                </div>
+
+                {/* Agency role assignment */}
+                {IA_AGENCIES.map(function(agency) {
+                  var userRole = iaRoles[agency.id];
+                  var isCorrect = iaRevealed && userRole === CORRECT_ROLES[agency.id];
+                  return (
+                    <div key={agency.id} style={{ padding: 12, marginBottom: 8, background: iaRevealed ? (isCorrect ? C.greenBg : C.redBg) : 'rgba(0,0,0,.15)', border: `1px solid ${iaRevealed ? (isCorrect ? C.green + '30' : C.red + '30') : C.line}`, borderRadius: 1 }}>
+                      <div style={{ marginBottom: 6 }}>
+                        <span style={{ fontFamily: HS_MONO, fontSize: 12, color: C.tx, fontWeight: 700 }}>{agency.name}</span>
+                        <p style={{ fontSize: 11, color: C.tx2, lineHeight: 1.5, marginTop: 2 }}>{agency.desc}</p>
+                      </div>
+
+                      {/* Authorities */}
+                      <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap', marginBottom: 8 }}>
+                        {agency.authorities.map(function(auth) {
+                          return (
+                            <span key={auth} style={{ padding: '2px 6px', fontFamily: HS_MONO, fontSize: 8, background: C.amberBg, border: `1px solid ${C.amber}20`, color: C.amber, borderRadius: 1 }}>{auth}</span>
+                          );
+                        })}
+                      </div>
+
+                      {/* Role selector */}
+                      <div style={{ display: 'flex', gap: 4 }}>
+                        {ROLE_OPTIONS.map(function(role) {
+                          var selected = userRole === role;
+                          return (
+                            <button key={role} onClick={function() { if (!iaRevealed) setIaRoles(function(prev) { var c = Object.assign({}, prev); c[agency.id] = role; return c; }); }}
+                              style={{
+                                padding: '4px 12px', fontFamily: HS_MONO, fontSize: 10, cursor: iaRevealed ? 'default' : 'pointer',
+                                background: selected ? (role === 'Lead Agency' ? C.redBg : C.blueBg) : 'transparent',
+                                border: `1px solid ${selected ? (role === 'Lead Agency' ? C.red : C.blue) : C.line}`,
+                                color: selected ? (role === 'Lead Agency' ? C.red : C.blue) : C.tx3, borderRadius: 1,
+                              }}>
+                              {role}
+                            </button>
+                          );
+                        })}
+                      </div>
+
+                      {iaRevealed && (
+                        <div style={{ marginTop: 8, paddingTop: 6, borderTop: `1px solid ${C.line}` }}>
+                          <div style={{ fontFamily: HS_MONO, fontSize: 10, color: isCorrect ? C.green : C.red, fontWeight: 700, marginBottom: 4 }}>
+                            {isCorrect ? 'CORRECT' : 'INCORRECT — Doctrinal role: ' + CORRECT_ROLES[agency.id]}
+                          </div>
+                          <p style={{ fontSize: 11, color: C.tx2, lineHeight: 1.6 }}>{DOCTRINAL_NOTES[agency.id]}</p>
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+
+                {!iaRevealed && (
+                  <button onClick={function() { if (allAssigned) setIaRevealed(true); }}
+                    disabled={!allAssigned}
+                    style={{
+                      marginTop: 12, padding: '8px 20px', fontFamily: HS_MONO, fontSize: 11,
+                      cursor: allAssigned ? 'pointer' : 'not-allowed',
+                      background: allAssigned ? 'rgba(64,160,176,.08)' : 'transparent',
+                      border: `1px solid ${allAssigned ? C.cyan : C.line}`,
+                      color: allAssigned ? C.cyan : C.tx3, borderRadius: 1,
+                    }}>
+                    {allAssigned ? 'Check Against Doctrine' : 'Assign all 5 agencies (' + Object.keys(iaRoles).length + '/5)'}
+                  </button>
+                )}
+
+                {iaRevealed && (
+                  <div style={{ marginTop: 16, padding: 14, background: 'rgba(0,0,0,.2)', border: `1px solid ${C.line}`, borderRadius: 1 }}>
+                    <div style={{ fontFamily: HS_MONO, fontSize: 12, color: C.cyan, fontWeight: 700, marginBottom: 8 }}>DOCTRINAL ACCURACY: {correct}/{IA_AGENCIES.length}</div>
+                    <p style={{ fontSize: 12, color: C.tx2, lineHeight: 1.6 }}>
+                      {correct === 5 ? 'Perfect understanding of interagency authorities. You correctly identified the dual-lead structure (FBI for crisis management, state for primary response) and the support roles of DHS/FEMA, DoD, and other agencies.' : correct >= 3 ? 'Partial understanding. The key insight is that multiple agencies can hold "lead" authority for different aspects of the same crisis — FBI leads investigation while the state leads emergency response.' : 'Review the legal authorities carefully. The most common error is assuming a single lead agency. In practice, the Stafford Act, PDD-39, and HSPD-5 create overlapping authorities that must be coordinated, not unified under one command.'}
+                    </p>
+                    <button onClick={function() { setIaRoles({}); setIaRevealed(false); }}
+                      style={{ marginTop: 8, padding: '6px 14px', fontFamily: HS_MONO, fontSize: 10, background: 'transparent', border: `1px solid ${C.cyan}`, color: C.cyan, cursor: 'pointer', borderRadius: 1 }}>
+                      Reset Simulation
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+          );
+        })()}
 
         {/* Provenance strip */}
         <div style={{ marginTop: 40, paddingTop: 16, borderTop: `1px solid ${C.line}` }}>

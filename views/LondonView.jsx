@@ -1481,6 +1481,238 @@ function LondonView({ setView }) {
     );
   }, [selectedDoc, handleDocClick]);
 
+  // ── Methodology Comparison Tool ──────────────────────────────────
+  const METHOD_TOOL_DATA = useMemo(() => [
+    { id: 'archival', name: 'Archival Research', when: 'Your question concerns what actually happened at a specific time and place, based on documentary evidence left by historical actors.', strengths: 'Direct access to primary sources; enables discoveries unavailable in secondary literature; reveals institutional practices and decision-making processes.', limitations: 'Archives preserve what institutions chose to keep, systematically underrepresenting marginalized voices. Time-intensive. Requires paleographic and linguistic skills.', biasRisks: 'Survivorship bias (what survived is not representative). Institutional bias (archives reflect power). Reading backward (imposing present categories on past evidence). Selection bias (researchers find what they expect).', keywords: ['document', 'record', 'government', 'policy', 'decision', 'institution', 'historical', 'primary source', 'what happened', 'archive'] },
+    { id: 'oral', name: 'Oral History', when: 'Your question concerns lived experience, memory, or perspectives that written records cannot capture, especially from communities whose voices are absent from official archives.', strengths: 'Captures experiential and emotional dimensions. Amplifies marginalized voices. Reveals the gap between official narratives and lived reality. Creates new primary sources.', limitations: 'Memory is reconstructive, not reproductive. Interviewer presence shapes testimony. Small sample sizes. Not generalizable. The passage of time alters recollection.', biasRisks: 'Recall bias (memory changes with time). Social desirability bias (interviewees present themselves favorably). Interviewer bias (leading questions). Survivor bias (only those who survived can tell their story).', keywords: ['experience', 'memory', 'testimony', 'voice', 'community', 'personal', 'lived', 'witness', 'narrative', 'story'] },
+    { id: 'ethnography', name: 'Ethnography / Participant Observation', when: 'Your question concerns how institutions, communities, or practices actually function in daily life, beyond their formal rules and self-descriptions.', strengths: 'Reveals tacit knowledge and informal practices. Captures how environments shape behavior. Identifies gaps between rules and reality. Provides thick description.', limitations: 'Observer effect (presence changes behavior). Time-intensive immersion required. Not easily replicable. Subjectivity of interpretation. Brief visits produce snapshots, not deep understanding.', biasRisks: 'Observer bias (seeing what you expect). Going native (losing analytical distance). Confirmation bias (interpreting ambiguous behavior to fit hypothesis). Ethical issues with covert observation.', keywords: ['culture', 'practice', 'daily', 'ritual', 'organization', 'behavior', 'how things work', 'institution', 'observation', 'field'] },
+    { id: 'comparative', name: 'Comparative Analysis', when: 'Your question asks why outcomes differ across cases, or whether a pattern observed in one context holds in others. You need to test causal claims by examining variation.', strengths: 'Reveals contingency of familiar arrangements. Provides quasi-experimental method for causal inference. Prevents parochialism. Identifies necessary vs. sufficient conditions.', limitations: 'True controlled comparison is impossible in social science. Selection bias (choosing cases that confirm hypothesis). Too many variables, too few cases. Context-dependence limits generalizability.', biasRisks: 'Cherry-picking cases. Stretching concepts across contexts where they do not apply. Galton\'s problem (cases may not be independent). Confirmation bias in case selection.', keywords: ['compare', 'different', 'similar', 'why', 'variation', 'country', 'system', 'pattern', 'cause', 'outcome'] },
+    { id: 'discourse', name: 'Discourse Analysis', when: 'Your question concerns how language, framing, and narrative shape political reality, construct identities, or naturalize power relations.', strengths: 'Reveals how language constructs (not just describes) political reality. Identifies taken-for-granted assumptions. Shows how power operates through meaning-making. Applicable to any textual or visual source.', limitations: 'Highly interpretive and difficult to verify. No agreed-upon method across traditions (Foucauldian, CDA, post-structuralist). Risk of finding "hidden meanings" that reflect analyst\'s priors. Often unfalsifiable.', biasRisks: 'Analyst projection (reading own ideology into texts). Selection bias (choosing texts that support argument). Over-interpretation (finding significance in the mundane). Presentism (applying contemporary frameworks to historical texts).', keywords: ['language', 'framing', 'narrative', 'rhetoric', 'meaning', 'identity', 'power', 'representation', 'media', 'text'] },
+  ], []);
+
+  const doMethodRecommendation = useCallback((q) => {
+    if (!q.trim()) { setMethodRecommendation(null); return; }
+    const lower = q.toLowerCase();
+    const scores = METHOD_TOOL_DATA.map(m => {
+      let score = 0;
+      m.keywords.forEach(k => { if (lower.includes(k)) score += 2; });
+      return { method: m, score };
+    });
+    scores.sort((a, b) => b.score - a.score);
+    const top = scores.filter(s => s.score > 0);
+    if (top.length === 0) {
+      setMethodRecommendation({ primary: scores[0].method, secondary: scores[1].method, reason: 'No strong keyword matches found. Defaulting to the most general methods. Try being more specific about what you want to know.' });
+    } else if (top.length === 1) {
+      setMethodRecommendation({ primary: top[0].method, secondary: scores.find(s => s !== top[0]).method, reason: 'Strong match on "' + top[0].method.name + '" based on your research question. Consider combining with a secondary method for triangulation.' });
+    } else {
+      setMethodRecommendation({ primary: top[0].method, secondary: top[1].method, reason: 'Your question touches on multiple methodological domains. A combined approach using "' + top[0].method.name + '" and "' + top[1].method.name + '" would provide the strongest evidence base.' });
+    }
+  }, [METHOD_TOOL_DATA]);
+
+  const renderMethodTool = useCallback(() => {
+    return (
+      <div>
+        <div style={{ fontFamily: Mono, fontSize: 12, letterSpacing: '.06em', color: C.accentDm, marginBottom: 6 }}>METHODOLOGY COMPARISON TOOL</div>
+        <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx2, lineHeight: 1.7, marginBottom: 16, maxWidth: 720 }}>
+          Five research methods, each suited to different questions. Compare their strengths, limitations, and bias risks. Then describe your research question to get a recommendation.
+        </div>
+
+        {/* Method comparison grid */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 24 }}>
+          {METHOD_TOOL_DATA.map(m => (
+            <div key={m.id} style={{ background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 8, padding: '16px 20px' }}>
+              <div style={{ fontFamily: Mono, fontSize: 12, fontWeight: 600, color: C.accent, letterSpacing: '.04em', marginBottom: 8 }}>{m.name}</div>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: 12 }}>
+                <div>
+                  <div style={{ fontFamily: Mono, fontSize: 9, color: C.tx3, letterSpacing: '.06em', marginBottom: 4 }}>WHEN TO USE</div>
+                  <div style={{ fontFamily: Sans, fontSize: 11, color: C.tx2, lineHeight: 1.5 }}>{m.when}</div>
+                </div>
+                <div>
+                  <div style={{ fontFamily: Mono, fontSize: 9, color: C.greenDm, letterSpacing: '.06em', marginBottom: 4 }}>STRENGTHS</div>
+                  <div style={{ fontFamily: Sans, fontSize: 11, color: C.tx2, lineHeight: 1.5 }}>{m.strengths}</div>
+                </div>
+                <div>
+                  <div style={{ fontFamily: Mono, fontSize: 9, color: C.redDm, letterSpacing: '.06em', marginBottom: 4 }}>LIMITATIONS</div>
+                  <div style={{ fontFamily: Sans, fontSize: 11, color: C.tx2, lineHeight: 1.5 }}>{m.limitations}</div>
+                </div>
+                <div>
+                  <div style={{ fontFamily: Mono, fontSize: 9, color: C.gold, letterSpacing: '.06em', marginBottom: 4 }}>BIAS RISKS</div>
+                  <div style={{ fontFamily: Sans, fontSize: 11, color: C.tx2, lineHeight: 1.5 }}>{m.biasRisks}</div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Interactive recommender */}
+        <div style={{ background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 10, padding: '20px 24px' }}>
+          <div style={{ fontFamily: Mono, fontSize: 11, letterSpacing: '.06em', color: C.accentDm, marginBottom: 10 }}>DESCRIBE YOUR RESEARCH QUESTION</div>
+          <div style={{ display: 'flex', gap: 8, marginBottom: 12 }}>
+            <input value={methodQuestion} onChange={e => setMethodQuestion(e.target.value)} placeholder="e.g., How did colonial policy decisions shape ethnic identity in Kenya?" style={{
+              flex: 1, padding: '10px 14px', borderRadius: 4, fontFamily: Sans, fontSize: 13,
+              background: 'rgba(14,16,22,.6)', border: '1px solid ' + C.line, color: C.tx,
+              outline: 'none',
+            }} />
+            <button onClick={() => doMethodRecommendation(methodQuestion)} style={{
+              padding: '10px 20px', borderRadius: 4, cursor: 'pointer',
+              background: C.accentBg, border: '1px solid ' + C.accentDm,
+              fontFamily: Mono, fontSize: 11, color: C.accent, letterSpacing: '.04em',
+            }}>RECOMMEND</button>
+          </div>
+          {methodRecommendation && (
+            <div style={{ padding: '14px 18px', background: C.accentBg, borderRadius: 6, border: '1px solid ' + C.line }}>
+              <div style={{ fontFamily: Sans, fontSize: 12, color: C.tx2, lineHeight: 1.6, marginBottom: 10 }}>{methodRecommendation.reason}</div>
+              <div style={{ display: 'flex', gap: 12 }}>
+                <div style={{ flex: 1, padding: '10px 14px', background: C.greenBg, borderRadius: 4, border: '1px solid ' + C.line }}>
+                  <div style={{ fontFamily: Mono, fontSize: 9, color: C.greenDm, letterSpacing: '.06em', marginBottom: 4 }}>PRIMARY METHOD</div>
+                  <div style={{ fontFamily: Mono, fontSize: 12, fontWeight: 600, color: C.green }}>{methodRecommendation.primary.name}</div>
+                </div>
+                <div style={{ flex: 1, padding: '10px 14px', background: C.blueBg, borderRadius: 4, border: '1px solid ' + C.line }}>
+                  <div style={{ fontFamily: Mono, fontSize: 9, color: C.blueDm, letterSpacing: '.06em', marginBottom: 4 }}>SECONDARY METHOD</div>
+                  <div style={{ fontFamily: Mono, fontSize: 12, fontWeight: 600, color: C.blue }}>{methodRecommendation.secondary.name}</div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }, [methodQuestion, methodRecommendation, METHOD_TOOL_DATA, doMethodRecommendation]);
+
+  // ── Source Criticism Engine ────────────────────────────────────────
+  const SOURCE_DOCS = useMemo(() => [
+    {
+      id: 'dispatch',
+      title: 'Colonial Governor\'s Dispatch to London (1954)',
+      type: 'Official correspondence',
+      excerpt: 'A formal dispatch from the Governor of Kenya to the Colonial Secretary reporting on the progress of "rehabilitation" operations during the Mau Mau Emergency. The dispatch presents detention camp operations as orderly, humane, and effective, with "detainees showing marked improvement in attitude and willingness to cooperate with the screening process."',
+      criteria: {
+        authenticity: { question: 'Is this document what it claims to be?', expert: 'Almost certainly authentic. Colonial Office dispatches follow standardized formats (numbering, routing, filing marks) that are extremely difficult to forge. The document is part of a continuous series in CO 822 at Kew. However, note that some Emergency-era documents were deliberately destroyed by the Colonial Office in "Operation Legacy" (1961-1963) before Kenya\'s independence \u2014 what survives is what officials chose to keep.', rating: 'High authenticity / selection bias' },
+        reliability: { question: 'Does it accurately describe what happened?', expert: 'Low reliability for events described. The governor had strong institutional incentives to present operations favorably: London was under parliamentary pressure, and honest reporting of abuses would have triggered political crisis. Cross-reference with Elkins\'s archival work and the 2012 Hanslope Park disclosures, which revealed the systematic gap between what governors reported and what internal investigations found.', rating: 'Low reliability' },
+        bias: { question: 'What perspective does it represent?', expert: 'This is a document of colonial power speaking to itself about its subjects. The language of "rehabilitation" frames detention as therapeutic rather than punitive. "Screening" euphemizes interrogation under duress. The document reveals not the reality of the camps but the reality of how colonial bureaucracies constructed narratives about their own violence. The bias is not a flaw \u2014 it IS the evidence: it shows how institutional language sanitizes state violence.', rating: 'Systematic institutional bias \u2014 analytically valuable' },
+        context: { question: 'What circumstances produced this document?', expert: 'Written during the Kenya Emergency (1952-1960) when 1.5 million Kikuyu were detained or confined. The governor wrote under multiple pressures: London wanted reassurance, settlers wanted security, and Labour MPs were asking uncomfortable questions in Parliament. The dispatch is a political document masquerading as an administrative report. Context transforms its meaning from face-value description to evidence of institutional self-deception.', rating: 'Essential to interpretation' },
+        corroboration: { question: 'Do other sources confirm or contradict?', expert: 'Directly contradicted by: (1) internal intelligence reports from the same period (less sanitized); (2) Red Cross inspection reports noting overcrowding and inadequate food; (3) missionary accounts of systematic violence; (4) the 2013 British government admission of "torture and ill-treatment" in the camps. The dispatch is useful precisely because its falsity is demonstrable through triangulation with other sources.', rating: 'Contradicted by multiple independent sources' },
+      },
+    },
+    {
+      id: 'petition',
+      title: 'Petition from Detained Kikuyu Elders (1955)',
+      type: 'Subaltern document preserved in colonial archive',
+      excerpt: 'A handwritten petition from detained Kikuyu elders to the camp commandant, requesting improved food rations, access to medical care, and permission to communicate with their families. Written in English, the petition uses formal colonial administrative language and repeatedly affirms the petitioners\' "loyalty to the Crown" while describing conditions of extreme deprivation.',
+      criteria: {
+        authenticity: { question: 'Is this document what it claims to be?', expert: 'Authenticity is probable but complex. The petition exists because the camp commandant forwarded it up the chain (it was filed in the CO series). The English language and formal style suggest either an educated detainee or transcription by a sympathetic guard. The handwriting, paper quality, and filing marks are consistent with the claimed date and origin. But: the very fact that it exists in a colonial archive means it passed through colonial hands, and we cannot know if it was edited.', rating: 'Probable authentic / possible mediation' },
+        reliability: { question: 'Does it accurately describe conditions?', expert: 'The petition describes specific, verifiable conditions (food quantities, medical staffing, communication restrictions) that are corroborated by other sources. Detainees had no incentive to exaggerate in a petition to their captors \u2014 if anything, they understated grievances to avoid reprisal. The reliability of the factual claims is higher than the governor\'s dispatch, despite (because of?) the petitioners\' lower institutional power.', rating: 'High reliability for conditions described' },
+        bias: { question: 'What perspective does it represent?', expert: 'The petition performs loyalty ("loyalty to the Crown") while documenting injustice. This is not naivety but strategic communication: the petitioners adopt the colonizer\'s language and values to make claims within the colonizer\'s framework. The declarations of loyalty are rhetorical, not sincere. The bias is toward self-preservation: the petition says what is safe to say, not everything the petitioners experienced. What is NOT said (systematic violence, torture, forced labor) is as significant as what is.', rating: 'Strategic self-presentation / significant silences' },
+        context: { question: 'What circumstances produced this document?', expert: 'Written inside a detention camp during a state of emergency, by people under total institutional control. The power asymmetry between petitioner and recipient is extreme. Every word is calculated to survive scrutiny by hostile readers. The petition should be read not as a transparent window into experience but as an artifact of radical power imbalance \u2014 evidence of how colonized subjects navigated colonial institutions.', rating: 'Extreme power asymmetry shapes every word' },
+        corroboration: { question: 'Do other sources confirm or contradict?', expert: 'The conditions described are corroborated by: (1) Red Cross reports; (2) post-independence oral histories from former detainees (which describe far worse conditions than the petition mentions); (3) British government admissions in the 2013 Mau Mau compensation case. The petition is a conservative account \u2014 the full reality was worse. Oral histories recorded decades later provide the testimony that was too dangerous to commit to paper in 1955.', rating: 'Corroborated and understated' },
+      },
+    },
+    {
+      id: 'missionary',
+      title: 'Church Missionary Society Report (1956)',
+      type: 'Non-governmental organizational report',
+      excerpt: 'A confidential report from CMS missionaries in Central Province to their London headquarters, describing conditions in the "enclosed villages" (fortified settlements where Kikuyu women, children, and elderly were confined). The report documents forced labor on public works projects, collective punishment for Mau Mau activities in the area, and interference with church services by district officers.',
+      criteria: {
+        authenticity: { question: 'Is this document what it claims to be?', expert: 'Highly authentic. CMS maintained meticulous records (now at the Bodleian Library, Oxford, and the CMS archive at the University of Birmingham). The report follows standard CMS reporting format. The "confidential" classification is significant: this was not written for public consumption but for internal organizational decision-making, reducing the incentive for performative rhetoric.', rating: 'High authenticity' },
+        reliability: { question: 'Does it accurately describe what happened?', expert: 'Among the most reliable contemporary accounts. Missionaries had sustained, daily contact with affected communities (unlike visiting officials or journalists). They had relatively secure institutional positions (expelling missionaries would embarrass the colonial government internationally). The confidential classification means the report was written for decision-makers who needed accurate information, not for audiences who needed to be persuaded.', rating: 'High reliability / sustained observation' },
+        bias: { question: 'What perspective does it represent?', expert: 'Missionaries had their own institutional interests: protecting converts, maintaining access, demonstrating the relevance of their mission. The report frames colonial violence as interference with Christian civilization, which is its own form of colonial paternalism. Missionaries could be sympathetic to Kikuyu suffering while still holding deeply patronizing attitudes toward Kikuyu culture and religion. The humanitarian concern is genuine but operates within a framework that assumes European cultural superiority.', rating: 'Humanitarian bias within paternalist framework' },
+        context: { question: 'What circumstances produced this document?', expert: 'CMS was navigating between three pressures: (1) the colonial government (which could restrict their operations); (2) their London headquarters (which needed to decide on public advocacy); (3) their Kikuyu congregations (who expected protection). The report was written to inform London about whether CMS should break silence and publicly criticize the government \u2014 a decision with major institutional consequences. This context explains both its detail and its caution.', rating: 'Institutional decision-making document' },
+        corroboration: { question: 'Do other sources confirm or contradict?', expert: 'Strongly corroborated by: (1) parallel reports from the Church of Scotland Mission and the Catholic Church; (2) the Swynnerton Plan documents (which confirm the government\'s own plans for enforced agricultural transformation); (3) detainee oral histories. The forced labor and collective punishment described are independently documented across multiple source types. The report\'s convergence with other evidence from different institutional perspectives makes it particularly valuable for triangulation.', rating: 'Strongly corroborated across source types' },
+      },
+    },
+  ], []);
+
+  const SOURCE_CRITERIA = ['authenticity', 'reliability', 'bias', 'context', 'corroboration'];
+
+  const renderSourceCriticism = useCallback(() => {
+    const doc = SOURCE_DOCS[sourceDoc];
+    const answeredCount = Object.keys(sourceAnswers).filter(k => k.startsWith(doc.id)).length;
+    const revealedCount = Object.keys(sourceRevealed).filter(k => k.startsWith(doc.id)).length;
+    return (
+      <div>
+        <div style={{ fontFamily: Mono, fontSize: 12, letterSpacing: '.06em', color: C.accentDm, marginBottom: 6 }}>SOURCE CRITICISM ENGINE</div>
+        <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx2, lineHeight: 1.7, marginBottom: 16, maxWidth: 720 }}>
+          Three primary source documents, each requiring critical evaluation. For each criterion, write your assessment first, then reveal the expert analysis. This teaches the systematic skepticism that separates research from reading.
+        </div>
+
+        {/* Document selector */}
+        <div style={{ display: 'flex', gap: 4, marginBottom: 20 }}>
+          {SOURCE_DOCS.map((d, i) => (
+            <button key={d.id} onClick={() => setSourceDoc(i)} style={{
+              flex: 1, padding: '10px 12px', borderRadius: 4, cursor: 'pointer',
+              background: i === sourceDoc ? C.accentBg : 'transparent',
+              border: i === sourceDoc ? '1px solid ' + C.accentDm : '1px solid ' + C.line,
+              textAlign: 'center', transition: 'all .15s',
+            }}>
+              <div style={{ fontFamily: Mono, fontSize: 10, fontWeight: 600, color: i === sourceDoc ? C.accent : C.tx3 }}>{d.type}</div>
+            </button>
+          ))}
+        </div>
+
+        {/* Document card */}
+        <div style={{ background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 10, overflow: 'hidden', marginBottom: 16 }}>
+          <div style={{ padding: '20px 24px', borderBottom: '1px solid ' + C.line }}>
+            <div style={{ fontFamily: Serif, fontSize: 18, fontWeight: 700, color: C.tx, marginBottom: 4 }}>{doc.title}</div>
+            <div style={{ fontFamily: Mono, fontSize: 11, color: C.tx3, letterSpacing: '.04em' }}>{doc.type}</div>
+          </div>
+          <div style={{ padding: '20px 24px' }}>
+            <div style={{ fontFamily: Serif, fontSize: 14, color: C.tx, lineHeight: 1.75, fontStyle: 'italic', padding: '12px 16px', borderLeft: '3px solid ' + C.sepia, background: 'rgba(180,160,120,.03)', borderRadius: '0 4px 4px 0' }}>
+              {doc.excerpt}
+            </div>
+          </div>
+        </div>
+
+        {/* Criteria evaluation */}
+        <div style={{ fontFamily: Mono, fontSize: 11, letterSpacing: '.06em', color: C.accentDm, marginBottom: 10 }}>EVALUATE THIS SOURCE ({answeredCount}/5 criteria addressed)</div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+          {SOURCE_CRITERIA.map(crit => {
+            const criterion = doc.criteria[crit];
+            const answerKey = doc.id + '-' + crit;
+            const isRevealed = sourceRevealed[answerKey];
+            const userAnswer = sourceAnswers[answerKey] || '';
+            return (
+              <div key={crit} style={{ background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 8, padding: '16px 20px' }}>
+                <div style={{ fontFamily: Mono, fontSize: 11, fontWeight: 600, color: C.accent, letterSpacing: '.04em', textTransform: 'uppercase', marginBottom: 4 }}>{crit}</div>
+                <div style={{ fontFamily: Serif, fontSize: 13, color: C.tx2, marginBottom: 8 }}>{criterion.question}</div>
+                <textarea value={userAnswer} onChange={e => setSourceAnswers(prev => ({ ...prev, [answerKey]: e.target.value }))} placeholder="Write your assessment..." style={{
+                  width: '100%', minHeight: 60, padding: '8px 12px', borderRadius: 4,
+                  background: 'rgba(14,16,22,.6)', border: '1px solid ' + C.line, color: C.tx,
+                  fontFamily: Sans, fontSize: 12, lineHeight: 1.6, resize: 'vertical', outline: 'none',
+                  boxSizing: 'border-box',
+                }} />
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 8 }}>
+                  <button onClick={() => setSourceRevealed(prev => ({ ...prev, [answerKey]: !isRevealed }))} style={{
+                    padding: '6px 14px', borderRadius: 4, cursor: 'pointer',
+                    background: isRevealed ? C.accentBg : 'transparent',
+                    border: '1px solid ' + (isRevealed ? C.accentDm : C.line),
+                    fontFamily: Mono, fontSize: 10, color: isRevealed ? C.accent : C.tx3,
+                  }}>
+                    {isRevealed ? 'HIDE EXPERT ASSESSMENT' : 'REVEAL EXPERT ASSESSMENT'}
+                  </button>
+                  {isRevealed && <span style={{ fontFamily: Mono, fontSize: 10, color: C.gold, letterSpacing: '.04em' }}>{criterion.rating}</span>}
+                </div>
+                {isRevealed && (
+                  <div style={{ marginTop: 8, padding: '10px 14px', background: C.accentBg, borderRadius: 4, border: '1px solid ' + C.line }}>
+                    <div style={{ fontFamily: Sans, fontSize: 12, color: C.tx2, lineHeight: 1.7 }}>{criterion.expert}</div>
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+
+        {revealedCount === 5 && (
+          <div style={{ marginTop: 16, padding: '14px 18px', background: C.greenBg, borderRadius: 6, border: '1px solid ' + C.line }}>
+            <div style={{ fontFamily: Mono, fontSize: 11, color: C.greenDm, letterSpacing: '.06em', marginBottom: 4 }}>ALL CRITERIA EVALUATED</div>
+            <div style={{ fontFamily: Serif, fontSize: 13, color: C.tx, lineHeight: 1.7 }}>
+              You have completed the source criticism for this document. Compare your assessments with the expert analysis. The key skill is not arriving at the "right" answer but developing the systematic habit of interrogating every source across multiple dimensions before accepting its claims.
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  }, [sourceDoc, sourceAnswers, sourceRevealed, SOURCE_DOCS]);
+
   // ── Main Render ─────────────────────────────────────────────────────
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.tx, fontFamily: Sans, position: 'relative', overflow: 'hidden' }} ref={topRef}>
@@ -1596,6 +1828,8 @@ function LondonView({ setView }) {
         {mode === 'methods' && renderMethods()}
         {mode === 'reflections' && renderReflections()}
         {mode === 'archive' && renderArchive()}
+        {mode === 'method' && renderMethodTool()}
+        {mode === 'source' && renderSourceCriticism()}
 
         {/* Provenance Strip — institutional plaques */}
         <div style={{

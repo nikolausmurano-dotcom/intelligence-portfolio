@@ -91,6 +91,8 @@ const FW_TABS = [
   { id: 'simulation', label: 'Simulation', num: '03' },
   { id: 'analysis', label: 'Analysis', num: '04' },
   { id: 'implications', label: 'Implications', num: '05' },
+  { id: 'disinfo', label: 'Disinfo Classifier', num: '06' },
+  { id: 'resilience', label: 'Resilience', num: '07' },
 ];
 
 // ── Experimental conditions (2x3 matrix) ─────────────────────────
@@ -306,6 +308,10 @@ function FWAnalysisView({ setView }) {
   const [selectedDV, setSelectedDV] = useState('detection');
   const [hypothesisNotes, setHypothesisNotes] = useState({ H1: '', H2: '', H3: '', H4: '' });
   const [tipId, setTipId] = useState(null);
+  const [disinfoAnswers, setDisinfoAnswers] = useState({});
+  const [disinfoRevealed, setDisinfoRevealed] = useState(false);
+  const [resilienceAnswers, setResilienceAnswers] = useState({});
+  const [resilienceScored, setResilienceScored] = useState(false);
 
   // ── Scholarly tooltip renderer & icons ─────────────────────────
   const TipBox = (key) => {
@@ -762,6 +768,198 @@ function FWAnalysisView({ setView }) {
       }, 'Power (1 - beta)'),
     );
   }, [sampleN, powerCurve]);
+
+  // ── Disinfo Classifier data ──────────────────────────────────
+  const DISINFO_ITEMS = useMemo(() => [
+    { id: 0, content: 'A satellite image showing military vehicles near a border, posted by a defense ministry with metadata intact and consistent with the claimed location and date.', classification: 'genuine', technique: null, explanation: 'Metadata verification, official source with accountability, consistent with observable facts. Genuine content from a verifiable government source.' },
+    { id: 1, content: 'A viral social media post claiming "BREAKING: 10,000 troops deployed to southern border" that was originally a photo from a 2019 military exercise in a different country, shared without context.', classification: 'misinformation', technique: 'Out-of-context', explanation: 'The image is real but repurposed. The sharer may not know the original context -- this is misinformation (accidental falsehood) through decontextualization. The photo exists but the caption is wrong.' },
+    { id: 2, content: 'A deepfake video of a foreign leader appearing to announce a nuclear weapons test, produced by a state-affiliated troll farm and seeded across 50 Telegram channels simultaneously.', classification: 'disinformation', technique: 'Fabricated content', explanation: 'Deliberately created false content (deepfake) by a state actor, coordinated distribution. This is disinformation -- intentional deception for strategic purposes using fabricated media.' },
+    { id: 3, content: 'Leaked diplomatic cables (confirmed authentic by multiple journalists) showing a government privately discussing arms sales while publicly opposing them. Released by a hostile intelligence service.', classification: 'malinformation', technique: 'Cherry-picked', explanation: 'The content is true -- the cables are authentic. But they were strategically released by a hostile actor to cause maximum damage. This is malinformation: true information weaponized for harmful purposes.' },
+    { id: 4, content: 'A think tank report analyzing trade data and concluding that sanctions are having limited economic impact, with methodology disclosed and data sources cited.', classification: 'genuine', technique: null, explanation: 'Transparent methodology, cited sources, institutional accountability. Even if the conclusions are debatable, this is genuine analysis. Disagreement with findings does not make content disinformation.' },
+    { id: 5, content: 'An anonymous Twitter account with 200,000 followers posts a screenshot of a "classified document" about a bioweapons program. The document has formatting errors and uses non-standard classification markings.', classification: 'disinformation', technique: 'Fabricated content', explanation: 'The formatting errors and non-standard markings indicate fabrication. Anonymous sourcing with no accountability, combined with sensationalist framing. Classic disinformation using forged documents.' },
+    { id: 6, content: 'A news article accurately reporting on civilian casualties from a military strike, but the article omits the context that the strike targeted a verified weapons depot. Published by a media outlet funded by an adversary government.', classification: 'malinformation', technique: 'Cherry-picked', explanation: 'The casualty facts are true, but deliberate omission of military context by an adversary-funded outlet constitutes weaponization of selective truth. This is malinformation -- true but strategically framed to mislead through omission.' },
+    { id: 7, content: 'A Facebook group shares a list of "chemicals in vaccines" using accurate ingredient names but presents them with alarming language, calling them "toxic substances injected into children."', classification: 'misinformation', technique: 'Misleading framing', explanation: 'The ingredient names are accurate, but the framing is scientifically misleading. The dosage and context (trace quantities, biological function) are omitted. Likely misinformation rather than deliberate disinformation, as many sharers genuinely believe the framing.' },
+  ], []);
+
+  const DISINFO_CATEGORIES = ['genuine', 'misinformation', 'disinformation', 'malinformation'];
+
+  const renderDisinfo = () => {
+    var answeredCount = Object.keys(disinfoAnswers).length;
+    var correctCount = Object.keys(disinfoAnswers).filter(function(k) { return disinfoAnswers[k] === DISINFO_ITEMS[k].classification; }).length;
+
+    return React.createElement('div', null,
+      React.createElement('div', { style: { display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 } },
+        React.createElement('div', { style: { width: 4, height: 28, background: C.red, borderRadius: 2 } }),
+        React.createElement('h2', { style: { fontFamily: Serif, fontSize: 20, fontWeight: 700, color: C.tx, margin: 0 } }, 'Disinformation Classifier')
+      ),
+      React.createElement('p', { style: { fontFamily: Serif, fontSize: 13, color: C.tx2, lineHeight: 1.7, marginBottom: 8, maxWidth: 680 } },
+        'Classify 8 information items into four categories: genuine, misinformation (accidental), disinformation (deliberate), or malinformation (true but weaponized).'
+      ),
+      React.createElement('div', { style: { display: 'flex', gap: 8, marginBottom: 20, flexWrap: 'wrap' } },
+        [
+          { cat: 'genuine', color: C.green, desc: 'Accurate, accountable' },
+          { cat: 'misinformation', color: C.amber, desc: 'Accidental falsehood' },
+          { cat: 'disinformation', color: C.red, desc: 'Deliberate deception' },
+          { cat: 'malinformation', color: C.blue, desc: 'True but weaponized' },
+        ].map(function(c) {
+          return React.createElement('div', { key: c.cat, style: { padding: '4px 10px', borderRadius: 3, background: c.color + '15', border: '1px solid ' + c.color + '30', fontFamily: Mono, fontSize: 10, color: c.color } }, c.cat.toUpperCase() + ' -- ' + c.desc);
+        })
+      ),
+
+      // Items
+      DISINFO_ITEMS.map(function(item) {
+        var answer = disinfoAnswers[item.id];
+        var isCorrect = answer === item.classification;
+        var catColors = { genuine: C.green, misinformation: C.amber, disinformation: C.red, malinformation: C.blue };
+        return React.createElement('div', { key: item.id, style: { background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6, padding: 16, marginBottom: 10, borderLeft: disinfoRevealed ? '3px solid ' + catColors[item.classification] : '3px solid ' + C.line } },
+          React.createElement('div', { style: { fontFamily: Mono, fontSize: 10, color: C.tx3, marginBottom: 6 } }, 'ITEM ' + (item.id + 1)),
+          React.createElement('p', { style: { fontFamily: Serif, fontSize: 13, color: C.tx, lineHeight: 1.7, marginBottom: 10 } }, item.content),
+          React.createElement('div', { style: { display: 'flex', gap: 4, flexWrap: 'wrap' } },
+            DISINFO_CATEGORIES.map(function(cat) {
+              var isSelected = answer === cat;
+              return React.createElement('button', {
+                key: cat,
+                onClick: function() { if (!answer) setDisinfoAnswers(function(prev) { return Object.assign({}, prev, { [item.id]: cat }); }); },
+                style: {
+                  padding: '5px 12px', borderRadius: 3, cursor: answer ? 'default' : 'pointer',
+                  background: isSelected ? catColors[cat] + '20' : 'transparent',
+                  border: isSelected ? '1px solid ' + catColors[cat] : '1px solid ' + C.line,
+                  fontFamily: Mono, fontSize: 10, color: isSelected ? catColors[cat] : C.tx3,
+                  opacity: answer && !isSelected ? 0.3 : 1,
+                }
+              }, cat.charAt(0).toUpperCase() + cat.slice(1));
+            })
+          ),
+          disinfoRevealed && React.createElement('div', { style: { marginTop: 10, padding: '8px 12px', background: isCorrect ? C.greenBg : C.redBg, borderRadius: 4 } },
+            React.createElement('div', { style: { fontFamily: Mono, fontSize: 10, color: isCorrect ? C.green : C.red, marginBottom: 4 } }, isCorrect ? 'CORRECT' : 'INCORRECT -- Actual: ' + item.classification.toUpperCase()),
+            item.technique && React.createElement('div', { style: { fontFamily: Mono, fontSize: 10, color: C.amber, marginBottom: 4 } }, 'Technique: ' + item.technique),
+            React.createElement('p', { style: { fontFamily: Sans, fontSize: 11, color: C.tx2, lineHeight: 1.6, margin: 0 } }, item.explanation)
+          )
+        );
+      }),
+
+      answeredCount === 8 && !disinfoRevealed && React.createElement('button', {
+        onClick: function() { setDisinfoRevealed(true); },
+        style: { padding: '10px 24px', borderRadius: 4, cursor: 'pointer', background: C.amberBg, border: '1px solid ' + C.amberDm, color: C.amber, fontFamily: Mono, fontSize: 12, marginTop: 8 }
+      }, 'REVEAL CLASSIFICATIONS'),
+
+      disinfoRevealed && React.createElement('div', { style: { background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6, padding: 20, marginTop: 12, textAlign: 'center' } },
+        React.createElement('div', { style: { fontFamily: Mono, fontSize: 36, fontWeight: 700, color: correctCount >= 6 ? C.green : correctCount >= 4 ? C.amber : C.red } }, correctCount + '/8'),
+        React.createElement('div', { style: { fontFamily: Sans, fontSize: 13, color: C.tx2, marginTop: 4 } }, 'Correct Classifications'),
+        React.createElement('p', { style: { fontFamily: Serif, fontSize: 12, color: C.tx3, lineHeight: 1.65, marginTop: 12, maxWidth: 500, marginLeft: 'auto', marginRight: 'auto' } },
+          'The hardest distinction is misinformation vs. malinformation: both can contain true elements, but intent and strategic context determine the classification. Analysts who can distinguish these categories are better equipped to assess adversarial information operations.'
+        )
+      )
+    );
+  };
+
+  // ── Cognitive Resilience data ──────────────────────────────────
+  const RESILIENCE_QUESTIONS = useMemo(() => [
+    { id: 0, question: 'A colleague you respect shares an article claiming a foreign government has developed a revolutionary new weapon. The article cites unnamed "senior defense officials." How do you evaluate this?', options: [{ text: 'Accept it -- my colleague is knowledgeable', score: 1, bias: 'Authority bias' }, { text: 'Check the original source and look for corroboration', score: 4, bias: null }, { text: 'Dismiss it -- unnamed sources are unreliable', score: 2, bias: 'Cynicism bias' }, { text: 'Share it with others to see what they think', score: 2, bias: 'Social proof seeking' }] },
+    { id: 1, question: 'An intelligence report contains information that directly contradicts your team\'s long-standing assessment. The report comes from a reliable source. What is your first instinct?', options: [{ text: 'Look for reasons the new report might be wrong', score: 1, bias: 'Confirmation bias' }, { text: 'Immediately update your assessment', score: 2, bias: 'Recency bias' }, { text: 'Evaluate the new evidence against the full body of evidence', score: 4, bias: null }, { text: 'Wait to see if more reports confirm it', score: 3, bias: 'Status quo bias' }] },
+    { id: 2, question: 'A social media post shows a dramatic video of a military confrontation. It has 2 million views and thousands of comments expressing outrage. How do you process this?', options: [{ text: 'The volume of engagement suggests it\'s significant', score: 1, bias: 'Availability heuristic' }, { text: 'Check the video metadata, original upload date, and geolocation', score: 4, bias: null }, { text: 'Share it to raise awareness while noting it\'s unverified', score: 1, bias: 'Emotional reasoning' }, { text: 'Ignore it -- social media is all unreliable', score: 2, bias: 'Blanket dismissal' }] },
+    { id: 3, question: 'Your intelligence estimate turns out to be correct, confirming your initial hypothesis. A colleague points out that you only sought evidence supporting your hypothesis. How do you respond?', options: [{ text: 'The result validates my methodology', score: 1, bias: 'Outcome bias' }, { text: 'Acknowledge the process flaw despite the correct outcome', score: 4, bias: null }, { text: 'Argue that seeking confirming evidence is efficient', score: 1, bias: 'Confirmation bias rationalization' }, { text: 'Promise to do it differently next time but don\'t change process', score: 2, bias: 'Compliance without internalization' }] },
+    { id: 4, question: 'A narrative emerges that perfectly explains a complex geopolitical situation with a clear cause-and-effect chain. Each piece fits neatly. What is your reaction?', options: [{ text: 'Elegant explanations are usually correct', score: 1, bias: 'Narrative coherence bias' }, { text: 'Be suspicious -- reality is rarely this neat', score: 4, bias: null }, { text: 'Accept it if it comes from a reputable source', score: 2, bias: 'Authority bias' }, { text: 'Test it against known facts but don\'t be overly skeptical', score: 3, bias: 'Measured but insufficient skepticism' }] },
+    { id: 5, question: 'You discover that an intelligence assessment you contributed to was used to justify a policy decision you personally disagree with. How does this affect your future analysis?', options: [{ text: 'I should shade future assessments to prevent misuse', score: 1, bias: 'Policy bias / advocacy' }, { text: 'Separate analytic judgments from policy preferences', score: 4, bias: null }, { text: 'Add more caveats to make assessments less actionable', score: 2, bias: 'Defensive analysis' }, { text: 'Refuse to work on politically sensitive topics', score: 1, bias: 'Avoidance' }] },
+    { id: 6, question: 'A foreign government issues a statement that appears threatening. Your own government\'s official position is that the statement is routine diplomatic language. What framework do you apply?', options: [{ text: 'Defer to your government\'s interpretation', score: 2, bias: 'In-group bias' }, { text: 'Assume the worst -- it\'s a genuine threat', score: 1, bias: 'Worst-case bias' }, { text: 'Analyze the statement in its cultural and historical context', score: 4, bias: null }, { text: 'Compare it to previous statements that preceded escalation', score: 3, bias: 'Pattern matching (reasonable but incomplete)' }] },
+    { id: 7, question: 'You are briefing a senior official who has already made up their mind about a situation. Your analysis contradicts their position. How do you handle this?', options: [{ text: 'Adjust your briefing to align with their view', score: 1, bias: 'Authority deference' }, { text: 'Present your analysis directly, including the evidence that contradicts their view', score: 4, bias: null }, { text: 'Present both views equally without indicating which has more support', score: 2, bias: 'False balance' }, { text: 'Focus on areas of agreement and skip the contradictions', score: 1, bias: 'Conflict avoidance' }] },
+    { id: 8, question: 'An adversary releases a detailed and apparently well-sourced report alleging corruption within your intelligence service. The report names specific individuals. How do you approach it?', options: [{ text: 'Dismiss it -- adversaries only produce propaganda', score: 1, bias: 'Source bias' }, { text: 'Evaluate the specific claims on their merits, regardless of source', score: 4, bias: null }, { text: 'Forward it to counterintelligence without reading further', score: 3, bias: 'Procedurally correct but intellectually passive' }, { text: 'Assume it\'s partially true as a sophisticated deception', score: 2, bias: 'Mirror imaging' }] },
+    { id: 9, question: 'Three out of four analytic methods you applied converge on the same conclusion. The fourth method produces a contradictory result. What weight do you give the outlier?', options: [{ text: 'Majority rules -- three methods agree', score: 2, bias: 'Convergence bias' }, { text: 'Investigate why the fourth method disagrees before concluding', score: 4, bias: null }, { text: 'Discard the outlier as methodological error', score: 1, bias: 'Premature closure' }, { text: 'Report all four results without interpretation', score: 2, bias: 'Analytical abdication' }] },
+  ], []);
+
+  const renderResilience = () => {
+    var answeredCount = Object.keys(resilienceAnswers).length;
+    var totalScore = Object.values(resilienceAnswers).reduce(function(s, v) { return s + v; }, 0);
+    var maxScore = 40;
+    var pct = Math.round(totalScore / maxScore * 100);
+
+    var biasProfile = {};
+    RESILIENCE_QUESTIONS.forEach(function(q) {
+      var ans = resilienceAnswers[q.id];
+      if (ans !== undefined) {
+        var opt = q.options[ans];
+        if (opt.bias) {
+          if (!biasProfile[opt.bias]) biasProfile[opt.bias] = 0;
+          biasProfile[opt.bias]++;
+        }
+      }
+    });
+
+    return React.createElement('div', null,
+      React.createElement('div', { style: { display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 } },
+        React.createElement('div', { style: { width: 4, height: 28, background: C.labGreen, borderRadius: 2 } }),
+        React.createElement('h2', { style: { fontFamily: Serif, fontSize: 20, fontWeight: 700, color: C.tx, margin: 0 } }, 'Cognitive Resilience Assessment')
+      ),
+      React.createElement('p', { style: { fontFamily: Serif, fontSize: 13, color: C.tx2, lineHeight: 1.7, marginBottom: 16, maxWidth: 680 } },
+        '10 questions measuring your susceptibility to cognitive manipulation. Each tests a specific vulnerability: source evaluation, emotional reasoning, narrative coherence bias, authority bias, and in-group bias.'
+      ),
+      React.createElement('div', { style: { fontFamily: Mono, fontSize: 11, color: C.tx3, marginBottom: 16 } }, 'Progress: ' + answeredCount + '/10 questions answered'),
+
+      RESILIENCE_QUESTIONS.map(function(q) {
+        var answer = resilienceAnswers[q.id];
+        var isAnswered = answer !== undefined;
+        return React.createElement('div', { key: q.id, style: { background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6, padding: 16, marginBottom: 10 } },
+          React.createElement('div', { style: { fontFamily: Mono, fontSize: 10, color: C.tx3, marginBottom: 6 } }, 'Q' + (q.id + 1)),
+          React.createElement('p', { style: { fontFamily: Serif, fontSize: 13, color: C.tx, lineHeight: 1.7, marginBottom: 10 } }, q.question),
+          React.createElement('div', { style: { display: 'flex', flexDirection: 'column', gap: 4 } },
+            q.options.map(function(opt, oi) {
+              var isSelected = answer === oi;
+              var scoreColor = resilienceScored ? (opt.score >= 4 ? C.green : opt.score >= 3 ? C.amber : C.red) : C.tx3;
+              return React.createElement('button', {
+                key: oi,
+                onClick: function() { if (!isAnswered) setResilienceAnswers(function(prev) { return Object.assign({}, prev, { [q.id]: oi }); }); },
+                style: {
+                  padding: '8px 12px', borderRadius: 4, cursor: isAnswered ? 'default' : 'pointer',
+                  textAlign: 'left', display: 'flex', alignItems: 'center', gap: 8,
+                  background: isSelected ? (resilienceScored ? scoreColor + '15' : C.amberBg) : 'transparent',
+                  border: isSelected ? '1px solid ' + (resilienceScored ? scoreColor : C.amber) : '1px solid ' + C.line,
+                  opacity: isAnswered && !isSelected && !resilienceScored ? 0.4 : 1,
+                }
+              },
+                React.createElement('span', { style: { fontFamily: Mono, fontSize: 11, color: isSelected ? (resilienceScored ? scoreColor : C.amber) : C.tx3, minWidth: 16 } }, String.fromCharCode(65 + oi)),
+                React.createElement('span', { style: { fontFamily: Sans, fontSize: 12, color: C.tx } }, opt.text),
+                resilienceScored && isSelected && opt.bias && React.createElement('span', { style: { fontFamily: Mono, fontSize: 9, color: C.red, marginLeft: 'auto', padding: '2px 6px', background: C.redBg, borderRadius: 3, whiteSpace: 'nowrap' } }, opt.bias)
+              );
+            })
+          )
+        );
+      }),
+
+      answeredCount === 10 && !resilienceScored && React.createElement('button', {
+        onClick: function() { setResilienceScored(true); },
+        style: { padding: '10px 24px', borderRadius: 4, cursor: 'pointer', background: C.amberBg, border: '1px solid ' + C.amberDm, color: C.amber, fontFamily: Mono, fontSize: 12, marginTop: 8 }
+      }, 'SCORE MY RESILIENCE'),
+
+      resilienceScored && React.createElement('div', { style: { background: C.card, border: '2px solid ' + (pct >= 80 ? C.green : pct >= 60 ? C.amber : C.red) + '40', borderRadius: 6, padding: 20, marginTop: 16 } },
+        React.createElement('div', { style: { textAlign: 'center', marginBottom: 16 } },
+          React.createElement('div', { style: { fontFamily: Mono, fontSize: 42, fontWeight: 700, color: pct >= 80 ? C.green : pct >= 60 ? C.amber : C.red } }, totalScore + '/' + maxScore),
+          React.createElement('div', { style: { fontFamily: Sans, fontSize: 14, color: C.tx2, marginTop: 4 } },
+            pct >= 80 ? 'High Resilience' : pct >= 60 ? 'Moderate Resilience' : 'Low Resilience -- Vulnerability Detected'
+          ),
+          React.createElement('div', { style: { width: '60%', height: 6, background: C.line, borderRadius: 3, margin: '8px auto', overflow: 'hidden' } },
+            React.createElement('div', { style: { width: pct + '%', height: '100%', background: pct >= 80 ? C.green : pct >= 60 ? C.amber : C.red, borderRadius: 3 } })
+          )
+        ),
+
+        // Bias profile
+        Object.keys(biasProfile).length > 0 && React.createElement('div', { style: { borderTop: '1px solid ' + C.line, paddingTop: 12 } },
+          React.createElement('div', { style: { fontFamily: Mono, fontSize: 11, color: C.tx3, marginBottom: 8, letterSpacing: '.08em' } }, 'DETECTED BIAS VULNERABILITIES'),
+          Object.entries(biasProfile).sort(function(a, b) { return b[1] - a[1]; }).map(function(entry) {
+            return React.createElement('div', { key: entry[0], style: { display: 'flex', alignItems: 'center', gap: 8, padding: '4px 0' } },
+              React.createElement('span', { style: { fontFamily: Mono, fontSize: 11, color: C.red, minWidth: 200 } }, entry[0]),
+              React.createElement('div', { style: { flex: 1, height: 4, background: C.line, borderRadius: 2, maxWidth: 100, overflow: 'hidden' } },
+                React.createElement('div', { style: { width: (entry[1] / 3 * 100) + '%', height: '100%', background: C.red, borderRadius: 2 } })
+              ),
+              React.createElement('span', { style: { fontFamily: Mono, fontSize: 11, color: C.tx3 } }, entry[1] + 'x')
+            );
+          }),
+          React.createElement('p', { style: { fontFamily: Serif, fontSize: 12, color: C.tx3, lineHeight: 1.65, marginTop: 12 } },
+            'Cognitive resilience is not about being right -- it\'s about having a reliable process. The biases detected above are your specific vulnerabilities to adversarial information operations. Structured Analytic Techniques are designed to counteract exactly these cognitive shortcuts.'
+          )
+        )
+      )
+    );
+  };
 
   // ── Render: Tab bar ────────────────────────────────────────────
   const TabBar = () => (
@@ -1377,6 +1575,8 @@ function FWAnalysisView({ setView }) {
       tab === 'simulation' && renderSimulation(),
       tab === 'analysis' && renderAnalysis(),
       tab === 'implications' && renderImplications(),
+      tab === 'disinfo' && renderDisinfo(),
+      tab === 'resilience' && renderResilience(),
     ),
   );
 }

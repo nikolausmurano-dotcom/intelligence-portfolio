@@ -289,6 +289,13 @@ function EmtView({ setView }) {
   const [startTime, setStartTime] = useState(null);
   const [endTime, setEndTime] = useState(null);
   const [tipId, setTipId] = useState(null);
+  const [mciPhase, setMciPhase] = useState(0);
+  const [mciDecisions, setMciDecisions] = useState({});
+  const [mciScore, setMciScore] = useState(null);
+  const [ptreeIdx, setPtreeIdx] = useState(0);
+  const [ptreeStep, setPtreeStep] = useState(0);
+  const [ptreeAnswers, setPtreeAnswers] = useState({});
+  const [ptreeRevealed, setPtreeRevealed] = useState({});
 
   // ── Scholarly Micro-Icons & Tooltip ──────────────────────────
   function Tip({ id }) {
@@ -390,6 +397,8 @@ function EmtView({ setView }) {
       { id: 'protocol', label: 'Protocol', desc: 'START Algorithm' },
       { id: 'flowchart', label: 'Flowchart', desc: 'SVG Decision Tree' },
       { id: 'debrief', label: 'Debrief', desc: 'Score & Analysis' },
+      { id: 'mci', label: 'MCI Commander', desc: '20-Patient Incident' },
+      { id: 'ptree', label: 'Decision Tree', desc: 'Protocol Scenarios' },
     ];
     return (
       <div style={{ display: 'flex', gap: 2, marginBottom: 24 }}>
@@ -1241,6 +1250,382 @@ function EmtView({ setView }) {
     );
   }, [flowchartPathCounts]);
 
+  // ── MCI Commander data ─────────────────────────────────────
+  const MCI_PHASES = useMemo(() => [
+    {
+      id: 0, title: 'Establish Incident Command',
+      briefing: 'You arrive first on scene at a multi-vehicle highway pileup. 20 patients are scattered across 200 meters. Fire, EMS, and police are en route but you are the first emergency responder. Establish command structure.',
+      decisions: [
+        { id: 'ics', question: 'What is your first action?', options: [
+          { text: 'Begin treating the nearest patient', score: 0, feedback: 'Wrong. Individual patient care before establishing command leads to chaos. In MCIs, the first provider establishes Incident Command System (ICS) -- not patient care.' },
+          { text: 'Establish Incident Command and radio dispatch with situation report', score: 3, feedback: 'Correct. Establish ICS, give size-up to dispatch: "Command established at Highway 9 MVC. Approximately 20 patients. Requesting additional ALS, BLS, and fire units. Establishing staging area."' },
+          { text: 'Wait for additional units to arrive', score: 1, feedback: 'Delay costs lives. The first-arriving provider must establish command immediately. Waiting wastes the critical "golden hour" window.' },
+        ]},
+        { id: 'sectors', question: 'How do you organize the scene?', options: [
+          { text: 'Set up Triage, Treatment (Red/Yellow/Green areas), and Transport sectors', score: 3, feedback: 'Correct. Standard ICS MCI sectors: Triage (where patients are found), Treatment (organized by acuity), Transport (ambulance staging). Each sector gets a leader as resources arrive.' },
+          { text: 'Create one central treatment area for all patients', score: 1, feedback: 'A single area mixes critical and minor patients, overwhelming providers. Separation by acuity (Red/Yellow/Green) allows appropriate resource allocation.' },
+          { text: 'Let each ambulance crew handle their own patients', score: 0, feedback: 'Freelancing destroys coordination. Without sector organization, critical patients may be missed while minor injuries receive disproportionate attention.' },
+        ]},
+      ],
+    },
+    {
+      id: 1, title: 'Triage 20 Patients',
+      briefing: 'Using START triage, you must rapidly categorize all 20 patients. In a real MCI, you should spend no more than 30 seconds per patient. Key: walking wounded are Green, then assess breathing, perfusion, and mental status.',
+      decisions: [
+        { id: 'method', question: 'A patient is screaming in pain with an obvious femur fracture but is ambulatory. Classification?', options: [
+          { text: 'RED -- Immediate (fracture is serious)', score: 0, feedback: 'Wrong. If the patient can walk, they are GREEN (Minor) regardless of apparent injury severity. Walking wounded self-sort in START triage. The screaming patient with a femur fracture who can walk is Green.' },
+          { text: 'GREEN -- Minor (patient is ambulatory)', score: 3, feedback: 'Correct. START triage rule: can the patient walk? If yes, they are GREEN. Period. This is counterintuitive but essential -- spending time on walking wounded while critical patients die is the #1 MCI error.' },
+          { text: 'YELLOW -- Delayed (needs care but stable)', score: 1, feedback: 'Close, but incorrect. Ambulatory patients are automatically Green in START. Yellow is for non-ambulatory patients who are breathing, have a pulse, and can follow commands.' },
+        ]},
+        { id: 'capacity', question: 'You have triaged: 4 Red, 6 Yellow, 8 Green, 2 Black. You have 3 ALS ambulances and 4 BLS units. What is your transport priority?', options: [
+          { text: 'Load all Red patients first into ALS units', score: 2, feedback: 'Partially correct. Red patients go first via ALS, but with 4 Reds and 3 ALS units, one Red patient must wait. You should send the first 3 Reds immediately while the 4th waits for the next ALS unit. Do not hold all Reds for simultaneous transport.' },
+          { text: 'Send 3 Reds by ALS immediately, start loading Yellows into BLS', score: 3, feedback: 'Correct. Maximize throughput: ALS takes Reds, BLS begins transporting Yellows. The 4th Red goes on the next ALS return. Green patients can self-transport or wait for additional resources.' },
+          { text: 'Mix Red and Yellow patients to fill ambulances efficiently', score: 0, feedback: 'Wrong. Mixing acuities in transport means Red patients share resources with less critical patients. ALS must be reserved for Reds; BLS handles Yellows. Efficiency in MCI means acuity-matched transport, not full ambulances.' },
+        ]},
+      ],
+    },
+    {
+      id: 2, title: 'Resource Coordination',
+      briefing: 'Mutual aid has been activated. A helicopter is available but the closest trauma center is 15 minutes by ground. You must coordinate resources efficiently while managing the scene.',
+      decisions: [
+        { id: 'helo', question: 'When should you request helicopter transport?', options: [
+          { text: 'For every Red patient -- air is faster', score: 0, feedback: 'Wrong. Helicopter landing zones require space and time to establish. With a 15-minute ground transport to a trauma center, helicopter is only justified if ground transport time exceeds 30 minutes or the patient needs a specialty center (burn, pediatric trauma) not available locally.' },
+          { text: 'Only if ground transport time exceeds 20+ minutes or specialty center needed', score: 3, feedback: 'Correct. The "golden hour" calculation: helicopter setup (landing zone, loading) takes 10-15 minutes. If ground is 15 minutes, helicopter adds no benefit. Reserve air for long-distance or specialty transfers.' },
+          { text: 'Never -- helicopters are too dangerous in MCI scenes', score: 1, feedback: 'Overly conservative. Helicopters are appropriate for specific situations: prolonged extrication with distant trauma centers, or need for burn/pediatric specialty care not available at the nearest facility.' },
+        ]},
+        { id: 'comm', question: 'You are losing track of which patients have been transported and where. What system do you implement?', options: [
+          { text: 'Have each ambulance crew radio when they depart', score: 1, feedback: 'Insufficient. Radio-only tracking fails when channels are congested. You need a physical tracking system at the Transport sector.' },
+          { text: 'Assign a Transport Officer with a tracking board logging patient tag number, unit, destination, and departure time', score: 3, feedback: 'Correct. The Transport Officer maintains a written log: triage tag number, transporting unit, receiving facility, and time of departure. This is the standard MCI patient tracking system and is essential for hospital notification and family reunification.' },
+          { text: 'Trust the hospitals to track who arrives', score: 0, feedback: 'Wrong. Hospitals receive patients from multiple sources. Without field-level tracking, patients can be lost in the system. The 2013 Boston Marathon bombing after-action report specifically identified field-to-hospital tracking as a critical gap.' },
+        ]},
+      ],
+    },
+  ], []);
+
+  const renderMCI = useCallback(() => {
+    var phase = MCI_PHASES[mciPhase];
+    var phaseDecisionsMade = phase.decisions.filter(function(d) { return mciDecisions[mciPhase + '_' + d.id] !== undefined; }).length;
+    var allPhasesDone = MCI_PHASES.every(function(p) { return p.decisions.every(function(d) { return mciDecisions[p.id + '_' + d.id] !== undefined; }); });
+
+    if (mciScore === null && allPhasesDone) {
+      var total = 0;
+      MCI_PHASES.forEach(function(p) { p.decisions.forEach(function(d) { var key = p.id + '_' + d.id; var ans = mciDecisions[key]; if (ans !== undefined) total += d.options[ans].score; }); });
+      setMciScore(total);
+    }
+
+    return (
+      <div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}>
+          <div style={{ width: 4, height: 28, background: C.accent, borderRadius: 2 }} />
+          <h2 style={{ fontFamily: Serif, fontSize: 20, fontWeight: 700, color: C.tx, margin: 0 }}>
+            Mass Casualty Incident Commander
+          </h2>
+        </div>
+        <p style={{ fontFamily: Serif, fontSize: 13, color: C.tx2, lineHeight: 1.65, marginBottom: 16, maxWidth: 680 }}>
+          A 20-patient highway MCI. You are Incident Commander. Establish ICS, triage patients, coordinate transport, and manage resources. Every decision affects patient outcomes.
+        </p>
+
+        {/* Phase navigation */}
+        <div style={{ display: 'flex', gap: 4, marginBottom: 16 }}>
+          {MCI_PHASES.map((p, i) => (
+            <button key={i} onClick={() => setMciPhase(i)} style={{
+              flex: 1, padding: '8px 10px', borderRadius: 4, cursor: 'pointer', textAlign: 'center',
+              background: mciPhase === i ? 'rgba(204,32,32,.12)' : 'transparent',
+              border: mciPhase === i ? '1px solid ' + C.accentDm : '1px solid ' + C.line,
+            }}>
+              <span style={{ fontFamily: Mono, fontSize: 11, fontWeight: 600, color: mciPhase === i ? C.accent : C.tx3, display: 'block' }}>
+                Phase {i + 1}
+              </span>
+              <span style={{ fontFamily: Sans, fontSize: 10, color: C.tx3 }}>{p.title}</span>
+            </button>
+          ))}
+        </div>
+
+        {/* Current phase */}
+        <div style={{
+          background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6,
+          padding: 20, marginBottom: 16, borderTop: '3px solid ' + C.accent,
+        }}>
+          <div style={{ fontFamily: Mono, fontSize: 10, letterSpacing: '.1em', color: C.accentDm, marginBottom: 6 }}>
+            PHASE {mciPhase + 1}: {phase.title.toUpperCase()}
+          </div>
+          <p style={{ fontFamily: Serif, fontSize: 13, color: C.tx2, lineHeight: 1.7, marginBottom: 16, borderLeft: '3px solid ' + C.line, paddingLeft: 12 }}>
+            {phase.briefing}
+          </p>
+
+          {phase.decisions.map(d => {
+            var key = mciPhase + '_' + d.id;
+            var answer = mciDecisions[key];
+            var isAnswered = answer !== undefined;
+            return (
+              <div key={d.id} style={{ marginBottom: 16 }}>
+                <div style={{ fontFamily: Sans, fontSize: 13, fontWeight: 600, color: C.tx, marginBottom: 8 }}>{d.question}</div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                  {d.options.map((opt, oi) => {
+                    var isSelected = answer === oi;
+                    return (
+                      <div key={oi}>
+                        <button onClick={() => {
+                          if (!isAnswered) setMciDecisions(prev => ({ ...prev, [key]: oi }));
+                        }} style={{
+                          width: '100%', textAlign: 'left', padding: '10px 14px', borderRadius: 4,
+                          cursor: isAnswered ? 'default' : 'pointer',
+                          background: isSelected ? (opt.score >= 3 ? C.greenBg : opt.score >= 2 ? C.yellowBg : C.redBg) : 'transparent',
+                          border: isSelected ? '1px solid ' + (opt.score >= 3 ? C.green : opt.score >= 2 ? C.yellow : C.red) : '1px solid ' + C.line,
+                          opacity: isAnswered && !isSelected ? 0.35 : 1,
+                        }}>
+                          <span style={{ fontFamily: Sans, fontSize: 12, color: C.tx }}>{opt.text}</span>
+                        </button>
+                        {isAnswered && isSelected && (
+                          <div style={{
+                            padding: '8px 14px', marginTop: 4, borderRadius: '0 0 4px 4px',
+                            background: opt.score >= 3 ? 'rgba(48,168,72,.06)' : opt.score >= 2 ? 'rgba(200,168,32,.06)' : 'rgba(204,32,32,.06)',
+                            borderLeft: '3px solid ' + (opt.score >= 3 ? C.green : opt.score >= 2 ? C.yellow : C.red),
+                          }}>
+                            <span style={{ fontFamily: Mono, fontSize: 10, color: opt.score >= 3 ? C.green : opt.score >= 2 ? C.yellow : C.red, marginRight: 6 }}>
+                              {opt.score >= 3 ? 'CORRECT' : opt.score >= 2 ? 'PARTIAL' : 'INCORRECT'}
+                            </span>
+                            <span style={{ fontFamily: Sans, fontSize: 11, color: C.tx2, lineHeight: 1.6 }}>{opt.feedback}</span>
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Score summary */}
+        {mciScore !== null && (
+          <div style={{
+            background: C.card, border: '2px solid ' + (mciScore >= 15 ? C.green : mciScore >= 10 ? C.yellow : C.red) + '40',
+            borderRadius: 6, padding: 20, textAlign: 'center',
+          }}>
+            <div style={{ fontFamily: Mono, fontSize: 36, fontWeight: 700, color: mciScore >= 15 ? C.green : mciScore >= 10 ? C.yellow : C.red }}>
+              {mciScore}/18
+            </div>
+            <div style={{ fontFamily: Sans, fontSize: 14, color: C.tx2, marginTop: 4 }}>
+              {mciScore >= 15 ? 'Excellent MCI Command -- patients saved' : mciScore >= 10 ? 'Adequate -- some protocol gaps' : 'Critical errors -- review ICS and START protocols'}
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  }, [mciPhase, mciDecisions, mciScore, MCI_PHASES]);
+
+  // ── Protocol Decision Tree data ──────────────────────────────
+  const PTREE_SCENARIOS = useMemo(() => [
+    {
+      id: 0, title: 'Chest Pain with Ambiguity',
+      patient: '58-year-old male, clutching chest, diaphoretic. States pain is 7/10, started 30 minutes ago while mowing lawn. History of GERD. Takes antacids daily.',
+      steps: [
+        { question: 'First priority after scene safety?', options: [
+          { text: 'Primary assessment: ABCs, level of consciousness', correct: true, note: 'Correct. Always start with primary assessment. Airway, Breathing, Circulation, then AVPU/GCS for mental status. Before any treatment decisions.' },
+          { text: 'Administer aspirin immediately', correct: false, note: 'Premature. Aspirin may be indicated but you must complete primary assessment first. What if the patient has altered mental status and cannot safely swallow?' },
+        ]},
+        { question: 'SAMPLE history reveals: Symptoms (chest pressure radiating to jaw), Allergies (none), Medications (omeprazole, aspirin daily), Past history (GERD, no cardiac), Last meal (2 hours ago), Events (exertion). Vitals: BP 158/94, HR 98, SpO2 96%, RR 20. Next step?', options: [
+          { text: 'Assume GERD flare-up since patient has GERD history', correct: false, note: 'Dangerous assumption. Jaw radiation, diaphoresis, exertional onset, and hypertension are cardiac red flags. GERD history does not rule out ACS. Many MIs are initially misattributed to GERD.' },
+          { text: 'Treat as suspected ACS: oxygen if SpO2 < 94%, assist with prescribed aspirin, nitroglycerin per protocol, 12-lead ECG', correct: true, note: 'Correct. Jaw radiation + diaphoresis + exertion = ACS until proven otherwise. SpO2 is 96% so supplemental O2 is not immediately indicated. Patient already takes daily aspirin. Contact medical control for NTG authorization.' },
+        ]},
+        { question: 'After nitroglycerin, pain decreases to 3/10. BP drops to 110/70. What do you monitor?', options: [
+          { text: 'Repeat BP in 5 minutes, hold additional NTG if systolic < 100', correct: true, note: 'Correct. NTG is a vasodilator. BP dropped 48 points systolic -- significant. Standard protocol: hold NTG if SBP < 100. Reassess pain scale and vitals every 5 minutes during transport.' },
+          { text: 'Pain is improving, reduce monitoring frequency', correct: false, note: 'Wrong. Hemodynamic instability (significant BP drop) requires increased monitoring, not decreased. ACS patients can decompensate rapidly.' },
+        ]},
+      ],
+    },
+    {
+      id: 1, title: 'Pediatric Respiratory Distress',
+      patient: '3-year-old female, mother reports sudden onset of wheezing and difficulty breathing during dinner. No prior respiratory history. Audible stridor. No fever.',
+      steps: [
+        { question: 'Stridor in a 3-year-old during a meal with no respiratory history suggests?', options: [
+          { text: 'Asthma exacerbation', correct: false, note: 'Unlikely. No prior respiratory history, sudden onset during eating, and stridor (upper airway) vs. wheezing (lower airway) point to foreign body airway obstruction, not asthma.' },
+          { text: 'Foreign body airway obstruction (FBAO)', correct: true, note: 'Correct. Classic presentation: sudden onset during eating in a toddler, stridor (upper airway obstruction sound), no fever (rules out croup/epiglottitis), no respiratory history. This is FBAO until proven otherwise.' },
+        ]},
+        { question: 'The child is coughing forcefully and crying. Air exchange is present but diminished on the right side. What is your action?', options: [
+          { text: 'Perform abdominal thrusts (Heimlich maneuver) immediately', correct: false, note: 'Wrong. The child has effective coughing and air exchange. Per AHA guidelines, do NOT intervene with abdominal thrusts if the patient is coughing effectively. Intervention can convert a partial obstruction into a complete one.' },
+          { text: 'Encourage coughing, monitor closely, prepare for complete obstruction, transport', correct: true, note: 'Correct. Effective cough = do not intervene. Position of comfort, monitor for signs of complete obstruction (silent cough, cyanosis, inability to speak/cry). High-priority transport -- partial can become complete at any time.' },
+        ]},
+        { question: 'During transport, the child stops coughing and becomes silent. Skin is becoming dusky. What now?', options: [
+          { text: 'Back blows and chest thrusts (child under 1) or abdominal thrusts (child over 1)', correct: true, note: 'Correct. Complete obstruction in a child over 1: abdominal thrusts (Heimlich). This is a 3-year-old, so abdominal thrusts are appropriate. If the child were under 1, use back blows and chest thrusts. Continue until object is expelled or patient becomes unresponsive.' },
+          { text: 'Attempt direct laryngoscopy to visualize and remove the object', correct: false, note: 'Not an EMT scope of practice. Direct laryngoscopy for foreign body removal requires ALS (paramedic) or higher. EMT protocol is abdominal thrusts. If patient becomes unresponsive, begin CPR and look for the object during airway management.' },
+        ]},
+      ],
+    },
+    {
+      id: 2, title: 'Altered Mental Status -- Multiple Causes',
+      patient: '72-year-old female found by neighbor sitting on porch, confused and unable to state her name. Neighbor says she was fine this morning. Medical alert bracelet reads "Diabetes Type 2."',
+      steps: [
+        { question: 'With diabetes history and altered mental status, what is your immediate assessment priority?', options: [
+          { text: 'Check blood glucose level', correct: true, note: 'Correct. Altered mental status + diabetes = check glucose immediately. Hypoglycemia is rapidly reversible and rapidly fatal if missed. This takes seconds and can change your entire treatment plan.' },
+          { text: 'Perform full neurological exam for stroke', correct: false, note: 'Not first. While stroke is in the differential, hypoglycemia can perfectly mimic stroke (including lateralizing signs). A 30-second glucose check can differentiate. Treat the easily reversible cause first.' },
+        ]},
+        { question: 'Glucose reads 38 mg/dL. Patient can swallow but is confused. What do you administer?', options: [
+          { text: 'Oral glucose gel (per EMT protocol for conscious patient who can swallow)', correct: true, note: 'Correct. EMT scope: oral glucose for hypoglycemia in a patient who can protect their airway. If the patient cannot swallow safely, request ALS for IV dextrose or IM glucagon. Monitor for improvement -- expect mental status changes within 5-10 minutes.' },
+          { text: 'Start IV dextrose immediately', correct: false, note: 'IV dextrose is ALS (paramedic) scope, not EMT. If ALS is not available, oral glucose is the EMT intervention for a patient who can swallow. If the patient cannot swallow, request ALS intercept urgently.' },
+        ]},
+        { question: 'After oral glucose, patient improves but remains slightly confused. Glucose is now 72. She mentions "I forgot my pills this morning." What do you assess before clearing?', options: [
+          { text: 'She is improving, so continue monitoring and transport', correct: true, note: 'Correct. Improving but not fully resolved requires transport. Glucose of 72 is borderline. The missed medication creates rebound risk. AMS patients with diabetes always transport -- rebound hypoglycemia can occur after initial treatment wears off.' },
+          { text: 'Glucose is normal now, she can refuse transport', correct: false, note: 'Dangerous. Glucose of 72 is borderline normal. The patient remains "slightly confused" -- she may lack capacity to refuse. Missed medications create rebound risk. Standard of care: transport all altered mental status patients, especially elderly diabetics.' },
+        ]},
+      ],
+    },
+    {
+      id: 3, title: 'Trauma with Cervical Spine Concern',
+      patient: '28-year-old male, motorcycle crash at estimated 35 mph. Wearing helmet. Found 15 feet from bike. Conscious, complaining of neck pain and tingling in both hands. Obvious road rash on extremities.',
+      steps: [
+        { question: 'Given mechanism of injury and symptoms, what is your spinal motion restriction decision?', options: [
+          { text: 'Full spinal motion restriction: c-collar, backboard, head blocks', correct: true, note: 'Correct. High-risk mechanism (motorcycle >20 mph), neck pain, and bilateral upper extremity paresthesia are absolute indications for full spinal motion restriction. The bilateral tingling suggests possible cervical cord involvement -- any movement could worsen neurological deficit.' },
+          { text: 'C-collar only since patient is conscious and ambulatory', correct: false, note: 'Insufficient. Bilateral hand tingling indicates possible cervical cord injury. C-collar alone does not adequately restrict thoracolumbar spine. Full restriction (board + collar + head blocks) is indicated. "Conscious and ambulatory" does not rule out unstable cervical fracture -- patients have walked away from crashes with C2 fractures.' },
+        ]},
+        { question: 'During assessment, you note the patient cannot feel light touch below the nipple line but has full sensation above. What dermatome level does this suggest?', options: [
+          { text: 'T4 -- suggesting thoracic spinal cord injury', correct: true, note: 'Correct. Nipple line corresponds to the T4 dermatome. Loss of sensation below T4 with preservation above suggests a thoracic spinal cord injury at or above that level. This is a critical finding that must be documented and reported to the receiving facility.' },
+          { text: 'C6 -- cervical injury', correct: false, note: 'Incorrect. C6 dermatome is the thumb and lateral forearm. The nipple line is T4. Dermatome knowledge is essential for localizing spinal injuries in the field. Key landmarks: C4 (shoulders), T4 (nipples), T10 (umbilicus), L1 (inguinal).' },
+        ]},
+        { question: 'Patient\'s BP is 88/60, HR 56. This combination in a trauma patient suggests?', options: [
+          { text: 'Neurogenic shock from spinal cord injury', correct: true, note: 'Correct. Hypotension + bradycardia in a spinal trauma patient = neurogenic shock. Spinal cord injury disrupts sympathetic nervous system, causing vasodilation (hypotension) and unopposed vagal tone (bradycardia). This is distinct from hypovolemic shock which causes tachycardia. Treatment: IV fluids, vasopressors (ALS), and avoid Trendelenburg in spinal patients.' },
+          { text: 'Hypovolemic shock from internal bleeding', correct: false, note: 'Key distinction: hypovolemic shock causes tachycardia (HR increases to compensate for blood loss). This patient has bradycardia (HR 56). Hypotension + bradycardia = neurogenic shock, not hypovolemic. Both can coexist in multi-system trauma, but the bradycardia points to neurogenic etiology.' },
+        ]},
+      ],
+    },
+    {
+      id: 4, title: 'Environmental Emergency -- Hypothermia',
+      patient: '45-year-old male found by hikers in a creek bed in 40F weather. Clothes are wet. Patient is shivering violently, speech is slurred, and he appears confused. He cannot tell you how long he has been there.',
+      steps: [
+        { question: 'Based on presentation (violent shivering, confusion, slurred speech), what stage of hypothermia is this?', options: [
+          { text: 'Moderate hypothermia (86-90F / 30-32C)', correct: true, note: 'Correct. Violent shivering with altered mental status (confusion, slurred speech) indicates moderate hypothermia. Mild would be shivering without mental status changes. Severe would show cessation of shivering, loss of consciousness, and cardiac dysrhythmias.' },
+          { text: 'Mild hypothermia (90-95F / 32-35C)', correct: false, note: 'Mild hypothermia presents with shivering but preserved mental status. This patient has confusion and slurred speech -- indicating moderate hypothermia. The mental status changes are the key differentiator.' },
+        ]},
+        { question: 'What is the correct rewarming approach in the field?', options: [
+          { text: 'Remove wet clothing, insulate with blankets, warm the core (trunk) not extremities', correct: true, note: 'Correct. Remove wet clothes, insulate from ground and air, apply warmth to trunk (not extremities). Warming extremities first causes "afterdrop" -- cold peripheral blood returns to the core, further dropping core temperature. This can trigger fatal cardiac dysrhythmias.' },
+          { text: 'Rub extremities vigorously to restore circulation', correct: false, note: 'Dangerous. Vigorous rubbing of extremities in hypothermia can (1) cause afterdrop by forcing cold blood to the core, (2) trigger cardiac dysrhythmias, and (3) damage frostbitten tissue. Gentle handling is essential. No rubbing, no rapid rewarming of extremities.' },
+        ]},
+        { question: 'During transport, the patient stops shivering and becomes less responsive. Should you be more or less concerned?', options: [
+          { text: 'More concerned -- cessation of shivering indicates progression to severe hypothermia', correct: true, note: 'Correct. Cessation of shivering is an ominous sign indicating progression from moderate to severe hypothermia (below 86F/30C). The body has exhausted its ability to generate heat. Cardiac dysrhythmia risk increases significantly. Handle extremely gently -- rough handling can trigger V-fib in severe hypothermia.' },
+          { text: 'Less concerned -- the patient is warming up and relaxing', correct: false, note: 'Wrong and potentially fatal misinterpretation. Shivering stops when the body can no longer thermoregulate -- this is decompensation, not improvement. The patient is getting worse, not better. Immediate notification of receiving facility for active rewarming capability.' },
+        ]},
+      ],
+    },
+  ], []);
+
+  const renderPtree = useCallback(() => {
+    var scenario = PTREE_SCENARIOS[ptreeIdx];
+    var currentStep = scenario.steps[ptreeStep] || null;
+    var stepKey = ptreeIdx + '_' + ptreeStep;
+    var stepAnswer = ptreeAnswers[stepKey];
+    var isRevealed = ptreeRevealed[stepKey];
+    var completedScenarios = PTREE_SCENARIOS.filter(function(s, si) {
+      return s.steps.every(function(st, sti) { return ptreeAnswers[si + '_' + sti] !== undefined; });
+    }).length;
+
+    return (
+      <div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}>
+          <div style={{ width: 4, height: 28, background: C.blue, borderRadius: 2 }} />
+          <h2 style={{ fontFamily: Serif, fontSize: 20, fontWeight: 700, color: C.tx, margin: 0 }}>
+            Protocol Decision Tree
+          </h2>
+        </div>
+        <p style={{ fontFamily: Serif, fontSize: 13, color: C.tx2, lineHeight: 1.65, marginBottom: 16, maxWidth: 680 }}>
+          Five patient scenarios with ambiguous presentations. Follow the EMT decision tree: SAMPLE history, vitals, chief complaint. Each wrong branch shows why and the real-world consequence.
+        </p>
+
+        {/* Scenario selector */}
+        <div style={{ display: 'flex', gap: 4, marginBottom: 16 }}>
+          {PTREE_SCENARIOS.map((s, i) => (
+            <button key={i} onClick={() => { setPtreeIdx(i); setPtreeStep(0); }} style={{
+              flex: 1, padding: '6px 8px', borderRadius: 4, cursor: 'pointer', textAlign: 'center',
+              background: ptreeIdx === i ? C.blueBg : 'transparent',
+              border: ptreeIdx === i ? '1px solid rgba(0,87,183,.3)' : '1px solid ' + C.line,
+            }}>
+              <span style={{ fontFamily: Mono, fontSize: 10, fontWeight: 600, color: ptreeIdx === i ? C.blue : C.tx3, display: 'block' }}>{i + 1}</span>
+              <span style={{ fontFamily: Sans, fontSize: 9, color: C.tx3 }}>{s.title.split(' ')[0]}</span>
+            </button>
+          ))}
+        </div>
+
+        {/* Patient presentation */}
+        <div style={{
+          background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6,
+          padding: 16, marginBottom: 12, borderTop: '3px solid ' + C.blue,
+        }}>
+          <div style={{ fontFamily: Mono, fontSize: 10, letterSpacing: '.1em', color: C.blueDm, marginBottom: 6 }}>PATIENT PRESENTATION</div>
+          <h3 style={{ fontFamily: Serif, fontSize: 16, color: C.tx, marginBottom: 8 }}>{scenario.title}</h3>
+          <p style={{ fontFamily: Serif, fontSize: 12, color: C.tx2, lineHeight: 1.7, borderLeft: '3px solid ' + C.line, paddingLeft: 12 }}>
+            {scenario.patient}
+          </p>
+        </div>
+
+        {/* Step progress */}
+        <div style={{ display: 'flex', gap: 4, marginBottom: 12 }}>
+          {scenario.steps.map((s, si) => (
+            <div key={si} style={{
+              flex: 1, height: 4, borderRadius: 2,
+              background: si < ptreeStep ? C.green : si === ptreeStep ? C.blue : C.line,
+            }} />
+          ))}
+        </div>
+
+        {/* Current decision step */}
+        {currentStep && (
+          <div style={{ background: C.card, border: '1px solid ' + C.cardBd, borderRadius: 6, padding: 16, marginBottom: 12 }}>
+            <div style={{ fontFamily: Mono, fontSize: 10, color: C.tx3, marginBottom: 6 }}>STEP {ptreeStep + 1} OF {scenario.steps.length}</div>
+            <p style={{ fontFamily: Sans, fontSize: 13, fontWeight: 600, color: C.tx, marginBottom: 10 }}>{currentStep.question}</p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+              {currentStep.options.map((opt, oi) => {
+                var isSelected = stepAnswer === oi;
+                return (
+                  <div key={oi}>
+                    <button onClick={() => {
+                      if (stepAnswer === undefined) {
+                        setPtreeAnswers(prev => ({ ...prev, [stepKey]: oi }));
+                        setPtreeRevealed(prev => ({ ...prev, [stepKey]: true }));
+                      }
+                    }} style={{
+                      width: '100%', textAlign: 'left', padding: '10px 14px', borderRadius: 4,
+                      cursor: stepAnswer === undefined ? 'pointer' : 'default',
+                      background: isRevealed && isSelected ? (opt.correct ? C.greenBg : C.redBg) : isSelected ? C.blueBg : 'transparent',
+                      border: isSelected ? '1px solid ' + (isRevealed ? (opt.correct ? C.green : C.red) : C.blue) : '1px solid ' + C.line,
+                      opacity: stepAnswer !== undefined && !isSelected && !(isRevealed && opt.correct) ? 0.35 : 1,
+                    }}>
+                      <span style={{ fontFamily: Sans, fontSize: 12, color: C.tx }}>{opt.text}</span>
+                    </button>
+                    {isRevealed && (isSelected || opt.correct) && (
+                      <div style={{
+                        padding: '6px 14px', marginTop: 3,
+                        borderLeft: '3px solid ' + (opt.correct ? C.green : C.red),
+                        background: opt.correct ? 'rgba(48,168,72,.04)' : 'rgba(204,32,32,.04)',
+                      }}>
+                        <span style={{ fontFamily: Sans, fontSize: 11, color: C.tx2, lineHeight: 1.6 }}>{opt.note}</span>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+            {isRevealed && ptreeStep < scenario.steps.length - 1 && (
+              <button onClick={() => setPtreeStep(ptreeStep + 1)} style={{
+                marginTop: 12, padding: '8px 20px', borderRadius: 4, cursor: 'pointer',
+                background: C.blueBg, border: '1px solid rgba(0,87,183,.3)', color: C.blue,
+                fontFamily: Mono, fontSize: 11,
+              }}>
+                NEXT STEP {'\u2192'}
+              </button>
+            )}
+          </div>
+        )}
+
+        {/* Scenario complete */}
+        {ptreeStep >= scenario.steps.length - 1 && ptreeAnswers[ptreeIdx + '_' + (scenario.steps.length - 1)] !== undefined && (
+          <div style={{ textAlign: 'center', padding: 16, fontFamily: Mono, fontSize: 12, color: C.green }}>
+            Scenario complete. {completedScenarios}/{PTREE_SCENARIOS.length} scenarios finished.
+          </div>
+        )}
+      </div>
+    );
+  }, [ptreeIdx, ptreeStep, ptreeAnswers, ptreeRevealed, PTREE_SCENARIOS]);
+
   // ── Main Render ────────────────────────────────────────────
   return (
     <div style={{
@@ -1358,6 +1743,8 @@ function EmtView({ setView }) {
         {mode === 'protocol' && renderProtocol()}
         {mode === 'flowchart' && renderFlowchart()}
         {mode === 'debrief' && renderDebrief()}
+        {mode === 'mci' && renderMCI()}
+        {mode === 'ptree' && renderPtree()}
 
         {/* Provenance */}
         <div style={{

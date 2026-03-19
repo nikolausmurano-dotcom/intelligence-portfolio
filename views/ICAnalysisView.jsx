@@ -275,6 +275,17 @@ function ICAnalysisView({ setView }) {
   const [topMode, setTopMode] = useState('exercise');
   const [cycleSelectedSegment, setCycleSelectedSegment] = useState(null);
 
+  // ── Failure Autopsy state ────────────────────────────────
+  const [failureCaseId, setFailureCaseId] = useState(0);
+  const [failureAnswers, setFailureAnswers] = useState({});
+  const [failureRevealed, setFailureRevealed] = useState({});
+
+  // ── Consumer-Producer state ──────────────────────────────
+  const [consumerPhase, setConsumerPhase] = useState('analyst'); // analyst | policymaker | debrief
+  const [analystBrief, setAnalystBrief] = useState('');
+  const [policymakerChoice, setPolicymakerChoice] = useState(null);
+  const [consumerRevealed, setConsumerRevealed] = useState(false);
+
   const C = IC_C;
 
   // ── Scholarly tooltip renderer & icons ─────────────────────
@@ -1293,6 +1304,8 @@ function ICAnalysisView({ setView }) {
           {[
             { id: 'exercise', label: 'Exercise', desc: 'Caracas Scenario' },
             { id: 'cycle', label: 'Cycle', desc: 'Visual Diagram' },
+            { id: 'failure', label: 'Failure', desc: 'Autopsy Lab' },
+            { id: 'consumer', label: 'Consumer', desc: 'Producer Dynamic' },
           ].map(m => (
             <button key={m.id} onClick={() => setTopMode(m.id)}
               style={{
@@ -1347,6 +1360,296 @@ function ICAnalysisView({ setView }) {
         )}
 
         {topMode === 'cycle' && renderCycleWheel()}
+
+        {/* ════════════════════════════════════════════════════ */}
+        {/* FAILURE MODE — Intelligence Failure Autopsy          */}
+        {/* ════════════════════════════════════════════════════ */}
+        {topMode === 'failure' && (() => {
+          var FAILURE_CASES = [
+            { id: 'pearl', name: 'Pearl Harbor (1941)', known: 'MAGIC intercepts revealed Japanese diplomatic deadlines. Radar operators detected incoming aircraft 50 minutes before the attack. A Japanese midget submarine was sunk outside the harbor. War warnings had been issued to Pacific commanders on November 27.', missed: 'The specific target (Pearl Harbor) and timing (December 7) were not identified. Warning indicators were dispersed across agencies with no central fusion. Radar contacts were dismissed as friendly B-17s expected from the mainland.', categories: { collection: false, analysis: true, policy: false, communication: true }, explanation: 'Primarily a communication and analytic failure. Intelligence existed but was not fused or delivered to operational commanders in time. The warning-dissemination chain broke at multiple points. MAGIC decrypt of the 14-part message arrived too late to reach Kimmel/Short before the attack.' },
+            { id: 'cuban', name: 'Cuban Missiles (1962)', known: 'CIA had been collecting on Soviet military buildup in Cuba since summer 1962. Agent reports mentioned "unusual long cylindrical objects" being transported. SIGINT showed increased Soviet shipping to Cuba.', missed: 'The IC initially assessed that the USSR would NOT place offensive missiles in Cuba — this was a correct assessment of decades of Soviet behavior but wrong in this specific case. The U-2 overflight that confirmed MRBMs was delayed by bureaucratic/weather issues.', categories: { collection: false, analysis: true, policy: false, communication: false }, explanation: 'Primarily an analytic failure driven by mirror imaging. The IC projected US strategic logic onto Soviet decision-making and concluded the USSR would not take such a provocative step. Khrushchev\'s risk calculus was fundamentally different from what analysts assumed. Once the U-2 confirmed missiles, the IC performed well.' },
+            { id: 'sept11', name: 'September 11 (2001)', known: 'CIA tracked two of the hijackers (Mihdhar/Hazmi) to a January 2000 al-Qaeda meeting in Malaysia. FBI Phoenix memo warned of suspicious flight school enrollments. PDB of August 6 titled "Bin Ladin Determined to Strike in US." NSA held intercepts suggesting an imminent attack.', missed: 'CIA did not place Mihdhar/Hazmi on the State Department watchlist until August 2001. FBI and CIA did not share critical information due to "the wall." No agency synthesized the disparate threads into a coherent threat picture. The specific method (hijacking as weapon) was imagined in some scenarios but not acted upon.', categories: { collection: false, analysis: true, policy: true, communication: true }, explanation: 'A systemic failure across analysis, policy, and communication. The famous "wall" between intelligence and law enforcement prevented information sharing. The IC lacked imagination about the attack mode. Policy officials did not prioritize the threat sufficiently despite warnings. The 9/11 Commission called it a "failure of imagination" — but more precisely, it was a failure to connect dots that existed in separate bureaucratic silos.' },
+            { id: 'wmd', name: 'Iraq WMD (2002)', known: 'The 2002 NIE assessed with "high confidence" that Iraq possessed WMD. Key source CURVEBALL provided detailed reporting on mobile biological weapons labs. Analysts believed Iraq had retained pre-1991 stockpiles. Some dissents existed (INR on nuclear, Air Force on UAVs).', missed: 'Iraq had no active WMD programs. CURVEBALL was a fabricator never vetted by his handlers. The aluminum tubes were for conventional rockets, not centrifuges. The "mobile labs" were weather balloon inflation trucks. Dissents were buried in footnotes.', categories: { collection: true, analysis: true, policy: true, communication: false }, explanation: 'The most comprehensive intelligence failure in modern history. Collection failure: CURVEBALL was never properly vetted; HUMINT penetration of Iraq was minimal. Analysis failure: groupthink, confirmation bias, and lack of devil\'s advocacy. Policy failure: the assessment was shaped by intense policy pressure to support the case for war. The Silberman-Robb Commission found the IC was "dead wrong" — a failure that led directly to ICD-203 analytic standards reform.' },
+          ];
+
+          var CATEGORY_OPTIONS = [
+            { id: 'collection', label: 'Collection Failure', desc: 'The information was never collected, or sources were unreliable' },
+            { id: 'analysis', label: 'Analysis Failure', desc: 'The information existed but was incorrectly interpreted' },
+            { id: 'policy', label: 'Policy Failure', desc: 'Policymakers ignored, distorted, or pressured intelligence' },
+            { id: 'communication', label: 'Communication Failure', desc: 'Intelligence was not shared or delivered in time' },
+          ];
+
+          var fc = FAILURE_CASES[failureCaseId];
+          var caseRevealed = failureRevealed[fc.id];
+          var caseAnswers = failureAnswers[fc.id] || {};
+          var correct = caseRevealed ? CATEGORY_OPTIONS.filter(function(cat) {
+            return (caseAnswers[cat.id] || false) === fc.categories[cat.id];
+          }).length : 0;
+
+          return (
+            <div>
+              <div style={{ padding: 16, background: C.card, border: `1px solid ${C.cardBd}`, borderLeft: `3px solid ${C.red}`, marginBottom: 16, borderRadius: 4 }}>
+                <div style={{ fontFamily: IC_Mono, fontSize: 10, color: C.red, letterSpacing: '.12em', marginBottom: 8 }}>INTELLIGENCE FAILURE AUTOPSY</div>
+                <p style={{ fontSize: 13, color: C.tx, lineHeight: 1.7, marginBottom: 16 }}>
+                  For each historical intelligence failure, review what was known, what was missed, and WHY it was missed. Then categorize the failure types: was it a collection failure, analysis failure, policy failure, or communication failure? Most cases involve multiple failure types. Compare your assessment to the expert consensus.
+                </p>
+
+                {/* Case selector */}
+                <div style={{ display: 'flex', gap: 4, marginBottom: 16, flexWrap: 'wrap' }}>
+                  {FAILURE_CASES.map(function(c, ci) {
+                    var done = failureRevealed[c.id];
+                    return (
+                      <button key={c.id} onClick={function() { setFailureCaseId(ci); }}
+                        style={{
+                          padding: '6px 12px', fontFamily: IC_Mono, fontSize: 10, cursor: 'pointer',
+                          background: failureCaseId === ci ? `${C.red}15` : done ? `${C.green}08` : 'transparent',
+                          border: `1px solid ${failureCaseId === ci ? C.red : done ? C.green : C.line}`,
+                          color: failureCaseId === ci ? C.red : done ? C.green : C.tx3, borderRadius: 3,
+                        }}>
+                        {c.name}
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Case content */}
+                <div style={{ padding: 12, background: 'rgba(0,0,0,.2)', border: `1px solid ${C.line}`, borderRadius: 3, marginBottom: 12 }}>
+                  <div style={{ fontFamily: IC_Mono, fontSize: 9, color: C.gold, marginBottom: 6 }}>WHAT WAS KNOWN</div>
+                  <p style={{ fontSize: 12, color: C.tx, lineHeight: 1.7, marginBottom: 12 }}>{fc.known}</p>
+                  <div style={{ fontFamily: IC_Mono, fontSize: 9, color: C.red, marginBottom: 6 }}>WHAT WAS MISSED</div>
+                  <p style={{ fontSize: 12, color: C.tx, lineHeight: 1.7 }}>{fc.missed}</p>
+                </div>
+
+                {/* Category selection */}
+                <div style={{ fontFamily: IC_Mono, fontSize: 10, color: C.gold, marginBottom: 8 }}>WHY WAS IT MISSED? (select all that apply)</div>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6, marginBottom: 12 }}>
+                  {CATEGORY_OPTIONS.map(function(cat) {
+                    var selected = caseAnswers[cat.id] || false;
+                    return (
+                      <div key={cat.id} onClick={function() {
+                        if (caseRevealed) return;
+                        setFailureAnswers(function(prev) {
+                          var c = Object.assign({}, prev);
+                          if (!c[fc.id]) c[fc.id] = {};
+                          c[fc.id] = Object.assign({}, c[fc.id]);
+                          c[fc.id][cat.id] = !selected;
+                          return c;
+                        });
+                      }} style={{
+                        padding: 10, cursor: caseRevealed ? 'default' : 'pointer', borderRadius: 3,
+                        background: selected ? `${C.amber}10` : C.card,
+                        border: `1px solid ${selected ? C.amber : C.cardBd}`,
+                      }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 2 }}>
+                          <div style={{ width: 14, height: 14, borderRadius: 2, border: `1px solid ${selected ? C.amber : C.line}`, background: selected ? C.amber : 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                            {selected && <span style={{ color: '#000', fontSize: 10, fontWeight: 700 }}>X</span>}
+                          </div>
+                          <span style={{ fontFamily: IC_Mono, fontSize: 11, color: selected ? C.amber : C.tx, fontWeight: 600 }}>{cat.label}</span>
+                        </div>
+                        <p style={{ fontSize: 10, color: C.tx3, lineHeight: 1.4, marginLeft: 20 }}>{cat.desc}</p>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {!caseRevealed && (
+                  <button onClick={function() { setFailureRevealed(function(prev) { var c = Object.assign({}, prev); c[fc.id] = true; return c; }); }}
+                    style={{
+                      padding: '8px 20px', fontFamily: IC_Mono, fontSize: 11, cursor: 'pointer',
+                      background: `${C.red}15`, border: `1px solid ${C.red}`, color: C.red, borderRadius: 3,
+                    }}>
+                    Reveal Expert Assessment
+                  </button>
+                )}
+
+                {caseRevealed && (
+                  <div style={{ padding: 14, background: 'rgba(0,0,0,.2)', border: `1px solid ${C.line}`, borderRadius: 3, marginTop: 8 }}>
+                    <div style={{ fontFamily: IC_Mono, fontSize: 11, color: correct === 4 ? C.green : correct >= 3 ? C.amber : C.red, fontWeight: 700, marginBottom: 8 }}>
+                      ACCURACY: {correct}/4 failure categories correctly identified
+                    </div>
+                    <div style={{ display: 'flex', gap: 8, marginBottom: 10, flexWrap: 'wrap' }}>
+                      {CATEGORY_OPTIONS.map(function(cat) {
+                        var isActual = fc.categories[cat.id];
+                        var userSaid = caseAnswers[cat.id] || false;
+                        return (
+                          <span key={cat.id} style={{
+                            padding: '3px 8px', fontFamily: IC_Mono, fontSize: 9, borderRadius: 2,
+                            background: isActual ? `${C.green}15` : 'transparent',
+                            border: `1px solid ${isActual ? C.green : C.line}30`,
+                            color: isActual ? C.green : C.tx3,
+                            textDecoration: !isActual && userSaid ? 'line-through' : 'none',
+                          }}>
+                            {cat.label}{isActual ? ' [YES]' : ' [NO]'}
+                          </span>
+                        );
+                      })}
+                    </div>
+                    <p style={{ fontSize: 12, color: C.tx2, lineHeight: 1.7 }}>{fc.explanation}</p>
+                  </div>
+                )}
+              </div>
+            </div>
+          );
+        })()}
+
+        {/* ════════════════════════════════════════════════════ */}
+        {/* CONSUMER MODE — Consumer-Producer Dynamic Simulator */}
+        {/* ════════════════════════════════════════════════════ */}
+        {topMode === 'consumer' && (() => {
+          var CONSUMER_SCENARIO = {
+            title: 'The Ankara Signal',
+            context: 'Turkey has massed troops on the Syrian border. Intelligence suggests either a limited incursion to create a buffer zone or a full-scale invasion. The President needs a recommendation by tomorrow morning.',
+          };
+          var SAMPLE_BRIEFS = [
+            { id: 'b1', author: 'DIA Analyst', style: 'Direct / Assertive', text: 'Turkey will almost certainly launch a limited cross-border operation within 72 hours. Force positioning mirrors the 2018 Afrin operation pattern. Recommend pre-positioning diplomatic assets for ceasefire mediation.', quality: 'actionable', bias: 'Overconfident. Uses "almost certainly" without acknowledging the full-invasion alternative. Anchored to the 2018 precedent.', policyEffect: 'Policymaker may delay preparation for a larger contingency based on analyst\'s certainty.' },
+            { id: 'b2', author: 'State/INR Analyst', style: 'Hedged / Diplomatic', text: 'Turkish intentions remain ambiguous. While military positioning is consistent with an operation, diplomatic back-channel activity suggests Ankara may be using the threat of force as leverage in ongoing negotiations. Multiple outcomes are possible.', quality: 'cautious', bias: 'Under-specified. Fails to assign probabilities or rank scenarios. Policymaker receives no basis for action prioritization.', policyEffect: 'Policymaker frustrated by lack of actionable guidance. May seek information from other sources or rely on their own judgment.' },
+            { id: 'b3', author: 'CIA Analyst', style: 'Structured / Balanced', text: 'We assess with moderate confidence that Turkey is preparing a limited cross-border operation (60% probability) rather than a full invasion (25%) or a coercive bluff (15%). Key indicators to watch: 1) movement of field hospitals forward, 2) activation of reserve units, 3) rhetoric shift from "security zone" to "liberation." If field hospitals deploy within 48 hours, upgrade to high confidence for limited operation.', quality: 'structured', bias: 'Closest to ICD-203 standards. Assigns probabilities, identifies indicators for updating, and distinguishes between scenarios.', policyEffect: 'Policymaker can prioritize planning for the most likely scenario while hedging for alternatives. Indicators provide a framework for updating.' },
+          ];
+
+          return (
+            <div>
+              <div style={{ padding: 16, background: C.card, border: `1px solid ${C.cardBd}`, borderLeft: `3px solid ${C.blue}`, marginBottom: 16, borderRadius: 4 }}>
+                <div style={{ fontFamily: IC_Mono, fontSize: 10, color: C.blue, letterSpacing: '.12em', marginBottom: 8 }}>CONSUMER-PRODUCER DYNAMIC SIMULATOR</div>
+                <p style={{ fontSize: 13, color: C.tx, lineHeight: 1.7, marginBottom: 16 }}>
+                  Experience both sides of the intelligence relationship. First, write a PDB-style brief as an analyst. Then switch to the policymaker role: receive three briefs and decide which to act on. See how the analyst-policymaker gap creates distortion. Based on the work of Richard Betts and Sherman Kent.
+                </p>
+
+                {/* Scenario */}
+                <div style={{ padding: 12, background: `${C.gold}06`, border: `1px solid ${C.gold}20`, borderRadius: 3, marginBottom: 16 }}>
+                  <div style={{ fontFamily: IC_Mono, fontSize: 9, color: C.gold, letterSpacing: '.1em', marginBottom: 4 }}>{CONSUMER_SCENARIO.title.toUpperCase()}</div>
+                  <p style={{ fontSize: 12, color: C.tx, lineHeight: 1.6 }}>{CONSUMER_SCENARIO.context}</p>
+                </div>
+
+                {/* Phase tabs */}
+                <div style={{ display: 'flex', gap: 4, marginBottom: 16 }}>
+                  {[['analyst','Write Brief (Analyst)'],['policymaker','Choose Brief (Policymaker)'],['debrief','Debrief']].map(function(pair) {
+                    var pid = pair[0], plabel = pair[1];
+                    var canAccess = pid === 'analyst' || (pid === 'policymaker' && analystBrief.length > 20) || (pid === 'debrief' && policymakerChoice !== null);
+                    return (
+                      <button key={pid} onClick={function() { if (canAccess) setConsumerPhase(pid); }}
+                        style={{
+                          padding: '6px 12px', fontFamily: IC_Mono, fontSize: 10, cursor: canAccess ? 'pointer' : 'not-allowed',
+                          background: consumerPhase === pid ? `${C.blue}15` : 'transparent',
+                          border: `1px solid ${consumerPhase === pid ? C.blue : C.line}`,
+                          color: consumerPhase === pid ? C.blue : (canAccess ? C.tx3 : C.tx3 + '60'), borderRadius: 3,
+                          opacity: canAccess ? 1 : 0.5,
+                        }}>
+                        {plabel}
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Phase: Analyst */}
+                {consumerPhase === 'analyst' && (
+                  <div>
+                    <div style={{ fontFamily: IC_Mono, fontSize: 10, color: C.gold, marginBottom: 8 }}>ROLE: INTELLIGENCE ANALYST</div>
+                    <p style={{ fontSize: 12, color: C.tx2, lineHeight: 1.6, marginBottom: 12 }}>
+                      Write a 2-3 sentence PDB-style brief for the President on the Ankara situation. Include: your assessment of what Turkey will do, your confidence level, and one recommended action. Remember: you are writing for a consumer who has 30 seconds to read this.
+                    </p>
+                    <textarea value={analystBrief} placeholder="Write your PDB brief here..."
+                      onChange={function(e) { setAnalystBrief(e.target.value); }}
+                      style={{ width: '100%', minHeight: 100, padding: 12, fontFamily: IC_Mono, fontSize: 12, background: 'rgba(0,0,0,.3)', color: C.tx, border: `1px solid ${C.line}`, borderRadius: 3, resize: 'vertical', lineHeight: 1.7 }}
+                    />
+                    <div style={{ fontFamily: IC_Mono, fontSize: 10, color: C.tx3, marginTop: 4 }}>
+                      {analystBrief.length} characters. {analystBrief.length > 20 ? 'You can proceed to the policymaker phase.' : 'Write at least 20 characters.'}
+                    </div>
+                  </div>
+                )}
+
+                {/* Phase: Policymaker */}
+                {consumerPhase === 'policymaker' && (
+                  <div>
+                    <div style={{ fontFamily: IC_Mono, fontSize: 10, color: C.amber, marginBottom: 8 }}>ROLE: POLICYMAKER (NSC DIRECTOR)</div>
+                    <p style={{ fontSize: 12, color: C.tx2, lineHeight: 1.6, marginBottom: 12 }}>
+                      You have received three intelligence briefs on the Ankara situation. You have 30 seconds per brief (in the real PDB process). Select the one you will base your recommendation on. Then see how each brief would shape different policy outcomes.
+                    </p>
+
+                    {/* Your own brief */}
+                    <div style={{ padding: 12, marginBottom: 8, background: `${C.gold}06`, border: `1px solid ${C.gold}20`, borderRadius: 3 }}>
+                      <div style={{ fontFamily: IC_Mono, fontSize: 9, color: C.gold, marginBottom: 4 }}>YOUR BRIEF (as analyst)</div>
+                      <p style={{ fontSize: 12, color: C.tx, lineHeight: 1.6, fontStyle: 'italic' }}>"{analystBrief}"</p>
+                    </div>
+
+                    {/* Sample briefs */}
+                    {SAMPLE_BRIEFS.map(function(brief) {
+                      var selected = policymakerChoice === brief.id;
+                      return (
+                        <div key={brief.id} onClick={function() { if (!consumerRevealed) setPolicymakerChoice(brief.id); }}
+                          style={{
+                            padding: 12, marginBottom: 8, cursor: consumerRevealed ? 'default' : 'pointer', borderRadius: 3,
+                            background: selected ? `${C.blue}10` : C.card,
+                            border: `1px solid ${selected ? C.blue : C.cardBd}`,
+                          }}>
+                          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
+                            <span style={{ fontFamily: IC_Mono, fontSize: 10, color: C.tx, fontWeight: 600 }}>{brief.author}</span>
+                            <span style={{ fontFamily: IC_Mono, fontSize: 9, color: C.tx3 }}>{brief.style}</span>
+                          </div>
+                          <p style={{ fontSize: 12, color: C.tx, lineHeight: 1.7 }}>"{brief.text}"</p>
+                        </div>
+                      );
+                    })}
+
+                    {policymakerChoice && !consumerRevealed && (
+                      <button onClick={function() { setConsumerRevealed(true); setConsumerPhase('debrief'); }}
+                        style={{
+                          padding: '8px 20px', fontFamily: IC_Mono, fontSize: 11, cursor: 'pointer',
+                          background: `${C.blue}15`, border: `1px solid ${C.blue}`, color: C.blue, borderRadius: 3,
+                        }}>
+                        Submit Selection and Debrief
+                      </button>
+                    )}
+                  </div>
+                )}
+
+                {/* Phase: Debrief */}
+                {consumerPhase === 'debrief' && consumerRevealed && (
+                  <div>
+                    <div style={{ fontFamily: IC_Mono, fontSize: 10, color: C.green, marginBottom: 8 }}>DEBRIEF: THE ANALYST-POLICYMAKER GAP</div>
+
+                    {SAMPLE_BRIEFS.map(function(brief) {
+                      var wasChosen = policymakerChoice === brief.id;
+                      return (
+                        <div key={brief.id} style={{ padding: 12, marginBottom: 8, background: wasChosen ? `${C.blue}08` : C.card, border: `1px solid ${wasChosen ? C.blue : C.cardBd}`, borderRadius: 3 }}>
+                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                            <span style={{ fontFamily: IC_Mono, fontSize: 11, color: C.tx, fontWeight: 600 }}>{brief.author}</span>
+                            {wasChosen && <span style={{ fontFamily: IC_Mono, fontSize: 9, color: C.blue, padding: '2px 6px', background: `${C.blue}15`, border: `1px solid ${C.blue}30`, borderRadius: 2 }}>YOUR CHOICE</span>}
+                          </div>
+                          <div style={{ marginBottom: 6 }}>
+                            <span style={{ fontFamily: IC_Mono, fontSize: 9, color: C.amber }}>HIDDEN BIAS: </span>
+                            <span style={{ fontSize: 11, color: C.tx2 }}>{brief.bias}</span>
+                          </div>
+                          <div>
+                            <span style={{ fontFamily: IC_Mono, fontSize: 9, color: C.red }}>POLICY EFFECT: </span>
+                            <span style={{ fontSize: 11, color: C.tx2 }}>{brief.policyEffect}</span>
+                          </div>
+                        </div>
+                      );
+                    })}
+
+                    <div style={{ padding: 14, background: 'rgba(0,0,0,.2)', border: `1px solid ${C.line}`, borderRadius: 3, marginTop: 12 }}>
+                      <div style={{ fontFamily: IC_Mono, fontSize: 10, color: C.gold, marginBottom: 8 }}>KEY INSIGHT: THE BETTS-KENT PARADOX</div>
+                      <p style={{ fontSize: 12, color: C.tx, lineHeight: 1.7, marginBottom: 8 }}>
+                        Richard Betts (1978) demonstrated that intelligence failures are inevitable because the consumer-producer relationship contains a structural paradox: analysts who hedge their language (correctly reflecting uncertainty) are ignored by policymakers who need clear guidance, while analysts who provide certainty are rewarded but are more likely to be wrong.
+                      </p>
+                      <p style={{ fontSize: 12, color: C.tx2, lineHeight: 1.7, marginBottom: 8 }}>
+                        Sherman Kent argued that intelligence language must be precise -- "probable" should mean 60-70%, "likely" should mean 55-85%. But decades of research show that policymakers interpret the same words differently. The structured brief (Brief C) comes closest to Kent's ideal by assigning explicit probabilities and providing indicators for updating.
+                      </p>
+                      <p style={{ fontSize: 12, color: C.tx2, lineHeight: 1.7 }}>
+                        Your brief: compare your own writing to the three samples. Did you assign probabilities? Provide indicators? Recommend action? The gap between what analysts write and what policymakers need is where intelligence failure lives.
+                      </p>
+                    </div>
+
+                    <button onClick={function() { setAnalystBrief(''); setPolicymakerChoice(null); setConsumerRevealed(false); setConsumerPhase('analyst'); }}
+                      style={{ marginTop: 10, padding: '6px 14px', fontFamily: IC_Mono, fontSize: 10, background: 'transparent', border: `1px solid ${C.blue}`, color: C.blue, cursor: 'pointer', borderRadius: 3 }}>
+                      Reset Simulation
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+          );
+        })()}
 
         {renderProvenance()}
       </div>

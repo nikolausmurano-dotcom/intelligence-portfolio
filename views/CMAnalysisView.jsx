@@ -152,7 +152,9 @@ const CM_MODES = [
   { id: 'workshop', label: 'Workshop', icon: '\u270F' },
   { id: 'gallery', label: 'Gallery', icon: '\u{1F4CB}' },
   { id: 'standards', label: 'Standards', icon: '\u{1F4D6}' },
-  { id: 'flow', label: 'Flow', icon: '\→' },
+  { id: 'flow', label: 'Flow', icon: '\u2192' },
+  { id: 'rewrite', label: 'Rewrite Lab', icon: '\u2702' },
+  { id: 'audience', label: 'Audience', icon: '\u{1F465}' },
 ];
 
 // ── Product Format Definitions ───────────────────────────────
@@ -588,6 +590,12 @@ function CMAnalysisView({ setView }) {
   const [galleryFormat, setGalleryFormat] = useState('pdb');
   const [flowSelected, setFlowSelected] = useState(null);
   const [tipId, setTipId] = useState(null);
+  const [rewriteIdx, setRewriteIdx] = useState(0);
+  const [rewriteDraft, setRewriteDraft] = useState({});
+  const [rewriteRevealed, setRewriteRevealed] = useState({});
+  const [rewriteProblems, setRewriteProblems] = useState({});
+  const [audienceFinding, setAudienceFinding] = useState(0);
+  const [audienceExpanded, setAudienceExpanded] = useState(null);
 
   const C = CM_PALETTE;
 
@@ -1317,6 +1325,303 @@ function CMAnalysisView({ setView }) {
     </div>
   );
 
+  // ── Rewrite Lab data ──────────────────────────────────────
+  const REWRITE_ITEMS = useMemo(() => [
+    {
+      id: 0, title: 'Vague Language and Missing Confidence',
+      bad: 'Iran is probably doing something with its nuclear program that could be concerning. Sources suggest there may be activity at several facilities that might indicate weapons-related work. This is possibly significant.',
+      problems: ['Vague hedging ("probably," "could be," "might," "possibly") without ICD-203 confidence levels', 'No specific evidence cited -- "sources suggest" is meaningless without characterization', 'Buries the lead -- the key judgment is lost in qualifiers', 'No analytic line -- fails to state what the IC assesses and why'],
+      expert: 'We assess with MODERATE CONFIDENCE that Iran has resumed uranium enrichment activities at three previously dormant facilities (Fordow, Natanz-2, Isfahan). This judgment is based on commercial satellite imagery showing new centrifuge installations (corroborated by two independent IMINT sources) and SIGINT intercepts referencing "cascade operations" among AEOI officials. The resumption is consistent with Iran\'s stated intent to reduce JCPOA compliance following U.S. withdrawal.',
+      icd203Score: { original: 18, expert: 92 },
+      issues: ['Confidence level', 'Source characterization', 'BLUF structure', 'Analytic line'],
+    },
+    {
+      id: 1, title: 'Unsupported Conclusions',
+      bad: 'China will invade Taiwan within the next two years. Beijing has been building up military forces in Fujian Province and conducting exercises that clearly demonstrate invasion intent. The PLA is ready and Xi Jinping has made his decision.',
+      problems: ['States assessment as certainty ("will invade") without any confidence qualifier', 'Conflates military capability with political intent -- exercises demonstrate readiness, not necessarily intent', 'Claims knowledge of leadership decision-making without sourcing', 'No alternative analysis or consideration of deterrent factors'],
+      expert: 'We assess with LOW CONFIDENCE that the PLA could conduct a full-scale amphibious assault on Taiwan by 2028, based on current force modernization trajectories. We note, however, that military capability does not equate to political intent. HUMINT reporting on Xi Jinping\'s decision calculus is limited and contradictory. Alternative analysis suggests the military buildup may serve coercive purposes short of invasion. Key indicators to watch: logistics pre-positioning, civilian shipping requisitions, and strategic reserve mobilization.',
+      icd203Score: { original: 12, expert: 88 },
+      issues: ['Certainty without evidence', 'Capability vs. intent', 'Missing alternatives', 'Indicator identification'],
+    },
+    {
+      id: 2, title: 'Passive Voice and Buried Lead',
+      bad: 'It has been observed by multiple agencies that activities consistent with the development of advanced weapons capabilities have been undertaken in facilities that are believed to be associated with the DPRK\'s strategic forces. It is thought that these activities could potentially represent an expansion of existing programs that have previously been identified as being of concern to the international community.',
+      problems: ['Extreme passive voice obscures who observed what ("it has been observed," "it is thought")', 'Lead is buried under three layers of qualification', 'Bureaucratic language replaces clear analytic writing', '72 words to say what should take 20'],
+      expert: 'North Korea is expanding its nuclear weapons production capacity. Satellite imagery from three agencies confirms new construction at Yongbyon and a previously unidentified facility near Kangson, including reactor cooling infrastructure and reprocessing equipment. We assess with HIGH CONFIDENCE that these facilities will be operational within 18 months, potentially doubling DPRK\'s fissile material production rate.',
+      icd203Score: { original: 22, expert: 95 },
+      issues: ['Passive voice', 'Buried lead', 'Bureaucratic padding', 'Clarity'],
+    },
+    {
+      id: 3, title: 'Missing Sourcing and Tradecraft',
+      bad: 'Russia is planning a major cyber operation against US critical infrastructure. The attack will target power grids and financial systems simultaneously. We have reliable intelligence that confirms this assessment. The threat is imminent and action is required immediately.',
+      problems: ['No source characterization -- "reliable intelligence" is an empty assertion', 'No confidence level despite making a HIGH-stakes judgment', 'Advocacy ("action is required") violates analytic objectivity', 'No timeline specificity despite claiming "imminent"'],
+      expert: 'We assess with MODERATE CONFIDENCE that Russian state-sponsored cyber actors are developing capabilities to simultaneously disrupt U.S. power grid SCADA systems and financial clearinghouse networks. This assessment is based on: (1) NSA SIGINT showing GRU Unit 74455 conducting reconnaissance of six utility companies (HIGH reliability), (2) a single HUMINT source with direct access reporting target selection meetings (MODERATE reliability, access not independently verified), and (3) technical analysis of malware samples consistent with ICS-targeting toolkits. Timing indicators suggest operational readiness within 3-6 months, though the decision to execute remains a political judgment we cannot assess.',
+      icd203Score: { original: 15, expert: 91 },
+      issues: ['Source reliability', 'Advocacy vs. analysis', 'Timeline precision', 'Confidence calibration'],
+    },
+    {
+      id: 4, title: 'Confirmation Bias and Single-Source Dependency',
+      bad: 'Our source within Al-Qaeda confirms that the organization is planning attacks on three European capitals. This is consistent with our previous assessments and validates our analytic line. The source has provided accurate information in the past and we see no reason to doubt this reporting. We recommend elevated threat levels across Europe.',
+      problems: ['Single-source dependency with no corroboration attempt noted', '"Consistent with previous assessments" is circular reasoning -- confirmation bias', '"No reason to doubt" is not a reliability assessment', 'Recommendation violates the analysis-policy boundary'],
+      expert: 'A HUMINT source with a track record of 3 verified reports (and 2 unverifiable) reports that AQAP is in the planning stages for coordinated attacks targeting London, Paris, and Berlin. We assess this reporting with LOW CONFIDENCE due to single-source dependency and inability to corroborate through SIGINT or IMINT. NOTE: This reporting aligns with our standing assessment of AQAP intent but does not independently validate it -- the source may be reflecting organizational aspirations rather than operational planning. We recommend tasking additional collection against identified planning indicators before adjusting threat postures.',
+      icd203Score: { original: 20, expert: 87 },
+      issues: ['Single-source reliance', 'Confirmation bias', 'Circular validation', 'Analysis-policy boundary'],
+    },
+  ], []);
+
+  const renderRewrite = useCallback(() => {
+    var item = REWRITE_ITEMS[rewriteIdx];
+    var isRevealed = rewriteRevealed[rewriteIdx];
+    var userProblems = rewriteProblems[rewriteIdx] || {};
+
+    return React.createElement('div', null,
+      React.createElement('div', { style: { display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 } },
+        React.createElement('div', { style: { width: 4, height: 28, background: C.red, borderRadius: 2 } }),
+        React.createElement('h2', { style: { fontFamily: CM_SERIF, fontSize: 22, fontWeight: 700, color: C.navy, margin: 0 } }, 'Analytic Writing Improvement Engine')
+      ),
+      React.createElement('p', { style: { fontFamily: CM_SERIF, fontSize: 14, color: C.tx2, lineHeight: 1.7, marginBottom: 20, maxWidth: 680 } },
+        'Five poorly-written intelligence judgments. Identify the tradecraft failures, then see the expert rewrite scored against ICD-203 analytic standards.'
+      ),
+
+      // Item selector
+      React.createElement('div', { style: { display: 'flex', gap: 4, marginBottom: 20 } },
+        REWRITE_ITEMS.map(function(r, i) {
+          return React.createElement('button', {
+            key: i, onClick: function() { setRewriteIdx(i); },
+            style: {
+              flex: 1, padding: '6px 8px', borderRadius: 3, cursor: 'pointer',
+              background: rewriteIdx === i ? C.redBg : '#fff', textAlign: 'center',
+              border: rewriteIdx === i ? '1px solid ' + C.red : '1px solid ' + C.line,
+            }
+          },
+            React.createElement('span', { style: { fontFamily: CM_MONO, fontSize: 11, fontWeight: 600, color: rewriteIdx === i ? C.red : C.tx3, display: 'block' } }, 'J-' + (i + 1)),
+            React.createElement('span', { style: { fontFamily: CM_SANS, fontSize: 10, color: C.tx3 } }, rewriteRevealed[i] ? '\u2713' : '\u2014')
+          );
+        })
+      ),
+
+      // Bad judgment display
+      React.createElement(DocCard, { classification: 'S', style: { marginBottom: 16 } },
+        React.createElement('div', { style: { fontFamily: CM_MONO, fontSize: 10, letterSpacing: '.1em', color: C.red, marginBottom: 8 } }, 'DRAFT JUDGMENT -- CONTAINS TRADECRAFT ERRORS'),
+        React.createElement('h3', { style: { fontFamily: CM_SERIF, fontSize: 16, color: C.navy, marginBottom: 10 } }, item.title),
+        React.createElement('div', { style: { fontFamily: CM_SERIF, fontSize: 13, color: C.tx, lineHeight: 1.8, padding: '12px 16px', background: '#fffaf0', borderLeft: '3px solid ' + C.red, borderRadius: '0 3px 3px 0' } }, item.bad)
+      ),
+
+      // Problem identification checklist
+      React.createElement('div', { style: { background: '#fff', border: '1px solid ' + C.line, borderRadius: 3, padding: 16, marginBottom: 16 } },
+        React.createElement('div', { style: { fontFamily: CM_MONO, fontSize: 11, letterSpacing: '.08em', color: C.navy, marginBottom: 10 } }, 'IDENTIFY THE PROBLEMS'),
+        item.issues.map(function(issue, ii) {
+          var checked = userProblems[ii] || false;
+          return React.createElement('label', {
+            key: ii, style: { display: 'flex', alignItems: 'center', gap: 8, padding: '6px 0', cursor: 'pointer', borderBottom: ii < item.issues.length - 1 ? '1px solid ' + C.line : 'none' }
+          },
+            React.createElement('input', {
+              type: 'checkbox', checked: checked,
+              onChange: function() {
+                setRewriteProblems(function(prev) {
+                  var next = Object.assign({}, prev);
+                  if (!next[rewriteIdx]) next[rewriteIdx] = {};
+                  next[rewriteIdx] = Object.assign({}, next[rewriteIdx]);
+                  next[rewriteIdx][ii] = !checked;
+                  return next;
+                });
+              }
+            }),
+            React.createElement('span', { style: { fontFamily: CM_SANS, fontSize: 13, color: C.tx } }, issue)
+          );
+        }),
+
+        // Reveal button
+        !isRevealed && React.createElement('button', {
+          onClick: function() { setRewriteRevealed(function(prev) { return Object.assign({}, prev, { [rewriteIdx]: true }); }); },
+          style: { marginTop: 12, padding: '8px 20px', borderRadius: 3, cursor: 'pointer', background: C.navy, border: 'none', color: '#fff', fontFamily: CM_MONO, fontSize: 11, letterSpacing: '.06em' }
+        }, 'REVEAL EXPERT ANALYSIS')
+      ),
+
+      // Expert rewrite and scoring
+      isRevealed && React.createElement('div', null,
+        // Problems breakdown
+        React.createElement('div', { style: { background: C.redBg, border: '1px solid rgba(176,24,24,.15)', borderRadius: 3, padding: 16, marginBottom: 16 } },
+          React.createElement('div', { style: { fontFamily: CM_MONO, fontSize: 11, color: C.red, marginBottom: 8, letterSpacing: '.08em' } }, 'TRADECRAFT FAILURES'),
+          item.problems.map(function(p, pi) {
+            return React.createElement('div', { key: pi, style: { display: 'flex', gap: 8, padding: '6px 0', borderBottom: pi < item.problems.length - 1 ? '1px solid rgba(176,24,24,.08)' : 'none' } },
+              React.createElement('span', { style: { fontFamily: CM_MONO, fontSize: 11, color: C.red, minWidth: 16 } }, '\u2716'),
+              React.createElement('span', { style: { fontFamily: CM_SANS, fontSize: 12, color: C.tx, lineHeight: 1.6 } }, p)
+            );
+          })
+        ),
+
+        // Expert rewrite
+        React.createElement(DocCard, { classification: 'S' },
+          React.createElement('div', { style: { fontFamily: CM_MONO, fontSize: 10, letterSpacing: '.1em', color: C.green, marginBottom: 8 } }, 'EXPERT REWRITE -- ICD-203 COMPLIANT'),
+          React.createElement('div', { style: { fontFamily: CM_SERIF, fontSize: 13, color: C.tx, lineHeight: 1.8, padding: '12px 16px', background: C.greenBg, borderLeft: '3px solid ' + C.green, borderRadius: '0 3px 3px 0' } }, item.expert)
+        ),
+
+        // ICD-203 Score comparison
+        React.createElement('div', { style: { display: 'flex', gap: 16, marginTop: 16 } },
+          React.createElement('div', { style: { flex: 1, textAlign: 'center', padding: 12, background: C.redBg, borderRadius: 3 } },
+            React.createElement('div', { style: { fontFamily: CM_MONO, fontSize: 24, fontWeight: 700, color: C.red } }, item.icd203Score.original),
+            React.createElement('div', { style: { fontFamily: CM_SANS, fontSize: 11, color: C.tx3 } }, 'Original / 100')
+          ),
+          React.createElement('div', { style: { flex: 1, textAlign: 'center', padding: 12, background: C.greenBg, borderRadius: 3 } },
+            React.createElement('div', { style: { fontFamily: CM_MONO, fontSize: 24, fontWeight: 700, color: C.green } }, item.icd203Score.expert),
+            React.createElement('div', { style: { fontFamily: CM_SANS, fontSize: 11, color: C.tx3 } }, 'Expert / 100')
+          )
+        )
+      )
+    );
+  }, [rewriteIdx, rewriteRevealed, rewriteProblems, REWRITE_ITEMS]);
+
+  // ── Audience Adaptation data ──────────────────────────────────
+  const AUDIENCE_FINDINGS = useMemo(() => [
+    {
+      id: 0,
+      title: 'Chinese Military Modernization',
+      rawFinding: 'Multi-source intelligence indicates PLA Navy has deployed 4 new Type 055 guided-missile destroyers to the South Fleet, with 2 additional hulls fitting out at Dalian shipyard. Combined with recent PLAAF J-20 deployments to Hainan and increased PLARF DF-21D missile exercises, this represents a significant enhancement of A2/AD capability in the South China Sea theater.',
+      audiences: {
+        president: {
+          label: 'President (PDB)',
+          wordCount: '~100 words',
+          format: 'President\'s Daily Brief',
+          text: 'CHINA: South China Sea Military Buildup Accelerates\n\nChina has deployed six advanced warships to its southern fleet this year and moved fifth-generation fighters to Hainan Island. Combined with anti-ship missile tests, Beijing can now threaten U.S. carrier operations across more of the South China Sea than at any point in the past decade. This shifts the military balance and may embolden more aggressive territorial enforcement. Your upcoming call with President Xi offers an opportunity to signal concern.',
+          notes: 'PDB style: Lead with "so what" for the President. One paragraph. Policy-relevant framing. No jargon. Mention decision opportunity.',
+        },
+        congressional: {
+          label: 'Congressional Committee',
+          wordCount: '~500 words',
+          format: 'Formal Committee Brief',
+          text: 'ASSESSMENT: PLA Force Modernization and South China Sea A2/AD Enhancement\n\nKEY JUDGMENT: We assess with HIGH CONFIDENCE that the PLA has significantly enhanced its anti-access/area denial (A2/AD) capabilities in the South China Sea over the past 12 months, reducing the U.S. military\'s ability to operate freely in the region.\n\nEVIDENCE BASE:\n-- Naval: Four Type 055 guided-missile destroyers (DDGs) have been deployed to the South Sea Fleet, with two additional hulls under construction at Dalian. The Type 055 is a 12,000-ton platform with 112 vertical launch cells, comparable to the U.S. Ticonderoga-class cruiser. (Source: IMINT, HIGH reliability)\n-- Air: Two squadrons of J-20 fifth-generation stealth fighters have been forward-deployed to Lingshui Air Base, Hainan Island, providing air superiority coverage over the Paracel and Spratly Island chains. (Source: IMINT + OSINT, HIGH reliability)\n-- Missile: PLA Rocket Force has conducted three DF-21D anti-ship ballistic missile exercises in the past six months, the highest operational tempo observed. (Source: SIGINT + IMINT, MODERATE reliability)\n\nIMPLICATIONS FOR U.S. INTERESTS:\nThe combined effect of these deployments extends China\'s contested zone approximately 200nm further into the South China Sea. U.S. carrier strike groups operating within this zone would face multi-domain threats -- surface, subsurface, air, and ballistic missile -- simultaneously. This has direct implications for freedom of navigation operations, Taiwan contingency planning, and alliance assurance for the Philippines and Vietnam.\n\nOUTLOOK:\nWe expect continued force buildup through 2027, consistent with PLA modernization targets. Budget implications for U.S. Indo-Pacific Command posture adjustments are estimated at $2-4B annually.',
+          notes: 'Congressional style: Key judgments up front. Detailed sourcing. Budget implications. Longer format allows evidence presentation.',
+        },
+        military: {
+          label: 'Military Commander',
+          wordCount: 'OPREP format',
+          format: 'Operational Report',
+          text: 'OPREP-3/PINNACLE\nFM: DIA/J2\nTO: CDRUSINDOPACOM\nSUBJ: PLA SOUTH SEA FLEET FORCE ENHANCEMENT\n\n1. SITUATION: PLA-N deployed 4x Type 055 DDG to South Sea Fleet. 2x additional hulls fitting out Dalian ECD Q3 FY27.\n2. THREAT: Combined w/ J-20 fwd deploy to LINGSHUI AB and DF-21D ASBM exercises, PLA A2/AD envelope extends to 14N/114E. CSG transit routes through SCS contested.\n3. IMPACT ON OPERATIONS: FONOPS risk assessment elevated. Recommend CSG standoff distance increase to 500nm pending EW assessment. Air superiority not assured south of 16N.\n4. COLLECTION GAPS: Subsurface order of battle incomplete. Request SUBPAC acoustic survey tasking.\n5. RECOMMENDED ACTIONS: (a) Increase ISR coverage SCS southern arc (b) Accelerate LRASM delivery to 7th Fleet (c) Update OPLAN 5077 threat assessment.',
+          notes: 'Military OPREP style: Abbreviated. Action-oriented. Specific coordinates. Collection gaps identified. Recommendations are operational, not policy.',
+        },
+        allied: {
+          label: 'Allied Partner',
+          wordCount: 'Sanitized',
+          format: 'REL TO FVEY',
+          text: 'INTELLIGENCE ASSESSMENT -- REL TO FVEY\nSUBJECT: PLA South China Sea Force Posture Changes\n\nASSESSMENT: China has materially enhanced its military capabilities in the South China Sea through deployment of advanced surface combatants and fifth-generation aircraft.\n\nDETAILS: Commercial satellite imagery confirms the arrival of multiple advanced destroyers at Yulin Naval Base, Hainan. Publicly available flight-tracking data and commercial imagery also confirm the deployment of advanced fighter aircraft to Lingshui Air Base. These deployments are consistent with China\'s stated modernization objectives and extend the effective range of Chinese military operations in the region.\n\nSIGNIFICANCE: These changes affect the security calculations of all nations with interests in South China Sea freedom of navigation, including FVEY partners with Indo-Pacific commitments.\n\nNOTE: This assessment is derived from commercially available and open-source information supplemented by national technical means. Specific collection details are withheld.',
+          notes: 'Allied sanitized style: No classification markings that reveal collection methods. Sources described generically. No U.S. operational implications. Releasable framing.',
+        },
+      },
+    },
+    {
+      id: 1,
+      title: 'Russian Election Interference',
+      rawFinding: 'SIGINT and OSINT analysis reveals a coordinated influence operation by GRU Unit 54777 targeting the upcoming French presidential election. The campaign uses a network of 340+ inauthentic social media accounts, 12 French-language proxy news sites, and at least 2 recruited French journalists. Content themes focus on amplifying anti-EU sentiment, promoting Eurosceptic candidates, and undermining public trust in electoral institutions.',
+      audiences: {
+        president: {
+          label: 'President (PDB)',
+          wordCount: '~100 words',
+          format: 'President\'s Daily Brief',
+          text: 'RUSSIA: Kremlin Targeting French Election\n\nRussian military intelligence is running a significant influence campaign to shape France\'s upcoming presidential election, using fake social media accounts and recruited French journalists to amplify anti-EU candidates. The operation is larger than Russia\'s 2017 effort against Macron. If successful, it could install a French president hostile to NATO unity, directly affecting our alliance strategy. France has not yet detected the full scope. Alerting Paris risks exposing our collection but would strengthen the alliance.',
+          notes: 'PDB: frames the decision dilemma (alert ally vs. protect sources). President needs to understand the stakes for U.S. interests.',
+        },
+        congressional: {
+          label: 'Congressional Committee',
+          wordCount: '~500 words',
+          format: 'Formal Committee Brief',
+          text: 'ASSESSMENT: Russian Influence Operation Targeting French Presidential Election\n\nKEY JUDGMENT: We assess with HIGH CONFIDENCE that GRU Unit 54777 (the 72nd Special Service Center) is conducting a coordinated influence operation targeting the French presidential election, with the objective of promoting Eurosceptic candidates and undermining NATO cohesion.\n\nSCALE AND METHODS:\n-- Social Media: 340+ inauthentic accounts across Twitter/X, Facebook, and Telegram, generating approximately 15,000 posts per week in French. Content amplified by a network of automated accounts. (Source: OSINT platform analysis + SIGINT, HIGH reliability)\n-- Proxy Media: 12 French-language websites established in the past 8 months, presenting as independent news outlets but traced to GRU-linked infrastructure. Sites collectively reach an estimated 2M unique visitors per month. (Source: technical attribution, HIGH reliability)\n-- Human Assets: At least 2 French journalists have been recruited to place stories aligning with Russian narratives. Recruitment was through intermediaries in Brussels. (Source: HUMINT, MODERATE reliability -- single source)\n\nCOMPARISON TO PRECEDENT:\nThis operation exceeds the scale of Russia\'s 2017 interference in the French election (Macron email leak) by approximately 3x in terms of social media infrastructure and represents a shift from hack-and-leak toward sustained narrative manipulation.\n\nIMPLICATIONS:\nA successful operation could shift 2-4% of the French electorate toward Eurosceptic positions, potentially affecting second-round dynamics. Congressional attention is warranted given parallels to Russian operations targeting U.S. elections and the need for allied coordination on counter-influence measures.\n\nBUDGET NOTE: The State Department\'s Global Engagement Center, which coordinates counter-influence operations, is currently funded at $61M -- unchanged since FY24 despite expanding threat landscape.',
+          notes: 'Congressional: includes budget context. Quantified scale. Comparison to U.S. experience. Highlights oversight equities.',
+        },
+        military: {
+          label: 'Military Commander',
+          wordCount: 'OPREP format',
+          format: 'Operational Report',
+          text: 'OPREP-3\nFM: DIA/J2\nTO: CDRUSEUCOM\nSUBJ: GRU INFLUENCE OPS -- FRENCH ELECTION\n\n1. SITUATION: GRU Unit 54777 conducting influence op targeting French presidential election. 340+ inauthentic accounts, 12 proxy sites, 2 recruited journos.\n2. THREAT TO OPERATIONS: Successful operation could install Eurosceptic French president. Risk to: (a) NATO SACEUR force posture decisions (b) French contributions to NATO enhanced Forward Presence (c) U.S. basing agreements.\n3. CYBERCOM EQUITIES: Recommend CYBERCOM assessment of counter-influence options per NSPM-13 authorities. Note: offensive action requires NSC principals review.\n4. COLLECTION STATUS: SIGINT coverage adequate. HUMINT penetration of Unit 54777 remains a gap.\n5. COORDINATION: EUCOM J2 liaising with DGSE per existing bilateral framework.',
+          notes: 'Military: focuses on implications for force posture and operational authorities. References specific command authorities.',
+        },
+        allied: {
+          label: 'Allied Partner',
+          wordCount: 'Sanitized',
+          format: 'REL TO FRANCE',
+          text: 'INTELLIGENCE ADVISORY -- REL TO FRANCE\nSUBJECT: Foreign Influence Activity Targeting French Electoral Process\n\nADVISORY: The United States has identified indicators of a foreign state-sponsored influence operation targeting the upcoming French presidential election.\n\nINDICATORS: A network of inauthentic social media accounts and recently established French-language media outlets are coordinating to amplify specific political narratives. The infrastructure and tradecraft are consistent with previously attributed state-sponsored operations.\n\nRECOMMENDATION: We recommend French authorities examine the identified social media accounts and media outlets listed in the attached technical annex for potential domestic legal action. We are prepared to provide additional technical detail through established intelligence-sharing channels.\n\nNOTE: This advisory is provided under existing bilateral intelligence cooperation agreements. Attribution details available through DGSE liaison channels.',
+          notes: 'Allied/France: Does not name Russia explicitly in the releasable version (though implied). Provides actionable indicators. Offers to share more through secure channels. Respects French sovereignty over domestic response.',
+        },
+      },
+    },
+  ], []);
+
+  const renderAudience = useCallback(() => {
+    var finding = AUDIENCE_FINDINGS[audienceFinding];
+    var audiences = ['president', 'congressional', 'military', 'allied'];
+
+    return React.createElement('div', null,
+      React.createElement('div', { style: { display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 } },
+        React.createElement('div', { style: { width: 4, height: 28, background: C.blue, borderRadius: 2 } }),
+        React.createElement('h2', { style: { fontFamily: CM_SERIF, fontSize: 22, fontWeight: 700, color: C.navy, margin: 0 } }, 'Audience Adaptation Tool')
+      ),
+      React.createElement('p', { style: { fontFamily: CM_SERIF, fontSize: 14, color: C.tx2, lineHeight: 1.7, marginBottom: 20, maxWidth: 680 } },
+        'Same intelligence finding, four audiences. See how format, detail level, sourcing, and tone change for the President, Congress, a military commander, and an allied partner.'
+      ),
+
+      // Finding selector
+      React.createElement('div', { style: { display: 'flex', gap: 8, marginBottom: 20 } },
+        AUDIENCE_FINDINGS.map(function(f, i) {
+          return React.createElement('button', {
+            key: i, onClick: function() { setAudienceFinding(i); setAudienceExpanded(null); },
+            style: {
+              flex: 1, padding: '10px 12px', borderRadius: 3, cursor: 'pointer', textAlign: 'left',
+              background: audienceFinding === i ? C.blueBg : '#fff',
+              border: audienceFinding === i ? '1px solid ' + C.blue : '1px solid ' + C.line,
+            }
+          },
+            React.createElement('span', { style: { fontFamily: CM_MONO, fontSize: 11, fontWeight: 600, color: audienceFinding === i ? C.blue : C.tx3, display: 'block', marginBottom: 2 } }, 'FINDING ' + (i + 1)),
+            React.createElement('span', { style: { fontFamily: CM_SANS, fontSize: 12, color: C.tx } }, f.title)
+          );
+        })
+      ),
+
+      // Raw finding
+      React.createElement(DocCard, { classification: 'TS', style: { marginBottom: 20 } },
+        React.createElement('div', { style: { fontFamily: CM_MONO, fontSize: 10, letterSpacing: '.1em', color: C.tsSci, marginBottom: 8 } }, 'RAW MULTI-SOURCE INTELLIGENCE'),
+        React.createElement('div', { style: { fontFamily: CM_SERIF, fontSize: 13, color: C.tx, lineHeight: 1.8, padding: '10px 14px', background: 'rgba(139,0,0,.03)', borderLeft: '3px solid ' + C.tsSci, borderRadius: '0 3px 3px 0' } }, finding.rawFinding)
+      ),
+
+      // Four audience adaptations
+      React.createElement('div', { style: { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 10, marginBottom: 20 } },
+        audiences.map(function(aud) {
+          var a = finding.audiences[aud];
+          var isExpanded = audienceExpanded === aud;
+          var colors = { president: C.tsSci, congressional: C.navy, military: C.amber, allied: C.green };
+          return React.createElement('button', {
+            key: aud, onClick: function() { setAudienceExpanded(isExpanded ? null : aud); },
+            style: {
+              padding: '12px 14px', borderRadius: 3, cursor: 'pointer', textAlign: 'left',
+              background: isExpanded ? (colors[aud] + '10') : '#fff',
+              border: isExpanded ? '2px solid ' + colors[aud] : '1px solid ' + C.line,
+            }
+          },
+            React.createElement('div', { style: { fontFamily: CM_MONO, fontSize: 11, fontWeight: 600, color: colors[aud], marginBottom: 4 } }, a.label),
+            React.createElement('div', { style: { fontFamily: CM_SANS, fontSize: 11, color: C.tx3 } }, a.wordCount),
+            React.createElement('div', { style: { fontFamily: CM_SANS, fontSize: 10, color: C.tx3, marginTop: 2 } }, a.format)
+          );
+        })
+      ),
+
+      // Expanded audience view
+      audienceExpanded && (function() {
+        var a = finding.audiences[audienceExpanded];
+        var colors = { president: C.tsSci, congressional: C.navy, military: C.amber, allied: C.green };
+        var cls = { president: 'TS', congressional: 'S', military: 'S', allied: 'U' };
+        return React.createElement('div', null,
+          React.createElement(DocCard, { classification: cls[audienceExpanded] },
+            React.createElement('div', { style: { fontFamily: CM_MONO, fontSize: 10, letterSpacing: '.1em', color: colors[audienceExpanded], marginBottom: 8 } }, a.format.toUpperCase()),
+            React.createElement('pre', { style: { fontFamily: CM_SERIF, fontSize: 13, color: C.tx, lineHeight: 1.8, whiteSpace: 'pre-wrap', margin: 0, padding: '12px 16px', background: 'rgba(0,0,0,.02)', borderRadius: 3 } }, a.text)
+          ),
+          React.createElement('div', { style: { background: C.blueBg, border: '1px solid rgba(32,72,136,.12)', borderRadius: 3, padding: 14, marginTop: 10 } },
+            React.createElement('div', { style: { fontFamily: CM_MONO, fontSize: 10, color: C.blue, marginBottom: 6, letterSpacing: '.08em' } }, 'ADAPTATION NOTES'),
+            React.createElement('p', { style: { fontFamily: CM_SANS, fontSize: 12, color: C.tx, lineHeight: 1.7, margin: 0 } }, a.notes)
+          )
+        );
+      })()
+    );
+  }, [audienceFinding, audienceExpanded, AUDIENCE_FINDINGS]);
+
   // ── Main Render ────────────────────────────────────────────
 
   return (
@@ -1353,6 +1658,8 @@ function CMAnalysisView({ setView }) {
         {mode === 'gallery' && renderGallery()}
         {mode === 'standards' && renderStandards()}
         {mode === 'flow' && renderFlow()}
+        {mode === 'rewrite' && renderRewrite()}
+        {mode === 'audience' && renderAudience()}
 
         {/* Provenance Strip */}
         <div style={sty.provenanceStrip}>

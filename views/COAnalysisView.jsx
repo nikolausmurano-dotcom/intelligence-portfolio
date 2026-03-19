@@ -266,6 +266,8 @@ const CO_MODES = [
   { id: 'review', label: 'Review', icon: '\u{1F4CA}' },
   { id: 'tradecraft', label: 'Tradecraft', icon: '\u{1F4D6}' },
   { id: 'coverage', label: 'Coverage', icon: '\u{1F5FA}' },
+  { id: 'tasking', label: 'Tasking', icon: '\u{1F4CB}' },
+  { id: 'gaps', label: 'Gaps', icon: '\u{1F50D}' },
 ];
 
 // ── INT Coverage Overlay Data ──────────────────────────────
@@ -337,6 +339,14 @@ function COAnalysisView({ setView }) {
   const [submitted, setSubmitted] = useState(false);
   const [expandedInt, setExpandedInt] = useState(null);
   const [tradecraftCard, setTradecraftCard] = useState(null);
+
+  // ── Tasking Prioritizer state ──────────────────────────────
+  const [taskingDeck, setTaskingDeck] = useState([]);
+  const [taskingSubmitted, setTaskingSubmitted] = useState(false);
+
+  // ── Gaps Analyzer state ────────────────────────────────────
+  const [gapsAnswers, setGapsAnswers] = useState({});
+  const [gapsRevealed, setGapsRevealed] = useState(false);
   const [covActiveInts, setCovActiveInts] = useState({ humint: true, sigint: true, geoint: false, masint: false, osint: false, cyber: false });
   const [covShowGaps, setCovShowGaps] = useState(false);
   const [covSelectedDesc, setCovSelectedDesc] = useState(null);
@@ -1231,6 +1241,250 @@ function COAnalysisView({ setView }) {
                   <span style={{ fontFamily: CO_MONO, fontSize: 11, color: C.red }}>Red cells: ZERO coverage (gaps)</span>
                 </div>
               </div>
+            </div>
+          );
+        })()}
+
+        {/* ═══════════════════════════════════════════════ */}
+        {/* TASKING MODE — Collection Tasking Prioritizer   */}
+        {/* ═══════════════════════════════════════════════ */}
+        {mode === 'tasking' && (() => {
+          var TASKING_PIRS = [
+            { id: 'tp1', text: 'Is Country X developing a clandestine nuclear enrichment capability?', priority: 'CRITICAL' },
+            { id: 'tp2', text: 'What is the current status of Group Y\'s operational planning against European targets?', priority: 'HIGH' },
+            { id: 'tp3', text: 'Has Country Z completed pre-positioning forces for a cross-border operation?', priority: 'HIGH' },
+            { id: 'tp4', text: 'What is the current extent of FIS espionage targeting domestic technology firms?', priority: 'MODERATE' },
+            { id: 'tp5', text: 'What are Country W\'s cyber offensive capabilities and organizational structure?', priority: 'MODERATE' },
+          ];
+          var TASKING_PLATFORMS = [
+            { id: 'sat_img', name: 'Satellite Imagery (GEOINT)', cost: 3, cap: ['tp1','tp3','tp5'], risk: 1, desc: 'NGA commercial + national imagery. Good for facilities, force disposition. Cannot determine intent.' },
+            { id: 'humint_net', name: 'HUMINT Network (Case Officers)', cost: 5, cap: ['tp1','tp2','tp4'], risk: 4, desc: 'CIA station case officers recruiting sources. High value, high risk, slow development cycle.' },
+            { id: 'sigint_tap', name: 'SIGINT Collection (NSA)', cost: 4, cap: ['tp2','tp3','tp5'], risk: 2, desc: 'Signals intercept of military/diplomatic communications. Broad coverage, legal constraints on US persons.' },
+            { id: 'osint_team', name: 'OSINT Analysis Team', cost: 1, cap: ['tp2','tp4','tp5'], risk: 0, desc: 'Open source monitoring: social media, trade data, academic publications. Low cost, no risk, limited access to denied areas.' },
+          ];
+          var BUDGET = 10;
+          var spent = taskingDeck.reduce(function(s, pid) { var p = TASKING_PLATFORMS.find(function(x) { return x.id === pid; }); return s + (p ? p.cost : 0); }, 0);
+          var remaining = BUDGET - spent;
+          var coverage = {};
+          TASKING_PIRS.forEach(function(pir) { coverage[pir.id] = taskingDeck.filter(function(pid) { var p = TASKING_PLATFORMS.find(function(x) { return x.id === pid; }); return p && p.cap.indexOf(pir.id) >= 0; }).length; });
+          var totalCoverage = Object.values(coverage).filter(function(v) { return v > 0; }).length;
+          var totalRisk = taskingDeck.reduce(function(s, pid) { var p = TASKING_PLATFORMS.find(function(x) { return x.id === pid; }); return s + (p ? p.risk : 0); }, 0);
+          var efficiency = spent > 0 ? Math.round((totalCoverage / TASKING_PIRS.length) * 100) : 0;
+
+          return (
+            <div>
+              <div style={{ ...sMono, color: C.teal, fontSize: 14, marginBottom: 12, letterSpacing: '.08em', borderBottom: `1px solid ${C.line}`, paddingBottom: 8 }}>COLLECTION TASKING PRIORITIZER</div>
+              <p style={{ color: C.tx, fontSize: 13, lineHeight: 1.7, marginBottom: 16 }}>
+                You have 5 Priority Intelligence Requirements and 4 available collection platforms. Budget is {BUDGET} units. Each platform has a cost, coverage capability, and risk level. Build an optimal collection deck that maximizes PIR coverage while managing cost and risk.
+              </p>
+
+              {/* Budget bar */}
+              <div style={{ padding: 10, background: C.card, border: `1px solid ${C.cardBd}`, borderRadius: 3, marginBottom: 16 }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
+                  <span style={{ ...sMono, fontSize: 10, color: C.tx3 }}>BUDGET: {spent}/{BUDGET} UNITS ALLOCATED</span>
+                  <span style={{ ...sMono, fontSize: 10, color: remaining > 0 ? C.teal : C.red }}>{remaining} REMAINING</span>
+                </div>
+                <div style={{ height: 6, background: C.line, borderRadius: 2 }}>
+                  <div style={{ height: '100%', width: (spent / BUDGET * 100) + '%', background: remaining >= 0 ? C.teal : C.red, borderRadius: 2, transition: 'width .3s' }} />
+                </div>
+              </div>
+
+              {/* Platforms */}
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8, marginBottom: 16 }}>
+                {TASKING_PLATFORMS.map(function(p) {
+                  var isSelected = taskingDeck.indexOf(p.id) >= 0;
+                  var canAfford = remaining >= p.cost || isSelected;
+                  return (
+                    <div key={p.id} onClick={function() {
+                      if (taskingSubmitted) return;
+                      if (isSelected) { setTaskingDeck(taskingDeck.filter(function(x) { return x !== p.id; })); }
+                      else if (canAfford) { setTaskingDeck(taskingDeck.concat([p.id])); }
+                    }} style={{
+                      padding: 12, cursor: taskingSubmitted ? 'default' : 'pointer', borderRadius: 3,
+                      background: isSelected ? 'rgba(58,140,200,.08)' : C.card,
+                      border: `1px solid ${isSelected ? C.teal : C.cardBd}`,
+                      opacity: !isSelected && !canAfford ? 0.4 : 1,
+                    }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
+                        <span style={{ ...sMono, fontSize: 11, color: isSelected ? C.teal : C.tx, fontWeight: 600 }}>{p.name}</span>
+                        <span style={{ ...sMono, fontSize: 10, color: C.tx3 }}>Cost: {p.cost}</span>
+                      </div>
+                      <p style={{ fontSize: 11, color: C.tx2, lineHeight: 1.5, marginBottom: 6 }}>{p.desc}</p>
+                      <div style={{ display: 'flex', gap: 8, fontSize: 10 }}>
+                        <span style={{ color: C.tx3 }}>Risk: {'*'.repeat(p.risk) || 'None'}</span>
+                        <span style={{ color: C.tx3 }}>Covers: {p.cap.length} PIRs</span>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* PIR coverage matrix */}
+              <div style={{ ...sMono, fontSize: 10, color: C.tx3, marginBottom: 8 }}>PIR COVERAGE MATRIX</div>
+              {TASKING_PIRS.map(function(pir) {
+                var cov = coverage[pir.id];
+                var covColor = cov >= 2 ? C.green : cov === 1 ? C.amber : C.red;
+                return (
+                  <div key={pir.id} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '6px 10px', marginBottom: 3, background: C.card, border: `1px solid ${C.cardBd}`, borderRadius: 2 }}>
+                    <span style={{ ...sMono, fontSize: 9, color: pir.priority === 'CRITICAL' ? C.red : pir.priority === 'HIGH' ? C.amber : C.teal, width: 60 }}>{pir.priority}</span>
+                    <span style={{ fontSize: 11, color: C.tx, flex: 1 }}>{pir.text.substring(0, 60)}...</span>
+                    <span style={{ ...sMono, fontSize: 10, color: covColor, fontWeight: 700 }}>{cov === 0 ? 'GAP' : cov + 'x'}</span>
+                  </div>
+                );
+              })}
+
+              {/* Submit / results */}
+              {!taskingSubmitted && (
+                <button onClick={function() { if (taskingDeck.length > 0) setTaskingSubmitted(true); }}
+                  disabled={taskingDeck.length === 0}
+                  style={{ marginTop: 12, padding: '8px 20px', ...sMono, fontSize: 11, cursor: taskingDeck.length > 0 ? 'pointer' : 'not-allowed', background: taskingDeck.length > 0 ? 'rgba(58,140,200,.08)' : 'transparent', border: `1px solid ${taskingDeck.length > 0 ? C.teal : C.line}`, color: taskingDeck.length > 0 ? C.teal : C.tx3, borderRadius: 3 }}>
+                  Submit Collection Deck
+                </button>
+              )}
+
+              {taskingSubmitted && (
+                <div style={{ marginTop: 16, padding: 14, background: 'rgba(0,0,0,.2)', border: `1px solid ${C.line}`, borderRadius: 3 }}>
+                  <div style={{ ...sMono, fontSize: 12, color: C.teal, fontWeight: 700, marginBottom: 8 }}>COLLECTION DECK ASSESSMENT</div>
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 8, marginBottom: 12 }}>
+                    <div style={{ textAlign: 'center', padding: 10, background: C.card, borderRadius: 3 }}>
+                      <div style={{ ...sMono, fontSize: 9, color: C.tx3 }}>PIR COVERAGE</div>
+                      <div style={{ ...sMono, fontSize: 20, fontWeight: 700, color: efficiency >= 80 ? C.green : efficiency >= 60 ? C.amber : C.red }}>{efficiency}%</div>
+                    </div>
+                    <div style={{ textAlign: 'center', padding: 10, background: C.card, borderRadius: 3 }}>
+                      <div style={{ ...sMono, fontSize: 9, color: C.tx3 }}>COST EFFICIENCY</div>
+                      <div style={{ ...sMono, fontSize: 20, fontWeight: 700, color: remaining >= 2 ? C.green : remaining >= 0 ? C.amber : C.red }}>{remaining >= 0 ? BUDGET - remaining : BUDGET}/{BUDGET}</div>
+                    </div>
+                    <div style={{ textAlign: 'center', padding: 10, background: C.card, borderRadius: 3 }}>
+                      <div style={{ ...sMono, fontSize: 9, color: C.tx3 }}>RISK LEVEL</div>
+                      <div style={{ ...sMono, fontSize: 20, fontWeight: 700, color: totalRisk <= 3 ? C.green : totalRisk <= 6 ? C.amber : C.red }}>{totalRisk}</div>
+                    </div>
+                  </div>
+                  <p style={{ fontSize: 12, color: C.tx2, lineHeight: 1.6 }}>
+                    {efficiency === 100 && remaining >= 0 ? 'Full PIR coverage achieved within budget. Excellent collection management.' : efficiency >= 80 ? 'Strong coverage with minor gaps. Consider whether uncovered PIRs can tolerate delay.' : 'Significant coverage gaps remain. Critical PIRs without collection assets represent accepted intelligence risk.'}
+                  </p>
+                  <button onClick={function() { setTaskingDeck([]); setTaskingSubmitted(false); }}
+                    style={{ marginTop: 8, padding: '6px 14px', ...sMono, fontSize: 10, background: 'transparent', border: `1px solid ${C.teal}`, color: C.teal, cursor: 'pointer', borderRadius: 3 }}>
+                    Reset Tasking
+                  </button>
+                </div>
+              )}
+            </div>
+          );
+        })()}
+
+        {/* ═══════════════════════════════════════════════ */}
+        {/* GAPS MODE — Intelligence Gaps Analyzer          */}
+        {/* ═══════════════════════════════════════════════ */}
+        {mode === 'gaps' && (() => {
+          var GAPS_JUDGMENTS = [
+            { id: 'gj1', text: 'Country X has resumed enrichment beyond declared levels at the Fordow facility.', sourcing: 'multi', sources: 3, types: ['GEOINT','SIGINT','HUMINT'], explanation: 'Well-sourced: satellite imagery of centrifuge cascades, intercepted procurement communications, and a source inside the atomic energy organization all corroborate.' },
+            { id: 'gj2', text: 'The adversary\'s leadership intends to pursue a diplomatic resolution rather than military action.', sourcing: 'single', sources: 1, types: ['HUMINT'], explanation: 'Single-source: one HUMINT source in the foreign ministry reports leadership preference for diplomacy. No corroborating SIGINT or observable military stand-down. Source may reflect his own ministry\'s advocacy rather than actual leadership intent.' },
+            { id: 'gj3', text: 'Terrorist group Y has likely shifted operational planning from European to Middle Eastern targets.', sourcing: 'assumption', sources: 0, types: [], explanation: 'Assumption-based: this judgment rests on the assumption that reduced chatter about European targets means a geographic shift. No positive evidence of Middle Eastern targeting. The reduced European chatter could also indicate improved OPSEC, a planning pause, or collection gap.' },
+            { id: 'gj4', text: 'The new weapon system achieves the performance specifications claimed in state media.', sourcing: 'single', sources: 1, types: ['OSINT'], explanation: 'Single-source: judgment relies entirely on adversary state media claims. No independent MASINT, GEOINT, or SIGINT collection has been tasked to verify. State media has a documented history of exaggerating capability.' },
+            { id: 'gj5', text: 'The insurgent network has fragmented into three competing factions after the leadership decapitation.', sourcing: 'multi', sources: 4, types: ['HUMINT','SIGINT','OSINT','CYBER'], explanation: 'Well-sourced: HUMINT reports from two independent sources in different factions, SIGINT showing three distinct C2 networks, social media analysis of competing leadership claims, and intercepted encrypted messaging between faction leaders.' },
+            { id: 'gj6', text: 'Economic sanctions have reduced the target country\'s military procurement budget by approximately 30%.', sourcing: 'multi', sources: 2, types: ['OSINT','SIGINT'], explanation: 'Moderately sourced: open-source trade data shows reduced defense imports, and SIGINT intercepts reference budget constraints in military planning. However, the 30% figure is an analytic estimate, not a confirmed data point. Shadow procurement channels may not be captured.' },
+            { id: 'gj7', text: 'The cyber attack on our financial infrastructure was conducted by a state intelligence service rather than a criminal group.', sourcing: 'assumption', sources: 0, types: [], explanation: 'Assumption-based: the judgment infers state sponsorship from the sophistication of the attack. However, criminal groups now possess comparable capabilities. No positive attribution evidence (infrastructure linkage, SIGINT, HUMINT) supports the state actor hypothesis specifically.' },
+            { id: 'gj8', text: 'Allied country has shared all relevant intelligence on the threat and is not withholding reporting.', sourcing: 'assumption', sources: 0, types: [], explanation: 'Assumption-based: this is an untestable assumption about a partner\'s completeness of sharing. Intelligence liaison relationships always involve some withholding. Without independent collection against the same target, we cannot validate completeness of partner reporting.' },
+          ];
+
+          var SOURCING_OPTIONS = [
+            { id: 'multi', label: 'Well-Sourced (3+ independent)', color: C.green },
+            { id: 'single', label: 'Single-Source', color: C.amber },
+            { id: 'assumption', label: 'Assumption-Based', color: C.red },
+          ];
+
+          var answered = Object.keys(gapsAnswers).length;
+          var correct = gapsRevealed ? GAPS_JUDGMENTS.filter(function(j) { return gapsAnswers[j.id] === j.sourcing; }).length : 0;
+
+          return (
+            <div>
+              <div style={{ ...sMono, color: C.teal, fontSize: 14, marginBottom: 12, letterSpacing: '.08em', borderBottom: `1px solid ${C.line}`, paddingBottom: 8 }}>INTELLIGENCE GAPS ANALYZER</div>
+              <p style={{ color: C.tx, fontSize: 13, lineHeight: 1.7, marginBottom: 16 }}>
+                Below is a finished intelligence assessment with 8 key judgments. For each judgment, categorize the sourcing: well-sourced (3+ independent sources), single-source, or assumption-based. Then reveal the actual sourcing to see where collection gaps create hidden analytic risk.
+              </p>
+
+              {GAPS_JUDGMENTS.map(function(j, ji) {
+                var userAnswer = gapsAnswers[j.id];
+                var isCorrect = gapsRevealed && userAnswer === j.sourcing;
+                var sourcingInfo = SOURCING_OPTIONS.find(function(s) { return s.id === j.sourcing; });
+
+                return (
+                  <div key={j.id} style={{ padding: 12, marginBottom: 8, background: gapsRevealed ? (isCorrect ? 'rgba(80,160,80,.05)' : 'rgba(200,80,80,.05)') : C.card, border: `1px solid ${gapsRevealed ? (isCorrect ? C.green + '30' : C.red + '30') : C.cardBd}`, borderRadius: 3 }}>
+                    <p style={{ fontSize: 12, color: C.tx, lineHeight: 1.6, marginBottom: 8 }}>
+                      <span style={{ ...sMono, fontSize: 10, color: C.teal, marginRight: 6 }}>J{ji+1}.</span>
+                      {j.text}
+                    </p>
+
+                    {/* Sourcing selector */}
+                    <div style={{ display: 'flex', gap: 4, marginBottom: gapsRevealed ? 8 : 0 }}>
+                      {SOURCING_OPTIONS.map(function(opt) {
+                        var selected = userAnswer === opt.id;
+                        return (
+                          <button key={opt.id} onClick={function() { if (!gapsRevealed) { setGapsAnswers(function(prev) { var c = Object.assign({}, prev); c[j.id] = opt.id; return c; }); } }}
+                            style={{
+                              padding: '4px 10px', ...sMono, fontSize: 9, cursor: gapsRevealed ? 'default' : 'pointer',
+                              background: selected ? opt.color + '15' : 'transparent',
+                              border: `1px solid ${selected ? opt.color : C.line}`,
+                              color: selected ? opt.color : C.tx3, borderRadius: 2,
+                            }}>
+                            {opt.label}
+                          </button>
+                        );
+                      })}
+                    </div>
+
+                    {/* Reveal */}
+                    {gapsRevealed && (
+                      <div style={{ marginTop: 6, paddingTop: 6, borderTop: `1px solid ${C.line}` }}>
+                        <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginBottom: 4 }}>
+                          <span style={{ ...sMono, fontSize: 10, color: isCorrect ? C.green : C.red, fontWeight: 700 }}>{isCorrect ? 'CORRECT' : 'INCORRECT'}</span>
+                          <span style={{ ...sMono, fontSize: 10, color: sourcingInfo.color }}>Actual: {sourcingInfo.label}</span>
+                          {j.sources > 0 && <span style={{ ...sMono, fontSize: 9, color: C.tx3 }}>{j.sources} source(s): {j.types.join(', ')}</span>}
+                        </div>
+                        <p style={{ fontSize: 11, color: C.tx2, lineHeight: 1.6 }}>{j.explanation}</p>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+
+              {!gapsRevealed && (
+                <button onClick={function() { if (answered === GAPS_JUDGMENTS.length) setGapsRevealed(true); }}
+                  disabled={answered < GAPS_JUDGMENTS.length}
+                  style={{
+                    marginTop: 12, padding: '8px 20px', ...sMono, fontSize: 11,
+                    cursor: answered === GAPS_JUDGMENTS.length ? 'pointer' : 'not-allowed',
+                    background: answered === GAPS_JUDGMENTS.length ? 'rgba(58,140,200,.08)' : 'transparent',
+                    border: `1px solid ${answered === GAPS_JUDGMENTS.length ? C.teal : C.line}`,
+                    color: answered === GAPS_JUDGMENTS.length ? C.teal : C.tx3, borderRadius: 3,
+                  }}>
+                  {answered === GAPS_JUDGMENTS.length ? 'Reveal Sourcing Analysis' : 'Categorize all 8 judgments (' + answered + '/8)'}
+                </button>
+              )}
+
+              {gapsRevealed && (
+                <div style={{ marginTop: 16, padding: 14, background: 'rgba(0,0,0,.2)', border: `1px solid ${C.line}`, borderRadius: 3 }}>
+                  <div style={{ ...sMono, fontSize: 12, color: C.teal, fontWeight: 700, marginBottom: 8 }}>SOURCING ASSESSMENT: {correct}/{GAPS_JUDGMENTS.length} CORRECT</div>
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 8, marginBottom: 12 }}>
+                    {SOURCING_OPTIONS.map(function(opt) {
+                      var count = GAPS_JUDGMENTS.filter(function(j) { return j.sourcing === opt.id; }).length;
+                      return (
+                        <div key={opt.id} style={{ textAlign: 'center', padding: 10, background: C.card, borderRadius: 3, borderTop: `3px solid ${opt.color}` }}>
+                          <div style={{ ...sMono, fontSize: 9, color: opt.color }}>{opt.label.split('(')[0].trim()}</div>
+                          <div style={{ ...sMono, fontSize: 22, fontWeight: 700, color: opt.color }}>{count}</div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                  <p style={{ fontSize: 12, color: C.tx2, lineHeight: 1.6 }}>
+                    {correct >= 7 ? 'Excellent source awareness. You accurately distinguished between well-sourced judgments, single-source claims, and hidden assumptions -- a critical skill for identifying where collection gaps create analytic vulnerability.' : correct >= 5 ? 'Good awareness with some gaps. Review the assumption-based judgments carefully -- these represent the highest analytic risk because they cannot be validated without new collection.' : 'Significant source awareness gaps. Many intelligence consumers treat all judgments as equally reliable. Distinguishing sourcing quality is essential for calibrating confidence and identifying collection priorities.'}
+                  </p>
+                  <button onClick={function() { setGapsAnswers({}); setGapsRevealed(false); }}
+                    style={{ marginTop: 8, padding: '6px 14px', ...sMono, fontSize: 10, background: 'transparent', border: `1px solid ${C.teal}`, color: C.teal, cursor: 'pointer', borderRadius: 3 }}>
+                    Reset Analysis
+                  </button>
+                </div>
+              )}
             </div>
           );
         })()}
