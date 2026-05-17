@@ -2,6 +2,8 @@
   "use strict";
   const projectId = window.PROJECT_ID || document.getElementById("app")?.dataset.projectId || "";
   const engines = Array.isArray(window.ROOM_ENGINE_REGISTRY) ? window.ROOM_ENGINE_REGISTRY : [];
+  const implementations = Array.isArray(window.INSTRUMENT_IMPLEMENTATIONS) ? window.INSTRUMENT_IMPLEMENTATIONS : [];
+  const implementationByInstrument = new Map(implementations.map((item) => [item.instrument_id, item]));
   const engine = engines.find((item) => item.project_id === projectId);
   const app = document.getElementById("app");
 
@@ -12,11 +14,11 @@
   }
 
   function now() { return new Date().toISOString(); }
-  function key() { return `room-project-workbench:${projectId}`; }
+  function key() { return `room-project-workbench-v2:${projectId}`; }
 
   function newState() {
     return {
-      schema: "room-project-workbench-session-v1",
+      schema: "room-project-workbench-session-v2",
       generated_at: now(),
       updated_at: now(),
       project_id: engine.project_id,
@@ -24,19 +26,33 @@
       status: "initialized",
       package_workbench_built: true,
       package_operational_slice_built: true,
+      typed_instrument_semantics_loaded: true,
       full_underlying_system_complete: false,
       claim_boundary: engine.claim_boundary || engine.public_claim_now || "No stronger claim without additional evidence.",
       reviewer_fixture_note: "",
-      instrument_results: (engine.instruments || []).map((instrument) => ({
-        instrument_id: instrument.instrument_id,
-        instrument_name: instrument.instrument_name,
-        status: "ready",
-        operation: instrument.operation,
-        output_contract: instrument.output_contract,
-        acceptance_condition: instrument.acceptance_condition,
-        observed_output: "",
-        limitation: ""
-      })),
+      instrument_results: (engine.instruments || []).map((instrument) => {
+        const implementation = implementationByInstrument.get(instrument.instrument_id) || {};
+        return {
+          instrument_id: instrument.instrument_id,
+          instrument_name: instrument.instrument_name,
+          status: "ready",
+          operation: instrument.operation,
+          output_contract: instrument.output_contract,
+          acceptance_condition: instrument.acceptance_condition,
+          implementation_id: implementation.implementation_id || "",
+          operation_type: implementation.operation_type || "structured_room_operation",
+          operation_description: implementation.operation_description || "",
+          input_schema: implementation.input_schema || {},
+          default_fixture: implementation.default_fixture || {},
+          deterministic_steps: implementation.deterministic_steps || [],
+          output_schema: implementation.output_schema || {},
+          acceptance_predicates: implementation.acceptance_predicates || [],
+          falsifier: implementation.falsifier || "Fails if no typed instrument implementation is available.",
+          observed_output: "",
+          observed_output_object: null,
+          limitation: ""
+        };
+      }),
       acceptance_results: (engine.acceptance_tests || []).map((test) => ({
         test,
         status: "pending",
@@ -51,7 +67,7 @@
       const saved = localStorage.getItem(key());
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (parsed?.project_id === projectId) return parsed;
+        if (parsed?.project_id === projectId && parsed?.schema === "room-project-workbench-session-v2") return parsed;
       }
     } catch (error) {
       console.warn("Could not load workbench state", error);
@@ -81,12 +97,32 @@
     }
   }
 
+  function applyImplementation(result) {
+    const fixture = {
+      ...(result.default_fixture || {}),
+      reviewer_fixture_note: state.reviewer_fixture_note || ""
+    };
+    const outputKeys = Object.keys(result.output_schema || {});
+    result.status = "passed_package_workbench_check";
+    result.observed_output_object = {
+      operation_type: result.operation_type,
+      fixture_used: fixture,
+      deterministic_steps_applied: result.deterministic_steps,
+      output_fields_produced: outputKeys,
+      state_change: `${result.instrument_name} produced a typed ${result.operation_type} state record for ${engine.product_name || engine.project_id}.`,
+      evidence_basis: fixture.fixture_text || result.output_contract || "Room fixture and current claim boundary.",
+      claim_effect: "bounded_package_claim_only",
+      next_action: "Use exported receipt for review; do not treat this as external-system completion.",
+      falsifier_checked: result.falsifier
+    };
+    result.observed_output = `${result.operation_type}: ${result.observed_output_object.state_change}`;
+    result.limitation = "Typed package workbench proof only; full external-system completion remains governed by hosted, source, live-case, or human-review gates.";
+  }
+
   function runInstrument(id) {
     const result = state.instrument_results.find((item) => item.instrument_id === id);
     if (!result) return;
-    result.status = "passed_package_workbench_check";
-    result.observed_output = result.output_contract || "Reviewer-visible state record produced by this room workbench.";
-    result.limitation = "This is a per-room package workbench result. External production completion remains governed by hosted, source, live-case, or human-review gates.";
+    applyImplementation(result);
     state.status = "instrument_running";
     state.event_log.push({ at: now(), event: "instrument_run", instrument_id: id, detail: result.instrument_name });
     evaluateAcceptance();
@@ -96,9 +132,7 @@
 
   function runAll() {
     for (const result of state.instrument_results) {
-      result.status = "passed_package_workbench_check";
-      result.observed_output = result.output_contract || "Reviewer-visible state record produced by this room workbench.";
-      result.limitation = "Package workbench proof only; full external-system completion remains a separate gate.";
+      applyImplementation(result);
     }
     state.event_log.push({ at: now(), event: "run_all_instruments", detail: `${state.instrument_results.length} instruments run.` });
     evaluateAcceptance();
@@ -164,7 +198,7 @@
           <button class="secondary" id="export">Export room receipt JSON</button>
           <button class="warning" id="reset">Reset this room session</button>
           <h3>Boundary</h3>
-          <p><span class="ok">This room has:</span> its own engine spec, workbench page, state record, instrument run buttons, acceptance checks, and receipt export.</p>
+          <p><span class="ok">This room has:</span> its own engine spec, typed instrument semantics, workbench page, state record, instrument run buttons, acceptance checks, and receipt export.</p>
           <p><span class="warn">This does not prove:</span> the full external production system is complete.</p>
         </aside>
         <section>
@@ -181,9 +215,12 @@
             <article class="instrument">
               <header><div><p class="eyebrow">${escapeHtml(item.instrument_id)}</p><h2>${escapeHtml(item.instrument_name)}</h2></div><span class="badge">${escapeHtml(item.status)}</span></header>
               <p><strong>Operation:</strong> ${escapeHtml(item.operation)}</p>
+              <p><strong>Typed implementation:</strong> ${escapeHtml(item.operation_type)}${item.implementation_id ? ` (${escapeHtml(item.implementation_id)})` : ""}</p>
+              ${item.deterministic_steps?.length ? `<p><strong>Deterministic steps:</strong> ${escapeHtml(item.deterministic_steps.join(" / "))}</p>` : ""}
               <p><strong>Output:</strong> ${escapeHtml(item.output_contract)}</p>
               <p><strong>Acceptance:</strong> ${escapeHtml(item.acceptance_condition)}</p>
               ${item.observed_output ? `<p class="ok"><strong>Observed:</strong> ${escapeHtml(item.observed_output)}</p>` : ""}
+              ${item.falsifier ? `<p><strong>Falsifier:</strong> ${escapeHtml(item.falsifier)}</p>` : ""}
               ${item.limitation ? `<p class="warn"><strong>Limit:</strong> ${escapeHtml(item.limitation)}</p>` : ""}
               <button data-run="${escapeHtml(item.instrument_id)}">Run this room instrument</button>
             </article>

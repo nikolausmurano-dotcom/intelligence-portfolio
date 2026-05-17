@@ -8,3 +8,4 @@
 - `room_runtime_kernel/`: shared browser runtime for the room-engine layer; it runs project instruments, persists state locally, evaluates package-slice acceptance checks, and exports reviewer-visible JSON receipts.
 - `room_project_workbenches/`: one executable room workbench per project, backed by the room-engine registry and shared runtime code; each page runs that room's instruments and exports a receipt.
 - `room_project_workbenches/execution_ledger/`: compact browser-executed ledger proving all 243 generated room workbenches ran their instruments and preserved the external-completion boundary.
+- `instrument_implementation_layer/`: typed operation, schema, deterministic-step, acceptance-predicate, and falsifier layer for all room instruments.
