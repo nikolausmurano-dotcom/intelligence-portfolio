@@ -1,0 +1,41 @@
+# Proof Build: Counterintelligence Analysis
+
+**Project ID.** `native-cianalysis`
+
+**Proof tier.** source-backed-proof-build
+
+**Public claim.** A counterintelligence analysis page for deception, access, insider risk, and adversary manipulation.
+
+**Distinctive mechanism.** It routes anomalies through alternative hypotheses, source reliability, access pathways, deception indicators, and competing explanations before allowing a judgment to harden.
+
+**Use value.** It demonstrates CI reasoning as disciplined uncertainty management rather than suspicion or pattern matching.
+
+**Minimum public demo.** Open or inspect the local runtime path for Counterintelligence Analysis Runtime Or Interface Surface; confirm a room, action, or state record traces to the governing contract.
+
+**Claim ceiling.** The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.
+
+## Flagship Proof Builds
+
+No special flagship proof build has been authored yet; this project is governed by the component proof table below.
+
+## Component Proof Table
+
+| Component | Status | Input | Expected Output | Verification Check |
+|---|---|---|---|---|
+| Counterintelligence Analysis Runtime Or Interface Surface | specified-output-needs-demo | local app, web room, data surface, or workstation entry point | reader-facing definition of the software object and its intended user | Open or inspect the local runtime path for Counterintelligence Analysis Runtime Or Interface Surface; confirm a room, action, or state record traces to the governing. |
+| Counterintelligence Analysis Data And State Model | specified-output-needs-demo | records, files, indexes, tables, project state, source state, and user decisions | state model that explains what the tool remembers and what it refuses to infer | Test one representative case; confirm input (records, files, indexes, tables, project state, source...) produces output (state model that explains what the tool. |
+| Counterintelligence Analysis Core Instrument Panel | specified-output-needs-demo | tool buttons, rooms, workflow steps, analytical controls, and review surfaces | named instruments that perform the useful work rather than generic navigation | Test one representative case; confirm input (tool buttons, rooms, workflow steps, analytical...) produces output (named instruments that perform the useful work. |
+| Counterintelligence Analysis Workflow Orchestration | specified-output-needs-demo | upstream inputs, intermediate decisions, downstream products, and stale-state conditions | pipeline path showing how work moves and when earlier decisions must be reopened | Test one representative case; confirm input (upstream inputs, intermediate decisions, downstream...) produces output (pipeline path showing how work moves and when. |
+| Counterintelligence Analysis Review And Governance Gate | specified-output-needs-demo | quality rules, source checks, claim ceilings, reviewer steps, and failure states | decision gate that makes the output inspectable before it is trusted | Test one representative case; confirm input (quality rules, source checks, claim ceilings, reviewer...) produces output (decision gate that makes the output inspectable. |
+| Counterintelligence Analysis Export Or Integration Surface | specified-output-needs-demo | brief, paper, room, dataset, packet, rendered page, or external handoff | usable output that another project, professor, employer, or collaborator can inspect | Test one representative case; confirm input (brief, paper, room, dataset, packet, rendered page...) produces output (usable output that another project, professor...). |
+| Counterintelligence Analysis Build Verification Queue | specified-output-needs-demo | unbuilt modules, missing walkthroughs, test cases, and validation evidence | next proof needed before broader claims about the tool are safe | Test one representative case; confirm input (unbuilt modules, missing walkthroughs, test cases...) produces output (next proof needed before broader claims about the. |
+| Counterintelligence Analysis / Failed to | source-context-backed | project source text and the named component `Failed to` | a project-specific work product, decision, or proof surface tied to `Failed to` | Confirm `Failed to` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Counterintelligence Analysis / Evidence Sections | source-context-backed | project source text and the named component `Evidence Sections` | a project-specific work product, decision, or proof surface tied to `Evidence Sections` | Confirm `Evidence Sections` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Counterintelligence Analysis / Review Notes | source-context-backed | project source text and the named component `Review Notes` | a review decision, claim ceiling, or release boundary tied to `Review Notes` | Confirm `Review Notes` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Counterintelligence Analysis / Russia Desk | source-context-backed | project source text and the named component `Russia Desk` | a room, workbench, or interface function tied to `Russia Desk` | Confirm `Russia Desk` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Counterintelligence Analysis / Native Navigation | source-context-backed | project source text and the named component `Native Navigation` | a project-specific work product, decision, or proof surface tied to `Native Navigation` | Confirm `Native Navigation` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Counterintelligence Analysis / APA lineage | source-context-backed | project source text and the named component `APA lineage` | a project-specific work product, decision, or proof surface tied to `APA lineage` | Confirm `APA lineage` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Counterintelligence Analysis / source lineage claim limit. The public package remains text | source-context-backed | project source text and the named component `source lineage claim limit. The public package remains text` | a review decision, claim ceiling, or release boundary tied to `source lineage claim limit. The public package remains text` | Confirm `source lineage claim limit. The public package remains text` appears in the cited source context and that the public page explains what output, decision, or. |
+| Counterintelligence Analysis / focused and does not claim unverified runtime state. Plan. | source-context-backed | project source text and the named component `focused and does not claim unverified runtime state. Plan: identify the region` | a review decision, claim ceiling, or release boundary tied to `focused and does not claim unverified runtime state. Plan. | Confirm `focused and does not claim unverified runtime state. Plan: identify the region` appears in the cited source context and that the public page explains what. |
+| Counterintelligence Analysis / Specific Source Spine | source-context-backed | project source text and the named component `Specific Source Spine` | a project-specific work product, decision, or proof surface tied to `Specific Source Spine` | Confirm `Specific Source Spine` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Counterintelligence Analysis / State What The Page Can And Cannot Claim | source-context-backed | project source text and the named component `State What The Page Can And Cannot Claim` | a review decision, claim ceiling, or release boundary tied to `State What The Page Can And Cannot Claim` | Confirm `State What The Page Can And Cannot Claim` appears in the cited source context and that the public page explains what output, decision, or project function it. |

@@ -1,0 +1,44 @@
+{
+  "project_id": "regional-studies",
+  "generated_at": "2026-05-17T01:48:29+00:00",
+  "validation_status": "evidence_incomplete",
+  "required_slot_count": 4,
+  "present_slot_count": 3,
+  "missing_slot_count": 1,
+  "promotion_allowed": false,
+  "promotion_note": "Promotion remains blocked until all required evidence files exist and human review confirms adequacy.",
+  "slot_status": [
+    {
+      "slot_id": "desktop_screenshot",
+      "required_file": "desktop_screenshot.png",
+      "present": true,
+      "size_bytes": 131246,
+      "sha256": "7472d903c2435b50d3076ccdd6bf186cf7ff8c90359b1da81472f3d099820ca5",
+      "proves": "Desktop viewport renders the runtime surface and output without layout failure."
+    },
+    {
+      "slot_id": "mobile_screenshot",
+      "required_file": "mobile_screenshot.png",
+      "present": true,
+      "size_bytes": 72012,
+      "sha256": "91ebfd3b481b913b6fd4686edf03e63a43c18b9ca737259af23143de8be7bc36",
+      "proves": "Mobile viewport renders the runtime surface and output without layout failure."
+    },
+    {
+      "slot_id": "hosted_deployment_smoke",
+      "required_file": "hosted_deployment_smoke.json",
+      "present": false,
+      "size_bytes": 0,
+      "sha256": "",
+      "proves": "Uploaded route returns HTTP 200 and the route can fetch required artifacts."
+    },
+    {
+      "slot_id": "reviewer_validation_note",
+      "required_file": "reviewer_validation_note.md",
+      "present": true,
+      "size_bytes": 3538,
+      "sha256": "d4807bcaba44a2eaeb096af5fe2d03a334dcdd7af5aa82df5fb75f844af2dd7e",
+      "proves": "A clearly labeled reviewer, owner, advisor, expert, venue, or Codex technical review note records approval, limits, or remaining defects after inspecting the runtime result."
+    }
+  ]
+}

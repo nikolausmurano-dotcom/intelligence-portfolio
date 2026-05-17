@@ -1,0 +1,53 @@
+{
+  "evidence_type": "non_sample_runtime_execution_trace",
+  "evidence_boundary": "Deterministic non-sample execution trace generated from the runtime manifest and a project-specific validation fixture. This is not hosted deployment proof and not independent human review.",
+  "runtime_id": "RTS-6F5D3FC6CB38",
+  "project_id": "mb-infragard-handoff",
+  "product_name": "InfraGard preparatory note (minimal)",
+  "instrument_name": "Public-private security preparation workbench",
+  "run_time": "2026-05-17T01:47:54+00:00",
+  "input_summary": "A private-sector resilience briefing must translate an infrastructure threat concern into bounded preparedness language without implying classified threat knowledge.",
+  "operation_under_test": "Evidence check",
+  "evidence_or_constraint": "Validation fixture only: the case tests whether the runtime can preserve claim boundaries, method constraints, and next-evidence needs. It does not assert that the substantive case has been independently adjudicated.",
+  "reviewer_standard": "The output must identify stakeholder, risk, action, and readiness evidence.",
+  "generated_result": {
+    "working_judgment": "The instrument processed a non-sample project case through Evidence check and produced a bounded operational record.",
+    "mechanism_trace": "Public-private security preparation workbench -> Evidence check -> Partnership readiness note",
+    "acceptance_decision": "PASS",
+    "next_required_evidence": "Hosted deployment smoke and clearly labeled review or technical audit remain separate open gates.",
+    "claim_boundary": "Local runtime slice and deterministic non-sample trace only; not multi-user deployment, public-site byte match, or external validation."
+  },
+  "acceptance_checks": [
+    {
+      "name": "non_sample_fixture",
+      "pass": true,
+      "evidence": "case text is project-specific and not copied from sample_fixture.json"
+    },
+    {
+      "name": "input_length",
+      "pass": true,
+      "evidence": "165 characters"
+    },
+    {
+      "name": "operation_selected",
+      "pass": true,
+      "evidence": "Evidence check"
+    },
+    {
+      "name": "evidence_or_constraint_note",
+      "pass": true,
+      "evidence": "216 characters"
+    },
+    {
+      "name": "reviewer_standard_present",
+      "pass": true,
+      "evidence": "The output must identify stakeholder, risk, action, and readiness evidence."
+    },
+    {
+      "name": "trace_schema_fields",
+      "pass": true,
+      "evidence": "runtime_id, project_id, input, operation, output, checks, and trace hash are present"
+    }
+  ],
+  "trace_hash": "601a1b1d"
+}

@@ -1,0 +1,30 @@
+{
+  "project_id": "row2",
+  "closure_lane": "publication_readiness_review",
+  "generated_at": "2026-05-17T01:46:48+00:00",
+  "automated_evidence_hash": "267a09602f1b037c",
+  "required_slots": [
+    {
+      "slot_id": "full_manuscript_review",
+      "required_file": "full_manuscript_review.md",
+      "proves": "The full manuscript was reviewed for completeness."
+    },
+    {
+      "slot_id": "source_verification_matrix",
+      "required_file": "source_verification_matrix.csv",
+      "proves": "Citation and claim support are reconciled."
+    },
+    {
+      "slot_id": "submission_format_check",
+      "required_file": "submission_format_check.md",
+      "proves": "The package conforms to target venue or submission expectations."
+    },
+    {
+      "slot_id": "venue_or_reviewer_feedback",
+      "required_file": "venue_or_reviewer_feedback.md",
+      "proves": "External venue, advisor, or reviewer feedback is captured."
+    }
+  ],
+  "promotion_rule": "Promotion requires all required files to exist and survive clearly labeled review or technical audit. A complete vault is necessary but not alone sufficient for expert-facing claims.",
+  "vault_hash": "142c558799259fae"
+}

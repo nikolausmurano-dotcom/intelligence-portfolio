@@ -1,0 +1,1470 @@
+{
+  "project": {
+    "project_id": "mb-murano-os-prism-foundry-handoff",
+    "title": "Prism Foundry"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-murano-os-prism-foundry-handoff__receipt_0001",
+      "project_id": "mb-murano-os-prism-foundry-handoff",
+      "project_title": "Prism Foundry",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Prism Foundry Handoff Identity",
+      "component_case_id": "mb-murano-os-prism-foundry-handoff__0001__prism-foundry-handoff-identity",
+      "claim_to_demonstrate": "Canonical name: Prism Foundry (alternate internal title: The Autonomous Systems Foundry).",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "Canonical name: Prism Foundry (alternate internal title: The Autonomous Systems Foundry).",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43946,
+            "sha256": "ec0e33aef4f3d0d348eb40cd613995fc8e50912e21ac6f9555575b5e7a44b10c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36244,
+            "sha256": "99d25e617c9f342d6b75fdaecd301c8a3e198dcef490a1e22dde65eb3963a14c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20475,
+            "sha256": "d241a8015627dcc2bb44c716a012fe19df145ad22df8dba952e1f85da7696330"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19962,
+            "sha256": "a207a98ad11be2b3e01ed79b4669d207931f398ca9f1aac18cedf06e1e7ea084"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44430,
+            "sha256": "c11fa04625e4aab2914d2332ea3d57f12505271a5bbe993e4d8081c1e799d53e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8877,
+            "sha256": "0b853009c806a2f8e2ec6787558a511bf5a6cbb7ab5caa823834511b954ef089"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+          "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e67971437c480c9b9c154be4"
+    },
+    {
+      "receipt_id": "mb-murano-os-prism-foundry-handoff__receipt_0002",
+      "project_id": "mb-murano-os-prism-foundry-handoff",
+      "project_title": "Prism Foundry",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Prism Foundry Room Task Model",
+      "component_case_id": "mb-murano-os-prism-foundry-handoff__0002__prism-foundry-room-task-model",
+      "claim_to_demonstrate": ", state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival retention",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": ", state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival retention",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43946,
+            "sha256": "ec0e33aef4f3d0d348eb40cd613995fc8e50912e21ac6f9555575b5e7a44b10c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36244,
+            "sha256": "99d25e617c9f342d6b75fdaecd301c8a3e198dcef490a1e22dde65eb3963a14c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20475,
+            "sha256": "d241a8015627dcc2bb44c716a012fe19df145ad22df8dba952e1f85da7696330"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19962,
+            "sha256": "a207a98ad11be2b3e01ed79b4669d207931f398ca9f1aac18cedf06e1e7ea084"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44430,
+            "sha256": "c11fa04625e4aab2914d2332ea3d57f12505271a5bbe993e4d8081c1e799d53e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8877,
+            "sha256": "0b853009c806a2f8e2ec6787558a511bf5a6cbb7ab5caa823834511b954ef089"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+          "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "dd479c0612fb6d6d479782d6"
+    },
+    {
+      "receipt_id": "mb-murano-os-prism-foundry-handoff__receipt_0003",
+      "project_id": "mb-murano-os-prism-foundry-handoff",
+      "project_title": "Prism Foundry",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Prism Foundry Data Schema And Persistence Plan",
+      "component_case_id": "mb-murano-os-prism-foundry-handoff__0003__prism-foundry-data-schema-and-persistence-plan",
+      "claim_to_demonstrate": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43946,
+            "sha256": "ec0e33aef4f3d0d348eb40cd613995fc8e50912e21ac6f9555575b5e7a44b10c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36244,
+            "sha256": "99d25e617c9f342d6b75fdaecd301c8a3e198dcef490a1e22dde65eb3963a14c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20475,
+            "sha256": "d241a8015627dcc2bb44c716a012fe19df145ad22df8dba952e1f85da7696330"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19962,
+            "sha256": "a207a98ad11be2b3e01ed79b4669d207931f398ca9f1aac18cedf06e1e7ea084"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44430,
+            "sha256": "c11fa04625e4aab2914d2332ea3d57f12505271a5bbe993e4d8081c1e799d53e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8877,
+            "sha256": "0b853009c806a2f8e2ec6787558a511bf5a6cbb7ab5caa823834511b954ef089"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+          "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2ff402da3166a1156d99bf5a"
+    },
+    {
+      "receipt_id": "mb-murano-os-prism-foundry-handoff__receipt_0004",
+      "project_id": "mb-murano-os-prism-foundry-handoff",
+      "project_title": "Prism Foundry",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Prism Foundry Interface And Instrument Plane",
+      "component_case_id": "mb-murano-os-prism-foundry-handoff__0004__prism-foundry-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43946,
+            "sha256": "ec0e33aef4f3d0d348eb40cd613995fc8e50912e21ac6f9555575b5e7a44b10c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36244,
+            "sha256": "99d25e617c9f342d6b75fdaecd301c8a3e198dcef490a1e22dde65eb3963a14c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20475,
+            "sha256": "d241a8015627dcc2bb44c716a012fe19df145ad22df8dba952e1f85da7696330"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19962,
+            "sha256": "a207a98ad11be2b3e01ed79b4669d207931f398ca9f1aac18cedf06e1e7ea084"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44430,
+            "sha256": "c11fa04625e4aab2914d2332ea3d57f12505271a5bbe993e4d8081c1e799d53e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8877,
+            "sha256": "0b853009c806a2f8e2ec6787558a511bf5a6cbb7ab5caa823834511b954ef089"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+          "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2c6527f0d4da986f53e8cf46"
+    },
+    {
+      "receipt_id": "mb-murano-os-prism-foundry-handoff__receipt_0005",
+      "project_id": "mb-murano-os-prism-foundry-handoff",
+      "project_title": "Prism Foundry",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Prism Foundry Integration Path",
+      "component_case_id": "mb-murano-os-prism-foundry-handoff__0005__prism-foundry-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. When to reach for this: when designing or restoring the autonomous-systems workspace; specifying dossier schemas for a business opportunity registry; planning.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. When to reach for this: when designing or restoring the autonomous-systems workspace; specifying dossier schemas for a business opportunity registry; planning.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43946,
+            "sha256": "ec0e33aef4f3d0d348eb40cd613995fc8e50912e21ac6f9555575b5e7a44b10c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36244,
+            "sha256": "99d25e617c9f342d6b75fdaecd301c8a3e198dcef490a1e22dde65eb3963a14c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20475,
+            "sha256": "d241a8015627dcc2bb44c716a012fe19df145ad22df8dba952e1f85da7696330"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19962,
+            "sha256": "a207a98ad11be2b3e01ed79b4669d207931f398ca9f1aac18cedf06e1e7ea084"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44430,
+            "sha256": "c11fa04625e4aab2914d2332ea3d57f12505271a5bbe993e4d8081c1e799d53e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8877,
+            "sha256": "0b853009c806a2f8e2ec6787558a511bf5a6cbb7ab5caa823834511b954ef089"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+          "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4e57dd8dbc7b38aa8b833af4"
+    },
+    {
+      "receipt_id": "mb-murano-os-prism-foundry-handoff__receipt_0006",
+      "project_id": "mb-murano-os-prism-foundry-handoff",
+      "project_title": "Prism Foundry",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Prism Foundry Proof Boundary",
+      "component_case_id": "mb-murano-os-prism-foundry-handoff__0006__prism-foundry-proof-boundary",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43946,
+            "sha256": "ec0e33aef4f3d0d348eb40cd613995fc8e50912e21ac6f9555575b5e7a44b10c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36244,
+            "sha256": "99d25e617c9f342d6b75fdaecd301c8a3e198dcef490a1e22dde65eb3963a14c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20475,
+            "sha256": "d241a8015627dcc2bb44c716a012fe19df145ad22df8dba952e1f85da7696330"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19962,
+            "sha256": "a207a98ad11be2b3e01ed79b4669d207931f398ca9f1aac18cedf06e1e7ea084"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44430,
+            "sha256": "c11fa04625e4aab2914d2332ea3d57f12505271a5bbe993e4d8081c1e799d53e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8877,
+            "sha256": "0b853009c806a2f8e2ec6787558a511bf5a6cbb7ab5caa823834511b954ef089"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+          "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f3e2cfd0f5575a422314ccf7"
+    },
+    {
+      "receipt_id": "mb-murano-os-prism-foundry-handoff__receipt_0007",
+      "project_id": "mb-murano-os-prism-foundry-handoff",
+      "project_title": "Prism Foundry",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Prism Foundry Next Build Test",
+      "component_case_id": "mb-murano-os-prism-foundry-handoff__0007__prism-foundry-next-build-test",
+      "claim_to_demonstrate": "Promote the packet from documented handoff to live implementation only after the declared caveats are resolved: apply or wire the scaffold, run the stated validation or smoke-test sequence, and keep unresolved assumptions visible.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Promote the packet from documented handoff to live implementation only after the declared caveats are resolved: apply or wire the scaffold, run the stated validation or smoke-test sequence, and keep unresolved assumptions visible.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43946,
+            "sha256": "ec0e33aef4f3d0d348eb40cd613995fc8e50912e21ac6f9555575b5e7a44b10c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36244,
+            "sha256": "99d25e617c9f342d6b75fdaecd301c8a3e198dcef490a1e22dde65eb3963a14c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20475,
+            "sha256": "d241a8015627dcc2bb44c716a012fe19df145ad22df8dba952e1f85da7696330"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19962,
+            "sha256": "a207a98ad11be2b3e01ed79b4669d207931f398ca9f1aac18cedf06e1e7ea084"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44430,
+            "sha256": "c11fa04625e4aab2914d2332ea3d57f12505271a5bbe993e4d8081c1e799d53e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8877,
+            "sha256": "0b853009c806a2f8e2ec6787558a511bf5a6cbb7ab5caa823834511b954ef089"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+          "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4d27df58724e4f01883648ef"
+    },
+    {
+      "receipt_id": "mb-murano-os-prism-foundry-handoff__receipt_0008",
+      "project_id": "mb-murano-os-prism-foundry-handoff",
+      "project_title": "Prism Foundry",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Prism Foundry / backend/frontend",
+      "component_case_id": "mb-murano-os-prism-foundry-handoff__0008__prism-foundry-backend-frontend",
+      "claim_to_demonstrate": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "input_fixture": "project source text and the named component `backend/frontend`",
+      "operation_under_test": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `backend/frontend`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "12b906e53c841f6a071a9002",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43946,
+            "sha256": "ec0e33aef4f3d0d348eb40cd613995fc8e50912e21ac6f9555575b5e7a44b10c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36244,
+            "sha256": "99d25e617c9f342d6b75fdaecd301c8a3e198dcef490a1e22dde65eb3963a14c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20475,
+            "sha256": "d241a8015627dcc2bb44c716a012fe19df145ad22df8dba952e1f85da7696330"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19962,
+            "sha256": "a207a98ad11be2b3e01ed79b4669d207931f398ca9f1aac18cedf06e1e7ea084"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44430,
+            "sha256": "c11fa04625e4aab2914d2332ea3d57f12505271a5bbe993e4d8081c1e799d53e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8877,
+            "sha256": "0b853009c806a2f8e2ec6787558a511bf5a6cbb7ab5caa823834511b954ef089"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+          "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "860b98c720f07c0615bd5563"
+    },
+    {
+      "receipt_id": "mb-murano-os-prism-foundry-handoff__receipt_0009",
+      "project_id": "mb-murano-os-prism-foundry-handoff",
+      "project_title": "Prism Foundry",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Prism Foundry / docs/01_Room_Vision_and_Principles.md",
+      "component_case_id": "mb-murano-os-prism-foundry-handoff__0009__prism-foundry-docs-01-room-vision-and-principles-md",
+      "claim_to_demonstrate": "treats `docs/01_Room_Vision_and_Principles.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Room_Vision_and_Principles.md — docs/02_Information_Architecture.md —.",
+      "input_fixture": "project source text and the named component `docs/01_Room_Vision_and_Principles.md`",
+      "operation_under_test": "treats `docs/01_Room_Vision_and_Principles.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Room_Vision_and_Principles.md — docs/02_Information_Architecture.md —.",
+      "expected_output": "inspectable implementation evidence tied to `docs/01_Room_Vision_and_Principles.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fd3298a542535eca7ddca165",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43946,
+            "sha256": "ec0e33aef4f3d0d348eb40cd613995fc8e50912e21ac6f9555575b5e7a44b10c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36244,
+            "sha256": "99d25e617c9f342d6b75fdaecd301c8a3e198dcef490a1e22dde65eb3963a14c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20475,
+            "sha256": "d241a8015627dcc2bb44c716a012fe19df145ad22df8dba952e1f85da7696330"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19962,
+            "sha256": "a207a98ad11be2b3e01ed79b4669d207931f398ca9f1aac18cedf06e1e7ea084"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44430,
+            "sha256": "c11fa04625e4aab2914d2332ea3d57f12505271a5bbe993e4d8081c1e799d53e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8877,
+            "sha256": "0b853009c806a2f8e2ec6787558a511bf5a6cbb7ab5caa823834511b954ef089"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+          "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8e3e1130a3c03be55ea771bb"
+    },
+    {
+      "receipt_id": "mb-murano-os-prism-foundry-handoff__receipt_0010",
+      "project_id": "mb-murano-os-prism-foundry-handoff",
+      "project_title": "Prism Foundry",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Prism Foundry / docs/02_Information_Architecture.md",
+      "component_case_id": "mb-murano-os-prism-foundry-handoff__0010__prism-foundry-docs-02-information-architecture-md",
+      "claim_to_demonstrate": "treats `docs/02_Information_Architecture.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Room_Vision_and_Principles.md — docs/02_Information_Architecture.md — prototype.html.",
+      "input_fixture": "project source text and the named component `docs/02_Information_Architecture.md`",
+      "operation_under_test": "treats `docs/02_Information_Architecture.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Room_Vision_and_Principles.md — docs/02_Information_Architecture.md — prototype.html.",
+      "expected_output": "inspectable implementation evidence tied to `docs/02_Information_Architecture.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fd3298a542535eca7ddca165",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43946,
+            "sha256": "ec0e33aef4f3d0d348eb40cd613995fc8e50912e21ac6f9555575b5e7a44b10c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36244,
+            "sha256": "99d25e617c9f342d6b75fdaecd301c8a3e198dcef490a1e22dde65eb3963a14c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20475,
+            "sha256": "d241a8015627dcc2bb44c716a012fe19df145ad22df8dba952e1f85da7696330"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19962,
+            "sha256": "a207a98ad11be2b3e01ed79b4669d207931f398ca9f1aac18cedf06e1e7ea084"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44430,
+            "sha256": "c11fa04625e4aab2914d2332ea3d57f12505271a5bbe993e4d8081c1e799d53e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8877,
+            "sha256": "0b853009c806a2f8e2ec6787558a511bf5a6cbb7ab5caa823834511b954ef089"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+          "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c1d08d189bf73053f1f92dc4"
+    },
+    {
+      "receipt_id": "mb-murano-os-prism-foundry-handoff__receipt_0011",
+      "project_id": "mb-murano-os-prism-foundry-handoff",
+      "project_title": "Prism Foundry",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Prism Foundry / schemas/system_dossier.schema.json",
+      "component_case_id": "mb-murano-os-prism-foundry-handoff__0011__prism-foundry-schemas-system-dossier-schema-json",
+      "claim_to_demonstrate": "treats `schemas/system_dossier.schema.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Room_Vision_and_Principles.md — docs/02_Information_Architecture.md — prototype.html.",
+      "input_fixture": "project source text and the named component `schemas/system_dossier.schema.json`",
+      "operation_under_test": "treats `schemas/system_dossier.schema.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Room_Vision_and_Principles.md — docs/02_Information_Architecture.md — prototype.html.",
+      "expected_output": "inspectable implementation evidence tied to `schemas/system_dossier.schema.json`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fd3298a542535eca7ddca165",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43946,
+            "sha256": "ec0e33aef4f3d0d348eb40cd613995fc8e50912e21ac6f9555575b5e7a44b10c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36244,
+            "sha256": "99d25e617c9f342d6b75fdaecd301c8a3e198dcef490a1e22dde65eb3963a14c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20475,
+            "sha256": "d241a8015627dcc2bb44c716a012fe19df145ad22df8dba952e1f85da7696330"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19962,
+            "sha256": "a207a98ad11be2b3e01ed79b4669d207931f398ca9f1aac18cedf06e1e7ea084"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44430,
+            "sha256": "c11fa04625e4aab2914d2332ea3d57f12505271a5bbe993e4d8081c1e799d53e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8877,
+            "sha256": "0b853009c806a2f8e2ec6787558a511bf5a6cbb7ab5caa823834511b954ef089"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+          "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6bc73a418c026b38d29d8cd2"
+    },
+    {
+      "receipt_id": "mb-murano-os-prism-foundry-handoff__receipt_0012",
+      "project_id": "mb-murano-os-prism-foundry-handoff",
+      "project_title": "Prism Foundry",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Prism Foundry / schemas/design_tokens.json",
+      "component_case_id": "mb-murano-os-prism-foundry-handoff__0012__prism-foundry-schemas-design-tokens-json",
+      "claim_to_demonstrate": "treats `schemas/design_tokens.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: prototype.html (6.8 KB) + assets/app.js (18.8 KB) + assets/styles.css (15 KB) — local interactive concept.",
+      "input_fixture": "project source text and the named component `schemas/design_tokens.json`",
+      "operation_under_test": "treats `schemas/design_tokens.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: prototype.html (6.8 KB) + assets/app.js (18.8 KB) + assets/styles.css (15 KB) — local interactive concept.",
+      "expected_output": "inspectable implementation evidence tied to `schemas/design_tokens.json`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3300deb2bc2a830fc7ff3b72",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43946,
+            "sha256": "ec0e33aef4f3d0d348eb40cd613995fc8e50912e21ac6f9555575b5e7a44b10c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36244,
+            "sha256": "99d25e617c9f342d6b75fdaecd301c8a3e198dcef490a1e22dde65eb3963a14c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20475,
+            "sha256": "d241a8015627dcc2bb44c716a012fe19df145ad22df8dba952e1f85da7696330"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19962,
+            "sha256": "a207a98ad11be2b3e01ed79b4669d207931f398ca9f1aac18cedf06e1e7ea084"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44430,
+            "sha256": "c11fa04625e4aab2914d2332ea3d57f12505271a5bbe993e4d8081c1e799d53e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8877,
+            "sha256": "0b853009c806a2f8e2ec6787558a511bf5a6cbb7ab5caa823834511b954ef089"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+          "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d3253ebdda2ecbb809ebf419"
+    },
+    {
+      "receipt_id": "mb-murano-os-prism-foundry-handoff__receipt_0013",
+      "project_id": "mb-murano-os-prism-foundry-handoff",
+      "project_title": "Prism Foundry",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Prism Foundry / schemas/taxonomy_seed.json",
+      "component_case_id": "mb-murano-os-prism-foundry-handoff__0013__prism-foundry-schemas-taxonomy-seed-json",
+      "claim_to_demonstrate": "treats `schemas/taxonomy_seed.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: schemas/taxonomy_seed.json (2.1 KB) - 3 populated sample dossiers demonstrating data shape -.",
+      "input_fixture": "project source text and the named component `schemas/taxonomy_seed.json`",
+      "operation_under_test": "treats `schemas/taxonomy_seed.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: schemas/taxonomy_seed.json (2.1 KB) - 3 populated sample dossiers demonstrating data shape -.",
+      "expected_output": "inspectable implementation evidence tied to `schemas/taxonomy_seed.json`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c8690d86a5dd004a5a1cd590",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43946,
+            "sha256": "ec0e33aef4f3d0d348eb40cd613995fc8e50912e21ac6f9555575b5e7a44b10c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36244,
+            "sha256": "99d25e617c9f342d6b75fdaecd301c8a3e198dcef490a1e22dde65eb3963a14c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20475,
+            "sha256": "d241a8015627dcc2bb44c716a012fe19df145ad22df8dba952e1f85da7696330"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19962,
+            "sha256": "a207a98ad11be2b3e01ed79b4669d207931f398ca9f1aac18cedf06e1e7ea084"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44430,
+            "sha256": "c11fa04625e4aab2914d2332ea3d57f12505271a5bbe993e4d8081c1e799d53e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8877,
+            "sha256": "0b853009c806a2f8e2ec6787558a511bf5a6cbb7ab5caa823834511b954ef089"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+          "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "16eac11710ef1e8215f814f4"
+    },
+    {
+      "receipt_id": "mb-murano-os-prism-foundry-handoff__receipt_0014",
+      "project_id": "mb-murano-os-prism-foundry-handoff",
+      "project_title": "Prism Foundry",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Prism Foundry / README.md",
+      "component_case_id": "mb-murano-os-prism-foundry-handoff__0014__prism-foundry-readme-md",
+      "claim_to_demonstrate": "treats `README.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Room_Vision_and_Principles.md — docs/02_Information_Architecture.md — prototype.html (for feel) —.",
+      "input_fixture": "project source text and the named component `README.md`",
+      "operation_under_test": "treats `README.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Room_Vision_and_Principles.md — docs/02_Information_Architecture.md — prototype.html (for feel) —.",
+      "expected_output": "inspectable implementation evidence tied to `README.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fd3298a542535eca7ddca165",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43946,
+            "sha256": "ec0e33aef4f3d0d348eb40cd613995fc8e50912e21ac6f9555575b5e7a44b10c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36244,
+            "sha256": "99d25e617c9f342d6b75fdaecd301c8a3e198dcef490a1e22dde65eb3963a14c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20475,
+            "sha256": "d241a8015627dcc2bb44c716a012fe19df145ad22df8dba952e1f85da7696330"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19962,
+            "sha256": "a207a98ad11be2b3e01ed79b4669d207931f398ca9f1aac18cedf06e1e7ea084"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44430,
+            "sha256": "c11fa04625e4aab2914d2332ea3d57f12505271a5bbe993e4d8081c1e799d53e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8877,
+            "sha256": "0b853009c806a2f8e2ec6787558a511bf5a6cbb7ab5caa823834511b954ef089"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+          "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1b3698a827980268e1bfb1e9"
+    },
+    {
+      "receipt_id": "mb-murano-os-prism-foundry-handoff__receipt_0015",
+      "project_id": "mb-murano-os-prism-foundry-handoff",
+      "project_title": "Prism Foundry",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Prism Foundry / 01_Room_Vision_and_Principles.md",
+      "component_case_id": "mb-murano-os-prism-foundry-handoff__0015__prism-foundry-01-room-vision-and-principles-md",
+      "claim_to_demonstrate": "treats `01_Room_Vision_and_Principles.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Room_Vision_and_Principles.md — docs/02_Information_Architecture.md — prototype.html.",
+      "input_fixture": "project source text and the named component `01_Room_Vision_and_Principles.md`",
+      "operation_under_test": "treats `01_Room_Vision_and_Principles.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Room_Vision_and_Principles.md — docs/02_Information_Architecture.md — prototype.html.",
+      "expected_output": "inspectable implementation evidence tied to `01_Room_Vision_and_Principles.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fd3298a542535eca7ddca165",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43946,
+            "sha256": "ec0e33aef4f3d0d348eb40cd613995fc8e50912e21ac6f9555575b5e7a44b10c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36244,
+            "sha256": "99d25e617c9f342d6b75fdaecd301c8a3e198dcef490a1e22dde65eb3963a14c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20475,
+            "sha256": "d241a8015627dcc2bb44c716a012fe19df145ad22df8dba952e1f85da7696330"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19962,
+            "sha256": "a207a98ad11be2b3e01ed79b4669d207931f398ca9f1aac18cedf06e1e7ea084"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44430,
+            "sha256": "c11fa04625e4aab2914d2332ea3d57f12505271a5bbe993e4d8081c1e799d53e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8877,
+            "sha256": "0b853009c806a2f8e2ec6787558a511bf5a6cbb7ab5caa823834511b954ef089"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+          "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "37d020e1e1b7c66f8dacc813"
+    },
+    {
+      "receipt_id": "mb-murano-os-prism-foundry-handoff__receipt_0016",
+      "project_id": "mb-murano-os-prism-foundry-handoff",
+      "project_title": "Prism Foundry",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Prism Foundry / 02_Information_Architecture.md",
+      "component_case_id": "mb-murano-os-prism-foundry-handoff__0016__prism-foundry-02-information-architecture-md",
+      "claim_to_demonstrate": "treats `02_Information_Architecture.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Room_Vision_and_Principles.md — docs/02_Information_Architecture.md — prototype.html (for.",
+      "input_fixture": "project source text and the named component `02_Information_Architecture.md`",
+      "operation_under_test": "treats `02_Information_Architecture.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Room_Vision_and_Principles.md — docs/02_Information_Architecture.md — prototype.html (for.",
+      "expected_output": "inspectable implementation evidence tied to `02_Information_Architecture.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fd3298a542535eca7ddca165",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43946,
+            "sha256": "ec0e33aef4f3d0d348eb40cd613995fc8e50912e21ac6f9555575b5e7a44b10c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36244,
+            "sha256": "99d25e617c9f342d6b75fdaecd301c8a3e198dcef490a1e22dde65eb3963a14c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20475,
+            "sha256": "d241a8015627dcc2bb44c716a012fe19df145ad22df8dba952e1f85da7696330"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19962,
+            "sha256": "a207a98ad11be2b3e01ed79b4669d207931f398ca9f1aac18cedf06e1e7ea084"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44430,
+            "sha256": "c11fa04625e4aab2914d2332ea3d57f12505271a5bbe993e4d8081c1e799d53e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8877,
+            "sha256": "0b853009c806a2f8e2ec6787558a511bf5a6cbb7ab5caa823834511b954ef089"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+          "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7d514e0091190a0d6fb4a005"
+    },
+    {
+      "receipt_id": "mb-murano-os-prism-foundry-handoff__receipt_0017",
+      "project_id": "mb-murano-os-prism-foundry-handoff",
+      "project_title": "Prism Foundry",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Prism Foundry / prototype.html",
+      "component_case_id": "mb-murano-os-prism-foundry-handoff__0017__prism-foundry-prototype-html",
+      "claim_to_demonstrate": "treats `prototype.html` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Room_Vision_and_Principles.md — docs/02_Information_Architecture.md — prototype.html (for feel) —.",
+      "input_fixture": "project source text and the named component `prototype.html`",
+      "operation_under_test": "treats `prototype.html` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Room_Vision_and_Principles.md — docs/02_Information_Architecture.md — prototype.html (for feel) —.",
+      "expected_output": "inspectable implementation evidence tied to `prototype.html`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fd3298a542535eca7ddca165",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43946,
+            "sha256": "ec0e33aef4f3d0d348eb40cd613995fc8e50912e21ac6f9555575b5e7a44b10c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36244,
+            "sha256": "99d25e617c9f342d6b75fdaecd301c8a3e198dcef490a1e22dde65eb3963a14c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20475,
+            "sha256": "d241a8015627dcc2bb44c716a012fe19df145ad22df8dba952e1f85da7696330"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19962,
+            "sha256": "a207a98ad11be2b3e01ed79b4669d207931f398ca9f1aac18cedf06e1e7ea084"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44430,
+            "sha256": "c11fa04625e4aab2914d2332ea3d57f12505271a5bbe993e4d8081c1e799d53e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8877,
+            "sha256": "0b853009c806a2f8e2ec6787558a511bf5a6cbb7ab5caa823834511b954ef089"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-prism-foundry-handoff/README.md",
+          "proof_builds/mb-murano-os-prism-foundry-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-prism-foundry-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1610f02f5f27c0e123d43572"
+    }
+  ]
+}

@@ -1,0 +1,1470 @@
+{
+  "project": {
+    "project_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1",
+    "title": "Glassworks of Correspondence"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__receipt_0001",
+      "project_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1",
+      "project_title": "Glassworks of Correspondence",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glassworks of Correspondence Handoff Identity",
+      "component_case_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__0001__glassworks-of-correspondence-handoff-identity",
+      "claim_to_demonstrate": "Glassworks of Correspondence is a MuranoOS room handoff for managing metaphor, allegory, correspondence, and interpretive transfer.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "Glassworks of Correspondence is a MuranoOS room handoff for managing metaphor, allegory, correspondence, and interpretive transfer.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43836,
+            "sha256": "1753e772643d1a4f252fb01466bf1faf671fba3756f657e38f9670974debf770"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36116,
+            "sha256": "85b4c74b6b54b892f079fd01179cd1a77e322c29ca5f8a0e43e7b39ba8c44446"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20792,
+            "sha256": "0e6faaa0b0fc2ee55833366867781bfe949c537d8bc7f4f898932c2a9c1fe5ad"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "13d39bbeadae93db3b753ea581b33a75510ef2970e6dfa08052659a10fb97518"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45979,
+            "sha256": "e2c66144e1ac6af136c6c04ca6fa58c678337e23f2b1fb2266e27c0f9a578cc8"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9769,
+            "sha256": "1730dd897437d30c4300ccaa4afa494b712b331e8c0a43c79fcb8cd6e5a211d7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a8ab6fd66d7e5c720fdc99b9"
+    },
+    {
+      "receipt_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__receipt_0002",
+      "project_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1",
+      "project_title": "Glassworks of Correspondence",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glassworks of Correspondence Room Task Model",
+      "component_case_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__0002__glassworks-of-correspondence-room-task-model",
+      "claim_to_demonstrate": "It routes a metaphor or allegorical pattern through source, target, transfer logic, distortion risk, interpretive limit, and reuse decision so symbolic language remains governed rather than ornamental.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "It routes a metaphor or allegorical pattern through source, target, transfer logic, distortion risk, interpretive limit, and reuse decision so symbolic language remains governed rather than ornamental.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43836,
+            "sha256": "1753e772643d1a4f252fb01466bf1faf671fba3756f657e38f9670974debf770"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36116,
+            "sha256": "85b4c74b6b54b892f079fd01179cd1a77e322c29ca5f8a0e43e7b39ba8c44446"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20792,
+            "sha256": "0e6faaa0b0fc2ee55833366867781bfe949c537d8bc7f4f898932c2a9c1fe5ad"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "13d39bbeadae93db3b753ea581b33a75510ef2970e6dfa08052659a10fb97518"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45979,
+            "sha256": "e2c66144e1ac6af136c6c04ca6fa58c678337e23f2b1fb2266e27c0f9a578cc8"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9769,
+            "sha256": "1730dd897437d30c4300ccaa4afa494b712b331e8c0a43c79fcb8cd6e5a211d7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ea641e80be6c89d6da7051e0"
+    },
+    {
+      "receipt_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__receipt_0003",
+      "project_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1",
+      "project_title": "Glassworks of Correspondence",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glassworks of Correspondence Data Schema And Persistence Plan",
+      "component_case_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__0003__glassworks-of-correspondence-data-schema-and-persistence-plan",
+      "claim_to_demonstrate": "Writing, rhetoric, narrative design, visual culture, and presentation. Use source library writing/visual/cinema sources to strengthen public exposition and Trilogy visual/storytelling logic. Vision: Make public pages read as curated intellectual exhibits.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Writing, rhetoric, narrative design, visual culture, and presentation. Use source library writing/visual/cinema sources to strengthen public exposition and Trilogy visual/storytelling logic. Vision: Make public pages read as curated intellectual exhibits.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43836,
+            "sha256": "1753e772643d1a4f252fb01466bf1faf671fba3756f657e38f9670974debf770"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36116,
+            "sha256": "85b4c74b6b54b892f079fd01179cd1a77e322c29ca5f8a0e43e7b39ba8c44446"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20792,
+            "sha256": "0e6faaa0b0fc2ee55833366867781bfe949c537d8bc7f4f898932c2a9c1fe5ad"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "13d39bbeadae93db3b753ea581b33a75510ef2970e6dfa08052659a10fb97518"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45979,
+            "sha256": "e2c66144e1ac6af136c6c04ca6fa58c678337e23f2b1fb2266e27c0f9a578cc8"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9769,
+            "sha256": "1730dd897437d30c4300ccaa4afa494b712b331e8c0a43c79fcb8cd6e5a211d7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0a2b12ebc1c4f623a7fb0073"
+    },
+    {
+      "receipt_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__receipt_0004",
+      "project_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1",
+      "project_title": "Glassworks of Correspondence",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glassworks of Correspondence Interface And Instrument Plane",
+      "component_case_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__0004__glassworks-of-correspondence-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43836,
+            "sha256": "1753e772643d1a4f252fb01466bf1faf671fba3756f657e38f9670974debf770"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36116,
+            "sha256": "85b4c74b6b54b892f079fd01179cd1a77e322c29ca5f8a0e43e7b39ba8c44446"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20792,
+            "sha256": "0e6faaa0b0fc2ee55833366867781bfe949c537d8bc7f4f898932c2a9c1fe5ad"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "13d39bbeadae93db3b753ea581b33a75510ef2970e6dfa08052659a10fb97518"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45979,
+            "sha256": "e2c66144e1ac6af136c6c04ca6fa58c678337e23f2b1fb2266e27c0f9a578cc8"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9769,
+            "sha256": "1730dd897437d30c4300ccaa4afa494b712b331e8c0a43c79fcb8cd6e5a211d7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "defd3fa9a4b199df2a302b21"
+    },
+    {
+      "receipt_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__receipt_0005",
+      "project_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1",
+      "project_title": "Glassworks of Correspondence",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glassworks of Correspondence Integration Path",
+      "component_case_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__0005__glassworks-of-correspondence-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. Quick start (5 steps): (1) Read Room Constitution, (2) Open Architecture and Layout, (3) Install the five master objects, (4) Operate using Workflow and Rituals.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. Quick start (5 steps): (1) Read Room Constitution, (2) Open Architecture and Layout, (3) Install the five master objects, (4) Operate using Workflow and Rituals.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43836,
+            "sha256": "1753e772643d1a4f252fb01466bf1faf671fba3756f657e38f9670974debf770"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36116,
+            "sha256": "85b4c74b6b54b892f079fd01179cd1a77e322c29ca5f8a0e43e7b39ba8c44446"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20792,
+            "sha256": "0e6faaa0b0fc2ee55833366867781bfe949c537d8bc7f4f898932c2a9c1fe5ad"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "13d39bbeadae93db3b753ea581b33a75510ef2970e6dfa08052659a10fb97518"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45979,
+            "sha256": "e2c66144e1ac6af136c6c04ca6fa58c678337e23f2b1fb2266e27c0f9a578cc8"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9769,
+            "sha256": "1730dd897437d30c4300ccaa4afa494b712b331e8c0a43c79fcb8cd6e5a211d7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5f397d92e68f255d85b31553"
+    },
+    {
+      "receipt_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__receipt_0006",
+      "project_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1",
+      "project_title": "Glassworks of Correspondence",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glassworks of Correspondence Proof Boundary",
+      "component_case_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__0006__glassworks-of-correspondence-proof-boundary",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43836,
+            "sha256": "1753e772643d1a4f252fb01466bf1faf671fba3756f657e38f9670974debf770"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36116,
+            "sha256": "85b4c74b6b54b892f079fd01179cd1a77e322c29ca5f8a0e43e7b39ba8c44446"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20792,
+            "sha256": "0e6faaa0b0fc2ee55833366867781bfe949c537d8bc7f4f898932c2a9c1fe5ad"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "13d39bbeadae93db3b753ea581b33a75510ef2970e6dfa08052659a10fb97518"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45979,
+            "sha256": "e2c66144e1ac6af136c6c04ca6fa58c678337e23f2b1fb2266e27c0f9a578cc8"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9769,
+            "sha256": "1730dd897437d30c4300ccaa4afa494b712b331e8c0a43c79fcb8cd6e5a211d7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6792a7a2086c7718ee7b4353"
+    },
+    {
+      "receipt_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__receipt_0007",
+      "project_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1",
+      "project_title": "Glassworks of Correspondence",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glassworks of Correspondence Next Build Test",
+      "component_case_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__0007__glassworks-of-correspondence-next-build-test",
+      "claim_to_demonstrate": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43836,
+            "sha256": "1753e772643d1a4f252fb01466bf1faf671fba3756f657e38f9670974debf770"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36116,
+            "sha256": "85b4c74b6b54b892f079fd01179cd1a77e322c29ca5f8a0e43e7b39ba8c44446"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20792,
+            "sha256": "0e6faaa0b0fc2ee55833366867781bfe949c537d8bc7f4f898932c2a9c1fe5ad"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "13d39bbeadae93db3b753ea581b33a75510ef2970e6dfa08052659a10fb97518"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45979,
+            "sha256": "e2c66144e1ac6af136c6c04ca6fa58c678337e23f2b1fb2266e27c0f9a578cc8"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9769,
+            "sha256": "1730dd897437d30c4300ccaa4afa494b712b331e8c0a43c79fcb8cd6e5a211d7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "73732e36d1b6541361417788"
+    },
+    {
+      "receipt_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__receipt_0008",
+      "project_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1",
+      "project_title": "Glassworks of Correspondence",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glassworks of Correspondence / backend/frontend",
+      "component_case_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__0008__glassworks-of-correspondence-backend-frontend",
+      "claim_to_demonstrate": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: further passes are \"backlog enhancements, not blockers.\" , state the backend/frontend or packet components, and decide whether the handoff is.",
+      "input_fixture": "project source text and the named component `backend/frontend`",
+      "operation_under_test": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: further passes are \"backlog enhancements, not blockers.\" , state the backend/frontend or packet components, and decide whether the handoff is.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `backend/frontend`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "723969d5d15f366ada2f2362",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43836,
+            "sha256": "1753e772643d1a4f252fb01466bf1faf671fba3756f657e38f9670974debf770"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36116,
+            "sha256": "85b4c74b6b54b892f079fd01179cd1a77e322c29ca5f8a0e43e7b39ba8c44446"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20792,
+            "sha256": "0e6faaa0b0fc2ee55833366867781bfe949c537d8bc7f4f898932c2a9c1fe5ad"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "13d39bbeadae93db3b753ea581b33a75510ef2970e6dfa08052659a10fb97518"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45979,
+            "sha256": "e2c66144e1ac6af136c6c04ca6fa58c678337e23f2b1fb2266e27c0f9a578cc8"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9769,
+            "sha256": "1730dd897437d30c4300ccaa4afa494b712b331e8c0a43c79fcb8cd6e5a211d7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f091388930e69fc5e02c143e"
+    },
+    {
+      "receipt_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__receipt_0009",
+      "project_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1",
+      "project_title": "Glassworks of Correspondence",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glassworks of Correspondence / 11_Floorplan.svg",
+      "component_case_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__0009__glassworks-of-correspondence-11-floorplan-svg",
+      "claim_to_demonstrate": "treats `11_Floorplan.svg` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: SVG floorplan (11_Floorplan.svg) is the only visual asset. Plaque texts (12_Plaque_Texts.md) specify in-room inscriptions —.",
+      "input_fixture": "project source text and the named component `11_Floorplan.svg`",
+      "operation_under_test": "treats `11_Floorplan.svg` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: SVG floorplan (11_Floorplan.svg) is the only visual asset. Plaque texts (12_Plaque_Texts.md) specify in-room inscriptions —.",
+      "expected_output": "inspectable implementation evidence tied to `11_Floorplan.svg`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "6495dc8a0c23ef29233a6ed7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43836,
+            "sha256": "1753e772643d1a4f252fb01466bf1faf671fba3756f657e38f9670974debf770"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36116,
+            "sha256": "85b4c74b6b54b892f079fd01179cd1a77e322c29ca5f8a0e43e7b39ba8c44446"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20792,
+            "sha256": "0e6faaa0b0fc2ee55833366867781bfe949c537d8bc7f4f898932c2a9c1fe5ad"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "13d39bbeadae93db3b753ea581b33a75510ef2970e6dfa08052659a10fb97518"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45979,
+            "sha256": "e2c66144e1ac6af136c6c04ca6fa58c678337e23f2b1fb2266e27c0f9a578cc8"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9769,
+            "sha256": "1730dd897437d30c4300ccaa4afa494b712b331e8c0a43c79fcb8cd6e5a211d7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b3619342c884f8d609b3dd7e"
+    },
+    {
+      "receipt_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__receipt_0010",
+      "project_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1",
+      "project_title": "Glassworks of Correspondence",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glassworks of Correspondence / 12_Plaque_Texts.md",
+      "component_case_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__0010__glassworks-of-correspondence-12-plaque-texts-md",
+      "claim_to_demonstrate": "treats `12_Plaque_Texts.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Plaque texts (12_Plaque_Texts.md) specify in-room inscriptions — the interface is designed to carry literal inscribed.",
+      "input_fixture": "project source text and the named component `12_Plaque_Texts.md`",
+      "operation_under_test": "treats `12_Plaque_Texts.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Plaque texts (12_Plaque_Texts.md) specify in-room inscriptions — the interface is designed to carry literal inscribed.",
+      "expected_output": "inspectable implementation evidence tied to `12_Plaque_Texts.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "76b0697f8d708d0555e29e74",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43836,
+            "sha256": "1753e772643d1a4f252fb01466bf1faf671fba3756f657e38f9670974debf770"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36116,
+            "sha256": "85b4c74b6b54b892f079fd01179cd1a77e322c29ca5f8a0e43e7b39ba8c44446"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20792,
+            "sha256": "0e6faaa0b0fc2ee55833366867781bfe949c537d8bc7f4f898932c2a9c1fe5ad"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "13d39bbeadae93db3b753ea581b33a75510ef2970e6dfa08052659a10fb97518"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45979,
+            "sha256": "e2c66144e1ac6af136c6c04ca6fa58c678337e23f2b1fb2266e27c0f9a578cc8"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9769,
+            "sha256": "1730dd897437d30c4300ccaa4afa494b712b331e8c0a43c79fcb8cd6e5a211d7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "43efe27c8fae94140dbb4742"
+    },
+    {
+      "receipt_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__receipt_0011",
+      "project_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1",
+      "project_title": "Glassworks of Correspondence",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glassworks of Correspondence / Backlog Enhancements, Not Blockers",
+      "component_case_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__0011__glassworks-of-correspondence-backlog-enhancements-not-blockers",
+      "claim_to_demonstrate": "uses `Backlog Enhancements, Not Blockers` as a named project component with a traceable role in the public mechanism. Source context: further passes are \"backlog enhancements, not blockers.\" , state the backend/frontend or packet components, and decide.",
+      "input_fixture": "project source text and the named component `Backlog Enhancements, Not Blockers`",
+      "operation_under_test": "uses `Backlog Enhancements, Not Blockers` as a named project component with a traceable role in the public mechanism. Source context: further passes are \"backlog enhancements, not blockers.\" , state the backend/frontend or packet components, and decide.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Backlog Enhancements, Not Blockers`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "723969d5d15f366ada2f2362",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43836,
+            "sha256": "1753e772643d1a4f252fb01466bf1faf671fba3756f657e38f9670974debf770"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36116,
+            "sha256": "85b4c74b6b54b892f079fd01179cd1a77e322c29ca5f8a0e43e7b39ba8c44446"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20792,
+            "sha256": "0e6faaa0b0fc2ee55833366867781bfe949c537d8bc7f4f898932c2a9c1fe5ad"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "13d39bbeadae93db3b753ea581b33a75510ef2970e6dfa08052659a10fb97518"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45979,
+            "sha256": "e2c66144e1ac6af136c6c04ca6fa58c678337e23f2b1fb2266e27c0f9a578cc8"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9769,
+            "sha256": "1730dd897437d30c4300ccaa4afa494b712b331e8c0a43c79fcb8cd6e5a211d7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "db1b5d2aed63cd973939b4b6"
+    },
+    {
+      "receipt_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__receipt_0012",
+      "project_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1",
+      "project_title": "Glassworks of Correspondence",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glassworks of Correspondence / The Glassworks of Correspondence",
+      "component_case_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__0012__glassworks-of-correspondence-the-glassworks-of-correspondence",
+      "claim_to_demonstrate": "uses `The Glassworks of Correspondence` as a named project component with a traceable role in the public mechanism. Source context: Hands off The Glassworks of Correspondence — a Murano OS room that holds the full metaphor/allegory method in one coherent.",
+      "input_fixture": "project source text and the named component `The Glassworks of Correspondence`",
+      "operation_under_test": "uses `The Glassworks of Correspondence` as a named project component with a traceable role in the public mechanism. Source context: Hands off The Glassworks of Correspondence — a Murano OS room that holds the full metaphor/allegory method in one coherent.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `The Glassworks of Correspondence`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d18ad64946c732deeaaf7219",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43836,
+            "sha256": "1753e772643d1a4f252fb01466bf1faf671fba3756f657e38f9670974debf770"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36116,
+            "sha256": "85b4c74b6b54b892f079fd01179cd1a77e322c29ca5f8a0e43e7b39ba8c44446"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20792,
+            "sha256": "0e6faaa0b0fc2ee55833366867781bfe949c537d8bc7f4f898932c2a9c1fe5ad"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "13d39bbeadae93db3b753ea581b33a75510ef2970e6dfa08052659a10fb97518"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45979,
+            "sha256": "e2c66144e1ac6af136c6c04ca6fa58c678337e23f2b1fb2266e27c0f9a578cc8"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9769,
+            "sha256": "1730dd897437d30c4300ccaa4afa494b712b331e8c0a43c79fcb8cd6e5a211d7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ef5b8ff662509da043c3a15e"
+    },
+    {
+      "receipt_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__receipt_0013",
+      "project_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1",
+      "project_title": "Glassworks of Correspondence",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glassworks of Correspondence / Murano OS",
+      "component_case_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__0013__glassworks-of-correspondence-murano-os",
+      "claim_to_demonstrate": "uses `Murano OS` as a named project component with a traceable role in the public mechanism. Source context: Hands off The Glassworks of Correspondence — a Murano OS room that holds the full metaphor/allegory method in one coherent governing world. The room's.",
+      "input_fixture": "project source text and the named component `Murano OS`",
+      "operation_under_test": "uses `Murano OS` as a named project component with a traceable role in the public mechanism. Source context: Hands off The Glassworks of Correspondence — a Murano OS room that holds the full metaphor/allegory method in one coherent governing world. The room's.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Murano OS`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d18ad64946c732deeaaf7219",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43836,
+            "sha256": "1753e772643d1a4f252fb01466bf1faf671fba3756f657e38f9670974debf770"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36116,
+            "sha256": "85b4c74b6b54b892f079fd01179cd1a77e322c29ca5f8a0e43e7b39ba8c44446"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20792,
+            "sha256": "0e6faaa0b0fc2ee55833366867781bfe949c537d8bc7f4f898932c2a9c1fe5ad"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "13d39bbeadae93db3b753ea581b33a75510ef2970e6dfa08052659a10fb97518"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45979,
+            "sha256": "e2c66144e1ac6af136c6c04ca6fa58c678337e23f2b1fb2266e27c0f9a578cc8"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9769,
+            "sha256": "1730dd897437d30c4300ccaa4afa494b712b331e8c0a43c79fcb8cd6e5a211d7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4a0b2d8ee3ae4a39f9b31196"
+    },
+    {
+      "receipt_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__receipt_0014",
+      "project_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1",
+      "project_title": "Glassworks of Correspondence",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glassworks of Correspondence / DONE. Explicitly",
+      "component_case_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__0014__glassworks-of-correspondence-done-explicitly",
+      "claim_to_demonstrate": "uses `DONE. Explicitly` as a named project component with a traceable role in the public mechanism. Source context: DONE. Explicitly positions itself as sufficient without another design pass; further passes are \"backlog enhancements, not blockers.\" , state.",
+      "input_fixture": "project source text and the named component `DONE. Explicitly`",
+      "operation_under_test": "uses `DONE. Explicitly` as a named project component with a traceable role in the public mechanism. Source context: DONE. Explicitly positions itself as sufficient without another design pass; further passes are \"backlog enhancements, not blockers.\" , state.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `DONE. Explicitly`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c57c68d4ea70b11b373682eb",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43836,
+            "sha256": "1753e772643d1a4f252fb01466bf1faf671fba3756f657e38f9670974debf770"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36116,
+            "sha256": "85b4c74b6b54b892f079fd01179cd1a77e322c29ca5f8a0e43e7b39ba8c44446"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20792,
+            "sha256": "0e6faaa0b0fc2ee55833366867781bfe949c537d8bc7f4f898932c2a9c1fe5ad"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "13d39bbeadae93db3b753ea581b33a75510ef2970e6dfa08052659a10fb97518"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45979,
+            "sha256": "e2c66144e1ac6af136c6c04ca6fa58c678337e23f2b1fb2266e27c0f9a578cc8"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9769,
+            "sha256": "1730dd897437d30c4300ccaa4afa494b712b331e8c0a43c79fcb8cd6e5a211d7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ad1da293ce02eaeef9692476"
+    },
+    {
+      "receipt_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__receipt_0015",
+      "project_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1",
+      "project_title": "Glassworks of Correspondence",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glassworks of Correspondence / Read Room Constitution",
+      "component_case_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__0015__glassworks-of-correspondence-read-room-constitution",
+      "claim_to_demonstrate": "treats `Read Room Constitution` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: (1) Read Room Constitution, (2) Open Architecture and Layout, (3) Install the five master objects.",
+      "input_fixture": "project source text and the named component `Read Room Constitution`",
+      "operation_under_test": "treats `Read Room Constitution` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: (1) Read Room Constitution, (2) Open Architecture and Layout, (3) Install the five master objects.",
+      "expected_output": "a room, workbench, or interface function tied to `Read Room Constitution`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5b39d65f6afbe1239e5f6847",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43836,
+            "sha256": "1753e772643d1a4f252fb01466bf1faf671fba3756f657e38f9670974debf770"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36116,
+            "sha256": "85b4c74b6b54b892f079fd01179cd1a77e322c29ca5f8a0e43e7b39ba8c44446"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20792,
+            "sha256": "0e6faaa0b0fc2ee55833366867781bfe949c537d8bc7f4f898932c2a9c1fe5ad"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "13d39bbeadae93db3b753ea581b33a75510ef2970e6dfa08052659a10fb97518"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45979,
+            "sha256": "e2c66144e1ac6af136c6c04ca6fa58c678337e23f2b1fb2266e27c0f9a578cc8"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9769,
+            "sha256": "1730dd897437d30c4300ccaa4afa494b712b331e8c0a43c79fcb8cd6e5a211d7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2044c99c22066dc1522fa036"
+    },
+    {
+      "receipt_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__receipt_0016",
+      "project_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1",
+      "project_title": "Glassworks of Correspondence",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glassworks of Correspondence / Open Architecture and Layout",
+      "component_case_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__0016__glassworks-of-correspondence-open-architecture-and-layout",
+      "claim_to_demonstrate": "uses `Open Architecture and Layout` as a named project component with a traceable role in the public mechanism. Source context: (1) Read Room Constitution, (2) Open Architecture and Layout, (3) Install the five master objects, (4) Operate using Workflow and.",
+      "input_fixture": "project source text and the named component `Open Architecture and Layout`",
+      "operation_under_test": "uses `Open Architecture and Layout` as a named project component with a traceable role in the public mechanism. Source context: (1) Read Room Constitution, (2) Open Architecture and Layout, (3) Install the five master objects, (4) Operate using Workflow and.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Open Architecture and Layout`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5b39d65f6afbe1239e5f6847",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43836,
+            "sha256": "1753e772643d1a4f252fb01466bf1faf671fba3756f657e38f9670974debf770"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36116,
+            "sha256": "85b4c74b6b54b892f079fd01179cd1a77e322c29ca5f8a0e43e7b39ba8c44446"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20792,
+            "sha256": "0e6faaa0b0fc2ee55833366867781bfe949c537d8bc7f4f898932c2a9c1fe5ad"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "13d39bbeadae93db3b753ea581b33a75510ef2970e6dfa08052659a10fb97518"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45979,
+            "sha256": "e2c66144e1ac6af136c6c04ca6fa58c678337e23f2b1fb2266e27c0f9a578cc8"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9769,
+            "sha256": "1730dd897437d30c4300ccaa4afa494b712b331e8c0a43c79fcb8cd6e5a211d7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f9024c4589a73ee38da0d7a3"
+    },
+    {
+      "receipt_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__receipt_0017",
+      "project_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1",
+      "project_title": "Glassworks of Correspondence",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glassworks of Correspondence / Install the",
+      "component_case_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1__0017__glassworks-of-correspondence-install-the",
+      "claim_to_demonstrate": "uses `Install the` as a named project component with a traceable role in the public mechanism. Source context: (1) Read Room Constitution, (2) Open Architecture and Layout, (3) Install the five master objects, (4) Operate using Workflow and Rituals, (5).",
+      "input_fixture": "project source text and the named component `Install the`",
+      "operation_under_test": "uses `Install the` as a named project component with a traceable role in the public mechanism. Source context: (1) Read Room Constitution, (2) Open Architecture and Layout, (3) Install the five master objects, (4) Operate using Workflow and Rituals, (5).",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Install the`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5b39d65f6afbe1239e5f6847",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43836,
+            "sha256": "1753e772643d1a4f252fb01466bf1faf671fba3756f657e38f9670974debf770"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36116,
+            "sha256": "85b4c74b6b54b892f079fd01179cd1a77e322c29ca5f8a0e43e7b39ba8c44446"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20792,
+            "sha256": "0e6faaa0b0fc2ee55833366867781bfe949c537d8bc7f4f898932c2a9c1fe5ad"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "13d39bbeadae93db3b753ea581b33a75510ef2970e6dfa08052659a10fb97518"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45979,
+            "sha256": "e2c66144e1ac6af136c6c04ca6fa58c678337e23f2b1fb2266e27c0f9a578cc8"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9769,
+            "sha256": "1730dd897437d30c4300ccaa4afa494b712b331e8c0a43c79fcb8cd6e5a211d7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-glassworksofcorrespondence-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "cdee4033c1761d7359285800"
+    }
+  ]
+}

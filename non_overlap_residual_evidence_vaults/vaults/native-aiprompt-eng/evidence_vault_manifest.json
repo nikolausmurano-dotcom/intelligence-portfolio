@@ -1,0 +1,30 @@
+{
+  "project_id": "native-aiprompt-eng",
+  "closure_lane": "runtime_deployment_validation",
+  "generated_at": "2026-05-17T01:46:48+00:00",
+  "automated_evidence_hash": "ba36703ce0353910",
+  "required_slots": [
+    {
+      "slot_id": "desktop_screenshot",
+      "required_file": "desktop_screenshot.png",
+      "proves": "Desktop viewport renders the runtime surface and output without layout failure."
+    },
+    {
+      "slot_id": "mobile_screenshot",
+      "required_file": "mobile_screenshot.png",
+      "proves": "Mobile viewport renders the runtime surface and output without layout failure."
+    },
+    {
+      "slot_id": "hosted_deployment_smoke",
+      "required_file": "hosted_deployment_smoke.json",
+      "proves": "Uploaded route returns HTTP 200 and the route can fetch required artifacts."
+    },
+    {
+      "slot_id": "reviewer_validation_note",
+      "required_file": "reviewer_validation_note.md",
+      "proves": "A clearly labeled reviewer, owner, advisor, expert, venue, or Codex technical review note records approval, limits, or remaining defects after inspecting the runtime result."
+    }
+  ],
+  "promotion_rule": "Promotion requires all required files to exist and survive clearly labeled review or technical audit. A complete vault is necessary but not alone sufficient for expert-facing claims.",
+  "vault_hash": "72401738c7b42069"
+}

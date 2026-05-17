@@ -1,0 +1,1470 @@
+{
+  "project": {
+    "project_id": "mb-counter-idiom-lab-proper-handoff-done",
+    "title": "Counter-Idiom Lab"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-counter-idiom-lab-proper-handoff-done__receipt_0001",
+      "project_id": "mb-counter-idiom-lab-proper-handoff-done",
+      "project_title": "Counter-Idiom Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counter-Idiom Lab Handoff Identity",
+      "component_case_id": "mb-counter-idiom-lab-proper-handoff-done__0001__counter-idiom-lab-handoff-identity",
+      "claim_to_demonstrate": "This bundle turns Nik Murano's counter-idiom work into a production-ready dual-deployment: the internal Axiom Forge room inside MuranoOS (archive + lab + training ground + publishing press) and a public Counter-Idiom Lab section for the separate.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "This bundle turns Nik Murano's counter-idiom work into a production-ready dual-deployment: the internal Axiom Forge room inside MuranoOS (archive + lab + training ground + publishing press) and a public Counter-Idiom Lab section for the separate.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45390,
+            "sha256": "2c0be2f561003d16c2b293f064477c5e7b58225784c3cf9e9f6dc8d343318b3e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36885,
+            "sha256": "ac6285f3a796ea56730bbce50787c46b78ca405dd80cabb636880e5dc0a32432"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21842,
+            "sha256": "993ed52f6069e887c231dfb8ccc501f038926c6e7d3e001002d4b2bda54043ca"
+          },
+          {
+            "relative_path": "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20862,
+            "sha256": "226d947cb6acd65137e7257c49833d387d7b6f45bbc7422b4a2d9849a1fd8152"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45669,
+            "sha256": "016ded2897a1aca24619bbfc70b64dd25db95f3fe3db8f2d071505889e104a86"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9305,
+            "sha256": "d75aa8b45b0a10f38582477c7ab1bf7f9d1f78d80bbee1debc08a0a608e2015a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+          "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "eda7f9e5a2a4fc22d1011f54"
+    },
+    {
+      "receipt_id": "mb-counter-idiom-lab-proper-handoff-done__receipt_0002",
+      "project_id": "mb-counter-idiom-lab-proper-handoff-done",
+      "project_title": "Counter-Idiom Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counter-Idiom Lab Room Task Model",
+      "component_case_id": "mb-counter-idiom-lab-proper-handoff-done__0002__counter-idiom-lab-room-task-model",
+      "claim_to_demonstrate": ", state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival retention",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": ", state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival retention",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45390,
+            "sha256": "2c0be2f561003d16c2b293f064477c5e7b58225784c3cf9e9f6dc8d343318b3e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36885,
+            "sha256": "ac6285f3a796ea56730bbce50787c46b78ca405dd80cabb636880e5dc0a32432"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21842,
+            "sha256": "993ed52f6069e887c231dfb8ccc501f038926c6e7d3e001002d4b2bda54043ca"
+          },
+          {
+            "relative_path": "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20862,
+            "sha256": "226d947cb6acd65137e7257c49833d387d7b6f45bbc7422b4a2d9849a1fd8152"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45669,
+            "sha256": "016ded2897a1aca24619bbfc70b64dd25db95f3fe3db8f2d071505889e104a86"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9305,
+            "sha256": "d75aa8b45b0a10f38582477c7ab1bf7f9d1f78d80bbee1debc08a0a608e2015a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+          "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e5637749802fd84d9a32f696"
+    },
+    {
+      "receipt_id": "mb-counter-idiom-lab-proper-handoff-done__receipt_0003",
+      "project_id": "mb-counter-idiom-lab-proper-handoff-done",
+      "project_title": "Counter-Idiom Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counter-Idiom Lab Data Schema And Persistence Plan",
+      "component_case_id": "mb-counter-idiom-lab-proper-handoff-done__0003__counter-idiom-lab-data-schema-and-persistence-plan",
+      "claim_to_demonstrate": "Writing, rhetoric, narrative design, visual culture, and presentation. Use source library writing/visual/cinema sources to strengthen public exposition and Trilogy visual/storytelling logic. Vision: Make public pages read as curated intellectual exhibits.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Writing, rhetoric, narrative design, visual culture, and presentation. Use source library writing/visual/cinema sources to strengthen public exposition and Trilogy visual/storytelling logic. Vision: Make public pages read as curated intellectual exhibits.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45390,
+            "sha256": "2c0be2f561003d16c2b293f064477c5e7b58225784c3cf9e9f6dc8d343318b3e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36885,
+            "sha256": "ac6285f3a796ea56730bbce50787c46b78ca405dd80cabb636880e5dc0a32432"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21842,
+            "sha256": "993ed52f6069e887c231dfb8ccc501f038926c6e7d3e001002d4b2bda54043ca"
+          },
+          {
+            "relative_path": "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20862,
+            "sha256": "226d947cb6acd65137e7257c49833d387d7b6f45bbc7422b4a2d9849a1fd8152"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45669,
+            "sha256": "016ded2897a1aca24619bbfc70b64dd25db95f3fe3db8f2d071505889e104a86"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9305,
+            "sha256": "d75aa8b45b0a10f38582477c7ab1bf7f9d1f78d80bbee1debc08a0a608e2015a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+          "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "84afaa63dc0b87df0fefa6de"
+    },
+    {
+      "receipt_id": "mb-counter-idiom-lab-proper-handoff-done__receipt_0004",
+      "project_id": "mb-counter-idiom-lab-proper-handoff-done",
+      "project_title": "Counter-Idiom Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counter-Idiom Lab Interface And Instrument Plane",
+      "component_case_id": "mb-counter-idiom-lab-proper-handoff-done__0004__counter-idiom-lab-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45390,
+            "sha256": "2c0be2f561003d16c2b293f064477c5e7b58225784c3cf9e9f6dc8d343318b3e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36885,
+            "sha256": "ac6285f3a796ea56730bbce50787c46b78ca405dd80cabb636880e5dc0a32432"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21842,
+            "sha256": "993ed52f6069e887c231dfb8ccc501f038926c6e7d3e001002d4b2bda54043ca"
+          },
+          {
+            "relative_path": "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20862,
+            "sha256": "226d947cb6acd65137e7257c49833d387d7b6f45bbc7422b4a2d9849a1fd8152"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45669,
+            "sha256": "016ded2897a1aca24619bbfc70b64dd25db95f3fe3db8f2d071505889e104a86"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9305,
+            "sha256": "d75aa8b45b0a10f38582477c7ab1bf7f9d1f78d80bbee1debc08a0a608e2015a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+          "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4f26afc7d362a6b492683953"
+    },
+    {
+      "receipt_id": "mb-counter-idiom-lab-proper-handoff-done__receipt_0005",
+      "project_id": "mb-counter-idiom-lab-proper-handoff-done",
+      "project_title": "Counter-Idiom Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counter-Idiom Lab Integration Path",
+      "component_case_id": "mb-counter-idiom-lab-proper-handoff-done__0005__counter-idiom-lab-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. When to reach for this: You need to launch a substantive public section of nikmurano.com that is not decorative — instead showcasing disciplined method +.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. When to reach for this: You need to launch a substantive public section of nikmurano.com that is not decorative — instead showcasing disciplined method +.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45390,
+            "sha256": "2c0be2f561003d16c2b293f064477c5e7b58225784c3cf9e9f6dc8d343318b3e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36885,
+            "sha256": "ac6285f3a796ea56730bbce50787c46b78ca405dd80cabb636880e5dc0a32432"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21842,
+            "sha256": "993ed52f6069e887c231dfb8ccc501f038926c6e7d3e001002d4b2bda54043ca"
+          },
+          {
+            "relative_path": "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20862,
+            "sha256": "226d947cb6acd65137e7257c49833d387d7b6f45bbc7422b4a2d9849a1fd8152"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45669,
+            "sha256": "016ded2897a1aca24619bbfc70b64dd25db95f3fe3db8f2d071505889e104a86"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9305,
+            "sha256": "d75aa8b45b0a10f38582477c7ab1bf7f9d1f78d80bbee1debc08a0a608e2015a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+          "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "bb4b1ca9c105b666087cfee2"
+    },
+    {
+      "receipt_id": "mb-counter-idiom-lab-proper-handoff-done__receipt_0006",
+      "project_id": "mb-counter-idiom-lab-proper-handoff-done",
+      "project_title": "Counter-Idiom Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counter-Idiom Lab Proof Boundary",
+      "component_case_id": "mb-counter-idiom-lab-proper-handoff-done__0006__counter-idiom-lab-proof-boundary",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45390,
+            "sha256": "2c0be2f561003d16c2b293f064477c5e7b58225784c3cf9e9f6dc8d343318b3e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36885,
+            "sha256": "ac6285f3a796ea56730bbce50787c46b78ca405dd80cabb636880e5dc0a32432"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21842,
+            "sha256": "993ed52f6069e887c231dfb8ccc501f038926c6e7d3e001002d4b2bda54043ca"
+          },
+          {
+            "relative_path": "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20862,
+            "sha256": "226d947cb6acd65137e7257c49833d387d7b6f45bbc7422b4a2d9849a1fd8152"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45669,
+            "sha256": "016ded2897a1aca24619bbfc70b64dd25db95f3fe3db8f2d071505889e104a86"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9305,
+            "sha256": "d75aa8b45b0a10f38582477c7ab1bf7f9d1f78d80bbee1debc08a0a608e2015a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+          "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3b28340339893fe1f87c9916"
+    },
+    {
+      "receipt_id": "mb-counter-idiom-lab-proper-handoff-done__receipt_0007",
+      "project_id": "mb-counter-idiom-lab-proper-handoff-done",
+      "project_title": "Counter-Idiom Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counter-Idiom Lab Next Build Test",
+      "component_case_id": "mb-counter-idiom-lab-proper-handoff-done__0007__counter-idiom-lab-next-build-test",
+      "claim_to_demonstrate": "Promote the packet from documented handoff to live implementation only after the declared caveats are resolved: apply or wire the scaffold, run the stated validation or smoke-test sequence, and keep unresolved assumptions visible.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Promote the packet from documented handoff to live implementation only after the declared caveats are resolved: apply or wire the scaffold, run the stated validation or smoke-test sequence, and keep unresolved assumptions visible.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45390,
+            "sha256": "2c0be2f561003d16c2b293f064477c5e7b58225784c3cf9e9f6dc8d343318b3e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36885,
+            "sha256": "ac6285f3a796ea56730bbce50787c46b78ca405dd80cabb636880e5dc0a32432"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21842,
+            "sha256": "993ed52f6069e887c231dfb8ccc501f038926c6e7d3e001002d4b2bda54043ca"
+          },
+          {
+            "relative_path": "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20862,
+            "sha256": "226d947cb6acd65137e7257c49833d387d7b6f45bbc7422b4a2d9849a1fd8152"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45669,
+            "sha256": "016ded2897a1aca24619bbfc70b64dd25db95f3fe3db8f2d071505889e104a86"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9305,
+            "sha256": "d75aa8b45b0a10f38582477c7ab1bf7f9d1f78d80bbee1debc08a0a608e2015a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+          "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9064cbb2f653669bbbfa2751"
+    },
+    {
+      "receipt_id": "mb-counter-idiom-lab-proper-handoff-done__receipt_0008",
+      "project_id": "mb-counter-idiom-lab-proper-handoff-done",
+      "project_title": "Counter-Idiom Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counter-Idiom Lab / backend/frontend",
+      "component_case_id": "mb-counter-idiom-lab-proper-handoff-done__0008__counter-idiom-lab-backend-frontend",
+      "claim_to_demonstrate": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "input_fixture": "project source text and the named component `backend/frontend`",
+      "operation_under_test": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `backend/frontend`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "12b906e53c841f6a071a9002",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45390,
+            "sha256": "2c0be2f561003d16c2b293f064477c5e7b58225784c3cf9e9f6dc8d343318b3e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36885,
+            "sha256": "ac6285f3a796ea56730bbce50787c46b78ca405dd80cabb636880e5dc0a32432"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21842,
+            "sha256": "993ed52f6069e887c231dfb8ccc501f038926c6e7d3e001002d4b2bda54043ca"
+          },
+          {
+            "relative_path": "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20862,
+            "sha256": "226d947cb6acd65137e7257c49833d387d7b6f45bbc7422b4a2d9849a1fd8152"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45669,
+            "sha256": "016ded2897a1aca24619bbfc70b64dd25db95f3fe3db8f2d071505889e104a86"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9305,
+            "sha256": "d75aa8b45b0a10f38582477c7ab1bf7f9d1f78d80bbee1debc08a0a608e2015a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+          "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ea4f0ae67f0cd7530c667b78"
+    },
+    {
+      "receipt_id": "mb-counter-idiom-lab-proper-handoff-done__receipt_0009",
+      "project_id": "mb-counter-idiom-lab-proper-handoff-done",
+      "project_title": "Counter-Idiom Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counter-Idiom Lab / 00_README_START_HERE.md",
+      "component_case_id": "mb-counter-idiom-lab-proper-handoff-done__0009__counter-idiom-lab-00-readme-start-here-md",
+      "claim_to_demonstrate": "treats `00_README_START_HERE.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 00_README_START_HERE.md — 02_ROOM_SPEC.md — 07_LAUNCH_CHECKLIST.md — 11_PROTOTYPE/index.html. Integration target.",
+      "input_fixture": "project source text and the named component `00_README_START_HERE.md`",
+      "operation_under_test": "treats `00_README_START_HERE.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 00_README_START_HERE.md — 02_ROOM_SPEC.md — 07_LAUNCH_CHECKLIST.md — 11_PROTOTYPE/index.html. Integration target.",
+      "expected_output": "inspectable implementation evidence tied to `00_README_START_HERE.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "02fb6f1eeb81bbe21d1c707a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45390,
+            "sha256": "2c0be2f561003d16c2b293f064477c5e7b58225784c3cf9e9f6dc8d343318b3e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36885,
+            "sha256": "ac6285f3a796ea56730bbce50787c46b78ca405dd80cabb636880e5dc0a32432"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21842,
+            "sha256": "993ed52f6069e887c231dfb8ccc501f038926c6e7d3e001002d4b2bda54043ca"
+          },
+          {
+            "relative_path": "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20862,
+            "sha256": "226d947cb6acd65137e7257c49833d387d7b6f45bbc7422b4a2d9849a1fd8152"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45669,
+            "sha256": "016ded2897a1aca24619bbfc70b64dd25db95f3fe3db8f2d071505889e104a86"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9305,
+            "sha256": "d75aa8b45b0a10f38582477c7ab1bf7f9d1f78d80bbee1debc08a0a608e2015a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+          "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "62f391525d608d6f855e93d0"
+    },
+    {
+      "receipt_id": "mb-counter-idiom-lab-proper-handoff-done__receipt_0010",
+      "project_id": "mb-counter-idiom-lab-proper-handoff-done",
+      "project_title": "Counter-Idiom Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counter-Idiom Lab / 02_ROOM_SPEC.md",
+      "component_case_id": "mb-counter-idiom-lab-proper-handoff-done__0010__counter-idiom-lab-02-room-spec-md",
+      "claim_to_demonstrate": "treats `02_ROOM_SPEC.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 00_README_START_HERE.md — 02_ROOM_SPEC.md — 07_LAUNCH_CHECKLIST.md — 11_PROTOTYPE/index.html. Integration target: Public site.",
+      "input_fixture": "project source text and the named component `02_ROOM_SPEC.md`",
+      "operation_under_test": "treats `02_ROOM_SPEC.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 00_README_START_HERE.md — 02_ROOM_SPEC.md — 07_LAUNCH_CHECKLIST.md — 11_PROTOTYPE/index.html. Integration target: Public site.",
+      "expected_output": "inspectable implementation evidence tied to `02_ROOM_SPEC.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "02fb6f1eeb81bbe21d1c707a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45390,
+            "sha256": "2c0be2f561003d16c2b293f064477c5e7b58225784c3cf9e9f6dc8d343318b3e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36885,
+            "sha256": "ac6285f3a796ea56730bbce50787c46b78ca405dd80cabb636880e5dc0a32432"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21842,
+            "sha256": "993ed52f6069e887c231dfb8ccc501f038926c6e7d3e001002d4b2bda54043ca"
+          },
+          {
+            "relative_path": "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20862,
+            "sha256": "226d947cb6acd65137e7257c49833d387d7b6f45bbc7422b4a2d9849a1fd8152"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45669,
+            "sha256": "016ded2897a1aca24619bbfc70b64dd25db95f3fe3db8f2d071505889e104a86"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9305,
+            "sha256": "d75aa8b45b0a10f38582477c7ab1bf7f9d1f78d80bbee1debc08a0a608e2015a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+          "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3e8ad124b47c6f6d1c883c5f"
+    },
+    {
+      "receipt_id": "mb-counter-idiom-lab-proper-handoff-done__receipt_0011",
+      "project_id": "mb-counter-idiom-lab-proper-handoff-done",
+      "project_title": "Counter-Idiom Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counter-Idiom Lab / 07_LAUNCH_CHECKLIST.md",
+      "component_case_id": "mb-counter-idiom-lab-proper-handoff-done__0011__counter-idiom-lab-07-launch-checklist-md",
+      "claim_to_demonstrate": "treats `07_LAUNCH_CHECKLIST.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 00_README_START_HERE.md — 02_ROOM_SPEC.md — 07_LAUNCH_CHECKLIST.md — 11_PROTOTYPE/index.html. Integration target.",
+      "input_fixture": "project source text and the named component `07_LAUNCH_CHECKLIST.md`",
+      "operation_under_test": "treats `07_LAUNCH_CHECKLIST.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 00_README_START_HERE.md — 02_ROOM_SPEC.md — 07_LAUNCH_CHECKLIST.md — 11_PROTOTYPE/index.html. Integration target.",
+      "expected_output": "inspectable implementation evidence tied to `07_LAUNCH_CHECKLIST.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "02fb6f1eeb81bbe21d1c707a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45390,
+            "sha256": "2c0be2f561003d16c2b293f064477c5e7b58225784c3cf9e9f6dc8d343318b3e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36885,
+            "sha256": "ac6285f3a796ea56730bbce50787c46b78ca405dd80cabb636880e5dc0a32432"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21842,
+            "sha256": "993ed52f6069e887c231dfb8ccc501f038926c6e7d3e001002d4b2bda54043ca"
+          },
+          {
+            "relative_path": "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20862,
+            "sha256": "226d947cb6acd65137e7257c49833d387d7b6f45bbc7422b4a2d9849a1fd8152"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45669,
+            "sha256": "016ded2897a1aca24619bbfc70b64dd25db95f3fe3db8f2d071505889e104a86"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9305,
+            "sha256": "d75aa8b45b0a10f38582477c7ab1bf7f9d1f78d80bbee1debc08a0a608e2015a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+          "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "cc8a12f81ba348ad6b336cc5"
+    },
+    {
+      "receipt_id": "mb-counter-idiom-lab-proper-handoff-done__receipt_0012",
+      "project_id": "mb-counter-idiom-lab-proper-handoff-done",
+      "project_title": "Counter-Idiom Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counter-Idiom Lab / index.html",
+      "component_case_id": "mb-counter-idiom-lab-proper-handoff-done__0012__counter-idiom-lab-index-html",
+      "claim_to_demonstrate": "treats `index.html` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 00_README_START_HERE.md — 02_ROOM_SPEC.md — 07_LAUNCH_CHECKLIST.md — 11_PROTOTYPE/index.html. Integration target: Public site —.",
+      "input_fixture": "project source text and the named component `index.html`",
+      "operation_under_test": "treats `index.html` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 00_README_START_HERE.md — 02_ROOM_SPEC.md — 07_LAUNCH_CHECKLIST.md — 11_PROTOTYPE/index.html. Integration target: Public site —.",
+      "expected_output": "inspectable implementation evidence tied to `index.html`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "02fb6f1eeb81bbe21d1c707a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45390,
+            "sha256": "2c0be2f561003d16c2b293f064477c5e7b58225784c3cf9e9f6dc8d343318b3e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36885,
+            "sha256": "ac6285f3a796ea56730bbce50787c46b78ca405dd80cabb636880e5dc0a32432"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21842,
+            "sha256": "993ed52f6069e887c231dfb8ccc501f038926c6e7d3e001002d4b2bda54043ca"
+          },
+          {
+            "relative_path": "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20862,
+            "sha256": "226d947cb6acd65137e7257c49833d387d7b6f45bbc7422b4a2d9849a1fd8152"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45669,
+            "sha256": "016ded2897a1aca24619bbfc70b64dd25db95f3fe3db8f2d071505889e104a86"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9305,
+            "sha256": "d75aa8b45b0a10f38582477c7ab1bf7f9d1f78d80bbee1debc08a0a608e2015a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+          "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8b55ad53b8e4bfb693eeb718"
+    },
+    {
+      "receipt_id": "mb-counter-idiom-lab-proper-handoff-done__receipt_0013",
+      "project_id": "mb-counter-idiom-lab-proper-handoff-done",
+      "project_title": "Counter-Idiom Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counter-Idiom Lab / library.json",
+      "component_case_id": "mb-counter-idiom-lab-proper-handoff-done__0013__counter-idiom-lab-library-json",
+      "claim_to_demonstrate": "treats `library.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Data binding via library.json. No framework code; no backend. Writing, rhetoric, narrative design, visual culture, and.",
+      "input_fixture": "project source text and the named component `library.json`",
+      "operation_under_test": "treats `library.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Data binding via library.json. No framework code; no backend. Writing, rhetoric, narrative design, visual culture, and.",
+      "expected_output": "inspectable implementation evidence tied to `library.json`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f32da11f302435dc21b78ec9",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45390,
+            "sha256": "2c0be2f561003d16c2b293f064477c5e7b58225784c3cf9e9f6dc8d343318b3e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36885,
+            "sha256": "ac6285f3a796ea56730bbce50787c46b78ca405dd80cabb636880e5dc0a32432"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21842,
+            "sha256": "993ed52f6069e887c231dfb8ccc501f038926c6e7d3e001002d4b2bda54043ca"
+          },
+          {
+            "relative_path": "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20862,
+            "sha256": "226d947cb6acd65137e7257c49833d387d7b6f45bbc7422b4a2d9849a1fd8152"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45669,
+            "sha256": "016ded2897a1aca24619bbfc70b64dd25db95f3fe3db8f2d071505889e104a86"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9305,
+            "sha256": "d75aa8b45b0a10f38582477c7ab1bf7f9d1f78d80bbee1debc08a0a608e2015a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+          "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3d4b938a47534c9c5c04ef9f"
+    },
+    {
+      "receipt_id": "mb-counter-idiom-lab-proper-handoff-done__receipt_0014",
+      "project_id": "mb-counter-idiom-lab-proper-handoff-done",
+      "project_title": "Counter-Idiom Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counter-Idiom Lab / Common sense is an attack surface",
+      "component_case_id": "mb-counter-idiom-lab-proper-handoff-done__0014__counter-idiom-lab-common-sense-is-an-attack-surface",
+      "claim_to_demonstrate": "uses `Common sense is an attack surface` as a named project component with a traceable role in the public mechanism. Source context: \"Common sense is an attack surface.\" Public subtitle: \"A study in subverting overused axioms without breaking logic.\" The.",
+      "input_fixture": "project source text and the named component `Common sense is an attack surface`",
+      "operation_under_test": "uses `Common sense is an attack surface` as a named project component with a traceable role in the public mechanism. Source context: \"Common sense is an attack surface.\" Public subtitle: \"A study in subverting overused axioms without breaking logic.\" The.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Common sense is an attack surface`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c54c36c6c31ed3a8d3a4f38f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45390,
+            "sha256": "2c0be2f561003d16c2b293f064477c5e7b58225784c3cf9e9f6dc8d343318b3e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36885,
+            "sha256": "ac6285f3a796ea56730bbce50787c46b78ca405dd80cabb636880e5dc0a32432"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21842,
+            "sha256": "993ed52f6069e887c231dfb8ccc501f038926c6e7d3e001002d4b2bda54043ca"
+          },
+          {
+            "relative_path": "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20862,
+            "sha256": "226d947cb6acd65137e7257c49833d387d7b6f45bbc7422b4a2d9849a1fd8152"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45669,
+            "sha256": "016ded2897a1aca24619bbfc70b64dd25db95f3fe3db8f2d071505889e104a86"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9305,
+            "sha256": "d75aa8b45b0a10f38582477c7ab1bf7f9d1f78d80bbee1debc08a0a608e2015a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+          "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3eaa324c759ea94306e81201"
+    },
+    {
+      "receipt_id": "mb-counter-idiom-lab-proper-handoff-done__receipt_0015",
+      "project_id": "mb-counter-idiom-lab-proper-handoff-done",
+      "project_title": "Counter-Idiom Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counter-Idiom Lab / A study in subverting overused axioms without breaking logic",
+      "component_case_id": "mb-counter-idiom-lab-proper-handoff-done__0015__counter-idiom-lab-a-study-in-subverting-overused-axioms-without-breaking-logic",
+      "claim_to_demonstrate": "uses `A study in subverting overused axioms without breaking logic` as a named project component with a traceable role in the public mechanism. Source context: \"A study in subverting overused axioms without breaking logic.\" The room's thesis: idioms are.",
+      "input_fixture": "project source text and the named component `A study in subverting overused axioms without breaking logic`",
+      "operation_under_test": "uses `A study in subverting overused axioms without breaking logic` as a named project component with a traceable role in the public mechanism. Source context: \"A study in subverting overused axioms without breaking logic.\" The room's thesis: idioms are.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `A study in subverting overused axioms without breaking logic`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "6296466d3f5ad7a755b242ac",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45390,
+            "sha256": "2c0be2f561003d16c2b293f064477c5e7b58225784c3cf9e9f6dc8d343318b3e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36885,
+            "sha256": "ac6285f3a796ea56730bbce50787c46b78ca405dd80cabb636880e5dc0a32432"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21842,
+            "sha256": "993ed52f6069e887c231dfb8ccc501f038926c6e7d3e001002d4b2bda54043ca"
+          },
+          {
+            "relative_path": "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20862,
+            "sha256": "226d947cb6acd65137e7257c49833d387d7b6f45bbc7422b4a2d9849a1fd8152"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45669,
+            "sha256": "016ded2897a1aca24619bbfc70b64dd25db95f3fe3db8f2d071505889e104a86"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9305,
+            "sha256": "d75aa8b45b0a10f38582477c7ab1bf7f9d1f78d80bbee1debc08a0a608e2015a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+          "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "34bd5cd5be91407cab2eece1"
+    },
+    {
+      "receipt_id": "mb-counter-idiom-lab-proper-handoff-done__receipt_0016",
+      "project_id": "mb-counter-idiom-lab-proper-handoff-done",
+      "project_title": "Counter-Idiom Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counter-Idiom Lab / Nik Murano",
+      "component_case_id": "mb-counter-idiom-lab-proper-handoff-done__0016__counter-idiom-lab-nik-murano",
+      "claim_to_demonstrate": "uses `Nik Murano` as a named project component with a traceable role in the public mechanism. Source context: This bundle turns Nik Murano's counter-idiom work into a production-ready dual-deployment: the internal Axiom Forge room inside MuranoOS (archive +.",
+      "input_fixture": "project source text and the named component `Nik Murano`",
+      "operation_under_test": "uses `Nik Murano` as a named project component with a traceable role in the public mechanism. Source context: This bundle turns Nik Murano's counter-idiom work into a production-ready dual-deployment: the internal Axiom Forge room inside MuranoOS (archive +.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Nik Murano`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "bb9be1237ceda40a00112b0d",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45390,
+            "sha256": "2c0be2f561003d16c2b293f064477c5e7b58225784c3cf9e9f6dc8d343318b3e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36885,
+            "sha256": "ac6285f3a796ea56730bbce50787c46b78ca405dd80cabb636880e5dc0a32432"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21842,
+            "sha256": "993ed52f6069e887c231dfb8ccc501f038926c6e7d3e001002d4b2bda54043ca"
+          },
+          {
+            "relative_path": "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20862,
+            "sha256": "226d947cb6acd65137e7257c49833d387d7b6f45bbc7422b4a2d9849a1fd8152"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45669,
+            "sha256": "016ded2897a1aca24619bbfc70b64dd25db95f3fe3db8f2d071505889e104a86"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9305,
+            "sha256": "d75aa8b45b0a10f38582477c7ab1bf7f9d1f78d80bbee1debc08a0a608e2015a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+          "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ba2455783aaeed81f73937af"
+    },
+    {
+      "receipt_id": "mb-counter-idiom-lab-proper-handoff-done__receipt_0017",
+      "project_id": "mb-counter-idiom-lab-proper-handoff-done",
+      "project_title": "Counter-Idiom Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counter-Idiom Lab / Axiom Forge",
+      "component_case_id": "mb-counter-idiom-lab-proper-handoff-done__0017__counter-idiom-lab-axiom-forge",
+      "claim_to_demonstrate": "treats `Axiom Forge` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: This bundle turns Nik Murano's counter-idiom work into a production-ready dual-deployment: the internal Axiom.",
+      "input_fixture": "project source text and the named component `Axiom Forge`",
+      "operation_under_test": "treats `Axiom Forge` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: This bundle turns Nik Murano's counter-idiom work into a production-ready dual-deployment: the internal Axiom.",
+      "expected_output": "a room, workbench, or interface function tied to `Axiom Forge`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "bb9be1237ceda40a00112b0d",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45390,
+            "sha256": "2c0be2f561003d16c2b293f064477c5e7b58225784c3cf9e9f6dc8d343318b3e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36885,
+            "sha256": "ac6285f3a796ea56730bbce50787c46b78ca405dd80cabb636880e5dc0a32432"
+          },
+          {
+            "relative_path": "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21842,
+            "sha256": "993ed52f6069e887c231dfb8ccc501f038926c6e7d3e001002d4b2bda54043ca"
+          },
+          {
+            "relative_path": "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20862,
+            "sha256": "226d947cb6acd65137e7257c49833d387d7b6f45bbc7422b4a2d9849a1fd8152"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45669,
+            "sha256": "016ded2897a1aca24619bbfc70b64dd25db95f3fe3db8f2d071505889e104a86"
+          },
+          {
+            "relative_path": "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9305,
+            "sha256": "d75aa8b45b0a10f38582477c7ab1bf7f9d1f78d80bbee1debc08a0a608e2015a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-counter-idiom-lab-proper-handoff-done/README.md",
+          "proof_builds/mb-counter-idiom-lab-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/demo_cases.json",
+          "proof_demos/mb-counter-idiom-lab-proper-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "270e3110401ac2ee8480bc6d"
+    }
+  ]
+}

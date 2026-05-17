@@ -1,0 +1,786 @@
+[
+  {
+    "project_id": "algorithmic-active-measures",
+    "product_name": "Algorithmic Active Measures - data poisoning as counterintelligence tradecraft in AI-mediated intelligence analysis",
+    "final_object_type": "analytic method or human-AI evaluation module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "CI / CT family"
+  },
+  {
+    "project_id": "analytical-methods",
+    "product_name": "Structured Analytic Technique Studio",
+    "final_object_type": "method-composition and evaluation software",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "capstone-orig",
+    "product_name": "Qualitative Capstone - qualitative analysis of analyst response to AI-introduced corruption",
+    "final_object_type": "analytic method or human-AI evaluation module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "isc-proposals",
+    "product_name": "Counterintelligence Surveillance Framework - Beyond Surveillance Maximalism: a Smart Surveillance Scaling (S3) proposal",
+    "final_object_type": "research project or professional workbench",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "CI / CT family"
+  },
+  {
+    "project_id": "mb-ar-sat-room-handoff-v0-1",
+    "product_name": "AR-SAT Room",
+    "final_object_type": "source governance or packet-routing system",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "SAT Studio"
+  },
+  {
+    "project_id": "mb-capstone-handoff-package",
+    "product_name": "Red Cell CI analysis of Russian cognitive deception; 12 COA dossiers",
+    "final_object_type": "source governance or packet-routing system",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "mb-ci-career-conversation-handoff-done",
+    "product_name": "Conversation capture with structured JSON handoff",
+    "final_object_type": "source governance or packet-routing system",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "mb-ci-ct-do-handoff-v1-1",
+    "product_name": "CI/CT DO tradecraft v1.1; SAT enumeration + 12 analyst templates (BLUF, ACH, ICD-203)",
+    "final_object_type": "source governance or packet-routing system",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "mb-ci-handoff-package",
+    "product_name": "32 interdisciplinary frameworks attributed to specific thinkers",
+    "final_object_type": "source governance or packet-routing system",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "mb-ci-red-cell-handoff",
+    "product_name": "CI red-cell methods reference architecture (post-integrity-correction rebuild)",
+    "final_object_type": "analytic method or human-AI evaluation module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "mb-cia-do-career-handoff-v1",
+    "product_name": "500-role ranked search universe (250 federal + 250 private)",
+    "final_object_type": "source governance or packet-routing system",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "mb-cia-russian-ci-handoff-packet",
+    "product_name": "Credential stack + 90-day plan + Competency Tracker CSV",
+    "final_object_type": "source governance or packet-routing system",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "mb-georgetown-technique-registry-master-50-bundle",
+    "product_name": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G]",
+    "final_object_type": "source governance or packet-routing system",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "Capstone family"
+  },
+  {
+    "project_id": "mb-glass-hearth-muranoos-handoff-package-2026-04-15",
+    "product_name": "Glass Hearth",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-murano-chamber-handoff",
+    "product_name": "Chamber of Refractions",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-murano-chamber-of-record-handoff",
+    "product_name": "Chamber of Record",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-murano-codex-prism-handoff-v1",
+    "product_name": "Codex Prism",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-murano-house-of-light-and-doom-handoff-v1",
+    "product_name": "House of Light and Doom",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-murano-mashup-room-handoff-v1",
+    "product_name": "Mashup Intelligence Room",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-murano-os-annealed-refraction-chamber-handoff-done",
+    "product_name": "Annealed Refraction Chamber",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-murano-os-glass-station-handoff",
+    "product_name": "Glass Station",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-murano-os-handoff-2026",
+    "product_name": "Doctrine Forge Codex",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-murano-os-lossless-study-room-handoff",
+    "product_name": "Lossless Study Room",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-murano-os-lossless-synthesis-room-handoff",
+    "product_name": "Lossless Synthesis (Magnum Opus Scriptorium)",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-murano-os-prism-foundry-handoff",
+    "product_name": "Prism Foundry",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-murano-os-prism-scriptorium-handoff-v1",
+    "product_name": "Prism Scriptorium",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-murano-os-rhetorium-proper-handoff-done-v1",
+    "product_name": "Rhetorium",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-murano-os-warrant-chamber-handoff-v1",
+    "product_name": "Warrant Chamber",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-murano-prismatic-agora-handoff-v1-0-done",
+    "product_name": "Prismatic Agora",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-murano-reflexive-control-chamber-pass3",
+    "product_name": "Reflexive Control Chamber",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-murano-room-handoff-v1",
+    "product_name": "Room template v1",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-murano-speechcraft-studio-handoff",
+    "product_name": "Speechcraft Studio",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11",
+    "product_name": "Bias Atlas",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14",
+    "product_name": "Briefing Forge",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15",
+    "product_name": "Culinary Atelier",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15",
+    "product_name": "Dialectic Lab",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-failure-doctrine-lab-handoff-pack-2026-04-11",
+    "product_name": "Failure Doctrine Lab",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-fifth-dimension-lossless-continuation-archive-2026-04-13",
+    "product_name": "Fifth Dimension",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-glass-scriptorium-proper-handoff-archive-2026-04-11",
+    "product_name": "Glass Scriptorium",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-glassworksofcorrespondence-handoff-v0-1",
+    "product_name": "Glassworks of Correspondence",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-handoff-pack-v3-1",
+    "product_name": "* META: the Protocol v3.1 itself - consumed by every MuranoOS room handoff",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-handoff-pass3-done",
+    "product_name": "CI Tradecraft Chamber",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0",
+    "product_name": "Human Terrain & Statecraft",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-lossless-room-master-handoff-v1",
+    "product_name": "Room Master (constitution)",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-prism-chamber-murano-ready-package-2026-04-14",
+    "product_name": "Prism Chamber",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-build02-final-proper-handoff-2026-04-11",
+    "product_name": "Only one WITHOUT the 802 KB nested archive; Build 02 scope",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-continuation-handoff-2026-04-11",
+    "product_name": "Smallest addendum wrapper; 5-surface Core Analytical Workflow",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-continuation-handoff-2026-04-14",
+    "product_name": "Compact flat reference; 14 numbered authority docs; \"Workspace Depth I\"",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11",
+    "product_name": "Only one with Build_02-Build_05 sequenced operator guides",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-fresh-handoff-2026-04-16",
+    "product_name": "Cold-start bootstrap; 3-variant GPT upload prompt (analysis/impl/design)",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15",
+    "product_name": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-handoff-hardened-2026-04-15",
+    "product_name": "Adds Signature Room Architecture (7 zones) + UI/UX Spec (9 objects, 7 engines)",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18",
+    "product_name": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine)",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-handoff-package-ready-2026-04-11",
+    "product_name": "Cleanest 2-folder (GOVERNING/DERIVED); archive kept zipped",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-handoff-package-v1-2026-04-11",
+    "product_name": "Only one with V1_ROOM_CONSTITUTION.md",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14",
+    "product_name": "Introduces Vivarium codename; contradiction-graph table",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-lab-handoff-package-2026-04-17",
+    "product_name": "Largest consolidated (137 files); pre-merged Steps 3-7 bundles; \"Workspace Restore\"",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-phase-ii-handoff-2026-04-15",
+    "product_name": "Smallest doc-pack; paired .md + .rs/.ts draft patches",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-phase-iii-a-handoff-2026-04-11",
+    "product_name": "Only one with Shadi_SAT_Seed.json + \"Phase III-A\" naming",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14",
+    "product_name": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-prism-observatory-handoff-package-v1",
+    "product_name": "Doctrinally richest: 13 named subspaces × 10 modes; claim-evidence-confidence governance",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-prism-room-execution-handoff-2026-04-11",
+    "product_name": "Only one replacing \"Red Team Lab\" framing with \"Murano Prism Room\" world doctrine",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-proper-handoff-2026-04-14",
+    "product_name": "Strictest 4-quadrant authority layer; \"Durable Workspace Core\"",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-proper-handoff-2026-04-15",
+    "product_name": "Triple-layer (zip+tree+addendum); 3-pass ledger",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-11",
+    "product_name": "Only one with 99_Preserved_Source_Archives/ + CURRENT_TRUTH_AT_A_GLANCE.md",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13",
+    "product_name": "First fully-exploded Master_Package tree; Baltic Grey Zone materials",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-15",
+    "product_name": "Largest (148 files); replay_overlay/ pinned to HEAD 039f2cd...; deterministic replay",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-proper-handoff-package-2026-04-11",
+    "product_name": "Only one with 07_Derivative_Handoff/; richest SQL DDL",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-proper-handoff-package-pass-1",
+    "product_name": "Flat structure; 01_GOVERNING_SOURCES/ + flattened live files",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-proper-handoff-packet-2026-04-11",
+    "product_name": "Smallest implementation-sufficient; flat 14-doc root; \"RT_PHASE_II_PLUS_WORKFLOW_A\"",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-proper-handoff-pass-02-done",
+    "product_name": "Judgment/status pass; L-01..L-04 non-blocking limitations",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-proper-handoff-pass1-2026-04-15",
+    "product_name": "specs/ folder: Rust param structs, SQL DDL, TS workspace contract; \"Analytical Core Expansion A\"",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-proper-handoff-zip-2026-04-11",
+    "product_name": "Committed Step 1 patch: unified diff + bundled zip + 8 Tauri commands",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-refraction-chamber-final-handoff-2026-04-14",
+    "product_name": "Terminal packaging; full Refraction Chamber world design; --rt-* CSS namespace",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-tranche-alpha-handoff-2026-04-14",
+    "product_name": "Actual code patch: 170 KB unified diff + changed files",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-tranche-ii-handoff-pack-2026-04-15",
+    "product_name": "Most self-contained; \"Analytical Memory and Provenance Spine\"; 14 new commands",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-tranche1-handoff-package-2026-04-11",
+    "product_name": "Leanest blueprint-only; only with named rollback doc",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13",
+    "product_name": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-redteam-rc1-2026-04-14",
+    "product_name": "RC1 wrapper; front-loaded 00_RC_Handoff/",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-redteam-tranche1-handoff-2026-04-15",
+    "product_name": "Leanest pure-spec (16 KB); pages 11_OPEN_QUESTIONS",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-redteamlab-handoff-package-v1",
+    "product_name": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-redteamlab-proper-handoff-package-2026-04-11",
+    "product_name": "Frozen \"Durable Analytical Core\"; 12/13-field models per surface",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-script-atelier-handoff-package-v0-2026-04-17",
+    "product_name": "Script Atelier (v0)",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-the-interval-handoff-v0-1",
+    "product_name": "The Interval (remote violence)",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-tradecraft-foundry-handoff-package-2026-04-11",
+    "product_name": "Tradecraft Foundry",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-muranoos-western-myth-codex-phase-i-stub-pack",
+    "product_name": "Western Myth Codex",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "mb-sat-handoff-v1",
+    "product_name": "Canonical SAT dedup: 106 techniques normalized across 11 catalogues",
+    "final_object_type": "source governance or packet-routing system",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "SAT Studio"
+  },
+  {
+    "project_id": "native-aisatvis",
+    "product_name": "AI Structured Analysis Visualization",
+    "final_object_type": "source governance or packet-routing system",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "SAT Studio"
+  },
+  {
+    "project_id": "native-capstone-defense",
+    "product_name": "Cognitive Firewalls Capstone Defense",
+    "final_object_type": "source governance or packet-routing system",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "native-capstone-defense-noland",
+    "product_name": "Cognitive Firewalls Defense Room",
+    "final_object_type": "source governance or packet-routing system",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "native-capstone-quantitative",
+    "product_name": "Quantitative Capstone Workbench",
+    "final_object_type": "source governance or packet-routing system",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "native-cianalysis",
+    "product_name": "Counterintelligence Analysis",
+    "final_object_type": "analytic method or human-AI evaluation module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "native-coanalysis",
+    "product_name": "Counterintelligence Operations Analysis",
+    "final_object_type": "analytic method or human-AI evaluation module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "native-iscproposals",
+    "product_name": "Counterintelligence Surveillance Framework",
+    "final_object_type": "research project or professional workbench",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "CI / CT family"
+  },
+  {
+    "project_id": "native-magnum-opus",
+    "product_name": "Magnum Opus Scholarly Retrieval And Warrant System",
+    "final_object_type": "local scholarly retrieval and evidence-warrant software",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "native-murano",
+    "product_name": "MuranoOS Research Operating Environment",
+    "final_object_type": "local research operating system / workstation builder",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "native-poison-rag",
+    "product_name": "Retrieval Integrity And Poison-RAG Evaluation Harness",
+    "final_object_type": "adversarial retrieval-security evaluation platform",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "native-portfolio-index",
+    "product_name": "Full Project Catalogue",
+    "final_object_type": "source governance or packet-routing system",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "personal-os",
+    "product_name": "Personal OS - MuranoOS, a personal operating system, local workbench, and project foundation",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "MuranoOS / Murano internal rooms"
+  },
+  {
+    "project_id": "planning",
+    "product_name": "Development Process - how projects move from idea to built, reviewed work",
+    "final_object_type": "source governance or packet-routing system",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "poison-rag-defense-annex",
+    "product_name": "Adversarial Evidence Corruption Technical Annex Harness",
+    "final_object_type": "future-work technical evaluation architecture",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "project-hardening",
+    "product_name": "Quality Review - checking project claims against evidence, scope, and readiness",
+    "final_object_type": "source governance or packet-routing system",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "row1",
+    "product_name": "Quantitative Capstone - quantitative arm of the AI-corruption capstone study",
+    "final_object_type": "source governance or packet-routing system",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "row10",
+    "product_name": "Structured Human-AI Analyst Workstation",
+    "final_object_type": "human-in-the-loop analytic workstation",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "row11",
+    "product_name": "Retrieval Integrity Evaluation - testing Retrieval-Augmented Generation (RAG) against retrieval poisoning and false-source failure",
+    "final_object_type": "retrieval or evidence-evaluation platform",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "row14",
+    "product_name": "Defensive Retrieval Research - future study on retrieval-augmented-generation poisoning",
+    "final_object_type": "retrieval or evidence-evaluation platform",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "row3",
+    "product_name": "AI Extraction Defense - five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries",
+    "final_object_type": "source governance or packet-routing system",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "row5",
+    "product_name": "Defense Doctrine - defensive retrieval governance laboratory (claim-limit discipline)",
+    "final_object_type": "retrieval or evidence-evaluation platform",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "Poison-RAG / defensive retrieval"
+  },
+  {
+    "project_id": "row7",
+    "product_name": "Nexus Research Pipeline",
+    "final_object_type": "reusable research-pipeline software",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "row8",
+    "product_name": "Counter-Terror Analysis - 13-page counter-terror analytical narrative arc",
+    "final_object_type": "analytic method or human-AI evaluation module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  },
+  {
+    "project_id": "structured-analysis-toolkit",
+    "product_name": "Structured Techniques Toolkit - authoring and refinement workspace for disciplined analytic instruments",
+    "final_object_type": "retrieval or evidence-evaluation platform",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "SAT Studio"
+  },
+  {
+    "project_id": "warrant-chamber",
+    "product_name": "Source & Evidence Review - tracking what supports each claim and what still needs review",
+    "final_object_type": "research workflow software module",
+    "owner_lane": "excluded_other_chat",
+    "exclusion_reason": "explicitly excluded by user ownership boundary"
+  }
+]

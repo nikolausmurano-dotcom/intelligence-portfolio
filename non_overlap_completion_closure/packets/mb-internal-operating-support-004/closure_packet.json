@@ -1,0 +1,25 @@
+{
+  "project_id": "mb-internal-operating-support-004",
+  "surface_type": "review_workbench",
+  "public_proof_surface_operational": "True",
+  "current_underlying_project_fully_operational": "False",
+  "remaining_gate": "The package can capture identity, authority, route, and claim-ceiling logic, but source quotations and external validation still require human review.",
+  "closure_lane": "source_verification_external_review",
+  "local_closure_possible": "partial",
+  "external_or_human_required": "yes",
+  "required_evidence": [
+    "source passage or bibliographic verification note",
+    "claim-to-source warrant statement",
+    "quotation/paraphrase integrity check",
+    "external or expert review note"
+  ],
+  "completion_tests": [
+    "each strengthened claim has a source role",
+    "no quotation is used without direct verification",
+    "claim ceiling is updated only after source verification",
+    "external review outcome is recorded"
+  ],
+  "default_closure_status": "not_closed",
+  "promotion_rule": "Only promote after all required evidence is supplied, all completion tests pass, and the evidence record is retained.",
+  "packet_hash": "05da2139ef111fdb"
+}

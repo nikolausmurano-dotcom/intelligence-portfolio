@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-05-17T02:29:23+00:00",
+  "project": {
+    "project_id": "mb-internal-operating-support-006",
+    "product_name": "Internal Operating Support Packet 006",
+    "project_class": "source_or_evidence_system",
+    "final_object_type": "source governance or packet-routing system",
+    "owner_lane": "active_non_overlap",
+    "closure_lane": "source_verification_external_review",
+    "production_state": "production_complete",
+    "production_complete": "yes",
+    "public_proof_surface_operational": "yes",
+    "harness_executes": "yes",
+    "regression_case_count": "3",
+    "residual_required_slots": "4",
+    "residual_present_slots": "4",
+    "residual_missing_slots": "0",
+    "residual_missing_files": "",
+    "blocking_gate_count": "0",
+    "blocking_gates": "",
+    "blocking_gate_names": "",
+    "exclusion_reason": "",
+    "next_production_action": "Maintain regression, reviewer, and deployment evidence; no blocking action recorded."
+  },
+  "blocking_gates": [],
+  "evidence_file_plan": [
+    {
+      "file": "source_verification_note.md",
+      "purpose": "Maps core public claims to source evidence."
+    },
+    {
+      "file": "external_review_note.md",
+      "purpose": "Records second-pass review and unresolved source issues."
+    },
+    {
+      "file": "claim_traceability_matrix.csv",
+      "purpose": "Links visible claims to source, status, and allowed strength."
+    },
+    {
+      "file": "revision_decision_log.md",
+      "purpose": "Records copy changes made after source review."
+    }
+  ],
+  "execution_steps": [
+    "Verify the page's major claims against its source packet or source register.",
+    "Record load-bearing sources and the specific claims they support.",
+    "Add an external or second-pass reviewer note documenting remaining source risk."
+  ]
+}

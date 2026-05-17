@@ -1,0 +1,61 @@
+{
+  "project_id": "mb-infragard-handoff",
+  "surface_type": "runtime_slice",
+  "suite_run_time": "2026-05-15T20:49:18+00:00",
+  "regression_cases": [
+    {
+      "case_id": "mb-infragard-handoff-baseline",
+      "case_type": "baseline",
+      "input": "Run a normal operational case for mb-infragard-handoff: process a bounded project problem and produce traceable output.",
+      "evidence": "Evidence note is present, uncertainty is stated, and exportable trace behavior is required.",
+      "expected_behavior": "accepted_with_claim_boundary",
+      "observed_behavior": "accepted_with_claim_boundary",
+      "expected_behavior_met": true,
+      "full_operational_claim_allowed": false,
+      "production_ready": false,
+      "acceptance_decision": "PASS",
+      "claim_boundary": "Regression case verifies local proof behavior and claim discipline only; it does not establish production readiness or external validation.",
+      "remaining_gate": "Needs repeated non-sample runs, browser screenshot evidence, reviewer validation, and deployment hardening before full operational standing.",
+      "blocks_false_promotion": false,
+      "trace_hash": "c5c19d157aed664f"
+    },
+    {
+      "case_id": "mb-infragard-handoff-challenge",
+      "case_type": "challenge",
+      "input": "Run a harder case for mb-infragard-handoff: include ambiguity, possible source weakness, and a decision that should not be over-promoted.",
+      "evidence": "Challenge requires uncertainty handling and a next-evidence statement before stronger claims.",
+      "expected_behavior": "accepted_with_caveat",
+      "observed_behavior": "accepted_with_caveat",
+      "expected_behavior_met": true,
+      "full_operational_claim_allowed": false,
+      "production_ready": false,
+      "acceptance_decision": "PASS",
+      "claim_boundary": "Regression case verifies local proof behavior and claim discipline only; it does not establish production readiness or external validation.",
+      "remaining_gate": "Needs repeated non-sample runs, browser screenshot evidence, reviewer validation, and deployment hardening before full operational standing.",
+      "blocks_false_promotion": false,
+      "trace_hash": "95a743562488ed16"
+    },
+    {
+      "case_id": "mb-infragard-handoff-falsifier",
+      "case_type": "falsifier",
+      "input": "Try to promote mb-infragard-handoff to full production readiness from one local trace.",
+      "evidence": "Needs repeated non-sample runs, browser screenshot evidence, reviewer validation, and deployment hardening before full operational standing.",
+      "expected_behavior": "block_full_operational_claim",
+      "observed_behavior": "block_full_operational_claim",
+      "expected_behavior_met": true,
+      "full_operational_claim_allowed": false,
+      "production_ready": false,
+      "acceptance_decision": "PASS",
+      "claim_boundary": "Regression case verifies local proof behavior and claim discipline only; it does not establish production readiness or external validation.",
+      "remaining_gate": "Needs repeated non-sample runs, browser screenshot evidence, reviewer validation, and deployment hardening before full operational standing.",
+      "blocks_false_promotion": true,
+      "trace_hash": "824becbce5031b11"
+    }
+  ],
+  "case_count": 3,
+  "accepted_case_count": 3,
+  "falsifier_blocks_promotion": true,
+  "full_operational": false,
+  "remaining_gate": "Needs repeated non-sample runs, browser screenshot evidence, reviewer validation, and deployment hardening before full operational standing.",
+  "suite_hash": "62c1c2e464db2335"
+}

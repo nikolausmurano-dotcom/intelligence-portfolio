@@ -1,0 +1,44 @@
+{
+  "project_id": "mb-ic-analyst-portfolio-handoff-pass1",
+  "generated_at": "2026-05-17T01:47:54+00:00",
+  "validation_status": "evidence_incomplete",
+  "required_slot_count": 4,
+  "present_slot_count": 3,
+  "missing_slot_count": 1,
+  "promotion_allowed": false,
+  "promotion_note": "Promotion remains blocked until all required evidence and human/expert review gates close.",
+  "slot_status": [
+    {
+      "slot_id": "source_verification_matrix",
+      "required_file": "source_verification_matrix.csv",
+      "present": true,
+      "size_bytes": 31514,
+      "sha256": "2c6966be86c257aef11dbbea1eb16fc32e6e085c9ff7df66c6e47591e65d8b3f",
+      "proves": "Every strengthened source claim has a verified source role and claim ceiling."
+    },
+    {
+      "slot_id": "claim_warrant_notes",
+      "required_file": "claim_warrant_notes.md",
+      "present": true,
+      "size_bytes": 6253,
+      "sha256": "f8dda030fe21df9ee628edc279bbe34f941f0a72826a173a162ce3904fdc166c",
+      "proves": "Claims are connected to source warrants rather than decorative bibliography."
+    },
+    {
+      "slot_id": "quotation_integrity_check",
+      "required_file": "quotation_integrity_check.md",
+      "present": true,
+      "size_bytes": 608,
+      "sha256": "c5daf3afc4bda97b8120b2de724f88b7f1f5fc965128cd3d7d84f14dd8493868",
+      "proves": "No quotation or paraphrase is promoted without direct verification."
+    },
+    {
+      "slot_id": "external_review_note",
+      "required_file": "external_review_note.md",
+      "present": false,
+      "size_bytes": 0,
+      "sha256": "",
+      "proves": "A reviewer or expert has examined the source use and recorded judgment."
+    }
+  ]
+}

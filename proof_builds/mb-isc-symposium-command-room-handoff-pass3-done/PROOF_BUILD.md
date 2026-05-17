@@ -1,0 +1,41 @@
+# Proof Build: ISC Symposium Command
+
+**Project ID.** `mb-isc-symposium-command-room-handoff-pass3-done`
+
+**Proof tier.** source-backed-proof-build
+
+**Public claim.** The ISC Symposium Command Room is a MuranoOS handoff packet for Nik Murano's academic symposium strategy work — a lossless environment for selecting the right symposium project, producing materials, rehearsing Q&A against recruiter objections, and converting symposium presence into actual recruiter interest at CIA / DIA / NSA / FFRDC targets.
+
+**Distinctive mechanism.** , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival retention
+
+**Use value.** It preserves the distinctive design logic for ISC Symposium Command, so the portfolio can show the actual mechanism and status instead of reducing the project to a file-count or handoff label.
+
+**Minimum public demo.** Test one representative case; confirm input (source packet, code-ready room description, scope...) produces output (bounded definition of what the handoff asks a builder...) and leaves a visible decision or artifact.
+
+**Claim ceiling.** The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.
+
+## Flagship Proof Builds
+
+No special flagship proof build has been authored yet; this project is governed by the component proof table below.
+
+## Component Proof Table
+
+| Component | Status | Input | Expected Output | Verification Check |
+|---|---|---|---|---|
+| ISC Symposium Command Handoff Identity | specified-output-needs-demo | source packet, code-ready room description, scope, and intended runtime | bounded definition of what the handoff asks a builder to construct | Test one representative case; confirm input (source packet, code-ready room description, scope...) produces output (bounded definition of what the handoff asks a. |
+| ISC Symposium Command Room Task Model | specified-output-needs-demo | user roles, task sequence, room state, and domain objects | room logic that turns the concept into a repeatable workflow | Test one representative case; confirm input (user roles, task sequence, room state, and domain...) produces output (room logic that turns the concept into a. |
+| ISC Symposium Command Data Schema And Persistence Plan | specified-output-needs-demo | entities, records, IDs, tables, JSON structures, indexes, and state transitions | data model that lets the room preserve work instead of acting like a static page | Test one representative case; confirm input (entities, records, IDs, tables, JSON structures...) produces output (data model that lets the room preserve work instead...). |
+| ISC Symposium Command Interface And Instrument Plane | specified-output-needs-demo | panels, command palette, drawers, matrices, visualizations, and review widgets | named interface instruments that make the room useful to a researcher or analyst | Test one representative case; confirm input (panels, command palette, drawers, matrices...) produces output (named interface instruments that make the room useful...). |
+| ISC Symposium Command Integration Path | specified-output-needs-demo | frontend, backend, storage, retrieval, auth, export, and portfolio linkage | build sequence for turning the handoff into working software | Test one representative case; confirm input (frontend, backend, storage, retrieval, auth, export...) produces output (build sequence for turning the handoff into. |
+| ISC Symposium Command Proof Boundary | specified-output-needs-demo | completed packet, code readiness, unimplemented backend, missing live capture, or partial status | honest current claim ceiling for the handoff as a reviewable artifact | Test one representative case; confirm input (completed packet, code readiness, unimplemented...) produces output (honest current claim ceiling for the handoff...) and. |
+| ISC Symposium Command Next Build Test | specified-output-needs-demo | minimal executable path, seeded fixture, UI walkthrough, and validation gate | specific test that would show the handoff has become a functioning room | Test one representative case; confirm input (minimal executable path, seeded fixture, UI...) produces output (specific test that would show the handoff has become...). |
+| ISC Symposium Command / backend/frontend | source-context-backed | project source text and the named component `backend/frontend` | a project-specific work product, decision, or proof surface tied to `backend/frontend` | Confirm `backend/frontend` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| ISC Symposium Command / docs/01_protocol_conformance.md | source-context-backed | project source text and the named component `docs/01_protocol_conformance.md` | inspectable implementation evidence tied to `docs/01_protocol_conformance.md` | Confirm `docs/01_protocol_conformance.md` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| ISC Symposium Command / README.md | source-context-backed | project source text and the named component `README.md` | inspectable implementation evidence tied to `README.md` | Confirm `README.md` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| ISC Symposium Command / 00_room_manifest.json | source-context-backed | project source text and the named component `00_room_manifest.json` | inspectable implementation evidence tied to `00_room_manifest.json` | Confirm `00_room_manifest.json` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| ISC Symposium Command / 01_protocol_conformance.md | source-context-backed | project source text and the named component `01_protocol_conformance.md` | inspectable implementation evidence tied to `01_protocol_conformance.md` | Confirm `01_protocol_conformance.md` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| ISC Symposium Command / 01_screen_blueprints.md | source-context-backed | project source text and the named component `01_screen_blueprints.md` | inspectable implementation evidence tied to `01_screen_blueprints.md` | Confirm `01_screen_blueprints.md` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| ISC Symposium Command / 01_command_registry.json | source-context-backed | project source text and the named component `01_command_registry.json` | inspectable implementation evidence tied to `01_command_registry.json` | Confirm `01_command_registry.json` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| ISC Symposium Command / 03_cold_start_instructions.md | source-context-backed | project source text and the named component `03_cold_start_instructions.md` | inspectable implementation evidence tied to `03_cold_start_instructions.md` | Confirm `03_cold_start_instructions.md` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| ISC Symposium Command / 01_test_harness_stubs.md | source-context-backed | project source text and the named component `01_test_harness_stubs.md` | inspectable implementation evidence tied to `01_test_harness_stubs.md` | Confirm `01_test_harness_stubs.md` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| ISC Symposium Command / 01_export_pack_spec.md | source-context-backed | project source text and the named component `01_export_pack_spec.md` | inspectable implementation evidence tied to `01_export_pack_spec.md` | Confirm `01_export_pack_spec.md` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |

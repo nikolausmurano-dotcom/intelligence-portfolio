@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Source Application Runner</title>
+<style>
+:root{color-scheme:light;--paper:#f7f5ef;--ink:#142231;--muted:#5c6673;--rule:rgba(31,49,68,.18);--accent:#744c20;--green:#2e5d47;--red:#76313a;--blue:#1e4d6b;--white:rgba(255,255,255,.92)}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#fbfaf6 0%,var(--paper) 42%,#efebe0 100%);color:var(--ink);font-family:Georgia,'Times New Roman',serif}main{max-width:1240px;margin:0 auto;padding:38px 22px 76px}h1{font-size:clamp(34px,5vw,58px);line-height:1;font-weight:500;margin:0 0 14px}h2{font-size:25px;line-height:1.18;margin:24px 0 10px}h3{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}p,li{line-height:1.58}.topline,.kicker{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase;font-size:11px;color:var(--accent)}.lead{max-width:980px;font-size:18px;line-height:1.62}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}.card,.panel{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:16px}.panel{margin:18px 0}.ready{border-left:4px solid var(--green)}.warn{border-left:4px solid var(--accent)}.risk{border-left:4px solid var(--red)}.button{display:inline-block;border:1px solid rgba(30,77,107,.35);border-radius:6px;padding:9px 12px;background:#fff;color:var(--ink);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;text-decoration:none;margin:3px 6px 3px 0}.score{font-size:32px;line-height:1}.small{font-size:13px;color:var(--muted)}table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--rule);border-radius:8px;overflow:hidden}th,td{padding:10px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}th{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}input,select{width:100%;border:1px solid var(--rule);border-radius:6px;padding:10px;background:#fff;color:var(--ink)}@media(max-width:760px){main{padding:28px 18px 58px}}
+</style>
+
+<script src="source_application_matrix.js"></script>
+<script>
+function esc(s){return String(s||'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));}
+function render(){
+  const q=document.getElementById('q').value.toLowerCase();
+  const role=document.getElementById('role').value;
+  const rows=window.SOURCE_APPLICATION_MATRIX.filter(r=>{
+    const hay=[r.product_name,r.role,r.source_candidate_to_apply,r.project_specific_application,r.output_it_must_change].join(' ').toLowerCase();
+    return (!q||hay.includes(q)) && (!role||r.role===role);
+  }).slice(0,150);
+  document.getElementById('count').textContent=rows.length+' shown';
+  document.getElementById('rows').innerHTML=rows.map(r=>`<div class="card ${r.role_status==='observed'?'ready':'warn'}"><h3>${esc(r.project_id)} / ${esc(r.role_plain_name)}</h3><h2>${esc(r.product_name)}</h2><p><b>Source:</b> ${esc(r.source_candidate_to_apply)}</p><p><b>Application:</b> ${esc(r.project_specific_application)}</p><p><b>Output changed:</b> ${esc(r.output_it_must_change)}</p><p><b>Test/check:</b> ${esc(r.test_or_check_it_must_govern)}</p><p><b>Claim ceiling:</b> ${esc(r.claim_ceiling)}</p></div>`).join('');
+}
+window.addEventListener('DOMContentLoaded',()=>{render();q.addEventListener('input',render);role.addEventListener('change',render);});
+</script>
+</head><body><main>
+<div class="topline">Interactive source application runner</div>
+<h1>Inspect Source Use</h1>
+<p class="lead">Search a project, source, role, or mechanism. The runner shows how a source is supposed to change a module, test, claim, or output.</p>
+<section class="grid"><div><label class="kicker" for="q">Search</label><input id="q" placeholder="Nexus, Russia, Poison-RAG, evaluation, counter-source..." /></div><div><label class="kicker" for="role">Role</label><select id="role"><option value="">All roles</option><option>method authority</option><option>domain grounding</option><option>technical mechanism</option><option>adversarial model</option><option>evaluation standard</option><option>counter-source or limitation</option><option>source-to-output bridge</option><option>close-read requirement</option></select></div></section>
+<p class="small" id="count"></p><section class="grid" id="rows"></section>
+</main></body></html>

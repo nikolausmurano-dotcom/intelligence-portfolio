@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-05-15T04:49:13",
+  "packet_purpose": "proof capsule evidence pack for portfolio components",
+  "required_tabs": [
+    {
+      "tab": "Proof capsules index",
+      "path": "proof_capsules/index.html",
+      "status": "present"
+    },
+    {
+      "tab": "Component proof capsules",
+      "path": "proof_capsules/component_proof_capsules.csv",
+      "status": "present"
+    },
+    {
+      "tab": "Project proof capsule index",
+      "path": "proof_capsules/project_proof_capsule_index.csv",
+      "status": "present"
+    },
+    {
+      "tab": "Live capture queue",
+      "path": "proof_capsules/live_capture_queue.csv",
+      "status": "present"
+    },
+    {
+      "tab": "Source applications",
+      "path": "source_application_control_plane/source_application_matrix.csv",
+      "status": "present"
+    },
+    {
+      "tab": "Proof maturity",
+      "path": "proof_maturity_control_plane/component_proof_maturity.csv",
+      "status": "present"
+    }
+  ],
+  "claim_boundary": "The pack proves capsule coverage and capture requirements. It does not claim every capsule has been executed in a live runtime."
+}

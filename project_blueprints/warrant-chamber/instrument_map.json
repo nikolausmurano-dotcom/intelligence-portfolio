@@ -1,0 +1,60 @@
+{
+  "map_type": "curated_claim_governance",
+  "instrument_form": "curated claim governance",
+  "summary": "A manuscript-centered evidence governance chamber.",
+  "final_use_case": "It matters because expert writing needs to know what authorizes a claim, what contests it, what revision state carries it, what dissent has been faced, and what test would show the warrant is strong enough.",
+  "instrument_count": 3,
+  "instruments": [
+    {
+      "order": "1",
+      "phase": "RESEARCH_PROCESS",
+      "room": "warrant-chamber",
+      "subroom": "claim_intake",
+      "instrument_name": "Claim Intake",
+      "instrument_form": "curated claim governance",
+      "input": "draft claim, source, counter-source, intended audience",
+      "operation": "opens the claim as a review object rather than treating it as finished prose; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "output": "claim record as a reviewable artifact",
+      "upstream_dependency": "Requires draft claim, source, counter-source, intended audience",
+      "downstream_use": "Feeds claim record as a reviewable artifact; later claims should not rely on this step until its expected output is present.",
+      "proof": "Expected proof artifact: claim record as a reviewable artifact",
+      "status": "Status: The full design-and-build package is complete: 17 documentation files, 6 SVG diagrams, 7 NSRP foundation work products, 30 files total at 213 KB.",
+      "gap": "Verify one representative case: the step should accept draft claim, source, counter-source, intended audience and produce claim record as a reviewable artifact.",
+      "verification_check": "Test one representative case; confirm input (draft claim, source, counter-source, intended audience) produces output (claim record as a reviewable artifact) and leaves a visible decision or artifact."
+    },
+    {
+      "order": "2",
+      "phase": "RESEARCH_PROCESS",
+      "room": "warrant-chamber",
+      "subroom": "warrant_inspection",
+      "instrument_name": "Warrant Inspection",
+      "instrument_form": "curated claim governance",
+      "input": "source strength, contradiction, dissent, revision state",
+      "operation": "uses Claim Halo / review chamber logic to expose what authorizes or weakens the claim",
+      "output": "claim ceiling and revision decision as a reviewable artifact",
+      "upstream_dependency": "Requires source strength, contradiction, dissent, revision state",
+      "downstream_use": "Feeds claim ceiling and revision decision as a reviewable artifact; later claims should not rely on this step until its expected output is present.",
+      "proof": "Expected proof artifact: claim ceiling and revision decision as a reviewable artifact",
+      "status": "Status: The full design-and-build package is complete: 17 documentation files, 6 SVG diagrams, 7 NSRP foundation work products, 30 files total at 213 KB.",
+      "gap": "Verify one representative case: the step should accept source strength, contradiction, dissent, revision state and produce claim ceiling and revision decision as a reviewable artifact.",
+      "verification_check": "Test one representative case; confirm input (source strength, contradiction, dissent, revision state) produces output (claim ceiling and revision decision as a reviewable...) and leaves a visible decision or artifact."
+    },
+    {
+      "order": "3",
+      "phase": "RESEARCH_PROCESS",
+      "room": "warrant-chamber",
+      "subroom": "certification_or_revision",
+      "instrument_name": "Certification Or Revision",
+      "instrument_form": "curated claim governance",
+      "input": "reviewed claim and evidence state",
+      "operation": "decides whether the claim can publish, must narrow, needs sources, or should be rejected",
+      "output": "certified claim or revision task as a reviewable artifact",
+      "upstream_dependency": "Requires reviewed claim and evidence state",
+      "downstream_use": "Feeds certified claim or revision task as a reviewable artifact; later claims should not rely on this step until its expected output is present.",
+      "proof": "Expected proof artifact: certified claim or revision task as a reviewable artifact",
+      "status": "Status: The full design-and-build package is complete: 17 documentation files, 6 SVG diagrams, 7 NSRP foundation work products, 30 files total at 213 KB.",
+      "gap": "Verify one representative case: the step should accept reviewed claim and evidence state and produce certified claim or revision task as a reviewable artifact.",
+      "verification_check": "Test one representative case; confirm input (reviewed claim and evidence state) produces output (certified claim or revision task as a reviewable...) and leaves a visible decision or artifact."
+    }
+  ]
+}

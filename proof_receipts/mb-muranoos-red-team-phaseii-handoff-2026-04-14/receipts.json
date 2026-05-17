@@ -1,0 +1,1461 @@
+{
+  "project": {
+    "project_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14",
+    "title": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__receipt_0001",
+      "project_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14",
+      "project_title": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns Handoff Identity",
+      "component_case_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__0001__posture-compass-5-axis-instrument-framing-tensions-rival-framing-columns-handoff-identity",
+      "claim_to_demonstrate": "Red Team Phase II posture packet is a handoff centered on a five-axis Posture Compass and framing-tension fields.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "Red Team Phase II posture packet is a handoff centered on a five-axis Posture Compass and framing-tension fields.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44843,
+            "sha256": "28cdb5124fc0c44994ed9e04560cdf0402754a688d41b2d57c6e50a76e4d219e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37037,
+            "sha256": "b227cff3e30e6c33646163f2ab80b9330da4c1bcc22d553375447d9611b9f34c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21642,
+            "sha256": "7ecc4fe1c5445b329181e4c7e76fb169e51ec9084d5fc971d721789b5f0bd17d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21728,
+            "sha256": "2dce61d9fe7548b2b8aebe5b79661d92d93cc0a62e67c5a78237c5cd69e74445"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48613,
+            "sha256": "8ea0fdb5125f90ef736d2c4d95c235cdb9ae6832736ddf448d36f633d6b7cb1e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11176,
+            "sha256": "d38f3d304bb5a5d98b4886427f522a5f3871f696da618a06afd4d6d04e2a6447"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1548fcd7bea755236ce50b93"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__receipt_0002",
+      "project_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14",
+      "project_title": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns Room Task Model",
+      "component_case_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__0002__posture-compass-5-axis-instrument-framing-tensions-rival-framing-columns-room-task-model",
+      "claim_to_demonstrate": "It preserves the seven-section foundation layout and adds framing_tensions, rival_framing, and posture-compass fields so red-team review can track rival interpretations and posture shifts explicitly.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "It preserves the seven-section foundation layout and adds framing_tensions, rival_framing, and posture-compass fields so red-team review can track rival interpretations and posture shifts explicitly.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44843,
+            "sha256": "28cdb5124fc0c44994ed9e04560cdf0402754a688d41b2d57c6e50a76e4d219e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37037,
+            "sha256": "b227cff3e30e6c33646163f2ab80b9330da4c1bcc22d553375447d9611b9f34c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21642,
+            "sha256": "7ecc4fe1c5445b329181e4c7e76fb169e51ec9084d5fc971d721789b5f0bd17d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21728,
+            "sha256": "2dce61d9fe7548b2b8aebe5b79661d92d93cc0a62e67c5a78237c5cd69e74445"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48613,
+            "sha256": "8ea0fdb5125f90ef736d2c4d95c235cdb9ae6832736ddf448d36f633d6b7cb1e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11176,
+            "sha256": "d38f3d304bb5a5d98b4886427f522a5f3871f696da618a06afd4d6d04e2a6447"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c4a6d556a5305ea97ad9f2d0"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__receipt_0003",
+      "project_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14",
+      "project_title": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns Data Schema And Persistence Plan",
+      "component_case_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__0003__posture-compass-5-axis-instrument-framing-tensions-rival-framing-columns-data-schema-and-p",
+      "claim_to_demonstrate": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44843,
+            "sha256": "28cdb5124fc0c44994ed9e04560cdf0402754a688d41b2d57c6e50a76e4d219e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37037,
+            "sha256": "b227cff3e30e6c33646163f2ab80b9330da4c1bcc22d553375447d9611b9f34c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21642,
+            "sha256": "7ecc4fe1c5445b329181e4c7e76fb169e51ec9084d5fc971d721789b5f0bd17d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21728,
+            "sha256": "2dce61d9fe7548b2b8aebe5b79661d92d93cc0a62e67c5a78237c5cd69e74445"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48613,
+            "sha256": "8ea0fdb5125f90ef736d2c4d95c235cdb9ae6832736ddf448d36f633d6b7cb1e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11176,
+            "sha256": "d38f3d304bb5a5d98b4886427f522a5f3871f696da618a06afd4d6d04e2a6447"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7c34e9c5d74cf97507ca59db"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__receipt_0004",
+      "project_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14",
+      "project_title": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns Interface And Instrument Plane",
+      "component_case_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__0004__posture-compass-5-axis-instrument-framing-tensions-rival-framing-columns-interface-and-ins",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44843,
+            "sha256": "28cdb5124fc0c44994ed9e04560cdf0402754a688d41b2d57c6e50a76e4d219e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37037,
+            "sha256": "b227cff3e30e6c33646163f2ab80b9330da4c1bcc22d553375447d9611b9f34c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21642,
+            "sha256": "7ecc4fe1c5445b329181e4c7e76fb169e51ec9084d5fc971d721789b5f0bd17d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21728,
+            "sha256": "2dce61d9fe7548b2b8aebe5b79661d92d93cc0a62e67c5a78237c5cd69e74445"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48613,
+            "sha256": "8ea0fdb5125f90ef736d2c4d95c235cdb9ae6832736ddf448d36f633d6b7cb1e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11176,
+            "sha256": "d38f3d304bb5a5d98b4886427f522a5f3871f696da618a06afd4d6d04e2a6447"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d7851b12319d4ec7e07106e7"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__receipt_0005",
+      "project_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14",
+      "project_title": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns Integration Path",
+      "component_case_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__0005__posture-compass-5-axis-instrument-framing-tensions-rival-framing-columns-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. Upload when the operator wants the full exploded-canon bundle plus a named build blueprint with committed UX instrumentation (Posture Compass) and explicit.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. Upload when the operator wants the full exploded-canon bundle plus a named build blueprint with committed UX instrumentation (Posture Compass) and explicit.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44843,
+            "sha256": "28cdb5124fc0c44994ed9e04560cdf0402754a688d41b2d57c6e50a76e4d219e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37037,
+            "sha256": "b227cff3e30e6c33646163f2ab80b9330da4c1bcc22d553375447d9611b9f34c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21642,
+            "sha256": "7ecc4fe1c5445b329181e4c7e76fb169e51ec9084d5fc971d721789b5f0bd17d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21728,
+            "sha256": "2dce61d9fe7548b2b8aebe5b79661d92d93cc0a62e67c5a78237c5cd69e74445"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48613,
+            "sha256": "8ea0fdb5125f90ef736d2c4d95c235cdb9ae6832736ddf448d36f633d6b7cb1e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11176,
+            "sha256": "d38f3d304bb5a5d98b4886427f522a5f3871f696da618a06afd4d6d04e2a6447"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "719a4a454467bb3b21b8e5c5"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__receipt_0006",
+      "project_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14",
+      "project_title": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns Proof Boundary",
+      "component_case_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__0006__posture-compass-5-axis-instrument-framing-tensions-rival-framing-columns-proof-boundary",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44843,
+            "sha256": "28cdb5124fc0c44994ed9e04560cdf0402754a688d41b2d57c6e50a76e4d219e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37037,
+            "sha256": "b227cff3e30e6c33646163f2ab80b9330da4c1bcc22d553375447d9611b9f34c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21642,
+            "sha256": "7ecc4fe1c5445b329181e4c7e76fb169e51ec9084d5fc971d721789b5f0bd17d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21728,
+            "sha256": "2dce61d9fe7548b2b8aebe5b79661d92d93cc0a62e67c5a78237c5cd69e74445"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48613,
+            "sha256": "8ea0fdb5125f90ef736d2c4d95c235cdb9ae6832736ddf448d36f633d6b7cb1e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11176,
+            "sha256": "d38f3d304bb5a5d98b4886427f522a5f3871f696da618a06afd4d6d04e2a6447"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "845e9d4aacf0debf3c15771e"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__receipt_0007",
+      "project_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14",
+      "project_title": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns Next Build Test",
+      "component_case_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__0007__posture-compass-5-axis-instrument-framing-tensions-rival-framing-columns-next-build-test",
+      "claim_to_demonstrate": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44843,
+            "sha256": "28cdb5124fc0c44994ed9e04560cdf0402754a688d41b2d57c6e50a76e4d219e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37037,
+            "sha256": "b227cff3e30e6c33646163f2ab80b9330da4c1bcc22d553375447d9611b9f34c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21642,
+            "sha256": "7ecc4fe1c5445b329181e4c7e76fb169e51ec9084d5fc971d721789b5f0bd17d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21728,
+            "sha256": "2dce61d9fe7548b2b8aebe5b79661d92d93cc0a62e67c5a78237c5cd69e74445"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48613,
+            "sha256": "8ea0fdb5125f90ef736d2c4d95c235cdb9ae6832736ddf448d36f633d6b7cb1e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11176,
+            "sha256": "d38f3d304bb5a5d98b4886427f522a5f3871f696da618a06afd4d6d04e2a6447"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "99050b54021c2eaa4538dd71"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__receipt_0008",
+      "project_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14",
+      "project_title": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns / README_PHASE_II_CONTINUATION.md",
+      "component_case_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__0008__posture-compass-5-axis-instrument-framing-tensions-rival-framing-columns-readme-phase-ii-c",
+      "claim_to_demonstrate": "treats `README_PHASE_II_CONTINUATION.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README_PHASE_II_CONTINUATION.md at root. Its most distinguishing contribution is the Posture Compass — a.",
+      "input_fixture": "project source text and the named component `README_PHASE_II_CONTINUATION.md`",
+      "operation_under_test": "treats `README_PHASE_II_CONTINUATION.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README_PHASE_II_CONTINUATION.md at root. Its most distinguishing contribution is the Posture Compass — a.",
+      "expected_output": "inspectable implementation evidence tied to `README_PHASE_II_CONTINUATION.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a1a94efb54d9d8fb02db4a32",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44843,
+            "sha256": "28cdb5124fc0c44994ed9e04560cdf0402754a688d41b2d57c6e50a76e4d219e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37037,
+            "sha256": "b227cff3e30e6c33646163f2ab80b9330da4c1bcc22d553375447d9611b9f34c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21642,
+            "sha256": "7ecc4fe1c5445b329181e4c7e76fb169e51ec9084d5fc971d721789b5f0bd17d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21728,
+            "sha256": "2dce61d9fe7548b2b8aebe5b79661d92d93cc0a62e67c5a78237c5cd69e74445"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48613,
+            "sha256": "8ea0fdb5125f90ef736d2c4d95c235cdb9ae6832736ddf448d36f633d6b7cb1e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11176,
+            "sha256": "d38f3d304bb5a5d98b4886427f522a5f3871f696da618a06afd4d6d04e2a6447"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2597b52b3fcc83f268871017"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__receipt_0009",
+      "project_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14",
+      "project_title": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns / Posture Compass",
+      "component_case_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__0009__posture-compass-5-axis-instrument-framing-tensions-rival-framing-columns-posture-compass",
+      "claim_to_demonstrate": "uses `Posture Compass` as a named project component with a traceable role in the public mechanism. Source context: Its most distinguishing contribution is the Posture Compass — a named five-axis instrument (framing clarity, source integrity, scope discipline.",
+      "input_fixture": "project source text and the named component `Posture Compass`",
+      "operation_under_test": "uses `Posture Compass` as a named project component with a traceable role in the public mechanism. Source context: Its most distinguishing contribution is the Posture Compass — a named five-axis instrument (framing clarity, source integrity, scope discipline.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Posture Compass`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "9f23464a17d386257f17b75c",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44843,
+            "sha256": "28cdb5124fc0c44994ed9e04560cdf0402754a688d41b2d57c6e50a76e4d219e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37037,
+            "sha256": "b227cff3e30e6c33646163f2ab80b9330da4c1bcc22d553375447d9611b9f34c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21642,
+            "sha256": "7ecc4fe1c5445b329181e4c7e76fb169e51ec9084d5fc971d721789b5f0bd17d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21728,
+            "sha256": "2dce61d9fe7548b2b8aebe5b79661d92d93cc0a62e67c5a78237c5cd69e74445"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48613,
+            "sha256": "8ea0fdb5125f90ef736d2c4d95c235cdb9ae6832736ddf448d36f633d6b7cb1e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11176,
+            "sha256": "d38f3d304bb5a5d98b4886427f522a5f3871f696da618a06afd4d6d04e2a6447"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0a11a848650bad89c79cfc17"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__receipt_0010",
+      "project_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14",
+      "project_title": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns / Phase II",
+      "component_case_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__0010__posture-compass-5-axis-instrument-framing-tensions-rival-framing-columns-phase-ii",
+      "claim_to_demonstrate": "uses `Phase II` as a named project component with a traceable role in the public mechanism. Source context: Phase II blueprint commits to as the signature Phase II instrument. No other package in the 11 ships this instrument concept. The blueprint also.",
+      "input_fixture": "project source text and the named component `Phase II`",
+      "operation_under_test": "uses `Phase II` as a named project component with a traceable role in the public mechanism. Source context: Phase II blueprint commits to as the signature Phase II instrument. No other package in the 11 ships this instrument concept. The blueprint also.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Phase II`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "58be14df5c79c450b24b0be9",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44843,
+            "sha256": "28cdb5124fc0c44994ed9e04560cdf0402754a688d41b2d57c6e50a76e4d219e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37037,
+            "sha256": "b227cff3e30e6c33646163f2ab80b9330da4c1bcc22d553375447d9611b9f34c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21642,
+            "sha256": "7ecc4fe1c5445b329181e4c7e76fb169e51ec9084d5fc971d721789b5f0bd17d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21728,
+            "sha256": "2dce61d9fe7548b2b8aebe5b79661d92d93cc0a62e67c5a78237c5cd69e74445"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48613,
+            "sha256": "8ea0fdb5125f90ef736d2c4d95c235cdb9ae6832736ddf448d36f633d6b7cb1e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11176,
+            "sha256": "d38f3d304bb5a5d98b4886427f522a5f3871f696da618a06afd4d6d04e2a6447"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9be4c9180253c861354cd87f"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__receipt_0011",
+      "project_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14",
+      "project_title": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns / Explain Nexus and Personal OS",
+      "component_case_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__0011__posture-compass-5-axis-instrument-framing-tensions-rival-framing-columns-explain-nexus-and",
+      "claim_to_demonstrate": "uses `Explain Nexus and Personal OS` as a named project component with a traceable role in the public mechanism. Source context: Explain Nexus and Personal OS as project-development and discovery infrastructure, not miscellaneous personal tooling. Mechanism.",
+      "input_fixture": "project source text and the named component `Explain Nexus and Personal OS`",
+      "operation_under_test": "uses `Explain Nexus and Personal OS` as a named project component with a traceable role in the public mechanism. Source context: Explain Nexus and Personal OS as project-development and discovery infrastructure, not miscellaneous personal tooling. Mechanism.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Explain Nexus and Personal OS`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "43bbe99078db3098289d7fc7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44843,
+            "sha256": "28cdb5124fc0c44994ed9e04560cdf0402754a688d41b2d57c6e50a76e4d219e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37037,
+            "sha256": "b227cff3e30e6c33646163f2ab80b9330da4c1bcc22d553375447d9611b9f34c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21642,
+            "sha256": "7ecc4fe1c5445b329181e4c7e76fb169e51ec9084d5fc971d721789b5f0bd17d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21728,
+            "sha256": "2dce61d9fe7548b2b8aebe5b79661d92d93cc0a62e67c5a78237c5cd69e74445"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48613,
+            "sha256": "8ea0fdb5125f90ef736d2c4d95c235cdb9ae6832736ddf448d36f633d6b7cb1e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11176,
+            "sha256": "d38f3d304bb5a5d98b4886427f522a5f3871f696da618a06afd4d6d04e2a6447"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d6443b8cca281c96d3646b5e"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__receipt_0012",
+      "project_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14",
+      "project_title": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns / Creativity Research",
+      "component_case_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__0012__posture-compass-5-axis-instrument-framing-tensions-rival-framing-columns-creativity-resear",
+      "claim_to_demonstrate": "uses `Creativity Research` as a named project component with a traceable role in the public mechanism. Source context: Creativity Research; The Heritage, Creativity and Innovation Nexus. Intelligence tradecraft, counterintelligence, and analytic method. Use.",
+      "input_fixture": "project source text and the named component `Creativity Research`",
+      "operation_under_test": "uses `Creativity Research` as a named project component with a traceable role in the public mechanism. Source context: Creativity Research; The Heritage, Creativity and Innovation Nexus. Intelligence tradecraft, counterintelligence, and analytic method. Use.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Creativity Research`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "6f8460f72b9b7fcf9c959977",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44843,
+            "sha256": "28cdb5124fc0c44994ed9e04560cdf0402754a688d41b2d57c6e50a76e4d219e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37037,
+            "sha256": "b227cff3e30e6c33646163f2ab80b9330da4c1bcc22d553375447d9611b9f34c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21642,
+            "sha256": "7ecc4fe1c5445b329181e4c7e76fb169e51ec9084d5fc971d721789b5f0bd17d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21728,
+            "sha256": "2dce61d9fe7548b2b8aebe5b79661d92d93cc0a62e67c5a78237c5cd69e74445"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48613,
+            "sha256": "8ea0fdb5125f90ef736d2c4d95c235cdb9ae6832736ddf448d36f633d6b7cb1e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11176,
+            "sha256": "d38f3d304bb5a5d98b4886427f522a5f3871f696da618a06afd4d6d04e2a6447"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a1141a6235d7b729d3e1ec20"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__receipt_0013",
+      "project_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14",
+      "project_title": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns / The Heritage",
+      "component_case_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__0013__posture-compass-5-axis-instrument-framing-tensions-rival-framing-columns-the-heritage",
+      "claim_to_demonstrate": "uses `The Heritage` as a named project component with a traceable role in the public mechanism. Source context: The Heritage, Creativity and Innovation Nexus. Intelligence tradecraft, counterintelligence, and analytic method. Use source library intelligence.",
+      "input_fixture": "project source text and the named component `The Heritage`",
+      "operation_under_test": "uses `The Heritage` as a named project component with a traceable role in the public mechanism. Source context: The Heritage, Creativity and Innovation Nexus. Intelligence tradecraft, counterintelligence, and analytic method. Use source library intelligence.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `The Heritage`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "45f852bc371749f4e50a650f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44843,
+            "sha256": "28cdb5124fc0c44994ed9e04560cdf0402754a688d41b2d57c6e50a76e4d219e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37037,
+            "sha256": "b227cff3e30e6c33646163f2ab80b9330da4c1bcc22d553375447d9611b9f34c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21642,
+            "sha256": "7ecc4fe1c5445b329181e4c7e76fb169e51ec9084d5fc971d721789b5f0bd17d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21728,
+            "sha256": "2dce61d9fe7548b2b8aebe5b79661d92d93cc0a62e67c5a78237c5cd69e74445"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48613,
+            "sha256": "8ea0fdb5125f90ef736d2c4d95c235cdb9ae6832736ddf448d36f633d6b7cb1e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11176,
+            "sha256": "d38f3d304bb5a5d98b4886427f522a5f3871f696da618a06afd4d6d04e2a6447"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5cdbce4d854c96717f3a1960"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__receipt_0014",
+      "project_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14",
+      "project_title": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns / Creativity and Innovation Nexus. Intelligence",
+      "component_case_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__0014__posture-compass-5-axis-instrument-framing-tensions-rival-framing-columns-creativity-and-in",
+      "claim_to_demonstrate": "uses `Creativity and Innovation Nexus. Intelligence` as a named project component with a traceable role in the public mechanism. Source context: The Heritage, Creativity and Innovation Nexus. Intelligence tradecraft, counterintelligence, and analytic method.",
+      "input_fixture": "project source text and the named component `Creativity and Innovation Nexus. Intelligence`",
+      "operation_under_test": "uses `Creativity and Innovation Nexus. Intelligence` as a named project component with a traceable role in the public mechanism. Source context: The Heritage, Creativity and Innovation Nexus. Intelligence tradecraft, counterintelligence, and analytic method.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Creativity and Innovation Nexus. Intelligence`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "45f852bc371749f4e50a650f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44843,
+            "sha256": "28cdb5124fc0c44994ed9e04560cdf0402754a688d41b2d57c6e50a76e4d219e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37037,
+            "sha256": "b227cff3e30e6c33646163f2ab80b9330da4c1bcc22d553375447d9611b9f34c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21642,
+            "sha256": "7ecc4fe1c5445b329181e4c7e76fb169e51ec9084d5fc971d721789b5f0bd17d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21728,
+            "sha256": "2dce61d9fe7548b2b8aebe5b79661d92d93cc0a62e67c5a78237c5cd69e74445"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48613,
+            "sha256": "8ea0fdb5125f90ef736d2c4d95c235cdb9ae6832736ddf448d36f633d6b7cb1e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11176,
+            "sha256": "d38f3d304bb5a5d98b4886427f522a5f3871f696da618a06afd4d6d04e2a6447"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+          "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d561bce45aa3943364652fdd"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__receipt_0015",
+      "project_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14",
+      "project_title": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns / Prioritize Capstone",
+      "component_case_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__0015__posture-compass-5-axis-instrument-framing-tensions-rival-framing-columns-prioritize-capsto",
+      "claim_to_demonstrate": "uses `Prioritize Capstone` as a named project component with a traceable role in the public mechanism. Source context: Prioritize Capstone, SATS, CI, RAG integrity, and analyst-assurance pages for close-reading. Status: source library identified as candidate.",
+      "input_fixture": "project source text and the named component `Prioritize Capstone`",
+      "operation_under_test": "uses `Prioritize Capstone` as a named project component with a traceable role in the public mechanism. Source context: Prioritize Capstone, SATS, CI, RAG integrity, and analyst-assurance pages for close-reading. Status: source library identified as candidate.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Prioritize Capstone`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "da6aee46b4a86df2749d7951",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44843,
+            "sha256": "28cdb5124fc0c44994ed9e04560cdf0402754a688d41b2d57c6e50a76e4d219e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37037,
+            "sha256": "b227cff3e30e6c33646163f2ab80b9330da4c1bcc22d553375447d9611b9f34c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21642,
+            "sha256": "7ecc4fe1c5445b329181e4c7e76fb169e51ec9084d5fc971d721789b5f0bd17d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21728,
+            "sha256": "2dce61d9fe7548b2b8aebe5b79661d92d93cc0a62e67c5a78237c5cd69e74445"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48613,
+            "sha256": "8ea0fdb5125f90ef736d2c4d95c235cdb9ae6832736ddf448d36f633d6b7cb1e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11176,
+            "sha256": "d38f3d304bb5a5d98b4886427f522a5f3871f696da618a06afd4d6d04e2a6447"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c1e8a8a0725d67bced2f11f4"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__receipt_0016",
+      "project_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14",
+      "project_title": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns / Improving Intelligence Analysis",
+      "component_case_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__0016__posture-compass-5-axis-instrument-framing-tensions-rival-framing-columns-improving-intelli",
+      "claim_to_demonstrate": "uses `Improving Intelligence Analysis` as a named project component with a traceable role in the public mechanism. Source context: Improving Intelligence Analysis; Leading Intelligence Analysis. source library scholarly-source routing with author correction.",
+      "input_fixture": "project source text and the named component `Improving Intelligence Analysis`",
+      "operation_under_test": "uses `Improving Intelligence Analysis` as a named project component with a traceable role in the public mechanism. Source context: Improving Intelligence Analysis; Leading Intelligence Analysis. source library scholarly-source routing with author correction.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Improving Intelligence Analysis`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "367fdbca15baef63fbef498d",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44843,
+            "sha256": "28cdb5124fc0c44994ed9e04560cdf0402754a688d41b2d57c6e50a76e4d219e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37037,
+            "sha256": "b227cff3e30e6c33646163f2ab80b9330da4c1bcc22d553375447d9611b9f34c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21642,
+            "sha256": "7ecc4fe1c5445b329181e4c7e76fb169e51ec9084d5fc971d721789b5f0bd17d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21728,
+            "sha256": "2dce61d9fe7548b2b8aebe5b79661d92d93cc0a62e67c5a78237c5cd69e74445"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48613,
+            "sha256": "8ea0fdb5125f90ef736d2c4d95c235cdb9ae6832736ddf448d36f633d6b7cb1e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11176,
+            "sha256": "d38f3d304bb5a5d98b4886427f522a5f3871f696da618a06afd4d6d04e2a6447"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f08fae4e8065817d92d226b0"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__receipt_0017",
+      "project_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14",
+      "project_title": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Posture Compass 5-axis instrument; framing_tensions/rival_framing columns / Leading Intelligence Analysis",
+      "component_case_id": "mb-muranoos-red-team-phaseii-handoff-2026-04-14__0017__posture-compass-5-axis-instrument-framing-tensions-rival-framing-columns-leading-intellige",
+      "claim_to_demonstrate": "uses `Leading Intelligence Analysis` as a named project component with a traceable role in the public mechanism. Source context: Leading Intelligence Analysis. source library scholarly-source routing with author correction. Raw filenames often append.",
+      "input_fixture": "project source text and the named component `Leading Intelligence Analysis`",
+      "operation_under_test": "uses `Leading Intelligence Analysis` as a named project component with a traceable role in the public mechanism. Source context: Leading Intelligence Analysis. source library scholarly-source routing with author correction. Raw filenames often append.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Leading Intelligence Analysis`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5d5248b8743a1a0bbe44f37f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44843,
+            "sha256": "28cdb5124fc0c44994ed9e04560cdf0402754a688d41b2d57c6e50a76e4d219e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37037,
+            "sha256": "b227cff3e30e6c33646163f2ab80b9330da4c1bcc22d553375447d9611b9f34c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21642,
+            "sha256": "7ecc4fe1c5445b329181e4c7e76fb169e51ec9084d5fc971d721789b5f0bd17d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21728,
+            "sha256": "2dce61d9fe7548b2b8aebe5b79661d92d93cc0a62e67c5a78237c5cd69e74445"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48613,
+            "sha256": "8ea0fdb5125f90ef736d2c4d95c235cdb9ae6832736ddf448d36f633d6b7cb1e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11176,
+            "sha256": "d38f3d304bb5a5d98b4886427f522a5f3871f696da618a06afd4d6d04e2a6447"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-phaseii-handoff-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-phaseii-handoff-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-phaseii-handoff-2026-04-14/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e4fc0fc6fe704eceb8897fb7"
+    }
+  ]
+}

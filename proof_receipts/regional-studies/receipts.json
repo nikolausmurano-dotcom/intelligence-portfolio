@@ -1,0 +1,1436 @@
+{
+  "project": {
+    "project_id": "regional-studies",
+    "title": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western)"
+  },
+  "receipts": [
+    {
+      "receipt_id": "regional-studies__receipt_0001",
+      "project_id": "regional-studies",
+      "project_title": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western) Runtime Or Interface Surface",
+      "component_case_id": "regional-studies__0001__regional-studies-eight-place-based-analytical-pages-africa-berlin-east-asia-london-mideast",
+      "claim_to_demonstrate": "A regional-studies index that organizes place-based pages as analytical workbenches rather than travelogue or topic summaries.",
+      "input_fixture": "local app, web room, data surface, or workstation entry point",
+      "operation_under_test": "A regional-studies index that organizes place-based pages as analytical workbenches rather than travelogue or topic summaries.",
+      "expected_output": "reader-facing definition of the software object and its intended user",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8fd882083e0f8259b8a06f60",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/regional-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47531,
+            "sha256": "b819aeb87c2ce516ce835d5a0bc712767f08eee61c81b9dfe24b53fc629bd074"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41063,
+            "sha256": "ec4d6cb2a2aa1ccbe52a59b608190e4ec111e8e614559c783b5213759dd22eb6"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21123,
+            "sha256": "4c47b5c310d2c4f83d6a8737d21abe5ee94e0b6bee5f2d207b518708448cc4b9"
+          },
+          {
+            "relative_path": "proof_builds/regional-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23006,
+            "sha256": "57a763f61a4d309b48c1c15428e71b3890292005d252eb400e6a4e7cf747663b"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49990,
+            "sha256": "35044662b50f3c6e1cf0bb039de6844430e5418c252ecc4b694343e9da275f9c"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10596,
+            "sha256": "c773470b52c9fa5d962c91bbe06c2f52a253c40b553d751f60e973c63bd37c62"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/regional-studies/blueprint.json",
+          "project_blueprints/regional-studies/instrument_map.json",
+          "proof_builds/regional-studies/proof_build.json",
+          "proof_demos/regional-studies/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "dab16bc4316778c86489b8ed"
+    },
+    {
+      "receipt_id": "regional-studies__receipt_0002",
+      "project_id": "regional-studies",
+      "project_title": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western) Data And State Model",
+      "component_case_id": "regional-studies__0002__regional-studies-eight-place-based-analytical-pages-africa-berlin-east-asia-london-mideast",
+      "claim_to_demonstrate": "Source use is organized by role: method authorities, domain evidence, technical background, implementation evidence, and claim limits. The page should show why each source matters; direct quotations and stronger factual claims still require exact passage.",
+      "input_fixture": "records, files, indexes, tables, project state, source state, and user decisions",
+      "operation_under_test": "Source use is organized by role: method authorities, domain evidence, technical background, implementation evidence, and claim limits. The page should show why each source matters; direct quotations and stronger factual claims still require exact passage.",
+      "expected_output": "state model that explains what the tool remembers and what it refuses to infer",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4da81596b91ff65b95cc789b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/regional-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47531,
+            "sha256": "b819aeb87c2ce516ce835d5a0bc712767f08eee61c81b9dfe24b53fc629bd074"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41063,
+            "sha256": "ec4d6cb2a2aa1ccbe52a59b608190e4ec111e8e614559c783b5213759dd22eb6"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21123,
+            "sha256": "4c47b5c310d2c4f83d6a8737d21abe5ee94e0b6bee5f2d207b518708448cc4b9"
+          },
+          {
+            "relative_path": "proof_builds/regional-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23006,
+            "sha256": "57a763f61a4d309b48c1c15428e71b3890292005d252eb400e6a4e7cf747663b"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49990,
+            "sha256": "35044662b50f3c6e1cf0bb039de6844430e5418c252ecc4b694343e9da275f9c"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10596,
+            "sha256": "c773470b52c9fa5d962c91bbe06c2f52a253c40b553d751f60e973c63bd37c62"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/regional-studies/blueprint.json",
+          "project_blueprints/regional-studies/instrument_map.json",
+          "proof_builds/regional-studies/proof_build.json",
+          "proof_demos/regional-studies/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5cb661aa16ea9bf12bbf7b99"
+    },
+    {
+      "receipt_id": "regional-studies__receipt_0003",
+      "project_id": "regional-studies",
+      "project_title": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western) Core Instrument Panel",
+      "component_case_id": "regional-studies__0003__regional-studies-eight-place-based-analytical-pages-africa-berlin-east-asia-london-mideast",
+      "claim_to_demonstrate": "It separates each regional page by case scope, source spine, historical inheritance, security relevance, and remaining verification work, with Russia Desk treated as the deepest current model.",
+      "input_fixture": "tool buttons, rooms, workflow steps, analytical controls, and review surfaces",
+      "operation_under_test": "It separates each regional page by case scope, source spine, historical inheritance, security relevance, and remaining verification work, with Russia Desk treated as the deepest current model.",
+      "expected_output": "named instruments that perform the useful work rather than generic navigation",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0f34fd9a5a44ba183928e1ab",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/regional-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47531,
+            "sha256": "b819aeb87c2ce516ce835d5a0bc712767f08eee61c81b9dfe24b53fc629bd074"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41063,
+            "sha256": "ec4d6cb2a2aa1ccbe52a59b608190e4ec111e8e614559c783b5213759dd22eb6"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21123,
+            "sha256": "4c47b5c310d2c4f83d6a8737d21abe5ee94e0b6bee5f2d207b518708448cc4b9"
+          },
+          {
+            "relative_path": "proof_builds/regional-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23006,
+            "sha256": "57a763f61a4d309b48c1c15428e71b3890292005d252eb400e6a4e7cf747663b"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49990,
+            "sha256": "35044662b50f3c6e1cf0bb039de6844430e5418c252ecc4b694343e9da275f9c"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10596,
+            "sha256": "c773470b52c9fa5d962c91bbe06c2f52a253c40b553d751f60e973c63bd37c62"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/regional-studies/blueprint.json",
+          "project_blueprints/regional-studies/instrument_map.json",
+          "proof_builds/regional-studies/proof_build.json",
+          "proof_demos/regional-studies/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f3cb0176653cd0126971f2b2"
+    },
+    {
+      "receipt_id": "regional-studies__receipt_0004",
+      "project_id": "regional-studies",
+      "project_title": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western) Workflow Orchestration",
+      "component_case_id": "regional-studies__0004__regional-studies-eight-place-based-analytical-pages-africa-berlin-east-asia-london-mideast",
+      "claim_to_demonstrate": "Continue building case-study and bibliographic depth across the pages still at skeleton level (Africa, East Asia, Mongol). Bind every regional claim to its source register through the same source-register pipeline the rest of the portfolio is moving toward.",
+      "input_fixture": "upstream inputs, intermediate decisions, downstream products, and stale-state conditions",
+      "operation_under_test": "Continue building case-study and bibliographic depth across the pages still at skeleton level (Africa, East Asia, Mongol). Bind every regional claim to its source register through the same source-register pipeline the rest of the portfolio is moving toward.",
+      "expected_output": "pipeline path showing how work moves and when earlier decisions must be reopened",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fd96493f227a13a744bbc6d4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/regional-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47531,
+            "sha256": "b819aeb87c2ce516ce835d5a0bc712767f08eee61c81b9dfe24b53fc629bd074"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41063,
+            "sha256": "ec4d6cb2a2aa1ccbe52a59b608190e4ec111e8e614559c783b5213759dd22eb6"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21123,
+            "sha256": "4c47b5c310d2c4f83d6a8737d21abe5ee94e0b6bee5f2d207b518708448cc4b9"
+          },
+          {
+            "relative_path": "proof_builds/regional-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23006,
+            "sha256": "57a763f61a4d309b48c1c15428e71b3890292005d252eb400e6a4e7cf747663b"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49990,
+            "sha256": "35044662b50f3c6e1cf0bb039de6844430e5418c252ecc4b694343e9da275f9c"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10596,
+            "sha256": "c773470b52c9fa5d962c91bbe06c2f52a253c40b553d751f60e973c63bd37c62"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/regional-studies/blueprint.json",
+          "project_blueprints/regional-studies/instrument_map.json",
+          "proof_builds/regional-studies/proof_build.json",
+          "proof_demos/regional-studies/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d77f3297d56571da410787ca"
+    },
+    {
+      "receipt_id": "regional-studies__receipt_0005",
+      "project_id": "regional-studies",
+      "project_title": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western) Review And Governance Gate",
+      "component_case_id": "regional-studies__0005__regional-studies-eight-place-based-analytical-pages-africa-berlin-east-asia-london-mideast",
+      "claim_to_demonstrate": "Status: The eight regional study pages are represented here as a native index. Russia Desk is the deepest with the two-page split (Security Desk + History Page) and the twenty-five-seat governing faculty. Berlin, London, Mideast, and Western carry substantial.",
+      "input_fixture": "quality rules, source checks, claim ceilings, reviewer steps, and failure states",
+      "operation_under_test": "Status: The eight regional study pages are represented here as a native index. Russia Desk is the deepest with the two-page split (Security Desk + History Page) and the twenty-five-seat governing faculty. Berlin, London, Mideast, and Western carry substantial.",
+      "expected_output": "decision gate that makes the output inspectable before it is trusted",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f0a9b7ff3262d180291ae4ca",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/regional-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47531,
+            "sha256": "b819aeb87c2ce516ce835d5a0bc712767f08eee61c81b9dfe24b53fc629bd074"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41063,
+            "sha256": "ec4d6cb2a2aa1ccbe52a59b608190e4ec111e8e614559c783b5213759dd22eb6"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21123,
+            "sha256": "4c47b5c310d2c4f83d6a8737d21abe5ee94e0b6bee5f2d207b518708448cc4b9"
+          },
+          {
+            "relative_path": "proof_builds/regional-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23006,
+            "sha256": "57a763f61a4d309b48c1c15428e71b3890292005d252eb400e6a4e7cf747663b"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49990,
+            "sha256": "35044662b50f3c6e1cf0bb039de6844430e5418c252ecc4b694343e9da275f9c"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10596,
+            "sha256": "c773470b52c9fa5d962c91bbe06c2f52a253c40b553d751f60e973c63bd37c62"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/regional-studies/blueprint.json",
+          "project_blueprints/regional-studies/instrument_map.json",
+          "proof_builds/regional-studies/proof_build.json",
+          "proof_demos/regional-studies/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1561f4cbb5cd5bd287b6b542"
+    },
+    {
+      "receipt_id": "regional-studies__receipt_0006",
+      "project_id": "regional-studies",
+      "project_title": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western) Export Or Integration Surface",
+      "component_case_id": "regional-studies__0006__regional-studies-eight-place-based-analytical-pages-africa-berlin-east-asia-london-mideast",
+      "claim_to_demonstrate": "The eight regional study pages are represented here as a native index. Russia Desk is the deepest with the two-page split (Security Desk + History Page) and the twenty-five-seat governing faculty. Berlin, London, Mideast, and Western carry substantial.",
+      "input_fixture": "brief, paper, room, dataset, packet, rendered page, or external handoff",
+      "operation_under_test": "The eight regional study pages are represented here as a native index. Russia Desk is the deepest with the two-page split (Security Desk + History Page) and the twenty-five-seat governing faculty. Berlin, London, Mideast, and Western carry substantial.",
+      "expected_output": "usable output that another project, professor, employer, or collaborator can inspect",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "577c94f4228762f7478a15a0",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/regional-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47531,
+            "sha256": "b819aeb87c2ce516ce835d5a0bc712767f08eee61c81b9dfe24b53fc629bd074"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41063,
+            "sha256": "ec4d6cb2a2aa1ccbe52a59b608190e4ec111e8e614559c783b5213759dd22eb6"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21123,
+            "sha256": "4c47b5c310d2c4f83d6a8737d21abe5ee94e0b6bee5f2d207b518708448cc4b9"
+          },
+          {
+            "relative_path": "proof_builds/regional-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23006,
+            "sha256": "57a763f61a4d309b48c1c15428e71b3890292005d252eb400e6a4e7cf747663b"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49990,
+            "sha256": "35044662b50f3c6e1cf0bb039de6844430e5418c252ecc4b694343e9da275f9c"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10596,
+            "sha256": "c773470b52c9fa5d962c91bbe06c2f52a253c40b553d751f60e973c63bd37c62"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/regional-studies/blueprint.json",
+          "project_blueprints/regional-studies/instrument_map.json",
+          "proof_builds/regional-studies/proof_build.json",
+          "proof_demos/regional-studies/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "98c08cb8c12eeb2296f4208e"
+    },
+    {
+      "receipt_id": "regional-studies__receipt_0007",
+      "project_id": "regional-studies",
+      "project_title": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western) Build Verification Queue",
+      "component_case_id": "regional-studies__0007__regional-studies-eight-place-based-analytical-pages-africa-berlin-east-asia-london-mideast",
+      "claim_to_demonstrate": "Remaining gaps: continue building case-study and bibliographic depth across the pages still at skeleton level (Africa, East Asia, Mongol). Bind every regional claim to its source register through the same source-register pipeline the rest of the portfolio is.",
+      "input_fixture": "unbuilt modules, missing walkthroughs, test cases, and validation evidence",
+      "operation_under_test": "Remaining gaps: continue building case-study and bibliographic depth across the pages still at skeleton level (Africa, East Asia, Mongol). Bind every regional claim to its source register through the same source-register pipeline the rest of the portfolio is.",
+      "expected_output": "next proof needed before broader claims about the tool are safe",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e350b0e07ab7b9d385896d3e",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/regional-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47531,
+            "sha256": "b819aeb87c2ce516ce835d5a0bc712767f08eee61c81b9dfe24b53fc629bd074"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41063,
+            "sha256": "ec4d6cb2a2aa1ccbe52a59b608190e4ec111e8e614559c783b5213759dd22eb6"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21123,
+            "sha256": "4c47b5c310d2c4f83d6a8737d21abe5ee94e0b6bee5f2d207b518708448cc4b9"
+          },
+          {
+            "relative_path": "proof_builds/regional-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23006,
+            "sha256": "57a763f61a4d309b48c1c15428e71b3890292005d252eb400e6a4e7cf747663b"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49990,
+            "sha256": "35044662b50f3c6e1cf0bb039de6844430e5418c252ecc4b694343e9da275f9c"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10596,
+            "sha256": "c773470b52c9fa5d962c91bbe06c2f52a253c40b553d751f60e973c63bd37c62"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/regional-studies/blueprint.json",
+          "project_blueprints/regional-studies/instrument_map.json",
+          "proof_builds/regional-studies/proof_build.json",
+          "proof_demos/regional-studies/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "13ef04b12ea0cbc5a4d4fa5a"
+    },
+    {
+      "receipt_id": "regional-studies__receipt_0008",
+      "project_id": "regional-studies",
+      "project_title": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western) / Russia Desk",
+      "component_case_id": "regional-studies__0008__regional-studies-eight-place-based-analytical-pages-africa-berlin-east-asia-london-mideast",
+      "claim_to_demonstrate": "treats `Russia Desk` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: It separates each regional page by case scope, source spine, historical inheritance, security relevance, and.",
+      "input_fixture": "project source text and the named component `Russia Desk`",
+      "operation_under_test": "treats `Russia Desk` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: It separates each regional page by case scope, source spine, historical inheritance, security relevance, and.",
+      "expected_output": "a room, workbench, or interface function tied to `Russia Desk`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5830ea4c3ad64e4d958e83f9",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/regional-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47531,
+            "sha256": "b819aeb87c2ce516ce835d5a0bc712767f08eee61c81b9dfe24b53fc629bd074"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41063,
+            "sha256": "ec4d6cb2a2aa1ccbe52a59b608190e4ec111e8e614559c783b5213759dd22eb6"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21123,
+            "sha256": "4c47b5c310d2c4f83d6a8737d21abe5ee94e0b6bee5f2d207b518708448cc4b9"
+          },
+          {
+            "relative_path": "proof_builds/regional-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23006,
+            "sha256": "57a763f61a4d309b48c1c15428e71b3890292005d252eb400e6a4e7cf747663b"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49990,
+            "sha256": "35044662b50f3c6e1cf0bb039de6844430e5418c252ecc4b694343e9da275f9c"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10596,
+            "sha256": "c773470b52c9fa5d962c91bbe06c2f52a253c40b553d751f60e973c63bd37c62"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/regional-studies/blueprint.json",
+          "project_blueprints/regional-studies/instrument_map.json",
+          "proof_builds/regional-studies/proof_build.json",
+          "proof_demos/regional-studies/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "146efa46cc9ae4cbc7cccf82"
+    },
+    {
+      "receipt_id": "regional-studies__receipt_0009",
+      "project_id": "regional-studies",
+      "project_title": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western) / Security Desk",
+      "component_case_id": "regional-studies__0009__regional-studies-eight-place-based-analytical-pages-africa-berlin-east-asia-london-mideast",
+      "claim_to_demonstrate": "treats `Security Desk` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Russia Desk is the deepest with the two-page split (Security Desk + History Page) and the twenty-five-seat.",
+      "input_fixture": "project source text and the named component `Security Desk`",
+      "operation_under_test": "treats `Security Desk` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Russia Desk is the deepest with the two-page split (Security Desk + History Page) and the twenty-five-seat.",
+      "expected_output": "a room, workbench, or interface function tied to `Security Desk`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d89a56132bb123ce5d190a8a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/regional-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47531,
+            "sha256": "b819aeb87c2ce516ce835d5a0bc712767f08eee61c81b9dfe24b53fc629bd074"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41063,
+            "sha256": "ec4d6cb2a2aa1ccbe52a59b608190e4ec111e8e614559c783b5213759dd22eb6"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21123,
+            "sha256": "4c47b5c310d2c4f83d6a8737d21abe5ee94e0b6bee5f2d207b518708448cc4b9"
+          },
+          {
+            "relative_path": "proof_builds/regional-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23006,
+            "sha256": "57a763f61a4d309b48c1c15428e71b3890292005d252eb400e6a4e7cf747663b"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49990,
+            "sha256": "35044662b50f3c6e1cf0bb039de6844430e5418c252ecc4b694343e9da275f9c"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10596,
+            "sha256": "c773470b52c9fa5d962c91bbe06c2f52a253c40b553d751f60e973c63bd37c62"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/regional-studies/blueprint.json",
+          "project_blueprints/regional-studies/instrument_map.json",
+          "proof_builds/regional-studies/proof_build.json",
+          "proof_demos/regional-studies/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a9a02e45c7538149e56e7c10"
+    },
+    {
+      "receipt_id": "regional-studies__receipt_0010",
+      "project_id": "regional-studies",
+      "project_title": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western) / History Page",
+      "component_case_id": "regional-studies__0010__regional-studies-eight-place-based-analytical-pages-africa-berlin-east-asia-london-mideast",
+      "claim_to_demonstrate": "uses `History Page` as a named project component with a traceable role in the public mechanism. Source context: Russia Desk is the deepest with the two-page split (Security Desk + History Page) and the twenty-five-seat governing faculty. Berlin, London.",
+      "input_fixture": "project source text and the named component `History Page`",
+      "operation_under_test": "uses `History Page` as a named project component with a traceable role in the public mechanism. Source context: Russia Desk is the deepest with the two-page split (Security Desk + History Page) and the twenty-five-seat governing faculty. Berlin, London.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `History Page`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d89a56132bb123ce5d190a8a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/regional-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47531,
+            "sha256": "b819aeb87c2ce516ce835d5a0bc712767f08eee61c81b9dfe24b53fc629bd074"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41063,
+            "sha256": "ec4d6cb2a2aa1ccbe52a59b608190e4ec111e8e614559c783b5213759dd22eb6"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21123,
+            "sha256": "4c47b5c310d2c4f83d6a8737d21abe5ee94e0b6bee5f2d207b518708448cc4b9"
+          },
+          {
+            "relative_path": "proof_builds/regional-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23006,
+            "sha256": "57a763f61a4d309b48c1c15428e71b3890292005d252eb400e6a4e7cf747663b"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49990,
+            "sha256": "35044662b50f3c6e1cf0bb039de6844430e5418c252ecc4b694343e9da275f9c"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10596,
+            "sha256": "c773470b52c9fa5d962c91bbe06c2f52a253c40b553d751f60e973c63bd37c62"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/regional-studies/blueprint.json",
+          "project_blueprints/regional-studies/instrument_map.json",
+          "proof_builds/regional-studies/proof_build.json",
+          "proof_demos/regional-studies/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1349751571b481adb5c8f95c"
+    },
+    {
+      "receipt_id": "regional-studies__receipt_0011",
+      "project_id": "regional-studies",
+      "project_title": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western) / East Asia",
+      "component_case_id": "regional-studies__0011__regional-studies-eight-place-based-analytical-pages-africa-berlin-east-asia-london-mideast",
+      "claim_to_demonstrate": "uses `East Asia` as a named project component with a traceable role in the public mechanism. Source context: Africa, East Asia, and Mongol carry structural skeletons that continue to grow. Continue building case-study and bibliographic depth across the pages.",
+      "input_fixture": "project source text and the named component `East Asia`",
+      "operation_under_test": "uses `East Asia` as a named project component with a traceable role in the public mechanism. Source context: Africa, East Asia, and Mongol carry structural skeletons that continue to grow. Continue building case-study and bibliographic depth across the pages.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `East Asia`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "60464f5a90defa03ebb4cbc3",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/regional-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47531,
+            "sha256": "b819aeb87c2ce516ce835d5a0bc712767f08eee61c81b9dfe24b53fc629bd074"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41063,
+            "sha256": "ec4d6cb2a2aa1ccbe52a59b608190e4ec111e8e614559c783b5213759dd22eb6"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21123,
+            "sha256": "4c47b5c310d2c4f83d6a8737d21abe5ee94e0b6bee5f2d207b518708448cc4b9"
+          },
+          {
+            "relative_path": "proof_builds/regional-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23006,
+            "sha256": "57a763f61a4d309b48c1c15428e71b3890292005d252eb400e6a4e7cf747663b"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49990,
+            "sha256": "35044662b50f3c6e1cf0bb039de6844430e5418c252ecc4b694343e9da275f9c"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10596,
+            "sha256": "c773470b52c9fa5d962c91bbe06c2f52a253c40b553d751f60e973c63bd37c62"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/regional-studies/blueprint.json",
+          "project_blueprints/regional-studies/instrument_map.json",
+          "proof_builds/regional-studies/proof_build.json",
+          "proof_demos/regional-studies/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b9321b2ccce2256ac9748805"
+    },
+    {
+      "receipt_id": "regional-studies__receipt_0012",
+      "project_id": "regional-studies",
+      "project_title": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western) / Once the",
+      "component_case_id": "regional-studies__0012__regional-studies-eight-place-based-analytical-pages-africa-berlin-east-asia-london-mideast",
+      "claim_to_demonstrate": "uses `Once the` as a named project component with a traceable role in the public mechanism. Source context: Once the binding lands across all eight surfaces, the regional pillar becomes a uniformly source-bound analytical layer rather than a varied-density.",
+      "input_fixture": "project source text and the named component `Once the`",
+      "operation_under_test": "uses `Once the` as a named project component with a traceable role in the public mechanism. Source context: Once the binding lands across all eight surfaces, the regional pillar becomes a uniformly source-bound analytical layer rather than a varied-density.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Once the`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c4f3ce232b41246246948de7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/regional-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47531,
+            "sha256": "b819aeb87c2ce516ce835d5a0bc712767f08eee61c81b9dfe24b53fc629bd074"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41063,
+            "sha256": "ec4d6cb2a2aa1ccbe52a59b608190e4ec111e8e614559c783b5213759dd22eb6"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21123,
+            "sha256": "4c47b5c310d2c4f83d6a8737d21abe5ee94e0b6bee5f2d207b518708448cc4b9"
+          },
+          {
+            "relative_path": "proof_builds/regional-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23006,
+            "sha256": "57a763f61a4d309b48c1c15428e71b3890292005d252eb400e6a4e7cf747663b"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49990,
+            "sha256": "35044662b50f3c6e1cf0bb039de6844430e5418c252ecc4b694343e9da275f9c"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10596,
+            "sha256": "c773470b52c9fa5d962c91bbe06c2f52a253c40b553d751f60e973c63bd37c62"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/regional-studies/blueprint.json",
+          "project_blueprints/regional-studies/instrument_map.json",
+          "proof_builds/regional-studies/proof_build.json",
+          "proof_demos/regional-studies/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e2dd00442b30b96e2c26df16"
+    },
+    {
+      "receipt_id": "regional-studies__receipt_0013",
+      "project_id": "regional-studies",
+      "project_title": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western) / Chronicle",
+      "component_case_id": "regional-studies__0013__regional-studies-eight-place-based-analytical-pages-africa-berlin-east-asia-london-mideast",
+      "claim_to_demonstrate": "uses `Chronicle` as a named project component with a traceable role in the public mechanism. Source context: chronicle-register longue duree. The pillar is what gives the rest of the portfolio geographic and historical breadth without diluting analytical.",
+      "input_fixture": "project source text and the named component `Chronicle`",
+      "operation_under_test": "uses `Chronicle` as a named project component with a traceable role in the public mechanism. Source context: chronicle-register longue duree. The pillar is what gives the rest of the portfolio geographic and historical breadth without diluting analytical.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Chronicle`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "377b3800f44b1b9c38536725",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/regional-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47531,
+            "sha256": "b819aeb87c2ce516ce835d5a0bc712767f08eee61c81b9dfe24b53fc629bd074"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41063,
+            "sha256": "ec4d6cb2a2aa1ccbe52a59b608190e4ec111e8e614559c783b5213759dd22eb6"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21123,
+            "sha256": "4c47b5c310d2c4f83d6a8737d21abe5ee94e0b6bee5f2d207b518708448cc4b9"
+          },
+          {
+            "relative_path": "proof_builds/regional-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23006,
+            "sha256": "57a763f61a4d309b48c1c15428e71b3890292005d252eb400e6a4e7cf747663b"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49990,
+            "sha256": "35044662b50f3c6e1cf0bb039de6844430e5418c252ecc4b694343e9da275f9c"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10596,
+            "sha256": "c773470b52c9fa5d962c91bbe06c2f52a253c40b553d751f60e973c63bd37c62"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/regional-studies/blueprint.json",
+          "project_blueprints/regional-studies/instrument_map.json",
+          "proof_builds/regional-studies/proof_build.json",
+          "proof_demos/regional-studies/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "929919c6045842e6b89709f6"
+    },
+    {
+      "receipt_id": "regional-studies__receipt_0014",
+      "project_id": "regional-studies",
+      "project_title": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western) / Historical Inheritance",
+      "component_case_id": "regional-studies__0014__regional-studies-eight-place-based-analytical-pages-africa-berlin-east-asia-london-mideast",
+      "claim_to_demonstrate": "uses `Historical Inheritance` as a named project component with a traceable role in the public mechanism. Source context: It separates each regional page by case scope, source spine, historical inheritance, security relevance, and remaining verification work.",
+      "input_fixture": "project source text and the named component `Historical Inheritance`",
+      "operation_under_test": "uses `Historical Inheritance` as a named project component with a traceable role in the public mechanism. Source context: It separates each regional page by case scope, source spine, historical inheritance, security relevance, and remaining verification work.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Historical Inheritance`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5830ea4c3ad64e4d958e83f9",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/regional-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47531,
+            "sha256": "b819aeb87c2ce516ce835d5a0bc712767f08eee61c81b9dfe24b53fc629bd074"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41063,
+            "sha256": "ec4d6cb2a2aa1ccbe52a59b608190e4ec111e8e614559c783b5213759dd22eb6"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21123,
+            "sha256": "4c47b5c310d2c4f83d6a8737d21abe5ee94e0b6bee5f2d207b518708448cc4b9"
+          },
+          {
+            "relative_path": "proof_builds/regional-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23006,
+            "sha256": "57a763f61a4d309b48c1c15428e71b3890292005d252eb400e6a4e7cf747663b"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49990,
+            "sha256": "35044662b50f3c6e1cf0bb039de6844430e5418c252ecc4b694343e9da275f9c"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10596,
+            "sha256": "c773470b52c9fa5d962c91bbe06c2f52a253c40b553d751f60e973c63bd37c62"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/regional-studies/blueprint.json",
+          "project_blueprints/regional-studies/instrument_map.json",
+          "proof_builds/regional-studies/proof_build.json",
+          "proof_demos/regional-studies/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "61cc51eeb42449083a29ba57"
+    },
+    {
+      "receipt_id": "regional-studies__receipt_0015",
+      "project_id": "regional-studies",
+      "project_title": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western) / Security Relevance",
+      "component_case_id": "regional-studies__0015__regional-studies-eight-place-based-analytical-pages-africa-berlin-east-asia-london-mideast",
+      "claim_to_demonstrate": "uses `Security Relevance` as a named project component with a traceable role in the public mechanism. Source context: It separates each regional page by case scope, source spine, historical inheritance, security relevance, and remaining verification work.",
+      "input_fixture": "project source text and the named component `Security Relevance`",
+      "operation_under_test": "uses `Security Relevance` as a named project component with a traceable role in the public mechanism. Source context: It separates each regional page by case scope, source spine, historical inheritance, security relevance, and remaining verification work.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Security Relevance`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5830ea4c3ad64e4d958e83f9",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/regional-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47531,
+            "sha256": "b819aeb87c2ce516ce835d5a0bc712767f08eee61c81b9dfe24b53fc629bd074"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41063,
+            "sha256": "ec4d6cb2a2aa1ccbe52a59b608190e4ec111e8e614559c783b5213759dd22eb6"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21123,
+            "sha256": "4c47b5c310d2c4f83d6a8737d21abe5ee94e0b6bee5f2d207b518708448cc4b9"
+          },
+          {
+            "relative_path": "proof_builds/regional-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23006,
+            "sha256": "57a763f61a4d309b48c1c15428e71b3890292005d252eb400e6a4e7cf747663b"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49990,
+            "sha256": "35044662b50f3c6e1cf0bb039de6844430e5418c252ecc4b694343e9da275f9c"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10596,
+            "sha256": "c773470b52c9fa5d962c91bbe06c2f52a253c40b553d751f60e973c63bd37c62"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/regional-studies/blueprint.json",
+          "project_blueprints/regional-studies/instrument_map.json",
+          "proof_builds/regional-studies/proof_build.json",
+          "proof_demos/regional-studies/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "aa72a723ff12a2685d8adc2c"
+    },
+    {
+      "receipt_id": "regional-studies__receipt_0016",
+      "project_id": "regional-studies",
+      "project_title": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western) / Remaining Verification Work",
+      "component_case_id": "regional-studies__0016__regional-studies-eight-place-based-analytical-pages-africa-berlin-east-asia-london-mideast",
+      "claim_to_demonstrate": "uses `Remaining Verification Work` as a named project component with a traceable role in the public mechanism. Source context: It separates each regional page by case scope, source spine, historical inheritance, security relevance, and remaining verification.",
+      "input_fixture": "project source text and the named component `Remaining Verification Work`",
+      "operation_under_test": "uses `Remaining Verification Work` as a named project component with a traceable role in the public mechanism. Source context: It separates each regional page by case scope, source spine, historical inheritance, security relevance, and remaining verification.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Remaining Verification Work`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5830ea4c3ad64e4d958e83f9",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/regional-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47531,
+            "sha256": "b819aeb87c2ce516ce835d5a0bc712767f08eee61c81b9dfe24b53fc629bd074"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41063,
+            "sha256": "ec4d6cb2a2aa1ccbe52a59b608190e4ec111e8e614559c783b5213759dd22eb6"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21123,
+            "sha256": "4c47b5c310d2c4f83d6a8737d21abe5ee94e0b6bee5f2d207b518708448cc4b9"
+          },
+          {
+            "relative_path": "proof_builds/regional-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23006,
+            "sha256": "57a763f61a4d309b48c1c15428e71b3890292005d252eb400e6a4e7cf747663b"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49990,
+            "sha256": "35044662b50f3c6e1cf0bb039de6844430e5418c252ecc4b694343e9da275f9c"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10596,
+            "sha256": "c773470b52c9fa5d962c91bbe06c2f52a253c40b553d751f60e973c63bd37c62"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/regional-studies/blueprint.json",
+          "project_blueprints/regional-studies/instrument_map.json",
+          "proof_builds/regional-studies/proof_build.json",
+          "proof_demos/regional-studies/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "679f5b502e355ee533226d4b"
+    },
+    {
+      "receipt_id": "regional-studies__receipt_0017",
+      "project_id": "regional-studies",
+      "project_title": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western) / Page Split (Security Desk + History Page) And The Twenty",
+      "component_case_id": "regional-studies__0017__regional-studies-eight-place-based-analytical-pages-africa-berlin-east-asia-london-mideast",
+      "claim_to_demonstrate": "treats `Page Split (Security Desk + History Page) And The Twenty` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Russia Desk is the deepest with the two-page split (Security.",
+      "input_fixture": "project source text and the named component `Page Split (Security Desk + History Page) And The Twenty`",
+      "operation_under_test": "treats `Page Split (Security Desk + History Page) And The Twenty` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Russia Desk is the deepest with the two-page split (Security.",
+      "expected_output": "a room, workbench, or interface function tied to `Page Split (Security Desk + History Page) And The Twenty`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d89a56132bb123ce5d190a8a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/regional-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47531,
+            "sha256": "b819aeb87c2ce516ce835d5a0bc712767f08eee61c81b9dfe24b53fc629bd074"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41063,
+            "sha256": "ec4d6cb2a2aa1ccbe52a59b608190e4ec111e8e614559c783b5213759dd22eb6"
+          },
+          {
+            "relative_path": "project_blueprints/regional-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21123,
+            "sha256": "4c47b5c310d2c4f83d6a8737d21abe5ee94e0b6bee5f2d207b518708448cc4b9"
+          },
+          {
+            "relative_path": "proof_builds/regional-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23006,
+            "sha256": "57a763f61a4d309b48c1c15428e71b3890292005d252eb400e6a4e7cf747663b"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49990,
+            "sha256": "35044662b50f3c6e1cf0bb039de6844430e5418c252ecc4b694343e9da275f9c"
+          },
+          {
+            "relative_path": "proof_demos/regional-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10596,
+            "sha256": "c773470b52c9fa5d962c91bbe06c2f52a253c40b553d751f60e973c63bd37c62"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/regional-studies/blueprint.json",
+          "project_blueprints/regional-studies/instrument_map.json",
+          "proof_builds/regional-studies/proof_build.json",
+          "proof_demos/regional-studies/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "85cb4d795a42cee83dd71889"
+    }
+  ]
+}

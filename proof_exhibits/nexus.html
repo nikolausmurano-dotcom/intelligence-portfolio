@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nexus / Discovery Engine Proof Exhibit</title>
+<style>
+:root {
+  color-scheme: light;
+  --paper: #f7f5ef;
+  --ink: #152231;
+  --muted: #586474;
+  --rule: rgba(35, 55, 77, .18);
+  --accent: #7a4d18;
+  --blue: #1e4d6b;
+  --green: #2f6048;
+  --red: #7a2730;
+  --white: rgba(255,255,255,.86);
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, 'Times New Roman', serif; background: var(--paper); color: var(--ink); }
+main { max-width: 1180px; margin: 0 auto; padding: 38px 22px 72px; }
+a { color: #183f65; }
+h1 { font-size: clamp(34px, 5vw, 56px); line-height: 1; font-weight: 500; margin: 0 0 14px; }
+h2 { font-size: 26px; margin: 24px 0 10px; }
+h3 { font-size: 15px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 0 0 8px; }
+p, li { line-height: 1.58; }
+.lead { max-width: 920px; font-size: 18px; line-height: 1.62; }
+.topline { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); font-size: 11px; margin-bottom: 12px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.card, .panel, .stage, .result, .case-box { background: var(--white); border: 1px solid var(--rule); border-radius: 8px; padding: 16px; }
+.panel { margin: 18px 0; }
+.stage { min-height: 110px; transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease; }
+.stage.active { border-color: rgba(30,77,107,.72); box-shadow: inset 3px 0 0 var(--blue); transform: translateY(-1px); }
+.stage.stale { border-color: rgba(122,39,48,.65); box-shadow: inset 3px 0 0 var(--red); }
+.stage.done { border-color: rgba(47,96,72,.62); box-shadow: inset 3px 0 0 var(--green); }
+.kicker { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: #667085; }
+.button-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0; }
+button, .button { border: 1px solid rgba(30,77,107,.35); background: #fff; color: var(--ink); border-radius: 6px; padding: 9px 12px; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 12px; cursor: pointer; text-decoration: none; }
+button:hover, .button:hover { border-color: rgba(30,77,107,.8); }
+.meter { height: 9px; border-radius: 99px; background: rgba(21,34,49,.12); overflow: hidden; }
+.meter span { display: block; height: 100%; width: 0%; background: linear-gradient(90deg, #2f6048, #7a4d18, #7a2730); transition: width .25s ease; }
+.mono { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 12px; }
+.trace { white-space: pre-wrap; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 12px; line-height: 1.55; background: #fff; border: 1px solid var(--rule); border-radius: 8px; padding: 14px; }
+.split { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(280px,.9fr); gap: 16px; align-items: start; }
+.small { font-size: 13px; color: var(--muted); }
+input, select { width: 100%; border: 1px solid var(--rule); border-radius: 6px; padding: 10px; background: #fff; color: var(--ink); }
+table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; }
+th, td { padding: 10px; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+th { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+@media (max-width: 780px) {
+  main { padding: 28px 18px 58px; }
+  .split { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<main>
+
+<div class="topline">Executable proof exhibit</div>
+<h1>Nexus / Discovery Engine</h1>
+<p class="lead">This exhibit demonstrates the distinctive Nexus claim: the system is not merely a project list or search page. It has two linked engines: cross-field mechanism transfer and dependency-aware academic workflow. The proof is whether a mechanism can move across fields with boundary pressure, and whether downstream research stages become stale when upstream decisions change.</p>
+<section class="panel">
+<h2>Cross-Field Mechanism Transfer</h2>
+<div class="button-row"><button id="runTransfer">Run transfer route</button><button id="rejectAnalogy">Reject weak analogy</button></div>
+<div class="grid" id="transferStages"></div>
+<div class="trace" id="transferTrace"></div>
+</section>
+<section class="panel">
+<h2>Upstream / Downstream Stale-State Propagation</h2>
+<p>Changing a problem statement late in the process should not leave methodology, analysis, and conclusion falsely marked as ready.</p>
+<div class="button-row"><button id="changeProblem">Change problem statement</button><button id="repairPipeline">Repair affected stages</button></div>
+<div class="grid" id="academicStages"></div>
+<div class="trace" id="staleTrace"></div>
+</section>
+
+</main>
+
+<script>
+const transfer = [
+ ['Observatory','Survey field landscape and mechanism families.'],
+ ['Scanner','Search adjacent and distant disciplines for signals.'],
+ ['Bridge','Build structural holes deliberately rather than by keyword adjacency.'],
+ ['Cross-Pollination Lab','Map source-field mechanism to target-field pressure.'],
+ ['Assay Lab','Test transferability against context, timing, and language.'],
+ ['Crucible','Stress the analogy; reject false matches.'],
+ ['Incubator','Hold surviving idea under boundary conditions.'],
+ ['Forge','Convert into a claim, method, evidence plan, and paper route.']
+];
+const academic = ['Problem statement','Literature review','Methodology','Analysis','Discussion','Conclusion','Editing','Forge release'];
+let rejected = false;
+let changed = false;
+function renderTransfer(active=-1){
+ document.getElementById('transferStages').innerHTML = transfer.map((s,i)=>`<div class="stage ${i<=active?'done':''}"><div class="kicker">Stage ${String(i+1).padStart(2,'0')}</div><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join('');
+}
+function renderAcademic(){
+ document.getElementById('academicStages').innerHTML = academic.map((s,i)=>{
+   const cls = changed && i>0 ? 'stale' : 'done';
+   return `<div class="stage ${cls}"><div class="kicker">Research stage</div><h3>${s}</h3><p>${changed && i>0 ? 'Review required because the upstream frame changed.' : 'Current state accepted under the active project frame.'}</p></div>`;
+ }).join('');
+}
+document.getElementById('runTransfer').onclick = () => {
+ rejected = false; renderTransfer(7);
+ document.getElementById('transferTrace').textContent = [
+ 'INPUT: low-rate evidence corruption in retrieval-supported intelligence workflows.',
+ 'SOURCE FIELD: layered air defense and mixed-speed salvo management.',
+ 'TRANSFER: cheap decoys and slow contamination both consume scarce defensive attention at different tempos.',
+ 'BOUNDARY: the analogy is not about weapons; it is about timing, saturation, and reviewer resource allocation.',
+ 'OUTPUT: research object routed to Forge with claim ceiling and dependency links.'
+ ].join('\n');
+};
+document.getElementById('rejectAnalogy').onclick = () => {
+ rejected = true; renderTransfer(5);
+ document.getElementById('transferTrace').textContent = [
+ 'REJECTION EVENT: the system rejects a mere metaphor.',
+ 'WHY: if the source-field mechanism cannot specify timing, resource asymmetry, and failure condition, it cannot move into the target field.',
+ 'VALUE: novelty is not enough; transferable mechanism must survive pressure.'
+ ].join('\n');
+};
+document.getElementById('changeProblem').onclick = () => {
+ changed = true; renderAcademic();
+ document.getElementById('staleTrace').textContent = [
+ 'UPSTREAM CHANGE: from "AI-assisted analysts resist corrupted evidence" to "human-AI teams distribute detection burden differently across corruption families."',
+ 'DOWNSTREAM EFFECT: literature review, methodology, analysis, discussion, conclusion, editing, and Forge release become review-required.',
+ 'CLAIM: the pipeline prevents a late-stage paper from preserving stale assumptions silently.'
+ ].join('\n');
+};
+document.getElementById('repairPipeline').onclick = () => {
+ changed = false; renderAcademic();
+ document.getElementById('staleTrace').textContent = 'REPAIR EVENT: dependent sections are reconciled and the project may move forward under the revised frame.';
+};
+renderTransfer(); renderAcademic();
+document.getElementById('runTransfer').click();
+</script>
+
+</body>
+</html>

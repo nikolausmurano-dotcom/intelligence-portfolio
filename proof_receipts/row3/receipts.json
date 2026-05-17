@@ -1,0 +1,1436 @@
+{
+  "project": {
+    "project_id": "row3",
+    "title": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries"
+  },
+  "receipts": [
+    {
+      "receipt_id": "row3__receipt_0001",
+      "project_id": "row3",
+      "project_title": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries Runtime Or Interface Surface",
+      "component_case_id": "row3__0001__ai-extraction-defense-five-layer-architecture-protecting-proprietary-ai-models-from-being-",
+      "claim_to_demonstrate": "An extraction-defense architecture for protecting valuable analytical models from copying, distillation, or downstream imitation.",
+      "input_fixture": "local app, web room, data surface, or workstation entry point",
+      "operation_under_test": "An extraction-defense architecture for protecting valuable analytical models from copying, distillation, or downstream imitation.",
+      "expected_output": "reader-facing definition of the software object and its intended user",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8fd882083e0f8259b8a06f60",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row3/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49582,
+            "sha256": "afd2e1b0ceb3521a49506e43e874d9889251b7c59c60b48a0073d6e0bc7395b0"
+          },
+          {
+            "relative_path": "project_blueprints/row3/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41687,
+            "sha256": "f5e8d9b43787e75fd6251d487f319c7868921443ba9f24b7c4c10bda6da1943c"
+          },
+          {
+            "relative_path": "project_blueprints/row3/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22960,
+            "sha256": "25dc891aaa2f6641229fbc8d090a4238c0d49c6fb669999b628ed638b5191db3"
+          },
+          {
+            "relative_path": "proof_builds/row3/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23508,
+            "sha256": "ae9ddf7369e96d64e00b5050d8f01c52cef6177bcb4be4dd99320ef351c6b6e0"
+          },
+          {
+            "relative_path": "proof_demos/row3/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50551,
+            "sha256": "ee67b2ca7e19d8ca6728abf3ba4f5f1e1161d13588869b10a5969069828e2b56"
+          },
+          {
+            "relative_path": "proof_demos/row3/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10558,
+            "sha256": "2c32b3a0425c5750531636f3369bdb94f08e71e3f48770efe8aba86f7d6e8198"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row3/blueprint.json",
+          "project_blueprints/row3/instrument_map.json",
+          "proof_builds/row3/proof_build.json",
+          "proof_demos/row3/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7f2330bed447078dc2267afe"
+    },
+    {
+      "receipt_id": "row3__receipt_0002",
+      "project_id": "row3",
+      "project_title": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries Data And State Model",
+      "component_case_id": "row3__0002__ai-extraction-defense-five-layer-architecture-protecting-proprietary-ai-models-from-being-",
+      "claim_to_demonstrate": "Source use is organized by role: method authorities, domain evidence, technical background, implementation evidence, and claim limits. The page should show why each source matters; direct quotations and stronger factual claims still require exact passage.",
+      "input_fixture": "records, files, indexes, tables, project state, source state, and user decisions",
+      "operation_under_test": "Source use is organized by role: method authorities, domain evidence, technical background, implementation evidence, and claim limits. The page should show why each source matters; direct quotations and stronger factual claims still require exact passage.",
+      "expected_output": "state model that explains what the tool remembers and what it refuses to infer",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4da81596b91ff65b95cc789b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row3/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49582,
+            "sha256": "afd2e1b0ceb3521a49506e43e874d9889251b7c59c60b48a0073d6e0bc7395b0"
+          },
+          {
+            "relative_path": "project_blueprints/row3/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41687,
+            "sha256": "f5e8d9b43787e75fd6251d487f319c7868921443ba9f24b7c4c10bda6da1943c"
+          },
+          {
+            "relative_path": "project_blueprints/row3/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22960,
+            "sha256": "25dc891aaa2f6641229fbc8d090a4238c0d49c6fb669999b628ed638b5191db3"
+          },
+          {
+            "relative_path": "proof_builds/row3/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23508,
+            "sha256": "ae9ddf7369e96d64e00b5050d8f01c52cef6177bcb4be4dd99320ef351c6b6e0"
+          },
+          {
+            "relative_path": "proof_demos/row3/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50551,
+            "sha256": "ee67b2ca7e19d8ca6728abf3ba4f5f1e1161d13588869b10a5969069828e2b56"
+          },
+          {
+            "relative_path": "proof_demos/row3/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10558,
+            "sha256": "2c32b3a0425c5750531636f3369bdb94f08e71e3f48770efe8aba86f7d6e8198"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row3/blueprint.json",
+          "project_blueprints/row3/instrument_map.json",
+          "proof_builds/row3/proof_build.json",
+          "proof_demos/row3/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a0096d909b097e2236d55aab"
+    },
+    {
+      "receipt_id": "row3__receipt_0003",
+      "project_id": "row3",
+      "project_title": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries Core Instrument Panel",
+      "component_case_id": "row3__0003__ai-extraction-defense-five-layer-architecture-protecting-proprietary-ai-models-from-being-",
+      "claim_to_demonstrate": "It treats model extraction as a counterintelligence problem: L1 behavioral shaping, L2 dynamic controls, L3 canary narratives, L4 tarpit/degraded-environment design, access segmentation, query-behavior signals, output fingerprinting, latency injection.",
+      "input_fixture": "tool buttons, rooms, workflow steps, analytical controls, and review surfaces",
+      "operation_under_test": "It treats model extraction as a counterintelligence problem: L1 behavioral shaping, L2 dynamic controls, L3 canary narratives, L4 tarpit/degraded-environment design, access segmentation, query-behavior signals, output fingerprinting, latency injection.",
+      "expected_output": "named instruments that perform the useful work rather than generic navigation",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0f34fd9a5a44ba183928e1ab",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row3/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49582,
+            "sha256": "afd2e1b0ceb3521a49506e43e874d9889251b7c59c60b48a0073d6e0bc7395b0"
+          },
+          {
+            "relative_path": "project_blueprints/row3/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41687,
+            "sha256": "f5e8d9b43787e75fd6251d487f319c7868921443ba9f24b7c4c10bda6da1943c"
+          },
+          {
+            "relative_path": "project_blueprints/row3/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22960,
+            "sha256": "25dc891aaa2f6641229fbc8d090a4238c0d49c6fb669999b628ed638b5191db3"
+          },
+          {
+            "relative_path": "proof_builds/row3/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23508,
+            "sha256": "ae9ddf7369e96d64e00b5050d8f01c52cef6177bcb4be4dd99320ef351c6b6e0"
+          },
+          {
+            "relative_path": "proof_demos/row3/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50551,
+            "sha256": "ee67b2ca7e19d8ca6728abf3ba4f5f1e1161d13588869b10a5969069828e2b56"
+          },
+          {
+            "relative_path": "proof_demos/row3/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10558,
+            "sha256": "2c32b3a0425c5750531636f3369bdb94f08e71e3f48770efe8aba86f7d6e8198"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row3/blueprint.json",
+          "project_blueprints/row3/instrument_map.json",
+          "proof_builds/row3/proof_build.json",
+          "proof_demos/row3/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "bc7d670d4d8115f8b118240f"
+    },
+    {
+      "receipt_id": "row3__receipt_0004",
+      "project_id": "row3",
+      "project_title": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries Workflow Orchestration",
+      "component_case_id": "row3__0004__ai-extraction-defense-five-layer-architecture-protecting-proprietary-ai-models-from-being-",
+      "claim_to_demonstrate": "Layer-by-layer, each layer surviving independent red-team review before the next one starts. The slow cadence is by design — the discipline that refuses implemented-without-prototype refuses equally to promote a layer that has not been adversarially reviewed.",
+      "input_fixture": "upstream inputs, intermediate decisions, downstream products, and stale-state conditions",
+      "operation_under_test": "Layer-by-layer, each layer surviving independent red-team review before the next one starts. The slow cadence is by design — the discipline that refuses implemented-without-prototype refuses equally to promote a layer that has not been adversarially reviewed.",
+      "expected_output": "pipeline path showing how work moves and when earlier decisions must be reopened",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fd96493f227a13a744bbc6d4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row3/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49582,
+            "sha256": "afd2e1b0ceb3521a49506e43e874d9889251b7c59c60b48a0073d6e0bc7395b0"
+          },
+          {
+            "relative_path": "project_blueprints/row3/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41687,
+            "sha256": "f5e8d9b43787e75fd6251d487f319c7868921443ba9f24b7c4c10bda6da1943c"
+          },
+          {
+            "relative_path": "project_blueprints/row3/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22960,
+            "sha256": "25dc891aaa2f6641229fbc8d090a4238c0d49c6fb669999b628ed638b5191db3"
+          },
+          {
+            "relative_path": "proof_builds/row3/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23508,
+            "sha256": "ae9ddf7369e96d64e00b5050d8f01c52cef6177bcb4be4dd99320ef351c6b6e0"
+          },
+          {
+            "relative_path": "proof_demos/row3/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50551,
+            "sha256": "ee67b2ca7e19d8ca6728abf3ba4f5f1e1161d13588869b10a5969069828e2b56"
+          },
+          {
+            "relative_path": "proof_demos/row3/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10558,
+            "sha256": "2c32b3a0425c5750531636f3369bdb94f08e71e3f48770efe8aba86f7d6e8198"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row3/blueprint.json",
+          "project_blueprints/row3/instrument_map.json",
+          "proof_builds/row3/proof_build.json",
+          "proof_demos/row3/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c76dfe912555a1b60b6528ea"
+    },
+    {
+      "receipt_id": "row3__receipt_0005",
+      "project_id": "row3",
+      "project_title": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries Review And Governance Gate",
+      "component_case_id": "row3__0005__ai-extraction-defense-five-layer-architecture-protecting-proprietary-ai-models-from-being-",
+      "claim_to_demonstrate": "Status: The architecture is fully specified — a substantial design document, a self-imposed red-team audit nearly as long, an ATLAS threat-model mapping, a bibliography, and a doctrine translation that fully maps CI tradecraft to ML security. The prototype.",
+      "input_fixture": "quality rules, source checks, claim ceilings, reviewer steps, and failure states",
+      "operation_under_test": "Status: The architecture is fully specified — a substantial design document, a self-imposed red-team audit nearly as long, an ATLAS threat-model mapping, a bibliography, and a doctrine translation that fully maps CI tradecraft to ML security. The prototype.",
+      "expected_output": "decision gate that makes the output inspectable before it is trusted",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f0a9b7ff3262d180291ae4ca",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row3/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49582,
+            "sha256": "afd2e1b0ceb3521a49506e43e874d9889251b7c59c60b48a0073d6e0bc7395b0"
+          },
+          {
+            "relative_path": "project_blueprints/row3/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41687,
+            "sha256": "f5e8d9b43787e75fd6251d487f319c7868921443ba9f24b7c4c10bda6da1943c"
+          },
+          {
+            "relative_path": "project_blueprints/row3/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22960,
+            "sha256": "25dc891aaa2f6641229fbc8d090a4238c0d49c6fb669999b628ed638b5191db3"
+          },
+          {
+            "relative_path": "proof_builds/row3/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23508,
+            "sha256": "ae9ddf7369e96d64e00b5050d8f01c52cef6177bcb4be4dd99320ef351c6b6e0"
+          },
+          {
+            "relative_path": "proof_demos/row3/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50551,
+            "sha256": "ee67b2ca7e19d8ca6728abf3ba4f5f1e1161d13588869b10a5969069828e2b56"
+          },
+          {
+            "relative_path": "proof_demos/row3/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10558,
+            "sha256": "2c32b3a0425c5750531636f3369bdb94f08e71e3f48770efe8aba86f7d6e8198"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row3/blueprint.json",
+          "project_blueprints/row3/instrument_map.json",
+          "proof_builds/row3/proof_build.json",
+          "proof_demos/row3/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "34ef5fa897e9915f57a8e709"
+    },
+    {
+      "receipt_id": "row3__receipt_0006",
+      "project_id": "row3",
+      "project_title": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries Export Or Integration Surface",
+      "component_case_id": "row3__0006__ai-extraction-defense-five-layer-architecture-protecting-proprietary-ai-models-from-being-",
+      "claim_to_demonstrate": "The architecture is fully specified — a substantial design document, a self-imposed red-team audit nearly as long, an ATLAS threat-model mapping, a bibliography, and a doctrine translation that fully maps CI tradecraft to ML security. The prototype.",
+      "input_fixture": "brief, paper, room, dataset, packet, rendered page, or external handoff",
+      "operation_under_test": "The architecture is fully specified — a substantial design document, a self-imposed red-team audit nearly as long, an ATLAS threat-model mapping, a bibliography, and a doctrine translation that fully maps CI tradecraft to ML security. The prototype.",
+      "expected_output": "usable output that another project, professor, employer, or collaborator can inspect",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "577c94f4228762f7478a15a0",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row3/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49582,
+            "sha256": "afd2e1b0ceb3521a49506e43e874d9889251b7c59c60b48a0073d6e0bc7395b0"
+          },
+          {
+            "relative_path": "project_blueprints/row3/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41687,
+            "sha256": "f5e8d9b43787e75fd6251d487f319c7868921443ba9f24b7c4c10bda6da1943c"
+          },
+          {
+            "relative_path": "project_blueprints/row3/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22960,
+            "sha256": "25dc891aaa2f6641229fbc8d090a4238c0d49c6fb669999b628ed638b5191db3"
+          },
+          {
+            "relative_path": "proof_builds/row3/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23508,
+            "sha256": "ae9ddf7369e96d64e00b5050d8f01c52cef6177bcb4be4dd99320ef351c6b6e0"
+          },
+          {
+            "relative_path": "proof_demos/row3/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50551,
+            "sha256": "ee67b2ca7e19d8ca6728abf3ba4f5f1e1161d13588869b10a5969069828e2b56"
+          },
+          {
+            "relative_path": "proof_demos/row3/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10558,
+            "sha256": "2c32b3a0425c5750531636f3369bdb94f08e71e3f48770efe8aba86f7d6e8198"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row3/blueprint.json",
+          "project_blueprints/row3/instrument_map.json",
+          "proof_builds/row3/proof_build.json",
+          "proof_demos/row3/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "181b673008598dd4d1db7165"
+    },
+    {
+      "receipt_id": "row3__receipt_0007",
+      "project_id": "row3",
+      "project_title": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries Build Verification Queue",
+      "component_case_id": "row3__0007__ai-extraction-defense-five-layer-architecture-protecting-proprietary-ai-models-from-being-",
+      "claim_to_demonstrate": "Remaining gaps: layer-by-layer, each layer surviving independent red-team review before the next one starts. The slow cadence is by design — the discipline that refuses implemented-without-prototype refuses equally to promote a layer that has not been.",
+      "input_fixture": "unbuilt modules, missing walkthroughs, test cases, and validation evidence",
+      "operation_under_test": "Remaining gaps: layer-by-layer, each layer surviving independent red-team review before the next one starts. The slow cadence is by design — the discipline that refuses implemented-without-prototype refuses equally to promote a layer that has not been.",
+      "expected_output": "next proof needed before broader claims about the tool are safe",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e350b0e07ab7b9d385896d3e",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row3/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49582,
+            "sha256": "afd2e1b0ceb3521a49506e43e874d9889251b7c59c60b48a0073d6e0bc7395b0"
+          },
+          {
+            "relative_path": "project_blueprints/row3/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41687,
+            "sha256": "f5e8d9b43787e75fd6251d487f319c7868921443ba9f24b7c4c10bda6da1943c"
+          },
+          {
+            "relative_path": "project_blueprints/row3/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22960,
+            "sha256": "25dc891aaa2f6641229fbc8d090a4238c0d49c6fb669999b628ed638b5191db3"
+          },
+          {
+            "relative_path": "proof_builds/row3/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23508,
+            "sha256": "ae9ddf7369e96d64e00b5050d8f01c52cef6177bcb4be4dd99320ef351c6b6e0"
+          },
+          {
+            "relative_path": "proof_demos/row3/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50551,
+            "sha256": "ee67b2ca7e19d8ca6728abf3ba4f5f1e1161d13588869b10a5969069828e2b56"
+          },
+          {
+            "relative_path": "proof_demos/row3/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10558,
+            "sha256": "2c32b3a0425c5750531636f3369bdb94f08e71e3f48770efe8aba86f7d6e8198"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row3/blueprint.json",
+          "project_blueprints/row3/instrument_map.json",
+          "proof_builds/row3/proof_build.json",
+          "proof_demos/row3/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d7efcdae124de0f1404bffca"
+    },
+    {
+      "receipt_id": "row3__receipt_0008",
+      "project_id": "row3",
+      "project_title": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries / Stub-but-claimed-implemented",
+      "component_case_id": "row3__0008__ai-extraction-defense-five-layer-architecture-protecting-proprietary-ai-models-from-being-",
+      "claim_to_demonstrate": "uses `Stub-but-claimed-implemented` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: zero implemented controls is preferable to stub controls, because \"stub-but-claimed-implemented\" is exactly the.",
+      "input_fixture": "project source text and the named component `Stub-but-claimed-implemented`",
+      "operation_under_test": "uses `Stub-but-claimed-implemented` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: zero implemented controls is preferable to stub controls, because \"stub-but-claimed-implemented\" is exactly the.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `Stub-but-claimed-implemented`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3db8b31222ed99b022caf055",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row3/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49582,
+            "sha256": "afd2e1b0ceb3521a49506e43e874d9889251b7c59c60b48a0073d6e0bc7395b0"
+          },
+          {
+            "relative_path": "project_blueprints/row3/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41687,
+            "sha256": "f5e8d9b43787e75fd6251d487f319c7868921443ba9f24b7c4c10bda6da1943c"
+          },
+          {
+            "relative_path": "project_blueprints/row3/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22960,
+            "sha256": "25dc891aaa2f6641229fbc8d090a4238c0d49c6fb669999b628ed638b5191db3"
+          },
+          {
+            "relative_path": "proof_builds/row3/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23508,
+            "sha256": "ae9ddf7369e96d64e00b5050d8f01c52cef6177bcb4be4dd99320ef351c6b6e0"
+          },
+          {
+            "relative_path": "proof_demos/row3/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50551,
+            "sha256": "ee67b2ca7e19d8ca6728abf3ba4f5f1e1161d13588869b10a5969069828e2b56"
+          },
+          {
+            "relative_path": "proof_demos/row3/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10558,
+            "sha256": "2c32b3a0425c5750531636f3369bdb94f08e71e3f48770efe8aba86f7d6e8198"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row3/blueprint.json",
+          "project_blueprints/row3/instrument_map.json",
+          "proof_builds/row3/proof_build.json",
+          "proof_demos/row3/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0dbe24aa027cbc6429e375b5"
+    },
+    {
+      "receipt_id": "row3__receipt_0009",
+      "project_id": "row3",
+      "project_title": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries / your work. Anti",
+      "component_case_id": "row3__0009__ai-extraction-defense-five-layer-architecture-protecting-proprietary-ai-models-from-being-",
+      "claim_to_demonstrate": "uses `your work. Anti` as a named project component with a traceable role in the public mechanism. Source context: When you deploy an analytical AI in the real world, adversaries try to extract its IP — by scraping responses, training a student model, and.",
+      "input_fixture": "project source text and the named component `your work. Anti`",
+      "operation_under_test": "uses `your work. Anti` as a named project component with a traceable role in the public mechanism. Source context: When you deploy an analytical AI in the real world, adversaries try to extract its IP — by scraping responses, training a student model, and.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `your work. Anti`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "dcd95f164a062619e255a27e",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row3/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49582,
+            "sha256": "afd2e1b0ceb3521a49506e43e874d9889251b7c59c60b48a0073d6e0bc7395b0"
+          },
+          {
+            "relative_path": "project_blueprints/row3/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41687,
+            "sha256": "f5e8d9b43787e75fd6251d487f319c7868921443ba9f24b7c4c10bda6da1943c"
+          },
+          {
+            "relative_path": "project_blueprints/row3/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22960,
+            "sha256": "25dc891aaa2f6641229fbc8d090a4238c0d49c6fb669999b628ed638b5191db3"
+          },
+          {
+            "relative_path": "proof_builds/row3/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23508,
+            "sha256": "ae9ddf7369e96d64e00b5050d8f01c52cef6177bcb4be4dd99320ef351c6b6e0"
+          },
+          {
+            "relative_path": "proof_demos/row3/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50551,
+            "sha256": "ee67b2ca7e19d8ca6728abf3ba4f5f1e1161d13588869b10a5969069828e2b56"
+          },
+          {
+            "relative_path": "proof_demos/row3/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10558,
+            "sha256": "2c32b3a0425c5750531636f3369bdb94f08e71e3f48770efe8aba86f7d6e8198"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row3/blueprint.json",
+          "project_blueprints/row3/instrument_map.json",
+          "proof_builds/row3/proof_build.json",
+          "proof_demos/row3/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2dd1608d3215b2f45023cbda"
+    },
+    {
+      "receipt_id": "row3__receipt_0010",
+      "project_id": "row3",
+      "project_title": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries / Distillation is a five",
+      "component_case_id": "row3__0010__ai-extraction-defense-five-layer-architecture-protecting-proprietary-ai-models-from-being-",
+      "claim_to_demonstrate": "uses `Distillation is a five` as a named project component with a traceable role in the public mechanism. Source context: When you deploy an analytical AI in the real world, adversaries try to extract its IP — by scraping responses, training a student model.",
+      "input_fixture": "project source text and the named component `Distillation is a five`",
+      "operation_under_test": "uses `Distillation is a five` as a named project component with a traceable role in the public mechanism. Source context: When you deploy an analytical AI in the real world, adversaries try to extract its IP — by scraping responses, training a student model.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Distillation is a five`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "dcd95f164a062619e255a27e",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row3/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49582,
+            "sha256": "afd2e1b0ceb3521a49506e43e874d9889251b7c59c60b48a0073d6e0bc7395b0"
+          },
+          {
+            "relative_path": "project_blueprints/row3/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41687,
+            "sha256": "f5e8d9b43787e75fd6251d487f319c7868921443ba9f24b7c4c10bda6da1943c"
+          },
+          {
+            "relative_path": "project_blueprints/row3/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22960,
+            "sha256": "25dc891aaa2f6641229fbc8d090a4238c0d49c6fb669999b628ed638b5191db3"
+          },
+          {
+            "relative_path": "proof_builds/row3/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23508,
+            "sha256": "ae9ddf7369e96d64e00b5050d8f01c52cef6177bcb4be4dd99320ef351c6b6e0"
+          },
+          {
+            "relative_path": "proof_demos/row3/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50551,
+            "sha256": "ee67b2ca7e19d8ca6728abf3ba4f5f1e1161d13588869b10a5969069828e2b56"
+          },
+          {
+            "relative_path": "proof_demos/row3/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10558,
+            "sha256": "2c32b3a0425c5750531636f3369bdb94f08e71e3f48770efe8aba86f7d6e8198"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row3/blueprint.json",
+          "project_blueprints/row3/instrument_map.json",
+          "proof_builds/row3/proof_build.json",
+          "proof_demos/row3/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0da376980a8e0588ecf7148b"
+    },
+    {
+      "receipt_id": "row3__receipt_0011",
+      "project_id": "row3",
+      "project_title": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries / Deception",
+      "component_case_id": "row3__0011__ai-extraction-defense-five-layer-architecture-protecting-proprietary-ai-models-from-being-",
+      "claim_to_demonstrate": "uses `Deception` as a named project component with a traceable role in the public mechanism. Source context: detection — deception — attribution-via-watermark — cost imposition — forensic provenance. Each layer borrows directly from CI tradecraft —.",
+      "input_fixture": "project source text and the named component `Deception`",
+      "operation_under_test": "uses `Deception` as a named project component with a traceable role in the public mechanism. Source context: detection — deception — attribution-via-watermark — cost imposition — forensic provenance. Each layer borrows directly from CI tradecraft —.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Deception`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ddf17b141c7fbbd5858429ec",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row3/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49582,
+            "sha256": "afd2e1b0ceb3521a49506e43e874d9889251b7c59c60b48a0073d6e0bc7395b0"
+          },
+          {
+            "relative_path": "project_blueprints/row3/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41687,
+            "sha256": "f5e8d9b43787e75fd6251d487f319c7868921443ba9f24b7c4c10bda6da1943c"
+          },
+          {
+            "relative_path": "project_blueprints/row3/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22960,
+            "sha256": "25dc891aaa2f6641229fbc8d090a4238c0d49c6fb669999b628ed638b5191db3"
+          },
+          {
+            "relative_path": "proof_builds/row3/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23508,
+            "sha256": "ae9ddf7369e96d64e00b5050d8f01c52cef6177bcb4be4dd99320ef351c6b6e0"
+          },
+          {
+            "relative_path": "proof_demos/row3/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50551,
+            "sha256": "ee67b2ca7e19d8ca6728abf3ba4f5f1e1161d13588869b10a5969069828e2b56"
+          },
+          {
+            "relative_path": "proof_demos/row3/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10558,
+            "sha256": "2c32b3a0425c5750531636f3369bdb94f08e71e3f48770efe8aba86f7d6e8198"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row3/blueprint.json",
+          "project_blueprints/row3/instrument_map.json",
+          "proof_builds/row3/proof_build.json",
+          "proof_demos/row3/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9669deaed600b08c4e7c5362"
+    },
+    {
+      "receipt_id": "row3__receipt_0012",
+      "project_id": "row3",
+      "project_title": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries / Attribution",
+      "component_case_id": "row3__0012__ai-extraction-defense-five-layer-architecture-protecting-proprietary-ai-models-from-being-",
+      "claim_to_demonstrate": "uses `Attribution` as a named project component with a traceable role in the public mechanism. Source context: detection — deception — attribution-via-watermark — cost imposition — forensic provenance. Each layer borrows directly from CI tradecraft —.",
+      "input_fixture": "project source text and the named component `Attribution`",
+      "operation_under_test": "uses `Attribution` as a named project component with a traceable role in the public mechanism. Source context: detection — deception — attribution-via-watermark — cost imposition — forensic provenance. Each layer borrows directly from CI tradecraft —.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Attribution`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ddf17b141c7fbbd5858429ec",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row3/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49582,
+            "sha256": "afd2e1b0ceb3521a49506e43e874d9889251b7c59c60b48a0073d6e0bc7395b0"
+          },
+          {
+            "relative_path": "project_blueprints/row3/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41687,
+            "sha256": "f5e8d9b43787e75fd6251d487f319c7868921443ba9f24b7c4c10bda6da1943c"
+          },
+          {
+            "relative_path": "project_blueprints/row3/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22960,
+            "sha256": "25dc891aaa2f6641229fbc8d090a4238c0d49c6fb669999b628ed638b5191db3"
+          },
+          {
+            "relative_path": "proof_builds/row3/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23508,
+            "sha256": "ae9ddf7369e96d64e00b5050d8f01c52cef6177bcb4be4dd99320ef351c6b6e0"
+          },
+          {
+            "relative_path": "proof_demos/row3/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50551,
+            "sha256": "ee67b2ca7e19d8ca6728abf3ba4f5f1e1161d13588869b10a5969069828e2b56"
+          },
+          {
+            "relative_path": "proof_demos/row3/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10558,
+            "sha256": "2c32b3a0425c5750531636f3369bdb94f08e71e3f48770efe8aba86f7d6e8198"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row3/blueprint.json",
+          "project_blueprints/row3/instrument_map.json",
+          "proof_builds/row3/proof_build.json",
+          "proof_demos/row3/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0002f690816f3ba864b85dc7"
+    },
+    {
+      "receipt_id": "row3__receipt_0013",
+      "project_id": "row3",
+      "project_title": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries / Watermark",
+      "component_case_id": "row3__0013__ai-extraction-defense-five-layer-architecture-protecting-proprietary-ai-models-from-being-",
+      "claim_to_demonstrate": "uses `Watermark` as a named project component with a traceable role in the public mechanism. Source context: detection — deception — attribution-via-watermark — cost imposition — forensic provenance. Each layer borrows directly from CI tradecraft —.",
+      "input_fixture": "project source text and the named component `Watermark`",
+      "operation_under_test": "uses `Watermark` as a named project component with a traceable role in the public mechanism. Source context: detection — deception — attribution-via-watermark — cost imposition — forensic provenance. Each layer borrows directly from CI tradecraft —.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Watermark`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ddf17b141c7fbbd5858429ec",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row3/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49582,
+            "sha256": "afd2e1b0ceb3521a49506e43e874d9889251b7c59c60b48a0073d6e0bc7395b0"
+          },
+          {
+            "relative_path": "project_blueprints/row3/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41687,
+            "sha256": "f5e8d9b43787e75fd6251d487f319c7868921443ba9f24b7c4c10bda6da1943c"
+          },
+          {
+            "relative_path": "project_blueprints/row3/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22960,
+            "sha256": "25dc891aaa2f6641229fbc8d090a4238c0d49c6fb669999b628ed638b5191db3"
+          },
+          {
+            "relative_path": "proof_builds/row3/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23508,
+            "sha256": "ae9ddf7369e96d64e00b5050d8f01c52cef6177bcb4be4dd99320ef351c6b6e0"
+          },
+          {
+            "relative_path": "proof_demos/row3/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50551,
+            "sha256": "ee67b2ca7e19d8ca6728abf3ba4f5f1e1161d13588869b10a5969069828e2b56"
+          },
+          {
+            "relative_path": "proof_demos/row3/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10558,
+            "sha256": "2c32b3a0425c5750531636f3369bdb94f08e71e3f48770efe8aba86f7d6e8198"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row3/blueprint.json",
+          "project_blueprints/row3/instrument_map.json",
+          "proof_builds/row3/proof_build.json",
+          "proof_demos/row3/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9a16b222b7995819ea474878"
+    },
+    {
+      "receipt_id": "row3__receipt_0014",
+      "project_id": "row3",
+      "project_title": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries / Cost Imposition",
+      "component_case_id": "row3__0014__ai-extraction-defense-five-layer-architecture-protecting-proprietary-ai-models-from-being-",
+      "claim_to_demonstrate": "uses `Cost Imposition` as a named project component with a traceable role in the public mechanism. Source context: detection — deception — attribution-via-watermark — cost imposition — forensic provenance. Each layer borrows directly from CI tradecraft —.",
+      "input_fixture": "project source text and the named component `Cost Imposition`",
+      "operation_under_test": "uses `Cost Imposition` as a named project component with a traceable role in the public mechanism. Source context: detection — deception — attribution-via-watermark — cost imposition — forensic provenance. Each layer borrows directly from CI tradecraft —.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Cost Imposition`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ddf17b141c7fbbd5858429ec",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row3/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49582,
+            "sha256": "afd2e1b0ceb3521a49506e43e874d9889251b7c59c60b48a0073d6e0bc7395b0"
+          },
+          {
+            "relative_path": "project_blueprints/row3/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41687,
+            "sha256": "f5e8d9b43787e75fd6251d487f319c7868921443ba9f24b7c4c10bda6da1943c"
+          },
+          {
+            "relative_path": "project_blueprints/row3/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22960,
+            "sha256": "25dc891aaa2f6641229fbc8d090a4238c0d49c6fb669999b628ed638b5191db3"
+          },
+          {
+            "relative_path": "proof_builds/row3/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23508,
+            "sha256": "ae9ddf7369e96d64e00b5050d8f01c52cef6177bcb4be4dd99320ef351c6b6e0"
+          },
+          {
+            "relative_path": "proof_demos/row3/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50551,
+            "sha256": "ee67b2ca7e19d8ca6728abf3ba4f5f1e1161d13588869b10a5969069828e2b56"
+          },
+          {
+            "relative_path": "proof_demos/row3/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10558,
+            "sha256": "2c32b3a0425c5750531636f3369bdb94f08e71e3f48770efe8aba86f7d6e8198"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row3/blueprint.json",
+          "project_blueprints/row3/instrument_map.json",
+          "proof_builds/row3/proof_build.json",
+          "proof_demos/row3/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9f5f86310d483da3e6700bca"
+    },
+    {
+      "receipt_id": "row3__receipt_0015",
+      "project_id": "row3",
+      "project_title": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries / forensic provenance. Each layer borrows directly from CI tradecraft",
+      "component_case_id": "row3__0015__ai-extraction-defense-five-layer-architecture-protecting-proprietary-ai-models-from-being-",
+      "claim_to_demonstrate": "uses `forensic provenance. Each layer borrows directly from CI tradecraft` as a named project component with a traceable role in the public mechanism. Source context: detection — deception — attribution-via-watermark — cost imposition — forensic provenance.",
+      "input_fixture": "project source text and the named component `forensic provenance. Each layer borrows directly from CI tradecraft`",
+      "operation_under_test": "uses `forensic provenance. Each layer borrows directly from CI tradecraft` as a named project component with a traceable role in the public mechanism. Source context: detection — deception — attribution-via-watermark — cost imposition — forensic provenance.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `forensic provenance. Each layer borrows directly from CI tradecraft`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ddf17b141c7fbbd5858429ec",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row3/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49582,
+            "sha256": "afd2e1b0ceb3521a49506e43e874d9889251b7c59c60b48a0073d6e0bc7395b0"
+          },
+          {
+            "relative_path": "project_blueprints/row3/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41687,
+            "sha256": "f5e8d9b43787e75fd6251d487f319c7868921443ba9f24b7c4c10bda6da1943c"
+          },
+          {
+            "relative_path": "project_blueprints/row3/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22960,
+            "sha256": "25dc891aaa2f6641229fbc8d090a4238c0d49c6fb669999b628ed638b5191db3"
+          },
+          {
+            "relative_path": "proof_builds/row3/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23508,
+            "sha256": "ae9ddf7369e96d64e00b5050d8f01c52cef6177bcb4be4dd99320ef351c6b6e0"
+          },
+          {
+            "relative_path": "proof_demos/row3/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50551,
+            "sha256": "ee67b2ca7e19d8ca6728abf3ba4f5f1e1161d13588869b10a5969069828e2b56"
+          },
+          {
+            "relative_path": "proof_demos/row3/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10558,
+            "sha256": "2c32b3a0425c5750531636f3369bdb94f08e71e3f48770efe8aba86f7d6e8198"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row3/blueprint.json",
+          "project_blueprints/row3/instrument_map.json",
+          "proof_builds/row3/proof_build.json",
+          "proof_demos/row3/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "136cd83b13a0ed2a6df95f5f"
+    },
+    {
+      "receipt_id": "row3__receipt_0016",
+      "project_id": "row3",
+      "project_title": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries / Elicitation Detection",
+      "component_case_id": "row3__0016__ai-extraction-defense-five-layer-architecture-protecting-proprietary-ai-models-from-being-",
+      "claim_to_demonstrate": "uses `Elicitation Detection` as a named project component with a traceable role in the public mechanism. Source context: Each layer borrows directly from CI tradecraft — elicitation detection, dangles, feed operations, barium meals — translated into the ML.",
+      "input_fixture": "project source text and the named component `Elicitation Detection`",
+      "operation_under_test": "uses `Elicitation Detection` as a named project component with a traceable role in the public mechanism. Source context: Each layer borrows directly from CI tradecraft — elicitation detection, dangles, feed operations, barium meals — translated into the ML.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Elicitation Detection`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d54561bd0cd137cde0afe6ef",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row3/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49582,
+            "sha256": "afd2e1b0ceb3521a49506e43e874d9889251b7c59c60b48a0073d6e0bc7395b0"
+          },
+          {
+            "relative_path": "project_blueprints/row3/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41687,
+            "sha256": "f5e8d9b43787e75fd6251d487f319c7868921443ba9f24b7c4c10bda6da1943c"
+          },
+          {
+            "relative_path": "project_blueprints/row3/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22960,
+            "sha256": "25dc891aaa2f6641229fbc8d090a4238c0d49c6fb669999b628ed638b5191db3"
+          },
+          {
+            "relative_path": "proof_builds/row3/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23508,
+            "sha256": "ae9ddf7369e96d64e00b5050d8f01c52cef6177bcb4be4dd99320ef351c6b6e0"
+          },
+          {
+            "relative_path": "proof_demos/row3/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50551,
+            "sha256": "ee67b2ca7e19d8ca6728abf3ba4f5f1e1161d13588869b10a5969069828e2b56"
+          },
+          {
+            "relative_path": "proof_demos/row3/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10558,
+            "sha256": "2c32b3a0425c5750531636f3369bdb94f08e71e3f48770efe8aba86f7d6e8198"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row3/blueprint.json",
+          "project_blueprints/row3/instrument_map.json",
+          "proof_builds/row3/proof_build.json",
+          "proof_demos/row3/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "beba34d235bafe926a55aa23"
+    },
+    {
+      "receipt_id": "row3__receipt_0017",
+      "project_id": "row3",
+      "project_title": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries / Dangles",
+      "component_case_id": "row3__0017__ai-extraction-defense-five-layer-architecture-protecting-proprietary-ai-models-from-being-",
+      "claim_to_demonstrate": "uses `Dangles` as a named project component with a traceable role in the public mechanism. Source context: Each layer borrows directly from CI tradecraft — elicitation detection, dangles, feed operations, barium meals — translated into the ML security.",
+      "input_fixture": "project source text and the named component `Dangles`",
+      "operation_under_test": "uses `Dangles` as a named project component with a traceable role in the public mechanism. Source context: Each layer borrows directly from CI tradecraft — elicitation detection, dangles, feed operations, barium meals — translated into the ML security.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Dangles`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d54561bd0cd137cde0afe6ef",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row3/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49582,
+            "sha256": "afd2e1b0ceb3521a49506e43e874d9889251b7c59c60b48a0073d6e0bc7395b0"
+          },
+          {
+            "relative_path": "project_blueprints/row3/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41687,
+            "sha256": "f5e8d9b43787e75fd6251d487f319c7868921443ba9f24b7c4c10bda6da1943c"
+          },
+          {
+            "relative_path": "project_blueprints/row3/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22960,
+            "sha256": "25dc891aaa2f6641229fbc8d090a4238c0d49c6fb669999b628ed638b5191db3"
+          },
+          {
+            "relative_path": "proof_builds/row3/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23508,
+            "sha256": "ae9ddf7369e96d64e00b5050d8f01c52cef6177bcb4be4dd99320ef351c6b6e0"
+          },
+          {
+            "relative_path": "proof_demos/row3/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50551,
+            "sha256": "ee67b2ca7e19d8ca6728abf3ba4f5f1e1161d13588869b10a5969069828e2b56"
+          },
+          {
+            "relative_path": "proof_demos/row3/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10558,
+            "sha256": "2c32b3a0425c5750531636f3369bdb94f08e71e3f48770efe8aba86f7d6e8198"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row3/blueprint.json",
+          "project_blueprints/row3/instrument_map.json",
+          "proof_builds/row3/proof_build.json",
+          "proof_demos/row3/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "43cc45e2254b40b452520307"
+    }
+  ]
+}

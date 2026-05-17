@@ -1,0 +1,1461 @@
+{
+  "project": {
+    "project_id": "mb-russian-reference-handoff-final",
+    "title": "100-item ranked bibliography with verification levels A/B/C × core/extended"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-russian-reference-handoff-final__receipt_0001",
+      "project_id": "mb-russian-reference-handoff-final",
+      "project_title": "100-item ranked bibliography with verification levels A/B/C × core/extended",
+      "proof_tier": "source-backed-proof-build",
+      "component": "100-item ranked bibliography with verification levels A/B/C × core/extended Handoff Identity",
+      "component_case_id": "mb-russian-reference-handoff-final__0001__100-item-ranked-bibliography-with-verification-levels-a-b-c-core-extended-handoff-identity",
+      "claim_to_demonstrate": "Russian reference handoff is a ranked bibliography and source-authority packet for Russia and Eurasia work.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "Russian reference handoff is a ranked bibliography and source-authority packet for Russia and Eurasia work.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44444,
+            "sha256": "c9ad8f91f6f931dac2f25b60f884b10c00fd271a52aae128190cf6ff4757801a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36440,
+            "sha256": "4e770688d2c6e3b1389181ed4f8f9fdb846f2cb39ef59a6714c8356c58806906"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21525,
+            "sha256": "9eed398de9993b14321d81f504c78014cf2596f5d0e3b0b1724292bec9b58e5c"
+          },
+          {
+            "relative_path": "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21330,
+            "sha256": "7c401def5b3c0509fd13d82b850e172751cd8dd5c52577075aad4416e94ca775"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47607,
+            "sha256": "730d8dcc1c9788fd1ae77628f2323b6dba2fb7404c9815da71e7c69208404feb"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10698,
+            "sha256": "8ab5d9b01676475e4123846ef1dffa432163f1e2a2dbd70a45125baa4120a1ee"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+          "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+          "project_blueprints/mb-russian-reference-handoff-final/README.md",
+          "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+          "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+          "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ea23f240d0df289e16b92605"
+    },
+    {
+      "receipt_id": "mb-russian-reference-handoff-final__receipt_0002",
+      "project_id": "mb-russian-reference-handoff-final",
+      "project_title": "100-item ranked bibliography with verification levels A/B/C × core/extended",
+      "proof_tier": "source-backed-proof-build",
+      "component": "100-item ranked bibliography with verification levels A/B/C × core/extended Room Task Model",
+      "component_case_id": "mb-russian-reference-handoff-final__0002__100-item-ranked-bibliography-with-verification-levels-a-b-c-core-extended-room-task-model",
+      "claim_to_demonstrate": "It classifies one hundred sources by verification level and core or extended role, including Routledge, Oxford, Cambridge Companion, Cambridge History, and Russia/Eurasia reference anchors.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "It classifies one hundred sources by verification level and core or extended role, including Routledge, Oxford, Cambridge Companion, Cambridge History, and Russia/Eurasia reference anchors.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44444,
+            "sha256": "c9ad8f91f6f931dac2f25b60f884b10c00fd271a52aae128190cf6ff4757801a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36440,
+            "sha256": "4e770688d2c6e3b1389181ed4f8f9fdb846f2cb39ef59a6714c8356c58806906"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21525,
+            "sha256": "9eed398de9993b14321d81f504c78014cf2596f5d0e3b0b1724292bec9b58e5c"
+          },
+          {
+            "relative_path": "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21330,
+            "sha256": "7c401def5b3c0509fd13d82b850e172751cd8dd5c52577075aad4416e94ca775"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47607,
+            "sha256": "730d8dcc1c9788fd1ae77628f2323b6dba2fb7404c9815da71e7c69208404feb"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10698,
+            "sha256": "8ab5d9b01676475e4123846ef1dffa432163f1e2a2dbd70a45125baa4120a1ee"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+          "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+          "project_blueprints/mb-russian-reference-handoff-final/README.md",
+          "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+          "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+          "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "af9ec65b6fe8c63caac8345f"
+    },
+    {
+      "receipt_id": "mb-russian-reference-handoff-final__receipt_0003",
+      "project_id": "mb-russian-reference-handoff-final",
+      "project_title": "100-item ranked bibliography with verification levels A/B/C × core/extended",
+      "proof_tier": "source-backed-proof-build",
+      "component": "100-item ranked bibliography with verification levels A/B/C × core/extended Data Schema And Persistence Plan",
+      "component_case_id": "mb-russian-reference-handoff-final__0003__100-item-ranked-bibliography-with-verification-levels-a-b-c-core-extended-data-schema-and-",
+      "claim_to_demonstrate": "Russia, Eurasia, and security-state analysis. Use as the strongest local source reservoir for Russia Desk, regional studies, and security-state pages. Vision: Ground Russia-facing pages in a serious regional-security and post-Soviet studies corpus. Mechanism.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Russia, Eurasia, and security-state analysis. Use as the strongest local source reservoir for Russia Desk, regional studies, and security-state pages. Vision: Ground Russia-facing pages in a serious regional-security and post-Soviet studies corpus. Mechanism.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44444,
+            "sha256": "c9ad8f91f6f931dac2f25b60f884b10c00fd271a52aae128190cf6ff4757801a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36440,
+            "sha256": "4e770688d2c6e3b1389181ed4f8f9fdb846f2cb39ef59a6714c8356c58806906"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21525,
+            "sha256": "9eed398de9993b14321d81f504c78014cf2596f5d0e3b0b1724292bec9b58e5c"
+          },
+          {
+            "relative_path": "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21330,
+            "sha256": "7c401def5b3c0509fd13d82b850e172751cd8dd5c52577075aad4416e94ca775"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47607,
+            "sha256": "730d8dcc1c9788fd1ae77628f2323b6dba2fb7404c9815da71e7c69208404feb"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10698,
+            "sha256": "8ab5d9b01676475e4123846ef1dffa432163f1e2a2dbd70a45125baa4120a1ee"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+          "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+          "project_blueprints/mb-russian-reference-handoff-final/README.md",
+          "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+          "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+          "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b1c255a41c2c187f3d93c7cd"
+    },
+    {
+      "receipt_id": "mb-russian-reference-handoff-final__receipt_0004",
+      "project_id": "mb-russian-reference-handoff-final",
+      "project_title": "100-item ranked bibliography with verification levels A/B/C × core/extended",
+      "proof_tier": "source-backed-proof-build",
+      "component": "100-item ranked bibliography with verification levels A/B/C × core/extended Interface And Instrument Plane",
+      "component_case_id": "mb-russian-reference-handoff-final__0004__100-item-ranked-bibliography-with-verification-levels-a-b-c-core-extended-interface-and-in",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44444,
+            "sha256": "c9ad8f91f6f931dac2f25b60f884b10c00fd271a52aae128190cf6ff4757801a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36440,
+            "sha256": "4e770688d2c6e3b1389181ed4f8f9fdb846f2cb39ef59a6714c8356c58806906"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21525,
+            "sha256": "9eed398de9993b14321d81f504c78014cf2596f5d0e3b0b1724292bec9b58e5c"
+          },
+          {
+            "relative_path": "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21330,
+            "sha256": "7c401def5b3c0509fd13d82b850e172751cd8dd5c52577075aad4416e94ca775"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47607,
+            "sha256": "730d8dcc1c9788fd1ae77628f2323b6dba2fb7404c9815da71e7c69208404feb"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10698,
+            "sha256": "8ab5d9b01676475e4123846ef1dffa432163f1e2a2dbd70a45125baa4120a1ee"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+          "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+          "project_blueprints/mb-russian-reference-handoff-final/README.md",
+          "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+          "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+          "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "cf0107911985e9d026ab9096"
+    },
+    {
+      "receipt_id": "mb-russian-reference-handoff-final__receipt_0005",
+      "project_id": "mb-russian-reference-handoff-final",
+      "project_title": "100-item ranked bibliography with verification levels A/B/C × core/extended",
+      "proof_tier": "source-backed-proof-build",
+      "component": "100-item ranked bibliography with verification levels A/B/C × core/extended Integration Path",
+      "component_case_id": "mb-russian-reference-handoff-final__0005__100-item-ranked-bibliography-with-verification-levels-a-b-c-core-extended-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. When to reach for this: building a personal Russia studies library; choosing what to buy first with a limited budget; selecting reading to reference in papers.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. When to reach for this: building a personal Russia studies library; choosing what to buy first with a limited budget; selecting reading to reference in papers.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44444,
+            "sha256": "c9ad8f91f6f931dac2f25b60f884b10c00fd271a52aae128190cf6ff4757801a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36440,
+            "sha256": "4e770688d2c6e3b1389181ed4f8f9fdb846f2cb39ef59a6714c8356c58806906"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21525,
+            "sha256": "9eed398de9993b14321d81f504c78014cf2596f5d0e3b0b1724292bec9b58e5c"
+          },
+          {
+            "relative_path": "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21330,
+            "sha256": "7c401def5b3c0509fd13d82b850e172751cd8dd5c52577075aad4416e94ca775"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47607,
+            "sha256": "730d8dcc1c9788fd1ae77628f2323b6dba2fb7404c9815da71e7c69208404feb"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10698,
+            "sha256": "8ab5d9b01676475e4123846ef1dffa432163f1e2a2dbd70a45125baa4120a1ee"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+          "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+          "project_blueprints/mb-russian-reference-handoff-final/README.md",
+          "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+          "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+          "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f31b1b4f649e4e7ffa60a115"
+    },
+    {
+      "receipt_id": "mb-russian-reference-handoff-final__receipt_0006",
+      "project_id": "mb-russian-reference-handoff-final",
+      "project_title": "100-item ranked bibliography with verification levels A/B/C × core/extended",
+      "proof_tier": "source-backed-proof-build",
+      "component": "100-item ranked bibliography with verification levels A/B/C × core/extended Proof Boundary",
+      "component_case_id": "mb-russian-reference-handoff-final__0006__100-item-ranked-bibliography-with-verification-levels-a-b-c-core-extended-proof-boundary",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44444,
+            "sha256": "c9ad8f91f6f931dac2f25b60f884b10c00fd271a52aae128190cf6ff4757801a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36440,
+            "sha256": "4e770688d2c6e3b1389181ed4f8f9fdb846f2cb39ef59a6714c8356c58806906"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21525,
+            "sha256": "9eed398de9993b14321d81f504c78014cf2596f5d0e3b0b1724292bec9b58e5c"
+          },
+          {
+            "relative_path": "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21330,
+            "sha256": "7c401def5b3c0509fd13d82b850e172751cd8dd5c52577075aad4416e94ca775"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47607,
+            "sha256": "730d8dcc1c9788fd1ae77628f2323b6dba2fb7404c9815da71e7c69208404feb"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10698,
+            "sha256": "8ab5d9b01676475e4123846ef1dffa432163f1e2a2dbd70a45125baa4120a1ee"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+          "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+          "project_blueprints/mb-russian-reference-handoff-final/README.md",
+          "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+          "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+          "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ac8aaa33879396d8ca21399f"
+    },
+    {
+      "receipt_id": "mb-russian-reference-handoff-final__receipt_0007",
+      "project_id": "mb-russian-reference-handoff-final",
+      "project_title": "100-item ranked bibliography with verification levels A/B/C × core/extended",
+      "proof_tier": "source-backed-proof-build",
+      "component": "100-item ranked bibliography with verification levels A/B/C × core/extended Next Build Test",
+      "component_case_id": "mb-russian-reference-handoff-final__0007__100-item-ranked-bibliography-with-verification-levels-a-b-c-core-extended-next-build-test",
+      "claim_to_demonstrate": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44444,
+            "sha256": "c9ad8f91f6f931dac2f25b60f884b10c00fd271a52aae128190cf6ff4757801a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36440,
+            "sha256": "4e770688d2c6e3b1389181ed4f8f9fdb846f2cb39ef59a6714c8356c58806906"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21525,
+            "sha256": "9eed398de9993b14321d81f504c78014cf2596f5d0e3b0b1724292bec9b58e5c"
+          },
+          {
+            "relative_path": "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21330,
+            "sha256": "7c401def5b3c0509fd13d82b850e172751cd8dd5c52577075aad4416e94ca775"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47607,
+            "sha256": "730d8dcc1c9788fd1ae77628f2323b6dba2fb7404c9815da71e7c69208404feb"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10698,
+            "sha256": "8ab5d9b01676475e4123846ef1dffa432163f1e2a2dbd70a45125baa4120a1ee"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+          "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+          "project_blueprints/mb-russian-reference-handoff-final/README.md",
+          "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+          "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+          "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "83cc1b8ab009813ddf0b638f"
+    },
+    {
+      "receipt_id": "mb-russian-reference-handoff-final__receipt_0008",
+      "project_id": "mb-russian-reference-handoff-final",
+      "project_title": "100-item ranked bibliography with verification levels A/B/C × core/extended",
+      "proof_tier": "source-backed-proof-build",
+      "component": "100-item ranked bibliography with verification levels A/B/C × core/extended / README_FINAL.md",
+      "component_case_id": "mb-russian-reference-handoff-final__0008__100-item-ranked-bibliography-with-verification-levels-a-b-c-core-extended-readme-final-md",
+      "claim_to_demonstrate": "treats `README_FINAL.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README_FINAL.md — top_40_priority_list.md (acquisition priority) or subfield_breakdown.md (topic-driven reading) —.",
+      "input_fixture": "project source text and the named component `README_FINAL.md`",
+      "operation_under_test": "treats `README_FINAL.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README_FINAL.md — top_40_priority_list.md (acquisition priority) or subfield_breakdown.md (topic-driven reading) —.",
+      "expected_output": "inspectable implementation evidence tied to `README_FINAL.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "baebb0f6abcb2557023f9fcf",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44444,
+            "sha256": "c9ad8f91f6f931dac2f25b60f884b10c00fd271a52aae128190cf6ff4757801a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36440,
+            "sha256": "4e770688d2c6e3b1389181ed4f8f9fdb846f2cb39ef59a6714c8356c58806906"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21525,
+            "sha256": "9eed398de9993b14321d81f504c78014cf2596f5d0e3b0b1724292bec9b58e5c"
+          },
+          {
+            "relative_path": "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21330,
+            "sha256": "7c401def5b3c0509fd13d82b850e172751cd8dd5c52577075aad4416e94ca775"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47607,
+            "sha256": "730d8dcc1c9788fd1ae77628f2323b6dba2fb7404c9815da71e7c69208404feb"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10698,
+            "sha256": "8ab5d9b01676475e4123846ef1dffa432163f1e2a2dbd70a45125baa4120a1ee"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+          "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+          "project_blueprints/mb-russian-reference-handoff-final/README.md",
+          "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+          "proof_demos/mb-russian-reference-handoff-final/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8914a61e8a4b2e6f350f32a5"
+    },
+    {
+      "receipt_id": "mb-russian-reference-handoff-final__receipt_0009",
+      "project_id": "mb-russian-reference-handoff-final",
+      "project_title": "100-item ranked bibliography with verification levels A/B/C × core/extended",
+      "proof_tier": "source-backed-proof-build",
+      "component": "100-item ranked bibliography with verification levels A/B/C × core/extended / top_40_priority_list.md",
+      "component_case_id": "mb-russian-reference-handoff-final__0009__100-item-ranked-bibliography-with-verification-levels-a-b-c-core-extended-top-40-priority-",
+      "claim_to_demonstrate": "treats `top_40_priority_list.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README_FINAL.md — top_40_priority_list.md (acquisition priority) or subfield_breakdown.md (topic-driven reading) —.",
+      "input_fixture": "project source text and the named component `top_40_priority_list.md`",
+      "operation_under_test": "treats `top_40_priority_list.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README_FINAL.md — top_40_priority_list.md (acquisition priority) or subfield_breakdown.md (topic-driven reading) —.",
+      "expected_output": "inspectable implementation evidence tied to `top_40_priority_list.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "baebb0f6abcb2557023f9fcf",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44444,
+            "sha256": "c9ad8f91f6f931dac2f25b60f884b10c00fd271a52aae128190cf6ff4757801a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36440,
+            "sha256": "4e770688d2c6e3b1389181ed4f8f9fdb846f2cb39ef59a6714c8356c58806906"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21525,
+            "sha256": "9eed398de9993b14321d81f504c78014cf2596f5d0e3b0b1724292bec9b58e5c"
+          },
+          {
+            "relative_path": "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21330,
+            "sha256": "7c401def5b3c0509fd13d82b850e172751cd8dd5c52577075aad4416e94ca775"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47607,
+            "sha256": "730d8dcc1c9788fd1ae77628f2323b6dba2fb7404c9815da71e7c69208404feb"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10698,
+            "sha256": "8ab5d9b01676475e4123846ef1dffa432163f1e2a2dbd70a45125baa4120a1ee"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+          "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+          "project_blueprints/mb-russian-reference-handoff-final/README.md",
+          "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+          "proof_demos/mb-russian-reference-handoff-final/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7216a10b79fe18cfd03a0d11"
+    },
+    {
+      "receipt_id": "mb-russian-reference-handoff-final__receipt_0010",
+      "project_id": "mb-russian-reference-handoff-final",
+      "project_title": "100-item ranked bibliography with verification levels A/B/C × core/extended",
+      "proof_tier": "source-backed-proof-build",
+      "component": "100-item ranked bibliography with verification levels A/B/C × core/extended / subfield_breakdown.md",
+      "component_case_id": "mb-russian-reference-handoff-final__0010__100-item-ranked-bibliography-with-verification-levels-a-b-c-core-extended-subfield-breakdo",
+      "claim_to_demonstrate": "treats `subfield_breakdown.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README_FINAL.md — top_40_priority_list.md (acquisition priority) or subfield_breakdown.md (topic-driven reading) —.",
+      "input_fixture": "project source text and the named component `subfield_breakdown.md`",
+      "operation_under_test": "treats `subfield_breakdown.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README_FINAL.md — top_40_priority_list.md (acquisition priority) or subfield_breakdown.md (topic-driven reading) —.",
+      "expected_output": "inspectable implementation evidence tied to `subfield_breakdown.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "baebb0f6abcb2557023f9fcf",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44444,
+            "sha256": "c9ad8f91f6f931dac2f25b60f884b10c00fd271a52aae128190cf6ff4757801a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36440,
+            "sha256": "4e770688d2c6e3b1389181ed4f8f9fdb846f2cb39ef59a6714c8356c58806906"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21525,
+            "sha256": "9eed398de9993b14321d81f504c78014cf2596f5d0e3b0b1724292bec9b58e5c"
+          },
+          {
+            "relative_path": "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21330,
+            "sha256": "7c401def5b3c0509fd13d82b850e172751cd8dd5c52577075aad4416e94ca775"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47607,
+            "sha256": "730d8dcc1c9788fd1ae77628f2323b6dba2fb7404c9815da71e7c69208404feb"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10698,
+            "sha256": "8ab5d9b01676475e4123846ef1dffa432163f1e2a2dbd70a45125baa4120a1ee"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+          "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+          "project_blueprints/mb-russian-reference-handoff-final/README.md",
+          "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+          "proof_demos/mb-russian-reference-handoff-final/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0329df7768574bd03278d35e"
+    },
+    {
+      "receipt_id": "mb-russian-reference-handoff-final__receipt_0011",
+      "project_id": "mb-russian-reference-handoff-final",
+      "project_title": "100-item ranked bibliography with verification levels A/B/C × core/extended",
+      "proof_tier": "source-backed-proof-build",
+      "component": "100-item ranked bibliography with verification levels A/B/C × core/extended / russian_reference_master_100.csv",
+      "component_case_id": "mb-russian-reference-handoff-final__0011__100-item-ranked-bibliography-with-verification-levels-a-b-c-core-extended-russian-referenc",
+      "claim_to_demonstrate": "treats `russian_reference_master_100.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README_FINAL.md — top_40_priority_list.md (acquisition priority) or subfield_breakdown.md (topic-driven.",
+      "input_fixture": "project source text and the named component `russian_reference_master_100.csv`",
+      "operation_under_test": "treats `russian_reference_master_100.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README_FINAL.md — top_40_priority_list.md (acquisition priority) or subfield_breakdown.md (topic-driven.",
+      "expected_output": "inspectable implementation evidence tied to `russian_reference_master_100.csv`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "baebb0f6abcb2557023f9fcf",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44444,
+            "sha256": "c9ad8f91f6f931dac2f25b60f884b10c00fd271a52aae128190cf6ff4757801a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36440,
+            "sha256": "4e770688d2c6e3b1389181ed4f8f9fdb846f2cb39ef59a6714c8356c58806906"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21525,
+            "sha256": "9eed398de9993b14321d81f504c78014cf2596f5d0e3b0b1724292bec9b58e5c"
+          },
+          {
+            "relative_path": "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21330,
+            "sha256": "7c401def5b3c0509fd13d82b850e172751cd8dd5c52577075aad4416e94ca775"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47607,
+            "sha256": "730d8dcc1c9788fd1ae77628f2323b6dba2fb7404c9815da71e7c69208404feb"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10698,
+            "sha256": "8ab5d9b01676475e4123846ef1dffa432163f1e2a2dbd70a45125baa4120a1ee"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+          "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+          "project_blueprints/mb-russian-reference-handoff-final/README.md",
+          "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+          "proof_demos/mb-russian-reference-handoff-final/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "45b537035002efd6a14f32f9"
+    },
+    {
+      "receipt_id": "mb-russian-reference-handoff-final__receipt_0012",
+      "project_id": "mb-russian-reference-handoff-final",
+      "project_title": "100-item ranked bibliography with verification levels A/B/C × core/extended",
+      "proof_tier": "source-backed-proof-build",
+      "component": "100-item ranked bibliography with verification levels A/B/C × core/extended / Routledge Handbook",
+      "component_case_id": "mb-russian-reference-handoff-final__0012__100-item-ranked-bibliography-with-verification-levels-a-b-c-core-extended-routledge-handbo",
+      "claim_to_demonstrate": "uses `Routledge Handbook` as a named project component with a traceable role in the public mechanism. Source context: Routledge Handbook / Oxford Handbook / Cambridge Companion / Cambridge History / Wiley-Blackwell / Gale-Macmillan / Rowman-Bloomsbury.",
+      "input_fixture": "project source text and the named component `Routledge Handbook`",
+      "operation_under_test": "uses `Routledge Handbook` as a named project component with a traceable role in the public mechanism. Source context: Routledge Handbook / Oxford Handbook / Cambridge Companion / Cambridge History / Wiley-Blackwell / Gale-Macmillan / Rowman-Bloomsbury.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Routledge Handbook`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "32204ce64b37c84e7eeedc11",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44444,
+            "sha256": "c9ad8f91f6f931dac2f25b60f884b10c00fd271a52aae128190cf6ff4757801a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36440,
+            "sha256": "4e770688d2c6e3b1389181ed4f8f9fdb846f2cb39ef59a6714c8356c58806906"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21525,
+            "sha256": "9eed398de9993b14321d81f504c78014cf2596f5d0e3b0b1724292bec9b58e5c"
+          },
+          {
+            "relative_path": "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21330,
+            "sha256": "7c401def5b3c0509fd13d82b850e172751cd8dd5c52577075aad4416e94ca775"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47607,
+            "sha256": "730d8dcc1c9788fd1ae77628f2323b6dba2fb7404c9815da71e7c69208404feb"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10698,
+            "sha256": "8ab5d9b01676475e4123846ef1dffa432163f1e2a2dbd70a45125baa4120a1ee"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+          "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+          "project_blueprints/mb-russian-reference-handoff-final/README.md",
+          "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+          "proof_demos/mb-russian-reference-handoff-final/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8fe8d16fb0ff97ce5c905469"
+    },
+    {
+      "receipt_id": "mb-russian-reference-handoff-final__receipt_0013",
+      "project_id": "mb-russian-reference-handoff-final",
+      "project_title": "100-item ranked bibliography with verification levels A/B/C × core/extended",
+      "proof_tier": "source-backed-proof-build",
+      "component": "100-item ranked bibliography with verification levels A/B/C × core/extended / Oxford Handbook",
+      "component_case_id": "mb-russian-reference-handoff-final__0013__100-item-ranked-bibliography-with-verification-levels-a-b-c-core-extended-oxford-handbook",
+      "claim_to_demonstrate": "uses `Oxford Handbook` as a named project component with a traceable role in the public mechanism. Source context: Oxford Handbook / Cambridge Companion / Cambridge History / Wiley-Blackwell / Gale-Macmillan / Rowman-Bloomsbury families. It is not a casual.",
+      "input_fixture": "project source text and the named component `Oxford Handbook`",
+      "operation_under_test": "uses `Oxford Handbook` as a named project component with a traceable role in the public mechanism. Source context: Oxford Handbook / Cambridge Companion / Cambridge History / Wiley-Blackwell / Gale-Macmillan / Rowman-Bloomsbury families. It is not a casual.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Oxford Handbook`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "64282dd8f311f5984cf90ef2",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44444,
+            "sha256": "c9ad8f91f6f931dac2f25b60f884b10c00fd271a52aae128190cf6ff4757801a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36440,
+            "sha256": "4e770688d2c6e3b1389181ed4f8f9fdb846f2cb39ef59a6714c8356c58806906"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21525,
+            "sha256": "9eed398de9993b14321d81f504c78014cf2596f5d0e3b0b1724292bec9b58e5c"
+          },
+          {
+            "relative_path": "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21330,
+            "sha256": "7c401def5b3c0509fd13d82b850e172751cd8dd5c52577075aad4416e94ca775"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47607,
+            "sha256": "730d8dcc1c9788fd1ae77628f2323b6dba2fb7404c9815da71e7c69208404feb"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10698,
+            "sha256": "8ab5d9b01676475e4123846ef1dffa432163f1e2a2dbd70a45125baa4120a1ee"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+          "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+          "project_blueprints/mb-russian-reference-handoff-final/README.md",
+          "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+          "proof_demos/mb-russian-reference-handoff-final/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "dd423cf4988a73e9bad47437"
+    },
+    {
+      "receipt_id": "mb-russian-reference-handoff-final__receipt_0014",
+      "project_id": "mb-russian-reference-handoff-final",
+      "project_title": "100-item ranked bibliography with verification levels A/B/C × core/extended",
+      "proof_tier": "source-backed-proof-build",
+      "component": "100-item ranked bibliography with verification levels A/B/C × core/extended / Cambridge Companion",
+      "component_case_id": "mb-russian-reference-handoff-final__0014__100-item-ranked-bibliography-with-verification-levels-a-b-c-core-extended-cambridge-compan",
+      "claim_to_demonstrate": "uses `Cambridge Companion` as a named project component with a traceable role in the public mechanism. Source context: Cambridge Companion / Cambridge History / Wiley-Blackwell / Gale-Macmillan / Rowman-Bloomsbury families. It is not a casual reading list but.",
+      "input_fixture": "project source text and the named component `Cambridge Companion`",
+      "operation_under_test": "uses `Cambridge Companion` as a named project component with a traceable role in the public mechanism. Source context: Cambridge Companion / Cambridge History / Wiley-Blackwell / Gale-Macmillan / Rowman-Bloomsbury families. It is not a casual reading list but.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Cambridge Companion`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "2698dedede55c4b56ee322cd",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44444,
+            "sha256": "c9ad8f91f6f931dac2f25b60f884b10c00fd271a52aae128190cf6ff4757801a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36440,
+            "sha256": "4e770688d2c6e3b1389181ed4f8f9fdb846f2cb39ef59a6714c8356c58806906"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21525,
+            "sha256": "9eed398de9993b14321d81f504c78014cf2596f5d0e3b0b1724292bec9b58e5c"
+          },
+          {
+            "relative_path": "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21330,
+            "sha256": "7c401def5b3c0509fd13d82b850e172751cd8dd5c52577075aad4416e94ca775"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47607,
+            "sha256": "730d8dcc1c9788fd1ae77628f2323b6dba2fb7404c9815da71e7c69208404feb"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10698,
+            "sha256": "8ab5d9b01676475e4123846ef1dffa432163f1e2a2dbd70a45125baa4120a1ee"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+          "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+          "project_blueprints/mb-russian-reference-handoff-final/README.md",
+          "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+          "proof_demos/mb-russian-reference-handoff-final/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4d0a893b3b22fd1023e52715"
+    },
+    {
+      "receipt_id": "mb-russian-reference-handoff-final__receipt_0015",
+      "project_id": "mb-russian-reference-handoff-final",
+      "project_title": "100-item ranked bibliography with verification levels A/B/C × core/extended",
+      "proof_tier": "source-backed-proof-build",
+      "component": "100-item ranked bibliography with verification levels A/B/C × core/extended / Cambridge History",
+      "component_case_id": "mb-russian-reference-handoff-final__0015__100-item-ranked-bibliography-with-verification-levels-a-b-c-core-extended-cambridge-histor",
+      "claim_to_demonstrate": "uses `Cambridge History` as a named project component with a traceable role in the public mechanism. Source context: Cambridge History / Wiley-Blackwell / Gale-Macmillan / Rowman-Bloomsbury families. It is not a casual reading list but a library-building.",
+      "input_fixture": "project source text and the named component `Cambridge History`",
+      "operation_under_test": "uses `Cambridge History` as a named project component with a traceable role in the public mechanism. Source context: Cambridge History / Wiley-Blackwell / Gale-Macmillan / Rowman-Bloomsbury families. It is not a casual reading list but a library-building.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Cambridge History`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c609999dab26f6a2751ad7fe",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44444,
+            "sha256": "c9ad8f91f6f931dac2f25b60f884b10c00fd271a52aae128190cf6ff4757801a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36440,
+            "sha256": "4e770688d2c6e3b1389181ed4f8f9fdb846f2cb39ef59a6714c8356c58806906"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21525,
+            "sha256": "9eed398de9993b14321d81f504c78014cf2596f5d0e3b0b1724292bec9b58e5c"
+          },
+          {
+            "relative_path": "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21330,
+            "sha256": "7c401def5b3c0509fd13d82b850e172751cd8dd5c52577075aad4416e94ca775"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47607,
+            "sha256": "730d8dcc1c9788fd1ae77628f2323b6dba2fb7404c9815da71e7c69208404feb"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10698,
+            "sha256": "8ab5d9b01676475e4123846ef1dffa432163f1e2a2dbd70a45125baa4120a1ee"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+          "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+          "project_blueprints/mb-russian-reference-handoff-final/README.md",
+          "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+          "proof_demos/mb-russian-reference-handoff-final/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7b2c07a19f0d8a5f76d5f396"
+    },
+    {
+      "receipt_id": "mb-russian-reference-handoff-final__receipt_0016",
+      "project_id": "mb-russian-reference-handoff-final",
+      "project_title": "100-item ranked bibliography with verification levels A/B/C × core/extended",
+      "proof_tier": "source-backed-proof-build",
+      "component": "100-item ranked bibliography with verification levels A/B/C × core/extended / Russia Desk",
+      "component_case_id": "mb-russian-reference-handoff-final__0016__100-item-ranked-bibliography-with-verification-levels-a-b-c-core-extended-russia-desk",
+      "claim_to_demonstrate": "treats `Russia Desk` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Use as the strongest local source reservoir for Russia Desk, regional studies, and security-state pages.",
+      "input_fixture": "project source text and the named component `Russia Desk`",
+      "operation_under_test": "treats `Russia Desk` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Use as the strongest local source reservoir for Russia Desk, regional studies, and security-state pages.",
+      "expected_output": "a room, workbench, or interface function tied to `Russia Desk`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "29a524e8e49e44bb3f9f3deb",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44444,
+            "sha256": "c9ad8f91f6f931dac2f25b60f884b10c00fd271a52aae128190cf6ff4757801a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36440,
+            "sha256": "4e770688d2c6e3b1389181ed4f8f9fdb846f2cb39ef59a6714c8356c58806906"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21525,
+            "sha256": "9eed398de9993b14321d81f504c78014cf2596f5d0e3b0b1724292bec9b58e5c"
+          },
+          {
+            "relative_path": "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21330,
+            "sha256": "7c401def5b3c0509fd13d82b850e172751cd8dd5c52577075aad4416e94ca775"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47607,
+            "sha256": "730d8dcc1c9788fd1ae77628f2323b6dba2fb7404c9815da71e7c69208404feb"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10698,
+            "sha256": "8ab5d9b01676475e4123846ef1dffa432163f1e2a2dbd70a45125baa4120a1ee"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+          "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+          "project_blueprints/mb-russian-reference-handoff-final/README.md",
+          "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+          "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+          "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "fd5add30c683a6aa41cb8ef2"
+    },
+    {
+      "receipt_id": "mb-russian-reference-handoff-final__receipt_0017",
+      "project_id": "mb-russian-reference-handoff-final",
+      "project_title": "100-item ranked bibliography with verification levels A/B/C × core/extended",
+      "proof_tier": "source-backed-proof-build",
+      "component": "100-item ranked bibliography with verification levels A/B/C × core/extended / Ground Russia-facing",
+      "component_case_id": "mb-russian-reference-handoff-final__0017__100-item-ranked-bibliography-with-verification-levels-a-b-c-core-extended-ground-russia-fa",
+      "claim_to_demonstrate": "uses `Ground Russia-facing` as a named project component with a traceable role in the public mechanism. Source context: Ground Russia-facing pages in a serious regional-security and post-Soviet studies corpus. Mechanism: Extract security-service, influence.",
+      "input_fixture": "project source text and the named component `Ground Russia-facing`",
+      "operation_under_test": "uses `Ground Russia-facing` as a named project component with a traceable role in the public mechanism. Source context: Ground Russia-facing pages in a serious regional-security and post-Soviet studies corpus. Mechanism: Extract security-service, influence.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Ground Russia-facing`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "964bbe0748f62e875c0e56fc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44444,
+            "sha256": "c9ad8f91f6f931dac2f25b60f884b10c00fd271a52aae128190cf6ff4757801a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36440,
+            "sha256": "4e770688d2c6e3b1389181ed4f8f9fdb846f2cb39ef59a6714c8356c58806906"
+          },
+          {
+            "relative_path": "project_blueprints/mb-russian-reference-handoff-final/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21525,
+            "sha256": "9eed398de9993b14321d81f504c78014cf2596f5d0e3b0b1724292bec9b58e5c"
+          },
+          {
+            "relative_path": "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21330,
+            "sha256": "7c401def5b3c0509fd13d82b850e172751cd8dd5c52577075aad4416e94ca775"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47607,
+            "sha256": "730d8dcc1c9788fd1ae77628f2323b6dba2fb7404c9815da71e7c69208404feb"
+          },
+          {
+            "relative_path": "proof_demos/mb-russian-reference-handoff-final/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10698,
+            "sha256": "8ab5d9b01676475e4123846ef1dffa432163f1e2a2dbd70a45125baa4120a1ee"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-russian-reference-handoff-final/blueprint.json",
+          "project_blueprints/mb-russian-reference-handoff-final/instrument_map.json",
+          "project_blueprints/mb-russian-reference-handoff-final/README.md",
+          "proof_builds/mb-russian-reference-handoff-final/proof_build.json",
+          "proof_demos/mb-russian-reference-handoff-final/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b81bfa35458c64a659da0456"
+    }
+  ]
+}

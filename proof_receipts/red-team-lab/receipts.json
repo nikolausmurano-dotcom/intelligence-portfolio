@@ -1,0 +1,1454 @@
+{
+  "project": {
+    "project_id": "red-team-lab",
+    "title": "Red Team Lab — consolidated counter-deception lab across five authority roles"
+  },
+  "receipts": [
+    {
+      "receipt_id": "red-team-lab__receipt_0001",
+      "project_id": "red-team-lab",
+      "project_title": "Red Team Lab — consolidated counter-deception lab across five authority roles",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Red Team Lab — consolidated counter-deception lab across five authority roles Artifact Identity Register",
+      "component_case_id": "red-team-lab__0001__red-team-lab-consolidated-counter-deception-lab-across-five-authority-roles-artifact-ident",
+      "claim_to_demonstrate": "A consolidated counter-deception lab for adversarial review of analytical work.; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "packet name, source files, version signal, scope, and intended destination",
+      "operation_under_test": "A consolidated counter-deception lab for adversarial review of analytical work.; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "what the packet is and what decision it can still change",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0fdf86a6d1416d594a048c5f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/red-team-lab/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47279,
+            "sha256": "7497530cb319d1f54376b1ace024efd13c6795bb9f84ae1c39bfef46354786b8"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39511,
+            "sha256": "8b945c5ba0eec4f8e0f5e3d91f299dd0ba7b63e8cbda262fedeca43464089da3"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22360,
+            "sha256": "c3491a00a0637f9834283119681124ec8c618710112982748ff32b0403ddae69"
+          },
+          {
+            "relative_path": "proof_builds/red-team-lab/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21952,
+            "sha256": "f24d5e661e5baae5715a2c33837cd5570bfc7f07771ef1a9dd867fe2ef4c1eb6"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47795,
+            "sha256": "af337f1496ac6c1d4da2aa813b550428690bae047673f72d57e0ac72c9014384"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10479,
+            "sha256": "aea80e1b463415a0cf4ed1db802ba36388c0ccd0461a3ed72b1594885a0b5f3a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/red-team-lab/blueprint.json",
+          "project_blueprints/red-team-lab/instrument_map.json",
+          "project_blueprints/red-team-lab/README.md",
+          "proof_builds/red-team-lab/proof_build.json",
+          "proof_demos/red-team-lab/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "398b597e60fc44e631bd6bfe"
+    },
+    {
+      "receipt_id": "red-team-lab__receipt_0002",
+      "project_id": "red-team-lab",
+      "project_title": "Red Team Lab — consolidated counter-deception lab across five authority roles",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Red Team Lab — consolidated counter-deception lab across five authority roles Extraction And Manifest Layer",
+      "component_case_id": "red-team-lab__0002__red-team-lab-consolidated-counter-deception-lab-across-five-authority-roles-extraction-and",
+      "claim_to_demonstrate": "Source use is organized by role: method authorities, domain evidence, technical background, implementation evidence, and claim limits. The page should show why each source matters; direct quotations and stronger factual claims still require exact passage.",
+      "input_fixture": "files, tables, text, screenshots, source notes, and provenance markers",
+      "operation_under_test": "Source use is organized by role: method authorities, domain evidence, technical background, implementation evidence, and claim limits. The page should show why each source matters; direct quotations and stronger factual claims still require exact passage.",
+      "expected_output": "what can be safely mined from the packet as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d4064f8284d42db167c077d8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/red-team-lab/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47279,
+            "sha256": "7497530cb319d1f54376b1ace024efd13c6795bb9f84ae1c39bfef46354786b8"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39511,
+            "sha256": "8b945c5ba0eec4f8e0f5e3d91f299dd0ba7b63e8cbda262fedeca43464089da3"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22360,
+            "sha256": "c3491a00a0637f9834283119681124ec8c618710112982748ff32b0403ddae69"
+          },
+          {
+            "relative_path": "proof_builds/red-team-lab/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21952,
+            "sha256": "f24d5e661e5baae5715a2c33837cd5570bfc7f07771ef1a9dd867fe2ef4c1eb6"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47795,
+            "sha256": "af337f1496ac6c1d4da2aa813b550428690bae047673f72d57e0ac72c9014384"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10479,
+            "sha256": "aea80e1b463415a0cf4ed1db802ba36388c0ccd0461a3ed72b1594885a0b5f3a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/red-team-lab/blueprint.json",
+          "project_blueprints/red-team-lab/instrument_map.json",
+          "project_blueprints/red-team-lab/README.md",
+          "proof_builds/red-team-lab/proof_build.json",
+          "proof_demos/red-team-lab/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1578f126acc99d735aa10fc0"
+    },
+    {
+      "receipt_id": "red-team-lab__receipt_0003",
+      "project_id": "red-team-lab",
+      "project_title": "Red Team Lab — consolidated counter-deception lab across five authority roles",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Red Team Lab — consolidated counter-deception lab across five authority roles Mechanism Or Claim Distillation",
+      "component_case_id": "red-team-lab__0003__red-team-lab-consolidated-counter-deception-lab-across-five-authority-roles-mechanism-or-c",
+      "claim_to_demonstrate": "It treats red-teaming as a structured discipline with five authority roles: baseline canon, implementation packet, Prism Observatory, continuation pack, and bootstrap wrapper. The lab preserves six-table SQLite schema logic, canonical JSON project schema.",
+      "input_fixture": "the packet's central method, model, concept, or design rule",
+      "operation_under_test": "It treats red-teaming as a structured discipline with five authority roles: baseline canon, implementation packet, Prism Observatory, continuation pack, and bootstrap wrapper. The lab preserves six-table SQLite schema logic, canonical JSON project schema.",
+      "expected_output": "the distinctive idea that should not disappear in public summary",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "23247414e5c922324046d909",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/red-team-lab/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47279,
+            "sha256": "7497530cb319d1f54376b1ace024efd13c6795bb9f84ae1c39bfef46354786b8"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39511,
+            "sha256": "8b945c5ba0eec4f8e0f5e3d91f299dd0ba7b63e8cbda262fedeca43464089da3"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22360,
+            "sha256": "c3491a00a0637f9834283119681124ec8c618710112982748ff32b0403ddae69"
+          },
+          {
+            "relative_path": "proof_builds/red-team-lab/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21952,
+            "sha256": "f24d5e661e5baae5715a2c33837cd5570bfc7f07771ef1a9dd867fe2ef4c1eb6"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47795,
+            "sha256": "af337f1496ac6c1d4da2aa813b550428690bae047673f72d57e0ac72c9014384"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10479,
+            "sha256": "aea80e1b463415a0cf4ed1db802ba36388c0ccd0461a3ed72b1594885a0b5f3a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/red-team-lab/blueprint.json",
+          "project_blueprints/red-team-lab/instrument_map.json",
+          "project_blueprints/red-team-lab/README.md",
+          "proof_builds/red-team-lab/proof_build.json",
+          "proof_demos/red-team-lab/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1592ce574a0b03fbb01b8698"
+    },
+    {
+      "receipt_id": "red-team-lab__receipt_0004",
+      "project_id": "red-team-lab",
+      "project_title": "Red Team Lab — consolidated counter-deception lab across five authority roles",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Red Team Lab — consolidated counter-deception lab across five authority roles Proof Boundary",
+      "component_case_id": "red-team-lab__0004__red-team-lab-consolidated-counter-deception-lab-across-five-authority-roles-proof-boundary",
+      "claim_to_demonstrate": "All five authority roles are present in the canonical Red Team family. The baseline-canon archive carries the schema and replayable canon; the implementation packet carries the patch-and-validation record; the Prism Observatory carries the doctrinal core; the.",
+      "input_fixture": "built assets, partial assets, archive-only assets, and unsupported claims",
+      "operation_under_test": "All five authority roles are present in the canonical Red Team family. The baseline-canon archive carries the schema and replayable canon; the implementation packet carries the patch-and-validation record; the Prism Observatory carries the doctrinal core; the.",
+      "expected_output": "what the packet proves now as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3f75a54cf5b9a997a4e640e7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/red-team-lab/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47279,
+            "sha256": "7497530cb319d1f54376b1ace024efd13c6795bb9f84ae1c39bfef46354786b8"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39511,
+            "sha256": "8b945c5ba0eec4f8e0f5e3d91f299dd0ba7b63e8cbda262fedeca43464089da3"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22360,
+            "sha256": "c3491a00a0637f9834283119681124ec8c618710112982748ff32b0403ddae69"
+          },
+          {
+            "relative_path": "proof_builds/red-team-lab/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21952,
+            "sha256": "f24d5e661e5baae5715a2c33837cd5570bfc7f07771ef1a9dd867fe2ef4c1eb6"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47795,
+            "sha256": "af337f1496ac6c1d4da2aa813b550428690bae047673f72d57e0ac72c9014384"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10479,
+            "sha256": "aea80e1b463415a0cf4ed1db802ba36388c0ccd0461a3ed72b1594885a0b5f3a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/red-team-lab/blueprint.json",
+          "project_blueprints/red-team-lab/instrument_map.json",
+          "project_blueprints/red-team-lab/README.md",
+          "proof_builds/red-team-lab/proof_build.json",
+          "proof_demos/red-team-lab/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "fa58d48293093f5579df2a05"
+    },
+    {
+      "receipt_id": "red-team-lab__receipt_0005",
+      "project_id": "red-team-lab",
+      "project_title": "Red Team Lab — consolidated counter-deception lab across five authority roles",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Red Team Lab — consolidated counter-deception lab across five authority roles Promotion Route",
+      "component_case_id": "red-team-lab__0005__red-team-lab-consolidated-counter-deception-lab-across-five-authority-roles-promotion-rout",
+      "claim_to_demonstrate": "Publish the consolidated public Red Team / Counter-Deception Lab with the lineage appendix that pages the five authority roles to a curious reader without forcing them through forty-five handoff packages. The internal authority structure stays where it.",
+      "input_fixture": "website room, MuranoOS room, Nexus task, paper, source bank, or archive",
+      "operation_under_test": "Publish the consolidated public Red Team / Counter-Deception Lab with the lineage appendix that pages the five authority roles to a curious reader without forcing them through forty-five handoff packages. The internal authority structure stays where it.",
+      "expected_output": "where the packet should go next as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e05552ce50ffd3271b5a69f7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/red-team-lab/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47279,
+            "sha256": "7497530cb319d1f54376b1ace024efd13c6795bb9f84ae1c39bfef46354786b8"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39511,
+            "sha256": "8b945c5ba0eec4f8e0f5e3d91f299dd0ba7b63e8cbda262fedeca43464089da3"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22360,
+            "sha256": "c3491a00a0637f9834283119681124ec8c618710112982748ff32b0403ddae69"
+          },
+          {
+            "relative_path": "proof_builds/red-team-lab/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21952,
+            "sha256": "f24d5e661e5baae5715a2c33837cd5570bfc7f07771ef1a9dd867fe2ef4c1eb6"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47795,
+            "sha256": "af337f1496ac6c1d4da2aa813b550428690bae047673f72d57e0ac72c9014384"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10479,
+            "sha256": "aea80e1b463415a0cf4ed1db802ba36388c0ccd0461a3ed72b1594885a0b5f3a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/red-team-lab/blueprint.json",
+          "project_blueprints/red-team-lab/instrument_map.json",
+          "project_blueprints/red-team-lab/README.md",
+          "proof_builds/red-team-lab/proof_build.json",
+          "proof_demos/red-team-lab/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c45ebc539fb8dac0ce1746d9"
+    },
+    {
+      "receipt_id": "red-team-lab__receipt_0006",
+      "project_id": "red-team-lab",
+      "project_title": "Red Team Lab — consolidated counter-deception lab across five authority roles",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Red Team Lab — consolidated counter-deception lab across five authority roles Current Authority State",
+      "component_case_id": "red-team-lab__0006__red-team-lab-consolidated-counter-deception-lab-across-five-authority-roles-current-author",
+      "claim_to_demonstrate": "Status: All five authority roles are present in the canonical Red Team family. The baseline-canon archive carries the schema and replayable canon; the implementation packet carries the patch-and-validation record; the Prism Observatory carries the doctrinal.",
+      "input_fixture": "canonical, superseded, derivative, draft, or context-only status",
+      "operation_under_test": "Status: All five authority roles are present in the canonical Red Team family. The baseline-canon archive carries the schema and replayable canon; the implementation packet carries the patch-and-validation record; the Prism Observatory carries the doctrinal.",
+      "expected_output": "how strongly the packet may govern a public page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4bf580d68c94f0235cd07355",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/red-team-lab/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47279,
+            "sha256": "7497530cb319d1f54376b1ace024efd13c6795bb9f84ae1c39bfef46354786b8"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39511,
+            "sha256": "8b945c5ba0eec4f8e0f5e3d91f299dd0ba7b63e8cbda262fedeca43464089da3"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22360,
+            "sha256": "c3491a00a0637f9834283119681124ec8c618710112982748ff32b0403ddae69"
+          },
+          {
+            "relative_path": "proof_builds/red-team-lab/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21952,
+            "sha256": "f24d5e661e5baae5715a2c33837cd5570bfc7f07771ef1a9dd867fe2ef4c1eb6"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47795,
+            "sha256": "af337f1496ac6c1d4da2aa813b550428690bae047673f72d57e0ac72c9014384"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10479,
+            "sha256": "aea80e1b463415a0cf4ed1db802ba36388c0ccd0461a3ed72b1594885a0b5f3a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/red-team-lab/blueprint.json",
+          "project_blueprints/red-team-lab/instrument_map.json",
+          "project_blueprints/red-team-lab/README.md",
+          "proof_builds/red-team-lab/proof_build.json",
+          "proof_demos/red-team-lab/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "204dba91673682eafa9c7eb1"
+    },
+    {
+      "receipt_id": "red-team-lab__receipt_0007",
+      "project_id": "red-team-lab",
+      "project_title": "Red Team Lab — consolidated counter-deception lab across five authority roles",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Red Team Lab — consolidated counter-deception lab across five authority roles Gap And Reconciliation Queue",
+      "component_case_id": "red-team-lab__0007__red-team-lab-consolidated-counter-deception-lab-across-five-authority-roles-gap-and-reconc",
+      "claim_to_demonstrate": "Remaining gaps: publish the consolidated public Red Team / Counter-Deception Lab with the lineage appendix that pages the five authority roles to a curious reader without forcing them through forty-five handoff packages. The internal authority structure stays.",
+      "input_fixture": "missing source reads, duplicate resolution, version adjudication, or implementation work",
+      "operation_under_test": "Remaining gaps: publish the consolidated public Red Team / Counter-Deception Lab with the lineage appendix that pages the five authority roles to a curious reader without forcing them through forty-five handoff packages. The internal authority structure stays.",
+      "expected_output": "next step before stronger public use as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d860491541934d3d70c14bc6",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/red-team-lab/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47279,
+            "sha256": "7497530cb319d1f54376b1ace024efd13c6795bb9f84ae1c39bfef46354786b8"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39511,
+            "sha256": "8b945c5ba0eec4f8e0f5e3d91f299dd0ba7b63e8cbda262fedeca43464089da3"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22360,
+            "sha256": "c3491a00a0637f9834283119681124ec8c618710112982748ff32b0403ddae69"
+          },
+          {
+            "relative_path": "proof_builds/red-team-lab/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21952,
+            "sha256": "f24d5e661e5baae5715a2c33837cd5570bfc7f07771ef1a9dd867fe2ef4c1eb6"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47795,
+            "sha256": "af337f1496ac6c1d4da2aa813b550428690bae047673f72d57e0ac72c9014384"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10479,
+            "sha256": "aea80e1b463415a0cf4ed1db802ba36388c0ccd0461a3ed72b1594885a0b5f3a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/red-team-lab/blueprint.json",
+          "project_blueprints/red-team-lab/instrument_map.json",
+          "project_blueprints/red-team-lab/README.md",
+          "proof_builds/red-team-lab/proof_build.json",
+          "proof_demos/red-team-lab/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d0f7b213b17891f1798d8653"
+    },
+    {
+      "receipt_id": "red-team-lab__receipt_0008",
+      "project_id": "red-team-lab",
+      "project_title": "Red Team Lab — consolidated counter-deception lab across five authority roles",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Red Team Lab — consolidated counter-deception lab across five authority roles / The Red Team",
+      "component_case_id": "red-team-lab__0008__red-team-lab-consolidated-counter-deception-lab-across-five-authority-roles-the-red-team",
+      "claim_to_demonstrate": "uses `The Red Team` as a named project component with a traceable role in the public mechanism. Source context: The Red Team family is not one page nor forty unrelated pages — it is a single canonical lab with five differentiated authority roles. Each role.",
+      "input_fixture": "project source text and the named component `The Red Team`",
+      "operation_under_test": "uses `The Red Team` as a named project component with a traceable role in the public mechanism. Source context: The Red Team family is not one page nor forty unrelated pages — it is a single canonical lab with five differentiated authority roles. Each role.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `The Red Team`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "dd3732640b6c7d33014b14e5",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/red-team-lab/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47279,
+            "sha256": "7497530cb319d1f54376b1ace024efd13c6795bb9f84ae1c39bfef46354786b8"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39511,
+            "sha256": "8b945c5ba0eec4f8e0f5e3d91f299dd0ba7b63e8cbda262fedeca43464089da3"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22360,
+            "sha256": "c3491a00a0637f9834283119681124ec8c618710112982748ff32b0403ddae69"
+          },
+          {
+            "relative_path": "proof_builds/red-team-lab/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21952,
+            "sha256": "f24d5e661e5baae5715a2c33837cd5570bfc7f07771ef1a9dd867fe2ef4c1eb6"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47795,
+            "sha256": "af337f1496ac6c1d4da2aa813b550428690bae047673f72d57e0ac72c9014384"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10479,
+            "sha256": "aea80e1b463415a0cf4ed1db802ba36388c0ccd0461a3ed72b1594885a0b5f3a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/red-team-lab/blueprint.json",
+          "project_blueprints/red-team-lab/instrument_map.json",
+          "project_blueprints/red-team-lab/README.md",
+          "proof_builds/red-team-lab/proof_build.json",
+          "proof_demos/red-team-lab/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8afaafeacb7fa85d636b5a36"
+    },
+    {
+      "receipt_id": "red-team-lab__receipt_0009",
+      "project_id": "red-team-lab",
+      "project_title": "Red Team Lab — consolidated counter-deception lab across five authority roles",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Red Team Lab — consolidated counter-deception lab across five authority roles / Prism Observatory",
+      "component_case_id": "red-team-lab__0009__red-team-lab-consolidated-counter-deception-lab-across-five-authority-roles-prism-observat",
+      "claim_to_demonstrate": "uses `Prism Observatory` as a named project component with a traceable role in the public mechanism. Source context: baseline canon, implementation packet, Prism Observatory, continuation pack, and bootstrap wrapper. The lab preserves six-table SQLite schema.",
+      "input_fixture": "project source text and the named component `Prism Observatory`",
+      "operation_under_test": "uses `Prism Observatory` as a named project component with a traceable role in the public mechanism. Source context: baseline canon, implementation packet, Prism Observatory, continuation pack, and bootstrap wrapper. The lab preserves six-table SQLite schema.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Prism Observatory`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "eda7ef6e899502f9eb6dd220",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/red-team-lab/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47279,
+            "sha256": "7497530cb319d1f54376b1ace024efd13c6795bb9f84ae1c39bfef46354786b8"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39511,
+            "sha256": "8b945c5ba0eec4f8e0f5e3d91f299dd0ba7b63e8cbda262fedeca43464089da3"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22360,
+            "sha256": "c3491a00a0637f9834283119681124ec8c618710112982748ff32b0403ddae69"
+          },
+          {
+            "relative_path": "proof_builds/red-team-lab/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21952,
+            "sha256": "f24d5e661e5baae5715a2c33837cd5570bfc7f07771ef1a9dd867fe2ef4c1eb6"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47795,
+            "sha256": "af337f1496ac6c1d4da2aa813b550428690bae047673f72d57e0ac72c9014384"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10479,
+            "sha256": "aea80e1b463415a0cf4ed1db802ba36388c0ccd0461a3ed72b1594885a0b5f3a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/red-team-lab/blueprint.json",
+          "project_blueprints/red-team-lab/instrument_map.json",
+          "project_blueprints/red-team-lab/README.md",
+          "proof_builds/red-team-lab/proof_build.json",
+          "proof_demos/red-team-lab/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8622a81c4af262fca4f088ab"
+    },
+    {
+      "receipt_id": "red-team-lab__receipt_0010",
+      "project_id": "red-team-lab",
+      "project_title": "Red Team Lab — consolidated counter-deception lab across five authority roles",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Red Team Lab — consolidated counter-deception lab across five authority roles / Red Team",
+      "component_case_id": "red-team-lab__0010__red-team-lab-consolidated-counter-deception-lab-across-five-authority-roles-red-team",
+      "claim_to_demonstrate": "uses `Red Team` as a named project component with a traceable role in the public mechanism. Source context: The Red Team family is not one page nor forty unrelated pages — it is a single canonical lab with five differentiated authority roles. Each role.",
+      "input_fixture": "project source text and the named component `Red Team`",
+      "operation_under_test": "uses `Red Team` as a named project component with a traceable role in the public mechanism. Source context: The Red Team family is not one page nor forty unrelated pages — it is a single canonical lab with five differentiated authority roles. Each role.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Red Team`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "dd3732640b6c7d33014b14e5",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/red-team-lab/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47279,
+            "sha256": "7497530cb319d1f54376b1ace024efd13c6795bb9f84ae1c39bfef46354786b8"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39511,
+            "sha256": "8b945c5ba0eec4f8e0f5e3d91f299dd0ba7b63e8cbda262fedeca43464089da3"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22360,
+            "sha256": "c3491a00a0637f9834283119681124ec8c618710112982748ff32b0403ddae69"
+          },
+          {
+            "relative_path": "proof_builds/red-team-lab/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21952,
+            "sha256": "f24d5e661e5baae5715a2c33837cd5570bfc7f07771ef1a9dd867fe2ef4c1eb6"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47795,
+            "sha256": "af337f1496ac6c1d4da2aa813b550428690bae047673f72d57e0ac72c9014384"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10479,
+            "sha256": "aea80e1b463415a0cf4ed1db802ba36388c0ccd0461a3ed72b1594885a0b5f3a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/red-team-lab/blueprint.json",
+          "project_blueprints/red-team-lab/instrument_map.json",
+          "project_blueprints/red-team-lab/README.md",
+          "proof_builds/red-team-lab/proof_build.json",
+          "proof_demos/red-team-lab/demo_cases.json",
+          "proof_demos/red-team-lab/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7f4328d68b716c3e225c6151"
+    },
+    {
+      "receipt_id": "red-team-lab__receipt_0011",
+      "project_id": "red-team-lab",
+      "project_title": "Red Team Lab — consolidated counter-deception lab across five authority roles",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Red Team Lab — consolidated counter-deception lab across five authority roles / Publish the",
+      "component_case_id": "red-team-lab__0011__red-team-lab-consolidated-counter-deception-lab-across-five-authority-roles-publish-the",
+      "claim_to_demonstrate": "uses `Publish the` as a named project component with a traceable role in the public mechanism. Source context: Publish the consolidated public Red Team / Counter-Deception Lab with the lineage appendix that pages the five authority roles to a curious reader.",
+      "input_fixture": "project source text and the named component `Publish the`",
+      "operation_under_test": "uses `Publish the` as a named project component with a traceable role in the public mechanism. Source context: Publish the consolidated public Red Team / Counter-Deception Lab with the lineage appendix that pages the five authority roles to a curious reader.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Publish the`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90d210652c7161de1c05fbe",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/red-team-lab/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47279,
+            "sha256": "7497530cb319d1f54376b1ace024efd13c6795bb9f84ae1c39bfef46354786b8"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39511,
+            "sha256": "8b945c5ba0eec4f8e0f5e3d91f299dd0ba7b63e8cbda262fedeca43464089da3"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22360,
+            "sha256": "c3491a00a0637f9834283119681124ec8c618710112982748ff32b0403ddae69"
+          },
+          {
+            "relative_path": "proof_builds/red-team-lab/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21952,
+            "sha256": "f24d5e661e5baae5715a2c33837cd5570bfc7f07771ef1a9dd867fe2ef4c1eb6"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47795,
+            "sha256": "af337f1496ac6c1d4da2aa813b550428690bae047673f72d57e0ac72c9014384"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10479,
+            "sha256": "aea80e1b463415a0cf4ed1db802ba36388c0ccd0461a3ed72b1594885a0b5f3a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/red-team-lab/blueprint.json",
+          "project_blueprints/red-team-lab/instrument_map.json",
+          "project_blueprints/red-team-lab/README.md",
+          "proof_builds/red-team-lab/proof_build.json",
+          "proof_demos/red-team-lab/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "57b67284e30e064894f35059"
+    },
+    {
+      "receipt_id": "red-team-lab__receipt_0012",
+      "project_id": "red-team-lab",
+      "project_title": "Red Team Lab — consolidated counter-deception lab across five authority roles",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Red Team Lab — consolidated counter-deception lab across five authority roles / Counter-Deception Lab",
+      "component_case_id": "red-team-lab__0012__red-team-lab-consolidated-counter-deception-lab-across-five-authority-roles-counter-decept",
+      "claim_to_demonstrate": "treats `Counter-Deception Lab` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Publish the consolidated public Red Team / Counter-Deception Lab with the lineage appendix that.",
+      "input_fixture": "project source text and the named component `Counter-Deception Lab`",
+      "operation_under_test": "treats `Counter-Deception Lab` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Publish the consolidated public Red Team / Counter-Deception Lab with the lineage appendix that.",
+      "expected_output": "a room, workbench, or interface function tied to `Counter-Deception Lab`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90d210652c7161de1c05fbe",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/red-team-lab/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47279,
+            "sha256": "7497530cb319d1f54376b1ace024efd13c6795bb9f84ae1c39bfef46354786b8"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39511,
+            "sha256": "8b945c5ba0eec4f8e0f5e3d91f299dd0ba7b63e8cbda262fedeca43464089da3"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22360,
+            "sha256": "c3491a00a0637f9834283119681124ec8c618710112982748ff32b0403ddae69"
+          },
+          {
+            "relative_path": "proof_builds/red-team-lab/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21952,
+            "sha256": "f24d5e661e5baae5715a2c33837cd5570bfc7f07771ef1a9dd867fe2ef4c1eb6"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47795,
+            "sha256": "af337f1496ac6c1d4da2aa813b550428690bae047673f72d57e0ac72c9014384"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10479,
+            "sha256": "aea80e1b463415a0cf4ed1db802ba36388c0ccd0461a3ed72b1594885a0b5f3a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/red-team-lab/blueprint.json",
+          "project_blueprints/red-team-lab/instrument_map.json",
+          "project_blueprints/red-team-lab/README.md",
+          "proof_builds/red-team-lab/proof_build.json",
+          "proof_demos/red-team-lab/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a2dd7666d929db7bc900d833"
+    },
+    {
+      "receipt_id": "red-team-lab__receipt_0013",
+      "project_id": "red-team-lab",
+      "project_title": "Red Team Lab — consolidated counter-deception lab across five authority roles",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Red Team Lab — consolidated counter-deception lab across five authority roles / Surfaces the",
+      "component_case_id": "red-team-lab__0013__red-team-lab-consolidated-counter-deception-lab-across-five-authority-roles-surfaces-the",
+      "claim_to_demonstrate": "uses `Surfaces the` as a named project component with a traceable role in the public mechanism. Source context: Step 02 Lineage appendix Surfaces the five authority roles — Baseline Canon, Implementation, Doctrinal Prism Observatory, One-Upload Continuation.",
+      "input_fixture": "project source text and the named component `Surfaces the`",
+      "operation_under_test": "uses `Surfaces the` as a named project component with a traceable role in the public mechanism. Source context: Step 02 Lineage appendix Surfaces the five authority roles — Baseline Canon, Implementation, Doctrinal Prism Observatory, One-Upload Continuation.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Surfaces the`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5b03b442631aab2c52b21511",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/red-team-lab/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47279,
+            "sha256": "7497530cb319d1f54376b1ace024efd13c6795bb9f84ae1c39bfef46354786b8"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39511,
+            "sha256": "8b945c5ba0eec4f8e0f5e3d91f299dd0ba7b63e8cbda262fedeca43464089da3"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22360,
+            "sha256": "c3491a00a0637f9834283119681124ec8c618710112982748ff32b0403ddae69"
+          },
+          {
+            "relative_path": "proof_builds/red-team-lab/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21952,
+            "sha256": "f24d5e661e5baae5715a2c33837cd5570bfc7f07771ef1a9dd867fe2ef4c1eb6"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47795,
+            "sha256": "af337f1496ac6c1d4da2aa813b550428690bae047673f72d57e0ac72c9014384"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10479,
+            "sha256": "aea80e1b463415a0cf4ed1db802ba36388c0ccd0461a3ed72b1594885a0b5f3a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/red-team-lab/blueprint.json",
+          "project_blueprints/red-team-lab/instrument_map.json",
+          "project_blueprints/red-team-lab/README.md",
+          "proof_builds/red-team-lab/proof_build.json",
+          "proof_demos/red-team-lab/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1f85d7897ab8a9c47870c785"
+    },
+    {
+      "receipt_id": "red-team-lab__receipt_0014",
+      "project_id": "red-team-lab",
+      "project_title": "Red Team Lab — consolidated counter-deception lab across five authority roles",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Red Team Lab — consolidated counter-deception lab across five authority roles / Baseline Canon",
+      "component_case_id": "red-team-lab__0014__red-team-lab-consolidated-counter-deception-lab-across-five-authority-roles-baseline-canon",
+      "claim_to_demonstrate": "uses `Baseline Canon` as a named project component with a traceable role in the public mechanism. Source context: baseline canon, implementation packet, Prism Observatory, continuation pack, and bootstrap wrapper. The lab preserves six-table SQLite schema.",
+      "input_fixture": "project source text and the named component `Baseline Canon`",
+      "operation_under_test": "uses `Baseline Canon` as a named project component with a traceable role in the public mechanism. Source context: baseline canon, implementation packet, Prism Observatory, continuation pack, and bootstrap wrapper. The lab preserves six-table SQLite schema.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Baseline Canon`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "eda7ef6e899502f9eb6dd220",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/red-team-lab/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47279,
+            "sha256": "7497530cb319d1f54376b1ace024efd13c6795bb9f84ae1c39bfef46354786b8"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39511,
+            "sha256": "8b945c5ba0eec4f8e0f5e3d91f299dd0ba7b63e8cbda262fedeca43464089da3"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22360,
+            "sha256": "c3491a00a0637f9834283119681124ec8c618710112982748ff32b0403ddae69"
+          },
+          {
+            "relative_path": "proof_builds/red-team-lab/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21952,
+            "sha256": "f24d5e661e5baae5715a2c33837cd5570bfc7f07771ef1a9dd867fe2ef4c1eb6"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47795,
+            "sha256": "af337f1496ac6c1d4da2aa813b550428690bae047673f72d57e0ac72c9014384"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10479,
+            "sha256": "aea80e1b463415a0cf4ed1db802ba36388c0ccd0461a3ed72b1594885a0b5f3a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/red-team-lab/blueprint.json",
+          "project_blueprints/red-team-lab/instrument_map.json",
+          "project_blueprints/red-team-lab/README.md",
+          "proof_builds/red-team-lab/proof_build.json",
+          "proof_demos/red-team-lab/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d2a128d7756d3ff28e89345c"
+    },
+    {
+      "receipt_id": "red-team-lab__receipt_0015",
+      "project_id": "red-team-lab",
+      "project_title": "Red Team Lab — consolidated counter-deception lab across five authority roles",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Red Team Lab — consolidated counter-deception lab across five authority roles / Doctrinal Prism Observatory",
+      "component_case_id": "red-team-lab__0015__red-team-lab-consolidated-counter-deception-lab-across-five-authority-roles-doctrinal-pris",
+      "claim_to_demonstrate": "uses `Doctrinal Prism Observatory` as a named project component with a traceable role in the public mechanism. Source context: Step 02 Lineage appendix Surfaces the five authority roles — Baseline Canon, Implementation, Doctrinal Prism Observatory, One-Upload.",
+      "input_fixture": "project source text and the named component `Doctrinal Prism Observatory`",
+      "operation_under_test": "uses `Doctrinal Prism Observatory` as a named project component with a traceable role in the public mechanism. Source context: Step 02 Lineage appendix Surfaces the five authority roles — Baseline Canon, Implementation, Doctrinal Prism Observatory, One-Upload.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Doctrinal Prism Observatory`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5b03b442631aab2c52b21511",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/red-team-lab/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47279,
+            "sha256": "7497530cb319d1f54376b1ace024efd13c6795bb9f84ae1c39bfef46354786b8"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39511,
+            "sha256": "8b945c5ba0eec4f8e0f5e3d91f299dd0ba7b63e8cbda262fedeca43464089da3"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22360,
+            "sha256": "c3491a00a0637f9834283119681124ec8c618710112982748ff32b0403ddae69"
+          },
+          {
+            "relative_path": "proof_builds/red-team-lab/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21952,
+            "sha256": "f24d5e661e5baae5715a2c33837cd5570bfc7f07771ef1a9dd867fe2ef4c1eb6"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47795,
+            "sha256": "af337f1496ac6c1d4da2aa813b550428690bae047673f72d57e0ac72c9014384"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10479,
+            "sha256": "aea80e1b463415a0cf4ed1db802ba36388c0ccd0461a3ed72b1594885a0b5f3a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/red-team-lab/blueprint.json",
+          "project_blueprints/red-team-lab/instrument_map.json",
+          "project_blueprints/red-team-lab/README.md",
+          "proof_builds/red-team-lab/proof_build.json",
+          "proof_demos/red-team-lab/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5e2a3348994cc677371672f7"
+    },
+    {
+      "receipt_id": "red-team-lab__receipt_0016",
+      "project_id": "red-team-lab",
+      "project_title": "Red Team Lab — consolidated counter-deception lab across five authority roles",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Red Team Lab — consolidated counter-deception lab across five authority roles / One-Upload Continuation",
+      "component_case_id": "red-team-lab__0016__red-team-lab-consolidated-counter-deception-lab-across-five-authority-roles-one-upload-con",
+      "claim_to_demonstrate": "uses `One-Upload Continuation` as a named project component with a traceable role in the public mechanism. Source context: Step 02 Lineage appendix Surfaces the five authority roles — Baseline Canon, Implementation, Doctrinal Prism Observatory, One-Upload.",
+      "input_fixture": "project source text and the named component `One-Upload Continuation`",
+      "operation_under_test": "uses `One-Upload Continuation` as a named project component with a traceable role in the public mechanism. Source context: Step 02 Lineage appendix Surfaces the five authority roles — Baseline Canon, Implementation, Doctrinal Prism Observatory, One-Upload.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `One-Upload Continuation`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5b03b442631aab2c52b21511",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/red-team-lab/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47279,
+            "sha256": "7497530cb319d1f54376b1ace024efd13c6795bb9f84ae1c39bfef46354786b8"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39511,
+            "sha256": "8b945c5ba0eec4f8e0f5e3d91f299dd0ba7b63e8cbda262fedeca43464089da3"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22360,
+            "sha256": "c3491a00a0637f9834283119681124ec8c618710112982748ff32b0403ddae69"
+          },
+          {
+            "relative_path": "proof_builds/red-team-lab/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21952,
+            "sha256": "f24d5e661e5baae5715a2c33837cd5570bfc7f07771ef1a9dd867fe2ef4c1eb6"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47795,
+            "sha256": "af337f1496ac6c1d4da2aa813b550428690bae047673f72d57e0ac72c9014384"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10479,
+            "sha256": "aea80e1b463415a0cf4ed1db802ba36388c0ccd0461a3ed72b1594885a0b5f3a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/red-team-lab/blueprint.json",
+          "project_blueprints/red-team-lab/instrument_map.json",
+          "project_blueprints/red-team-lab/README.md",
+          "proof_builds/red-team-lab/proof_build.json",
+          "proof_demos/red-team-lab/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5dc1e24f1a3c06a400028d10"
+    },
+    {
+      "receipt_id": "red-team-lab__receipt_0017",
+      "project_id": "red-team-lab",
+      "project_title": "Red Team Lab — consolidated counter-deception lab across five authority roles",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Red Team Lab — consolidated counter-deception lab across five authority roles / Bootstrap Wrapper",
+      "component_case_id": "red-team-lab__0017__red-team-lab-consolidated-counter-deception-lab-across-five-authority-roles-bootstrap-wrap",
+      "claim_to_demonstrate": "uses `Bootstrap Wrapper` as a named project component with a traceable role in the public mechanism. Source context: baseline canon, implementation packet, Prism Observatory, continuation pack, and bootstrap wrapper. The lab preserves six-table SQLite schema.",
+      "input_fixture": "project source text and the named component `Bootstrap Wrapper`",
+      "operation_under_test": "uses `Bootstrap Wrapper` as a named project component with a traceable role in the public mechanism. Source context: baseline canon, implementation packet, Prism Observatory, continuation pack, and bootstrap wrapper. The lab preserves six-table SQLite schema.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Bootstrap Wrapper`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "eda7ef6e899502f9eb6dd220",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/red-team-lab/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47279,
+            "sha256": "7497530cb319d1f54376b1ace024efd13c6795bb9f84ae1c39bfef46354786b8"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39511,
+            "sha256": "8b945c5ba0eec4f8e0f5e3d91f299dd0ba7b63e8cbda262fedeca43464089da3"
+          },
+          {
+            "relative_path": "project_blueprints/red-team-lab/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22360,
+            "sha256": "c3491a00a0637f9834283119681124ec8c618710112982748ff32b0403ddae69"
+          },
+          {
+            "relative_path": "proof_builds/red-team-lab/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21952,
+            "sha256": "f24d5e661e5baae5715a2c33837cd5570bfc7f07771ef1a9dd867fe2ef4c1eb6"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47795,
+            "sha256": "af337f1496ac6c1d4da2aa813b550428690bae047673f72d57e0ac72c9014384"
+          },
+          {
+            "relative_path": "proof_demos/red-team-lab/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10479,
+            "sha256": "aea80e1b463415a0cf4ed1db802ba36388c0ccd0461a3ed72b1594885a0b5f3a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/red-team-lab/blueprint.json",
+          "project_blueprints/red-team-lab/instrument_map.json",
+          "project_blueprints/red-team-lab/README.md",
+          "proof_builds/red-team-lab/proof_build.json",
+          "proof_demos/red-team-lab/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e1fca56806f0ed8a99a0a8ab"
+    }
+  ]
+}

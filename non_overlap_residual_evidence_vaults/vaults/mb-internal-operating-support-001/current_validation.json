@@ -1,0 +1,44 @@
+{
+  "project_id": "mb-internal-operating-support-001",
+  "generated_at": "2026-05-17T01:47:54+00:00",
+  "validation_status": "evidence_incomplete",
+  "required_slot_count": 4,
+  "present_slot_count": 3,
+  "missing_slot_count": 1,
+  "promotion_allowed": false,
+  "promotion_note": "Promotion remains blocked until all required evidence and human/expert review gates close.",
+  "slot_status": [
+    {
+      "slot_id": "source_verification_matrix",
+      "required_file": "source_verification_matrix.csv",
+      "present": true,
+      "size_bytes": 12617,
+      "sha256": "9fbb717afce36d037f2f49fb9a2cfb6b5cce7a52f1311e3a6157e76c3d3c2b5d",
+      "proves": "Every strengthened source claim has a verified source role and claim ceiling."
+    },
+    {
+      "slot_id": "claim_warrant_notes",
+      "required_file": "claim_warrant_notes.md",
+      "present": true,
+      "size_bytes": 5862,
+      "sha256": "226b7fe732bff79ae0a53251b4a75afe67d965b2cab13e09217d490db230b249",
+      "proves": "Claims are connected to source warrants rather than decorative bibliography."
+    },
+    {
+      "slot_id": "quotation_integrity_check",
+      "required_file": "quotation_integrity_check.md",
+      "present": true,
+      "size_bytes": 587,
+      "sha256": "8ef2c95db9f9b06e7bcdf7a1fe76af398242194daf02c54a71956eb688127845",
+      "proves": "No quotation or paraphrase is promoted without direct verification."
+    },
+    {
+      "slot_id": "external_review_note",
+      "required_file": "external_review_note.md",
+      "present": false,
+      "size_bytes": 0,
+      "sha256": "",
+      "proves": "A reviewer or expert has examined the source use and recorded judgment."
+    }
+  ]
+}

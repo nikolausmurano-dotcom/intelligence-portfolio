@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-05-17T05:47:43+00:00",
+  "base_url": "https://nikmurano.com",
+  "sentinel_results": [
+    {
+      "url": "https://nikmurano.com/production_completion_execution_packs/execution_pack_summary.json",
+      "status": 404,
+      "ok": false,
+      "bytes": 150,
+      "sha256": "ee1a27178227546d3dcc49e611a6d72e4f1c30080ee4493ae4085b58a49e28e6",
+      "local_sha256": "7fa25afd8a87590ee535c16d60465a3e283c32eb02c5f00efa49b323b1bb95a9",
+      "matches_local": false
+    },
+    {
+      "url": "https://nikmurano.com/production_complete_control_plane/production_completion_summary.json",
+      "status": 404,
+      "ok": false,
+      "bytes": 150,
+      "sha256": "ee1a27178227546d3dcc49e611a6d72e4f1c30080ee4493ae4085b58a49e28e6",
+      "local_sha256": "406a48523c8e8ed7728cb1089ba1424a8b3eddc5d43898b47be4c6f763e6c86b",
+      "matches_local": false
+    },
+    {
+      "url": "https://nikmurano.com/non_overlap_evidence_vault_validator/promotion_ledger_current.json",
+      "status": 404,
+      "ok": false,
+      "bytes": 150,
+      "sha256": "ee1a27178227546d3dcc49e611a6d72e4f1c30080ee4493ae4085b58a49e28e6",
+      "local_sha256": "cacb70d388a7756ff2fbf8d604abf75d3d02639a750862b2f732440feaa054b6",
+      "matches_local": false
+    }
+  ],
+  "current_package_deployed": false,
+  "route_results": [],
+  "hosted_smoke_ready_count": 0,
+  "reason": "Current public site does not byte-match the local release sentinels; vault hosted-smoke files were not written."
+}

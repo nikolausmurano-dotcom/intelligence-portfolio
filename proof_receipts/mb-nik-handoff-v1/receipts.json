@@ -1,0 +1,1464 @@
+{
+  "project": {
+    "project_id": "mb-nik-handoff-v1",
+    "title": "72-month master plan + Russian-language 12-month CSV + SF-86 prep"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-nik-handoff-v1__receipt_0001",
+      "project_id": "mb-nik-handoff-v1",
+      "project_title": "72-month master plan + Russian-language 12-month CSV + SF-86 prep",
+      "proof_tier": "source-backed-proof-build",
+      "component": "72-month master plan + Russian-language 12-month CSV + SF-86 prep Handoff Identity",
+      "component_case_id": "mb-nik-handoff-v1__0001__72-month-master-plan-russian-language-12-month-csv-sf-86-prep-handoff-identity",
+      "claim_to_demonstrate": "72-month master plan + Russian-language 12-month CSV + SF-86 prep is a method packet for this is the session-continuity handoff from a long strategic-planning conversation between the user (\"Nik\") and a prior assistant acting as career strategist.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "72-month master plan + Russian-language 12-month CSV + SF-86 prep is a method packet for this is the session-continuity handoff from a long strategic-planning conversation between the user (\"Nik\") and a prior assistant acting as career strategist.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45196,
+            "sha256": "d591bf88ed120adf8775c3ff4de89872f8743f25a2e3458d27cf422037ca0bb0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37073,
+            "sha256": "1dc44037dc0d611cc10f88c5e0348e1dbef6d9eaf3e07f76e865adf2893f5c21"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22109,
+            "sha256": "7b490affbc77294cbbc1a73eb8c5e4f2c354e14d187df84769759e0aac66c926"
+          },
+          {
+            "relative_path": "proof_builds/mb-nik-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21835,
+            "sha256": "90f6611051610bd5c1851c5bb36e3c018e38ba8c30a74625a000d90bd5e43707"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47679,
+            "sha256": "68c562a82a62153a37388e6a951e6cba88eaa0c6b0bbe584592ed9fde88a9b29"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10675,
+            "sha256": "279fbbc6693280aee1a126afdb94665c1eec71fc681d518e39847abd95b48f2e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+          "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-nik-handoff-v1/README.md",
+          "proof_builds/mb-nik-handoff-v1/proof_build.json",
+          "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+          "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "71ea14e5f43b6e2d5fd90a8f"
+    },
+    {
+      "receipt_id": "mb-nik-handoff-v1__receipt_0002",
+      "project_id": "mb-nik-handoff-v1",
+      "project_title": "72-month master plan + Russian-language 12-month CSV + SF-86 prep",
+      "proof_tier": "source-backed-proof-build",
+      "component": "72-month master plan + Russian-language 12-month CSV + SF-86 prep Room Task Model",
+      "component_case_id": "mb-nik-handoff-v1__0002__72-month-master-plan-russian-language-12-month-csv-sf-86-prep-room-task-model",
+      "claim_to_demonstrate": "The mechanism is professional-evidence curation: keep career-facing materials limited, unclassified, role-appropriate, and tied to concrete work products without exposing private or unsuitable application material.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "The mechanism is professional-evidence curation: keep career-facing materials limited, unclassified, role-appropriate, and tied to concrete work products without exposing private or unsuitable application material.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45196,
+            "sha256": "d591bf88ed120adf8775c3ff4de89872f8743f25a2e3458d27cf422037ca0bb0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37073,
+            "sha256": "1dc44037dc0d611cc10f88c5e0348e1dbef6d9eaf3e07f76e865adf2893f5c21"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22109,
+            "sha256": "7b490affbc77294cbbc1a73eb8c5e4f2c354e14d187df84769759e0aac66c926"
+          },
+          {
+            "relative_path": "proof_builds/mb-nik-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21835,
+            "sha256": "90f6611051610bd5c1851c5bb36e3c018e38ba8c30a74625a000d90bd5e43707"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47679,
+            "sha256": "68c562a82a62153a37388e6a951e6cba88eaa0c6b0bbe584592ed9fde88a9b29"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10675,
+            "sha256": "279fbbc6693280aee1a126afdb94665c1eec71fc681d518e39847abd95b48f2e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+          "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-nik-handoff-v1/README.md",
+          "proof_builds/mb-nik-handoff-v1/proof_build.json",
+          "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+          "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "af9bd78a4e60ada25c98e959"
+    },
+    {
+      "receipt_id": "mb-nik-handoff-v1__receipt_0003",
+      "project_id": "mb-nik-handoff-v1",
+      "project_title": "72-month master plan + Russian-language 12-month CSV + SF-86 prep",
+      "proof_tier": "source-backed-proof-build",
+      "component": "72-month master plan + Russian-language 12-month CSV + SF-86 prep Data Schema And Persistence Plan",
+      "component_case_id": "mb-nik-handoff-v1__0003__72-month-master-plan-russian-language-12-month-csv-sf-86-prep-data-schema-and-persistence-",
+      "claim_to_demonstrate": "Research design, evidence evaluation, forecasting, and judgment. Use source library method and reasoning sources as public method and source background. Vision: Make methodology pages legible as research-design, evidence-control, and interpretive-method.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Research design, evidence evaluation, forecasting, and judgment. Use source library method and reasoning sources as public method and source background. Vision: Make methodology pages legible as research-design, evidence-control, and interpretive-method.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45196,
+            "sha256": "d591bf88ed120adf8775c3ff4de89872f8743f25a2e3458d27cf422037ca0bb0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37073,
+            "sha256": "1dc44037dc0d611cc10f88c5e0348e1dbef6d9eaf3e07f76e865adf2893f5c21"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22109,
+            "sha256": "7b490affbc77294cbbc1a73eb8c5e4f2c354e14d187df84769759e0aac66c926"
+          },
+          {
+            "relative_path": "proof_builds/mb-nik-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21835,
+            "sha256": "90f6611051610bd5c1851c5bb36e3c018e38ba8c30a74625a000d90bd5e43707"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47679,
+            "sha256": "68c562a82a62153a37388e6a951e6cba88eaa0c6b0bbe584592ed9fde88a9b29"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10675,
+            "sha256": "279fbbc6693280aee1a126afdb94665c1eec71fc681d518e39847abd95b48f2e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+          "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-nik-handoff-v1/README.md",
+          "proof_builds/mb-nik-handoff-v1/proof_build.json",
+          "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+          "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "065b18074f7e393e935afeb3"
+    },
+    {
+      "receipt_id": "mb-nik-handoff-v1__receipt_0004",
+      "project_id": "mb-nik-handoff-v1",
+      "project_title": "72-month master plan + Russian-language 12-month CSV + SF-86 prep",
+      "proof_tier": "source-backed-proof-build",
+      "component": "72-month master plan + Russian-language 12-month CSV + SF-86 prep Interface And Instrument Plane",
+      "component_case_id": "mb-nik-handoff-v1__0004__72-month-master-plan-russian-language-12-month-csv-sf-86-prep-interface-and-instrument-pla",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45196,
+            "sha256": "d591bf88ed120adf8775c3ff4de89872f8743f25a2e3458d27cf422037ca0bb0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37073,
+            "sha256": "1dc44037dc0d611cc10f88c5e0348e1dbef6d9eaf3e07f76e865adf2893f5c21"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22109,
+            "sha256": "7b490affbc77294cbbc1a73eb8c5e4f2c354e14d187df84769759e0aac66c926"
+          },
+          {
+            "relative_path": "proof_builds/mb-nik-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21835,
+            "sha256": "90f6611051610bd5c1851c5bb36e3c018e38ba8c30a74625a000d90bd5e43707"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47679,
+            "sha256": "68c562a82a62153a37388e6a951e6cba88eaa0c6b0bbe584592ed9fde88a9b29"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10675,
+            "sha256": "279fbbc6693280aee1a126afdb94665c1eec71fc681d518e39847abd95b48f2e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+          "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-nik-handoff-v1/README.md",
+          "proof_builds/mb-nik-handoff-v1/proof_build.json",
+          "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+          "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5ff4a157c0cb24db312f50de"
+    },
+    {
+      "receipt_id": "mb-nik-handoff-v1__receipt_0005",
+      "project_id": "mb-nik-handoff-v1",
+      "project_title": "72-month master plan + Russian-language 12-month CSV + SF-86 prep",
+      "proof_tier": "source-backed-proof-build",
+      "component": "72-month master plan + Russian-language 12-month CSV + SF-86 prep Integration Path",
+      "component_case_id": "mb-nik-handoff-v1__0005__72-month-master-plan-russian-language-12-month-csv-sf-86-prep-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. README's recommended read order: 10 — 4 — 5 — 7 — 9 (90-day priorities, then 12-month, then Russian calendar, then SF-86 hygiene, then application flow). The.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. README's recommended read order: 10 — 4 — 5 — 7 — 9 (90-day priorities, then 12-month, then Russian calendar, then SF-86 hygiene, then application flow). The.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45196,
+            "sha256": "d591bf88ed120adf8775c3ff4de89872f8743f25a2e3458d27cf422037ca0bb0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37073,
+            "sha256": "1dc44037dc0d611cc10f88c5e0348e1dbef6d9eaf3e07f76e865adf2893f5c21"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22109,
+            "sha256": "7b490affbc77294cbbc1a73eb8c5e4f2c354e14d187df84769759e0aac66c926"
+          },
+          {
+            "relative_path": "proof_builds/mb-nik-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21835,
+            "sha256": "90f6611051610bd5c1851c5bb36e3c018e38ba8c30a74625a000d90bd5e43707"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47679,
+            "sha256": "68c562a82a62153a37388e6a951e6cba88eaa0c6b0bbe584592ed9fde88a9b29"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10675,
+            "sha256": "279fbbc6693280aee1a126afdb94665c1eec71fc681d518e39847abd95b48f2e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+          "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-nik-handoff-v1/README.md",
+          "proof_builds/mb-nik-handoff-v1/proof_build.json",
+          "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+          "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3e9899acb3fe99b55dd7a71e"
+    },
+    {
+      "receipt_id": "mb-nik-handoff-v1__receipt_0006",
+      "project_id": "mb-nik-handoff-v1",
+      "project_title": "72-month master plan + Russian-language 12-month CSV + SF-86 prep",
+      "proof_tier": "source-backed-proof-build",
+      "component": "72-month master plan + Russian-language 12-month CSV + SF-86 prep Proof Boundary",
+      "component_case_id": "mb-nik-handoff-v1__0006__72-month-master-plan-russian-language-12-month-csv-sf-86-prep-proof-boundary",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45196,
+            "sha256": "d591bf88ed120adf8775c3ff4de89872f8743f25a2e3458d27cf422037ca0bb0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37073,
+            "sha256": "1dc44037dc0d611cc10f88c5e0348e1dbef6d9eaf3e07f76e865adf2893f5c21"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22109,
+            "sha256": "7b490affbc77294cbbc1a73eb8c5e4f2c354e14d187df84769759e0aac66c926"
+          },
+          {
+            "relative_path": "proof_builds/mb-nik-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21835,
+            "sha256": "90f6611051610bd5c1851c5bb36e3c018e38ba8c30a74625a000d90bd5e43707"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47679,
+            "sha256": "68c562a82a62153a37388e6a951e6cba88eaa0c6b0bbe584592ed9fde88a9b29"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10675,
+            "sha256": "279fbbc6693280aee1a126afdb94665c1eec71fc681d518e39847abd95b48f2e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+          "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-nik-handoff-v1/README.md",
+          "proof_builds/mb-nik-handoff-v1/proof_build.json",
+          "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+          "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "02db8a35aa02270e3a9d705a"
+    },
+    {
+      "receipt_id": "mb-nik-handoff-v1__receipt_0007",
+      "project_id": "mb-nik-handoff-v1",
+      "project_title": "72-month master plan + Russian-language 12-month CSV + SF-86 prep",
+      "proof_tier": "source-backed-proof-build",
+      "component": "72-month master plan + Russian-language 12-month CSV + SF-86 prep Next Build Test",
+      "component_case_id": "mb-nik-handoff-v1__0007__72-month-master-plan-russian-language-12-month-csv-sf-86-prep-next-build-test",
+      "claim_to_demonstrate": "Read the entry-point materials, classify the packet's authority level, and decide whether the next move is build, consolidation, archival retention, or public synthesis.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Read the entry-point materials, classify the packet's authority level, and decide whether the next move is build, consolidation, archival retention, or public synthesis.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45196,
+            "sha256": "d591bf88ed120adf8775c3ff4de89872f8743f25a2e3458d27cf422037ca0bb0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37073,
+            "sha256": "1dc44037dc0d611cc10f88c5e0348e1dbef6d9eaf3e07f76e865adf2893f5c21"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22109,
+            "sha256": "7b490affbc77294cbbc1a73eb8c5e4f2c354e14d187df84769759e0aac66c926"
+          },
+          {
+            "relative_path": "proof_builds/mb-nik-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21835,
+            "sha256": "90f6611051610bd5c1851c5bb36e3c018e38ba8c30a74625a000d90bd5e43707"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47679,
+            "sha256": "68c562a82a62153a37388e6a951e6cba88eaa0c6b0bbe584592ed9fde88a9b29"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10675,
+            "sha256": "279fbbc6693280aee1a126afdb94665c1eec71fc681d518e39847abd95b48f2e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+          "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-nik-handoff-v1/README.md",
+          "proof_builds/mb-nik-handoff-v1/proof_build.json",
+          "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+          "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "fb6f01aada5f297ba4219104"
+    },
+    {
+      "receipt_id": "mb-nik-handoff-v1__receipt_0008",
+      "project_id": "mb-nik-handoff-v1",
+      "project_title": "72-month master plan + Russian-language 12-month CSV + SF-86 prep",
+      "proof_tier": "source-backed-proof-build",
+      "component": "72-month master plan + Russian-language 12-month CSV + SF-86 prep / Einstein-level",
+      "component_case_id": "mb-nik-handoff-v1__0008__72-month-master-plan-russian-language-12-month-csv-sf-86-prep-einstein-level",
+      "claim_to_demonstrate": "uses `Einstein-level` as a named project component with a traceable role in the public mechanism. Source context: The recap narrative shows the user repeatedly escalated demands (\"Einstein-level,\" \"hyper granular,\" \"astonishingly brilliant\") and pushed the.",
+      "input_fixture": "project source text and the named component `Einstein-level`",
+      "operation_under_test": "uses `Einstein-level` as a named project component with a traceable role in the public mechanism. Source context: The recap narrative shows the user repeatedly escalated demands (\"Einstein-level,\" \"hyper granular,\" \"astonishingly brilliant\") and pushed the.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Einstein-level`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "6aaa5c2b7f7fe0ea854139c9",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45196,
+            "sha256": "d591bf88ed120adf8775c3ff4de89872f8743f25a2e3458d27cf422037ca0bb0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37073,
+            "sha256": "1dc44037dc0d611cc10f88c5e0348e1dbef6d9eaf3e07f76e865adf2893f5c21"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22109,
+            "sha256": "7b490affbc77294cbbc1a73eb8c5e4f2c354e14d187df84769759e0aac66c926"
+          },
+          {
+            "relative_path": "proof_builds/mb-nik-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21835,
+            "sha256": "90f6611051610bd5c1851c5bb36e3c018e38ba8c30a74625a000d90bd5e43707"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47679,
+            "sha256": "68c562a82a62153a37388e6a951e6cba88eaa0c6b0bbe584592ed9fde88a9b29"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10675,
+            "sha256": "279fbbc6693280aee1a126afdb94665c1eec71fc681d518e39847abd95b48f2e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+          "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-nik-handoff-v1/README.md",
+          "proof_builds/mb-nik-handoff-v1/proof_build.json",
+          "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+          "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "02a86224b10788fc79e4ac42"
+    },
+    {
+      "receipt_id": "mb-nik-handoff-v1__receipt_0009",
+      "project_id": "mb-nik-handoff-v1",
+      "project_title": "72-month master plan + Russian-language 12-month CSV + SF-86 prep",
+      "proof_tier": "source-backed-proof-build",
+      "component": "72-month master plan + Russian-language 12-month CSV + SF-86 prep / Hyper Granular",
+      "component_case_id": "mb-nik-handoff-v1__0009__72-month-master-plan-russian-language-12-month-csv-sf-86-prep-hyper-granular",
+      "claim_to_demonstrate": "uses `Hyper Granular` as a named project component with a traceable role in the public mechanism. Source context: The recap narrative shows the user repeatedly escalated demands (\"Einstein-level,\" \"hyper granular,\" \"astonishingly brilliant\") and pushed the.",
+      "input_fixture": "project source text and the named component `Hyper Granular`",
+      "operation_under_test": "uses `Hyper Granular` as a named project component with a traceable role in the public mechanism. Source context: The recap narrative shows the user repeatedly escalated demands (\"Einstein-level,\" \"hyper granular,\" \"astonishingly brilliant\") and pushed the.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Hyper Granular`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "6aaa5c2b7f7fe0ea854139c9",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45196,
+            "sha256": "d591bf88ed120adf8775c3ff4de89872f8743f25a2e3458d27cf422037ca0bb0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37073,
+            "sha256": "1dc44037dc0d611cc10f88c5e0348e1dbef6d9eaf3e07f76e865adf2893f5c21"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22109,
+            "sha256": "7b490affbc77294cbbc1a73eb8c5e4f2c354e14d187df84769759e0aac66c926"
+          },
+          {
+            "relative_path": "proof_builds/mb-nik-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21835,
+            "sha256": "90f6611051610bd5c1851c5bb36e3c018e38ba8c30a74625a000d90bd5e43707"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47679,
+            "sha256": "68c562a82a62153a37388e6a951e6cba88eaa0c6b0bbe584592ed9fde88a9b29"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10675,
+            "sha256": "279fbbc6693280aee1a126afdb94665c1eec71fc681d518e39847abd95b48f2e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+          "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-nik-handoff-v1/README.md",
+          "proof_builds/mb-nik-handoff-v1/proof_build.json",
+          "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+          "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "68968cce6728e81a5fb5c4e1"
+    },
+    {
+      "receipt_id": "mb-nik-handoff-v1__receipt_0010",
+      "project_id": "mb-nik-handoff-v1",
+      "project_title": "72-month master plan + Russian-language 12-month CSV + SF-86 prep",
+      "proof_tier": "source-backed-proof-build",
+      "component": "72-month master plan + Russian-language 12-month CSV + SF-86 prep / Astonishingly Brilliant",
+      "component_case_id": "mb-nik-handoff-v1__0010__72-month-master-plan-russian-language-12-month-csv-sf-86-prep-astonishingly-brilliant",
+      "claim_to_demonstrate": "uses `Astonishingly Brilliant` as a named project component with a traceable role in the public mechanism. Source context: The recap narrative shows the user repeatedly escalated demands (\"Einstein-level,\" \"hyper granular,\" \"astonishingly brilliant\") and.",
+      "input_fixture": "project source text and the named component `Astonishingly Brilliant`",
+      "operation_under_test": "uses `Astonishingly Brilliant` as a named project component with a traceable role in the public mechanism. Source context: The recap narrative shows the user repeatedly escalated demands (\"Einstein-level,\" \"hyper granular,\" \"astonishingly brilliant\") and.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Astonishingly Brilliant`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "6aaa5c2b7f7fe0ea854139c9",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45196,
+            "sha256": "d591bf88ed120adf8775c3ff4de89872f8743f25a2e3458d27cf422037ca0bb0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37073,
+            "sha256": "1dc44037dc0d611cc10f88c5e0348e1dbef6d9eaf3e07f76e865adf2893f5c21"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22109,
+            "sha256": "7b490affbc77294cbbc1a73eb8c5e4f2c354e14d187df84769759e0aac66c926"
+          },
+          {
+            "relative_path": "proof_builds/mb-nik-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21835,
+            "sha256": "90f6611051610bd5c1851c5bb36e3c018e38ba8c30a74625a000d90bd5e43707"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47679,
+            "sha256": "68c562a82a62153a37388e6a951e6cba88eaa0c6b0bbe584592ed9fde88a9b29"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10675,
+            "sha256": "279fbbc6693280aee1a126afdb94665c1eec71fc681d518e39847abd95b48f2e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+          "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-nik-handoff-v1/README.md",
+          "proof_builds/mb-nik-handoff-v1/proof_build.json",
+          "proof_demos/mb-nik-handoff-v1/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "afc840bffc6d3c82f4b8a103"
+    },
+    {
+      "receipt_id": "mb-nik-handoff-v1__receipt_0011",
+      "project_id": "mb-nik-handoff-v1",
+      "project_title": "72-month master plan + Russian-language 12-month CSV + SF-86 prep",
+      "proof_tier": "source-backed-proof-build",
+      "component": "72-month master plan + Russian-language 12-month CSV + SF-86 prep / CIA Directorate of Operations",
+      "component_case_id": "mb-nik-handoff-v1__0011__72-month-master-plan-russian-language-12-month-csv-sf-86-prep-cia-directorate-of-operation",
+      "claim_to_demonstrate": "uses `CIA Directorate of Operations` as a named project component with a traceable role in the public mechanism. Source context: It consolidates what was worked out in-chat into reusable operational documents spanning a 1/3/6/12/24/48/72-month phased.",
+      "input_fixture": "project source text and the named component `CIA Directorate of Operations`",
+      "operation_under_test": "uses `CIA Directorate of Operations` as a named project component with a traceable role in the public mechanism. Source context: It consolidates what was worked out in-chat into reusable operational documents spanning a 1/3/6/12/24/48/72-month phased.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `CIA Directorate of Operations`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "22ea16bd8d98027e81701f57",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45196,
+            "sha256": "d591bf88ed120adf8775c3ff4de89872f8743f25a2e3458d27cf422037ca0bb0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37073,
+            "sha256": "1dc44037dc0d611cc10f88c5e0348e1dbef6d9eaf3e07f76e865adf2893f5c21"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22109,
+            "sha256": "7b490affbc77294cbbc1a73eb8c5e4f2c354e14d187df84769759e0aac66c926"
+          },
+          {
+            "relative_path": "proof_builds/mb-nik-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21835,
+            "sha256": "90f6611051610bd5c1851c5bb36e3c018e38ba8c30a74625a000d90bd5e43707"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47679,
+            "sha256": "68c562a82a62153a37388e6a951e6cba88eaa0c6b0bbe584592ed9fde88a9b29"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10675,
+            "sha256": "279fbbc6693280aee1a126afdb94665c1eec71fc681d518e39847abd95b48f2e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+          "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-nik-handoff-v1/README.md",
+          "proof_builds/mb-nik-handoff-v1/proof_build.json",
+          "proof_demos/mb-nik-handoff-v1/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "942e0f16b34bfd27bf351a91"
+    },
+    {
+      "receipt_id": "mb-nik-handoff-v1__receipt_0012",
+      "project_id": "mb-nik-handoff-v1",
+      "project_title": "72-month master plan + Russian-language 12-month CSV + SF-86 prep",
+      "proof_tier": "source-backed-proof-build",
+      "component": "72-month master plan + Russian-language 12-month CSV + SF-86 prep / From Human Reasoning to Belief. Russia",
+      "component_case_id": "mb-nik-handoff-v1__0012__72-month-master-plan-russian-language-12-month-csv-sf-86-prep-from-human-reasoning-to-beli",
+      "claim_to_demonstrate": "uses `From Human Reasoning to Belief. Russia` as a named project component with a traceable role in the public mechanism. Source context: From Human Reasoning to Belief. Russia, Eurasia, and security-state analysis. Use as the strongest local source reservoir.",
+      "input_fixture": "project source text and the named component `From Human Reasoning to Belief. Russia`",
+      "operation_under_test": "uses `From Human Reasoning to Belief. Russia` as a named project component with a traceable role in the public mechanism. Source context: From Human Reasoning to Belief. Russia, Eurasia, and security-state analysis. Use as the strongest local source reservoir.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `From Human Reasoning to Belief. Russia`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "eb9c57d508269b60302ec47c",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45196,
+            "sha256": "d591bf88ed120adf8775c3ff4de89872f8743f25a2e3458d27cf422037ca0bb0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37073,
+            "sha256": "1dc44037dc0d611cc10f88c5e0348e1dbef6d9eaf3e07f76e865adf2893f5c21"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22109,
+            "sha256": "7b490affbc77294cbbc1a73eb8c5e4f2c354e14d187df84769759e0aac66c926"
+          },
+          {
+            "relative_path": "proof_builds/mb-nik-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21835,
+            "sha256": "90f6611051610bd5c1851c5bb36e3c018e38ba8c30a74625a000d90bd5e43707"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47679,
+            "sha256": "68c562a82a62153a37388e6a951e6cba88eaa0c6b0bbe584592ed9fde88a9b29"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10675,
+            "sha256": "279fbbc6693280aee1a126afdb94665c1eec71fc681d518e39847abd95b48f2e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+          "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-nik-handoff-v1/README.md",
+          "proof_builds/mb-nik-handoff-v1/proof_build.json",
+          "proof_demos/mb-nik-handoff-v1/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "dd7b8f55525ca70f311e4678"
+    },
+    {
+      "receipt_id": "mb-nik-handoff-v1__receipt_0013",
+      "project_id": "mb-nik-handoff-v1",
+      "project_title": "72-month master plan + Russian-language 12-month CSV + SF-86 prep",
+      "proof_tier": "source-backed-proof-build",
+      "component": "72-month master plan + Russian-language 12-month CSV + SF-86 prep / Russia Desk",
+      "component_case_id": "mb-nik-handoff-v1__0013__72-month-master-plan-russian-language-12-month-csv-sf-86-prep-russia-desk",
+      "claim_to_demonstrate": "treats `Russia Desk` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Use as the strongest local source reservoir for Russia Desk, regional studies, and security-state pages.",
+      "input_fixture": "project source text and the named component `Russia Desk`",
+      "operation_under_test": "treats `Russia Desk` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Use as the strongest local source reservoir for Russia Desk, regional studies, and security-state pages.",
+      "expected_output": "a room, workbench, or interface function tied to `Russia Desk`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "29a524e8e49e44bb3f9f3deb",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45196,
+            "sha256": "d591bf88ed120adf8775c3ff4de89872f8743f25a2e3458d27cf422037ca0bb0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37073,
+            "sha256": "1dc44037dc0d611cc10f88c5e0348e1dbef6d9eaf3e07f76e865adf2893f5c21"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22109,
+            "sha256": "7b490affbc77294cbbc1a73eb8c5e4f2c354e14d187df84769759e0aac66c926"
+          },
+          {
+            "relative_path": "proof_builds/mb-nik-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21835,
+            "sha256": "90f6611051610bd5c1851c5bb36e3c018e38ba8c30a74625a000d90bd5e43707"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47679,
+            "sha256": "68c562a82a62153a37388e6a951e6cba88eaa0c6b0bbe584592ed9fde88a9b29"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10675,
+            "sha256": "279fbbc6693280aee1a126afdb94665c1eec71fc681d518e39847abd95b48f2e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+          "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-nik-handoff-v1/README.md",
+          "proof_builds/mb-nik-handoff-v1/proof_build.json",
+          "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+          "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "467fd64f48d51b863a4dea8c"
+    },
+    {
+      "receipt_id": "mb-nik-handoff-v1__receipt_0014",
+      "project_id": "mb-nik-handoff-v1",
+      "project_title": "72-month master plan + Russian-language 12-month CSV + SF-86 prep",
+      "proof_tier": "source-backed-proof-build",
+      "component": "72-month master plan + Russian-language 12-month CSV + SF-86 prep / Ground Russia-facing",
+      "component_case_id": "mb-nik-handoff-v1__0014__72-month-master-plan-russian-language-12-month-csv-sf-86-prep-ground-russia-facing",
+      "claim_to_demonstrate": "uses `Ground Russia-facing` as a named project component with a traceable role in the public mechanism. Source context: Ground Russia-facing pages in a serious regional-security and post-Soviet studies corpus. Mechanism: Extract security-service, influence.",
+      "input_fixture": "project source text and the named component `Ground Russia-facing`",
+      "operation_under_test": "uses `Ground Russia-facing` as a named project component with a traceable role in the public mechanism. Source context: Ground Russia-facing pages in a serious regional-security and post-Soviet studies corpus. Mechanism: Extract security-service, influence.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Ground Russia-facing`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "964bbe0748f62e875c0e56fc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45196,
+            "sha256": "d591bf88ed120adf8775c3ff4de89872f8743f25a2e3458d27cf422037ca0bb0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37073,
+            "sha256": "1dc44037dc0d611cc10f88c5e0348e1dbef6d9eaf3e07f76e865adf2893f5c21"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22109,
+            "sha256": "7b490affbc77294cbbc1a73eb8c5e4f2c354e14d187df84769759e0aac66c926"
+          },
+          {
+            "relative_path": "proof_builds/mb-nik-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21835,
+            "sha256": "90f6611051610bd5c1851c5bb36e3c018e38ba8c30a74625a000d90bd5e43707"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47679,
+            "sha256": "68c562a82a62153a37388e6a951e6cba88eaa0c6b0bbe584592ed9fde88a9b29"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10675,
+            "sha256": "279fbbc6693280aee1a126afdb94665c1eec71fc681d518e39847abd95b48f2e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+          "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-nik-handoff-v1/README.md",
+          "proof_builds/mb-nik-handoff-v1/proof_build.json",
+          "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+          "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "dadcd09db072fd02a4830f69"
+    },
+    {
+      "receipt_id": "mb-nik-handoff-v1__receipt_0015",
+      "project_id": "mb-nik-handoff-v1",
+      "project_title": "72-month master plan + Russian-language 12-month CSV + SF-86 prep",
+      "proof_tier": "source-backed-proof-build",
+      "component": "72-month master plan + Russian-language 12-month CSV + SF-86 prep / Close-read Russia Desk and Russia-adjacent Master Bundle",
+      "component_case_id": "mb-nik-handoff-v1__0015__72-month-master-plan-russian-language-12-month-csv-sf-86-prep-close-read-russia-desk-and-r",
+      "claim_to_demonstrate": "treats `Close-read Russia Desk and Russia-adjacent Master Bundle` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Close-read Russia Desk and Russia-adjacent Master Bundle pages.",
+      "input_fixture": "project source text and the named component `Close-read Russia Desk and Russia-adjacent Master Bundle`",
+      "operation_under_test": "treats `Close-read Russia Desk and Russia-adjacent Master Bundle` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Close-read Russia Desk and Russia-adjacent Master Bundle pages.",
+      "expected_output": "a room, workbench, or interface function tied to `Close-read Russia Desk and Russia-adjacent Master Bundle`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e2a8122eacaf833fadc6645b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45196,
+            "sha256": "d591bf88ed120adf8775c3ff4de89872f8743f25a2e3458d27cf422037ca0bb0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37073,
+            "sha256": "1dc44037dc0d611cc10f88c5e0348e1dbef6d9eaf3e07f76e865adf2893f5c21"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22109,
+            "sha256": "7b490affbc77294cbbc1a73eb8c5e4f2c354e14d187df84769759e0aac66c926"
+          },
+          {
+            "relative_path": "proof_builds/mb-nik-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21835,
+            "sha256": "90f6611051610bd5c1851c5bb36e3c018e38ba8c30a74625a000d90bd5e43707"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47679,
+            "sha256": "68c562a82a62153a37388e6a951e6cba88eaa0c6b0bbe584592ed9fde88a9b29"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10675,
+            "sha256": "279fbbc6693280aee1a126afdb94665c1eec71fc681d518e39847abd95b48f2e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+          "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+          "proof_builds/mb-nik-handoff-v1/proof_build.json",
+          "proof_demos/mb-nik-handoff-v1/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "09f3d8bada2d77b3890d535f"
+    },
+    {
+      "receipt_id": "mb-nik-handoff-v1__receipt_0016",
+      "project_id": "mb-nik-handoff-v1",
+      "project_title": "72-month master plan + Russian-language 12-month CSV + SF-86 prep",
+      "proof_tier": "source-backed-proof-build",
+      "component": "72-month master plan + Russian-language 12-month CSV + SF-86 prep / No Place for Russia",
+      "component_case_id": "mb-nik-handoff-v1__0016__72-month-master-plan-russian-language-12-month-csv-sf-86-prep-no-place-for-russia",
+      "claim_to_demonstrate": "uses `No Place for Russia` as a named project component with a traceable role in the public mechanism. Source context: No Place for Russia; Russian Influence Operations and the War in Ukraine. source library scholarly-source routing with author correction.",
+      "input_fixture": "project source text and the named component `No Place for Russia`",
+      "operation_under_test": "uses `No Place for Russia` as a named project component with a traceable role in the public mechanism. Source context: No Place for Russia; Russian Influence Operations and the War in Ukraine. source library scholarly-source routing with author correction.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `No Place for Russia`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5f24d09b7790f91e418e2b05",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45196,
+            "sha256": "d591bf88ed120adf8775c3ff4de89872f8743f25a2e3458d27cf422037ca0bb0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37073,
+            "sha256": "1dc44037dc0d611cc10f88c5e0348e1dbef6d9eaf3e07f76e865adf2893f5c21"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22109,
+            "sha256": "7b490affbc77294cbbc1a73eb8c5e4f2c354e14d187df84769759e0aac66c926"
+          },
+          {
+            "relative_path": "proof_builds/mb-nik-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21835,
+            "sha256": "90f6611051610bd5c1851c5bb36e3c018e38ba8c30a74625a000d90bd5e43707"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47679,
+            "sha256": "68c562a82a62153a37388e6a951e6cba88eaa0c6b0bbe584592ed9fde88a9b29"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10675,
+            "sha256": "279fbbc6693280aee1a126afdb94665c1eec71fc681d518e39847abd95b48f2e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+          "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-nik-handoff-v1/README.md",
+          "proof_builds/mb-nik-handoff-v1/proof_build.json",
+          "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+          "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "be905ab044332f26fed7b6d7"
+    },
+    {
+      "receipt_id": "mb-nik-handoff-v1__receipt_0017",
+      "project_id": "mb-nik-handoff-v1",
+      "project_title": "72-month master plan + Russian-language 12-month CSV + SF-86 prep",
+      "proof_tier": "source-backed-proof-build",
+      "component": "72-month master plan + Russian-language 12-month CSV + SF-86 prep / Russian Influence Operations and the War",
+      "component_case_id": "mb-nik-handoff-v1__0017__72-month-master-plan-russian-language-12-month-csv-sf-86-prep-russian-influence-operations",
+      "claim_to_demonstrate": "uses `Russian Influence Operations and the War` as a named project component with a traceable role in the public mechanism. Source context: Russian Influence Operations and the War in Ukraine. source library scholarly-source routing with author correction.",
+      "input_fixture": "project source text and the named component `Russian Influence Operations and the War`",
+      "operation_under_test": "uses `Russian Influence Operations and the War` as a named project component with a traceable role in the public mechanism. Source context: Russian Influence Operations and the War in Ukraine. source library scholarly-source routing with author correction.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Russian Influence Operations and the War`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "7d91dfdd1867de8c6dd30cf7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45196,
+            "sha256": "d591bf88ed120adf8775c3ff4de89872f8743f25a2e3458d27cf422037ca0bb0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37073,
+            "sha256": "1dc44037dc0d611cc10f88c5e0348e1dbef6d9eaf3e07f76e865adf2893f5c21"
+          },
+          {
+            "relative_path": "project_blueprints/mb-nik-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22109,
+            "sha256": "7b490affbc77294cbbc1a73eb8c5e4f2c354e14d187df84769759e0aac66c926"
+          },
+          {
+            "relative_path": "proof_builds/mb-nik-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21835,
+            "sha256": "90f6611051610bd5c1851c5bb36e3c018e38ba8c30a74625a000d90bd5e43707"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47679,
+            "sha256": "68c562a82a62153a37388e6a951e6cba88eaa0c6b0bbe584592ed9fde88a9b29"
+          },
+          {
+            "relative_path": "proof_demos/mb-nik-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10675,
+            "sha256": "279fbbc6693280aee1a126afdb94665c1eec71fc681d518e39847abd95b48f2e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-nik-handoff-v1/blueprint.json",
+          "project_blueprints/mb-nik-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-nik-handoff-v1/README.md",
+          "proof_builds/mb-nik-handoff-v1/proof_build.json",
+          "proof_demos/mb-nik-handoff-v1/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "680481193b73d52c880f7bbf"
+    }
+  ]
+}

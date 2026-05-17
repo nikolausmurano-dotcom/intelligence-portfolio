@@ -1,0 +1,48 @@
+{
+  "capture_id": "NOCAP-A72E5075A6BF",
+  "fixture_id": "NOF-79E11D281B8C",
+  "project_id": "mb-six-project-hardening-handoff-done-v1",
+  "product_name": "52 MB cross-project governance pack; nested 55 MB original bundle preserved",
+  "object_family": "source/archive governance",
+  "capture_type": "deterministic_package_capture",
+  "capture_status": "package_capture_completed_source_verification_pending",
+  "representative_input_captured": "One source, packet, bibliography entry, or archive item that needs identity, authority, route, and next-action classification.",
+  "operation_performed": "Classify the item, assign authority status, detect duplicate or supersession risk, route it to a project purpose, and set its claim ceiling.",
+  "captured_output_record": "A promotion record with identity, provenance, authority decision, route, source boundary, and next build action.",
+  "acceptance_results": [
+    {
+      "test": "input fixture explicit and repeatable",
+      "status": "PASS",
+      "evidence": "One source, packet, bibliography entry, or archive item that needs identity, authority, route, and next-action classification."
+    },
+    {
+      "test": "operation under test specific",
+      "status": "PASS",
+      "evidence": "Classify the item, assign authority status, detect duplicate or supersession risk, route it to a project purpose, and set its claim ceiling."
+    },
+    {
+      "test": "output artifact inspectable",
+      "status": "PASS",
+      "evidence": "capture_record.json and capture_packet.html generated"
+    },
+    {
+      "test": "falsifier stated",
+      "status": "PASS",
+      "evidence": "The fixture fails if an item can advance without identity, authority, route, and claim-ceiling fields."
+    },
+    {
+      "test": "claim boundary stated",
+      "status": "PASS",
+      "evidence": "This proof fixture is a build instrument. It does not by itself prove final operational standing until executed and captured."
+    },
+    {
+      "test": "human source verification",
+      "status": "PENDING",
+      "evidence": "Requires human close reading or source-authenticity review before quotation, citation, or stronger source-use claims."
+    }
+  ],
+  "blocking_items_remaining": "The package can capture identity, authority, route, and claim-ceiling logic, but source quotations and external validation still require human review.",
+  "claim_boundary_after_capture": "May claim a package-level first capture exists. May not claim production deployment, external validation, or full operational standing.",
+  "fully_operational_after_capture": "no",
+  "capture_hash": "3144bbda0e794f1c733cdec85110865cd4e8980d6bfd47eba110b8085a919508"
+}

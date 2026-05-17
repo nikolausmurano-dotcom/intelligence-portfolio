@@ -1,0 +1,31 @@
+{
+  "fixture_id": "NOF-E7FA9D487C2E",
+  "project_id": "mb-internal-operating-support-036",
+  "product_name": "Internal Operating Support Packet 036",
+  "object_family": "source/archive governance",
+  "operationalization_score": 52,
+  "representative_input": "One source, packet, bibliography entry, or archive item that needs identity, authority, route, and next-action classification.",
+  "operation_under_test": "Classify the item, assign authority status, detect duplicate or supersession risk, route it to a project purpose, and set its claim ceiling.",
+  "expected_output": "A promotion record with identity, provenance, authority decision, route, source boundary, and next build action.",
+  "acceptance_tests": [
+    "Input fixture is explicit and repeatable.",
+    "Operation under test is specific to this project, not generic portfolio prose.",
+    "Expected output is inspectable as a file, page state, table, packet, or export.",
+    "Acceptance criteria are observable and falsifiable.",
+    "Claim boundary prevents stronger claims than the evidence supports.",
+    "At least one load-bearing source role is verified or explicitly marked as awaiting human close reading."
+  ],
+  "falsifier": "The fixture fails if an item can advance without identity, authority, route, and claim-ceiling fields.",
+  "evidence_to_capture": [
+    "input fixture",
+    "operation trace",
+    "output artifact",
+    "acceptance-test result",
+    "source-verification note where applicable",
+    "claim-boundary note",
+    "reviewer or outside-use evidence before stronger public claims"
+  ],
+  "current_gap_from_operational_standing": "live or replayable capture still missing | human-verified source integration still missing | not every component has package-verifiable execution evidence | full-build readiness score below expert release threshold | outside/user validation not yet recorded",
+  "next_build_step": "Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.",
+  "claim_boundary": "This proof fixture is a build instrument. It does not by itself prove final operational standing until executed and captured."
+}

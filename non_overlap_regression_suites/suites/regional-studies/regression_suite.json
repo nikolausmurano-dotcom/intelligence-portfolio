@@ -1,0 +1,61 @@
+{
+  "project_id": "regional-studies",
+  "surface_type": "runtime_slice",
+  "suite_run_time": "2026-05-15T20:49:18+00:00",
+  "regression_cases": [
+    {
+      "case_id": "regional-studies-baseline",
+      "case_type": "baseline",
+      "input": "Run a normal operational case for regional-studies: process a bounded project problem and produce traceable output.",
+      "evidence": "Evidence note is present, uncertainty is stated, and exportable trace behavior is required.",
+      "expected_behavior": "accepted_with_claim_boundary",
+      "observed_behavior": "accepted_with_claim_boundary",
+      "expected_behavior_met": true,
+      "full_operational_claim_allowed": false,
+      "production_ready": false,
+      "acceptance_decision": "PASS",
+      "claim_boundary": "Regression case verifies local proof behavior and claim discipline only; it does not establish production readiness or external validation.",
+      "remaining_gate": "Needs repeated non-sample runs, browser screenshot evidence, reviewer validation, and deployment hardening before full operational standing.",
+      "blocks_false_promotion": false,
+      "trace_hash": "10ecc36364b8ca57"
+    },
+    {
+      "case_id": "regional-studies-challenge",
+      "case_type": "challenge",
+      "input": "Run a harder case for regional-studies: include ambiguity, possible source weakness, and a decision that should not be over-promoted.",
+      "evidence": "Challenge requires uncertainty handling and a next-evidence statement before stronger claims.",
+      "expected_behavior": "accepted_with_caveat",
+      "observed_behavior": "accepted_with_caveat",
+      "expected_behavior_met": true,
+      "full_operational_claim_allowed": false,
+      "production_ready": false,
+      "acceptance_decision": "PASS",
+      "claim_boundary": "Regression case verifies local proof behavior and claim discipline only; it does not establish production readiness or external validation.",
+      "remaining_gate": "Needs repeated non-sample runs, browser screenshot evidence, reviewer validation, and deployment hardening before full operational standing.",
+      "blocks_false_promotion": false,
+      "trace_hash": "a2d2cc563170bed9"
+    },
+    {
+      "case_id": "regional-studies-falsifier",
+      "case_type": "falsifier",
+      "input": "Try to promote regional-studies to full production readiness from one local trace.",
+      "evidence": "Needs repeated non-sample runs, browser screenshot evidence, reviewer validation, and deployment hardening before full operational standing.",
+      "expected_behavior": "block_full_operational_claim",
+      "observed_behavior": "block_full_operational_claim",
+      "expected_behavior_met": true,
+      "full_operational_claim_allowed": false,
+      "production_ready": false,
+      "acceptance_decision": "PASS",
+      "claim_boundary": "Regression case verifies local proof behavior and claim discipline only; it does not establish production readiness or external validation.",
+      "remaining_gate": "Needs repeated non-sample runs, browser screenshot evidence, reviewer validation, and deployment hardening before full operational standing.",
+      "blocks_false_promotion": true,
+      "trace_hash": "137b90dc4780ab71"
+    }
+  ],
+  "case_count": 3,
+  "accepted_case_count": 3,
+  "falsifier_blocks_promotion": true,
+  "full_operational": false,
+  "remaining_gate": "Needs repeated non-sample runs, browser screenshot evidence, reviewer validation, and deployment hardening before full operational standing.",
+  "suite_hash": "9eff224b9d5b994d"
+}

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claim-To-Proof Crosswalk</title><style>
+:root { color-scheme: light; --paper:#f7f5ef; --ink:#152231; --muted:#5a6575; --rule:rgba(35,55,77,.18); --accent:#7a4d18; --blue:#1e4d6b; --green:#2f6048; --red:#7a2730; --white:rgba(255,255,255,.88); }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,'Times New Roman',serif; }
+main { max-width:1220px; margin:0 auto; padding:38px 22px 72px; }
+h1 { font-size:clamp(34px,5vw,56px); line-height:1; font-weight:500; margin:0 0 14px; }
+h2 { font-size:25px; line-height:1.18; margin:24px 0 10px; }
+h3 { font-size:14px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); margin:0 0 8px; }
+p,li { line-height:1.58; }
+a { color:#183f65; }
+.topline,.kicker { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; letter-spacing:.12em; text-transform:uppercase; font-size:11px; color:var(--accent); }
+.lead { max-width:950px; font-size:18px; line-height:1.62; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:14px; }
+.card,.panel,.trace { background:var(--white); border:1px solid var(--rule); border-radius:8px; padding:16px; }
+.panel { margin:18px 0; }
+.ready { border-left:4px solid var(--green); }
+.warn { border-left:4px solid var(--accent); }
+.risk { border-left:4px solid var(--red); }
+.button { display:inline-block; border:1px solid rgba(30,77,107,.35); border-radius:6px; padding:9px 12px; background:#fff; color:var(--ink); font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:12px; text-decoration:none; margin:3px 6px 3px 0; }
+button { border:1px solid rgba(30,77,107,.35); border-radius:6px; padding:9px 12px; background:#fff; color:var(--ink); font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:12px; cursor:pointer; }
+button:hover,.button:hover { border-color:rgba(30,77,107,.82); }
+input,select { width:100%; border:1px solid var(--rule); border-radius:6px; padding:10px; background:#fff; color:var(--ink); }
+table { width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--rule); border-radius:8px; overflow:hidden; }
+th,td { padding:10px; border-bottom:1px solid var(--rule); text-align:left; vertical-align:top; }
+th { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); }
+.trace { white-space:pre-wrap; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:12px; line-height:1.55; background:#fff; }
+.small { color:var(--muted); font-size:13px; }
+.score { font-size:30px; line-height:1; }
+@media (max-width:760px) { main { padding:28px 18px 58px; } }
+</style></head><body><main>
+<div class="topline">All-component proof crosswalk</div>
+<h1>Claim-To-Proof And Source Utilization Crosswalk</h1>
+<p class="lead">This layer assigns every component a reviewer question, source role, evidence requirement, acceptance test, and claim boundary. It also specifies one new distinctiveness demonstrator per project so the portfolio does not rely on polished prose where a proof artifact should exist.</p>
+<section class="grid">
+  <div class="card"><h3>Projects</h3><p class="score">243</p></div>
+  <div class="card"><h3>Component Rows</h3><p class="score">3639</p></div>
+  <div class="card"><h3>New Demonstrators</h3><p class="score">243</p></div>
+  <div class="card"><h3>Projects With Routed Sources</h3><p class="score">243</p></div>
+  <div class="card"><h3>Book Index</h3><p>36211 files / 1250.71 GB</p></div>
+</section>
+<section class="grid">
+  <div class="panel"><h2>Gate Counts</h2><ul><li>GREEN - proof packet ready for live capture: 3639</li></ul></div>
+  <div class="panel"><h2>Upgrade Classes</h2><ul><li>chapter dossier proof: 33</li><li>human-AI analytic delta: 287</li><li>implementation scenario: 130</li><li>live workflow trace: 101</li><li>promotion-routing proof: 1082</li><li>retrieval replay harness: 98</li><li>runtime state trace: 1480</li><li>scenario replay: 119</li><li>source-to-output proof: 309</li></ul></div>
+</section>
+<p><a class="button" href="component_gate_runner.html">Open component gate runner</a><a class="button" href="source_utilization_register.html">Open source utilization register</a><a class="button" href="new_component_specs.html">Open new component specs</a><a class="button" href="claim_to_proof_crosswalk.csv">Open CSV</a></p>
+<section class="grid"><article class="card">
+<div class="kicker">research workflow software</div>
+<h2>Discovery Engine — eight-stage cross-disciplinary research-question discovery apparatus</h2>
+<p class="small">Potential 9.43; current 9.23; components 101; routed sources 6.</p>
+<p>Capture a live Nexus walkthrough: start with a real research question, show cross-field mechanism discovery, then show how an upstream change marks downstream academic stages stale and forces revision.</p>
+<a class="button" href="component_gate_runner.html?project=row7">Open component gate</a>
+</article><article class="card">
+<div class="kicker">retrieval security / evaluation harness</div>
+<h2>Retrieval Integrity and Poisoning Defense</h2>
+<p class="small">Potential 8.75; current 7.49; components 9; routed sources 6.</p>
+<p>Build a replayable mixed-speed Poison-RAG case: clean baseline, slow poison, fast injection, authority wrapper, retrieval trace, answer deformation, reviewer burden, and block/narrow/abstain decision.</p>
+<a class="button" href="component_gate_runner.html?project=native-poison-rag">Open component gate</a>
+</article><article class="card">
+<div class="kicker">structured analysis room</div>
+<h2>Algorithmic Active Measures - data poisoning as counterintelligence tradecraft in AI-mediated intelligence analysis</h2>
+<p class="small">Potential 8.59; current 7.38; components 17; routed sources 6.</p>
+<p>Add a public-safe case bridge from counterintelligence tradecraft to data poisoning: actor objective, mechanism, evidence surface, detection burden, and analytic warning.</p>
+<a class="button" href="component_gate_runner.html?project=algorithmic-active-measures">Open component gate</a>
+</article><article class="card">
+<div class="kicker">retrieval security / evaluation harness</div>
+<h2>Adversarial Evidence Corruption and Poison-RAG Defense - advisor technical annex for LLM-supported analytic judgment</h2>
+<p class="small">Potential 8.55; current 7.35; components 9; routed sources 6.</p>
+<p>Turn the annex into a miniature evaluation harness: adversarial source packet, retrieval trace, analyst validation step, defensive gate, replay record, and claim boundary.</p>
+<a class="button" href="component_gate_runner.html?project=poison-rag-defense-annex">Open component gate</a>
+</article><article class="card">
+<div class="kicker">retrieval / evidence software</div>
+<h2>Magnum Opus</h2>
+<p class="small">Potential 8.45; current 7.28; components 10; routed sources 6.</p>
+<p>Run a public-safe retrieval demonstration: question, corpus slice, retrieved passages, evidence score, negative-space finding, abstention case, and final claim boundary.</p>
+<a class="button" href="component_gate_runner.html?project=native-magnum-opus">Open component gate</a>
+</article><article class="card">
+<div class="kicker">method atlas / taxonomy</div>
+<h2>AI Failure Taxonomy</h2>
+<p class="small">Potential 8.32; current 7.2; components 17; routed sources 6.</p>
+<p>Add one classified example that travels through the taxonomy: observed failure or bias, category assignment, rival category, reviewer decision, and resulting mitigation.</p>
+<a class="button" href="component_gate_runner.html?project=native-aifailure-tax">Open component gate</a>
+</article><article class="card">
+<div class="kicker">software operating environment</div>
+<h2>Murano</h2>
+<p class="small">Potential 8.25; current 7.15; components 11; routed sources 6.</p>
+<p>Show one project moving through MuranoOS as software: room selection, instrument execution, agent/department handoff, SQLite state change, and exported work product.</p>
+<a class="button" href="component_gate_runner.html?project=native-murano">Open component gate</a>
+</article><article class="card">
+<div class="kicker">human-AI analysis workstation</div>
+<h2>Analyst Workstation — eight-page interactive AI-augmented intelligence-analysis handbook</h2>
+<p class="small">Potential 8.15; current 7.08; components 8; routed sources 6.</p>
+<p>Demonstrate one human-in-the-loop SAT comparison: baseline AI answer, structured analytic technique pass, human review delta, error caught, and release decision.</p>
+<a class="button" href="component_gate_runner.html?project=row10">Open component gate</a>
+</article><article class="card">
+<div class="kicker">book / manuscript system</div>
+<h2>Book Trilogy — Security, Dialectic, Repair : a three-book governed arc on dangerous power, democratic formation, and political repair after harm (the full manuscript corpus across 72 chapters)</h2>
+<p class="small">Potential 8.0; current 6.98; components 11; routed sources 6.</p>
+<p>Add representative chapter dossiers: chapter claim, source role, rewrite decision, visual/title rationale, and status for one chapter in each book.</p>
+<a class="button" href="component_gate_runner.html?project=trilogy">Open component gate</a>
+</article><article class="card">
+<div class="kicker">future quantitative experiment apparatus</div>
+<h2>Quantitative Capstone Workbench</h2>
+<p class="small">Potential 8.0; current 6.98; components 17; routed sources 6.</p>
+<p>Separate proposed conditions, scoring variables, reliability checks, and disconfirmation rules from any result claims; then add one simulated run artifact.</p>
+<a class="button" href="component_gate_runner.html?project=native-capstone-quantitative">Open component gate</a>
+</article><article class="card">
+<div class="kicker">navigation / governance instrument</div>
+<h2>AI Governance Navigator</h2>
+<p class="small">Potential 7.99; current 6.97; components 17; routed sources 6.</p>
+<p>Add one routing demonstration: user problem, chosen path, rejected path, governing criterion, output, and next review gate.</p>
+<a class="button" href="component_gate_runner.html?project=native-aigov-nav">Open component gate</a>
+</article><article class="card">
+<div class="kicker">policy / governance proposal</div>
+<h2>AI Rigor Detection - framework that detects performative rigor in AI-generated analysis; publication status is separated from validation status</h2>
+<p class="small">Potential 7.99; current 6.97; components 17; routed sources 6.</p>
+<p>Add one implementation scenario: policy problem, decision rule, control point, abuse case, measurable criterion, and revision trigger.</p>
+<a class="button" href="component_gate_runner.html?project=row2">Open component gate</a>
+</article><article class="card">
+<div class="kicker">method atlas / taxonomy</div>
+<h2>Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman</h2>
+<p class="small">Potential 7.99; current 6.97; components 17; routed sources 6.</p>
+<p>Add one classified example that travels through the taxonomy: observed failure or bias, category assignment, rival category, reviewer decision, and resulting mitigation.</p>
+<a class="button" href="component_gate_runner.html?project=bias-atlas">Open component gate</a>
+</article><article class="card">
+<div class="kicker">policy / governance proposal</div>
+<h2>Counterintelligence Surveillance Framework</h2>
+<p class="small">Potential 7.99; current 6.97; components 17; routed sources 6.</p>
+<p>Add one implementation scenario: policy problem, decision rule, control point, abuse case, measurable criterion, and revision trigger.</p>
+<a class="button" href="component_gate_runner.html?project=native-iscproposals">Open component gate</a>
+</article><article class="card">
+<div class="kicker">AI assurance / analysis room</div>
+<h2>AI Intelligence Cycle</h2>
+<p class="small">Potential 7.95; current 6.94; components 17; routed sources 6.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="component_gate_runner.html?project=native-aiintel-cycle">Open component gate</a>
+</article><article class="card">
+<div class="kicker">AI assurance / analysis room</div>
+<h2>AI Knowledge Production</h2>
+<p class="small">Potential 7.95; current 6.94; components 17; routed sources 6.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="component_gate_runner.html?project=native-aiknowledge-prod">Open component gate</a>
+</article><article class="card">
+<div class="kicker">AI assurance / analysis room</div>
+<h2>AI Model Assessment</h2>
+<p class="small">Potential 7.95; current 6.94; components 17; routed sources 6.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="component_gate_runner.html?project=native-aimodel-assess">Open component gate</a>
+</article><article class="card">
+<div class="kicker">AI assurance / analysis room</div>
+<h2>AI OSINT Narrative Analysis</h2>
+<p class="small">Potential 7.95; current 6.94; components 17; routed sources 6.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="component_gate_runner.html?project=native-aiosintnarr">Open component gate</a>
+</article><article class="card">
+<div class="kicker">AI assurance / analysis room</div>
+<h2>AI Prompt Engineering</h2>
+<p class="small">Potential 7.95; current 6.94; components 17; routed sources 3.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="component_gate_runner.html?project=native-aiprompt-eng">Open component gate</a>
+</article><article class="card">
+<div class="kicker">AI assurance / analysis room</div>
+<h2>AI Shared Instruments</h2>
+<p class="small">Potential 7.95; current 6.94; components 17; routed sources 2.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="component_gate_runner.html?project=native-aishared-instruments">Open component gate</a>
+</article><article class="card">
+<div class="kicker">AI assurance / analysis room</div>
+<h2>AI Structured Analysis Visualization</h2>
+<p class="small">Potential 7.95; current 6.94; components 17; routed sources 6.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="component_gate_runner.html?project=native-aisatvis">Open component gate</a>
+</article><article class="card">
+<div class="kicker">research workflow software</div>
+<h2>Applied History — lab for using historical case study to inform contemporary policy</h2>
+<p class="small">Potential 7.95; current 6.94; components 17; routed sources 6.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="component_gate_runner.html?project=applied-history">Open component gate</a>
+</article><article class="card">
+<div class="kicker">research workflow software</div>
+<h2>Ottoman Palestine and Early Zionism</h2>
+<p class="small">Potential 7.94; current 6.94; components 17; routed sources 6.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="component_gate_runner.html?project=native-mideast">Open component gate</a>
+</article><article class="card">
+<div class="kicker">structured analysis room</div>
+<h2>Analysis Tradecraft</h2>
+<p class="small">Potential 7.9; current 6.91; components 17; routed sources 6.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="component_gate_runner.html?project=native-atanalysis">Open component gate</a>
+</article><article class="card">
+<div class="kicker">structured analysis room</div>
+<h2>Collection Management Analysis</h2>
+<p class="small">Potential 7.9; current 6.91; components 17; routed sources 6.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="component_gate_runner.html?project=native-cmanalysis">Open component gate</a>
+</article><article class="card">
+<div class="kicker">structured analysis room</div>
+<h2>Counter-Terror Analysis — 13-page counter-terror analytical narrative arc</h2>
+<p class="small">Potential 7.9; current 6.91; components 17; routed sources 6.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="component_gate_runner.html?project=row8">Open component gate</a>
+</article><article class="card">
+<div class="kicker">structured analysis room</div>
+<h2>Counterintelligence Analysis</h2>
+<p class="small">Potential 7.9; current 6.91; components 17; routed sources 6.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="component_gate_runner.html?project=native-cianalysis">Open component gate</a>
+</article><article class="card">
+<div class="kicker">structured analysis room</div>
+<h2>Counterintelligence Operations Analysis</h2>
+<p class="small">Potential 7.9; current 6.91; components 17; routed sources 6.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="component_gate_runner.html?project=native-coanalysis">Open component gate</a>
+</article><article class="card">
+<div class="kicker">structured analysis room</div>
+<h2>Cyber Analysis</h2>
+<p class="small">Potential 7.9; current 6.91; components 17; routed sources 6.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="component_gate_runner.html?project=native-cyanalysis">Open component gate</a>
+</article><article class="card">
+<div class="kicker">structured analysis room</div>
+<h2>Directorate Analysis Method</h2>
+<p class="small">Potential 7.9; current 6.91; components 17; routed sources 6.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="component_gate_runner.html?project=native-ddianalysis">Open component gate</a>
+</article></section>
+<p class="lead"><a href="../source_workbench/index.html">Open source utilization workbench</a></p>
+<p class="lead"><a href="../component_proof_builds/index.html">Open component proof build system</a></p>
+</main></body></html>

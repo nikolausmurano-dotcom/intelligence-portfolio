@@ -1,0 +1,1465 @@
+{
+  "project": {
+    "project_id": "mb-muranoos-redteamlab-handoff-package-v1",
+    "title": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-muranoos-redteamlab-handoff-package-v1__receipt_0001",
+      "project_id": "mb-muranoos-redteamlab-handoff-package-v1",
+      "project_title": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger Handoff Identity",
+      "component_case_id": "mb-muranoos-redteamlab-handoff-package-v1__0001__stub-tsx-rust-blocker-register-assumption-quarantine-ledger-handoff-identity",
+      "claim_to_demonstrate": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger is a source packet for this is the most implementation-ready of the mid-size packs: it ships not just docs but an actual numbered patch packet (directory 12_WorkflowSpine_Tranche_PatchPacket/).",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger is a source packet for this is the most implementation-ready of the mid-size packs: it ships not just docs but an actual numbered patch packet (directory 12_WorkflowSpine_Tranche_PatchPacket/).",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46779,
+            "sha256": "5fe8e09ce3d0b482882a194088a15bdd47351adafbf0832e8dca362380a408d2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38209,
+            "sha256": "4ca235f2a51b5ac533c52546228a42258d01d15f5632084a279e25f6facd99df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22803,
+            "sha256": "d7b069ded7c2d17ad5decfa737f8cb365c1f508a952bf3702420db64bd86d1c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21785,
+            "sha256": "3759ef26281b201e0ae310a62b74b42a4e52a6bf2887fedd66d220c89752a651"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48036,
+            "sha256": "d6f10f9bd92b305f96f11e598c626a69fee41638147cd056c6ca6272210072ef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10943,
+            "sha256": "370cc78f71962845e34d186e285caa671e91140b11863bddb8363ff883666aa0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+          "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "872dff7f7c26ca45f446059e"
+    },
+    {
+      "receipt_id": "mb-muranoos-redteamlab-handoff-package-v1__receipt_0002",
+      "project_id": "mb-muranoos-redteamlab-handoff-package-v1",
+      "project_title": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger Room Task Model",
+      "component_case_id": "mb-muranoos-redteamlab-handoff-package-v1__0002__stub-tsx-rust-blocker-register-assumption-quarantine-ledger-room-task-model",
+      "claim_to_demonstrate": "It converts an archive or handoff into three inspectable decisions: what the work product is for, which component pieces carry the work, and what action would turn it into a live room, paper, method, or software instrument.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "It converts an archive or handoff into three inspectable decisions: what the work product is for, which component pieces carry the work, and what action would turn it into a live room, paper, method, or software instrument.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46779,
+            "sha256": "5fe8e09ce3d0b482882a194088a15bdd47351adafbf0832e8dca362380a408d2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38209,
+            "sha256": "4ca235f2a51b5ac533c52546228a42258d01d15f5632084a279e25f6facd99df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22803,
+            "sha256": "d7b069ded7c2d17ad5decfa737f8cb365c1f508a952bf3702420db64bd86d1c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21785,
+            "sha256": "3759ef26281b201e0ae310a62b74b42a4e52a6bf2887fedd66d220c89752a651"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48036,
+            "sha256": "d6f10f9bd92b305f96f11e598c626a69fee41638147cd056c6ca6272210072ef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10943,
+            "sha256": "370cc78f71962845e34d186e285caa671e91140b11863bddb8363ff883666aa0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+          "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ceb3164c101babf62de0135f"
+    },
+    {
+      "receipt_id": "mb-muranoos-redteamlab-handoff-package-v1__receipt_0003",
+      "project_id": "mb-muranoos-redteamlab-handoff-package-v1",
+      "project_title": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger Data Schema And Persistence Plan",
+      "component_case_id": "mb-muranoos-redteamlab-handoff-package-v1__0003__stub-tsx-rust-blocker-register-assumption-quarantine-ledger-data-schema-and-persistence-pl",
+      "claim_to_demonstrate": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46779,
+            "sha256": "5fe8e09ce3d0b482882a194088a15bdd47351adafbf0832e8dca362380a408d2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38209,
+            "sha256": "4ca235f2a51b5ac533c52546228a42258d01d15f5632084a279e25f6facd99df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22803,
+            "sha256": "d7b069ded7c2d17ad5decfa737f8cb365c1f508a952bf3702420db64bd86d1c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21785,
+            "sha256": "3759ef26281b201e0ae310a62b74b42a4e52a6bf2887fedd66d220c89752a651"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48036,
+            "sha256": "d6f10f9bd92b305f96f11e598c626a69fee41638147cd056c6ca6272210072ef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10943,
+            "sha256": "370cc78f71962845e34d186e285caa671e91140b11863bddb8363ff883666aa0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+          "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8ebceb1f017e942b8980ca94"
+    },
+    {
+      "receipt_id": "mb-muranoos-redteamlab-handoff-package-v1__receipt_0004",
+      "project_id": "mb-muranoos-redteamlab-handoff-package-v1",
+      "project_title": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger Interface And Instrument Plane",
+      "component_case_id": "mb-muranoos-redteamlab-handoff-package-v1__0004__stub-tsx-rust-blocker-register-assumption-quarantine-ledger-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46779,
+            "sha256": "5fe8e09ce3d0b482882a194088a15bdd47351adafbf0832e8dca362380a408d2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38209,
+            "sha256": "4ca235f2a51b5ac533c52546228a42258d01d15f5632084a279e25f6facd99df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22803,
+            "sha256": "d7b069ded7c2d17ad5decfa737f8cb365c1f508a952bf3702420db64bd86d1c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21785,
+            "sha256": "3759ef26281b201e0ae310a62b74b42a4e52a6bf2887fedd66d220c89752a651"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48036,
+            "sha256": "d6f10f9bd92b305f96f11e598c626a69fee41638147cd056c6ca6272210072ef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10943,
+            "sha256": "370cc78f71962845e34d186e285caa671e91140b11863bddb8363ff883666aa0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+          "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b30a332d062a781e6e2dcdb5"
+    },
+    {
+      "receipt_id": "mb-muranoos-redteamlab-handoff-package-v1__receipt_0005",
+      "project_id": "mb-muranoos-redteamlab-handoff-package-v1",
+      "project_title": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger Integration Path",
+      "component_case_id": "mb-muranoos-redteamlab-handoff-package-v1__0005__stub-tsx-rust-blocker-register-assumption-quarantine-ledger-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. Best for developers who want a drop-in-ready patch packet rather than prose specs. Apply in order: SQL migration — Rust commands — runtime — component files —.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. Best for developers who want a drop-in-ready patch packet rather than prose specs. Apply in order: SQL migration — Rust commands — runtime — component files —.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46779,
+            "sha256": "5fe8e09ce3d0b482882a194088a15bdd47351adafbf0832e8dca362380a408d2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38209,
+            "sha256": "4ca235f2a51b5ac533c52546228a42258d01d15f5632084a279e25f6facd99df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22803,
+            "sha256": "d7b069ded7c2d17ad5decfa737f8cb365c1f508a952bf3702420db64bd86d1c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21785,
+            "sha256": "3759ef26281b201e0ae310a62b74b42a4e52a6bf2887fedd66d220c89752a651"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48036,
+            "sha256": "d6f10f9bd92b305f96f11e598c626a69fee41638147cd056c6ca6272210072ef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10943,
+            "sha256": "370cc78f71962845e34d186e285caa671e91140b11863bddb8363ff883666aa0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+          "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f494116bb0ae0ad74e4b9975"
+    },
+    {
+      "receipt_id": "mb-muranoos-redteamlab-handoff-package-v1__receipt_0006",
+      "project_id": "mb-muranoos-redteamlab-handoff-package-v1",
+      "project_title": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger Proof Boundary",
+      "component_case_id": "mb-muranoos-redteamlab-handoff-package-v1__0006__stub-tsx-rust-blocker-register-assumption-quarantine-ledger-proof-boundary",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46779,
+            "sha256": "5fe8e09ce3d0b482882a194088a15bdd47351adafbf0832e8dca362380a408d2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38209,
+            "sha256": "4ca235f2a51b5ac533c52546228a42258d01d15f5632084a279e25f6facd99df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22803,
+            "sha256": "d7b069ded7c2d17ad5decfa737f8cb365c1f508a952bf3702420db64bd86d1c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21785,
+            "sha256": "3759ef26281b201e0ae310a62b74b42a4e52a6bf2887fedd66d220c89752a651"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48036,
+            "sha256": "d6f10f9bd92b305f96f11e598c626a69fee41638147cd056c6ca6272210072ef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10943,
+            "sha256": "370cc78f71962845e34d186e285caa671e91140b11863bddb8363ff883666aa0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+          "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0f9f982e6c4e0b46e1ae59e6"
+    },
+    {
+      "receipt_id": "mb-muranoos-redteamlab-handoff-package-v1__receipt_0007",
+      "project_id": "mb-muranoos-redteamlab-handoff-package-v1",
+      "project_title": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger Next Build Test",
+      "component_case_id": "mb-muranoos-redteamlab-handoff-package-v1__0007__stub-tsx-rust-blocker-register-assumption-quarantine-ledger-next-build-test",
+      "claim_to_demonstrate": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46779,
+            "sha256": "5fe8e09ce3d0b482882a194088a15bdd47351adafbf0832e8dca362380a408d2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38209,
+            "sha256": "4ca235f2a51b5ac533c52546228a42258d01d15f5632084a279e25f6facd99df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22803,
+            "sha256": "d7b069ded7c2d17ad5decfa737f8cb365c1f508a952bf3702420db64bd86d1c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21785,
+            "sha256": "3759ef26281b201e0ae310a62b74b42a4e52a6bf2887fedd66d220c89752a651"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48036,
+            "sha256": "d6f10f9bd92b305f96f11e598c626a69fee41638147cd056c6ca6272210072ef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10943,
+            "sha256": "370cc78f71962845e34d186e285caa671e91140b11863bddb8363ff883666aa0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+          "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "06e2e6518204b19c01be0d69"
+    },
+    {
+      "receipt_id": "mb-muranoos-redteamlab-handoff-package-v1__receipt_0008",
+      "project_id": "mb-muranoos-redteamlab-handoff-package-v1",
+      "project_title": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger / src/rooms/red-team",
+      "component_case_id": "mb-muranoos-redteamlab-handoff-package-v1__0008__stub-tsx-rust-blocker-register-assumption-quarantine-ledger-src-rooms-red-team",
+      "claim_to_demonstrate": "treats `src/rooms/red-team` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Six React component files (stub templates for IntakeBoard, ScopeConsole, SourceLocker.",
+      "input_fixture": "project source text and the named component `src/rooms/red-team`",
+      "operation_under_test": "treats `src/rooms/red-team` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Six React component files (stub templates for IntakeBoard, ScopeConsole, SourceLocker.",
+      "expected_output": "a room, workbench, or interface function tied to `src/rooms/red-team`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "dc9199f3a595090a6a850c23",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46779,
+            "sha256": "5fe8e09ce3d0b482882a194088a15bdd47351adafbf0832e8dca362380a408d2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38209,
+            "sha256": "4ca235f2a51b5ac533c52546228a42258d01d15f5632084a279e25f6facd99df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22803,
+            "sha256": "d7b069ded7c2d17ad5decfa737f8cb365c1f508a952bf3702420db64bd86d1c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21785,
+            "sha256": "3759ef26281b201e0ae310a62b74b42a4e52a6bf2887fedd66d220c89752a651"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48036,
+            "sha256": "d6f10f9bd92b305f96f11e598c626a69fee41638147cd056c6ca6272210072ef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10943,
+            "sha256": "370cc78f71962845e34d186e285caa671e91140b11863bddb8363ff883666aa0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+          "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "23365a70343877c45e218c79"
+    },
+    {
+      "receipt_id": "mb-muranoos-redteamlab-handoff-package-v1__receipt_0009",
+      "project_id": "mb-muranoos-redteamlab-handoff-package-v1",
+      "project_title": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger / 04_BLOCKER_REGISTER.md",
+      "component_case_id": "mb-muranoos-redteamlab-handoff-package-v1__0009__stub-tsx-rust-blocker-register-assumption-quarantine-ledger-04-blocker-register-md",
+      "claim_to_demonstrate": "treats `04_BLOCKER_REGISTER.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: The distinguishing doctrinal contribution is the Blocker Register and Assumption Quarantine Ledger.",
+      "input_fixture": "project source text and the named component `04_BLOCKER_REGISTER.md`",
+      "operation_under_test": "treats `04_BLOCKER_REGISTER.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: The distinguishing doctrinal contribution is the Blocker Register and Assumption Quarantine Ledger.",
+      "expected_output": "inspectable implementation evidence tied to `04_BLOCKER_REGISTER.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3c62a5f79d1a59674224dc87",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46779,
+            "sha256": "5fe8e09ce3d0b482882a194088a15bdd47351adafbf0832e8dca362380a408d2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38209,
+            "sha256": "4ca235f2a51b5ac533c52546228a42258d01d15f5632084a279e25f6facd99df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22803,
+            "sha256": "d7b069ded7c2d17ad5decfa737f8cb365c1f508a952bf3702420db64bd86d1c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21785,
+            "sha256": "3759ef26281b201e0ae310a62b74b42a4e52a6bf2887fedd66d220c89752a651"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48036,
+            "sha256": "d6f10f9bd92b305f96f11e598c626a69fee41638147cd056c6ca6272210072ef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10943,
+            "sha256": "370cc78f71962845e34d186e285caa671e91140b11863bddb8363ff883666aa0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+          "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2968d87b7743e662fd525979"
+    },
+    {
+      "receipt_id": "mb-muranoos-redteamlab-handoff-package-v1__receipt_0010",
+      "project_id": "mb-muranoos-redteamlab-handoff-package-v1",
+      "project_title": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger / 05_ASSUMPTION_QUARANTINE_LEDGER.md",
+      "component_case_id": "mb-muranoos-redteamlab-handoff-package-v1__0010__stub-tsx-rust-blocker-register-assumption-quarantine-ledger-05-assumption-quarantine-ledge",
+      "claim_to_demonstrate": "treats `05_ASSUMPTION_QUARANTINE_LEDGER.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: The distinguishing doctrinal contribution is the Blocker Register and Assumption Quarantine Ledger.",
+      "input_fixture": "project source text and the named component `05_ASSUMPTION_QUARANTINE_LEDGER.md`",
+      "operation_under_test": "treats `05_ASSUMPTION_QUARANTINE_LEDGER.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: The distinguishing doctrinal contribution is the Blocker Register and Assumption Quarantine Ledger.",
+      "expected_output": "inspectable implementation evidence tied to `05_ASSUMPTION_QUARANTINE_LEDGER.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3c62a5f79d1a59674224dc87",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46779,
+            "sha256": "5fe8e09ce3d0b482882a194088a15bdd47351adafbf0832e8dca362380a408d2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38209,
+            "sha256": "4ca235f2a51b5ac533c52546228a42258d01d15f5632084a279e25f6facd99df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22803,
+            "sha256": "d7b069ded7c2d17ad5decfa737f8cb365c1f508a952bf3702420db64bd86d1c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21785,
+            "sha256": "3759ef26281b201e0ae310a62b74b42a4e52a6bf2887fedd66d220c89752a651"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48036,
+            "sha256": "d6f10f9bd92b305f96f11e598c626a69fee41638147cd056c6ca6272210072ef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10943,
+            "sha256": "370cc78f71962845e34d186e285caa671e91140b11863bddb8363ff883666aa0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+          "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8d4806167016ae22426658a1"
+    },
+    {
+      "receipt_id": "mb-muranoos-redteamlab-handoff-package-v1__receipt_0011",
+      "project_id": "mb-muranoos-redteamlab-handoff-package-v1",
+      "project_title": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger / 06_REPO_AWARE_ARCHITECTURAL_LOCK.md",
+      "component_case_id": "mb-muranoos-redteamlab-handoff-package-v1__0011__stub-tsx-rust-blocker-register-assumption-quarantine-ledger-06-repo-aware-architectural-lo",
+      "claim_to_demonstrate": "treats `06_REPO_AWARE_ARCHITECTURAL_LOCK.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: the 06_REPO_AWARE_ARCHITECTURAL_LOCK.md formalizes Nexus-Lab precedence. It converts an archive or.",
+      "input_fixture": "project source text and the named component `06_REPO_AWARE_ARCHITECTURAL_LOCK.md`",
+      "operation_under_test": "treats `06_REPO_AWARE_ARCHITECTURAL_LOCK.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: the 06_REPO_AWARE_ARCHITECTURAL_LOCK.md formalizes Nexus-Lab precedence. It converts an archive or.",
+      "expected_output": "inspectable implementation evidence tied to `06_REPO_AWARE_ARCHITECTURAL_LOCK.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f4d920da426cc6fa736361c2",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46779,
+            "sha256": "5fe8e09ce3d0b482882a194088a15bdd47351adafbf0832e8dca362380a408d2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38209,
+            "sha256": "4ca235f2a51b5ac533c52546228a42258d01d15f5632084a279e25f6facd99df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22803,
+            "sha256": "d7b069ded7c2d17ad5decfa737f8cb365c1f508a952bf3702420db64bd86d1c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21785,
+            "sha256": "3759ef26281b201e0ae310a62b74b42a4e52a6bf2887fedd66d220c89752a651"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48036,
+            "sha256": "d6f10f9bd92b305f96f11e598c626a69fee41638147cd056c6ca6272210072ef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10943,
+            "sha256": "370cc78f71962845e34d186e285caa671e91140b11863bddb8363ff883666aa0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+          "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4d95a87df90abdfadb5de3e0"
+    },
+    {
+      "receipt_id": "mb-muranoos-redteamlab-handoff-package-v1__receipt_0012",
+      "project_id": "mb-muranoos-redteamlab-handoff-package-v1",
+      "project_title": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger / RedTeamLabRoom.tsx",
+      "component_case_id": "mb-muranoos-redteamlab-handoff-package-v1__0012__stub-tsx-rust-blocker-register-assumption-quarantine-ledger-redteamlabroom-tsx",
+      "claim_to_demonstrate": "treats `RedTeamLabRoom.tsx` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: SQL migration — Rust commands — runtime — component files — wire up RedTeamLabRoom.tsx. Treat as repo-snapshot-aligned.",
+      "input_fixture": "project source text and the named component `RedTeamLabRoom.tsx`",
+      "operation_under_test": "treats `RedTeamLabRoom.tsx` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: SQL migration — Rust commands — runtime — component files — wire up RedTeamLabRoom.tsx. Treat as repo-snapshot-aligned.",
+      "expected_output": "inspectable implementation evidence tied to `RedTeamLabRoom.tsx`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "dffd8439bd20f2f50df4ab70",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46779,
+            "sha256": "5fe8e09ce3d0b482882a194088a15bdd47351adafbf0832e8dca362380a408d2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38209,
+            "sha256": "4ca235f2a51b5ac533c52546228a42258d01d15f5632084a279e25f6facd99df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22803,
+            "sha256": "d7b069ded7c2d17ad5decfa737f8cb365c1f508a952bf3702420db64bd86d1c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21785,
+            "sha256": "3759ef26281b201e0ae310a62b74b42a4e52a6bf2887fedd66d220c89752a651"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48036,
+            "sha256": "d6f10f9bd92b305f96f11e598c626a69fee41638147cd056c6ca6272210072ef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10943,
+            "sha256": "370cc78f71962845e34d186e285caa671e91140b11863bddb8363ff883666aa0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+          "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e9bfc5a14f949bf71113b5c2"
+    },
+    {
+      "receipt_id": "mb-muranoos-redteamlab-handoff-package-v1__receipt_0013",
+      "project_id": "mb-muranoos-redteamlab-handoff-package-v1",
+      "project_title": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger / redTeamRuntime.ts",
+      "component_case_id": "mb-muranoos-redteamlab-handoff-package-v1__0013__stub-tsx-rust-blocker-register-assumption-quarantine-ledger-redteamruntime-ts",
+      "claim_to_demonstrate": "treats `redTeamRuntime.ts` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: One Rust command_shapes.rs file and one redTeamRuntime.ts for typed invoke wrappers. One component_tree.md for.",
+      "input_fixture": "project source text and the named component `redTeamRuntime.ts`",
+      "operation_under_test": "treats `redTeamRuntime.ts` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: One Rust command_shapes.rs file and one redTeamRuntime.ts for typed invoke wrappers. One component_tree.md for.",
+      "expected_output": "inspectable implementation evidence tied to `redTeamRuntime.ts`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8e5bbf9ca3d134de31efb969",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46779,
+            "sha256": "5fe8e09ce3d0b482882a194088a15bdd47351adafbf0832e8dca362380a408d2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38209,
+            "sha256": "4ca235f2a51b5ac533c52546228a42258d01d15f5632084a279e25f6facd99df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22803,
+            "sha256": "d7b069ded7c2d17ad5decfa737f8cb365c1f508a952bf3702420db64bd86d1c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21785,
+            "sha256": "3759ef26281b201e0ae310a62b74b42a4e52a6bf2887fedd66d220c89752a651"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48036,
+            "sha256": "d6f10f9bd92b305f96f11e598c626a69fee41638147cd056c6ca6272210072ef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10943,
+            "sha256": "370cc78f71962845e34d186e285caa671e91140b11863bddb8363ff883666aa0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+          "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2c3017067ac4480d0dcbb47b"
+    },
+    {
+      "receipt_id": "mb-muranoos-redteamlab-handoff-package-v1__receipt_0014",
+      "project_id": "mb-muranoos-redteamlab-handoff-package-v1",
+      "project_title": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger / component_tree.md",
+      "component_case_id": "mb-muranoos-redteamlab-handoff-package-v1__0014__stub-tsx-rust-blocker-register-assumption-quarantine-ledger-component-tree-md",
+      "claim_to_demonstrate": "treats `component_tree.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: One component_tree.md for room-internal architecture. Discovery, creativity, systems thinking, and project generation. Use.",
+      "input_fixture": "project source text and the named component `component_tree.md`",
+      "operation_under_test": "treats `component_tree.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: One component_tree.md for room-internal architecture. Discovery, creativity, systems thinking, and project generation. Use.",
+      "expected_output": "inspectable implementation evidence tied to `component_tree.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "91c2aaba97520cf3d4898145",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46779,
+            "sha256": "5fe8e09ce3d0b482882a194088a15bdd47351adafbf0832e8dca362380a408d2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38209,
+            "sha256": "4ca235f2a51b5ac533c52546228a42258d01d15f5632084a279e25f6facd99df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22803,
+            "sha256": "d7b069ded7c2d17ad5decfa737f8cb365c1f508a952bf3702420db64bd86d1c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21785,
+            "sha256": "3759ef26281b201e0ae310a62b74b42a4e52a6bf2887fedd66d220c89752a651"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48036,
+            "sha256": "d6f10f9bd92b305f96f11e598c626a69fee41638147cd056c6ca6272210072ef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10943,
+            "sha256": "370cc78f71962845e34d186e285caa671e91140b11863bddb8363ff883666aa0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+          "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "31cf7a519d51889c6b414bb2"
+    },
+    {
+      "receipt_id": "mb-muranoos-redteamlab-handoff-package-v1__receipt_0015",
+      "project_id": "mb-muranoos-redteamlab-handoff-package-v1",
+      "project_title": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger / Blocker Register and Assumption Quarantine Ledger",
+      "component_case_id": "mb-muranoos-redteamlab-handoff-package-v1__0015__stub-tsx-rust-blocker-register-assumption-quarantine-ledger-blocker-register-and-assumptio",
+      "claim_to_demonstrate": "uses `Blocker Register and Assumption Quarantine Ledger` as an analytical instrument that turns source material into a map, matrix, ledger, graph, taxonomy, or decision surface. Source context: The distinguishing doctrinal contribution is the Blocker Register.",
+      "input_fixture": "project source text and the named component `Blocker Register and Assumption Quarantine Ledger`",
+      "operation_under_test": "uses `Blocker Register and Assumption Quarantine Ledger` as an analytical instrument that turns source material into a map, matrix, ledger, graph, taxonomy, or decision surface. Source context: The distinguishing doctrinal contribution is the Blocker Register.",
+      "expected_output": "an analytical work product or decision surface tied to `Blocker Register and Assumption Quarantine Ledger`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3c62a5f79d1a59674224dc87",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46779,
+            "sha256": "5fe8e09ce3d0b482882a194088a15bdd47351adafbf0832e8dca362380a408d2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38209,
+            "sha256": "4ca235f2a51b5ac533c52546228a42258d01d15f5632084a279e25f6facd99df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22803,
+            "sha256": "d7b069ded7c2d17ad5decfa737f8cb365c1f508a952bf3702420db64bd86d1c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21785,
+            "sha256": "3759ef26281b201e0ae310a62b74b42a4e52a6bf2887fedd66d220c89752a651"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48036,
+            "sha256": "d6f10f9bd92b305f96f11e598c626a69fee41638147cd056c6ca6272210072ef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10943,
+            "sha256": "370cc78f71962845e34d186e285caa671e91140b11863bddb8363ff883666aa0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+          "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8a6ae781e78150cc07b8906c"
+    },
+    {
+      "receipt_id": "mb-muranoos-redteamlab-handoff-package-v1__receipt_0016",
+      "project_id": "mb-muranoos-redteamlab-handoff-package-v1",
+      "project_title": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger / Best for",
+      "component_case_id": "mb-muranoos-redteamlab-handoff-package-v1__0016__stub-tsx-rust-blocker-register-assumption-quarantine-ledger-best-for",
+      "claim_to_demonstrate": "uses `Best for` as a named project component with a traceable role in the public mechanism. Source context: Best for developers who want a drop-in-ready patch packet rather than prose specs. Apply in order: SQL migration — Rust commands — runtime — component.",
+      "input_fixture": "project source text and the named component `Best for`",
+      "operation_under_test": "uses `Best for` as a named project component with a traceable role in the public mechanism. Source context: Best for developers who want a drop-in-ready patch packet rather than prose specs. Apply in order: SQL migration — Rust commands — runtime — component.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Best for`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c6ee621ff07f22080a8c6cbd",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46779,
+            "sha256": "5fe8e09ce3d0b482882a194088a15bdd47351adafbf0832e8dca362380a408d2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38209,
+            "sha256": "4ca235f2a51b5ac533c52546228a42258d01d15f5632084a279e25f6facd99df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22803,
+            "sha256": "d7b069ded7c2d17ad5decfa737f8cb365c1f508a952bf3702420db64bd86d1c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21785,
+            "sha256": "3759ef26281b201e0ae310a62b74b42a4e52a6bf2887fedd66d220c89752a651"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48036,
+            "sha256": "d6f10f9bd92b305f96f11e598c626a69fee41638147cd056c6ca6272210072ef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10943,
+            "sha256": "370cc78f71962845e34d186e285caa671e91140b11863bddb8363ff883666aa0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+          "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0b0fd08310468265f5e12484"
+    },
+    {
+      "receipt_id": "mb-muranoos-redteamlab-handoff-package-v1__receipt_0017",
+      "project_id": "mb-muranoos-redteamlab-handoff-package-v1",
+      "project_title": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger / RedTeamLabRoom.tsx. Treat",
+      "component_case_id": "mb-muranoos-redteamlab-handoff-package-v1__0017__stub-tsx-rust-blocker-register-assumption-quarantine-ledger-redteamlabroom-tsx-treat",
+      "claim_to_demonstrate": "treats `RedTeamLabRoom.tsx. Treat` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: SQL migration — Rust commands — runtime — component files — wire up RedTeamLabRoom.tsx. Treat as.",
+      "input_fixture": "project source text and the named component `RedTeamLabRoom.tsx. Treat`",
+      "operation_under_test": "treats `RedTeamLabRoom.tsx. Treat` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: SQL migration — Rust commands — runtime — component files — wire up RedTeamLabRoom.tsx. Treat as.",
+      "expected_output": "inspectable implementation evidence tied to `RedTeamLabRoom.tsx. Treat`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "dffd8439bd20f2f50df4ab70",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46779,
+            "sha256": "5fe8e09ce3d0b482882a194088a15bdd47351adafbf0832e8dca362380a408d2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38209,
+            "sha256": "4ca235f2a51b5ac533c52546228a42258d01d15f5632084a279e25f6facd99df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22803,
+            "sha256": "d7b069ded7c2d17ad5decfa737f8cb365c1f508a952bf3702420db64bd86d1c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21785,
+            "sha256": "3759ef26281b201e0ae310a62b74b42a4e52a6bf2887fedd66d220c89752a651"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48036,
+            "sha256": "d6f10f9bd92b305f96f11e598c626a69fee41638147cd056c6ca6272210072ef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10943,
+            "sha256": "370cc78f71962845e34d186e285caa671e91140b11863bddb8363ff883666aa0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/blueprint.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/instrument_map.json",
+          "project_blueprints/mb-muranoos-redteamlab-handoff-package-v1/README.md",
+          "proof_builds/mb-muranoos-redteamlab-handoff-package-v1/proof_build.json",
+          "proof_demos/mb-muranoos-redteamlab-handoff-package-v1/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "152f0d9b22b65c8c8c363c74"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Full-Build Control Plane</title>
+<style>
+:root{color-scheme:light;--paper:#f7f5ef;--ink:#152231;--muted:#5a6575;--rule:rgba(35,55,77,.18);--accent:#7a4d18;--blue:#1e4d6b;--green:#2f6048;--red:#7a2730;--white:rgba(255,255,255,.9)}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif}main{max-width:1240px;margin:0 auto;padding:38px 22px 76px}h1{font-size:clamp(34px,5vw,56px);line-height:1;font-weight:500;margin:0 0 14px}h2{font-size:25px;line-height:1.18;margin:24px 0 10px}h3{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}p,li{line-height:1.58}a{color:#183f65}.topline,.kicker{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase;font-size:11px;color:var(--accent)}.lead{max-width:980px;font-size:18px;line-height:1.62}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}.card,.panel,.trace{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:16px}.panel{margin:18px 0}.ready{border-left:4px solid var(--green)}.warn{border-left:4px solid var(--accent)}.risk{border-left:4px solid var(--red)}.button{display:inline-block;border:1px solid rgba(30,77,107,.35);border-radius:6px;padding:9px 12px;background:#fff;color:var(--ink);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;text-decoration:none;margin:3px 6px 3px 0}input,select{width:100%;border:1px solid var(--rule);border-radius:6px;padding:10px;background:#fff;color:var(--ink)}table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--rule);border-radius:8px;overflow:hidden}th,td{padding:10px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}th{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}.small{color:var(--muted);font-size:13px}.score{font-size:30px;line-height:1}.tag{display:inline-block;border:1px solid var(--rule);border-radius:999px;padding:4px 8px;margin:2px;font-size:12px;background:#fff}.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.75fr);gap:14px}@media(max-width:760px){main{padding:28px 18px 58px}.split{grid-template-columns:1fr}}
+</style>
+</head><body><main>
+<div class="topline">Full-build control plane</div>
+<h1>From Proof Builds To Operational Systems</h1>
+<p class="lead">This layer promotes the portfolio from proof engineering to build governance. It classifies what each project actually is, defines the operational end state, assigns a runtime target, binds source requirements, and states the tests needed before a reviewer should treat it as a serious operational system.</p>
+<section class="grid"><div class="card"><h3>Projects</h3><p class="score">243</p></div><div class="card"><h3>T0/T1 Queue</h3><p class="score">11</p></div><div class="card"><h3>Object Types</h3><p class="score">17</p></div><div class="card"><h3>Tranches</h3><p class="score">5</p></div></section>
+<section class="panel warn">
+  <h2>Claim Discipline</h2>
+  <p>Some projects should become reusable software platforms. Others should become research papers, source-governance systems, manuscript dossiers, regional analytic desks, or public proof pages. Full build does not mean forcing all projects into the same object type.</p>
+</section>
+<section class="grid">
+  <article class="card"><h2>Build Tranches</h2><ul><li>T0 reusable platform kernel: 6</li><li>T1 flagship operational demonstrator: 5</li><li>T2 platform module: 97</li><li>T3 governed content system: 100</li><li>T4 portfolio-backed research surface: 35</li></ul></article>
+  <article class="card"><h2>Object Types</h2><ul><li>source governance or packet-routing system: 98</li><li>research workflow software module: 90</li><li>analytic method or human-AI evaluation module: 21</li><li>research project or professional workbench: 10</li><li>retrieval or evidence-evaluation platform: 7</li><li>portfolio room or research surface: 5</li><li>manuscript or editorial governance system: 2</li><li>reusable research-pipeline software: 1</li><li>local research operating system / workstation builder: 1</li><li>local scholarly retrieval and evidence-warrant software: 1</li><li>adversarial retrieval-security evaluation platform: 1</li><li>human-in-the-loop analytic workstation: 1</li></ul></article>
+</section>
+<p>
+  <a class="button" href="operational_build_runner.html">Open operational build runner</a>
+  <a class="button" href="first_tranche_build_queue.html">Open first-tranche queue</a>
+  <a class="button" href="platform_kernels.html">Open reusable platform kernels</a>
+  <a class="button" href="kernel_implementation_contracts.html">Open implementation contracts</a>
+  <a class="button" href="operational_build_specs.csv">Operational specs CSV</a>
+  <a class="button" href="full_build_architecture.json">Architecture JSON</a>
+</p>
+<h2>First Operational Priority</h2>
+<section class="grid">
+
+<article class="card">
+  <div class="kicker">T0 reusable platform kernel</div>
+  <h2>Nexus Research Pipeline</h2>
+  <p>A researcher can start with a seed question, discover transferable mechanisms from other fields, pressure-test analogies, move the result through academic research stages, and see downstream sections marked stale when upstream claims, methods, or evidence change.</p>
+  <p class="small">First build: Implement a live seed-question walkthrough with one cross-field transfer and one downstream stale-state propagation.</p>
+  <a class="button" href="operational_build_runner.html?project=row7">Open build spec</a>
+</article>
+
+<article class="card">
+  <div class="kicker">T0 reusable platform kernel</div>
+  <h2>MuranoOS Research Operating Environment</h2>
+  <p>A researcher can create project-specific rooms, use instruments, record decisions, route work between departments or agents, preserve state, and export professional work products under review gates.</p>
+  <p class="small">First build: Show one project moving through room selection, instrument execution, state update, department handoff, review gate, and export.</p>
+  <a class="button" href="operational_build_runner.html?project=native-murano">Open build spec</a>
+</article>
+
+<article class="card">
+  <div class="kicker">T0 reusable platform kernel</div>
+  <h2>Magnum Opus Scholarly Retrieval And Warrant System</h2>
+  <p>A researcher can ask a question against a local scholarly corpus, inspect retrieved passages, see what the corpus does not support, receive an evidence score, and export only claims that remain inside the source warrant.</p>
+  <p class="small">First build: Build a public-safe retrieval trace with corpus boundary, retrieved passages, evidence score, negative-space finding, abstention, and claim ceiling.</p>
+  <a class="button" href="operational_build_runner.html?project=native-magnum-opus">Open build spec</a>
+</article>
+
+<article class="card">
+  <div class="kicker">T0 reusable platform kernel</div>
+  <h2>Retrieval Integrity And Poison-RAG Evaluation Harness</h2>
+  <p>A researcher can run clean baseline, slow poison, fast injection, and authority-wrapper attacks through a retrieval pipeline and inspect how contamination enters, moves, distorts, or is blocked.</p>
+  <p class="small">First build: Build the mixed-speed Poison-RAG replay with slow poison, fast injection, authority wrapper, retrieval trace, and defense decision.</p>
+  <a class="button" href="operational_build_runner.html?project=native-poison-rag">Open build spec</a>
+</article>
+
+<article class="card">
+  <div class="kicker">T0 reusable platform kernel</div>
+  <h2>Structured Human-AI Analyst Workstation</h2>
+  <p>An analyst can run an AI output through structured analytic techniques, record human corrections, compare confidence, identify residual disagreement, and decide whether to release, narrow, or block the result.</p>
+  <p class="small">First build: Build one SAT comparison board: baseline AI answer, structured technique pass, human delta, confidence boundary, and release decision.</p>
+  <a class="button" href="operational_build_runner.html?project=row10">Open build spec</a>
+</article>
+
+<article class="card">
+  <div class="kicker">T0 reusable platform kernel</div>
+  <h2>Structured Analytic Technique Studio</h2>
+  <p>A researcher can select or combine structured analytic techniques, apply them to a task, compare baseline and method-supported reasoning, and preserve the conditions under which each technique helped or failed.</p>
+  <p class="small">First build: Build a two-technique comparison on one analytic task and record where each technique changed the output.</p>
+  <a class="button" href="operational_build_runner.html?project=analytical-methods">Open build spec</a>
+</article>
+
+<article class="card">
+  <div class="kicker">T1 flagship operational demonstrator</div>
+  <h2>Book Trilogy Manuscript Governance System</h2>
+  <p>Each of 72 chapters carries a public title, argument backbone, source burden, book-specific voice rule, visual identity, revision status, and handoff to adjacent chapters.</p>
+  <p class="small">First build: Build one complete representative dossier per book and then scale the same fields across all 72 chapters.</p>
+  <a class="button" href="operational_build_runner.html?project=trilogy">Open build spec</a>
+</article>
+
+<article class="card">
+  <div class="kicker">T1 flagship operational demonstrator</div>
+  <h2>Adversarial Evidence Corruption Technical Annex Harness</h2>
+  <p>The annex becomes a replayable research architecture: adversarial packet, retrieval trace, analyst validation, defensive gate, replay record, and claim boundary.</p>
+  <p class="small">First build: Convert the advisor annex into one runnable evaluation capsule without representing it as completed empirical results.</p>
+  <a class="button" href="operational_build_runner.html?project=poison-rag-defense-annex">Open build spec</a>
+</article>
+
+<article class="card">
+  <div class="kicker">T1 flagship operational demonstrator</div>
+  <h2>Russia Source-To-Judgment Desk</h2>
+  <p>A researcher can route Russia sources into actor interests, institutional constraints, strategic culture, deception patterns, force posture, uncertainty limits, and bounded analytic judgments.</p>
+  <p class="small">First build: Run one source family into a visible source-to-variable-to-judgment chain.</p>
+  <a class="button" href="operational_build_runner.html?project=russia-desk">Open build spec</a>
+</article>
+
+<article class="card">
+  <div class="kicker">T1 flagship operational demonstrator</div>
+  <h2>Algorithmic Active Measures - data poisoning as counterintelligence tradecraft in AI-mediated intelligence analysis</h2>
+  <p>A user can apply a method, compare baseline and method-supported reasoning, record human judgment, and preserve the claim boundary.</p>
+  <p class="small">First build: Make the public-safe bridge from tradecraft to data poisoning explicit enough that the study&#x27;s distinctive mechanism is visible.</p>
+  <a class="button" href="operational_build_runner.html?project=algorithmic-active-measures">Open build spec</a>
+</article>
+
+<article class="card">
+  <div class="kicker">T1 flagship operational demonstrator</div>
+  <h2>Master Bundle Packet Promotion Atlas</h2>
+  <p>A large archive can be converted into governed build inputs by assigning each packet identity, source state, authority, project route, and next action.</p>
+  <p class="small">First build: Run one packet through canonical/derivative/archive/build-now classification and capture the next action.</p>
+  <a class="button" href="operational_build_runner.html?project=master-bundle-atlas">Open build spec</a>
+</article>
+</section><p class="lead"><a href="../source_to_build_bindings/index.html">Open source-to-build bindings</a></p>
+<p class="lead"><a href="../proof_maturity_control_plane/index.html">Open proof maturity control plane</a></p>
+<p class="lead"><a href="../proof_capsules/index.html">Open proof capsules</a></p>
+<p class="lead"><a href="../full_operational_build_program/index.html">Open full operational build program</a></p>
+</main></body></html>

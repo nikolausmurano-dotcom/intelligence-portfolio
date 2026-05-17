@@ -1,0 +1,41 @@
+# Proof Build: Human Terrain & Statecraft
+
+**Project ID.** `mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0`
+
+**Proof tier.** source-backed-proof-build
+
+**Public claim.** Consolidated handoff archive for the proposed MuranoOS Human Terrain & Statecraft room (internal doctrine: Motive-to-System Chamber).
+
+**Distinctive mechanism.** It converts an archive or handoff into three inspectable decisions: what the work product is for, which component pieces carry the work, and what action would turn it into a live room, paper, method, or software instrument.
+
+**Use value.** It preserves the distinctive design logic for Human Terrain & Statecraft, so the portfolio can show the actual mechanism and status instead of reducing the project to a file-count or handoff label.
+
+**Minimum public demo.** Open or inspect the local runtime path for Human Terrain & Statecraft Handoff Identity; confirm a room, action, or state record traces to the governing contract.
+
+**Claim ceiling.** The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.
+
+## Flagship Proof Builds
+
+No special flagship proof build has been authored yet; this project is governed by the component proof table below.
+
+## Component Proof Table
+
+| Component | Status | Input | Expected Output | Verification Check |
+|---|---|---|---|---|
+| Human Terrain & Statecraft Handoff Identity | specified-output-needs-demo | source packet, code-ready room description, scope, and intended runtime | bounded definition of what the handoff asks a builder to construct | Open or inspect the local runtime path for Human Terrain & Statecraft Handoff Identity; confirm a room, action, or state record traces to the governing contract. |
+| Human Terrain & Statecraft Room Task Model | specified-output-needs-demo | user roles, task sequence, room state, and domain objects | room logic that turns the concept into a repeatable workflow | Open or inspect the local runtime path for Human Terrain & Statecraft Room Task Model; confirm a room, action, or state record traces to the governing contract. |
+| Human Terrain & Statecraft Data Schema And Persistence Plan | specified-output-needs-demo | entities, records, IDs, tables, JSON structures, indexes, and state transitions | data model that lets the room preserve work instead of acting like a static page | Open or inspect the local runtime path for Human Terrain & Statecraft Data Schema And Persistence Plan; confirm a room, action, or state record traces to the governing. |
+| Human Terrain & Statecraft Interface And Instrument Plane | specified-output-needs-demo | panels, command palette, drawers, matrices, visualizations, and review widgets | named interface instruments that make the room useful to a researcher or analyst | Open or inspect the local runtime path for Human Terrain & Statecraft Interface And Instrument Plane; confirm a room, action, or state record traces to the governing. |
+| Human Terrain & Statecraft Integration Path | specified-output-needs-demo | frontend, backend, storage, retrieval, auth, export, and portfolio linkage | build sequence for turning the handoff into working software | Open or inspect the local runtime path for Human Terrain & Statecraft Integration Path; confirm a room, action, or state record traces to the governing contract. |
+| Human Terrain & Statecraft Proof Boundary | specified-output-needs-demo | completed packet, code readiness, unimplemented backend, missing live capture, or partial status | honest current claim ceiling for the handoff as a reviewable artifact | Open or inspect the local runtime path for Human Terrain & Statecraft Proof Boundary; confirm a room, action, or state record traces to the governing contract. |
+| Human Terrain & Statecraft Next Build Test | specified-output-needs-demo | minimal executable path, seeded fixture, UI walkthrough, and validation gate | specific test that would show the handoff has become a functioning room | Open or inspect the local runtime path for Human Terrain & Statecraft Next Build Test; confirm a room, action, or state record traces to the governing contract. |
+| Human Terrain & Statecraft / frontend/backend | source-context-backed | project source text and the named component `frontend/backend` | a project-specific work product, decision, or proof surface tied to `frontend/backend` | Confirm `frontend/backend` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Human Terrain & Statecraft / MuranoOS Human Terrain | source-context-backed | project source text and the named component `MuranoOS Human Terrain` | a project-specific work product, decision, or proof surface tied to `MuranoOS Human Terrain` | Confirm `MuranoOS Human Terrain` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Human Terrain & Statecraft / Motive-to-System Chamber | source-context-backed | project source text and the named component `Motive-to-System Chamber` | a room, workbench, or interface function tied to `Motive-to-System Chamber` | Confirm `Motive-to-System Chamber` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Human Terrain & Statecraft / Canon Seeds | source-context-backed | project source text and the named component `Canon Seeds` | a project-specific work product, decision, or proof surface tied to `Canon Seeds` | Confirm `Canon Seeds` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Human Terrain & Statecraft / World Design. Upstream Red Team | source-context-backed | project source text and the named component `World Design. Upstream Red Team` | a project-specific work product, decision, or proof surface tied to `World Design. Upstream Red Team` | Confirm `World Design. Upstream Red Team` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Human Terrain & Statecraft / Command Registry | source-context-backed | project source text and the named component `Command Registry` | a project-specific work product, decision, or proof surface tied to `Command Registry` | Confirm `Command Registry` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Human Terrain & Statecraft / Schema Seed SQL | source-context-backed | project source text and the named component `Schema Seed SQL` | a project-specific work product, decision, or proof surface tied to `Schema Seed SQL` | Confirm `Schema Seed SQL` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Human Terrain & Statecraft / File Change Map | source-context-backed | project source text and the named component `File Change Map` | an analytical work product or decision surface tied to `File Change Map` | Confirm `File Change Map` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Human Terrain & Statecraft / UI Component Map. Upstream Red Team | source-context-backed | project source text and the named component `UI Component Map. Upstream Red Team` | an analytical work product or decision surface tied to `UI Component Map. Upstream Red Team` | Confirm `UI Component Map. Upstream Red Team` appears in the cited source context and that the public page explains what output, decision, or project function it. |
+| Human Terrain & Statecraft / Explain Nexus and Personal OS | source-context-backed | project source text and the named component `Explain Nexus and Personal OS` | a project-specific work product, decision, or proof surface tied to `Explain Nexus and Personal OS` | Confirm `Explain Nexus and Personal OS` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |

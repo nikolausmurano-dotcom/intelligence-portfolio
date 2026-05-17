@@ -1,0 +1,74 @@
+[
+  {
+    "upgrade_class": "runtime state trace",
+    "proof_artifact": "state transition proof record",
+    "inspection_protocol": "Show the entry state, user action or instrument call, changed state, stored record, and refused inference.",
+    "falsification_rule": "The component fails if a reviewer cannot identify what state changed, where it was recorded, or what claim the system refused to infer.",
+    "advanced_component": "state-diff inspector with before/after record and refusal note",
+    "component_count": 1480
+  },
+  {
+    "upgrade_class": "promotion-routing proof",
+    "proof_artifact": "packet promotion decision record",
+    "inspection_protocol": "Show source identity, extraction status, authority level, duplicate risk, project route, decision, and next action.",
+    "falsification_rule": "The component fails if a packet can move forward without identity, route, authority, and next-build decision.",
+    "advanced_component": "promotion router with canonical, derivative, archive, and build-now lanes",
+    "component_count": 1082
+  },
+  {
+    "upgrade_class": "source-to-output proof",
+    "proof_artifact": "source-to-output bridge record",
+    "inspection_protocol": "Show how a source changes a page, chapter, instrument, claim boundary, or output decision.",
+    "falsification_rule": "The component fails if sources remain decorative bibliography rather than changing the output or claim ceiling.",
+    "advanced_component": "source impact ledger with before/after public claim and support boundary",
+    "component_count": 309
+  },
+  {
+    "upgrade_class": "human-AI analytic delta",
+    "proof_artifact": "human-AI delta comparison record",
+    "inspection_protocol": "Show baseline AI output, structured human review, correction or constraint, confidence change, and release decision.",
+    "falsification_rule": "The component fails if human review is ornamental and does not change, narrow, block, or justify the output.",
+    "advanced_component": "delta board comparing baseline, SAT-supported review, adjudication, and final claim",
+    "component_count": 287
+  },
+  {
+    "upgrade_class": "implementation scenario",
+    "proof_artifact": "implementation scenario trace",
+    "inspection_protocol": "Show the user, task, input, operation, output, decision point, and unresolved build requirement.",
+    "falsification_rule": "The component fails if it describes aspiration without a user path, instrument behavior, or output artifact.",
+    "advanced_component": "scenario storyboard with task-to-artifact trace",
+    "component_count": 130
+  },
+  {
+    "upgrade_class": "scenario replay",
+    "proof_artifact": "replay transcript",
+    "inspection_protocol": "Show fixture, steps, expected outcome, observed outcome placeholder, variance risk, and replay limit.",
+    "falsification_rule": "The component fails if the scenario cannot be repeated by another reviewer from the provided fixture.",
+    "advanced_component": "replay capsule with fixture, trace, variance note, and pass/fail gate",
+    "component_count": 119
+  },
+  {
+    "upgrade_class": "live workflow trace",
+    "proof_artifact": "workflow trace ledger",
+    "inspection_protocol": "Show project entering a stage, instrument action, output created, downstream stale-state or release gate, and next step.",
+    "falsification_rule": "The component fails if the workflow cannot show what changed because the stage was used.",
+    "advanced_component": "stage trace runner with upstream/downstream dependency flags",
+    "component_count": 101
+  },
+  {
+    "upgrade_class": "retrieval replay harness",
+    "proof_artifact": "retrieval replay evidence chain",
+    "inspection_protocol": "Show clean baseline, contaminated source, indexing or retrieval path, answer deformation, reviewer burden, and block/narrow/abstain decision.",
+    "falsification_rule": "The component fails if poisoning is asserted without a trace from source admission through retrieved context and final output.",
+    "advanced_component": "mixed-speed poison replay harness with slow poison, fast injection, and authority-wrapper lanes",
+    "component_count": 98
+  },
+  {
+    "upgrade_class": "chapter dossier proof",
+    "proof_artifact": "chapter upgrade dossier",
+    "inspection_protocol": "Show chapter title, argument backbone, source state, voice/register rule, visual logic, handoff, and remaining gap.",
+    "falsification_rule": "The component fails if a chapter page can be swapped with another chapter without losing argument-specific structure.",
+    "advanced_component": "chapter dossier card with argument, source, visual, quote, and handoff gates",
+    "component_count": 33
+  }
+]

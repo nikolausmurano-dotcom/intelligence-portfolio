@@ -1,0 +1,46 @@
+{
+  "runtime_id": "RTS-63DE7BF6FB7C",
+  "project_id": "native-russia-history-room",
+  "product_name": "Russia Historical Context Room",
+  "instrument_name": "Russia source-to-judgment workbench",
+  "run_time": "2026-05-15T20:12:25+00:00",
+  "input_summary": "Sample fixture for Russia Historical Context Room: a bounded case, claim, source, or decision problem requiring the instrument to produce a traceable output.",
+  "operation_under_test": "Source classification",
+  "evidence_or_constraint": "This sample requires explicit source, uncertainty, or method constraint handling before any public claim is strengthened.",
+  "reviewer_standard": "The output must separate source signal, interpretive claim, uncertainty, and next evidence need.",
+  "generated_result": {
+    "working_judgment": "The instrument processed the submitted material through Source classification and produced a bounded operational record.",
+    "mechanism_trace": "Russia source-to-judgment workbench -> Source classification -> Bounded Russia judgment",
+    "acceptance_decision": "PASS",
+    "next_required_evidence": "Capture browser screenshot and repeat against a second non-sample fixture before stronger claims.",
+    "claim_boundary": "Executed sample trace for a local runtime slice; not multi-user deployment, external validation, or full project completion."
+  },
+  "acceptance_checks": [
+    {
+      "name": "input length",
+      "pass": true,
+      "evidence": "157 characters"
+    },
+    {
+      "name": "operation selected",
+      "pass": true,
+      "evidence": "Source classification"
+    },
+    {
+      "name": "evidence or constraint note",
+      "pass": true,
+      "evidence": "121 characters"
+    },
+    {
+      "name": "review standard present",
+      "pass": true,
+      "evidence": "The output must separate source signal, interpretive claim, uncertainty, and next evidence need."
+    },
+    {
+      "name": "exportable trace",
+      "pass": true,
+      "evidence": "record captured as JSON trace file"
+    }
+  ],
+  "trace_hash": "1136ff98"
+}

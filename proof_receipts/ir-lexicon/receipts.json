@@ -1,0 +1,1457 @@
+{
+  "project": {
+    "project_id": "ir-lexicon",
+    "title": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse"
+  },
+  "receipts": [
+    {
+      "receipt_id": "ir-lexicon__receipt_0001",
+      "project_id": "ir-lexicon",
+      "project_title": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse Runtime Or Interface Surface",
+      "component_case_id": "ir-lexicon__0001__ir-lexicon-coined-term-lexicon-for-modern-foreign-affairs-discourse-runtime-or-interface-s",
+      "claim_to_demonstrate": "A coined-term lexicon for modern foreign-affairs discourse.; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "local app, web room, data surface, or workstation entry point",
+      "operation_under_test": "A coined-term lexicon for modern foreign-affairs discourse.; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "reader-facing definition of the software object and its intended user",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8fd882083e0f8259b8a06f60",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/ir-lexicon/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48159,
+            "sha256": "a88baac891cc42569722e4ff9f5821057150e2222e5c51f77c0a0b8940783a3a"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40406,
+            "sha256": "7c4db4aa716fec7d86c6ddb38c251efc908a8f5549bc52b8310c5ba07d5b44d3"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22079,
+            "sha256": "4b4d1a3e0820df20db17bc64c4e673cd2a79299fae0f3e73025587317bef422f"
+          },
+          {
+            "relative_path": "proof_builds/ir-lexicon/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22196,
+            "sha256": "1b2290dfbb793968b2d1a637381f8caad61bd0ffa9d31c452b470f98585d5a9a"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48230,
+            "sha256": "e835203abd76af2b0644ef9c399d85858f9beca05c720e80679f1ef6ff85e233"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10642,
+            "sha256": "7966f2af22cb444b9c279508721aec5f75c99c7e6d7c7eae34c8ac1c61f3614a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/ir-lexicon/blueprint.json",
+          "project_blueprints/ir-lexicon/instrument_map.json",
+          "project_blueprints/ir-lexicon/README.md",
+          "proof_builds/ir-lexicon/proof_build.json",
+          "proof_demos/ir-lexicon/demo_cases.json",
+          "proof_demos/ir-lexicon/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ad2b82d06459ddec425983db"
+    },
+    {
+      "receipt_id": "ir-lexicon__receipt_0002",
+      "project_id": "ir-lexicon",
+      "project_title": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse Data And State Model",
+      "component_case_id": "ir-lexicon__0002__ir-lexicon-coined-term-lexicon-for-modern-foreign-affairs-discourse-data-and-state-model",
+      "claim_to_demonstrate": "Source use is organized by role: method authorities, domain evidence, technical background, implementation evidence, and claim limits. The page should show why each source matters; direct quotations and stronger factual claims still require exact passage.",
+      "input_fixture": "records, files, indexes, tables, project state, source state, and user decisions",
+      "operation_under_test": "Source use is organized by role: method authorities, domain evidence, technical background, implementation evidence, and claim limits. The page should show why each source matters; direct quotations and stronger factual claims still require exact passage.",
+      "expected_output": "state model that explains what the tool remembers and what it refuses to infer",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4da81596b91ff65b95cc789b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/ir-lexicon/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48159,
+            "sha256": "a88baac891cc42569722e4ff9f5821057150e2222e5c51f77c0a0b8940783a3a"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40406,
+            "sha256": "7c4db4aa716fec7d86c6ddb38c251efc908a8f5549bc52b8310c5ba07d5b44d3"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22079,
+            "sha256": "4b4d1a3e0820df20db17bc64c4e673cd2a79299fae0f3e73025587317bef422f"
+          },
+          {
+            "relative_path": "proof_builds/ir-lexicon/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22196,
+            "sha256": "1b2290dfbb793968b2d1a637381f8caad61bd0ffa9d31c452b470f98585d5a9a"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48230,
+            "sha256": "e835203abd76af2b0644ef9c399d85858f9beca05c720e80679f1ef6ff85e233"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10642,
+            "sha256": "7966f2af22cb444b9c279508721aec5f75c99c7e6d7c7eae34c8ac1c61f3614a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/ir-lexicon/blueprint.json",
+          "project_blueprints/ir-lexicon/instrument_map.json",
+          "project_blueprints/ir-lexicon/README.md",
+          "proof_builds/ir-lexicon/proof_build.json",
+          "proof_demos/ir-lexicon/demo_cases.json",
+          "proof_demos/ir-lexicon/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e30d39f9795790071a0f2353"
+    },
+    {
+      "receipt_id": "ir-lexicon__receipt_0003",
+      "project_id": "ir-lexicon",
+      "project_title": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse Core Instrument Panel",
+      "component_case_id": "ir-lexicon__0003__ir-lexicon-coined-term-lexicon-for-modern-foreign-affairs-discourse-core-instrument-panel",
+      "claim_to_demonstrate": "It moves 400 raw coinages through a lacuna atlas, adoptability shortlist, 20-term canon, 10 mini-theories, 16-dimension adoption scoring, collision-risk flags, and a 25-rule propagation doctrine. Terms such as Credibility Underwriting Gap, Compellence.",
+      "input_fixture": "tool buttons, rooms, workflow steps, analytical controls, and review surfaces",
+      "operation_under_test": "It moves 400 raw coinages through a lacuna atlas, adoptability shortlist, 20-term canon, 10 mini-theories, 16-dimension adoption scoring, collision-risk flags, and a 25-rule propagation doctrine. Terms such as Credibility Underwriting Gap, Compellence.",
+      "expected_output": "named instruments that perform the useful work rather than generic navigation",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0f34fd9a5a44ba183928e1ab",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/ir-lexicon/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48159,
+            "sha256": "a88baac891cc42569722e4ff9f5821057150e2222e5c51f77c0a0b8940783a3a"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40406,
+            "sha256": "7c4db4aa716fec7d86c6ddb38c251efc908a8f5549bc52b8310c5ba07d5b44d3"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22079,
+            "sha256": "4b4d1a3e0820df20db17bc64c4e673cd2a79299fae0f3e73025587317bef422f"
+          },
+          {
+            "relative_path": "proof_builds/ir-lexicon/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22196,
+            "sha256": "1b2290dfbb793968b2d1a637381f8caad61bd0ffa9d31c452b470f98585d5a9a"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48230,
+            "sha256": "e835203abd76af2b0644ef9c399d85858f9beca05c720e80679f1ef6ff85e233"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10642,
+            "sha256": "7966f2af22cb444b9c279508721aec5f75c99c7e6d7c7eae34c8ac1c61f3614a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/ir-lexicon/blueprint.json",
+          "project_blueprints/ir-lexicon/instrument_map.json",
+          "project_blueprints/ir-lexicon/README.md",
+          "proof_builds/ir-lexicon/proof_build.json",
+          "proof_demos/ir-lexicon/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7883855b820a283e2173cd8e"
+    },
+    {
+      "receipt_id": "ir-lexicon__receipt_0004",
+      "project_id": "ir-lexicon",
+      "project_title": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse Workflow Orchestration",
+      "component_case_id": "ir-lexicon__0004__ir-lexicon-coined-term-lexicon-for-modern-foreign-affairs-discourse-workflow-orchestration",
+      "claim_to_demonstrate": "Publish the canonical 20 in real briefing and essay work, exercise the propagation doctrine against actual writing, and let usage drive which of the remaining ten earn promotion to the mini-theory layer. Two enhancements are deferred and stay deferred until.",
+      "input_fixture": "upstream inputs, intermediate decisions, downstream products, and stale-state conditions",
+      "operation_under_test": "Publish the canonical 20 in real briefing and essay work, exercise the propagation doctrine against actual writing, and let usage drive which of the remaining ten earn promotion to the mini-theory layer. Two enhancements are deferred and stay deferred until.",
+      "expected_output": "pipeline path showing how work moves and when earlier decisions must be reopened",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fd96493f227a13a744bbc6d4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/ir-lexicon/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48159,
+            "sha256": "a88baac891cc42569722e4ff9f5821057150e2222e5c51f77c0a0b8940783a3a"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40406,
+            "sha256": "7c4db4aa716fec7d86c6ddb38c251efc908a8f5549bc52b8310c5ba07d5b44d3"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22079,
+            "sha256": "4b4d1a3e0820df20db17bc64c4e673cd2a79299fae0f3e73025587317bef422f"
+          },
+          {
+            "relative_path": "proof_builds/ir-lexicon/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22196,
+            "sha256": "1b2290dfbb793968b2d1a637381f8caad61bd0ffa9d31c452b470f98585d5a9a"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48230,
+            "sha256": "e835203abd76af2b0644ef9c399d85858f9beca05c720e80679f1ef6ff85e233"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10642,
+            "sha256": "7966f2af22cb444b9c279508721aec5f75c99c7e6d7c7eae34c8ac1c61f3614a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/ir-lexicon/blueprint.json",
+          "project_blueprints/ir-lexicon/instrument_map.json",
+          "project_blueprints/ir-lexicon/README.md",
+          "proof_builds/ir-lexicon/proof_build.json",
+          "proof_demos/ir-lexicon/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "644742a43064fdde74f25e8a"
+    },
+    {
+      "receipt_id": "ir-lexicon__receipt_0005",
+      "project_id": "ir-lexicon",
+      "project_title": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse Review And Governance Gate",
+      "component_case_id": "ir-lexicon__0005__ir-lexicon-coined-term-lexicon-for-modern-foreign-affairs-discourse-review-and-governance-",
+      "claim_to_demonstrate": "Status: The lexicon is complete in the senses that matter for use: the canonical 20 are named with full schema, the lacuna atlas is filled, ten mini-theories are doctrinally elaborated, the 25-rule propagation doctrine is written, and the full 400-term corpus.",
+      "input_fixture": "quality rules, source checks, claim ceilings, reviewer steps, and failure states",
+      "operation_under_test": "Status: The lexicon is complete in the senses that matter for use: the canonical 20 are named with full schema, the lacuna atlas is filled, ten mini-theories are doctrinally elaborated, the 25-rule propagation doctrine is written, and the full 400-term corpus.",
+      "expected_output": "decision gate that makes the output inspectable before it is trusted",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f0a9b7ff3262d180291ae4ca",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/ir-lexicon/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48159,
+            "sha256": "a88baac891cc42569722e4ff9f5821057150e2222e5c51f77c0a0b8940783a3a"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40406,
+            "sha256": "7c4db4aa716fec7d86c6ddb38c251efc908a8f5549bc52b8310c5ba07d5b44d3"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22079,
+            "sha256": "4b4d1a3e0820df20db17bc64c4e673cd2a79299fae0f3e73025587317bef422f"
+          },
+          {
+            "relative_path": "proof_builds/ir-lexicon/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22196,
+            "sha256": "1b2290dfbb793968b2d1a637381f8caad61bd0ffa9d31c452b470f98585d5a9a"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48230,
+            "sha256": "e835203abd76af2b0644ef9c399d85858f9beca05c720e80679f1ef6ff85e233"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10642,
+            "sha256": "7966f2af22cb444b9c279508721aec5f75c99c7e6d7c7eae34c8ac1c61f3614a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/ir-lexicon/blueprint.json",
+          "project_blueprints/ir-lexicon/instrument_map.json",
+          "project_blueprints/ir-lexicon/README.md",
+          "proof_builds/ir-lexicon/proof_build.json",
+          "proof_demos/ir-lexicon/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4e781b94749e9dee505073ff"
+    },
+    {
+      "receipt_id": "ir-lexicon__receipt_0006",
+      "project_id": "ir-lexicon",
+      "project_title": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse Export Or Integration Surface",
+      "component_case_id": "ir-lexicon__0006__ir-lexicon-coined-term-lexicon-for-modern-foreign-affairs-discourse-export-or-integration-",
+      "claim_to_demonstrate": "The lexicon is complete in the senses that matter for use: the canonical 20 are named with full schema, the lacuna atlas is filled, ten mini-theories are doctrinally elaborated, the 25-rule propagation doctrine is written, and the full 400-term corpus is.",
+      "input_fixture": "brief, paper, room, dataset, packet, rendered page, or external handoff",
+      "operation_under_test": "The lexicon is complete in the senses that matter for use: the canonical 20 are named with full schema, the lacuna atlas is filled, ten mini-theories are doctrinally elaborated, the 25-rule propagation doctrine is written, and the full 400-term corpus is.",
+      "expected_output": "usable output that another project, professor, employer, or collaborator can inspect",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "577c94f4228762f7478a15a0",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/ir-lexicon/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48159,
+            "sha256": "a88baac891cc42569722e4ff9f5821057150e2222e5c51f77c0a0b8940783a3a"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40406,
+            "sha256": "7c4db4aa716fec7d86c6ddb38c251efc908a8f5549bc52b8310c5ba07d5b44d3"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22079,
+            "sha256": "4b4d1a3e0820df20db17bc64c4e673cd2a79299fae0f3e73025587317bef422f"
+          },
+          {
+            "relative_path": "proof_builds/ir-lexicon/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22196,
+            "sha256": "1b2290dfbb793968b2d1a637381f8caad61bd0ffa9d31c452b470f98585d5a9a"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48230,
+            "sha256": "e835203abd76af2b0644ef9c399d85858f9beca05c720e80679f1ef6ff85e233"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10642,
+            "sha256": "7966f2af22cb444b9c279508721aec5f75c99c7e6d7c7eae34c8ac1c61f3614a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/ir-lexicon/blueprint.json",
+          "project_blueprints/ir-lexicon/instrument_map.json",
+          "project_blueprints/ir-lexicon/README.md",
+          "proof_builds/ir-lexicon/proof_build.json",
+          "proof_demos/ir-lexicon/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "791b1009d0e18f3082e8faba"
+    },
+    {
+      "receipt_id": "ir-lexicon__receipt_0007",
+      "project_id": "ir-lexicon",
+      "project_title": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse Build Verification Queue",
+      "component_case_id": "ir-lexicon__0007__ir-lexicon-coined-term-lexicon-for-modern-foreign-affairs-discourse-build-verification-que",
+      "claim_to_demonstrate": "Remaining gaps: publish the canonical 20 in real briefing and essay work, exercise the propagation doctrine against actual writing, and let usage drive which of the remaining ten earn promotion to the mini-theory layer. Two enhancements are deferred and stay.",
+      "input_fixture": "unbuilt modules, missing walkthroughs, test cases, and validation evidence",
+      "operation_under_test": "Remaining gaps: publish the canonical 20 in real briefing and essay work, exercise the propagation doctrine against actual writing, and let usage drive which of the remaining ten earn promotion to the mini-theory layer. Two enhancements are deferred and stay.",
+      "expected_output": "next proof needed before broader claims about the tool are safe",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e350b0e07ab7b9d385896d3e",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/ir-lexicon/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48159,
+            "sha256": "a88baac891cc42569722e4ff9f5821057150e2222e5c51f77c0a0b8940783a3a"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40406,
+            "sha256": "7c4db4aa716fec7d86c6ddb38c251efc908a8f5549bc52b8310c5ba07d5b44d3"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22079,
+            "sha256": "4b4d1a3e0820df20db17bc64c4e673cd2a79299fae0f3e73025587317bef422f"
+          },
+          {
+            "relative_path": "proof_builds/ir-lexicon/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22196,
+            "sha256": "1b2290dfbb793968b2d1a637381f8caad61bd0ffa9d31c452b470f98585d5a9a"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48230,
+            "sha256": "e835203abd76af2b0644ef9c399d85858f9beca05c720e80679f1ef6ff85e233"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10642,
+            "sha256": "7966f2af22cb444b9c279508721aec5f75c99c7e6d7c7eae34c8ac1c61f3614a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/ir-lexicon/blueprint.json",
+          "project_blueprints/ir-lexicon/instrument_map.json",
+          "project_blueprints/ir-lexicon/README.md",
+          "proof_builds/ir-lexicon/proof_build.json",
+          "proof_demos/ir-lexicon/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "153a269842ca3b467c55f610"
+    },
+    {
+      "receipt_id": "ir-lexicon__receipt_0008",
+      "project_id": "ir-lexicon",
+      "project_title": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse / Credibility Underwriting Gap",
+      "component_case_id": "ir-lexicon__0008__ir-lexicon-coined-term-lexicon-for-modern-foreign-affairs-discourse-credibility-underwriti",
+      "claim_to_demonstrate": "uses `Credibility Underwriting Gap` as a named project component with a traceable role in the public mechanism. Source context: The page produces twenty canonical terms (Credibility Underwriting Gap, Compellence Overdraft, Ambiguity Rent, Sanction Saturation.",
+      "input_fixture": "project source text and the named component `Credibility Underwriting Gap`",
+      "operation_under_test": "uses `Credibility Underwriting Gap` as a named project component with a traceable role in the public mechanism. Source context: The page produces twenty canonical terms (Credibility Underwriting Gap, Compellence Overdraft, Ambiguity Rent, Sanction Saturation.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Credibility Underwriting Gap`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "52ec047bb69ff29f98048f21",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/ir-lexicon/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48159,
+            "sha256": "a88baac891cc42569722e4ff9f5821057150e2222e5c51f77c0a0b8940783a3a"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40406,
+            "sha256": "7c4db4aa716fec7d86c6ddb38c251efc908a8f5549bc52b8310c5ba07d5b44d3"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22079,
+            "sha256": "4b4d1a3e0820df20db17bc64c4e673cd2a79299fae0f3e73025587317bef422f"
+          },
+          {
+            "relative_path": "proof_builds/ir-lexicon/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22196,
+            "sha256": "1b2290dfbb793968b2d1a637381f8caad61bd0ffa9d31c452b470f98585d5a9a"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48230,
+            "sha256": "e835203abd76af2b0644ef9c399d85858f9beca05c720e80679f1ef6ff85e233"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10642,
+            "sha256": "7966f2af22cb444b9c279508721aec5f75c99c7e6d7c7eae34c8ac1c61f3614a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/ir-lexicon/blueprint.json",
+          "project_blueprints/ir-lexicon/instrument_map.json",
+          "project_blueprints/ir-lexicon/README.md",
+          "proof_builds/ir-lexicon/proof_build.json",
+          "proof_demos/ir-lexicon/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "cd63c05dfb71c7adab8f2292"
+    },
+    {
+      "receipt_id": "ir-lexicon__receipt_0009",
+      "project_id": "ir-lexicon",
+      "project_title": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse / Compellence Overdraft",
+      "component_case_id": "ir-lexicon__0009__ir-lexicon-coined-term-lexicon-for-modern-foreign-affairs-discourse-compellence-overdraft",
+      "claim_to_demonstrate": "uses `Compellence Overdraft` as a named project component with a traceable role in the public mechanism. Source context: The page produces twenty canonical terms (Credibility Underwriting Gap, Compellence Overdraft, Ambiguity Rent, Sanction Saturation.",
+      "input_fixture": "project source text and the named component `Compellence Overdraft`",
+      "operation_under_test": "uses `Compellence Overdraft` as a named project component with a traceable role in the public mechanism. Source context: The page produces twenty canonical terms (Credibility Underwriting Gap, Compellence Overdraft, Ambiguity Rent, Sanction Saturation.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Compellence Overdraft`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "52ec047bb69ff29f98048f21",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/ir-lexicon/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48159,
+            "sha256": "a88baac891cc42569722e4ff9f5821057150e2222e5c51f77c0a0b8940783a3a"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40406,
+            "sha256": "7c4db4aa716fec7d86c6ddb38c251efc908a8f5549bc52b8310c5ba07d5b44d3"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22079,
+            "sha256": "4b4d1a3e0820df20db17bc64c4e673cd2a79299fae0f3e73025587317bef422f"
+          },
+          {
+            "relative_path": "proof_builds/ir-lexicon/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22196,
+            "sha256": "1b2290dfbb793968b2d1a637381f8caad61bd0ffa9d31c452b470f98585d5a9a"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48230,
+            "sha256": "e835203abd76af2b0644ef9c399d85858f9beca05c720e80679f1ef6ff85e233"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10642,
+            "sha256": "7966f2af22cb444b9c279508721aec5f75c99c7e6d7c7eae34c8ac1c61f3614a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/ir-lexicon/blueprint.json",
+          "project_blueprints/ir-lexicon/instrument_map.json",
+          "project_blueprints/ir-lexicon/README.md",
+          "proof_builds/ir-lexicon/proof_build.json",
+          "proof_demos/ir-lexicon/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a970d0fb73f5f3056a7e9caf"
+    },
+    {
+      "receipt_id": "ir-lexicon__receipt_0010",
+      "project_id": "ir-lexicon",
+      "project_title": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse / Ambiguity Rent",
+      "component_case_id": "ir-lexicon__0010__ir-lexicon-coined-term-lexicon-for-modern-foreign-affairs-discourse-ambiguity-rent",
+      "claim_to_demonstrate": "uses `Ambiguity Rent` as a named project component with a traceable role in the public mechanism. Source context: The page produces twenty canonical terms (Credibility Underwriting Gap, Compellence Overdraft, Ambiguity Rent, Sanction Saturation, Standards.",
+      "input_fixture": "project source text and the named component `Ambiguity Rent`",
+      "operation_under_test": "uses `Ambiguity Rent` as a named project component with a traceable role in the public mechanism. Source context: The page produces twenty canonical terms (Credibility Underwriting Gap, Compellence Overdraft, Ambiguity Rent, Sanction Saturation, Standards.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Ambiguity Rent`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "52ec047bb69ff29f98048f21",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/ir-lexicon/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48159,
+            "sha256": "a88baac891cc42569722e4ff9f5821057150e2222e5c51f77c0a0b8940783a3a"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40406,
+            "sha256": "7c4db4aa716fec7d86c6ddb38c251efc908a8f5549bc52b8310c5ba07d5b44d3"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22079,
+            "sha256": "4b4d1a3e0820df20db17bc64c4e673cd2a79299fae0f3e73025587317bef422f"
+          },
+          {
+            "relative_path": "proof_builds/ir-lexicon/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22196,
+            "sha256": "1b2290dfbb793968b2d1a637381f8caad61bd0ffa9d31c452b470f98585d5a9a"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48230,
+            "sha256": "e835203abd76af2b0644ef9c399d85858f9beca05c720e80679f1ef6ff85e233"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10642,
+            "sha256": "7966f2af22cb444b9c279508721aec5f75c99c7e6d7c7eae34c8ac1c61f3614a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/ir-lexicon/blueprint.json",
+          "project_blueprints/ir-lexicon/instrument_map.json",
+          "project_blueprints/ir-lexicon/README.md",
+          "proof_builds/ir-lexicon/proof_build.json",
+          "proof_demos/ir-lexicon/demo_cases.json",
+          "proof_demos/ir-lexicon/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "18046ab32b9b7c8798e8c8e7"
+    },
+    {
+      "receipt_id": "ir-lexicon__receipt_0011",
+      "project_id": "ir-lexicon",
+      "project_title": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse / Sanction Saturation",
+      "component_case_id": "ir-lexicon__0011__ir-lexicon-coined-term-lexicon-for-modern-foreign-affairs-discourse-sanction-saturation",
+      "claim_to_demonstrate": "uses `Sanction Saturation` as a named project component with a traceable role in the public mechanism. Source context: The page produces twenty canonical terms (Credibility Underwriting Gap, Compellence Overdraft, Ambiguity Rent, Sanction Saturation.",
+      "input_fixture": "project source text and the named component `Sanction Saturation`",
+      "operation_under_test": "uses `Sanction Saturation` as a named project component with a traceable role in the public mechanism. Source context: The page produces twenty canonical terms (Credibility Underwriting Gap, Compellence Overdraft, Ambiguity Rent, Sanction Saturation.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Sanction Saturation`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "52ec047bb69ff29f98048f21",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/ir-lexicon/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48159,
+            "sha256": "a88baac891cc42569722e4ff9f5821057150e2222e5c51f77c0a0b8940783a3a"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40406,
+            "sha256": "7c4db4aa716fec7d86c6ddb38c251efc908a8f5549bc52b8310c5ba07d5b44d3"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22079,
+            "sha256": "4b4d1a3e0820df20db17bc64c4e673cd2a79299fae0f3e73025587317bef422f"
+          },
+          {
+            "relative_path": "proof_builds/ir-lexicon/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22196,
+            "sha256": "1b2290dfbb793968b2d1a637381f8caad61bd0ffa9d31c452b470f98585d5a9a"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48230,
+            "sha256": "e835203abd76af2b0644ef9c399d85858f9beca05c720e80679f1ef6ff85e233"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10642,
+            "sha256": "7966f2af22cb444b9c279508721aec5f75c99c7e6d7c7eae34c8ac1c61f3614a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/ir-lexicon/blueprint.json",
+          "project_blueprints/ir-lexicon/instrument_map.json",
+          "project_blueprints/ir-lexicon/README.md",
+          "proof_builds/ir-lexicon/proof_build.json",
+          "proof_demos/ir-lexicon/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "037d116f99e10dcca98d001c"
+    },
+    {
+      "receipt_id": "ir-lexicon__receipt_0012",
+      "project_id": "ir-lexicon",
+      "project_title": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse / Standards Entrenchment",
+      "component_case_id": "ir-lexicon__0012__ir-lexicon-coined-term-lexicon-for-modern-foreign-affairs-discourse-standards-entrenchment",
+      "claim_to_demonstrate": "uses `Standards Entrenchment` as a named project component with a traceable role in the public mechanism. Source context: The page produces twenty canonical terms (Credibility Underwriting Gap, Compellence Overdraft, Ambiguity Rent, Sanction Saturation.",
+      "input_fixture": "project source text and the named component `Standards Entrenchment`",
+      "operation_under_test": "uses `Standards Entrenchment` as a named project component with a traceable role in the public mechanism. Source context: The page produces twenty canonical terms (Credibility Underwriting Gap, Compellence Overdraft, Ambiguity Rent, Sanction Saturation.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Standards Entrenchment`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "52ec047bb69ff29f98048f21",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/ir-lexicon/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48159,
+            "sha256": "a88baac891cc42569722e4ff9f5821057150e2222e5c51f77c0a0b8940783a3a"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40406,
+            "sha256": "7c4db4aa716fec7d86c6ddb38c251efc908a8f5549bc52b8310c5ba07d5b44d3"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22079,
+            "sha256": "4b4d1a3e0820df20db17bc64c4e673cd2a79299fae0f3e73025587317bef422f"
+          },
+          {
+            "relative_path": "proof_builds/ir-lexicon/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22196,
+            "sha256": "1b2290dfbb793968b2d1a637381f8caad61bd0ffa9d31c452b470f98585d5a9a"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48230,
+            "sha256": "e835203abd76af2b0644ef9c399d85858f9beca05c720e80679f1ef6ff85e233"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10642,
+            "sha256": "7966f2af22cb444b9c279508721aec5f75c99c7e6d7c7eae34c8ac1c61f3614a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/ir-lexicon/blueprint.json",
+          "project_blueprints/ir-lexicon/instrument_map.json",
+          "project_blueprints/ir-lexicon/README.md",
+          "proof_builds/ir-lexicon/proof_build.json",
+          "proof_demos/ir-lexicon/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2ebbfe541a33f4d860d77665"
+    },
+    {
+      "receipt_id": "ir-lexicon__receipt_0013",
+      "project_id": "ir-lexicon",
+      "project_title": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse / Compliance Chokepoints",
+      "component_case_id": "ir-lexicon__0013__ir-lexicon-coined-term-lexicon-for-modern-foreign-affairs-discourse-compliance-chokepoints",
+      "claim_to_demonstrate": "uses `Compliance Chokepoints` as a named project component with a traceable role in the public mechanism. Source context: The page produces twenty canonical terms (Credibility Underwriting Gap, Compellence Overdraft, Ambiguity Rent, Sanction Saturation.",
+      "input_fixture": "project source text and the named component `Compliance Chokepoints`",
+      "operation_under_test": "uses `Compliance Chokepoints` as a named project component with a traceable role in the public mechanism. Source context: The page produces twenty canonical terms (Credibility Underwriting Gap, Compellence Overdraft, Ambiguity Rent, Sanction Saturation.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Compliance Chokepoints`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "52ec047bb69ff29f98048f21",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/ir-lexicon/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48159,
+            "sha256": "a88baac891cc42569722e4ff9f5821057150e2222e5c51f77c0a0b8940783a3a"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40406,
+            "sha256": "7c4db4aa716fec7d86c6ddb38c251efc908a8f5549bc52b8310c5ba07d5b44d3"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22079,
+            "sha256": "4b4d1a3e0820df20db17bc64c4e673cd2a79299fae0f3e73025587317bef422f"
+          },
+          {
+            "relative_path": "proof_builds/ir-lexicon/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22196,
+            "sha256": "1b2290dfbb793968b2d1a637381f8caad61bd0ffa9d31c452b470f98585d5a9a"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48230,
+            "sha256": "e835203abd76af2b0644ef9c399d85858f9beca05c720e80679f1ef6ff85e233"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10642,
+            "sha256": "7966f2af22cb444b9c279508721aec5f75c99c7e6d7c7eae34c8ac1c61f3614a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/ir-lexicon/blueprint.json",
+          "project_blueprints/ir-lexicon/instrument_map.json",
+          "project_blueprints/ir-lexicon/README.md",
+          "proof_builds/ir-lexicon/proof_build.json",
+          "proof_demos/ir-lexicon/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1e5cfcf813ad743eb198edc7"
+    },
+    {
+      "receipt_id": "ir-lexicon__receipt_0014",
+      "project_id": "ir-lexicon",
+      "project_title": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse / Doctrine Lock-In",
+      "component_case_id": "ir-lexicon__0014__ir-lexicon-coined-term-lexicon-for-modern-foreign-affairs-discourse-doctrine-lock-in",
+      "claim_to_demonstrate": "uses `Doctrine Lock-In` as a named project component with a traceable role in the public mechanism. Source context: Doctrine Lock-In, and thirteen others), elaborates ten of them into doctrinal mini-theories, and pairs the lexicon with a twenty-five-rule.",
+      "input_fixture": "project source text and the named component `Doctrine Lock-In`",
+      "operation_under_test": "uses `Doctrine Lock-In` as a named project component with a traceable role in the public mechanism. Source context: Doctrine Lock-In, and thirteen others), elaborates ten of them into doctrinal mini-theories, and pairs the lexicon with a twenty-five-rule.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Doctrine Lock-In`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ecc63fbd1b5948d9654514a9",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/ir-lexicon/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48159,
+            "sha256": "a88baac891cc42569722e4ff9f5821057150e2222e5c51f77c0a0b8940783a3a"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40406,
+            "sha256": "7c4db4aa716fec7d86c6ddb38c251efc908a8f5549bc52b8310c5ba07d5b44d3"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22079,
+            "sha256": "4b4d1a3e0820df20db17bc64c4e673cd2a79299fae0f3e73025587317bef422f"
+          },
+          {
+            "relative_path": "proof_builds/ir-lexicon/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22196,
+            "sha256": "1b2290dfbb793968b2d1a637381f8caad61bd0ffa9d31c452b470f98585d5a9a"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48230,
+            "sha256": "e835203abd76af2b0644ef9c399d85858f9beca05c720e80679f1ef6ff85e233"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10642,
+            "sha256": "7966f2af22cb444b9c279508721aec5f75c99c7e6d7c7eae34c8ac1c61f3614a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/ir-lexicon/blueprint.json",
+          "project_blueprints/ir-lexicon/instrument_map.json",
+          "project_blueprints/ir-lexicon/README.md",
+          "proof_builds/ir-lexicon/proof_build.json",
+          "proof_demos/ir-lexicon/demo_cases.json",
+          "proof_demos/ir-lexicon/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8a66497bd641bbcd23a8e335"
+    },
+    {
+      "receipt_id": "ir-lexicon__receipt_0015",
+      "project_id": "ir-lexicon",
+      "project_title": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse / Publish the",
+      "component_case_id": "ir-lexicon__0015__ir-lexicon-coined-term-lexicon-for-modern-foreign-affairs-discourse-publish-the",
+      "claim_to_demonstrate": "uses `Publish the` as a named project component with a traceable role in the public mechanism. Source context: Publish the canonical 20 in real briefing and essay work, exercise the propagation doctrine against actual writing, and let usage drive which of the.",
+      "input_fixture": "project source text and the named component `Publish the`",
+      "operation_under_test": "uses `Publish the` as a named project component with a traceable role in the public mechanism. Source context: Publish the canonical 20 in real briefing and essay work, exercise the propagation doctrine against actual writing, and let usage drive which of the.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Publish the`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4cd892df6117d4553a718f95",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/ir-lexicon/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48159,
+            "sha256": "a88baac891cc42569722e4ff9f5821057150e2222e5c51f77c0a0b8940783a3a"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40406,
+            "sha256": "7c4db4aa716fec7d86c6ddb38c251efc908a8f5549bc52b8310c5ba07d5b44d3"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22079,
+            "sha256": "4b4d1a3e0820df20db17bc64c4e673cd2a79299fae0f3e73025587317bef422f"
+          },
+          {
+            "relative_path": "proof_builds/ir-lexicon/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22196,
+            "sha256": "1b2290dfbb793968b2d1a637381f8caad61bd0ffa9d31c452b470f98585d5a9a"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48230,
+            "sha256": "e835203abd76af2b0644ef9c399d85858f9beca05c720e80679f1ef6ff85e233"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10642,
+            "sha256": "7966f2af22cb444b9c279508721aec5f75c99c7e6d7c7eae34c8ac1c61f3614a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/ir-lexicon/blueprint.json",
+          "project_blueprints/ir-lexicon/instrument_map.json",
+          "project_blueprints/ir-lexicon/README.md",
+          "proof_builds/ir-lexicon/proof_build.json",
+          "proof_demos/ir-lexicon/demo_cases.json",
+          "proof_demos/ir-lexicon/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "73bd248cdfc95fd777e16fcb"
+    },
+    {
+      "receipt_id": "ir-lexicon__receipt_0016",
+      "project_id": "ir-lexicon",
+      "project_title": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse / Optional External-IP",
+      "component_case_id": "ir-lexicon__0016__ir-lexicon-coined-term-lexicon-for-modern-foreign-affairs-discourse-optional-external-ip",
+      "claim_to_demonstrate": "uses `Optional External-IP` as a named project component with a traceable role in the public mechanism. Source context: Optional External-IP collision screen Deeper external-IP collision screening for the canonical 20 — deferred; collision-risk notes are.",
+      "input_fixture": "project source text and the named component `Optional External-IP`",
+      "operation_under_test": "uses `Optional External-IP` as a named project component with a traceable role in the public mechanism. Source context: Optional External-IP collision screen Deeper external-IP collision screening for the canonical 20 — deferred; collision-risk notes are.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Optional External-IP`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e2b747d43c61eecad39de818",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/ir-lexicon/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48159,
+            "sha256": "a88baac891cc42569722e4ff9f5821057150e2222e5c51f77c0a0b8940783a3a"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40406,
+            "sha256": "7c4db4aa716fec7d86c6ddb38c251efc908a8f5549bc52b8310c5ba07d5b44d3"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22079,
+            "sha256": "4b4d1a3e0820df20db17bc64c4e673cd2a79299fae0f3e73025587317bef422f"
+          },
+          {
+            "relative_path": "proof_builds/ir-lexicon/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22196,
+            "sha256": "1b2290dfbb793968b2d1a637381f8caad61bd0ffa9d31c452b470f98585d5a9a"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48230,
+            "sha256": "e835203abd76af2b0644ef9c399d85858f9beca05c720e80679f1ef6ff85e233"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10642,
+            "sha256": "7966f2af22cb444b9c279508721aec5f75c99c7e6d7c7eae34c8ac1c61f3614a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/ir-lexicon/blueprint.json",
+          "project_blueprints/ir-lexicon/instrument_map.json",
+          "project_blueprints/ir-lexicon/README.md",
+          "proof_builds/ir-lexicon/proof_build.json",
+          "proof_demos/ir-lexicon/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f718642148bcdfc969b1de37"
+    },
+    {
+      "receipt_id": "ir-lexicon__receipt_0017",
+      "project_id": "ir-lexicon",
+      "project_title": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IR Lexicon — coined-term lexicon for modern foreign-affairs discourse / Vaguer Language Than The Phenomenon Deserves",
+      "component_case_id": "ir-lexicon__0017__ir-lexicon-coined-term-lexicon-for-modern-foreign-affairs-discourse-vaguer-language-than-t",
+      "claim_to_demonstrate": "uses `Vaguer Language Than The Phenomenon Deserves` as a named project component with a traceable role in the public mechanism. Source context: A coined-term lexicon for modern foreign-affairs discourse. The premise: contemporary IR discussion handles many.",
+      "input_fixture": "project source text and the named component `Vaguer Language Than The Phenomenon Deserves`",
+      "operation_under_test": "uses `Vaguer Language Than The Phenomenon Deserves` as a named project component with a traceable role in the public mechanism. Source context: A coined-term lexicon for modern foreign-affairs discourse. The premise: contemporary IR discussion handles many.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Vaguer Language Than The Phenomenon Deserves`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "680cd32d2d2a8046ca747350",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/ir-lexicon/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48159,
+            "sha256": "a88baac891cc42569722e4ff9f5821057150e2222e5c51f77c0a0b8940783a3a"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40406,
+            "sha256": "7c4db4aa716fec7d86c6ddb38c251efc908a8f5549bc52b8310c5ba07d5b44d3"
+          },
+          {
+            "relative_path": "project_blueprints/ir-lexicon/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22079,
+            "sha256": "4b4d1a3e0820df20db17bc64c4e673cd2a79299fae0f3e73025587317bef422f"
+          },
+          {
+            "relative_path": "proof_builds/ir-lexicon/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22196,
+            "sha256": "1b2290dfbb793968b2d1a637381f8caad61bd0ffa9d31c452b470f98585d5a9a"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48230,
+            "sha256": "e835203abd76af2b0644ef9c399d85858f9beca05c720e80679f1ef6ff85e233"
+          },
+          {
+            "relative_path": "proof_demos/ir-lexicon/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10642,
+            "sha256": "7966f2af22cb444b9c279508721aec5f75c99c7e6d7c7eae34c8ac1c61f3614a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/ir-lexicon/blueprint.json",
+          "project_blueprints/ir-lexicon/instrument_map.json",
+          "proof_builds/ir-lexicon/proof_build.json",
+          "proof_demos/ir-lexicon/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "03c0f5dfd83a90d5f50c3ae0"
+    }
+  ]
+}

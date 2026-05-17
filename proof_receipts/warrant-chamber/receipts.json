@@ -1,0 +1,266 @@
+{
+  "project": {
+    "project_id": "warrant-chamber",
+    "title": "Source & Evidence Review — tracking what supports each claim and what still needs review"
+  },
+  "receipts": [
+    {
+      "receipt_id": "warrant-chamber__receipt_0001",
+      "project_id": "warrant-chamber",
+      "project_title": "Source & Evidence Review — tracking what supports each claim and what still needs review",
+      "proof_tier": "authored-proof-build-needs-demo",
+      "component": "Claim Intake",
+      "component_case_id": "warrant-chamber__0001__claim-intake",
+      "claim_to_demonstrate": "opens the claim as a review object rather than treating it as finished prose; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "draft claim, source, counter-source, intended audience",
+      "operation_under_test": "opens the claim as a review object rather than treating it as finished prose; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "claim record as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "33ebda8d05aa42a0ba153947",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/warrant-chamber/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 12701,
+            "sha256": "49034eda18f3241f1995f325652e584cc5106ad8baf4363bb75e38ee374d334b"
+          },
+          {
+            "relative_path": "project_blueprints/warrant-chamber/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 4890,
+            "sha256": "88a343685c4b8c2041ae06ba7322516714a0f45641f72e16f9b6a04f2531a778"
+          },
+          {
+            "relative_path": "project_blueprints/warrant-chamber/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 7299,
+            "sha256": "bdb16cc81cb8ab0fbef1be59caf64c6e527bf67ba624b2923dc13725634cc1d6"
+          },
+          {
+            "relative_path": "proof_builds/warrant-chamber/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 5725,
+            "sha256": "1c758470ca0cff0f5ef6ea12f16d7950c08ad358113f37f4f4c75ff044911382"
+          },
+          {
+            "relative_path": "proof_demos/warrant-chamber/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 7372,
+            "sha256": "b316d2b17efc8b90fe566b94bbebeb4030d5d6af806592edad68a5573b4848a4"
+          },
+          {
+            "relative_path": "proof_demos/warrant-chamber/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 2304,
+            "sha256": "3f48dd98dd31549350d387362698c9fe54796cf0bf5bb5905ec6e7f018c9d883"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/warrant-chamber/blueprint.json",
+          "project_blueprints/warrant-chamber/instrument_map.json",
+          "project_blueprints/warrant-chamber/README.md",
+          "proof_builds/warrant-chamber/proof_build.json",
+          "proof_demos/warrant-chamber/demo_cases.json",
+          "proof_demos/warrant-chamber/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "bc97ce5b842a38a020e9275f"
+    },
+    {
+      "receipt_id": "warrant-chamber__receipt_0002",
+      "project_id": "warrant-chamber",
+      "project_title": "Source & Evidence Review — tracking what supports each claim and what still needs review",
+      "proof_tier": "authored-proof-build-needs-demo",
+      "component": "Warrant Inspection",
+      "component_case_id": "warrant-chamber__0002__warrant-inspection",
+      "claim_to_demonstrate": "uses Claim Halo / review chamber logic to expose what authorizes or weakens the claim",
+      "input_fixture": "source strength, contradiction, dissent, revision state",
+      "operation_under_test": "uses Claim Halo / review chamber logic to expose what authorizes or weakens the claim",
+      "expected_output": "claim ceiling and revision decision as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "1cc00f7845501000c1f6d2a6",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/warrant-chamber/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 12701,
+            "sha256": "49034eda18f3241f1995f325652e584cc5106ad8baf4363bb75e38ee374d334b"
+          },
+          {
+            "relative_path": "project_blueprints/warrant-chamber/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 4890,
+            "sha256": "88a343685c4b8c2041ae06ba7322516714a0f45641f72e16f9b6a04f2531a778"
+          },
+          {
+            "relative_path": "project_blueprints/warrant-chamber/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 7299,
+            "sha256": "bdb16cc81cb8ab0fbef1be59caf64c6e527bf67ba624b2923dc13725634cc1d6"
+          },
+          {
+            "relative_path": "proof_builds/warrant-chamber/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 5725,
+            "sha256": "1c758470ca0cff0f5ef6ea12f16d7950c08ad358113f37f4f4c75ff044911382"
+          },
+          {
+            "relative_path": "proof_demos/warrant-chamber/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 7372,
+            "sha256": "b316d2b17efc8b90fe566b94bbebeb4030d5d6af806592edad68a5573b4848a4"
+          },
+          {
+            "relative_path": "proof_demos/warrant-chamber/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 2304,
+            "sha256": "3f48dd98dd31549350d387362698c9fe54796cf0bf5bb5905ec6e7f018c9d883"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/warrant-chamber/blueprint.json",
+          "project_blueprints/warrant-chamber/instrument_map.json",
+          "project_blueprints/warrant-chamber/README.md",
+          "proof_builds/warrant-chamber/proof_build.json",
+          "proof_demos/warrant-chamber/demo_cases.json",
+          "proof_demos/warrant-chamber/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2b048a2e40025a2b282b4e2f"
+    },
+    {
+      "receipt_id": "warrant-chamber__receipt_0003",
+      "project_id": "warrant-chamber",
+      "project_title": "Source & Evidence Review — tracking what supports each claim and what still needs review",
+      "proof_tier": "authored-proof-build-needs-demo",
+      "component": "Certification Or Revision",
+      "component_case_id": "warrant-chamber__0003__certification-or-revision",
+      "claim_to_demonstrate": "decides whether the claim can publish, must narrow, needs sources, or should be rejected",
+      "input_fixture": "reviewed claim and evidence state",
+      "operation_under_test": "decides whether the claim can publish, must narrow, needs sources, or should be rejected",
+      "expected_output": "certified claim or revision task as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "64fdd7e31ea2020f05e3f6e8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/warrant-chamber/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 12701,
+            "sha256": "49034eda18f3241f1995f325652e584cc5106ad8baf4363bb75e38ee374d334b"
+          },
+          {
+            "relative_path": "project_blueprints/warrant-chamber/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 4890,
+            "sha256": "88a343685c4b8c2041ae06ba7322516714a0f45641f72e16f9b6a04f2531a778"
+          },
+          {
+            "relative_path": "project_blueprints/warrant-chamber/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 7299,
+            "sha256": "bdb16cc81cb8ab0fbef1be59caf64c6e527bf67ba624b2923dc13725634cc1d6"
+          },
+          {
+            "relative_path": "proof_builds/warrant-chamber/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 5725,
+            "sha256": "1c758470ca0cff0f5ef6ea12f16d7950c08ad358113f37f4f4c75ff044911382"
+          },
+          {
+            "relative_path": "proof_demos/warrant-chamber/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 7372,
+            "sha256": "b316d2b17efc8b90fe566b94bbebeb4030d5d6af806592edad68a5573b4848a4"
+          },
+          {
+            "relative_path": "proof_demos/warrant-chamber/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 2304,
+            "sha256": "3f48dd98dd31549350d387362698c9fe54796cf0bf5bb5905ec6e7f018c9d883"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/warrant-chamber/blueprint.json",
+          "project_blueprints/warrant-chamber/instrument_map.json",
+          "project_blueprints/warrant-chamber/README.md",
+          "proof_builds/warrant-chamber/proof_build.json",
+          "proof_demos/warrant-chamber/demo_cases.json",
+          "proof_demos/warrant-chamber/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d8f45b69fbae8ca8e1d5a0a3"
+    }
+  ]
+}

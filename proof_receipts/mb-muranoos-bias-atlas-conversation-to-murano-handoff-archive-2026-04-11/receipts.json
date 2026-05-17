@@ -1,0 +1,1470 @@
+{
+  "project": {
+    "project_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11",
+    "title": "Bias Atlas"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__receipt_0001",
+      "project_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11",
+      "project_title": "Bias Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas Handoff Identity",
+      "component_case_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__0001__bias-atlas-handoff-identity",
+      "claim_to_demonstrate": "This archive is the project-specific continuation and integration package for the Bias Atlas / Psychology of Intelligence Ontology Workbench — a disciplined room for cataloging, arbitrating, and releasing a structured map of cognitive biases that matter to.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "This archive is the project-specific continuation and integration package for the Bias Atlas / Psychology of Intelligence Ontology Workbench — a disciplined room for cataloging, arbitrating, and releasing a structured map of cognitive biases that matter to.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45066,
+            "sha256": "264b3c83e0f26d5a0d4c03946f5c87a159883b25e7fa0d252a6d3affd5953bf6"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36550,
+            "sha256": "9f3e1038450b282431e6b08a2975c1abaeda5949775c5686975383e7df34960b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21674,
+            "sha256": "3f42a50f2f07fcf6a85730df1a387e8592874f3cee026464d513973e57127a13"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20588,
+            "sha256": "3275fa65afb87badb314d4cde8b33449891cd3c6f714e6ef8c41798ff2bd6d27"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46403,
+            "sha256": "79c31368537558297c59a2e413bc56b447300f8fe0ea47b6b17fa57cf168b490"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9847,
+            "sha256": "e6d6c28b58463f755a2d40d751563889f5ab50f853d9f0fd45e04c3458cf07d2"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4120f2054e7efb4876a1f31f"
+    },
+    {
+      "receipt_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__receipt_0002",
+      "project_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11",
+      "project_title": "Bias Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas Room Task Model",
+      "component_case_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__0002__bias-atlas-room-task-model",
+      "claim_to_demonstrate": ", state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival retention",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": ", state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival retention",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45066,
+            "sha256": "264b3c83e0f26d5a0d4c03946f5c87a159883b25e7fa0d252a6d3affd5953bf6"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36550,
+            "sha256": "9f3e1038450b282431e6b08a2975c1abaeda5949775c5686975383e7df34960b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21674,
+            "sha256": "3f42a50f2f07fcf6a85730df1a387e8592874f3cee026464d513973e57127a13"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20588,
+            "sha256": "3275fa65afb87badb314d4cde8b33449891cd3c6f714e6ef8c41798ff2bd6d27"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46403,
+            "sha256": "79c31368537558297c59a2e413bc56b447300f8fe0ea47b6b17fa57cf168b490"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9847,
+            "sha256": "e6d6c28b58463f755a2d40d751563889f5ab50f853d9f0fd45e04c3458cf07d2"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "54ed5d3fe6ea1b53432ab909"
+    },
+    {
+      "receipt_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__receipt_0003",
+      "project_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11",
+      "project_title": "Bias Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas Data Schema And Persistence Plan",
+      "component_case_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__0003__bias-atlas-data-schema-and-persistence-plan",
+      "claim_to_demonstrate": "Writing, rhetoric, narrative design, visual culture, and presentation. Use source library writing/visual/cinema sources to strengthen public exposition and Trilogy visual/storytelling logic. Vision: Make public pages read as curated intellectual exhibits.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Writing, rhetoric, narrative design, visual culture, and presentation. Use source library writing/visual/cinema sources to strengthen public exposition and Trilogy visual/storytelling logic. Vision: Make public pages read as curated intellectual exhibits.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45066,
+            "sha256": "264b3c83e0f26d5a0d4c03946f5c87a159883b25e7fa0d252a6d3affd5953bf6"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36550,
+            "sha256": "9f3e1038450b282431e6b08a2975c1abaeda5949775c5686975383e7df34960b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21674,
+            "sha256": "3f42a50f2f07fcf6a85730df1a387e8592874f3cee026464d513973e57127a13"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20588,
+            "sha256": "3275fa65afb87badb314d4cde8b33449891cd3c6f714e6ef8c41798ff2bd6d27"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46403,
+            "sha256": "79c31368537558297c59a2e413bc56b447300f8fe0ea47b6b17fa57cf168b490"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9847,
+            "sha256": "e6d6c28b58463f755a2d40d751563889f5ab50f853d9f0fd45e04c3458cf07d2"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6ceafc06505dcc7ecf7f3dfe"
+    },
+    {
+      "receipt_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__receipt_0004",
+      "project_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11",
+      "project_title": "Bias Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas Interface And Instrument Plane",
+      "component_case_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__0004__bias-atlas-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Unadjudicated briefing; read before promotion; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Unadjudicated briefing; read before promotion; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45066,
+            "sha256": "264b3c83e0f26d5a0d4c03946f5c87a159883b25e7fa0d252a6d3affd5953bf6"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36550,
+            "sha256": "9f3e1038450b282431e6b08a2975c1abaeda5949775c5686975383e7df34960b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21674,
+            "sha256": "3f42a50f2f07fcf6a85730df1a387e8592874f3cee026464d513973e57127a13"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20588,
+            "sha256": "3275fa65afb87badb314d4cde8b33449891cd3c6f714e6ef8c41798ff2bd6d27"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46403,
+            "sha256": "79c31368537558297c59a2e413bc56b447300f8fe0ea47b6b17fa57cf168b490"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9847,
+            "sha256": "e6d6c28b58463f755a2d40d751563889f5ab50f853d9f0fd45e04c3458cf07d2"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a9773184afb8fe76dc3cfd54"
+    },
+    {
+      "receipt_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__receipt_0005",
+      "project_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11",
+      "project_title": "Bias Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas Integration Path",
+      "component_case_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__0005__bias-atlas-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. Reach for this when: (a) you need a disciplined bias/concept map room pattern (corpus-wall, provenance-spine, release-gate) — the template generalizes to any map.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. Reach for this when: (a) you need a disciplined bias/concept map room pattern (corpus-wall, provenance-spine, release-gate) — the template generalizes to any map.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45066,
+            "sha256": "264b3c83e0f26d5a0d4c03946f5c87a159883b25e7fa0d252a6d3affd5953bf6"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36550,
+            "sha256": "9f3e1038450b282431e6b08a2975c1abaeda5949775c5686975383e7df34960b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21674,
+            "sha256": "3f42a50f2f07fcf6a85730df1a387e8592874f3cee026464d513973e57127a13"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20588,
+            "sha256": "3275fa65afb87badb314d4cde8b33449891cd3c6f714e6ef8c41798ff2bd6d27"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46403,
+            "sha256": "79c31368537558297c59a2e413bc56b447300f8fe0ea47b6b17fa57cf168b490"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9847,
+            "sha256": "e6d6c28b58463f755a2d40d751563889f5ab50f853d9f0fd45e04c3458cf07d2"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4bbe72d9bc525b8887c378c1"
+    },
+    {
+      "receipt_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__receipt_0006",
+      "project_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11",
+      "project_title": "Bias Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas Proof Boundary",
+      "component_case_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__0006__bias-atlas-proof-boundary",
+      "claim_to_demonstrate": "Unadjudicated briefing; read before promotion; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Unadjudicated briefing; read before promotion; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45066,
+            "sha256": "264b3c83e0f26d5a0d4c03946f5c87a159883b25e7fa0d252a6d3affd5953bf6"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36550,
+            "sha256": "9f3e1038450b282431e6b08a2975c1abaeda5949775c5686975383e7df34960b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21674,
+            "sha256": "3f42a50f2f07fcf6a85730df1a387e8592874f3cee026464d513973e57127a13"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20588,
+            "sha256": "3275fa65afb87badb314d4cde8b33449891cd3c6f714e6ef8c41798ff2bd6d27"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46403,
+            "sha256": "79c31368537558297c59a2e413bc56b447300f8fe0ea47b6b17fa57cf168b490"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9847,
+            "sha256": "e6d6c28b58463f755a2d40d751563889f5ab50f853d9f0fd45e04c3458cf07d2"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8c8534a02971589699641e75"
+    },
+    {
+      "receipt_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__receipt_0007",
+      "project_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11",
+      "project_title": "Bias Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas Next Build Test",
+      "component_case_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__0007__bias-atlas-next-build-test",
+      "claim_to_demonstrate": "Read the entry-point materials, classify the packet's authority level, and decide whether the next move is build, consolidation, archival retention, or public synthesis.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Read the entry-point materials, classify the packet's authority level, and decide whether the next move is build, consolidation, archival retention, or public synthesis.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45066,
+            "sha256": "264b3c83e0f26d5a0d4c03946f5c87a159883b25e7fa0d252a6d3affd5953bf6"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36550,
+            "sha256": "9f3e1038450b282431e6b08a2975c1abaeda5949775c5686975383e7df34960b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21674,
+            "sha256": "3f42a50f2f07fcf6a85730df1a387e8592874f3cee026464d513973e57127a13"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20588,
+            "sha256": "3275fa65afb87badb314d4cde8b33449891cd3c6f714e6ef8c41798ff2bd6d27"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46403,
+            "sha256": "79c31368537558297c59a2e413bc56b447300f8fe0ea47b6b17fa57cf168b490"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9847,
+            "sha256": "e6d6c28b58463f755a2d40d751563889f5ab50f853d9f0fd45e04c3458cf07d2"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "cab27ab0822b4f5c51427341"
+    },
+    {
+      "receipt_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__receipt_0008",
+      "project_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11",
+      "project_title": "Bias Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas / backend/frontend",
+      "component_case_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__0008__bias-atlas-backend-frontend",
+      "claim_to_demonstrate": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "input_fixture": "project source text and the named component `backend/frontend`",
+      "operation_under_test": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `backend/frontend`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "12b906e53c841f6a071a9002",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45066,
+            "sha256": "264b3c83e0f26d5a0d4c03946f5c87a159883b25e7fa0d252a6d3affd5953bf6"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36550,
+            "sha256": "9f3e1038450b282431e6b08a2975c1abaeda5949775c5686975383e7df34960b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21674,
+            "sha256": "3f42a50f2f07fcf6a85730df1a387e8592874f3cee026464d513973e57127a13"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20588,
+            "sha256": "3275fa65afb87badb314d4cde8b33449891cd3c6f714e6ef8c41798ff2bd6d27"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46403,
+            "sha256": "79c31368537558297c59a2e413bc56b447300f8fe0ea47b6b17fa57cf168b490"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9847,
+            "sha256": "e6d6c28b58463f755a2d40d751563889f5ab50f853d9f0fd45e04c3458cf07d2"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c92d387db48dc6c1635c5979"
+    },
+    {
+      "receipt_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__receipt_0009",
+      "project_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11",
+      "project_title": "Bias Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas / README.md",
+      "component_case_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__0009__bias-atlas-readme-md",
+      "claim_to_demonstrate": "treats `README.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 06_Operator_Guides/READING_ORDER_AND_USAGE.md — 02_Current_Project_State/CURRENT_STATE_STATUS.md — 05_Room_Design/* —.",
+      "input_fixture": "project source text and the named component `README.md`",
+      "operation_under_test": "treats `README.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 06_Operator_Guides/READING_ORDER_AND_USAGE.md — 02_Current_Project_State/CURRENT_STATE_STATUS.md — 05_Room_Design/* —.",
+      "expected_output": "inspectable implementation evidence tied to `README.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "03c1e29ef14f1572d5a89c86",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45066,
+            "sha256": "264b3c83e0f26d5a0d4c03946f5c87a159883b25e7fa0d252a6d3affd5953bf6"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36550,
+            "sha256": "9f3e1038450b282431e6b08a2975c1abaeda5949775c5686975383e7df34960b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21674,
+            "sha256": "3f42a50f2f07fcf6a85730df1a387e8592874f3cee026464d513973e57127a13"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20588,
+            "sha256": "3275fa65afb87badb314d4cde8b33449891cd3c6f714e6ef8c41798ff2bd6d27"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46403,
+            "sha256": "79c31368537558297c59a2e413bc56b447300f8fe0ea47b6b17fa57cf168b490"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9847,
+            "sha256": "e6d6c28b58463f755a2d40d751563889f5ab50f853d9f0fd45e04c3458cf07d2"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "94a270369367b43294366104"
+    },
+    {
+      "receipt_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__receipt_0010",
+      "project_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11",
+      "project_title": "Bias Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas / READING_ORDER_AND_USAGE.md",
+      "component_case_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__0010__bias-atlas-reading-order-and-usage-md",
+      "claim_to_demonstrate": "treats `READING_ORDER_AND_USAGE.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 06_Operator_Guides/READING_ORDER_AND_USAGE.md — 02_Current_Project_State/CURRENT_STATE_STATUS.md —.",
+      "input_fixture": "project source text and the named component `READING_ORDER_AND_USAGE.md`",
+      "operation_under_test": "treats `READING_ORDER_AND_USAGE.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 06_Operator_Guides/READING_ORDER_AND_USAGE.md — 02_Current_Project_State/CURRENT_STATE_STATUS.md —.",
+      "expected_output": "inspectable implementation evidence tied to `READING_ORDER_AND_USAGE.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "03c1e29ef14f1572d5a89c86",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45066,
+            "sha256": "264b3c83e0f26d5a0d4c03946f5c87a159883b25e7fa0d252a6d3affd5953bf6"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36550,
+            "sha256": "9f3e1038450b282431e6b08a2975c1abaeda5949775c5686975383e7df34960b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21674,
+            "sha256": "3f42a50f2f07fcf6a85730df1a387e8592874f3cee026464d513973e57127a13"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20588,
+            "sha256": "3275fa65afb87badb314d4cde8b33449891cd3c6f714e6ef8c41798ff2bd6d27"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46403,
+            "sha256": "79c31368537558297c59a2e413bc56b447300f8fe0ea47b6b17fa57cf168b490"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9847,
+            "sha256": "e6d6c28b58463f755a2d40d751563889f5ab50f853d9f0fd45e04c3458cf07d2"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "11c1b21ab1408fc7bd42637b"
+    },
+    {
+      "receipt_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__receipt_0011",
+      "project_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11",
+      "project_title": "Bias Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas / CURRENT_STATE_STATUS.md",
+      "component_case_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__0011__bias-atlas-current-state-status-md",
+      "claim_to_demonstrate": "treats `CURRENT_STATE_STATUS.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 06_Operator_Guides/READING_ORDER_AND_USAGE.md — 02_Current_Project_State/CURRENT_STATE_STATUS.md —.",
+      "input_fixture": "project source text and the named component `CURRENT_STATE_STATUS.md`",
+      "operation_under_test": "treats `CURRENT_STATE_STATUS.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 06_Operator_Guides/READING_ORDER_AND_USAGE.md — 02_Current_Project_State/CURRENT_STATE_STATUS.md —.",
+      "expected_output": "inspectable implementation evidence tied to `CURRENT_STATE_STATUS.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "03c1e29ef14f1572d5a89c86",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45066,
+            "sha256": "264b3c83e0f26d5a0d4c03946f5c87a159883b25e7fa0d252a6d3affd5953bf6"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36550,
+            "sha256": "9f3e1038450b282431e6b08a2975c1abaeda5949775c5686975383e7df34960b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21674,
+            "sha256": "3f42a50f2f07fcf6a85730df1a387e8592874f3cee026464d513973e57127a13"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20588,
+            "sha256": "3275fa65afb87badb314d4cde8b33449891cd3c6f714e6ef8c41798ff2bd6d27"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46403,
+            "sha256": "79c31368537558297c59a2e413bc56b447300f8fe0ea47b6b17fa57cf168b490"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9847,
+            "sha256": "e6d6c28b58463f755a2d40d751563889f5ab50f853d9f0fd45e04c3458cf07d2"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2ff8a8e3a10786480ce20913"
+    },
+    {
+      "receipt_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__receipt_0012",
+      "project_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11",
+      "project_title": "Bias Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas / MuranoOS_Bias_Atlas_Command_Registry.md",
+      "component_case_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__0012__bias-atlas-muranoos-bias-atlas-command-registry-md",
+      "claim_to_demonstrate": "treats `MuranoOS_Bias_Atlas_Command_Registry.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: MuranoOS_Bias_Atlas_Command_Registry.md (command surface, not wired to code).",
+      "input_fixture": "project source text and the named component `MuranoOS_Bias_Atlas_Command_Registry.md`",
+      "operation_under_test": "treats `MuranoOS_Bias_Atlas_Command_Registry.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: MuranoOS_Bias_Atlas_Command_Registry.md (command surface, not wired to code).",
+      "expected_output": "inspectable implementation evidence tied to `MuranoOS_Bias_Atlas_Command_Registry.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "02e36c8787c940af86e2fdf4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45066,
+            "sha256": "264b3c83e0f26d5a0d4c03946f5c87a159883b25e7fa0d252a6d3affd5953bf6"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36550,
+            "sha256": "9f3e1038450b282431e6b08a2975c1abaeda5949775c5686975383e7df34960b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21674,
+            "sha256": "3f42a50f2f07fcf6a85730df1a387e8592874f3cee026464d513973e57127a13"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20588,
+            "sha256": "3275fa65afb87badb314d4cde8b33449891cd3c6f714e6ef8c41798ff2bd6d27"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46403,
+            "sha256": "79c31368537558297c59a2e413bc56b447300f8fe0ea47b6b17fa57cf168b490"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9847,
+            "sha256": "e6d6c28b58463f755a2d40d751563889f5ab50f853d9f0fd45e04c3458cf07d2"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1c7cfe03d9e581449eac4161"
+    },
+    {
+      "receipt_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__receipt_0013",
+      "project_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11",
+      "project_title": "Bias Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas / MuranoOS_Bias_Atlas_UI_Component_Map.md",
+      "component_case_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__0013__bias-atlas-muranoos-bias-atlas-ui-component-map-md",
+      "claim_to_demonstrate": "treats `MuranoOS_Bias_Atlas_UI_Component_Map.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: MuranoOS_Bias_Atlas_UI_Component_Map.md (UI components). No code; two nested zips (Master Package +.",
+      "input_fixture": "project source text and the named component `MuranoOS_Bias_Atlas_UI_Component_Map.md`",
+      "operation_under_test": "treats `MuranoOS_Bias_Atlas_UI_Component_Map.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: MuranoOS_Bias_Atlas_UI_Component_Map.md (UI components). No code; two nested zips (Master Package +.",
+      "expected_output": "inspectable implementation evidence tied to `MuranoOS_Bias_Atlas_UI_Component_Map.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "24c4072bccc1964c03536484",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45066,
+            "sha256": "264b3c83e0f26d5a0d4c03946f5c87a159883b25e7fa0d252a6d3affd5953bf6"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36550,
+            "sha256": "9f3e1038450b282431e6b08a2975c1abaeda5949775c5686975383e7df34960b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21674,
+            "sha256": "3f42a50f2f07fcf6a85730df1a387e8592874f3cee026464d513973e57127a13"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20588,
+            "sha256": "3275fa65afb87badb314d4cde8b33449891cd3c6f714e6ef8c41798ff2bd6d27"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46403,
+            "sha256": "79c31368537558297c59a2e413bc56b447300f8fe0ea47b6b17fa57cf168b490"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9847,
+            "sha256": "e6d6c28b58463f755a2d40d751563889f5ab50f853d9f0fd45e04c3458cf07d2"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "382f7ff55c6e3aac1e6967f1"
+    },
+    {
+      "receipt_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__receipt_0014",
+      "project_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11",
+      "project_title": "Bias Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas / conversation corpus — MuranoOS-native room/workspace/subsystem specification",
+      "component_case_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__0014__bias-atlas-conversation-corpus-muranoos-native-room-workspace-subsystem-specification",
+      "claim_to_demonstrate": "treats `conversation corpus — MuranoOS-native room/workspace/subsystem specification` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: It is framed explicitly as \"conversation.",
+      "input_fixture": "project source text and the named component `conversation corpus — MuranoOS-native room/workspace/subsystem specification`",
+      "operation_under_test": "treats `conversation corpus — MuranoOS-native room/workspace/subsystem specification` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: It is framed explicitly as \"conversation.",
+      "expected_output": "a room, workbench, or interface function tied to `conversation corpus — MuranoOS-native room/workspace/subsystem specification`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "201f985747faddc31b6af085",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45066,
+            "sha256": "264b3c83e0f26d5a0d4c03946f5c87a159883b25e7fa0d252a6d3affd5953bf6"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36550,
+            "sha256": "9f3e1038450b282431e6b08a2975c1abaeda5949775c5686975383e7df34960b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21674,
+            "sha256": "3f42a50f2f07fcf6a85730df1a387e8592874f3cee026464d513973e57127a13"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20588,
+            "sha256": "3275fa65afb87badb314d4cde8b33449891cd3c6f714e6ef8c41798ff2bd6d27"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46403,
+            "sha256": "79c31368537558297c59a2e413bc56b447300f8fe0ea47b6b17fa57cf168b490"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9847,
+            "sha256": "e6d6c28b58463f755a2d40d751563889f5ab50f853d9f0fd45e04c3458cf07d2"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "bb8e328cf6c1a31a4334937c"
+    },
+    {
+      "receipt_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__receipt_0015",
+      "project_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11",
+      "project_title": "Bias Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas / Psychology of Intelligence Ontology Workbench",
+      "component_case_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__0015__bias-atlas-psychology-of-intelligence-ontology-workbench",
+      "claim_to_demonstrate": "treats `Psychology of Intelligence Ontology Workbench` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: This archive is the project-specific continuation and integration package.",
+      "input_fixture": "project source text and the named component `Psychology of Intelligence Ontology Workbench`",
+      "operation_under_test": "treats `Psychology of Intelligence Ontology Workbench` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: This archive is the project-specific continuation and integration package.",
+      "expected_output": "a room, workbench, or interface function tied to `Psychology of Intelligence Ontology Workbench`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f9639fd56902bbb0f78884b7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45066,
+            "sha256": "264b3c83e0f26d5a0d4c03946f5c87a159883b25e7fa0d252a6d3affd5953bf6"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36550,
+            "sha256": "9f3e1038450b282431e6b08a2975c1abaeda5949775c5686975383e7df34960b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21674,
+            "sha256": "3f42a50f2f07fcf6a85730df1a387e8592874f3cee026464d513973e57127a13"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20588,
+            "sha256": "3275fa65afb87badb314d4cde8b33449891cd3c6f714e6ef8c41798ff2bd6d27"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46403,
+            "sha256": "79c31368537558297c59a2e413bc56b447300f8fe0ea47b6b17fa57cf168b490"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9847,
+            "sha256": "e6d6c28b58463f755a2d40d751563889f5ab50f853d9f0fd45e04c3458cf07d2"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "22c961b914592cc7d4430985"
+    },
+    {
+      "receipt_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__receipt_0016",
+      "project_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11",
+      "project_title": "Bias Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas / Purpose-built to",
+      "component_case_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__0016__bias-atlas-purpose-built-to",
+      "claim_to_demonstrate": "uses `Purpose-built to` as a named project component with a traceable role in the public mechanism. Source context: Purpose-built to avoid the failure modes of bias catalogues in the wild — aliased labels, source drift, silent category merges, and entries.",
+      "input_fixture": "project source text and the named component `Purpose-built to`",
+      "operation_under_test": "uses `Purpose-built to` as a named project component with a traceable role in the public mechanism. Source context: Purpose-built to avoid the failure modes of bias catalogues in the wild — aliased labels, source drift, silent category merges, and entries.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Purpose-built to`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "b8e091d642d56991df4ae09f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45066,
+            "sha256": "264b3c83e0f26d5a0d4c03946f5c87a159883b25e7fa0d252a6d3affd5953bf6"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36550,
+            "sha256": "9f3e1038450b282431e6b08a2975c1abaeda5949775c5686975383e7df34960b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21674,
+            "sha256": "3f42a50f2f07fcf6a85730df1a387e8592874f3cee026464d513973e57127a13"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20588,
+            "sha256": "3275fa65afb87badb314d4cde8b33449891cd3c6f714e6ef8c41798ff2bd6d27"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46403,
+            "sha256": "79c31368537558297c59a2e413bc56b447300f8fe0ea47b6b17fa57cf168b490"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9847,
+            "sha256": "e6d6c28b58463f755a2d40d751563889f5ab50f853d9f0fd45e04c3458cf07d2"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ae1723f281d5a280fd63b09b"
+    },
+    {
+      "receipt_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__receipt_0017",
+      "project_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11",
+      "project_title": "Bias Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas / Reach for",
+      "component_case_id": "mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11__0017__bias-atlas-reach-for",
+      "claim_to_demonstrate": "uses `Reach for` as a named project component with a traceable role in the public mechanism. Source context: Reach for this when: (a) you need a disciplined bias/concept map room pattern (corpus-wall, provenance-spine, release-gate) — the template generalizes.",
+      "input_fixture": "project source text and the named component `Reach for`",
+      "operation_under_test": "uses `Reach for` as a named project component with a traceable role in the public mechanism. Source context: Reach for this when: (a) you need a disciplined bias/concept map room pattern (corpus-wall, provenance-spine, release-gate) — the template generalizes.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Reach for`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ec7a3eb613a6d1a3c27bf809",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45066,
+            "sha256": "264b3c83e0f26d5a0d4c03946f5c87a159883b25e7fa0d252a6d3affd5953bf6"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36550,
+            "sha256": "9f3e1038450b282431e6b08a2975c1abaeda5949775c5686975383e7df34960b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21674,
+            "sha256": "3f42a50f2f07fcf6a85730df1a387e8592874f3cee026464d513973e57127a13"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20588,
+            "sha256": "3275fa65afb87badb314d4cde8b33449891cd3c6f714e6ef8c41798ff2bd6d27"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46403,
+            "sha256": "79c31368537558297c59a2e413bc56b447300f8fe0ea47b6b17fa57cf168b490"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9847,
+            "sha256": "e6d6c28b58463f755a2d40d751563889f5ab50f853d9f0fd45e04c3458cf07d2"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "910662bdcad85fec363a8836"
+    }
+  ]
+}

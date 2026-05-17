@@ -1,0 +1,1452 @@
+{
+  "project": {
+    "project_id": "critical-functions-observatory",
+    "title": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab"
+  },
+  "receipts": [
+    {
+      "receipt_id": "critical-functions-observatory__receipt_0001",
+      "project_id": "critical-functions-observatory",
+      "project_title": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab Artifact Identity Register",
+      "component_case_id": "critical-functions-observatory__0001__critical-functions-observatory-defensive-uas-critical-infrastructure-research-lab-artifact",
+      "claim_to_demonstrate": "A defensive UAS and critical-infrastructure research observatory built around national critical functions rather than generic drone security.",
+      "input_fixture": "packet name, source files, version signal, scope, and intended destination",
+      "operation_under_test": "A defensive UAS and critical-infrastructure research observatory built around national critical functions rather than generic drone security.",
+      "expected_output": "what the packet is and what decision it can still change",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0fdf86a6d1416d594a048c5f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48741,
+            "sha256": "93645356d0597eb434668876fdcde3c7fec672c88366d2643b06b7ef4fed2398"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39943,
+            "sha256": "eb32630a640c13f573b58eb00c0b0228d10f66a2beafa3d78aef8ad6130cd404"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23181,
+            "sha256": "24d460709771a5923b4115fa229f8ff3160de56104bb93d7711a078dd58d1165"
+          },
+          {
+            "relative_path": "proof_builds/critical-functions-observatory/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22160,
+            "sha256": "960bb83dab38b5cef1ff2e00f98346ae71ac45b73db5b71e21ce225feec0c4c9"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48580,
+            "sha256": "ede8b219afb268ba31035069def3e9907a0e9550261bf2032fbb98244691b580"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10891,
+            "sha256": "63d65841cb4d723c11a821e321b13f74466f3e2af2aec09a5ac4ecc1d6ee745c"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/critical-functions-observatory/blueprint.json",
+          "project_blueprints/critical-functions-observatory/instrument_map.json",
+          "project_blueprints/critical-functions-observatory/README.md",
+          "proof_builds/critical-functions-observatory/proof_build.json",
+          "proof_demos/critical-functions-observatory/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ec6b488fcbd2a3bcdf2893a7"
+    },
+    {
+      "receipt_id": "critical-functions-observatory__receipt_0002",
+      "project_id": "critical-functions-observatory",
+      "project_title": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab Extraction And Manifest Layer",
+      "component_case_id": "critical-functions-observatory__0002__critical-functions-observatory-defensive-uas-critical-infrastructure-research-lab-extracti",
+      "claim_to_demonstrate": "Source use is organized by role: method authorities, domain evidence, technical background, implementation evidence, and claim limits. The page should show why each source matters; direct quotations and stronger factual claims still require exact passage.",
+      "input_fixture": "files, tables, text, screenshots, source notes, and provenance markers",
+      "operation_under_test": "Source use is organized by role: method authorities, domain evidence, technical background, implementation evidence, and claim limits. The page should show why each source matters; direct quotations and stronger factual claims still require exact passage.",
+      "expected_output": "what can be safely mined from the packet as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d4064f8284d42db167c077d8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48741,
+            "sha256": "93645356d0597eb434668876fdcde3c7fec672c88366d2643b06b7ef4fed2398"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39943,
+            "sha256": "eb32630a640c13f573b58eb00c0b0228d10f66a2beafa3d78aef8ad6130cd404"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23181,
+            "sha256": "24d460709771a5923b4115fa229f8ff3160de56104bb93d7711a078dd58d1165"
+          },
+          {
+            "relative_path": "proof_builds/critical-functions-observatory/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22160,
+            "sha256": "960bb83dab38b5cef1ff2e00f98346ae71ac45b73db5b71e21ce225feec0c4c9"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48580,
+            "sha256": "ede8b219afb268ba31035069def3e9907a0e9550261bf2032fbb98244691b580"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10891,
+            "sha256": "63d65841cb4d723c11a821e321b13f74466f3e2af2aec09a5ac4ecc1d6ee745c"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/critical-functions-observatory/blueprint.json",
+          "project_blueprints/critical-functions-observatory/instrument_map.json",
+          "project_blueprints/critical-functions-observatory/README.md",
+          "proof_builds/critical-functions-observatory/proof_build.json",
+          "proof_demos/critical-functions-observatory/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "11ed366524d98061813fc8cf"
+    },
+    {
+      "receipt_id": "critical-functions-observatory__receipt_0003",
+      "project_id": "critical-functions-observatory",
+      "project_title": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab Mechanism Or Claim Distillation",
+      "component_case_id": "critical-functions-observatory__0003__critical-functions-observatory-defensive-uas-critical-infrastructure-research-lab-mechanis",
+      "claim_to_demonstrate": "It routes malicious-UAS and infrastructure risk through a function-first defensive-research model: CISA National Critical Functions, FAA Remote ID, White House guidance, DOJ/DHS/FAA/FCC legal-advisory constraints, OT asset inventory, DOE/EPA-relevant function.",
+      "input_fixture": "the packet's central method, model, concept, or design rule",
+      "operation_under_test": "It routes malicious-UAS and infrastructure risk through a function-first defensive-research model: CISA National Critical Functions, FAA Remote ID, White House guidance, DOJ/DHS/FAA/FCC legal-advisory constraints, OT asset inventory, DOE/EPA-relevant function.",
+      "expected_output": "the distinctive idea that should not disappear in public summary",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "23247414e5c922324046d909",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48741,
+            "sha256": "93645356d0597eb434668876fdcde3c7fec672c88366d2643b06b7ef4fed2398"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39943,
+            "sha256": "eb32630a640c13f573b58eb00c0b0228d10f66a2beafa3d78aef8ad6130cd404"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23181,
+            "sha256": "24d460709771a5923b4115fa229f8ff3160de56104bb93d7711a078dd58d1165"
+          },
+          {
+            "relative_path": "proof_builds/critical-functions-observatory/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22160,
+            "sha256": "960bb83dab38b5cef1ff2e00f98346ae71ac45b73db5b71e21ce225feec0c4c9"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48580,
+            "sha256": "ede8b219afb268ba31035069def3e9907a0e9550261bf2032fbb98244691b580"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10891,
+            "sha256": "63d65841cb4d723c11a821e321b13f74466f3e2af2aec09a5ac4ecc1d6ee745c"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/critical-functions-observatory/blueprint.json",
+          "project_blueprints/critical-functions-observatory/instrument_map.json",
+          "project_blueprints/critical-functions-observatory/README.md",
+          "proof_builds/critical-functions-observatory/proof_build.json",
+          "proof_demos/critical-functions-observatory/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "650df8394c0c526a69920004"
+    },
+    {
+      "receipt_id": "critical-functions-observatory__receipt_0004",
+      "project_id": "critical-functions-observatory",
+      "project_title": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab Proof Boundary",
+      "component_case_id": "critical-functions-observatory__0004__critical-functions-observatory-defensive-uas-critical-infrastructure-research-lab-proof-bo",
+      "claim_to_demonstrate": "v1 of the page is build-grade — three of three passes complete, with 29 files at 29 KB compressed (52 KB uncompressed). Five architecture documents, four checklists, five operational templates, five workflow specs, three schema files (edge / node / edge-types.",
+      "input_fixture": "built assets, partial assets, archive-only assets, and unsupported claims",
+      "operation_under_test": "v1 of the page is build-grade — three of three passes complete, with 29 files at 29 KB compressed (52 KB uncompressed). Five architecture documents, four checklists, five operational templates, five workflow specs, three schema files (edge / node / edge-types.",
+      "expected_output": "what the packet proves now as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3f75a54cf5b9a997a4e640e7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48741,
+            "sha256": "93645356d0597eb434668876fdcde3c7fec672c88366d2643b06b7ef4fed2398"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39943,
+            "sha256": "eb32630a640c13f573b58eb00c0b0228d10f66a2beafa3d78aef8ad6130cd404"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23181,
+            "sha256": "24d460709771a5923b4115fa229f8ff3160de56104bb93d7711a078dd58d1165"
+          },
+          {
+            "relative_path": "proof_builds/critical-functions-observatory/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22160,
+            "sha256": "960bb83dab38b5cef1ff2e00f98346ae71ac45b73db5b71e21ce225feec0c4c9"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48580,
+            "sha256": "ede8b219afb268ba31035069def3e9907a0e9550261bf2032fbb98244691b580"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10891,
+            "sha256": "63d65841cb4d723c11a821e321b13f74466f3e2af2aec09a5ac4ecc1d6ee745c"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/critical-functions-observatory/blueprint.json",
+          "project_blueprints/critical-functions-observatory/instrument_map.json",
+          "project_blueprints/critical-functions-observatory/README.md",
+          "proof_builds/critical-functions-observatory/proof_build.json",
+          "proof_demos/critical-functions-observatory/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7cb98efb5ec0150e99b8d01d"
+    },
+    {
+      "receipt_id": "critical-functions-observatory__receipt_0005",
+      "project_id": "critical-functions-observatory",
+      "project_title": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab Promotion Route",
+      "component_case_id": "critical-functions-observatory__0005__critical-functions-observatory-defensive-uas-critical-infrastructure-research-lab-promotio",
+      "claim_to_demonstrate": "The forward path is to graduate the five remaining open projects (P2 through P6) through the five workflows, populate the semantic graph with real research, and expose recomputable projections to the Publication Forge for external use. Step 01 P2 — first open.",
+      "input_fixture": "website room, MuranoOS room, Nexus task, paper, source bank, or archive",
+      "operation_under_test": "The forward path is to graduate the five remaining open projects (P2 through P6) through the five workflows, populate the semantic graph with real research, and expose recomputable projections to the Publication Forge for external use. Step 01 P2 — first open.",
+      "expected_output": "where the packet should go next as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e05552ce50ffd3271b5a69f7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48741,
+            "sha256": "93645356d0597eb434668876fdcde3c7fec672c88366d2643b06b7ef4fed2398"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39943,
+            "sha256": "eb32630a640c13f573b58eb00c0b0228d10f66a2beafa3d78aef8ad6130cd404"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23181,
+            "sha256": "24d460709771a5923b4115fa229f8ff3160de56104bb93d7711a078dd58d1165"
+          },
+          {
+            "relative_path": "proof_builds/critical-functions-observatory/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22160,
+            "sha256": "960bb83dab38b5cef1ff2e00f98346ae71ac45b73db5b71e21ce225feec0c4c9"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48580,
+            "sha256": "ede8b219afb268ba31035069def3e9907a0e9550261bf2032fbb98244691b580"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10891,
+            "sha256": "63d65841cb4d723c11a821e321b13f74466f3e2af2aec09a5ac4ecc1d6ee745c"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/critical-functions-observatory/blueprint.json",
+          "project_blueprints/critical-functions-observatory/instrument_map.json",
+          "project_blueprints/critical-functions-observatory/README.md",
+          "proof_builds/critical-functions-observatory/proof_build.json",
+          "proof_demos/critical-functions-observatory/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9ad70bea47f693d83869a539"
+    },
+    {
+      "receipt_id": "critical-functions-observatory__receipt_0006",
+      "project_id": "critical-functions-observatory",
+      "project_title": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab Current Authority State",
+      "component_case_id": "critical-functions-observatory__0006__critical-functions-observatory-defensive-uas-critical-infrastructure-research-lab-current-",
+      "claim_to_demonstrate": "Status: v1 of the page is build-grade — three of three passes complete, with 29 files at 29 KB compressed (52 KB uncompressed). Five architecture documents, four checklists, five operational templates, five workflow specs, three schema files (edge / node /.",
+      "input_fixture": "canonical, superseded, derivative, draft, or context-only status",
+      "operation_under_test": "Status: v1 of the page is build-grade — three of three passes complete, with 29 files at 29 KB compressed (52 KB uncompressed). Five architecture documents, four checklists, five operational templates, five workflow specs, three schema files (edge / node /.",
+      "expected_output": "how strongly the packet may govern a public page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4bf580d68c94f0235cd07355",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48741,
+            "sha256": "93645356d0597eb434668876fdcde3c7fec672c88366d2643b06b7ef4fed2398"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39943,
+            "sha256": "eb32630a640c13f573b58eb00c0b0228d10f66a2beafa3d78aef8ad6130cd404"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23181,
+            "sha256": "24d460709771a5923b4115fa229f8ff3160de56104bb93d7711a078dd58d1165"
+          },
+          {
+            "relative_path": "proof_builds/critical-functions-observatory/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22160,
+            "sha256": "960bb83dab38b5cef1ff2e00f98346ae71ac45b73db5b71e21ce225feec0c4c9"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48580,
+            "sha256": "ede8b219afb268ba31035069def3e9907a0e9550261bf2032fbb98244691b580"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10891,
+            "sha256": "63d65841cb4d723c11a821e321b13f74466f3e2af2aec09a5ac4ecc1d6ee745c"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/critical-functions-observatory/blueprint.json",
+          "project_blueprints/critical-functions-observatory/instrument_map.json",
+          "project_blueprints/critical-functions-observatory/README.md",
+          "proof_builds/critical-functions-observatory/proof_build.json",
+          "proof_demos/critical-functions-observatory/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4213577f17f1f787a987344a"
+    },
+    {
+      "receipt_id": "critical-functions-observatory__receipt_0007",
+      "project_id": "critical-functions-observatory",
+      "project_title": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab Gap And Reconciliation Queue",
+      "component_case_id": "critical-functions-observatory__0007__critical-functions-observatory-defensive-uas-critical-infrastructure-research-lab-gap-and-",
+      "claim_to_demonstrate": "Remaining gaps: the forward path is to graduate the five remaining open projects (P2 through P6) through the five workflows, populate the semantic graph with real research, and expose recomputable projections to the Publication Forge for external use. Next.",
+      "input_fixture": "missing source reads, duplicate resolution, version adjudication, or implementation work",
+      "operation_under_test": "Remaining gaps: the forward path is to graduate the five remaining open projects (P2 through P6) through the five workflows, populate the semantic graph with real research, and expose recomputable projections to the Publication Forge for external use. Next.",
+      "expected_output": "next step before stronger public use as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d860491541934d3d70c14bc6",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48741,
+            "sha256": "93645356d0597eb434668876fdcde3c7fec672c88366d2643b06b7ef4fed2398"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39943,
+            "sha256": "eb32630a640c13f573b58eb00c0b0228d10f66a2beafa3d78aef8ad6130cd404"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23181,
+            "sha256": "24d460709771a5923b4115fa229f8ff3160de56104bb93d7711a078dd58d1165"
+          },
+          {
+            "relative_path": "proof_builds/critical-functions-observatory/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22160,
+            "sha256": "960bb83dab38b5cef1ff2e00f98346ae71ac45b73db5b71e21ce225feec0c4c9"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48580,
+            "sha256": "ede8b219afb268ba31035069def3e9907a0e9550261bf2032fbb98244691b580"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10891,
+            "sha256": "63d65841cb4d723c11a821e321b13f74466f3e2af2aec09a5ac4ecc1d6ee745c"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/critical-functions-observatory/blueprint.json",
+          "project_blueprints/critical-functions-observatory/instrument_map.json",
+          "project_blueprints/critical-functions-observatory/README.md",
+          "proof_builds/critical-functions-observatory/proof_build.json",
+          "proof_demos/critical-functions-observatory/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4068e2291a4933fbdb787d88"
+    },
+    {
+      "receipt_id": "critical-functions-observatory__receipt_0008",
+      "project_id": "critical-functions-observatory",
+      "project_title": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab / seed_nodes.jsonl",
+      "component_case_id": "critical-functions-observatory__0008__critical-functions-observatory-defensive-uas-critical-infrastructure-research-lab-seed-nod",
+      "claim_to_demonstrate": "treats `seed_nodes.jsonl` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: seed_nodes.jsonl + seed_edges.jsonl) — plus the page charter, manifest, map, scoring model, handoff status, index, and.",
+      "input_fixture": "project source text and the named component `seed_nodes.jsonl`",
+      "operation_under_test": "treats `seed_nodes.jsonl` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: seed_nodes.jsonl + seed_edges.jsonl) — plus the page charter, manifest, map, scoring model, handoff status, index, and.",
+      "expected_output": "inspectable implementation evidence tied to `seed_nodes.jsonl`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "2daa04eda09659790f7a3dac",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48741,
+            "sha256": "93645356d0597eb434668876fdcde3c7fec672c88366d2643b06b7ef4fed2398"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39943,
+            "sha256": "eb32630a640c13f573b58eb00c0b0228d10f66a2beafa3d78aef8ad6130cd404"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23181,
+            "sha256": "24d460709771a5923b4115fa229f8ff3160de56104bb93d7711a078dd58d1165"
+          },
+          {
+            "relative_path": "proof_builds/critical-functions-observatory/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22160,
+            "sha256": "960bb83dab38b5cef1ff2e00f98346ae71ac45b73db5b71e21ce225feec0c4c9"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48580,
+            "sha256": "ede8b219afb268ba31035069def3e9907a0e9550261bf2032fbb98244691b580"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10891,
+            "sha256": "63d65841cb4d723c11a821e321b13f74466f3e2af2aec09a5ac4ecc1d6ee745c"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/critical-functions-observatory/blueprint.json",
+          "project_blueprints/critical-functions-observatory/instrument_map.json",
+          "project_blueprints/critical-functions-observatory/README.md",
+          "proof_builds/critical-functions-observatory/proof_build.json",
+          "proof_demos/critical-functions-observatory/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "66b140548b316643854987cb"
+    },
+    {
+      "receipt_id": "critical-functions-observatory__receipt_0009",
+      "project_id": "critical-functions-observatory",
+      "project_title": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab / seed_edges.jsonl",
+      "component_case_id": "critical-functions-observatory__0009__critical-functions-observatory-defensive-uas-critical-infrastructure-research-lab-seed-edg",
+      "claim_to_demonstrate": "treats `seed_edges.jsonl` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: seed_edges.jsonl) — plus the page charter, manifest, map, scoring model, handoff status, index, and README. Project P1 is.",
+      "input_fixture": "project source text and the named component `seed_edges.jsonl`",
+      "operation_under_test": "treats `seed_edges.jsonl` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: seed_edges.jsonl) — plus the page charter, manifest, map, scoring model, handoff status, index, and README. Project P1 is.",
+      "expected_output": "inspectable implementation evidence tied to `seed_edges.jsonl`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ada4e34c98807a3abbcf30ef",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48741,
+            "sha256": "93645356d0597eb434668876fdcde3c7fec672c88366d2643b06b7ef4fed2398"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39943,
+            "sha256": "eb32630a640c13f573b58eb00c0b0228d10f66a2beafa3d78aef8ad6130cd404"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23181,
+            "sha256": "24d460709771a5923b4115fa229f8ff3160de56104bb93d7711a078dd58d1165"
+          },
+          {
+            "relative_path": "proof_builds/critical-functions-observatory/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22160,
+            "sha256": "960bb83dab38b5cef1ff2e00f98346ae71ac45b73db5b71e21ce225feec0c4c9"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48580,
+            "sha256": "ede8b219afb268ba31035069def3e9907a0e9550261bf2032fbb98244691b580"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10891,
+            "sha256": "63d65841cb4d723c11a821e321b13f74466f3e2af2aec09a5ac4ecc1d6ee745c"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/critical-functions-observatory/blueprint.json",
+          "project_blueprints/critical-functions-observatory/instrument_map.json",
+          "project_blueprints/critical-functions-observatory/README.md",
+          "proof_builds/critical-functions-observatory/proof_build.json",
+          "proof_demos/critical-functions-observatory/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e56879ba973f53b05cafada2"
+    },
+    {
+      "receipt_id": "critical-functions-observatory__receipt_0010",
+      "project_id": "critical-functions-observatory",
+      "project_title": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab / CISA National Critical Functions",
+      "component_case_id": "critical-functions-observatory__0010__critical-functions-observatory-defensive-uas-critical-infrastructure-research-lab-cisa-nat",
+      "claim_to_demonstrate": "uses `CISA National Critical Functions` as a named project component with a traceable role in the public mechanism. Source context: CISA National Critical Functions, the White House June 2025 risk-based assessment and covered-facility guidance, the.",
+      "input_fixture": "project source text and the named component `CISA National Critical Functions`",
+      "operation_under_test": "uses `CISA National Critical Functions` as a named project component with a traceable role in the public mechanism. Source context: CISA National Critical Functions, the White House June 2025 risk-based assessment and covered-facility guidance, the.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `CISA National Critical Functions`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "99d04f8d9cb91f8883507691",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48741,
+            "sha256": "93645356d0597eb434668876fdcde3c7fec672c88366d2643b06b7ef4fed2398"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39943,
+            "sha256": "eb32630a640c13f573b58eb00c0b0228d10f66a2beafa3d78aef8ad6130cd404"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23181,
+            "sha256": "24d460709771a5923b4115fa229f8ff3160de56104bb93d7711a078dd58d1165"
+          },
+          {
+            "relative_path": "proof_builds/critical-functions-observatory/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22160,
+            "sha256": "960bb83dab38b5cef1ff2e00f98346ae71ac45b73db5b71e21ce225feec0c4c9"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48580,
+            "sha256": "ede8b219afb268ba31035069def3e9907a0e9550261bf2032fbb98244691b580"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10891,
+            "sha256": "63d65841cb4d723c11a821e321b13f74466f3e2af2aec09a5ac4ecc1d6ee745c"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/critical-functions-observatory/blueprint.json",
+          "project_blueprints/critical-functions-observatory/instrument_map.json",
+          "proof_builds/critical-functions-observatory/proof_build.json",
+          "proof_demos/critical-functions-observatory/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2b747e41d37d6da6ae51d309"
+    },
+    {
+      "receipt_id": "critical-functions-observatory__receipt_0011",
+      "project_id": "critical-functions-observatory",
+      "project_title": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab / White House June",
+      "component_case_id": "critical-functions-observatory__0011__critical-functions-observatory-defensive-uas-critical-infrastructure-research-lab-white-ho",
+      "claim_to_demonstrate": "uses `White House June` as a named project component with a traceable role in the public mechanism. Source context: CISA National Critical Functions, the White House June 2025 risk-based assessment and covered-facility guidance, the DOJ/DHS/FAA/FCC.",
+      "input_fixture": "project source text and the named component `White House June`",
+      "operation_under_test": "uses `White House June` as a named project component with a traceable role in the public mechanism. Source context: CISA National Critical Functions, the White House June 2025 risk-based assessment and covered-facility guidance, the DOJ/DHS/FAA/FCC.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `White House June`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "99d04f8d9cb91f8883507691",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48741,
+            "sha256": "93645356d0597eb434668876fdcde3c7fec672c88366d2643b06b7ef4fed2398"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39943,
+            "sha256": "eb32630a640c13f573b58eb00c0b0228d10f66a2beafa3d78aef8ad6130cd404"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23181,
+            "sha256": "24d460709771a5923b4115fa229f8ff3160de56104bb93d7711a078dd58d1165"
+          },
+          {
+            "relative_path": "proof_builds/critical-functions-observatory/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22160,
+            "sha256": "960bb83dab38b5cef1ff2e00f98346ae71ac45b73db5b71e21ce225feec0c4c9"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48580,
+            "sha256": "ede8b219afb268ba31035069def3e9907a0e9550261bf2032fbb98244691b580"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10891,
+            "sha256": "63d65841cb4d723c11a821e321b13f74466f3e2af2aec09a5ac4ecc1d6ee745c"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/critical-functions-observatory/blueprint.json",
+          "project_blueprints/critical-functions-observatory/instrument_map.json",
+          "project_blueprints/critical-functions-observatory/README.md",
+          "proof_builds/critical-functions-observatory/proof_build.json",
+          "proof_demos/critical-functions-observatory/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "01a8c2313ee9edd2bdd819cb"
+    },
+    {
+      "receipt_id": "critical-functions-observatory__receipt_0012",
+      "project_id": "critical-functions-observatory",
+      "project_title": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab / FAA Remote ID",
+      "component_case_id": "critical-functions-observatory__0012__critical-functions-observatory-defensive-uas-critical-infrastructure-research-lab-faa-remo",
+      "claim_to_demonstrate": "uses `FAA Remote ID` as a named project component with a traceable role in the public mechanism. Source context: FAA Remote ID enforcement baseline, DHS S&T resilient-PNT guidance, CISA OT asset-inventory guidance, DOE/EPA continuity and resilience planning.",
+      "input_fixture": "project source text and the named component `FAA Remote ID`",
+      "operation_under_test": "uses `FAA Remote ID` as a named project component with a traceable role in the public mechanism. Source context: FAA Remote ID enforcement baseline, DHS S&T resilient-PNT guidance, CISA OT asset-inventory guidance, DOE/EPA continuity and resilience planning.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `FAA Remote ID`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "2d6e735b8e58d717ac592384",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48741,
+            "sha256": "93645356d0597eb434668876fdcde3c7fec672c88366d2643b06b7ef4fed2398"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39943,
+            "sha256": "eb32630a640c13f573b58eb00c0b0228d10f66a2beafa3d78aef8ad6130cd404"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23181,
+            "sha256": "24d460709771a5923b4115fa229f8ff3160de56104bb93d7711a078dd58d1165"
+          },
+          {
+            "relative_path": "proof_builds/critical-functions-observatory/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22160,
+            "sha256": "960bb83dab38b5cef1ff2e00f98346ae71ac45b73db5b71e21ce225feec0c4c9"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48580,
+            "sha256": "ede8b219afb268ba31035069def3e9907a0e9550261bf2032fbb98244691b580"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10891,
+            "sha256": "63d65841cb4d723c11a821e321b13f74466f3e2af2aec09a5ac4ecc1d6ee745c"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/critical-functions-observatory/blueprint.json",
+          "project_blueprints/critical-functions-observatory/instrument_map.json",
+          "project_blueprints/critical-functions-observatory/README.md",
+          "proof_builds/critical-functions-observatory/proof_build.json",
+          "proof_demos/critical-functions-observatory/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5cbc8cce0699cb4bb1938c9c"
+    },
+    {
+      "receipt_id": "critical-functions-observatory__receipt_0013",
+      "project_id": "critical-functions-observatory",
+      "project_title": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab / DHS S&T",
+      "component_case_id": "critical-functions-observatory__0013__critical-functions-observatory-defensive-uas-critical-infrastructure-research-lab-dhs-s-t",
+      "claim_to_demonstrate": "uses `DHS S&T` as a named project component with a traceable role in the public mechanism. Source context: DHS S&T resilient-PNT guidance, CISA OT asset-inventory guidance, DOE/EPA continuity and resilience planning materials. The architecture is an.",
+      "input_fixture": "project source text and the named component `DHS S&T`",
+      "operation_under_test": "uses `DHS S&T` as a named project component with a traceable role in the public mechanism. Source context: DHS S&T resilient-PNT guidance, CISA OT asset-inventory guidance, DOE/EPA continuity and resilience planning materials. The architecture is an.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `DHS S&T`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f0e9a842211dcbe0bbb1b702",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48741,
+            "sha256": "93645356d0597eb434668876fdcde3c7fec672c88366d2643b06b7ef4fed2398"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39943,
+            "sha256": "eb32630a640c13f573b58eb00c0b0228d10f66a2beafa3d78aef8ad6130cd404"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23181,
+            "sha256": "24d460709771a5923b4115fa229f8ff3160de56104bb93d7711a078dd58d1165"
+          },
+          {
+            "relative_path": "proof_builds/critical-functions-observatory/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22160,
+            "sha256": "960bb83dab38b5cef1ff2e00f98346ae71ac45b73db5b71e21ce225feec0c4c9"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48580,
+            "sha256": "ede8b219afb268ba31035069def3e9907a0e9550261bf2032fbb98244691b580"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10891,
+            "sha256": "63d65841cb4d723c11a821e321b13f74466f3e2af2aec09a5ac4ecc1d6ee745c"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/critical-functions-observatory/blueprint.json",
+          "project_blueprints/critical-functions-observatory/instrument_map.json",
+          "project_blueprints/critical-functions-observatory/README.md",
+          "proof_builds/critical-functions-observatory/proof_build.json",
+          "proof_demos/critical-functions-observatory/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a01b852fa4dac6439a34159a"
+    },
+    {
+      "receipt_id": "critical-functions-observatory__receipt_0014",
+      "project_id": "critical-functions-observatory",
+      "project_title": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab / CISA OT",
+      "component_case_id": "critical-functions-observatory__0014__critical-functions-observatory-defensive-uas-critical-infrastructure-research-lab-cisa-ot",
+      "claim_to_demonstrate": "uses `CISA OT` as a named project component with a traceable role in the public mechanism. Source context: CISA OT asset-inventory guidance, DOE/EPA continuity and resilience planning materials. The architecture is an event-sourced semantic graph with spatial.",
+      "input_fixture": "project source text and the named component `CISA OT`",
+      "operation_under_test": "uses `CISA OT` as a named project component with a traceable role in the public mechanism. Source context: CISA OT asset-inventory guidance, DOE/EPA continuity and resilience planning materials. The architecture is an event-sourced semantic graph with spatial.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `CISA OT`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "59cea4bdff0283d8795001de",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48741,
+            "sha256": "93645356d0597eb434668876fdcde3c7fec672c88366d2643b06b7ef4fed2398"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39943,
+            "sha256": "eb32630a640c13f573b58eb00c0b0228d10f66a2beafa3d78aef8ad6130cd404"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23181,
+            "sha256": "24d460709771a5923b4115fa229f8ff3160de56104bb93d7711a078dd58d1165"
+          },
+          {
+            "relative_path": "proof_builds/critical-functions-observatory/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22160,
+            "sha256": "960bb83dab38b5cef1ff2e00f98346ae71ac45b73db5b71e21ce225feec0c4c9"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48580,
+            "sha256": "ede8b219afb268ba31035069def3e9907a0e9550261bf2032fbb98244691b580"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10891,
+            "sha256": "63d65841cb4d723c11a821e321b13f74466f3e2af2aec09a5ac4ecc1d6ee745c"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/critical-functions-observatory/blueprint.json",
+          "project_blueprints/critical-functions-observatory/instrument_map.json",
+          "project_blueprints/critical-functions-observatory/README.md",
+          "proof_builds/critical-functions-observatory/proof_build.json",
+          "proof_demos/critical-functions-observatory/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7d99e8efd5f78d14fc49e14e"
+    },
+    {
+      "receipt_id": "critical-functions-observatory__receipt_0015",
+      "project_id": "critical-functions-observatory",
+      "project_title": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab / White House",
+      "component_case_id": "critical-functions-observatory__0015__critical-functions-observatory-defensive-uas-critical-infrastructure-research-lab-white-ho",
+      "claim_to_demonstrate": "uses `White House` as a named project component with a traceable role in the public mechanism. Source context: CISA National Critical Functions, the White House June 2025 risk-based assessment and covered-facility guidance, the DOJ/DHS/FAA/FCC legal-advisory.",
+      "input_fixture": "project source text and the named component `White House`",
+      "operation_under_test": "uses `White House` as a named project component with a traceable role in the public mechanism. Source context: CISA National Critical Functions, the White House June 2025 risk-based assessment and covered-facility guidance, the DOJ/DHS/FAA/FCC legal-advisory.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `White House`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "99d04f8d9cb91f8883507691",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48741,
+            "sha256": "93645356d0597eb434668876fdcde3c7fec672c88366d2643b06b7ef4fed2398"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39943,
+            "sha256": "eb32630a640c13f573b58eb00c0b0228d10f66a2beafa3d78aef8ad6130cd404"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23181,
+            "sha256": "24d460709771a5923b4115fa229f8ff3160de56104bb93d7711a078dd58d1165"
+          },
+          {
+            "relative_path": "proof_builds/critical-functions-observatory/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22160,
+            "sha256": "960bb83dab38b5cef1ff2e00f98346ae71ac45b73db5b71e21ce225feec0c4c9"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48580,
+            "sha256": "ede8b219afb268ba31035069def3e9907a0e9550261bf2032fbb98244691b580"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10891,
+            "sha256": "63d65841cb4d723c11a821e321b13f74466f3e2af2aec09a5ac4ecc1d6ee745c"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/critical-functions-observatory/blueprint.json",
+          "project_blueprints/critical-functions-observatory/instrument_map.json",
+          "project_blueprints/critical-functions-observatory/README.md",
+          "proof_builds/critical-functions-observatory/proof_build.json",
+          "proof_demos/critical-functions-observatory/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "82432241635172a9ec9aeb2c"
+    },
+    {
+      "receipt_id": "critical-functions-observatory__receipt_0016",
+      "project_id": "critical-functions-observatory",
+      "project_title": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab / README. Project P1",
+      "component_case_id": "critical-functions-observatory__0016__critical-functions-observatory-defensive-uas-critical-infrastructure-research-lab-readme-p",
+      "claim_to_demonstrate": "uses `README. Project P1` as a named project component with a traceable role in the public mechanism. Source context: README. Project P1 is closed; P2 through P6 remain open as the active research program. The page's explicit out-of-scope items: generating.",
+      "input_fixture": "project source text and the named component `README. Project P1`",
+      "operation_under_test": "uses `README. Project P1` as a named project component with a traceable role in the public mechanism. Source context: README. Project P1 is closed; P2 through P6 remain open as the active research program. The page's explicit out-of-scope items: generating.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `README. Project P1`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "28c03b6d36683a09caed58c9",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48741,
+            "sha256": "93645356d0597eb434668876fdcde3c7fec672c88366d2643b06b7ef4fed2398"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39943,
+            "sha256": "eb32630a640c13f573b58eb00c0b0228d10f66a2beafa3d78aef8ad6130cd404"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23181,
+            "sha256": "24d460709771a5923b4115fa229f8ff3160de56104bb93d7711a078dd58d1165"
+          },
+          {
+            "relative_path": "proof_builds/critical-functions-observatory/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22160,
+            "sha256": "960bb83dab38b5cef1ff2e00f98346ae71ac45b73db5b71e21ce225feec0c4c9"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48580,
+            "sha256": "ede8b219afb268ba31035069def3e9907a0e9550261bf2032fbb98244691b580"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10891,
+            "sha256": "63d65841cb4d723c11a821e321b13f74466f3e2af2aec09a5ac4ecc1d6ee745c"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/critical-functions-observatory/blueprint.json",
+          "project_blueprints/critical-functions-observatory/instrument_map.json",
+          "project_blueprints/critical-functions-observatory/README.md",
+          "proof_builds/critical-functions-observatory/proof_build.json",
+          "proof_demos/critical-functions-observatory/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "db245d72e93db11746062306"
+    },
+    {
+      "receipt_id": "critical-functions-observatory__receipt_0017",
+      "project_id": "critical-functions-observatory",
+      "project_title": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Critical Functions Observatory — defensive UAS / critical-infrastructure research lab / Publication Forge for",
+      "component_case_id": "critical-functions-observatory__0017__critical-functions-observatory-defensive-uas-critical-infrastructure-research-lab-publicat",
+      "claim_to_demonstrate": "treats `Publication Forge for` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Publication Forge for external use. Step 01 P2 — first open project First of the five open projects.",
+      "input_fixture": "project source text and the named component `Publication Forge for`",
+      "operation_under_test": "treats `Publication Forge for` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Publication Forge for external use. Step 01 P2 — first open project First of the five open projects.",
+      "expected_output": "a room, workbench, or interface function tied to `Publication Forge for`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3270ae6aec0de498b6a071c4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48741,
+            "sha256": "93645356d0597eb434668876fdcde3c7fec672c88366d2643b06b7ef4fed2398"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39943,
+            "sha256": "eb32630a640c13f573b58eb00c0b0228d10f66a2beafa3d78aef8ad6130cd404"
+          },
+          {
+            "relative_path": "project_blueprints/critical-functions-observatory/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23181,
+            "sha256": "24d460709771a5923b4115fa229f8ff3160de56104bb93d7711a078dd58d1165"
+          },
+          {
+            "relative_path": "proof_builds/critical-functions-observatory/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22160,
+            "sha256": "960bb83dab38b5cef1ff2e00f98346ae71ac45b73db5b71e21ce225feec0c4c9"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48580,
+            "sha256": "ede8b219afb268ba31035069def3e9907a0e9550261bf2032fbb98244691b580"
+          },
+          {
+            "relative_path": "proof_demos/critical-functions-observatory/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10891,
+            "sha256": "63d65841cb4d723c11a821e321b13f74466f3e2af2aec09a5ac4ecc1d6ee745c"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/critical-functions-observatory/blueprint.json",
+          "project_blueprints/critical-functions-observatory/instrument_map.json",
+          "project_blueprints/critical-functions-observatory/README.md",
+          "proof_builds/critical-functions-observatory/proof_build.json",
+          "proof_demos/critical-functions-observatory/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "736eee68edd5815d379d346a"
+    }
+  ]
+}

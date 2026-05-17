@@ -1,0 +1,1449 @@
+{
+  "project": {
+    "project_id": "applied-history",
+    "title": "Applied History — lab for using historical case study to inform contemporary policy"
+  },
+  "receipts": [
+    {
+      "receipt_id": "applied-history__receipt_0001",
+      "project_id": "applied-history",
+      "project_title": "Applied History — lab for using historical case study to inform contemporary policy",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Applied History — lab for using historical case study to inform contemporary policy Runtime Or Interface Surface",
+      "component_case_id": "applied-history__0001__applied-history-lab-for-using-historical-case-study-to-inform-contemporary-policy-runtime-",
+      "claim_to_demonstrate": "An applied-history lab for using historical cases as disciplined analytic instruments.",
+      "input_fixture": "local app, web room, data surface, or workstation entry point",
+      "operation_under_test": "An applied-history lab for using historical cases as disciplined analytic instruments.",
+      "expected_output": "reader-facing definition of the software object and its intended user",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8fd882083e0f8259b8a06f60",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/applied-history/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47441,
+            "sha256": "a4567b9ba9be66b757f896dc09cab1fdb102a020e49a45ba1c88ef15d969406c"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40629,
+            "sha256": "b6d3a8e5e52c36395b8554092184e0383794798e89c5887c06b81c2f1eae17ef"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21496,
+            "sha256": "672739b52d5af3a28c5ba2750cf5e91e6b67afa9cc93f11803456b1e8026249c"
+          },
+          {
+            "relative_path": "proof_builds/applied-history/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22633,
+            "sha256": "e85f6f5870be963434ab02da8fd2326be3ac642abd51e11debb8f94290a78cab"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49173,
+            "sha256": "db3c1e8d94b524d2c42a7c7a51edc73b905c330fef0df41a468c2c734cc905d4"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10973,
+            "sha256": "02528b5b39a38b6663adefc189815d643ed7b9d6c0f70f53fd7c3f2a5344d45e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/applied-history/blueprint.json",
+          "project_blueprints/applied-history/instrument_map.json",
+          "project_blueprints/applied-history/README.md",
+          "proof_builds/applied-history/proof_build.json",
+          "proof_demos/applied-history/demo_cases.json",
+          "proof_demos/applied-history/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4706c1ec3ca33a9828d6619e"
+    },
+    {
+      "receipt_id": "applied-history__receipt_0002",
+      "project_id": "applied-history",
+      "project_title": "Applied History — lab for using historical case study to inform contemporary policy",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Applied History — lab for using historical case study to inform contemporary policy Data And State Model",
+      "component_case_id": "applied-history__0002__applied-history-lab-for-using-historical-case-study-to-inform-contemporary-policy-data-and",
+      "claim_to_demonstrate": "Source use is organized by role: method authorities, domain evidence, technical background, implementation evidence, and claim limits. The page should show why each source matters; direct quotations and stronger factual claims still require exact passage.",
+      "input_fixture": "records, files, indexes, tables, project state, source state, and user decisions",
+      "operation_under_test": "Source use is organized by role: method authorities, domain evidence, technical background, implementation evidence, and claim limits. The page should show why each source matters; direct quotations and stronger factual claims still require exact passage.",
+      "expected_output": "state model that explains what the tool remembers and what it refuses to infer",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4da81596b91ff65b95cc789b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/applied-history/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47441,
+            "sha256": "a4567b9ba9be66b757f896dc09cab1fdb102a020e49a45ba1c88ef15d969406c"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40629,
+            "sha256": "b6d3a8e5e52c36395b8554092184e0383794798e89c5887c06b81c2f1eae17ef"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21496,
+            "sha256": "672739b52d5af3a28c5ba2750cf5e91e6b67afa9cc93f11803456b1e8026249c"
+          },
+          {
+            "relative_path": "proof_builds/applied-history/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22633,
+            "sha256": "e85f6f5870be963434ab02da8fd2326be3ac642abd51e11debb8f94290a78cab"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49173,
+            "sha256": "db3c1e8d94b524d2c42a7c7a51edc73b905c330fef0df41a468c2c734cc905d4"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10973,
+            "sha256": "02528b5b39a38b6663adefc189815d643ed7b9d6c0f70f53fd7c3f2a5344d45e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/applied-history/blueprint.json",
+          "project_blueprints/applied-history/instrument_map.json",
+          "project_blueprints/applied-history/README.md",
+          "proof_builds/applied-history/proof_build.json",
+          "proof_demos/applied-history/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e5bd0168d6389f70ebd0c6f1"
+    },
+    {
+      "receipt_id": "applied-history__receipt_0003",
+      "project_id": "applied-history",
+      "project_title": "Applied History — lab for using historical case study to inform contemporary policy",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Applied History — lab for using historical case study to inform contemporary policy Core Instrument Panel",
+      "component_case_id": "applied-history__0003__applied-history-lab-for-using-historical-case-study-to-inform-contemporary-policy-core-ins",
+      "claim_to_demonstrate": "It connects portfolio-native case selection, Belfer-style applied-history logic, Hoover-style historical working-group discipline, analogy limits, institutional context, decision points, and present-use constraints so historical comparison can become a.",
+      "input_fixture": "tool buttons, rooms, workflow steps, analytical controls, and review surfaces",
+      "operation_under_test": "It connects portfolio-native case selection, Belfer-style applied-history logic, Hoover-style historical working-group discipline, analogy limits, institutional context, decision points, and present-use constraints so historical comparison can become a.",
+      "expected_output": "named instruments that perform the useful work rather than generic navigation",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0f34fd9a5a44ba183928e1ab",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/applied-history/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47441,
+            "sha256": "a4567b9ba9be66b757f896dc09cab1fdb102a020e49a45ba1c88ef15d969406c"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40629,
+            "sha256": "b6d3a8e5e52c36395b8554092184e0383794798e89c5887c06b81c2f1eae17ef"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21496,
+            "sha256": "672739b52d5af3a28c5ba2750cf5e91e6b67afa9cc93f11803456b1e8026249c"
+          },
+          {
+            "relative_path": "proof_builds/applied-history/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22633,
+            "sha256": "e85f6f5870be963434ab02da8fd2326be3ac642abd51e11debb8f94290a78cab"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49173,
+            "sha256": "db3c1e8d94b524d2c42a7c7a51edc73b905c330fef0df41a468c2c734cc905d4"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10973,
+            "sha256": "02528b5b39a38b6663adefc189815d643ed7b9d6c0f70f53fd7c3f2a5344d45e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/applied-history/blueprint.json",
+          "project_blueprints/applied-history/instrument_map.json",
+          "project_blueprints/applied-history/README.md",
+          "proof_builds/applied-history/proof_build.json",
+          "proof_demos/applied-history/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "07f002c3c70abb72ce6724ca"
+    },
+    {
+      "receipt_id": "applied-history__receipt_0004",
+      "project_id": "applied-history",
+      "project_title": "Applied History — lab for using historical case study to inform contemporary policy",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Applied History — lab for using historical case study to inform contemporary policy Workflow Orchestration",
+      "component_case_id": "applied-history__0004__applied-history-lab-for-using-historical-case-study-to-inform-contemporary-policy-workflow",
+      "claim_to_demonstrate": "Build case-study depth — each new case worked under the methodology with its source documentation visible — and bind the framework references to specific Belfer and Hoover passages rather than gesturing at them. Long-term, the lab develops alongside the.",
+      "input_fixture": "upstream inputs, intermediate decisions, downstream products, and stale-state conditions",
+      "operation_under_test": "Build case-study depth — each new case worked under the methodology with its source documentation visible — and bind the framework references to specific Belfer and Hoover passages rather than gesturing at them. Long-term, the lab develops alongside the.",
+      "expected_output": "pipeline path showing how work moves and when earlier decisions must be reopened",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fd96493f227a13a744bbc6d4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/applied-history/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47441,
+            "sha256": "a4567b9ba9be66b757f896dc09cab1fdb102a020e49a45ba1c88ef15d969406c"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40629,
+            "sha256": "b6d3a8e5e52c36395b8554092184e0383794798e89c5887c06b81c2f1eae17ef"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21496,
+            "sha256": "672739b52d5af3a28c5ba2750cf5e91e6b67afa9cc93f11803456b1e8026249c"
+          },
+          {
+            "relative_path": "proof_builds/applied-history/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22633,
+            "sha256": "e85f6f5870be963434ab02da8fd2326be3ac642abd51e11debb8f94290a78cab"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49173,
+            "sha256": "db3c1e8d94b524d2c42a7c7a51edc73b905c330fef0df41a468c2c734cc905d4"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10973,
+            "sha256": "02528b5b39a38b6663adefc189815d643ed7b9d6c0f70f53fd7c3f2a5344d45e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/applied-history/blueprint.json",
+          "project_blueprints/applied-history/instrument_map.json",
+          "project_blueprints/applied-history/README.md",
+          "proof_builds/applied-history/proof_build.json",
+          "proof_demos/applied-history/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "41a2d92d08792889c396c489"
+    },
+    {
+      "receipt_id": "applied-history__receipt_0005",
+      "project_id": "applied-history",
+      "project_title": "Applied History — lab for using historical case study to inform contemporary policy",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Applied History — lab for using historical case study to inform contemporary policy Review And Governance Gate",
+      "component_case_id": "applied-history__0005__applied-history-lab-for-using-historical-case-study-to-inform-contemporary-policy-review-a",
+      "claim_to_demonstrate": "Status: The page's structural scaffold is in place; case-study density continues to grow as new cases are worked under the methodology.",
+      "input_fixture": "quality rules, source checks, claim ceilings, reviewer steps, and failure states",
+      "operation_under_test": "Status: The page's structural scaffold is in place; case-study density continues to grow as new cases are worked under the methodology.",
+      "expected_output": "decision gate that makes the output inspectable before it is trusted",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f0a9b7ff3262d180291ae4ca",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/applied-history/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47441,
+            "sha256": "a4567b9ba9be66b757f896dc09cab1fdb102a020e49a45ba1c88ef15d969406c"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40629,
+            "sha256": "b6d3a8e5e52c36395b8554092184e0383794798e89c5887c06b81c2f1eae17ef"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21496,
+            "sha256": "672739b52d5af3a28c5ba2750cf5e91e6b67afa9cc93f11803456b1e8026249c"
+          },
+          {
+            "relative_path": "proof_builds/applied-history/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22633,
+            "sha256": "e85f6f5870be963434ab02da8fd2326be3ac642abd51e11debb8f94290a78cab"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49173,
+            "sha256": "db3c1e8d94b524d2c42a7c7a51edc73b905c330fef0df41a468c2c734cc905d4"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10973,
+            "sha256": "02528b5b39a38b6663adefc189815d643ed7b9d6c0f70f53fd7c3f2a5344d45e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/applied-history/blueprint.json",
+          "project_blueprints/applied-history/instrument_map.json",
+          "project_blueprints/applied-history/README.md",
+          "proof_builds/applied-history/proof_build.json",
+          "proof_demos/applied-history/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1fa8a92942e294e66256cd5a"
+    },
+    {
+      "receipt_id": "applied-history__receipt_0006",
+      "project_id": "applied-history",
+      "project_title": "Applied History — lab for using historical case study to inform contemporary policy",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Applied History — lab for using historical case study to inform contemporary policy Export Or Integration Surface",
+      "component_case_id": "applied-history__0006__applied-history-lab-for-using-historical-case-study-to-inform-contemporary-policy-export-o",
+      "claim_to_demonstrate": "The lab's public surface uses a cream-and-parchment editorial palette with the Belfer / Allison-Ferguson / Hoover source list visible on the surface. The page's structural scaffold is in place; case-study density continues to grow as new cases are worked.",
+      "input_fixture": "brief, paper, room, dataset, packet, rendered page, or external handoff",
+      "operation_under_test": "The lab's public surface uses a cream-and-parchment editorial palette with the Belfer / Allison-Ferguson / Hoover source list visible on the surface. The page's structural scaffold is in place; case-study density continues to grow as new cases are worked.",
+      "expected_output": "usable output that another project, professor, employer, or collaborator can inspect",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "577c94f4228762f7478a15a0",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/applied-history/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47441,
+            "sha256": "a4567b9ba9be66b757f896dc09cab1fdb102a020e49a45ba1c88ef15d969406c"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40629,
+            "sha256": "b6d3a8e5e52c36395b8554092184e0383794798e89c5887c06b81c2f1eae17ef"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21496,
+            "sha256": "672739b52d5af3a28c5ba2750cf5e91e6b67afa9cc93f11803456b1e8026249c"
+          },
+          {
+            "relative_path": "proof_builds/applied-history/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22633,
+            "sha256": "e85f6f5870be963434ab02da8fd2326be3ac642abd51e11debb8f94290a78cab"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49173,
+            "sha256": "db3c1e8d94b524d2c42a7c7a51edc73b905c330fef0df41a468c2c734cc905d4"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10973,
+            "sha256": "02528b5b39a38b6663adefc189815d643ed7b9d6c0f70f53fd7c3f2a5344d45e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/applied-history/blueprint.json",
+          "project_blueprints/applied-history/instrument_map.json",
+          "project_blueprints/applied-history/README.md",
+          "proof_builds/applied-history/proof_build.json",
+          "proof_demos/applied-history/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "63cf9bfe8e82e5d54e4c5c4f"
+    },
+    {
+      "receipt_id": "applied-history__receipt_0007",
+      "project_id": "applied-history",
+      "project_title": "Applied History — lab for using historical case study to inform contemporary policy",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Applied History — lab for using historical case study to inform contemporary policy Build Verification Queue",
+      "component_case_id": "applied-history__0007__applied-history-lab-for-using-historical-case-study-to-inform-contemporary-policy-build-ve",
+      "claim_to_demonstrate": "Remaining gaps: build case-study depth — each new case worked under the methodology with its source documentation visible — and bind the framework references to specific Belfer and Hoover passages rather than gesturing at them. Long-term, the lab develops.",
+      "input_fixture": "unbuilt modules, missing walkthroughs, test cases, and validation evidence",
+      "operation_under_test": "Remaining gaps: build case-study depth — each new case worked under the methodology with its source documentation visible — and bind the framework references to specific Belfer and Hoover passages rather than gesturing at them. Long-term, the lab develops.",
+      "expected_output": "next proof needed before broader claims about the tool are safe",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e350b0e07ab7b9d385896d3e",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/applied-history/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47441,
+            "sha256": "a4567b9ba9be66b757f896dc09cab1fdb102a020e49a45ba1c88ef15d969406c"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40629,
+            "sha256": "b6d3a8e5e52c36395b8554092184e0383794798e89c5887c06b81c2f1eae17ef"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21496,
+            "sha256": "672739b52d5af3a28c5ba2750cf5e91e6b67afa9cc93f11803456b1e8026249c"
+          },
+          {
+            "relative_path": "proof_builds/applied-history/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22633,
+            "sha256": "e85f6f5870be963434ab02da8fd2326be3ac642abd51e11debb8f94290a78cab"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49173,
+            "sha256": "db3c1e8d94b524d2c42a7c7a51edc73b905c330fef0df41a468c2c734cc905d4"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10973,
+            "sha256": "02528b5b39a38b6663adefc189815d643ed7b9d6c0f70f53fd7c3f2a5344d45e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/applied-history/blueprint.json",
+          "project_blueprints/applied-history/instrument_map.json",
+          "project_blueprints/applied-history/README.md",
+          "proof_builds/applied-history/proof_build.json",
+          "proof_demos/applied-history/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f3899ba0d2f835998f8b12cc"
+    },
+    {
+      "receipt_id": "applied-history__receipt_0008",
+      "project_id": "applied-history",
+      "project_title": "Applied History — lab for using historical case study to inform contemporary policy",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Applied History — lab for using historical case study to inform contemporary policy / Belfer Center Applied History Project",
+      "component_case_id": "applied-history__0008__applied-history-lab-for-using-historical-case-study-to-inform-contemporary-policy-belfer-c",
+      "claim_to_demonstrate": "uses `Belfer Center Applied History Project` as a named project component with a traceable role in the public mechanism. Source context: Grounded in the Belfer Center Applied History Project, the Allison and Ferguson Applied History Manifesto, the Belfer.",
+      "input_fixture": "project source text and the named component `Belfer Center Applied History Project`",
+      "operation_under_test": "uses `Belfer Center Applied History Project` as a named project component with a traceable role in the public mechanism. Source context: Grounded in the Belfer Center Applied History Project, the Allison and Ferguson Applied History Manifesto, the Belfer.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Belfer Center Applied History Project`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "6bee219474a6b88008650a20",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/applied-history/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47441,
+            "sha256": "a4567b9ba9be66b757f896dc09cab1fdb102a020e49a45ba1c88ef15d969406c"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40629,
+            "sha256": "b6d3a8e5e52c36395b8554092184e0383794798e89c5887c06b81c2f1eae17ef"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21496,
+            "sha256": "672739b52d5af3a28c5ba2750cf5e91e6b67afa9cc93f11803456b1e8026249c"
+          },
+          {
+            "relative_path": "proof_builds/applied-history/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22633,
+            "sha256": "e85f6f5870be963434ab02da8fd2326be3ac642abd51e11debb8f94290a78cab"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49173,
+            "sha256": "db3c1e8d94b524d2c42a7c7a51edc73b905c330fef0df41a468c2c734cc905d4"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10973,
+            "sha256": "02528b5b39a38b6663adefc189815d643ed7b9d6c0f70f53fd7c3f2a5344d45e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/applied-history/blueprint.json",
+          "project_blueprints/applied-history/instrument_map.json",
+          "proof_builds/applied-history/proof_build.json",
+          "proof_demos/applied-history/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "cb3cf492ce11bcd0c54d6bfa"
+    },
+    {
+      "receipt_id": "applied-history__receipt_0009",
+      "project_id": "applied-history",
+      "project_title": "Applied History — lab for using historical case study to inform contemporary policy",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Applied History — lab for using historical case study to inform contemporary policy / Allison and Ferguson Applied History Manifesto",
+      "component_case_id": "applied-history__0009__applied-history-lab-for-using-historical-case-study-to-inform-contemporary-policy-allison-",
+      "claim_to_demonstrate": "uses `Allison and Ferguson Applied History Manifesto` as a named project component with a traceable role in the public mechanism. Source context: Grounded in the Belfer Center Applied History Project, the Allison and Ferguson Applied History Manifesto, the.",
+      "input_fixture": "project source text and the named component `Allison and Ferguson Applied History Manifesto`",
+      "operation_under_test": "uses `Allison and Ferguson Applied History Manifesto` as a named project component with a traceable role in the public mechanism. Source context: Grounded in the Belfer Center Applied History Project, the Allison and Ferguson Applied History Manifesto, the.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Allison and Ferguson Applied History Manifesto`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "6bee219474a6b88008650a20",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/applied-history/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47441,
+            "sha256": "a4567b9ba9be66b757f896dc09cab1fdb102a020e49a45ba1c88ef15d969406c"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40629,
+            "sha256": "b6d3a8e5e52c36395b8554092184e0383794798e89c5887c06b81c2f1eae17ef"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21496,
+            "sha256": "672739b52d5af3a28c5ba2750cf5e91e6b67afa9cc93f11803456b1e8026249c"
+          },
+          {
+            "relative_path": "proof_builds/applied-history/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22633,
+            "sha256": "e85f6f5870be963434ab02da8fd2326be3ac642abd51e11debb8f94290a78cab"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49173,
+            "sha256": "db3c1e8d94b524d2c42a7c7a51edc73b905c330fef0df41a468c2c734cc905d4"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10973,
+            "sha256": "02528b5b39a38b6663adefc189815d643ed7b9d6c0f70f53fd7c3f2a5344d45e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/applied-history/blueprint.json",
+          "project_blueprints/applied-history/instrument_map.json",
+          "proof_builds/applied-history/proof_build.json",
+          "proof_demos/applied-history/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b22319713d87f6783e7a581d"
+    },
+    {
+      "receipt_id": "applied-history__receipt_0010",
+      "project_id": "applied-history",
+      "project_title": "Applied History — lab for using historical case study to inform contemporary policy",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Applied History — lab for using historical case study to inform contemporary policy / Hoover History Lab",
+      "component_case_id": "applied-history__0010__applied-history-lab-for-using-historical-case-study-to-inform-contemporary-policy-hoover-h",
+      "claim_to_demonstrate": "treats `Hoover History Lab` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Grounded in the Belfer Center Applied History Project, the Allison and Ferguson Applied History.",
+      "input_fixture": "project source text and the named component `Hoover History Lab`",
+      "operation_under_test": "treats `Hoover History Lab` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Grounded in the Belfer Center Applied History Project, the Allison and Ferguson Applied History.",
+      "expected_output": "a room, workbench, or interface function tied to `Hoover History Lab`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "6bee219474a6b88008650a20",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/applied-history/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47441,
+            "sha256": "a4567b9ba9be66b757f896dc09cab1fdb102a020e49a45ba1c88ef15d969406c"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40629,
+            "sha256": "b6d3a8e5e52c36395b8554092184e0383794798e89c5887c06b81c2f1eae17ef"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21496,
+            "sha256": "672739b52d5af3a28c5ba2750cf5e91e6b67afa9cc93f11803456b1e8026249c"
+          },
+          {
+            "relative_path": "proof_builds/applied-history/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22633,
+            "sha256": "e85f6f5870be963434ab02da8fd2326be3ac642abd51e11debb8f94290a78cab"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49173,
+            "sha256": "db3c1e8d94b524d2c42a7c7a51edc73b905c330fef0df41a468c2c734cc905d4"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10973,
+            "sha256": "02528b5b39a38b6663adefc189815d643ed7b9d6c0f70f53fd7c3f2a5344d45e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/applied-history/blueprint.json",
+          "project_blueprints/applied-history/instrument_map.json",
+          "project_blueprints/applied-history/README.md",
+          "proof_builds/applied-history/proof_build.json",
+          "proof_demos/applied-history/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f0d8f80c61ad24a9b0406b49"
+    },
+    {
+      "receipt_id": "applied-history__receipt_0011",
+      "project_id": "applied-history",
+      "project_title": "Applied History — lab for using historical case study to inform contemporary policy",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Applied History — lab for using historical case study to inform contemporary policy / Hoover Applied History Working Group. The",
+      "component_case_id": "applied-history__0011__applied-history-lab-for-using-historical-case-study-to-inform-contemporary-policy-hoover-a",
+      "claim_to_demonstrate": "uses `Hoover Applied History Working Group. The` as a named project component with a traceable role in the public mechanism. Source context: Grounded in the Belfer Center Applied History Project, the Allison and Ferguson Applied History Manifesto, the Belfer.",
+      "input_fixture": "project source text and the named component `Hoover Applied History Working Group. The`",
+      "operation_under_test": "uses `Hoover Applied History Working Group. The` as a named project component with a traceable role in the public mechanism. Source context: Grounded in the Belfer Center Applied History Project, the Allison and Ferguson Applied History Manifesto, the Belfer.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Hoover Applied History Working Group. The`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "6bee219474a6b88008650a20",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/applied-history/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47441,
+            "sha256": "a4567b9ba9be66b757f896dc09cab1fdb102a020e49a45ba1c88ef15d969406c"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40629,
+            "sha256": "b6d3a8e5e52c36395b8554092184e0383794798e89c5887c06b81c2f1eae17ef"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21496,
+            "sha256": "672739b52d5af3a28c5ba2750cf5e91e6b67afa9cc93f11803456b1e8026249c"
+          },
+          {
+            "relative_path": "proof_builds/applied-history/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22633,
+            "sha256": "e85f6f5870be963434ab02da8fd2326be3ac642abd51e11debb8f94290a78cab"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49173,
+            "sha256": "db3c1e8d94b524d2c42a7c7a51edc73b905c330fef0df41a468c2c734cc905d4"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10973,
+            "sha256": "02528b5b39a38b6663adefc189815d643ed7b9d6c0f70f53fd7c3f2a5344d45e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/applied-history/blueprint.json",
+          "project_blueprints/applied-history/instrument_map.json",
+          "proof_builds/applied-history/proof_build.json",
+          "proof_demos/applied-history/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "806615a8e14a783a8b8974ed"
+    },
+    {
+      "receipt_id": "applied-history__receipt_0012",
+      "project_id": "applied-history",
+      "project_title": "Applied History — lab for using historical case study to inform contemporary policy",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Applied History — lab for using historical case study to inform contemporary policy / Belfer and Hoover. It",
+      "component_case_id": "applied-history__0012__applied-history-lab-for-using-historical-case-study-to-inform-contemporary-policy-belfer-a",
+      "claim_to_demonstrate": "uses `Belfer and Hoover. It` as a named project component with a traceable role in the public mechanism. Source context: the frameworks lens beneath them holds the scaffolding and the underlying source corpus from Belfer and Hoover. It connects.",
+      "input_fixture": "project source text and the named component `Belfer and Hoover. It`",
+      "operation_under_test": "uses `Belfer and Hoover. It` as a named project component with a traceable role in the public mechanism. Source context: the frameworks lens beneath them holds the scaffolding and the underlying source corpus from Belfer and Hoover. It connects.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Belfer and Hoover. It`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d3e28e2aa8905bc1b6004172",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/applied-history/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47441,
+            "sha256": "a4567b9ba9be66b757f896dc09cab1fdb102a020e49a45ba1c88ef15d969406c"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40629,
+            "sha256": "b6d3a8e5e52c36395b8554092184e0383794798e89c5887c06b81c2f1eae17ef"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21496,
+            "sha256": "672739b52d5af3a28c5ba2750cf5e91e6b67afa9cc93f11803456b1e8026249c"
+          },
+          {
+            "relative_path": "proof_builds/applied-history/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22633,
+            "sha256": "e85f6f5870be963434ab02da8fd2326be3ac642abd51e11debb8f94290a78cab"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49173,
+            "sha256": "db3c1e8d94b524d2c42a7c7a51edc73b905c330fef0df41a468c2c734cc905d4"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10973,
+            "sha256": "02528b5b39a38b6663adefc189815d643ed7b9d6c0f70f53fd7c3f2a5344d45e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/applied-history/blueprint.json",
+          "project_blueprints/applied-history/instrument_map.json",
+          "project_blueprints/applied-history/README.md",
+          "proof_builds/applied-history/proof_build.json",
+          "proof_demos/applied-history/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d41b83fa300ac8eb4c535db0"
+    },
+    {
+      "receipt_id": "applied-history__receipt_0013",
+      "project_id": "applied-history",
+      "project_title": "Applied History — lab for using historical case study to inform contemporary policy",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Applied History — lab for using historical case study to inform contemporary policy / Belfer and Hoover",
+      "component_case_id": "applied-history__0013__applied-history-lab-for-using-historical-case-study-to-inform-contemporary-policy-belfer-a",
+      "claim_to_demonstrate": "uses `Belfer and Hoover` as a named project component with a traceable role in the public mechanism. Source context: the frameworks lens beneath them holds the scaffolding and the underlying source corpus from Belfer and Hoover. It connects portfolio-native.",
+      "input_fixture": "project source text and the named component `Belfer and Hoover`",
+      "operation_under_test": "uses `Belfer and Hoover` as a named project component with a traceable role in the public mechanism. Source context: the frameworks lens beneath them holds the scaffolding and the underlying source corpus from Belfer and Hoover. It connects portfolio-native.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Belfer and Hoover`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d3e28e2aa8905bc1b6004172",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/applied-history/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47441,
+            "sha256": "a4567b9ba9be66b757f896dc09cab1fdb102a020e49a45ba1c88ef15d969406c"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40629,
+            "sha256": "b6d3a8e5e52c36395b8554092184e0383794798e89c5887c06b81c2f1eae17ef"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21496,
+            "sha256": "672739b52d5af3a28c5ba2750cf5e91e6b67afa9cc93f11803456b1e8026249c"
+          },
+          {
+            "relative_path": "proof_builds/applied-history/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22633,
+            "sha256": "e85f6f5870be963434ab02da8fd2326be3ac642abd51e11debb8f94290a78cab"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49173,
+            "sha256": "db3c1e8d94b524d2c42a7c7a51edc73b905c330fef0df41a468c2c734cc905d4"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10973,
+            "sha256": "02528b5b39a38b6663adefc189815d643ed7b9d6c0f70f53fd7c3f2a5344d45e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/applied-history/blueprint.json",
+          "project_blueprints/applied-history/instrument_map.json",
+          "project_blueprints/applied-history/README.md",
+          "proof_builds/applied-history/proof_build.json",
+          "proof_demos/applied-history/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "620186d4409c398bb693e9c1"
+    },
+    {
+      "receipt_id": "applied-history__receipt_0014",
+      "project_id": "applied-history",
+      "project_title": "Applied History — lab for using historical case study to inform contemporary policy",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Applied History — lab for using historical case study to inform contemporary policy / the Belfer / Allison",
+      "component_case_id": "applied-history__0014__applied-history-lab-for-using-historical-case-study-to-inform-contemporary-policy-the-belf",
+      "claim_to_demonstrate": "uses `the Belfer / Allison` as a named project component with a traceable role in the public mechanism. Source context: The lab's public surface uses a cream-and-parchment editorial palette with the Belfer / Allison-Ferguson / Hoover source list visible on.",
+      "input_fixture": "project source text and the named component `the Belfer / Allison`",
+      "operation_under_test": "uses `the Belfer / Allison` as a named project component with a traceable role in the public mechanism. Source context: The lab's public surface uses a cream-and-parchment editorial palette with the Belfer / Allison-Ferguson / Hoover source list visible on.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `the Belfer / Allison`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8100ec8a2ad8bcf769175716",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/applied-history/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47441,
+            "sha256": "a4567b9ba9be66b757f896dc09cab1fdb102a020e49a45ba1c88ef15d969406c"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40629,
+            "sha256": "b6d3a8e5e52c36395b8554092184e0383794798e89c5887c06b81c2f1eae17ef"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21496,
+            "sha256": "672739b52d5af3a28c5ba2750cf5e91e6b67afa9cc93f11803456b1e8026249c"
+          },
+          {
+            "relative_path": "proof_builds/applied-history/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22633,
+            "sha256": "e85f6f5870be963434ab02da8fd2326be3ac642abd51e11debb8f94290a78cab"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49173,
+            "sha256": "db3c1e8d94b524d2c42a7c7a51edc73b905c330fef0df41a468c2c734cc905d4"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10973,
+            "sha256": "02528b5b39a38b6663adefc189815d643ed7b9d6c0f70f53fd7c3f2a5344d45e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/applied-history/blueprint.json",
+          "project_blueprints/applied-history/instrument_map.json",
+          "project_blueprints/applied-history/README.md",
+          "proof_builds/applied-history/proof_build.json",
+          "proof_demos/applied-history/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1b99cff29cca1c1a818cb42c"
+    },
+    {
+      "receipt_id": "applied-history__receipt_0015",
+      "project_id": "applied-history",
+      "project_title": "Applied History — lab for using historical case study to inform contemporary policy",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Applied History — lab for using historical case study to inform contemporary policy / Study Depth",
+      "component_case_id": "applied-history__0015__applied-history-lab-for-using-historical-case-study-to-inform-contemporary-policy-study-de",
+      "claim_to_demonstrate": "uses `Study Depth` as a named project component with a traceable role in the public mechanism. Source context: Build case-study depth — each new case worked under the methodology with its source documentation visible — and bind the framework references to.",
+      "input_fixture": "project source text and the named component `Study Depth`",
+      "operation_under_test": "uses `Study Depth` as a named project component with a traceable role in the public mechanism. Source context: Build case-study depth — each new case worked under the methodology with its source documentation visible — and bind the framework references to.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Study Depth`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4aede2aca68e5fee246b42ae",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/applied-history/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47441,
+            "sha256": "a4567b9ba9be66b757f896dc09cab1fdb102a020e49a45ba1c88ef15d969406c"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40629,
+            "sha256": "b6d3a8e5e52c36395b8554092184e0383794798e89c5887c06b81c2f1eae17ef"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21496,
+            "sha256": "672739b52d5af3a28c5ba2750cf5e91e6b67afa9cc93f11803456b1e8026249c"
+          },
+          {
+            "relative_path": "proof_builds/applied-history/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22633,
+            "sha256": "e85f6f5870be963434ab02da8fd2326be3ac642abd51e11debb8f94290a78cab"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49173,
+            "sha256": "db3c1e8d94b524d2c42a7c7a51edc73b905c330fef0df41a468c2c734cc905d4"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10973,
+            "sha256": "02528b5b39a38b6663adefc189815d643ed7b9d6c0f70f53fd7c3f2a5344d45e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/applied-history/blueprint.json",
+          "project_blueprints/applied-history/instrument_map.json",
+          "project_blueprints/applied-history/README.md",
+          "proof_builds/applied-history/proof_build.json",
+          "proof_demos/applied-history/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b2718cbcad848078d831c1eb"
+    },
+    {
+      "receipt_id": "applied-history__receipt_0016",
+      "project_id": "applied-history",
+      "project_title": "Applied History — lab for using historical case study to inform contemporary policy",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Applied History — lab for using historical case study to inform contemporary policy / Each New Case Worked Under The Methodology With Its Source Documentation Visible",
+      "component_case_id": "applied-history__0016__applied-history-lab-for-using-historical-case-study-to-inform-contemporary-policy-each-new",
+      "claim_to_demonstrate": "uses `Each New Case Worked Under The Methodology With Its Source Documentation Visible` as a named project component with a traceable role in the public mechanism. Source context: Build case-study depth — each new case worked under the methodology with its.",
+      "input_fixture": "project source text and the named component `Each New Case Worked Under The Methodology With Its Source Documentation Visible`",
+      "operation_under_test": "uses `Each New Case Worked Under The Methodology With Its Source Documentation Visible` as a named project component with a traceable role in the public mechanism. Source context: Build case-study depth — each new case worked under the methodology with its.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Each New Case Worked Under The Methodology With Its Source Documentation Visible`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4aede2aca68e5fee246b42ae",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/applied-history/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47441,
+            "sha256": "a4567b9ba9be66b757f896dc09cab1fdb102a020e49a45ba1c88ef15d969406c"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40629,
+            "sha256": "b6d3a8e5e52c36395b8554092184e0383794798e89c5887c06b81c2f1eae17ef"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21496,
+            "sha256": "672739b52d5af3a28c5ba2750cf5e91e6b67afa9cc93f11803456b1e8026249c"
+          },
+          {
+            "relative_path": "proof_builds/applied-history/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22633,
+            "sha256": "e85f6f5870be963434ab02da8fd2326be3ac642abd51e11debb8f94290a78cab"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49173,
+            "sha256": "db3c1e8d94b524d2c42a7c7a51edc73b905c330fef0df41a468c2c734cc905d4"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10973,
+            "sha256": "02528b5b39a38b6663adefc189815d643ed7b9d6c0f70f53fd7c3f2a5344d45e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/applied-history/blueprint.json",
+          "project_blueprints/applied-history/instrument_map.json",
+          "proof_builds/applied-history/proof_build.json",
+          "proof_demos/applied-history/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "fe2adb4b24430aaf35ddd1b2"
+    },
+    {
+      "receipt_id": "applied-history__receipt_0017",
+      "project_id": "applied-history",
+      "project_title": "Applied History — lab for using historical case study to inform contemporary policy",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Applied History — lab for using historical case study to inform contemporary policy / The Lab Develops Alongside The Contemporary Analytical Pages",
+      "component_case_id": "applied-history__0017__applied-history-lab-for-using-historical-case-study-to-inform-contemporary-policy-the-lab-",
+      "claim_to_demonstrate": "treats `The Lab Develops Alongside The Contemporary Analytical Pages` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Long-term, the lab develops alongside the contemporary.",
+      "input_fixture": "project source text and the named component `The Lab Develops Alongside The Contemporary Analytical Pages`",
+      "operation_under_test": "treats `The Lab Develops Alongside The Contemporary Analytical Pages` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Long-term, the lab develops alongside the contemporary.",
+      "expected_output": "a room, workbench, or interface function tied to `The Lab Develops Alongside The Contemporary Analytical Pages`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "90379505d0116d9bb550f483",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/applied-history/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47441,
+            "sha256": "a4567b9ba9be66b757f896dc09cab1fdb102a020e49a45ba1c88ef15d969406c"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 40629,
+            "sha256": "b6d3a8e5e52c36395b8554092184e0383794798e89c5887c06b81c2f1eae17ef"
+          },
+          {
+            "relative_path": "project_blueprints/applied-history/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21496,
+            "sha256": "672739b52d5af3a28c5ba2750cf5e91e6b67afa9cc93f11803456b1e8026249c"
+          },
+          {
+            "relative_path": "proof_builds/applied-history/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22633,
+            "sha256": "e85f6f5870be963434ab02da8fd2326be3ac642abd51e11debb8f94290a78cab"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49173,
+            "sha256": "db3c1e8d94b524d2c42a7c7a51edc73b905c330fef0df41a468c2c734cc905d4"
+          },
+          {
+            "relative_path": "proof_demos/applied-history/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10973,
+            "sha256": "02528b5b39a38b6663adefc189815d643ed7b9d6c0f70f53fd7c3f2a5344d45e"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/applied-history/blueprint.json",
+          "project_blueprints/applied-history/instrument_map.json",
+          "proof_builds/applied-history/proof_build.json",
+          "proof_demos/applied-history/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "079e6878d0224abb9535c060"
+    }
+  ]
+}

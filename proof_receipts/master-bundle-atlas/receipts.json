@@ -1,0 +1,1470 @@
+{
+  "project": {
+    "project_id": "master-bundle-atlas",
+    "title": "Master Bundle Atlas"
+  },
+  "receipts": [
+    {
+      "receipt_id": "master-bundle-atlas__receipt_0001",
+      "project_id": "master-bundle-atlas",
+      "project_title": "Master Bundle Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Atlas - 152 source and handoff packets Artifact Identity Register",
+      "component_case_id": "master-bundle-atlas__0001__master-bundle-atlas-152-source-and-handoff-packets-artifact-identity-register",
+      "claim_to_demonstrate": "Master Bundle Atlas is an evidence-governed catalogue for 152 source, handoff, and project packets.",
+      "input_fixture": "packet name, source files, version signal, scope, and intended destination",
+      "operation_under_test": "Master Bundle Atlas is an evidence-governed catalogue for 152 source, handoff, and project packets.",
+      "expected_output": "what the packet is and what decision it can still change",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0fdf86a6d1416d594a048c5f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41354,
+            "sha256": "0f04d337d65a127157e806be77354ad33576af1e4f5f8f4fa55e3f6090e575a3"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35185,
+            "sha256": "e4c634f4aa87c5309793b498b2788cf5d3e7ba1d40b62963d43ce16d03813660"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19992,
+            "sha256": "3cfa1f16e514e2217c491879e8fcad0d03e5f6c2d5dc06465d32e6ba97890e34"
+          },
+          {
+            "relative_path": "proof_builds/master-bundle-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21023,
+            "sha256": "83533ab5abdc9b996acf2d9a8334bd76fa13437b14a59f6a816f485cd24725a1"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45606,
+            "sha256": "b7d37d179188c99bc63224cfd98a772746a3dda6d1c4fef13440150697d8cda6"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10645,
+            "sha256": "84b74208f470d4962da6d221e0738cb9ac39552e547ae4b5d80c77fa5415e3a4"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/master-bundle-atlas/blueprint.json",
+          "project_blueprints/master-bundle-atlas/instrument_map.json",
+          "project_blueprints/master-bundle-atlas/README.md",
+          "proof_builds/master-bundle-atlas/proof_build.json",
+          "proof_demos/master-bundle-atlas/demo_cases.json",
+          "proof_demos/master-bundle-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f8260a0b49be36f80b722a05"
+    },
+    {
+      "receipt_id": "master-bundle-atlas__receipt_0002",
+      "project_id": "master-bundle-atlas",
+      "project_title": "Master Bundle Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Atlas - 152 source and handoff packets Extraction And Manifest Layer",
+      "component_case_id": "master-bundle-atlas__0002__master-bundle-atlas-152-source-and-handoff-packets-extraction-and-manifest-layer",
+      "claim_to_demonstrate": "Source authority comes from the per-ZIP expert briefings, archive-entry registry, decoded text-bearing manifest, and portfolio-presence checks. These sources establish artifact existence, evidence state, family, intended use, and claim limit. They do not.",
+      "input_fixture": "files, tables, text, screenshots, source notes, and provenance markers",
+      "operation_under_test": "Source authority comes from the per-ZIP expert briefings, archive-entry registry, decoded text-bearing manifest, and portfolio-presence checks. These sources establish artifact existence, evidence state, family, intended use, and claim limit. They do not.",
+      "expected_output": "what can be safely mined from the packet as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d4064f8284d42db167c077d8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41354,
+            "sha256": "0f04d337d65a127157e806be77354ad33576af1e4f5f8f4fa55e3f6090e575a3"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35185,
+            "sha256": "e4c634f4aa87c5309793b498b2788cf5d3e7ba1d40b62963d43ce16d03813660"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19992,
+            "sha256": "3cfa1f16e514e2217c491879e8fcad0d03e5f6c2d5dc06465d32e6ba97890e34"
+          },
+          {
+            "relative_path": "proof_builds/master-bundle-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21023,
+            "sha256": "83533ab5abdc9b996acf2d9a8334bd76fa13437b14a59f6a816f485cd24725a1"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45606,
+            "sha256": "b7d37d179188c99bc63224cfd98a772746a3dda6d1c4fef13440150697d8cda6"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10645,
+            "sha256": "84b74208f470d4962da6d221e0738cb9ac39552e547ae4b5d80c77fa5415e3a4"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/master-bundle-atlas/blueprint.json",
+          "project_blueprints/master-bundle-atlas/instrument_map.json",
+          "project_blueprints/master-bundle-atlas/README.md",
+          "proof_builds/master-bundle-atlas/proof_build.json",
+          "proof_demos/master-bundle-atlas/demo_cases.json",
+          "proof_demos/master-bundle-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8d50cca5fad32b94c5111e93"
+    },
+    {
+      "receipt_id": "master-bundle-atlas__receipt_0003",
+      "project_id": "master-bundle-atlas",
+      "project_title": "Master Bundle Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Atlas - 152 source and handoff packets Mechanism Or Claim Distillation",
+      "component_case_id": "master-bundle-atlas__0003__master-bundle-atlas-152-source-and-handoff-packets-mechanism-or-claim-distillation",
+      "claim_to_demonstrate": "It routes each packet through artifact identity, evidence state, public claim boundary, portfolio role, and next action so a packet becomes a feature page, source substrate, implementation backlog, private support layer, or archive for stated reasons.",
+      "input_fixture": "the packet's central method, model, concept, or design rule",
+      "operation_under_test": "It routes each packet through artifact identity, evidence state, public claim boundary, portfolio role, and next action so a packet becomes a feature page, source substrate, implementation backlog, private support layer, or archive for stated reasons.",
+      "expected_output": "the distinctive idea that should not disappear in public summary",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "23247414e5c922324046d909",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41354,
+            "sha256": "0f04d337d65a127157e806be77354ad33576af1e4f5f8f4fa55e3f6090e575a3"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35185,
+            "sha256": "e4c634f4aa87c5309793b498b2788cf5d3e7ba1d40b62963d43ce16d03813660"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19992,
+            "sha256": "3cfa1f16e514e2217c491879e8fcad0d03e5f6c2d5dc06465d32e6ba97890e34"
+          },
+          {
+            "relative_path": "proof_builds/master-bundle-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21023,
+            "sha256": "83533ab5abdc9b996acf2d9a8334bd76fa13437b14a59f6a816f485cd24725a1"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45606,
+            "sha256": "b7d37d179188c99bc63224cfd98a772746a3dda6d1c4fef13440150697d8cda6"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10645,
+            "sha256": "84b74208f470d4962da6d221e0738cb9ac39552e547ae4b5d80c77fa5415e3a4"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/master-bundle-atlas/blueprint.json",
+          "project_blueprints/master-bundle-atlas/instrument_map.json",
+          "project_blueprints/master-bundle-atlas/README.md",
+          "proof_builds/master-bundle-atlas/proof_build.json",
+          "proof_demos/master-bundle-atlas/demo_cases.json",
+          "proof_demos/master-bundle-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "fb143a7dd2fd9d361775194f"
+    },
+    {
+      "receipt_id": "master-bundle-atlas__receipt_0004",
+      "project_id": "master-bundle-atlas",
+      "project_title": "Master Bundle Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Atlas - 152 source and handoff packets Proof Boundary",
+      "component_case_id": "master-bundle-atlas__0004__master-bundle-atlas-152-source-and-handoff-packets-proof-boundary",
+      "claim_to_demonstrate": "Verified structural coverage: 152 Master Bundle ZIPs observed; 152 per-ZIP expert briefings found; 0 missing briefings; 5,941 archive entries indexed; 4,447 text-bearing entries decoded; 0 extraction failures. The atlas page preserves the 152 briefing records.",
+      "input_fixture": "built assets, partial assets, archive-only assets, and unsupported claims",
+      "operation_under_test": "Verified structural coverage: 152 Master Bundle ZIPs observed; 152 per-ZIP expert briefings found; 0 missing briefings; 5,941 archive entries indexed; 4,447 text-bearing entries decoded; 0 extraction failures. The atlas page preserves the 152 briefing records.",
+      "expected_output": "what the packet proves now as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3f75a54cf5b9a997a4e640e7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41354,
+            "sha256": "0f04d337d65a127157e806be77354ad33576af1e4f5f8f4fa55e3f6090e575a3"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35185,
+            "sha256": "e4c634f4aa87c5309793b498b2788cf5d3e7ba1d40b62963d43ce16d03813660"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19992,
+            "sha256": "3cfa1f16e514e2217c491879e8fcad0d03e5f6c2d5dc06465d32e6ba97890e34"
+          },
+          {
+            "relative_path": "proof_builds/master-bundle-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21023,
+            "sha256": "83533ab5abdc9b996acf2d9a8334bd76fa13437b14a59f6a816f485cd24725a1"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45606,
+            "sha256": "b7d37d179188c99bc63224cfd98a772746a3dda6d1c4fef13440150697d8cda6"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10645,
+            "sha256": "84b74208f470d4962da6d221e0738cb9ac39552e547ae4b5d80c77fa5415e3a4"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/master-bundle-atlas/blueprint.json",
+          "project_blueprints/master-bundle-atlas/instrument_map.json",
+          "project_blueprints/master-bundle-atlas/README.md",
+          "proof_builds/master-bundle-atlas/proof_build.json",
+          "proof_demos/master-bundle-atlas/demo_cases.json",
+          "proof_demos/master-bundle-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "bc45b08b6b2278c1d8907007"
+    },
+    {
+      "receipt_id": "master-bundle-atlas__receipt_0005",
+      "project_id": "master-bundle-atlas",
+      "project_title": "Master Bundle Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Atlas - 152 source and handoff packets Promotion Route",
+      "component_case_id": "master-bundle-atlas__0005__master-bundle-atlas-152-source-and-handoff-packets-promotion-route",
+      "claim_to_demonstrate": "Use the atlas to promote packets responsibly: first classify by evidence state, then route to feature page, source substrate, implementation backlog, private support, or archive; finally bind any stronger public claim to a named live file, route, source.",
+      "input_fixture": "website room, MuranoOS room, Nexus task, paper, source bank, or archive",
+      "operation_under_test": "Use the atlas to promote packets responsibly: first classify by evidence state, then route to feature page, source substrate, implementation backlog, private support, or archive; finally bind any stronger public claim to a named live file, route, source.",
+      "expected_output": "where the packet should go next as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e05552ce50ffd3271b5a69f7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41354,
+            "sha256": "0f04d337d65a127157e806be77354ad33576af1e4f5f8f4fa55e3f6090e575a3"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35185,
+            "sha256": "e4c634f4aa87c5309793b498b2788cf5d3e7ba1d40b62963d43ce16d03813660"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19992,
+            "sha256": "3cfa1f16e514e2217c491879e8fcad0d03e5f6c2d5dc06465d32e6ba97890e34"
+          },
+          {
+            "relative_path": "proof_builds/master-bundle-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21023,
+            "sha256": "83533ab5abdc9b996acf2d9a8334bd76fa13437b14a59f6a816f485cd24725a1"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45606,
+            "sha256": "b7d37d179188c99bc63224cfd98a772746a3dda6d1c4fef13440150697d8cda6"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10645,
+            "sha256": "84b74208f470d4962da6d221e0738cb9ac39552e547ae4b5d80c77fa5415e3a4"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/master-bundle-atlas/blueprint.json",
+          "project_blueprints/master-bundle-atlas/instrument_map.json",
+          "project_blueprints/master-bundle-atlas/README.md",
+          "proof_builds/master-bundle-atlas/proof_build.json",
+          "proof_demos/master-bundle-atlas/demo_cases.json",
+          "proof_demos/master-bundle-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a19f98e17afc9eae22acde16"
+    },
+    {
+      "receipt_id": "master-bundle-atlas__receipt_0006",
+      "project_id": "master-bundle-atlas",
+      "project_title": "Master Bundle Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Atlas - 152 source and handoff packets Current Authority State",
+      "component_case_id": "master-bundle-atlas__0006__master-bundle-atlas-152-source-and-handoff-packets-current-authority-state",
+      "claim_to_demonstrate": "Status: the Master Bundle is structurally audited and navigable in the professional package. It proves an organized 152-packet archive with full briefing coverage, not 152 deployed products.",
+      "input_fixture": "canonical, superseded, derivative, draft, or context-only status",
+      "operation_under_test": "Status: the Master Bundle is structurally audited and navigable in the professional package. It proves an organized 152-packet archive with full briefing coverage, not 152 deployed products.",
+      "expected_output": "how strongly the packet may govern a public page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4bf580d68c94f0235cd07355",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41354,
+            "sha256": "0f04d337d65a127157e806be77354ad33576af1e4f5f8f4fa55e3f6090e575a3"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35185,
+            "sha256": "e4c634f4aa87c5309793b498b2788cf5d3e7ba1d40b62963d43ce16d03813660"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19992,
+            "sha256": "3cfa1f16e514e2217c491879e8fcad0d03e5f6c2d5dc06465d32e6ba97890e34"
+          },
+          {
+            "relative_path": "proof_builds/master-bundle-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21023,
+            "sha256": "83533ab5abdc9b996acf2d9a8334bd76fa13437b14a59f6a816f485cd24725a1"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45606,
+            "sha256": "b7d37d179188c99bc63224cfd98a772746a3dda6d1c4fef13440150697d8cda6"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10645,
+            "sha256": "84b74208f470d4962da6d221e0738cb9ac39552e547ae4b5d80c77fa5415e3a4"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/master-bundle-atlas/blueprint.json",
+          "project_blueprints/master-bundle-atlas/instrument_map.json",
+          "project_blueprints/master-bundle-atlas/README.md",
+          "proof_builds/master-bundle-atlas/proof_build.json",
+          "proof_demos/master-bundle-atlas/demo_cases.json",
+          "proof_demos/master-bundle-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5bcb8b4038f893083555ef60"
+    },
+    {
+      "receipt_id": "master-bundle-atlas__receipt_0007",
+      "project_id": "master-bundle-atlas",
+      "project_title": "Master Bundle Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Atlas - 152 source and handoff packets Gap And Reconciliation Queue",
+      "component_case_id": "master-bundle-atlas__0007__master-bundle-atlas-152-source-and-handoff-packets-gap-and-reconciliation-queue",
+      "claim_to_demonstrate": "Remaining gaps: individual packet cards still need page-by-page promotion decisions; older intention-track filters should eventually be reconciled to the evidence-state taxonomy; public feature pages must cite implementation surfaces before any packet is.",
+      "input_fixture": "missing source reads, duplicate resolution, version adjudication, or implementation work",
+      "operation_under_test": "Remaining gaps: individual packet cards still need page-by-page promotion decisions; older intention-track filters should eventually be reconciled to the evidence-state taxonomy; public feature pages must cite implementation surfaces before any packet is.",
+      "expected_output": "next step before stronger public use as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d860491541934d3d70c14bc6",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41354,
+            "sha256": "0f04d337d65a127157e806be77354ad33576af1e4f5f8f4fa55e3f6090e575a3"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35185,
+            "sha256": "e4c634f4aa87c5309793b498b2788cf5d3e7ba1d40b62963d43ce16d03813660"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19992,
+            "sha256": "3cfa1f16e514e2217c491879e8fcad0d03e5f6c2d5dc06465d32e6ba97890e34"
+          },
+          {
+            "relative_path": "proof_builds/master-bundle-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21023,
+            "sha256": "83533ab5abdc9b996acf2d9a8334bd76fa13437b14a59f6a816f485cd24725a1"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45606,
+            "sha256": "b7d37d179188c99bc63224cfd98a772746a3dda6d1c4fef13440150697d8cda6"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10645,
+            "sha256": "84b74208f470d4962da6d221e0738cb9ac39552e547ae4b5d80c77fa5415e3a4"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/master-bundle-atlas/blueprint.json",
+          "project_blueprints/master-bundle-atlas/instrument_map.json",
+          "project_blueprints/master-bundle-atlas/README.md",
+          "proof_builds/master-bundle-atlas/proof_build.json",
+          "proof_demos/master-bundle-atlas/demo_cases.json",
+          "proof_demos/master-bundle-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ba707e58bb7a1a98943b7aba"
+    },
+    {
+      "receipt_id": "master-bundle-atlas__receipt_0008",
+      "project_id": "master-bundle-atlas",
+      "project_title": "Master Bundle Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Atlas - 152 source and handoff packets / 152 Master Bundle ZIPs",
+      "component_case_id": "master-bundle-atlas__0008__master-bundle-atlas-152-source-and-handoff-packets-152-master-bundle-zips",
+      "claim_to_demonstrate": "uses `152 Master Bundle ZIPs` to preserve, extract, or route source material before the project raises stronger public claims. Source context: The atlas is grounded in the observed Master Bundle ZIP set and treats each ZIP as a candidate source packet.",
+      "input_fixture": "project source text and the named component `152 Master Bundle ZIPs`",
+      "operation_under_test": "uses `152 Master Bundle ZIPs` to preserve, extract, or route source material before the project raises stronger public claims. Source context: The atlas is grounded in the observed Master Bundle ZIP set and treats each ZIP as a candidate source packet.",
+      "expected_output": "a source-control or extraction decision tied to `152 Master Bundle ZIPs`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "bc5b52a24bf82eddf61aae0b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41354,
+            "sha256": "0f04d337d65a127157e806be77354ad33576af1e4f5f8f4fa55e3f6090e575a3"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35185,
+            "sha256": "e4c634f4aa87c5309793b498b2788cf5d3e7ba1d40b62963d43ce16d03813660"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19992,
+            "sha256": "3cfa1f16e514e2217c491879e8fcad0d03e5f6c2d5dc06465d32e6ba97890e34"
+          },
+          {
+            "relative_path": "proof_builds/master-bundle-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21023,
+            "sha256": "83533ab5abdc9b996acf2d9a8334bd76fa13437b14a59f6a816f485cd24725a1"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45606,
+            "sha256": "b7d37d179188c99bc63224cfd98a772746a3dda6d1c4fef13440150697d8cda6"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10645,
+            "sha256": "84b74208f470d4962da6d221e0738cb9ac39552e547ae4b5d80c77fa5415e3a4"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/master-bundle-atlas/blueprint.json",
+          "project_blueprints/master-bundle-atlas/instrument_map.json",
+          "project_blueprints/master-bundle-atlas/README.md",
+          "proof_builds/master-bundle-atlas/proof_build.json",
+          "proof_demos/master-bundle-atlas/demo_cases.json",
+          "proof_demos/master-bundle-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d6b0c9b5fa046dc63ae0d0de"
+    },
+    {
+      "receipt_id": "master-bundle-atlas__receipt_0009",
+      "project_id": "master-bundle-atlas",
+      "project_title": "Master Bundle Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Atlas - 152 source and handoff packets / Per-ZIP Expert Briefings",
+      "component_case_id": "master-bundle-atlas__0009__master-bundle-atlas-152-source-and-handoff-packets-per-zip-expert-briefings",
+      "claim_to_demonstrate": "uses `Per-ZIP Expert Briefings` as a named project component with a traceable role in the public mechanism. Source context: The atlas uses one briefing per ZIP to explain artifact identity, intended function, evidence state, portfolio role, and next action.",
+      "input_fixture": "project source text and the named component `Per-ZIP Expert Briefings`",
+      "operation_under_test": "uses `Per-ZIP Expert Briefings` as a named project component with a traceable role in the public mechanism. Source context: The atlas uses one briefing per ZIP to explain artifact identity, intended function, evidence state, portfolio role, and next action.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Per-ZIP Expert Briefings`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "1f7d26f481549714d6d60d45",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41354,
+            "sha256": "0f04d337d65a127157e806be77354ad33576af1e4f5f8f4fa55e3f6090e575a3"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35185,
+            "sha256": "e4c634f4aa87c5309793b498b2788cf5d3e7ba1d40b62963d43ce16d03813660"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19992,
+            "sha256": "3cfa1f16e514e2217c491879e8fcad0d03e5f6c2d5dc06465d32e6ba97890e34"
+          },
+          {
+            "relative_path": "proof_builds/master-bundle-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21023,
+            "sha256": "83533ab5abdc9b996acf2d9a8334bd76fa13437b14a59f6a816f485cd24725a1"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45606,
+            "sha256": "b7d37d179188c99bc63224cfd98a772746a3dda6d1c4fef13440150697d8cda6"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10645,
+            "sha256": "84b74208f470d4962da6d221e0738cb9ac39552e547ae4b5d80c77fa5415e3a4"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/master-bundle-atlas/blueprint.json",
+          "project_blueprints/master-bundle-atlas/instrument_map.json",
+          "project_blueprints/master-bundle-atlas/README.md",
+          "proof_builds/master-bundle-atlas/proof_build.json",
+          "proof_demos/master-bundle-atlas/demo_cases.json",
+          "proof_demos/master-bundle-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b57a4995ec4b5a32bf469508"
+    },
+    {
+      "receipt_id": "master-bundle-atlas__receipt_0010",
+      "project_id": "master-bundle-atlas",
+      "project_title": "Master Bundle Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Atlas - 152 source and handoff packets / Archive Entry Registry",
+      "component_case_id": "master-bundle-atlas__0010__master-bundle-atlas-152-source-and-handoff-packets-archive-entry-registry",
+      "claim_to_demonstrate": "uses `Archive Entry Registry` as a named project component with a traceable role in the public mechanism. Source context: The archive-entry registry records what is inside the ZIPs before any public claim is raised from package title to project substance.",
+      "input_fixture": "project source text and the named component `Archive Entry Registry`",
+      "operation_under_test": "uses `Archive Entry Registry` as a named project component with a traceable role in the public mechanism. Source context: The archive-entry registry records what is inside the ZIPs before any public claim is raised from package title to project substance.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Archive Entry Registry`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "6116262ab6f5decd2d1121d4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41354,
+            "sha256": "0f04d337d65a127157e806be77354ad33576af1e4f5f8f4fa55e3f6090e575a3"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35185,
+            "sha256": "e4c634f4aa87c5309793b498b2788cf5d3e7ba1d40b62963d43ce16d03813660"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19992,
+            "sha256": "3cfa1f16e514e2217c491879e8fcad0d03e5f6c2d5dc06465d32e6ba97890e34"
+          },
+          {
+            "relative_path": "proof_builds/master-bundle-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21023,
+            "sha256": "83533ab5abdc9b996acf2d9a8334bd76fa13437b14a59f6a816f485cd24725a1"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45606,
+            "sha256": "b7d37d179188c99bc63224cfd98a772746a3dda6d1c4fef13440150697d8cda6"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10645,
+            "sha256": "84b74208f470d4962da6d221e0738cb9ac39552e547ae4b5d80c77fa5415e3a4"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/master-bundle-atlas/blueprint.json",
+          "project_blueprints/master-bundle-atlas/instrument_map.json",
+          "project_blueprints/master-bundle-atlas/README.md",
+          "proof_builds/master-bundle-atlas/proof_build.json",
+          "proof_demos/master-bundle-atlas/demo_cases.json",
+          "proof_demos/master-bundle-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4b227a62583fc64fb27eeea5"
+    },
+    {
+      "receipt_id": "master-bundle-atlas__receipt_0011",
+      "project_id": "master-bundle-atlas",
+      "project_title": "Master Bundle Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Atlas - 152 source and handoff packets / Text-Bearing Manifest",
+      "component_case_id": "master-bundle-atlas__0011__master-bundle-atlas-152-source-and-handoff-packets-text-bearing-manifest",
+      "claim_to_demonstrate": "uses `Text-Bearing Manifest` to preserve, extract, or route source material before the project raises stronger public claims. Source context: Decoded text-bearing entries are used to separate evidence, source substrate, implementation hints, and archive.",
+      "input_fixture": "project source text and the named component `Text-Bearing Manifest`",
+      "operation_under_test": "uses `Text-Bearing Manifest` to preserve, extract, or route source material before the project raises stronger public claims. Source context: Decoded text-bearing entries are used to separate evidence, source substrate, implementation hints, and archive.",
+      "expected_output": "a source-control or extraction decision tied to `Text-Bearing Manifest`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "95fdce579cb0b52f7a7c9db6",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41354,
+            "sha256": "0f04d337d65a127157e806be77354ad33576af1e4f5f8f4fa55e3f6090e575a3"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35185,
+            "sha256": "e4c634f4aa87c5309793b498b2788cf5d3e7ba1d40b62963d43ce16d03813660"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19992,
+            "sha256": "3cfa1f16e514e2217c491879e8fcad0d03e5f6c2d5dc06465d32e6ba97890e34"
+          },
+          {
+            "relative_path": "proof_builds/master-bundle-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21023,
+            "sha256": "83533ab5abdc9b996acf2d9a8334bd76fa13437b14a59f6a816f485cd24725a1"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45606,
+            "sha256": "b7d37d179188c99bc63224cfd98a772746a3dda6d1c4fef13440150697d8cda6"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10645,
+            "sha256": "84b74208f470d4962da6d221e0738cb9ac39552e547ae4b5d80c77fa5415e3a4"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/master-bundle-atlas/blueprint.json",
+          "project_blueprints/master-bundle-atlas/instrument_map.json",
+          "project_blueprints/master-bundle-atlas/README.md",
+          "proof_builds/master-bundle-atlas/proof_build.json",
+          "proof_demos/master-bundle-atlas/demo_cases.json",
+          "proof_demos/master-bundle-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f04ce3a08994d810620b7113"
+    },
+    {
+      "receipt_id": "master-bundle-atlas__receipt_0012",
+      "project_id": "master-bundle-atlas",
+      "project_title": "Master Bundle Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Atlas - 152 source and handoff packets / Evidence-State Classifier",
+      "component_case_id": "master-bundle-atlas__0012__master-bundle-atlas-152-source-and-handoff-packets-evidence-state-classifier",
+      "claim_to_demonstrate": "uses `Evidence-State Classifier` to decide what the project may claim publicly, where it should go next, or why it should remain retained rather than promoted. Source context: The atlas classifies whether a packet is a completed authority layer, prototype.",
+      "input_fixture": "project source text and the named component `Evidence-State Classifier`",
+      "operation_under_test": "uses `Evidence-State Classifier` to decide what the project may claim publicly, where it should go next, or why it should remain retained rather than promoted. Source context: The atlas classifies whether a packet is a completed authority layer, prototype.",
+      "expected_output": "a public-claim or promotion decision tied to `Evidence-State Classifier`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3f07d5c703c40f8e05aded3c",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41354,
+            "sha256": "0f04d337d65a127157e806be77354ad33576af1e4f5f8f4fa55e3f6090e575a3"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35185,
+            "sha256": "e4c634f4aa87c5309793b498b2788cf5d3e7ba1d40b62963d43ce16d03813660"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19992,
+            "sha256": "3cfa1f16e514e2217c491879e8fcad0d03e5f6c2d5dc06465d32e6ba97890e34"
+          },
+          {
+            "relative_path": "proof_builds/master-bundle-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21023,
+            "sha256": "83533ab5abdc9b996acf2d9a8334bd76fa13437b14a59f6a816f485cd24725a1"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45606,
+            "sha256": "b7d37d179188c99bc63224cfd98a772746a3dda6d1c4fef13440150697d8cda6"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10645,
+            "sha256": "84b74208f470d4962da6d221e0738cb9ac39552e547ae4b5d80c77fa5415e3a4"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/master-bundle-atlas/blueprint.json",
+          "project_blueprints/master-bundle-atlas/instrument_map.json",
+          "project_blueprints/master-bundle-atlas/README.md",
+          "proof_builds/master-bundle-atlas/proof_build.json",
+          "proof_demos/master-bundle-atlas/demo_cases.json",
+          "proof_demos/master-bundle-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "cd1ac31f7b00622ec38087c7"
+    },
+    {
+      "receipt_id": "master-bundle-atlas__receipt_0013",
+      "project_id": "master-bundle-atlas",
+      "project_title": "Master Bundle Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Atlas - 152 source and handoff packets / Public Claim Boundary",
+      "component_case_id": "master-bundle-atlas__0013__master-bundle-atlas-152-source-and-handoff-packets-public-claim-boundary",
+      "claim_to_demonstrate": "uses `Public Claim Boundary` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: The public page must not treat archive coverage as product completion; every stronger claim needs a named file, route.",
+      "input_fixture": "project source text and the named component `Public Claim Boundary`",
+      "operation_under_test": "uses `Public Claim Boundary` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: The public page must not treat archive coverage as product completion; every stronger claim needs a named file, route.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `Public Claim Boundary`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c800060da222174ca8b6b227",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41354,
+            "sha256": "0f04d337d65a127157e806be77354ad33576af1e4f5f8f4fa55e3f6090e575a3"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35185,
+            "sha256": "e4c634f4aa87c5309793b498b2788cf5d3e7ba1d40b62963d43ce16d03813660"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19992,
+            "sha256": "3cfa1f16e514e2217c491879e8fcad0d03e5f6c2d5dc06465d32e6ba97890e34"
+          },
+          {
+            "relative_path": "proof_builds/master-bundle-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21023,
+            "sha256": "83533ab5abdc9b996acf2d9a8334bd76fa13437b14a59f6a816f485cd24725a1"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45606,
+            "sha256": "b7d37d179188c99bc63224cfd98a772746a3dda6d1c4fef13440150697d8cda6"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10645,
+            "sha256": "84b74208f470d4962da6d221e0738cb9ac39552e547ae4b5d80c77fa5415e3a4"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/master-bundle-atlas/blueprint.json",
+          "project_blueprints/master-bundle-atlas/instrument_map.json",
+          "project_blueprints/master-bundle-atlas/README.md",
+          "proof_builds/master-bundle-atlas/proof_build.json",
+          "proof_demos/master-bundle-atlas/demo_cases.json",
+          "proof_demos/master-bundle-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c205f097cb125b94f34e0fbc"
+    },
+    {
+      "receipt_id": "master-bundle-atlas__receipt_0014",
+      "project_id": "master-bundle-atlas",
+      "project_title": "Master Bundle Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Atlas - 152 source and handoff packets / Portfolio Role Router",
+      "component_case_id": "master-bundle-atlas__0014__master-bundle-atlas-152-source-and-handoff-packets-portfolio-role-router",
+      "claim_to_demonstrate": "uses `Portfolio Role Router` to decide what the project may claim publicly, where it should go next, or why it should remain retained rather than promoted. Source context: The router decides whether a packet should become a feature page, source substrate.",
+      "input_fixture": "project source text and the named component `Portfolio Role Router`",
+      "operation_under_test": "uses `Portfolio Role Router` to decide what the project may claim publicly, where it should go next, or why it should remain retained rather than promoted. Source context: The router decides whether a packet should become a feature page, source substrate.",
+      "expected_output": "a public-claim or promotion decision tied to `Portfolio Role Router`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "68be0b4497558d8ceb97f47f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41354,
+            "sha256": "0f04d337d65a127157e806be77354ad33576af1e4f5f8f4fa55e3f6090e575a3"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35185,
+            "sha256": "e4c634f4aa87c5309793b498b2788cf5d3e7ba1d40b62963d43ce16d03813660"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19992,
+            "sha256": "3cfa1f16e514e2217c491879e8fcad0d03e5f6c2d5dc06465d32e6ba97890e34"
+          },
+          {
+            "relative_path": "proof_builds/master-bundle-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21023,
+            "sha256": "83533ab5abdc9b996acf2d9a8334bd76fa13437b14a59f6a816f485cd24725a1"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45606,
+            "sha256": "b7d37d179188c99bc63224cfd98a772746a3dda6d1c4fef13440150697d8cda6"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10645,
+            "sha256": "84b74208f470d4962da6d221e0738cb9ac39552e547ae4b5d80c77fa5415e3a4"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/master-bundle-atlas/blueprint.json",
+          "project_blueprints/master-bundle-atlas/instrument_map.json",
+          "project_blueprints/master-bundle-atlas/README.md",
+          "proof_builds/master-bundle-atlas/proof_build.json",
+          "proof_demos/master-bundle-atlas/demo_cases.json",
+          "proof_demos/master-bundle-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "dfc3a1f0eaf82fc3c2395e08"
+    },
+    {
+      "receipt_id": "master-bundle-atlas__receipt_0015",
+      "project_id": "master-bundle-atlas",
+      "project_title": "Master Bundle Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Atlas - 152 source and handoff packets / Implementation Backlog",
+      "component_case_id": "master-bundle-atlas__0015__master-bundle-atlas-152-source-and-handoff-packets-implementation-backlog",
+      "claim_to_demonstrate": "uses `Implementation Backlog` as a named project component with a traceable role in the public mechanism. Source context: Packets that contain useful design substance but no verified live implementation are routed into the build queue instead of being.",
+      "input_fixture": "project source text and the named component `Implementation Backlog`",
+      "operation_under_test": "uses `Implementation Backlog` as a named project component with a traceable role in the public mechanism. Source context: Packets that contain useful design substance but no verified live implementation are routed into the build queue instead of being.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Implementation Backlog`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "7063d02cfd60e0b901d261c4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41354,
+            "sha256": "0f04d337d65a127157e806be77354ad33576af1e4f5f8f4fa55e3f6090e575a3"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35185,
+            "sha256": "e4c634f4aa87c5309793b498b2788cf5d3e7ba1d40b62963d43ce16d03813660"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19992,
+            "sha256": "3cfa1f16e514e2217c491879e8fcad0d03e5f6c2d5dc06465d32e6ba97890e34"
+          },
+          {
+            "relative_path": "proof_builds/master-bundle-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21023,
+            "sha256": "83533ab5abdc9b996acf2d9a8334bd76fa13437b14a59f6a816f485cd24725a1"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45606,
+            "sha256": "b7d37d179188c99bc63224cfd98a772746a3dda6d1c4fef13440150697d8cda6"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10645,
+            "sha256": "84b74208f470d4962da6d221e0738cb9ac39552e547ae4b5d80c77fa5415e3a4"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/master-bundle-atlas/blueprint.json",
+          "project_blueprints/master-bundle-atlas/instrument_map.json",
+          "project_blueprints/master-bundle-atlas/README.md",
+          "proof_builds/master-bundle-atlas/proof_build.json",
+          "proof_demos/master-bundle-atlas/demo_cases.json",
+          "proof_demos/master-bundle-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2391b6376cf49ac56fd6f1c0"
+    },
+    {
+      "receipt_id": "master-bundle-atlas__receipt_0016",
+      "project_id": "master-bundle-atlas",
+      "project_title": "Master Bundle Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Atlas - 152 source and handoff packets / Source Substrate Route",
+      "component_case_id": "master-bundle-atlas__0016__master-bundle-atlas-152-source-and-handoff-packets-source-substrate-route",
+      "claim_to_demonstrate": "uses `Source Substrate Route` as a named project component with a traceable role in the public mechanism. Source context: Some packets are valuable because they feed methods, evidence, bibliography, or future project rooms rather than because they are.",
+      "input_fixture": "project source text and the named component `Source Substrate Route`",
+      "operation_under_test": "uses `Source Substrate Route` as a named project component with a traceable role in the public mechanism. Source context: Some packets are valuable because they feed methods, evidence, bibliography, or future project rooms rather than because they are.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Source Substrate Route`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "7840e3daf1457df3d654b31f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41354,
+            "sha256": "0f04d337d65a127157e806be77354ad33576af1e4f5f8f4fa55e3f6090e575a3"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35185,
+            "sha256": "e4c634f4aa87c5309793b498b2788cf5d3e7ba1d40b62963d43ce16d03813660"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19992,
+            "sha256": "3cfa1f16e514e2217c491879e8fcad0d03e5f6c2d5dc06465d32e6ba97890e34"
+          },
+          {
+            "relative_path": "proof_builds/master-bundle-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21023,
+            "sha256": "83533ab5abdc9b996acf2d9a8334bd76fa13437b14a59f6a816f485cd24725a1"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45606,
+            "sha256": "b7d37d179188c99bc63224cfd98a772746a3dda6d1c4fef13440150697d8cda6"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10645,
+            "sha256": "84b74208f470d4962da6d221e0738cb9ac39552e547ae4b5d80c77fa5415e3a4"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/master-bundle-atlas/blueprint.json",
+          "project_blueprints/master-bundle-atlas/instrument_map.json",
+          "project_blueprints/master-bundle-atlas/README.md",
+          "proof_builds/master-bundle-atlas/proof_build.json",
+          "proof_demos/master-bundle-atlas/demo_cases.json",
+          "proof_demos/master-bundle-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6d13489700416d823d97c412"
+    },
+    {
+      "receipt_id": "master-bundle-atlas__receipt_0017",
+      "project_id": "master-bundle-atlas",
+      "project_title": "Master Bundle Atlas",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Atlas - 152 source and handoff packets / Archive Route",
+      "component_case_id": "master-bundle-atlas__0017__master-bundle-atlas-152-source-and-handoff-packets-archive-route",
+      "claim_to_demonstrate": "uses `Archive Route` to decide what the project may claim publicly, where it should go next, or why it should remain retained rather than promoted. Source context: Packets without sufficient public substance remain preserved as archives or reference material.",
+      "input_fixture": "project source text and the named component `Archive Route`",
+      "operation_under_test": "uses `Archive Route` to decide what the project may claim publicly, where it should go next, or why it should remain retained rather than promoted. Source context: Packets without sufficient public substance remain preserved as archives or reference material.",
+      "expected_output": "a public-claim or promotion decision tied to `Archive Route`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c4c81230f3ddb82d11434356",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41354,
+            "sha256": "0f04d337d65a127157e806be77354ad33576af1e4f5f8f4fa55e3f6090e575a3"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35185,
+            "sha256": "e4c634f4aa87c5309793b498b2788cf5d3e7ba1d40b62963d43ce16d03813660"
+          },
+          {
+            "relative_path": "project_blueprints/master-bundle-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19992,
+            "sha256": "3cfa1f16e514e2217c491879e8fcad0d03e5f6c2d5dc06465d32e6ba97890e34"
+          },
+          {
+            "relative_path": "proof_builds/master-bundle-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21023,
+            "sha256": "83533ab5abdc9b996acf2d9a8334bd76fa13437b14a59f6a816f485cd24725a1"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45606,
+            "sha256": "b7d37d179188c99bc63224cfd98a772746a3dda6d1c4fef13440150697d8cda6"
+          },
+          {
+            "relative_path": "proof_demos/master-bundle-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10645,
+            "sha256": "84b74208f470d4962da6d221e0738cb9ac39552e547ae4b5d80c77fa5415e3a4"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/master-bundle-atlas/blueprint.json",
+          "project_blueprints/master-bundle-atlas/instrument_map.json",
+          "project_blueprints/master-bundle-atlas/README.md",
+          "proof_builds/master-bundle-atlas/proof_build.json",
+          "proof_demos/master-bundle-atlas/demo_cases.json",
+          "proof_demos/master-bundle-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "531b28da537d7b3fbddd7309"
+    }
+  ]
+}

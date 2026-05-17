@@ -1,0 +1,48 @@
+{
+  "project_id": "mb-internal-operating-support-007",
+  "closure_lane": "source_verification_external_review",
+  "generated_at": "2026-05-15T21:53:42+00:00",
+  "local_automated_evidence_items": [
+    {
+      "name": "closure packet exists",
+      "status": "pass",
+      "evidence": "closure_packet.json present"
+    },
+    {
+      "name": "required evidence list exists",
+      "status": "pass",
+      "evidence": "4 required evidence items"
+    },
+    {
+      "name": "completion tests list exists",
+      "status": "pass",
+      "evidence": "4 completion tests"
+    },
+    {
+      "name": "default closure status remains not closed",
+      "status": "pass",
+      "evidence": "not_closed"
+    },
+    {
+      "name": "source verification work order generated",
+      "status": "pass",
+      "evidence": "source passage, claim warrant, quotation integrity, and external review tasks stated"
+    }
+  ],
+  "generated_artifacts": [
+    {
+      "artifact": "source_verification_work_order",
+      "count": 1,
+      "status": "generated"
+    }
+  ],
+  "residual_gates": [
+    "direct source passage verification",
+    "quotation/paraphrase integrity check",
+    "external or expert review note"
+  ],
+  "local_automated_status": "source_work_order_ready_external_review_open",
+  "underlying_project_fully_operational": false,
+  "promotion_rule": "Do not promote to fully operational until residual gates are satisfied with retained evidence.",
+  "evidence_hash": "6f188fde5a6970ad"
+}

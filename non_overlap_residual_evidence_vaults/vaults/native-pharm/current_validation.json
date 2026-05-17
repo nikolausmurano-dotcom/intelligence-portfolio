@@ -1,0 +1,44 @@
+{
+  "project_id": "native-pharm",
+  "generated_at": "2026-05-17T01:47:54+00:00",
+  "validation_status": "evidence_incomplete",
+  "required_slot_count": 4,
+  "present_slot_count": 3,
+  "missing_slot_count": 1,
+  "promotion_allowed": false,
+  "promotion_note": "Promotion remains blocked until all required evidence and human/expert review gates close.",
+  "slot_status": [
+    {
+      "slot_id": "source_verification_matrix",
+      "required_file": "source_verification_matrix.csv",
+      "present": true,
+      "size_bytes": 35094,
+      "sha256": "f866b631f523b92379b0acdbf4df2e0322222c28fa20c367a96730819a284e34",
+      "proves": "Every strengthened source claim has a verified source role and claim ceiling."
+    },
+    {
+      "slot_id": "claim_warrant_notes",
+      "required_file": "claim_warrant_notes.md",
+      "present": true,
+      "size_bytes": 5914,
+      "sha256": "167af8eb36198cb757ec03d240362b70784c967b049f31277edbfe9ffcb2101d",
+      "proves": "Claims are connected to source warrants rather than decorative bibliography."
+    },
+    {
+      "slot_id": "quotation_integrity_check",
+      "required_file": "quotation_integrity_check.md",
+      "present": true,
+      "size_bytes": 557,
+      "sha256": "dee3a41a45f11721e9956308dbe0489f2d538eab9205843841e8692e173d2799",
+      "proves": "No quotation or paraphrase is promoted without direct verification."
+    },
+    {
+      "slot_id": "external_review_note",
+      "required_file": "external_review_note.md",
+      "present": false,
+      "size_bytes": 0,
+      "sha256": "",
+      "proves": "A reviewer or expert has examined the source use and recorded judgment."
+    }
+  ]
+}

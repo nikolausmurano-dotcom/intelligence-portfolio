@@ -1,0 +1,23 @@
+{
+  "project_id": "native-africa",
+  "project_title": "Colonial Encounter in Africa",
+  "product_name": "Colonial Encounter in Africa",
+  "project_kind": "research workflow software",
+  "final_object_type": "research workflow software module",
+  "runtime_target": "local-first web application or desktop module with persistent project state",
+  "operational_end_state": "A researcher can enter a project, use named instruments, observe state changes, and export a governed work product.",
+  "build_tranche": "T2 platform module",
+  "priority_score": 56.7,
+  "proof_tier": "source-backed-proof-build",
+  "component_count": "17",
+  "core_modules": "state model | instrument action | before/after trace | export gate",
+  "source_strategy": "Use sources to strengthen cross-field mechanism transfer and academic-stage dependency. Sources should not merely answer a query; they should help move a mechanism from one field into another while marking downstream stages stale when upstream assumptions change.",
+  "source_requirement": "Title-level routing can strengthen project planning and proof design. Public claims require project evidence or passage-level source confirmation.",
+  "source_gap": "passage-level close reading still required before quotation, page-specific citation, or strong literature-positioning claim",
+  "test_suite": "claim ceiling test: public claims cannot exceed built evidence | source test: metadata-routed sources require close reading before citation or quotation | privacy test: no local paths or private directories in public deploy | state-transition test: visible input changes recorded state and output",
+  "current_build_status": "source-backed proof build; needs source-to-output capture and close-read strengthening",
+  "proof_to_full_build_gap": "Bind at least one close-read source to one output-changing component and capture the source-to-output trace.",
+  "first_full_build": "Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.",
+  "next_implementation_steps": "1. create or confirm runtime data schema; 2. implement one end-to-end fixture; 3. capture proof artifact; 4. run source and claim-ceiling gates; 5. publish reviewer-safe demo",
+  "claim_boundary": "This is a full-build plan, not a claim that the full operational system has already been completed."
+}

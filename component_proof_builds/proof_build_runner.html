@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proof Build Runner</title>
+<style>
+:root{color-scheme:light;--paper:#f7f5ef;--ink:#152231;--muted:#5a6575;--rule:rgba(35,55,77,.18);--accent:#7a4d18;--blue:#1e4d6b;--green:#2f6048;--red:#7a2730;--white:rgba(255,255,255,.9)}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif}main{max-width:1240px;margin:0 auto;padding:38px 22px 76px}h1{font-size:clamp(34px,5vw,56px);line-height:1;font-weight:500;margin:0 0 14px}h2{font-size:25px;line-height:1.18;margin:24px 0 10px}h3{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}p,li{line-height:1.58}a{color:#183f65}.topline,.kicker{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase;font-size:11px;color:var(--accent)}.lead{max-width:980px;font-size:18px;line-height:1.62}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}.card,.panel,.trace{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:16px}.panel{margin:18px 0}.ready{border-left:4px solid var(--green)}.warn{border-left:4px solid var(--accent)}.risk{border-left:4px solid var(--red)}.button{display:inline-block;border:1px solid rgba(30,77,107,.35);border-radius:6px;padding:9px 12px;background:#fff;color:var(--ink);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;text-decoration:none;margin:3px 6px 3px 0}button{border:1px solid rgba(30,77,107,.35);border-radius:6px;padding:9px 12px;background:#fff;color:var(--ink);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;cursor:pointer}button:hover,.button:hover{border-color:rgba(30,77,107,.82)}input,select{width:100%;border:1px solid var(--rule);border-radius:6px;padding:10px;background:#fff;color:var(--ink)}table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--rule);border-radius:8px;overflow:hidden}th,td{padding:10px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}th{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}.trace{white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;line-height:1.55;background:#fff}.small{color:var(--muted);font-size:13px}.score{font-size:30px;line-height:1}.tag{display:inline-block;border:1px solid var(--rule);border-radius:999px;padding:4px 8px;margin:2px;font-size:12px;background:#fff}.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.7fr);gap:14px}@media(max-width:760px){main{padding:28px 18px 58px}.split{grid-template-columns:1fr}}
+</style>
+</head><body><main>
+<div class="topline">Proof build runner</div>
+<h1>Component Proof Build Runner</h1>
+<p class="lead">Select a project or component and run the proof-build completeness check. This does not execute the underlying application; it verifies whether the proof packet contains the pieces a reviewer needs before live capture.</p>
+<p><a class="button" href="index.html">Back to component proof builds</a><a class="button" href="component_proof_builds.csv">Open CSV</a></p>
+<section class="panel split">
+  <div><label class="kicker" for="projectFilter">Project</label><select id="projectFilter"></select></div>
+  <div><label class="kicker" for="search">Search</label><input id="search" placeholder="retrieval, stale, delta, chapter, packet"></div>
+</section>
+<section id="summary" class="grid"></section>
+<section id="detail"></section>
+<script src="component_proof_builds.js"></script>
+<script>
+const rows = window.COMPONENT_PROOF_BUILDS || [];
+const projectFilter = document.getElementById('projectFilter');
+const search = document.getElementById('search');
+const summary = document.getElementById('summary');
+const detail = document.getElementById('detail');
+const projects = [...new Map(rows.map(r => [r.project_id, r.project_title])).entries()].sort((a,b)=>a[1].localeCompare(b[1]));
+projectFilter.innerHTML = '<option value="">All projects</option>' + projects.map(([id,title]) => `<option value="${id}">${title}</option>`).join('');
+const params = new URLSearchParams(location.search);
+if (params.get('project')) projectFilter.value = params.get('project');
+function escHtml(v){return String(v ?? '').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));}
+function complete(row){
+  const fields = ['input_fixture','operation_to_perform','observable_output','proof_artifact_to_build','inspection_protocol','source_role','falsification_rule','claim_ceiling','next_build_step'];
+  return fields.every(f => String(row[f] || '').trim());
+}
+function filtered(){
+  const q = search.value.trim().toLowerCase();
+  return rows.filter(r => (!projectFilter.value || r.project_id === projectFilter.value) && (!q || [r.project_title,r.component,r.upgrade_class,r.observable_output,r.next_build_step].join(' ').toLowerCase().includes(q)));
+}
+function render(){
+  const f = filtered();
+  const classes = {};
+  const ready = f.filter(complete).length;
+  for (const row of f) classes[row.upgrade_class] = (classes[row.upgrade_class] || 0) + 1;
+  summary.innerHTML = `<div class="card"><h3>Visible Builds</h3><p class="score">${f.length}</p></div><div class="card"><h3>Complete Specs</h3><p class="score">${ready}</p></div><div class="card"><h3>Classes</h3><p>${Object.entries(classes).map(([k,v]) => `${escHtml(k)}: ${v}`).join('<br>')}</p></div>`;
+  const shown = f.slice(0, 220);
+  detail.innerHTML = `<table><thead><tr><th>Component</th><th>Artifact</th><th>Inspection</th><th>Source role</th><th>Falsification</th><th>Next build</th></tr></thead><tbody>` +
+    shown.map(row => `<tr><td><strong>${escHtml(row.component)}</strong><br><span class="small">${escHtml(row.project_title)}</span></td><td>${escHtml(row.proof_artifact_to_build)}<br><span class="small">${escHtml(row.evidence_artifact_name)}</span></td><td>${escHtml(row.inspection_protocol)}</td><td>${escHtml(row.source_role)}<br><span class="small">${escHtml(row.assigned_source)}</span></td><td>${escHtml(row.falsification_rule)}</td><td>${escHtml(row.next_build_step)}</td></tr>`).join('') +
+    `</tbody></table><p class="small">Showing ${shown.length} of ${f.length}. Use the CSV for full inspection.</p>`;
+}
+projectFilter.addEventListener('change', render);
+search.addEventListener('input', render);
+render();
+</script>
+</main></body></html>

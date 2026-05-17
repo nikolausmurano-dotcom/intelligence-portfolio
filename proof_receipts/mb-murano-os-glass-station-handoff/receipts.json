@@ -1,0 +1,1470 @@
+{
+  "project": {
+    "project_id": "mb-murano-os-glass-station-handoff",
+    "title": "Glass Station"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-murano-os-glass-station-handoff__receipt_0001",
+      "project_id": "mb-murano-os-glass-station-handoff",
+      "project_title": "Glass Station",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glass Station Handoff Identity",
+      "component_case_id": "mb-murano-os-glass-station-handoff__0001__glass-station-handoff-identity",
+      "claim_to_demonstrate": "Specifies Glass Station, a Murano OS room that preserves, renders, and audits the full intellectual terrain of the US intelligence community: institutional structure, bureaucratic process, legal and oversight constraints, institutional ethos/temperament.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "Specifies Glass Station, a Murano OS room that preserves, renders, and audits the full intellectual terrain of the US intelligence community: institutional structure, bureaucratic process, legal and oversight constraints, institutional ethos/temperament.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42955,
+            "sha256": "d17716b42dde392cb1aa2b19853da66a8e48b046ee819918215cae24146eeb60"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34774,
+            "sha256": "0c38be7f60cd0b82c1d2bc6a573939a6f93052f48ea0a0b1e9a44df471a8aa1a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20968,
+            "sha256": "b401657dd015c559841ed1ea98852990f54f8c583d4007e11147d83c807b0496"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19926,
+            "sha256": "ad060004bdce5a3ab465ab5e5a22d2039e9d68935317a1dde2e5eeb7050443e9"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44052,
+            "sha256": "88340eb4775e0b1e4f873c8983737122cae632004a5a8ee859cbd5420d75bd16"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8705,
+            "sha256": "21e81ca00b1104e5f5daf8c697e464aee3f8f6cec9824e4a6ab9f79854cf9872"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+          "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "fb95f4d08ba7c9bc5c43ff83"
+    },
+    {
+      "receipt_id": "mb-murano-os-glass-station-handoff__receipt_0002",
+      "project_id": "mb-murano-os-glass-station-handoff",
+      "project_title": "Glass Station",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glass Station Room Task Model",
+      "component_case_id": "mb-murano-os-glass-station-handoff__0002__glass-station-room-task-model",
+      "claim_to_demonstrate": ", state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival retention",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": ", state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival retention",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42955,
+            "sha256": "d17716b42dde392cb1aa2b19853da66a8e48b046ee819918215cae24146eeb60"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34774,
+            "sha256": "0c38be7f60cd0b82c1d2bc6a573939a6f93052f48ea0a0b1e9a44df471a8aa1a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20968,
+            "sha256": "b401657dd015c559841ed1ea98852990f54f8c583d4007e11147d83c807b0496"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19926,
+            "sha256": "ad060004bdce5a3ab465ab5e5a22d2039e9d68935317a1dde2e5eeb7050443e9"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44052,
+            "sha256": "88340eb4775e0b1e4f873c8983737122cae632004a5a8ee859cbd5420d75bd16"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8705,
+            "sha256": "21e81ca00b1104e5f5daf8c697e464aee3f8f6cec9824e4a6ab9f79854cf9872"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+          "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a9b4f0acc9afac8b7e08b85a"
+    },
+    {
+      "receipt_id": "mb-murano-os-glass-station-handoff__receipt_0003",
+      "project_id": "mb-murano-os-glass-station-handoff",
+      "project_title": "Glass Station",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glass Station Data Schema And Persistence Plan",
+      "component_case_id": "mb-murano-os-glass-station-handoff__0003__glass-station-data-schema-and-persistence-plan",
+      "claim_to_demonstrate": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42955,
+            "sha256": "d17716b42dde392cb1aa2b19853da66a8e48b046ee819918215cae24146eeb60"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34774,
+            "sha256": "0c38be7f60cd0b82c1d2bc6a573939a6f93052f48ea0a0b1e9a44df471a8aa1a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20968,
+            "sha256": "b401657dd015c559841ed1ea98852990f54f8c583d4007e11147d83c807b0496"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19926,
+            "sha256": "ad060004bdce5a3ab465ab5e5a22d2039e9d68935317a1dde2e5eeb7050443e9"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44052,
+            "sha256": "88340eb4775e0b1e4f873c8983737122cae632004a5a8ee859cbd5420d75bd16"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8705,
+            "sha256": "21e81ca00b1104e5f5daf8c697e464aee3f8f6cec9824e4a6ab9f79854cf9872"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+          "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "79040e8b034714665136642d"
+    },
+    {
+      "receipt_id": "mb-murano-os-glass-station-handoff__receipt_0004",
+      "project_id": "mb-murano-os-glass-station-handoff",
+      "project_title": "Glass Station",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glass Station Interface And Instrument Plane",
+      "component_case_id": "mb-murano-os-glass-station-handoff__0004__glass-station-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42955,
+            "sha256": "d17716b42dde392cb1aa2b19853da66a8e48b046ee819918215cae24146eeb60"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34774,
+            "sha256": "0c38be7f60cd0b82c1d2bc6a573939a6f93052f48ea0a0b1e9a44df471a8aa1a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20968,
+            "sha256": "b401657dd015c559841ed1ea98852990f54f8c583d4007e11147d83c807b0496"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19926,
+            "sha256": "ad060004bdce5a3ab465ab5e5a22d2039e9d68935317a1dde2e5eeb7050443e9"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44052,
+            "sha256": "88340eb4775e0b1e4f873c8983737122cae632004a5a8ee859cbd5420d75bd16"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8705,
+            "sha256": "21e81ca00b1104e5f5daf8c697e464aee3f8f6cec9824e4a6ab9f79854cf9872"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+          "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "01c29a2bc263ea370404b147"
+    },
+    {
+      "receipt_id": "mb-murano-os-glass-station-handoff__receipt_0005",
+      "project_id": "mb-murano-os-glass-station-handoff",
+      "project_title": "Glass Station",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glass Station Integration Path",
+      "component_case_id": "mb-murano-os-glass-station-handoff__0005__glass-station-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. When to reach for this: modeling the US intelligence community or a comparable complex governance system without collapsing to org-chart or cinematic-secrecy.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. When to reach for this: modeling the US intelligence community or a comparable complex governance system without collapsing to org-chart or cinematic-secrecy.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42955,
+            "sha256": "d17716b42dde392cb1aa2b19853da66a8e48b046ee819918215cae24146eeb60"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34774,
+            "sha256": "0c38be7f60cd0b82c1d2bc6a573939a6f93052f48ea0a0b1e9a44df471a8aa1a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20968,
+            "sha256": "b401657dd015c559841ed1ea98852990f54f8c583d4007e11147d83c807b0496"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19926,
+            "sha256": "ad060004bdce5a3ab465ab5e5a22d2039e9d68935317a1dde2e5eeb7050443e9"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44052,
+            "sha256": "88340eb4775e0b1e4f873c8983737122cae632004a5a8ee859cbd5420d75bd16"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8705,
+            "sha256": "21e81ca00b1104e5f5daf8c697e464aee3f8f6cec9824e4a6ab9f79854cf9872"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+          "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8897e1af932d097977907fdf"
+    },
+    {
+      "receipt_id": "mb-murano-os-glass-station-handoff__receipt_0006",
+      "project_id": "mb-murano-os-glass-station-handoff",
+      "project_title": "Glass Station",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glass Station Proof Boundary",
+      "component_case_id": "mb-murano-os-glass-station-handoff__0006__glass-station-proof-boundary",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42955,
+            "sha256": "d17716b42dde392cb1aa2b19853da66a8e48b046ee819918215cae24146eeb60"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34774,
+            "sha256": "0c38be7f60cd0b82c1d2bc6a573939a6f93052f48ea0a0b1e9a44df471a8aa1a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20968,
+            "sha256": "b401657dd015c559841ed1ea98852990f54f8c583d4007e11147d83c807b0496"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19926,
+            "sha256": "ad060004bdce5a3ab465ab5e5a22d2039e9d68935317a1dde2e5eeb7050443e9"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44052,
+            "sha256": "88340eb4775e0b1e4f873c8983737122cae632004a5a8ee859cbd5420d75bd16"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8705,
+            "sha256": "21e81ca00b1104e5f5daf8c697e464aee3f8f6cec9824e4a6ab9f79854cf9872"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+          "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "cc8a5d664dd313e099d947a5"
+    },
+    {
+      "receipt_id": "mb-murano-os-glass-station-handoff__receipt_0007",
+      "project_id": "mb-murano-os-glass-station-handoff",
+      "project_title": "Glass Station",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glass Station Next Build Test",
+      "component_case_id": "mb-murano-os-glass-station-handoff__0007__glass-station-next-build-test",
+      "claim_to_demonstrate": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42955,
+            "sha256": "d17716b42dde392cb1aa2b19853da66a8e48b046ee819918215cae24146eeb60"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34774,
+            "sha256": "0c38be7f60cd0b82c1d2bc6a573939a6f93052f48ea0a0b1e9a44df471a8aa1a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20968,
+            "sha256": "b401657dd015c559841ed1ea98852990f54f8c583d4007e11147d83c807b0496"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19926,
+            "sha256": "ad060004bdce5a3ab465ab5e5a22d2039e9d68935317a1dde2e5eeb7050443e9"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44052,
+            "sha256": "88340eb4775e0b1e4f873c8983737122cae632004a5a8ee859cbd5420d75bd16"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8705,
+            "sha256": "21e81ca00b1104e5f5daf8c697e464aee3f8f6cec9824e4a6ab9f79854cf9872"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+          "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2c016083a40c246d227152ef"
+    },
+    {
+      "receipt_id": "mb-murano-os-glass-station-handoff__receipt_0008",
+      "project_id": "mb-murano-os-glass-station-handoff",
+      "project_title": "Glass Station",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glass Station / backend/frontend",
+      "component_case_id": "mb-murano-os-glass-station-handoff__0008__glass-station-backend-frontend",
+      "claim_to_demonstrate": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "input_fixture": "project source text and the named component `backend/frontend`",
+      "operation_under_test": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `backend/frontend`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "12b906e53c841f6a071a9002",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42955,
+            "sha256": "d17716b42dde392cb1aa2b19853da66a8e48b046ee819918215cae24146eeb60"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34774,
+            "sha256": "0c38be7f60cd0b82c1d2bc6a573939a6f93052f48ea0a0b1e9a44df471a8aa1a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20968,
+            "sha256": "b401657dd015c559841ed1ea98852990f54f8c583d4007e11147d83c807b0496"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19926,
+            "sha256": "ad060004bdce5a3ab465ab5e5a22d2039e9d68935317a1dde2e5eeb7050443e9"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44052,
+            "sha256": "88340eb4775e0b1e4f873c8983737122cae632004a5a8ee859cbd5420d75bd16"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8705,
+            "sha256": "21e81ca00b1104e5f5daf8c697e464aee3f8f6cec9824e4a6ab9f79854cf9872"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+          "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8aa23c84782b45b1783b653b"
+    },
+    {
+      "receipt_id": "mb-murano-os-glass-station-handoff__receipt_0009",
+      "project_id": "mb-murano-os-glass-station-handoff",
+      "project_title": "Glass Station",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glass Station / README.md",
+      "component_case_id": "mb-murano-os-glass-station-handoff__0009__glass-station-readme-md",
+      "claim_to_demonstrate": "treats `README.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> ROOM_CHARTER.md -> ROOM_ARCHITECTURE.md -> SCHEMA/object_model.yaml -> SCHEMA/default_room_config.yaml -> then load.",
+      "input_fixture": "project source text and the named component `README.md`",
+      "operation_under_test": "treats `README.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> ROOM_CHARTER.md -> ROOM_ARCHITECTURE.md -> SCHEMA/object_model.yaml -> SCHEMA/default_room_config.yaml -> then load.",
+      "expected_output": "inspectable implementation evidence tied to `README.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "24939e697fb6f99b65029559",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42955,
+            "sha256": "d17716b42dde392cb1aa2b19853da66a8e48b046ee819918215cae24146eeb60"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34774,
+            "sha256": "0c38be7f60cd0b82c1d2bc6a573939a6f93052f48ea0a0b1e9a44df471a8aa1a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20968,
+            "sha256": "b401657dd015c559841ed1ea98852990f54f8c583d4007e11147d83c807b0496"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19926,
+            "sha256": "ad060004bdce5a3ab465ab5e5a22d2039e9d68935317a1dde2e5eeb7050443e9"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44052,
+            "sha256": "88340eb4775e0b1e4f873c8983737122cae632004a5a8ee859cbd5420d75bd16"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8705,
+            "sha256": "21e81ca00b1104e5f5daf8c697e464aee3f8f6cec9824e4a6ab9f79854cf9872"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+          "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8243bd52839c137b076b064e"
+    },
+    {
+      "receipt_id": "mb-murano-os-glass-station-handoff__receipt_0010",
+      "project_id": "mb-murano-os-glass-station-handoff",
+      "project_title": "Glass Station",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glass Station / ROOM_CHARTER.md",
+      "component_case_id": "mb-murano-os-glass-station-handoff__0010__glass-station-room-charter-md",
+      "claim_to_demonstrate": "treats `ROOM_CHARTER.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> ROOM_CHARTER.md -> ROOM_ARCHITECTURE.md -> SCHEMA/object_model.yaml -> SCHEMA/default_room_config.yaml -> then.",
+      "input_fixture": "project source text and the named component `ROOM_CHARTER.md`",
+      "operation_under_test": "treats `ROOM_CHARTER.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> ROOM_CHARTER.md -> ROOM_ARCHITECTURE.md -> SCHEMA/object_model.yaml -> SCHEMA/default_room_config.yaml -> then.",
+      "expected_output": "inspectable implementation evidence tied to `ROOM_CHARTER.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "24939e697fb6f99b65029559",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42955,
+            "sha256": "d17716b42dde392cb1aa2b19853da66a8e48b046ee819918215cae24146eeb60"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34774,
+            "sha256": "0c38be7f60cd0b82c1d2bc6a573939a6f93052f48ea0a0b1e9a44df471a8aa1a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20968,
+            "sha256": "b401657dd015c559841ed1ea98852990f54f8c583d4007e11147d83c807b0496"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19926,
+            "sha256": "ad060004bdce5a3ab465ab5e5a22d2039e9d68935317a1dde2e5eeb7050443e9"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44052,
+            "sha256": "88340eb4775e0b1e4f873c8983737122cae632004a5a8ee859cbd5420d75bd16"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8705,
+            "sha256": "21e81ca00b1104e5f5daf8c697e464aee3f8f6cec9824e4a6ab9f79854cf9872"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+          "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a5f395ec0efb5893d4de7cef"
+    },
+    {
+      "receipt_id": "mb-murano-os-glass-station-handoff__receipt_0011",
+      "project_id": "mb-murano-os-glass-station-handoff",
+      "project_title": "Glass Station",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glass Station / ROOM_ARCHITECTURE.md",
+      "component_case_id": "mb-murano-os-glass-station-handoff__0011__glass-station-room-architecture-md",
+      "claim_to_demonstrate": "treats `ROOM_ARCHITECTURE.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> ROOM_CHARTER.md -> ROOM_ARCHITECTURE.md -> SCHEMA/object_model.yaml -> SCHEMA/default_room_config.yaml ->.",
+      "input_fixture": "project source text and the named component `ROOM_ARCHITECTURE.md`",
+      "operation_under_test": "treats `ROOM_ARCHITECTURE.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> ROOM_CHARTER.md -> ROOM_ARCHITECTURE.md -> SCHEMA/object_model.yaml -> SCHEMA/default_room_config.yaml ->.",
+      "expected_output": "inspectable implementation evidence tied to `ROOM_ARCHITECTURE.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "24939e697fb6f99b65029559",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42955,
+            "sha256": "d17716b42dde392cb1aa2b19853da66a8e48b046ee819918215cae24146eeb60"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34774,
+            "sha256": "0c38be7f60cd0b82c1d2bc6a573939a6f93052f48ea0a0b1e9a44df471a8aa1a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20968,
+            "sha256": "b401657dd015c559841ed1ea98852990f54f8c583d4007e11147d83c807b0496"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19926,
+            "sha256": "ad060004bdce5a3ab465ab5e5a22d2039e9d68935317a1dde2e5eeb7050443e9"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44052,
+            "sha256": "88340eb4775e0b1e4f873c8983737122cae632004a5a8ee859cbd5420d75bd16"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8705,
+            "sha256": "21e81ca00b1104e5f5daf8c697e464aee3f8f6cec9824e4a6ab9f79854cf9872"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+          "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "76222652578a322420eb098a"
+    },
+    {
+      "receipt_id": "mb-murano-os-glass-station-handoff__receipt_0012",
+      "project_id": "mb-murano-os-glass-station-handoff",
+      "project_title": "Glass Station",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glass Station / seed_graph.json",
+      "component_case_id": "mb-murano-os-glass-station-handoff__0012__glass-station-seed-graph-json",
+      "claim_to_demonstrate": "treats `seed_graph.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> ROOM_CHARTER.md -> ROOM_ARCHITECTURE.md -> SCHEMA/object_model.yaml -> SCHEMA/default_room_config.yaml -> then.",
+      "input_fixture": "project source text and the named component `seed_graph.json`",
+      "operation_under_test": "treats `seed_graph.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> ROOM_CHARTER.md -> ROOM_ARCHITECTURE.md -> SCHEMA/object_model.yaml -> SCHEMA/default_room_config.yaml -> then.",
+      "expected_output": "inspectable implementation evidence tied to `seed_graph.json`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "24939e697fb6f99b65029559",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42955,
+            "sha256": "d17716b42dde392cb1aa2b19853da66a8e48b046ee819918215cae24146eeb60"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34774,
+            "sha256": "0c38be7f60cd0b82c1d2bc6a573939a6f93052f48ea0a0b1e9a44df471a8aa1a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20968,
+            "sha256": "b401657dd015c559841ed1ea98852990f54f8c583d4007e11147d83c807b0496"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19926,
+            "sha256": "ad060004bdce5a3ab465ab5e5a22d2039e9d68935317a1dde2e5eeb7050443e9"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44052,
+            "sha256": "88340eb4775e0b1e4f873c8983737122cae632004a5a8ee859cbd5420d75bd16"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8705,
+            "sha256": "21e81ca00b1104e5f5daf8c697e464aee3f8f6cec9824e4a6ab9f79854cf9872"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+          "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9faf6f215e22b45ec6fed703"
+    },
+    {
+      "receipt_id": "mb-murano-os-glass-station-handoff__receipt_0013",
+      "project_id": "mb-murano-os-glass-station-handoff",
+      "project_title": "Glass Station",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glass Station / scene_catalog.md",
+      "component_case_id": "mb-murano-os-glass-station-handoff__0013__glass-station-scene-catalog-md",
+      "claim_to_demonstrate": "treats `scene_catalog.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: scene_catalog.md -> wire audit rules from WORKFLOWS/audit_protocol.md -> follow IMPLEMENTATION/v1_backlog.md. Integration.",
+      "input_fixture": "project source text and the named component `scene_catalog.md`",
+      "operation_under_test": "treats `scene_catalog.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: scene_catalog.md -> wire audit rules from WORKFLOWS/audit_protocol.md -> follow IMPLEMENTATION/v1_backlog.md. Integration.",
+      "expected_output": "inspectable implementation evidence tied to `scene_catalog.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e8d2d0614b5262cf2cbc773e",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42955,
+            "sha256": "d17716b42dde392cb1aa2b19853da66a8e48b046ee819918215cae24146eeb60"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34774,
+            "sha256": "0c38be7f60cd0b82c1d2bc6a573939a6f93052f48ea0a0b1e9a44df471a8aa1a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20968,
+            "sha256": "b401657dd015c559841ed1ea98852990f54f8c583d4007e11147d83c807b0496"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19926,
+            "sha256": "ad060004bdce5a3ab465ab5e5a22d2039e9d68935317a1dde2e5eeb7050443e9"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44052,
+            "sha256": "88340eb4775e0b1e4f873c8983737122cae632004a5a8ee859cbd5420d75bd16"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8705,
+            "sha256": "21e81ca00b1104e5f5daf8c697e464aee3f8f6cec9824e4a6ab9f79854cf9872"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+          "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ee96f4d9f177d93e24b6967c"
+    },
+    {
+      "receipt_id": "mb-murano-os-glass-station-handoff__receipt_0014",
+      "project_id": "mb-murano-os-glass-station-handoff",
+      "project_title": "Glass Station",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glass Station / audit_protocol.md",
+      "component_case_id": "mb-murano-os-glass-station-handoff__0014__glass-station-audit-protocol-md",
+      "claim_to_demonstrate": "treats `audit_protocol.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: audit_protocol.md -> follow IMPLEMENTATION/v1_backlog.md. Integration target: Murano OS room shell; layered.",
+      "input_fixture": "project source text and the named component `audit_protocol.md`",
+      "operation_under_test": "treats `audit_protocol.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: audit_protocol.md -> follow IMPLEMENTATION/v1_backlog.md. Integration target: Murano OS room shell; layered.",
+      "expected_output": "inspectable implementation evidence tied to `audit_protocol.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "85f1d3121d1e48fb4faf2e55",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42955,
+            "sha256": "d17716b42dde392cb1aa2b19853da66a8e48b046ee819918215cae24146eeb60"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34774,
+            "sha256": "0c38be7f60cd0b82c1d2bc6a573939a6f93052f48ea0a0b1e9a44df471a8aa1a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20968,
+            "sha256": "b401657dd015c559841ed1ea98852990f54f8c583d4007e11147d83c807b0496"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19926,
+            "sha256": "ad060004bdce5a3ab465ab5e5a22d2039e9d68935317a1dde2e5eeb7050443e9"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44052,
+            "sha256": "88340eb4775e0b1e4f873c8983737122cae632004a5a8ee859cbd5420d75bd16"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8705,
+            "sha256": "21e81ca00b1104e5f5daf8c697e464aee3f8f6cec9824e4a6ab9f79854cf9872"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+          "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1ef9e7fb4360bbd3456b45b7"
+    },
+    {
+      "receipt_id": "mb-murano-os-glass-station-handoff__receipt_0015",
+      "project_id": "mb-murano-os-glass-station-handoff",
+      "project_title": "Glass Station",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glass Station / v1_backlog.md",
+      "component_case_id": "mb-murano-os-glass-station-handoff__0015__glass-station-v1-backlog-md",
+      "claim_to_demonstrate": "treats `v1_backlog.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: v1_backlog.md. Integration target: Murano OS room shell; layered corpus/assertion/map/temporal/spatial store; LLM curator +.",
+      "input_fixture": "project source text and the named component `v1_backlog.md`",
+      "operation_under_test": "treats `v1_backlog.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: v1_backlog.md. Integration target: Murano OS room shell; layered corpus/assertion/map/temporal/spatial store; LLM curator +.",
+      "expected_output": "inspectable implementation evidence tied to `v1_backlog.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "b48bba0879518e037497445d",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42955,
+            "sha256": "d17716b42dde392cb1aa2b19853da66a8e48b046ee819918215cae24146eeb60"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34774,
+            "sha256": "0c38be7f60cd0b82c1d2bc6a573939a6f93052f48ea0a0b1e9a44df471a8aa1a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20968,
+            "sha256": "b401657dd015c559841ed1ea98852990f54f8c583d4007e11147d83c807b0496"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19926,
+            "sha256": "ad060004bdce5a3ab465ab5e5a22d2039e9d68935317a1dde2e5eeb7050443e9"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44052,
+            "sha256": "88340eb4775e0b1e4f873c8983737122cae632004a5a8ee859cbd5420d75bd16"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8705,
+            "sha256": "21e81ca00b1104e5f5daf8c697e464aee3f8f6cec9824e4a6ab9f79854cf9872"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+          "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3e201c3086d8e83bb1f8d5c1"
+    },
+    {
+      "receipt_id": "mb-murano-os-glass-station-handoff__receipt_0016",
+      "project_id": "mb-murano-os-glass-station-handoff",
+      "project_title": "Glass Station",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glass Station / room_operator_prompt.md",
+      "component_case_id": "mb-murano-os-glass-station-handoff__0016__glass-station-room-operator-prompt-md",
+      "claim_to_demonstrate": "treats `room_operator_prompt.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Two LLM prompts (room_operator_prompt.md, audit_prompt.md) enable LLM-assisted curation and claim review. Discovery.",
+      "input_fixture": "project source text and the named component `room_operator_prompt.md`",
+      "operation_under_test": "treats `room_operator_prompt.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Two LLM prompts (room_operator_prompt.md, audit_prompt.md) enable LLM-assisted curation and claim review. Discovery.",
+      "expected_output": "inspectable implementation evidence tied to `room_operator_prompt.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "69bdc7fa4bd8a03bb62950bb",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42955,
+            "sha256": "d17716b42dde392cb1aa2b19853da66a8e48b046ee819918215cae24146eeb60"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34774,
+            "sha256": "0c38be7f60cd0b82c1d2bc6a573939a6f93052f48ea0a0b1e9a44df471a8aa1a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20968,
+            "sha256": "b401657dd015c559841ed1ea98852990f54f8c583d4007e11147d83c807b0496"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19926,
+            "sha256": "ad060004bdce5a3ab465ab5e5a22d2039e9d68935317a1dde2e5eeb7050443e9"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44052,
+            "sha256": "88340eb4775e0b1e4f873c8983737122cae632004a5a8ee859cbd5420d75bd16"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8705,
+            "sha256": "21e81ca00b1104e5f5daf8c697e464aee3f8f6cec9824e4a6ab9f79854cf9872"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+          "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1d568d775eb97a3938ba5251"
+    },
+    {
+      "receipt_id": "mb-murano-os-glass-station-handoff__receipt_0017",
+      "project_id": "mb-murano-os-glass-station-handoff",
+      "project_title": "Glass Station",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Glass Station / audit_prompt.md",
+      "component_case_id": "mb-murano-os-glass-station-handoff__0017__glass-station-audit-prompt-md",
+      "claim_to_demonstrate": "treats `audit_prompt.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Two LLM prompts (room_operator_prompt.md, audit_prompt.md) enable LLM-assisted curation and claim review. Discovery.",
+      "input_fixture": "project source text and the named component `audit_prompt.md`",
+      "operation_under_test": "treats `audit_prompt.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Two LLM prompts (room_operator_prompt.md, audit_prompt.md) enable LLM-assisted curation and claim review. Discovery.",
+      "expected_output": "inspectable implementation evidence tied to `audit_prompt.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "69bdc7fa4bd8a03bb62950bb",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42955,
+            "sha256": "d17716b42dde392cb1aa2b19853da66a8e48b046ee819918215cae24146eeb60"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34774,
+            "sha256": "0c38be7f60cd0b82c1d2bc6a573939a6f93052f48ea0a0b1e9a44df471a8aa1a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20968,
+            "sha256": "b401657dd015c559841ed1ea98852990f54f8c583d4007e11147d83c807b0496"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19926,
+            "sha256": "ad060004bdce5a3ab465ab5e5a22d2039e9d68935317a1dde2e5eeb7050443e9"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44052,
+            "sha256": "88340eb4775e0b1e4f873c8983737122cae632004a5a8ee859cbd5420d75bd16"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8705,
+            "sha256": "21e81ca00b1104e5f5daf8c697e464aee3f8f6cec9824e4a6ab9f79854cf9872"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-glass-station-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-glass-station-handoff/README.md",
+          "proof_builds/mb-murano-os-glass-station-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-glass-station-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d943936bffbe471e87ad4ad4"
+    }
+  ]
+}

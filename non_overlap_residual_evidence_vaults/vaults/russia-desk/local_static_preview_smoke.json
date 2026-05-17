@@ -1,0 +1,31 @@
+{
+  "project_id": "russia-desk",
+  "generated_at": "2026-05-17T01:48:29+00:00",
+  "scope": "local_static_package_preview",
+  "satisfies_hosted_deployment_gate": false,
+  "reason": "This confirms the packaged local static route, not a public hosted Porkbun deployment.",
+  "url_path": "/non_overlap_runtime_slices/apps/russia-desk/index.html",
+  "http_status": 200,
+  "desktop_screenshot": {
+    "url": "http://127.0.0.1:1882/non_overlap_runtime_slices/apps/russia-desk/index.html",
+    "output_file": "desktop_screenshot.png",
+    "width": 1280,
+    "height": 820,
+    "returncode": 0,
+    "stderr_tail": "6832:0516/215856.127:ERROR:chrome\\browser\\extensions\\external_registry_loader_win.cc:161] File [local-path-redacted]",
+    "exists": true,
+    "size_bytes": 86098,
+    "sha256": "74f10bf35e0e2ae9e1c4d6babfaa4c2a40b00815c7847f3d0155afba759ce9e6"
+  },
+  "mobile_screenshot": {
+    "url": "http://127.0.0.1:1882/non_overlap_runtime_slices/apps/russia-desk/index.html",
+    "output_file": "mobile_screenshot.png",
+    "width": 390,
+    "height": 780,
+    "returncode": 0,
+    "stderr_tail": "41784:0516/215922.410:ERROR:chrome\\browser\\extensions\\external_registry_loader_win.cc:161] File [local-path-redacted]",
+    "exists": true,
+    "size_bytes": 51154,
+    "sha256": "80590dc6d3e84c2406127bcfe608703ec354c68672608bdef752073cc8547b5f"
+  }
+}

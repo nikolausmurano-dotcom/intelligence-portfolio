@@ -1,0 +1,1470 @@
+{
+  "project": {
+    "project_id": "mb-murano-os-lossless-study-room-handoff",
+    "title": "Lossless Study Room"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-murano-os-lossless-study-room-handoff__receipt_0001",
+      "project_id": "mb-murano-os-lossless-study-room-handoff",
+      "project_title": "Lossless Study Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Lossless Study Room Handoff Identity",
+      "component_case_id": "mb-murano-os-lossless-study-room-handoff__0001__lossless-study-room-handoff-identity",
+      "claim_to_demonstrate": "Lossless Study Room is a MuranoOS handoff for Applied Intelligence Mission Control.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "Lossless Study Room is a MuranoOS handoff for Applied Intelligence Mission Control.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43752,
+            "sha256": "9b110dbcc00af28d673c0642f77c3c2e3f504ccfa488ef824089c3e400234bcc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35305,
+            "sha256": "cb49a3d7b4f650d69c44f7b9e981c370dc4fc1b3ad9780e6198d08605fd95e2b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21212,
+            "sha256": "3e95400b17de1502ff83d40cceda5ffb6c24d215dd40dcbb4e1f380de830f740"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20120,
+            "sha256": "8f41479bac854c6c2de4e8f00a995a6448b3ad48927cc9ef281dfecec00ecf3c"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44872,
+            "sha256": "ee21799c4191d46b2537738ebf0882ed8a00d6bbb67e113a1bf104a850eea517"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9334,
+            "sha256": "364eb60305e552a4c9c48d367ff7e4375bf6487210f07c77218816b88a203c0d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+          "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "78fbf13f0b5e218a4f68b3d9"
+    },
+    {
+      "receipt_id": "mb-murano-os-lossless-study-room-handoff__receipt_0002",
+      "project_id": "mb-murano-os-lossless-study-room-handoff",
+      "project_title": "Lossless Study Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Lossless Study Room Room Task Model",
+      "component_case_id": "mb-murano-os-lossless-study-room-handoff__0002__lossless-study-room-room-task-model",
+      "claim_to_demonstrate": "It combines distraction capture, per-course and cross-course Obsidian-style Zettelkasten structure, flashcard generation, source capture, coursework state, and review surfaces so graduate study becomes a governed knowledge-production room instead of scattered.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "It combines distraction capture, per-course and cross-course Obsidian-style Zettelkasten structure, flashcard generation, source capture, coursework state, and review surfaces so graduate study becomes a governed knowledge-production room instead of scattered.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43752,
+            "sha256": "9b110dbcc00af28d673c0642f77c3c2e3f504ccfa488ef824089c3e400234bcc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35305,
+            "sha256": "cb49a3d7b4f650d69c44f7b9e981c370dc4fc1b3ad9780e6198d08605fd95e2b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21212,
+            "sha256": "3e95400b17de1502ff83d40cceda5ffb6c24d215dd40dcbb4e1f380de830f740"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20120,
+            "sha256": "8f41479bac854c6c2de4e8f00a995a6448b3ad48927cc9ef281dfecec00ecf3c"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44872,
+            "sha256": "ee21799c4191d46b2537738ebf0882ed8a00d6bbb67e113a1bf104a850eea517"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9334,
+            "sha256": "364eb60305e552a4c9c48d367ff7e4375bf6487210f07c77218816b88a203c0d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+          "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0f89ca716b2c39e6b4720f86"
+    },
+    {
+      "receipt_id": "mb-murano-os-lossless-study-room-handoff__receipt_0003",
+      "project_id": "mb-murano-os-lossless-study-room-handoff",
+      "project_title": "Lossless Study Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Lossless Study Room Data Schema And Persistence Plan",
+      "component_case_id": "mb-murano-os-lossless-study-room-handoff__0003__lossless-study-room-data-schema-and-persistence-plan",
+      "claim_to_demonstrate": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43752,
+            "sha256": "9b110dbcc00af28d673c0642f77c3c2e3f504ccfa488ef824089c3e400234bcc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35305,
+            "sha256": "cb49a3d7b4f650d69c44f7b9e981c370dc4fc1b3ad9780e6198d08605fd95e2b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21212,
+            "sha256": "3e95400b17de1502ff83d40cceda5ffb6c24d215dd40dcbb4e1f380de830f740"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20120,
+            "sha256": "8f41479bac854c6c2de4e8f00a995a6448b3ad48927cc9ef281dfecec00ecf3c"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44872,
+            "sha256": "ee21799c4191d46b2537738ebf0882ed8a00d6bbb67e113a1bf104a850eea517"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9334,
+            "sha256": "364eb60305e552a4c9c48d367ff7e4375bf6487210f07c77218816b88a203c0d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+          "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f121ac56e1cebd1e60699ad2"
+    },
+    {
+      "receipt_id": "mb-murano-os-lossless-study-room-handoff__receipt_0004",
+      "project_id": "mb-murano-os-lossless-study-room-handoff",
+      "project_title": "Lossless Study Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Lossless Study Room Interface And Instrument Plane",
+      "component_case_id": "mb-murano-os-lossless-study-room-handoff__0004__lossless-study-room-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43752,
+            "sha256": "9b110dbcc00af28d673c0642f77c3c2e3f504ccfa488ef824089c3e400234bcc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35305,
+            "sha256": "cb49a3d7b4f650d69c44f7b9e981c370dc4fc1b3ad9780e6198d08605fd95e2b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21212,
+            "sha256": "3e95400b17de1502ff83d40cceda5ffb6c24d215dd40dcbb4e1f380de830f740"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20120,
+            "sha256": "8f41479bac854c6c2de4e8f00a995a6448b3ad48927cc9ef281dfecec00ecf3c"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44872,
+            "sha256": "ee21799c4191d46b2537738ebf0882ed8a00d6bbb67e113a1bf104a850eea517"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9334,
+            "sha256": "364eb60305e552a4c9c48d367ff7e4375bf6487210f07c77218816b88a203c0d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+          "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "19e6afc83d55d32f8c4568ca"
+    },
+    {
+      "receipt_id": "mb-murano-os-lossless-study-room-handoff__receipt_0005",
+      "project_id": "mb-murano-os-lossless-study-room-handoff",
+      "project_title": "Lossless Study Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Lossless Study Room Integration Path",
+      "component_case_id": "mb-murano-os-lossless-study-room-handoff__0005__lossless-study-room-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. When to reach for this: rebuilding a lossless study environment for a five-course graduate IC program; specifying Cornell-to-flashcard pipelines; handing spec to.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. When to reach for this: rebuilding a lossless study environment for a five-course graduate IC program; specifying Cornell-to-flashcard pipelines; handing spec to.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43752,
+            "sha256": "9b110dbcc00af28d673c0642f77c3c2e3f504ccfa488ef824089c3e400234bcc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35305,
+            "sha256": "cb49a3d7b4f650d69c44f7b9e981c370dc4fc1b3ad9780e6198d08605fd95e2b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21212,
+            "sha256": "3e95400b17de1502ff83d40cceda5ffb6c24d215dd40dcbb4e1f380de830f740"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20120,
+            "sha256": "8f41479bac854c6c2de4e8f00a995a6448b3ad48927cc9ef281dfecec00ecf3c"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44872,
+            "sha256": "ee21799c4191d46b2537738ebf0882ed8a00d6bbb67e113a1bf104a850eea517"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9334,
+            "sha256": "364eb60305e552a4c9c48d367ff7e4375bf6487210f07c77218816b88a203c0d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+          "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d7ea5197d1f4da48a18c30f6"
+    },
+    {
+      "receipt_id": "mb-murano-os-lossless-study-room-handoff__receipt_0006",
+      "project_id": "mb-murano-os-lossless-study-room-handoff",
+      "project_title": "Lossless Study Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Lossless Study Room Proof Boundary",
+      "component_case_id": "mb-murano-os-lossless-study-room-handoff__0006__lossless-study-room-proof-boundary",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43752,
+            "sha256": "9b110dbcc00af28d673c0642f77c3c2e3f504ccfa488ef824089c3e400234bcc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35305,
+            "sha256": "cb49a3d7b4f650d69c44f7b9e981c370dc4fc1b3ad9780e6198d08605fd95e2b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21212,
+            "sha256": "3e95400b17de1502ff83d40cceda5ffb6c24d215dd40dcbb4e1f380de830f740"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20120,
+            "sha256": "8f41479bac854c6c2de4e8f00a995a6448b3ad48927cc9ef281dfecec00ecf3c"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44872,
+            "sha256": "ee21799c4191d46b2537738ebf0882ed8a00d6bbb67e113a1bf104a850eea517"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9334,
+            "sha256": "364eb60305e552a4c9c48d367ff7e4375bf6487210f07c77218816b88a203c0d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+          "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d450026d0ee9b87bc67e17ec"
+    },
+    {
+      "receipt_id": "mb-murano-os-lossless-study-room-handoff__receipt_0007",
+      "project_id": "mb-murano-os-lossless-study-room-handoff",
+      "project_title": "Lossless Study Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Lossless Study Room Next Build Test",
+      "component_case_id": "mb-murano-os-lossless-study-room-handoff__0007__lossless-study-room-next-build-test",
+      "claim_to_demonstrate": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43752,
+            "sha256": "9b110dbcc00af28d673c0642f77c3c2e3f504ccfa488ef824089c3e400234bcc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35305,
+            "sha256": "cb49a3d7b4f650d69c44f7b9e981c370dc4fc1b3ad9780e6198d08605fd95e2b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21212,
+            "sha256": "3e95400b17de1502ff83d40cceda5ffb6c24d215dd40dcbb4e1f380de830f740"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20120,
+            "sha256": "8f41479bac854c6c2de4e8f00a995a6448b3ad48927cc9ef281dfecec00ecf3c"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44872,
+            "sha256": "ee21799c4191d46b2537738ebf0882ed8a00d6bbb67e113a1bf104a850eea517"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9334,
+            "sha256": "364eb60305e552a4c9c48d367ff7e4375bf6487210f07c77218816b88a203c0d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+          "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "766e3741a77d44b7ac21d0cc"
+    },
+    {
+      "receipt_id": "mb-murano-os-lossless-study-room-handoff__receipt_0008",
+      "project_id": "mb-murano-os-lossless-study-room-handoff",
+      "project_title": "Lossless Study Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Lossless Study Room / backend/frontend",
+      "component_case_id": "mb-murano-os-lossless-study-room-handoff__0008__lossless-study-room-backend-frontend",
+      "claim_to_demonstrate": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "input_fixture": "project source text and the named component `backend/frontend`",
+      "operation_under_test": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `backend/frontend`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d48e87513586f206da1640b4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43752,
+            "sha256": "9b110dbcc00af28d673c0642f77c3c2e3f504ccfa488ef824089c3e400234bcc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35305,
+            "sha256": "cb49a3d7b4f650d69c44f7b9e981c370dc4fc1b3ad9780e6198d08605fd95e2b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21212,
+            "sha256": "3e95400b17de1502ff83d40cceda5ffb6c24d215dd40dcbb4e1f380de830f740"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20120,
+            "sha256": "8f41479bac854c6c2de4e8f00a995a6448b3ad48927cc9ef281dfecec00ecf3c"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44872,
+            "sha256": "ee21799c4191d46b2537738ebf0882ed8a00d6bbb67e113a1bf104a850eea517"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9334,
+            "sha256": "364eb60305e552a4c9c48d367ff7e4375bf6487210f07c77218816b88a203c0d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+          "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7269792a57bbcd6d29f7077c"
+    },
+    {
+      "receipt_id": "mb-murano-os-lossless-study-room-handoff__receipt_0009",
+      "project_id": "mb-murano-os-lossless-study-room-handoff",
+      "project_title": "Lossless Study Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Lossless Study Room / 14_ASSUMPTIONS_AND_GAPS.md",
+      "component_case_id": "mb-murano-os-lossless-study-room-handoff__0009__lossless-study-room-14-assumptions-and-gaps-md",
+      "claim_to_demonstrate": "treats `14_ASSUMPTIONS_AND_GAPS.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: The design is shaped by two concrete user constraints surfaced in 14_ASSUMPTIONS_AND_GAPS.md: arm inflammation /.",
+      "input_fixture": "project source text and the named component `14_ASSUMPTIONS_AND_GAPS.md`",
+      "operation_under_test": "treats `14_ASSUMPTIONS_AND_GAPS.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: The design is shaped by two concrete user constraints surfaced in 14_ASSUMPTIONS_AND_GAPS.md: arm inflammation /.",
+      "expected_output": "inspectable implementation evidence tied to `14_ASSUMPTIONS_AND_GAPS.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4f1306727d081a14858d3070",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43752,
+            "sha256": "9b110dbcc00af28d673c0642f77c3c2e3f504ccfa488ef824089c3e400234bcc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35305,
+            "sha256": "cb49a3d7b4f650d69c44f7b9e981c370dc4fc1b3ad9780e6198d08605fd95e2b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21212,
+            "sha256": "3e95400b17de1502ff83d40cceda5ffb6c24d215dd40dcbb4e1f380de830f740"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20120,
+            "sha256": "8f41479bac854c6c2de4e8f00a995a6448b3ad48927cc9ef281dfecec00ecf3c"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44872,
+            "sha256": "ee21799c4191d46b2537738ebf0882ed8a00d6bbb67e113a1bf104a850eea517"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9334,
+            "sha256": "364eb60305e552a4c9c48d367ff7e4375bf6487210f07c77218816b88a203c0d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+          "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "83a05c0c469ef45847ddbe49"
+    },
+    {
+      "receipt_id": "mb-murano-os-lossless-study-room-handoff__receipt_0010",
+      "project_id": "mb-murano-os-lossless-study-room-handoff",
+      "project_title": "Lossless Study Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Lossless Study Room / README_FIRST.md",
+      "component_case_id": "mb-murano-os-lossless-study-room-handoff__0010__lossless-study-room-readme-first-md",
+      "claim_to_demonstrate": "treats `README_FIRST.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README_FIRST.md — 01_ROOM_INTENT_AND_PRINCIPLES.md — 03_OBJECT_MODEL_AND_FIELDS.md — 11_SAMPLE_OBJECTS/sample_objects.json.",
+      "input_fixture": "project source text and the named component `README_FIRST.md`",
+      "operation_under_test": "treats `README_FIRST.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README_FIRST.md — 01_ROOM_INTENT_AND_PRINCIPLES.md — 03_OBJECT_MODEL_AND_FIELDS.md — 11_SAMPLE_OBJECTS/sample_objects.json.",
+      "expected_output": "inspectable implementation evidence tied to `README_FIRST.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "29c5687733c8c4f281d0e5d7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43752,
+            "sha256": "9b110dbcc00af28d673c0642f77c3c2e3f504ccfa488ef824089c3e400234bcc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35305,
+            "sha256": "cb49a3d7b4f650d69c44f7b9e981c370dc4fc1b3ad9780e6198d08605fd95e2b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21212,
+            "sha256": "3e95400b17de1502ff83d40cceda5ffb6c24d215dd40dcbb4e1f380de830f740"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20120,
+            "sha256": "8f41479bac854c6c2de4e8f00a995a6448b3ad48927cc9ef281dfecec00ecf3c"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44872,
+            "sha256": "ee21799c4191d46b2537738ebf0882ed8a00d6bbb67e113a1bf104a850eea517"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9334,
+            "sha256": "364eb60305e552a4c9c48d367ff7e4375bf6487210f07c77218816b88a203c0d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+          "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7d0da5479c22af3b9744dba8"
+    },
+    {
+      "receipt_id": "mb-murano-os-lossless-study-room-handoff__receipt_0011",
+      "project_id": "mb-murano-os-lossless-study-room-handoff",
+      "project_title": "Lossless Study Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Lossless Study Room / 01_ROOM_INTENT_AND_PRINCIPLES.md",
+      "component_case_id": "mb-murano-os-lossless-study-room-handoff__0011__lossless-study-room-01-room-intent-and-principles-md",
+      "claim_to_demonstrate": "treats `01_ROOM_INTENT_AND_PRINCIPLES.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README_FIRST.md — 01_ROOM_INTENT_AND_PRINCIPLES.md — 03_OBJECT_MODEL_AND_FIELDS.md —.",
+      "input_fixture": "project source text and the named component `01_ROOM_INTENT_AND_PRINCIPLES.md`",
+      "operation_under_test": "treats `01_ROOM_INTENT_AND_PRINCIPLES.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README_FIRST.md — 01_ROOM_INTENT_AND_PRINCIPLES.md — 03_OBJECT_MODEL_AND_FIELDS.md —.",
+      "expected_output": "inspectable implementation evidence tied to `01_ROOM_INTENT_AND_PRINCIPLES.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "29c5687733c8c4f281d0e5d7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43752,
+            "sha256": "9b110dbcc00af28d673c0642f77c3c2e3f504ccfa488ef824089c3e400234bcc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35305,
+            "sha256": "cb49a3d7b4f650d69c44f7b9e981c370dc4fc1b3ad9780e6198d08605fd95e2b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21212,
+            "sha256": "3e95400b17de1502ff83d40cceda5ffb6c24d215dd40dcbb4e1f380de830f740"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20120,
+            "sha256": "8f41479bac854c6c2de4e8f00a995a6448b3ad48927cc9ef281dfecec00ecf3c"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44872,
+            "sha256": "ee21799c4191d46b2537738ebf0882ed8a00d6bbb67e113a1bf104a850eea517"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9334,
+            "sha256": "364eb60305e552a4c9c48d367ff7e4375bf6487210f07c77218816b88a203c0d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+          "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3a6c56807d14607bdc7d88f1"
+    },
+    {
+      "receipt_id": "mb-murano-os-lossless-study-room-handoff__receipt_0012",
+      "project_id": "mb-murano-os-lossless-study-room-handoff",
+      "project_title": "Lossless Study Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Lossless Study Room / 03_OBJECT_MODEL_AND_FIELDS.md",
+      "component_case_id": "mb-murano-os-lossless-study-room-handoff__0012__lossless-study-room-03-object-model-and-fields-md",
+      "claim_to_demonstrate": "treats `03_OBJECT_MODEL_AND_FIELDS.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README_FIRST.md — 01_ROOM_INTENT_AND_PRINCIPLES.md — 03_OBJECT_MODEL_AND_FIELDS.md —.",
+      "input_fixture": "project source text and the named component `03_OBJECT_MODEL_AND_FIELDS.md`",
+      "operation_under_test": "treats `03_OBJECT_MODEL_AND_FIELDS.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README_FIRST.md — 01_ROOM_INTENT_AND_PRINCIPLES.md — 03_OBJECT_MODEL_AND_FIELDS.md —.",
+      "expected_output": "inspectable implementation evidence tied to `03_OBJECT_MODEL_AND_FIELDS.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "29c5687733c8c4f281d0e5d7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43752,
+            "sha256": "9b110dbcc00af28d673c0642f77c3c2e3f504ccfa488ef824089c3e400234bcc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35305,
+            "sha256": "cb49a3d7b4f650d69c44f7b9e981c370dc4fc1b3ad9780e6198d08605fd95e2b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21212,
+            "sha256": "3e95400b17de1502ff83d40cceda5ffb6c24d215dd40dcbb4e1f380de830f740"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20120,
+            "sha256": "8f41479bac854c6c2de4e8f00a995a6448b3ad48927cc9ef281dfecec00ecf3c"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44872,
+            "sha256": "ee21799c4191d46b2537738ebf0882ed8a00d6bbb67e113a1bf104a850eea517"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9334,
+            "sha256": "364eb60305e552a4c9c48d367ff7e4375bf6487210f07c77218816b88a203c0d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+          "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e8f3374baae387bb2e9ec63c"
+    },
+    {
+      "receipt_id": "mb-murano-os-lossless-study-room-handoff__receipt_0013",
+      "project_id": "mb-murano-os-lossless-study-room-handoff",
+      "project_title": "Lossless Study Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Lossless Study Room / sample_objects.json",
+      "component_case_id": "mb-murano-os-lossless-study-room-handoff__0013__lossless-study-room-sample-objects-json",
+      "claim_to_demonstrate": "treats `sample_objects.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README_FIRST.md — 01_ROOM_INTENT_AND_PRINCIPLES.md — 03_OBJECT_MODEL_AND_FIELDS.md —.",
+      "input_fixture": "project source text and the named component `sample_objects.json`",
+      "operation_under_test": "treats `sample_objects.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README_FIRST.md — 01_ROOM_INTENT_AND_PRINCIPLES.md — 03_OBJECT_MODEL_AND_FIELDS.md —.",
+      "expected_output": "inspectable implementation evidence tied to `sample_objects.json`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "29c5687733c8c4f281d0e5d7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43752,
+            "sha256": "9b110dbcc00af28d673c0642f77c3c2e3f504ccfa488ef824089c3e400234bcc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35305,
+            "sha256": "cb49a3d7b4f650d69c44f7b9e981c370dc4fc1b3ad9780e6198d08605fd95e2b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21212,
+            "sha256": "3e95400b17de1502ff83d40cceda5ffb6c24d215dd40dcbb4e1f380de830f740"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20120,
+            "sha256": "8f41479bac854c6c2de4e8f00a995a6448b3ad48927cc9ef281dfecec00ecf3c"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44872,
+            "sha256": "ee21799c4191d46b2537738ebf0882ed8a00d6bbb67e113a1bf104a850eea517"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9334,
+            "sha256": "364eb60305e552a4c9c48d367ff7e4375bf6487210f07c77218816b88a203c0d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+          "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "459b5e4accb722bfcfb3ad1a"
+    },
+    {
+      "receipt_id": "mb-murano-os-lossless-study-room-handoff__receipt_0014",
+      "project_id": "mb-murano-os-lossless-study-room-handoff",
+      "project_title": "Lossless Study Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Lossless Study Room / 09_SHARED_CONCEPTS_SEED.csv",
+      "component_case_id": "mb-murano-os-lossless-study-room-handoff__0014__lossless-study-room-09-shared-concepts-seed-csv",
+      "claim_to_demonstrate": "treats `09_SHARED_CONCEPTS_SEED.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: - 09_SHARED_CONCEPTS_SEED.csv — pre-populated Zettelkasten with core IC concepts - 10_TEMPLATES/ — 5 ready-to-use.",
+      "input_fixture": "project source text and the named component `09_SHARED_CONCEPTS_SEED.csv`",
+      "operation_under_test": "treats `09_SHARED_CONCEPTS_SEED.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: - 09_SHARED_CONCEPTS_SEED.csv — pre-populated Zettelkasten with core IC concepts - 10_TEMPLATES/ — 5 ready-to-use.",
+      "expected_output": "inspectable implementation evidence tied to `09_SHARED_CONCEPTS_SEED.csv`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "51ce23bbb762056262aa096d",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43752,
+            "sha256": "9b110dbcc00af28d673c0642f77c3c2e3f504ccfa488ef824089c3e400234bcc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35305,
+            "sha256": "cb49a3d7b4f650d69c44f7b9e981c370dc4fc1b3ad9780e6198d08605fd95e2b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21212,
+            "sha256": "3e95400b17de1502ff83d40cceda5ffb6c24d215dd40dcbb4e1f380de830f740"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20120,
+            "sha256": "8f41479bac854c6c2de4e8f00a995a6448b3ad48927cc9ef281dfecec00ecf3c"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44872,
+            "sha256": "ee21799c4191d46b2537738ebf0882ed8a00d6bbb67e113a1bf104a850eea517"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9334,
+            "sha256": "364eb60305e552a4c9c48d367ff7e4375bf6487210f07c77218816b88a203c0d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+          "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e51e1bffa8a01d9817dd7094"
+    },
+    {
+      "receipt_id": "mb-murano-os-lossless-study-room-handoff__receipt_0015",
+      "project_id": "mb-murano-os-lossless-study-room-handoff",
+      "project_title": "Lossless Study Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Lossless Study Room / Applied Intelligence Mission Control",
+      "component_case_id": "mb-murano-os-lossless-study-room-handoff__0015__lossless-study-room-applied-intelligence-mission-control",
+      "claim_to_demonstrate": "uses `Applied Intelligence Mission Control` as a named project component with a traceable role in the public mechanism. Source context: Working title: \"Applied Intelligence Mission Control.\" This is the handoff for a lossless study room designed specifically.",
+      "input_fixture": "project source text and the named component `Applied Intelligence Mission Control`",
+      "operation_under_test": "uses `Applied Intelligence Mission Control` as a named project component with a traceable role in the public mechanism. Source context: Working title: \"Applied Intelligence Mission Control.\" This is the handoff for a lossless study room designed specifically.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Applied Intelligence Mission Control`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "7ae15e23bcff0447af7fdc15",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43752,
+            "sha256": "9b110dbcc00af28d673c0642f77c3c2e3f504ccfa488ef824089c3e400234bcc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35305,
+            "sha256": "cb49a3d7b4f650d69c44f7b9e981c370dc4fc1b3ad9780e6198d08605fd95e2b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21212,
+            "sha256": "3e95400b17de1502ff83d40cceda5ffb6c24d215dd40dcbb4e1f380de830f740"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20120,
+            "sha256": "8f41479bac854c6c2de4e8f00a995a6448b3ad48927cc9ef281dfecec00ecf3c"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44872,
+            "sha256": "ee21799c4191d46b2537738ebf0882ed8a00d6bbb67e113a1bf104a850eea517"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9334,
+            "sha256": "364eb60305e552a4c9c48d367ff7e4375bf6487210f07c77218816b88a203c0d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+          "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "fb3b651245f1848a800e177d"
+    },
+    {
+      "receipt_id": "mb-murano-os-lossless-study-room-handoff__receipt_0016",
+      "project_id": "mb-murano-os-lossless-study-room-handoff",
+      "project_title": "Lossless Study Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Lossless Study Room / Georgetown-style MPAI",
+      "component_case_id": "mb-murano-os-lossless-study-room-handoff__0016__lossless-study-room-georgetown-style-mpai",
+      "claim_to_demonstrate": "uses `Georgetown-style MPAI` as a named project component with a traceable role in the public mechanism. Source context: \"Applied Intelligence Mission Control.\" This is the handoff for a lossless study room designed specifically to host a graduate-level.",
+      "input_fixture": "project source text and the named component `Georgetown-style MPAI`",
+      "operation_under_test": "uses `Georgetown-style MPAI` as a named project component with a traceable role in the public mechanism. Source context: \"Applied Intelligence Mission Control.\" This is the handoff for a lossless study room designed specifically to host a graduate-level.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Georgetown-style MPAI`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "724a2fad580221c87de24c05",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43752,
+            "sha256": "9b110dbcc00af28d673c0642f77c3c2e3f504ccfa488ef824089c3e400234bcc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35305,
+            "sha256": "cb49a3d7b4f650d69c44f7b9e981c370dc4fc1b3ad9780e6198d08605fd95e2b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21212,
+            "sha256": "3e95400b17de1502ff83d40cceda5ffb6c24d215dd40dcbb4e1f380de830f740"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20120,
+            "sha256": "8f41479bac854c6c2de4e8f00a995a6448b3ad48927cc9ef281dfecec00ecf3c"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44872,
+            "sha256": "ee21799c4191d46b2537738ebf0882ed8a00d6bbb67e113a1bf104a850eea517"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9334,
+            "sha256": "364eb60305e552a4c9c48d367ff7e4375bf6487210f07c77218816b88a203c0d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+          "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0fbe18f3ea9d325f1a883dfb"
+    },
+    {
+      "receipt_id": "mb-murano-os-lossless-study-room-handoff__receipt_0017",
+      "project_id": "mb-murano-os-lossless-study-room-handoff",
+      "project_title": "Lossless Study Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Lossless Study Room / Distraction Capture",
+      "component_case_id": "mb-murano-os-lossless-study-room-handoff__0017__lossless-study-room-distraction-capture",
+      "claim_to_demonstrate": "uses `Distraction Capture` as a named project component with a traceable role in the public mechanism. Source context: arm inflammation / typing strain (so dictation, quick capture, and low-friction conversion are first-class modes, not afterthoughts) and.",
+      "input_fixture": "project source text and the named component `Distraction Capture`",
+      "operation_under_test": "uses `Distraction Capture` as a named project component with a traceable role in the public mechanism. Source context: arm inflammation / typing strain (so dictation, quick capture, and low-friction conversion are first-class modes, not afterthoughts) and.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Distraction Capture`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "9f817fe2e6f98a9f84b3071f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43752,
+            "sha256": "9b110dbcc00af28d673c0642f77c3c2e3f504ccfa488ef824089c3e400234bcc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35305,
+            "sha256": "cb49a3d7b4f650d69c44f7b9e981c370dc4fc1b3ad9780e6198d08605fd95e2b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21212,
+            "sha256": "3e95400b17de1502ff83d40cceda5ffb6c24d215dd40dcbb4e1f380de830f740"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20120,
+            "sha256": "8f41479bac854c6c2de4e8f00a995a6448b3ad48927cc9ef281dfecec00ecf3c"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44872,
+            "sha256": "ee21799c4191d46b2537738ebf0882ed8a00d6bbb67e113a1bf104a850eea517"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9334,
+            "sha256": "364eb60305e552a4c9c48d367ff7e4375bf6487210f07c77218816b88a203c0d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/blueprint.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/instrument_map.json",
+          "project_blueprints/mb-murano-os-lossless-study-room-handoff/README.md",
+          "proof_builds/mb-murano-os-lossless-study-room-handoff/proof_build.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/demo_cases.json",
+          "proof_demos/mb-murano-os-lossless-study-room-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4de480ea89c27847989de8ea"
+    }
+  ]
+}

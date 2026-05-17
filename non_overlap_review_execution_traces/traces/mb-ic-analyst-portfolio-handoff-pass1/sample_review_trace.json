@@ -1,0 +1,31 @@
+{
+  "project_id": "mb-ic-analyst-portfolio-handoff-pass1",
+  "product_name": "IC analyst portfolio build kit; skill taxonomy S01-S26",
+  "object_family": "source/archive governance",
+  "instrument": "Source-and-claim review instrument",
+  "run_time": "2026-05-15T20:30:44+00:00",
+  "artifact_reviewed": "IC analyst portfolio build kit; skill taxonomy S01-S26 review workbench",
+  "evidence_basis": "The package can capture identity, authority, route, and claim-ceiling logic, but source quotations and external validation still require human review.",
+  "review_decision": "Accept as executable review evidence; do not promote to full operational standing until the remaining gap is closed.",
+  "checks": [
+    {
+      "name": "object identified",
+      "pass": true
+    },
+    {
+      "name": "evidence basis stated",
+      "pass": true
+    },
+    {
+      "name": "claim boundary stated",
+      "pass": true
+    },
+    {
+      "name": "next action named",
+      "pass": true
+    }
+  ],
+  "acceptance_decision": "PASS",
+  "claim_boundary": "Executed review trace for a local review workbench; not full production readiness or external validation.",
+  "trace_hash": "4771c2e894f74b71"
+}

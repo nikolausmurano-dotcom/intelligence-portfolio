@@ -1,0 +1,868 @@
+{
+  "project": {
+    "project_id": "row6",
+    "title": "Scholarly Retrieval System — cross-disciplinary research library with a twelve-stage analytical-governance plane"
+  },
+  "receipts": [
+    {
+      "receipt_id": "row6__receipt_0001",
+      "project_id": "row6",
+      "project_title": "Scholarly Retrieval System — cross-disciplinary research library with a twelve-stage analytical-governance plane",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Root Registry And Corpus Admission",
+      "component_case_id": "row6__0001__root-registry-and-corpus-admission",
+      "claim_to_demonstrate": "decides what belongs in the scholarly corpus, what is stable but unprocessed, what is committed, and what remains excluded or failed",
+      "input_fixture": "books, PDFs, Calibre records, manifests, root paths, source hashes, and status classes",
+      "operation_under_test": "decides what belongs in the scholarly corpus, what is stable but unprocessed, what is committed, and what remains excluded or failed",
+      "expected_output": "admitted corpus records plus holding, failed, and promotion states",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "b8df435082ae149ac3831670",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row6/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 27502,
+            "sha256": "009553d053dafa6a1add9fc5c18a165fab35778c2754aa30f2d166121bf77e1d"
+          },
+          {
+            "relative_path": "project_blueprints/row6/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17617,
+            "sha256": "eb450a7fa453eff7fb8f9f2c2a66e6fd9ed278118a71f7f6f19c04245557a0ab"
+          },
+          {
+            "relative_path": "project_blueprints/row6/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 15800,
+            "sha256": "0149f8bb4eac82b7a010bac68d354519f916ff7742159e752677cb045ac17512"
+          },
+          {
+            "relative_path": "proof_builds/row6/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 12385,
+            "sha256": "094e192cb6f69f02b0fb0dedf5a8468fdc1c7502a87e98de37709e321f90c5ef"
+          },
+          {
+            "relative_path": "proof_demos/row6/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 24207,
+            "sha256": "77f489bdb888571223dbed6ec491ef014892fd56fdd306b3569baf54b8830cb5"
+          },
+          {
+            "relative_path": "proof_demos/row6/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 5954,
+            "sha256": "8ef3e12f261cca0d4634f72ea15261089c40976622fdd59536ab00668ea17502"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row6/blueprint.json",
+          "project_blueprints/row6/instrument_map.json",
+          "project_blueprints/row6/README.md",
+          "proof_builds/row6/proof_build.json",
+          "proof_demos/row6/demo_cases.json",
+          "proof_demos/row6/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0ffd46cc8520f8103ce01e50"
+    },
+    {
+      "receipt_id": "row6__receipt_0002",
+      "project_id": "row6",
+      "project_title": "Scholarly Retrieval System — cross-disciplinary research library with a twelve-stage analytical-governance plane",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Bibliographic Identity And Authority Control",
+      "component_case_id": "row6__0002__bibliographic-identity-and-authority-control",
+      "claim_to_demonstrate": "moves from file identity toward work/edition/source identity so duplicate files do not masquerade as independent evidence",
+      "input_fixture": "file paths, internal metadata, editions, duplicate candidates, OCR quality, genre signals, and source typology",
+      "operation_under_test": "moves from file identity toward work/edition/source identity so duplicate files do not masquerade as independent evidence",
+      "expected_output": "bibliographic identity record and authority-control warning surface",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a066c7cf0674014fc145cef3",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row6/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 27502,
+            "sha256": "009553d053dafa6a1add9fc5c18a165fab35778c2754aa30f2d166121bf77e1d"
+          },
+          {
+            "relative_path": "project_blueprints/row6/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17617,
+            "sha256": "eb450a7fa453eff7fb8f9f2c2a66e6fd9ed278118a71f7f6f19c04245557a0ab"
+          },
+          {
+            "relative_path": "project_blueprints/row6/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 15800,
+            "sha256": "0149f8bb4eac82b7a010bac68d354519f916ff7742159e752677cb045ac17512"
+          },
+          {
+            "relative_path": "proof_builds/row6/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 12385,
+            "sha256": "094e192cb6f69f02b0fb0dedf5a8468fdc1c7502a87e98de37709e321f90c5ef"
+          },
+          {
+            "relative_path": "proof_demos/row6/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 24207,
+            "sha256": "77f489bdb888571223dbed6ec491ef014892fd56fdd306b3569baf54b8830cb5"
+          },
+          {
+            "relative_path": "proof_demos/row6/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 5954,
+            "sha256": "8ef3e12f261cca0d4634f72ea15261089c40976622fdd59536ab00668ea17502"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row6/blueprint.json",
+          "project_blueprints/row6/instrument_map.json",
+          "project_blueprints/row6/README.md",
+          "proof_builds/row6/proof_build.json",
+          "proof_demos/row6/demo_cases.json",
+          "proof_demos/row6/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "29e91934f74a8a7b6cd0621b"
+    },
+    {
+      "receipt_id": "row6__receipt_0003",
+      "project_id": "row6",
+      "project_title": "Scholarly Retrieval System — cross-disciplinary research library with a twelve-stage analytical-governance plane",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Extraction Pipeline",
+      "component_case_id": "row6__0003__extraction-pipeline",
+      "claim_to_demonstrate": "turns a book into structured scholarly records before retrieval or synthesis relies on it",
+      "input_fixture": "admitted source, profile-only mode, structural detectors, bibliography/index/further-reading/glossary/acknowledgment miners, and optional argumentative extraction",
+      "operation_under_test": "turns a book into structured scholarly records before retrieval or synthesis relies on it",
+      "expected_output": "source profile, structural extraction database records, and argumentative-extraction candidates",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a79a7db3f74e3ef012e7c7eb",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row6/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 27502,
+            "sha256": "009553d053dafa6a1add9fc5c18a165fab35778c2754aa30f2d166121bf77e1d"
+          },
+          {
+            "relative_path": "project_blueprints/row6/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17617,
+            "sha256": "eb450a7fa453eff7fb8f9f2c2a66e6fd9ed278118a71f7f6f19c04245557a0ab"
+          },
+          {
+            "relative_path": "project_blueprints/row6/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 15800,
+            "sha256": "0149f8bb4eac82b7a010bac68d354519f916ff7742159e752677cb045ac17512"
+          },
+          {
+            "relative_path": "proof_builds/row6/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 12385,
+            "sha256": "094e192cb6f69f02b0fb0dedf5a8468fdc1c7502a87e98de37709e321f90c5ef"
+          },
+          {
+            "relative_path": "proof_demos/row6/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 24207,
+            "sha256": "77f489bdb888571223dbed6ec491ef014892fd56fdd306b3569baf54b8830cb5"
+          },
+          {
+            "relative_path": "proof_demos/row6/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 5954,
+            "sha256": "8ef3e12f261cca0d4634f72ea15261089c40976622fdd59536ab00668ea17502"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row6/blueprint.json",
+          "project_blueprints/row6/instrument_map.json",
+          "project_blueprints/row6/README.md",
+          "proof_builds/row6/proof_build.json",
+          "proof_demos/row6/demo_cases.json",
+          "proof_demos/row6/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "47293981fcdba57c90a52312"
+    },
+    {
+      "receipt_id": "row6__receipt_0004",
+      "project_id": "row6",
+      "project_title": "Scholarly Retrieval System — cross-disciplinary research library with a twelve-stage analytical-governance plane",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Hybrid Retrieval Plane",
+      "component_case_id": "row6__0004__hybrid-retrieval-plane",
+      "claim_to_demonstrate": "uses hybrid dense/sparse retrieval with fusion and domain-aware constraints where available",
+      "input_fixture": "committed corpus records, BM25 index, dense index, query intent, filters, and chunk windows",
+      "operation_under_test": "uses hybrid dense/sparse retrieval with fusion and domain-aware constraints where available",
+      "expected_output": "ranked evidence candidates with provenance as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "142ea54ac2cd14fd89a32396",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row6/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 27502,
+            "sha256": "009553d053dafa6a1add9fc5c18a165fab35778c2754aa30f2d166121bf77e1d"
+          },
+          {
+            "relative_path": "project_blueprints/row6/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17617,
+            "sha256": "eb450a7fa453eff7fb8f9f2c2a66e6fd9ed278118a71f7f6f19c04245557a0ab"
+          },
+          {
+            "relative_path": "project_blueprints/row6/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 15800,
+            "sha256": "0149f8bb4eac82b7a010bac68d354519f916ff7742159e752677cb045ac17512"
+          },
+          {
+            "relative_path": "proof_builds/row6/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 12385,
+            "sha256": "094e192cb6f69f02b0fb0dedf5a8468fdc1c7502a87e98de37709e321f90c5ef"
+          },
+          {
+            "relative_path": "proof_demos/row6/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 24207,
+            "sha256": "77f489bdb888571223dbed6ec491ef014892fd56fdd306b3569baf54b8830cb5"
+          },
+          {
+            "relative_path": "proof_demos/row6/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 5954,
+            "sha256": "8ef3e12f261cca0d4634f72ea15261089c40976622fdd59536ab00668ea17502"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row6/blueprint.json",
+          "project_blueprints/row6/instrument_map.json",
+          "project_blueprints/row6/README.md",
+          "proof_builds/row6/proof_build.json",
+          "proof_demos/row6/demo_cases.json",
+          "proof_demos/row6/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "eeb482de163ef4aca19552a6"
+    },
+    {
+      "receipt_id": "row6__receipt_0005",
+      "project_id": "row6",
+      "project_title": "Scholarly Retrieval System — cross-disciplinary research library with a twelve-stage analytical-governance plane",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Query Decomposition And Evidence Search",
+      "component_case_id": "row6__0005__query-decomposition-and-evidence-search",
+      "claim_to_demonstrate": "breaks broad questions into evidence-searchable subclaims instead of asking one fluent answer from a black box",
+      "input_fixture": "research question, subquestions, scope constraints, and retrieval results",
+      "operation_under_test": "breaks broad questions into evidence-searchable subclaims instead of asking one fluent answer from a black box",
+      "expected_output": "evidence packet organized around answerable claim units",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3683b9be77cd91914267cee3",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row6/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 27502,
+            "sha256": "009553d053dafa6a1add9fc5c18a165fab35778c2754aa30f2d166121bf77e1d"
+          },
+          {
+            "relative_path": "project_blueprints/row6/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17617,
+            "sha256": "eb450a7fa453eff7fb8f9f2c2a66e6fd9ed278118a71f7f6f19c04245557a0ab"
+          },
+          {
+            "relative_path": "project_blueprints/row6/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 15800,
+            "sha256": "0149f8bb4eac82b7a010bac68d354519f916ff7742159e752677cb045ac17512"
+          },
+          {
+            "relative_path": "proof_builds/row6/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 12385,
+            "sha256": "094e192cb6f69f02b0fb0dedf5a8468fdc1c7502a87e98de37709e321f90c5ef"
+          },
+          {
+            "relative_path": "proof_demos/row6/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 24207,
+            "sha256": "77f489bdb888571223dbed6ec491ef014892fd56fdd306b3569baf54b8830cb5"
+          },
+          {
+            "relative_path": "proof_demos/row6/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 5954,
+            "sha256": "8ef3e12f261cca0d4634f72ea15261089c40976622fdd59536ab00668ea17502"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row6/blueprint.json",
+          "project_blueprints/row6/instrument_map.json",
+          "project_blueprints/row6/README.md",
+          "proof_builds/row6/proof_build.json",
+          "proof_demos/row6/demo_cases.json",
+          "proof_demos/row6/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e8a41537f37138a3f397bec7"
+    },
+    {
+      "receipt_id": "row6__receipt_0006",
+      "project_id": "row6",
+      "project_title": "Scholarly Retrieval System — cross-disciplinary research library with a twelve-stage analytical-governance plane",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Citation Validation And Claim Support",
+      "component_case_id": "row6__0006__citation-validation-and-claim-support",
+      "claim_to_demonstrate": "checks whether claims are supported, weakly supported, contradicted, or unsupported before synthesis is allowed to stand",
+      "input_fixture": "candidate answer, retrieved passages, citations, and source lineage",
+      "operation_under_test": "checks whether claims are supported, weakly supported, contradicted, or unsupported before synthesis is allowed to stand",
+      "expected_output": "claim-to-evidence decision packet as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a137e65a7c605e8f4df6fc59",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row6/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 27502,
+            "sha256": "009553d053dafa6a1add9fc5c18a165fab35778c2754aa30f2d166121bf77e1d"
+          },
+          {
+            "relative_path": "project_blueprints/row6/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17617,
+            "sha256": "eb450a7fa453eff7fb8f9f2c2a66e6fd9ed278118a71f7f6f19c04245557a0ab"
+          },
+          {
+            "relative_path": "project_blueprints/row6/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 15800,
+            "sha256": "0149f8bb4eac82b7a010bac68d354519f916ff7742159e752677cb045ac17512"
+          },
+          {
+            "relative_path": "proof_builds/row6/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 12385,
+            "sha256": "094e192cb6f69f02b0fb0dedf5a8468fdc1c7502a87e98de37709e321f90c5ef"
+          },
+          {
+            "relative_path": "proof_demos/row6/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 24207,
+            "sha256": "77f489bdb888571223dbed6ec491ef014892fd56fdd306b3569baf54b8830cb5"
+          },
+          {
+            "relative_path": "proof_demos/row6/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 5954,
+            "sha256": "8ef3e12f261cca0d4634f72ea15261089c40976622fdd59536ab00668ea17502"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row6/blueprint.json",
+          "project_blueprints/row6/instrument_map.json",
+          "project_blueprints/row6/README.md",
+          "proof_builds/row6/proof_build.json",
+          "proof_demos/row6/demo_cases.json",
+          "proof_demos/row6/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "867f462ab0ba37a69de688d3"
+    },
+    {
+      "receipt_id": "row6__receipt_0007",
+      "project_id": "row6",
+      "project_title": "Scholarly Retrieval System — cross-disciplinary research library with a twelve-stage analytical-governance plane",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Contradiction And Red-Team Review",
+      "component_case_id": "row6__0007__contradiction-and-red-team-review",
+      "claim_to_demonstrate": "looks for source conflict, rival interpretations, and overconfident synthesis before release",
+      "input_fixture": "supported claims, rival passages, source families, and uncertainty markers",
+      "operation_under_test": "looks for source conflict, rival interpretations, and overconfident synthesis before release",
+      "expected_output": "contradiction review and narrowed claim ceiling",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8a501b55a7d66a993bb36701",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row6/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 27502,
+            "sha256": "009553d053dafa6a1add9fc5c18a165fab35778c2754aa30f2d166121bf77e1d"
+          },
+          {
+            "relative_path": "project_blueprints/row6/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17617,
+            "sha256": "eb450a7fa453eff7fb8f9f2c2a66e6fd9ed278118a71f7f6f19c04245557a0ab"
+          },
+          {
+            "relative_path": "project_blueprints/row6/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 15800,
+            "sha256": "0149f8bb4eac82b7a010bac68d354519f916ff7742159e752677cb045ac17512"
+          },
+          {
+            "relative_path": "proof_builds/row6/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 12385,
+            "sha256": "094e192cb6f69f02b0fb0dedf5a8468fdc1c7502a87e98de37709e321f90c5ef"
+          },
+          {
+            "relative_path": "proof_demos/row6/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 24207,
+            "sha256": "77f489bdb888571223dbed6ec491ef014892fd56fdd306b3569baf54b8830cb5"
+          },
+          {
+            "relative_path": "proof_demos/row6/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 5954,
+            "sha256": "8ef3e12f261cca0d4634f72ea15261089c40976622fdd59536ab00668ea17502"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row6/blueprint.json",
+          "project_blueprints/row6/instrument_map.json",
+          "project_blueprints/row6/README.md",
+          "proof_builds/row6/proof_build.json",
+          "proof_demos/row6/demo_cases.json",
+          "proof_demos/row6/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a01a24332cce0dda52f27c5a"
+    },
+    {
+      "receipt_id": "row6__receipt_0008",
+      "project_id": "row6",
+      "project_title": "Scholarly Retrieval System — cross-disciplinary research library with a twelve-stage analytical-governance plane",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Abstention And Refusal Gate",
+      "component_case_id": "row6__0008__abstention-and-refusal-gate",
+      "claim_to_demonstrate": "refuses or narrows answers when the corpus cannot support the requested claim; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "evidence packet, source support state, contradiction state, and user query",
+      "operation_under_test": "refuses or narrows answers when the corpus cannot support the requested claim; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "answer, qualified answer, follow-up search plan, or refusal",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4455b197b8fee773b4ce0a7a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row6/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 27502,
+            "sha256": "009553d053dafa6a1add9fc5c18a165fab35778c2754aa30f2d166121bf77e1d"
+          },
+          {
+            "relative_path": "project_blueprints/row6/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17617,
+            "sha256": "eb450a7fa453eff7fb8f9f2c2a66e6fd9ed278118a71f7f6f19c04245557a0ab"
+          },
+          {
+            "relative_path": "project_blueprints/row6/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 15800,
+            "sha256": "0149f8bb4eac82b7a010bac68d354519f916ff7742159e752677cb045ac17512"
+          },
+          {
+            "relative_path": "proof_builds/row6/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 12385,
+            "sha256": "094e192cb6f69f02b0fb0dedf5a8468fdc1c7502a87e98de37709e321f90c5ef"
+          },
+          {
+            "relative_path": "proof_demos/row6/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 24207,
+            "sha256": "77f489bdb888571223dbed6ec491ef014892fd56fdd306b3569baf54b8830cb5"
+          },
+          {
+            "relative_path": "proof_demos/row6/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 5954,
+            "sha256": "8ef3e12f261cca0d4634f72ea15261089c40976622fdd59536ab00668ea17502"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row6/blueprint.json",
+          "project_blueprints/row6/instrument_map.json",
+          "project_blueprints/row6/README.md",
+          "proof_builds/row6/proof_build.json",
+          "proof_demos/row6/demo_cases.json",
+          "proof_demos/row6/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6cd76c868aac609dad4e9f20"
+    },
+    {
+      "receipt_id": "row6__receipt_0009",
+      "project_id": "row6",
+      "project_title": "Scholarly Retrieval System — cross-disciplinary research library with a twelve-stage analytical-governance plane",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Evidence Export And Permission Membrane",
+      "component_case_id": "row6__0009__evidence-export-and-permission-membrane",
+      "claim_to_demonstrate": "validates that an external package can be issued or shared without raw-text leakage, local-path exposure, or unsupported derived claims",
+      "input_fixture": "redacted evidence package, share request, inventory state, operator intent, and retention rules",
+      "operation_under_test": "validates that an external package can be issued or shared without raw-text leakage, local-path exposure, or unsupported derived claims",
+      "expected_output": "share-authorized export package or blocked share decision",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "b6b3e6182984754de5a0dcdf",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row6/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 27502,
+            "sha256": "009553d053dafa6a1add9fc5c18a165fab35778c2754aa30f2d166121bf77e1d"
+          },
+          {
+            "relative_path": "project_blueprints/row6/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17617,
+            "sha256": "eb450a7fa453eff7fb8f9f2c2a66e6fd9ed278118a71f7f6f19c04245557a0ab"
+          },
+          {
+            "relative_path": "project_blueprints/row6/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 15800,
+            "sha256": "0149f8bb4eac82b7a010bac68d354519f916ff7742159e752677cb045ac17512"
+          },
+          {
+            "relative_path": "proof_builds/row6/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 12385,
+            "sha256": "094e192cb6f69f02b0fb0dedf5a8468fdc1c7502a87e98de37709e321f90c5ef"
+          },
+          {
+            "relative_path": "proof_demos/row6/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 24207,
+            "sha256": "77f489bdb888571223dbed6ec491ef014892fd56fdd306b3569baf54b8830cb5"
+          },
+          {
+            "relative_path": "proof_demos/row6/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 5954,
+            "sha256": "8ef3e12f261cca0d4634f72ea15261089c40976622fdd59536ab00668ea17502"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row6/blueprint.json",
+          "project_blueprints/row6/instrument_map.json",
+          "project_blueprints/row6/README.md",
+          "proof_builds/row6/proof_build.json",
+          "proof_demos/row6/demo_cases.json",
+          "proof_demos/row6/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f5d67e74f5e7d864e7debbb4"
+    },
+    {
+      "receipt_id": "row6__receipt_0010",
+      "project_id": "row6",
+      "project_title": "Scholarly Retrieval System — cross-disciplinary research library with a twelve-stage analytical-governance plane",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "State / Share / Retention Constitution",
+      "component_case_id": "row6__0010__state-share-retention-constitution",
+      "claim_to_demonstrate": "keeps local evidence state and external sharing governed rather than treating retrieval output as freely portable",
+      "input_fixture": "evidence states, local-state policies, share-grant requirements, negative-transfer exclusions, and retention rules",
+      "operation_under_test": "keeps local evidence state and external sharing governed rather than treating retrieval output as freely portable",
+      "expected_output": "state/share/retention proof record and review-ready audit surface",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d3d0b6e9350ba7b23a0aac3f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/row6/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 27502,
+            "sha256": "009553d053dafa6a1add9fc5c18a165fab35778c2754aa30f2d166121bf77e1d"
+          },
+          {
+            "relative_path": "project_blueprints/row6/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17617,
+            "sha256": "eb450a7fa453eff7fb8f9f2c2a66e6fd9ed278118a71f7f6f19c04245557a0ab"
+          },
+          {
+            "relative_path": "project_blueprints/row6/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 15800,
+            "sha256": "0149f8bb4eac82b7a010bac68d354519f916ff7742159e752677cb045ac17512"
+          },
+          {
+            "relative_path": "proof_builds/row6/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 12385,
+            "sha256": "094e192cb6f69f02b0fb0dedf5a8468fdc1c7502a87e98de37709e321f90c5ef"
+          },
+          {
+            "relative_path": "proof_demos/row6/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 24207,
+            "sha256": "77f489bdb888571223dbed6ec491ef014892fd56fdd306b3569baf54b8830cb5"
+          },
+          {
+            "relative_path": "proof_demos/row6/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 5954,
+            "sha256": "8ef3e12f261cca0d4634f72ea15261089c40976622fdd59536ab00668ea17502"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/row6/blueprint.json",
+          "project_blueprints/row6/instrument_map.json",
+          "project_blueprints/row6/README.md",
+          "proof_builds/row6/proof_build.json",
+          "proof_demos/row6/demo_cases.json",
+          "proof_demos/row6/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d5eb12949821813fbc247108"
+    }
+  ]
+}

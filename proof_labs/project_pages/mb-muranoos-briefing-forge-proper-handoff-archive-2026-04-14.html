@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Briefing Forge</title>
+<style>
+:root {
+  color-scheme: light;
+  --paper: #f7f5ef;
+  --ink: #152231;
+  --muted: #596575;
+  --rule: rgba(35, 55, 77, .18);
+  --accent: #7a4d18;
+  --blue: #1e4d6b;
+  --green: #2f6048;
+  --red: #7a2730;
+  --white: rgba(255,255,255,.88);
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: Georgia, 'Times New Roman', serif; }
+main { max-width: 1220px; margin: 0 auto; padding: 38px 22px 70px; }
+h1 { font-size: clamp(34px, 5vw, 56px); line-height: 1; font-weight: 500; margin: 0 0 14px; }
+h2 { font-size: 25px; line-height: 1.18; margin: 24px 0 10px; }
+h3 { font-size: 14px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 0 0 8px; }
+p, li { line-height: 1.58; }
+a { color: #183f65; }
+.topline, .kicker { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .12em; text-transform: uppercase; font-size: 11px; color: var(--accent); }
+.lead { max-width: 930px; font-size: 18px; line-height: 1.62; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 14px; }
+.card, .panel, .component, .trace, .source-box { background: var(--white); border: 1px solid var(--rule); border-radius: 8px; padding: 16px; }
+.panel { margin: 18px 0; }
+.summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 24px 0; }
+.score { font-size: 30px; line-height: 1; }
+.small { color: var(--muted); font-size: 13px; }
+.button { display: inline-block; border: 1px solid rgba(30,77,107,.35); border-radius: 6px; padding: 9px 12px; text-decoration: none; background: #fff; color: var(--ink); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 12px; margin: 3px 6px 3px 0; }
+button { border: 1px solid rgba(30,77,107,.35); border-radius: 6px; padding: 9px 12px; background: #fff; color: var(--ink); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 12px; cursor: pointer; }
+button:hover, .button:hover { border-color: rgba(30,77,107,.82); }
+table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; }
+th, td { padding: 10px; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+th { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.trace { white-space: pre-wrap; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 12px; line-height: 1.55; }
+.stage { border-left: 4px solid var(--blue); }
+.risk { border-left: 4px solid var(--red); }
+.ready { border-left: 4px solid var(--green); }
+.meter { height: 9px; border-radius: 999px; background: rgba(21,34,49,.12); overflow: hidden; }
+.meter span { display: block; height: 100%; background: linear-gradient(90deg, var(--green), var(--accent), var(--red)); }
+input, select { width: 100%; border: 1px solid var(--rule); border-radius: 6px; padding: 10px; background: #fff; color: var(--ink); }
+@media (max-width: 760px) { main { padding: 28px 18px 58px; } }
+</style>
+</head>
+<body><main>
+<div class="topline">Project proof lab</div>
+<h1>Briefing Forge</h1>
+<p class="lead">Briefing Forge is a MuranoOS room handoff for turning research output into live executive briefings.</p>
+<section class="summary">
+  <div class="card"><h3>Kind</h3><p>master-bundle artifact / archive router</p></div>
+  <div class="card"><h3>Potential</h3><p class="score">7.45</p></div>
+  <div class="card"><h3>Current Proof</h3><p class="score">6.60</p></div>
+  <div class="card"><h3>State</h3><p>component-protocol-ready</p></div>
+</section>
+<section class="panel stage">
+<h2>Distinctive Mechanism To Prove</h2>
+<p>It routes research material through source grounding, audience need, judgment frame, uncertainty, dissent, BLUF, decision memo, and briefing format so briefing products remain tied to the evidence base.</p>
+</section>
+<section class="panel ready">
+<h2>Highest-Leverage Proof Upgrade</h2>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+</section>
+<section class="source-box">
+<h2>Source And Theory Lenses</h2>
+<p class="small">These are not passage-level citations. They are the methodological or theoretical lenses that should govern stronger proof construction.</p>
+<ul><li>provenance</li><li>deduplication</li><li>authority control</li><li>artifact routing</li></ul>
+</section>
+<h2>Component Proof Cases</h2>
+
+<section class="grid"><article class="component">
+<div class="kicker">runtime state trace</div>
+<h2>Briefing Forge Handoff Identity</h2>
+<p><strong>Input.</strong> source packet, code-ready room description, scope, and intended runtime</p>
+<p><strong>Operation.</strong> Briefing Forge is a MuranoOS room handoff for turning research output into live executive briefings.</p>
+<p><strong>Output to prove.</strong> bounded definition of what the handoff asks a builder to construct</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Open or inspect the local runtime path for Briefing Forge Handoff Identity; confirm a room, action, or state record traces to the governing contract.</p>
+</article><article class="component">
+<div class="kicker">runtime state trace</div>
+<h2>Briefing Forge Room Task Model</h2>
+<p><strong>Input.</strong> user roles, task sequence, room state, and domain objects</p>
+<p><strong>Operation.</strong> It routes research material through source grounding, audience need, judgment frame, uncertainty, dissent, BLUF, decision memo, and briefing format so briefing products remain tied to the evidence base.</p>
+<p><strong>Output to prove.</strong> room logic that turns the concept into a repeatable workflow</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Open or inspect the local runtime path for Briefing Forge Room Task Model; confirm a room, action, or state record traces to the governing contract.</p>
+</article><article class="component">
+<div class="kicker">runtime state trace</div>
+<h2>Briefing Forge Data Schema And Persistence Plan</h2>
+<p><strong>Input.</strong> entities, records, IDs, tables, JSON structures, indexes, and state transitions</p>
+<p><strong>Operation.</strong> Writing, rhetoric, narrative design, visual culture, and presentation. Use source library writing/visual/cinema sources to strengthen public exposition and Trilogy visual/storytelling logic. Vision: Make public pages read as curated intellectual exhibits.</p>
+<p><strong>Output to prove.</strong> data model that lets the room preserve work instead of acting like a static page</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Open or inspect the local runtime path for Briefing Forge Data Schema And Persistence Plan; confirm a room, action, or state record traces to the governing contract.</p>
+</article><article class="component">
+<div class="kicker">runtime state trace</div>
+<h2>Briefing Forge Interface And Instrument Plane</h2>
+<p><strong>Input.</strong> panels, command palette, drawers, matrices, visualizations, and review widgets</p>
+<p><strong>Operation.</strong> Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.</p>
+<p><strong>Output to prove.</strong> named interface instruments that make the room useful to a researcher or analyst</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Open or inspect the local runtime path for Briefing Forge Interface And Instrument Plane; confirm a room, action, or state record traces to the governing contract.</p>
+</article><article class="component">
+<div class="kicker">runtime state trace</div>
+<h2>Briefing Forge Integration Path</h2>
+<p><strong>Input.</strong> frontend, backend, storage, retrieval, auth, export, and portfolio linkage</p>
+<p><strong>Operation.</strong> How this briefing says the vision should be accomplished, translated into a public project route. Reach for this when: (a) you need a reference briefing-authoring workflow with rigorous screen-vs-speech discipline, transition composition, and showtime.</p>
+<p><strong>Output to prove.</strong> build sequence for turning the handoff into working software</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Open or inspect the local runtime path for Briefing Forge Integration Path; confirm a room, action, or state record traces to the governing contract.</p>
+</article><article class="component">
+<div class="kicker">runtime state trace</div>
+<h2>Briefing Forge Proof Boundary</h2>
+<p><strong>Input.</strong> completed packet, code readiness, unimplemented backend, missing live capture, or partial status</p>
+<p><strong>Operation.</strong> Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.</p>
+<p><strong>Output to prove.</strong> honest current claim ceiling for the handoff as a reviewable artifact</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Open or inspect the local runtime path for Briefing Forge Proof Boundary; confirm a room, action, or state record traces to the governing contract.</p>
+</article><article class="component">
+<div class="kicker">runtime state trace</div>
+<h2>Briefing Forge Next Build Test</h2>
+<p><strong>Input.</strong> minimal executable path, seeded fixture, UI walkthrough, and validation gate</p>
+<p><strong>Operation.</strong> Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.</p>
+<p><strong>Output to prove.</strong> specific test that would show the handoff has become a functioning room</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Open or inspect the local runtime path for Briefing Forge Next Build Test; confirm a room, action, or state record traces to the governing contract.</p>
+</article><article class="component">
+<div class="kicker">runtime state trace</div>
+<h2>Briefing Forge / backend/frontend</h2>
+<p><strong>Input.</strong> project source text and the named component `backend/frontend`</p>
+<p><strong>Operation.</strong> uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.</p>
+<p><strong>Output to prove.</strong> a project-specific work product, decision, or proof surface tied to `backend/frontend`</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Confirm `backend/frontend` appears in the cited source context and that the public page explains what output, decision, or project function it supports.</p>
+</article><article class="component">
+<div class="kicker">runtime state trace</div>
+<h2>Briefing Forge / PACKAGE_READINESS_REVIEW.md</h2>
+<p><strong>Input.</strong> project source text and the named component `PACKAGE_READINESS_REVIEW.md`</p>
+<p><strong>Operation.</strong> treats `PACKAGE_READINESS_REVIEW.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 04_Reviews/PACKAGE_READINESS_REVIEW.md — 03_Provenance_And_Integrity/PACKAGE_PROVENANCE_GRAPH.md —.</p>
+<p><strong>Output to prove.</strong> inspectable implementation evidence tied to `PACKAGE_READINESS_REVIEW.md`</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Confirm `PACKAGE_READINESS_REVIEW.md` appears in the cited source context and that the public page explains what output, decision, or project function it supports.</p>
+</article><article class="component">
+<div class="kicker">runtime state trace</div>
+<h2>Briefing Forge / PACKAGE_PROVENANCE_GRAPH.md</h2>
+<p><strong>Input.</strong> project source text and the named component `PACKAGE_PROVENANCE_GRAPH.md`</p>
+<p><strong>Operation.</strong> treats `PACKAGE_PROVENANCE_GRAPH.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 04_Reviews/PACKAGE_READINESS_REVIEW.md — 03_Provenance_And_Integrity/PACKAGE_PROVENANCE_GRAPH.md —.</p>
+<p><strong>Output to prove.</strong> inspectable implementation evidence tied to `PACKAGE_PROVENANCE_GRAPH.md`</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Confirm `PACKAGE_PROVENANCE_GRAPH.md` appears in the cited source context and that the public page explains what output, decision, or project function it supports.</p>
+</article><article class="component">
+<div class="kicker">runtime state trace</div>
+<h2>Briefing Forge / IMPLEMENTATION_STATE_DECLARATION.md</h2>
+<p><strong>Input.</strong> project source text and the named component `IMPLEMENTATION_STATE_DECLARATION.md`</p>
+<p><strong>Operation.</strong> treats `IMPLEMENTATION_STATE_DECLARATION.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 04_Reviews/PACKAGE_READINESS_REVIEW.md — 03_Provenance_And_Integrity/PACKAGE_PROVENANCE_GRAPH.md —.</p>
+<p><strong>Output to prove.</strong> inspectable implementation evidence tied to `IMPLEMENTATION_STATE_DECLARATION.md`</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Confirm `IMPLEMENTATION_STATE_DECLARATION.md` appears in the cited source context and that the public page explains what output, decision, or project function it supports.</p>
+</article><article class="component">
+<div class="kicker">runtime state trace</div>
+<h2>Briefing Forge / CANON_VS_VERIFIED_STATE_DELTA_MAP.md</h2>
+<p><strong>Input.</strong> project source text and the named component `CANON_VS_VERIFIED_STATE_DELTA_MAP.md`</p>
+<p><strong>Operation.</strong> treats `CANON_VS_VERIFIED_STATE_DELTA_MAP.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: CANON_VS_VERIFIED_STATE_DELTA_MAP.md —.</p>
+<p><strong>Output to prove.</strong> inspectable implementation evidence tied to `CANON_VS_VERIFIED_STATE_DELTA_MAP.md`</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Confirm `CANON_VS_VERIFIED_STATE_DELTA_MAP.md` appears in the cited source context and that the public page explains what output, decision, or project function it supports.</p>
+</article><article class="component">
+<div class="kicker">runtime state trace</div>
+<h2>Briefing Forge / MuranoOS_Briefing_Forge_Room_System_Spec.md</h2>
+<p><strong>Input.</strong> project source text and the named component `MuranoOS_Briefing_Forge_Room_System_Spec.md`</p>
+<p><strong>Operation.</strong> treats `MuranoOS_Briefing_Forge_Room_System_Spec.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: MuranoOS_Briefing_Forge_Room_System_Spec.md —.</p>
+<p><strong>Output to prove.</strong> inspectable implementation evidence tied to `MuranoOS_Briefing_Forge_Room_System_Spec.md`</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Confirm `MuranoOS_Briefing_Forge_Room_System_Spec.md` appears in the cited source context and that the public page explains what output, decision, or project function it supports.</p>
+</article><article class="component">
+<div class="kicker">runtime state trace</div>
+<h2>Briefing Forge / MURANOOS_BRIEFING_FORGE_ROOM_WORLD_DESIGN_vNEXT.md</h2>
+<p><strong>Input.</strong> project source text and the named component `MURANOOS_BRIEFING_FORGE_ROOM_WORLD_DESIGN_vNEXT.md`</p>
+<p><strong>Operation.</strong> treats `MURANOOS_BRIEFING_FORGE_ROOM_WORLD_DESIGN_vNEXT.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: MURANOOS_BRIEFING_FORGE_ROOM_WORLD_DESIGN_vNEXT.md ?... Wire or preserve the.</p>
+<p><strong>Output to prove.</strong> inspectable implementation evidence tied to `MURANOOS_BRIEFING_FORGE_ROOM_WORLD_DESIGN_vNEXT.md`</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Confirm `MURANOOS_BRIEFING_FORGE_ROOM_WORLD_DESIGN_vNEXT.md` appears in the cited source context and that the public page explains what output, decision, or project function it supports.</p>
+</article><article class="component">
+<div class="kicker">runtime state trace</div>
+<h2>Briefing Forge / Proper Handoff Archive</h2>
+<p><strong>Input.</strong> project source text and the named component `Proper Handoff Archive`</p>
+<p><strong>Operation.</strong> uses `Proper Handoff Archive` as a named project component with a traceable role in the public mechanism. Source context: The &quot;proper handoff archive&quot; designation signals that this is a repaired rollup of an earlier scaffold package: structural gaps closed.</p>
+<p><strong>Output to prove.</strong> a project-specific work product, decision, or proof surface tied to `Proper Handoff Archive`</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Confirm `Proper Handoff Archive` appears in the cited source context and that the public page explains what output, decision, or project function it supports.</p>
+</article><article class="component">
+<div class="kicker">runtime state trace</div>
+<h2>Briefing Forge / The Briefing Forge</h2>
+<p><strong>Input.</strong> project source text and the named component `The Briefing Forge`</p>
+<p><strong>Operation.</strong> treats `The Briefing Forge` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: The Briefing Forge is a MuranoOS room for turning research output into live executive briefings — not.</p>
+<p><strong>Output to prove.</strong> a room, workbench, or interface function tied to `The Briefing Forge`</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Confirm `The Briefing Forge` appears in the cited source context and that the public page explains what output, decision, or project function it supports.</p>
+</article><article class="component">
+<div class="kicker">runtime state trace</div>
+<h2>Briefing Forge / Reach for</h2>
+<p><strong>Input.</strong> project source text and the named component `Reach for`</p>
+<p><strong>Operation.</strong> uses `Reach for` as a named project component with a traceable role in the public mechanism. Source context: Reach for this when: (a) you need a reference briefing-authoring workflow with rigorous screen-vs-speech discipline, transition composition, and.</p>
+<p><strong>Output to prove.</strong> a project-specific work product, decision, or proof surface tied to `Reach for`</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Confirm `Reach for` appears in the cited source context and that the public page explains what output, decision, or project function it supports.</p>
+</article></section>
+<p><a class="button" href="../index.html">Back to proof lab</a><a class="button" href="../../proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md">Open demo cases</a><a class="button" href="../../project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md">Open blueprint</a></p>
+</main></body>
+</html>

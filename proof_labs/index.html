@@ -1,0 +1,2017 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proof Labs For All Portfolio Projects</title>
+<style>
+:root {
+  color-scheme: light;
+  --paper: #f7f5ef;
+  --ink: #152231;
+  --muted: #596575;
+  --rule: rgba(35, 55, 77, .18);
+  --accent: #7a4d18;
+  --blue: #1e4d6b;
+  --green: #2f6048;
+  --red: #7a2730;
+  --white: rgba(255,255,255,.88);
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: Georgia, 'Times New Roman', serif; }
+main { max-width: 1220px; margin: 0 auto; padding: 38px 22px 70px; }
+h1 { font-size: clamp(34px, 5vw, 56px); line-height: 1; font-weight: 500; margin: 0 0 14px; }
+h2 { font-size: 25px; line-height: 1.18; margin: 24px 0 10px; }
+h3 { font-size: 14px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 0 0 8px; }
+p, li { line-height: 1.58; }
+a { color: #183f65; }
+.topline, .kicker { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .12em; text-transform: uppercase; font-size: 11px; color: var(--accent); }
+.lead { max-width: 930px; font-size: 18px; line-height: 1.62; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 14px; }
+.card, .panel, .component, .trace, .source-box { background: var(--white); border: 1px solid var(--rule); border-radius: 8px; padding: 16px; }
+.panel { margin: 18px 0; }
+.summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 24px 0; }
+.score { font-size: 30px; line-height: 1; }
+.small { color: var(--muted); font-size: 13px; }
+.button { display: inline-block; border: 1px solid rgba(30,77,107,.35); border-radius: 6px; padding: 9px 12px; text-decoration: none; background: #fff; color: var(--ink); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 12px; margin: 3px 6px 3px 0; }
+button { border: 1px solid rgba(30,77,107,.35); border-radius: 6px; padding: 9px 12px; background: #fff; color: var(--ink); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 12px; cursor: pointer; }
+button:hover, .button:hover { border-color: rgba(30,77,107,.82); }
+table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; }
+th, td { padding: 10px; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+th { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.trace { white-space: pre-wrap; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 12px; line-height: 1.55; }
+.stage { border-left: 4px solid var(--blue); }
+.risk { border-left: 4px solid var(--red); }
+.ready { border-left: 4px solid var(--green); }
+.meter { height: 9px; border-radius: 999px; background: rgba(21,34,49,.12); overflow: hidden; }
+.meter span { display: block; height: 100%; background: linear-gradient(90deg, var(--green), var(--accent), var(--red)); }
+input, select { width: 100%; border: 1px solid var(--rule); border-radius: 6px; padding: 10px; background: #fff; color: var(--ink); }
+@media (max-width: 760px) { main { padding: 28px 18px 58px; } }
+</style>
+</head>
+<body><main>
+<div class="topline">Portfolio proof engineering layer</div>
+<h1>Proof Labs For All Portfolio Projects</h1>
+<p class="lead">This layer turns the portfolio from a set of impressive descriptions into a testable proof system. Each project page names the distinctive mechanism, the component cases, the output that must be demonstrated, the claim ceiling, and the next proof build.</p>
+<section class="summary">
+  <div class="card"><h3>Projects</h3><p class="score">243</p></div>
+  <div class="card"><h3>Component Cases</h3><p class="score">3639</p></div>
+  <div class="card"><h3>Flagship IDs</h3><p class="score">11</p></div>
+  <div class="card"><h3>Output</h3><p>project pages, strengthening queue, flagship harness</p></div>
+</section>
+<section class="grid">
+  <div class="panel"><h2>Proof States</h2><ul><li>component-protocol-ready: 235</li><li>flagship-proof-needs-live-trace: 7</li><li>live-proof-priority: 1</li></ul></div>
+  <div class="panel"><h2>Upgrade Classes</h2><ul><li>chapter dossier proof: 3</li><li>human-AI analytic delta: 19</li><li>implementation scenario: 8</li><li>live workflow trace: 1</li><li>promotion-routing proof: 86</li><li>retrieval replay harness: 9</li><li>runtime state trace: 91</li><li>scenario replay: 7</li><li>source-to-output proof: 19</li></ul></div>
+</section>
+<p><a class="button" href="flagship_harness.html">Open flagship harness</a><a class="button" href="proof_strengthening_queue.csv">Open CSV strengthening queue</a><a class="button" href="../proof_exhibits/index.html">Open earlier exhibits</a></p>
+<section class="grid"><article class="card">
+<div class="kicker">live-proof-priority</div>
+<h2>Discovery Engine — eight-stage cross-disciplinary research-question discovery apparatus</h2>
+<p><strong>research workflow software</strong></p>
+<div class="meter"><span style="width:94%"></span></div>
+<p class="small">Potential 9.43; current proof 9.23; component cases 101.</p>
+<p>Capture a live Nexus walkthrough: start with a real research question, show cross-field mechanism discovery, then show how an upstream change marks downstream academic stages stale and forces revision.</p>
+<a class="button" href="project_pages/row7.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">flagship-proof-needs-live-trace</div>
+<h2>Retrieval Integrity and Poisoning Defense</h2>
+<p><strong>retrieval security / evaluation harness</strong></p>
+<div class="meter"><span style="width:88%"></span></div>
+<p class="small">Potential 8.75; current proof 7.49; component cases 9.</p>
+<p>Build a replayable mixed-speed Poison-RAG case: clean baseline, slow poison, fast injection, authority wrapper, retrieval trace, answer deformation, reviewer burden, and block/narrow/abstain decision.</p>
+<a class="button" href="project_pages/native-poison-rag.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">flagship-proof-needs-live-trace</div>
+<h2>Algorithmic Active Measures - data poisoning as counterintelligence tradecraft in AI-mediated intelligence analysis</h2>
+<p><strong>structured analysis room</strong></p>
+<div class="meter"><span style="width:86%"></span></div>
+<p class="small">Potential 8.59; current proof 7.38; component cases 17.</p>
+<p>Add a public-safe case bridge from counterintelligence tradecraft to data poisoning: actor objective, mechanism, evidence surface, detection burden, and analytic warning.</p>
+<a class="button" href="project_pages/algorithmic-active-measures.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">flagship-proof-needs-live-trace</div>
+<h2>Adversarial Evidence Corruption and Poison-RAG Defense - advisor technical annex for LLM-supported analytic judgment</h2>
+<p><strong>retrieval security / evaluation harness</strong></p>
+<div class="meter"><span style="width:86%"></span></div>
+<p class="small">Potential 8.55; current proof 7.35; component cases 9.</p>
+<p>Turn the annex into a miniature evaluation harness: adversarial source packet, retrieval trace, analyst validation step, defensive gate, replay record, and claim boundary.</p>
+<a class="button" href="project_pages/poison-rag-defense-annex.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">flagship-proof-needs-live-trace</div>
+<h2>Magnum Opus</h2>
+<p><strong>retrieval / evidence software</strong></p>
+<div class="meter"><span style="width:84%"></span></div>
+<p class="small">Potential 8.45; current proof 7.28; component cases 10.</p>
+<p>Run a public-safe retrieval demonstration: question, corpus slice, retrieved passages, evidence score, negative-space finding, abstention case, and final claim boundary.</p>
+<a class="button" href="project_pages/native-magnum-opus.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">flagship-proof-needs-live-trace</div>
+<h2>AI Failure Taxonomy</h2>
+<p><strong>method atlas / taxonomy</strong></p>
+<div class="meter"><span style="width:83%"></span></div>
+<p class="small">Potential 8.32; current proof 7.20; component cases 17.</p>
+<p>Add one classified example that travels through the taxonomy: observed failure or bias, category assignment, rival category, reviewer decision, and resulting mitigation.</p>
+<a class="button" href="project_pages/native-aifailure-tax.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">flagship-proof-needs-live-trace</div>
+<h2>Murano</h2>
+<p><strong>software operating environment</strong></p>
+<div class="meter"><span style="width:82%"></span></div>
+<p class="small">Potential 8.25; current proof 7.15; component cases 11.</p>
+<p>Show one project moving through MuranoOS as software: room selection, instrument execution, agent/department handoff, SQLite state change, and exported work product.</p>
+<a class="button" href="project_pages/native-murano.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">flagship-proof-needs-live-trace</div>
+<h2>Analyst Workstation — eight-page interactive AI-augmented intelligence-analysis handbook</h2>
+<p><strong>human-AI analysis workstation</strong></p>
+<div class="meter"><span style="width:82%"></span></div>
+<p class="small">Potential 8.15; current proof 7.08; component cases 8.</p>
+<p>Demonstrate one human-in-the-loop SAT comparison: baseline AI answer, structured analytic technique pass, human review delta, error caught, and release decision.</p>
+<a class="button" href="project_pages/row10.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Book Trilogy — Security, Dialectic, Repair : a three-book governed arc on dangerous power, democratic formation, and political repair after harm (the full manuscript corpus across 72 chapters)</h2>
+<p><strong>book / manuscript system</strong></p>
+<div class="meter"><span style="width:80%"></span></div>
+<p class="small">Potential 8.00; current proof 6.98; component cases 11.</p>
+<p>Add representative chapter dossiers: chapter claim, source role, rewrite decision, visual/title rationale, and status for one chapter in each book.</p>
+<a class="button" href="project_pages/trilogy.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Quantitative Capstone Workbench</h2>
+<p><strong>future quantitative experiment apparatus</strong></p>
+<div class="meter"><span style="width:80%"></span></div>
+<p class="small">Potential 8.00; current proof 6.98; component cases 17.</p>
+<p>Separate proposed conditions, scoring variables, reliability checks, and disconfirmation rules from any result claims; then add one simulated run artifact.</p>
+<a class="button" href="project_pages/native-capstone-quantitative.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>AI Governance Navigator</h2>
+<p><strong>navigation / governance instrument</strong></p>
+<div class="meter"><span style="width:80%"></span></div>
+<p class="small">Potential 7.99; current proof 6.97; component cases 17.</p>
+<p>Add one routing demonstration: user problem, chosen path, rejected path, governing criterion, output, and next review gate.</p>
+<a class="button" href="project_pages/native-aigov-nav.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>AI Rigor Detection - framework that detects performative rigor in AI-generated analysis; publication status is separated from validation status</h2>
+<p><strong>policy / governance proposal</strong></p>
+<div class="meter"><span style="width:80%"></span></div>
+<p class="small">Potential 7.99; current proof 6.97; component cases 17.</p>
+<p>Add one implementation scenario: policy problem, decision rule, control point, abuse case, measurable criterion, and revision trigger.</p>
+<a class="button" href="project_pages/row2.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman</h2>
+<p><strong>method atlas / taxonomy</strong></p>
+<div class="meter"><span style="width:80%"></span></div>
+<p class="small">Potential 7.99; current proof 6.97; component cases 17.</p>
+<p>Add one classified example that travels through the taxonomy: observed failure or bias, category assignment, rival category, reviewer decision, and resulting mitigation.</p>
+<a class="button" href="project_pages/bias-atlas.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Counterintelligence Surveillance Framework</h2>
+<p><strong>policy / governance proposal</strong></p>
+<div class="meter"><span style="width:80%"></span></div>
+<p class="small">Potential 7.99; current proof 6.97; component cases 17.</p>
+<p>Add one implementation scenario: policy problem, decision rule, control point, abuse case, measurable criterion, and revision trigger.</p>
+<a class="button" href="project_pages/native-iscproposals.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>AI Intelligence Cycle</h2>
+<p><strong>AI assurance / analysis room</strong></p>
+<div class="meter"><span style="width:80%"></span></div>
+<p class="small">Potential 7.95; current proof 6.94; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-aiintel-cycle.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>AI Knowledge Production</h2>
+<p><strong>AI assurance / analysis room</strong></p>
+<div class="meter"><span style="width:80%"></span></div>
+<p class="small">Potential 7.95; current proof 6.94; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-aiknowledge-prod.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>AI Model Assessment</h2>
+<p><strong>AI assurance / analysis room</strong></p>
+<div class="meter"><span style="width:80%"></span></div>
+<p class="small">Potential 7.95; current proof 6.94; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-aimodel-assess.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>AI OSINT Narrative Analysis</h2>
+<p><strong>AI assurance / analysis room</strong></p>
+<div class="meter"><span style="width:80%"></span></div>
+<p class="small">Potential 7.95; current proof 6.94; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-aiosintnarr.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>AI Prompt Engineering</h2>
+<p><strong>AI assurance / analysis room</strong></p>
+<div class="meter"><span style="width:80%"></span></div>
+<p class="small">Potential 7.95; current proof 6.94; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-aiprompt-eng.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>AI Shared Instruments</h2>
+<p><strong>AI assurance / analysis room</strong></p>
+<div class="meter"><span style="width:80%"></span></div>
+<p class="small">Potential 7.95; current proof 6.94; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-aishared-instruments.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>AI Structured Analysis Visualization</h2>
+<p><strong>AI assurance / analysis room</strong></p>
+<div class="meter"><span style="width:80%"></span></div>
+<p class="small">Potential 7.95; current proof 6.94; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-aisatvis.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Applied History — lab for using historical case study to inform contemporary policy</h2>
+<p><strong>research workflow software</strong></p>
+<div class="meter"><span style="width:80%"></span></div>
+<p class="small">Potential 7.95; current proof 6.94; component cases 17.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/applied-history.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Ottoman Palestine and Early Zionism</h2>
+<p><strong>research workflow software</strong></p>
+<div class="meter"><span style="width:79%"></span></div>
+<p class="small">Potential 7.94; current proof 6.94; component cases 17.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/native-mideast.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Analysis Tradecraft</h2>
+<p><strong>structured analysis room</strong></p>
+<div class="meter"><span style="width:79%"></span></div>
+<p class="small">Potential 7.90; current proof 6.91; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-atanalysis.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Collection Management Analysis</h2>
+<p><strong>structured analysis room</strong></p>
+<div class="meter"><span style="width:79%"></span></div>
+<p class="small">Potential 7.90; current proof 6.91; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-cmanalysis.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Counter-Terror Analysis — 13-page counter-terror analytical narrative arc</h2>
+<p><strong>structured analysis room</strong></p>
+<div class="meter"><span style="width:79%"></span></div>
+<p class="small">Potential 7.90; current proof 6.91; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/row8.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Counterintelligence Analysis</h2>
+<p><strong>structured analysis room</strong></p>
+<div class="meter"><span style="width:79%"></span></div>
+<p class="small">Potential 7.90; current proof 6.91; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-cianalysis.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Counterintelligence Operations Analysis</h2>
+<p><strong>structured analysis room</strong></p>
+<div class="meter"><span style="width:79%"></span></div>
+<p class="small">Potential 7.90; current proof 6.91; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-coanalysis.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Cyber Analysis</h2>
+<p><strong>structured analysis room</strong></p>
+<div class="meter"><span style="width:79%"></span></div>
+<p class="small">Potential 7.90; current proof 6.91; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-cyanalysis.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Directorate Analysis Method</h2>
+<p><strong>structured analysis room</strong></p>
+<div class="meter"><span style="width:79%"></span></div>
+<p class="small">Potential 7.90; current proof 6.91; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-ddianalysis.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Emerging Technology Analysis</h2>
+<p><strong>structured analysis room</strong></p>
+<div class="meter"><span style="width:79%"></span></div>
+<p class="small">Potential 7.90; current proof 6.91; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-etanalysis.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Foreign Warning Analysis</h2>
+<p><strong>structured analysis room</strong></p>
+<div class="meter"><span style="width:79%"></span></div>
+<p class="small">Potential 7.90; current proof 6.91; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-fwanalysis.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Homeland Security Analysis</h2>
+<p><strong>structured analysis room</strong></p>
+<div class="meter"><span style="width:79%"></span></div>
+<p class="small">Potential 7.90; current proof 6.91; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-hsanalysis.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Intelligence Community Analysis</h2>
+<p><strong>structured analysis room</strong></p>
+<div class="meter"><span style="width:79%"></span></div>
+<p class="small">Potential 7.90; current proof 6.91; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-icanalysis.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Political Strategy Analysis</h2>
+<p><strong>structured analysis room</strong></p>
+<div class="meter"><span style="width:79%"></span></div>
+<p class="small">Potential 7.90; current proof 6.91; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-psanalysis.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Alliance Crisis Wargaming</h2>
+<p><strong>strategic simulation / planning tool</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.85; current proof 6.87; component cases 17.</p>
+<p>Add one replayable scenario: initial condition, decision variable, constraint, model operation, output, and after-action review.</p>
+<a class="button" href="project_pages/native-wargaming.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Crusades and Mediterranean Order</h2>
+<p><strong>historical / policy case room</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.85; current proof 6.87; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-crusades.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Emergency Triage Simulator</h2>
+<p><strong>operational simulation / planning tool</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.85; current proof 6.87; component cases 17.</p>
+<p>Add one replayable scenario: initial condition, decision variable, constraint, model operation, output, and after-action review.</p>
+<a class="button" href="project_pages/native-emt.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Historical Studies — eleven historical and operational case studies, including the manuscript Trilogy</h2>
+<p><strong>research workflow software</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.85; current proof 6.87; component cases 10.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/historical-studies.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>ICC Complementarity Case Room</h2>
+<p><strong>historical / policy case room</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.85; current proof 6.87; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-cicc.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Recovery Respite Facility Operations</h2>
+<p><strong>operational simulation / planning tool</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.85; current proof 6.87; component cases 17.</p>
+<p>Add one replayable scenario: initial condition, decision variable, constraint, model operation, output, and after-action review.</p>
+<a class="button" href="project_pages/native-respite.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Refugee Resettlement Resource Allocation</h2>
+<p><strong>operational simulation / planning tool</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.85; current proof 6.87; component cases 17.</p>
+<p>Add one replayable scenario: initial condition, decision variable, constraint, model operation, output, and after-action review.</p>
+<a class="button" href="project_pages/native-uscri.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Track II Diplomacy and Peacebuilding</h2>
+<p><strong>historical / policy case room</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.85; current proof 6.87; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-peace.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Vaccine Distribution Planner</h2>
+<p><strong>operational simulation / planning tool</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.85; current proof 6.87; component cases 17.</p>
+<p>Add one replayable scenario: initial condition, decision variable, constraint, model operation, output, and after-action review.</p>
+<a class="button" href="project_pages/native-pharm.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Volunteer Build-Day Coordination</h2>
+<p><strong>operational simulation / planning tool</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.85; current proof 6.87; component cases 17.</p>
+<p>Add one replayable scenario: initial condition, decision variable, constraint, model operation, output, and after-action review.</p>
+<a class="button" href="project_pages/native-habitat.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>War Theory and Strategic Culture</h2>
+<p><strong>historical / policy case room</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.85; current proof 6.87; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-war-theory.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Washington-Jefferson Era Foreign Policy</h2>
+<p><strong>historical / policy case room</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.85; current proof 6.87; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/native-amfp.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>AI Extraction Defense — five-layer architecture protecting proprietary AI models from being extracted, copied, or distilled by adversaries</h2>
+<p><strong>AI assurance / analysis room</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.83; current proof 6.86; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/row3.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Analytical Methodology — eleven discipline pages from a Georgetown Applied Intelligence curriculum, treating each analytical method as its own working surface</h2>
+<p><strong>research workflow software</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.83; current proof 6.86; component cases 17.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/analytical-methodology.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Berlin Occupation Zones and Refugee Crisis</h2>
+<p><strong>retrieval / evidence software</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.83; current proof 6.86; component cases 17.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/native-berlin.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Colonial Encounter in Africa</h2>
+<p><strong>research workflow software</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.83; current proof 6.86; component cases 17.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/native-africa.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>East Asian War and Strategic Tradition</h2>
+<p><strong>research workflow software</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.83; current proof 6.86; component cases 17.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/native-east-asia.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>IR Lexicon — coined-term lexicon for modern foreign-affairs discourse</h2>
+<p><strong>research workflow software</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.83; current proof 6.86; component cases 17.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/ir-lexicon.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Mongol Empire Military Systems</h2>
+<p><strong>research workflow software</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.83; current proof 6.86; component cases 17.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/native-mongol.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Regional Studies — eight place-based analytical pages (Africa, Berlin, East Asia, London, Mideast, Mongol, Russia, Western)</h2>
+<p><strong>research workflow software</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.83; current proof 6.86; component cases 17.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/regional-studies.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Western Political Thought and the Ideal State</h2>
+<p><strong>research workflow software</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.83; current proof 6.86; component cases 17.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/native-western.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Cognitive Firewalls Capstone Defense</h2>
+<p><strong>capstone defense / research presentation</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.80; current proof 6.84; component cases 17.</p>
+<p>Capture a concrete run trace or exported proof artifact for this project type; the project is currently more specified than demonstrated.</p>
+<a class="button" href="project_pages/native-capstone-defense.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Russia Desk — two-page Russian intelligence-and-history analytical desk</h2>
+<p><strong>analysis method / workstation</strong></p>
+<div class="meter"><span style="width:78%"></span></div>
+<p class="small">Potential 7.75; current proof 6.81; component cases 8.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/russia-desk.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-handoff-execution-archive-2026-04-15.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Adds Signature Room Architecture (7 zones) + UI/UX Spec (9 objects, 7 engines)</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-handoff-hardened-2026-04-15.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Briefing Forge Room (code-ready)</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-briefingforgeroom-handoff-pass4-done.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Chamber of Record</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-murano-chamber-of-record-handoff.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Chamber of Refractions</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-murano-chamber-handoff.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov)</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-rfp-handoff-ch01-02-done.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Cleanest 2-folder (GOVERNING/DERIVED); archive kept zipped</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-handoff-package-ready-2026-04-11.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Codex Prism</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-murano-codex-prism-handoff-v1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Cognitive Firewalls Foundry</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-cognitive-firewalls-foundry-handoff-v1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Cold-start bootstrap; 3-variant GPT upload prompt (analysis/impl/design)</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-fresh-handoff-2026-04-16.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Committed Step 1 patch: unified diff + bundled zip + 8 Tauri commands</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-proper-handoff-zip-2026-04-11.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Compact flat reference; 14 numbered authority docs; &quot;Workspace Depth I&quot;</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-continuation-handoff-2026-04-14.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Culinary Atelier</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-culinary-atelier-handoff-package-2026-04-15.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Doctrinally richest: 13 named subspaces × 10 modes; claim-evidence-confidence governance</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-prism-observatory-handoff-package-v1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Doctrine Forge Codex</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-murano-os-handoff-2026.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Failure Doctrine Lab</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-failure-doctrine-lab-handoff-pack-2026-04-11.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Fifth Dimension</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-fifth-dimension-lossless-continuation-archive-2026-04-13.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>First fully-exploded Master_Package tree; Baltic Grey Zone materials</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-proper-handoff-archive-2026-04-13.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Flat structure; 01_GOVERNING_SOURCES/ + flattened live files</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-proper-handoff-package-pass-1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Fractal Keep</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-fractal-keep-handoff-v1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Frozen &quot;Durable Analytical Core&quot;; 12/13-field models per surface</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-redteamlab-proper-handoff-package-2026-04-11.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Full portfolio build: 2 casefiles + 8-work product wargame product + 7 interview drills</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-wargaming-handoff-pass1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Glass Hearth</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-glass-hearth-muranoos-handoff-package-2026-04-15.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Glass Station</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-murano-os-glass-station-handoff.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>HearthGlass</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-hearthglass-handoff-v1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Human Terrain &amp; Statecraft</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Insinuation Engine</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-insinuationengineroom-handoff-done.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Interval Chamber of Refraction</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-the-interval-chamber-of-refraction-handoff-v1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Introduces Vivarium codename; contradiction-graph table</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>ISC Symposium Command</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-isc-symposium-command-room-handoff-pass3-done.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Judgment/status pass; L-01..L-04 non-blocking limitations</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-proper-handoff-pass-02-done.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Largest (148 files); replay_overlay/ pinned to HEAD 039f2cd...; deterministic replay</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-proper-handoff-archive-2026-04-15.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Largest consolidated (137 files); pre-merged Steps 3-7 bundles; &quot;Workspace Restore&quot;</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-lab-handoff-package-2026-04-17.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Leanest blueprint-only; only with named rollback doc</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-tranche1-handoff-package-2026-04-11.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Leanest pure-spec (16 KB); pages 11_OPEN_QUESTIONS</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-redteam-tranche1-handoff-2026-04-15.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Lossless Study Room</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-murano-os-lossless-study-room-handoff.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Mashup Intelligence Room</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-murano-mashup-room-handoff-v1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Master Bundle Atlas - 152 source and handoff packets</h2>
+<p><strong>method atlas / taxonomy</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add one classified example that travels through the taxonomy: observed failure or bias, category assignment, rival category, reviewer decision, and resulting mitigation.</p>
+<a class="button" href="project_pages/master-bundle-atlas.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Only one replacing &quot;Red Team Lab&quot; framing with &quot;Murano Prism Room&quot; world doctrine</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-prism-room-execution-handoff-2026-04-11.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Only one with 07_Derivative_Handoff/; richest SQL DDL</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-proper-handoff-package-2026-04-11.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Only one with 99_Preserved_Source_Archives/ + CURRENT_TRUTH_AT_A_GLANCE.md</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-proper-handoff-archive-2026-04-11.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Only one with Build_02-Build_05 sequenced operator guides</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Only one with Shadi_SAT_Seed.json + &quot;Phase III-A&quot; naming</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-phase-iii-a-handoff-2026-04-11.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Only one with V1_ROOM_CONSTITUTION.md</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-handoff-package-v1-2026-04-11.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Only one WITHOUT the 802 KB nested archive; Build 02 scope</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-build02-final-proper-handoff-2026-04-11.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Posture Compass 5-axis instrument; framing_tensions/rival_framing columns</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-phaseii-handoff-2026-04-14.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Prism Chamber</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-prism-chamber-murano-ready-package-2026-04-14.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Prism Foundry</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-murano-os-prism-foundry-handoff.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Prism Scriptorium</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-murano-os-prism-scriptorium-handoff-v1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>RC1 wrapper; front-loaded 00_RC_Handoff/</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-redteam-rc1-2026-04-14.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Reflexive Control Chamber</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-murano-reflexive-control-chamber-pass3.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Rhetorium</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-murano-os-rhetorium-proper-handoff-done-v1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Room Master (constitution)</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-lossless-room-master-handoff-v1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Room template v1</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-murano-room-handoff-v1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Smallest implementation-sufficient; flat 14-doc root; &quot;RT_PHASE_II_PLUS_WORKFLOW_A&quot;</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-proper-handoff-packet-2026-04-11.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine)</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>specs/ folder: Rust param structs, SQL DDL, TS workspace contract; &quot;Analytical Core Expansion A&quot;</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-proper-handoff-pass1-2026-04-15.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Speechcraft Studio</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-murano-speechcraft-studio-handoff.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Strictest 4-quadrant authority layer; &quot;Durable Workspace Core&quot;</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-proper-handoff-2026-04-14.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Stub TSX/Rust + Blocker Register + Assumption Quarantine Ledger</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-redteamlab-handoff-package-v1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Surgical patch package; 12 live source snapshots + 4 patch-plane specs</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-trancheii-handoff-2026-04-13.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Terminal packaging; full Refraction Chamber world design; --rt-* CSS namespace</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-refraction-chamber-final-handoff-2026-04-14.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Tradecraft Foundry</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-tradecraft-foundry-handoff-package-2026-04-11.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Triple-layer (zip+tree+addendum); 3-pass ledger</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-proper-handoff-2026-04-15.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Warrant Chamber</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.65; current proof 6.74; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-murano-os-warrant-chamber-handoff-v1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>32 interdisciplinary frameworks attributed to specific thinkers</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.62; current proof 6.72; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-ci-handoff-package.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>52 MB cross-project governance pack; nested 55 MB original bundle preserved</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.62; current proof 6.72; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-six-project-hardening-handoff-done-v1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Glass Scriptorium</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.62; current proof 6.72; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-glass-scriptorium-proper-handoff-archive-2026-04-11.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>IDDD Bibliographic Inventory</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.62; current proof 6.72; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-individual-democratic-dialectic-final-handoff-done.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Red Cell CI analysis of Russian cognitive deception; 12 COA dossiers</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.62; current proof 6.72; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-capstone-handoff-package.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>25×25 matrix framework (Warning labels populated, cell content NOT)</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.61; current proof 6.71; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-speechwriting-handoff-packet.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Development Process — how projects move from idea to built, reviewed work</h2>
+<p><strong>public project blueprint</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.61; current proof 6.71; component cases 17.</p>
+<p>Capture a concrete run trace or exported proof artifact for this project type; the project is currently more specified than demonstrated.</p>
+<a class="button" href="project_pages/planning.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Personal OS — MuranoOS, a personal operating system, local workbench, and project foundation</h2>
+<p><strong>software operating environment</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.59; current proof 6.70; component cases 11.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/personal-os.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>AR-SAT Room</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.56; current proof 6.68; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-ar-sat-room-handoff-v0-1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Qualitative Capstone — qualitative analysis of analyst response to AI-introduced corruption</h2>
+<p><strong>structured analysis room</strong></p>
+<div class="meter"><span style="width:76%"></span></div>
+<p class="small">Potential 7.55; current proof 6.67; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/capstone-orig.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Cognitive Warfare — counter-intelligence doctrine, operationalized into analytical instruments</h2>
+<p><strong>research workflow software</strong></p>
+<div class="meter"><span style="width:75%"></span></div>
+<p class="small">Potential 7.54; current proof 6.66; component cases 11.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/cognitive-warfare.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Counterintelligence Surveillance Framework — Beyond Surveillance Maximalism: a Smart Surveillance Scaling (S3) proposal</h2>
+<p><strong>policy / governance proposal</strong></p>
+<div class="meter"><span style="width:75%"></span></div>
+<p class="small">Potential 7.54; current proof 6.66; component cases 11.</p>
+<p>Add one implementation scenario: policy problem, decision rule, control point, abuse case, measurable criterion, and revision trigger.</p>
+<a class="button" href="project_pages/isc-proposals.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Bias Atlas</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:75%"></span></div>
+<p class="small">Potential 7.53; current proof 6.66; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-bias-atlas-conversation-to-murano-handoff-archive-2026-04-11.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Glassworks of Correspondence</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:75%"></span></div>
+<p class="small">Potential 7.53; current proof 6.66; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-glassworksofcorrespondence-handoff-v0-1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Russian-studies bibliography + reflexive meta-analysis session</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:75%"></span></div>
+<p class="small">Potential 7.53; current proof 6.66; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-visible-chat-handoff-package.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Quantitative Capstone — quantitative arm of the AI-corruption capstone study</h2>
+<p><strong>research study</strong></p>
+<div class="meter"><span style="width:75%"></span></div>
+<p class="small">Potential 7.52; current proof 6.65; component cases 17.</p>
+<p>Add method-result boundary, validity threats, what the study can and cannot generalize, and a practitioner-facing implication.</p>
+<a class="button" href="project_pages/row1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Comparative Genocide Systems Lab</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:75%"></span></div>
+<p class="small">Potential 7.51; current proof 6.64; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-comparative-genocide-systems-lab-handoff-v1-0.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Script Atelier (v0)</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:75%"></span></div>
+<p class="small">Potential 7.51; current proof 6.64; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-script-atelier-handoff-package-v0-2026-04-17.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Western Myth Codex</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:75%"></span></div>
+<p class="small">Potential 7.51; current proof 6.64; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-western-myth-codex-phase-i-stub-pack.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Canonical SAT dedup: 106 techniques normalized across 11 catalogues</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:75%"></span></div>
+<p class="small">Potential 7.50; current proof 6.64; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-sat-handoff-v1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>* META: the Protocol v3.1 itself — consumed by every MuranoOS room handoff</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:74%"></span></div>
+<p class="small">Potential 7.45; current proof 6.60; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-handoff-pack-v3-1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Annealed Refraction Chamber</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:74%"></span></div>
+<p class="small">Potential 7.45; current proof 6.60; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-murano-os-annealed-refraction-chamber-handoff-done.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Batman/Gotham 9-tier archive; canon hierarchy + Azrael rule + Issue #1-2 proofs</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:74%"></span></div>
+<p class="small">Potential 7.45; current proof 6.60; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-gotham-lossless-replacement-archive-2026-04-15.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Briefing Forge</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:74%"></span></div>
+<p class="small">Potential 7.45; current proof 6.60; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>CI red-cell methods reference architecture (post-integrity-correction rebuild)</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:74%"></span></div>
+<p class="small">Potential 7.45; current proof 6.60; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-ci-red-cell-handoff.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Credential stack + 90-day plan + Competency Tracker CSV</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:74%"></span></div>
+<p class="small">Potential 7.45; current proof 6.60; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-cia-russian-ci-handoff-packet.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Dialectic Engine</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:74%"></span></div>
+<p class="small">Potential 7.45; current proof 6.60; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-dialectic-engine-room-pass1-handoff.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>IC analyst portfolio build kit; skill taxonomy S01-S26</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:74%"></span></div>
+<p class="small">Potential 7.45; current proof 6.60; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-ic-analyst-portfolio-handoff-pass1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Most self-contained; &quot;Analytical Memory and Provenance Spine&quot;; 14 new commands</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:74%"></span></div>
+<p class="small">Potential 7.45; current proof 6.60; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-tranche-ii-handoff-pack-2026-04-15.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Prismatic Agora</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:74%"></span></div>
+<p class="small">Potential 7.45; current proof 6.60; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-murano-prismatic-agora-handoff-v1-0-done.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>The Interval (remote violence)</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:74%"></span></div>
+<p class="small">Potential 7.45; current proof 6.60; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-the-interval-handoff-v0-1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Three-lane civilian service plan; clearance-risk matrix SAFE/CAUTION/AVOID</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:74%"></span></div>
+<p class="small">Potential 7.45; current proof 6.60; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-ukraine-handoff-packet.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>13 snapshot workbooks; 11-phase build scaffold — AI-assisted methods</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:74%"></span></div>
+<p class="small">Potential 7.40; current proof 6.57; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-ic-analytic-technique-compendium-bundle-v0-1-v1-3.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>3-page Russia integrated-strategy assessment (V1-V4 convergence)</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:74%"></span></div>
+<p class="small">Potential 7.40; current proof 6.57; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-russia-intelligence-analysis-final-handoff.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>72-month master plan + Russian-language 12-month CSV + SF-86 prep</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:74%"></span></div>
+<p class="small">Potential 7.40; current proof 6.57; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-nik-handoff-v1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Actual code patch: 170 KB unified diff + changed files</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:74%"></span></div>
+<p class="small">Potential 7.40; current proof 6.57; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-tranche-alpha-handoff-2026-04-14.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Conversation capture with structured JSON handoff</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:74%"></span></div>
+<p class="small">Potential 7.40; current proof 6.57; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-ci-career-conversation-handoff-done.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>400 coined IR terms — 30 shortlist — 20 canon — 10 mini-theories</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:73%"></span></div>
+<p class="small">Potential 7.33; current proof 6.52; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-foreign-affairs-lexicon-handoff-v1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>50-entry curated arsenal (of planned 1,000)</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:73%"></span></div>
+<p class="small">Potential 7.33; current proof 6.52; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-sophisticated-expression-lexicon-handoff.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>500-role ranked search universe (250 federal + 250 private)</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:73%"></span></div>
+<p class="small">Potential 7.33; current proof 6.52; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-cia-do-career-handoff-v1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>House of Light and Doom</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:73%"></span></div>
+<p class="small">Potential 7.33; current proof 6.52; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-murano-house-of-light-and-doom-handoff-v1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Lossless Synthesis (Magnum Opus Scriptorium)</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:73%"></span></div>
+<p class="small">Potential 7.33; current proof 6.52; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-murano-os-lossless-synthesis-room-handoff.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>100-item ranked bibliography with verification levels A/B/C × core/extended</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:73%"></span></div>
+<p class="small">Potential 7.29; current proof 6.49; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-russian-reference-handoff-final.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G]</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:73%"></span></div>
+<p class="small">Potential 7.29; current proof 6.49; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-georgetown-technique-registry-master-50-bundle.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Agency-targeting scorecard; 25 citations; FY2024-2026 NIP/MIP figures</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:73%"></span></div>
+<p class="small">Potential 7.29; current proof 6.49; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-georgetown-ic-handoff-done.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>CARE framework gray-zone counter-strategy + red-team critique</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:73%"></span></div>
+<p class="small">Potential 7.29; current proof 6.49; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-russia-security-handoff-packet-done.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>CI/CT DO tradecraft v1.1; SAT enumeration + 12 analyst templates (BLUF, ACH, ICD-203)</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:73%"></span></div>
+<p class="small">Potential 7.29; current proof 6.49; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-ci-ct-do-handoff-v1-1.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Cumulative-patch consolidator (4 historical patch packs merged)</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:73%"></span></div>
+<p class="small">Potential 7.29; current proof 6.49; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-redteamlab-proper-handoff-zip-2026-04-14.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Dialectic Lab</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:73%"></span></div>
+<p class="small">Potential 7.29; current proof 6.49; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Earliest pack; high-standard 3-column delta map</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:73%"></span></div>
+<p class="small">Potential 7.29; current proof 6.49; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-redteamlab-proper-handoff-package-2026-04-14.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Most implementation-ready: .patch + full files + snapshot + SQL verification + validation</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:73%"></span></div>
+<p class="small">Potential 7.29; current proof 6.49; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-redteamlab-packet1-proper-handoff-done.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Defensive Retrieval Research — future study on retrieval-augmented-generation poisoning</h2>
+<p><strong>retrieval / evidence software</strong></p>
+<div class="meter"><span style="width:73%"></span></div>
+<p class="small">Potential 7.26; current proof 6.48; component cases 9.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/row14.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Colonial Archive Explorer</h2>
+<p><strong>archive / packet router</strong></p>
+<div class="meter"><span style="width:72%"></span></div>
+<p class="small">Potential 7.24; current proof 6.46; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/native-london.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Smallest doc-pack; paired .md + .rs/.ts draft patches</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:72%"></span></div>
+<p class="small">Potential 7.23; current proof 6.46; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-phase-ii-handoff-2026-04-15.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>CI Tradecraft Chamber</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:72%"></span></div>
+<p class="small">Potential 7.23; current proof 6.45; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-handoff-pass3-done.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Cognitive Firewalls Defense Room</h2>
+<p><strong>research study</strong></p>
+<div class="meter"><span style="width:72%"></span></div>
+<p class="small">Potential 7.19; current proof 6.42; component cases 17.</p>
+<p>Add method-result boundary, validity threats, what the study can and cannot generalize, and a practitioner-facing implication.</p>
+<a class="button" href="project_pages/native-capstone-defense-noland.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Master Bundle Pages</h2>
+<p><strong>archive / packet router</strong></p>
+<div class="meter"><span style="width:72%"></span></div>
+<p class="small">Potential 7.19; current proof 6.42; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/native-master-bundle-pages.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Scholarly Retrieval System — cross-disciplinary research library with a twelve-stage analytical-governance plane</h2>
+<p><strong>retrieval / evidence software</strong></p>
+<div class="meter"><span style="width:72%"></span></div>
+<p class="small">Potential 7.19; current proof 6.42; component cases 10.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/row6.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Counter-Idiom Lab</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:71%"></span></div>
+<p class="small">Potential 7.12; current proof 6.38; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-counter-idiom-lab-proper-handoff-done.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Narrative Furnace</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:71%"></span></div>
+<p class="small">Potential 7.12; current proof 6.38; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-narrative-furnace-handoff-pack-2026-04-14.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Applied History Lab</h2>
+<p><strong>archive / packet router</strong></p>
+<div class="meter"><span style="width:71%"></span></div>
+<p class="small">Potential 7.10; current proof 6.37; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/native-applied-history-lab.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Smallest addendum wrapper; 5-surface Core Analytical Workflow</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:71%"></span></div>
+<p class="small">Potential 7.10; current proof 6.36; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-muranoos-red-team-continuation-handoff-2026-04-11.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Retrieval Integrity Evaluation — testing Retrieval-Augmented Generation (RAG) against retrieval poisoning and false-source failure</h2>
+<p><strong>retrieval / evidence software</strong></p>
+<div class="meter"><span style="width:71%"></span></div>
+<p class="small">Potential 7.07; current proof 6.35; component cases 9.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/row11.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Russia</h2>
+<p><strong>research workflow software</strong></p>
+<div class="meter"><span style="width:71%"></span></div>
+<p class="small">Potential 7.07; current proof 6.34; component cases 17.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/native-russia.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Wargaming — theater-level alliance-crisis wargame workbench</h2>
+<p><strong>strategic simulation / planning tool</strong></p>
+<div class="meter"><span style="width:69%"></span></div>
+<p class="small">Potential 6.91; current proof 6.23; component cases 17.</p>
+<p>Add one replayable scenario: initial condition, decision variable, constraint, model operation, output, and after-action review.</p>
+<a class="button" href="project_pages/wargaming.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Defense Doctrine — defensive retrieval governance laboratory (claim-limit discipline)</h2>
+<p><strong>retrieval / evidence software</strong></p>
+<div class="meter"><span style="width:69%"></span></div>
+<p class="small">Potential 6.86; current proof 6.20; component cases 17.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/row5.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Decision Advantage System — operating architecture for intelligence and security organizations</h2>
+<p><strong>software operating environment</strong></p>
+<div class="meter"><span style="width:68%"></span></div>
+<p class="small">Potential 6.79; current proof 6.16; component cases 17.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/decision-advantage-system.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Critical Functions Observatory — defensive UAS / critical-infrastructure research lab</h2>
+<p><strong>archive / packet router</strong></p>
+<div class="meter"><span style="width:68%"></span></div>
+<p class="small">Potential 6.79; current proof 6.15; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/critical-functions-observatory.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>InfraGard preparatory note (minimal)</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:68%"></span></div>
+<p class="small">Potential 6.76; current proof 6.13; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-infragard-handoff.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Red Team Lab — consolidated counter-deception lab across five authority roles</h2>
+<p><strong>archive / packet router</strong></p>
+<div class="meter"><span style="width:67%"></span></div>
+<p class="small">Potential 6.74; current proof 6.12; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/red-team-lab.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Structured Techniques Toolkit — authoring and refinement workspace for disciplined analytic instruments</h2>
+<p><strong>retrieval / evidence software</strong></p>
+<div class="meter"><span style="width:66%"></span></div>
+<p class="small">Potential 6.57; current proof 6.00; component cases 8.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/structured-analysis-toolkit.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Comparative Genocide Lab — comparative analysis of mass political violence across ten canonical dimensions</h2>
+<p><strong>structured analysis room</strong></p>
+<div class="meter"><span style="width:65%"></span></div>
+<p class="small">Potential 6.53; current proof 5.97; component cases 17.</p>
+<p>Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.</p>
+<a class="button" href="project_pages/genocide-lab.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Reflexive Control Chamber — Russian reflexive-control &amp; strategic-deception research chamber</h2>
+<p><strong>domain analysis desk</strong></p>
+<div class="meter"><span style="width:65%"></span></div>
+<p class="small">Potential 6.53; current proof 5.97; component cases 17.</p>
+<p>Add one source-to-judgment chain: source family, analytic variable, competing interpretation, confidence boundary, and policy implication.</p>
+<a class="button" href="project_pages/reflexive-control-chamber.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 001</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-001.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 002</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-002.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 003</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-003.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 004</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-004.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 005</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-005.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 006</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-006.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 007</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-007.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 008</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-008.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 009</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-009.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 010</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-010.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 011</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-011.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 012</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-012.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 013</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-013.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 014</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-014.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 015</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-015.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 016</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-016.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 017</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-017.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 018</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-018.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 019</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-019.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 020</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-020.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 021</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-021.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 022</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-022.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 023</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-023.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 024</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-024.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 025</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-025.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 026</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-026.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 027</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-027.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 028</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-028.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 029</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-029.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 030</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-030.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 031</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-031.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 032</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-032.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 033</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-033.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 034</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-034.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 035</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-035.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Internal Operating Support Packet 036</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:64%"></span></div>
+<p class="small">Potential 6.44; current proof 5.92; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-internal-operating-support-036.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Russia Historical Context Room</h2>
+<p><strong>research workflow software</strong></p>
+<div class="meter"><span style="width:63%"></span></div>
+<p class="small">Potential 6.31; current proof 5.83; component cases 8.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/native-russia-history-room.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Russia Security Desk</h2>
+<p><strong>research workflow software</strong></p>
+<div class="meter"><span style="width:63%"></span></div>
+<p class="small">Potential 6.26; current proof 5.79; component cases 8.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/native-russia-security-desk.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Analyst Assurance Desk</h2>
+<p><strong>analysis method / workstation</strong></p>
+<div class="meter"><span style="width:62%"></span></div>
+<p class="small">Potential 6.24; current proof 5.78; component cases 8.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/native-analyst-assurance-desk.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption</h2>
+<p><strong>research study</strong></p>
+<div class="meter"><span style="width:62%"></span></div>
+<p class="small">Potential 6.18; current proof 5.74; component cases 17.</p>
+<p>Add method-result boundary, validity threats, what the study can and cannot generalize, and a practitioner-facing implication.</p>
+<a class="button" href="project_pages/cognitive-firewall-instruments.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Book Trilogy Atlas</h2>
+<p><strong>method atlas / taxonomy</strong></p>
+<div class="meter"><span style="width:61%"></span></div>
+<p class="small">Potential 6.08; current proof 5.67; component cases 11.</p>
+<p>Add one classified example that travels through the taxonomy: observed failure or bias, category assignment, rival category, reviewer decision, and resulting mitigation.</p>
+<a class="button" href="project_pages/native-trilogy-showcase-atlas.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Full Project Catalogue</h2>
+<p><strong>archive / packet router</strong></p>
+<div class="meter"><span style="width:60%"></span></div>
+<p class="small">Potential 6.05; current proof 5.65; component cases 17.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/native-portfolio-index.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Structured Methods Library — method-composition page across Heuer, structured analytic techniques, and intelligence methodology</h2>
+<p><strong>analysis method / workstation</strong></p>
+<div class="meter"><span style="width:59%"></span></div>
+<p class="small">Potential 5.88; current proof 5.54; component cases 8.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/analytical-methods.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Book Trilogy Showcase</h2>
+<p><strong>book / manuscript system</strong></p>
+<div class="meter"><span style="width:59%"></span></div>
+<p class="small">Potential 5.87; current proof 5.53; component cases 11.</p>
+<p>Add chapter-level dossiers showing title logic, argument skeleton, source role, rewrite decision, and visual specificity for representative chapters.</p>
+<a class="button" href="project_pages/native-trilogy-showcase.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Source &amp; Evidence Review — tracking what supports each claim and what still needs review</h2>
+<p><strong>software operating environment</strong></p>
+<div class="meter"><span style="width:57%"></span></div>
+<p class="small">Potential 5.72; current proof 5.43; component cases 3.</p>
+<p>Add a replayable demo with before/after state, failure mode, and exported result so the software utility is visible rather than asserted.</p>
+<a class="button" href="project_pages/warrant-chamber.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Warning Misleading name: all 24 files are 1-line title stubs (466 bytes total)</h2>
+<p><strong>master-bundle artifact / archive router</strong></p>
+<div class="meter"><span style="width:56%"></span></div>
+<p class="small">Potential 5.60; current proof 5.34; component cases 7.</p>
+<p>Add promotion-router examples showing how a packet becomes a room, paper, software instrument, source reservoir, archive item, or blocked record.</p>
+<a class="button" href="project_pages/mb-comparative-rhetoric-final.html">Open proof lab</a>
+</article><article class="card">
+<div class="kicker">component-protocol-ready</div>
+<h2>Quality Review — checking project claims against evidence, scope, and readiness</h2>
+<p><strong>public project blueprint</strong></p>
+<div class="meter"><span style="width:50%"></span></div>
+<p class="small">Potential 4.95; current proof 4.90; component cases 3.</p>
+<p>Capture a concrete run trace or exported proof artifact for this project type; the project is currently more specified than demonstrated.</p>
+<a class="button" href="project_pages/project-hardening.html">Open proof lab</a>
+</article></section>
+<p><a class="button" href="../proof_engines/index.html">Open source-bound proof engines</a></p>
+<p><a class="button" href="../proof_crosswalk/index.html">Open all-component claim-to-proof crosswalk</a></p>
+<p class="lead"><a href="../source_workbench/index.html">Open source utilization workbench</a></p>
+<p class="lead"><a href="../component_proof_builds/index.html">Open component proof build system</a></p>
+</main></body>
+</html>

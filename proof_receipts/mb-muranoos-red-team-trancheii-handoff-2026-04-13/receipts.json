@@ -1,0 +1,1464 @@
+{
+  "project": {
+    "project_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13",
+    "title": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__receipt_0001",
+      "project_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13",
+      "project_title": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs Handoff Identity",
+      "component_case_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__0001__surgical-patch-package-12-live-source-snapshots-4-patch-plane-specs-handoff-identity",
+      "claim_to_demonstrate": "Red Team Tranche II surgical patch package is a source-snapshot and schema-change handoff.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "Red Team Tranche II surgical patch package is a source-snapshot and schema-change handoff.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45312,
+            "sha256": "87537563a508ea001aaa843a54a7206b7bf0e68d93652b69f0656a62f6b1b9cc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37440,
+            "sha256": "fc0d2b1fc5854085bcc67bb1fcf3155c554eccf10a95330a0279a26891d982c2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21293,
+            "sha256": "78c1e0df34e2c14c600c136581bd121b14ff4682b592aba46d86066026cf30d4"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21167,
+            "sha256": "036912ab9ca6b8005040131e6e109ff5e88a5ad25dfa06a5216ceb4731f26aef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47624,
+            "sha256": "b9064f6751da0d0172d48ba515b5edb699ce388994982d6217e414bead15cc51"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10781,
+            "sha256": "71d411ed6e400a6f4ddd8b03d35a7130e641c667b4fb85e8aa1fadff32e575bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f5ed24d9a5584a91aa3656d4"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__receipt_0002",
+      "project_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13",
+      "project_title": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs Room Task Model",
+      "component_case_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__0002__surgical-patch-package-12-live-source-snapshots-4-patch-plane-specs-room-task-model",
+      "claim_to_demonstrate": "It preserves RedTeamLabRoom.tsx snapshots, ALTER TABLE and CREATE TABLE schema work, live source snapshots, and patch-plane specifications so the implementation path can be audited at file and database levels.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "It preserves RedTeamLabRoom.tsx snapshots, ALTER TABLE and CREATE TABLE schema work, live source snapshots, and patch-plane specifications so the implementation path can be audited at file and database levels.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45312,
+            "sha256": "87537563a508ea001aaa843a54a7206b7bf0e68d93652b69f0656a62f6b1b9cc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37440,
+            "sha256": "fc0d2b1fc5854085bcc67bb1fcf3155c554eccf10a95330a0279a26891d982c2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21293,
+            "sha256": "78c1e0df34e2c14c600c136581bd121b14ff4682b592aba46d86066026cf30d4"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21167,
+            "sha256": "036912ab9ca6b8005040131e6e109ff5e88a5ad25dfa06a5216ceb4731f26aef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47624,
+            "sha256": "b9064f6751da0d0172d48ba515b5edb699ce388994982d6217e414bead15cc51"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10781,
+            "sha256": "71d411ed6e400a6f4ddd8b03d35a7130e641c667b4fb85e8aa1fadff32e575bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "00f997139a73e732efd9a654"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__receipt_0003",
+      "project_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13",
+      "project_title": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs Data Schema And Persistence Plan",
+      "component_case_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__0003__surgical-patch-package-12-live-source-snapshots-4-patch-plane-specs-data-schema-and-persis",
+      "claim_to_demonstrate": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45312,
+            "sha256": "87537563a508ea001aaa843a54a7206b7bf0e68d93652b69f0656a62f6b1b9cc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37440,
+            "sha256": "fc0d2b1fc5854085bcc67bb1fcf3155c554eccf10a95330a0279a26891d982c2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21293,
+            "sha256": "78c1e0df34e2c14c600c136581bd121b14ff4682b592aba46d86066026cf30d4"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21167,
+            "sha256": "036912ab9ca6b8005040131e6e109ff5e88a5ad25dfa06a5216ceb4731f26aef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47624,
+            "sha256": "b9064f6751da0d0172d48ba515b5edb699ce388994982d6217e414bead15cc51"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10781,
+            "sha256": "71d411ed6e400a6f4ddd8b03d35a7130e641c667b4fb85e8aa1fadff32e575bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "df46740d4297595411240f49"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__receipt_0004",
+      "project_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13",
+      "project_title": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs Interface And Instrument Plane",
+      "component_case_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__0004__surgical-patch-package-12-live-source-snapshots-4-patch-plane-specs-interface-and-instrume",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45312,
+            "sha256": "87537563a508ea001aaa843a54a7206b7bf0e68d93652b69f0656a62f6b1b9cc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37440,
+            "sha256": "fc0d2b1fc5854085bcc67bb1fcf3155c554eccf10a95330a0279a26891d982c2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21293,
+            "sha256": "78c1e0df34e2c14c600c136581bd121b14ff4682b592aba46d86066026cf30d4"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21167,
+            "sha256": "036912ab9ca6b8005040131e6e109ff5e88a5ad25dfa06a5216ceb4731f26aef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47624,
+            "sha256": "b9064f6751da0d0172d48ba515b5edb699ce388994982d6217e414bead15cc51"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10781,
+            "sha256": "71d411ed6e400a6f4ddd8b03d35a7130e641c667b4fb85e8aa1fadff32e575bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6885a6597dfc27e4b6d7cada"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__receipt_0005",
+      "project_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13",
+      "project_title": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs Integration Path",
+      "component_case_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__0005__surgical-patch-package-12-live-source-snapshots-4-patch-plane-specs-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. Upload to a new GPT chat when the task is author a unified diff for Tranche II right now, and you want the smallest possible context load (79 KB compressed).",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. Upload to a new GPT chat when the task is author a unified diff for Tranche II right now, and you want the smallest possible context load (79 KB compressed).",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45312,
+            "sha256": "87537563a508ea001aaa843a54a7206b7bf0e68d93652b69f0656a62f6b1b9cc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37440,
+            "sha256": "fc0d2b1fc5854085bcc67bb1fcf3155c554eccf10a95330a0279a26891d982c2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21293,
+            "sha256": "78c1e0df34e2c14c600c136581bd121b14ff4682b592aba46d86066026cf30d4"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21167,
+            "sha256": "036912ab9ca6b8005040131e6e109ff5e88a5ad25dfa06a5216ceb4731f26aef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47624,
+            "sha256": "b9064f6751da0d0172d48ba515b5edb699ce388994982d6217e414bead15cc51"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10781,
+            "sha256": "71d411ed6e400a6f4ddd8b03d35a7130e641c667b4fb85e8aa1fadff32e575bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "76133847430b5148f21da36c"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__receipt_0006",
+      "project_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13",
+      "project_title": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs Proof Boundary",
+      "component_case_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__0006__surgical-patch-package-12-live-source-snapshots-4-patch-plane-specs-proof-boundary",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45312,
+            "sha256": "87537563a508ea001aaa843a54a7206b7bf0e68d93652b69f0656a62f6b1b9cc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37440,
+            "sha256": "fc0d2b1fc5854085bcc67bb1fcf3155c554eccf10a95330a0279a26891d982c2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21293,
+            "sha256": "78c1e0df34e2c14c600c136581bd121b14ff4682b592aba46d86066026cf30d4"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21167,
+            "sha256": "036912ab9ca6b8005040131e6e109ff5e88a5ad25dfa06a5216ceb4731f26aef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47624,
+            "sha256": "b9064f6751da0d0172d48ba515b5edb699ce388994982d6217e414bead15cc51"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10781,
+            "sha256": "71d411ed6e400a6f4ddd8b03d35a7130e641c667b4fb85e8aa1fadff32e575bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7a6468e22c00f8077cf2ad3e"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__receipt_0007",
+      "project_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13",
+      "project_title": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs Next Build Test",
+      "component_case_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__0007__surgical-patch-package-12-live-source-snapshots-4-patch-plane-specs-next-build-test",
+      "claim_to_demonstrate": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45312,
+            "sha256": "87537563a508ea001aaa843a54a7206b7bf0e68d93652b69f0656a62f6b1b9cc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37440,
+            "sha256": "fc0d2b1fc5854085bcc67bb1fcf3155c554eccf10a95330a0279a26891d982c2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21293,
+            "sha256": "78c1e0df34e2c14c600c136581bd121b14ff4682b592aba46d86066026cf30d4"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21167,
+            "sha256": "036912ab9ca6b8005040131e6e109ff5e88a5ad25dfa06a5216ceb4731f26aef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47624,
+            "sha256": "b9064f6751da0d0172d48ba515b5edb699ce388994982d6217e414bead15cc51"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10781,
+            "sha256": "71d411ed6e400a6f4ddd8b03d35a7130e641c667b4fb85e8aa1fadff32e575bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9aa3d67ab7357981154b2bbd"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__receipt_0008",
+      "project_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13",
+      "project_title": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs / governedShellRoutes.json",
+      "component_case_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__0008__surgical-patch-package-12-live-source-snapshots-4-patch-plane-specs-governedshellroutes-js",
+      "claim_to_demonstrate": "treats `governedShellRoutes.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: It ships nine live Red Team source files as plain text in 05_Snapshots/ (governedShellRoutes.json, red-team-lab.css.",
+      "input_fixture": "project source text and the named component `governedShellRoutes.json`",
+      "operation_under_test": "treats `governedShellRoutes.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: It ships nine live Red Team source files as plain text in 05_Snapshots/ (governedShellRoutes.json, red-team-lab.css.",
+      "expected_output": "inspectable implementation evidence tied to `governedShellRoutes.json`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f022794cda63d03a4e972aba",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45312,
+            "sha256": "87537563a508ea001aaa843a54a7206b7bf0e68d93652b69f0656a62f6b1b9cc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37440,
+            "sha256": "fc0d2b1fc5854085bcc67bb1fcf3155c554eccf10a95330a0279a26891d982c2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21293,
+            "sha256": "78c1e0df34e2c14c600c136581bd121b14ff4682b592aba46d86066026cf30d4"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21167,
+            "sha256": "036912ab9ca6b8005040131e6e109ff5e88a5ad25dfa06a5216ceb4731f26aef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47624,
+            "sha256": "b9064f6751da0d0172d48ba515b5edb699ce388994982d6217e414bead15cc51"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10781,
+            "sha256": "71d411ed6e400a6f4ddd8b03d35a7130e641c667b4fb85e8aa1fadff32e575bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6426e01dd4cfe792f4af62f2"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__receipt_0009",
+      "project_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13",
+      "project_title": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs / RedTeamLabRoom.tsx",
+      "component_case_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__0009__surgical-patch-package-12-live-source-snapshots-4-patch-plane-specs-redteamlabroom-tsx",
+      "claim_to_demonstrate": "treats `RedTeamLabRoom.tsx` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: It ships nine live Red Team source files as plain text in 05_Snapshots/ (governedShellRoutes.json, red-team-lab.css.",
+      "input_fixture": "project source text and the named component `RedTeamLabRoom.tsx`",
+      "operation_under_test": "treats `RedTeamLabRoom.tsx` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: It ships nine live Red Team source files as plain text in 05_Snapshots/ (governedShellRoutes.json, red-team-lab.css.",
+      "expected_output": "inspectable implementation evidence tied to `RedTeamLabRoom.tsx`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f022794cda63d03a4e972aba",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45312,
+            "sha256": "87537563a508ea001aaa843a54a7206b7bf0e68d93652b69f0656a62f6b1b9cc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37440,
+            "sha256": "fc0d2b1fc5854085bcc67bb1fcf3155c554eccf10a95330a0279a26891d982c2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21293,
+            "sha256": "78c1e0df34e2c14c600c136581bd121b14ff4682b592aba46d86066026cf30d4"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21167,
+            "sha256": "036912ab9ca6b8005040131e6e109ff5e88a5ad25dfa06a5216ceb4731f26aef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47624,
+            "sha256": "b9064f6751da0d0172d48ba515b5edb699ce388994982d6217e414bead15cc51"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10781,
+            "sha256": "71d411ed6e400a6f4ddd8b03d35a7130e641c667b4fb85e8aa1fadff32e575bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ad74d591839c522584f4c8fd"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__receipt_0010",
+      "project_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13",
+      "project_title": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs / redTeamRuntime.ts",
+      "component_case_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__0010__surgical-patch-package-12-live-source-snapshots-4-patch-plane-specs-redteamruntime-ts",
+      "claim_to_demonstrate": "treats `redTeamRuntime.ts` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: It ships nine live Red Team source files as plain text in 05_Snapshots/ (governedShellRoutes.json, red-team-lab.css.",
+      "input_fixture": "project source text and the named component `redTeamRuntime.ts`",
+      "operation_under_test": "treats `redTeamRuntime.ts` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: It ships nine live Red Team source files as plain text in 05_Snapshots/ (governedShellRoutes.json, red-team-lab.css.",
+      "expected_output": "inspectable implementation evidence tied to `redTeamRuntime.ts`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f022794cda63d03a4e972aba",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45312,
+            "sha256": "87537563a508ea001aaa843a54a7206b7bf0e68d93652b69f0656a62f6b1b9cc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37440,
+            "sha256": "fc0d2b1fc5854085bcc67bb1fcf3155c554eccf10a95330a0279a26891d982c2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21293,
+            "sha256": "78c1e0df34e2c14c600c136581bd121b14ff4682b592aba46d86066026cf30d4"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21167,
+            "sha256": "036912ab9ca6b8005040131e6e109ff5e88a5ad25dfa06a5216ceb4731f26aef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47624,
+            "sha256": "b9064f6751da0d0172d48ba515b5edb699ce388994982d6217e414bead15cc51"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10781,
+            "sha256": "71d411ed6e400a6f4ddd8b03d35a7130e641c667b4fb85e8aa1fadff32e575bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "883d021893c8b72b6b9fd9ab"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__receipt_0011",
+      "project_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13",
+      "project_title": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs / appRouter.tsx",
+      "component_case_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__0011__surgical-patch-package-12-live-source-snapshots-4-patch-plane-specs-approuter-tsx",
+      "claim_to_demonstrate": "treats `appRouter.tsx` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: It ships nine live Red Team source files as plain text in 05_Snapshots/ (governedShellRoutes.json, red-team-lab.css.",
+      "input_fixture": "project source text and the named component `appRouter.tsx`",
+      "operation_under_test": "treats `appRouter.tsx` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: It ships nine live Red Team source files as plain text in 05_Snapshots/ (governedShellRoutes.json, red-team-lab.css.",
+      "expected_output": "inspectable implementation evidence tied to `appRouter.tsx`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f022794cda63d03a4e972aba",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45312,
+            "sha256": "87537563a508ea001aaa843a54a7206b7bf0e68d93652b69f0656a62f6b1b9cc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37440,
+            "sha256": "fc0d2b1fc5854085bcc67bb1fcf3155c554eccf10a95330a0279a26891d982c2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21293,
+            "sha256": "78c1e0df34e2c14c600c136581bd121b14ff4682b592aba46d86066026cf30d4"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21167,
+            "sha256": "036912ab9ca6b8005040131e6e109ff5e88a5ad25dfa06a5216ceb4731f26aef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47624,
+            "sha256": "b9064f6751da0d0172d48ba515b5edb699ce388994982d6217e414bead15cc51"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10781,
+            "sha256": "71d411ed6e400a6f4ddd8b03d35a7130e641c667b4fb85e8aa1fadff32e575bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3007f2dbfbb1a796770a31df"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__receipt_0012",
+      "project_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13",
+      "project_title": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs / routeRegistry.ts",
+      "component_case_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__0012__surgical-patch-package-12-live-source-snapshots-4-patch-plane-specs-routeregistry-ts",
+      "claim_to_demonstrate": "treats `routeRegistry.ts` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: It ships nine live Red Team source files as plain text in 05_Snapshots/ (governedShellRoutes.json, red-team-lab.css.",
+      "input_fixture": "project source text and the named component `routeRegistry.ts`",
+      "operation_under_test": "treats `routeRegistry.ts` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: It ships nine live Red Team source files as plain text in 05_Snapshots/ (governedShellRoutes.json, red-team-lab.css.",
+      "expected_output": "inspectable implementation evidence tied to `routeRegistry.ts`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f022794cda63d03a4e972aba",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45312,
+            "sha256": "87537563a508ea001aaa843a54a7206b7bf0e68d93652b69f0656a62f6b1b9cc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37440,
+            "sha256": "fc0d2b1fc5854085bcc67bb1fcf3155c554eccf10a95330a0279a26891d982c2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21293,
+            "sha256": "78c1e0df34e2c14c600c136581bd121b14ff4682b592aba46d86066026cf30d4"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21167,
+            "sha256": "036912ab9ca6b8005040131e6e109ff5e88a5ad25dfa06a5216ceb4731f26aef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47624,
+            "sha256": "b9064f6751da0d0172d48ba515b5edb699ce388994982d6217e414bead15cc51"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10781,
+            "sha256": "71d411ed6e400a6f4ddd8b03d35a7130e641c667b4fb85e8aa1fadff32e575bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "232661f4b7236e48ccb35fac"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__receipt_0013",
+      "project_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13",
+      "project_title": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs / roomContracts.ts",
+      "component_case_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__0013__surgical-patch-package-12-live-source-snapshots-4-patch-plane-specs-roomcontracts-ts",
+      "claim_to_demonstrate": "treats `roomContracts.ts` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: roomContracts.ts, domainSidebarConfig.ts, db.rs, main.rs, red_team_cmds.rs, red_team_db.rs). A downstream implementer or GPT.",
+      "input_fixture": "project source text and the named component `roomContracts.ts`",
+      "operation_under_test": "treats `roomContracts.ts` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: roomContracts.ts, domainSidebarConfig.ts, db.rs, main.rs, red_team_cmds.rs, red_team_db.rs). A downstream implementer or GPT.",
+      "expected_output": "inspectable implementation evidence tied to `roomContracts.ts`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "7b83bfbb3476e4bbd914bdae",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45312,
+            "sha256": "87537563a508ea001aaa843a54a7206b7bf0e68d93652b69f0656a62f6b1b9cc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37440,
+            "sha256": "fc0d2b1fc5854085bcc67bb1fcf3155c554eccf10a95330a0279a26891d982c2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21293,
+            "sha256": "78c1e0df34e2c14c600c136581bd121b14ff4682b592aba46d86066026cf30d4"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21167,
+            "sha256": "036912ab9ca6b8005040131e6e109ff5e88a5ad25dfa06a5216ceb4731f26aef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47624,
+            "sha256": "b9064f6751da0d0172d48ba515b5edb699ce388994982d6217e414bead15cc51"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10781,
+            "sha256": "71d411ed6e400a6f4ddd8b03d35a7130e641c667b4fb85e8aa1fadff32e575bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "25e64a789b1be34efb73bdda"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__receipt_0014",
+      "project_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13",
+      "project_title": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs / domainSidebarConfig.ts",
+      "component_case_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__0014__surgical-patch-package-12-live-source-snapshots-4-patch-plane-specs-domainsidebarconfig-ts",
+      "claim_to_demonstrate": "treats `domainSidebarConfig.ts` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: domainSidebarConfig.ts, db.rs, main.rs, red_team_cmds.rs, red_team_db.rs). A downstream implementer or GPT chat can.",
+      "input_fixture": "project source text and the named component `domainSidebarConfig.ts`",
+      "operation_under_test": "treats `domainSidebarConfig.ts` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: domainSidebarConfig.ts, db.rs, main.rs, red_team_cmds.rs, red_team_db.rs). A downstream implementer or GPT chat can.",
+      "expected_output": "inspectable implementation evidence tied to `domainSidebarConfig.ts`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "6d2c5b8def7bf4239ea29032",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45312,
+            "sha256": "87537563a508ea001aaa843a54a7206b7bf0e68d93652b69f0656a62f6b1b9cc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37440,
+            "sha256": "fc0d2b1fc5854085bcc67bb1fcf3155c554eccf10a95330a0279a26891d982c2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21293,
+            "sha256": "78c1e0df34e2c14c600c136581bd121b14ff4682b592aba46d86066026cf30d4"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21167,
+            "sha256": "036912ab9ca6b8005040131e6e109ff5e88a5ad25dfa06a5216ceb4731f26aef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47624,
+            "sha256": "b9064f6751da0d0172d48ba515b5edb699ce388994982d6217e414bead15cc51"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10781,
+            "sha256": "71d411ed6e400a6f4ddd8b03d35a7130e641c667b4fb85e8aa1fadff32e575bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b1094371ea53ba69596b51b0"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__receipt_0015",
+      "project_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13",
+      "project_title": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs / SQLITE_SCHEMA_EXTENSION_SPEC.md",
+      "component_case_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__0015__surgical-patch-package-12-live-source-snapshots-4-patch-plane-specs-sqlite-schema-extensio",
+      "claim_to_demonstrate": "treats `SQLITE_SCHEMA_EXTENSION_SPEC.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: - SQLITE_SCHEMA_EXTENSION_SPEC.md — exact ALTER TABLE + CREATE TABLE statements -.",
+      "input_fixture": "project source text and the named component `SQLITE_SCHEMA_EXTENSION_SPEC.md`",
+      "operation_under_test": "treats `SQLITE_SCHEMA_EXTENSION_SPEC.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: - SQLITE_SCHEMA_EXTENSION_SPEC.md — exact ALTER TABLE + CREATE TABLE statements -.",
+      "expected_output": "inspectable implementation evidence tied to `SQLITE_SCHEMA_EXTENSION_SPEC.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d01bd5ed107e0d787751502c",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45312,
+            "sha256": "87537563a508ea001aaa843a54a7206b7bf0e68d93652b69f0656a62f6b1b9cc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37440,
+            "sha256": "fc0d2b1fc5854085bcc67bb1fcf3155c554eccf10a95330a0279a26891d982c2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21293,
+            "sha256": "78c1e0df34e2c14c600c136581bd121b14ff4682b592aba46d86066026cf30d4"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21167,
+            "sha256": "036912ab9ca6b8005040131e6e109ff5e88a5ad25dfa06a5216ceb4731f26aef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47624,
+            "sha256": "b9064f6751da0d0172d48ba515b5edb699ce388994982d6217e414bead15cc51"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10781,
+            "sha256": "71d411ed6e400a6f4ddd8b03d35a7130e641c667b4fb85e8aa1fadff32e575bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "20388366f6f5f283c70bfafe"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__receipt_0016",
+      "project_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13",
+      "project_title": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs / TAURI_COMMAND_SURFACE_SPEC.md",
+      "component_case_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__0016__surgical-patch-package-12-live-source-snapshots-4-patch-plane-specs-tauri-command-surface-",
+      "claim_to_demonstrate": "treats `TAURI_COMMAND_SURFACE_SPEC.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: - SQLITE_SCHEMA_EXTENSION_SPEC.md — exact ALTER TABLE + CREATE TABLE statements - TAURI_COMMAND_SURFACE_SPEC.md.",
+      "input_fixture": "project source text and the named component `TAURI_COMMAND_SURFACE_SPEC.md`",
+      "operation_under_test": "treats `TAURI_COMMAND_SURFACE_SPEC.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: - SQLITE_SCHEMA_EXTENSION_SPEC.md — exact ALTER TABLE + CREATE TABLE statements - TAURI_COMMAND_SURFACE_SPEC.md.",
+      "expected_output": "inspectable implementation evidence tied to `TAURI_COMMAND_SURFACE_SPEC.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d01bd5ed107e0d787751502c",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45312,
+            "sha256": "87537563a508ea001aaa843a54a7206b7bf0e68d93652b69f0656a62f6b1b9cc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37440,
+            "sha256": "fc0d2b1fc5854085bcc67bb1fcf3155c554eccf10a95330a0279a26891d982c2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21293,
+            "sha256": "78c1e0df34e2c14c600c136581bd121b14ff4682b592aba46d86066026cf30d4"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21167,
+            "sha256": "036912ab9ca6b8005040131e6e109ff5e88a5ad25dfa06a5216ceb4731f26aef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47624,
+            "sha256": "b9064f6751da0d0172d48ba515b5edb699ce388994982d6217e414bead15cc51"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10781,
+            "sha256": "71d411ed6e400a6f4ddd8b03d35a7130e641c667b4fb85e8aa1fadff32e575bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9c2ff9dedad975daac4ba4c2"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__receipt_0017",
+      "project_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13",
+      "project_title": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Surgical patch package; 12 live source snapshots + 4 patch-plane specs / FRONTEND_RUNTIME_SPEC.md",
+      "component_case_id": "mb-muranoos-red-team-trancheii-handoff-2026-04-13__0017__surgical-patch-package-12-live-source-snapshots-4-patch-plane-specs-frontend-runtime-spec-",
+      "claim_to_demonstrate": "treats `FRONTEND_RUNTIME_SPEC.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: - SQLITE_SCHEMA_EXTENSION_SPEC.md — exact ALTER TABLE + CREATE TABLE statements - TAURI_COMMAND_SURFACE_SPEC.md —.",
+      "input_fixture": "project source text and the named component `FRONTEND_RUNTIME_SPEC.md`",
+      "operation_under_test": "treats `FRONTEND_RUNTIME_SPEC.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: - SQLITE_SCHEMA_EXTENSION_SPEC.md — exact ALTER TABLE + CREATE TABLE statements - TAURI_COMMAND_SURFACE_SPEC.md —.",
+      "expected_output": "inspectable implementation evidence tied to `FRONTEND_RUNTIME_SPEC.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d01bd5ed107e0d787751502c",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45312,
+            "sha256": "87537563a508ea001aaa843a54a7206b7bf0e68d93652b69f0656a62f6b1b9cc"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37440,
+            "sha256": "fc0d2b1fc5854085bcc67bb1fcf3155c554eccf10a95330a0279a26891d982c2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21293,
+            "sha256": "78c1e0df34e2c14c600c136581bd121b14ff4682b592aba46d86066026cf30d4"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21167,
+            "sha256": "036912ab9ca6b8005040131e6e109ff5e88a5ad25dfa06a5216ceb4731f26aef"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47624,
+            "sha256": "b9064f6751da0d0172d48ba515b5edb699ce388994982d6217e414bead15cc51"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10781,
+            "sha256": "71d411ed6e400a6f4ddd8b03d35a7130e641c667b4fb85e8aa1fadff32e575bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-trancheii-handoff-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-trancheii-handoff-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-trancheii-handoff-2026-04-13/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "804474cac3a9764d792b5bb2"
+    }
+  ]
+}

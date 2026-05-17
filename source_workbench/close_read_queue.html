@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Close-Read Queue</title>
+<style>
+:root{color-scheme:light;--paper:#f7f5ef;--ink:#152231;--muted:#5a6575;--rule:rgba(35,55,77,.18);--accent:#7a4d18;--blue:#1e4d6b;--green:#2f6048;--red:#7a2730;--white:rgba(255,255,255,.9)}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif}main{max-width:1240px;margin:0 auto;padding:38px 22px 76px}h1{font-size:clamp(34px,5vw,56px);line-height:1;font-weight:500;margin:0 0 14px}h2{font-size:25px;line-height:1.18;margin:24px 0 10px}h3{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}p,li{line-height:1.58}a{color:#183f65}.topline,.kicker{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase;font-size:11px;color:var(--accent)}.lead{max-width:980px;font-size:18px;line-height:1.62}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}.card,.panel,.trace{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:16px}.panel{margin:18px 0}.ready{border-left:4px solid var(--green)}.warn{border-left:4px solid var(--accent)}.risk{border-left:4px solid var(--red)}.button{display:inline-block;border:1px solid rgba(30,77,107,.35);border-radius:6px;padding:9px 12px;background:#fff;color:var(--ink);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;text-decoration:none;margin:3px 6px 3px 0}button{border:1px solid rgba(30,77,107,.35);border-radius:6px;padding:9px 12px;background:#fff;color:var(--ink);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;cursor:pointer}button:hover,.button:hover{border-color:rgba(30,77,107,.82)}input,select{width:100%;border:1px solid var(--rule);border-radius:6px;padding:10px;background:#fff;color:var(--ink)}table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--rule);border-radius:8px;overflow:hidden}th,td{padding:10px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}th{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}.trace{white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;line-height:1.55;background:#fff}.small{color:var(--muted);font-size:13px}.score{font-size:30px;line-height:1}.tag{display:inline-block;border:1px solid var(--rule);border-radius:999px;padding:4px 8px;margin:2px;font-size:12px;background:#fff}.nav{margin:18px 0}@media(max-width:760px){main{padding:28px 18px 58px}}
+</style>
+</head><body><main>
+<div class="topline">Close-read queue</div>
+<h1>Close-Read Queue</h1>
+<p class="lead">This queue is the source-utilization guardrail. It prevents the site from pretending that source routing is the same thing as evidence. Each task identifies what must be read and what public claim can be unlocked only after that reading is recorded.</p>
+<p><a class="button" href="index.html">Back to source workbench</a><a class="button" href="close_read_queue.csv">Open CSV</a></p>
+<section class="panel"><label class="kicker" for="priority">Priority</label><select id="priority"><option value="">All priorities</option><option>P0</option><option>P1</option><option>P2</option></select></section>
+<section id="queue"></section>
+<script src="close_read_queue.js"></script>
+<script>
+const rows = window.CLOSE_READ_QUEUE || [];
+const priority = document.getElementById('priority');
+const out = document.getElementById('queue');
+function escHtml(v){ return String(v ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch])); }
+function render(){
+  const filtered = priority.value ? rows.filter(r => r.priority === priority.value) : rows;
+  const shown = filtered.slice(0, 300);
+  out.innerHTML = `<table><thead><tr><th>Task</th><th>Project</th><th>Role</th><th>Source</th><th>Question</th><th>Claim unlocked</th></tr></thead><tbody>` +
+    shown.map(row => `<tr><td>${escHtml(row.task_id)} / ${escHtml(row.priority)}</td><td>${escHtml(row.project_title)}</td><td>${escHtml(row.source_role)}</td><td>${escHtml(row.source_title)}</td><td>${escHtml(row.close_read_question)}</td><td>${escHtml(row.claim_unlocked_if_completed)}</td></tr>`).join('') +
+    `</tbody></table><p class="small">Showing ${shown.length} of ${filtered.length} tasks. Use the CSV for full queue operations.</p>`;
+}
+priority.addEventListener('change', render);
+render();
+</script>
+</main></body></html>

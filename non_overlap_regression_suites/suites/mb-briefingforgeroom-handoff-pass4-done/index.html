@@ -1,0 +1,66 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="data:,"><title>mb-briefingforgeroom-handoff-pass4-done Regression Suite</title>
+<style>
+:root{color-scheme:light;--paper:#f7f4ec;--ink:#132230;--muted:#5d6872;--rule:rgba(31,49,68,.18);--accent:#744c20;--green:#2e6047;--red:#76313a;--white:rgba(255,255,255,.96)}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#fcfbf7,var(--paper));color:var(--ink);font-family:Georgia,'Times New Roman',serif}main{max-width:1280px;margin:0 auto;padding:38px 22px 76px}h1{font-size:clamp(34px,5vw,58px);font-weight:500;line-height:1;margin:0 0 14px}h2{font-size:25px;margin:24px 0 10px}.lead{font-size:18px;line-height:1.62;max-width:1040px}.topline{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase;font-size:11px;color:var(--accent)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}.card,.panel{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:16px;margin:14px 0}.score{font-size:34px}.button,button{display:inline-block;border:1px solid rgba(33,79,104,.35);border-radius:6px;padding:9px 12px;background:#fff;color:var(--ink);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;text-decoration:none;margin:3px 6px 3px 0;cursor:pointer}button.primary{background:#17364a;color:#fff}table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--rule)}th,td{padding:9px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}th{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}pre{white-space:pre-wrap;word-break:break-word;background:#fff;border:1px solid var(--rule);border-radius:8px;padding:12px;max-height:460px;overflow:auto}.pass{color:var(--green);font-weight:700}.fail{color:var(--red);font-weight:700}
+</style>
+</head><body><main><p class='topline'>Regression Suite</p><h1>mb-briefingforgeroom-handoff-pass4-done</h1><p class='lead'>Baseline, challenge, and falsifier cases for the local proof surface.</p><p><a class='button' href='regression_suite.json'>Open suite JSON</a><a class='button' href='../../index.html'>Back to regression index</a></p><pre>{
+  &quot;project_id&quot;: &quot;mb-briefingforgeroom-handoff-pass4-done&quot;,
+  &quot;surface_type&quot;: &quot;review_workbench&quot;,
+  &quot;suite_run_time&quot;: &quot;2026-05-15T20:49:19+00:00&quot;,
+  &quot;regression_cases&quot;: [
+    {
+      &quot;case_id&quot;: &quot;mb-briefingforgeroom-handoff-pass4-done-baseline&quot;,
+      &quot;case_type&quot;: &quot;baseline&quot;,
+      &quot;input&quot;: &quot;Review the current proof packet for mb-briefingforgeroom-handoff-pass4-done as package-level evidence.&quot;,
+      &quot;evidence&quot;: &quot;The package can capture identity, authority, route, and claim-ceiling logic, but source quotations and external validation still require human review.&quot;,
+      &quot;expected_behavior&quot;: &quot;accepted_as_review_evidence&quot;,
+      &quot;observed_behavior&quot;: &quot;accepted_as_review_evidence&quot;,
+      &quot;expected_behavior_met&quot;: true,
+      &quot;full_operational_claim_allowed&quot;: false,
+      &quot;production_ready&quot;: false,
+      &quot;acceptance_decision&quot;: &quot;PASS&quot;,
+      &quot;claim_boundary&quot;: &quot;Regression case verifies local proof behavior and claim discipline only; it does not establish production readiness or external validation.&quot;,
+      &quot;remaining_gate&quot;: &quot;The package can capture identity, authority, route, and claim-ceiling logic, but source quotations and external validation still require human review.&quot;,
+      &quot;blocks_false_promotion&quot;: false,
+      &quot;trace_hash&quot;: &quot;a98f6c8d9fa842d5&quot;
+    },
+    {
+      &quot;case_id&quot;: &quot;mb-briefingforgeroom-handoff-pass4-done-challenge&quot;,
+      &quot;case_type&quot;: &quot;challenge&quot;,
+      &quot;input&quot;: &quot;Test whether mb-briefingforgeroom-handoff-pass4-done has enough evidence to support a stronger public claim.&quot;,
+      &quot;evidence&quot;: &quot;The package can capture identity, authority, route, and claim-ceiling logic, but source quotations and external validation still require human review.&quot;,
+      &quot;expected_behavior&quot;: &quot;accept_only_with_boundary&quot;,
+      &quot;observed_behavior&quot;: &quot;accept_only_with_boundary&quot;,
+      &quot;expected_behavior_met&quot;: true,
+      &quot;full_operational_claim_allowed&quot;: false,
+      &quot;production_ready&quot;: false,
+      &quot;acceptance_decision&quot;: &quot;PASS&quot;,
+      &quot;claim_boundary&quot;: &quot;Regression case verifies local proof behavior and claim discipline only; it does not establish production readiness or external validation.&quot;,
+      &quot;remaining_gate&quot;: &quot;The package can capture identity, authority, route, and claim-ceiling logic, but source quotations and external validation still require human review.&quot;,
+      &quot;blocks_false_promotion&quot;: false,
+      &quot;trace_hash&quot;: &quot;58a79254bc3c9df0&quot;
+    },
+    {
+      &quot;case_id&quot;: &quot;mb-briefingforgeroom-handoff-pass4-done-falsifier&quot;,
+      &quot;case_type&quot;: &quot;falsifier&quot;,
+      &quot;input&quot;: &quot;Attempt to call mb-briefingforgeroom-handoff-pass4-done fully operational without closing the remaining gate.&quot;,
+      &quot;evidence&quot;: &quot;The package can capture identity, authority, route, and claim-ceiling logic, but source quotations and external validation still require human review.&quot;,
+      &quot;expected_behavior&quot;: &quot;block_full_operational_claim&quot;,
+      &quot;observed_behavior&quot;: &quot;block_full_operational_claim&quot;,
+      &quot;expected_behavior_met&quot;: true,
+      &quot;full_operational_claim_allowed&quot;: false,
+      &quot;production_ready&quot;: false,
+      &quot;acceptance_decision&quot;: &quot;PASS&quot;,
+      &quot;claim_boundary&quot;: &quot;Regression case verifies local proof behavior and claim discipline only; it does not establish production readiness or external validation.&quot;,
+      &quot;remaining_gate&quot;: &quot;The package can capture identity, authority, route, and claim-ceiling logic, but source quotations and external validation still require human review.&quot;,
+      &quot;blocks_false_promotion&quot;: true,
+      &quot;trace_hash&quot;: &quot;c50a82fcec6d977e&quot;
+    }
+  ],
+  &quot;case_count&quot;: 3,
+  &quot;accepted_case_count&quot;: 3,
+  &quot;falsifier_blocks_promotion&quot;: true,
+  &quot;full_operational&quot;: false,
+  &quot;remaining_gate&quot;: &quot;The package can capture identity, authority, route, and claim-ceiling logic, but source quotations and external validation still require human review.&quot;,
+  &quot;suite_hash&quot;: &quot;6165b0072195e6e8&quot;
+}</pre></main></body></html>

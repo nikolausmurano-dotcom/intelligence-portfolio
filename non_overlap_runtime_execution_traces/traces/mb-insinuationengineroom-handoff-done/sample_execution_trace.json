@@ -1,0 +1,46 @@
+{
+  "runtime_id": "RTS-60A3C79504E8",
+  "project_id": "mb-insinuationengineroom-handoff-done",
+  "product_name": "Insinuation Engine",
+  "instrument_name": "Insinuation-pattern analysis workbench",
+  "run_time": "2026-05-15T20:12:25+00:00",
+  "input_summary": "Sample fixture for Insinuation Engine: a bounded case, claim, source, or decision problem requiring the instrument to produce a traceable output.",
+  "operation_under_test": "Literal parse",
+  "evidence_or_constraint": "This sample requires explicit source, uncertainty, or method constraint handling before any public claim is strengthened.",
+  "reviewer_standard": "The output must separate literal statement, implied frame, audience effect, and evidentiary caution.",
+  "generated_result": {
+    "working_judgment": "The instrument processed the submitted material through Literal parse and produced a bounded operational record.",
+    "mechanism_trace": "Insinuation-pattern analysis workbench -> Literal parse -> Indirect-influence analysis note",
+    "acceptance_decision": "PASS",
+    "next_required_evidence": "Capture browser screenshot and repeat against a second non-sample fixture before stronger claims.",
+    "claim_boundary": "Executed sample trace for a local runtime slice; not multi-user deployment, external validation, or full project completion."
+  },
+  "acceptance_checks": [
+    {
+      "name": "input length",
+      "pass": true,
+      "evidence": "145 characters"
+    },
+    {
+      "name": "operation selected",
+      "pass": true,
+      "evidence": "Literal parse"
+    },
+    {
+      "name": "evidence or constraint note",
+      "pass": true,
+      "evidence": "121 characters"
+    },
+    {
+      "name": "review standard present",
+      "pass": true,
+      "evidence": "The output must separate literal statement, implied frame, audience effect, and evidentiary caution."
+    },
+    {
+      "name": "exportable trace",
+      "pass": true,
+      "evidence": "record captured as JSON trace file"
+    }
+  ],
+  "trace_hash": "3d19c541"
+}

@@ -1,0 +1,1469 @@
+{
+  "project": {
+    "project_id": "native-pharm",
+    "title": "Vaccine Distribution Planner"
+  },
+  "receipts": [
+    {
+      "receipt_id": "native-pharm__receipt_0001",
+      "project_id": "native-pharm",
+      "project_title": "Vaccine Distribution Planner",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Vaccine Distribution Planner Runtime Or Interface Surface",
+      "component_case_id": "native-pharm__0001__vaccine-distribution-planner-runtime-or-interface-surface",
+      "claim_to_demonstrate": "Vaccine Distribution Planner is a public-health logistics planning tool for vaccination-site flow, staffing, throughput, and equity constraints.",
+      "input_fixture": "local app, web room, data surface, or workstation entry point",
+      "operation_under_test": "Vaccine Distribution Planner is a public-health logistics planning tool for vaccination-site flow, staffing, throughput, and equity constraints.",
+      "expected_output": "reader-facing definition of the software object and its intended user",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8fd882083e0f8259b8a06f60",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-pharm/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45919,
+            "sha256": "c4163712546c8aa1a198a04e921b0f94a29c7645f4889c99bb868713610311da"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38875,
+            "sha256": "8e71b0395229a078e1401ae1647309f130fae0924b3d23e1614faf0f1940a3d9"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20466,
+            "sha256": "3b13fbb0367f8938c65497cbf7edb180e6edb8769d9eccdc5d568c78e5d19e85"
+          },
+          {
+            "relative_path": "proof_builds/native-pharm/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21252,
+            "sha256": "df996cd2b2de30066a340bee5b08de09ecdb4ea4b8174ff42e352dcf4d8c20e1"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46114,
+            "sha256": "488a9b44151b55bd363b7a452f34cf58834c3e04beac3aec8a075af6b84d8070"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9468,
+            "sha256": "5309f1343bc0ffe2132c22568eb341f115e29f4c422c0239227a54aaa07e4027"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-pharm/blueprint.json",
+          "project_blueprints/native-pharm/instrument_map.json",
+          "project_blueprints/native-pharm/README.md",
+          "proof_builds/native-pharm/proof_build.json",
+          "proof_demos/native-pharm/demo_cases.json",
+          "proof_demos/native-pharm/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0c2b0d2762ac7ce5244d885d"
+    },
+    {
+      "receipt_id": "native-pharm__receipt_0002",
+      "project_id": "native-pharm",
+      "project_title": "Vaccine Distribution Planner",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Vaccine Distribution Planner Data And State Model",
+      "component_case_id": "native-pharm__0002__vaccine-distribution-planner-data-and-state-model",
+      "claim_to_demonstrate": "Method source. Clarifies the analytical method or reasoning discipline behind the page. Domain source. Supplies the substantive field knowledge against which claims must be checked. Evidence source. Supplies examples, cases, documents, or work products that.",
+      "input_fixture": "records, files, indexes, tables, project state, source state, and user decisions",
+      "operation_under_test": "Method source. Clarifies the analytical method or reasoning discipline behind the page. Domain source. Supplies the substantive field knowledge against which claims must be checked. Evidence source. Supplies examples, cases, documents, or work products that.",
+      "expected_output": "state model that explains what the tool remembers and what it refuses to infer",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4da81596b91ff65b95cc789b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-pharm/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45919,
+            "sha256": "c4163712546c8aa1a198a04e921b0f94a29c7645f4889c99bb868713610311da"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38875,
+            "sha256": "8e71b0395229a078e1401ae1647309f130fae0924b3d23e1614faf0f1940a3d9"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20466,
+            "sha256": "3b13fbb0367f8938c65497cbf7edb180e6edb8769d9eccdc5d568c78e5d19e85"
+          },
+          {
+            "relative_path": "proof_builds/native-pharm/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21252,
+            "sha256": "df996cd2b2de30066a340bee5b08de09ecdb4ea4b8174ff42e352dcf4d8c20e1"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46114,
+            "sha256": "488a9b44151b55bd363b7a452f34cf58834c3e04beac3aec8a075af6b84d8070"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9468,
+            "sha256": "5309f1343bc0ffe2132c22568eb341f115e29f4c422c0239227a54aaa07e4027"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-pharm/blueprint.json",
+          "project_blueprints/native-pharm/instrument_map.json",
+          "project_blueprints/native-pharm/README.md",
+          "proof_builds/native-pharm/proof_build.json",
+          "proof_demos/native-pharm/demo_cases.json",
+          "proof_demos/native-pharm/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7c4b9fe09a477150a6a4ea92"
+    },
+    {
+      "receipt_id": "native-pharm__receipt_0003",
+      "project_id": "native-pharm",
+      "project_title": "Vaccine Distribution Planner",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Vaccine Distribution Planner Core Instrument Panel",
+      "component_case_id": "native-pharm__0003__vaccine-distribution-planner-core-instrument-panel",
+      "claim_to_demonstrate": "It routes demand, risk groups, staff capacity, site bottlenecks, appointment flow, and distribution priorities through a planning sequence so the resource-allocation tradeoffs become visible.",
+      "input_fixture": "tool buttons, rooms, workflow steps, analytical controls, and review surfaces",
+      "operation_under_test": "It routes demand, risk groups, staff capacity, site bottlenecks, appointment flow, and distribution priorities through a planning sequence so the resource-allocation tradeoffs become visible.",
+      "expected_output": "named instruments that perform the useful work rather than generic navigation",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0f34fd9a5a44ba183928e1ab",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-pharm/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45919,
+            "sha256": "c4163712546c8aa1a198a04e921b0f94a29c7645f4889c99bb868713610311da"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38875,
+            "sha256": "8e71b0395229a078e1401ae1647309f130fae0924b3d23e1614faf0f1940a3d9"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20466,
+            "sha256": "3b13fbb0367f8938c65497cbf7edb180e6edb8769d9eccdc5d568c78e5d19e85"
+          },
+          {
+            "relative_path": "proof_builds/native-pharm/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21252,
+            "sha256": "df996cd2b2de30066a340bee5b08de09ecdb4ea4b8174ff42e352dcf4d8c20e1"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46114,
+            "sha256": "488a9b44151b55bd363b7a452f34cf58834c3e04beac3aec8a075af6b84d8070"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9468,
+            "sha256": "5309f1343bc0ffe2132c22568eb341f115e29f4c422c0239227a54aaa07e4027"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-pharm/blueprint.json",
+          "project_blueprints/native-pharm/instrument_map.json",
+          "project_blueprints/native-pharm/README.md",
+          "proof_builds/native-pharm/proof_build.json",
+          "proof_demos/native-pharm/demo_cases.json",
+          "proof_demos/native-pharm/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a9f5ddc9ffeae5009012ac9a"
+    },
+    {
+      "receipt_id": "native-pharm__receipt_0004",
+      "project_id": "native-pharm",
+      "project_title": "Vaccine Distribution Planner",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Vaccine Distribution Planner Workflow Orchestration",
+      "component_case_id": "native-pharm__0004__vaccine-distribution-planner-workflow-orchestration",
+      "claim_to_demonstrate": "Plan: name the governing case, distinguish evidence from analogy, state the transfer rule, add counter-analogies, and document which operational or historical claims remain provisional. The project source notes below should be converted into authored.",
+      "input_fixture": "upstream inputs, intermediate decisions, downstream products, and stale-state conditions",
+      "operation_under_test": "Plan: name the governing case, distinguish evidence from analogy, state the transfer rule, add counter-analogies, and document which operational or historical claims remain provisional. The project source notes below should be converted into authored.",
+      "expected_output": "pipeline path showing how work moves and when earlier decisions must be reopened",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fd96493f227a13a744bbc6d4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-pharm/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45919,
+            "sha256": "c4163712546c8aa1a198a04e921b0f94a29c7645f4889c99bb868713610311da"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38875,
+            "sha256": "8e71b0395229a078e1401ae1647309f130fae0924b3d23e1614faf0f1940a3d9"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20466,
+            "sha256": "3b13fbb0367f8938c65497cbf7edb180e6edb8769d9eccdc5d568c78e5d19e85"
+          },
+          {
+            "relative_path": "proof_builds/native-pharm/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21252,
+            "sha256": "df996cd2b2de30066a340bee5b08de09ecdb4ea4b8174ff42e352dcf4d8c20e1"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46114,
+            "sha256": "488a9b44151b55bd363b7a452f34cf58834c3e04beac3aec8a075af6b84d8070"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9468,
+            "sha256": "5309f1343bc0ffe2132c22568eb341f115e29f4c422c0239227a54aaa07e4027"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-pharm/blueprint.json",
+          "project_blueprints/native-pharm/instrument_map.json",
+          "project_blueprints/native-pharm/README.md",
+          "proof_builds/native-pharm/proof_build.json",
+          "proof_demos/native-pharm/demo_cases.json",
+          "proof_demos/native-pharm/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d7becea61169b784e9ab9ff0"
+    },
+    {
+      "receipt_id": "native-pharm__receipt_0005",
+      "project_id": "native-pharm",
+      "project_title": "Vaccine Distribution Planner",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Vaccine Distribution Planner Review And Governance Gate",
+      "component_case_id": "native-pharm__0005__vaccine-distribution-planner-review-and-governance-gate",
+      "claim_to_demonstrate": "Status: native public port complete for upload and navigation; substantive source-project verification remains limited by the source lineage ceiling and the original project governance records. The page separates public presentation from project completion.",
+      "input_fixture": "quality rules, source checks, claim ceilings, reviewer steps, and failure states",
+      "operation_under_test": "Status: native public port complete for upload and navigation; substantive source-project verification remains limited by the source lineage ceiling and the original project governance records. The page separates public presentation from project completion.",
+      "expected_output": "decision gate that makes the output inspectable before it is trusted",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f0a9b7ff3262d180291ae4ca",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-pharm/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45919,
+            "sha256": "c4163712546c8aa1a198a04e921b0f94a29c7645f4889c99bb868713610311da"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38875,
+            "sha256": "8e71b0395229a078e1401ae1647309f130fae0924b3d23e1614faf0f1940a3d9"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20466,
+            "sha256": "3b13fbb0367f8938c65497cbf7edb180e6edb8769d9eccdc5d568c78e5d19e85"
+          },
+          {
+            "relative_path": "proof_builds/native-pharm/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21252,
+            "sha256": "df996cd2b2de30066a340bee5b08de09ecdb4ea4b8174ff42e352dcf4d8c20e1"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46114,
+            "sha256": "488a9b44151b55bd363b7a452f34cf58834c3e04beac3aec8a075af6b84d8070"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9468,
+            "sha256": "5309f1343bc0ffe2132c22568eb341f115e29f4c422c0239227a54aaa07e4027"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-pharm/blueprint.json",
+          "project_blueprints/native-pharm/instrument_map.json",
+          "project_blueprints/native-pharm/README.md",
+          "proof_builds/native-pharm/proof_build.json",
+          "proof_demos/native-pharm/demo_cases.json",
+          "proof_demos/native-pharm/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "33c0c4fac2db5d4ed9465266"
+    },
+    {
+      "receipt_id": "native-pharm__receipt_0006",
+      "project_id": "native-pharm",
+      "project_title": "Vaccine Distribution Planner",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Vaccine Distribution Planner Export Or Integration Surface",
+      "component_case_id": "native-pharm__0006__vaccine-distribution-planner-export-or-integration-surface",
+      "claim_to_demonstrate": "Visible public components: 44 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains text-focused and does not claim unverified runtime state.",
+      "input_fixture": "brief, paper, room, dataset, packet, rendered page, or external handoff",
+      "operation_under_test": "Visible public components: 44 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains text-focused and does not claim unverified runtime state.",
+      "expected_output": "usable output that another project, professor, employer, or collaborator can inspect",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "577c94f4228762f7478a15a0",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-pharm/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45919,
+            "sha256": "c4163712546c8aa1a198a04e921b0f94a29c7645f4889c99bb868713610311da"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38875,
+            "sha256": "8e71b0395229a078e1401ae1647309f130fae0924b3d23e1614faf0f1940a3d9"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20466,
+            "sha256": "3b13fbb0367f8938c65497cbf7edb180e6edb8769d9eccdc5d568c78e5d19e85"
+          },
+          {
+            "relative_path": "proof_builds/native-pharm/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21252,
+            "sha256": "df996cd2b2de30066a340bee5b08de09ecdb4ea4b8174ff42e352dcf4d8c20e1"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46114,
+            "sha256": "488a9b44151b55bd363b7a452f34cf58834c3e04beac3aec8a075af6b84d8070"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9468,
+            "sha256": "5309f1343bc0ffe2132c22568eb341f115e29f4c422c0239227a54aaa07e4027"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-pharm/blueprint.json",
+          "project_blueprints/native-pharm/instrument_map.json",
+          "project_blueprints/native-pharm/README.md",
+          "proof_builds/native-pharm/proof_build.json",
+          "proof_demos/native-pharm/demo_cases.json",
+          "proof_demos/native-pharm/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "220d1c6ed3e709b8a90d81a1"
+    },
+    {
+      "receipt_id": "native-pharm__receipt_0007",
+      "project_id": "native-pharm",
+      "project_title": "Vaccine Distribution Planner",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Vaccine Distribution Planner Build Verification Queue",
+      "component_case_id": "native-pharm__0007__vaccine-distribution-planner-build-verification-queue",
+      "claim_to_demonstrate": "Remaining gaps: several pages still need cleaner public explanation of why each case was chosen and what exact decision problem it is meant to illuminate. The kept Evidence Sections below preserve project substance for close reading; final public prose should.",
+      "input_fixture": "unbuilt modules, missing walkthroughs, test cases, and validation evidence",
+      "operation_under_test": "Remaining gaps: several pages still need cleaner public explanation of why each case was chosen and what exact decision problem it is meant to illuminate. The kept Evidence Sections below preserve project substance for close reading; final public prose should.",
+      "expected_output": "next proof needed before broader claims about the tool are safe",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e350b0e07ab7b9d385896d3e",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-pharm/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45919,
+            "sha256": "c4163712546c8aa1a198a04e921b0f94a29c7645f4889c99bb868713610311da"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38875,
+            "sha256": "8e71b0395229a078e1401ae1647309f130fae0924b3d23e1614faf0f1940a3d9"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20466,
+            "sha256": "3b13fbb0367f8938c65497cbf7edb180e6edb8769d9eccdc5d568c78e5d19e85"
+          },
+          {
+            "relative_path": "proof_builds/native-pharm/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21252,
+            "sha256": "df996cd2b2de30066a340bee5b08de09ecdb4ea4b8174ff42e352dcf4d8c20e1"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46114,
+            "sha256": "488a9b44151b55bd363b7a452f34cf58834c3e04beac3aec8a075af6b84d8070"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9468,
+            "sha256": "5309f1343bc0ffe2132c22568eb341f115e29f4c422c0239227a54aaa07e4027"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-pharm/blueprint.json",
+          "project_blueprints/native-pharm/instrument_map.json",
+          "project_blueprints/native-pharm/README.md",
+          "proof_builds/native-pharm/proof_build.json",
+          "proof_demos/native-pharm/demo_cases.json",
+          "proof_demos/native-pharm/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "77dcdfea7b18c1661dad9b62"
+    },
+    {
+      "receipt_id": "native-pharm__receipt_0008",
+      "project_id": "native-pharm",
+      "project_title": "Vaccine Distribution Planner",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Vaccine Distribution Planner / Evidence Sections",
+      "component_case_id": "native-pharm__0008__vaccine-distribution-planner-evidence-sections",
+      "claim_to_demonstrate": "uses `Evidence Sections` as a named project component with a traceable role in the public mechanism. Source context: 44 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "input_fixture": "project source text and the named component `Evidence Sections`",
+      "operation_under_test": "uses `Evidence Sections` as a named project component with a traceable role in the public mechanism. Source context: 44 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Evidence Sections`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ce6446a5b8f8a16d06f7bb76",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-pharm/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45919,
+            "sha256": "c4163712546c8aa1a198a04e921b0f94a29c7645f4889c99bb868713610311da"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38875,
+            "sha256": "8e71b0395229a078e1401ae1647309f130fae0924b3d23e1614faf0f1940a3d9"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20466,
+            "sha256": "3b13fbb0367f8938c65497cbf7edb180e6edb8769d9eccdc5d568c78e5d19e85"
+          },
+          {
+            "relative_path": "proof_builds/native-pharm/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21252,
+            "sha256": "df996cd2b2de30066a340bee5b08de09ecdb4ea4b8174ff42e352dcf4d8c20e1"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46114,
+            "sha256": "488a9b44151b55bd363b7a452f34cf58834c3e04beac3aec8a075af6b84d8070"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9468,
+            "sha256": "5309f1343bc0ffe2132c22568eb341f115e29f4c422c0239227a54aaa07e4027"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-pharm/blueprint.json",
+          "project_blueprints/native-pharm/instrument_map.json",
+          "project_blueprints/native-pharm/README.md",
+          "proof_builds/native-pharm/proof_build.json",
+          "proof_demos/native-pharm/demo_cases.json",
+          "proof_demos/native-pharm/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ba898053771fb3f770aa2586"
+    },
+    {
+      "receipt_id": "native-pharm__receipt_0009",
+      "project_id": "native-pharm",
+      "project_title": "Vaccine Distribution Planner",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Vaccine Distribution Planner / Review Notes",
+      "component_case_id": "native-pharm__0009__vaccine-distribution-planner-review-notes",
+      "claim_to_demonstrate": "uses `Review Notes` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 44 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The.",
+      "input_fixture": "project source text and the named component `Review Notes`",
+      "operation_under_test": "uses `Review Notes` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 44 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `Review Notes`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ce6446a5b8f8a16d06f7bb76",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-pharm/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45919,
+            "sha256": "c4163712546c8aa1a198a04e921b0f94a29c7645f4889c99bb868713610311da"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38875,
+            "sha256": "8e71b0395229a078e1401ae1647309f130fae0924b3d23e1614faf0f1940a3d9"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20466,
+            "sha256": "3b13fbb0367f8938c65497cbf7edb180e6edb8769d9eccdc5d568c78e5d19e85"
+          },
+          {
+            "relative_path": "proof_builds/native-pharm/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21252,
+            "sha256": "df996cd2b2de30066a340bee5b08de09ecdb4ea4b8174ff42e352dcf4d8c20e1"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46114,
+            "sha256": "488a9b44151b55bd363b7a452f34cf58834c3e04beac3aec8a075af6b84d8070"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9468,
+            "sha256": "5309f1343bc0ffe2132c22568eb341f115e29f4c422c0239227a54aaa07e4027"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-pharm/blueprint.json",
+          "project_blueprints/native-pharm/instrument_map.json",
+          "project_blueprints/native-pharm/README.md",
+          "proof_builds/native-pharm/proof_build.json",
+          "proof_demos/native-pharm/demo_cases.json",
+          "proof_demos/native-pharm/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2a4b29e4ff9b3ae141732baf"
+    },
+    {
+      "receipt_id": "native-pharm__receipt_0010",
+      "project_id": "native-pharm",
+      "project_title": "Vaccine Distribution Planner",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Vaccine Distribution Planner / Clarifies the",
+      "component_case_id": "native-pharm__0010__vaccine-distribution-planner-clarifies-the",
+      "claim_to_demonstrate": "uses `Clarifies the` as a named project component with a traceable role in the public mechanism. Source context: Clarifies the analytical method or reasoning discipline behind the page. Domain source. Supplies the substantive field knowledge against which.",
+      "input_fixture": "project source text and the named component `Clarifies the`",
+      "operation_under_test": "uses `Clarifies the` as a named project component with a traceable role in the public mechanism. Source context: Clarifies the analytical method or reasoning discipline behind the page. Domain source. Supplies the substantive field knowledge against which.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Clarifies the`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ed5a88de5fade713fbaab385",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-pharm/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45919,
+            "sha256": "c4163712546c8aa1a198a04e921b0f94a29c7645f4889c99bb868713610311da"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38875,
+            "sha256": "8e71b0395229a078e1401ae1647309f130fae0924b3d23e1614faf0f1940a3d9"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20466,
+            "sha256": "3b13fbb0367f8938c65497cbf7edb180e6edb8769d9eccdc5d568c78e5d19e85"
+          },
+          {
+            "relative_path": "proof_builds/native-pharm/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21252,
+            "sha256": "df996cd2b2de30066a340bee5b08de09ecdb4ea4b8174ff42e352dcf4d8c20e1"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46114,
+            "sha256": "488a9b44151b55bd363b7a452f34cf58834c3e04beac3aec8a075af6b84d8070"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9468,
+            "sha256": "5309f1343bc0ffe2132c22568eb341f115e29f4c422c0239227a54aaa07e4027"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-pharm/blueprint.json",
+          "project_blueprints/native-pharm/instrument_map.json",
+          "project_blueprints/native-pharm/README.md",
+          "proof_builds/native-pharm/proof_build.json",
+          "proof_demos/native-pharm/demo_cases.json",
+          "proof_demos/native-pharm/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "69c1a477ea6676dc0684e9c7"
+    },
+    {
+      "receipt_id": "native-pharm__receipt_0011",
+      "project_id": "native-pharm",
+      "project_title": "Vaccine Distribution Planner",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Vaccine Distribution Planner / Supplies the",
+      "component_case_id": "native-pharm__0011__vaccine-distribution-planner-supplies-the",
+      "claim_to_demonstrate": "uses `Supplies the` as a named project component with a traceable role in the public mechanism. Source context: Supplies the substantive field knowledge against which claims must be checked. Evidence source. Supplies examples, cases, documents, or work.",
+      "input_fixture": "project source text and the named component `Supplies the`",
+      "operation_under_test": "uses `Supplies the` as a named project component with a traceable role in the public mechanism. Source context: Supplies the substantive field knowledge against which claims must be checked. Evidence source. Supplies examples, cases, documents, or work.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Supplies the`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "23fd0e53035045ca0a1e3ccd",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-pharm/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45919,
+            "sha256": "c4163712546c8aa1a198a04e921b0f94a29c7645f4889c99bb868713610311da"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38875,
+            "sha256": "8e71b0395229a078e1401ae1647309f130fae0924b3d23e1614faf0f1940a3d9"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20466,
+            "sha256": "3b13fbb0367f8938c65497cbf7edb180e6edb8769d9eccdc5d568c78e5d19e85"
+          },
+          {
+            "relative_path": "proof_builds/native-pharm/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21252,
+            "sha256": "df996cd2b2de30066a340bee5b08de09ecdb4ea4b8174ff42e352dcf4d8c20e1"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46114,
+            "sha256": "488a9b44151b55bd363b7a452f34cf58834c3e04beac3aec8a075af6b84d8070"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9468,
+            "sha256": "5309f1343bc0ffe2132c22568eb341f115e29f4c422c0239227a54aaa07e4027"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-pharm/blueprint.json",
+          "project_blueprints/native-pharm/instrument_map.json",
+          "project_blueprints/native-pharm/README.md",
+          "proof_builds/native-pharm/proof_build.json",
+          "proof_demos/native-pharm/demo_cases.json",
+          "proof_demos/native-pharm/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "86e414199856910f74162bef"
+    },
+    {
+      "receipt_id": "native-pharm__receipt_0012",
+      "project_id": "native-pharm",
+      "project_title": "Vaccine Distribution Planner",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Vaccine Distribution Planner / Native Navigation",
+      "component_case_id": "native-pharm__0012__vaccine-distribution-planner-native-navigation",
+      "claim_to_demonstrate": "uses `Native Navigation` as a named project component with a traceable role in the public mechanism. Source context: 44 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "input_fixture": "project source text and the named component `Native Navigation`",
+      "operation_under_test": "uses `Native Navigation` as a named project component with a traceable role in the public mechanism. Source context: 44 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Native Navigation`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ce6446a5b8f8a16d06f7bb76",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-pharm/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45919,
+            "sha256": "c4163712546c8aa1a198a04e921b0f94a29c7645f4889c99bb868713610311da"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38875,
+            "sha256": "8e71b0395229a078e1401ae1647309f130fae0924b3d23e1614faf0f1940a3d9"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20466,
+            "sha256": "3b13fbb0367f8938c65497cbf7edb180e6edb8769d9eccdc5d568c78e5d19e85"
+          },
+          {
+            "relative_path": "proof_builds/native-pharm/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21252,
+            "sha256": "df996cd2b2de30066a340bee5b08de09ecdb4ea4b8174ff42e352dcf4d8c20e1"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46114,
+            "sha256": "488a9b44151b55bd363b7a452f34cf58834c3e04beac3aec8a075af6b84d8070"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9468,
+            "sha256": "5309f1343bc0ffe2132c22568eb341f115e29f4c422c0239227a54aaa07e4027"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-pharm/blueprint.json",
+          "project_blueprints/native-pharm/instrument_map.json",
+          "project_blueprints/native-pharm/README.md",
+          "proof_builds/native-pharm/proof_build.json",
+          "proof_demos/native-pharm/demo_cases.json",
+          "proof_demos/native-pharm/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3aa71862b30e92e8a22edf30"
+    },
+    {
+      "receipt_id": "native-pharm__receipt_0013",
+      "project_id": "native-pharm",
+      "project_title": "Vaccine Distribution Planner",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Vaccine Distribution Planner / APA lineage",
+      "component_case_id": "native-pharm__0013__vaccine-distribution-planner-apa-lineage",
+      "claim_to_demonstrate": "uses `APA lineage` as a named project component with a traceable role in the public mechanism. Source context: 44 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains.",
+      "input_fixture": "project source text and the named component `APA lineage`",
+      "operation_under_test": "uses `APA lineage` as a named project component with a traceable role in the public mechanism. Source context: 44 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `APA lineage`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ce6446a5b8f8a16d06f7bb76",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-pharm/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45919,
+            "sha256": "c4163712546c8aa1a198a04e921b0f94a29c7645f4889c99bb868713610311da"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38875,
+            "sha256": "8e71b0395229a078e1401ae1647309f130fae0924b3d23e1614faf0f1940a3d9"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20466,
+            "sha256": "3b13fbb0367f8938c65497cbf7edb180e6edb8769d9eccdc5d568c78e5d19e85"
+          },
+          {
+            "relative_path": "proof_builds/native-pharm/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21252,
+            "sha256": "df996cd2b2de30066a340bee5b08de09ecdb4ea4b8174ff42e352dcf4d8c20e1"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46114,
+            "sha256": "488a9b44151b55bd363b7a452f34cf58834c3e04beac3aec8a075af6b84d8070"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9468,
+            "sha256": "5309f1343bc0ffe2132c22568eb341f115e29f4c422c0239227a54aaa07e4027"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-pharm/blueprint.json",
+          "project_blueprints/native-pharm/instrument_map.json",
+          "project_blueprints/native-pharm/README.md",
+          "proof_builds/native-pharm/proof_build.json",
+          "proof_demos/native-pharm/demo_cases.json",
+          "proof_demos/native-pharm/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "58a028a34b315cb8afc1a1b7"
+    },
+    {
+      "receipt_id": "native-pharm__receipt_0014",
+      "project_id": "native-pharm",
+      "project_title": "Vaccine Distribution Planner",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Vaccine Distribution Planner / source lineage claim limit. The public package remains text",
+      "component_case_id": "native-pharm__0014__vaccine-distribution-planner-source-lineage-claim-limit-the-public-package-remains-text",
+      "claim_to_demonstrate": "uses `source lineage claim limit. The public package remains text` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 44 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA.",
+      "input_fixture": "project source text and the named component `source lineage claim limit. The public package remains text`",
+      "operation_under_test": "uses `source lineage claim limit. The public package remains text` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 44 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `source lineage claim limit. The public package remains text`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ce6446a5b8f8a16d06f7bb76",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-pharm/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45919,
+            "sha256": "c4163712546c8aa1a198a04e921b0f94a29c7645f4889c99bb868713610311da"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38875,
+            "sha256": "8e71b0395229a078e1401ae1647309f130fae0924b3d23e1614faf0f1940a3d9"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20466,
+            "sha256": "3b13fbb0367f8938c65497cbf7edb180e6edb8769d9eccdc5d568c78e5d19e85"
+          },
+          {
+            "relative_path": "proof_builds/native-pharm/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21252,
+            "sha256": "df996cd2b2de30066a340bee5b08de09ecdb4ea4b8174ff42e352dcf4d8c20e1"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46114,
+            "sha256": "488a9b44151b55bd363b7a452f34cf58834c3e04beac3aec8a075af6b84d8070"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9468,
+            "sha256": "5309f1343bc0ffe2132c22568eb341f115e29f4c422c0239227a54aaa07e4027"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-pharm/blueprint.json",
+          "project_blueprints/native-pharm/instrument_map.json",
+          "project_blueprints/native-pharm/README.md",
+          "proof_builds/native-pharm/proof_build.json",
+          "proof_demos/native-pharm/demo_cases.json",
+          "proof_demos/native-pharm/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7e3bf0904863c81373bf9044"
+    },
+    {
+      "receipt_id": "native-pharm__receipt_0015",
+      "project_id": "native-pharm",
+      "project_title": "Vaccine Distribution Planner",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Vaccine Distribution Planner / focused and does not claim unverified runtime state. Plan: name the governing case",
+      "component_case_id": "native-pharm__0015__vaccine-distribution-planner-focused-and-does-not-claim-unverified-runtime-state-plan-name",
+      "claim_to_demonstrate": "uses `focused and does not claim unverified runtime state. Plan: name the governing case` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: The public package remains text-focused and does not claim.",
+      "input_fixture": "project source text and the named component `focused and does not claim unverified runtime state. Plan: name the governing case`",
+      "operation_under_test": "uses `focused and does not claim unverified runtime state. Plan: name the governing case` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: The public package remains text-focused and does not claim.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `focused and does not claim unverified runtime state. Plan: name the governing case`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "da5adbbc03042fb3cb9f0e14",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-pharm/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45919,
+            "sha256": "c4163712546c8aa1a198a04e921b0f94a29c7645f4889c99bb868713610311da"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38875,
+            "sha256": "8e71b0395229a078e1401ae1647309f130fae0924b3d23e1614faf0f1940a3d9"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20466,
+            "sha256": "3b13fbb0367f8938c65497cbf7edb180e6edb8769d9eccdc5d568c78e5d19e85"
+          },
+          {
+            "relative_path": "proof_builds/native-pharm/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21252,
+            "sha256": "df996cd2b2de30066a340bee5b08de09ecdb4ea4b8174ff42e352dcf4d8c20e1"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46114,
+            "sha256": "488a9b44151b55bd363b7a452f34cf58834c3e04beac3aec8a075af6b84d8070"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9468,
+            "sha256": "5309f1343bc0ffe2132c22568eb341f115e29f4c422c0239227a54aaa07e4027"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-pharm/blueprint.json",
+          "project_blueprints/native-pharm/instrument_map.json",
+          "project_blueprints/native-pharm/README.md",
+          "proof_builds/native-pharm/proof_build.json",
+          "proof_demos/native-pharm/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "df7c5d76c70569d2512314eb"
+    },
+    {
+      "receipt_id": "native-pharm__receipt_0016",
+      "project_id": "native-pharm",
+      "project_title": "Vaccine Distribution Planner",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Vaccine Distribution Planner / Distinguish Evidence From Analogy",
+      "component_case_id": "native-pharm__0016__vaccine-distribution-planner-distinguish-evidence-from-analogy",
+      "claim_to_demonstrate": "uses `Distinguish Evidence From Analogy` as a named project component with a traceable role in the public mechanism. Source context: name the governing case, distinguish evidence from analogy, state the transfer rule, add counter-analogies, and document which.",
+      "input_fixture": "project source text and the named component `Distinguish Evidence From Analogy`",
+      "operation_under_test": "uses `Distinguish Evidence From Analogy` as a named project component with a traceable role in the public mechanism. Source context: name the governing case, distinguish evidence from analogy, state the transfer rule, add counter-analogies, and document which.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Distinguish Evidence From Analogy`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a788fb5c8f048e258a8c2d36",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-pharm/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45919,
+            "sha256": "c4163712546c8aa1a198a04e921b0f94a29c7645f4889c99bb868713610311da"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38875,
+            "sha256": "8e71b0395229a078e1401ae1647309f130fae0924b3d23e1614faf0f1940a3d9"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20466,
+            "sha256": "3b13fbb0367f8938c65497cbf7edb180e6edb8769d9eccdc5d568c78e5d19e85"
+          },
+          {
+            "relative_path": "proof_builds/native-pharm/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21252,
+            "sha256": "df996cd2b2de30066a340bee5b08de09ecdb4ea4b8174ff42e352dcf4d8c20e1"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46114,
+            "sha256": "488a9b44151b55bd363b7a452f34cf58834c3e04beac3aec8a075af6b84d8070"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9468,
+            "sha256": "5309f1343bc0ffe2132c22568eb341f115e29f4c422c0239227a54aaa07e4027"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-pharm/blueprint.json",
+          "project_blueprints/native-pharm/instrument_map.json",
+          "project_blueprints/native-pharm/README.md",
+          "proof_builds/native-pharm/proof_build.json",
+          "proof_demos/native-pharm/demo_cases.json",
+          "proof_demos/native-pharm/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6e43873bfef201e1c59f20f4"
+    },
+    {
+      "receipt_id": "native-pharm__receipt_0017",
+      "project_id": "native-pharm",
+      "project_title": "Vaccine Distribution Planner",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Vaccine Distribution Planner / State The Transfer Rule",
+      "component_case_id": "native-pharm__0017__vaccine-distribution-planner-state-the-transfer-rule",
+      "claim_to_demonstrate": "uses `State The Transfer Rule` as a named project component with a traceable role in the public mechanism. Source context: name the governing case, distinguish evidence from analogy, state the transfer rule, add counter-analogies, and document which.",
+      "input_fixture": "project source text and the named component `State The Transfer Rule`",
+      "operation_under_test": "uses `State The Transfer Rule` as a named project component with a traceable role in the public mechanism. Source context: name the governing case, distinguish evidence from analogy, state the transfer rule, add counter-analogies, and document which.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `State The Transfer Rule`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a788fb5c8f048e258a8c2d36",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-pharm/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45919,
+            "sha256": "c4163712546c8aa1a198a04e921b0f94a29c7645f4889c99bb868713610311da"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38875,
+            "sha256": "8e71b0395229a078e1401ae1647309f130fae0924b3d23e1614faf0f1940a3d9"
+          },
+          {
+            "relative_path": "project_blueprints/native-pharm/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20466,
+            "sha256": "3b13fbb0367f8938c65497cbf7edb180e6edb8769d9eccdc5d568c78e5d19e85"
+          },
+          {
+            "relative_path": "proof_builds/native-pharm/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21252,
+            "sha256": "df996cd2b2de30066a340bee5b08de09ecdb4ea4b8174ff42e352dcf4d8c20e1"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46114,
+            "sha256": "488a9b44151b55bd363b7a452f34cf58834c3e04beac3aec8a075af6b84d8070"
+          },
+          {
+            "relative_path": "proof_demos/native-pharm/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9468,
+            "sha256": "5309f1343bc0ffe2132c22568eb341f115e29f4c422c0239227a54aaa07e4027"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-pharm/blueprint.json",
+          "project_blueprints/native-pharm/instrument_map.json",
+          "project_blueprints/native-pharm/README.md",
+          "proof_builds/native-pharm/proof_build.json",
+          "proof_demos/native-pharm/demo_cases.json",
+          "proof_demos/native-pharm/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0eaf58d0064e5fc0c571096e"
+    }
+  ]
+}

@@ -1,0 +1,1470 @@
+{
+  "project": {
+    "project_id": "mb-ic-analyst-portfolio-handoff-pass1",
+    "title": "IC analyst portfolio build kit; skill taxonomy S01-S26"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-ic-analyst-portfolio-handoff-pass1__receipt_0001",
+      "project_id": "mb-ic-analyst-portfolio-handoff-pass1",
+      "project_title": "IC analyst portfolio build kit; skill taxonomy S01-S26",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IC analyst portfolio build kit; skill taxonomy S01-S26 Handoff Identity",
+      "component_case_id": "mb-ic-analyst-portfolio-handoff-pass1__0001__ic-analyst-portfolio-build-kit-skill-taxonomy-s01-s26-handoff-identity",
+      "claim_to_demonstrate": "IC analyst portfolio build kit; skill taxonomy S01-S26 is a preserved project packet for portfolio build kit that converts Georgetown MPAI (Master of Professional Studies in Applied Intelligence) coursework — counterterrorism papers, cyber CTI briefs, CI risk.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "IC analyst portfolio build kit; skill taxonomy S01-S26 is a preserved project packet for portfolio build kit that converts Georgetown MPAI (Master of Professional Studies in Applied Intelligence) coursework — counterterrorism papers, cyber CTI briefs, CI risk.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45942,
+            "sha256": "e4ad8da777d945946517c6ad8f44639f8dcafad6184d13a50d406826eb7ae050"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37413,
+            "sha256": "d7e08936b722b2f31fcb84a88b7711275d8d6deaf56ee1b0511ec08677be9c03"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22609,
+            "sha256": "5d26b6541a7523477a03c0410ca1b11578407bbb9b5f8a7fe7df5f7a5ea96dd2"
+          },
+          {
+            "relative_path": "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21861,
+            "sha256": "d7ddd5e163fc182f98674d59dc995116cf8dd8a571d9e391bb4ce8c356e0cf2e"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48017,
+            "sha256": "6f0a9c838705bea014a1c1d4d0e6cb444ca9b83f41c0c472254499c45a11d901"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10928,
+            "sha256": "91ad5cf8a15c37aa12bf0fbdeb1138179bf0e332b8b9a27c2739af214c9a8071"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+          "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6ef20157a9c56aef8ed5e014"
+    },
+    {
+      "receipt_id": "mb-ic-analyst-portfolio-handoff-pass1__receipt_0002",
+      "project_id": "mb-ic-analyst-portfolio-handoff-pass1",
+      "project_title": "IC analyst portfolio build kit; skill taxonomy S01-S26",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IC analyst portfolio build kit; skill taxonomy S01-S26 Room Task Model",
+      "component_case_id": "mb-ic-analyst-portfolio-handoff-pass1__0002__ic-analyst-portfolio-build-kit-skill-taxonomy-s01-s26-room-task-model",
+      "claim_to_demonstrate": "It converts an archive or handoff into three inspectable decisions: what the work product is for, which component pieces carry the work, and what action would turn it into a live room, paper, method, or software instrument.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "It converts an archive or handoff into three inspectable decisions: what the work product is for, which component pieces carry the work, and what action would turn it into a live room, paper, method, or software instrument.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45942,
+            "sha256": "e4ad8da777d945946517c6ad8f44639f8dcafad6184d13a50d406826eb7ae050"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37413,
+            "sha256": "d7e08936b722b2f31fcb84a88b7711275d8d6deaf56ee1b0511ec08677be9c03"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22609,
+            "sha256": "5d26b6541a7523477a03c0410ca1b11578407bbb9b5f8a7fe7df5f7a5ea96dd2"
+          },
+          {
+            "relative_path": "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21861,
+            "sha256": "d7ddd5e163fc182f98674d59dc995116cf8dd8a571d9e391bb4ce8c356e0cf2e"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48017,
+            "sha256": "6f0a9c838705bea014a1c1d4d0e6cb444ca9b83f41c0c472254499c45a11d901"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10928,
+            "sha256": "91ad5cf8a15c37aa12bf0fbdeb1138179bf0e332b8b9a27c2739af214c9a8071"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+          "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e49568f14e13fc35a0b8843e"
+    },
+    {
+      "receipt_id": "mb-ic-analyst-portfolio-handoff-pass1__receipt_0003",
+      "project_id": "mb-ic-analyst-portfolio-handoff-pass1",
+      "project_title": "IC analyst portfolio build kit; skill taxonomy S01-S26",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IC analyst portfolio build kit; skill taxonomy S01-S26 Data Schema And Persistence Plan",
+      "component_case_id": "mb-ic-analyst-portfolio-handoff-pass1__0003__ic-analyst-portfolio-build-kit-skill-taxonomy-s01-s26-data-schema-and-persistence-plan",
+      "claim_to_demonstrate": "Writing, rhetoric, narrative design, visual culture, and presentation. Use source library writing/visual/cinema sources to strengthen public exposition and Trilogy visual/storytelling logic. Vision: Make public pages read as curated intellectual exhibits.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Writing, rhetoric, narrative design, visual culture, and presentation. Use source library writing/visual/cinema sources to strengthen public exposition and Trilogy visual/storytelling logic. Vision: Make public pages read as curated intellectual exhibits.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45942,
+            "sha256": "e4ad8da777d945946517c6ad8f44639f8dcafad6184d13a50d406826eb7ae050"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37413,
+            "sha256": "d7e08936b722b2f31fcb84a88b7711275d8d6deaf56ee1b0511ec08677be9c03"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22609,
+            "sha256": "5d26b6541a7523477a03c0410ca1b11578407bbb9b5f8a7fe7df5f7a5ea96dd2"
+          },
+          {
+            "relative_path": "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21861,
+            "sha256": "d7ddd5e163fc182f98674d59dc995116cf8dd8a571d9e391bb4ce8c356e0cf2e"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48017,
+            "sha256": "6f0a9c838705bea014a1c1d4d0e6cb444ca9b83f41c0c472254499c45a11d901"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10928,
+            "sha256": "91ad5cf8a15c37aa12bf0fbdeb1138179bf0e332b8b9a27c2739af214c9a8071"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+          "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8d1f29cdb8b5731be44257cf"
+    },
+    {
+      "receipt_id": "mb-ic-analyst-portfolio-handoff-pass1__receipt_0004",
+      "project_id": "mb-ic-analyst-portfolio-handoff-pass1",
+      "project_title": "IC analyst portfolio build kit; skill taxonomy S01-S26",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IC analyst portfolio build kit; skill taxonomy S01-S26 Interface And Instrument Plane",
+      "component_case_id": "mb-ic-analyst-portfolio-handoff-pass1__0004__ic-analyst-portfolio-build-kit-skill-taxonomy-s01-s26-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45942,
+            "sha256": "e4ad8da777d945946517c6ad8f44639f8dcafad6184d13a50d406826eb7ae050"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37413,
+            "sha256": "d7e08936b722b2f31fcb84a88b7711275d8d6deaf56ee1b0511ec08677be9c03"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22609,
+            "sha256": "5d26b6541a7523477a03c0410ca1b11578407bbb9b5f8a7fe7df5f7a5ea96dd2"
+          },
+          {
+            "relative_path": "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21861,
+            "sha256": "d7ddd5e163fc182f98674d59dc995116cf8dd8a571d9e391bb4ce8c356e0cf2e"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48017,
+            "sha256": "6f0a9c838705bea014a1c1d4d0e6cb444ca9b83f41c0c472254499c45a11d901"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10928,
+            "sha256": "91ad5cf8a15c37aa12bf0fbdeb1138179bf0e332b8b9a27c2739af214c9a8071"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+          "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "cce447cbe914b6f04a210ccf"
+    },
+    {
+      "receipt_id": "mb-ic-analyst-portfolio-handoff-pass1__receipt_0005",
+      "project_id": "mb-ic-analyst-portfolio-handoff-pass1",
+      "project_title": "IC analyst portfolio build kit; skill taxonomy S01-S26",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IC analyst portfolio build kit; skill taxonomy S01-S26 Integration Path",
+      "component_case_id": "mb-ic-analyst-portfolio-handoff-pass1__0005__ic-analyst-portfolio-build-kit-skill-taxonomy-s01-s26-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. 1. Open 00_ADMIN/Portfolio_Matrix.xlsx and fill Work Product Inventory tab. 2. For each included work product: cover sheet (02_TEMPLATES/docx) + reformatted IC.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. 1. Open 00_ADMIN/Portfolio_Matrix.xlsx and fill Work Product Inventory tab. 2. For each included work product: cover sheet (02_TEMPLATES/docx) + reformatted IC.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45942,
+            "sha256": "e4ad8da777d945946517c6ad8f44639f8dcafad6184d13a50d406826eb7ae050"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37413,
+            "sha256": "d7e08936b722b2f31fcb84a88b7711275d8d6deaf56ee1b0511ec08677be9c03"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22609,
+            "sha256": "5d26b6541a7523477a03c0410ca1b11578407bbb9b5f8a7fe7df5f7a5ea96dd2"
+          },
+          {
+            "relative_path": "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21861,
+            "sha256": "d7ddd5e163fc182f98674d59dc995116cf8dd8a571d9e391bb4ce8c356e0cf2e"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48017,
+            "sha256": "6f0a9c838705bea014a1c1d4d0e6cb444ca9b83f41c0c472254499c45a11d901"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10928,
+            "sha256": "91ad5cf8a15c37aa12bf0fbdeb1138179bf0e332b8b9a27c2739af214c9a8071"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+          "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e42ef0220de07c3408294546"
+    },
+    {
+      "receipt_id": "mb-ic-analyst-portfolio-handoff-pass1__receipt_0006",
+      "project_id": "mb-ic-analyst-portfolio-handoff-pass1",
+      "project_title": "IC analyst portfolio build kit; skill taxonomy S01-S26",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IC analyst portfolio build kit; skill taxonomy S01-S26 Proof Boundary",
+      "component_case_id": "mb-ic-analyst-portfolio-handoff-pass1__0006__ic-analyst-portfolio-build-kit-skill-taxonomy-s01-s26-proof-boundary",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45942,
+            "sha256": "e4ad8da777d945946517c6ad8f44639f8dcafad6184d13a50d406826eb7ae050"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37413,
+            "sha256": "d7e08936b722b2f31fcb84a88b7711275d8d6deaf56ee1b0511ec08677be9c03"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22609,
+            "sha256": "5d26b6541a7523477a03c0410ca1b11578407bbb9b5f8a7fe7df5f7a5ea96dd2"
+          },
+          {
+            "relative_path": "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21861,
+            "sha256": "d7ddd5e163fc182f98674d59dc995116cf8dd8a571d9e391bb4ce8c356e0cf2e"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48017,
+            "sha256": "6f0a9c838705bea014a1c1d4d0e6cb444ca9b83f41c0c472254499c45a11d901"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10928,
+            "sha256": "91ad5cf8a15c37aa12bf0fbdeb1138179bf0e332b8b9a27c2739af214c9a8071"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+          "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "da4cee8ddb8208637d81b5b7"
+    },
+    {
+      "receipt_id": "mb-ic-analyst-portfolio-handoff-pass1__receipt_0007",
+      "project_id": "mb-ic-analyst-portfolio-handoff-pass1",
+      "project_title": "IC analyst portfolio build kit; skill taxonomy S01-S26",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IC analyst portfolio build kit; skill taxonomy S01-S26 Next Build Test",
+      "component_case_id": "mb-ic-analyst-portfolio-handoff-pass1__0007__ic-analyst-portfolio-build-kit-skill-taxonomy-s01-s26-next-build-test",
+      "claim_to_demonstrate": "Promote the packet from documented handoff to live implementation only after the declared caveats are resolved: apply or wire the scaffold, run the stated validation or smoke-test sequence, and keep unresolved assumptions visible.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Promote the packet from documented handoff to live implementation only after the declared caveats are resolved: apply or wire the scaffold, run the stated validation or smoke-test sequence, and keep unresolved assumptions visible.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45942,
+            "sha256": "e4ad8da777d945946517c6ad8f44639f8dcafad6184d13a50d406826eb7ae050"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37413,
+            "sha256": "d7e08936b722b2f31fcb84a88b7711275d8d6deaf56ee1b0511ec08677be9c03"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22609,
+            "sha256": "5d26b6541a7523477a03c0410ca1b11578407bbb9b5f8a7fe7df5f7a5ea96dd2"
+          },
+          {
+            "relative_path": "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21861,
+            "sha256": "d7ddd5e163fc182f98674d59dc995116cf8dd8a571d9e391bb4ce8c356e0cf2e"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48017,
+            "sha256": "6f0a9c838705bea014a1c1d4d0e6cb444ca9b83f41c0c472254499c45a11d901"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10928,
+            "sha256": "91ad5cf8a15c37aa12bf0fbdeb1138179bf0e332b8b9a27c2739af214c9a8071"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+          "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "313669537e6ce1e64e488034"
+    },
+    {
+      "receipt_id": "mb-ic-analyst-portfolio-handoff-pass1__receipt_0008",
+      "project_id": "mb-ic-analyst-portfolio-handoff-pass1",
+      "project_title": "IC analyst portfolio build kit; skill taxonomy S01-S26",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IC analyst portfolio build kit; skill taxonomy S01-S26 / Portfolio_Matrix.xlsx",
+      "component_case_id": "mb-ic-analyst-portfolio-handoff-pass1__0008__ic-analyst-portfolio-build-kit-skill-taxonomy-s01-s26-portfolio-matrix-xlsx",
+      "claim_to_demonstrate": "treats `Portfolio_Matrix.xlsx` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Open 00_ADMIN/Portfolio_Matrix.xlsx and fill Work Product Inventory tab. 2. For each included work product: cover sheet.",
+      "input_fixture": "project source text and the named component `Portfolio_Matrix.xlsx`",
+      "operation_under_test": "treats `Portfolio_Matrix.xlsx` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Open 00_ADMIN/Portfolio_Matrix.xlsx and fill Work Product Inventory tab. 2. For each included work product: cover sheet.",
+      "expected_output": "inspectable implementation evidence tied to `Portfolio_Matrix.xlsx`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "64410e93b5344ca55430aa55",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45942,
+            "sha256": "e4ad8da777d945946517c6ad8f44639f8dcafad6184d13a50d406826eb7ae050"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37413,
+            "sha256": "d7e08936b722b2f31fcb84a88b7711275d8d6deaf56ee1b0511ec08677be9c03"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22609,
+            "sha256": "5d26b6541a7523477a03c0410ca1b11578407bbb9b5f8a7fe7df5f7a5ea96dd2"
+          },
+          {
+            "relative_path": "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21861,
+            "sha256": "d7ddd5e163fc182f98674d59dc995116cf8dd8a571d9e391bb4ce8c356e0cf2e"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48017,
+            "sha256": "6f0a9c838705bea014a1c1d4d0e6cb444ca9b83f41c0c472254499c45a11d901"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10928,
+            "sha256": "91ad5cf8a15c37aa12bf0fbdeb1138179bf0e332b8b9a27c2739af214c9a8071"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+          "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e7718574108118e17fea6443"
+    },
+    {
+      "receipt_id": "mb-ic-analyst-portfolio-handoff-pass1__receipt_0009",
+      "project_id": "mb-ic-analyst-portfolio-handoff-pass1",
+      "project_title": "IC analyst portfolio build kit; skill taxonomy S01-S26",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IC analyst portfolio build kit; skill taxonomy S01-S26 / Georgetown MPAI",
+      "component_case_id": "mb-ic-analyst-portfolio-handoff-pass1__0009__ic-analyst-portfolio-build-kit-skill-taxonomy-s01-s26-georgetown-mpai",
+      "claim_to_demonstrate": "uses `Georgetown MPAI` as a named project component with a traceable role in the public mechanism. Source context: Portfolio build kit that converts Georgetown MPAI (Master of Professional Studies in Applied Intelligence) coursework — counterterrorism papers.",
+      "input_fixture": "project source text and the named component `Georgetown MPAI`",
+      "operation_under_test": "uses `Georgetown MPAI` as a named project component with a traceable role in the public mechanism. Source context: Portfolio build kit that converts Georgetown MPAI (Master of Professional Studies in Applied Intelligence) coursework — counterterrorism papers.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Georgetown MPAI`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "2ad3bebca45c0532783878db",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45942,
+            "sha256": "e4ad8da777d945946517c6ad8f44639f8dcafad6184d13a50d406826eb7ae050"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37413,
+            "sha256": "d7e08936b722b2f31fcb84a88b7711275d8d6deaf56ee1b0511ec08677be9c03"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22609,
+            "sha256": "5d26b6541a7523477a03c0410ca1b11578407bbb9b5f8a7fe7df5f7a5ea96dd2"
+          },
+          {
+            "relative_path": "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21861,
+            "sha256": "d7ddd5e163fc182f98674d59dc995116cf8dd8a571d9e391bb4ce8c356e0cf2e"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48017,
+            "sha256": "6f0a9c838705bea014a1c1d4d0e6cb444ca9b83f41c0c472254499c45a11d901"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10928,
+            "sha256": "91ad5cf8a15c37aa12bf0fbdeb1138179bf0e332b8b9a27c2739af214c9a8071"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+          "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f999c2a633a0ec220ae21232"
+    },
+    {
+      "receipt_id": "mb-ic-analyst-portfolio-handoff-pass1__receipt_0010",
+      "project_id": "mb-ic-analyst-portfolio-handoff-pass1",
+      "project_title": "IC analyst portfolio build kit; skill taxonomy S01-S26",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IC analyst portfolio build kit; skill taxonomy S01-S26 / Master of Professional Studies",
+      "component_case_id": "mb-ic-analyst-portfolio-handoff-pass1__0010__ic-analyst-portfolio-build-kit-skill-taxonomy-s01-s26-master-of-professional-studies",
+      "claim_to_demonstrate": "uses `Master of Professional Studies` as a named project component with a traceable role in the public mechanism. Source context: Portfolio build kit that converts Georgetown MPAI (Master of Professional Studies in Applied Intelligence) coursework —.",
+      "input_fixture": "project source text and the named component `Master of Professional Studies`",
+      "operation_under_test": "uses `Master of Professional Studies` as a named project component with a traceable role in the public mechanism. Source context: Portfolio build kit that converts Georgetown MPAI (Master of Professional Studies in Applied Intelligence) coursework —.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Master of Professional Studies`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "2ad3bebca45c0532783878db",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45942,
+            "sha256": "e4ad8da777d945946517c6ad8f44639f8dcafad6184d13a50d406826eb7ae050"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37413,
+            "sha256": "d7e08936b722b2f31fcb84a88b7711275d8d6deaf56ee1b0511ec08677be9c03"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22609,
+            "sha256": "5d26b6541a7523477a03c0410ca1b11578407bbb9b5f8a7fe7df5f7a5ea96dd2"
+          },
+          {
+            "relative_path": "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21861,
+            "sha256": "d7ddd5e163fc182f98674d59dc995116cf8dd8a571d9e391bb4ce8c356e0cf2e"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48017,
+            "sha256": "6f0a9c838705bea014a1c1d4d0e6cb444ca9b83f41c0c472254499c45a11d901"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10928,
+            "sha256": "91ad5cf8a15c37aa12bf0fbdeb1138179bf0e332b8b9a27c2739af214c9a8071"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+          "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6e4632d8bfb27ded1884d6a1"
+    },
+    {
+      "receipt_id": "mb-ic-analyst-portfolio-handoff-pass1__receipt_0011",
+      "project_id": "mb-ic-analyst-portfolio-handoff-pass1",
+      "project_title": "IC analyst portfolio build kit; skill taxonomy S01-S26",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IC analyst portfolio build kit; skill taxonomy S01-S26 / Applied Intelligence",
+      "component_case_id": "mb-ic-analyst-portfolio-handoff-pass1__0011__ic-analyst-portfolio-build-kit-skill-taxonomy-s01-s26-applied-intelligence",
+      "claim_to_demonstrate": "uses `Applied Intelligence` as a named project component with a traceable role in the public mechanism. Source context: Portfolio build kit that converts Georgetown MPAI (Master of Professional Studies in Applied Intelligence) coursework — counterterrorism.",
+      "input_fixture": "project source text and the named component `Applied Intelligence`",
+      "operation_under_test": "uses `Applied Intelligence` as a named project component with a traceable role in the public mechanism. Source context: Portfolio build kit that converts Georgetown MPAI (Master of Professional Studies in Applied Intelligence) coursework — counterterrorism.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Applied Intelligence`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "2ad3bebca45c0532783878db",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45942,
+            "sha256": "e4ad8da777d945946517c6ad8f44639f8dcafad6184d13a50d406826eb7ae050"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37413,
+            "sha256": "d7e08936b722b2f31fcb84a88b7711275d8d6deaf56ee1b0511ec08677be9c03"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22609,
+            "sha256": "5d26b6541a7523477a03c0410ca1b11578407bbb9b5f8a7fe7df5f7a5ea96dd2"
+          },
+          {
+            "relative_path": "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21861,
+            "sha256": "d7ddd5e163fc182f98674d59dc995116cf8dd8a571d9e391bb4ce8c356e0cf2e"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48017,
+            "sha256": "6f0a9c838705bea014a1c1d4d0e6cb444ca9b83f41c0c472254499c45a11d901"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10928,
+            "sha256": "91ad5cf8a15c37aa12bf0fbdeb1138179bf0e332b8b9a27c2739af214c9a8071"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+          "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "300280425a9d76fb117db236"
+    },
+    {
+      "receipt_id": "mb-ic-analyst-portfolio-handoff-pass1__receipt_0012",
+      "project_id": "mb-ic-analyst-portfolio-handoff-pass1",
+      "project_title": "IC analyst portfolio build kit; skill taxonomy S01-S26",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IC analyst portfolio build kit; skill taxonomy S01-S26 / Work Product Inventory",
+      "component_case_id": "mb-ic-analyst-portfolio-handoff-pass1__0012__ic-analyst-portfolio-build-kit-skill-taxonomy-s01-s26-work-product-inventory",
+      "claim_to_demonstrate": "uses `Work Product Inventory` as a named project component with a traceable role in the public mechanism. Source context: Open 00_ADMIN/Portfolio_Matrix.xlsx and fill Work Product Inventory tab. 2. For each included work product: cover sheet.",
+      "input_fixture": "project source text and the named component `Work Product Inventory`",
+      "operation_under_test": "uses `Work Product Inventory` as a named project component with a traceable role in the public mechanism. Source context: Open 00_ADMIN/Portfolio_Matrix.xlsx and fill Work Product Inventory tab. 2. For each included work product: cover sheet.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Work Product Inventory`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "64410e93b5344ca55430aa55",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45942,
+            "sha256": "e4ad8da777d945946517c6ad8f44639f8dcafad6184d13a50d406826eb7ae050"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37413,
+            "sha256": "d7e08936b722b2f31fcb84a88b7711275d8d6deaf56ee1b0511ec08677be9c03"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22609,
+            "sha256": "5d26b6541a7523477a03c0410ca1b11578407bbb9b5f8a7fe7df5f7a5ea96dd2"
+          },
+          {
+            "relative_path": "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21861,
+            "sha256": "d7ddd5e163fc182f98674d59dc995116cf8dd8a571d9e391bb4ce8c356e0cf2e"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48017,
+            "sha256": "6f0a9c838705bea014a1c1d4d0e6cb444ca9b83f41c0c472254499c45a11d901"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10928,
+            "sha256": "91ad5cf8a15c37aa12bf0fbdeb1138179bf0e332b8b9a27c2739af214c9a8071"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+          "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c7ceb7f83d8f5e9cab3fc95f"
+    },
+    {
+      "receipt_id": "mb-ic-analyst-portfolio-handoff-pass1__receipt_0013",
+      "project_id": "mb-ic-analyst-portfolio-handoff-pass1",
+      "project_title": "IC analyst portfolio build kit; skill taxonomy S01-S26",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IC analyst portfolio build kit; skill taxonomy S01-S26 / Narrative and Narration",
+      "component_case_id": "mb-ic-analyst-portfolio-handoff-pass1__0013__ic-analyst-portfolio-build-kit-skill-taxonomy-s01-s26-narrative-and-narration",
+      "claim_to_demonstrate": "uses `Narrative and Narration` as a named project component with a traceable role in the public mechanism. Source context: Narrative and Narration: Analyzing Cinematic Storytelling; Camera Lucida. Intelligence tradecraft, counterintelligence, and analytic.",
+      "input_fixture": "project source text and the named component `Narrative and Narration`",
+      "operation_under_test": "uses `Narrative and Narration` as a named project component with a traceable role in the public mechanism. Source context: Narrative and Narration: Analyzing Cinematic Storytelling; Camera Lucida. Intelligence tradecraft, counterintelligence, and analytic.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Narrative and Narration`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "03cbecbfd4821bb8de98fbf4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45942,
+            "sha256": "e4ad8da777d945946517c6ad8f44639f8dcafad6184d13a50d406826eb7ae050"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37413,
+            "sha256": "d7e08936b722b2f31fcb84a88b7711275d8d6deaf56ee1b0511ec08677be9c03"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22609,
+            "sha256": "5d26b6541a7523477a03c0410ca1b11578407bbb9b5f8a7fe7df5f7a5ea96dd2"
+          },
+          {
+            "relative_path": "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21861,
+            "sha256": "d7ddd5e163fc182f98674d59dc995116cf8dd8a571d9e391bb4ce8c356e0cf2e"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48017,
+            "sha256": "6f0a9c838705bea014a1c1d4d0e6cb444ca9b83f41c0c472254499c45a11d901"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10928,
+            "sha256": "91ad5cf8a15c37aa12bf0fbdeb1138179bf0e332b8b9a27c2739af214c9a8071"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+          "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "260bba627b3601081463221d"
+    },
+    {
+      "receipt_id": "mb-ic-analyst-portfolio-handoff-pass1__receipt_0014",
+      "project_id": "mb-ic-analyst-portfolio-handoff-pass1",
+      "project_title": "IC analyst portfolio build kit; skill taxonomy S01-S26",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IC analyst portfolio build kit; skill taxonomy S01-S26 / Analyzing Cinematic Storytelling",
+      "component_case_id": "mb-ic-analyst-portfolio-handoff-pass1__0014__ic-analyst-portfolio-build-kit-skill-taxonomy-s01-s26-analyzing-cinematic-storytelling",
+      "claim_to_demonstrate": "uses `Analyzing Cinematic Storytelling` as a named project component with a traceable role in the public mechanism. Source context: Analyzing Cinematic Storytelling; Camera Lucida. Intelligence tradecraft, counterintelligence, and analytic method. Use source.",
+      "input_fixture": "project source text and the named component `Analyzing Cinematic Storytelling`",
+      "operation_under_test": "uses `Analyzing Cinematic Storytelling` as a named project component with a traceable role in the public mechanism. Source context: Analyzing Cinematic Storytelling; Camera Lucida. Intelligence tradecraft, counterintelligence, and analytic method. Use source.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Analyzing Cinematic Storytelling`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5bf9715c81d6b5c4aa5c2836",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45942,
+            "sha256": "e4ad8da777d945946517c6ad8f44639f8dcafad6184d13a50d406826eb7ae050"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37413,
+            "sha256": "d7e08936b722b2f31fcb84a88b7711275d8d6deaf56ee1b0511ec08677be9c03"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22609,
+            "sha256": "5d26b6541a7523477a03c0410ca1b11578407bbb9b5f8a7fe7df5f7a5ea96dd2"
+          },
+          {
+            "relative_path": "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21861,
+            "sha256": "d7ddd5e163fc182f98674d59dc995116cf8dd8a571d9e391bb4ce8c356e0cf2e"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48017,
+            "sha256": "6f0a9c838705bea014a1c1d4d0e6cb444ca9b83f41c0c472254499c45a11d901"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10928,
+            "sha256": "91ad5cf8a15c37aa12bf0fbdeb1138179bf0e332b8b9a27c2739af214c9a8071"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+          "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "499573d05cfa6e6dc009d2a7"
+    },
+    {
+      "receipt_id": "mb-ic-analyst-portfolio-handoff-pass1__receipt_0015",
+      "project_id": "mb-ic-analyst-portfolio-handoff-pass1",
+      "project_title": "IC analyst portfolio build kit; skill taxonomy S01-S26",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IC analyst portfolio build kit; skill taxonomy S01-S26 / Camera Lucida. Intelligence",
+      "component_case_id": "mb-ic-analyst-portfolio-handoff-pass1__0015__ic-analyst-portfolio-build-kit-skill-taxonomy-s01-s26-camera-lucida-intelligence",
+      "claim_to_demonstrate": "uses `Camera Lucida. Intelligence` as a named project component with a traceable role in the public mechanism. Source context: Camera Lucida. Intelligence tradecraft, counterintelligence, and analytic method. Use source library intelligence titles as method.",
+      "input_fixture": "project source text and the named component `Camera Lucida. Intelligence`",
+      "operation_under_test": "uses `Camera Lucida. Intelligence` as a named project component with a traceable role in the public mechanism. Source context: Camera Lucida. Intelligence tradecraft, counterintelligence, and analytic method. Use source library intelligence titles as method.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Camera Lucida. Intelligence`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e18e0c46be9a482b765adea3",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45942,
+            "sha256": "e4ad8da777d945946517c6ad8f44639f8dcafad6184d13a50d406826eb7ae050"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37413,
+            "sha256": "d7e08936b722b2f31fcb84a88b7711275d8d6deaf56ee1b0511ec08677be9c03"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22609,
+            "sha256": "5d26b6541a7523477a03c0410ca1b11578407bbb9b5f8a7fe7df5f7a5ea96dd2"
+          },
+          {
+            "relative_path": "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21861,
+            "sha256": "d7ddd5e163fc182f98674d59dc995116cf8dd8a571d9e391bb4ce8c356e0cf2e"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48017,
+            "sha256": "6f0a9c838705bea014a1c1d4d0e6cb444ca9b83f41c0c472254499c45a11d901"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10928,
+            "sha256": "91ad5cf8a15c37aa12bf0fbdeb1138179bf0e332b8b9a27c2739af214c9a8071"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+          "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f5955cfbef84953f41d85b28"
+    },
+    {
+      "receipt_id": "mb-ic-analyst-portfolio-handoff-pass1__receipt_0016",
+      "project_id": "mb-ic-analyst-portfolio-handoff-pass1",
+      "project_title": "IC analyst portfolio build kit; skill taxonomy S01-S26",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IC analyst portfolio build kit; skill taxonomy S01-S26 / Prioritize Capstone",
+      "component_case_id": "mb-ic-analyst-portfolio-handoff-pass1__0016__ic-analyst-portfolio-build-kit-skill-taxonomy-s01-s26-prioritize-capstone",
+      "claim_to_demonstrate": "uses `Prioritize Capstone` as a named project component with a traceable role in the public mechanism. Source context: Prioritize Capstone, SATS, CI, RAG integrity, and analyst-assurance pages for close-reading. Status: source library identified as candidate.",
+      "input_fixture": "project source text and the named component `Prioritize Capstone`",
+      "operation_under_test": "uses `Prioritize Capstone` as a named project component with a traceable role in the public mechanism. Source context: Prioritize Capstone, SATS, CI, RAG integrity, and analyst-assurance pages for close-reading. Status: source library identified as candidate.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Prioritize Capstone`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "da6aee46b4a86df2749d7951",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45942,
+            "sha256": "e4ad8da777d945946517c6ad8f44639f8dcafad6184d13a50d406826eb7ae050"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37413,
+            "sha256": "d7e08936b722b2f31fcb84a88b7711275d8d6deaf56ee1b0511ec08677be9c03"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22609,
+            "sha256": "5d26b6541a7523477a03c0410ca1b11578407bbb9b5f8a7fe7df5f7a5ea96dd2"
+          },
+          {
+            "relative_path": "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21861,
+            "sha256": "d7ddd5e163fc182f98674d59dc995116cf8dd8a571d9e391bb4ce8c356e0cf2e"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48017,
+            "sha256": "6f0a9c838705bea014a1c1d4d0e6cb444ca9b83f41c0c472254499c45a11d901"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10928,
+            "sha256": "91ad5cf8a15c37aa12bf0fbdeb1138179bf0e332b8b9a27c2739af214c9a8071"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+          "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4b214d6778b4734ec4115b83"
+    },
+    {
+      "receipt_id": "mb-ic-analyst-portfolio-handoff-pass1__receipt_0017",
+      "project_id": "mb-ic-analyst-portfolio-handoff-pass1",
+      "project_title": "IC analyst portfolio build kit; skill taxonomy S01-S26",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IC analyst portfolio build kit; skill taxonomy S01-S26 / Improving Intelligence Analysis",
+      "component_case_id": "mb-ic-analyst-portfolio-handoff-pass1__0017__ic-analyst-portfolio-build-kit-skill-taxonomy-s01-s26-improving-intelligence-analysis",
+      "claim_to_demonstrate": "uses `Improving Intelligence Analysis` as a named project component with a traceable role in the public mechanism. Source context: Improving Intelligence Analysis; Leading Intelligence Analysis. source library scholarly-source routing with author correction.",
+      "input_fixture": "project source text and the named component `Improving Intelligence Analysis`",
+      "operation_under_test": "uses `Improving Intelligence Analysis` as a named project component with a traceable role in the public mechanism. Source context: Improving Intelligence Analysis; Leading Intelligence Analysis. source library scholarly-source routing with author correction.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Improving Intelligence Analysis`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "367fdbca15baef63fbef498d",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45942,
+            "sha256": "e4ad8da777d945946517c6ad8f44639f8dcafad6184d13a50d406826eb7ae050"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37413,
+            "sha256": "d7e08936b722b2f31fcb84a88b7711275d8d6deaf56ee1b0511ec08677be9c03"
+          },
+          {
+            "relative_path": "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22609,
+            "sha256": "5d26b6541a7523477a03c0410ca1b11578407bbb9b5f8a7fe7df5f7a5ea96dd2"
+          },
+          {
+            "relative_path": "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21861,
+            "sha256": "d7ddd5e163fc182f98674d59dc995116cf8dd8a571d9e391bb4ce8c356e0cf2e"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48017,
+            "sha256": "6f0a9c838705bea014a1c1d4d0e6cb444ca9b83f41c0c472254499c45a11d901"
+          },
+          {
+            "relative_path": "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10928,
+            "sha256": "91ad5cf8a15c37aa12bf0fbdeb1138179bf0e332b8b9a27c2739af214c9a8071"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/blueprint.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/instrument_map.json",
+          "project_blueprints/mb-ic-analyst-portfolio-handoff-pass1/README.md",
+          "proof_builds/mb-ic-analyst-portfolio-handoff-pass1/proof_build.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/demo_cases.json",
+          "proof_demos/mb-ic-analyst-portfolio-handoff-pass1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4eb02621bd6abf6328f5a756"
+    }
+  ]
+}

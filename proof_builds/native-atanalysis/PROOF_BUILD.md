@@ -1,0 +1,41 @@
+# Proof Build: Analysis Tradecraft
+
+**Project ID.** `native-atanalysis`
+
+**Proof tier.** source-backed-proof-build
+
+**Public claim.** Analysis Tradecraft is a method room for moving an intelligence question from assumptions to evidence, alternatives, uncertainty, confidence, and review.
+
+**Distinctive mechanism.** It routes an analytic problem through assumption surfacing, alternative generation, evidence weighting, uncertainty language, confidence discipline, bias checks, and reviewer challenge.
+
+**Use value.** It matters because tradecraft is the discipline that keeps analysis from becoming a polished opinion.
+
+**Minimum public demo.** Open or inspect the local runtime path for Analysis Tradecraft Runtime Or Interface Surface; confirm a room, action, or state record traces to the governing contract.
+
+**Claim ceiling.** The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.
+
+## Flagship Proof Builds
+
+No special flagship proof build has been authored yet; this project is governed by the component proof table below.
+
+## Component Proof Table
+
+| Component | Status | Input | Expected Output | Verification Check |
+|---|---|---|---|---|
+| Analysis Tradecraft Runtime Or Interface Surface | specified-output-needs-demo | local app, web room, data surface, or workstation entry point | reader-facing definition of the software object and its intended user | Open or inspect the local runtime path for Analysis Tradecraft Runtime Or Interface Surface; confirm a room, action, or state record traces to the governing contract. |
+| Analysis Tradecraft Data And State Model | specified-output-needs-demo | records, files, indexes, tables, project state, source state, and user decisions | state model that explains what the tool remembers and what it refuses to infer | Test one representative case; confirm input (records, files, indexes, tables, project state, source...) produces output (state model that explains what the tool. |
+| Analysis Tradecraft Core Instrument Panel | specified-output-needs-demo | tool buttons, rooms, workflow steps, analytical controls, and review surfaces | named instruments that perform the useful work rather than generic navigation | Test one representative case; confirm input (tool buttons, rooms, workflow steps, analytical...) produces output (named instruments that perform the useful work. |
+| Analysis Tradecraft Workflow Orchestration | specified-output-needs-demo | upstream inputs, intermediate decisions, downstream products, and stale-state conditions | pipeline path showing how work moves and when earlier decisions must be reopened | Test one representative case; confirm input (upstream inputs, intermediate decisions, downstream...) produces output (pipeline path showing how work moves and when. |
+| Analysis Tradecraft Review And Governance Gate | specified-output-needs-demo | quality rules, source checks, claim ceilings, reviewer steps, and failure states | decision gate that makes the output inspectable before it is trusted | Test one representative case; confirm input (quality rules, source checks, claim ceilings, reviewer...) produces output (decision gate that makes the output inspectable. |
+| Analysis Tradecraft Export Or Integration Surface | specified-output-needs-demo | brief, paper, room, dataset, packet, rendered page, or external handoff | usable output that another project, professor, employer, or collaborator can inspect | Test one representative case; confirm input (brief, paper, room, dataset, packet, rendered page...) produces output (usable output that another project, professor...). |
+| Analysis Tradecraft Build Verification Queue | specified-output-needs-demo | unbuilt modules, missing walkthroughs, test cases, and validation evidence | next proof needed before broader claims about the tool are safe | Test one representative case; confirm input (unbuilt modules, missing walkthroughs, test cases...) produces output (next proof needed before broader claims about the. |
+| Analysis Tradecraft / Evidence Sections | source-context-backed | project source text and the named component `Evidence Sections` | a project-specific work product, decision, or proof surface tied to `Evidence Sections` | Confirm `Evidence Sections` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Analysis Tradecraft / Review Notes | source-context-backed | project source text and the named component `Review Notes` | a review decision, claim ceiling, or release boundary tied to `Review Notes` | Confirm `Review Notes` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Analysis Tradecraft / Native Navigation | source-context-backed | project source text and the named component `Native Navigation` | a project-specific work product, decision, or proof surface tied to `Native Navigation` | Confirm `Native Navigation` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Analysis Tradecraft / APA lineage | source-context-backed | project source text and the named component `APA lineage` | a project-specific work product, decision, or proof surface tied to `APA lineage` | Confirm `APA lineage` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Analysis Tradecraft / source lineage claim limit. The public package remains text | source-context-backed | project source text and the named component `source lineage claim limit. The public package remains text` | a review decision, claim ceiling, or release boundary tied to `source lineage claim limit. The public package remains text` | Confirm `source lineage claim limit. The public package remains text` appears in the cited source context and that the public page explains what output, decision, or. |
+| Analysis Tradecraft / Name The Structured Method | source-context-backed | project source text and the named component `Name The Structured Method` | a project-specific work product, decision, or proof surface tied to `Name The Structured Method` | Confirm `Name The Structured Method` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Analysis Tradecraft / Define Use Conditions And Failure Modes | source-context-backed | project source text and the named component `Define Use Conditions And Failure Modes` | a project-specific work product, decision, or proof surface tied to `Define Use Conditions And Failure Modes` | Confirm `Define Use Conditions And Failure Modes` appears in the cited source context and that the public page explains what output, decision, or project function it. |
+| Analysis Tradecraft / Specific Claim Limit And Source | source-context-backed | project source text and the named component `Specific Claim Limit And Source` | a review decision, claim ceiling, or release boundary tied to `Specific Claim Limit And Source` | Confirm `Specific Claim Limit And Source` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Analysis Tradecraft / Bias And Intelligence | source-context-backed | project source text and the named component `Bias And Intelligence` | a project-specific work product, decision, or proof surface tied to `Bias And Intelligence` | Confirm `Bias And Intelligence` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Analysis Tradecraft / Key Assumptions | source-context-backed | project source text and the named component `Key Assumptions` | a project-specific work product, decision, or proof surface tied to `Key Assumptions` | Confirm `Key Assumptions` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |

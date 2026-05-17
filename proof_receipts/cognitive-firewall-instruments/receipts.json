@@ -1,0 +1,1444 @@
+{
+  "project": {
+    "project_id": "cognitive-firewall-instruments",
+    "title": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption"
+  },
+  "receipts": [
+    {
+      "receipt_id": "cognitive-firewall-instruments__receipt_0001",
+      "project_id": "cognitive-firewall-instruments",
+      "project_title": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption Artifact Identity Register",
+      "component_case_id": "cognitive-firewall-instruments__0001__cognitive-firewall-instruments-authoring-defensive-instruments-against-ai-mediated-analyti",
+      "claim_to_demonstrate": "An instrument design surface for turning the capstone's cognitive-firewall idea into usable checks.",
+      "input_fixture": "packet name, source files, version signal, scope, and intended destination",
+      "operation_under_test": "An instrument design surface for turning the capstone's cognitive-firewall idea into usable checks.",
+      "expected_output": "what the packet is and what decision it can still change",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0fdf86a6d1416d594a048c5f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48006,
+            "sha256": "f83348b1e141773b162ed12c81da042d58146c7d767c1c0605eeb8c0c8a077c2"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41307,
+            "sha256": "767c72276ed751f3a8b01329465a928b2d598e24a3db514b09fb24be4852add1"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21388,
+            "sha256": "10b09ea00043feac5d59fc871859e5ac3abf1f97ddcd31d8bb04fa87e5e2d34d"
+          },
+          {
+            "relative_path": "proof_builds/cognitive-firewall-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22777,
+            "sha256": "20bbf6f7090367e54f6fd6c6db753f63b190b4c4e8ebcbdaeac7cd7a7460da89"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49800,
+            "sha256": "25c4f0783797d44294031e1e77c9c9e561d0f0a5677221861f6009d463458d13"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10935,
+            "sha256": "477b10e92a2dafadc35d13c4e8268d5c06c6af319b955c63de926120eb3dfc9f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+          "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+          "proof_builds/cognitive-firewall-instruments/proof_build.json",
+          "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+          "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8759d7b531421d0f07aa3d64"
+    },
+    {
+      "receipt_id": "cognitive-firewall-instruments__receipt_0002",
+      "project_id": "cognitive-firewall-instruments",
+      "project_title": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption Extraction And Manifest Layer",
+      "component_case_id": "cognitive-firewall-instruments__0002__cognitive-firewall-instruments-authoring-defensive-instruments-against-ai-mediated-analyti",
+      "claim_to_demonstrate": "Source use is organized by role: method authorities, domain evidence, technical background, implementation evidence, and claim limits. The page should show why each source matters; direct quotations and stronger factual claims still require exact passage.",
+      "input_fixture": "files, tables, text, screenshots, source notes, and provenance markers",
+      "operation_under_test": "Source use is organized by role: method authorities, domain evidence, technical background, implementation evidence, and claim limits. The page should show why each source matters; direct quotations and stronger factual claims still require exact passage.",
+      "expected_output": "what can be safely mined from the packet as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d4064f8284d42db167c077d8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48006,
+            "sha256": "f83348b1e141773b162ed12c81da042d58146c7d767c1c0605eeb8c0c8a077c2"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41307,
+            "sha256": "767c72276ed751f3a8b01329465a928b2d598e24a3db514b09fb24be4852add1"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21388,
+            "sha256": "10b09ea00043feac5d59fc871859e5ac3abf1f97ddcd31d8bb04fa87e5e2d34d"
+          },
+          {
+            "relative_path": "proof_builds/cognitive-firewall-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22777,
+            "sha256": "20bbf6f7090367e54f6fd6c6db753f63b190b4c4e8ebcbdaeac7cd7a7460da89"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49800,
+            "sha256": "25c4f0783797d44294031e1e77c9c9e561d0f0a5677221861f6009d463458d13"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10935,
+            "sha256": "477b10e92a2dafadc35d13c4e8268d5c06c6af319b955c63de926120eb3dfc9f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+          "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+          "proof_builds/cognitive-firewall-instruments/proof_build.json",
+          "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+          "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "88d631ff5c1585664df1bc6a"
+    },
+    {
+      "receipt_id": "cognitive-firewall-instruments__receipt_0003",
+      "project_id": "cognitive-firewall-instruments",
+      "project_title": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption Mechanism Or Claim Distillation",
+      "component_case_id": "cognitive-firewall-instruments__0003__cognitive-firewall-instruments-authoring-defensive-instruments-against-ai-mediated-analyti",
+      "claim_to_demonstrate": "It moves from scenario, evidence packet, analytic method, output, failure-mode tag, pattern card, countermeasure proposal, and export record without losing provenance.",
+      "input_fixture": "the packet's central method, model, concept, or design rule",
+      "operation_under_test": "It moves from scenario, evidence packet, analytic method, output, failure-mode tag, pattern card, countermeasure proposal, and export record without losing provenance.",
+      "expected_output": "the distinctive idea that should not disappear in public summary",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "23247414e5c922324046d909",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48006,
+            "sha256": "f83348b1e141773b162ed12c81da042d58146c7d767c1c0605eeb8c0c8a077c2"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41307,
+            "sha256": "767c72276ed751f3a8b01329465a928b2d598e24a3db514b09fb24be4852add1"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21388,
+            "sha256": "10b09ea00043feac5d59fc871859e5ac3abf1f97ddcd31d8bb04fa87e5e2d34d"
+          },
+          {
+            "relative_path": "proof_builds/cognitive-firewall-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22777,
+            "sha256": "20bbf6f7090367e54f6fd6c6db753f63b190b4c4e8ebcbdaeac7cd7a7460da89"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49800,
+            "sha256": "25c4f0783797d44294031e1e77c9c9e561d0f0a5677221861f6009d463458d13"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10935,
+            "sha256": "477b10e92a2dafadc35d13c4e8268d5c06c6af319b955c63de926120eb3dfc9f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+          "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+          "proof_builds/cognitive-firewall-instruments/proof_build.json",
+          "proof_demos/cognitive-firewall-instruments/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "646318864ea712339b12dffe"
+    },
+    {
+      "receipt_id": "cognitive-firewall-instruments__receipt_0004",
+      "project_id": "cognitive-firewall-instruments",
+      "project_title": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption Proof Boundary",
+      "component_case_id": "cognitive-firewall-instruments__0004__cognitive-firewall-instruments-authoring-defensive-instruments-against-ai-mediated-analyti",
+      "claim_to_demonstrate": "The construction workspace renders with the four moves in place. The capstone methodology and the twelve detection contracts are present as the binding pages. Open work: the source-register chain that would let each new instrument trace through to specific.",
+      "input_fixture": "built assets, partial assets, archive-only assets, and unsupported claims",
+      "operation_under_test": "The construction workspace renders with the four moves in place. The capstone methodology and the twelve detection contracts are present as the binding pages. Open work: the source-register chain that would let each new instrument trace through to specific.",
+      "expected_output": "what the packet proves now as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3f75a54cf5b9a997a4e640e7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48006,
+            "sha256": "f83348b1e141773b162ed12c81da042d58146c7d767c1c0605eeb8c0c8a077c2"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41307,
+            "sha256": "767c72276ed751f3a8b01329465a928b2d598e24a3db514b09fb24be4852add1"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21388,
+            "sha256": "10b09ea00043feac5d59fc871859e5ac3abf1f97ddcd31d8bb04fa87e5e2d34d"
+          },
+          {
+            "relative_path": "proof_builds/cognitive-firewall-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22777,
+            "sha256": "20bbf6f7090367e54f6fd6c6db753f63b190b4c4e8ebcbdaeac7cd7a7460da89"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49800,
+            "sha256": "25c4f0783797d44294031e1e77c9c9e561d0f0a5677221861f6009d463458d13"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10935,
+            "sha256": "477b10e92a2dafadc35d13c4e8268d5c06c6af319b955c63de926120eb3dfc9f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+          "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+          "project_blueprints/cognitive-firewall-instruments/README.md",
+          "proof_builds/cognitive-firewall-instruments/proof_build.json",
+          "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+          "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5ff742a79422114ececc41f1"
+    },
+    {
+      "receipt_id": "cognitive-firewall-instruments__receipt_0005",
+      "project_id": "cognitive-firewall-instruments",
+      "project_title": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption Promotion Route",
+      "component_case_id": "cognitive-firewall-instruments__0005__cognitive-firewall-instruments-authoring-defensive-instruments-against-ai-mediated-analyti",
+      "claim_to_demonstrate": "Wire the binding to the source-register pipeline; bind each new instrument to the specific capstone evidence packets and detection contracts it inherits from. Once that lands, new firewall instruments leave the construction workspace already source-bound.",
+      "input_fixture": "website room, MuranoOS room, Nexus task, paper, source bank, or archive",
+      "operation_under_test": "Wire the binding to the source-register pipeline; bind each new instrument to the specific capstone evidence packets and detection contracts it inherits from. Once that lands, new firewall instruments leave the construction workspace already source-bound.",
+      "expected_output": "where the packet should go next as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e05552ce50ffd3271b5a69f7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48006,
+            "sha256": "f83348b1e141773b162ed12c81da042d58146c7d767c1c0605eeb8c0c8a077c2"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41307,
+            "sha256": "767c72276ed751f3a8b01329465a928b2d598e24a3db514b09fb24be4852add1"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21388,
+            "sha256": "10b09ea00043feac5d59fc871859e5ac3abf1f97ddcd31d8bb04fa87e5e2d34d"
+          },
+          {
+            "relative_path": "proof_builds/cognitive-firewall-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22777,
+            "sha256": "20bbf6f7090367e54f6fd6c6db753f63b190b4c4e8ebcbdaeac7cd7a7460da89"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49800,
+            "sha256": "25c4f0783797d44294031e1e77c9c9e561d0f0a5677221861f6009d463458d13"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10935,
+            "sha256": "477b10e92a2dafadc35d13c4e8268d5c06c6af319b955c63de926120eb3dfc9f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+          "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+          "project_blueprints/cognitive-firewall-instruments/README.md",
+          "proof_builds/cognitive-firewall-instruments/proof_build.json",
+          "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+          "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "762992fb29a7ca8698aedcf4"
+    },
+    {
+      "receipt_id": "cognitive-firewall-instruments__receipt_0006",
+      "project_id": "cognitive-firewall-instruments",
+      "project_title": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption Current Authority State",
+      "component_case_id": "cognitive-firewall-instruments__0006__cognitive-firewall-instruments-authoring-defensive-instruments-against-ai-mediated-analyti",
+      "claim_to_demonstrate": "Status: The construction workspace renders with the four moves in place. The capstone methodology and the twelve detection contracts are present as the binding pages. Open work: the source-register chain that would let each new instrument trace through to.",
+      "input_fixture": "canonical, superseded, derivative, draft, or context-only status",
+      "operation_under_test": "Status: The construction workspace renders with the four moves in place. The capstone methodology and the twelve detection contracts are present as the binding pages. Open work: the source-register chain that would let each new instrument trace through to.",
+      "expected_output": "how strongly the packet may govern a public page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4bf580d68c94f0235cd07355",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48006,
+            "sha256": "f83348b1e141773b162ed12c81da042d58146c7d767c1c0605eeb8c0c8a077c2"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41307,
+            "sha256": "767c72276ed751f3a8b01329465a928b2d598e24a3db514b09fb24be4852add1"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21388,
+            "sha256": "10b09ea00043feac5d59fc871859e5ac3abf1f97ddcd31d8bb04fa87e5e2d34d"
+          },
+          {
+            "relative_path": "proof_builds/cognitive-firewall-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22777,
+            "sha256": "20bbf6f7090367e54f6fd6c6db753f63b190b4c4e8ebcbdaeac7cd7a7460da89"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49800,
+            "sha256": "25c4f0783797d44294031e1e77c9c9e561d0f0a5677221861f6009d463458d13"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10935,
+            "sha256": "477b10e92a2dafadc35d13c4e8268d5c06c6af319b955c63de926120eb3dfc9f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+          "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+          "proof_builds/cognitive-firewall-instruments/proof_build.json",
+          "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+          "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ca29ae8f2fa3c86793cf5d6d"
+    },
+    {
+      "receipt_id": "cognitive-firewall-instruments__receipt_0007",
+      "project_id": "cognitive-firewall-instruments",
+      "project_title": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption Gap And Reconciliation Queue",
+      "component_case_id": "cognitive-firewall-instruments__0007__cognitive-firewall-instruments-authoring-defensive-instruments-against-ai-mediated-analyti",
+      "claim_to_demonstrate": "Remaining gaps: wire the binding to the source-register pipeline; bind each new instrument to the specific capstone evidence packets and detection contracts it inherits from. Once that lands, new firewall instruments leave the construction workspace already.",
+      "input_fixture": "missing source reads, duplicate resolution, version adjudication, or implementation work",
+      "operation_under_test": "Remaining gaps: wire the binding to the source-register pipeline; bind each new instrument to the specific capstone evidence packets and detection contracts it inherits from. Once that lands, new firewall instruments leave the construction workspace already.",
+      "expected_output": "next step before stronger public use as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d860491541934d3d70c14bc6",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48006,
+            "sha256": "f83348b1e141773b162ed12c81da042d58146c7d767c1c0605eeb8c0c8a077c2"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41307,
+            "sha256": "767c72276ed751f3a8b01329465a928b2d598e24a3db514b09fb24be4852add1"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21388,
+            "sha256": "10b09ea00043feac5d59fc871859e5ac3abf1f97ddcd31d8bb04fa87e5e2d34d"
+          },
+          {
+            "relative_path": "proof_builds/cognitive-firewall-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22777,
+            "sha256": "20bbf6f7090367e54f6fd6c6db753f63b190b4c4e8ebcbdaeac7cd7a7460da89"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49800,
+            "sha256": "25c4f0783797d44294031e1e77c9c9e561d0f0a5677221861f6009d463458d13"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10935,
+            "sha256": "477b10e92a2dafadc35d13c4e8268d5c06c6af319b955c63de926120eb3dfc9f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+          "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+          "proof_builds/cognitive-firewall-instruments/proof_build.json",
+          "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+          "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b0f41685bb00dabb80a938e6"
+    },
+    {
+      "receipt_id": "cognitive-firewall-instruments__receipt_0008",
+      "project_id": "cognitive-firewall-instruments",
+      "project_title": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption / Specification New",
+      "component_case_id": "cognitive-firewall-instruments__0008__cognitive-firewall-instruments-authoring-defensive-instruments-against-ai-mediated-analyti",
+      "claim_to_demonstrate": "uses `Specification New` as a named project component with a traceable role in the public mechanism. Source context: Specification New firewall instrument specification Where a new cognitive-firewall instrument is specified — what failure mode it catches.",
+      "input_fixture": "project source text and the named component `Specification New`",
+      "operation_under_test": "uses `Specification New` as a named project component with a traceable role in the public mechanism. Source context: Specification New firewall instrument specification Where a new cognitive-firewall instrument is specified — what failure mode it catches.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Specification New`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "b7f6dc0a44333a11e4fc77c5",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48006,
+            "sha256": "f83348b1e141773b162ed12c81da042d58146c7d767c1c0605eeb8c0c8a077c2"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41307,
+            "sha256": "767c72276ed751f3a8b01329465a928b2d598e24a3db514b09fb24be4852add1"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21388,
+            "sha256": "10b09ea00043feac5d59fc871859e5ac3abf1f97ddcd31d8bb04fa87e5e2d34d"
+          },
+          {
+            "relative_path": "proof_builds/cognitive-firewall-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22777,
+            "sha256": "20bbf6f7090367e54f6fd6c6db753f63b190b4c4e8ebcbdaeac7cd7a7460da89"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49800,
+            "sha256": "25c4f0783797d44294031e1e77c9c9e561d0f0a5677221861f6009d463458d13"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10935,
+            "sha256": "477b10e92a2dafadc35d13c4e8268d5c06c6af319b955c63de926120eb3dfc9f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+          "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+          "proof_builds/cognitive-firewall-instruments/proof_build.json",
+          "proof_demos/cognitive-firewall-instruments/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "feeca4afae8371284c09abe2"
+    },
+    {
+      "receipt_id": "cognitive-firewall-instruments__receipt_0009",
+      "project_id": "cognitive-firewall-instruments",
+      "project_title": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption / Construction Surface",
+      "component_case_id": "cognitive-firewall-instruments__0009__cognitive-firewall-instruments-authoring-defensive-instruments-against-ai-mediated-analyti",
+      "claim_to_demonstrate": "uses `Construction Surface` as a named project component with a traceable role in the public mechanism. Source context: Step 01 Source-register binding Construction Surface threaded through the source-register pipeline that the rest of the portfolio uses.",
+      "input_fixture": "project source text and the named component `Construction Surface`",
+      "operation_under_test": "uses `Construction Surface` as a named project component with a traceable role in the public mechanism. Source context: Step 01 Source-register binding Construction Surface threaded through the source-register pipeline that the rest of the portfolio uses.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Construction Surface`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a5c3b0a0914ac60d9ce3f841",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48006,
+            "sha256": "f83348b1e141773b162ed12c81da042d58146c7d767c1c0605eeb8c0c8a077c2"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41307,
+            "sha256": "767c72276ed751f3a8b01329465a928b2d598e24a3db514b09fb24be4852add1"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21388,
+            "sha256": "10b09ea00043feac5d59fc871859e5ac3abf1f97ddcd31d8bb04fa87e5e2d34d"
+          },
+          {
+            "relative_path": "proof_builds/cognitive-firewall-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22777,
+            "sha256": "20bbf6f7090367e54f6fd6c6db753f63b190b4c4e8ebcbdaeac7cd7a7460da89"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49800,
+            "sha256": "25c4f0783797d44294031e1e77c9c9e561d0f0a5677221861f6009d463458d13"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10935,
+            "sha256": "477b10e92a2dafadc35d13c4e8268d5c06c6af319b955c63de926120eb3dfc9f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+          "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+          "proof_builds/cognitive-firewall-instruments/proof_build.json",
+          "proof_demos/cognitive-firewall-instruments/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "fb144dd477989d8c9a506506"
+    },
+    {
+      "receipt_id": "cognitive-firewall-instruments__receipt_0010",
+      "project_id": "cognitive-firewall-instruments",
+      "project_title": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption / The Capstone Methodology And The Research",
+      "component_case_id": "cognitive-firewall-instruments__0010__cognitive-firewall-instruments-authoring-defensive-instruments-against-ai-mediated-analyti",
+      "claim_to_demonstrate": "uses `The Capstone Methodology And The Research` as a named project component with a traceable role in the public mechanism. Source context: Where new cognitive-firewall instruments are authored. Pairs each new instrument with the capstone methodology and the.",
+      "input_fixture": "project source text and the named component `The Capstone Methodology And The Research`",
+      "operation_under_test": "uses `The Capstone Methodology And The Research` as a named project component with a traceable role in the public mechanism. Source context: Where new cognitive-firewall instruments are authored. Pairs each new instrument with the capstone methodology and the.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `The Capstone Methodology And The Research`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "1ebbe468ac0bc88ba9fac359",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48006,
+            "sha256": "f83348b1e141773b162ed12c81da042d58146c7d767c1c0605eeb8c0c8a077c2"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41307,
+            "sha256": "767c72276ed751f3a8b01329465a928b2d598e24a3db514b09fb24be4852add1"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21388,
+            "sha256": "10b09ea00043feac5d59fc871859e5ac3abf1f97ddcd31d8bb04fa87e5e2d34d"
+          },
+          {
+            "relative_path": "proof_builds/cognitive-firewall-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22777,
+            "sha256": "20bbf6f7090367e54f6fd6c6db753f63b190b4c4e8ebcbdaeac7cd7a7460da89"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49800,
+            "sha256": "25c4f0783797d44294031e1e77c9c9e561d0f0a5677221861f6009d463458d13"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10935,
+            "sha256": "477b10e92a2dafadc35d13c4e8268d5c06c6af319b955c63de926120eb3dfc9f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+          "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+          "proof_builds/cognitive-firewall-instruments/proof_build.json",
+          "proof_demos/cognitive-firewall-instruments/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3b955332e224a1161a002bc5"
+    },
+    {
+      "receipt_id": "cognitive-firewall-instruments__receipt_0011",
+      "project_id": "cognitive-firewall-instruments",
+      "project_title": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption / Program Page",
+      "component_case_id": "cognitive-firewall-instruments__0011__cognitive-firewall-instruments-authoring-defensive-instruments-against-ai-mediated-analyti",
+      "claim_to_demonstrate": "uses `Program Page` as a named project component with a traceable role in the public mechanism. Source context: The page is the construction counterpart to the capstone research-program page — the program's findings live there; new instruments to extend the.",
+      "input_fixture": "project source text and the named component `Program Page`",
+      "operation_under_test": "uses `Program Page` as a named project component with a traceable role in the public mechanism. Source context: The page is the construction counterpart to the capstone research-program page — the program's findings live there; new instruments to extend the.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Program Page`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "da5e226af2e9cccb0462dd45",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48006,
+            "sha256": "f83348b1e141773b162ed12c81da042d58146c7d767c1c0605eeb8c0c8a077c2"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41307,
+            "sha256": "767c72276ed751f3a8b01329465a928b2d598e24a3db514b09fb24be4852add1"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21388,
+            "sha256": "10b09ea00043feac5d59fc871859e5ac3abf1f97ddcd31d8bb04fa87e5e2d34d"
+          },
+          {
+            "relative_path": "proof_builds/cognitive-firewall-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22777,
+            "sha256": "20bbf6f7090367e54f6fd6c6db753f63b190b4c4e8ebcbdaeac7cd7a7460da89"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49800,
+            "sha256": "25c4f0783797d44294031e1e77c9c9e561d0f0a5677221861f6009d463458d13"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10935,
+            "sha256": "477b10e92a2dafadc35d13c4e8268d5c06c6af319b955c63de926120eb3dfc9f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+          "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+          "proof_builds/cognitive-firewall-instruments/proof_build.json",
+          "proof_demos/cognitive-firewall-instruments/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "204940431e7af65e60bf4448"
+    },
+    {
+      "receipt_id": "cognitive-firewall-instruments__receipt_0012",
+      "project_id": "cognitive-firewall-instruments",
+      "project_title": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption / The Program's Findings Live There",
+      "component_case_id": "cognitive-firewall-instruments__0012__cognitive-firewall-instruments-authoring-defensive-instruments-against-ai-mediated-analyti",
+      "claim_to_demonstrate": "uses `The Program's Findings Live There` as a named project component with a traceable role in the public mechanism. Source context: The page is the construction counterpart to the capstone research-program page — the program's findings live there; new.",
+      "input_fixture": "project source text and the named component `The Program's Findings Live There`",
+      "operation_under_test": "uses `The Program's Findings Live There` as a named project component with a traceable role in the public mechanism. Source context: The page is the construction counterpart to the capstone research-program page — the program's findings live there; new.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `The Program's Findings Live There`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "da5e226af2e9cccb0462dd45",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48006,
+            "sha256": "f83348b1e141773b162ed12c81da042d58146c7d767c1c0605eeb8c0c8a077c2"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41307,
+            "sha256": "767c72276ed751f3a8b01329465a928b2d598e24a3db514b09fb24be4852add1"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21388,
+            "sha256": "10b09ea00043feac5d59fc871859e5ac3abf1f97ddcd31d8bb04fa87e5e2d34d"
+          },
+          {
+            "relative_path": "proof_builds/cognitive-firewall-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22777,
+            "sha256": "20bbf6f7090367e54f6fd6c6db753f63b190b4c4e8ebcbdaeac7cd7a7460da89"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49800,
+            "sha256": "25c4f0783797d44294031e1e77c9c9e561d0f0a5677221861f6009d463458d13"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10935,
+            "sha256": "477b10e92a2dafadc35d13c4e8268d5c06c6af319b955c63de926120eb3dfc9f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+          "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+          "proof_builds/cognitive-firewall-instruments/proof_build.json",
+          "proof_demos/cognitive-firewall-instruments/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "94ec57ce22ea24668a2527e8"
+    },
+    {
+      "receipt_id": "cognitive-firewall-instruments__receipt_0013",
+      "project_id": "cognitive-firewall-instruments",
+      "project_title": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption / Firewall Instrument: Specification Of The New Instrument",
+      "component_case_id": "cognitive-firewall-instruments__0013__cognitive-firewall-instruments-authoring-defensive-instruments-against-ai-mediated-analyti",
+      "claim_to_demonstrate": "uses `Firewall Instrument: Specification Of The New Instrument` as a named project component with a traceable role in the public mechanism. Source context: Four moves cover the lifecycle of a cognitive-firewall instrument: specification of the new instrument.",
+      "input_fixture": "project source text and the named component `Firewall Instrument: Specification Of The New Instrument`",
+      "operation_under_test": "uses `Firewall Instrument: Specification Of The New Instrument` as a named project component with a traceable role in the public mechanism. Source context: Four moves cover the lifecycle of a cognitive-firewall instrument: specification of the new instrument.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Firewall Instrument: Specification Of The New Instrument`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "90ddfaa439a6de182fb00357",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48006,
+            "sha256": "f83348b1e141773b162ed12c81da042d58146c7d767c1c0605eeb8c0c8a077c2"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41307,
+            "sha256": "767c72276ed751f3a8b01329465a928b2d598e24a3db514b09fb24be4852add1"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21388,
+            "sha256": "10b09ea00043feac5d59fc871859e5ac3abf1f97ddcd31d8bb04fa87e5e2d34d"
+          },
+          {
+            "relative_path": "proof_builds/cognitive-firewall-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22777,
+            "sha256": "20bbf6f7090367e54f6fd6c6db753f63b190b4c4e8ebcbdaeac7cd7a7460da89"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49800,
+            "sha256": "25c4f0783797d44294031e1e77c9c9e561d0f0a5677221861f6009d463458d13"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10935,
+            "sha256": "477b10e92a2dafadc35d13c4e8268d5c06c6af319b955c63de926120eb3dfc9f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+          "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+          "proof_builds/cognitive-firewall-instruments/proof_build.json",
+          "proof_demos/cognitive-firewall-instruments/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4da8486fde470726ded47c73"
+    },
+    {
+      "receipt_id": "cognitive-firewall-instruments__receipt_0014",
+      "project_id": "cognitive-firewall-instruments",
+      "project_title": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption / Binding To The Capstone Methodology",
+      "component_case_id": "cognitive-firewall-instruments__0014__cognitive-firewall-instruments-authoring-defensive-instruments-against-ai-mediated-analyti",
+      "claim_to_demonstrate": "uses `Binding To The Capstone Methodology` as a named project component with a traceable role in the public mechanism. Source context: specification of the new instrument, binding to the capstone methodology, binding to the research-framework detection.",
+      "input_fixture": "project source text and the named component `Binding To The Capstone Methodology`",
+      "operation_under_test": "uses `Binding To The Capstone Methodology` as a named project component with a traceable role in the public mechanism. Source context: specification of the new instrument, binding to the capstone methodology, binding to the research-framework detection.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Binding To The Capstone Methodology`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "429ac7d5ed5799bd576a17ef",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48006,
+            "sha256": "f83348b1e141773b162ed12c81da042d58146c7d767c1c0605eeb8c0c8a077c2"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41307,
+            "sha256": "767c72276ed751f3a8b01329465a928b2d598e24a3db514b09fb24be4852add1"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21388,
+            "sha256": "10b09ea00043feac5d59fc871859e5ac3abf1f97ddcd31d8bb04fa87e5e2d34d"
+          },
+          {
+            "relative_path": "proof_builds/cognitive-firewall-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22777,
+            "sha256": "20bbf6f7090367e54f6fd6c6db753f63b190b4c4e8ebcbdaeac7cd7a7460da89"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49800,
+            "sha256": "25c4f0783797d44294031e1e77c9c9e561d0f0a5677221861f6009d463458d13"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10935,
+            "sha256": "477b10e92a2dafadc35d13c4e8268d5c06c6af319b955c63de926120eb3dfc9f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+          "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+          "proof_builds/cognitive-firewall-instruments/proof_build.json",
+          "proof_demos/cognitive-firewall-instruments/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b66ff8aa4b0142be65bc64ba"
+    },
+    {
+      "receipt_id": "cognitive-firewall-instruments__receipt_0015",
+      "project_id": "cognitive-firewall-instruments",
+      "project_title": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption / Binding To The Research",
+      "component_case_id": "cognitive-firewall-instruments__0015__cognitive-firewall-instruments-authoring-defensive-instruments-against-ai-mediated-analyti",
+      "claim_to_demonstrate": "uses `Binding To The Research` as a named project component with a traceable role in the public mechanism. Source context: specification of the new instrument, binding to the capstone methodology, binding to the research-framework detection contracts, and.",
+      "input_fixture": "project source text and the named component `Binding To The Research`",
+      "operation_under_test": "uses `Binding To The Research` as a named project component with a traceable role in the public mechanism. Source context: specification of the new instrument, binding to the capstone methodology, binding to the research-framework detection contracts, and.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Binding To The Research`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "429ac7d5ed5799bd576a17ef",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48006,
+            "sha256": "f83348b1e141773b162ed12c81da042d58146c7d767c1c0605eeb8c0c8a077c2"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41307,
+            "sha256": "767c72276ed751f3a8b01329465a928b2d598e24a3db514b09fb24be4852add1"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21388,
+            "sha256": "10b09ea00043feac5d59fc871859e5ac3abf1f97ddcd31d8bb04fa87e5e2d34d"
+          },
+          {
+            "relative_path": "proof_builds/cognitive-firewall-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22777,
+            "sha256": "20bbf6f7090367e54f6fd6c6db753f63b190b4c4e8ebcbdaeac7cd7a7460da89"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49800,
+            "sha256": "25c4f0783797d44294031e1e77c9c9e561d0f0a5677221861f6009d463458d13"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10935,
+            "sha256": "477b10e92a2dafadc35d13c4e8268d5c06c6af319b955c63de926120eb3dfc9f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+          "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+          "proof_builds/cognitive-firewall-instruments/proof_build.json",
+          "proof_demos/cognitive-firewall-instruments/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "52493d7dce83c2f25db885e8"
+    },
+    {
+      "receipt_id": "cognitive-firewall-instruments__receipt_0016",
+      "project_id": "cognitive-firewall-instruments",
+      "project_title": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption / Framework Detection Contracts",
+      "component_case_id": "cognitive-firewall-instruments__0016__cognitive-firewall-instruments-authoring-defensive-instruments-against-ai-mediated-analyti",
+      "claim_to_demonstrate": "uses `Framework Detection Contracts` as a named project component with a traceable role in the public mechanism. Source context: Where new cognitive-firewall instruments are authored. Pairs each new instrument with the capstone methodology and the.",
+      "input_fixture": "project source text and the named component `Framework Detection Contracts`",
+      "operation_under_test": "uses `Framework Detection Contracts` as a named project component with a traceable role in the public mechanism. Source context: Where new cognitive-firewall instruments are authored. Pairs each new instrument with the capstone methodology and the.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Framework Detection Contracts`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "1ebbe468ac0bc88ba9fac359",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48006,
+            "sha256": "f83348b1e141773b162ed12c81da042d58146c7d767c1c0605eeb8c0c8a077c2"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41307,
+            "sha256": "767c72276ed751f3a8b01329465a928b2d598e24a3db514b09fb24be4852add1"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21388,
+            "sha256": "10b09ea00043feac5d59fc871859e5ac3abf1f97ddcd31d8bb04fa87e5e2d34d"
+          },
+          {
+            "relative_path": "proof_builds/cognitive-firewall-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22777,
+            "sha256": "20bbf6f7090367e54f6fd6c6db753f63b190b4c4e8ebcbdaeac7cd7a7460da89"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49800,
+            "sha256": "25c4f0783797d44294031e1e77c9c9e561d0f0a5677221861f6009d463458d13"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10935,
+            "sha256": "477b10e92a2dafadc35d13c4e8268d5c06c6af319b955c63de926120eb3dfc9f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+          "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+          "proof_builds/cognitive-firewall-instruments/proof_build.json",
+          "proof_demos/cognitive-firewall-instruments/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8161d22da4d15c466198ae70"
+    },
+    {
+      "receipt_id": "cognitive-firewall-instruments__receipt_0017",
+      "project_id": "cognitive-firewall-instruments",
+      "project_title": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewall Instruments — authoring defensive instruments against AI-mediated analytic corruption / Firewall Instrument Is Specified",
+      "component_case_id": "cognitive-firewall-instruments__0017__cognitive-firewall-instruments-authoring-defensive-instruments-against-ai-mediated-analyti",
+      "claim_to_demonstrate": "uses `Firewall Instrument Is Specified` as a named project component with a traceable role in the public mechanism. Source context: Specification New firewall instrument specification Where a new cognitive-firewall instrument is specified — what failure mode.",
+      "input_fixture": "project source text and the named component `Firewall Instrument Is Specified`",
+      "operation_under_test": "uses `Firewall Instrument Is Specified` as a named project component with a traceable role in the public mechanism. Source context: Specification New firewall instrument specification Where a new cognitive-firewall instrument is specified — what failure mode.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Firewall Instrument Is Specified`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "b7f6dc0a44333a11e4fc77c5",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48006,
+            "sha256": "f83348b1e141773b162ed12c81da042d58146c7d767c1c0605eeb8c0c8a077c2"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41307,
+            "sha256": "767c72276ed751f3a8b01329465a928b2d598e24a3db514b09fb24be4852add1"
+          },
+          {
+            "relative_path": "project_blueprints/cognitive-firewall-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21388,
+            "sha256": "10b09ea00043feac5d59fc871859e5ac3abf1f97ddcd31d8bb04fa87e5e2d34d"
+          },
+          {
+            "relative_path": "proof_builds/cognitive-firewall-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22777,
+            "sha256": "20bbf6f7090367e54f6fd6c6db753f63b190b4c4e8ebcbdaeac7cd7a7460da89"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49800,
+            "sha256": "25c4f0783797d44294031e1e77c9c9e561d0f0a5677221861f6009d463458d13"
+          },
+          {
+            "relative_path": "proof_demos/cognitive-firewall-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10935,
+            "sha256": "477b10e92a2dafadc35d13c4e8268d5c06c6af319b955c63de926120eb3dfc9f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/cognitive-firewall-instruments/blueprint.json",
+          "project_blueprints/cognitive-firewall-instruments/instrument_map.json",
+          "proof_builds/cognitive-firewall-instruments/proof_build.json",
+          "proof_demos/cognitive-firewall-instruments/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4b2ec9177f564cdf18699c0d"
+    }
+  ]
+}

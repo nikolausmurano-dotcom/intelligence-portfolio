@@ -1,0 +1,1470 @@
+{
+  "project": {
+    "project_id": "mb-murano-os-warrant-chamber-handoff-v1",
+    "title": "Warrant Chamber"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-murano-os-warrant-chamber-handoff-v1__receipt_0001",
+      "project_id": "mb-murano-os-warrant-chamber-handoff-v1",
+      "project_title": "Warrant Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Warrant Chamber Handoff Identity",
+      "component_case_id": "mb-murano-os-warrant-chamber-handoff-v1__0001__warrant-chamber-handoff-identity",
+      "claim_to_demonstrate": "Warrant Chamber is a manuscript-centered evidence governance room handoff, also called The House of Evidence.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "Warrant Chamber is a manuscript-centered evidence governance room handoff, also called The House of Evidence.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44481,
+            "sha256": "7f2ab094dae984c5364ba056853f150d93abc0813ff4cdf4db23a20d2764a674"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36213,
+            "sha256": "b0743429676f63350037f7b8540c1c398e42fab3f960742bf19771b87c22e944"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21055,
+            "sha256": "ac2150a74f97f099247faf27017712817da17eece7177d8b475fe0b41e2f9d77"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20338,
+            "sha256": "19bcd0d81c783af283848fc2bad5986726a128c37ade1c6f3ce897903639b99e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44866,
+            "sha256": "77e8f8f454dd18f57def37166fa7705be0215b861e8a2f250a6a9c3c199b4edd"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9320,
+            "sha256": "ec244fa4fc18a1150883c3f329a45362a1b7fcd744003d26f0ec742b70757122"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+          "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "55d4d7949ee661a84722d72d"
+    },
+    {
+      "receipt_id": "mb-murano-os-warrant-chamber-handoff-v1__receipt_0002",
+      "project_id": "mb-murano-os-warrant-chamber-handoff-v1",
+      "project_title": "Warrant Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Warrant Chamber Room Task Model",
+      "component_case_id": "mb-murano-os-warrant-chamber-handoff-v1__0002__warrant-chamber-room-task-model",
+      "claim_to_demonstrate": "It specifies a room for preserving the relation between text, claim, source, counter-source, warrant strength, dissent, judgment, repair, revision state, and certification, with data model, workflow, screen blueprint, role-permission, event-taxonomy.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "It specifies a room for preserving the relation between text, claim, source, counter-source, warrant strength, dissent, judgment, repair, revision state, and certification, with data model, workflow, screen blueprint, role-permission, event-taxonomy.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44481,
+            "sha256": "7f2ab094dae984c5364ba056853f150d93abc0813ff4cdf4db23a20d2764a674"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36213,
+            "sha256": "b0743429676f63350037f7b8540c1c398e42fab3f960742bf19771b87c22e944"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21055,
+            "sha256": "ac2150a74f97f099247faf27017712817da17eece7177d8b475fe0b41e2f9d77"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20338,
+            "sha256": "19bcd0d81c783af283848fc2bad5986726a128c37ade1c6f3ce897903639b99e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44866,
+            "sha256": "77e8f8f454dd18f57def37166fa7705be0215b861e8a2f250a6a9c3c199b4edd"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9320,
+            "sha256": "ec244fa4fc18a1150883c3f329a45362a1b7fcd744003d26f0ec742b70757122"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+          "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1f13ca29407ae2558a9465a8"
+    },
+    {
+      "receipt_id": "mb-murano-os-warrant-chamber-handoff-v1__receipt_0003",
+      "project_id": "mb-murano-os-warrant-chamber-handoff-v1",
+      "project_title": "Warrant Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Warrant Chamber Data Schema And Persistence Plan",
+      "component_case_id": "mb-murano-os-warrant-chamber-handoff-v1__0003__warrant-chamber-data-schema-and-persistence-plan",
+      "claim_to_demonstrate": "Intelligence tradecraft, counterintelligence, and analytic method. Use source library intelligence titles as method authority and intelligence-domain stressors. Vision: Present intelligence pages as disciplined analytic-method and tradecraft demonstrations.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Intelligence tradecraft, counterintelligence, and analytic method. Use source library intelligence titles as method authority and intelligence-domain stressors. Vision: Present intelligence pages as disciplined analytic-method and tradecraft demonstrations.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44481,
+            "sha256": "7f2ab094dae984c5364ba056853f150d93abc0813ff4cdf4db23a20d2764a674"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36213,
+            "sha256": "b0743429676f63350037f7b8540c1c398e42fab3f960742bf19771b87c22e944"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21055,
+            "sha256": "ac2150a74f97f099247faf27017712817da17eece7177d8b475fe0b41e2f9d77"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20338,
+            "sha256": "19bcd0d81c783af283848fc2bad5986726a128c37ade1c6f3ce897903639b99e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44866,
+            "sha256": "77e8f8f454dd18f57def37166fa7705be0215b861e8a2f250a6a9c3c199b4edd"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9320,
+            "sha256": "ec244fa4fc18a1150883c3f329a45362a1b7fcd744003d26f0ec742b70757122"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+          "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "80a55a87e45ee7f6474f489e"
+    },
+    {
+      "receipt_id": "mb-murano-os-warrant-chamber-handoff-v1__receipt_0004",
+      "project_id": "mb-murano-os-warrant-chamber-handoff-v1",
+      "project_title": "Warrant Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Warrant Chamber Interface And Instrument Plane",
+      "component_case_id": "mb-murano-os-warrant-chamber-handoff-v1__0004__warrant-chamber-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44481,
+            "sha256": "7f2ab094dae984c5364ba056853f150d93abc0813ff4cdf4db23a20d2764a674"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36213,
+            "sha256": "b0743429676f63350037f7b8540c1c398e42fab3f960742bf19771b87c22e944"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21055,
+            "sha256": "ac2150a74f97f099247faf27017712817da17eece7177d8b475fe0b41e2f9d77"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20338,
+            "sha256": "19bcd0d81c783af283848fc2bad5986726a128c37ade1c6f3ce897903639b99e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44866,
+            "sha256": "77e8f8f454dd18f57def37166fa7705be0215b861e8a2f250a6a9c3c199b4edd"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9320,
+            "sha256": "ec244fa4fc18a1150883c3f329a45362a1b7fcd744003d26f0ec742b70757122"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+          "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f072a93ca3a692a3f9c094ec"
+    },
+    {
+      "receipt_id": "mb-murano-os-warrant-chamber-handoff-v1__receipt_0005",
+      "project_id": "mb-murano-os-warrant-chamber-handoff-v1",
+      "project_title": "Warrant Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Warrant Chamber Integration Path",
+      "component_case_id": "mb-murano-os-warrant-chamber-handoff-v1__0005__warrant-chamber-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. When to reach for this: when building or specifying a scholarly/publication-grade evidence-governance environment; when a doctoral committee, editorial board.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. When to reach for this: when building or specifying a scholarly/publication-grade evidence-governance environment; when a doctoral committee, editorial board.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44481,
+            "sha256": "7f2ab094dae984c5364ba056853f150d93abc0813ff4cdf4db23a20d2764a674"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36213,
+            "sha256": "b0743429676f63350037f7b8540c1c398e42fab3f960742bf19771b87c22e944"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21055,
+            "sha256": "ac2150a74f97f099247faf27017712817da17eece7177d8b475fe0b41e2f9d77"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20338,
+            "sha256": "19bcd0d81c783af283848fc2bad5986726a128c37ade1c6f3ce897903639b99e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44866,
+            "sha256": "77e8f8f454dd18f57def37166fa7705be0215b861e8a2f250a6a9c3c199b4edd"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9320,
+            "sha256": "ec244fa4fc18a1150883c3f329a45362a1b7fcd744003d26f0ec742b70757122"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+          "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1696687aad7989a94a28df3f"
+    },
+    {
+      "receipt_id": "mb-murano-os-warrant-chamber-handoff-v1__receipt_0006",
+      "project_id": "mb-murano-os-warrant-chamber-handoff-v1",
+      "project_title": "Warrant Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Warrant Chamber Proof Boundary",
+      "component_case_id": "mb-murano-os-warrant-chamber-handoff-v1__0006__warrant-chamber-proof-boundary",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44481,
+            "sha256": "7f2ab094dae984c5364ba056853f150d93abc0813ff4cdf4db23a20d2764a674"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36213,
+            "sha256": "b0743429676f63350037f7b8540c1c398e42fab3f960742bf19771b87c22e944"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21055,
+            "sha256": "ac2150a74f97f099247faf27017712817da17eece7177d8b475fe0b41e2f9d77"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20338,
+            "sha256": "19bcd0d81c783af283848fc2bad5986726a128c37ade1c6f3ce897903639b99e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44866,
+            "sha256": "77e8f8f454dd18f57def37166fa7705be0215b861e8a2f250a6a9c3c199b4edd"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9320,
+            "sha256": "ec244fa4fc18a1150883c3f329a45362a1b7fcd744003d26f0ec742b70757122"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+          "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "629c7758ea3eaa6fee4bfa30"
+    },
+    {
+      "receipt_id": "mb-murano-os-warrant-chamber-handoff-v1__receipt_0007",
+      "project_id": "mb-murano-os-warrant-chamber-handoff-v1",
+      "project_title": "Warrant Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Warrant Chamber Next Build Test",
+      "component_case_id": "mb-murano-os-warrant-chamber-handoff-v1__0007__warrant-chamber-next-build-test",
+      "claim_to_demonstrate": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44481,
+            "sha256": "7f2ab094dae984c5364ba056853f150d93abc0813ff4cdf4db23a20d2764a674"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36213,
+            "sha256": "b0743429676f63350037f7b8540c1c398e42fab3f960742bf19771b87c22e944"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21055,
+            "sha256": "ac2150a74f97f099247faf27017712817da17eece7177d8b475fe0b41e2f9d77"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20338,
+            "sha256": "19bcd0d81c783af283848fc2bad5986726a128c37ade1c6f3ce897903639b99e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44866,
+            "sha256": "77e8f8f454dd18f57def37166fa7705be0215b861e8a2f250a6a9c3c199b4edd"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9320,
+            "sha256": "ec244fa4fc18a1150883c3f329a45362a1b7fcd744003d26f0ec742b70757122"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+          "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "76ae2d634524c43d8873bd4f"
+    },
+    {
+      "receipt_id": "mb-murano-os-warrant-chamber-handoff-v1__receipt_0008",
+      "project_id": "mb-murano-os-warrant-chamber-handoff-v1",
+      "project_title": "Warrant Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Warrant Chamber / docs/01_Master_Spec.md",
+      "component_case_id": "mb-murano-os-warrant-chamber-handoff-v1__0008__warrant-chamber-docs-01-master-spec-md",
+      "claim_to_demonstrate": "treats `docs/01_Master_Spec.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Master_Spec.md — docs/02_Screen_Blueprint.md — docs/03_Data_Model_and_Information_Architecture.md.",
+      "input_fixture": "project source text and the named component `docs/01_Master_Spec.md`",
+      "operation_under_test": "treats `docs/01_Master_Spec.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Master_Spec.md — docs/02_Screen_Blueprint.md — docs/03_Data_Model_and_Information_Architecture.md.",
+      "expected_output": "inspectable implementation evidence tied to `docs/01_Master_Spec.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5962979580ee3741e5bc67ce",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44481,
+            "sha256": "7f2ab094dae984c5364ba056853f150d93abc0813ff4cdf4db23a20d2764a674"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36213,
+            "sha256": "b0743429676f63350037f7b8540c1c398e42fab3f960742bf19771b87c22e944"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21055,
+            "sha256": "ac2150a74f97f099247faf27017712817da17eece7177d8b475fe0b41e2f9d77"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20338,
+            "sha256": "19bcd0d81c783af283848fc2bad5986726a128c37ade1c6f3ce897903639b99e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44866,
+            "sha256": "77e8f8f454dd18f57def37166fa7705be0215b861e8a2f250a6a9c3c199b4edd"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9320,
+            "sha256": "ec244fa4fc18a1150883c3f329a45362a1b7fcd744003d26f0ec742b70757122"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+          "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7ec8e7ac388b2a29a74dcd73"
+    },
+    {
+      "receipt_id": "mb-murano-os-warrant-chamber-handoff-v1__receipt_0009",
+      "project_id": "mb-murano-os-warrant-chamber-handoff-v1",
+      "project_title": "Warrant Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Warrant Chamber / docs/02_Screen_Blueprint.md",
+      "component_case_id": "mb-murano-os-warrant-chamber-handoff-v1__0009__warrant-chamber-docs-02-screen-blueprint-md",
+      "claim_to_demonstrate": "treats `docs/02_Screen_Blueprint.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Master_Spec.md — docs/02_Screen_Blueprint.md —.",
+      "input_fixture": "project source text and the named component `docs/02_Screen_Blueprint.md`",
+      "operation_under_test": "treats `docs/02_Screen_Blueprint.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Master_Spec.md — docs/02_Screen_Blueprint.md —.",
+      "expected_output": "inspectable implementation evidence tied to `docs/02_Screen_Blueprint.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5962979580ee3741e5bc67ce",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44481,
+            "sha256": "7f2ab094dae984c5364ba056853f150d93abc0813ff4cdf4db23a20d2764a674"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36213,
+            "sha256": "b0743429676f63350037f7b8540c1c398e42fab3f960742bf19771b87c22e944"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21055,
+            "sha256": "ac2150a74f97f099247faf27017712817da17eece7177d8b475fe0b41e2f9d77"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20338,
+            "sha256": "19bcd0d81c783af283848fc2bad5986726a128c37ade1c6f3ce897903639b99e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44866,
+            "sha256": "77e8f8f454dd18f57def37166fa7705be0215b861e8a2f250a6a9c3c199b4edd"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9320,
+            "sha256": "ec244fa4fc18a1150883c3f329a45362a1b7fcd744003d26f0ec742b70757122"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+          "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6bd63a1fe8ffed5fc1b112cb"
+    },
+    {
+      "receipt_id": "mb-murano-os-warrant-chamber-handoff-v1__receipt_0010",
+      "project_id": "mb-murano-os-warrant-chamber-handoff-v1",
+      "project_title": "Warrant Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Warrant Chamber / docs/03_Data_Model_and_Information_Architecture.md",
+      "component_case_id": "mb-murano-os-warrant-chamber-handoff-v1__0010__warrant-chamber-docs-03-data-model-and-information-architecture-md",
+      "claim_to_demonstrate": "treats `docs/03_Data_Model_and_Information_Architecture.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Master_Spec.md — docs/02_Screen_Blueprint.md —.",
+      "input_fixture": "project source text and the named component `docs/03_Data_Model_and_Information_Architecture.md`",
+      "operation_under_test": "treats `docs/03_Data_Model_and_Information_Architecture.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Master_Spec.md — docs/02_Screen_Blueprint.md —.",
+      "expected_output": "inspectable implementation evidence tied to `docs/03_Data_Model_and_Information_Architecture.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5962979580ee3741e5bc67ce",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44481,
+            "sha256": "7f2ab094dae984c5364ba056853f150d93abc0813ff4cdf4db23a20d2764a674"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36213,
+            "sha256": "b0743429676f63350037f7b8540c1c398e42fab3f960742bf19771b87c22e944"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21055,
+            "sha256": "ac2150a74f97f099247faf27017712817da17eece7177d8b475fe0b41e2f9d77"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20338,
+            "sha256": "19bcd0d81c783af283848fc2bad5986726a128c37ade1c6f3ce897903639b99e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44866,
+            "sha256": "77e8f8f454dd18f57def37166fa7705be0215b861e8a2f250a6a9c3c199b4edd"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9320,
+            "sha256": "ec244fa4fc18a1150883c3f329a45362a1b7fcd744003d26f0ec742b70757122"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+          "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "138777f0dfda88ede4c400be"
+    },
+    {
+      "receipt_id": "mb-murano-os-warrant-chamber-handoff-v1__receipt_0011",
+      "project_id": "mb-murano-os-warrant-chamber-handoff-v1",
+      "project_title": "Warrant Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Warrant Chamber / docs/04_Workflows_and_States.md",
+      "component_case_id": "mb-murano-os-warrant-chamber-handoff-v1__0011__warrant-chamber-docs-04-workflows-and-states-md",
+      "claim_to_demonstrate": "treats `docs/04_Workflows_and_States.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Master_Spec.md — docs/02_Screen_Blueprint.md —.",
+      "input_fixture": "project source text and the named component `docs/04_Workflows_and_States.md`",
+      "operation_under_test": "treats `docs/04_Workflows_and_States.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Master_Spec.md — docs/02_Screen_Blueprint.md —.",
+      "expected_output": "inspectable implementation evidence tied to `docs/04_Workflows_and_States.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5962979580ee3741e5bc67ce",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44481,
+            "sha256": "7f2ab094dae984c5364ba056853f150d93abc0813ff4cdf4db23a20d2764a674"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36213,
+            "sha256": "b0743429676f63350037f7b8540c1c398e42fab3f960742bf19771b87c22e944"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21055,
+            "sha256": "ac2150a74f97f099247faf27017712817da17eece7177d8b475fe0b41e2f9d77"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20338,
+            "sha256": "19bcd0d81c783af283848fc2bad5986726a128c37ade1c6f3ce897903639b99e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44866,
+            "sha256": "77e8f8f454dd18f57def37166fa7705be0215b861e8a2f250a6a9c3c199b4edd"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9320,
+            "sha256": "ec244fa4fc18a1150883c3f329a45362a1b7fcd744003d26f0ec742b70757122"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+          "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3e864f2c76434c299487cfb5"
+    },
+    {
+      "receipt_id": "mb-murano-os-warrant-chamber-handoff-v1__receipt_0012",
+      "project_id": "mb-murano-os-warrant-chamber-handoff-v1",
+      "project_title": "Warrant Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Warrant Chamber / docs/13_Schema.sql",
+      "component_case_id": "mb-murano-os-warrant-chamber-handoff-v1__0012__warrant-chamber-docs-13-schema-sql",
+      "claim_to_demonstrate": "treats `docs/13_Schema.sql` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Master_Spec.md — docs/02_Screen_Blueprint.md — docs/03_Data_Model_and_Information_Architecture.md —.",
+      "input_fixture": "project source text and the named component `docs/13_Schema.sql`",
+      "operation_under_test": "treats `docs/13_Schema.sql` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Master_Spec.md — docs/02_Screen_Blueprint.md — docs/03_Data_Model_and_Information_Architecture.md —.",
+      "expected_output": "inspectable implementation evidence tied to `docs/13_Schema.sql`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5962979580ee3741e5bc67ce",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44481,
+            "sha256": "7f2ab094dae984c5364ba056853f150d93abc0813ff4cdf4db23a20d2764a674"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36213,
+            "sha256": "b0743429676f63350037f7b8540c1c398e42fab3f960742bf19771b87c22e944"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21055,
+            "sha256": "ac2150a74f97f099247faf27017712817da17eece7177d8b475fe0b41e2f9d77"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20338,
+            "sha256": "19bcd0d81c783af283848fc2bad5986726a128c37ade1c6f3ce897903639b99e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44866,
+            "sha256": "77e8f8f454dd18f57def37166fa7705be0215b861e8a2f250a6a9c3c199b4edd"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9320,
+            "sha256": "ec244fa4fc18a1150883c3f329a45362a1b7fcd744003d26f0ec742b70757122"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+          "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5f490b28b4c597301b15225f"
+    },
+    {
+      "receipt_id": "mb-murano-os-warrant-chamber-handoff-v1__receipt_0013",
+      "project_id": "mb-murano-os-warrant-chamber-handoff-v1",
+      "project_title": "Warrant Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Warrant Chamber / docs/14_GraphQL_Types.graphql",
+      "component_case_id": "mb-murano-os-warrant-chamber-handoff-v1__0013__warrant-chamber-docs-14-graphql-types-graphql",
+      "claim_to_demonstrate": "treats `docs/14_GraphQL_Types.graphql` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Master_Spec.md — docs/02_Screen_Blueprint.md —.",
+      "input_fixture": "project source text and the named component `docs/14_GraphQL_Types.graphql`",
+      "operation_under_test": "treats `docs/14_GraphQL_Types.graphql` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — docs/01_Master_Spec.md — docs/02_Screen_Blueprint.md —.",
+      "expected_output": "inspectable implementation evidence tied to `docs/14_GraphQL_Types.graphql`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5962979580ee3741e5bc67ce",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44481,
+            "sha256": "7f2ab094dae984c5364ba056853f150d93abc0813ff4cdf4db23a20d2764a674"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36213,
+            "sha256": "b0743429676f63350037f7b8540c1c398e42fab3f960742bf19771b87c22e944"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21055,
+            "sha256": "ac2150a74f97f099247faf27017712817da17eece7177d8b475fe0b41e2f9d77"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20338,
+            "sha256": "19bcd0d81c783af283848fc2bad5986726a128c37ade1c6f3ce897903639b99e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44866,
+            "sha256": "77e8f8f454dd18f57def37166fa7705be0215b861e8a2f250a6a9c3c199b4edd"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9320,
+            "sha256": "ec244fa4fc18a1150883c3f329a45362a1b7fcd744003d26f0ec742b70757122"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+          "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "208550b8d81c6f50ed3a9317"
+    },
+    {
+      "receipt_id": "mb-murano-os-warrant-chamber-handoff-v1__receipt_0014",
+      "project_id": "mb-murano-os-warrant-chamber-handoff-v1",
+      "project_title": "Warrant Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Warrant Chamber / docs/11_Design_Tokens.json",
+      "component_case_id": "mb-murano-os-warrant-chamber-handoff-v1__0014__warrant-chamber-docs-11-design-tokens-json",
+      "claim_to_demonstrate": "treats `docs/11_Design_Tokens.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: docs/13_Schema.sql — complete Postgres DDL (23 tables) - docs/14_GraphQL_Types.graphql — API type definitions -.",
+      "input_fixture": "project source text and the named component `docs/11_Design_Tokens.json`",
+      "operation_under_test": "treats `docs/11_Design_Tokens.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: docs/13_Schema.sql — complete Postgres DDL (23 tables) - docs/14_GraphQL_Types.graphql — API type definitions -.",
+      "expected_output": "inspectable implementation evidence tied to `docs/11_Design_Tokens.json`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "25d33d875c043a38a6fa2e49",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44481,
+            "sha256": "7f2ab094dae984c5364ba056853f150d93abc0813ff4cdf4db23a20d2764a674"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36213,
+            "sha256": "b0743429676f63350037f7b8540c1c398e42fab3f960742bf19771b87c22e944"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21055,
+            "sha256": "ac2150a74f97f099247faf27017712817da17eece7177d8b475fe0b41e2f9d77"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20338,
+            "sha256": "19bcd0d81c783af283848fc2bad5986726a128c37ade1c6f3ce897903639b99e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44866,
+            "sha256": "77e8f8f454dd18f57def37166fa7705be0215b861e8a2f250a6a9c3c199b4edd"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9320,
+            "sha256": "ec244fa4fc18a1150883c3f329a45362a1b7fcd744003d26f0ec742b70757122"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+          "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "508177e8e3524ff998e45f39"
+    },
+    {
+      "receipt_id": "mb-murano-os-warrant-chamber-handoff-v1__receipt_0015",
+      "project_id": "mb-murano-os-warrant-chamber-handoff-v1",
+      "project_title": "Warrant Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Warrant Chamber / docs/12_Event_Taxonomy.json",
+      "component_case_id": "mb-murano-os-warrant-chamber-handoff-v1__0015__warrant-chamber-docs-12-event-taxonomy-json",
+      "claim_to_demonstrate": "treats `docs/12_Event_Taxonomy.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: docs/13_Schema.sql — complete Postgres DDL (23 tables) - docs/14_GraphQL_Types.graphql — API type definitions -.",
+      "input_fixture": "project source text and the named component `docs/12_Event_Taxonomy.json`",
+      "operation_under_test": "treats `docs/12_Event_Taxonomy.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: docs/13_Schema.sql — complete Postgres DDL (23 tables) - docs/14_GraphQL_Types.graphql — API type definitions -.",
+      "expected_output": "inspectable implementation evidence tied to `docs/12_Event_Taxonomy.json`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "25d33d875c043a38a6fa2e49",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44481,
+            "sha256": "7f2ab094dae984c5364ba056853f150d93abc0813ff4cdf4db23a20d2764a674"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36213,
+            "sha256": "b0743429676f63350037f7b8540c1c398e42fab3f960742bf19771b87c22e944"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21055,
+            "sha256": "ac2150a74f97f099247faf27017712817da17eece7177d8b475fe0b41e2f9d77"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20338,
+            "sha256": "19bcd0d81c783af283848fc2bad5986726a128c37ade1c6f3ce897903639b99e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44866,
+            "sha256": "77e8f8f454dd18f57def37166fa7705be0215b861e8a2f250a6a9c3c199b4edd"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9320,
+            "sha256": "ec244fa4fc18a1150883c3f329a45362a1b7fcd744003d26f0ec742b70757122"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+          "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b44be6156b07657ec60ee43a"
+    },
+    {
+      "receipt_id": "mb-murano-os-warrant-chamber-handoff-v1__receipt_0016",
+      "project_id": "mb-murano-os-warrant-chamber-handoff-v1",
+      "project_title": "Warrant Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Warrant Chamber / docs/08_Component_Inventory.csv",
+      "component_case_id": "mb-murano-os-warrant-chamber-handoff-v1__0016__warrant-chamber-docs-08-component-inventory-csv",
+      "claim_to_demonstrate": "treats `docs/08_Component_Inventory.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: docs/08_Component_Inventory.csv, docs/09_Frame_Map.csv, docs/10_Role_Permission_Matrix.csv - 6 editable SVG.",
+      "input_fixture": "project source text and the named component `docs/08_Component_Inventory.csv`",
+      "operation_under_test": "treats `docs/08_Component_Inventory.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: docs/08_Component_Inventory.csv, docs/09_Frame_Map.csv, docs/10_Role_Permission_Matrix.csv - 6 editable SVG.",
+      "expected_output": "inspectable implementation evidence tied to `docs/08_Component_Inventory.csv`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fd750181c7dc0d7094348a22",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44481,
+            "sha256": "7f2ab094dae984c5364ba056853f150d93abc0813ff4cdf4db23a20d2764a674"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36213,
+            "sha256": "b0743429676f63350037f7b8540c1c398e42fab3f960742bf19771b87c22e944"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21055,
+            "sha256": "ac2150a74f97f099247faf27017712817da17eece7177d8b475fe0b41e2f9d77"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20338,
+            "sha256": "19bcd0d81c783af283848fc2bad5986726a128c37ade1c6f3ce897903639b99e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44866,
+            "sha256": "77e8f8f454dd18f57def37166fa7705be0215b861e8a2f250a6a9c3c199b4edd"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9320,
+            "sha256": "ec244fa4fc18a1150883c3f329a45362a1b7fcd744003d26f0ec742b70757122"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+          "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5843e9504409d019bf04dce9"
+    },
+    {
+      "receipt_id": "mb-murano-os-warrant-chamber-handoff-v1__receipt_0017",
+      "project_id": "mb-murano-os-warrant-chamber-handoff-v1",
+      "project_title": "Warrant Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Warrant Chamber / docs/09_Frame_Map.csv",
+      "component_case_id": "mb-murano-os-warrant-chamber-handoff-v1__0017__warrant-chamber-docs-09-frame-map-csv",
+      "claim_to_demonstrate": "treats `docs/09_Frame_Map.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: docs/09_Frame_Map.csv, docs/10_Role_Permission_Matrix.csv - 6 editable SVG diagrams (room architecture, claim halo.",
+      "input_fixture": "project source text and the named component `docs/09_Frame_Map.csv`",
+      "operation_under_test": "treats `docs/09_Frame_Map.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: docs/09_Frame_Map.csv, docs/10_Role_Permission_Matrix.csv - 6 editable SVG diagrams (room architecture, claim halo.",
+      "expected_output": "inspectable implementation evidence tied to `docs/09_Frame_Map.csv`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "415b4aaf950a60045268aa5e",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44481,
+            "sha256": "7f2ab094dae984c5364ba056853f150d93abc0813ff4cdf4db23a20d2764a674"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36213,
+            "sha256": "b0743429676f63350037f7b8540c1c398e42fab3f960742bf19771b87c22e944"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21055,
+            "sha256": "ac2150a74f97f099247faf27017712817da17eece7177d8b475fe0b41e2f9d77"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20338,
+            "sha256": "19bcd0d81c783af283848fc2bad5986726a128c37ade1c6f3ce897903639b99e"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44866,
+            "sha256": "77e8f8f454dd18f57def37166fa7705be0215b861e8a2f250a6a9c3c199b4edd"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9320,
+            "sha256": "ec244fa4fc18a1150883c3f329a45362a1b7fcd744003d26f0ec742b70757122"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-os-warrant-chamber-handoff-v1/README.md",
+          "proof_builds/mb-murano-os-warrant-chamber-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-os-warrant-chamber-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9a2ce7b8aafe667fc0899ba9"
+    }
+  ]
+}

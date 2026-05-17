@@ -1,0 +1,1467 @@
+{
+  "project": {
+    "project_id": "mb-rfp-handoff-ch01-02-done",
+    "title": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov)"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-rfp-handoff-ch01-02-done__receipt_0001",
+      "project_id": "mb-rfp-handoff-ch01-02-done",
+      "project_title": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov) Handoff Identity",
+      "component_case_id": "mb-rfp-handoff-ch01-02-done__0001__chapter-analysis-pipeline-chs-1-feklyunina-2-morozov-handoff-identity",
+      "claim_to_demonstrate": "This is a reusable chapter-analysis pipeline applied to the first two chapters of the Routledge Handbook of Russian Foreign Policy.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "This is a reusable chapter-analysis pipeline applied to the first two chapters of the Routledge Handbook of Russian Foreign Policy.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43439,
+            "sha256": "6d7aa113d775ec5da8595c24c6fef27a1cfd7d9e67a954c8a5ea95eadba48626"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36117,
+            "sha256": "634d179bd2d9a4fb32275301d3fd5de1f00c904a8a9baf94a2334e5f64cd0a71"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20877,
+            "sha256": "43cd9a8fd78bebf676df117d4be161d1c51372935e9ae3120da399092aac45dc"
+          },
+          {
+            "relative_path": "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21113,
+            "sha256": "5318e271dfcfbe60ef8c1c0d8d873580d003f73481e5790e40bc1004de73aba7"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46740,
+            "sha256": "1b34701600679718edb120f00fac5fa2cd97bcf25af7e309d148715700cbdf92"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10369,
+            "sha256": "9954f9e98ef9f78e90f019d7e1e7c0002893cc9801c6f2d3ffe8aedc3660dc20"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+          "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f6b799caa7cb9e5434b27ff6"
+    },
+    {
+      "receipt_id": "mb-rfp-handoff-ch01-02-done__receipt_0002",
+      "project_id": "mb-rfp-handoff-ch01-02-done",
+      "project_title": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov) Room Task Model",
+      "component_case_id": "mb-rfp-handoff-ch01-02-done__0002__chapter-analysis-pipeline-chs-1-feklyunina-2-morozov-room-task-model",
+      "claim_to_demonstrate": "The mechanism is method operationalization: name the analytic technique, define its use condition, connect it to a case or judgment problem, record failure modes, and decide whether it is a live method page or a reference packet.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "The mechanism is method operationalization: name the analytic technique, define its use condition, connect it to a case or judgment problem, record failure modes, and decide whether it is a live method page or a reference packet.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43439,
+            "sha256": "6d7aa113d775ec5da8595c24c6fef27a1cfd7d9e67a954c8a5ea95eadba48626"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36117,
+            "sha256": "634d179bd2d9a4fb32275301d3fd5de1f00c904a8a9baf94a2334e5f64cd0a71"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20877,
+            "sha256": "43cd9a8fd78bebf676df117d4be161d1c51372935e9ae3120da399092aac45dc"
+          },
+          {
+            "relative_path": "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21113,
+            "sha256": "5318e271dfcfbe60ef8c1c0d8d873580d003f73481e5790e40bc1004de73aba7"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46740,
+            "sha256": "1b34701600679718edb120f00fac5fa2cd97bcf25af7e309d148715700cbdf92"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10369,
+            "sha256": "9954f9e98ef9f78e90f019d7e1e7c0002893cc9801c6f2d3ffe8aedc3660dc20"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+          "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "57713e5481355ba364020d9b"
+    },
+    {
+      "receipt_id": "mb-rfp-handoff-ch01-02-done__receipt_0003",
+      "project_id": "mb-rfp-handoff-ch01-02-done",
+      "project_title": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov) Data Schema And Persistence Plan",
+      "component_case_id": "mb-rfp-handoff-ch01-02-done__0003__chapter-analysis-pipeline-chs-1-feklyunina-2-morozov-data-schema-and-persistence-plan",
+      "claim_to_demonstrate": "Intelligence tradecraft, counterintelligence, and analytic method. Use source library intelligence titles as method authority and intelligence-domain stressors. Vision: Present intelligence pages as disciplined analytic-method and tradecraft demonstrations.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Intelligence tradecraft, counterintelligence, and analytic method. Use source library intelligence titles as method authority and intelligence-domain stressors. Vision: Present intelligence pages as disciplined analytic-method and tradecraft demonstrations.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43439,
+            "sha256": "6d7aa113d775ec5da8595c24c6fef27a1cfd7d9e67a954c8a5ea95eadba48626"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36117,
+            "sha256": "634d179bd2d9a4fb32275301d3fd5de1f00c904a8a9baf94a2334e5f64cd0a71"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20877,
+            "sha256": "43cd9a8fd78bebf676df117d4be161d1c51372935e9ae3120da399092aac45dc"
+          },
+          {
+            "relative_path": "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21113,
+            "sha256": "5318e271dfcfbe60ef8c1c0d8d873580d003f73481e5790e40bc1004de73aba7"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46740,
+            "sha256": "1b34701600679718edb120f00fac5fa2cd97bcf25af7e309d148715700cbdf92"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10369,
+            "sha256": "9954f9e98ef9f78e90f019d7e1e7c0002893cc9801c6f2d3ffe8aedc3660dc20"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+          "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "076e20754424f8a32691a6f8"
+    },
+    {
+      "receipt_id": "mb-rfp-handoff-ch01-02-done__receipt_0004",
+      "project_id": "mb-rfp-handoff-ch01-02-done",
+      "project_title": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov) Interface And Instrument Plane",
+      "component_case_id": "mb-rfp-handoff-ch01-02-done__0004__chapter-analysis-pipeline-chs-1-feklyunina-2-morozov-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43439,
+            "sha256": "6d7aa113d775ec5da8595c24c6fef27a1cfd7d9e67a954c8a5ea95eadba48626"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36117,
+            "sha256": "634d179bd2d9a4fb32275301d3fd5de1f00c904a8a9baf94a2334e5f64cd0a71"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20877,
+            "sha256": "43cd9a8fd78bebf676df117d4be161d1c51372935e9ae3120da399092aac45dc"
+          },
+          {
+            "relative_path": "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21113,
+            "sha256": "5318e271dfcfbe60ef8c1c0d8d873580d003f73481e5790e40bc1004de73aba7"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46740,
+            "sha256": "1b34701600679718edb120f00fac5fa2cd97bcf25af7e309d148715700cbdf92"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10369,
+            "sha256": "9954f9e98ef9f78e90f019d7e1e7c0002893cc9801c6f2d3ffe8aedc3660dc20"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+          "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b09c38f39d54ed201a272e51"
+    },
+    {
+      "receipt_id": "mb-rfp-handoff-ch01-02-done__receipt_0005",
+      "project_id": "mb-rfp-handoff-ch01-02-done",
+      "project_title": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov) Integration Path",
+      "component_case_id": "mb-rfp-handoff-ch01-02-done__0005__chapter-analysis-pipeline-chs-1-feklyunina-2-morozov-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. For each new chapter N: (1) create chapter_XX_*/ folder; (2) produce analysis.md using templates/standard_chapter_schema.md; (3) produce metadata.json; (4).",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. For each new chapter N: (1) create chapter_XX_*/ folder; (2) produce analysis.md using templates/standard_chapter_schema.md; (3) produce metadata.json; (4).",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43439,
+            "sha256": "6d7aa113d775ec5da8595c24c6fef27a1cfd7d9e67a954c8a5ea95eadba48626"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36117,
+            "sha256": "634d179bd2d9a4fb32275301d3fd5de1f00c904a8a9baf94a2334e5f64cd0a71"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20877,
+            "sha256": "43cd9a8fd78bebf676df117d4be161d1c51372935e9ae3120da399092aac45dc"
+          },
+          {
+            "relative_path": "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21113,
+            "sha256": "5318e271dfcfbe60ef8c1c0d8d873580d003f73481e5790e40bc1004de73aba7"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46740,
+            "sha256": "1b34701600679718edb120f00fac5fa2cd97bcf25af7e309d148715700cbdf92"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10369,
+            "sha256": "9954f9e98ef9f78e90f019d7e1e7c0002893cc9801c6f2d3ffe8aedc3660dc20"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+          "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "47a22cdcaa86403d6eabccd6"
+    },
+    {
+      "receipt_id": "mb-rfp-handoff-ch01-02-done__receipt_0006",
+      "project_id": "mb-rfp-handoff-ch01-02-done",
+      "project_title": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov) Proof Boundary",
+      "component_case_id": "mb-rfp-handoff-ch01-02-done__0006__chapter-analysis-pipeline-chs-1-feklyunina-2-morozov-proof-boundary",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43439,
+            "sha256": "6d7aa113d775ec5da8595c24c6fef27a1cfd7d9e67a954c8a5ea95eadba48626"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36117,
+            "sha256": "634d179bd2d9a4fb32275301d3fd5de1f00c904a8a9baf94a2334e5f64cd0a71"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20877,
+            "sha256": "43cd9a8fd78bebf676df117d4be161d1c51372935e9ae3120da399092aac45dc"
+          },
+          {
+            "relative_path": "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21113,
+            "sha256": "5318e271dfcfbe60ef8c1c0d8d873580d003f73481e5790e40bc1004de73aba7"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46740,
+            "sha256": "1b34701600679718edb120f00fac5fa2cd97bcf25af7e309d148715700cbdf92"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10369,
+            "sha256": "9954f9e98ef9f78e90f019d7e1e7c0002893cc9801c6f2d3ffe8aedc3660dc20"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+          "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d60ca8bfc1c9ec261fd60159"
+    },
+    {
+      "receipt_id": "mb-rfp-handoff-ch01-02-done__receipt_0007",
+      "project_id": "mb-rfp-handoff-ch01-02-done",
+      "project_title": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov) Next Build Test",
+      "component_case_id": "mb-rfp-handoff-ch01-02-done__0007__chapter-analysis-pipeline-chs-1-feklyunina-2-morozov-next-build-test",
+      "claim_to_demonstrate": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43439,
+            "sha256": "6d7aa113d775ec5da8595c24c6fef27a1cfd7d9e67a954c8a5ea95eadba48626"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36117,
+            "sha256": "634d179bd2d9a4fb32275301d3fd5de1f00c904a8a9baf94a2334e5f64cd0a71"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20877,
+            "sha256": "43cd9a8fd78bebf676df117d4be161d1c51372935e9ae3120da399092aac45dc"
+          },
+          {
+            "relative_path": "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21113,
+            "sha256": "5318e271dfcfbe60ef8c1c0d8d873580d003f73481e5790e40bc1004de73aba7"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46740,
+            "sha256": "1b34701600679718edb120f00fac5fa2cd97bcf25af7e309d148715700cbdf92"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10369,
+            "sha256": "9954f9e98ef9f78e90f019d7e1e7c0002893cc9801c6f2d3ffe8aedc3660dc20"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+          "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "aeb07d03252f038cd1480a9b"
+    },
+    {
+      "receipt_id": "mb-rfp-handoff-ch01-02-done__receipt_0008",
+      "project_id": "mb-rfp-handoff-ch01-02-done",
+      "project_title": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov) / analysis.md",
+      "component_case_id": "mb-rfp-handoff-ch01-02-done__0008__chapter-analysis-pipeline-chs-1-feklyunina-2-morozov-analysis-md",
+      "claim_to_demonstrate": "treats `analysis.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: (2) produce analysis.md using templates/standard_chapter_schema.md; (3) produce metadata.json; (4) append row to.",
+      "input_fixture": "project source text and the named component `analysis.md`",
+      "operation_under_test": "treats `analysis.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: (2) produce analysis.md using templates/standard_chapter_schema.md; (3) produce metadata.json; (4) append row to.",
+      "expected_output": "inspectable implementation evidence tied to `analysis.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fb5ebf1ea7eef20916c2f121",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43439,
+            "sha256": "6d7aa113d775ec5da8595c24c6fef27a1cfd7d9e67a954c8a5ea95eadba48626"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36117,
+            "sha256": "634d179bd2d9a4fb32275301d3fd5de1f00c904a8a9baf94a2334e5f64cd0a71"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20877,
+            "sha256": "43cd9a8fd78bebf676df117d4be161d1c51372935e9ae3120da399092aac45dc"
+          },
+          {
+            "relative_path": "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21113,
+            "sha256": "5318e271dfcfbe60ef8c1c0d8d873580d003f73481e5790e40bc1004de73aba7"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46740,
+            "sha256": "1b34701600679718edb120f00fac5fa2cd97bcf25af7e309d148715700cbdf92"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10369,
+            "sha256": "9954f9e98ef9f78e90f019d7e1e7c0002893cc9801c6f2d3ffe8aedc3660dc20"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+          "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "06de85af728e9a1d4ecdf577"
+    },
+    {
+      "receipt_id": "mb-rfp-handoff-ch01-02-done__receipt_0009",
+      "project_id": "mb-rfp-handoff-ch01-02-done",
+      "project_title": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov) / standard_chapter_schema.md",
+      "component_case_id": "mb-rfp-handoff-ch01-02-done__0009__chapter-analysis-pipeline-chs-1-feklyunina-2-morozov-standard-chapter-schema-md",
+      "claim_to_demonstrate": "treats `standard_chapter_schema.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: (2) produce analysis.md using templates/standard_chapter_schema.md; (3) produce metadata.json; (4) append row to.",
+      "input_fixture": "project source text and the named component `standard_chapter_schema.md`",
+      "operation_under_test": "treats `standard_chapter_schema.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: (2) produce analysis.md using templates/standard_chapter_schema.md; (3) produce metadata.json; (4) append row to.",
+      "expected_output": "inspectable implementation evidence tied to `standard_chapter_schema.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fb5ebf1ea7eef20916c2f121",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43439,
+            "sha256": "6d7aa113d775ec5da8595c24c6fef27a1cfd7d9e67a954c8a5ea95eadba48626"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36117,
+            "sha256": "634d179bd2d9a4fb32275301d3fd5de1f00c904a8a9baf94a2334e5f64cd0a71"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20877,
+            "sha256": "43cd9a8fd78bebf676df117d4be161d1c51372935e9ae3120da399092aac45dc"
+          },
+          {
+            "relative_path": "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21113,
+            "sha256": "5318e271dfcfbe60ef8c1c0d8d873580d003f73481e5790e40bc1004de73aba7"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46740,
+            "sha256": "1b34701600679718edb120f00fac5fa2cd97bcf25af7e309d148715700cbdf92"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10369,
+            "sha256": "9954f9e98ef9f78e90f019d7e1e7c0002893cc9801c6f2d3ffe8aedc3660dc20"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+          "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5287a34a2ba7d33b73f8f753"
+    },
+    {
+      "receipt_id": "mb-rfp-handoff-ch01-02-done__receipt_0010",
+      "project_id": "mb-rfp-handoff-ch01-02-done",
+      "project_title": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov) / metadata.json",
+      "component_case_id": "mb-rfp-handoff-ch01-02-done__0010__chapter-analysis-pipeline-chs-1-feklyunina-2-morozov-metadata-json",
+      "claim_to_demonstrate": "treats `metadata.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: (3) produce metadata.json; (4) append row to master_tracker.csv; (5) update cumulative_synthesis_seed.md with new themes.",
+      "input_fixture": "project source text and the named component `metadata.json`",
+      "operation_under_test": "treats `metadata.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: (3) produce metadata.json; (4) append row to master_tracker.csv; (5) update cumulative_synthesis_seed.md with new themes.",
+      "expected_output": "inspectable implementation evidence tied to `metadata.json`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "361ebf4f07bf0b7ad904538b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43439,
+            "sha256": "6d7aa113d775ec5da8595c24c6fef27a1cfd7d9e67a954c8a5ea95eadba48626"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36117,
+            "sha256": "634d179bd2d9a4fb32275301d3fd5de1f00c904a8a9baf94a2334e5f64cd0a71"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20877,
+            "sha256": "43cd9a8fd78bebf676df117d4be161d1c51372935e9ae3120da399092aac45dc"
+          },
+          {
+            "relative_path": "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21113,
+            "sha256": "5318e271dfcfbe60ef8c1c0d8d873580d003f73481e5790e40bc1004de73aba7"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46740,
+            "sha256": "1b34701600679718edb120f00fac5fa2cd97bcf25af7e309d148715700cbdf92"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10369,
+            "sha256": "9954f9e98ef9f78e90f019d7e1e7c0002893cc9801c6f2d3ffe8aedc3660dc20"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+          "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b38c0b6dcdf34e97a127916e"
+    },
+    {
+      "receipt_id": "mb-rfp-handoff-ch01-02-done__receipt_0011",
+      "project_id": "mb-rfp-handoff-ch01-02-done",
+      "project_title": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov) / master_tracker.csv",
+      "component_case_id": "mb-rfp-handoff-ch01-02-done__0011__chapter-analysis-pipeline-chs-1-feklyunina-2-morozov-master-tracker-csv",
+      "claim_to_demonstrate": "treats `master_tracker.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: (4) append row to master_tracker.csv; (5) update cumulative_synthesis_seed.md with new themes, overlaps with prior.",
+      "input_fixture": "project source text and the named component `master_tracker.csv`",
+      "operation_under_test": "treats `master_tracker.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: (4) append row to master_tracker.csv; (5) update cumulative_synthesis_seed.md with new themes, overlaps with prior.",
+      "expected_output": "inspectable implementation evidence tied to `master_tracker.csv`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e49a3a456f5b654c8b95514a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43439,
+            "sha256": "6d7aa113d775ec5da8595c24c6fef27a1cfd7d9e67a954c8a5ea95eadba48626"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36117,
+            "sha256": "634d179bd2d9a4fb32275301d3fd5de1f00c904a8a9baf94a2334e5f64cd0a71"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20877,
+            "sha256": "43cd9a8fd78bebf676df117d4be161d1c51372935e9ae3120da399092aac45dc"
+          },
+          {
+            "relative_path": "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21113,
+            "sha256": "5318e271dfcfbe60ef8c1c0d8d873580d003f73481e5790e40bc1004de73aba7"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46740,
+            "sha256": "1b34701600679718edb120f00fac5fa2cd97bcf25af7e309d148715700cbdf92"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10369,
+            "sha256": "9954f9e98ef9f78e90f019d7e1e7c0002893cc9801c6f2d3ffe8aedc3660dc20"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+          "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c6b111e442e4ebd63f403a7a"
+    },
+    {
+      "receipt_id": "mb-rfp-handoff-ch01-02-done__receipt_0012",
+      "project_id": "mb-rfp-handoff-ch01-02-done",
+      "project_title": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov) / cumulative_synthesis_seed.md",
+      "component_case_id": "mb-rfp-handoff-ch01-02-done__0012__chapter-analysis-pipeline-chs-1-feklyunina-2-morozov-cumulative-synthesis-seed-md",
+      "claim_to_demonstrate": "treats `cumulative_synthesis_seed.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: (5) update cumulative_synthesis_seed.md with new themes, overlaps with prior chapters, tensions/contradictions.",
+      "input_fixture": "project source text and the named component `cumulative_synthesis_seed.md`",
+      "operation_under_test": "treats `cumulative_synthesis_seed.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: (5) update cumulative_synthesis_seed.md with new themes, overlaps with prior chapters, tensions/contradictions.",
+      "expected_output": "inspectable implementation evidence tied to `cumulative_synthesis_seed.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "7ef56a9165fa43a841aca6e6",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43439,
+            "sha256": "6d7aa113d775ec5da8595c24c6fef27a1cfd7d9e67a954c8a5ea95eadba48626"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36117,
+            "sha256": "634d179bd2d9a4fb32275301d3fd5de1f00c904a8a9baf94a2334e5f64cd0a71"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20877,
+            "sha256": "43cd9a8fd78bebf676df117d4be161d1c51372935e9ae3120da399092aac45dc"
+          },
+          {
+            "relative_path": "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21113,
+            "sha256": "5318e271dfcfbe60ef8c1c0d8d873580d003f73481e5790e40bc1004de73aba7"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46740,
+            "sha256": "1b34701600679718edb120f00fac5fa2cd97bcf25af7e309d148715700cbdf92"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10369,
+            "sha256": "9954f9e98ef9f78e90f019d7e1e7c0002893cc9801c6f2d3ffe8aedc3660dc20"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+          "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b16e3957795d8ad0025d7f0a"
+    },
+    {
+      "receipt_id": "mb-rfp-handoff-ch01-02-done__receipt_0013",
+      "project_id": "mb-rfp-handoff-ch01-02-done",
+      "project_title": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov) / Routledge Handbook of Russian Foreign Policy. The",
+      "component_case_id": "mb-rfp-handoff-ch01-02-done__0013__chapter-analysis-pipeline-chs-1-feklyunina-2-morozov-routledge-handbook-of-russian-foreign",
+      "claim_to_demonstrate": "uses `Routledge Handbook of Russian Foreign Policy. The` as a named project component with a traceable role in the public mechanism. Source context: This is a reusable chapter-analysis pipeline applied to the first two chapters of the Routledge Handbook of.",
+      "input_fixture": "project source text and the named component `Routledge Handbook of Russian Foreign Policy. The`",
+      "operation_under_test": "uses `Routledge Handbook of Russian Foreign Policy. The` as a named project component with a traceable role in the public mechanism. Source context: This is a reusable chapter-analysis pipeline applied to the first two chapters of the Routledge Handbook of.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Routledge Handbook of Russian Foreign Policy. The`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "10c8ad58357ae6e9d23611d4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43439,
+            "sha256": "6d7aa113d775ec5da8595c24c6fef27a1cfd7d9e67a954c8a5ea95eadba48626"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36117,
+            "sha256": "634d179bd2d9a4fb32275301d3fd5de1f00c904a8a9baf94a2334e5f64cd0a71"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20877,
+            "sha256": "43cd9a8fd78bebf676df117d4be161d1c51372935e9ae3120da399092aac45dc"
+          },
+          {
+            "relative_path": "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21113,
+            "sha256": "5318e271dfcfbe60ef8c1c0d8d873580d003f73481e5790e40bc1004de73aba7"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46740,
+            "sha256": "1b34701600679718edb120f00fac5fa2cd97bcf25af7e309d148715700cbdf92"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10369,
+            "sha256": "9954f9e98ef9f78e90f019d7e1e7c0002893cc9801c6f2d3ffe8aedc3660dc20"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+          "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e169ba74b5207cb372bb7942"
+    },
+    {
+      "receipt_id": "mb-rfp-handoff-ch01-02-done__receipt_0014",
+      "project_id": "mb-rfp-handoff-ch01-02-done",
+      "project_title": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov) / Prioritize Capstone",
+      "component_case_id": "mb-rfp-handoff-ch01-02-done__0014__chapter-analysis-pipeline-chs-1-feklyunina-2-morozov-prioritize-capstone",
+      "claim_to_demonstrate": "uses `Prioritize Capstone` as a named project component with a traceable role in the public mechanism. Source context: Prioritize Capstone, SATS, CI, RAG integrity, and analyst-assurance pages for close-reading. Status: source library identified as candidate.",
+      "input_fixture": "project source text and the named component `Prioritize Capstone`",
+      "operation_under_test": "uses `Prioritize Capstone` as a named project component with a traceable role in the public mechanism. Source context: Prioritize Capstone, SATS, CI, RAG integrity, and analyst-assurance pages for close-reading. Status: source library identified as candidate.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Prioritize Capstone`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "da6aee46b4a86df2749d7951",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43439,
+            "sha256": "6d7aa113d775ec5da8595c24c6fef27a1cfd7d9e67a954c8a5ea95eadba48626"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36117,
+            "sha256": "634d179bd2d9a4fb32275301d3fd5de1f00c904a8a9baf94a2334e5f64cd0a71"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20877,
+            "sha256": "43cd9a8fd78bebf676df117d4be161d1c51372935e9ae3120da399092aac45dc"
+          },
+          {
+            "relative_path": "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21113,
+            "sha256": "5318e271dfcfbe60ef8c1c0d8d873580d003f73481e5790e40bc1004de73aba7"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46740,
+            "sha256": "1b34701600679718edb120f00fac5fa2cd97bcf25af7e309d148715700cbdf92"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10369,
+            "sha256": "9954f9e98ef9f78e90f019d7e1e7c0002893cc9801c6f2d3ffe8aedc3660dc20"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+          "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4f1c75fa6aa4832652323243"
+    },
+    {
+      "receipt_id": "mb-rfp-handoff-ch01-02-done__receipt_0015",
+      "project_id": "mb-rfp-handoff-ch01-02-done",
+      "project_title": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov) / Improving Intelligence Analysis",
+      "component_case_id": "mb-rfp-handoff-ch01-02-done__0015__chapter-analysis-pipeline-chs-1-feklyunina-2-morozov-improving-intelligence-analysis",
+      "claim_to_demonstrate": "uses `Improving Intelligence Analysis` as a named project component with a traceable role in the public mechanism. Source context: Improving Intelligence Analysis; Leading Intelligence Analysis. source library scholarly-source routing with author correction.",
+      "input_fixture": "project source text and the named component `Improving Intelligence Analysis`",
+      "operation_under_test": "uses `Improving Intelligence Analysis` as a named project component with a traceable role in the public mechanism. Source context: Improving Intelligence Analysis; Leading Intelligence Analysis. source library scholarly-source routing with author correction.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Improving Intelligence Analysis`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "367fdbca15baef63fbef498d",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43439,
+            "sha256": "6d7aa113d775ec5da8595c24c6fef27a1cfd7d9e67a954c8a5ea95eadba48626"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36117,
+            "sha256": "634d179bd2d9a4fb32275301d3fd5de1f00c904a8a9baf94a2334e5f64cd0a71"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20877,
+            "sha256": "43cd9a8fd78bebf676df117d4be161d1c51372935e9ae3120da399092aac45dc"
+          },
+          {
+            "relative_path": "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21113,
+            "sha256": "5318e271dfcfbe60ef8c1c0d8d873580d003f73481e5790e40bc1004de73aba7"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46740,
+            "sha256": "1b34701600679718edb120f00fac5fa2cd97bcf25af7e309d148715700cbdf92"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10369,
+            "sha256": "9954f9e98ef9f78e90f019d7e1e7c0002893cc9801c6f2d3ffe8aedc3660dc20"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+          "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6c440c071a26ae9e1b30cf15"
+    },
+    {
+      "receipt_id": "mb-rfp-handoff-ch01-02-done__receipt_0016",
+      "project_id": "mb-rfp-handoff-ch01-02-done",
+      "project_title": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov) / Leading Intelligence Analysis",
+      "component_case_id": "mb-rfp-handoff-ch01-02-done__0016__chapter-analysis-pipeline-chs-1-feklyunina-2-morozov-leading-intelligence-analysis",
+      "claim_to_demonstrate": "uses `Leading Intelligence Analysis` as a named project component with a traceable role in the public mechanism. Source context: Leading Intelligence Analysis. source library scholarly-source routing with author correction. Raw filenames often append.",
+      "input_fixture": "project source text and the named component `Leading Intelligence Analysis`",
+      "operation_under_test": "uses `Leading Intelligence Analysis` as a named project component with a traceable role in the public mechanism. Source context: Leading Intelligence Analysis. source library scholarly-source routing with author correction. Raw filenames often append.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Leading Intelligence Analysis`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5d5248b8743a1a0bbe44f37f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43439,
+            "sha256": "6d7aa113d775ec5da8595c24c6fef27a1cfd7d9e67a954c8a5ea95eadba48626"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36117,
+            "sha256": "634d179bd2d9a4fb32275301d3fd5de1f00c904a8a9baf94a2334e5f64cd0a71"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20877,
+            "sha256": "43cd9a8fd78bebf676df117d4be161d1c51372935e9ae3120da399092aac45dc"
+          },
+          {
+            "relative_path": "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21113,
+            "sha256": "5318e271dfcfbe60ef8c1c0d8d873580d003f73481e5790e40bc1004de73aba7"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46740,
+            "sha256": "1b34701600679718edb120f00fac5fa2cd97bcf25af7e309d148715700cbdf92"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10369,
+            "sha256": "9954f9e98ef9f78e90f019d7e1e7c0002893cc9801c6f2d3ffe8aedc3660dc20"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+          "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "22c8d2db277d48672c3a5cfa"
+    },
+    {
+      "receipt_id": "mb-rfp-handoff-ch01-02-done__receipt_0017",
+      "project_id": "mb-rfp-handoff-ch01-02-done",
+      "project_title": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Chapter analysis pipeline: Chs 1 (Feklyunina) + 2 (Morozov) / Retain the",
+      "component_case_id": "mb-rfp-handoff-ch01-02-done__0017__chapter-analysis-pipeline-chs-1-feklyunina-2-morozov-retain-the",
+      "claim_to_demonstrate": "uses `Retain the` as a named project component with a traceable role in the public mechanism. Source context: Completed packet or authority layer Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become.",
+      "input_fixture": "project source text and the named component `Retain the`",
+      "operation_under_test": "uses `Retain the` as a named project component with a traceable role in the public mechanism. Source context: Completed packet or authority layer Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Retain the`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c6cb900044b40f97cc6c391d",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43439,
+            "sha256": "6d7aa113d775ec5da8595c24c6fef27a1cfd7d9e67a954c8a5ea95eadba48626"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36117,
+            "sha256": "634d179bd2d9a4fb32275301d3fd5de1f00c904a8a9baf94a2334e5f64cd0a71"
+          },
+          {
+            "relative_path": "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20877,
+            "sha256": "43cd9a8fd78bebf676df117d4be161d1c51372935e9ae3120da399092aac45dc"
+          },
+          {
+            "relative_path": "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21113,
+            "sha256": "5318e271dfcfbe60ef8c1c0d8d873580d003f73481e5790e40bc1004de73aba7"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46740,
+            "sha256": "1b34701600679718edb120f00fac5fa2cd97bcf25af7e309d148715700cbdf92"
+          },
+          {
+            "relative_path": "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10369,
+            "sha256": "9954f9e98ef9f78e90f019d7e1e7c0002893cc9801c6f2d3ffe8aedc3660dc20"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/blueprint.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/instrument_map.json",
+          "project_blueprints/mb-rfp-handoff-ch01-02-done/README.md",
+          "proof_builds/mb-rfp-handoff-ch01-02-done/proof_build.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/demo_cases.json",
+          "proof_demos/mb-rfp-handoff-ch01-02-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0a4cf5ccb924b9456a76413a"
+    }
+  ]
+}

@@ -1,0 +1,610 @@
+{
+  "project": {
+    "project_id": "mb-internal-operating-support-003",
+    "title": "Internal Operating Support Packet 003"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-internal-operating-support-003__receipt_0001",
+      "project_id": "mb-internal-operating-support-003",
+      "project_title": "Internal Operating Support Packet 003",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Internal Operating Support Packet 003 Public Abstraction Boundary",
+      "component_case_id": "mb-internal-operating-support-003__0001__internal-operating-support-packet-003-public-abstraction-boundary",
+      "claim_to_demonstrate": "This page records that the operating system includes internal capacity and continuity supports, but the public version deliberately abstracts the private contents.",
+      "input_fixture": "private page inventory, public audience, and excluded personal detail",
+      "operation_under_test": "This page records that the operating system includes internal capacity and continuity supports, but the public version deliberately abstracts the private contents.",
+      "expected_output": "states the professional support function without exposing private routine content",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "b2c38f3b73b96454b1ef662d",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-internal-operating-support-003/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19610,
+            "sha256": "f23722a388c58f74559b6accae5bd10da8b5450bd94ecb6c271f32b6701eaf57"
+          },
+          {
+            "relative_path": "project_blueprints/mb-internal-operating-support-003/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13300,
+            "sha256": "dbf273ce8696ff307c93b84b5836b7910646f26513dbba1579b448e9a276bf20"
+          },
+          {
+            "relative_path": "project_blueprints/mb-internal-operating-support-003/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10811,
+            "sha256": "9356d2494ea58fd88bcbde9ee37e1665348f1cb01051e0b889c80d54fef319d9"
+          },
+          {
+            "relative_path": "proof_builds/mb-internal-operating-support-003/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9404,
+            "sha256": "a90dfd51f94d9304747a8b21e7fd602a5b646eec87f4d342c24a3b1820c4dbdc"
+          },
+          {
+            "relative_path": "proof_demos/mb-internal-operating-support-003/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 18390,
+            "sha256": "4aaa7062b2100b01aaf86995520aaec2cdaae0c174acd23a50fa22fd8253bc16"
+          },
+          {
+            "relative_path": "proof_demos/mb-internal-operating-support-003/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 4762,
+            "sha256": "a1b389a648d0b7c16f190217387038cd5ea068438b022205e98f14ebf4ea2d19"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-internal-operating-support-003/blueprint.json",
+          "project_blueprints/mb-internal-operating-support-003/instrument_map.json",
+          "project_blueprints/mb-internal-operating-support-003/README.md",
+          "proof_builds/mb-internal-operating-support-003/proof_build.json",
+          "proof_demos/mb-internal-operating-support-003/demo_cases.json",
+          "proof_demos/mb-internal-operating-support-003/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9696bf679369b8374e8f4714"
+    },
+    {
+      "receipt_id": "mb-internal-operating-support-003__receipt_0002",
+      "project_id": "mb-internal-operating-support-003",
+      "project_title": "Internal Operating Support Packet 003",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Internal Operating Support Packet 003 Continuity Function",
+      "component_case_id": "mb-internal-operating-support-003__0002__internal-operating-support-packet-003-continuity-function",
+      "claim_to_demonstrate": "It converts an archive or handoff into three inspectable decisions: what the work product is for, which component pieces carry the work, and what action would turn it into a live room, paper, method, or software instrument.",
+      "input_fixture": "schedule, capacity, recovery, repetition, attention, or maintenance signal",
+      "operation_under_test": "It converts an archive or handoff into three inspectable decisions: what the work product is for, which component pieces carry the work, and what action would turn it into a live room, paper, method, or software instrument.",
+      "expected_output": "explains how the support layer protects sustained project work",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "00c24c2ac5b9fde872041255",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-internal-operating-support-003/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19610,
+            "sha256": "f23722a388c58f74559b6accae5bd10da8b5450bd94ecb6c271f32b6701eaf57"
+          },
+          {
+            "relative_path": "project_blueprints/mb-internal-operating-support-003/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13300,
+            "sha256": "dbf273ce8696ff307c93b84b5836b7910646f26513dbba1579b448e9a276bf20"
+          },
+          {
+            "relative_path": "project_blueprints/mb-internal-operating-support-003/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10811,
+            "sha256": "9356d2494ea58fd88bcbde9ee37e1665348f1cb01051e0b889c80d54fef319d9"
+          },
+          {
+            "relative_path": "proof_builds/mb-internal-operating-support-003/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9404,
+            "sha256": "a90dfd51f94d9304747a8b21e7fd602a5b646eec87f4d342c24a3b1820c4dbdc"
+          },
+          {
+            "relative_path": "proof_demos/mb-internal-operating-support-003/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 18390,
+            "sha256": "4aaa7062b2100b01aaf86995520aaec2cdaae0c174acd23a50fa22fd8253bc16"
+          },
+          {
+            "relative_path": "proof_demos/mb-internal-operating-support-003/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 4762,
+            "sha256": "a1b389a648d0b7c16f190217387038cd5ea068438b022205e98f14ebf4ea2d19"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-internal-operating-support-003/blueprint.json",
+          "project_blueprints/mb-internal-operating-support-003/instrument_map.json",
+          "project_blueprints/mb-internal-operating-support-003/README.md",
+          "proof_builds/mb-internal-operating-support-003/proof_build.json",
+          "proof_demos/mb-internal-operating-support-003/demo_cases.json",
+          "proof_demos/mb-internal-operating-support-003/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "796d2c5b22f78e4e57af8996"
+    },
+    {
+      "receipt_id": "mb-internal-operating-support-003__receipt_0003",
+      "project_id": "mb-internal-operating-support-003",
+      "project_title": "Internal Operating Support Packet 003",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Internal Operating Support Packet 003 Project Linkage",
+      "component_case_id": "mb-internal-operating-support-003__0003__internal-operating-support-packet-003-project-linkage",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. Keep the underlying packet private. If it ever becomes public, rewrite it as a separate professional specification with no private operating details. Use this.",
+      "input_fixture": "upstream work readiness, downstream project delivery, and continuity dependencies",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. Keep the underlying packet private. If it ever becomes public, rewrite it as a separate professional specification with no private operating details. Use this.",
+      "expected_output": "shows how the support function helps research and software projects continue",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "007ae99b9ad44ae7ed3234db",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-internal-operating-support-003/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19610,
+            "sha256": "f23722a388c58f74559b6accae5bd10da8b5450bd94ecb6c271f32b6701eaf57"
+          },
+          {
+            "relative_path": "project_blueprints/mb-internal-operating-support-003/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13300,
+            "sha256": "dbf273ce8696ff307c93b84b5836b7910646f26513dbba1579b448e9a276bf20"
+          },
+          {
+            "relative_path": "project_blueprints/mb-internal-operating-support-003/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10811,
+            "sha256": "9356d2494ea58fd88bcbde9ee37e1665348f1cb01051e0b889c80d54fef319d9"
+          },
+          {
+            "relative_path": "proof_builds/mb-internal-operating-support-003/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9404,
+            "sha256": "a90dfd51f94d9304747a8b21e7fd602a5b646eec87f4d342c24a3b1820c4dbdc"
+          },
+          {
+            "relative_path": "proof_demos/mb-internal-operating-support-003/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 18390,
+            "sha256": "4aaa7062b2100b01aaf86995520aaec2cdaae0c174acd23a50fa22fd8253bc16"
+          },
+          {
+            "relative_path": "proof_demos/mb-internal-operating-support-003/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 4762,
+            "sha256": "a1b389a648d0b7c16f190217387038cd5ea068438b022205e98f14ebf4ea2d19"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-internal-operating-support-003/blueprint.json",
+          "project_blueprints/mb-internal-operating-support-003/instrument_map.json",
+          "project_blueprints/mb-internal-operating-support-003/README.md",
+          "proof_builds/mb-internal-operating-support-003/proof_build.json",
+          "proof_demos/mb-internal-operating-support-003/demo_cases.json",
+          "proof_demos/mb-internal-operating-support-003/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b7c893a1bab438c04cf0017e"
+    },
+    {
+      "receipt_id": "mb-internal-operating-support-003__receipt_0004",
+      "project_id": "mb-internal-operating-support-003",
+      "project_title": "Internal Operating Support Packet 003",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Internal Operating Support Packet 003 Privacy And Appropriateness Gate",
+      "component_case_id": "mb-internal-operating-support-003__0004__internal-operating-support-packet-003-privacy-and-appropriateness-gate",
+      "claim_to_demonstrate": "Writing, rhetoric, narrative design, visual culture, and presentation. Use source library writing/visual/cinema sources to strengthen public exposition and Trilogy visual/storytelling logic. Vision: Make public pages read as curated intellectual exhibits.",
+      "input_fixture": "private details, public wording, naming rules, and exclusion criteria",
+      "operation_under_test": "Writing, rhetoric, narrative design, visual culture, and presentation. Use source library writing/visual/cinema sources to strengthen public exposition and Trilogy visual/storytelling logic. Vision: Make public pages read as curated intellectual exhibits.",
+      "expected_output": "keeps the public page professional by abstracting personal specifics",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "eae9c3ac061abc33b083b3bf",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-internal-operating-support-003/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19610,
+            "sha256": "f23722a388c58f74559b6accae5bd10da8b5450bd94ecb6c271f32b6701eaf57"
+          },
+          {
+            "relative_path": "project_blueprints/mb-internal-operating-support-003/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13300,
+            "sha256": "dbf273ce8696ff307c93b84b5836b7910646f26513dbba1579b448e9a276bf20"
+          },
+          {
+            "relative_path": "project_blueprints/mb-internal-operating-support-003/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10811,
+            "sha256": "9356d2494ea58fd88bcbde9ee37e1665348f1cb01051e0b889c80d54fef319d9"
+          },
+          {
+            "relative_path": "proof_builds/mb-internal-operating-support-003/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9404,
+            "sha256": "a90dfd51f94d9304747a8b21e7fd602a5b646eec87f4d342c24a3b1820c4dbdc"
+          },
+          {
+            "relative_path": "proof_demos/mb-internal-operating-support-003/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 18390,
+            "sha256": "4aaa7062b2100b01aaf86995520aaec2cdaae0c174acd23a50fa22fd8253bc16"
+          },
+          {
+            "relative_path": "proof_demos/mb-internal-operating-support-003/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 4762,
+            "sha256": "a1b389a648d0b7c16f190217387038cd5ea068438b022205e98f14ebf4ea2d19"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-internal-operating-support-003/blueprint.json",
+          "project_blueprints/mb-internal-operating-support-003/instrument_map.json",
+          "project_blueprints/mb-internal-operating-support-003/README.md",
+          "proof_builds/mb-internal-operating-support-003/proof_build.json",
+          "proof_demos/mb-internal-operating-support-003/demo_cases.json",
+          "proof_demos/mb-internal-operating-support-003/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ed92f8fe12e0a8f9d1c9723c"
+    },
+    {
+      "receipt_id": "mb-internal-operating-support-003__receipt_0005",
+      "project_id": "mb-internal-operating-support-003",
+      "project_title": "Internal Operating Support Packet 003",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Internal Operating Support Packet 003 Evidence Surface",
+      "component_case_id": "mb-internal-operating-support-003__0005__internal-operating-support-packet-003-evidence-surface",
+      "claim_to_demonstrate": "Abstract-only public record; not a public exhibit; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "folder record, support packet, room note, status file, or abstracted page",
+      "operation_under_test": "Abstract-only public record; not a public exhibit; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "shows whether the support layer exists without exposing the private object itself",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f885aff8aebc6696a20ff9c7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-internal-operating-support-003/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19610,
+            "sha256": "f23722a388c58f74559b6accae5bd10da8b5450bd94ecb6c271f32b6701eaf57"
+          },
+          {
+            "relative_path": "project_blueprints/mb-internal-operating-support-003/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13300,
+            "sha256": "dbf273ce8696ff307c93b84b5836b7910646f26513dbba1579b448e9a276bf20"
+          },
+          {
+            "relative_path": "project_blueprints/mb-internal-operating-support-003/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10811,
+            "sha256": "9356d2494ea58fd88bcbde9ee37e1665348f1cb01051e0b889c80d54fef319d9"
+          },
+          {
+            "relative_path": "proof_builds/mb-internal-operating-support-003/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9404,
+            "sha256": "a90dfd51f94d9304747a8b21e7fd602a5b646eec87f4d342c24a3b1820c4dbdc"
+          },
+          {
+            "relative_path": "proof_demos/mb-internal-operating-support-003/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 18390,
+            "sha256": "4aaa7062b2100b01aaf86995520aaec2cdaae0c174acd23a50fa22fd8253bc16"
+          },
+          {
+            "relative_path": "proof_demos/mb-internal-operating-support-003/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 4762,
+            "sha256": "a1b389a648d0b7c16f190217387038cd5ea068438b022205e98f14ebf4ea2d19"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-internal-operating-support-003/blueprint.json",
+          "project_blueprints/mb-internal-operating-support-003/instrument_map.json",
+          "project_blueprints/mb-internal-operating-support-003/README.md",
+          "proof_builds/mb-internal-operating-support-003/proof_build.json",
+          "proof_demos/mb-internal-operating-support-003/demo_cases.json",
+          "proof_demos/mb-internal-operating-support-003/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7adf0b92a28d99e29c95782c"
+    },
+    {
+      "receipt_id": "mb-internal-operating-support-003__receipt_0006",
+      "project_id": "mb-internal-operating-support-003",
+      "project_title": "Internal Operating Support Packet 003",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Internal Operating Support Packet 003 Current Claim Boundary",
+      "component_case_id": "mb-internal-operating-support-003__0006__internal-operating-support-packet-003-current-claim-boundary",
+      "claim_to_demonstrate": "Abstract-only public record; not a public exhibit; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "built, partial, private-only, public-abstraction, or archive status",
+      "operation_under_test": "Abstract-only public record; not a public exhibit; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "prevents private support material from being oversold as public-facing work",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c56eaafc6ebdeb34f7744805",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-internal-operating-support-003/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19610,
+            "sha256": "f23722a388c58f74559b6accae5bd10da8b5450bd94ecb6c271f32b6701eaf57"
+          },
+          {
+            "relative_path": "project_blueprints/mb-internal-operating-support-003/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13300,
+            "sha256": "dbf273ce8696ff307c93b84b5836b7910646f26513dbba1579b448e9a276bf20"
+          },
+          {
+            "relative_path": "project_blueprints/mb-internal-operating-support-003/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10811,
+            "sha256": "9356d2494ea58fd88bcbde9ee37e1665348f1cb01051e0b889c80d54fef319d9"
+          },
+          {
+            "relative_path": "proof_builds/mb-internal-operating-support-003/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9404,
+            "sha256": "a90dfd51f94d9304747a8b21e7fd602a5b646eec87f4d342c24a3b1820c4dbdc"
+          },
+          {
+            "relative_path": "proof_demos/mb-internal-operating-support-003/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 18390,
+            "sha256": "4aaa7062b2100b01aaf86995520aaec2cdaae0c174acd23a50fa22fd8253bc16"
+          },
+          {
+            "relative_path": "proof_demos/mb-internal-operating-support-003/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 4762,
+            "sha256": "a1b389a648d0b7c16f190217387038cd5ea068438b022205e98f14ebf4ea2d19"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-internal-operating-support-003/blueprint.json",
+          "project_blueprints/mb-internal-operating-support-003/instrument_map.json",
+          "project_blueprints/mb-internal-operating-support-003/README.md",
+          "proof_builds/mb-internal-operating-support-003/proof_build.json",
+          "proof_demos/mb-internal-operating-support-003/demo_cases.json",
+          "proof_demos/mb-internal-operating-support-003/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "37263417a5ad0dae9c016022"
+    },
+    {
+      "receipt_id": "mb-internal-operating-support-003__receipt_0007",
+      "project_id": "mb-internal-operating-support-003",
+      "project_title": "Internal Operating Support Packet 003",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "Internal Operating Support Packet 003 Review Queue",
+      "component_case_id": "mb-internal-operating-support-003__0007__internal-operating-support-packet-003-review-queue",
+      "claim_to_demonstrate": "Retain as private infrastructure. Do not promote, quote, or expand this packet in the public site unless it is rewritten from first principles as professional operating methodology.",
+      "input_fixture": "rename, abstract, archive, suppress, or connect to a project-operating-system page",
+      "operation_under_test": "Retain as private infrastructure. Do not promote, quote, or expand this packet in the public site unless it is rewritten from first principles as professional operating methodology.",
+      "expected_output": "next editorial decision before public use as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c3c4b285884baee3fa7548ac",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-internal-operating-support-003/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19610,
+            "sha256": "f23722a388c58f74559b6accae5bd10da8b5450bd94ecb6c271f32b6701eaf57"
+          },
+          {
+            "relative_path": "project_blueprints/mb-internal-operating-support-003/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13300,
+            "sha256": "dbf273ce8696ff307c93b84b5836b7910646f26513dbba1579b448e9a276bf20"
+          },
+          {
+            "relative_path": "project_blueprints/mb-internal-operating-support-003/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10811,
+            "sha256": "9356d2494ea58fd88bcbde9ee37e1665348f1cb01051e0b889c80d54fef319d9"
+          },
+          {
+            "relative_path": "proof_builds/mb-internal-operating-support-003/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9404,
+            "sha256": "a90dfd51f94d9304747a8b21e7fd602a5b646eec87f4d342c24a3b1820c4dbdc"
+          },
+          {
+            "relative_path": "proof_demos/mb-internal-operating-support-003/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 18390,
+            "sha256": "4aaa7062b2100b01aaf86995520aaec2cdaae0c174acd23a50fa22fd8253bc16"
+          },
+          {
+            "relative_path": "proof_demos/mb-internal-operating-support-003/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 4762,
+            "sha256": "a1b389a648d0b7c16f190217387038cd5ea068438b022205e98f14ebf4ea2d19"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-internal-operating-support-003/blueprint.json",
+          "project_blueprints/mb-internal-operating-support-003/instrument_map.json",
+          "project_blueprints/mb-internal-operating-support-003/README.md",
+          "proof_builds/mb-internal-operating-support-003/proof_build.json",
+          "proof_demos/mb-internal-operating-support-003/demo_cases.json",
+          "proof_demos/mb-internal-operating-support-003/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "258fea1c4614edeccdedcb9d"
+    }
+  ]
+}

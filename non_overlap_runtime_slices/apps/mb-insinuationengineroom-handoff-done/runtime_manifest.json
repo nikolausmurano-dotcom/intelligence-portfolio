@@ -1,0 +1,21 @@
+{
+  "runtime_slice_id": "RTS-60A3C79504E8",
+  "project_id": "mb-insinuationengineroom-handoff-done",
+  "product_name": "Insinuation Engine",
+  "instrument_name": "Insinuation-pattern analysis workbench",
+  "runtime_href": "apps/mb-insinuationengineroom-handoff-done/index.html",
+  "launch_target": "non_overlap_runtime_slices/apps/mb-insinuationengineroom-handoff-done/index.html",
+  "state_model": "localStorage latest-run record and twenty-run history plus exportable JSON trace",
+  "input_model": "Ambiguous message, frame, or indirect influence pattern",
+  "operation_model": "Insinuation analysis operation",
+  "output_model": "Indirect-influence analysis note",
+  "acceptance_standard": "The output must separate literal statement, implied frame, audience effect, and evidentiary caution.",
+  "operations": [
+    "Literal parse",
+    "Implied frame",
+    "Audience effect",
+    "Evidence caution"
+  ],
+  "runtime_claim_status": "minimum_operational_runtime_slice_built",
+  "not_full_operational_reason": "This is a local single-user runtime slice. Full operational standing still requires repeated run evidence, screenshot/browser QA, source verification where relevant, and external or reviewer validation."
+}

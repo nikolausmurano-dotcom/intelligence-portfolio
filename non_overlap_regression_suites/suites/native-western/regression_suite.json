@@ -1,0 +1,61 @@
+{
+  "project_id": "native-western",
+  "surface_type": "runtime_slice",
+  "suite_run_time": "2026-05-15T20:49:18+00:00",
+  "regression_cases": [
+    {
+      "case_id": "native-western-baseline",
+      "case_type": "baseline",
+      "input": "Run a normal operational case for native-western: process a bounded project problem and produce traceable output.",
+      "evidence": "Evidence note is present, uncertainty is stated, and exportable trace behavior is required.",
+      "expected_behavior": "accepted_with_claim_boundary",
+      "observed_behavior": "accepted_with_claim_boundary",
+      "expected_behavior_met": true,
+      "full_operational_claim_allowed": false,
+      "production_ready": false,
+      "acceptance_decision": "PASS",
+      "claim_boundary": "Regression case verifies local proof behavior and claim discipline only; it does not establish production readiness or external validation.",
+      "remaining_gate": "Needs repeated non-sample runs, browser screenshot evidence, reviewer validation, and deployment hardening before full operational standing.",
+      "blocks_false_promotion": false,
+      "trace_hash": "ad319ae964cd040e"
+    },
+    {
+      "case_id": "native-western-challenge",
+      "case_type": "challenge",
+      "input": "Run a harder case for native-western: include ambiguity, possible source weakness, and a decision that should not be over-promoted.",
+      "evidence": "Challenge requires uncertainty handling and a next-evidence statement before stronger claims.",
+      "expected_behavior": "accepted_with_caveat",
+      "observed_behavior": "accepted_with_caveat",
+      "expected_behavior_met": true,
+      "full_operational_claim_allowed": false,
+      "production_ready": false,
+      "acceptance_decision": "PASS",
+      "claim_boundary": "Regression case verifies local proof behavior and claim discipline only; it does not establish production readiness or external validation.",
+      "remaining_gate": "Needs repeated non-sample runs, browser screenshot evidence, reviewer validation, and deployment hardening before full operational standing.",
+      "blocks_false_promotion": false,
+      "trace_hash": "da01c93d4186a73d"
+    },
+    {
+      "case_id": "native-western-falsifier",
+      "case_type": "falsifier",
+      "input": "Try to promote native-western to full production readiness from one local trace.",
+      "evidence": "Needs repeated non-sample runs, browser screenshot evidence, reviewer validation, and deployment hardening before full operational standing.",
+      "expected_behavior": "block_full_operational_claim",
+      "observed_behavior": "block_full_operational_claim",
+      "expected_behavior_met": true,
+      "full_operational_claim_allowed": false,
+      "production_ready": false,
+      "acceptance_decision": "PASS",
+      "claim_boundary": "Regression case verifies local proof behavior and claim discipline only; it does not establish production readiness or external validation.",
+      "remaining_gate": "Needs repeated non-sample runs, browser screenshot evidence, reviewer validation, and deployment hardening before full operational standing.",
+      "blocks_false_promotion": true,
+      "trace_hash": "0da2697ccf6b3ce9"
+    }
+  ],
+  "case_count": 3,
+  "accepted_case_count": 3,
+  "falsifier_blocks_promotion": true,
+  "full_operational": false,
+  "remaining_gate": "Needs repeated non-sample runs, browser screenshot evidence, reviewer validation, and deployment hardening before full operational standing.",
+  "suite_hash": "97c9e3c38957c95e"
+}

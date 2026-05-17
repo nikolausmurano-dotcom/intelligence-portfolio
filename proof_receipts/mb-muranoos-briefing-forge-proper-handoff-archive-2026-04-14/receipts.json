@@ -1,0 +1,1470 @@
+{
+  "project": {
+    "project_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14",
+    "title": "Briefing Forge"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__receipt_0001",
+      "project_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14",
+      "project_title": "Briefing Forge",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Briefing Forge Handoff Identity",
+      "component_case_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__0001__briefing-forge-handoff-identity",
+      "claim_to_demonstrate": "Briefing Forge is a MuranoOS room handoff for turning research output into live executive briefings.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "Briefing Forge is a MuranoOS room handoff for turning research output into live executive briefings.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44582,
+            "sha256": "1769b3f7c16ed58bc37b108f8a468e596ba7b3163861a42b9599ac1583c74571"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36286,
+            "sha256": "93260102e96bd8f502aa12258e7b2b0cd610fd5a0d3683e9d66960aef18e1768"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "9f7108c8745e82fce7f91a8010a958cf6f48c63d6f0b4261820ff5320ae580f6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20019,
+            "sha256": "a057a60614fa50a379582e47af7f8a938d21d806cf89fa03e30b3e77d9ecacd5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45130,
+            "sha256": "0dc002000c649349b64a730bb7692fd3cbd7cc00669cba72acac82d6be8ab832"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9594,
+            "sha256": "a25096616a8113424214c143f74300372b2e69485e456b4cd53aa3ce615b8517"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d799e0a2b6dd9611e5cb2c30"
+    },
+    {
+      "receipt_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__receipt_0002",
+      "project_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14",
+      "project_title": "Briefing Forge",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Briefing Forge Room Task Model",
+      "component_case_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__0002__briefing-forge-room-task-model",
+      "claim_to_demonstrate": "It routes research material through source grounding, audience need, judgment frame, uncertainty, dissent, BLUF, decision memo, and briefing format so briefing products remain tied to the evidence base.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "It routes research material through source grounding, audience need, judgment frame, uncertainty, dissent, BLUF, decision memo, and briefing format so briefing products remain tied to the evidence base.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44582,
+            "sha256": "1769b3f7c16ed58bc37b108f8a468e596ba7b3163861a42b9599ac1583c74571"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36286,
+            "sha256": "93260102e96bd8f502aa12258e7b2b0cd610fd5a0d3683e9d66960aef18e1768"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "9f7108c8745e82fce7f91a8010a958cf6f48c63d6f0b4261820ff5320ae580f6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20019,
+            "sha256": "a057a60614fa50a379582e47af7f8a938d21d806cf89fa03e30b3e77d9ecacd5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45130,
+            "sha256": "0dc002000c649349b64a730bb7692fd3cbd7cc00669cba72acac82d6be8ab832"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9594,
+            "sha256": "a25096616a8113424214c143f74300372b2e69485e456b4cd53aa3ce615b8517"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d286a8b3240d52f86e683d77"
+    },
+    {
+      "receipt_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__receipt_0003",
+      "project_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14",
+      "project_title": "Briefing Forge",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Briefing Forge Data Schema And Persistence Plan",
+      "component_case_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__0003__briefing-forge-data-schema-and-persistence-plan",
+      "claim_to_demonstrate": "Writing, rhetoric, narrative design, visual culture, and presentation. Use source library writing/visual/cinema sources to strengthen public exposition and Trilogy visual/storytelling logic. Vision: Make public pages read as curated intellectual exhibits.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Writing, rhetoric, narrative design, visual culture, and presentation. Use source library writing/visual/cinema sources to strengthen public exposition and Trilogy visual/storytelling logic. Vision: Make public pages read as curated intellectual exhibits.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44582,
+            "sha256": "1769b3f7c16ed58bc37b108f8a468e596ba7b3163861a42b9599ac1583c74571"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36286,
+            "sha256": "93260102e96bd8f502aa12258e7b2b0cd610fd5a0d3683e9d66960aef18e1768"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "9f7108c8745e82fce7f91a8010a958cf6f48c63d6f0b4261820ff5320ae580f6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20019,
+            "sha256": "a057a60614fa50a379582e47af7f8a938d21d806cf89fa03e30b3e77d9ecacd5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45130,
+            "sha256": "0dc002000c649349b64a730bb7692fd3cbd7cc00669cba72acac82d6be8ab832"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9594,
+            "sha256": "a25096616a8113424214c143f74300372b2e69485e456b4cd53aa3ce615b8517"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3e2aaf79124f371a908694e6"
+    },
+    {
+      "receipt_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__receipt_0004",
+      "project_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14",
+      "project_title": "Briefing Forge",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Briefing Forge Interface And Instrument Plane",
+      "component_case_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__0004__briefing-forge-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44582,
+            "sha256": "1769b3f7c16ed58bc37b108f8a468e596ba7b3163861a42b9599ac1583c74571"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36286,
+            "sha256": "93260102e96bd8f502aa12258e7b2b0cd610fd5a0d3683e9d66960aef18e1768"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "9f7108c8745e82fce7f91a8010a958cf6f48c63d6f0b4261820ff5320ae580f6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20019,
+            "sha256": "a057a60614fa50a379582e47af7f8a938d21d806cf89fa03e30b3e77d9ecacd5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45130,
+            "sha256": "0dc002000c649349b64a730bb7692fd3cbd7cc00669cba72acac82d6be8ab832"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9594,
+            "sha256": "a25096616a8113424214c143f74300372b2e69485e456b4cd53aa3ce615b8517"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "fe6310483b273af0f1ef547e"
+    },
+    {
+      "receipt_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__receipt_0005",
+      "project_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14",
+      "project_title": "Briefing Forge",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Briefing Forge Integration Path",
+      "component_case_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__0005__briefing-forge-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. Reach for this when: (a) you need a reference briefing-authoring workflow with rigorous screen-vs-speech discipline, transition composition, and showtime.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. Reach for this when: (a) you need a reference briefing-authoring workflow with rigorous screen-vs-speech discipline, transition composition, and showtime.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44582,
+            "sha256": "1769b3f7c16ed58bc37b108f8a468e596ba7b3163861a42b9599ac1583c74571"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36286,
+            "sha256": "93260102e96bd8f502aa12258e7b2b0cd610fd5a0d3683e9d66960aef18e1768"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "9f7108c8745e82fce7f91a8010a958cf6f48c63d6f0b4261820ff5320ae580f6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20019,
+            "sha256": "a057a60614fa50a379582e47af7f8a938d21d806cf89fa03e30b3e77d9ecacd5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45130,
+            "sha256": "0dc002000c649349b64a730bb7692fd3cbd7cc00669cba72acac82d6be8ab832"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9594,
+            "sha256": "a25096616a8113424214c143f74300372b2e69485e456b4cd53aa3ce615b8517"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "191f875956111137cbcea89e"
+    },
+    {
+      "receipt_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__receipt_0006",
+      "project_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14",
+      "project_title": "Briefing Forge",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Briefing Forge Proof Boundary",
+      "component_case_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__0006__briefing-forge-proof-boundary",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44582,
+            "sha256": "1769b3f7c16ed58bc37b108f8a468e596ba7b3163861a42b9599ac1583c74571"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36286,
+            "sha256": "93260102e96bd8f502aa12258e7b2b0cd610fd5a0d3683e9d66960aef18e1768"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "9f7108c8745e82fce7f91a8010a958cf6f48c63d6f0b4261820ff5320ae580f6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20019,
+            "sha256": "a057a60614fa50a379582e47af7f8a938d21d806cf89fa03e30b3e77d9ecacd5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45130,
+            "sha256": "0dc002000c649349b64a730bb7692fd3cbd7cc00669cba72acac82d6be8ab832"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9594,
+            "sha256": "a25096616a8113424214c143f74300372b2e69485e456b4cd53aa3ce615b8517"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4ebf726980c7cef0963fd764"
+    },
+    {
+      "receipt_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__receipt_0007",
+      "project_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14",
+      "project_title": "Briefing Forge",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Briefing Forge Next Build Test",
+      "component_case_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__0007__briefing-forge-next-build-test",
+      "claim_to_demonstrate": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44582,
+            "sha256": "1769b3f7c16ed58bc37b108f8a468e596ba7b3163861a42b9599ac1583c74571"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36286,
+            "sha256": "93260102e96bd8f502aa12258e7b2b0cd610fd5a0d3683e9d66960aef18e1768"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "9f7108c8745e82fce7f91a8010a958cf6f48c63d6f0b4261820ff5320ae580f6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20019,
+            "sha256": "a057a60614fa50a379582e47af7f8a938d21d806cf89fa03e30b3e77d9ecacd5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45130,
+            "sha256": "0dc002000c649349b64a730bb7692fd3cbd7cc00669cba72acac82d6be8ab832"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9594,
+            "sha256": "a25096616a8113424214c143f74300372b2e69485e456b4cd53aa3ce615b8517"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "88c8a165bd6dc299b20e7c48"
+    },
+    {
+      "receipt_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__receipt_0008",
+      "project_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14",
+      "project_title": "Briefing Forge",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Briefing Forge / backend/frontend",
+      "component_case_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__0008__briefing-forge-backend-frontend",
+      "claim_to_demonstrate": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "input_fixture": "project source text and the named component `backend/frontend`",
+      "operation_under_test": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `backend/frontend`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "aed75a21a21dbc62f163b1cf",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44582,
+            "sha256": "1769b3f7c16ed58bc37b108f8a468e596ba7b3163861a42b9599ac1583c74571"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36286,
+            "sha256": "93260102e96bd8f502aa12258e7b2b0cd610fd5a0d3683e9d66960aef18e1768"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "9f7108c8745e82fce7f91a8010a958cf6f48c63d6f0b4261820ff5320ae580f6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20019,
+            "sha256": "a057a60614fa50a379582e47af7f8a938d21d806cf89fa03e30b3e77d9ecacd5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45130,
+            "sha256": "0dc002000c649349b64a730bb7692fd3cbd7cc00669cba72acac82d6be8ab832"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9594,
+            "sha256": "a25096616a8113424214c143f74300372b2e69485e456b4cd53aa3ce615b8517"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0069563bfbf90c335db8d690"
+    },
+    {
+      "receipt_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__receipt_0009",
+      "project_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14",
+      "project_title": "Briefing Forge",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Briefing Forge / PACKAGE_READINESS_REVIEW.md",
+      "component_case_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__0009__briefing-forge-package-readiness-review-md",
+      "claim_to_demonstrate": "treats `PACKAGE_READINESS_REVIEW.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 04_Reviews/PACKAGE_READINESS_REVIEW.md — 03_Provenance_And_Integrity/PACKAGE_PROVENANCE_GRAPH.md —.",
+      "input_fixture": "project source text and the named component `PACKAGE_READINESS_REVIEW.md`",
+      "operation_under_test": "treats `PACKAGE_READINESS_REVIEW.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 04_Reviews/PACKAGE_READINESS_REVIEW.md — 03_Provenance_And_Integrity/PACKAGE_PROVENANCE_GRAPH.md —.",
+      "expected_output": "inspectable implementation evidence tied to `PACKAGE_READINESS_REVIEW.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "259000abcf90cbbed2507da1",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44582,
+            "sha256": "1769b3f7c16ed58bc37b108f8a468e596ba7b3163861a42b9599ac1583c74571"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36286,
+            "sha256": "93260102e96bd8f502aa12258e7b2b0cd610fd5a0d3683e9d66960aef18e1768"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "9f7108c8745e82fce7f91a8010a958cf6f48c63d6f0b4261820ff5320ae580f6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20019,
+            "sha256": "a057a60614fa50a379582e47af7f8a938d21d806cf89fa03e30b3e77d9ecacd5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45130,
+            "sha256": "0dc002000c649349b64a730bb7692fd3cbd7cc00669cba72acac82d6be8ab832"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9594,
+            "sha256": "a25096616a8113424214c143f74300372b2e69485e456b4cd53aa3ce615b8517"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ece766d6cf2d58a64cd6ea5b"
+    },
+    {
+      "receipt_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__receipt_0010",
+      "project_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14",
+      "project_title": "Briefing Forge",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Briefing Forge / PACKAGE_PROVENANCE_GRAPH.md",
+      "component_case_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__0010__briefing-forge-package-provenance-graph-md",
+      "claim_to_demonstrate": "treats `PACKAGE_PROVENANCE_GRAPH.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 04_Reviews/PACKAGE_READINESS_REVIEW.md — 03_Provenance_And_Integrity/PACKAGE_PROVENANCE_GRAPH.md —.",
+      "input_fixture": "project source text and the named component `PACKAGE_PROVENANCE_GRAPH.md`",
+      "operation_under_test": "treats `PACKAGE_PROVENANCE_GRAPH.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 04_Reviews/PACKAGE_READINESS_REVIEW.md — 03_Provenance_And_Integrity/PACKAGE_PROVENANCE_GRAPH.md —.",
+      "expected_output": "inspectable implementation evidence tied to `PACKAGE_PROVENANCE_GRAPH.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "259000abcf90cbbed2507da1",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44582,
+            "sha256": "1769b3f7c16ed58bc37b108f8a468e596ba7b3163861a42b9599ac1583c74571"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36286,
+            "sha256": "93260102e96bd8f502aa12258e7b2b0cd610fd5a0d3683e9d66960aef18e1768"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "9f7108c8745e82fce7f91a8010a958cf6f48c63d6f0b4261820ff5320ae580f6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20019,
+            "sha256": "a057a60614fa50a379582e47af7f8a938d21d806cf89fa03e30b3e77d9ecacd5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45130,
+            "sha256": "0dc002000c649349b64a730bb7692fd3cbd7cc00669cba72acac82d6be8ab832"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9594,
+            "sha256": "a25096616a8113424214c143f74300372b2e69485e456b4cd53aa3ce615b8517"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3624b079610048607e2614a9"
+    },
+    {
+      "receipt_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__receipt_0011",
+      "project_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14",
+      "project_title": "Briefing Forge",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Briefing Forge / IMPLEMENTATION_STATE_DECLARATION.md",
+      "component_case_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__0011__briefing-forge-implementation-state-declaration-md",
+      "claim_to_demonstrate": "treats `IMPLEMENTATION_STATE_DECLARATION.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 04_Reviews/PACKAGE_READINESS_REVIEW.md — 03_Provenance_And_Integrity/PACKAGE_PROVENANCE_GRAPH.md —.",
+      "input_fixture": "project source text and the named component `IMPLEMENTATION_STATE_DECLARATION.md`",
+      "operation_under_test": "treats `IMPLEMENTATION_STATE_DECLARATION.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 04_Reviews/PACKAGE_READINESS_REVIEW.md — 03_Provenance_And_Integrity/PACKAGE_PROVENANCE_GRAPH.md —.",
+      "expected_output": "inspectable implementation evidence tied to `IMPLEMENTATION_STATE_DECLARATION.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "259000abcf90cbbed2507da1",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44582,
+            "sha256": "1769b3f7c16ed58bc37b108f8a468e596ba7b3163861a42b9599ac1583c74571"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36286,
+            "sha256": "93260102e96bd8f502aa12258e7b2b0cd610fd5a0d3683e9d66960aef18e1768"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "9f7108c8745e82fce7f91a8010a958cf6f48c63d6f0b4261820ff5320ae580f6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20019,
+            "sha256": "a057a60614fa50a379582e47af7f8a938d21d806cf89fa03e30b3e77d9ecacd5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45130,
+            "sha256": "0dc002000c649349b64a730bb7692fd3cbd7cc00669cba72acac82d6be8ab832"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9594,
+            "sha256": "a25096616a8113424214c143f74300372b2e69485e456b4cd53aa3ce615b8517"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ef149824ffb0835805e6d3da"
+    },
+    {
+      "receipt_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__receipt_0012",
+      "project_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14",
+      "project_title": "Briefing Forge",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Briefing Forge / CANON_VS_VERIFIED_STATE_DELTA_MAP.md",
+      "component_case_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__0012__briefing-forge-canon-vs-verified-state-delta-map-md",
+      "claim_to_demonstrate": "treats `CANON_VS_VERIFIED_STATE_DELTA_MAP.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: CANON_VS_VERIFIED_STATE_DELTA_MAP.md —.",
+      "input_fixture": "project source text and the named component `CANON_VS_VERIFIED_STATE_DELTA_MAP.md`",
+      "operation_under_test": "treats `CANON_VS_VERIFIED_STATE_DELTA_MAP.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: CANON_VS_VERIFIED_STATE_DELTA_MAP.md —.",
+      "expected_output": "inspectable implementation evidence tied to `CANON_VS_VERIFIED_STATE_DELTA_MAP.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c455aa8c662e4c054dab7d98",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44582,
+            "sha256": "1769b3f7c16ed58bc37b108f8a468e596ba7b3163861a42b9599ac1583c74571"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36286,
+            "sha256": "93260102e96bd8f502aa12258e7b2b0cd610fd5a0d3683e9d66960aef18e1768"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "9f7108c8745e82fce7f91a8010a958cf6f48c63d6f0b4261820ff5320ae580f6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20019,
+            "sha256": "a057a60614fa50a379582e47af7f8a938d21d806cf89fa03e30b3e77d9ecacd5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45130,
+            "sha256": "0dc002000c649349b64a730bb7692fd3cbd7cc00669cba72acac82d6be8ab832"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9594,
+            "sha256": "a25096616a8113424214c143f74300372b2e69485e456b4cd53aa3ce615b8517"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "fa2f48dcb6176e886051c77f"
+    },
+    {
+      "receipt_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__receipt_0013",
+      "project_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14",
+      "project_title": "Briefing Forge",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Briefing Forge / MuranoOS_Briefing_Forge_Room_System_Spec.md",
+      "component_case_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__0013__briefing-forge-muranoos-briefing-forge-room-system-spec-md",
+      "claim_to_demonstrate": "treats `MuranoOS_Briefing_Forge_Room_System_Spec.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: MuranoOS_Briefing_Forge_Room_System_Spec.md —.",
+      "input_fixture": "project source text and the named component `MuranoOS_Briefing_Forge_Room_System_Spec.md`",
+      "operation_under_test": "treats `MuranoOS_Briefing_Forge_Room_System_Spec.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: MuranoOS_Briefing_Forge_Room_System_Spec.md —.",
+      "expected_output": "inspectable implementation evidence tied to `MuranoOS_Briefing_Forge_Room_System_Spec.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "571ad1f4d322bf4308a47ee2",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44582,
+            "sha256": "1769b3f7c16ed58bc37b108f8a468e596ba7b3163861a42b9599ac1583c74571"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36286,
+            "sha256": "93260102e96bd8f502aa12258e7b2b0cd610fd5a0d3683e9d66960aef18e1768"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "9f7108c8745e82fce7f91a8010a958cf6f48c63d6f0b4261820ff5320ae580f6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20019,
+            "sha256": "a057a60614fa50a379582e47af7f8a938d21d806cf89fa03e30b3e77d9ecacd5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45130,
+            "sha256": "0dc002000c649349b64a730bb7692fd3cbd7cc00669cba72acac82d6be8ab832"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9594,
+            "sha256": "a25096616a8113424214c143f74300372b2e69485e456b4cd53aa3ce615b8517"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "07dcfd4c6af7086f667fa7ed"
+    },
+    {
+      "receipt_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__receipt_0014",
+      "project_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14",
+      "project_title": "Briefing Forge",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Briefing Forge / MURANOOS_BRIEFING_FORGE_ROOM_WORLD_DESIGN_vNEXT.md",
+      "component_case_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__0014__briefing-forge-muranoos-briefing-forge-room-world-design-vnext-md",
+      "claim_to_demonstrate": "treats `MURANOOS_BRIEFING_FORGE_ROOM_WORLD_DESIGN_vNEXT.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: MURANOOS_BRIEFING_FORGE_ROOM_WORLD_DESIGN_vNEXT.md ?... Wire or preserve the.",
+      "input_fixture": "project source text and the named component `MURANOOS_BRIEFING_FORGE_ROOM_WORLD_DESIGN_vNEXT.md`",
+      "operation_under_test": "treats `MURANOOS_BRIEFING_FORGE_ROOM_WORLD_DESIGN_vNEXT.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: MURANOOS_BRIEFING_FORGE_ROOM_WORLD_DESIGN_vNEXT.md ?... Wire or preserve the.",
+      "expected_output": "inspectable implementation evidence tied to `MURANOOS_BRIEFING_FORGE_ROOM_WORLD_DESIGN_vNEXT.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "92225e92c7bcbd4251acd20d",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44582,
+            "sha256": "1769b3f7c16ed58bc37b108f8a468e596ba7b3163861a42b9599ac1583c74571"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36286,
+            "sha256": "93260102e96bd8f502aa12258e7b2b0cd610fd5a0d3683e9d66960aef18e1768"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "9f7108c8745e82fce7f91a8010a958cf6f48c63d6f0b4261820ff5320ae580f6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20019,
+            "sha256": "a057a60614fa50a379582e47af7f8a938d21d806cf89fa03e30b3e77d9ecacd5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45130,
+            "sha256": "0dc002000c649349b64a730bb7692fd3cbd7cc00669cba72acac82d6be8ab832"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9594,
+            "sha256": "a25096616a8113424214c143f74300372b2e69485e456b4cd53aa3ce615b8517"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6ee35e686cac43be87b18a0c"
+    },
+    {
+      "receipt_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__receipt_0015",
+      "project_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14",
+      "project_title": "Briefing Forge",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Briefing Forge / Proper Handoff Archive",
+      "component_case_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__0015__briefing-forge-proper-handoff-archive",
+      "claim_to_demonstrate": "uses `Proper Handoff Archive` as a named project component with a traceable role in the public mechanism. Source context: The \"proper handoff archive\" designation signals that this is a repaired rollup of an earlier scaffold package: structural gaps closed.",
+      "input_fixture": "project source text and the named component `Proper Handoff Archive`",
+      "operation_under_test": "uses `Proper Handoff Archive` as a named project component with a traceable role in the public mechanism. Source context: The \"proper handoff archive\" designation signals that this is a repaired rollup of an earlier scaffold package: structural gaps closed.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Proper Handoff Archive`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "25dd3e7d0890be99d48258da",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44582,
+            "sha256": "1769b3f7c16ed58bc37b108f8a468e596ba7b3163861a42b9599ac1583c74571"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36286,
+            "sha256": "93260102e96bd8f502aa12258e7b2b0cd610fd5a0d3683e9d66960aef18e1768"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "9f7108c8745e82fce7f91a8010a958cf6f48c63d6f0b4261820ff5320ae580f6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20019,
+            "sha256": "a057a60614fa50a379582e47af7f8a938d21d806cf89fa03e30b3e77d9ecacd5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45130,
+            "sha256": "0dc002000c649349b64a730bb7692fd3cbd7cc00669cba72acac82d6be8ab832"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9594,
+            "sha256": "a25096616a8113424214c143f74300372b2e69485e456b4cd53aa3ce615b8517"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6cf19a20d2f5e3bfb73a79b2"
+    },
+    {
+      "receipt_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__receipt_0016",
+      "project_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14",
+      "project_title": "Briefing Forge",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Briefing Forge / The Briefing Forge",
+      "component_case_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__0016__briefing-forge-the-briefing-forge",
+      "claim_to_demonstrate": "treats `The Briefing Forge` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: The Briefing Forge is a MuranoOS room for turning research output into live executive briefings — not.",
+      "input_fixture": "project source text and the named component `The Briefing Forge`",
+      "operation_under_test": "treats `The Briefing Forge` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: The Briefing Forge is a MuranoOS room for turning research output into live executive briefings — not.",
+      "expected_output": "a room, workbench, or interface function tied to `The Briefing Forge`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "061d3d8a375b7fd5eb767c1f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44582,
+            "sha256": "1769b3f7c16ed58bc37b108f8a468e596ba7b3163861a42b9599ac1583c74571"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36286,
+            "sha256": "93260102e96bd8f502aa12258e7b2b0cd610fd5a0d3683e9d66960aef18e1768"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "9f7108c8745e82fce7f91a8010a958cf6f48c63d6f0b4261820ff5320ae580f6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20019,
+            "sha256": "a057a60614fa50a379582e47af7f8a938d21d806cf89fa03e30b3e77d9ecacd5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45130,
+            "sha256": "0dc002000c649349b64a730bb7692fd3cbd7cc00669cba72acac82d6be8ab832"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9594,
+            "sha256": "a25096616a8113424214c143f74300372b2e69485e456b4cd53aa3ce615b8517"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8450b0a53780e486de88799e"
+    },
+    {
+      "receipt_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__receipt_0017",
+      "project_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14",
+      "project_title": "Briefing Forge",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Briefing Forge / Reach for",
+      "component_case_id": "mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14__0017__briefing-forge-reach-for",
+      "claim_to_demonstrate": "uses `Reach for` as a named project component with a traceable role in the public mechanism. Source context: Reach for this when: (a) you need a reference briefing-authoring workflow with rigorous screen-vs-speech discipline, transition composition, and.",
+      "input_fixture": "project source text and the named component `Reach for`",
+      "operation_under_test": "uses `Reach for` as a named project component with a traceable role in the public mechanism. Source context: Reach for this when: (a) you need a reference briefing-authoring workflow with rigorous screen-vs-speech discipline, transition composition, and.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Reach for`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "7d83950f0cf350ce214813cb",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44582,
+            "sha256": "1769b3f7c16ed58bc37b108f8a468e596ba7b3163861a42b9599ac1583c74571"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36286,
+            "sha256": "93260102e96bd8f502aa12258e7b2b0cd610fd5a0d3683e9d66960aef18e1768"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "9f7108c8745e82fce7f91a8010a958cf6f48c63d6f0b4261820ff5320ae580f6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20019,
+            "sha256": "a057a60614fa50a379582e47af7f8a938d21d806cf89fa03e30b3e77d9ecacd5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45130,
+            "sha256": "0dc002000c649349b64a730bb7692fd3cbd7cc00669cba72acac82d6be8ab832"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9594,
+            "sha256": "a25096616a8113424214c143f74300372b2e69485e456b4cd53aa3ce615b8517"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "017a5086462d28477007e8ad"
+    }
+  ]
+}

@@ -1,0 +1,1470 @@
+{
+  "project": {
+    "project_id": "native-aishared-instruments",
+    "title": "AI Shared Instruments"
+  },
+  "receipts": [
+    {
+      "receipt_id": "native-aishared-instruments__receipt_0001",
+      "project_id": "native-aishared-instruments",
+      "project_title": "AI Shared Instruments",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Shared Instruments Runtime Or Interface Surface",
+      "component_case_id": "native-aishared-instruments__0001__ai-shared-instruments-runtime-or-interface-surface",
+      "claim_to_demonstrate": "AI Shared Instruments is presented as an AI assurance and retrieval-integrity instrument.",
+      "input_fixture": "local app, web room, data surface, or workstation entry point",
+      "operation_under_test": "AI Shared Instruments is presented as an AI assurance and retrieval-integrity instrument.",
+      "expected_output": "reader-facing definition of the software object and its intended user",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8fd882083e0f8259b8a06f60",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45344,
+            "sha256": "68a21f64253af518e3c5647adeefbf83ded2d2ce4c47bdf4f03f237c48fc12c3"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38682,
+            "sha256": "c39c847300d002ac72635b7d9e500c0930319f69e9c82bf2d9410b43fefd7c7d"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20179,
+            "sha256": "a8ffb4877183622947d172a7003331f0d4a12a4dc8ee6cc1f167bfa8bcf385e8"
+          },
+          {
+            "relative_path": "proof_builds/native-aishared-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20903,
+            "sha256": "0719a80d92a0d89d8680fbc6771745acc5317bbf82e9e4d55ff3c6bf0969104b"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45755,
+            "sha256": "704bccef5a4b1a6060a39b1553202792bbe9bf8d2bf031748a072bed63eae09e"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9291,
+            "sha256": "8fd5c3999ddcf05172e78f1180cb80f56767528556a98c4b53a1823b04b99918"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-aishared-instruments/blueprint.json",
+          "project_blueprints/native-aishared-instruments/instrument_map.json",
+          "project_blueprints/native-aishared-instruments/README.md",
+          "proof_builds/native-aishared-instruments/proof_build.json",
+          "proof_demos/native-aishared-instruments/demo_cases.json",
+          "proof_demos/native-aishared-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1561949ea0d63b0dc4ae99f7"
+    },
+    {
+      "receipt_id": "native-aishared-instruments__receipt_0002",
+      "project_id": "native-aishared-instruments",
+      "project_title": "AI Shared Instruments",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Shared Instruments Data And State Model",
+      "component_case_id": "native-aishared-instruments__0002__ai-shared-instruments-data-and-state-model",
+      "claim_to_demonstrate": "Method source. Clarifies the analytical method or reasoning discipline behind the page. Domain source. Supplies the substantive field knowledge against which claims must be checked. Evidence source. Supplies examples, cases, documents, or work products that.",
+      "input_fixture": "records, files, indexes, tables, project state, source state, and user decisions",
+      "operation_under_test": "Method source. Clarifies the analytical method or reasoning discipline behind the page. Domain source. Supplies the substantive field knowledge against which claims must be checked. Evidence source. Supplies examples, cases, documents, or work products that.",
+      "expected_output": "state model that explains what the tool remembers and what it refuses to infer",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4da81596b91ff65b95cc789b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45344,
+            "sha256": "68a21f64253af518e3c5647adeefbf83ded2d2ce4c47bdf4f03f237c48fc12c3"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38682,
+            "sha256": "c39c847300d002ac72635b7d9e500c0930319f69e9c82bf2d9410b43fefd7c7d"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20179,
+            "sha256": "a8ffb4877183622947d172a7003331f0d4a12a4dc8ee6cc1f167bfa8bcf385e8"
+          },
+          {
+            "relative_path": "proof_builds/native-aishared-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20903,
+            "sha256": "0719a80d92a0d89d8680fbc6771745acc5317bbf82e9e4d55ff3c6bf0969104b"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45755,
+            "sha256": "704bccef5a4b1a6060a39b1553202792bbe9bf8d2bf031748a072bed63eae09e"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9291,
+            "sha256": "8fd5c3999ddcf05172e78f1180cb80f56767528556a98c4b53a1823b04b99918"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-aishared-instruments/blueprint.json",
+          "project_blueprints/native-aishared-instruments/instrument_map.json",
+          "project_blueprints/native-aishared-instruments/README.md",
+          "proof_builds/native-aishared-instruments/proof_build.json",
+          "proof_demos/native-aishared-instruments/demo_cases.json",
+          "proof_demos/native-aishared-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "75e5ff7d3420740fb22862ac"
+    },
+    {
+      "receipt_id": "native-aishared-instruments__receipt_0003",
+      "project_id": "native-aishared-instruments",
+      "project_title": "AI Shared Instruments",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Shared Instruments Core Instrument Panel",
+      "component_case_id": "native-aishared-instruments__0003__ai-shared-instruments-core-instrument-panel",
+      "claim_to_demonstrate": "The working mechanism is to move from threat model to test condition, system behavior, error mode, human-review checkpoint, scoring rule, and release or rejection gate. The reader should be able to ask what enters the room, what transformation occurs, what.",
+      "input_fixture": "tool buttons, rooms, workflow steps, analytical controls, and review surfaces",
+      "operation_under_test": "The working mechanism is to move from threat model to test condition, system behavior, error mode, human-review checkpoint, scoring rule, and release or rejection gate. The reader should be able to ask what enters the room, what transformation occurs, what.",
+      "expected_output": "named instruments that perform the useful work rather than generic navigation",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0f34fd9a5a44ba183928e1ab",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45344,
+            "sha256": "68a21f64253af518e3c5647adeefbf83ded2d2ce4c47bdf4f03f237c48fc12c3"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38682,
+            "sha256": "c39c847300d002ac72635b7d9e500c0930319f69e9c82bf2d9410b43fefd7c7d"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20179,
+            "sha256": "a8ffb4877183622947d172a7003331f0d4a12a4dc8ee6cc1f167bfa8bcf385e8"
+          },
+          {
+            "relative_path": "proof_builds/native-aishared-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20903,
+            "sha256": "0719a80d92a0d89d8680fbc6771745acc5317bbf82e9e4d55ff3c6bf0969104b"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45755,
+            "sha256": "704bccef5a4b1a6060a39b1553202792bbe9bf8d2bf031748a072bed63eae09e"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9291,
+            "sha256": "8fd5c3999ddcf05172e78f1180cb80f56767528556a98c4b53a1823b04b99918"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-aishared-instruments/blueprint.json",
+          "project_blueprints/native-aishared-instruments/instrument_map.json",
+          "project_blueprints/native-aishared-instruments/README.md",
+          "proof_builds/native-aishared-instruments/proof_build.json",
+          "proof_demos/native-aishared-instruments/demo_cases.json",
+          "proof_demos/native-aishared-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5053ee047f109a2a2e6e8ba4"
+    },
+    {
+      "receipt_id": "native-aishared-instruments__receipt_0004",
+      "project_id": "native-aishared-instruments",
+      "project_title": "AI Shared Instruments",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Shared Instruments Workflow Orchestration",
+      "component_case_id": "native-aishared-instruments__0004__ai-shared-instruments-workflow-orchestration",
+      "claim_to_demonstrate": "Plan: separate prototype capability from validated finding, bind claims to test materials, expose false-positive and false-negative risks, and add method-specific source anchors. The project source notes below should be converted into authored subsections.",
+      "input_fixture": "upstream inputs, intermediate decisions, downstream products, and stale-state conditions",
+      "operation_under_test": "Plan: separate prototype capability from validated finding, bind claims to test materials, expose false-positive and false-negative risks, and add method-specific source anchors. The project source notes below should be converted into authored subsections.",
+      "expected_output": "pipeline path showing how work moves and when earlier decisions must be reopened",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fd96493f227a13a744bbc6d4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45344,
+            "sha256": "68a21f64253af518e3c5647adeefbf83ded2d2ce4c47bdf4f03f237c48fc12c3"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38682,
+            "sha256": "c39c847300d002ac72635b7d9e500c0930319f69e9c82bf2d9410b43fefd7c7d"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20179,
+            "sha256": "a8ffb4877183622947d172a7003331f0d4a12a4dc8ee6cc1f167bfa8bcf385e8"
+          },
+          {
+            "relative_path": "proof_builds/native-aishared-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20903,
+            "sha256": "0719a80d92a0d89d8680fbc6771745acc5317bbf82e9e4d55ff3c6bf0969104b"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45755,
+            "sha256": "704bccef5a4b1a6060a39b1553202792bbe9bf8d2bf031748a072bed63eae09e"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9291,
+            "sha256": "8fd5c3999ddcf05172e78f1180cb80f56767528556a98c4b53a1823b04b99918"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-aishared-instruments/blueprint.json",
+          "project_blueprints/native-aishared-instruments/instrument_map.json",
+          "project_blueprints/native-aishared-instruments/README.md",
+          "proof_builds/native-aishared-instruments/proof_build.json",
+          "proof_demos/native-aishared-instruments/demo_cases.json",
+          "proof_demos/native-aishared-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "100763931b03e1dc149273d5"
+    },
+    {
+      "receipt_id": "native-aishared-instruments__receipt_0005",
+      "project_id": "native-aishared-instruments",
+      "project_title": "AI Shared Instruments",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Shared Instruments Review And Governance Gate",
+      "component_case_id": "native-aishared-instruments__0005__ai-shared-instruments-review-and-governance-gate",
+      "claim_to_demonstrate": "Status: native public port complete for upload and navigation; substantive source-project verification remains limited by the source lineage ceiling and the original project governance records. The page separates public presentation from project completion.",
+      "input_fixture": "quality rules, source checks, claim ceilings, reviewer steps, and failure states",
+      "operation_under_test": "Status: native public port complete for upload and navigation; substantive source-project verification remains limited by the source lineage ceiling and the original project governance records. The page separates public presentation from project completion.",
+      "expected_output": "decision gate that makes the output inspectable before it is trusted",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f0a9b7ff3262d180291ae4ca",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45344,
+            "sha256": "68a21f64253af518e3c5647adeefbf83ded2d2ce4c47bdf4f03f237c48fc12c3"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38682,
+            "sha256": "c39c847300d002ac72635b7d9e500c0930319f69e9c82bf2d9410b43fefd7c7d"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20179,
+            "sha256": "a8ffb4877183622947d172a7003331f0d4a12a4dc8ee6cc1f167bfa8bcf385e8"
+          },
+          {
+            "relative_path": "proof_builds/native-aishared-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20903,
+            "sha256": "0719a80d92a0d89d8680fbc6771745acc5317bbf82e9e4d55ff3c6bf0969104b"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45755,
+            "sha256": "704bccef5a4b1a6060a39b1553202792bbe9bf8d2bf031748a072bed63eae09e"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9291,
+            "sha256": "8fd5c3999ddcf05172e78f1180cb80f56767528556a98c4b53a1823b04b99918"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-aishared-instruments/blueprint.json",
+          "project_blueprints/native-aishared-instruments/instrument_map.json",
+          "project_blueprints/native-aishared-instruments/README.md",
+          "proof_builds/native-aishared-instruments/proof_build.json",
+          "proof_demos/native-aishared-instruments/demo_cases.json",
+          "proof_demos/native-aishared-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "cce4c31bd608bae64e010bb7"
+    },
+    {
+      "receipt_id": "native-aishared-instruments__receipt_0006",
+      "project_id": "native-aishared-instruments",
+      "project_title": "AI Shared Instruments",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Shared Instruments Export Or Integration Surface",
+      "component_case_id": "native-aishared-instruments__0006__ai-shared-instruments-export-or-integration-surface",
+      "claim_to_demonstrate": "Visible public components: 1 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains text-focused and does not claim unverified runtime state.",
+      "input_fixture": "brief, paper, room, dataset, packet, rendered page, or external handoff",
+      "operation_under_test": "Visible public components: 1 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains text-focused and does not claim unverified runtime state.",
+      "expected_output": "usable output that another project, professor, employer, or collaborator can inspect",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "577c94f4228762f7478a15a0",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45344,
+            "sha256": "68a21f64253af518e3c5647adeefbf83ded2d2ce4c47bdf4f03f237c48fc12c3"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38682,
+            "sha256": "c39c847300d002ac72635b7d9e500c0930319f69e9c82bf2d9410b43fefd7c7d"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20179,
+            "sha256": "a8ffb4877183622947d172a7003331f0d4a12a4dc8ee6cc1f167bfa8bcf385e8"
+          },
+          {
+            "relative_path": "proof_builds/native-aishared-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20903,
+            "sha256": "0719a80d92a0d89d8680fbc6771745acc5317bbf82e9e4d55ff3c6bf0969104b"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45755,
+            "sha256": "704bccef5a4b1a6060a39b1553202792bbe9bf8d2bf031748a072bed63eae09e"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9291,
+            "sha256": "8fd5c3999ddcf05172e78f1180cb80f56767528556a98c4b53a1823b04b99918"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-aishared-instruments/blueprint.json",
+          "project_blueprints/native-aishared-instruments/instrument_map.json",
+          "project_blueprints/native-aishared-instruments/README.md",
+          "proof_builds/native-aishared-instruments/proof_build.json",
+          "proof_demos/native-aishared-instruments/demo_cases.json",
+          "proof_demos/native-aishared-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "60ff23de81e37286374a9693"
+    },
+    {
+      "receipt_id": "native-aishared-instruments__receipt_0007",
+      "project_id": "native-aishared-instruments",
+      "project_title": "AI Shared Instruments",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Shared Instruments Build Verification Queue",
+      "component_case_id": "native-aishared-instruments__0007__ai-shared-instruments-build-verification-queue",
+      "claim_to_demonstrate": "Remaining gaps: many AI pages need stronger page-specific experimental status, clearer validation boundaries, and less reliance on representative method bibliography. The kept Evidence Sections below preserve project substance for close reading; final public.",
+      "input_fixture": "unbuilt modules, missing walkthroughs, test cases, and validation evidence",
+      "operation_under_test": "Remaining gaps: many AI pages need stronger page-specific experimental status, clearer validation boundaries, and less reliance on representative method bibliography. The kept Evidence Sections below preserve project substance for close reading; final public.",
+      "expected_output": "next proof needed before broader claims about the tool are safe",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e350b0e07ab7b9d385896d3e",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45344,
+            "sha256": "68a21f64253af518e3c5647adeefbf83ded2d2ce4c47bdf4f03f237c48fc12c3"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38682,
+            "sha256": "c39c847300d002ac72635b7d9e500c0930319f69e9c82bf2d9410b43fefd7c7d"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20179,
+            "sha256": "a8ffb4877183622947d172a7003331f0d4a12a4dc8ee6cc1f167bfa8bcf385e8"
+          },
+          {
+            "relative_path": "proof_builds/native-aishared-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20903,
+            "sha256": "0719a80d92a0d89d8680fbc6771745acc5317bbf82e9e4d55ff3c6bf0969104b"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45755,
+            "sha256": "704bccef5a4b1a6060a39b1553202792bbe9bf8d2bf031748a072bed63eae09e"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9291,
+            "sha256": "8fd5c3999ddcf05172e78f1180cb80f56767528556a98c4b53a1823b04b99918"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-aishared-instruments/blueprint.json",
+          "project_blueprints/native-aishared-instruments/instrument_map.json",
+          "project_blueprints/native-aishared-instruments/README.md",
+          "proof_builds/native-aishared-instruments/proof_build.json",
+          "proof_demos/native-aishared-instruments/demo_cases.json",
+          "proof_demos/native-aishared-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "32a823da37507286c41706ea"
+    },
+    {
+      "receipt_id": "native-aishared-instruments__receipt_0008",
+      "project_id": "native-aishared-instruments",
+      "project_title": "AI Shared Instruments",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Shared Instruments / Evidence Sections",
+      "component_case_id": "native-aishared-instruments__0008__ai-shared-instruments-evidence-sections",
+      "claim_to_demonstrate": "uses `Evidence Sections` as a named project component with a traceable role in the public mechanism. Source context: 1 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "input_fixture": "project source text and the named component `Evidence Sections`",
+      "operation_under_test": "uses `Evidence Sections` as a named project component with a traceable role in the public mechanism. Source context: 1 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Evidence Sections`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f616dc9ddd2278870036cbde",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45344,
+            "sha256": "68a21f64253af518e3c5647adeefbf83ded2d2ce4c47bdf4f03f237c48fc12c3"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38682,
+            "sha256": "c39c847300d002ac72635b7d9e500c0930319f69e9c82bf2d9410b43fefd7c7d"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20179,
+            "sha256": "a8ffb4877183622947d172a7003331f0d4a12a4dc8ee6cc1f167bfa8bcf385e8"
+          },
+          {
+            "relative_path": "proof_builds/native-aishared-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20903,
+            "sha256": "0719a80d92a0d89d8680fbc6771745acc5317bbf82e9e4d55ff3c6bf0969104b"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45755,
+            "sha256": "704bccef5a4b1a6060a39b1553202792bbe9bf8d2bf031748a072bed63eae09e"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9291,
+            "sha256": "8fd5c3999ddcf05172e78f1180cb80f56767528556a98c4b53a1823b04b99918"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-aishared-instruments/blueprint.json",
+          "project_blueprints/native-aishared-instruments/instrument_map.json",
+          "project_blueprints/native-aishared-instruments/README.md",
+          "proof_builds/native-aishared-instruments/proof_build.json",
+          "proof_demos/native-aishared-instruments/demo_cases.json",
+          "proof_demos/native-aishared-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7eb522ec7e52c84499c97038"
+    },
+    {
+      "receipt_id": "native-aishared-instruments__receipt_0009",
+      "project_id": "native-aishared-instruments",
+      "project_title": "AI Shared Instruments",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Shared Instruments / Review Notes",
+      "component_case_id": "native-aishared-instruments__0009__ai-shared-instruments-review-notes",
+      "claim_to_demonstrate": "uses `Review Notes` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 1 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The.",
+      "input_fixture": "project source text and the named component `Review Notes`",
+      "operation_under_test": "uses `Review Notes` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 1 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `Review Notes`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f616dc9ddd2278870036cbde",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45344,
+            "sha256": "68a21f64253af518e3c5647adeefbf83ded2d2ce4c47bdf4f03f237c48fc12c3"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38682,
+            "sha256": "c39c847300d002ac72635b7d9e500c0930319f69e9c82bf2d9410b43fefd7c7d"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20179,
+            "sha256": "a8ffb4877183622947d172a7003331f0d4a12a4dc8ee6cc1f167bfa8bcf385e8"
+          },
+          {
+            "relative_path": "proof_builds/native-aishared-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20903,
+            "sha256": "0719a80d92a0d89d8680fbc6771745acc5317bbf82e9e4d55ff3c6bf0969104b"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45755,
+            "sha256": "704bccef5a4b1a6060a39b1553202792bbe9bf8d2bf031748a072bed63eae09e"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9291,
+            "sha256": "8fd5c3999ddcf05172e78f1180cb80f56767528556a98c4b53a1823b04b99918"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-aishared-instruments/blueprint.json",
+          "project_blueprints/native-aishared-instruments/instrument_map.json",
+          "project_blueprints/native-aishared-instruments/README.md",
+          "proof_builds/native-aishared-instruments/proof_build.json",
+          "proof_demos/native-aishared-instruments/demo_cases.json",
+          "proof_demos/native-aishared-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ff2406fc455ae854c0dfa1b7"
+    },
+    {
+      "receipt_id": "native-aishared-instruments__receipt_0010",
+      "project_id": "native-aishared-instruments",
+      "project_title": "AI Shared Instruments",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Shared Instruments / Clarifies the",
+      "component_case_id": "native-aishared-instruments__0010__ai-shared-instruments-clarifies-the",
+      "claim_to_demonstrate": "uses `Clarifies the` as a named project component with a traceable role in the public mechanism. Source context: Clarifies the analytical method or reasoning discipline behind the page. Domain source. Supplies the substantive field knowledge against which.",
+      "input_fixture": "project source text and the named component `Clarifies the`",
+      "operation_under_test": "uses `Clarifies the` as a named project component with a traceable role in the public mechanism. Source context: Clarifies the analytical method or reasoning discipline behind the page. Domain source. Supplies the substantive field knowledge against which.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Clarifies the`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ed5a88de5fade713fbaab385",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45344,
+            "sha256": "68a21f64253af518e3c5647adeefbf83ded2d2ce4c47bdf4f03f237c48fc12c3"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38682,
+            "sha256": "c39c847300d002ac72635b7d9e500c0930319f69e9c82bf2d9410b43fefd7c7d"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20179,
+            "sha256": "a8ffb4877183622947d172a7003331f0d4a12a4dc8ee6cc1f167bfa8bcf385e8"
+          },
+          {
+            "relative_path": "proof_builds/native-aishared-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20903,
+            "sha256": "0719a80d92a0d89d8680fbc6771745acc5317bbf82e9e4d55ff3c6bf0969104b"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45755,
+            "sha256": "704bccef5a4b1a6060a39b1553202792bbe9bf8d2bf031748a072bed63eae09e"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9291,
+            "sha256": "8fd5c3999ddcf05172e78f1180cb80f56767528556a98c4b53a1823b04b99918"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-aishared-instruments/blueprint.json",
+          "project_blueprints/native-aishared-instruments/instrument_map.json",
+          "project_blueprints/native-aishared-instruments/README.md",
+          "proof_builds/native-aishared-instruments/proof_build.json",
+          "proof_demos/native-aishared-instruments/demo_cases.json",
+          "proof_demos/native-aishared-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "fbfa8233688f797e030ea24a"
+    },
+    {
+      "receipt_id": "native-aishared-instruments__receipt_0011",
+      "project_id": "native-aishared-instruments",
+      "project_title": "AI Shared Instruments",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Shared Instruments / Supplies the",
+      "component_case_id": "native-aishared-instruments__0011__ai-shared-instruments-supplies-the",
+      "claim_to_demonstrate": "uses `Supplies the` as a named project component with a traceable role in the public mechanism. Source context: The source view supplies the working material for this page; the public explanation below converts that material into a limited brief rather than.",
+      "input_fixture": "project source text and the named component `Supplies the`",
+      "operation_under_test": "uses `Supplies the` as a named project component with a traceable role in the public mechanism. Source context: The source view supplies the working material for this page; the public explanation below converts that material into a limited brief rather than.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Supplies the`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "bc8a213e6eb31962860bc0e9",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45344,
+            "sha256": "68a21f64253af518e3c5647adeefbf83ded2d2ce4c47bdf4f03f237c48fc12c3"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38682,
+            "sha256": "c39c847300d002ac72635b7d9e500c0930319f69e9c82bf2d9410b43fefd7c7d"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20179,
+            "sha256": "a8ffb4877183622947d172a7003331f0d4a12a4dc8ee6cc1f167bfa8bcf385e8"
+          },
+          {
+            "relative_path": "proof_builds/native-aishared-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20903,
+            "sha256": "0719a80d92a0d89d8680fbc6771745acc5317bbf82e9e4d55ff3c6bf0969104b"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45755,
+            "sha256": "704bccef5a4b1a6060a39b1553202792bbe9bf8d2bf031748a072bed63eae09e"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9291,
+            "sha256": "8fd5c3999ddcf05172e78f1180cb80f56767528556a98c4b53a1823b04b99918"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-aishared-instruments/blueprint.json",
+          "project_blueprints/native-aishared-instruments/instrument_map.json",
+          "project_blueprints/native-aishared-instruments/README.md",
+          "proof_builds/native-aishared-instruments/proof_build.json",
+          "proof_demos/native-aishared-instruments/demo_cases.json",
+          "proof_demos/native-aishared-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "117931754f4c29b4149fe7af"
+    },
+    {
+      "receipt_id": "native-aishared-instruments__receipt_0012",
+      "project_id": "native-aishared-instruments",
+      "project_title": "AI Shared Instruments",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Shared Instruments / Native Navigation",
+      "component_case_id": "native-aishared-instruments__0012__ai-shared-instruments-native-navigation",
+      "claim_to_demonstrate": "uses `Native Navigation` as a named project component with a traceable role in the public mechanism. Source context: 1 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "input_fixture": "project source text and the named component `Native Navigation`",
+      "operation_under_test": "uses `Native Navigation` as a named project component with a traceable role in the public mechanism. Source context: 1 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Native Navigation`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f616dc9ddd2278870036cbde",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45344,
+            "sha256": "68a21f64253af518e3c5647adeefbf83ded2d2ce4c47bdf4f03f237c48fc12c3"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38682,
+            "sha256": "c39c847300d002ac72635b7d9e500c0930319f69e9c82bf2d9410b43fefd7c7d"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20179,
+            "sha256": "a8ffb4877183622947d172a7003331f0d4a12a4dc8ee6cc1f167bfa8bcf385e8"
+          },
+          {
+            "relative_path": "proof_builds/native-aishared-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20903,
+            "sha256": "0719a80d92a0d89d8680fbc6771745acc5317bbf82e9e4d55ff3c6bf0969104b"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45755,
+            "sha256": "704bccef5a4b1a6060a39b1553202792bbe9bf8d2bf031748a072bed63eae09e"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9291,
+            "sha256": "8fd5c3999ddcf05172e78f1180cb80f56767528556a98c4b53a1823b04b99918"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-aishared-instruments/blueprint.json",
+          "project_blueprints/native-aishared-instruments/instrument_map.json",
+          "project_blueprints/native-aishared-instruments/README.md",
+          "proof_builds/native-aishared-instruments/proof_build.json",
+          "proof_demos/native-aishared-instruments/demo_cases.json",
+          "proof_demos/native-aishared-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "240c4328ea9bc80cf386b3e3"
+    },
+    {
+      "receipt_id": "native-aishared-instruments__receipt_0013",
+      "project_id": "native-aishared-instruments",
+      "project_title": "AI Shared Instruments",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Shared Instruments / APA lineage",
+      "component_case_id": "native-aishared-instruments__0013__ai-shared-instruments-apa-lineage",
+      "claim_to_demonstrate": "uses `APA lineage` as a named project component with a traceable role in the public mechanism. Source context: 1 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains.",
+      "input_fixture": "project source text and the named component `APA lineage`",
+      "operation_under_test": "uses `APA lineage` as a named project component with a traceable role in the public mechanism. Source context: 1 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `APA lineage`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f616dc9ddd2278870036cbde",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45344,
+            "sha256": "68a21f64253af518e3c5647adeefbf83ded2d2ce4c47bdf4f03f237c48fc12c3"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38682,
+            "sha256": "c39c847300d002ac72635b7d9e500c0930319f69e9c82bf2d9410b43fefd7c7d"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20179,
+            "sha256": "a8ffb4877183622947d172a7003331f0d4a12a4dc8ee6cc1f167bfa8bcf385e8"
+          },
+          {
+            "relative_path": "proof_builds/native-aishared-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20903,
+            "sha256": "0719a80d92a0d89d8680fbc6771745acc5317bbf82e9e4d55ff3c6bf0969104b"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45755,
+            "sha256": "704bccef5a4b1a6060a39b1553202792bbe9bf8d2bf031748a072bed63eae09e"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9291,
+            "sha256": "8fd5c3999ddcf05172e78f1180cb80f56767528556a98c4b53a1823b04b99918"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-aishared-instruments/blueprint.json",
+          "project_blueprints/native-aishared-instruments/instrument_map.json",
+          "project_blueprints/native-aishared-instruments/README.md",
+          "proof_builds/native-aishared-instruments/proof_build.json",
+          "proof_demos/native-aishared-instruments/demo_cases.json",
+          "proof_demos/native-aishared-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a90b4788c882f267e599693a"
+    },
+    {
+      "receipt_id": "native-aishared-instruments__receipt_0014",
+      "project_id": "native-aishared-instruments",
+      "project_title": "AI Shared Instruments",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Shared Instruments / source lineage claim limit. The public package remains text",
+      "component_case_id": "native-aishared-instruments__0014__ai-shared-instruments-source-lineage-claim-limit-the-public-package-remains-text",
+      "claim_to_demonstrate": "uses `source lineage claim limit. The public package remains text` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 1 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA.",
+      "input_fixture": "project source text and the named component `source lineage claim limit. The public package remains text`",
+      "operation_under_test": "uses `source lineage claim limit. The public package remains text` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 1 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `source lineage claim limit. The public package remains text`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f616dc9ddd2278870036cbde",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45344,
+            "sha256": "68a21f64253af518e3c5647adeefbf83ded2d2ce4c47bdf4f03f237c48fc12c3"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38682,
+            "sha256": "c39c847300d002ac72635b7d9e500c0930319f69e9c82bf2d9410b43fefd7c7d"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20179,
+            "sha256": "a8ffb4877183622947d172a7003331f0d4a12a4dc8ee6cc1f167bfa8bcf385e8"
+          },
+          {
+            "relative_path": "proof_builds/native-aishared-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20903,
+            "sha256": "0719a80d92a0d89d8680fbc6771745acc5317bbf82e9e4d55ff3c6bf0969104b"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45755,
+            "sha256": "704bccef5a4b1a6060a39b1553202792bbe9bf8d2bf031748a072bed63eae09e"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9291,
+            "sha256": "8fd5c3999ddcf05172e78f1180cb80f56767528556a98c4b53a1823b04b99918"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-aishared-instruments/blueprint.json",
+          "project_blueprints/native-aishared-instruments/instrument_map.json",
+          "project_blueprints/native-aishared-instruments/README.md",
+          "proof_builds/native-aishared-instruments/proof_build.json",
+          "proof_demos/native-aishared-instruments/demo_cases.json",
+          "proof_demos/native-aishared-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6a0b089c322473bd73f79d26"
+    },
+    {
+      "receipt_id": "native-aishared-instruments__receipt_0015",
+      "project_id": "native-aishared-instruments",
+      "project_title": "AI Shared Instruments",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Shared Instruments / Bind Claims To Test Materials",
+      "component_case_id": "native-aishared-instruments__0015__ai-shared-instruments-bind-claims-to-test-materials",
+      "claim_to_demonstrate": "uses `Bind Claims To Test Materials` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: separate prototype capability from validated finding, bind claims to test materials, expose false-positive and.",
+      "input_fixture": "project source text and the named component `Bind Claims To Test Materials`",
+      "operation_under_test": "uses `Bind Claims To Test Materials` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: separate prototype capability from validated finding, bind claims to test materials, expose false-positive and.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `Bind Claims To Test Materials`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "7aceb7dcc9e22d8a80281c17",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45344,
+            "sha256": "68a21f64253af518e3c5647adeefbf83ded2d2ce4c47bdf4f03f237c48fc12c3"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38682,
+            "sha256": "c39c847300d002ac72635b7d9e500c0930319f69e9c82bf2d9410b43fefd7c7d"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20179,
+            "sha256": "a8ffb4877183622947d172a7003331f0d4a12a4dc8ee6cc1f167bfa8bcf385e8"
+          },
+          {
+            "relative_path": "proof_builds/native-aishared-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20903,
+            "sha256": "0719a80d92a0d89d8680fbc6771745acc5317bbf82e9e4d55ff3c6bf0969104b"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45755,
+            "sha256": "704bccef5a4b1a6060a39b1553202792bbe9bf8d2bf031748a072bed63eae09e"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9291,
+            "sha256": "8fd5c3999ddcf05172e78f1180cb80f56767528556a98c4b53a1823b04b99918"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-aishared-instruments/blueprint.json",
+          "project_blueprints/native-aishared-instruments/instrument_map.json",
+          "project_blueprints/native-aishared-instruments/README.md",
+          "proof_builds/native-aishared-instruments/proof_build.json",
+          "proof_demos/native-aishared-instruments/demo_cases.json",
+          "proof_demos/native-aishared-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "586866be7853c822295c2ee7"
+    },
+    {
+      "receipt_id": "native-aishared-instruments__receipt_0016",
+      "project_id": "native-aishared-instruments",
+      "project_title": "AI Shared Instruments",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Shared Instruments / Expose False",
+      "component_case_id": "native-aishared-instruments__0016__ai-shared-instruments-expose-false",
+      "claim_to_demonstrate": "uses `Expose False` as a named project component with a traceable role in the public mechanism. Source context: separate prototype capability from validated finding, bind claims to test materials, expose false-positive and false-negative risks, and add.",
+      "input_fixture": "project source text and the named component `Expose False`",
+      "operation_under_test": "uses `Expose False` as a named project component with a traceable role in the public mechanism. Source context: separate prototype capability from validated finding, bind claims to test materials, expose false-positive and false-negative risks, and add.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Expose False`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "7aceb7dcc9e22d8a80281c17",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45344,
+            "sha256": "68a21f64253af518e3c5647adeefbf83ded2d2ce4c47bdf4f03f237c48fc12c3"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38682,
+            "sha256": "c39c847300d002ac72635b7d9e500c0930319f69e9c82bf2d9410b43fefd7c7d"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20179,
+            "sha256": "a8ffb4877183622947d172a7003331f0d4a12a4dc8ee6cc1f167bfa8bcf385e8"
+          },
+          {
+            "relative_path": "proof_builds/native-aishared-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20903,
+            "sha256": "0719a80d92a0d89d8680fbc6771745acc5317bbf82e9e4d55ff3c6bf0969104b"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45755,
+            "sha256": "704bccef5a4b1a6060a39b1553202792bbe9bf8d2bf031748a072bed63eae09e"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9291,
+            "sha256": "8fd5c3999ddcf05172e78f1180cb80f56767528556a98c4b53a1823b04b99918"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-aishared-instruments/blueprint.json",
+          "project_blueprints/native-aishared-instruments/instrument_map.json",
+          "project_blueprints/native-aishared-instruments/README.md",
+          "proof_builds/native-aishared-instruments/proof_build.json",
+          "proof_demos/native-aishared-instruments/demo_cases.json",
+          "proof_demos/native-aishared-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "855054922142e0679b39a8e3"
+    },
+    {
+      "receipt_id": "native-aishared-instruments__receipt_0017",
+      "project_id": "native-aishared-instruments",
+      "project_title": "AI Shared Instruments",
+      "proof_tier": "source-backed-proof-build",
+      "component": "AI Shared Instruments / Positive And False",
+      "component_case_id": "native-aishared-instruments__0017__ai-shared-instruments-positive-and-false",
+      "claim_to_demonstrate": "uses `Positive And False` as a named project component with a traceable role in the public mechanism. Source context: separate prototype capability from validated finding, bind claims to test materials, expose false-positive and false-negative risks, and add.",
+      "input_fixture": "project source text and the named component `Positive And False`",
+      "operation_under_test": "uses `Positive And False` as a named project component with a traceable role in the public mechanism. Source context: separate prototype capability from validated finding, bind claims to test materials, expose false-positive and false-negative risks, and add.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Positive And False`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "7aceb7dcc9e22d8a80281c17",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45344,
+            "sha256": "68a21f64253af518e3c5647adeefbf83ded2d2ce4c47bdf4f03f237c48fc12c3"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38682,
+            "sha256": "c39c847300d002ac72635b7d9e500c0930319f69e9c82bf2d9410b43fefd7c7d"
+          },
+          {
+            "relative_path": "project_blueprints/native-aishared-instruments/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20179,
+            "sha256": "a8ffb4877183622947d172a7003331f0d4a12a4dc8ee6cc1f167bfa8bcf385e8"
+          },
+          {
+            "relative_path": "proof_builds/native-aishared-instruments/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20903,
+            "sha256": "0719a80d92a0d89d8680fbc6771745acc5317bbf82e9e4d55ff3c6bf0969104b"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45755,
+            "sha256": "704bccef5a4b1a6060a39b1553202792bbe9bf8d2bf031748a072bed63eae09e"
+          },
+          {
+            "relative_path": "proof_demos/native-aishared-instruments/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9291,
+            "sha256": "8fd5c3999ddcf05172e78f1180cb80f56767528556a98c4b53a1823b04b99918"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-aishared-instruments/blueprint.json",
+          "project_blueprints/native-aishared-instruments/instrument_map.json",
+          "project_blueprints/native-aishared-instruments/README.md",
+          "proof_builds/native-aishared-instruments/proof_build.json",
+          "proof_demos/native-aishared-instruments/demo_cases.json",
+          "proof_demos/native-aishared-instruments/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4ebe71900ade8dce9922c4f9"
+    }
+  ]
+}

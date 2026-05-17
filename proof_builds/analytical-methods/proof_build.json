@@ -1,0 +1,133 @@
+{
+  "section_id": "analytical-methods",
+  "title": "Structured Methods Library — method-composition page across Heuer, structured analytic techniques, and intelligence methodology",
+  "section_type": "primary_showcase",
+  "map_type": "curated_sat_assurance",
+  "proof_tier": "specified-proof-plan-needs-demo",
+  "public_claim": "A general analytical-methodology library: the place where method families, source authorities, and reusable tradecraft moves are catalogued and made checkable.",
+  "distinctive_mechanism": "Four mappings define every method in the catalogue: the question the method answers, the canonical source it derives from, the analytical trap it guards against, and the way the method composes with other methods.",
+  "use_value": "It turns analytic methods into reusable instruments with inputs, steps, failure modes, interpretation rules, and reviewer actions.",
+  "built_evidence": [
+    {
+      "label": "Blueprint",
+      "path": "project_blueprints/analytical-methods/blueprint.json",
+      "status": "present"
+    },
+    {
+      "label": "Instrument map",
+      "path": "project_blueprints/analytical-methods/instrument_map.json",
+      "status": "present"
+    },
+    {
+      "label": "Project README",
+      "path": "project_blueprints/analytical-methods/README.md",
+      "status": "present"
+    }
+  ],
+  "component_count": 8,
+  "component_status_counts": {
+    "specified-output-needs-demo": 8
+  },
+  "flagship_proof_builds": [
+    {
+      "name": "SAT sequence utility proof",
+      "claim": "Structured techniques are not just labels; the system should show which technique or sequence fits which analytic task and where it adds value or burden.",
+      "input": "analytic task, uncertainty type, evidence state, candidate SATs, and analyst burden",
+      "operation": "select and sequence SATs, record rationale, and compare output quality against burden",
+      "expected_output": "technique-sequence recommendation with warning about misuse or low value",
+      "verification_check": "run one task through two candidate SAT sequences and compare diagnostic yield and burden"
+    }
+  ],
+  "component_proofs": [
+    {
+      "component": "Task And Method Assignment",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated sat assurance",
+      "claim_supported": "selects the structured analytic technique or technique sequence that fits the task rather than applying SAT labels ornamentally",
+      "input": "intelligence or research question, decision context, evidence type, uncertainty level, and user role",
+      "expected_output": "method assignment and technique rationale as a reviewable artifact",
+      "current_evidence": "Expected proof artifact: method assignment and technique rationale as a reviewable artifact",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Run one analytic question through Task And Method Assignment; confirm evidence, assumptions, method decision, confidence limit, and human/AI delta."
+    },
+    {
+      "component": "Evidence And Assumption Intake",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated sat assurance",
+      "claim_supported": "separates evidence from assumptions before the analytic method begins; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input": "source record, assumptions, alternatives, indicators, confidence basis, and possible deception conditions",
+      "expected_output": "evidence/assumption ledger as a reviewable artifact",
+      "current_evidence": "Expected proof artifact: evidence/assumption ledger as a reviewable artifact",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Run one analytic question through Evidence And Assumption Intake; confirm evidence, assumptions, method decision, confidence limit, and human/AI delta."
+    },
+    {
+      "component": "ACH / Alternatives Matrix",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated sat assurance",
+      "claim_supported": "turns competing explanations into an inspectable matrix instead of a narrative preference",
+      "input": "hypotheses, evidence rows, diagnosticity, contradiction, and consistency judgments",
+      "expected_output": "ACH-style comparison product as a reviewable artifact",
+      "current_evidence": "Expected proof artifact: ACH-style comparison product as a reviewable artifact",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Run one analytic question through ACH / Alternatives Matrix; confirm evidence, assumptions, method decision, confidence limit, and human/AI delta."
+    },
+    {
+      "component": "Red-Team / Devil's Advocate Pass",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated sat assurance",
+      "claim_supported": "attacks the current judgment before it is polished into final prose; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input": "favored conclusion, assumptions, missing evidence, rival frame, and adversary incentives",
+      "expected_output": "challenge memo and revision demand as a reviewable artifact",
+      "current_evidence": "Expected proof artifact: challenge memo and revision demand as a reviewable artifact",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Run one analytic question through Red-Team / Devil's Advocate Pass; confirm evidence, assumptions, method decision, confidence limit, and human/AI delta."
+    },
+    {
+      "component": "Uncertainty And Confidence Gate",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated sat assurance",
+      "claim_supported": "prevents a fluent answer from presenting uncertainty as stronger than the evidence supports",
+      "input": "confidence level, source quality, ambiguity, contradiction, and collection gaps",
+      "expected_output": "confidence statement and collection-gap list as a reviewable artifact",
+      "current_evidence": "Expected proof artifact: confidence statement and collection-gap list as a reviewable artifact",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Run one analytic question through Uncertainty And Confidence Gate; confirm evidence, assumptions, method decision, confidence limit, and human/AI delta."
+    },
+    {
+      "component": "Human-AI Delta Review",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated sat assurance",
+      "claim_supported": "shows where AI helped, failed, hallucinated, over-weighted, or missed analyst context",
+      "input": "AI output, human analyst judgment, source trail, uncertainty basis, and override reason",
+      "expected_output": "accept, qualify, block, rerun, or quarantine decision",
+      "current_evidence": "Expected proof artifact: accept, qualify, block, rerun, or quarantine decision",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Run one analytic question through Human-AI Delta Review; confirm evidence, assumptions, method decision, confidence limit, and human/AI delta."
+    },
+    {
+      "component": "Technique Combination Studio",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated sat assurance",
+      "claim_supported": "tests which SAT sequence is useful for a specific research or intelligence task and which combinations add cost without value",
+      "input": "multiple SATs, task type, stage of inquiry, and analyst burden",
+      "expected_output": "SAT sequence recommendation and warning as a reviewable artifact",
+      "current_evidence": "Expected proof artifact: SAT sequence recommendation and warning as a reviewable artifact",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Run one analytic question through Technique Combination Studio; confirm evidence, assumptions, method decision, confidence limit, and human/AI delta."
+    },
+    {
+      "component": "Release And Learning Ledger",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated sat assurance",
+      "claim_supported": "turns one analytic exercise into a reusable record for improving future human-AI analytic workflows",
+      "input": "final analytic product, method trail, disagreement state, review decision, and lessons learned",
+      "expected_output": "release decision and method-learning record as a reviewable artifact",
+      "current_evidence": "Expected proof artifact: release decision and method-learning record as a reviewable artifact",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Run one analytic question through Release And Learning Ledger; confirm evidence, assumptions, method decision, confidence limit, and human/AI delta."
+    }
+  ],
+  "minimum_public_demo": "run one task through two candidate SAT sequences and compare diagnostic yield and burden",
+  "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts."
+}

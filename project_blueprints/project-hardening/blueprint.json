@@ -1,0 +1,100 @@
+{
+  "section_id": "project-hardening",
+  "title": "Quality Review — checking project claims against evidence, scope, and readiness",
+  "section_type": "primary_showcase",
+  "kicker": "",
+  "fields": {
+    "vision": "A quality-review and hardening surface for moving projects toward release.",
+    "mechanism": "It asks what is built, what claim it supports, what evidence proves it, what can break, and what demonstration would make the claim stronger, moving projects through Stage S0 Prospecting Build, Stage S1 Survey, Stage S2 Lite, Deep Anchored work, Stage S3 SOPs, red-team executable SOPs, Stage S4 Yield, Stage S5 Pilot Pre-register, RETIRE Validation, committee-facing S3 readiness, release freeze, redundancy review, and sign-off.",
+    "built_components": "The hardening layer is complete and additive: it sits on top of the original 53MB six-project bundle (preserved verbatim as a nested archive so the original remains uncontaminated) and adds nine work products — the condensed Hardening Codex, a worked S5 pilot package for one named mechanism family, a worked amalgamation package for three named mechanism families, the control-tower handoff integration patch, the manifest with SHA-256 verification for every file, the integration checklist, the status memo, and the read-first README. The release-freeze conditions are enforceable: no committee-facing file crosses the dissemination threshold without the named verification, no C4 language without a passed pilot, and no high-dual-use file moves past controlled-pilot tier without red-team sign-off.",
+    "source_utilization": "Source use is organized by role: method authorities, domain evidence, technical background, implementation evidence, and claim limits. The page should show why each source matters; direct quotations and stronger factual claims still require exact passage anchors before publication.",
+    "plan": "Extend the worked-package layer to additional mechanism families inside the original six-project bundle, exercise the control-tower metrics against live promotion tranches, and let the validation doctrine drive PASS / REVISE / RETIRE decisions on real pilots. The hardening codex itself is portable. Step 01 Worked-package extension Additional mechanism families inside the original six-project bundle worked through the standard hardening sequence. Step 02 Control-tower live exercise Quantitative control tower metrics exercised against live promotion tranches — not against archived pilots. Step 03 PASS / REVISE / RETIRE Validation doctrine drives real promotion decisions on real pilots, with the reason-code vocabulary recording why each decision landed. Step 04 Codex portability Same six-discipline scaffold applied to other research portfolios that need the same anti-overclaim discipline.",
+    "status": "Status: The hardening layer is complete and additive: it sits on top of the original 53MB six-project bundle (preserved verbatim as a nested archive so the original remains uncontaminated) and adds nine work products — the condensed Hardening Codex, a worked S5 pilot package for one named mechanism family, a worked amalgamation package for three named mechanism families, the control-tower handoff integration patch, the manifest with SHA-256 verification for every file, the integration checklist, the status memo, and the.",
+    "remaining_gaps": "Remaining gaps: extend the worked-package layer to additional mechanism families inside the original six-project bundle, exercise the control-tower metrics against live promotion tranches, and let the validation doctrine drive PASS / REVISE / RETIRE decisions on real pilots. The hardening codex itself is portable.",
+    "detailed_source_vision": "A cross-project research-portfolio governance methodology, applied as an additive hardening layer over a six-project research bundle that is preserved verbatim underneath. The page answers a specific governance problem: how do you take a research pipeline where candidate mechanism-families have to be promoted through discovery, survey, analysis, synthesis, and validation stages — without letting claim-limits drift upward or unverified citations escape into committee-facing files. The answer is a six-part discipline: constitutional invariants forbidding promotion-without-claim-limit, explicit stage logic from S0 to S5 each with named exit criteria, a fixed reason-code vocabulary, quantitative control-tower metrics, validation doctrine treating pilots as cheap falsification, and worked packages for two specific mechanism families. The release-freeze conditions enforce the discipline at dissemination: no committee-facing S3 work product without 100% claim-support verification, no C4 language without a passed pilot, no moderate or high dual-use work product above controlled-pilot tier without red-team sign-off.",
+    "detailed_source_mechanism": "Six stages of promotion from prospecting to pilot, each with named exit criteria. The stages are sequential and cannot be skipped — claim-limit discipline forbids promoting a candidate past a stage on restatement alone; only the work product the next gate demands clears the gate."
+  },
+  "source_derived_signals": [],
+  "maintenance_rule": "Update this blueprint before strengthening public claims on the website. Do not use word count, module count, or status percentage as a substitute for concrete project substance.",
+  "claim_ceiling_rule": "Public claims may rise only when the built components, source use, status, and remaining gaps are updated here and reflected in the rendered page.",
+  "public_standard_check": {
+    "Vision": "This document supports the public account of Blueprint by preserving the project purpose, reader-facing claim, and professional-portfolio role.",
+    "Mechanism": "It connects source material, project components, implementation state, and next actions so the work can be inspected rather than merely asserted.",
+    "What is built": "The supporting evidence is the named page, blueprint, packet, project file, source record, or implementation page described in the document.",
+    "Source use": "Sources are used as method and source background, domain grounding, or project history; direct quotation and stronger factual claims require passage-level review.",
+    "Plan": "Bind claims to exact source anchors, visible implementation evidence, or a narrower public claim.",
+    "Status": "Current support record for the professional package unless explicitly marked archival.",
+    "Remaining Gaps": "Passage-level source check, implementation verification, citation cleanup, and proportional public wording remain open where evidence is incomplete."
+  },
+  "public_pitch": {
+    "what_it_is": "A quality-review and hardening surface for moving projects toward release.",
+    "distinctive_mechanism": "It asks what is built, what claim it supports, what evidence proves it, what can break, and what demonstration would make the claim stronger, moving projects through Stage S0 Prospecting Build, Stage S1 Survey, Stage S2 Lite, Deep Anchored work, Stage S3 SOPs, red-team executable SOPs, Stage S4 Yield, Stage S5 Pilot Pre-register, RETIRE Validation, committee-facing S3 readiness, release freeze, redundancy review, and sign-off.",
+    "why_it_matters": "It is the anti-overclaim room: it turns ambition into staged proof obligations, release criteria, and review gates.",
+    "pitch_integrity_note": "Mechanism-first public pitch inserted after the Nexus Lab mechanism-erasure audit on 2026-05-13; source basis: rendered correction table."
+  },
+  "pitch_integrity_audit": {
+    "audited_at": "2026-05-13T03:35:00",
+    "scope": "all project blueprints",
+    "standard": "object, distinctive mechanism, value, built state, and non-overclaim discipline must be visible."
+  },
+  "researcher_process_map": {
+    "map_type": "curated_claim_governance",
+    "instrument_form": "curated claim governance",
+    "summary": "A quality-review and hardening surface for moving projects toward release.",
+    "final_use_case": "It is the anti-overclaim room: it turns ambition into staged proof obligations, release criteria, and review gates.",
+    "instrument_count": 3,
+    "instruments": [
+      {
+        "order": "1",
+        "phase": "RESEARCH_PROCESS",
+        "room": "project-hardening",
+        "subroom": "claim_intake",
+        "instrument_name": "Claim Intake",
+        "instrument_form": "curated claim governance",
+        "input": "draft claim, source, counter-source, intended audience",
+        "operation": "opens the claim as a review object rather than treating it as finished prose; the step records the decision path so the reader can see how the project moves from input to governed output.",
+        "output": "claim record as a reviewable artifact",
+        "upstream_dependency": "Requires draft claim, source, counter-source, intended audience",
+        "downstream_use": "Feeds claim record as a reviewable artifact; later claims should not rely on this step until its expected output is present.",
+        "proof": "Expected proof artifact: claim record as a reviewable artifact",
+        "status": "Status: The hardening layer is complete and additive: it sits on top of the original 53MB six-project bundle (preserved verbatim as a nested archive so the.",
+        "gap": "Verify one representative case: the step should accept draft claim, source, counter-source, intended audience and produce claim record as a reviewable artifact.",
+        "verification_check": "Test one representative case; confirm input (draft claim, source, counter-source, intended audience) produces output (claim record as a reviewable artifact) and leaves a visible decision or artifact."
+      },
+      {
+        "order": "2",
+        "phase": "RESEARCH_PROCESS",
+        "room": "project-hardening",
+        "subroom": "warrant_inspection",
+        "instrument_name": "Warrant Inspection",
+        "instrument_form": "curated claim governance",
+        "input": "source strength, contradiction, dissent, revision state",
+        "operation": "uses Claim Halo / review chamber logic to expose what authorizes or weakens the claim",
+        "output": "claim ceiling and revision decision as a reviewable artifact",
+        "upstream_dependency": "Requires source strength, contradiction, dissent, revision state",
+        "downstream_use": "Feeds claim ceiling and revision decision as a reviewable artifact; later claims should not rely on this step until its expected output is present.",
+        "proof": "Expected proof artifact: claim ceiling and revision decision as a reviewable artifact",
+        "status": "Status: The hardening layer is complete and additive: it sits on top of the original 53MB six-project bundle (preserved verbatim as a nested archive so the.",
+        "gap": "Verify one representative case: the step should accept source strength, contradiction, dissent, revision state and produce claim ceiling and revision decision as a reviewable artifact.",
+        "verification_check": "Test one representative case; confirm input (source strength, contradiction, dissent, revision state) produces output (claim ceiling and revision decision as a reviewable...) and leaves a visible decision or artifact."
+      },
+      {
+        "order": "3",
+        "phase": "RESEARCH_PROCESS",
+        "room": "project-hardening",
+        "subroom": "certification_or_revision",
+        "instrument_name": "Certification Or Revision",
+        "instrument_form": "curated claim governance",
+        "input": "reviewed claim and evidence state",
+        "operation": "decides whether the claim can publish, must narrow, needs sources, or should be rejected",
+        "output": "certified claim or revision task as a reviewable artifact",
+        "upstream_dependency": "Requires reviewed claim and evidence state",
+        "downstream_use": "Feeds certified claim or revision task as a reviewable artifact; later claims should not rely on this step until its expected output is present.",
+        "proof": "Expected proof artifact: certified claim or revision task as a reviewable artifact",
+        "status": "Status: The hardening layer is complete and additive: it sits on top of the original 53MB six-project bundle (preserved verbatim as a nested archive so the.",
+        "gap": "Verify one representative case: the step should accept reviewed claim and evidence state and produce certified claim or revision task as a reviewable artifact.",
+        "verification_check": "Test one representative case; confirm input (reviewed claim and evidence state) produces output (certified claim or revision task as a reviewable...) and leaves a visible decision or artifact."
+      }
+    ]
+  }
+}

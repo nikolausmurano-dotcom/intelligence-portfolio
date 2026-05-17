@@ -1,0 +1,1470 @@
+{
+  "project": {
+    "project_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0",
+    "title": "Human Terrain & Statecraft"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__receipt_0001",
+      "project_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0",
+      "project_title": "Human Terrain & Statecraft",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Human Terrain & Statecraft Handoff Identity",
+      "component_case_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__0001__human-terrain-statecraft-handoff-identity",
+      "claim_to_demonstrate": "Consolidated handoff archive for the proposed MuranoOS Human Terrain & Statecraft room (internal doctrine: Motive-to-System Chamber).",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "Consolidated handoff archive for the proposed MuranoOS Human Terrain & Statecraft room (internal doctrine: Motive-to-System Chamber).",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43737,
+            "sha256": "c44625fee441615b9fc8bd1cf45473d43970385aa4f1b6669deef13584c7bed5"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36022,
+            "sha256": "d159ddf440d25b0a813b1b312ca1eee8eaccc8efd1a904158852b0ba4085c200"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21091,
+            "sha256": "b607973f9cfd6e136d5de9a57bf39dad4207ffbde7d6736082fe2a14d7f1cfba"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20502,
+            "sha256": "d398356b27ad816d725edadd7f5a4cab7779f068852154c6a8140b2d22f839f0"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46281,
+            "sha256": "974970061381a6719d02fbcba8e4acad598c3c91b0b63f92addac9e5660d79df"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9982,
+            "sha256": "6404fcdccff1f3fabb4c920a7d80928823c6f226fbcfd0803eec978954c3d340"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+          "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "84a1d20f30a2bfc8737d8543"
+    },
+    {
+      "receipt_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__receipt_0002",
+      "project_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0",
+      "project_title": "Human Terrain & Statecraft",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Human Terrain & Statecraft Room Task Model",
+      "component_case_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__0002__human-terrain-statecraft-room-task-model",
+      "claim_to_demonstrate": "It converts an archive or handoff into three inspectable decisions: what the work product is for, which component pieces carry the work, and what action would turn it into a live room, paper, method, or software instrument.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "It converts an archive or handoff into three inspectable decisions: what the work product is for, which component pieces carry the work, and what action would turn it into a live room, paper, method, or software instrument.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43737,
+            "sha256": "c44625fee441615b9fc8bd1cf45473d43970385aa4f1b6669deef13584c7bed5"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36022,
+            "sha256": "d159ddf440d25b0a813b1b312ca1eee8eaccc8efd1a904158852b0ba4085c200"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21091,
+            "sha256": "b607973f9cfd6e136d5de9a57bf39dad4207ffbde7d6736082fe2a14d7f1cfba"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20502,
+            "sha256": "d398356b27ad816d725edadd7f5a4cab7779f068852154c6a8140b2d22f839f0"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46281,
+            "sha256": "974970061381a6719d02fbcba8e4acad598c3c91b0b63f92addac9e5660d79df"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9982,
+            "sha256": "6404fcdccff1f3fabb4c920a7d80928823c6f226fbcfd0803eec978954c3d340"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+          "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "83827e1018ef8ad95f3feafc"
+    },
+    {
+      "receipt_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__receipt_0003",
+      "project_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0",
+      "project_title": "Human Terrain & Statecraft",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Human Terrain & Statecraft Data Schema And Persistence Plan",
+      "component_case_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__0003__human-terrain-statecraft-data-schema-and-persistence-plan",
+      "claim_to_demonstrate": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43737,
+            "sha256": "c44625fee441615b9fc8bd1cf45473d43970385aa4f1b6669deef13584c7bed5"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36022,
+            "sha256": "d159ddf440d25b0a813b1b312ca1eee8eaccc8efd1a904158852b0ba4085c200"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21091,
+            "sha256": "b607973f9cfd6e136d5de9a57bf39dad4207ffbde7d6736082fe2a14d7f1cfba"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20502,
+            "sha256": "d398356b27ad816d725edadd7f5a4cab7779f068852154c6a8140b2d22f839f0"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46281,
+            "sha256": "974970061381a6719d02fbcba8e4acad598c3c91b0b63f92addac9e5660d79df"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9982,
+            "sha256": "6404fcdccff1f3fabb4c920a7d80928823c6f226fbcfd0803eec978954c3d340"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+          "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1282835bde42587c41e9064e"
+    },
+    {
+      "receipt_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__receipt_0004",
+      "project_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0",
+      "project_title": "Human Terrain & Statecraft",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Human Terrain & Statecraft Interface And Instrument Plane",
+      "component_case_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__0004__human-terrain-statecraft-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43737,
+            "sha256": "c44625fee441615b9fc8bd1cf45473d43970385aa4f1b6669deef13584c7bed5"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36022,
+            "sha256": "d159ddf440d25b0a813b1b312ca1eee8eaccc8efd1a904158852b0ba4085c200"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21091,
+            "sha256": "b607973f9cfd6e136d5de9a57bf39dad4207ffbde7d6736082fe2a14d7f1cfba"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20502,
+            "sha256": "d398356b27ad816d725edadd7f5a4cab7779f068852154c6a8140b2d22f839f0"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46281,
+            "sha256": "974970061381a6719d02fbcba8e4acad598c3c91b0b63f92addac9e5660d79df"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9982,
+            "sha256": "6404fcdccff1f3fabb4c920a7d80928823c6f226fbcfd0803eec978954c3d340"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+          "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e4da4dfc23bc243ccd5d3ebe"
+    },
+    {
+      "receipt_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__receipt_0005",
+      "project_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0",
+      "project_title": "Human Terrain & Statecraft",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Human Terrain & Statecraft Integration Path",
+      "component_case_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__0005__human-terrain-statecraft-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. Operator reading order: HTS_HANDOFF_REVIEW -> HTS_CANON_LIVE_PROPOSAL_DELTA_MAP -> READING_ORDER -> UPLOAD_PROMPT -> then through 01_HTS_Core_Spec -> 02.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. Operator reading order: HTS_HANDOFF_REVIEW -> HTS_CANON_LIVE_PROPOSAL_DELTA_MAP -> READING_ORDER -> UPLOAD_PROMPT -> then through 01_HTS_Core_Spec -> 02.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43737,
+            "sha256": "c44625fee441615b9fc8bd1cf45473d43970385aa4f1b6669deef13584c7bed5"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36022,
+            "sha256": "d159ddf440d25b0a813b1b312ca1eee8eaccc8efd1a904158852b0ba4085c200"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21091,
+            "sha256": "b607973f9cfd6e136d5de9a57bf39dad4207ffbde7d6736082fe2a14d7f1cfba"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20502,
+            "sha256": "d398356b27ad816d725edadd7f5a4cab7779f068852154c6a8140b2d22f839f0"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46281,
+            "sha256": "974970061381a6719d02fbcba8e4acad598c3c91b0b63f92addac9e5660d79df"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9982,
+            "sha256": "6404fcdccff1f3fabb4c920a7d80928823c6f226fbcfd0803eec978954c3d340"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+          "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "bdf561dde2dabfd4e4dc8a2b"
+    },
+    {
+      "receipt_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__receipt_0006",
+      "project_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0",
+      "project_title": "Human Terrain & Statecraft",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Human Terrain & Statecraft Proof Boundary",
+      "component_case_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__0006__human-terrain-statecraft-proof-boundary",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43737,
+            "sha256": "c44625fee441615b9fc8bd1cf45473d43970385aa4f1b6669deef13584c7bed5"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36022,
+            "sha256": "d159ddf440d25b0a813b1b312ca1eee8eaccc8efd1a904158852b0ba4085c200"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21091,
+            "sha256": "b607973f9cfd6e136d5de9a57bf39dad4207ffbde7d6736082fe2a14d7f1cfba"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20502,
+            "sha256": "d398356b27ad816d725edadd7f5a4cab7779f068852154c6a8140b2d22f839f0"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46281,
+            "sha256": "974970061381a6719d02fbcba8e4acad598c3c91b0b63f92addac9e5660d79df"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9982,
+            "sha256": "6404fcdccff1f3fabb4c920a7d80928823c6f226fbcfd0803eec978954c3d340"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+          "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "41f151cecd8542cf2ee956cb"
+    },
+    {
+      "receipt_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__receipt_0007",
+      "project_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0",
+      "project_title": "Human Terrain & Statecraft",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Human Terrain & Statecraft Next Build Test",
+      "component_case_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__0007__human-terrain-statecraft-next-build-test",
+      "claim_to_demonstrate": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43737,
+            "sha256": "c44625fee441615b9fc8bd1cf45473d43970385aa4f1b6669deef13584c7bed5"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36022,
+            "sha256": "d159ddf440d25b0a813b1b312ca1eee8eaccc8efd1a904158852b0ba4085c200"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21091,
+            "sha256": "b607973f9cfd6e136d5de9a57bf39dad4207ffbde7d6736082fe2a14d7f1cfba"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20502,
+            "sha256": "d398356b27ad816d725edadd7f5a4cab7779f068852154c6a8140b2d22f839f0"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46281,
+            "sha256": "974970061381a6719d02fbcba8e4acad598c3c91b0b63f92addac9e5660d79df"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9982,
+            "sha256": "6404fcdccff1f3fabb4c920a7d80928823c6f226fbcfd0803eec978954c3d340"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+          "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "fc4e363f4538d411ccd953ed"
+    },
+    {
+      "receipt_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__receipt_0008",
+      "project_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0",
+      "project_title": "Human Terrain & Statecraft",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Human Terrain & Statecraft / frontend/backend",
+      "component_case_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__0008__human-terrain-statecraft-frontend-backend",
+      "claim_to_demonstrate": "uses `frontend/backend` as a named project component with a traceable role in the public mechanism. Source context: No frontend/backend code. Implementation package is contract-level: Command Registry, Schema Seed SQL, File Change Map, UI Component Map.",
+      "input_fixture": "project source text and the named component `frontend/backend`",
+      "operation_under_test": "uses `frontend/backend` as a named project component with a traceable role in the public mechanism. Source context: No frontend/backend code. Implementation package is contract-level: Command Registry, Schema Seed SQL, File Change Map, UI Component Map.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `frontend/backend`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "68a597658603568f3128d9e8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43737,
+            "sha256": "c44625fee441615b9fc8bd1cf45473d43970385aa4f1b6669deef13584c7bed5"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36022,
+            "sha256": "d159ddf440d25b0a813b1b312ca1eee8eaccc8efd1a904158852b0ba4085c200"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21091,
+            "sha256": "b607973f9cfd6e136d5de9a57bf39dad4207ffbde7d6736082fe2a14d7f1cfba"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20502,
+            "sha256": "d398356b27ad816d725edadd7f5a4cab7779f068852154c6a8140b2d22f839f0"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46281,
+            "sha256": "974970061381a6719d02fbcba8e4acad598c3c91b0b63f92addac9e5660d79df"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9982,
+            "sha256": "6404fcdccff1f3fabb4c920a7d80928823c6f226fbcfd0803eec978954c3d340"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+          "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b29c6bbd0f0d3e9d351d5255"
+    },
+    {
+      "receipt_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__receipt_0009",
+      "project_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0",
+      "project_title": "Human Terrain & Statecraft",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Human Terrain & Statecraft / MuranoOS Human Terrain",
+      "component_case_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__0009__human-terrain-statecraft-muranoos-human-terrain",
+      "claim_to_demonstrate": "uses `MuranoOS Human Terrain` as a named project component with a traceable role in the public mechanism. Source context: Consolidated handoff archive for the proposed MuranoOS Human Terrain & Statecraft room (internal doctrine: Motive-to-System Chamber).",
+      "input_fixture": "project source text and the named component `MuranoOS Human Terrain`",
+      "operation_under_test": "uses `MuranoOS Human Terrain` as a named project component with a traceable role in the public mechanism. Source context: Consolidated handoff archive for the proposed MuranoOS Human Terrain & Statecraft room (internal doctrine: Motive-to-System Chamber).",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `MuranoOS Human Terrain`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "da86a372694ec0fdbd311ca1",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43737,
+            "sha256": "c44625fee441615b9fc8bd1cf45473d43970385aa4f1b6669deef13584c7bed5"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36022,
+            "sha256": "d159ddf440d25b0a813b1b312ca1eee8eaccc8efd1a904158852b0ba4085c200"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21091,
+            "sha256": "b607973f9cfd6e136d5de9a57bf39dad4207ffbde7d6736082fe2a14d7f1cfba"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20502,
+            "sha256": "d398356b27ad816d725edadd7f5a4cab7779f068852154c6a8140b2d22f839f0"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46281,
+            "sha256": "974970061381a6719d02fbcba8e4acad598c3c91b0b63f92addac9e5660d79df"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9982,
+            "sha256": "6404fcdccff1f3fabb4c920a7d80928823c6f226fbcfd0803eec978954c3d340"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+          "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8e52d3b198f59da8bfadae29"
+    },
+    {
+      "receipt_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__receipt_0010",
+      "project_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0",
+      "project_title": "Human Terrain & Statecraft",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Human Terrain & Statecraft / Motive-to-System Chamber",
+      "component_case_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__0010__human-terrain-statecraft-motive-to-system-chamber",
+      "claim_to_demonstrate": "treats `Motive-to-System Chamber` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Consolidated handoff archive for the proposed MuranoOS Human Terrain & Statecraft room (internal.",
+      "input_fixture": "project source text and the named component `Motive-to-System Chamber`",
+      "operation_under_test": "treats `Motive-to-System Chamber` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Consolidated handoff archive for the proposed MuranoOS Human Terrain & Statecraft room (internal.",
+      "expected_output": "a room, workbench, or interface function tied to `Motive-to-System Chamber`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "da86a372694ec0fdbd311ca1",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43737,
+            "sha256": "c44625fee441615b9fc8bd1cf45473d43970385aa4f1b6669deef13584c7bed5"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36022,
+            "sha256": "d159ddf440d25b0a813b1b312ca1eee8eaccc8efd1a904158852b0ba4085c200"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21091,
+            "sha256": "b607973f9cfd6e136d5de9a57bf39dad4207ffbde7d6736082fe2a14d7f1cfba"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20502,
+            "sha256": "d398356b27ad816d725edadd7f5a4cab7779f068852154c6a8140b2d22f839f0"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46281,
+            "sha256": "974970061381a6719d02fbcba8e4acad598c3c91b0b63f92addac9e5660d79df"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9982,
+            "sha256": "6404fcdccff1f3fabb4c920a7d80928823c6f226fbcfd0803eec978954c3d340"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+          "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "72575b7dbdce9961e6994cf8"
+    },
+    {
+      "receipt_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__receipt_0011",
+      "project_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0",
+      "project_title": "Human Terrain & Statecraft",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Human Terrain & Statecraft / Canon Seeds",
+      "component_case_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__0011__human-terrain-statecraft-canon-seeds",
+      "claim_to_demonstrate": "uses `Canon Seeds` as a named project component with a traceable role in the public mechanism. Source context: HTS_HANDOFF_REVIEW -> HTS_CANON_LIVE_PROPOSAL_DELTA_MAP -> READING_ORDER -> UPLOAD_PROMPT -> then through 01_HTS_Core_Spec -> 02 Implementation ->.",
+      "input_fixture": "project source text and the named component `Canon Seeds`",
+      "operation_under_test": "uses `Canon Seeds` as a named project component with a traceable role in the public mechanism. Source context: HTS_HANDOFF_REVIEW -> HTS_CANON_LIVE_PROPOSAL_DELTA_MAP -> READING_ORDER -> UPLOAD_PROMPT -> then through 01_HTS_Core_Spec -> 02 Implementation ->.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Canon Seeds`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "940533da20ad2af0f4026384",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43737,
+            "sha256": "c44625fee441615b9fc8bd1cf45473d43970385aa4f1b6669deef13584c7bed5"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36022,
+            "sha256": "d159ddf440d25b0a813b1b312ca1eee8eaccc8efd1a904158852b0ba4085c200"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21091,
+            "sha256": "b607973f9cfd6e136d5de9a57bf39dad4207ffbde7d6736082fe2a14d7f1cfba"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20502,
+            "sha256": "d398356b27ad816d725edadd7f5a4cab7779f068852154c6a8140b2d22f839f0"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46281,
+            "sha256": "974970061381a6719d02fbcba8e4acad598c3c91b0b63f92addac9e5660d79df"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9982,
+            "sha256": "6404fcdccff1f3fabb4c920a7d80928823c6f226fbcfd0803eec978954c3d340"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+          "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a6266067df9f0aa3a40d0468"
+    },
+    {
+      "receipt_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__receipt_0012",
+      "project_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0",
+      "project_title": "Human Terrain & Statecraft",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Human Terrain & Statecraft / World Design. Upstream Red Team",
+      "component_case_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__0012__human-terrain-statecraft-world-design-upstream-red-team",
+      "claim_to_demonstrate": "uses `World Design. Upstream Red Team` as a named project component with a traceable role in the public mechanism. Source context: HTS_HANDOFF_REVIEW -> HTS_CANON_LIVE_PROPOSAL_DELTA_MAP -> READING_ORDER -> UPLOAD_PROMPT -> then through 01_HTS_Core_Spec -> 02.",
+      "input_fixture": "project source text and the named component `World Design. Upstream Red Team`",
+      "operation_under_test": "uses `World Design. Upstream Red Team` as a named project component with a traceable role in the public mechanism. Source context: HTS_HANDOFF_REVIEW -> HTS_CANON_LIVE_PROPOSAL_DELTA_MAP -> READING_ORDER -> UPLOAD_PROMPT -> then through 01_HTS_Core_Spec -> 02.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `World Design. Upstream Red Team`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "940533da20ad2af0f4026384",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43737,
+            "sha256": "c44625fee441615b9fc8bd1cf45473d43970385aa4f1b6669deef13584c7bed5"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36022,
+            "sha256": "d159ddf440d25b0a813b1b312ca1eee8eaccc8efd1a904158852b0ba4085c200"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21091,
+            "sha256": "b607973f9cfd6e136d5de9a57bf39dad4207ffbde7d6736082fe2a14d7f1cfba"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20502,
+            "sha256": "d398356b27ad816d725edadd7f5a4cab7779f068852154c6a8140b2d22f839f0"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46281,
+            "sha256": "974970061381a6719d02fbcba8e4acad598c3c91b0b63f92addac9e5660d79df"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9982,
+            "sha256": "6404fcdccff1f3fabb4c920a7d80928823c6f226fbcfd0803eec978954c3d340"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+          "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5138731a4bd0a33adbfba601"
+    },
+    {
+      "receipt_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__receipt_0013",
+      "project_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0",
+      "project_title": "Human Terrain & Statecraft",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Human Terrain & Statecraft / Command Registry",
+      "component_case_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__0013__human-terrain-statecraft-command-registry",
+      "claim_to_demonstrate": "uses `Command Registry` as a named project component with a traceable role in the public mechanism. Source context: Command Registry, Schema Seed SQL, File Change Map, UI Component Map. Upstream Red Team reference does include live_repo_current and.",
+      "input_fixture": "project source text and the named component `Command Registry`",
+      "operation_under_test": "uses `Command Registry` as a named project component with a traceable role in the public mechanism. Source context: Command Registry, Schema Seed SQL, File Change Map, UI Component Map. Upstream Red Team reference does include live_repo_current and.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Command Registry`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "996fa55501da5ce0ff9711e7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43737,
+            "sha256": "c44625fee441615b9fc8bd1cf45473d43970385aa4f1b6669deef13584c7bed5"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36022,
+            "sha256": "d159ddf440d25b0a813b1b312ca1eee8eaccc8efd1a904158852b0ba4085c200"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21091,
+            "sha256": "b607973f9cfd6e136d5de9a57bf39dad4207ffbde7d6736082fe2a14d7f1cfba"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20502,
+            "sha256": "d398356b27ad816d725edadd7f5a4cab7779f068852154c6a8140b2d22f839f0"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46281,
+            "sha256": "974970061381a6719d02fbcba8e4acad598c3c91b0b63f92addac9e5660d79df"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9982,
+            "sha256": "6404fcdccff1f3fabb4c920a7d80928823c6f226fbcfd0803eec978954c3d340"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+          "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "fb5e8259b513d8acdd03bb1f"
+    },
+    {
+      "receipt_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__receipt_0014",
+      "project_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0",
+      "project_title": "Human Terrain & Statecraft",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Human Terrain & Statecraft / Schema Seed SQL",
+      "component_case_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__0014__human-terrain-statecraft-schema-seed-sql",
+      "claim_to_demonstrate": "uses `Schema Seed SQL` as a named project component with a traceable role in the public mechanism. Source context: Command Registry, Schema Seed SQL, File Change Map, UI Component Map. Upstream Red Team reference does include live_repo_current and.",
+      "input_fixture": "project source text and the named component `Schema Seed SQL`",
+      "operation_under_test": "uses `Schema Seed SQL` as a named project component with a traceable role in the public mechanism. Source context: Command Registry, Schema Seed SQL, File Change Map, UI Component Map. Upstream Red Team reference does include live_repo_current and.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Schema Seed SQL`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "996fa55501da5ce0ff9711e7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43737,
+            "sha256": "c44625fee441615b9fc8bd1cf45473d43970385aa4f1b6669deef13584c7bed5"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36022,
+            "sha256": "d159ddf440d25b0a813b1b312ca1eee8eaccc8efd1a904158852b0ba4085c200"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21091,
+            "sha256": "b607973f9cfd6e136d5de9a57bf39dad4207ffbde7d6736082fe2a14d7f1cfba"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20502,
+            "sha256": "d398356b27ad816d725edadd7f5a4cab7779f068852154c6a8140b2d22f839f0"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46281,
+            "sha256": "974970061381a6719d02fbcba8e4acad598c3c91b0b63f92addac9e5660d79df"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9982,
+            "sha256": "6404fcdccff1f3fabb4c920a7d80928823c6f226fbcfd0803eec978954c3d340"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+          "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1e85517b42a47965179136c8"
+    },
+    {
+      "receipt_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__receipt_0015",
+      "project_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0",
+      "project_title": "Human Terrain & Statecraft",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Human Terrain & Statecraft / File Change Map",
+      "component_case_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__0015__human-terrain-statecraft-file-change-map",
+      "claim_to_demonstrate": "uses `File Change Map` as an analytical instrument that turns source material into a map, matrix, ledger, graph, taxonomy, or decision surface. Source context: Command Registry, Schema Seed SQL, File Change Map, UI Component Map. Upstream Red Team reference.",
+      "input_fixture": "project source text and the named component `File Change Map`",
+      "operation_under_test": "uses `File Change Map` as an analytical instrument that turns source material into a map, matrix, ledger, graph, taxonomy, or decision surface. Source context: Command Registry, Schema Seed SQL, File Change Map, UI Component Map. Upstream Red Team reference.",
+      "expected_output": "an analytical work product or decision surface tied to `File Change Map`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "996fa55501da5ce0ff9711e7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43737,
+            "sha256": "c44625fee441615b9fc8bd1cf45473d43970385aa4f1b6669deef13584c7bed5"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36022,
+            "sha256": "d159ddf440d25b0a813b1b312ca1eee8eaccc8efd1a904158852b0ba4085c200"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21091,
+            "sha256": "b607973f9cfd6e136d5de9a57bf39dad4207ffbde7d6736082fe2a14d7f1cfba"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20502,
+            "sha256": "d398356b27ad816d725edadd7f5a4cab7779f068852154c6a8140b2d22f839f0"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46281,
+            "sha256": "974970061381a6719d02fbcba8e4acad598c3c91b0b63f92addac9e5660d79df"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9982,
+            "sha256": "6404fcdccff1f3fabb4c920a7d80928823c6f226fbcfd0803eec978954c3d340"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+          "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "fc59b687c92b1c19e12c1e95"
+    },
+    {
+      "receipt_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__receipt_0016",
+      "project_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0",
+      "project_title": "Human Terrain & Statecraft",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Human Terrain & Statecraft / UI Component Map. Upstream Red Team",
+      "component_case_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__0016__human-terrain-statecraft-ui-component-map-upstream-red-team",
+      "claim_to_demonstrate": "uses `UI Component Map. Upstream Red Team` as an analytical instrument that turns source material into a map, matrix, ledger, graph, taxonomy, or decision surface. Source context: Command Registry, Schema Seed SQL, File Change Map, UI Component Map. Upstream.",
+      "input_fixture": "project source text and the named component `UI Component Map. Upstream Red Team`",
+      "operation_under_test": "uses `UI Component Map. Upstream Red Team` as an analytical instrument that turns source material into a map, matrix, ledger, graph, taxonomy, or decision surface. Source context: Command Registry, Schema Seed SQL, File Change Map, UI Component Map. Upstream.",
+      "expected_output": "an analytical work product or decision surface tied to `UI Component Map. Upstream Red Team`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "996fa55501da5ce0ff9711e7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43737,
+            "sha256": "c44625fee441615b9fc8bd1cf45473d43970385aa4f1b6669deef13584c7bed5"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36022,
+            "sha256": "d159ddf440d25b0a813b1b312ca1eee8eaccc8efd1a904158852b0ba4085c200"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21091,
+            "sha256": "b607973f9cfd6e136d5de9a57bf39dad4207ffbde7d6736082fe2a14d7f1cfba"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20502,
+            "sha256": "d398356b27ad816d725edadd7f5a4cab7779f068852154c6a8140b2d22f839f0"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46281,
+            "sha256": "974970061381a6719d02fbcba8e4acad598c3c91b0b63f92addac9e5660d79df"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9982,
+            "sha256": "6404fcdccff1f3fabb4c920a7d80928823c6f226fbcfd0803eec978954c3d340"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+          "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "18fdf9089affda26b6aa9991"
+    },
+    {
+      "receipt_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__receipt_0017",
+      "project_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0",
+      "project_title": "Human Terrain & Statecraft",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Human Terrain & Statecraft / Explain Nexus and Personal OS",
+      "component_case_id": "mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0__0017__human-terrain-statecraft-explain-nexus-and-personal-os",
+      "claim_to_demonstrate": "uses `Explain Nexus and Personal OS` as a named project component with a traceable role in the public mechanism. Source context: Explain Nexus and Personal OS as project-development and discovery infrastructure, not miscellaneous personal tooling. Mechanism.",
+      "input_fixture": "project source text and the named component `Explain Nexus and Personal OS`",
+      "operation_under_test": "uses `Explain Nexus and Personal OS` as a named project component with a traceable role in the public mechanism. Source context: Explain Nexus and Personal OS as project-development and discovery infrastructure, not miscellaneous personal tooling. Mechanism.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Explain Nexus and Personal OS`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "43bbe99078db3098289d7fc7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43737,
+            "sha256": "c44625fee441615b9fc8bd1cf45473d43970385aa4f1b6669deef13584c7bed5"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36022,
+            "sha256": "d159ddf440d25b0a813b1b312ca1eee8eaccc8efd1a904158852b0ba4085c200"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21091,
+            "sha256": "b607973f9cfd6e136d5de9a57bf39dad4207ffbde7d6736082fe2a14d7f1cfba"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20502,
+            "sha256": "d398356b27ad816d725edadd7f5a4cab7779f068852154c6a8140b2d22f839f0"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46281,
+            "sha256": "974970061381a6719d02fbcba8e4acad598c3c91b0b63f92addac9e5660d79df"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9982,
+            "sha256": "6404fcdccff1f3fabb4c920a7d80928823c6f226fbcfd0803eec978954c3d340"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/blueprint.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/instrument_map.json",
+          "project_blueprints/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/README.md",
+          "proof_builds/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/proof_build.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/demo_cases.json",
+          "proof_demos/mb-muranoos-human-terrain-statecraft-proper-handoff-archive-v1-0/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "089e96cb7232842d8bac25be"
+    }
+  ]
+}

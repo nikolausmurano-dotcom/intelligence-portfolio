@@ -1,0 +1,61 @@
+{
+  "project_id": "mb-rfp-handoff-ch01-02-done",
+  "surface_type": "review_workbench",
+  "suite_run_time": "2026-05-15T20:49:19+00:00",
+  "regression_cases": [
+    {
+      "case_id": "mb-rfp-handoff-ch01-02-done-baseline",
+      "case_type": "baseline",
+      "input": "Review the current proof packet for mb-rfp-handoff-ch01-02-done as package-level evidence.",
+      "evidence": "The package can capture argument and revision structure, but manuscript quality still requires close editorial execution.",
+      "expected_behavior": "accepted_as_review_evidence",
+      "observed_behavior": "accepted_as_review_evidence",
+      "expected_behavior_met": true,
+      "full_operational_claim_allowed": false,
+      "production_ready": false,
+      "acceptance_decision": "PASS",
+      "claim_boundary": "Regression case verifies local proof behavior and claim discipline only; it does not establish production readiness or external validation.",
+      "remaining_gate": "The package can capture argument and revision structure, but manuscript quality still requires close editorial execution.",
+      "blocks_false_promotion": false,
+      "trace_hash": "d84c5762a8c2334c"
+    },
+    {
+      "case_id": "mb-rfp-handoff-ch01-02-done-challenge",
+      "case_type": "challenge",
+      "input": "Test whether mb-rfp-handoff-ch01-02-done has enough evidence to support a stronger public claim.",
+      "evidence": "The package can capture argument and revision structure, but manuscript quality still requires close editorial execution.",
+      "expected_behavior": "accept_only_with_boundary",
+      "observed_behavior": "accept_only_with_boundary",
+      "expected_behavior_met": true,
+      "full_operational_claim_allowed": false,
+      "production_ready": false,
+      "acceptance_decision": "PASS",
+      "claim_boundary": "Regression case verifies local proof behavior and claim discipline only; it does not establish production readiness or external validation.",
+      "remaining_gate": "The package can capture argument and revision structure, but manuscript quality still requires close editorial execution.",
+      "blocks_false_promotion": false,
+      "trace_hash": "3c1c941bbab10558"
+    },
+    {
+      "case_id": "mb-rfp-handoff-ch01-02-done-falsifier",
+      "case_type": "falsifier",
+      "input": "Attempt to call mb-rfp-handoff-ch01-02-done fully operational without closing the remaining gate.",
+      "evidence": "The package can capture argument and revision structure, but manuscript quality still requires close editorial execution.",
+      "expected_behavior": "block_full_operational_claim",
+      "observed_behavior": "block_full_operational_claim",
+      "expected_behavior_met": true,
+      "full_operational_claim_allowed": false,
+      "production_ready": false,
+      "acceptance_decision": "PASS",
+      "claim_boundary": "Regression case verifies local proof behavior and claim discipline only; it does not establish production readiness or external validation.",
+      "remaining_gate": "The package can capture argument and revision structure, but manuscript quality still requires close editorial execution.",
+      "blocks_false_promotion": true,
+      "trace_hash": "44f96fd306f606b9"
+    }
+  ],
+  "case_count": 3,
+  "accepted_case_count": 3,
+  "falsifier_blocks_promotion": true,
+  "full_operational": false,
+  "remaining_gate": "The package can capture argument and revision structure, but manuscript quality still requires close editorial execution.",
+  "suite_hash": "e622f1e58ef4aec4"
+}

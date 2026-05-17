@@ -1,0 +1,214 @@
+{
+  "project_id": "native-analyst-assurance-desk",
+  "title": "Analyst Assurance Desk",
+  "proof_tier": "specified-proof-plan-needs-demo",
+  "public_claim": "An analyst-assurance workstation for human review of AI-supported intelligence tasks.",
+  "distinctive_mechanism": "It makes override decisions, analyst-model disagreement, task-family calibration, source review, structured analytic technique outputs, uncertainty, assumptions, reasoning paths, scoring rules, and release chronology visible as native objects.",
+  "component_case_count": 8,
+  "flagship_demo_count": 0,
+  "flagship_demos": [],
+  "component_demo_cases": [
+    {
+      "case_id": "native-analyst-assurance-desk__0001__task-and-method-assignment",
+      "project_id": "native-analyst-assurance-desk",
+      "project_title": "Analyst Assurance Desk",
+      "component": "Task And Method Assignment",
+      "proof_status": "specified-output-needs-demo",
+      "claim_to_demonstrate": "selects the structured analytic technique or technique sequence that fits the task rather than applying SAT labels ornamentally",
+      "input_fixture": "intelligence or research question, decision context, evidence type, uncertainty level, and user role",
+      "operation_under_test": "selects the structured analytic technique or technique sequence that fits the task rather than applying SAT labels ornamentally",
+      "expected_output": "method assignment and technique rationale as a reviewable artifact",
+      "evidence_locator": "Expected proof artifact: method assignment and technique rationale as a reviewable artifact",
+      "runbook": [
+        "build or run a demonstration that produces the specified output",
+        "Use this input fixture: intelligence or research question, decision context, evidence type, uncertainty level, and user role",
+        "Verify that the component produces: method assignment and technique rationale as a reviewable artifact",
+        "Preserve the evidence at or beside: Expected proof artifact: method assignment and technique rationale as a reviewable artifact"
+      ],
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "next_build_task": "Trace one Russia claim through Task And Method Assignment; confirm source lane, analytic variable, confidence boundary, and policy-facing output."
+    },
+    {
+      "case_id": "native-analyst-assurance-desk__0002__evidence-and-assumption-intake",
+      "project_id": "native-analyst-assurance-desk",
+      "project_title": "Analyst Assurance Desk",
+      "component": "Evidence And Assumption Intake",
+      "proof_status": "specified-output-needs-demo",
+      "claim_to_demonstrate": "separates evidence from assumptions before the analytic method begins; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "source record, assumptions, alternatives, indicators, confidence basis, and possible deception conditions",
+      "operation_under_test": "separates evidence from assumptions before the analytic method begins; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "evidence/assumption ledger as a reviewable artifact",
+      "evidence_locator": "Expected proof artifact: evidence/assumption ledger as a reviewable artifact",
+      "runbook": [
+        "build or run a demonstration that produces the specified output",
+        "Use this input fixture: source record, assumptions, alternatives, indicators, confidence basis, and possible deception conditions",
+        "Verify that the component produces: evidence/assumption ledger as a reviewable artifact",
+        "Preserve the evidence at or beside: Expected proof artifact: evidence/assumption ledger as a reviewable artifact"
+      ],
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "next_build_task": "Trace one Russia claim through Evidence And Assumption Intake; confirm source lane, analytic variable, confidence boundary, and policy-facing output."
+    },
+    {
+      "case_id": "native-analyst-assurance-desk__0003__ach-alternatives-matrix",
+      "project_id": "native-analyst-assurance-desk",
+      "project_title": "Analyst Assurance Desk",
+      "component": "ACH / Alternatives Matrix",
+      "proof_status": "specified-output-needs-demo",
+      "claim_to_demonstrate": "turns competing explanations into an inspectable matrix instead of a narrative preference",
+      "input_fixture": "hypotheses, evidence rows, diagnosticity, contradiction, and consistency judgments",
+      "operation_under_test": "turns competing explanations into an inspectable matrix instead of a narrative preference",
+      "expected_output": "ACH-style comparison product as a reviewable artifact",
+      "evidence_locator": "Expected proof artifact: ACH-style comparison product as a reviewable artifact",
+      "runbook": [
+        "build or run a demonstration that produces the specified output",
+        "Use this input fixture: hypotheses, evidence rows, diagnosticity, contradiction, and consistency judgments",
+        "Verify that the component produces: ACH-style comparison product as a reviewable artifact",
+        "Preserve the evidence at or beside: Expected proof artifact: ACH-style comparison product as a reviewable artifact"
+      ],
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "next_build_task": "Trace one Russia claim through ACH / Alternatives Matrix; confirm source lane, analytic variable, confidence boundary, and policy-facing output."
+    },
+    {
+      "case_id": "native-analyst-assurance-desk__0004__red-team-devil-s-advocate-pass",
+      "project_id": "native-analyst-assurance-desk",
+      "project_title": "Analyst Assurance Desk",
+      "component": "Red-Team / Devil's Advocate Pass",
+      "proof_status": "specified-output-needs-demo",
+      "claim_to_demonstrate": "attacks the current judgment before it is polished into final prose; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "favored conclusion, assumptions, missing evidence, rival frame, and adversary incentives",
+      "operation_under_test": "attacks the current judgment before it is polished into final prose; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "challenge memo and revision demand as a reviewable artifact",
+      "evidence_locator": "Expected proof artifact: challenge memo and revision demand as a reviewable artifact",
+      "runbook": [
+        "build or run a demonstration that produces the specified output",
+        "Use this input fixture: favored conclusion, assumptions, missing evidence, rival frame, and adversary incentives",
+        "Verify that the component produces: challenge memo and revision demand as a reviewable artifact",
+        "Preserve the evidence at or beside: Expected proof artifact: challenge memo and revision demand as a reviewable artifact"
+      ],
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "next_build_task": "Trace one Russia claim through Red-Team / Devil's Advocate Pass; confirm source lane, analytic variable, confidence boundary, and policy-facing output."
+    },
+    {
+      "case_id": "native-analyst-assurance-desk__0005__uncertainty-and-confidence-gate",
+      "project_id": "native-analyst-assurance-desk",
+      "project_title": "Analyst Assurance Desk",
+      "component": "Uncertainty And Confidence Gate",
+      "proof_status": "specified-output-needs-demo",
+      "claim_to_demonstrate": "prevents a fluent answer from presenting uncertainty as stronger than the evidence supports",
+      "input_fixture": "confidence level, source quality, ambiguity, contradiction, and collection gaps",
+      "operation_under_test": "prevents a fluent answer from presenting uncertainty as stronger than the evidence supports",
+      "expected_output": "confidence statement and collection-gap list as a reviewable artifact",
+      "evidence_locator": "Expected proof artifact: confidence statement and collection-gap list as a reviewable artifact",
+      "runbook": [
+        "build or run a demonstration that produces the specified output",
+        "Use this input fixture: confidence level, source quality, ambiguity, contradiction, and collection gaps",
+        "Verify that the component produces: confidence statement and collection-gap list as a reviewable artifact",
+        "Preserve the evidence at or beside: Expected proof artifact: confidence statement and collection-gap list as a reviewable artifact"
+      ],
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "next_build_task": "Trace one Russia claim through Uncertainty And Confidence Gate; confirm source lane, analytic variable, confidence boundary, and policy-facing output."
+    },
+    {
+      "case_id": "native-analyst-assurance-desk__0006__human-ai-delta-review",
+      "project_id": "native-analyst-assurance-desk",
+      "project_title": "Analyst Assurance Desk",
+      "component": "Human-AI Delta Review",
+      "proof_status": "specified-output-needs-demo",
+      "claim_to_demonstrate": "shows where AI helped, failed, hallucinated, over-weighted, or missed analyst context",
+      "input_fixture": "AI output, human analyst judgment, source trail, uncertainty basis, and override reason",
+      "operation_under_test": "shows where AI helped, failed, hallucinated, over-weighted, or missed analyst context",
+      "expected_output": "accept, qualify, block, rerun, or quarantine decision",
+      "evidence_locator": "Expected proof artifact: accept, qualify, block, rerun, or quarantine decision",
+      "runbook": [
+        "build or run a demonstration that produces the specified output",
+        "Use this input fixture: AI output, human analyst judgment, source trail, uncertainty basis, and override reason",
+        "Verify that the component produces: accept, qualify, block, rerun, or quarantine decision",
+        "Preserve the evidence at or beside: Expected proof artifact: accept, qualify, block, rerun, or quarantine decision"
+      ],
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "next_build_task": "Trace one Russia claim through Human-AI Delta Review; confirm source lane, analytic variable, confidence boundary, and policy-facing output."
+    },
+    {
+      "case_id": "native-analyst-assurance-desk__0007__technique-combination-studio",
+      "project_id": "native-analyst-assurance-desk",
+      "project_title": "Analyst Assurance Desk",
+      "component": "Technique Combination Studio",
+      "proof_status": "specified-output-needs-demo",
+      "claim_to_demonstrate": "tests which SAT sequence is useful for a specific research or intelligence task and which combinations add cost without value",
+      "input_fixture": "multiple SATs, task type, stage of inquiry, and analyst burden",
+      "operation_under_test": "tests which SAT sequence is useful for a specific research or intelligence task and which combinations add cost without value",
+      "expected_output": "SAT sequence recommendation and warning as a reviewable artifact",
+      "evidence_locator": "Expected proof artifact: SAT sequence recommendation and warning as a reviewable artifact",
+      "runbook": [
+        "build or run a demonstration that produces the specified output",
+        "Use this input fixture: multiple SATs, task type, stage of inquiry, and analyst burden",
+        "Verify that the component produces: SAT sequence recommendation and warning as a reviewable artifact",
+        "Preserve the evidence at or beside: Expected proof artifact: SAT sequence recommendation and warning as a reviewable artifact"
+      ],
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "next_build_task": "Trace one Russia claim through Technique Combination Studio; confirm source lane, analytic variable, confidence boundary, and policy-facing output."
+    },
+    {
+      "case_id": "native-analyst-assurance-desk__0008__release-and-learning-ledger",
+      "project_id": "native-analyst-assurance-desk",
+      "project_title": "Analyst Assurance Desk",
+      "component": "Release And Learning Ledger",
+      "proof_status": "specified-output-needs-demo",
+      "claim_to_demonstrate": "turns one analytic exercise into a reusable record for improving future human-AI analytic workflows",
+      "input_fixture": "final analytic product, method trail, disagreement state, review decision, and lessons learned",
+      "operation_under_test": "turns one analytic exercise into a reusable record for improving future human-AI analytic workflows",
+      "expected_output": "release decision and method-learning record as a reviewable artifact",
+      "evidence_locator": "Expected proof artifact: release decision and method-learning record as a reviewable artifact",
+      "runbook": [
+        "build or run a demonstration that produces the specified output",
+        "Use this input fixture: final analytic product, method trail, disagreement state, review decision, and lessons learned",
+        "Verify that the component produces: release decision and method-learning record as a reviewable artifact",
+        "Preserve the evidence at or beside: Expected proof artifact: release decision and method-learning record as a reviewable artifact"
+      ],
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "next_build_task": "Trace one Russia claim through Release And Learning Ledger; confirm source lane, analytic variable, confidence boundary, and policy-facing output."
+    }
+  ],
+  "minimum_demo": "native-analyst-assurance-desk__0001__task-and-method-assignment",
+  "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts."
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>Production Closeout</title>
+  <style>
+    :root { --ink:#111317; --muted:#5d6470; --line:#d9dee7; --paper:#f7f8fa; --panel:#fff; --accent:#2f5d83; --warn:#8a5b00; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,"Times New Roman",serif; line-height:1.55; }
+    main { max-width:1120px; margin:0 auto; padding:34px 20px 60px; }
+    h1 { font-size:44px; line-height:1.05; margin:8px 0 12px; }
+    h2 { margin-top:34px; padding-top:24px; border-top:1px solid var(--line); }
+    .eyebrow { font:700 12px/1.4 Arial,sans-serif; color:var(--muted); text-transform:uppercase; letter-spacing:.08em; }
+    .lead { max-width:900px; font-size:18px; color:#29313a; }
+    .grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin:22px 0; }
+    .card,.panel { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:16px; }
+    .card strong { display:block; font-size:32px; line-height:1; margin-bottom:8px; }
+    .card span { color:var(--muted); font:700 12px/1.4 Arial,sans-serif; text-transform:uppercase; letter-spacing:.05em; }
+    .warn { border-left:4px solid var(--warn); }
+    table { width:100%; border-collapse:collapse; table-layout:fixed; background:#fff; border:1px solid var(--line); }
+    th,td { border-bottom:1px solid var(--line); padding:9px 10px; text-align:left; vertical-align:top; overflow-wrap:anywhere; }
+    th { background:#edf1f6; font:700 12px/1.4 Arial,sans-serif; text-transform:uppercase; letter-spacing:.04em; }
+    code,a { overflow-wrap:anywhere; }
+    code { background:#eef1f5; padding:2px 5px; border-radius:4px; }
+    @media(max-width:860px) {
+      main { padding:28px 16px 48px; }
+      h1 { font-size:31px; }
+      .grid { grid-template-columns:1fr; }
+      table,thead,tbody,tr,th,td { display:block; width:100%; }
+      thead { display:none; }
+      tr { border:1px solid var(--line); border-radius:8px; margin:10px 0; overflow:hidden; background:#fff; }
+      td::before { content:attr(data-label); display:block; margin-bottom:3px; color:var(--muted); font:700 11px/1.3 Arial,sans-serif; text-transform:uppercase; letter-spacing:.04em; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Production closeout</p>
+  <h1>Full Production Grade Is Still Blocked</h1>
+  <p class="lead">This closeout page states the current production truth and the exact ceremony required before a full-production-grade claim can be made to Shay or any external reader.</p>
+  <p><a href="../production_signoff_workbench/index.html">Signoff workbench</a> | <a href="../active_lane_production_complete/index.html">Active-lane campaign</a> | <a href="../hosted_deployment_smoke_runner/runner.html">Hosted smoke runner</a> | <a href="SHAY_CLAIM_POLICY.md">Claim policy</a></p>
+  <section class="grid">
+    <article class="card"><strong>131</strong><span>Active projects</span></article>
+    <article class="card"><strong>108</strong><span>Production complete now</span></article>
+    <article class="card"><strong>23</strong><span>Runtime projects awaiting hosted smoke</span></article>
+    <article class="card"><strong>46</strong><span>Blocking gap rows</span></article>
+  </section>
+  <section class="panel warn">
+    <h2>Current Claim</h2>
+    <p>The portfolio is production-gated and deployable, but not yet fully production-grade: 108 of 131 active projects are production-complete, with 23 runtime projects still requiring public hosted-smoke evidence after upload.</p>
+  </section>
+  <section class="panel">
+    <h2>Claim After Completion</h2>
+    <p>A full active-lane production-grade claim becomes valid only after 131 of 131 active projects have complete evidence vaults, no active blocking gates, hosted public route evidence where required, and clearly labeled review or feedback notes.</p>
+  </section>
+  <h2>Remaining Work By Lane</h2>
+  <table><thead><tr><th>Lane</th><th>Projects</th></tr></thead><tbody><tr><td>Runtime Deployment Validation</td><td>23</td></tr></tbody></table>
+  <h2>Remaining Evidence Queue</h2>
+  <p>The table is capped for readability. The complete machine-readable table is <code>remaining_evidence_matrix.csv</code>.</p>
+  <table><thead><tr><th>Project</th><th>Lane</th><th>Missing Evidence</th><th>Required Note</th></tr></thead><tbody><tr><td data-label='Project'>analytical-methodology</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr><tr><td data-label='Project'>applied-history</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr><tr><td data-label='Project'>cognitive-warfare</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr><tr><td data-label='Project'>decision-advantage-system</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr><tr><td data-label='Project'>historical-studies</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr><tr><td data-label='Project'>ir-lexicon</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr><tr><td data-label='Project'>mb-dialectic-engine-room-pass1-handoff</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr><tr><td data-label='Project'>mb-infragard-handoff</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr><tr><td data-label='Project'>mb-insinuationengineroom-handoff-done</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr><tr><td data-label='Project'>native-africa</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr><tr><td data-label='Project'>native-aiprompt-eng</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr><tr><td data-label='Project'>native-analyst-assurance-desk</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr><tr><td data-label='Project'>native-berlin</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr><tr><td data-label='Project'>native-east-asia</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr><tr><td data-label='Project'>native-mideast</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr><tr><td data-label='Project'>native-mongol</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr><tr><td data-label='Project'>native-russia</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr><tr><td data-label='Project'>native-russia-history-room</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr><tr><td data-label='Project'>native-russia-security-desk</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr><tr><td data-label='Project'>native-western</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr><tr><td data-label='Project'>regional-studies</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr><tr><td data-label='Project'>row6</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr><tr><td data-label='Project'>russia-desk</td><td data-label='Lane'>runtime_deployment_validation</td><td data-label='Missing'>hosted_deployment_smoke.json</td><td data-label='Required note'>reviewer_validation_note.md</td></tr></tbody></table>
+</main>
+</body>
+</html>

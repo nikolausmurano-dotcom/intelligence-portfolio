@@ -1,0 +1,86 @@
+{
+  "section_id": "warrant-chamber",
+  "title": "Source & Evidence Review — tracking what supports each claim and what still needs review",
+  "section_type": "primary_showcase",
+  "map_type": "curated_claim_governance",
+  "proof_tier": "authored-proof-build-needs-demo",
+  "public_claim": "A manuscript-centered evidence governance chamber.",
+  "distinctive_mechanism": "Claims are inspected through a Foundational NSRP-style sourcing protocol, Claim Halo, North Doctrine, source and counter-source, warrant strength, West Dissent, judgment, South Revision, red-team pressure, certification, screen blueprint, data model, and live MuranoOS-oriented test scenarios rather than flattened into citations or comments.",
+  "use_value": "It matters because expert writing needs to know what authorizes a claim, what contests it, what revision state carries it, what dissent has been faced, and what test would show the warrant is strong enough.",
+  "built_evidence": [
+    {
+      "label": "Blueprint",
+      "path": "project_blueprints/warrant-chamber/blueprint.json",
+      "status": "present"
+    },
+    {
+      "label": "Instrument map",
+      "path": "project_blueprints/warrant-chamber/instrument_map.json",
+      "status": "present"
+    },
+    {
+      "label": "Project README",
+      "path": "project_blueprints/warrant-chamber/README.md",
+      "status": "present"
+    }
+  ],
+  "component_count": 3,
+  "component_status_counts": {
+    "specified-output-needs-demo": 3
+  },
+  "flagship_proof_builds": [
+    {
+      "name": "Claim-warrant-source proof",
+      "claim": "Source & Evidence Review should show the warrant behind a claim, not only list bibliography.",
+      "input": "one claim, cited source, source role, passage state, counter-source, and uncertainty marker",
+      "operation": "classify the source as method, evidence, counterargument, domain context, or future-review source and set the claim ceiling",
+      "expected_output": "claim-warrant record with support status and uncertainty boundary",
+      "verification_check": "select one claim and show source role, warrant strength, counter-source status, and approved claim level"
+    },
+    {
+      "name": "Contradiction and unresolved-evidence proof",
+      "claim": "The review surface should make unresolved evidence visible instead of hiding it behind polished prose.",
+      "input": "claim, rival evidence, missing evidence, contradiction note, and public audience",
+      "operation": "route unresolved evidence to narrow, defer, qualify, or block the claim",
+      "expected_output": "contradiction decision and public-language constraint",
+      "verification_check": "show one claim with a contradiction or missing-source issue and the resulting public wording decision"
+    }
+  ],
+  "component_proofs": [
+    {
+      "component": "Claim Intake",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated claim governance",
+      "claim_supported": "opens the claim as a review object rather than treating it as finished prose; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input": "draft claim, source, counter-source, intended audience",
+      "expected_output": "claim record as a reviewable artifact",
+      "current_evidence": "Expected proof artifact: claim record as a reviewable artifact",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Test one representative case; confirm input (draft claim, source, counter-source, intended audience) produces output (claim record as a reviewable artifact) and leaves a visible decision or artifact."
+    },
+    {
+      "component": "Warrant Inspection",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated claim governance",
+      "claim_supported": "uses Claim Halo / review chamber logic to expose what authorizes or weakens the claim",
+      "input": "source strength, contradiction, dissent, revision state",
+      "expected_output": "claim ceiling and revision decision as a reviewable artifact",
+      "current_evidence": "Expected proof artifact: claim ceiling and revision decision as a reviewable artifact",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Test one representative case; confirm input (source strength, contradiction, dissent, revision state) produces output (claim ceiling and revision decision as a reviewable...) and leaves a visible decision or artifact."
+    },
+    {
+      "component": "Certification Or Revision",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated claim governance",
+      "claim_supported": "decides whether the claim can publish, must narrow, needs sources, or should be rejected",
+      "input": "reviewed claim and evidence state",
+      "expected_output": "certified claim or revision task as a reviewable artifact",
+      "current_evidence": "Expected proof artifact: certified claim or revision task as a reviewable artifact",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Test one representative case; confirm input (reviewed claim and evidence state) produces output (certified claim or revision task as a reviewable...) and leaves a visible decision or artifact."
+    }
+  ],
+  "minimum_public_demo": "select one claim and show source role, warrant strength, counter-source status, and approved claim level",
+  "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts."
+}

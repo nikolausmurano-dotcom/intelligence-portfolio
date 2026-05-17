@@ -1,0 +1,144 @@
+{
+  "section_id": "native-poison-rag",
+  "title": "Retrieval Integrity and Poisoning Defense",
+  "section_type": "native_project",
+  "map_type": "curated_poison_rag",
+  "proof_tier": "specified-proof-plan-needs-demo",
+  "public_claim": "A retrieval-integrity and poisoning-defense page for RAG-supported analysis.",
+  "distinctive_mechanism": "It follows contaminated evidence across admission, indexing, retrieval, context assembly, generation, analyst review, and claim release, then asks where detection, recovery, and resource-allocation should occur when attacks arrive as slow poisoning, fast injection, authority-wrapper attacks, omission attacks, or saturation tactics.",
+  "use_value": "It makes Poison-RAG concrete by treating it as an evidence-chain and resource-burden problem rather than a prompt problem alone. The useful comparison is layered air defense: cheap decoys and mixed-speed salvos can force expensive defenses to spend attention, compute, and analyst time before the precision attack is even evaluated.",
+  "built_evidence": [
+    {
+      "label": "Blueprint",
+      "path": "project_blueprints/native-poison-rag/blueprint.json",
+      "status": "present"
+    },
+    {
+      "label": "Instrument map",
+      "path": "project_blueprints/native-poison-rag/instrument_map.json",
+      "status": "present"
+    },
+    {
+      "label": "Project README",
+      "path": "project_blueprints/native-poison-rag/README.md",
+      "status": "present"
+    }
+  ],
+  "component_count": 9,
+  "component_status_counts": {
+    "specified-output-needs-demo": 9
+  },
+  "flagship_proof_builds": [
+    {
+      "name": "Mixed-speed Poison-RAG salvo proof",
+      "claim": "The distinctive idea is not simply poison detection; it is testing slow contamination, fast injection, authority wrappers, omissions, and resource-draining decoys as a layered adversarial retrieval problem.",
+      "input": "clean corpus, slow-poison documents, fast-injection documents, authority-wrapper poison, omission condition, and detector/reviewer budget",
+      "operation": "run the same retrieval task through clean and contaminated conditions and trace exposure, ranking, generation uptake, and reviewer burden",
+      "expected_output": "retrieval trace, contamination exposure map, uptake/deformation score, reviewer-burden score, and replayable case",
+      "verification_check": "replay one mixed-salvo case and show where the poison entered, whether it surfaced, whether the answer absorbed it, and what the reviewer had to spend"
+    }
+  ],
+  "component_proofs": [
+    {
+      "component": "Clean / Poisoned Evidence Admission",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated poison rag",
+      "claim_supported": "tests whether contaminated material enters the corpus before indexing and records the attack surface at the corpus boundary",
+      "input": "clean documents, poisoned variants, source identity, poison specification, and admission rule",
+      "expected_output": "admission decision and attack-surface record as a reviewable artifact",
+      "current_evidence": "Expected proof artifact: admission decision and attack-surface record as a reviewable artifact",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Replay one clean/poisoned case through Clean / Poisoned Evidence Admission; confirm exposure, uptake or rejection, reviewer burden, and output: admission decision and attack-surface record...."
+    },
+    {
+      "component": "Slow-Poison Track",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated poison rag",
+      "claim_supported": "models the long-game attacker who degrades retrieval trust without triggering obvious anomaly thresholds",
+      "input": "low-rate adversarial contamination distributed across apparently ordinary source material",
+      "expected_output": "slow-contamination exposure profile as a reviewable artifact",
+      "current_evidence": "Expected proof artifact: slow-contamination exposure profile as a reviewable artifact",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Replay one clean/poisoned case through Slow-Poison Track; confirm exposure, uptake or rejection, reviewer burden, and output: slow-contamination exposure profile as a reviewable...."
+    },
+    {
+      "component": "Fast-Injection Track",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated poison rag",
+      "claim_supported": "models the short-game attacker who tries to force immediate retrieval or generation uptake",
+      "input": "high-salience injected poison, prompt-adjacent poison, or sudden source surge",
+      "expected_output": "fast-injection uptake and detection record as a reviewable artifact",
+      "current_evidence": "Expected proof artifact: fast-injection uptake and detection record as a reviewable artifact",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Replay one clean/poisoned case through Fast-Injection Track; confirm exposure, uptake or rejection, reviewer burden, and output: fast-injection uptake and detection record...."
+    },
+    {
+      "component": "Authority-Wrapper And Omission Attack Track",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated poison rag",
+      "claim_supported": "tests whether the system mistakes source costume for authority or misses the significance of absent evidence",
+      "input": "poison wrapped in credible authority cues plus missing or displaced contrary evidence",
+      "expected_output": "authority/omission vulnerability record as a reviewable artifact",
+      "current_evidence": "Expected proof artifact: authority/omission vulnerability record as a reviewable artifact",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Replay one clean/poisoned case through Authority-Wrapper And Omission Attack Track; confirm exposure, uptake or rejection, reviewer burden, and output: authority/omission vulnerability record...."
+    },
+    {
+      "component": "Index Perturbation And Retrieval Trace",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated poison rag",
+      "claim_supported": "tracks whether poisoned material is surfaced, ranked, fused, or suppressed at each retrieval stage",
+      "input": "embedding index, sparse index, poisoned chunks, clean chunks, reranking, and context-window assembly",
+      "expected_output": "retrieval trace and contamination exposure map",
+      "current_evidence": "Expected proof artifact: retrieval trace and contamination exposure map",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Replay one clean/poisoned case through Index Perturbation And Retrieval Trace; confirm exposure, uptake or rejection, reviewer burden, and output: retrieval trace and contamination exposure map."
+    },
+    {
+      "component": "Generation Uptake And Deformation Review",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated poison rag",
+      "claim_supported": "measures whether the answer absorbs, paraphrases, amplifies, hides, or resists the poison",
+      "input": "retrieved context, model answer, source citations, omitted contrary evidence, and analyst review",
+      "expected_output": "uptake, deformation, omission, and review-burden score",
+      "current_evidence": "Expected proof artifact: uptake, deformation, omission, and review-burden score",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Replay one clean/poisoned case through Generation Uptake And Deformation Review; confirm exposure, uptake or rejection, reviewer burden, and output: uptake, deformation, omission, and review-burden score."
+    },
+    {
+      "component": "Human / LLM Validation Gate",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated poison rag",
+      "claim_supported": "separates what the model accepted from what a reviewer caught, missed, blocked, or escalated",
+      "input": "model output, retrieved evidence, human analyst judgment, and adversarial condition label",
+      "expected_output": "validation decision and reviewer-burden record",
+      "current_evidence": "Expected proof artifact: validation decision and reviewer-burden record",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Replay one clean/poisoned case through Human / LLM Validation Gate; confirm exposure, uptake or rejection, reviewer burden, and output: validation decision and reviewer-burden record."
+    },
+    {
+      "component": "Mixed-Salvo Air-Defense Stress",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated poison rag",
+      "claim_supported": "uses layered air-defense logic to test whether cheap attacks can waste expensive review and detection resources while precision poison slips through",
+      "input": "slow poison, fast injection, decoys, saturation material, precision poison, and detector budget",
+      "expected_output": "detector/reviewer burden result and resource-allocation warning",
+      "current_evidence": "Expected proof artifact: detector/reviewer burden result and resource-allocation warning",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Replay one clean/poisoned case through Mixed-Salvo Air-Defense Stress; confirm exposure, uptake or rejection, reviewer burden, and output: detector/reviewer burden result...."
+    },
+    {
+      "component": "Replay And Benchmark Harness",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated poison rag",
+      "claim_supported": "keeps the adversarial episode reproducible so future defenses can be compared against the same contamination path",
+      "input": "attack condition, source packet, retrieval trace, model output, reviewer decision, and gate result",
+      "expected_output": "replayable Poison-RAG evaluation case as a reviewable artifact",
+      "current_evidence": "Expected proof artifact: replayable Poison-RAG evaluation case as a reviewable artifact",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Replay one clean/poisoned case through Replay And Benchmark Harness; confirm exposure, uptake or rejection, reviewer burden, and output: replayable Poison-RAG evaluation case as a reviewable...."
+    }
+  ],
+  "minimum_public_demo": "replay one mixed-salvo case and show where the poison entered, whether it surfaced, whether the answer absorbed it, and what the reviewer had to spend",
+  "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts."
+}

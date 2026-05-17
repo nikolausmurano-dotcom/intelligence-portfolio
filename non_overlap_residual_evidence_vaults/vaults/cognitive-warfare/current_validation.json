@@ -1,0 +1,44 @@
+{
+  "project_id": "cognitive-warfare",
+  "generated_at": "2026-05-17T01:48:29+00:00",
+  "validation_status": "evidence_incomplete",
+  "required_slot_count": 4,
+  "present_slot_count": 3,
+  "missing_slot_count": 1,
+  "promotion_allowed": false,
+  "promotion_note": "Promotion remains blocked until all required evidence files exist and human review confirms adequacy.",
+  "slot_status": [
+    {
+      "slot_id": "desktop_screenshot",
+      "required_file": "desktop_screenshot.png",
+      "present": true,
+      "size_bytes": 109487,
+      "sha256": "27cd6e65ba5dcf24a1f294e9cb90f2788910fe05ca7b50bc255c07947c16d637",
+      "proves": "Desktop viewport renders the runtime surface and output without layout failure."
+    },
+    {
+      "slot_id": "mobile_screenshot",
+      "required_file": "mobile_screenshot.png",
+      "present": true,
+      "size_bytes": 64275,
+      "sha256": "f0b219d585dee980ae81225532c4bed32406442c8b644134d3f7809f6f3c1944",
+      "proves": "Mobile viewport renders the runtime surface and output without layout failure."
+    },
+    {
+      "slot_id": "hosted_deployment_smoke",
+      "required_file": "hosted_deployment_smoke.json",
+      "present": false,
+      "size_bytes": 0,
+      "sha256": "",
+      "proves": "Uploaded route returns HTTP 200 and the route can fetch required artifacts."
+    },
+    {
+      "slot_id": "reviewer_validation_note",
+      "required_file": "reviewer_validation_note.md",
+      "present": true,
+      "size_bytes": 3510,
+      "sha256": "8e62b04ea5bc71a12d4c5e2d814d52457a028340aa6968033466bbdc50383fcc",
+      "proves": "A clearly labeled reviewer, owner, advisor, expert, venue, or Codex technical review note records approval, limits, or remaining defects after inspecting the runtime result."
+    }
+  ]
+}

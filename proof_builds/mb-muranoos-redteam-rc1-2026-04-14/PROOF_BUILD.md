@@ -1,0 +1,41 @@
+# Proof Build: RC1 wrapper; front-loaded 00_RC_Handoff/
+
+**Project ID.** `mb-muranoos-redteam-rc1-2026-04-14`
+
+**Proof tier.** source-backed-proof-build
+
+**Public claim.** RC1 wrapper; front-loaded 00_RC_Handoff/ is a preserved project packet for rC1 = "Release Candidate 1" of a wrapper that sits around the 2026-03-30 lossless archive.
+
+**Distinctive mechanism.** It converts an archive or handoff into three inspectable decisions: what the work product is for, which component pieces carry the work, and what action would turn it into a live room, paper, method, or software instrument.
+
+**Use value.** It preserves the distinctive design logic for RC1 wrapper; front-loaded 00_RC_Handoff/, so the portfolio can show the actual mechanism and status instead of reducing the project to a file-count or handoff label.
+
+**Minimum public demo.** Open or inspect the local runtime path for RC1 wrapper; front-loaded 00_RC_Handoff/ Handoff Identity; confirm a room, action, or state record traces to the governing contract.
+
+**Claim ceiling.** The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.
+
+## Flagship Proof Builds
+
+No special flagship proof build has been authored yet; this project is governed by the component proof table below.
+
+## Component Proof Table
+
+| Component | Status | Input | Expected Output | Verification Check |
+|---|---|---|---|---|
+| RC1 wrapper; front-loaded 00_RC_Handoff/ Handoff Identity | specified-output-needs-demo | source packet, code-ready room description, scope, and intended runtime | bounded definition of what the handoff asks a builder to construct | Open or inspect the local runtime path for RC1 wrapper; front-loaded 00_RC_Handoff/ Handoff Identity; confirm a room, action, or state record traces to the governing. |
+| RC1 wrapper; front-loaded 00_RC_Handoff/ Room Task Model | specified-output-needs-demo | user roles, task sequence, room state, and domain objects | room logic that turns the concept into a repeatable workflow | Open or inspect the local runtime path for RC1 wrapper; front-loaded 00_RC_Handoff/ Room Task Model; confirm a room, action, or state record traces to the governing. |
+| RC1 wrapper; front-loaded 00_RC_Handoff/ Data Schema And Persistence Plan | specified-output-needs-demo | entities, records, IDs, tables, JSON structures, indexes, and state transitions | data model that lets the room preserve work instead of acting like a static page | Open or inspect the local runtime path for RC1 wrapper; front-loaded 00_RC_Handoff/ Data Schema And Persistence Plan; confirm a room, action, or state record traces to. |
+| RC1 wrapper; front-loaded 00_RC_Handoff/ Interface And Instrument Plane | specified-output-needs-demo | panels, command palette, drawers, matrices, visualizations, and review widgets | named interface instruments that make the room useful to a researcher or analyst | Open or inspect the local runtime path for RC1 wrapper; front-loaded 00_RC_Handoff/ Interface And Instrument Plane; confirm a room, action, or state record traces to the. |
+| RC1 wrapper; front-loaded 00_RC_Handoff/ Integration Path | specified-output-needs-demo | frontend, backend, storage, retrieval, auth, export, and portfolio linkage | build sequence for turning the handoff into working software | Open or inspect the local runtime path for RC1 wrapper; front-loaded 00_RC_Handoff/ Integration Path; confirm a room, action, or state record traces to the governing. |
+| RC1 wrapper; front-loaded 00_RC_Handoff/ Proof Boundary | specified-output-needs-demo | completed packet, code readiness, unimplemented backend, missing live capture, or partial status | honest current claim ceiling for the handoff as a reviewable artifact | Open or inspect the local runtime path for RC1 wrapper; front-loaded 00_RC_Handoff/ Proof Boundary; confirm a room, action, or state record traces to the governing. |
+| RC1 wrapper; front-loaded 00_RC_Handoff/ Next Build Test | specified-output-needs-demo | minimal executable path, seeded fixture, UI walkthrough, and validation gate | specific test that would show the handoff has become a functioning room | Open or inspect the local runtime path for RC1 wrapper; front-loaded 00_RC_Handoff/ Next Build Test; confirm a room, action, or state record traces to the governing. |
+| RC1 wrapper; front-loaded 00_RC_Handoff/ / RedTeamLabRoom.tsx | source-context-backed | project source text and the named component `RedTeamLabRoom.tsx` | inspectable implementation evidence tied to `RedTeamLabRoom.tsx` | Confirm `RedTeamLabRoom.tsx` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| RC1 wrapper; front-loaded 00_RC_Handoff/ / redTeamRuntime.ts | source-context-backed | project source text and the named component `redTeamRuntime.ts` | inspectable implementation evidence tied to `redTeamRuntime.ts` | Confirm `redTeamRuntime.ts` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| RC1 wrapper; front-loaded 00_RC_Handoff/ / appRouter.tsx | source-context-backed | project source text and the named component `appRouter.tsx` | inspectable implementation evidence tied to `appRouter.tsx` | Confirm `appRouter.tsx` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| RC1 wrapper; front-loaded 00_RC_Handoff/ / routeRegistry.ts | source-context-backed | project source text and the named component `routeRegistry.ts` | inspectable implementation evidence tied to `routeRegistry.ts` | Confirm `routeRegistry.ts` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| RC1 wrapper; front-loaded 00_RC_Handoff/ / roomContracts.ts | source-context-backed | project source text and the named component `roomContracts.ts` | inspectable implementation evidence tied to `roomContracts.ts` | Confirm `roomContracts.ts` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| RC1 wrapper; front-loaded 00_RC_Handoff/ / Release Candidate 1 | source-context-backed | project source text and the named component `Release Candidate 1` | a project-specific work product, decision, or proof surface tied to `Release Candidate 1` | Confirm `Release Candidate 1` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| RC1 wrapper; front-loaded 00_RC_Handoff/ / Release Candidate | source-context-backed | project source text and the named component `Release Candidate` | a project-specific work product, decision, or proof surface tied to `Release Candidate` | Confirm `Release Candidate` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| RC1 wrapper; front-loaded 00_RC_Handoff/ / Phase I | source-context-backed | project source text and the named component `Phase I` | a project-specific work product, decision, or proof surface tied to `Phase I` | Confirm `Phase I` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| RC1 wrapper; front-loaded 00_RC_Handoff/ / Explain Nexus and Personal OS | source-context-backed | project source text and the named component `Explain Nexus and Personal OS` | a project-specific work product, decision, or proof surface tied to `Explain Nexus and Personal OS` | Confirm `Explain Nexus and Personal OS` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| RC1 wrapper; front-loaded 00_RC_Handoff/ / Creativity Research | source-context-backed | project source text and the named component `Creativity Research` | a project-specific work product, decision, or proof surface tied to `Creativity Research` | Confirm `Creativity Research` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |

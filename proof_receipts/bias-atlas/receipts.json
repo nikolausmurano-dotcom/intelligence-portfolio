@@ -1,0 +1,1457 @@
+{
+  "project": {
+    "project_id": "bias-atlas",
+    "title": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman"
+  },
+  "receipts": [
+    {
+      "receipt_id": "bias-atlas__receipt_0001",
+      "project_id": "bias-atlas",
+      "project_title": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman Runtime Or Interface Surface",
+      "component_case_id": "bias-atlas__0001__bias-atlas-cognitive-bias-catalogue-grounded-in-heuer-and-kahneman-runtime-or-interface-su",
+      "claim_to_demonstrate": "A catalogued atlas of cognitive biases that affect analytical work.; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "local app, web room, data surface, or workstation entry point",
+      "operation_under_test": "A catalogued atlas of cognitive biases that affect analytical work.; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "reader-facing definition of the software object and its intended user",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8fd882083e0f8259b8a06f60",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/bias-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48157,
+            "sha256": "ca9bdcd06fd5668578f75c285524e570f32233c56b567e3a2619ddf618665e24"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41016,
+            "sha256": "07cc5053d1df1fa3779b7188b26b13ac5273fda0a9d7bec439d82a9f25e0b4e4"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22014,
+            "sha256": "0dcf904bfe1bbbb3fae5b5ed1a693b828fd74f2f9a8e7eae59e250c5899f3466"
+          },
+          {
+            "relative_path": "proof_builds/bias-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22547,
+            "sha256": "b1b1f63cb57e38db7887990492b03b69af7e0c25502f65eb7ac2df9c9cb155c6"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48820,
+            "sha256": "0ddd7289e40644f6b1564f1a50cb64262193bfb248638651438583caf0f89b15"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10790,
+            "sha256": "37df0c04ebd739eb5f955812d6f92d8347331f829b22b31277bf12cc03b2da05"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/bias-atlas/blueprint.json",
+          "project_blueprints/bias-atlas/instrument_map.json",
+          "project_blueprints/bias-atlas/README.md",
+          "proof_builds/bias-atlas/proof_build.json",
+          "proof_demos/bias-atlas/demo_cases.json",
+          "proof_demos/bias-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "152847c0b2e6cf3ae2286b7d"
+    },
+    {
+      "receipt_id": "bias-atlas__receipt_0002",
+      "project_id": "bias-atlas",
+      "project_title": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman Data And State Model",
+      "component_case_id": "bias-atlas__0002__bias-atlas-cognitive-bias-catalogue-grounded-in-heuer-and-kahneman-data-and-state-model",
+      "claim_to_demonstrate": "Source use is organized by role: method authorities, domain evidence, technical background, implementation evidence, and claim limits. The page should show why each source matters; direct quotations and stronger factual claims still require exact passage.",
+      "input_fixture": "records, files, indexes, tables, project state, source state, and user decisions",
+      "operation_under_test": "Source use is organized by role: method authorities, domain evidence, technical background, implementation evidence, and claim limits. The page should show why each source matters; direct quotations and stronger factual claims still require exact passage.",
+      "expected_output": "state model that explains what the tool remembers and what it refuses to infer",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4da81596b91ff65b95cc789b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/bias-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48157,
+            "sha256": "ca9bdcd06fd5668578f75c285524e570f32233c56b567e3a2619ddf618665e24"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41016,
+            "sha256": "07cc5053d1df1fa3779b7188b26b13ac5273fda0a9d7bec439d82a9f25e0b4e4"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22014,
+            "sha256": "0dcf904bfe1bbbb3fae5b5ed1a693b828fd74f2f9a8e7eae59e250c5899f3466"
+          },
+          {
+            "relative_path": "proof_builds/bias-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22547,
+            "sha256": "b1b1f63cb57e38db7887990492b03b69af7e0c25502f65eb7ac2df9c9cb155c6"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48820,
+            "sha256": "0ddd7289e40644f6b1564f1a50cb64262193bfb248638651438583caf0f89b15"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10790,
+            "sha256": "37df0c04ebd739eb5f955812d6f92d8347331f829b22b31277bf12cc03b2da05"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/bias-atlas/blueprint.json",
+          "project_blueprints/bias-atlas/instrument_map.json",
+          "project_blueprints/bias-atlas/README.md",
+          "proof_builds/bias-atlas/proof_build.json",
+          "proof_demos/bias-atlas/demo_cases.json",
+          "proof_demos/bias-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0f45371a1ae8825ab56e9bab"
+    },
+    {
+      "receipt_id": "bias-atlas__receipt_0003",
+      "project_id": "bias-atlas",
+      "project_title": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman Core Instrument Panel",
+      "component_case_id": "bias-atlas__0003__bias-atlas-cognitive-bias-catalogue-grounded-in-heuer-and-kahneman-core-instrument-panel",
+      "claim_to_demonstrate": "Four coordinated lenses on the bias canon — biases catalogued by analytical lane, the scholarly foundation each bias is drawn from, and the mitigation grammar that maps bias to mitigating analytical move. Reading the atlas is a sequence: identify the bias.",
+      "input_fixture": "tool buttons, rooms, workflow steps, analytical controls, and review surfaces",
+      "operation_under_test": "Four coordinated lenses on the bias canon — biases catalogued by analytical lane, the scholarly foundation each bias is drawn from, and the mitigation grammar that maps bias to mitigating analytical move. Reading the atlas is a sequence: identify the bias.",
+      "expected_output": "named instruments that perform the useful work rather than generic navigation",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0f34fd9a5a44ba183928e1ab",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/bias-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48157,
+            "sha256": "ca9bdcd06fd5668578f75c285524e570f32233c56b567e3a2619ddf618665e24"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41016,
+            "sha256": "07cc5053d1df1fa3779b7188b26b13ac5273fda0a9d7bec439d82a9f25e0b4e4"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22014,
+            "sha256": "0dcf904bfe1bbbb3fae5b5ed1a693b828fd74f2f9a8e7eae59e250c5899f3466"
+          },
+          {
+            "relative_path": "proof_builds/bias-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22547,
+            "sha256": "b1b1f63cb57e38db7887990492b03b69af7e0c25502f65eb7ac2df9c9cb155c6"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48820,
+            "sha256": "0ddd7289e40644f6b1564f1a50cb64262193bfb248638651438583caf0f89b15"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10790,
+            "sha256": "37df0c04ebd739eb5f955812d6f92d8347331f829b22b31277bf12cc03b2da05"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/bias-atlas/blueprint.json",
+          "project_blueprints/bias-atlas/instrument_map.json",
+          "project_blueprints/bias-atlas/README.md",
+          "proof_builds/bias-atlas/proof_build.json",
+          "proof_demos/bias-atlas/demo_cases.json",
+          "proof_demos/bias-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "85150139eb18b1bb2d8cd313"
+    },
+    {
+      "receipt_id": "bias-atlas__receipt_0004",
+      "project_id": "bias-atlas",
+      "project_title": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman Workflow Orchestration",
+      "component_case_id": "bias-atlas__0004__bias-atlas-cognitive-bias-catalogue-grounded-in-heuer-and-kahneman-workflow-orchestration",
+      "claim_to_demonstrate": "Graduate the atlas from a structurally-complete reference into a fully source-bound reference — every bias citation traceable to a specific Heuer or Kahneman passage, every mitigation traceable to a specific SAT in the canonical primer. Step 01 Bias-citation.",
+      "input_fixture": "upstream inputs, intermediate decisions, downstream products, and stale-state conditions",
+      "operation_under_test": "Graduate the atlas from a structurally-complete reference into a fully source-bound reference — every bias citation traceable to a specific Heuer or Kahneman passage, every mitigation traceable to a specific SAT in the canonical primer. Step 01 Bias-citation.",
+      "expected_output": "pipeline path showing how work moves and when earlier decisions must be reopened",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fd96493f227a13a744bbc6d4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/bias-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48157,
+            "sha256": "ca9bdcd06fd5668578f75c285524e570f32233c56b567e3a2619ddf618665e24"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41016,
+            "sha256": "07cc5053d1df1fa3779b7188b26b13ac5273fda0a9d7bec439d82a9f25e0b4e4"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22014,
+            "sha256": "0dcf904bfe1bbbb3fae5b5ed1a693b828fd74f2f9a8e7eae59e250c5899f3466"
+          },
+          {
+            "relative_path": "proof_builds/bias-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22547,
+            "sha256": "b1b1f63cb57e38db7887990492b03b69af7e0c25502f65eb7ac2df9c9cb155c6"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48820,
+            "sha256": "0ddd7289e40644f6b1564f1a50cb64262193bfb248638651438583caf0f89b15"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10790,
+            "sha256": "37df0c04ebd739eb5f955812d6f92d8347331f829b22b31277bf12cc03b2da05"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/bias-atlas/blueprint.json",
+          "project_blueprints/bias-atlas/instrument_map.json",
+          "project_blueprints/bias-atlas/README.md",
+          "proof_builds/bias-atlas/proof_build.json",
+          "proof_demos/bias-atlas/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d98cd7231c7c3e19ee96c42c"
+    },
+    {
+      "receipt_id": "bias-atlas__receipt_0005",
+      "project_id": "bias-atlas",
+      "project_title": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman Review And Governance Gate",
+      "component_case_id": "bias-atlas__0005__bias-atlas-cognitive-bias-catalogue-grounded-in-heuer-and-kahneman-review-and-governance-g",
+      "claim_to_demonstrate": "Status: The atlas is structurally complete on the public site. Biases are catalogued by analytical lane, the Heuer and Kahneman foundations are present, and the bias-to-mitigating-SAT mapping is in place. Open work: the binding from each catalogued bias to.",
+      "input_fixture": "quality rules, source checks, claim ceilings, reviewer steps, and failure states",
+      "operation_under_test": "Status: The atlas is structurally complete on the public site. Biases are catalogued by analytical lane, the Heuer and Kahneman foundations are present, and the bias-to-mitigating-SAT mapping is in place. Open work: the binding from each catalogued bias to.",
+      "expected_output": "decision gate that makes the output inspectable before it is trusted",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f0a9b7ff3262d180291ae4ca",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/bias-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48157,
+            "sha256": "ca9bdcd06fd5668578f75c285524e570f32233c56b567e3a2619ddf618665e24"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41016,
+            "sha256": "07cc5053d1df1fa3779b7188b26b13ac5273fda0a9d7bec439d82a9f25e0b4e4"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22014,
+            "sha256": "0dcf904bfe1bbbb3fae5b5ed1a693b828fd74f2f9a8e7eae59e250c5899f3466"
+          },
+          {
+            "relative_path": "proof_builds/bias-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22547,
+            "sha256": "b1b1f63cb57e38db7887990492b03b69af7e0c25502f65eb7ac2df9c9cb155c6"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48820,
+            "sha256": "0ddd7289e40644f6b1564f1a50cb64262193bfb248638651438583caf0f89b15"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10790,
+            "sha256": "37df0c04ebd739eb5f955812d6f92d8347331f829b22b31277bf12cc03b2da05"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/bias-atlas/blueprint.json",
+          "project_blueprints/bias-atlas/instrument_map.json",
+          "project_blueprints/bias-atlas/README.md",
+          "proof_builds/bias-atlas/proof_build.json",
+          "proof_demos/bias-atlas/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b63f99bbd1c9f15c9aa3482b"
+    },
+    {
+      "receipt_id": "bias-atlas__receipt_0006",
+      "project_id": "bias-atlas",
+      "project_title": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman Export Or Integration Surface",
+      "component_case_id": "bias-atlas__0006__bias-atlas-cognitive-bias-catalogue-grounded-in-heuer-and-kahneman-export-or-integration-s",
+      "claim_to_demonstrate": "The atlas is structurally complete on the public site. Biases are catalogued by analytical lane, the Heuer and Kahneman foundations are present, and the bias-to-mitigating-SAT mapping is in place. Open work: the binding from each catalogued bias to its.",
+      "input_fixture": "brief, paper, room, dataset, packet, rendered page, or external handoff",
+      "operation_under_test": "The atlas is structurally complete on the public site. Biases are catalogued by analytical lane, the Heuer and Kahneman foundations are present, and the bias-to-mitigating-SAT mapping is in place. Open work: the binding from each catalogued bias to its.",
+      "expected_output": "usable output that another project, professor, employer, or collaborator can inspect",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "577c94f4228762f7478a15a0",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/bias-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48157,
+            "sha256": "ca9bdcd06fd5668578f75c285524e570f32233c56b567e3a2619ddf618665e24"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41016,
+            "sha256": "07cc5053d1df1fa3779b7188b26b13ac5273fda0a9d7bec439d82a9f25e0b4e4"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22014,
+            "sha256": "0dcf904bfe1bbbb3fae5b5ed1a693b828fd74f2f9a8e7eae59e250c5899f3466"
+          },
+          {
+            "relative_path": "proof_builds/bias-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22547,
+            "sha256": "b1b1f63cb57e38db7887990492b03b69af7e0c25502f65eb7ac2df9c9cb155c6"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48820,
+            "sha256": "0ddd7289e40644f6b1564f1a50cb64262193bfb248638651438583caf0f89b15"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10790,
+            "sha256": "37df0c04ebd739eb5f955812d6f92d8347331f829b22b31277bf12cc03b2da05"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/bias-atlas/blueprint.json",
+          "project_blueprints/bias-atlas/instrument_map.json",
+          "project_blueprints/bias-atlas/README.md",
+          "proof_builds/bias-atlas/proof_build.json",
+          "proof_demos/bias-atlas/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ea7d05682290a43f646ed3ab"
+    },
+    {
+      "receipt_id": "bias-atlas__receipt_0007",
+      "project_id": "bias-atlas",
+      "project_title": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman Build Verification Queue",
+      "component_case_id": "bias-atlas__0007__bias-atlas-cognitive-bias-catalogue-grounded-in-heuer-and-kahneman-build-verification-queu",
+      "claim_to_demonstrate": "Remaining gaps: graduate the atlas from a structurally-complete reference into a fully source-bound reference — every bias citation traceable to a specific Heuer or Kahneman passage, every mitigation traceable to a specific SAT in the canonical primer. Next.",
+      "input_fixture": "unbuilt modules, missing walkthroughs, test cases, and validation evidence",
+      "operation_under_test": "Remaining gaps: graduate the atlas from a structurally-complete reference into a fully source-bound reference — every bias citation traceable to a specific Heuer or Kahneman passage, every mitigation traceable to a specific SAT in the canonical primer. Next.",
+      "expected_output": "next proof needed before broader claims about the tool are safe",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e350b0e07ab7b9d385896d3e",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/bias-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48157,
+            "sha256": "ca9bdcd06fd5668578f75c285524e570f32233c56b567e3a2619ddf618665e24"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41016,
+            "sha256": "07cc5053d1df1fa3779b7188b26b13ac5273fda0a9d7bec439d82a9f25e0b4e4"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22014,
+            "sha256": "0dcf904bfe1bbbb3fae5b5ed1a693b828fd74f2f9a8e7eae59e250c5899f3466"
+          },
+          {
+            "relative_path": "proof_builds/bias-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22547,
+            "sha256": "b1b1f63cb57e38db7887990492b03b69af7e0c25502f65eb7ac2df9c9cb155c6"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48820,
+            "sha256": "0ddd7289e40644f6b1564f1a50cb64262193bfb248638651438583caf0f89b15"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10790,
+            "sha256": "37df0c04ebd739eb5f955812d6f92d8347331f829b22b31277bf12cc03b2da05"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/bias-atlas/blueprint.json",
+          "project_blueprints/bias-atlas/instrument_map.json",
+          "project_blueprints/bias-atlas/README.md",
+          "proof_builds/bias-atlas/proof_build.json",
+          "proof_demos/bias-atlas/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8ec32b76262ece79d3bdc958"
+    },
+    {
+      "receipt_id": "bias-atlas__receipt_0008",
+      "project_id": "bias-atlas",
+      "project_title": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman / Analyst Workstation",
+      "component_case_id": "bias-atlas__0008__bias-atlas-cognitive-bias-catalogue-grounded-in-heuer-and-kahneman-analyst-workstation",
+      "claim_to_demonstrate": "uses `Analyst Workstation` as a named project component with a traceable role in the public mechanism. Source context: The atlas is structurally a reference shelf — distinct from the interactive bias-detection page in the Analyst Workstation suite, which.",
+      "input_fixture": "project source text and the named component `Analyst Workstation`",
+      "operation_under_test": "uses `Analyst Workstation` as a named project component with a traceable role in the public mechanism. Source context: The atlas is structurally a reference shelf — distinct from the interactive bias-detection page in the Analyst Workstation suite, which.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Analyst Workstation`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79afd8b9cbca650779501074",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/bias-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48157,
+            "sha256": "ca9bdcd06fd5668578f75c285524e570f32233c56b567e3a2619ddf618665e24"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41016,
+            "sha256": "07cc5053d1df1fa3779b7188b26b13ac5273fda0a9d7bec439d82a9f25e0b4e4"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22014,
+            "sha256": "0dcf904bfe1bbbb3fae5b5ed1a693b828fd74f2f9a8e7eae59e250c5899f3466"
+          },
+          {
+            "relative_path": "proof_builds/bias-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22547,
+            "sha256": "b1b1f63cb57e38db7887990492b03b69af7e0c25502f65eb7ac2df9c9cb155c6"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48820,
+            "sha256": "0ddd7289e40644f6b1564f1a50cb64262193bfb248638651438583caf0f89b15"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10790,
+            "sha256": "37df0c04ebd739eb5f955812d6f92d8347331f829b22b31277bf12cc03b2da05"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/bias-atlas/blueprint.json",
+          "project_blueprints/bias-atlas/instrument_map.json",
+          "project_blueprints/bias-atlas/README.md",
+          "proof_builds/bias-atlas/proof_build.json",
+          "proof_demos/bias-atlas/demo_cases.json",
+          "proof_demos/bias-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "700fa598ae6d6c78936221ea"
+    },
+    {
+      "receipt_id": "bias-atlas__receipt_0009",
+      "project_id": "bias-atlas",
+      "project_title": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman / Reading the",
+      "component_case_id": "bias-atlas__0009__bias-atlas-cognitive-bias-catalogue-grounded-in-heuer-and-kahneman-reading-the",
+      "claim_to_demonstrate": "uses `Reading the` as a named project component with a traceable role in the public mechanism. Source context: Reading the atlas is a sequence: identify the bias, read its foundation, follow the mitigation map. Four coordinated lenses on the bias canon —.",
+      "input_fixture": "project source text and the named component `Reading the`",
+      "operation_under_test": "uses `Reading the` as a named project component with a traceable role in the public mechanism. Source context: Reading the atlas is a sequence: identify the bias, read its foundation, follow the mitigation map. Four coordinated lenses on the bias canon —.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Reading the`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "1077592be75469131380a091",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/bias-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48157,
+            "sha256": "ca9bdcd06fd5668578f75c285524e570f32233c56b567e3a2619ddf618665e24"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41016,
+            "sha256": "07cc5053d1df1fa3779b7188b26b13ac5273fda0a9d7bec439d82a9f25e0b4e4"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22014,
+            "sha256": "0dcf904bfe1bbbb3fae5b5ed1a693b828fd74f2f9a8e7eae59e250c5899f3466"
+          },
+          {
+            "relative_path": "proof_builds/bias-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22547,
+            "sha256": "b1b1f63cb57e38db7887990492b03b69af7e0c25502f65eb7ac2df9c9cb155c6"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48820,
+            "sha256": "0ddd7289e40644f6b1564f1a50cb64262193bfb248638651438583caf0f89b15"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10790,
+            "sha256": "37df0c04ebd739eb5f955812d6f92d8347331f829b22b31277bf12cc03b2da05"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/bias-atlas/blueprint.json",
+          "project_blueprints/bias-atlas/instrument_map.json",
+          "project_blueprints/bias-atlas/README.md",
+          "proof_builds/bias-atlas/proof_build.json",
+          "proof_demos/bias-atlas/demo_cases.json",
+          "proof_demos/bias-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b27bfb986816fb5061a2f63f"
+    },
+    {
+      "receipt_id": "bias-atlas__receipt_0010",
+      "project_id": "bias-atlas",
+      "project_title": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman / Graduate the",
+      "component_case_id": "bias-atlas__0010__bias-atlas-cognitive-bias-catalogue-grounded-in-heuer-and-kahneman-graduate-the",
+      "claim_to_demonstrate": "uses `Graduate the` as a named project component with a traceable role in the public mechanism. Source context: Graduate the atlas from a structurally-complete reference into a fully source-bound reference — every bias citation traceable to a specific Heuer.",
+      "input_fixture": "project source text and the named component `Graduate the`",
+      "operation_under_test": "uses `Graduate the` as a named project component with a traceable role in the public mechanism. Source context: Graduate the atlas from a structurally-complete reference into a fully source-bound reference — every bias citation traceable to a specific Heuer.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Graduate the`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0a182d86920893bb0a72feb0",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/bias-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48157,
+            "sha256": "ca9bdcd06fd5668578f75c285524e570f32233c56b567e3a2619ddf618665e24"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41016,
+            "sha256": "07cc5053d1df1fa3779b7188b26b13ac5273fda0a9d7bec439d82a9f25e0b4e4"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22014,
+            "sha256": "0dcf904bfe1bbbb3fae5b5ed1a693b828fd74f2f9a8e7eae59e250c5899f3466"
+          },
+          {
+            "relative_path": "proof_builds/bias-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22547,
+            "sha256": "b1b1f63cb57e38db7887990492b03b69af7e0c25502f65eb7ac2df9c9cb155c6"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48820,
+            "sha256": "0ddd7289e40644f6b1564f1a50cb64262193bfb248638651438583caf0f89b15"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10790,
+            "sha256": "37df0c04ebd739eb5f955812d6f92d8347331f829b22b31277bf12cc03b2da05"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/bias-atlas/blueprint.json",
+          "project_blueprints/bias-atlas/instrument_map.json",
+          "project_blueprints/bias-atlas/README.md",
+          "proof_builds/bias-atlas/proof_build.json",
+          "proof_demos/bias-atlas/demo_cases.json",
+          "proof_demos/bias-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7a763d798fef05db846d4bc5"
+    },
+    {
+      "receipt_id": "bias-atlas__receipt_0011",
+      "project_id": "bias-atlas",
+      "project_title": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman / Its Scholarly Foundation (the Heuer",
+      "component_case_id": "bias-atlas__0011__bias-atlas-cognitive-bias-catalogue-grounded-in-heuer-and-kahneman-its-scholarly-foundatio",
+      "claim_to_demonstrate": "uses `Its Scholarly Foundation (the Heuer` as a named project component with a traceable role in the public mechanism. Source context: A catalogued atlas of cognitive biases that affect analytical work. Pairs each bias with its scholarly foundation (the.",
+      "input_fixture": "project source text and the named component `Its Scholarly Foundation (the Heuer`",
+      "operation_under_test": "uses `Its Scholarly Foundation (the Heuer` as a named project component with a traceable role in the public mechanism. Source context: A catalogued atlas of cognitive biases that affect analytical work. Pairs each bias with its scholarly foundation (the.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Its Scholarly Foundation (the Heuer`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "65778466692bac8055d5a745",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/bias-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48157,
+            "sha256": "ca9bdcd06fd5668578f75c285524e570f32233c56b567e3a2619ddf618665e24"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41016,
+            "sha256": "07cc5053d1df1fa3779b7188b26b13ac5273fda0a9d7bec439d82a9f25e0b4e4"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22014,
+            "sha256": "0dcf904bfe1bbbb3fae5b5ed1a693b828fd74f2f9a8e7eae59e250c5899f3466"
+          },
+          {
+            "relative_path": "proof_builds/bias-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22547,
+            "sha256": "b1b1f63cb57e38db7887990492b03b69af7e0c25502f65eb7ac2df9c9cb155c6"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48820,
+            "sha256": "0ddd7289e40644f6b1564f1a50cb64262193bfb248638651438583caf0f89b15"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10790,
+            "sha256": "37df0c04ebd739eb5f955812d6f92d8347331f829b22b31277bf12cc03b2da05"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/bias-atlas/blueprint.json",
+          "project_blueprints/bias-atlas/instrument_map.json",
+          "project_blueprints/bias-atlas/README.md",
+          "proof_builds/bias-atlas/proof_build.json",
+          "proof_demos/bias-atlas/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "62c426fdd6f31de4119ad4bf"
+    },
+    {
+      "receipt_id": "bias-atlas__receipt_0012",
+      "project_id": "bias-atlas",
+      "project_title": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman / Distinct From The Interactive Bias",
+      "component_case_id": "bias-atlas__0012__bias-atlas-cognitive-bias-catalogue-grounded-in-heuer-and-kahneman-distinct-from-the-inter",
+      "claim_to_demonstrate": "uses `Distinct From The Interactive Bias` as a named project component with a traceable role in the public mechanism. Source context: The atlas is structurally a reference shelf — distinct from the interactive bias-detection page in the Analyst Workstation.",
+      "input_fixture": "project source text and the named component `Distinct From The Interactive Bias`",
+      "operation_under_test": "uses `Distinct From The Interactive Bias` as a named project component with a traceable role in the public mechanism. Source context: The atlas is structurally a reference shelf — distinct from the interactive bias-detection page in the Analyst Workstation.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Distinct From The Interactive Bias`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79afd8b9cbca650779501074",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/bias-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48157,
+            "sha256": "ca9bdcd06fd5668578f75c285524e570f32233c56b567e3a2619ddf618665e24"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41016,
+            "sha256": "07cc5053d1df1fa3779b7188b26b13ac5273fda0a9d7bec439d82a9f25e0b4e4"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22014,
+            "sha256": "0dcf904bfe1bbbb3fae5b5ed1a693b828fd74f2f9a8e7eae59e250c5899f3466"
+          },
+          {
+            "relative_path": "proof_builds/bias-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22547,
+            "sha256": "b1b1f63cb57e38db7887990492b03b69af7e0c25502f65eb7ac2df9c9cb155c6"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48820,
+            "sha256": "0ddd7289e40644f6b1564f1a50cb64262193bfb248638651438583caf0f89b15"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10790,
+            "sha256": "37df0c04ebd739eb5f955812d6f92d8347331f829b22b31277bf12cc03b2da05"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/bias-atlas/blueprint.json",
+          "project_blueprints/bias-atlas/instrument_map.json",
+          "project_blueprints/bias-atlas/README.md",
+          "proof_builds/bias-atlas/proof_build.json",
+          "proof_demos/bias-atlas/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1d23ff1314ba2b2e56fcb0b5"
+    },
+    {
+      "receipt_id": "bias-atlas__receipt_0013",
+      "project_id": "bias-atlas",
+      "project_title": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman / Detection Page In The Analyst Workstation Suite",
+      "component_case_id": "bias-atlas__0013__bias-atlas-cognitive-bias-catalogue-grounded-in-heuer-and-kahneman-detection-page-in-the-a",
+      "claim_to_demonstrate": "uses `Detection Page In The Analyst Workstation Suite` as a named project component with a traceable role in the public mechanism. Source context: The atlas is structurally a reference shelf — distinct from the interactive bias-detection page in the Analyst.",
+      "input_fixture": "project source text and the named component `Detection Page In The Analyst Workstation Suite`",
+      "operation_under_test": "uses `Detection Page In The Analyst Workstation Suite` as a named project component with a traceable role in the public mechanism. Source context: The atlas is structurally a reference shelf — distinct from the interactive bias-detection page in the Analyst.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Detection Page In The Analyst Workstation Suite`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79afd8b9cbca650779501074",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/bias-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48157,
+            "sha256": "ca9bdcd06fd5668578f75c285524e570f32233c56b567e3a2619ddf618665e24"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41016,
+            "sha256": "07cc5053d1df1fa3779b7188b26b13ac5273fda0a9d7bec439d82a9f25e0b4e4"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22014,
+            "sha256": "0dcf904bfe1bbbb3fae5b5ed1a693b828fd74f2f9a8e7eae59e250c5899f3466"
+          },
+          {
+            "relative_path": "proof_builds/bias-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22547,
+            "sha256": "b1b1f63cb57e38db7887990492b03b69af7e0c25502f65eb7ac2df9c9cb155c6"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48820,
+            "sha256": "0ddd7289e40644f6b1564f1a50cb64262193bfb248638651438583caf0f89b15"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10790,
+            "sha256": "37df0c04ebd739eb5f955812d6f92d8347331f829b22b31277bf12cc03b2da05"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/bias-atlas/blueprint.json",
+          "project_blueprints/bias-atlas/instrument_map.json",
+          "proof_builds/bias-atlas/proof_build.json",
+          "proof_demos/bias-atlas/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ec4d4813fcb6a5ce6d71b0a8"
+    },
+    {
+      "receipt_id": "bias-atlas__receipt_0014",
+      "project_id": "bias-atlas",
+      "project_title": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman / Biases Catalogued By Analytical Lane",
+      "component_case_id": "bias-atlas__0014__bias-atlas-cognitive-bias-catalogue-grounded-in-heuer-and-kahneman-biases-catalogued-by-an",
+      "claim_to_demonstrate": "uses `Biases Catalogued By Analytical Lane` as a named project component with a traceable role in the public mechanism. Source context: Four coordinated lenses on the bias canon — biases catalogued by analytical lane, the scholarly foundation each bias is.",
+      "input_fixture": "project source text and the named component `Biases Catalogued By Analytical Lane`",
+      "operation_under_test": "uses `Biases Catalogued By Analytical Lane` as a named project component with a traceable role in the public mechanism. Source context: Four coordinated lenses on the bias canon — biases catalogued by analytical lane, the scholarly foundation each bias is.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Biases Catalogued By Analytical Lane`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ee8d8ede1f8dd0526a051c40",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/bias-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48157,
+            "sha256": "ca9bdcd06fd5668578f75c285524e570f32233c56b567e3a2619ddf618665e24"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41016,
+            "sha256": "07cc5053d1df1fa3779b7188b26b13ac5273fda0a9d7bec439d82a9f25e0b4e4"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22014,
+            "sha256": "0dcf904bfe1bbbb3fae5b5ed1a693b828fd74f2f9a8e7eae59e250c5899f3466"
+          },
+          {
+            "relative_path": "proof_builds/bias-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22547,
+            "sha256": "b1b1f63cb57e38db7887990492b03b69af7e0c25502f65eb7ac2df9c9cb155c6"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48820,
+            "sha256": "0ddd7289e40644f6b1564f1a50cb64262193bfb248638651438583caf0f89b15"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10790,
+            "sha256": "37df0c04ebd739eb5f955812d6f92d8347331f829b22b31277bf12cc03b2da05"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/bias-atlas/blueprint.json",
+          "project_blueprints/bias-atlas/instrument_map.json",
+          "project_blueprints/bias-atlas/README.md",
+          "proof_builds/bias-atlas/proof_build.json",
+          "proof_demos/bias-atlas/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "44c453e5246e2ec8d2f82048"
+    },
+    {
+      "receipt_id": "bias-atlas__receipt_0015",
+      "project_id": "bias-atlas",
+      "project_title": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman / The Scholarly Foundation Each Bias Is Drawn From",
+      "component_case_id": "bias-atlas__0015__bias-atlas-cognitive-bias-catalogue-grounded-in-heuer-and-kahneman-the-scholarly-foundatio",
+      "claim_to_demonstrate": "uses `The Scholarly Foundation Each Bias Is Drawn From` as a named project component with a traceable role in the public mechanism. Source context: Four coordinated lenses on the bias canon — biases catalogued by analytical lane, the scholarly foundation each.",
+      "input_fixture": "project source text and the named component `The Scholarly Foundation Each Bias Is Drawn From`",
+      "operation_under_test": "uses `The Scholarly Foundation Each Bias Is Drawn From` as a named project component with a traceable role in the public mechanism. Source context: Four coordinated lenses on the bias canon — biases catalogued by analytical lane, the scholarly foundation each.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `The Scholarly Foundation Each Bias Is Drawn From`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ee8d8ede1f8dd0526a051c40",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/bias-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48157,
+            "sha256": "ca9bdcd06fd5668578f75c285524e570f32233c56b567e3a2619ddf618665e24"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41016,
+            "sha256": "07cc5053d1df1fa3779b7188b26b13ac5273fda0a9d7bec439d82a9f25e0b4e4"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22014,
+            "sha256": "0dcf904bfe1bbbb3fae5b5ed1a693b828fd74f2f9a8e7eae59e250c5899f3466"
+          },
+          {
+            "relative_path": "proof_builds/bias-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22547,
+            "sha256": "b1b1f63cb57e38db7887990492b03b69af7e0c25502f65eb7ac2df9c9cb155c6"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48820,
+            "sha256": "0ddd7289e40644f6b1564f1a50cb64262193bfb248638651438583caf0f89b15"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10790,
+            "sha256": "37df0c04ebd739eb5f955812d6f92d8347331f829b22b31277bf12cc03b2da05"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/bias-atlas/blueprint.json",
+          "project_blueprints/bias-atlas/instrument_map.json",
+          "proof_builds/bias-atlas/proof_build.json",
+          "proof_demos/bias-atlas/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c54a97b89add7fc76d90abad"
+    },
+    {
+      "receipt_id": "bias-atlas__receipt_0016",
+      "project_id": "bias-atlas",
+      "project_title": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman / Read Its Foundation",
+      "component_case_id": "bias-atlas__0016__bias-atlas-cognitive-bias-catalogue-grounded-in-heuer-and-kahneman-read-its-foundation",
+      "claim_to_demonstrate": "uses `Read Its Foundation` as a named project component with a traceable role in the public mechanism. Source context: identify the bias, read its foundation, follow the mitigation map. Four coordinated lenses on the bias canon — biases catalogued by.",
+      "input_fixture": "project source text and the named component `Read Its Foundation`",
+      "operation_under_test": "uses `Read Its Foundation` as a named project component with a traceable role in the public mechanism. Source context: identify the bias, read its foundation, follow the mitigation map. Four coordinated lenses on the bias canon — biases catalogued by.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Read Its Foundation`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "01d92f6718828766abc79cd2",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/bias-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48157,
+            "sha256": "ca9bdcd06fd5668578f75c285524e570f32233c56b567e3a2619ddf618665e24"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41016,
+            "sha256": "07cc5053d1df1fa3779b7188b26b13ac5273fda0a9d7bec439d82a9f25e0b4e4"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22014,
+            "sha256": "0dcf904bfe1bbbb3fae5b5ed1a693b828fd74f2f9a8e7eae59e250c5899f3466"
+          },
+          {
+            "relative_path": "proof_builds/bias-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22547,
+            "sha256": "b1b1f63cb57e38db7887990492b03b69af7e0c25502f65eb7ac2df9c9cb155c6"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48820,
+            "sha256": "0ddd7289e40644f6b1564f1a50cb64262193bfb248638651438583caf0f89b15"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10790,
+            "sha256": "37df0c04ebd739eb5f955812d6f92d8347331f829b22b31277bf12cc03b2da05"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/bias-atlas/blueprint.json",
+          "project_blueprints/bias-atlas/instrument_map.json",
+          "project_blueprints/bias-atlas/README.md",
+          "proof_builds/bias-atlas/proof_build.json",
+          "proof_demos/bias-atlas/demo_cases.json",
+          "proof_demos/bias-atlas/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f2861e6eee8951433978eae6"
+    },
+    {
+      "receipt_id": "bias-atlas__receipt_0017",
+      "project_id": "bias-atlas",
+      "project_title": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Bias Atlas — cognitive-bias catalogue grounded in Heuer and Kahneman / follow the mitigation map. Four coordinated lenses on the bias canon",
+      "component_case_id": "bias-atlas__0017__bias-atlas-cognitive-bias-catalogue-grounded-in-heuer-and-kahneman-follow-the-mitigation-m",
+      "claim_to_demonstrate": "uses `follow the mitigation map. Four coordinated lenses on the bias canon` as an analytical instrument that turns source material into a map, matrix, ledger, graph, taxonomy, or decision surface. Source context: identify the bias, read its foundation, follow.",
+      "input_fixture": "project source text and the named component `follow the mitigation map. Four coordinated lenses on the bias canon`",
+      "operation_under_test": "uses `follow the mitigation map. Four coordinated lenses on the bias canon` as an analytical instrument that turns source material into a map, matrix, ledger, graph, taxonomy, or decision surface. Source context: identify the bias, read its foundation, follow.",
+      "expected_output": "an analytical work product or decision surface tied to `follow the mitigation map. Four coordinated lenses on the bias canon`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "01d92f6718828766abc79cd2",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/bias-atlas/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48157,
+            "sha256": "ca9bdcd06fd5668578f75c285524e570f32233c56b567e3a2619ddf618665e24"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 41016,
+            "sha256": "07cc5053d1df1fa3779b7188b26b13ac5273fda0a9d7bec439d82a9f25e0b4e4"
+          },
+          {
+            "relative_path": "project_blueprints/bias-atlas/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22014,
+            "sha256": "0dcf904bfe1bbbb3fae5b5ed1a693b828fd74f2f9a8e7eae59e250c5899f3466"
+          },
+          {
+            "relative_path": "proof_builds/bias-atlas/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22547,
+            "sha256": "b1b1f63cb57e38db7887990492b03b69af7e0c25502f65eb7ac2df9c9cb155c6"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48820,
+            "sha256": "0ddd7289e40644f6b1564f1a50cb64262193bfb248638651438583caf0f89b15"
+          },
+          {
+            "relative_path": "proof_demos/bias-atlas/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10790,
+            "sha256": "37df0c04ebd739eb5f955812d6f92d8347331f829b22b31277bf12cc03b2da05"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/bias-atlas/blueprint.json",
+          "project_blueprints/bias-atlas/instrument_map.json",
+          "proof_builds/bias-atlas/proof_build.json",
+          "proof_demos/bias-atlas/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9dab9b7d5ee9154c9e7b7a90"
+    }
+  ]
+}

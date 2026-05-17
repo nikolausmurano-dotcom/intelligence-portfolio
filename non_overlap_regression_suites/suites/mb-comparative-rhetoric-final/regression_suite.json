@@ -1,0 +1,61 @@
+{
+  "project_id": "mb-comparative-rhetoric-final",
+  "surface_type": "review_workbench",
+  "suite_run_time": "2026-05-15T20:49:19+00:00",
+  "regression_cases": [
+    {
+      "case_id": "mb-comparative-rhetoric-final-baseline",
+      "case_type": "baseline",
+      "input": "Review the current proof packet for mb-comparative-rhetoric-final as package-level evidence.",
+      "evidence": "The package can capture identity, authority, route, and claim-ceiling logic, but source quotations and external validation still require human review.",
+      "expected_behavior": "accepted_as_review_evidence",
+      "observed_behavior": "accepted_as_review_evidence",
+      "expected_behavior_met": true,
+      "full_operational_claim_allowed": false,
+      "production_ready": false,
+      "acceptance_decision": "PASS",
+      "claim_boundary": "Regression case verifies local proof behavior and claim discipline only; it does not establish production readiness or external validation.",
+      "remaining_gate": "The package can capture identity, authority, route, and claim-ceiling logic, but source quotations and external validation still require human review.",
+      "blocks_false_promotion": false,
+      "trace_hash": "dcdb1fd8902031d5"
+    },
+    {
+      "case_id": "mb-comparative-rhetoric-final-challenge",
+      "case_type": "challenge",
+      "input": "Test whether mb-comparative-rhetoric-final has enough evidence to support a stronger public claim.",
+      "evidence": "The package can capture identity, authority, route, and claim-ceiling logic, but source quotations and external validation still require human review.",
+      "expected_behavior": "accept_only_with_boundary",
+      "observed_behavior": "accept_only_with_boundary",
+      "expected_behavior_met": true,
+      "full_operational_claim_allowed": false,
+      "production_ready": false,
+      "acceptance_decision": "PASS",
+      "claim_boundary": "Regression case verifies local proof behavior and claim discipline only; it does not establish production readiness or external validation.",
+      "remaining_gate": "The package can capture identity, authority, route, and claim-ceiling logic, but source quotations and external validation still require human review.",
+      "blocks_false_promotion": false,
+      "trace_hash": "db7e92d96622dd3d"
+    },
+    {
+      "case_id": "mb-comparative-rhetoric-final-falsifier",
+      "case_type": "falsifier",
+      "input": "Attempt to call mb-comparative-rhetoric-final fully operational without closing the remaining gate.",
+      "evidence": "The package can capture identity, authority, route, and claim-ceiling logic, but source quotations and external validation still require human review.",
+      "expected_behavior": "block_full_operational_claim",
+      "observed_behavior": "block_full_operational_claim",
+      "expected_behavior_met": true,
+      "full_operational_claim_allowed": false,
+      "production_ready": false,
+      "acceptance_decision": "PASS",
+      "claim_boundary": "Regression case verifies local proof behavior and claim discipline only; it does not establish production readiness or external validation.",
+      "remaining_gate": "The package can capture identity, authority, route, and claim-ceiling logic, but source quotations and external validation still require human review.",
+      "blocks_false_promotion": true,
+      "trace_hash": "bfd9f99a43c84295"
+    }
+  ],
+  "case_count": 3,
+  "accepted_case_count": 3,
+  "falsifier_blocks_promotion": true,
+  "full_operational": false,
+  "remaining_gate": "The package can capture identity, authority, route, and claim-ceiling logic, but source quotations and external validation still require human review.",
+  "suite_hash": "39d6f0fb594c3d31"
+}

@@ -1,0 +1,1447 @@
+{
+  "project": {
+    "project_id": "mb-redteamlab-packet1-proper-handoff-done",
+    "title": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-redteamlab-packet1-proper-handoff-done__receipt_0001",
+      "project_id": "mb-redteamlab-packet1-proper-handoff-done",
+      "project_title": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation Handoff Identity",
+      "component_case_id": "mb-redteamlab-packet1-proper-handoff-done__0001__most-implementation-ready-patch-full-files-snapshot-sql-verification-validation-handoff-id",
+      "claim_to_demonstrate": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation is a preserved project packet for this is the most implementation-ready package in the bundle — not a spec, not a design brief, but an actual merge-ready patch bundle.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation is a preserved project packet for this is the most implementation-ready package in the bundle — not a spec, not a design brief, but an actual merge-ready patch bundle.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47902,
+            "sha256": "63975150f192868f9995f10e08aeacde73d5fd4e4c8e42c1c42ae7c0dccd7f68"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39254,
+            "sha256": "412efa59c859c19d44a8a074ce4596e1cc49a9ffd77220c2b92cbfa9ffa35c15"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23253,
+            "sha256": "5487ec0776a7341611bcc3f826191727418e0a697f3f1c90cbb211e96c7e8ec2"
+          },
+          {
+            "relative_path": "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22522,
+            "sha256": "f264d76d7f7caa12fb6e9ab936eed84e6eb388d2ad4553256de51b36ef930aa0"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49457,
+            "sha256": "b087113f16c363d40a11721c77005bffa4d7c7e8f70919162884e8acf8af94b1"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11327,
+            "sha256": "65a265b028ecefece6baefceb86f9821c93540c388f29bda43ec7b8f711542e6"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+          "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "06efb3ffe3374fa5d59d8d78"
+    },
+    {
+      "receipt_id": "mb-redteamlab-packet1-proper-handoff-done__receipt_0002",
+      "project_id": "mb-redteamlab-packet1-proper-handoff-done",
+      "project_title": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation Room Task Model",
+      "component_case_id": "mb-redteamlab-packet1-proper-handoff-done__0002__most-implementation-ready-patch-full-files-snapshot-sql-verification-validation-room-task-",
+      "claim_to_demonstrate": "It converts an archive or handoff into three inspectable decisions: what the work product is for, which component pieces carry the work, and what action would turn it into a live room, paper, method, or software instrument.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "It converts an archive or handoff into three inspectable decisions: what the work product is for, which component pieces carry the work, and what action would turn it into a live room, paper, method, or software instrument.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47902,
+            "sha256": "63975150f192868f9995f10e08aeacde73d5fd4e4c8e42c1c42ae7c0dccd7f68"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39254,
+            "sha256": "412efa59c859c19d44a8a074ce4596e1cc49a9ffd77220c2b92cbfa9ffa35c15"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23253,
+            "sha256": "5487ec0776a7341611bcc3f826191727418e0a697f3f1c90cbb211e96c7e8ec2"
+          },
+          {
+            "relative_path": "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22522,
+            "sha256": "f264d76d7f7caa12fb6e9ab936eed84e6eb388d2ad4553256de51b36ef930aa0"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49457,
+            "sha256": "b087113f16c363d40a11721c77005bffa4d7c7e8f70919162884e8acf8af94b1"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11327,
+            "sha256": "65a265b028ecefece6baefceb86f9821c93540c388f29bda43ec7b8f711542e6"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+          "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "db2ce646d40e88aa3ae3b75a"
+    },
+    {
+      "receipt_id": "mb-redteamlab-packet1-proper-handoff-done__receipt_0003",
+      "project_id": "mb-redteamlab-packet1-proper-handoff-done",
+      "project_title": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation Data Schema And Persistence Plan",
+      "component_case_id": "mb-redteamlab-packet1-proper-handoff-done__0003__most-implementation-ready-patch-full-files-snapshot-sql-verification-validation-data-schem",
+      "claim_to_demonstrate": "Intelligence tradecraft, counterintelligence, and analytic method. Use source library intelligence titles as method authority and intelligence-domain stressors. Vision: Present intelligence pages as disciplined analytic-method and tradecraft demonstrations.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Intelligence tradecraft, counterintelligence, and analytic method. Use source library intelligence titles as method authority and intelligence-domain stressors. Vision: Present intelligence pages as disciplined analytic-method and tradecraft demonstrations.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47902,
+            "sha256": "63975150f192868f9995f10e08aeacde73d5fd4e4c8e42c1c42ae7c0dccd7f68"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39254,
+            "sha256": "412efa59c859c19d44a8a074ce4596e1cc49a9ffd77220c2b92cbfa9ffa35c15"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23253,
+            "sha256": "5487ec0776a7341611bcc3f826191727418e0a697f3f1c90cbb211e96c7e8ec2"
+          },
+          {
+            "relative_path": "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22522,
+            "sha256": "f264d76d7f7caa12fb6e9ab936eed84e6eb388d2ad4553256de51b36ef930aa0"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49457,
+            "sha256": "b087113f16c363d40a11721c77005bffa4d7c7e8f70919162884e8acf8af94b1"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11327,
+            "sha256": "65a265b028ecefece6baefceb86f9821c93540c388f29bda43ec7b8f711542e6"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+          "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e6a2a0d8a8db783c497a7714"
+    },
+    {
+      "receipt_id": "mb-redteamlab-packet1-proper-handoff-done__receipt_0004",
+      "project_id": "mb-redteamlab-packet1-proper-handoff-done",
+      "project_title": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation Interface And Instrument Plane",
+      "component_case_id": "mb-redteamlab-packet1-proper-handoff-done__0004__most-implementation-ready-patch-full-files-snapshot-sql-verification-validation-interface-",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47902,
+            "sha256": "63975150f192868f9995f10e08aeacde73d5fd4e4c8e42c1c42ae7c0dccd7f68"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39254,
+            "sha256": "412efa59c859c19d44a8a074ce4596e1cc49a9ffd77220c2b92cbfa9ffa35c15"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23253,
+            "sha256": "5487ec0776a7341611bcc3f826191727418e0a697f3f1c90cbb211e96c7e8ec2"
+          },
+          {
+            "relative_path": "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22522,
+            "sha256": "f264d76d7f7caa12fb6e9ab936eed84e6eb388d2ad4553256de51b36ef930aa0"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49457,
+            "sha256": "b087113f16c363d40a11721c77005bffa4d7c7e8f70919162884e8acf8af94b1"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11327,
+            "sha256": "65a265b028ecefece6baefceb86f9821c93540c388f29bda43ec7b8f711542e6"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+          "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "25fa5bde3511d50e2a5111e2"
+    },
+    {
+      "receipt_id": "mb-redteamlab-packet1-proper-handoff-done__receipt_0005",
+      "project_id": "mb-redteamlab-packet1-proper-handoff-done",
+      "project_title": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation Integration Path",
+      "component_case_id": "mb-redteamlab-packet1-proper-handoff-done__0005__most-implementation-ready-patch-full-files-snapshot-sql-verification-validation-integratio",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. Recommended apply order per 00_READ_FIRST.md: (1) read 01_PACKAGE_STATUS_DONE.md — (2) 06_MERGE_AND_APPLY_ORDER.md — (3) apply files in patch/ — (4) reconcile.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. Recommended apply order per 00_READ_FIRST.md: (1) read 01_PACKAGE_STATUS_DONE.md — (2) 06_MERGE_AND_APPLY_ORDER.md — (3) apply files in patch/ — (4) reconcile.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47902,
+            "sha256": "63975150f192868f9995f10e08aeacde73d5fd4e4c8e42c1c42ae7c0dccd7f68"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39254,
+            "sha256": "412efa59c859c19d44a8a074ce4596e1cc49a9ffd77220c2b92cbfa9ffa35c15"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23253,
+            "sha256": "5487ec0776a7341611bcc3f826191727418e0a697f3f1c90cbb211e96c7e8ec2"
+          },
+          {
+            "relative_path": "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22522,
+            "sha256": "f264d76d7f7caa12fb6e9ab936eed84e6eb388d2ad4553256de51b36ef930aa0"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49457,
+            "sha256": "b087113f16c363d40a11721c77005bffa4d7c7e8f70919162884e8acf8af94b1"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11327,
+            "sha256": "65a265b028ecefece6baefceb86f9821c93540c388f29bda43ec7b8f711542e6"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+          "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7dc2f19ef9e30fe625c9d8f4"
+    },
+    {
+      "receipt_id": "mb-redteamlab-packet1-proper-handoff-done__receipt_0006",
+      "project_id": "mb-redteamlab-packet1-proper-handoff-done",
+      "project_title": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation Proof Boundary",
+      "component_case_id": "mb-redteamlab-packet1-proper-handoff-done__0006__most-implementation-ready-patch-full-files-snapshot-sql-verification-validation-proof-boun",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47902,
+            "sha256": "63975150f192868f9995f10e08aeacde73d5fd4e4c8e42c1c42ae7c0dccd7f68"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39254,
+            "sha256": "412efa59c859c19d44a8a074ce4596e1cc49a9ffd77220c2b92cbfa9ffa35c15"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23253,
+            "sha256": "5487ec0776a7341611bcc3f826191727418e0a697f3f1c90cbb211e96c7e8ec2"
+          },
+          {
+            "relative_path": "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22522,
+            "sha256": "f264d76d7f7caa12fb6e9ab936eed84e6eb388d2ad4553256de51b36ef930aa0"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49457,
+            "sha256": "b087113f16c363d40a11721c77005bffa4d7c7e8f70919162884e8acf8af94b1"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11327,
+            "sha256": "65a265b028ecefece6baefceb86f9821c93540c388f29bda43ec7b8f711542e6"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+          "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a37b61652cbc651115c21582"
+    },
+    {
+      "receipt_id": "mb-redteamlab-packet1-proper-handoff-done__receipt_0007",
+      "project_id": "mb-redteamlab-packet1-proper-handoff-done",
+      "project_title": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation Next Build Test",
+      "component_case_id": "mb-redteamlab-packet1-proper-handoff-done__0007__most-implementation-ready-patch-full-files-snapshot-sql-verification-validation-next-build",
+      "claim_to_demonstrate": "Promote the packet from documented handoff to live implementation only after the declared caveats are resolved: apply or wire the scaffold, run the stated validation or smoke-test sequence, and keep unresolved assumptions visible.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Promote the packet from documented handoff to live implementation only after the declared caveats are resolved: apply or wire the scaffold, run the stated validation or smoke-test sequence, and keep unresolved assumptions visible.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47902,
+            "sha256": "63975150f192868f9995f10e08aeacde73d5fd4e4c8e42c1c42ae7c0dccd7f68"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39254,
+            "sha256": "412efa59c859c19d44a8a074ce4596e1cc49a9ffd77220c2b92cbfa9ffa35c15"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23253,
+            "sha256": "5487ec0776a7341611bcc3f826191727418e0a697f3f1c90cbb211e96c7e8ec2"
+          },
+          {
+            "relative_path": "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22522,
+            "sha256": "f264d76d7f7caa12fb6e9ab936eed84e6eb388d2ad4553256de51b36ef930aa0"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49457,
+            "sha256": "b087113f16c363d40a11721c77005bffa4d7c7e8f70919162884e8acf8af94b1"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11327,
+            "sha256": "65a265b028ecefece6baefceb86f9821c93540c388f29bda43ec7b8f711542e6"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+          "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "164c8966110872bea310a840"
+    },
+    {
+      "receipt_id": "mb-redteamlab-packet1-proper-handoff-done__receipt_0008",
+      "project_id": "mb-redteamlab-packet1-proper-handoff-done",
+      "project_title": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation / 11_SMOKE_TEST.md",
+      "component_case_id": "mb-redteamlab-packet1-proper-handoff-done__0008__most-implementation-ready-patch-full-files-snapshot-sql-verification-validation-11-smoke-t",
+      "claim_to_demonstrate": "treats `11_SMOKE_TEST.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: It also shipped the 11_SMOKE_TEST.md playbook and 12_COMMAND_REGISTRY_DELTA.md showing exactly how the Tauri command.",
+      "input_fixture": "project source text and the named component `11_SMOKE_TEST.md`",
+      "operation_under_test": "treats `11_SMOKE_TEST.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: It also shipped the 11_SMOKE_TEST.md playbook and 12_COMMAND_REGISTRY_DELTA.md showing exactly how the Tauri command.",
+      "expected_output": "inspectable implementation evidence tied to `11_SMOKE_TEST.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "928ab74d849b31703032fdb8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47902,
+            "sha256": "63975150f192868f9995f10e08aeacde73d5fd4e4c8e42c1c42ae7c0dccd7f68"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39254,
+            "sha256": "412efa59c859c19d44a8a074ce4596e1cc49a9ffd77220c2b92cbfa9ffa35c15"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23253,
+            "sha256": "5487ec0776a7341611bcc3f826191727418e0a697f3f1c90cbb211e96c7e8ec2"
+          },
+          {
+            "relative_path": "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22522,
+            "sha256": "f264d76d7f7caa12fb6e9ab936eed84e6eb388d2ad4553256de51b36ef930aa0"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49457,
+            "sha256": "b087113f16c363d40a11721c77005bffa4d7c7e8f70919162884e8acf8af94b1"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11327,
+            "sha256": "65a265b028ecefece6baefceb86f9821c93540c388f29bda43ec7b8f711542e6"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+          "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c5b0c741622db23d17be56f8"
+    },
+    {
+      "receipt_id": "mb-redteamlab-packet1-proper-handoff-done__receipt_0009",
+      "project_id": "mb-redteamlab-packet1-proper-handoff-done",
+      "project_title": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation / 12_COMMAND_REGISTRY_DELTA.md",
+      "component_case_id": "mb-redteamlab-packet1-proper-handoff-done__0009__most-implementation-ready-patch-full-files-snapshot-sql-verification-validation-12-command",
+      "claim_to_demonstrate": "treats `12_COMMAND_REGISTRY_DELTA.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: It also shipped the 11_SMOKE_TEST.md playbook and 12_COMMAND_REGISTRY_DELTA.md showing exactly how the Tauri.",
+      "input_fixture": "project source text and the named component `12_COMMAND_REGISTRY_DELTA.md`",
+      "operation_under_test": "treats `12_COMMAND_REGISTRY_DELTA.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: It also shipped the 11_SMOKE_TEST.md playbook and 12_COMMAND_REGISTRY_DELTA.md showing exactly how the Tauri.",
+      "expected_output": "inspectable implementation evidence tied to `12_COMMAND_REGISTRY_DELTA.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "928ab74d849b31703032fdb8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47902,
+            "sha256": "63975150f192868f9995f10e08aeacde73d5fd4e4c8e42c1c42ae7c0dccd7f68"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39254,
+            "sha256": "412efa59c859c19d44a8a074ce4596e1cc49a9ffd77220c2b92cbfa9ffa35c15"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23253,
+            "sha256": "5487ec0776a7341611bcc3f826191727418e0a697f3f1c90cbb211e96c7e8ec2"
+          },
+          {
+            "relative_path": "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22522,
+            "sha256": "f264d76d7f7caa12fb6e9ab936eed84e6eb388d2ad4553256de51b36ef930aa0"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49457,
+            "sha256": "b087113f16c363d40a11721c77005bffa4d7c7e8f70919162884e8acf8af94b1"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11327,
+            "sha256": "65a265b028ecefece6baefceb86f9821c93540c388f29bda43ec7b8f711542e6"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+          "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1ac955fd98dd7bcf0c06a688"
+    },
+    {
+      "receipt_id": "mb-redteamlab-packet1-proper-handoff-done__receipt_0010",
+      "project_id": "mb-redteamlab-packet1-proper-handoff-done",
+      "project_title": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation / 00_READ_FIRST.md",
+      "component_case_id": "mb-redteamlab-packet1-proper-handoff-done__0010__most-implementation-ready-patch-full-files-snapshot-sql-verification-validation-00-read-fi",
+      "claim_to_demonstrate": "treats `00_READ_FIRST.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Recommended apply order per 00_READ_FIRST.md: (1) read 01_PACKAGE_STATUS_DONE.md — (2) 06_MERGE_AND_APPLY_ORDER.md — (3).",
+      "input_fixture": "project source text and the named component `00_READ_FIRST.md`",
+      "operation_under_test": "treats `00_READ_FIRST.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Recommended apply order per 00_READ_FIRST.md: (1) read 01_PACKAGE_STATUS_DONE.md — (2) 06_MERGE_AND_APPLY_ORDER.md — (3).",
+      "expected_output": "inspectable implementation evidence tied to `00_READ_FIRST.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3fd0466a78de67660f291105",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47902,
+            "sha256": "63975150f192868f9995f10e08aeacde73d5fd4e4c8e42c1c42ae7c0dccd7f68"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39254,
+            "sha256": "412efa59c859c19d44a8a074ce4596e1cc49a9ffd77220c2b92cbfa9ffa35c15"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23253,
+            "sha256": "5487ec0776a7341611bcc3f826191727418e0a697f3f1c90cbb211e96c7e8ec2"
+          },
+          {
+            "relative_path": "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22522,
+            "sha256": "f264d76d7f7caa12fb6e9ab936eed84e6eb388d2ad4553256de51b36ef930aa0"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49457,
+            "sha256": "b087113f16c363d40a11721c77005bffa4d7c7e8f70919162884e8acf8af94b1"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11327,
+            "sha256": "65a265b028ecefece6baefceb86f9821c93540c388f29bda43ec7b8f711542e6"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+          "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4be553abf068af17c183cab6"
+    },
+    {
+      "receipt_id": "mb-redteamlab-packet1-proper-handoff-done__receipt_0011",
+      "project_id": "mb-redteamlab-packet1-proper-handoff-done",
+      "project_title": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation / 01_PACKAGE_STATUS_DONE.md",
+      "component_case_id": "mb-redteamlab-packet1-proper-handoff-done__0011__most-implementation-ready-patch-full-files-snapshot-sql-verification-validation-01-package",
+      "claim_to_demonstrate": "treats `01_PACKAGE_STATUS_DONE.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: (1) read 01_PACKAGE_STATUS_DONE.md — (2) 06_MERGE_AND_APPLY_ORDER.md — (3) apply files in patch/ — (4) reconcile.",
+      "input_fixture": "project source text and the named component `01_PACKAGE_STATUS_DONE.md`",
+      "operation_under_test": "treats `01_PACKAGE_STATUS_DONE.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: (1) read 01_PACKAGE_STATUS_DONE.md — (2) 06_MERGE_AND_APPLY_ORDER.md — (3) apply files in patch/ — (4) reconcile.",
+      "expected_output": "inspectable implementation evidence tied to `01_PACKAGE_STATUS_DONE.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a3549f6cdd44c94467b656aa",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47902,
+            "sha256": "63975150f192868f9995f10e08aeacde73d5fd4e4c8e42c1c42ae7c0dccd7f68"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39254,
+            "sha256": "412efa59c859c19d44a8a074ce4596e1cc49a9ffd77220c2b92cbfa9ffa35c15"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23253,
+            "sha256": "5487ec0776a7341611bcc3f826191727418e0a697f3f1c90cbb211e96c7e8ec2"
+          },
+          {
+            "relative_path": "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22522,
+            "sha256": "f264d76d7f7caa12fb6e9ab936eed84e6eb388d2ad4553256de51b36ef930aa0"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49457,
+            "sha256": "b087113f16c363d40a11721c77005bffa4d7c7e8f70919162884e8acf8af94b1"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11327,
+            "sha256": "65a265b028ecefece6baefceb86f9821c93540c388f29bda43ec7b8f711542e6"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+          "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8dece7ac3695e3bcbdfbb951"
+    },
+    {
+      "receipt_id": "mb-redteamlab-packet1-proper-handoff-done__receipt_0012",
+      "project_id": "mb-redteamlab-packet1-proper-handoff-done",
+      "project_title": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation / 06_MERGE_AND_APPLY_ORDER.md",
+      "component_case_id": "mb-redteamlab-packet1-proper-handoff-done__0012__most-implementation-ready-patch-full-files-snapshot-sql-verification-validation-06-merge-a",
+      "claim_to_demonstrate": "treats `06_MERGE_AND_APPLY_ORDER.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: (1) read 01_PACKAGE_STATUS_DONE.md — (2) 06_MERGE_AND_APPLY_ORDER.md — (3) apply files in patch/ — (4) reconcile.",
+      "input_fixture": "project source text and the named component `06_MERGE_AND_APPLY_ORDER.md`",
+      "operation_under_test": "treats `06_MERGE_AND_APPLY_ORDER.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: (1) read 01_PACKAGE_STATUS_DONE.md — (2) 06_MERGE_AND_APPLY_ORDER.md — (3) apply files in patch/ — (4) reconcile.",
+      "expected_output": "inspectable implementation evidence tied to `06_MERGE_AND_APPLY_ORDER.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a3549f6cdd44c94467b656aa",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47902,
+            "sha256": "63975150f192868f9995f10e08aeacde73d5fd4e4c8e42c1c42ae7c0dccd7f68"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39254,
+            "sha256": "412efa59c859c19d44a8a074ce4596e1cc49a9ffd77220c2b92cbfa9ffa35c15"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23253,
+            "sha256": "5487ec0776a7341611bcc3f826191727418e0a697f3f1c90cbb211e96c7e8ec2"
+          },
+          {
+            "relative_path": "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22522,
+            "sha256": "f264d76d7f7caa12fb6e9ab936eed84e6eb388d2ad4553256de51b36ef930aa0"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49457,
+            "sha256": "b087113f16c363d40a11721c77005bffa4d7c7e8f70919162884e8acf8af94b1"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11327,
+            "sha256": "65a265b028ecefece6baefceb86f9821c93540c388f29bda43ec7b8f711542e6"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+          "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a7c94253bc0ee2248aff5b66"
+    },
+    {
+      "receipt_id": "mb-redteamlab-packet1-proper-handoff-done__receipt_0013",
+      "project_id": "mb-redteamlab-packet1-proper-handoff-done",
+      "project_title": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation / RedTeamLab_Packet1_Verification.sql",
+      "component_case_id": "mb-redteamlab-packet1-proper-handoff-done__0013__most-implementation-ready-patch-full-files-snapshot-sql-verification-validation-redteamlab",
+      "claim_to_demonstrate": "treats `RedTeamLab_Packet1_Verification.sql` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: RedTeamLab_Packet1_Verification.sql — (6) execute 11_SMOKE_TEST.md. Wire or preserve the implementation.",
+      "input_fixture": "project source text and the named component `RedTeamLab_Packet1_Verification.sql`",
+      "operation_under_test": "treats `RedTeamLab_Packet1_Verification.sql` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: RedTeamLab_Packet1_Verification.sql — (6) execute 11_SMOKE_TEST.md. Wire or preserve the implementation.",
+      "expected_output": "inspectable implementation evidence tied to `RedTeamLab_Packet1_Verification.sql`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a9f476df62f88a857016d51a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47902,
+            "sha256": "63975150f192868f9995f10e08aeacde73d5fd4e4c8e42c1c42ae7c0dccd7f68"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39254,
+            "sha256": "412efa59c859c19d44a8a074ce4596e1cc49a9ffd77220c2b92cbfa9ffa35c15"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23253,
+            "sha256": "5487ec0776a7341611bcc3f826191727418e0a697f3f1c90cbb211e96c7e8ec2"
+          },
+          {
+            "relative_path": "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22522,
+            "sha256": "f264d76d7f7caa12fb6e9ab936eed84e6eb388d2ad4553256de51b36ef930aa0"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49457,
+            "sha256": "b087113f16c363d40a11721c77005bffa4d7c7e8f70919162884e8acf8af94b1"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11327,
+            "sha256": "65a265b028ecefece6baefceb86f9821c93540c388f29bda43ec7b8f711542e6"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+          "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1c0e9dc46ff5753634e0b0ac"
+    },
+    {
+      "receipt_id": "mb-redteamlab-packet1-proper-handoff-done__receipt_0014",
+      "project_id": "mb-redteamlab-packet1-proper-handoff-done",
+      "project_title": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation / RedTeamLabRoom.tsx",
+      "component_case_id": "mb-redteamlab-packet1-proper-handoff-done__0014__most-implementation-ready-patch-full-files-snapshot-sql-verification-validation-redteamlab",
+      "claim_to_demonstrate": "treats `RedTeamLabRoom.tsx` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: AssumptionLedgerTab, ContextRail, IntakeTab, ProjectHeader, ProjectWorkspace, ScopeLockTab, SessionLedgerTab.",
+      "input_fixture": "project source text and the named component `RedTeamLabRoom.tsx`",
+      "operation_under_test": "treats `RedTeamLabRoom.tsx` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: AssumptionLedgerTab, ContextRail, IntakeTab, ProjectHeader, ProjectWorkspace, ScopeLockTab, SessionLedgerTab.",
+      "expected_output": "inspectable implementation evidence tied to `RedTeamLabRoom.tsx`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a9218d84fbabc0fbb1ef109c",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47902,
+            "sha256": "63975150f192868f9995f10e08aeacde73d5fd4e4c8e42c1c42ae7c0dccd7f68"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39254,
+            "sha256": "412efa59c859c19d44a8a074ce4596e1cc49a9ffd77220c2b92cbfa9ffa35c15"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23253,
+            "sha256": "5487ec0776a7341611bcc3f826191727418e0a697f3f1c90cbb211e96c7e8ec2"
+          },
+          {
+            "relative_path": "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22522,
+            "sha256": "f264d76d7f7caa12fb6e9ab936eed84e6eb388d2ad4553256de51b36ef930aa0"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49457,
+            "sha256": "b087113f16c363d40a11721c77005bffa4d7c7e8f70919162884e8acf8af94b1"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11327,
+            "sha256": "65a265b028ecefece6baefceb86f9821c93540c388f29bda43ec7b8f711542e6"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+          "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c31bc79945c362d48175f49d"
+    },
+    {
+      "receipt_id": "mb-redteamlab-packet1-proper-handoff-done__receipt_0015",
+      "project_id": "mb-redteamlab-packet1-proper-handoff-done",
+      "project_title": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation / RedTeamLabRoom.tsx... Intelligence",
+      "component_case_id": "mb-redteamlab-packet1-proper-handoff-done__0015__most-implementation-ready-patch-full-files-snapshot-sql-verification-validation-redteamlab",
+      "claim_to_demonstrate": "treats `RedTeamLabRoom.tsx... Intelligence` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: AssumptionLedgerTab, ContextRail, IntakeTab, ProjectHeader, ProjectWorkspace, ScopeLockTab.",
+      "input_fixture": "project source text and the named component `RedTeamLabRoom.tsx... Intelligence`",
+      "operation_under_test": "treats `RedTeamLabRoom.tsx... Intelligence` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: AssumptionLedgerTab, ContextRail, IntakeTab, ProjectHeader, ProjectWorkspace, ScopeLockTab.",
+      "expected_output": "inspectable implementation evidence tied to `RedTeamLabRoom.tsx... Intelligence`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a9218d84fbabc0fbb1ef109c",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47902,
+            "sha256": "63975150f192868f9995f10e08aeacde73d5fd4e4c8e42c1c42ae7c0dccd7f68"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39254,
+            "sha256": "412efa59c859c19d44a8a074ce4596e1cc49a9ffd77220c2b92cbfa9ffa35c15"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23253,
+            "sha256": "5487ec0776a7341611bcc3f826191727418e0a697f3f1c90cbb211e96c7e8ec2"
+          },
+          {
+            "relative_path": "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22522,
+            "sha256": "f264d76d7f7caa12fb6e9ab936eed84e6eb388d2ad4553256de51b36ef930aa0"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49457,
+            "sha256": "b087113f16c363d40a11721c77005bffa4d7c7e8f70919162884e8acf8af94b1"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11327,
+            "sha256": "65a265b028ecefece6baefceb86f9821c93540c388f29bda43ec7b8f711542e6"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+          "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b3534c7cf207c48c2393d218"
+    },
+    {
+      "receipt_id": "mb-redteamlab-packet1-proper-handoff-done__receipt_0016",
+      "project_id": "mb-redteamlab-packet1-proper-handoff-done",
+      "project_title": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation / Prioritize Capstone",
+      "component_case_id": "mb-redteamlab-packet1-proper-handoff-done__0016__most-implementation-ready-patch-full-files-snapshot-sql-verification-validation-prioritize",
+      "claim_to_demonstrate": "uses `Prioritize Capstone` as a named project component with a traceable role in the public mechanism. Source context: Prioritize Capstone, SATS, CI, RAG integrity, and analyst-assurance pages for close-reading. Status: source library identified as candidate.",
+      "input_fixture": "project source text and the named component `Prioritize Capstone`",
+      "operation_under_test": "uses `Prioritize Capstone` as a named project component with a traceable role in the public mechanism. Source context: Prioritize Capstone, SATS, CI, RAG integrity, and analyst-assurance pages for close-reading. Status: source library identified as candidate.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Prioritize Capstone`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "da6aee46b4a86df2749d7951",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47902,
+            "sha256": "63975150f192868f9995f10e08aeacde73d5fd4e4c8e42c1c42ae7c0dccd7f68"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39254,
+            "sha256": "412efa59c859c19d44a8a074ce4596e1cc49a9ffd77220c2b92cbfa9ffa35c15"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23253,
+            "sha256": "5487ec0776a7341611bcc3f826191727418e0a697f3f1c90cbb211e96c7e8ec2"
+          },
+          {
+            "relative_path": "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22522,
+            "sha256": "f264d76d7f7caa12fb6e9ab936eed84e6eb388d2ad4553256de51b36ef930aa0"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49457,
+            "sha256": "b087113f16c363d40a11721c77005bffa4d7c7e8f70919162884e8acf8af94b1"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11327,
+            "sha256": "65a265b028ecefece6baefceb86f9821c93540c388f29bda43ec7b8f711542e6"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+          "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a314a386f4e96abff924e14c"
+    },
+    {
+      "receipt_id": "mb-redteamlab-packet1-proper-handoff-done__receipt_0017",
+      "project_id": "mb-redteamlab-packet1-proper-handoff-done",
+      "project_title": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Most implementation-ready: .patch + full files + snapshot + SQL verification + validation / Improving Intelligence Analysis",
+      "component_case_id": "mb-redteamlab-packet1-proper-handoff-done__0017__most-implementation-ready-patch-full-files-snapshot-sql-verification-validation-improving-",
+      "claim_to_demonstrate": "uses `Improving Intelligence Analysis` as a named project component with a traceable role in the public mechanism. Source context: Improving Intelligence Analysis; Leading Intelligence Analysis. source library scholarly-source routing with author correction.",
+      "input_fixture": "project source text and the named component `Improving Intelligence Analysis`",
+      "operation_under_test": "uses `Improving Intelligence Analysis` as a named project component with a traceable role in the public mechanism. Source context: Improving Intelligence Analysis; Leading Intelligence Analysis. source library scholarly-source routing with author correction.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Improving Intelligence Analysis`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "367fdbca15baef63fbef498d",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47902,
+            "sha256": "63975150f192868f9995f10e08aeacde73d5fd4e4c8e42c1c42ae7c0dccd7f68"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39254,
+            "sha256": "412efa59c859c19d44a8a074ce4596e1cc49a9ffd77220c2b92cbfa9ffa35c15"
+          },
+          {
+            "relative_path": "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23253,
+            "sha256": "5487ec0776a7341611bcc3f826191727418e0a697f3f1c90cbb211e96c7e8ec2"
+          },
+          {
+            "relative_path": "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22522,
+            "sha256": "f264d76d7f7caa12fb6e9ab936eed84e6eb388d2ad4553256de51b36ef930aa0"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49457,
+            "sha256": "b087113f16c363d40a11721c77005bffa4d7c7e8f70919162884e8acf8af94b1"
+          },
+          {
+            "relative_path": "proof_demos/mb-redteamlab-packet1-proper-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11327,
+            "sha256": "65a265b028ecefece6baefceb86f9821c93540c388f29bda43ec7b8f711542e6"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/blueprint.json",
+          "project_blueprints/mb-redteamlab-packet1-proper-handoff-done/instrument_map.json",
+          "proof_builds/mb-redteamlab-packet1-proper-handoff-done/proof_build.json",
+          "proof_demos/mb-redteamlab-packet1-proper-handoff-done/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "673f5d250fdd25c9ca67cf3f"
+    }
+  ]
+}

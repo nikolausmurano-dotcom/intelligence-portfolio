@@ -1,0 +1,1470 @@
+{
+  "project": {
+    "project_id": "mb-murano-house-of-light-and-doom-handoff-v1",
+    "title": "House of Light and Doom"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-murano-house-of-light-and-doom-handoff-v1__receipt_0001",
+      "project_id": "mb-murano-house-of-light-and-doom-handoff-v1",
+      "project_title": "House of Light and Doom",
+      "proof_tier": "source-backed-proof-build",
+      "component": "House of Light and Doom Handoff Identity",
+      "component_case_id": "mb-murano-house-of-light-and-doom-handoff-v1__0001__house-of-light-and-doom-handoff-identity",
+      "claim_to_demonstrate": "Specifies The House of Light and Doom, a Murano OS room designed as a lossless mythopoetic analysis environment for Tolkien's non-Hobbit, non-LOTR corpus — especially The Silmarillion.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "Specifies The House of Light and Doom, a Murano OS room designed as a lossless mythopoetic analysis environment for Tolkien's non-Hobbit, non-LOTR corpus — especially The Silmarillion.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43633,
+            "sha256": "5cccfd2ef32de920de42e756068975659517e78118fc6a8f51407eac3751829a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35737,
+            "sha256": "32c6b0f1a51019d80ab5b6c2940a1bd59aa2a8ffd2b7f2854bb4eebc3b3fcee4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21106,
+            "sha256": "fa35bba50d470f3242d4ebb286d21b9fa62306035b5847baa0a68a6239ba42c4"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20191,
+            "sha256": "85f0f5e10f0c694a27069732e36b79ba97846c176a92ba3ab34ce3ba3d9b3256"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45114,
+            "sha256": "26ed63d095e1cb61392ccd12e34005ac5f7bf2c57a856fe6f10c098c9059759b"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9310,
+            "sha256": "c96286cce91cc41a23d6e0c426cb2a2b11280388ecf4f3f90b2cb07149cf18cd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+          "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2f944a4bec2f27a0b81337ee"
+    },
+    {
+      "receipt_id": "mb-murano-house-of-light-and-doom-handoff-v1__receipt_0002",
+      "project_id": "mb-murano-house-of-light-and-doom-handoff-v1",
+      "project_title": "House of Light and Doom",
+      "proof_tier": "source-backed-proof-build",
+      "component": "House of Light and Doom Room Task Model",
+      "component_case_id": "mb-murano-house-of-light-and-doom-handoff-v1__0002__house-of-light-and-doom-room-task-model",
+      "claim_to_demonstrate": ", state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival retention",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": ", state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival retention",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43633,
+            "sha256": "5cccfd2ef32de920de42e756068975659517e78118fc6a8f51407eac3751829a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35737,
+            "sha256": "32c6b0f1a51019d80ab5b6c2940a1bd59aa2a8ffd2b7f2854bb4eebc3b3fcee4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21106,
+            "sha256": "fa35bba50d470f3242d4ebb286d21b9fa62306035b5847baa0a68a6239ba42c4"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20191,
+            "sha256": "85f0f5e10f0c694a27069732e36b79ba97846c176a92ba3ab34ce3ba3d9b3256"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45114,
+            "sha256": "26ed63d095e1cb61392ccd12e34005ac5f7bf2c57a856fe6f10c098c9059759b"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9310,
+            "sha256": "c96286cce91cc41a23d6e0c426cb2a2b11280388ecf4f3f90b2cb07149cf18cd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+          "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "574d3e823bf473542fc63c6c"
+    },
+    {
+      "receipt_id": "mb-murano-house-of-light-and-doom-handoff-v1__receipt_0003",
+      "project_id": "mb-murano-house-of-light-and-doom-handoff-v1",
+      "project_title": "House of Light and Doom",
+      "proof_tier": "source-backed-proof-build",
+      "component": "House of Light and Doom Data Schema And Persistence Plan",
+      "component_case_id": "mb-murano-house-of-light-and-doom-handoff-v1__0003__house-of-light-and-doom-data-schema-and-persistence-plan",
+      "claim_to_demonstrate": "Writing, rhetoric, narrative design, visual culture, and presentation. Use source library writing/visual/cinema sources to strengthen public exposition and Trilogy visual/storytelling logic. Vision: Make public pages read as curated intellectual exhibits.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Writing, rhetoric, narrative design, visual culture, and presentation. Use source library writing/visual/cinema sources to strengthen public exposition and Trilogy visual/storytelling logic. Vision: Make public pages read as curated intellectual exhibits.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43633,
+            "sha256": "5cccfd2ef32de920de42e756068975659517e78118fc6a8f51407eac3751829a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35737,
+            "sha256": "32c6b0f1a51019d80ab5b6c2940a1bd59aa2a8ffd2b7f2854bb4eebc3b3fcee4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21106,
+            "sha256": "fa35bba50d470f3242d4ebb286d21b9fa62306035b5847baa0a68a6239ba42c4"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20191,
+            "sha256": "85f0f5e10f0c694a27069732e36b79ba97846c176a92ba3ab34ce3ba3d9b3256"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45114,
+            "sha256": "26ed63d095e1cb61392ccd12e34005ac5f7bf2c57a856fe6f10c098c9059759b"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9310,
+            "sha256": "c96286cce91cc41a23d6e0c426cb2a2b11280388ecf4f3f90b2cb07149cf18cd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+          "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "18513a24ad44c6d59dcd4f85"
+    },
+    {
+      "receipt_id": "mb-murano-house-of-light-and-doom-handoff-v1__receipt_0004",
+      "project_id": "mb-murano-house-of-light-and-doom-handoff-v1",
+      "project_title": "House of Light and Doom",
+      "proof_tier": "source-backed-proof-build",
+      "component": "House of Light and Doom Interface And Instrument Plane",
+      "component_case_id": "mb-murano-house-of-light-and-doom-handoff-v1__0004__house-of-light-and-doom-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43633,
+            "sha256": "5cccfd2ef32de920de42e756068975659517e78118fc6a8f51407eac3751829a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35737,
+            "sha256": "32c6b0f1a51019d80ab5b6c2940a1bd59aa2a8ffd2b7f2854bb4eebc3b3fcee4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21106,
+            "sha256": "fa35bba50d470f3242d4ebb286d21b9fa62306035b5847baa0a68a6239ba42c4"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20191,
+            "sha256": "85f0f5e10f0c694a27069732e36b79ba97846c176a92ba3ab34ce3ba3d9b3256"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45114,
+            "sha256": "26ed63d095e1cb61392ccd12e34005ac5f7bf2c57a856fe6f10c098c9059759b"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9310,
+            "sha256": "c96286cce91cc41a23d6e0c426cb2a2b11280388ecf4f3f90b2cb07149cf18cd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+          "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3db5e822da61304a46c9e953"
+    },
+    {
+      "receipt_id": "mb-murano-house-of-light-and-doom-handoff-v1__receipt_0005",
+      "project_id": "mb-murano-house-of-light-and-doom-handoff-v1",
+      "project_title": "House of Light and Doom",
+      "proof_tier": "source-backed-proof-build",
+      "component": "House of Light and Doom Integration Path",
+      "component_case_id": "mb-murano-house-of-light-and-doom-handoff-v1__0005__house-of-light-and-doom-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. When to reach for this: serious close-reading/editorial work on mythopoetic corpora; building a scholarly UI that preserves variant witnesses and stacked.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. When to reach for this: serious close-reading/editorial work on mythopoetic corpora; building a scholarly UI that preserves variant witnesses and stacked.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43633,
+            "sha256": "5cccfd2ef32de920de42e756068975659517e78118fc6a8f51407eac3751829a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35737,
+            "sha256": "32c6b0f1a51019d80ab5b6c2940a1bd59aa2a8ffd2b7f2854bb4eebc3b3fcee4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21106,
+            "sha256": "fa35bba50d470f3242d4ebb286d21b9fa62306035b5847baa0a68a6239ba42c4"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20191,
+            "sha256": "85f0f5e10f0c694a27069732e36b79ba97846c176a92ba3ab34ce3ba3d9b3256"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45114,
+            "sha256": "26ed63d095e1cb61392ccd12e34005ac5f7bf2c57a856fe6f10c098c9059759b"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9310,
+            "sha256": "c96286cce91cc41a23d6e0c426cb2a2b11280388ecf4f3f90b2cb07149cf18cd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+          "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "bb6dd8b09eb78c2ff2a5e081"
+    },
+    {
+      "receipt_id": "mb-murano-house-of-light-and-doom-handoff-v1__receipt_0006",
+      "project_id": "mb-murano-house-of-light-and-doom-handoff-v1",
+      "project_title": "House of Light and Doom",
+      "proof_tier": "source-backed-proof-build",
+      "component": "House of Light and Doom Proof Boundary",
+      "component_case_id": "mb-murano-house-of-light-and-doom-handoff-v1__0006__house-of-light-and-doom-proof-boundary",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43633,
+            "sha256": "5cccfd2ef32de920de42e756068975659517e78118fc6a8f51407eac3751829a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35737,
+            "sha256": "32c6b0f1a51019d80ab5b6c2940a1bd59aa2a8ffd2b7f2854bb4eebc3b3fcee4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21106,
+            "sha256": "fa35bba50d470f3242d4ebb286d21b9fa62306035b5847baa0a68a6239ba42c4"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20191,
+            "sha256": "85f0f5e10f0c694a27069732e36b79ba97846c176a92ba3ab34ce3ba3d9b3256"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45114,
+            "sha256": "26ed63d095e1cb61392ccd12e34005ac5f7bf2c57a856fe6f10c098c9059759b"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9310,
+            "sha256": "c96286cce91cc41a23d6e0c426cb2a2b11280388ecf4f3f90b2cb07149cf18cd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+          "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b3747520391dfd8cf3b1135b"
+    },
+    {
+      "receipt_id": "mb-murano-house-of-light-and-doom-handoff-v1__receipt_0007",
+      "project_id": "mb-murano-house-of-light-and-doom-handoff-v1",
+      "project_title": "House of Light and Doom",
+      "proof_tier": "source-backed-proof-build",
+      "component": "House of Light and Doom Next Build Test",
+      "component_case_id": "mb-murano-house-of-light-and-doom-handoff-v1__0007__house-of-light-and-doom-next-build-test",
+      "claim_to_demonstrate": "Promote the packet from documented handoff to live implementation only after the declared caveats are resolved: apply or wire the scaffold, run the stated validation or smoke-test sequence, and keep unresolved assumptions visible.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Promote the packet from documented handoff to live implementation only after the declared caveats are resolved: apply or wire the scaffold, run the stated validation or smoke-test sequence, and keep unresolved assumptions visible.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43633,
+            "sha256": "5cccfd2ef32de920de42e756068975659517e78118fc6a8f51407eac3751829a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35737,
+            "sha256": "32c6b0f1a51019d80ab5b6c2940a1bd59aa2a8ffd2b7f2854bb4eebc3b3fcee4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21106,
+            "sha256": "fa35bba50d470f3242d4ebb286d21b9fa62306035b5847baa0a68a6239ba42c4"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20191,
+            "sha256": "85f0f5e10f0c694a27069732e36b79ba97846c176a92ba3ab34ce3ba3d9b3256"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45114,
+            "sha256": "26ed63d095e1cb61392ccd12e34005ac5f7bf2c57a856fe6f10c098c9059759b"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9310,
+            "sha256": "c96286cce91cc41a23d6e0c426cb2a2b11280388ecf4f3f90b2cb07149cf18cd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+          "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2ac4d7165af24d8fb898c456"
+    },
+    {
+      "receipt_id": "mb-murano-house-of-light-and-doom-handoff-v1__receipt_0008",
+      "project_id": "mb-murano-house-of-light-and-doom-handoff-v1",
+      "project_title": "House of Light and Doom",
+      "proof_tier": "source-backed-proof-build",
+      "component": "House of Light and Doom / backend/frontend",
+      "component_case_id": "mb-murano-house-of-light-and-doom-handoff-v1__0008__house-of-light-and-doom-backend-frontend",
+      "claim_to_demonstrate": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "input_fixture": "project source text and the named component `backend/frontend`",
+      "operation_under_test": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `backend/frontend`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "12b906e53c841f6a071a9002",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43633,
+            "sha256": "5cccfd2ef32de920de42e756068975659517e78118fc6a8f51407eac3751829a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35737,
+            "sha256": "32c6b0f1a51019d80ab5b6c2940a1bd59aa2a8ffd2b7f2854bb4eebc3b3fcee4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21106,
+            "sha256": "fa35bba50d470f3242d4ebb286d21b9fa62306035b5847baa0a68a6239ba42c4"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20191,
+            "sha256": "85f0f5e10f0c694a27069732e36b79ba97846c176a92ba3ab34ce3ba3d9b3256"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45114,
+            "sha256": "26ed63d095e1cb61392ccd12e34005ac5f7bf2c57a856fe6f10c098c9059759b"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9310,
+            "sha256": "c96286cce91cc41a23d6e0c426cb2a2b11280388ecf4f3f90b2cb07149cf18cd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+          "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "cf70e571d89f601b80fcd866"
+    },
+    {
+      "receipt_id": "mb-murano-house-of-light-and-doom-handoff-v1__receipt_0009",
+      "project_id": "mb-murano-house-of-light-and-doom-handoff-v1",
+      "project_title": "House of Light and Doom",
+      "proof_tier": "source-backed-proof-build",
+      "component": "House of Light and Doom / prototype/index.html",
+      "component_case_id": "mb-murano-house-of-light-and-doom-handoff-v1__0009__house-of-light-and-doom-prototype-index-html",
+      "claim_to_demonstrate": "treats `prototype/index.html` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> 01-product-handoff.md -> 06-data-model.md -> prototype/index.html Integration target: Murano OS room shell.",
+      "input_fixture": "project source text and the named component `prototype/index.html`",
+      "operation_under_test": "treats `prototype/index.html` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> 01-product-handoff.md -> 06-data-model.md -> prototype/index.html Integration target: Murano OS room shell.",
+      "expected_output": "inspectable implementation evidence tied to `prototype/index.html`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "02d1d94415018b90c3a5e79a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43633,
+            "sha256": "5cccfd2ef32de920de42e756068975659517e78118fc6a8f51407eac3751829a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35737,
+            "sha256": "32c6b0f1a51019d80ab5b6c2940a1bd59aa2a8ffd2b7f2854bb4eebc3b3fcee4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21106,
+            "sha256": "fa35bba50d470f3242d4ebb286d21b9fa62306035b5847baa0a68a6239ba42c4"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20191,
+            "sha256": "85f0f5e10f0c694a27069732e36b79ba97846c176a92ba3ab34ce3ba3d9b3256"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45114,
+            "sha256": "26ed63d095e1cb61392ccd12e34005ac5f7bf2c57a856fe6f10c098c9059759b"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9310,
+            "sha256": "c96286cce91cc41a23d6e0c426cb2a2b11280388ecf4f3f90b2cb07149cf18cd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+          "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9c74dd1d02ac653de480dc3b"
+    },
+    {
+      "receipt_id": "mb-murano-house-of-light-and-doom-handoff-v1__receipt_0010",
+      "project_id": "mb-murano-house-of-light-and-doom-handoff-v1",
+      "project_title": "House of Light and Doom",
+      "proof_tier": "source-backed-proof-build",
+      "component": "House of Light and Doom / README.md",
+      "component_case_id": "mb-murano-house-of-light-and-doom-handoff-v1__0010__house-of-light-and-doom-readme-md",
+      "claim_to_demonstrate": "treats `README.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> 01-product-handoff.md -> 06-data-model.md -> prototype/index.html Integration target: Murano OS room shell; graph.",
+      "input_fixture": "project source text and the named component `README.md`",
+      "operation_under_test": "treats `README.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> 01-product-handoff.md -> 06-data-model.md -> prototype/index.html Integration target: Murano OS room shell; graph.",
+      "expected_output": "inspectable implementation evidence tied to `README.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "02d1d94415018b90c3a5e79a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43633,
+            "sha256": "5cccfd2ef32de920de42e756068975659517e78118fc6a8f51407eac3751829a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35737,
+            "sha256": "32c6b0f1a51019d80ab5b6c2940a1bd59aa2a8ffd2b7f2854bb4eebc3b3fcee4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21106,
+            "sha256": "fa35bba50d470f3242d4ebb286d21b9fa62306035b5847baa0a68a6239ba42c4"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20191,
+            "sha256": "85f0f5e10f0c694a27069732e36b79ba97846c176a92ba3ab34ce3ba3d9b3256"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45114,
+            "sha256": "26ed63d095e1cb61392ccd12e34005ac5f7bf2c57a856fe6f10c098c9059759b"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9310,
+            "sha256": "c96286cce91cc41a23d6e0c426cb2a2b11280388ecf4f3f90b2cb07149cf18cd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+          "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2fc08e222d0dc83223d69000"
+    },
+    {
+      "receipt_id": "mb-murano-house-of-light-and-doom-handoff-v1__receipt_0011",
+      "project_id": "mb-murano-house-of-light-and-doom-handoff-v1",
+      "project_title": "House of Light and Doom",
+      "proof_tier": "source-backed-proof-build",
+      "component": "House of Light and Doom / 01-product-handoff.md",
+      "component_case_id": "mb-murano-house-of-light-and-doom-handoff-v1__0011__house-of-light-and-doom-01-product-handoff-md",
+      "claim_to_demonstrate": "treats `01-product-handoff.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> 01-product-handoff.md -> 06-data-model.md -> prototype/index.html Integration target: Murano OS room.",
+      "input_fixture": "project source text and the named component `01-product-handoff.md`",
+      "operation_under_test": "treats `01-product-handoff.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> 01-product-handoff.md -> 06-data-model.md -> prototype/index.html Integration target: Murano OS room.",
+      "expected_output": "inspectable implementation evidence tied to `01-product-handoff.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "02d1d94415018b90c3a5e79a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43633,
+            "sha256": "5cccfd2ef32de920de42e756068975659517e78118fc6a8f51407eac3751829a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35737,
+            "sha256": "32c6b0f1a51019d80ab5b6c2940a1bd59aa2a8ffd2b7f2854bb4eebc3b3fcee4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21106,
+            "sha256": "fa35bba50d470f3242d4ebb286d21b9fa62306035b5847baa0a68a6239ba42c4"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20191,
+            "sha256": "85f0f5e10f0c694a27069732e36b79ba97846c176a92ba3ab34ce3ba3d9b3256"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45114,
+            "sha256": "26ed63d095e1cb61392ccd12e34005ac5f7bf2c57a856fe6f10c098c9059759b"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9310,
+            "sha256": "c96286cce91cc41a23d6e0c426cb2a2b11280388ecf4f3f90b2cb07149cf18cd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+          "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c9b5fc8666a69fc16f5447c0"
+    },
+    {
+      "receipt_id": "mb-murano-house-of-light-and-doom-handoff-v1__receipt_0012",
+      "project_id": "mb-murano-house-of-light-and-doom-handoff-v1",
+      "project_title": "House of Light and Doom",
+      "proof_tier": "source-backed-proof-build",
+      "component": "House of Light and Doom / 06-data-model.md",
+      "component_case_id": "mb-murano-house-of-light-and-doom-handoff-v1__0012__house-of-light-and-doom-06-data-model-md",
+      "claim_to_demonstrate": "treats `06-data-model.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> 01-product-handoff.md -> 06-data-model.md -> prototype/index.html Integration target: Murano OS room shell.",
+      "input_fixture": "project source text and the named component `06-data-model.md`",
+      "operation_under_test": "treats `06-data-model.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> 01-product-handoff.md -> 06-data-model.md -> prototype/index.html Integration target: Murano OS room shell.",
+      "expected_output": "inspectable implementation evidence tied to `06-data-model.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "02d1d94415018b90c3a5e79a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43633,
+            "sha256": "5cccfd2ef32de920de42e756068975659517e78118fc6a8f51407eac3751829a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35737,
+            "sha256": "32c6b0f1a51019d80ab5b6c2940a1bd59aa2a8ffd2b7f2854bb4eebc3b3fcee4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21106,
+            "sha256": "fa35bba50d470f3242d4ebb286d21b9fa62306035b5847baa0a68a6239ba42c4"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20191,
+            "sha256": "85f0f5e10f0c694a27069732e36b79ba97846c176a92ba3ab34ce3ba3d9b3256"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45114,
+            "sha256": "26ed63d095e1cb61392ccd12e34005ac5f7bf2c57a856fe6f10c098c9059759b"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9310,
+            "sha256": "c96286cce91cc41a23d6e0c426cb2a2b11280388ecf4f3f90b2cb07149cf18cd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+          "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "407c8cff0698711fedaab0ca"
+    },
+    {
+      "receipt_id": "mb-murano-house-of-light-and-doom-handoff-v1__receipt_0013",
+      "project_id": "mb-murano-house-of-light-and-doom-handoff-v1",
+      "project_title": "House of Light and Doom",
+      "proof_tier": "source-backed-proof-build",
+      "component": "House of Light and Doom / index.html",
+      "component_case_id": "mb-murano-house-of-light-and-doom-handoff-v1__0013__house-of-light-and-doom-index-html",
+      "claim_to_demonstrate": "treats `index.html` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> 01-product-handoff.md -> 06-data-model.md -> prototype/index.html Integration target: Murano OS room shell; graph.",
+      "input_fixture": "project source text and the named component `index.html`",
+      "operation_under_test": "treats `index.html` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> 01-product-handoff.md -> 06-data-model.md -> prototype/index.html Integration target: Murano OS room shell; graph.",
+      "expected_output": "inspectable implementation evidence tied to `index.html`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "02d1d94415018b90c3a5e79a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43633,
+            "sha256": "5cccfd2ef32de920de42e756068975659517e78118fc6a8f51407eac3751829a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35737,
+            "sha256": "32c6b0f1a51019d80ab5b6c2940a1bd59aa2a8ffd2b7f2854bb4eebc3b3fcee4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21106,
+            "sha256": "fa35bba50d470f3242d4ebb286d21b9fa62306035b5847baa0a68a6239ba42c4"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20191,
+            "sha256": "85f0f5e10f0c694a27069732e36b79ba97846c176a92ba3ab34ce3ba3d9b3256"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45114,
+            "sha256": "26ed63d095e1cb61392ccd12e34005ac5f7bf2c57a856fe6f10c098c9059759b"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9310,
+            "sha256": "c96286cce91cc41a23d6e0c426cb2a2b11280388ecf4f3f90b2cb07149cf18cd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+          "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f31c8a0b8c737850e7cbfe91"
+    },
+    {
+      "receipt_id": "mb-murano-house-of-light-and-doom-handoff-v1__receipt_0014",
+      "project_id": "mb-murano-house-of-light-and-doom-handoff-v1",
+      "project_title": "House of Light and Doom",
+      "proof_tier": "source-backed-proof-build",
+      "component": "House of Light and Doom / Specifies The House of Light and Doom",
+      "component_case_id": "mb-murano-house-of-light-and-doom-handoff-v1__0014__house-of-light-and-doom-specifies-the-house-of-light-and-doom",
+      "claim_to_demonstrate": "uses `Specifies The House of Light and Doom` as a named project component with a traceable role in the public mechanism. Source context: Specifies The House of Light and Doom, a Murano OS room designed as a lossless mythopoetic analysis environment for.",
+      "input_fixture": "project source text and the named component `Specifies The House of Light and Doom`",
+      "operation_under_test": "uses `Specifies The House of Light and Doom` as a named project component with a traceable role in the public mechanism. Source context: Specifies The House of Light and Doom, a Murano OS room designed as a lossless mythopoetic analysis environment for.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Specifies The House of Light and Doom`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ab9219cd3fd1b873b0067866",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43633,
+            "sha256": "5cccfd2ef32de920de42e756068975659517e78118fc6a8f51407eac3751829a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35737,
+            "sha256": "32c6b0f1a51019d80ab5b6c2940a1bd59aa2a8ffd2b7f2854bb4eebc3b3fcee4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21106,
+            "sha256": "fa35bba50d470f3242d4ebb286d21b9fa62306035b5847baa0a68a6239ba42c4"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20191,
+            "sha256": "85f0f5e10f0c694a27069732e36b79ba97846c176a92ba3ab34ce3ba3d9b3256"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45114,
+            "sha256": "26ed63d095e1cb61392ccd12e34005ac5f7bf2c57a856fe6f10c098c9059759b"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9310,
+            "sha256": "c96286cce91cc41a23d6e0c426cb2a2b11280388ecf4f3f90b2cb07149cf18cd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+          "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f5c1d63a78b8e7ece9a3f0b4"
+    },
+    {
+      "receipt_id": "mb-murano-house-of-light-and-doom-handoff-v1__receipt_0015",
+      "project_id": "mb-murano-house-of-light-and-doom-handoff-v1",
+      "project_title": "House of Light and Doom",
+      "proof_tier": "source-backed-proof-build",
+      "component": "House of Light and Doom / Murano OS",
+      "component_case_id": "mb-murano-house-of-light-and-doom-handoff-v1__0015__house-of-light-and-doom-murano-os",
+      "claim_to_demonstrate": "uses `Murano OS` as a named project component with a traceable role in the public mechanism. Source context: Specifies The House of Light and Doom, a Murano OS room designed as a lossless mythopoetic analysis environment for Tolkien's non-Hobbit, non-LOTR.",
+      "input_fixture": "project source text and the named component `Murano OS`",
+      "operation_under_test": "uses `Murano OS` as a named project component with a traceable role in the public mechanism. Source context: Specifies The House of Light and Doom, a Murano OS room designed as a lossless mythopoetic analysis environment for Tolkien's non-Hobbit, non-LOTR.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Murano OS`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ab9219cd3fd1b873b0067866",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43633,
+            "sha256": "5cccfd2ef32de920de42e756068975659517e78118fc6a8f51407eac3751829a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35737,
+            "sha256": "32c6b0f1a51019d80ab5b6c2940a1bd59aa2a8ffd2b7f2854bb4eebc3b3fcee4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21106,
+            "sha256": "fa35bba50d470f3242d4ebb286d21b9fa62306035b5847baa0a68a6239ba42c4"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20191,
+            "sha256": "85f0f5e10f0c694a27069732e36b79ba97846c176a92ba3ab34ce3ba3d9b3256"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45114,
+            "sha256": "26ed63d095e1cb61392ccd12e34005ac5f7bf2c57a856fe6f10c098c9059759b"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9310,
+            "sha256": "c96286cce91cc41a23d6e0c426cb2a2b11280388ecf4f3f90b2cb07149cf18cd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+          "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "92b620068d39b5974ee9741d"
+    },
+    {
+      "receipt_id": "mb-murano-house-of-light-and-doom-handoff-v1__receipt_0016",
+      "project_id": "mb-murano-house-of-light-and-doom-handoff-v1",
+      "project_title": "House of Light and Doom",
+      "proof_tier": "source-backed-proof-build",
+      "component": "House of Light and Doom / The Silmarillion. Explicitly",
+      "component_case_id": "mb-murano-house-of-light-and-doom-handoff-v1__0016__house-of-light-and-doom-the-silmarillion-explicitly",
+      "claim_to_demonstrate": "uses `The Silmarillion. Explicitly` as a named project component with a traceable role in the public mechanism. Source context: Specifies The House of Light and Doom, a Murano OS room designed as a lossless mythopoetic analysis environment for Tolkien's.",
+      "input_fixture": "project source text and the named component `The Silmarillion. Explicitly`",
+      "operation_under_test": "uses `The Silmarillion. Explicitly` as a named project component with a traceable role in the public mechanism. Source context: Specifies The House of Light and Doom, a Murano OS room designed as a lossless mythopoetic analysis environment for Tolkien's.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `The Silmarillion. Explicitly`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ab9219cd3fd1b873b0067866",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43633,
+            "sha256": "5cccfd2ef32de920de42e756068975659517e78118fc6a8f51407eac3751829a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35737,
+            "sha256": "32c6b0f1a51019d80ab5b6c2940a1bd59aa2a8ffd2b7f2854bb4eebc3b3fcee4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21106,
+            "sha256": "fa35bba50d470f3242d4ebb286d21b9fa62306035b5847baa0a68a6239ba42c4"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20191,
+            "sha256": "85f0f5e10f0c694a27069732e36b79ba97846c176a92ba3ab34ce3ba3d9b3256"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45114,
+            "sha256": "26ed63d095e1cb61392ccd12e34005ac5f7bf2c57a856fe6f10c098c9059759b"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9310,
+            "sha256": "c96286cce91cc41a23d6e0c426cb2a2b11280388ecf4f3f90b2cb07149cf18cd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+          "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "22b3a5249d69cacdf22ec025"
+    },
+    {
+      "receipt_id": "mb-murano-house-of-light-and-doom-handoff-v1__receipt_0017",
+      "project_id": "mb-murano-house-of-light-and-doom-handoff-v1",
+      "project_title": "House of Light and Doom",
+      "proof_tier": "source-backed-proof-build",
+      "component": "House of Light and Doom / Narrative and Narration",
+      "component_case_id": "mb-murano-house-of-light-and-doom-handoff-v1__0017__house-of-light-and-doom-narrative-and-narration",
+      "claim_to_demonstrate": "uses `Narrative and Narration` as a named project component with a traceable role in the public mechanism. Source context: Narrative and Narration: Analyzing Cinematic Storytelling; Camera Lucida. Discovery, creativity, systems thinking, and project.",
+      "input_fixture": "project source text and the named component `Narrative and Narration`",
+      "operation_under_test": "uses `Narrative and Narration` as a named project component with a traceable role in the public mechanism. Source context: Narrative and Narration: Analyzing Cinematic Storytelling; Camera Lucida. Discovery, creativity, systems thinking, and project.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Narrative and Narration`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a31ffb52b0288886e748ea3a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43633,
+            "sha256": "5cccfd2ef32de920de42e756068975659517e78118fc6a8f51407eac3751829a"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35737,
+            "sha256": "32c6b0f1a51019d80ab5b6c2940a1bd59aa2a8ffd2b7f2854bb4eebc3b3fcee4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21106,
+            "sha256": "fa35bba50d470f3242d4ebb286d21b9fa62306035b5847baa0a68a6239ba42c4"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20191,
+            "sha256": "85f0f5e10f0c694a27069732e36b79ba97846c176a92ba3ab34ce3ba3d9b3256"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45114,
+            "sha256": "26ed63d095e1cb61392ccd12e34005ac5f7bf2c57a856fe6f10c098c9059759b"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9310,
+            "sha256": "c96286cce91cc41a23d6e0c426cb2a2b11280388ecf4f3f90b2cb07149cf18cd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-house-of-light-and-doom-handoff-v1/README.md",
+          "proof_builds/mb-murano-house-of-light-and-doom-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-house-of-light-and-doom-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "29c16fa0390f8fab54ee5f9c"
+    }
+  ]
+}

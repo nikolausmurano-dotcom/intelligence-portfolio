@@ -1,0 +1,50 @@
+{
+  "surface_capture_id": "BSC-F73721AFCCF8",
+  "project_id": "cognitive-warfare",
+  "product_name": "Cognitive Warfare - counter-intelligence doctrine, operationalized into analytical instruments",
+  "launch_target": "index.html#cognitive-warfare",
+  "section_found": "yes",
+  "visible_character_count": 31358,
+  "component_counts": {
+    "details_blocks": 7,
+    "page_glance_cards": 6,
+    "blueprint_markers": 3,
+    "reader_value_markers": 10,
+    "source_or_evidence_markers": 161,
+    "buttons_or_links": 8,
+    "tables": 2
+  },
+  "gate_results": [
+    {
+      "gate": "room_section_exists",
+      "status": "PASS",
+      "evidence": "cognitive-warfare"
+    },
+    {
+      "gate": "hash_navigation_target_present",
+      "status": "PASS",
+      "evidence": "index.html#cognitive-warfare"
+    },
+    {
+      "gate": "minimum_visible_text",
+      "status": "PASS",
+      "evidence": "31358 visible characters"
+    },
+    {
+      "gate": "mechanism_or_blueprint_present",
+      "status": "PASS",
+      "evidence": "3"
+    },
+    {
+      "gate": "source_or_evidence_language_present",
+      "status": "PASS",
+      "evidence": "161"
+    }
+  ],
+  "surface_capture_status": "browser_surface_capture_ready",
+  "runtime_status": "still_requires_live_runtime_trace",
+  "what_this_proves": "The public static room surface exists and exposes reviewer-readable structure, mechanism/evidence language, and a hash route.",
+  "what_this_does_not_prove": "It does not prove a stateful application workflow, backend persistence, export behavior, or live user interaction.",
+  "next_runtime_evidence_required": "Open or run the actual local/web application slice, execute the fixture, and capture input, state, output, export, and acceptance-test evidence.",
+  "claim_boundary": "May claim browser-surface availability if gates pass. May not claim complete runtime operation until live runtime trace is captured."
+}

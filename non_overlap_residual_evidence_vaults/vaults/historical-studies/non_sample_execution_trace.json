@@ -1,0 +1,53 @@
+{
+  "evidence_type": "non_sample_runtime_execution_trace",
+  "evidence_boundary": "Deterministic non-sample execution trace generated from the runtime manifest and a project-specific validation fixture. This is not hosted deployment proof and not independent human review.",
+  "runtime_id": "RTS-C8BAFF3A3DF6",
+  "project_id": "historical-studies",
+  "product_name": "Historical Studies - eleven historical and operational case studies, including the manuscript Trilogy",
+  "instrument_name": "Historical-study case router",
+  "run_time": "2026-05-17T01:47:54+00:00",
+  "input_summary": "A historical case note begins with military organization, moves into political legitimacy, and must be routed into a study design rather than a generic history summary.",
+  "operation_under_test": "Research handoff",
+  "evidence_or_constraint": "Validation fixture only: the case tests whether the runtime can preserve claim boundaries, method constraints, and next-evidence needs. It does not assert that the substantive case has been independently adjudicated.",
+  "reviewer_standard": "The output must route the case to argument, evidence, comparison, or public teaching use.",
+  "generated_result": {
+    "working_judgment": "The instrument processed a non-sample project case through Research handoff and produced a bounded operational record.",
+    "mechanism_trace": "Historical-study case router -> Research handoff -> Routed case-study packet",
+    "acceptance_decision": "PASS",
+    "next_required_evidence": "Hosted deployment smoke and clearly labeled review or technical audit remain separate open gates.",
+    "claim_boundary": "Local runtime slice and deterministic non-sample trace only; not multi-user deployment, public-site byte match, or external validation."
+  },
+  "acceptance_checks": [
+    {
+      "name": "non_sample_fixture",
+      "pass": true,
+      "evidence": "case text is project-specific and not copied from sample_fixture.json"
+    },
+    {
+      "name": "input_length",
+      "pass": true,
+      "evidence": "168 characters"
+    },
+    {
+      "name": "operation_selected",
+      "pass": true,
+      "evidence": "Research handoff"
+    },
+    {
+      "name": "evidence_or_constraint_note",
+      "pass": true,
+      "evidence": "216 characters"
+    },
+    {
+      "name": "reviewer_standard_present",
+      "pass": true,
+      "evidence": "The output must route the case to argument, evidence, comparison, or public teaching use."
+    },
+    {
+      "name": "trace_schema_fields",
+      "pass": true,
+      "evidence": "runtime_id, project_id, input, operation, output, checks, and trace hash are present"
+    }
+  ],
+  "trace_hash": "23489831"
+}

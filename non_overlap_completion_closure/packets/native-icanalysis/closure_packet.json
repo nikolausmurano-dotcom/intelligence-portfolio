@@ -1,0 +1,24 @@
+{
+  "project_id": "native-icanalysis",
+  "surface_type": "review_workbench",
+  "public_proof_surface_operational": "True",
+  "current_underlying_project_fully_operational": "False",
+  "remaining_gate": "The package can capture input-method-output-review logic, but calibration against live cases or expert review remains pending.",
+  "closure_lane": "live_case_calibration",
+  "local_closure_possible": "partial",
+  "external_or_human_required": "yes",
+  "required_evidence": [
+    "at least three live or realistic cases",
+    "calibration record",
+    "failure-mode note",
+    "expert or reviewer check"
+  ],
+  "completion_tests": [
+    "method output is stable across cases",
+    "known failure mode is detected",
+    "reviewer agrees the instrument is not overclaiming"
+  ],
+  "default_closure_status": "not_closed",
+  "promotion_rule": "Only promote after all required evidence is supplied, all completion tests pass, and the evidence record is retained.",
+  "packet_hash": "6237b6fe0e81f0e8"
+}

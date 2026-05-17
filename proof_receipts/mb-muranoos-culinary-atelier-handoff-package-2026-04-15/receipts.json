@@ -1,0 +1,1470 @@
+{
+  "project": {
+    "project_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15",
+    "title": "Culinary Atelier"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__receipt_0001",
+      "project_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15",
+      "project_title": "Culinary Atelier",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Culinary Atelier Handoff Identity",
+      "component_case_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__0001__culinary-atelier-handoff-identity",
+      "claim_to_demonstrate": "Culinary Atelier is a MuranoOS boundary-arbitration packet for food knowledge, domestic logistics, culture, and service.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "Culinary Atelier is a MuranoOS boundary-arbitration packet for food knowledge, domestic logistics, culture, and service.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43982,
+            "sha256": "f8c9a0159aadb82600db55644f532fad99464eb5223bb8561b1bd693b2a6eee7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35486,
+            "sha256": "5d1df4431c09d04e5187e03e702a895a246d7640ae46fa72668e25909f00efeb"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21180,
+            "sha256": "92ce7f12c44a3de59a9450f45f049e2cd664c234d43c88165c7f523a6ac9c8f3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20151,
+            "sha256": "d3eeee055a3b4c687911fb04ec08ffdb730183c6216b264e458fa53bc47b3635"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "dd86e159e773813907bbf52f4e6e9dbb4ebcd52409e20a32474f7f455fc59e21"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9554,
+            "sha256": "30c863e7e136051c73f397319edb2bd9905f75f2b3d9ff8fa7962264296b5bdc"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4604ba3cf2a54f4391344bc3"
+    },
+    {
+      "receipt_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__receipt_0002",
+      "project_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15",
+      "project_title": "Culinary Atelier",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Culinary Atelier Room Task Model",
+      "component_case_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__0002__culinary-atelier-room-task-model",
+      "claim_to_demonstrate": "It separates Federated Studio, Service, Domestic Logistics, Culture, recipe knowledge, ingredient state, intent, red-team review, and executable meal planning so adjacent private pages are consolidated into one professional operating room without exposing.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "It separates Federated Studio, Service, Domestic Logistics, Culture, recipe knowledge, ingredient state, intent, red-team review, and executable meal planning so adjacent private pages are consolidated into one professional operating room without exposing.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43982,
+            "sha256": "f8c9a0159aadb82600db55644f532fad99464eb5223bb8561b1bd693b2a6eee7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35486,
+            "sha256": "5d1df4431c09d04e5187e03e702a895a246d7640ae46fa72668e25909f00efeb"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21180,
+            "sha256": "92ce7f12c44a3de59a9450f45f049e2cd664c234d43c88165c7f523a6ac9c8f3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20151,
+            "sha256": "d3eeee055a3b4c687911fb04ec08ffdb730183c6216b264e458fa53bc47b3635"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "dd86e159e773813907bbf52f4e6e9dbb4ebcd52409e20a32474f7f455fc59e21"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9554,
+            "sha256": "30c863e7e136051c73f397319edb2bd9905f75f2b3d9ff8fa7962264296b5bdc"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d2aa1107afc0d32a995bfe09"
+    },
+    {
+      "receipt_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__receipt_0003",
+      "project_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15",
+      "project_title": "Culinary Atelier",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Culinary Atelier Data Schema And Persistence Plan",
+      "component_case_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__0003__culinary-atelier-data-schema-and-persistence-plan",
+      "claim_to_demonstrate": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43982,
+            "sha256": "f8c9a0159aadb82600db55644f532fad99464eb5223bb8561b1bd693b2a6eee7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35486,
+            "sha256": "5d1df4431c09d04e5187e03e702a895a246d7640ae46fa72668e25909f00efeb"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21180,
+            "sha256": "92ce7f12c44a3de59a9450f45f049e2cd664c234d43c88165c7f523a6ac9c8f3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20151,
+            "sha256": "d3eeee055a3b4c687911fb04ec08ffdb730183c6216b264e458fa53bc47b3635"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "dd86e159e773813907bbf52f4e6e9dbb4ebcd52409e20a32474f7f455fc59e21"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9554,
+            "sha256": "30c863e7e136051c73f397319edb2bd9905f75f2b3d9ff8fa7962264296b5bdc"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "aa0c1a663ec8c74f1a685d30"
+    },
+    {
+      "receipt_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__receipt_0004",
+      "project_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15",
+      "project_title": "Culinary Atelier",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Culinary Atelier Interface And Instrument Plane",
+      "component_case_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__0004__culinary-atelier-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43982,
+            "sha256": "f8c9a0159aadb82600db55644f532fad99464eb5223bb8561b1bd693b2a6eee7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35486,
+            "sha256": "5d1df4431c09d04e5187e03e702a895a246d7640ae46fa72668e25909f00efeb"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21180,
+            "sha256": "92ce7f12c44a3de59a9450f45f049e2cd664c234d43c88165c7f523a6ac9c8f3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20151,
+            "sha256": "d3eeee055a3b4c687911fb04ec08ffdb730183c6216b264e458fa53bc47b3635"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "dd86e159e773813907bbf52f4e6e9dbb4ebcd52409e20a32474f7f455fc59e21"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9554,
+            "sha256": "30c863e7e136051c73f397319edb2bd9905f75f2b3d9ff8fa7962264296b5bdc"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1408d65765c5664ac74578ea"
+    },
+    {
+      "receipt_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__receipt_0005",
+      "project_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15",
+      "project_title": "Culinary Atelier",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Culinary Atelier Integration Path",
+      "component_case_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__0005__culinary-atelier-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. Reach for this when: (a) you need a reference boundary-arbitration on how to consolidate multiple routes into one governed room without breaking the existing.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. Reach for this when: (a) you need a reference boundary-arbitration on how to consolidate multiple routes into one governed room without breaking the existing.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43982,
+            "sha256": "f8c9a0159aadb82600db55644f532fad99464eb5223bb8561b1bd693b2a6eee7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35486,
+            "sha256": "5d1df4431c09d04e5187e03e702a895a246d7640ae46fa72668e25909f00efeb"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21180,
+            "sha256": "92ce7f12c44a3de59a9450f45f049e2cd664c234d43c88165c7f523a6ac9c8f3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20151,
+            "sha256": "d3eeee055a3b4c687911fb04ec08ffdb730183c6216b264e458fa53bc47b3635"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "dd86e159e773813907bbf52f4e6e9dbb4ebcd52409e20a32474f7f455fc59e21"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9554,
+            "sha256": "30c863e7e136051c73f397319edb2bd9905f75f2b3d9ff8fa7962264296b5bdc"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "007e9bd3aaa638f471861231"
+    },
+    {
+      "receipt_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__receipt_0006",
+      "project_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15",
+      "project_title": "Culinary Atelier",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Culinary Atelier Proof Boundary",
+      "component_case_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__0006__culinary-atelier-proof-boundary",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43982,
+            "sha256": "f8c9a0159aadb82600db55644f532fad99464eb5223bb8561b1bd693b2a6eee7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35486,
+            "sha256": "5d1df4431c09d04e5187e03e702a895a246d7640ae46fa72668e25909f00efeb"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21180,
+            "sha256": "92ce7f12c44a3de59a9450f45f049e2cd664c234d43c88165c7f523a6ac9c8f3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20151,
+            "sha256": "d3eeee055a3b4c687911fb04ec08ffdb730183c6216b264e458fa53bc47b3635"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "dd86e159e773813907bbf52f4e6e9dbb4ebcd52409e20a32474f7f455fc59e21"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9554,
+            "sha256": "30c863e7e136051c73f397319edb2bd9905f75f2b3d9ff8fa7962264296b5bdc"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "564b1421feee57349f9457c4"
+    },
+    {
+      "receipt_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__receipt_0007",
+      "project_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15",
+      "project_title": "Culinary Atelier",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Culinary Atelier Next Build Test",
+      "component_case_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__0007__culinary-atelier-next-build-test",
+      "claim_to_demonstrate": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43982,
+            "sha256": "f8c9a0159aadb82600db55644f532fad99464eb5223bb8561b1bd693b2a6eee7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35486,
+            "sha256": "5d1df4431c09d04e5187e03e702a895a246d7640ae46fa72668e25909f00efeb"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21180,
+            "sha256": "92ce7f12c44a3de59a9450f45f049e2cd664c234d43c88165c7f523a6ac9c8f3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20151,
+            "sha256": "d3eeee055a3b4c687911fb04ec08ffdb730183c6216b264e458fa53bc47b3635"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "dd86e159e773813907bbf52f4e6e9dbb4ebcd52409e20a32474f7f455fc59e21"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9554,
+            "sha256": "30c863e7e136051c73f397319edb2bd9905f75f2b3d9ff8fa7962264296b5bdc"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7504486a4f7be9370d0ad94e"
+    },
+    {
+      "receipt_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__receipt_0008",
+      "project_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15",
+      "project_title": "Culinary Atelier",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Culinary Atelier / README.md",
+      "component_case_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__0008__culinary-atelier-readme-md",
+      "claim_to_demonstrate": "treats `README.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 02_Room_Definition/BOUNDARY_ARBITRATION_AND_CANONICAL_ROOM_BRIEF.md — 02_Room_Definition/SCENE_MODEL_AND_ROUTE_PLAN.md.",
+      "input_fixture": "project source text and the named component `README.md`",
+      "operation_under_test": "treats `README.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 02_Room_Definition/BOUNDARY_ARBITRATION_AND_CANONICAL_ROOM_BRIEF.md — 02_Room_Definition/SCENE_MODEL_AND_ROUTE_PLAN.md.",
+      "expected_output": "inspectable implementation evidence tied to `README.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "695e72cfd4c473236ece6e83",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43982,
+            "sha256": "f8c9a0159aadb82600db55644f532fad99464eb5223bb8561b1bd693b2a6eee7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35486,
+            "sha256": "5d1df4431c09d04e5187e03e702a895a246d7640ae46fa72668e25909f00efeb"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21180,
+            "sha256": "92ce7f12c44a3de59a9450f45f049e2cd664c234d43c88165c7f523a6ac9c8f3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20151,
+            "sha256": "d3eeee055a3b4c687911fb04ec08ffdb730183c6216b264e458fa53bc47b3635"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "dd86e159e773813907bbf52f4e6e9dbb4ebcd52409e20a32474f7f455fc59e21"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9554,
+            "sha256": "30c863e7e136051c73f397319edb2bd9905f75f2b3d9ff8fa7962264296b5bdc"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9b83f25863c7715f0b5571f3"
+    },
+    {
+      "receipt_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__receipt_0009",
+      "project_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15",
+      "project_title": "Culinary Atelier",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Culinary Atelier / BOUNDARY_ARBITRATION_AND_CANONICAL_ROOM_BRIEF.md",
+      "component_case_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__0009__culinary-atelier-boundary-arbitration-and-canonical-room-brief-md",
+      "claim_to_demonstrate": "treats `BOUNDARY_ARBITRATION_AND_CANONICAL_ROOM_BRIEF.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 02_Room_Definition/BOUNDARY_ARBITRATION_AND_CANONICAL_ROOM_BRIEF.md —.",
+      "input_fixture": "project source text and the named component `BOUNDARY_ARBITRATION_AND_CANONICAL_ROOM_BRIEF.md`",
+      "operation_under_test": "treats `BOUNDARY_ARBITRATION_AND_CANONICAL_ROOM_BRIEF.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 02_Room_Definition/BOUNDARY_ARBITRATION_AND_CANONICAL_ROOM_BRIEF.md —.",
+      "expected_output": "inspectable implementation evidence tied to `BOUNDARY_ARBITRATION_AND_CANONICAL_ROOM_BRIEF.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "695e72cfd4c473236ece6e83",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43982,
+            "sha256": "f8c9a0159aadb82600db55644f532fad99464eb5223bb8561b1bd693b2a6eee7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35486,
+            "sha256": "5d1df4431c09d04e5187e03e702a895a246d7640ae46fa72668e25909f00efeb"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21180,
+            "sha256": "92ce7f12c44a3de59a9450f45f049e2cd664c234d43c88165c7f523a6ac9c8f3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20151,
+            "sha256": "d3eeee055a3b4c687911fb04ec08ffdb730183c6216b264e458fa53bc47b3635"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "dd86e159e773813907bbf52f4e6e9dbb4ebcd52409e20a32474f7f455fc59e21"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9554,
+            "sha256": "30c863e7e136051c73f397319edb2bd9905f75f2b3d9ff8fa7962264296b5bdc"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "48ded1b87695f9c79a47b9f8"
+    },
+    {
+      "receipt_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__receipt_0010",
+      "project_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15",
+      "project_title": "Culinary Atelier",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Culinary Atelier / SCENE_MODEL_AND_ROUTE_PLAN.md",
+      "component_case_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__0010__culinary-atelier-scene-model-and-route-plan-md",
+      "claim_to_demonstrate": "treats `SCENE_MODEL_AND_ROUTE_PLAN.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 02_Room_Definition/BOUNDARY_ARBITRATION_AND_CANONICAL_ROOM_BRIEF.md —.",
+      "input_fixture": "project source text and the named component `SCENE_MODEL_AND_ROUTE_PLAN.md`",
+      "operation_under_test": "treats `SCENE_MODEL_AND_ROUTE_PLAN.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 02_Room_Definition/BOUNDARY_ARBITRATION_AND_CANONICAL_ROOM_BRIEF.md —.",
+      "expected_output": "inspectable implementation evidence tied to `SCENE_MODEL_AND_ROUTE_PLAN.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "695e72cfd4c473236ece6e83",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43982,
+            "sha256": "f8c9a0159aadb82600db55644f532fad99464eb5223bb8561b1bd693b2a6eee7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35486,
+            "sha256": "5d1df4431c09d04e5187e03e702a895a246d7640ae46fa72668e25909f00efeb"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21180,
+            "sha256": "92ce7f12c44a3de59a9450f45f049e2cd664c234d43c88165c7f523a6ac9c8f3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20151,
+            "sha256": "d3eeee055a3b4c687911fb04ec08ffdb730183c6216b264e458fa53bc47b3635"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "dd86e159e773813907bbf52f4e6e9dbb4ebcd52409e20a32474f7f455fc59e21"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9554,
+            "sha256": "30c863e7e136051c73f397319edb2bd9905f75f2b3d9ff8fa7962264296b5bdc"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b8272a7609fd1ef29d0b624d"
+    },
+    {
+      "receipt_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__receipt_0011",
+      "project_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15",
+      "project_title": "Culinary Atelier",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Culinary Atelier / ENGINES_AND_FEATURE_SET.md",
+      "component_case_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__0011__culinary-atelier-engines-and-feature-set-md",
+      "claim_to_demonstrate": "treats `ENGINES_AND_FEATURE_SET.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 02_Room_Definition/BOUNDARY_ARBITRATION_AND_CANONICAL_ROOM_BRIEF.md —.",
+      "input_fixture": "project source text and the named component `ENGINES_AND_FEATURE_SET.md`",
+      "operation_under_test": "treats `ENGINES_AND_FEATURE_SET.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 02_Room_Definition/BOUNDARY_ARBITRATION_AND_CANONICAL_ROOM_BRIEF.md —.",
+      "expected_output": "inspectable implementation evidence tied to `ENGINES_AND_FEATURE_SET.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "695e72cfd4c473236ece6e83",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43982,
+            "sha256": "f8c9a0159aadb82600db55644f532fad99464eb5223bb8561b1bd693b2a6eee7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35486,
+            "sha256": "5d1df4431c09d04e5187e03e702a895a246d7640ae46fa72668e25909f00efeb"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21180,
+            "sha256": "92ce7f12c44a3de59a9450f45f049e2cd664c234d43c88165c7f523a6ac9c8f3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20151,
+            "sha256": "d3eeee055a3b4c687911fb04ec08ffdb730183c6216b264e458fa53bc47b3635"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "dd86e159e773813907bbf52f4e6e9dbb4ebcd52409e20a32474f7f455fc59e21"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9554,
+            "sha256": "30c863e7e136051c73f397319edb2bd9905f75f2b3d9ff8fa7962264296b5bdc"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3aad63ece428d11a4179e0f0"
+    },
+    {
+      "receipt_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__receipt_0012",
+      "project_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15",
+      "project_title": "Culinary Atelier",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Culinary Atelier / NEXT_HIGHEST_VALUE_IMPLEMENTATION_TRANCHE.md",
+      "component_case_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__0012__culinary-atelier-next-highest-value-implementation-tranche-md",
+      "claim_to_demonstrate": "treats `NEXT_HIGHEST_VALUE_IMPLEMENTATION_TRANCHE.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: NEXT_HIGHEST_VALUE_IMPLEMENTATION_TRANCHE.md. Wire or preserve the implementation files: None.",
+      "input_fixture": "project source text and the named component `NEXT_HIGHEST_VALUE_IMPLEMENTATION_TRANCHE.md`",
+      "operation_under_test": "treats `NEXT_HIGHEST_VALUE_IMPLEMENTATION_TRANCHE.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: NEXT_HIGHEST_VALUE_IMPLEMENTATION_TRANCHE.md. Wire or preserve the implementation files: None.",
+      "expected_output": "inspectable implementation evidence tied to `NEXT_HIGHEST_VALUE_IMPLEMENTATION_TRANCHE.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "9a472e7b9b2c8fdc4f1c8c23",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43982,
+            "sha256": "f8c9a0159aadb82600db55644f532fad99464eb5223bb8561b1bd693b2a6eee7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35486,
+            "sha256": "5d1df4431c09d04e5187e03e702a895a246d7640ae46fa72668e25909f00efeb"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21180,
+            "sha256": "92ce7f12c44a3de59a9450f45f049e2cd664c234d43c88165c7f523a6ac9c8f3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20151,
+            "sha256": "d3eeee055a3b4c687911fb04ec08ffdb730183c6216b264e458fa53bc47b3635"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "dd86e159e773813907bbf52f4e6e9dbb4ebcd52409e20a32474f7f455fc59e21"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9554,
+            "sha256": "30c863e7e136051c73f397319edb2bd9905f75f2b3d9ff8fa7962264296b5bdc"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "60b4e2066b93d71a0a423976"
+    },
+    {
+      "receipt_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__receipt_0013",
+      "project_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15",
+      "project_title": "Culinary Atelier",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Culinary Atelier / PHASED_IMPLEMENTATION_PLAN.md",
+      "component_case_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__0013__culinary-atelier-phased-implementation-plan-md",
+      "claim_to_demonstrate": "treats `PHASED_IMPLEMENTATION_PLAN.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 04_Implementation_Doctrine/NEXT_HIGHEST_VALUE_IMPLEMENTATION_TRANCHE.md and PHASED_IMPLEMENTATION_PLAN.md are.",
+      "input_fixture": "project source text and the named component `PHASED_IMPLEMENTATION_PLAN.md`",
+      "operation_under_test": "treats `PHASED_IMPLEMENTATION_PLAN.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 04_Implementation_Doctrine/NEXT_HIGHEST_VALUE_IMPLEMENTATION_TRANCHE.md and PHASED_IMPLEMENTATION_PLAN.md are.",
+      "expected_output": "inspectable implementation evidence tied to `PHASED_IMPLEMENTATION_PLAN.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fc2f99d7ce6821e2fc1d4602",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43982,
+            "sha256": "f8c9a0159aadb82600db55644f532fad99464eb5223bb8561b1bd693b2a6eee7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35486,
+            "sha256": "5d1df4431c09d04e5187e03e702a895a246d7640ae46fa72668e25909f00efeb"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21180,
+            "sha256": "92ce7f12c44a3de59a9450f45f049e2cd664c234d43c88165c7f523a6ac9c8f3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20151,
+            "sha256": "d3eeee055a3b4c687911fb04ec08ffdb730183c6216b264e458fa53bc47b3635"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "dd86e159e773813907bbf52f4e6e9dbb4ebcd52409e20a32474f7f455fc59e21"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9554,
+            "sha256": "30c863e7e136051c73f397319edb2bd9905f75f2b3d9ff8fa7962264296b5bdc"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7abdd04a9279438d33cfeb18"
+    },
+    {
+      "receipt_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__receipt_0014",
+      "project_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15",
+      "project_title": "Culinary Atelier",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Culinary Atelier / LIVE_REPO_FOOD_ROUTE_EVIDENCE.md",
+      "component_case_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__0014__culinary-atelier-live-repo-food-route-evidence-md",
+      "claim_to_demonstrate": "treats `LIVE_REPO_FOOD_ROUTE_EVIDENCE.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 00_Source_Basis/LIVE_REPO_FOOD_ROUTE_EVIDENCE.md captures what is already shipped in the live MuranoOS repo.",
+      "input_fixture": "project source text and the named component `LIVE_REPO_FOOD_ROUTE_EVIDENCE.md`",
+      "operation_under_test": "treats `LIVE_REPO_FOOD_ROUTE_EVIDENCE.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 00_Source_Basis/LIVE_REPO_FOOD_ROUTE_EVIDENCE.md captures what is already shipped in the live MuranoOS repo.",
+      "expected_output": "inspectable implementation evidence tied to `LIVE_REPO_FOOD_ROUTE_EVIDENCE.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "eac4f8d4818a02fe29f87b1c",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43982,
+            "sha256": "f8c9a0159aadb82600db55644f532fad99464eb5223bb8561b1bd693b2a6eee7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35486,
+            "sha256": "5d1df4431c09d04e5187e03e702a895a246d7640ae46fa72668e25909f00efeb"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21180,
+            "sha256": "92ce7f12c44a3de59a9450f45f049e2cd664c234d43c88165c7f523a6ac9c8f3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20151,
+            "sha256": "d3eeee055a3b4c687911fb04ec08ffdb730183c6216b264e458fa53bc47b3635"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "dd86e159e773813907bbf52f4e6e9dbb4ebcd52409e20a32474f7f455fc59e21"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9554,
+            "sha256": "30c863e7e136051c73f397319edb2bd9905f75f2b3d9ff8fa7962264296b5bdc"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "242129b867b2e1b400145588"
+    },
+    {
+      "receipt_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__receipt_0015",
+      "project_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15",
+      "project_title": "Culinary Atelier",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Culinary Atelier / Atelier",
+      "component_case_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__0015__culinary-atelier-atelier",
+      "claim_to_demonstrate": "uses `Atelier` as a named project component with a traceable role in the public mechanism. Source context: The Culinary Atelier package solves a boundary-arbitration problem in MuranoOS: the live repo has three culinary-adjacent routes (/food-lab.",
+      "input_fixture": "project source text and the named component `Atelier`",
+      "operation_under_test": "uses `Atelier` as a named project component with a traceable role in the public mechanism. Source context: The Culinary Atelier package solves a boundary-arbitration problem in MuranoOS: the live repo has three culinary-adjacent routes (/food-lab.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Atelier`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "7756d57921ee6875455f19eb",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43982,
+            "sha256": "f8c9a0159aadb82600db55644f532fad99464eb5223bb8561b1bd693b2a6eee7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35486,
+            "sha256": "5d1df4431c09d04e5187e03e702a895a246d7640ae46fa72668e25909f00efeb"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21180,
+            "sha256": "92ce7f12c44a3de59a9450f45f049e2cd664c234d43c88165c7f523a6ac9c8f3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20151,
+            "sha256": "d3eeee055a3b4c687911fb04ec08ffdb730183c6216b264e458fa53bc47b3635"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "dd86e159e773813907bbf52f4e6e9dbb4ebcd52409e20a32474f7f455fc59e21"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9554,
+            "sha256": "30c863e7e136051c73f397319edb2bd9905f75f2b3d9ff8fa7962264296b5bdc"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c20c4b2efee37ff5e803aeab"
+    },
+    {
+      "receipt_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__receipt_0016",
+      "project_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15",
+      "project_title": "Culinary Atelier",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Culinary Atelier / Federated Studio",
+      "component_case_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__0016__culinary-atelier-federated-studio",
+      "claim_to_demonstrate": "treats `Federated Studio` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: The package proposes one canonical room, CulinaryAtelierRoom (display name \"Atelier\", archetype.",
+      "input_fixture": "project source text and the named component `Federated Studio`",
+      "operation_under_test": "treats `Federated Studio` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: The package proposes one canonical room, CulinaryAtelierRoom (display name \"Atelier\", archetype.",
+      "expected_output": "a room, workbench, or interface function tied to `Federated Studio`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ed772a69ad0ffa4f0acf5637",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43982,
+            "sha256": "f8c9a0159aadb82600db55644f532fad99464eb5223bb8561b1bd693b2a6eee7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35486,
+            "sha256": "5d1df4431c09d04e5187e03e702a895a246d7640ae46fa72668e25909f00efeb"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21180,
+            "sha256": "92ce7f12c44a3de59a9450f45f049e2cd664c234d43c88165c7f523a6ac9c8f3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20151,
+            "sha256": "d3eeee055a3b4c687911fb04ec08ffdb730183c6216b264e458fa53bc47b3635"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "dd86e159e773813907bbf52f4e6e9dbb4ebcd52409e20a32474f7f455fc59e21"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9554,
+            "sha256": "30c863e7e136051c73f397319edb2bd9905f75f2b3d9ff8fa7962264296b5bdc"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7bf8e5c6aa0d993ff45c6b56"
+    },
+    {
+      "receipt_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__receipt_0017",
+      "project_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15",
+      "project_title": "Culinary Atelier",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Culinary Atelier / The Culinary Atelier",
+      "component_case_id": "mb-muranoos-culinary-atelier-handoff-package-2026-04-15__0017__culinary-atelier-the-culinary-atelier",
+      "claim_to_demonstrate": "uses `The Culinary Atelier` as a named project component with a traceable role in the public mechanism. Source context: The Culinary Atelier package solves a boundary-arbitration problem in MuranoOS: the live repo has three culinary-adjacent routes.",
+      "input_fixture": "project source text and the named component `The Culinary Atelier`",
+      "operation_under_test": "uses `The Culinary Atelier` as a named project component with a traceable role in the public mechanism. Source context: The Culinary Atelier package solves a boundary-arbitration problem in MuranoOS: the live repo has three culinary-adjacent routes.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `The Culinary Atelier`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "7756d57921ee6875455f19eb",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43982,
+            "sha256": "f8c9a0159aadb82600db55644f532fad99464eb5223bb8561b1bd693b2a6eee7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35486,
+            "sha256": "5d1df4431c09d04e5187e03e702a895a246d7640ae46fa72668e25909f00efeb"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21180,
+            "sha256": "92ce7f12c44a3de59a9450f45f049e2cd664c234d43c88165c7f523a6ac9c8f3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20151,
+            "sha256": "d3eeee055a3b4c687911fb04ec08ffdb730183c6216b264e458fa53bc47b3635"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "dd86e159e773813907bbf52f4e6e9dbb4ebcd52409e20a32474f7f455fc59e21"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9554,
+            "sha256": "30c863e7e136051c73f397319edb2bd9905f75f2b3d9ff8fa7962264296b5bdc"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-culinary-atelier-handoff-package-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "944b11f70d8056a338789d78"
+    }
+  ]
+}

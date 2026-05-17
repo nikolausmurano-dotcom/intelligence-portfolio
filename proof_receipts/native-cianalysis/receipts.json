@@ -1,0 +1,1469 @@
+{
+  "project": {
+    "project_id": "native-cianalysis",
+    "title": "Counterintelligence Analysis"
+  },
+  "receipts": [
+    {
+      "receipt_id": "native-cianalysis__receipt_0001",
+      "project_id": "native-cianalysis",
+      "project_title": "Counterintelligence Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counterintelligence Analysis Runtime Or Interface Surface",
+      "component_case_id": "native-cianalysis__0001__counterintelligence-analysis-runtime-or-interface-surface",
+      "claim_to_demonstrate": "A counterintelligence analysis page for deception, access, insider risk, and adversary manipulation.",
+      "input_fixture": "local app, web room, data surface, or workstation entry point",
+      "operation_under_test": "A counterintelligence analysis page for deception, access, insider risk, and adversary manipulation.",
+      "expected_output": "reader-facing definition of the software object and its intended user",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8fd882083e0f8259b8a06f60",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cianalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46141,
+            "sha256": "2098c46d27fa7f6148100a15a91962fe81e218d52e069e705bedc79fd99fe4bd"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39028,
+            "sha256": "3c31b52c7596f14f34a2e522db6232c576f92099eff6329e409b983a23a385e9"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20112,
+            "sha256": "c99e8c42499d917a7136db1c38e73ba319d42d8af1fb6e7c70c4583e05cc5b51"
+          },
+          {
+            "relative_path": "proof_builds/native-cianalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21035,
+            "sha256": "4790528704448df9a3ec9a745489e0927f93d9ff9e84f026b6c10d26b0ca3e2d"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46008,
+            "sha256": "c7ac5c74eaebbb511e4932a2a18fa0520de24e241983a2a82154319474703617"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9460,
+            "sha256": "bb295799e9a1e5a67042a183094c76856c3a1a808fd6a2a57cccd2c4c928e7b7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cianalysis/blueprint.json",
+          "project_blueprints/native-cianalysis/instrument_map.json",
+          "project_blueprints/native-cianalysis/README.md",
+          "proof_builds/native-cianalysis/proof_build.json",
+          "proof_demos/native-cianalysis/demo_cases.json",
+          "proof_demos/native-cianalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f47afed61db8e240229da214"
+    },
+    {
+      "receipt_id": "native-cianalysis__receipt_0002",
+      "project_id": "native-cianalysis",
+      "project_title": "Counterintelligence Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counterintelligence Analysis Data And State Model",
+      "component_case_id": "native-cianalysis__0002__counterintelligence-analysis-data-and-state-model",
+      "claim_to_demonstrate": "Heuer. Loads cognitive-bias and intelligence-analysis failure modes. CIA Tradecraft Primer. Loads structured analytic technique selection and use conditions. Pherson and Pherson. Loads practical tradecraft: indicators, ACH, key assumptions, diagnosticity, and.",
+      "input_fixture": "records, files, indexes, tables, project state, source state, and user decisions",
+      "operation_under_test": "Heuer. Loads cognitive-bias and intelligence-analysis failure modes. CIA Tradecraft Primer. Loads structured analytic technique selection and use conditions. Pherson and Pherson. Loads practical tradecraft: indicators, ACH, key assumptions, diagnosticity, and.",
+      "expected_output": "state model that explains what the tool remembers and what it refuses to infer",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4da81596b91ff65b95cc789b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cianalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46141,
+            "sha256": "2098c46d27fa7f6148100a15a91962fe81e218d52e069e705bedc79fd99fe4bd"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39028,
+            "sha256": "3c31b52c7596f14f34a2e522db6232c576f92099eff6329e409b983a23a385e9"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20112,
+            "sha256": "c99e8c42499d917a7136db1c38e73ba319d42d8af1fb6e7c70c4583e05cc5b51"
+          },
+          {
+            "relative_path": "proof_builds/native-cianalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21035,
+            "sha256": "4790528704448df9a3ec9a745489e0927f93d9ff9e84f026b6c10d26b0ca3e2d"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46008,
+            "sha256": "c7ac5c74eaebbb511e4932a2a18fa0520de24e241983a2a82154319474703617"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9460,
+            "sha256": "bb295799e9a1e5a67042a183094c76856c3a1a808fd6a2a57cccd2c4c928e7b7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cianalysis/blueprint.json",
+          "project_blueprints/native-cianalysis/instrument_map.json",
+          "project_blueprints/native-cianalysis/README.md",
+          "proof_builds/native-cianalysis/proof_build.json",
+          "proof_demos/native-cianalysis/demo_cases.json",
+          "proof_demos/native-cianalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7b6a9287ec1af2813ced7211"
+    },
+    {
+      "receipt_id": "native-cianalysis__receipt_0003",
+      "project_id": "native-cianalysis",
+      "project_title": "Counterintelligence Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counterintelligence Analysis Core Instrument Panel",
+      "component_case_id": "native-cianalysis__0003__counterintelligence-analysis-core-instrument-panel",
+      "claim_to_demonstrate": "It routes anomalies through alternative hypotheses, source reliability, access pathways, deception indicators, and competing explanations before allowing a judgment to harden.",
+      "input_fixture": "tool buttons, rooms, workflow steps, analytical controls, and review surfaces",
+      "operation_under_test": "It routes anomalies through alternative hypotheses, source reliability, access pathways, deception indicators, and competing explanations before allowing a judgment to harden.",
+      "expected_output": "named instruments that perform the useful work rather than generic navigation",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0f34fd9a5a44ba183928e1ab",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cianalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46141,
+            "sha256": "2098c46d27fa7f6148100a15a91962fe81e218d52e069e705bedc79fd99fe4bd"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39028,
+            "sha256": "3c31b52c7596f14f34a2e522db6232c576f92099eff6329e409b983a23a385e9"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20112,
+            "sha256": "c99e8c42499d917a7136db1c38e73ba319d42d8af1fb6e7c70c4583e05cc5b51"
+          },
+          {
+            "relative_path": "proof_builds/native-cianalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21035,
+            "sha256": "4790528704448df9a3ec9a745489e0927f93d9ff9e84f026b6c10d26b0ca3e2d"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46008,
+            "sha256": "c7ac5c74eaebbb511e4932a2a18fa0520de24e241983a2a82154319474703617"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9460,
+            "sha256": "bb295799e9a1e5a67042a183094c76856c3a1a808fd6a2a57cccd2c4c928e7b7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cianalysis/blueprint.json",
+          "project_blueprints/native-cianalysis/instrument_map.json",
+          "project_blueprints/native-cianalysis/README.md",
+          "proof_builds/native-cianalysis/proof_build.json",
+          "proof_demos/native-cianalysis/demo_cases.json",
+          "proof_demos/native-cianalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f5a3f63e9d8da3eeb9877e32"
+    },
+    {
+      "receipt_id": "native-cianalysis__receipt_0004",
+      "project_id": "native-cianalysis",
+      "project_title": "Counterintelligence Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counterintelligence Analysis Workflow Orchestration",
+      "component_case_id": "native-cianalysis__0004__counterintelligence-analysis-workflow-orchestration",
+      "claim_to_demonstrate": "Plan: identify the region-specific source spine, state what the page can and cannot claim, preserve source-register lineage, and close any remaining source lineage or case-selection gaps before treating the page as final. The project source notes below should.",
+      "input_fixture": "upstream inputs, intermediate decisions, downstream products, and stale-state conditions",
+      "operation_under_test": "Plan: identify the region-specific source spine, state what the page can and cannot claim, preserve source-register lineage, and close any remaining source lineage or case-selection gaps before treating the page as final. The project source notes below should.",
+      "expected_output": "pipeline path showing how work moves and when earlier decisions must be reopened",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fd96493f227a13a744bbc6d4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cianalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46141,
+            "sha256": "2098c46d27fa7f6148100a15a91962fe81e218d52e069e705bedc79fd99fe4bd"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39028,
+            "sha256": "3c31b52c7596f14f34a2e522db6232c576f92099eff6329e409b983a23a385e9"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20112,
+            "sha256": "c99e8c42499d917a7136db1c38e73ba319d42d8af1fb6e7c70c4583e05cc5b51"
+          },
+          {
+            "relative_path": "proof_builds/native-cianalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21035,
+            "sha256": "4790528704448df9a3ec9a745489e0927f93d9ff9e84f026b6c10d26b0ca3e2d"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46008,
+            "sha256": "c7ac5c74eaebbb511e4932a2a18fa0520de24e241983a2a82154319474703617"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9460,
+            "sha256": "bb295799e9a1e5a67042a183094c76856c3a1a808fd6a2a57cccd2c4c928e7b7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cianalysis/blueprint.json",
+          "project_blueprints/native-cianalysis/instrument_map.json",
+          "project_blueprints/native-cianalysis/README.md",
+          "proof_builds/native-cianalysis/proof_build.json",
+          "proof_demos/native-cianalysis/demo_cases.json",
+          "proof_demos/native-cianalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "75eea7af7d7eb57e389c364c"
+    },
+    {
+      "receipt_id": "native-cianalysis__receipt_0005",
+      "project_id": "native-cianalysis",
+      "project_title": "Counterintelligence Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counterintelligence Analysis Review And Governance Gate",
+      "component_case_id": "native-cianalysis__0005__counterintelligence-analysis-review-and-governance-gate",
+      "claim_to_demonstrate": "Status: native public port complete for upload and navigation; substantive source-project verification remains limited by the source lineage ceiling and the original project governance records. The page separates public presentation from project completion.",
+      "input_fixture": "quality rules, source checks, claim ceilings, reviewer steps, and failure states",
+      "operation_under_test": "Status: native public port complete for upload and navigation; substantive source-project verification remains limited by the source lineage ceiling and the original project governance records. The page separates public presentation from project completion.",
+      "expected_output": "decision gate that makes the output inspectable before it is trusted",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f0a9b7ff3262d180291ae4ca",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cianalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46141,
+            "sha256": "2098c46d27fa7f6148100a15a91962fe81e218d52e069e705bedc79fd99fe4bd"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39028,
+            "sha256": "3c31b52c7596f14f34a2e522db6232c576f92099eff6329e409b983a23a385e9"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20112,
+            "sha256": "c99e8c42499d917a7136db1c38e73ba319d42d8af1fb6e7c70c4583e05cc5b51"
+          },
+          {
+            "relative_path": "proof_builds/native-cianalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21035,
+            "sha256": "4790528704448df9a3ec9a745489e0927f93d9ff9e84f026b6c10d26b0ca3e2d"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46008,
+            "sha256": "c7ac5c74eaebbb511e4932a2a18fa0520de24e241983a2a82154319474703617"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9460,
+            "sha256": "bb295799e9a1e5a67042a183094c76856c3a1a808fd6a2a57cccd2c4c928e7b7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cianalysis/blueprint.json",
+          "project_blueprints/native-cianalysis/instrument_map.json",
+          "project_blueprints/native-cianalysis/README.md",
+          "proof_builds/native-cianalysis/proof_build.json",
+          "proof_demos/native-cianalysis/demo_cases.json",
+          "proof_demos/native-cianalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3efafbc8ed4f399f7aea8518"
+    },
+    {
+      "receipt_id": "native-cianalysis__receipt_0006",
+      "project_id": "native-cianalysis",
+      "project_title": "Counterintelligence Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counterintelligence Analysis Export Or Integration Surface",
+      "component_case_id": "native-cianalysis__0006__counterintelligence-analysis-export-or-integration-surface",
+      "claim_to_demonstrate": "Visible public components: 48 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains text-focused and does not claim unverified runtime state.",
+      "input_fixture": "brief, paper, room, dataset, packet, rendered page, or external handoff",
+      "operation_under_test": "Visible public components: 48 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains text-focused and does not claim unverified runtime state.",
+      "expected_output": "usable output that another project, professor, employer, or collaborator can inspect",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "577c94f4228762f7478a15a0",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cianalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46141,
+            "sha256": "2098c46d27fa7f6148100a15a91962fe81e218d52e069e705bedc79fd99fe4bd"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39028,
+            "sha256": "3c31b52c7596f14f34a2e522db6232c576f92099eff6329e409b983a23a385e9"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20112,
+            "sha256": "c99e8c42499d917a7136db1c38e73ba319d42d8af1fb6e7c70c4583e05cc5b51"
+          },
+          {
+            "relative_path": "proof_builds/native-cianalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21035,
+            "sha256": "4790528704448df9a3ec9a745489e0927f93d9ff9e84f026b6c10d26b0ca3e2d"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46008,
+            "sha256": "c7ac5c74eaebbb511e4932a2a18fa0520de24e241983a2a82154319474703617"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9460,
+            "sha256": "bb295799e9a1e5a67042a183094c76856c3a1a808fd6a2a57cccd2c4c928e7b7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cianalysis/blueprint.json",
+          "project_blueprints/native-cianalysis/instrument_map.json",
+          "project_blueprints/native-cianalysis/README.md",
+          "proof_builds/native-cianalysis/proof_build.json",
+          "proof_demos/native-cianalysis/demo_cases.json",
+          "proof_demos/native-cianalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9e3f821739550781e102cda0"
+    },
+    {
+      "receipt_id": "native-cianalysis__receipt_0007",
+      "project_id": "native-cianalysis",
+      "project_title": "Counterintelligence Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counterintelligence Analysis Build Verification Queue",
+      "component_case_id": "native-cianalysis__0007__counterintelligence-analysis-build-verification-queue",
+      "claim_to_demonstrate": "Remaining gaps: not every regional page has the same mature source lineage foundation as the Russia Desk; thinner pages need page-specific bibliographies and clearer case-selection warrants. The kept Evidence Sections below preserve project substance for.",
+      "input_fixture": "unbuilt modules, missing walkthroughs, test cases, and validation evidence",
+      "operation_under_test": "Remaining gaps: not every regional page has the same mature source lineage foundation as the Russia Desk; thinner pages need page-specific bibliographies and clearer case-selection warrants. The kept Evidence Sections below preserve project substance for.",
+      "expected_output": "next proof needed before broader claims about the tool are safe",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e350b0e07ab7b9d385896d3e",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cianalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46141,
+            "sha256": "2098c46d27fa7f6148100a15a91962fe81e218d52e069e705bedc79fd99fe4bd"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39028,
+            "sha256": "3c31b52c7596f14f34a2e522db6232c576f92099eff6329e409b983a23a385e9"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20112,
+            "sha256": "c99e8c42499d917a7136db1c38e73ba319d42d8af1fb6e7c70c4583e05cc5b51"
+          },
+          {
+            "relative_path": "proof_builds/native-cianalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21035,
+            "sha256": "4790528704448df9a3ec9a745489e0927f93d9ff9e84f026b6c10d26b0ca3e2d"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46008,
+            "sha256": "c7ac5c74eaebbb511e4932a2a18fa0520de24e241983a2a82154319474703617"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9460,
+            "sha256": "bb295799e9a1e5a67042a183094c76856c3a1a808fd6a2a57cccd2c4c928e7b7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cianalysis/blueprint.json",
+          "project_blueprints/native-cianalysis/instrument_map.json",
+          "project_blueprints/native-cianalysis/README.md",
+          "proof_builds/native-cianalysis/proof_build.json",
+          "proof_demos/native-cianalysis/demo_cases.json",
+          "proof_demos/native-cianalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f5237bb9f59ca4fbd6604f2a"
+    },
+    {
+      "receipt_id": "native-cianalysis__receipt_0008",
+      "project_id": "native-cianalysis",
+      "project_title": "Counterintelligence Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counterintelligence Analysis / Failed to",
+      "component_case_id": "native-cianalysis__0008__counterintelligence-analysis-failed-to",
+      "claim_to_demonstrate": "uses `Failed to` as a named project component with a traceable role in the public mechanism. Source context: Failed to report foreign contact in 2019. The working mechanism is to move from source intake and domain framing to case structure, institutional.",
+      "input_fixture": "project source text and the named component `Failed to`",
+      "operation_under_test": "uses `Failed to` as a named project component with a traceable role in the public mechanism. Source context: Failed to report foreign contact in 2019. The working mechanism is to move from source intake and domain framing to case structure, institutional.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Failed to`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d420d4409c2f127c6e20de3f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cianalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46141,
+            "sha256": "2098c46d27fa7f6148100a15a91962fe81e218d52e069e705bedc79fd99fe4bd"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39028,
+            "sha256": "3c31b52c7596f14f34a2e522db6232c576f92099eff6329e409b983a23a385e9"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20112,
+            "sha256": "c99e8c42499d917a7136db1c38e73ba319d42d8af1fb6e7c70c4583e05cc5b51"
+          },
+          {
+            "relative_path": "proof_builds/native-cianalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21035,
+            "sha256": "4790528704448df9a3ec9a745489e0927f93d9ff9e84f026b6c10d26b0ca3e2d"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46008,
+            "sha256": "c7ac5c74eaebbb511e4932a2a18fa0520de24e241983a2a82154319474703617"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9460,
+            "sha256": "bb295799e9a1e5a67042a183094c76856c3a1a808fd6a2a57cccd2c4c928e7b7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cianalysis/blueprint.json",
+          "project_blueprints/native-cianalysis/instrument_map.json",
+          "project_blueprints/native-cianalysis/README.md",
+          "proof_builds/native-cianalysis/proof_build.json",
+          "proof_demos/native-cianalysis/demo_cases.json",
+          "proof_demos/native-cianalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "53af64c9f305599b7273af2a"
+    },
+    {
+      "receipt_id": "native-cianalysis__receipt_0009",
+      "project_id": "native-cianalysis",
+      "project_title": "Counterintelligence Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counterintelligence Analysis / Evidence Sections",
+      "component_case_id": "native-cianalysis__0009__counterintelligence-analysis-evidence-sections",
+      "claim_to_demonstrate": "uses `Evidence Sections` as a named project component with a traceable role in the public mechanism. Source context: 48 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "input_fixture": "project source text and the named component `Evidence Sections`",
+      "operation_under_test": "uses `Evidence Sections` as a named project component with a traceable role in the public mechanism. Source context: 48 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Evidence Sections`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "07c6c6f3978f001260a61ed2",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cianalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46141,
+            "sha256": "2098c46d27fa7f6148100a15a91962fe81e218d52e069e705bedc79fd99fe4bd"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39028,
+            "sha256": "3c31b52c7596f14f34a2e522db6232c576f92099eff6329e409b983a23a385e9"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20112,
+            "sha256": "c99e8c42499d917a7136db1c38e73ba319d42d8af1fb6e7c70c4583e05cc5b51"
+          },
+          {
+            "relative_path": "proof_builds/native-cianalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21035,
+            "sha256": "4790528704448df9a3ec9a745489e0927f93d9ff9e84f026b6c10d26b0ca3e2d"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46008,
+            "sha256": "c7ac5c74eaebbb511e4932a2a18fa0520de24e241983a2a82154319474703617"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9460,
+            "sha256": "bb295799e9a1e5a67042a183094c76856c3a1a808fd6a2a57cccd2c4c928e7b7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cianalysis/blueprint.json",
+          "project_blueprints/native-cianalysis/instrument_map.json",
+          "project_blueprints/native-cianalysis/README.md",
+          "proof_builds/native-cianalysis/proof_build.json",
+          "proof_demos/native-cianalysis/demo_cases.json",
+          "proof_demos/native-cianalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6d0ffb20ef2b421e8ec1a0d8"
+    },
+    {
+      "receipt_id": "native-cianalysis__receipt_0010",
+      "project_id": "native-cianalysis",
+      "project_title": "Counterintelligence Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counterintelligence Analysis / Review Notes",
+      "component_case_id": "native-cianalysis__0010__counterintelligence-analysis-review-notes",
+      "claim_to_demonstrate": "uses `Review Notes` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 48 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The.",
+      "input_fixture": "project source text and the named component `Review Notes`",
+      "operation_under_test": "uses `Review Notes` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 48 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `Review Notes`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "07c6c6f3978f001260a61ed2",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cianalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46141,
+            "sha256": "2098c46d27fa7f6148100a15a91962fe81e218d52e069e705bedc79fd99fe4bd"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39028,
+            "sha256": "3c31b52c7596f14f34a2e522db6232c576f92099eff6329e409b983a23a385e9"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20112,
+            "sha256": "c99e8c42499d917a7136db1c38e73ba319d42d8af1fb6e7c70c4583e05cc5b51"
+          },
+          {
+            "relative_path": "proof_builds/native-cianalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21035,
+            "sha256": "4790528704448df9a3ec9a745489e0927f93d9ff9e84f026b6c10d26b0ca3e2d"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46008,
+            "sha256": "c7ac5c74eaebbb511e4932a2a18fa0520de24e241983a2a82154319474703617"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9460,
+            "sha256": "bb295799e9a1e5a67042a183094c76856c3a1a808fd6a2a57cccd2c4c928e7b7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cianalysis/blueprint.json",
+          "project_blueprints/native-cianalysis/instrument_map.json",
+          "project_blueprints/native-cianalysis/README.md",
+          "proof_builds/native-cianalysis/proof_build.json",
+          "proof_demos/native-cianalysis/demo_cases.json",
+          "proof_demos/native-cianalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5d270e9d1857adc2467ec7f5"
+    },
+    {
+      "receipt_id": "native-cianalysis__receipt_0011",
+      "project_id": "native-cianalysis",
+      "project_title": "Counterintelligence Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counterintelligence Analysis / Russia Desk",
+      "component_case_id": "native-cianalysis__0011__counterintelligence-analysis-russia-desk",
+      "claim_to_demonstrate": "treats `Russia Desk` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: not every regional page has the same mature source lineage foundation as the Russia Desk; thinner pages need.",
+      "input_fixture": "project source text and the named component `Russia Desk`",
+      "operation_under_test": "treats `Russia Desk` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: not every regional page has the same mature source lineage foundation as the Russia Desk; thinner pages need.",
+      "expected_output": "a room, workbench, or interface function tied to `Russia Desk`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "7af0e9755c491dc861187c88",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cianalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46141,
+            "sha256": "2098c46d27fa7f6148100a15a91962fe81e218d52e069e705bedc79fd99fe4bd"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39028,
+            "sha256": "3c31b52c7596f14f34a2e522db6232c576f92099eff6329e409b983a23a385e9"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20112,
+            "sha256": "c99e8c42499d917a7136db1c38e73ba319d42d8af1fb6e7c70c4583e05cc5b51"
+          },
+          {
+            "relative_path": "proof_builds/native-cianalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21035,
+            "sha256": "4790528704448df9a3ec9a745489e0927f93d9ff9e84f026b6c10d26b0ca3e2d"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46008,
+            "sha256": "c7ac5c74eaebbb511e4932a2a18fa0520de24e241983a2a82154319474703617"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9460,
+            "sha256": "bb295799e9a1e5a67042a183094c76856c3a1a808fd6a2a57cccd2c4c928e7b7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cianalysis/blueprint.json",
+          "project_blueprints/native-cianalysis/instrument_map.json",
+          "project_blueprints/native-cianalysis/README.md",
+          "proof_builds/native-cianalysis/proof_build.json",
+          "proof_demos/native-cianalysis/demo_cases.json",
+          "proof_demos/native-cianalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "896dd33aaec485716c0ca1b2"
+    },
+    {
+      "receipt_id": "native-cianalysis__receipt_0012",
+      "project_id": "native-cianalysis",
+      "project_title": "Counterintelligence Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counterintelligence Analysis / Native Navigation",
+      "component_case_id": "native-cianalysis__0012__counterintelligence-analysis-native-navigation",
+      "claim_to_demonstrate": "uses `Native Navigation` as a named project component with a traceable role in the public mechanism. Source context: 48 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "input_fixture": "project source text and the named component `Native Navigation`",
+      "operation_under_test": "uses `Native Navigation` as a named project component with a traceable role in the public mechanism. Source context: 48 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Native Navigation`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "07c6c6f3978f001260a61ed2",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cianalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46141,
+            "sha256": "2098c46d27fa7f6148100a15a91962fe81e218d52e069e705bedc79fd99fe4bd"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39028,
+            "sha256": "3c31b52c7596f14f34a2e522db6232c576f92099eff6329e409b983a23a385e9"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20112,
+            "sha256": "c99e8c42499d917a7136db1c38e73ba319d42d8af1fb6e7c70c4583e05cc5b51"
+          },
+          {
+            "relative_path": "proof_builds/native-cianalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21035,
+            "sha256": "4790528704448df9a3ec9a745489e0927f93d9ff9e84f026b6c10d26b0ca3e2d"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46008,
+            "sha256": "c7ac5c74eaebbb511e4932a2a18fa0520de24e241983a2a82154319474703617"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9460,
+            "sha256": "bb295799e9a1e5a67042a183094c76856c3a1a808fd6a2a57cccd2c4c928e7b7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cianalysis/blueprint.json",
+          "project_blueprints/native-cianalysis/instrument_map.json",
+          "project_blueprints/native-cianalysis/README.md",
+          "proof_builds/native-cianalysis/proof_build.json",
+          "proof_demos/native-cianalysis/demo_cases.json",
+          "proof_demos/native-cianalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e51a3da78db20460fd62b9d2"
+    },
+    {
+      "receipt_id": "native-cianalysis__receipt_0013",
+      "project_id": "native-cianalysis",
+      "project_title": "Counterintelligence Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counterintelligence Analysis / APA lineage",
+      "component_case_id": "native-cianalysis__0013__counterintelligence-analysis-apa-lineage",
+      "claim_to_demonstrate": "uses `APA lineage` as a named project component with a traceable role in the public mechanism. Source context: 48 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains.",
+      "input_fixture": "project source text and the named component `APA lineage`",
+      "operation_under_test": "uses `APA lineage` as a named project component with a traceable role in the public mechanism. Source context: 48 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `APA lineage`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "07c6c6f3978f001260a61ed2",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cianalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46141,
+            "sha256": "2098c46d27fa7f6148100a15a91962fe81e218d52e069e705bedc79fd99fe4bd"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39028,
+            "sha256": "3c31b52c7596f14f34a2e522db6232c576f92099eff6329e409b983a23a385e9"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20112,
+            "sha256": "c99e8c42499d917a7136db1c38e73ba319d42d8af1fb6e7c70c4583e05cc5b51"
+          },
+          {
+            "relative_path": "proof_builds/native-cianalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21035,
+            "sha256": "4790528704448df9a3ec9a745489e0927f93d9ff9e84f026b6c10d26b0ca3e2d"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46008,
+            "sha256": "c7ac5c74eaebbb511e4932a2a18fa0520de24e241983a2a82154319474703617"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9460,
+            "sha256": "bb295799e9a1e5a67042a183094c76856c3a1a808fd6a2a57cccd2c4c928e7b7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cianalysis/blueprint.json",
+          "project_blueprints/native-cianalysis/instrument_map.json",
+          "project_blueprints/native-cianalysis/README.md",
+          "proof_builds/native-cianalysis/proof_build.json",
+          "proof_demos/native-cianalysis/demo_cases.json",
+          "proof_demos/native-cianalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9ad272dd6107dc157f573562"
+    },
+    {
+      "receipt_id": "native-cianalysis__receipt_0014",
+      "project_id": "native-cianalysis",
+      "project_title": "Counterintelligence Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counterintelligence Analysis / source lineage claim limit. The public package remains text",
+      "component_case_id": "native-cianalysis__0014__counterintelligence-analysis-source-lineage-claim-limit-the-public-package-remains-text",
+      "claim_to_demonstrate": "uses `source lineage claim limit. The public package remains text` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 48 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA.",
+      "input_fixture": "project source text and the named component `source lineage claim limit. The public package remains text`",
+      "operation_under_test": "uses `source lineage claim limit. The public package remains text` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 48 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `source lineage claim limit. The public package remains text`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "07c6c6f3978f001260a61ed2",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cianalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46141,
+            "sha256": "2098c46d27fa7f6148100a15a91962fe81e218d52e069e705bedc79fd99fe4bd"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39028,
+            "sha256": "3c31b52c7596f14f34a2e522db6232c576f92099eff6329e409b983a23a385e9"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20112,
+            "sha256": "c99e8c42499d917a7136db1c38e73ba319d42d8af1fb6e7c70c4583e05cc5b51"
+          },
+          {
+            "relative_path": "proof_builds/native-cianalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21035,
+            "sha256": "4790528704448df9a3ec9a745489e0927f93d9ff9e84f026b6c10d26b0ca3e2d"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46008,
+            "sha256": "c7ac5c74eaebbb511e4932a2a18fa0520de24e241983a2a82154319474703617"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9460,
+            "sha256": "bb295799e9a1e5a67042a183094c76856c3a1a808fd6a2a57cccd2c4c928e7b7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cianalysis/blueprint.json",
+          "project_blueprints/native-cianalysis/instrument_map.json",
+          "project_blueprints/native-cianalysis/README.md",
+          "proof_builds/native-cianalysis/proof_build.json",
+          "proof_demos/native-cianalysis/demo_cases.json",
+          "proof_demos/native-cianalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "bf5c06ecb214e772627c2a5e"
+    },
+    {
+      "receipt_id": "native-cianalysis__receipt_0015",
+      "project_id": "native-cianalysis",
+      "project_title": "Counterintelligence Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counterintelligence Analysis / focused and does not claim unverified runtime state. Plan: identify the region",
+      "component_case_id": "native-cianalysis__0015__counterintelligence-analysis-focused-and-does-not-claim-unverified-runtime-state-plan-iden",
+      "claim_to_demonstrate": "uses `focused and does not claim unverified runtime state. Plan: identify the region` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: The public package remains text-focused and does not claim.",
+      "input_fixture": "project source text and the named component `focused and does not claim unverified runtime state. Plan: identify the region`",
+      "operation_under_test": "uses `focused and does not claim unverified runtime state. Plan: identify the region` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: The public package remains text-focused and does not claim.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `focused and does not claim unverified runtime state. Plan: identify the region`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "6025132c7b3c25d8b485f235",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cianalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46141,
+            "sha256": "2098c46d27fa7f6148100a15a91962fe81e218d52e069e705bedc79fd99fe4bd"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39028,
+            "sha256": "3c31b52c7596f14f34a2e522db6232c576f92099eff6329e409b983a23a385e9"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20112,
+            "sha256": "c99e8c42499d917a7136db1c38e73ba319d42d8af1fb6e7c70c4583e05cc5b51"
+          },
+          {
+            "relative_path": "proof_builds/native-cianalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21035,
+            "sha256": "4790528704448df9a3ec9a745489e0927f93d9ff9e84f026b6c10d26b0ca3e2d"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46008,
+            "sha256": "c7ac5c74eaebbb511e4932a2a18fa0520de24e241983a2a82154319474703617"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9460,
+            "sha256": "bb295799e9a1e5a67042a183094c76856c3a1a808fd6a2a57cccd2c4c928e7b7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cianalysis/blueprint.json",
+          "project_blueprints/native-cianalysis/instrument_map.json",
+          "project_blueprints/native-cianalysis/README.md",
+          "proof_builds/native-cianalysis/proof_build.json",
+          "proof_demos/native-cianalysis/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3bfcc13a34442f211201f361"
+    },
+    {
+      "receipt_id": "native-cianalysis__receipt_0016",
+      "project_id": "native-cianalysis",
+      "project_title": "Counterintelligence Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counterintelligence Analysis / Specific Source Spine",
+      "component_case_id": "native-cianalysis__0016__counterintelligence-analysis-specific-source-spine",
+      "claim_to_demonstrate": "uses `Specific Source Spine` as a named project component with a traceable role in the public mechanism. Source context: identify the region-specific source spine, state what the page can and cannot claim, preserve source-register lineage, and close any.",
+      "input_fixture": "project source text and the named component `Specific Source Spine`",
+      "operation_under_test": "uses `Specific Source Spine` as a named project component with a traceable role in the public mechanism. Source context: identify the region-specific source spine, state what the page can and cannot claim, preserve source-register lineage, and close any.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Specific Source Spine`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c1c3626afe6dca8ad6c2e3c1",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cianalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46141,
+            "sha256": "2098c46d27fa7f6148100a15a91962fe81e218d52e069e705bedc79fd99fe4bd"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39028,
+            "sha256": "3c31b52c7596f14f34a2e522db6232c576f92099eff6329e409b983a23a385e9"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20112,
+            "sha256": "c99e8c42499d917a7136db1c38e73ba319d42d8af1fb6e7c70c4583e05cc5b51"
+          },
+          {
+            "relative_path": "proof_builds/native-cianalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21035,
+            "sha256": "4790528704448df9a3ec9a745489e0927f93d9ff9e84f026b6c10d26b0ca3e2d"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46008,
+            "sha256": "c7ac5c74eaebbb511e4932a2a18fa0520de24e241983a2a82154319474703617"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9460,
+            "sha256": "bb295799e9a1e5a67042a183094c76856c3a1a808fd6a2a57cccd2c4c928e7b7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cianalysis/blueprint.json",
+          "project_blueprints/native-cianalysis/instrument_map.json",
+          "project_blueprints/native-cianalysis/README.md",
+          "proof_builds/native-cianalysis/proof_build.json",
+          "proof_demos/native-cianalysis/demo_cases.json",
+          "proof_demos/native-cianalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "827438367ff70928a6869785"
+    },
+    {
+      "receipt_id": "native-cianalysis__receipt_0017",
+      "project_id": "native-cianalysis",
+      "project_title": "Counterintelligence Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Counterintelligence Analysis / State What The Page Can And Cannot Claim",
+      "component_case_id": "native-cianalysis__0017__counterintelligence-analysis-state-what-the-page-can-and-cannot-claim",
+      "claim_to_demonstrate": "uses `State What The Page Can And Cannot Claim` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: identify the region-specific source spine, state what the page can and cannot claim, preserve.",
+      "input_fixture": "project source text and the named component `State What The Page Can And Cannot Claim`",
+      "operation_under_test": "uses `State What The Page Can And Cannot Claim` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: identify the region-specific source spine, state what the page can and cannot claim, preserve.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `State What The Page Can And Cannot Claim`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c1c3626afe6dca8ad6c2e3c1",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cianalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46141,
+            "sha256": "2098c46d27fa7f6148100a15a91962fe81e218d52e069e705bedc79fd99fe4bd"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39028,
+            "sha256": "3c31b52c7596f14f34a2e522db6232c576f92099eff6329e409b983a23a385e9"
+          },
+          {
+            "relative_path": "project_blueprints/native-cianalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20112,
+            "sha256": "c99e8c42499d917a7136db1c38e73ba319d42d8af1fb6e7c70c4583e05cc5b51"
+          },
+          {
+            "relative_path": "proof_builds/native-cianalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21035,
+            "sha256": "4790528704448df9a3ec9a745489e0927f93d9ff9e84f026b6c10d26b0ca3e2d"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46008,
+            "sha256": "c7ac5c74eaebbb511e4932a2a18fa0520de24e241983a2a82154319474703617"
+          },
+          {
+            "relative_path": "proof_demos/native-cianalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9460,
+            "sha256": "bb295799e9a1e5a67042a183094c76856c3a1a808fd6a2a57cccd2c4c928e7b7"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cianalysis/blueprint.json",
+          "project_blueprints/native-cianalysis/instrument_map.json",
+          "project_blueprints/native-cianalysis/README.md",
+          "proof_builds/native-cianalysis/proof_build.json",
+          "proof_demos/native-cianalysis/demo_cases.json",
+          "proof_demos/native-cianalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b585c5be4605ae1eef2ed0f0"
+    }
+  ]
+}

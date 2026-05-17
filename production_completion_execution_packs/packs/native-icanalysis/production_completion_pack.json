@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-05-17T02:29:24+00:00",
+  "project": {
+    "project_id": "native-icanalysis",
+    "product_name": "Intelligence Community Analysis",
+    "project_class": "software_or_instrument",
+    "final_object_type": "analytic method or human-AI evaluation module",
+    "owner_lane": "active_non_overlap",
+    "closure_lane": "live_case_calibration",
+    "production_state": "production_complete",
+    "production_complete": "yes",
+    "public_proof_surface_operational": "yes",
+    "harness_executes": "yes",
+    "regression_case_count": "3",
+    "residual_required_slots": "4",
+    "residual_present_slots": "4",
+    "residual_missing_slots": "0",
+    "residual_missing_files": "",
+    "blocking_gate_count": "0",
+    "blocking_gates": "",
+    "blocking_gate_names": "",
+    "exclusion_reason": "",
+    "next_production_action": "Maintain regression, reviewer, and deployment evidence; no blocking action recorded."
+  },
+  "blocking_gates": [],
+  "evidence_file_plan": [
+    {
+      "file": "live_case_input.json",
+      "purpose": "Captures the non-sample case used for calibration."
+    },
+    {
+      "file": "live_case_output.json",
+      "purpose": "Captures observed output from the project instrument."
+    },
+    {
+      "file": "calibration_review_note.md",
+      "purpose": "Assesses expected vs. observed behavior."
+    },
+    {
+      "file": "reviewer_validation_note.md",
+      "purpose": "Records clearly labeled review or technical audit before promotion."
+    }
+  ],
+  "execution_steps": [
+    "Run the project against at least one live or non-sample case.",
+    "Record expected behavior, observed behavior, and any calibration drift.",
+    "Add a reviewer note assessing whether the result is reliable enough for public claims."
+  ]
+}

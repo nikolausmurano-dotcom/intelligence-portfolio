@@ -1,0 +1,782 @@
+{
+  "project": {
+    "project_id": "native-poison-rag",
+    "title": "Retrieval Integrity and Poison-RAG Defense"
+  },
+  "receipts": [
+    {
+      "receipt_id": "native-poison-rag__receipt_0001",
+      "project_id": "native-poison-rag",
+      "project_title": "Retrieval Integrity and Poison-RAG Defense",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Clean / Poisoned Evidence Admission",
+      "component_case_id": "native-poison-rag__0001__clean-poisoned-evidence-admission",
+      "claim_to_demonstrate": "tests whether contaminated material enters the corpus before indexing and records the attack surface at the corpus boundary",
+      "input_fixture": "clean documents, poisoned variants, source identity, poison specification, and admission rule",
+      "operation_under_test": "tests whether contaminated material enters the corpus before indexing and records the attack surface at the corpus boundary",
+      "expected_output": "admission decision and attack-surface record as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "181b64fd765c48792dfe7a4b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-poison-rag/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23416,
+            "sha256": "8f2699963cb0ed4442b1b6d118cad8f319a96ad19bd4b4d3ce0cb0c826a983c8"
+          },
+          {
+            "relative_path": "project_blueprints/native-poison-rag/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 15320,
+            "sha256": "3440c27baa8f6b89ac5848b7d419857c9f32a8ad9231b6c17ddea2a9ffde0ea9"
+          },
+          {
+            "relative_path": "project_blueprints/native-poison-rag/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11475,
+            "sha256": "bdab8d746c093a62f02f9abe7b767ba3ba2632bea033ae2b86762b6c1a205568"
+          },
+          {
+            "relative_path": "proof_builds/native-poison-rag/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "b4d565fbb0a5bdef7b67ac1787fc630b49a2c2d849a7c09c942a9539c13f7a98"
+          },
+          {
+            "relative_path": "proof_demos/native-poison-rag/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22426,
+            "sha256": "7a486459c92b77a5b16d05ae2fca010e0e8eb2d65aa085d9ef9a9a63af4277af"
+          },
+          {
+            "relative_path": "proof_demos/native-poison-rag/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6149,
+            "sha256": "650842640a7e3e2a49d3447077ab4f5bcb989087cd41dd343e10a33d3579dd22"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-poison-rag/blueprint.json",
+          "project_blueprints/native-poison-rag/instrument_map.json",
+          "project_blueprints/native-poison-rag/README.md",
+          "proof_builds/native-poison-rag/proof_build.json",
+          "proof_demos/native-poison-rag/demo_cases.json",
+          "proof_demos/native-poison-rag/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "74abce69b22b23b84e45c0bb"
+    },
+    {
+      "receipt_id": "native-poison-rag__receipt_0002",
+      "project_id": "native-poison-rag",
+      "project_title": "Retrieval Integrity and Poison-RAG Defense",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Slow-Poison Track",
+      "component_case_id": "native-poison-rag__0002__slow-poison-track",
+      "claim_to_demonstrate": "models the long-game attacker who degrades retrieval trust without triggering obvious anomaly thresholds",
+      "input_fixture": "low-rate adversarial contamination distributed across apparently ordinary source material",
+      "operation_under_test": "models the long-game attacker who degrades retrieval trust without triggering obvious anomaly thresholds",
+      "expected_output": "slow-contamination exposure profile as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "83f2e5b074af316745e5db4f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-poison-rag/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23416,
+            "sha256": "8f2699963cb0ed4442b1b6d118cad8f319a96ad19bd4b4d3ce0cb0c826a983c8"
+          },
+          {
+            "relative_path": "project_blueprints/native-poison-rag/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 15320,
+            "sha256": "3440c27baa8f6b89ac5848b7d419857c9f32a8ad9231b6c17ddea2a9ffde0ea9"
+          },
+          {
+            "relative_path": "project_blueprints/native-poison-rag/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11475,
+            "sha256": "bdab8d746c093a62f02f9abe7b767ba3ba2632bea033ae2b86762b6c1a205568"
+          },
+          {
+            "relative_path": "proof_builds/native-poison-rag/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "b4d565fbb0a5bdef7b67ac1787fc630b49a2c2d849a7c09c942a9539c13f7a98"
+          },
+          {
+            "relative_path": "proof_demos/native-poison-rag/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22426,
+            "sha256": "7a486459c92b77a5b16d05ae2fca010e0e8eb2d65aa085d9ef9a9a63af4277af"
+          },
+          {
+            "relative_path": "proof_demos/native-poison-rag/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6149,
+            "sha256": "650842640a7e3e2a49d3447077ab4f5bcb989087cd41dd343e10a33d3579dd22"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-poison-rag/blueprint.json",
+          "project_blueprints/native-poison-rag/instrument_map.json",
+          "project_blueprints/native-poison-rag/README.md",
+          "proof_builds/native-poison-rag/proof_build.json",
+          "proof_demos/native-poison-rag/demo_cases.json",
+          "proof_demos/native-poison-rag/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "281eb17539a19c66acc0be35"
+    },
+    {
+      "receipt_id": "native-poison-rag__receipt_0003",
+      "project_id": "native-poison-rag",
+      "project_title": "Retrieval Integrity and Poison-RAG Defense",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Fast-Injection Track",
+      "component_case_id": "native-poison-rag__0003__fast-injection-track",
+      "claim_to_demonstrate": "models the short-game attacker who tries to force immediate retrieval or generation uptake",
+      "input_fixture": "high-salience injected poison, prompt-adjacent poison, or sudden source surge",
+      "operation_under_test": "models the short-game attacker who tries to force immediate retrieval or generation uptake",
+      "expected_output": "fast-injection uptake and detection record as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "cd7a6fa14ef18cf037a2ac97",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-poison-rag/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23416,
+            "sha256": "8f2699963cb0ed4442b1b6d118cad8f319a96ad19bd4b4d3ce0cb0c826a983c8"
+          },
+          {
+            "relative_path": "project_blueprints/native-poison-rag/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 15320,
+            "sha256": "3440c27baa8f6b89ac5848b7d419857c9f32a8ad9231b6c17ddea2a9ffde0ea9"
+          },
+          {
+            "relative_path": "project_blueprints/native-poison-rag/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11475,
+            "sha256": "bdab8d746c093a62f02f9abe7b767ba3ba2632bea033ae2b86762b6c1a205568"
+          },
+          {
+            "relative_path": "proof_builds/native-poison-rag/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "b4d565fbb0a5bdef7b67ac1787fc630b49a2c2d849a7c09c942a9539c13f7a98"
+          },
+          {
+            "relative_path": "proof_demos/native-poison-rag/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22426,
+            "sha256": "7a486459c92b77a5b16d05ae2fca010e0e8eb2d65aa085d9ef9a9a63af4277af"
+          },
+          {
+            "relative_path": "proof_demos/native-poison-rag/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6149,
+            "sha256": "650842640a7e3e2a49d3447077ab4f5bcb989087cd41dd343e10a33d3579dd22"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-poison-rag/blueprint.json",
+          "project_blueprints/native-poison-rag/instrument_map.json",
+          "project_blueprints/native-poison-rag/README.md",
+          "proof_builds/native-poison-rag/proof_build.json",
+          "proof_demos/native-poison-rag/demo_cases.json",
+          "proof_demos/native-poison-rag/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "04cf08a1fc77e252e9688b32"
+    },
+    {
+      "receipt_id": "native-poison-rag__receipt_0004",
+      "project_id": "native-poison-rag",
+      "project_title": "Retrieval Integrity and Poison-RAG Defense",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Authority-Wrapper And Omission Attack Track",
+      "component_case_id": "native-poison-rag__0004__authority-wrapper-and-omission-attack-track",
+      "claim_to_demonstrate": "tests whether the system mistakes source costume for authority or misses the significance of absent evidence",
+      "input_fixture": "poison wrapped in credible authority cues plus missing or displaced contrary evidence",
+      "operation_under_test": "tests whether the system mistakes source costume for authority or misses the significance of absent evidence",
+      "expected_output": "authority/omission vulnerability record as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "13449486624e6a2cfebf5116",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-poison-rag/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23416,
+            "sha256": "8f2699963cb0ed4442b1b6d118cad8f319a96ad19bd4b4d3ce0cb0c826a983c8"
+          },
+          {
+            "relative_path": "project_blueprints/native-poison-rag/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 15320,
+            "sha256": "3440c27baa8f6b89ac5848b7d419857c9f32a8ad9231b6c17ddea2a9ffde0ea9"
+          },
+          {
+            "relative_path": "project_blueprints/native-poison-rag/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11475,
+            "sha256": "bdab8d746c093a62f02f9abe7b767ba3ba2632bea033ae2b86762b6c1a205568"
+          },
+          {
+            "relative_path": "proof_builds/native-poison-rag/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "b4d565fbb0a5bdef7b67ac1787fc630b49a2c2d849a7c09c942a9539c13f7a98"
+          },
+          {
+            "relative_path": "proof_demos/native-poison-rag/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22426,
+            "sha256": "7a486459c92b77a5b16d05ae2fca010e0e8eb2d65aa085d9ef9a9a63af4277af"
+          },
+          {
+            "relative_path": "proof_demos/native-poison-rag/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6149,
+            "sha256": "650842640a7e3e2a49d3447077ab4f5bcb989087cd41dd343e10a33d3579dd22"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-poison-rag/blueprint.json",
+          "project_blueprints/native-poison-rag/instrument_map.json",
+          "project_blueprints/native-poison-rag/README.md",
+          "proof_builds/native-poison-rag/proof_build.json",
+          "proof_demos/native-poison-rag/demo_cases.json",
+          "proof_demos/native-poison-rag/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c637e6f425587b41daf23ee0"
+    },
+    {
+      "receipt_id": "native-poison-rag__receipt_0005",
+      "project_id": "native-poison-rag",
+      "project_title": "Retrieval Integrity and Poison-RAG Defense",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Index Perturbation And Retrieval Trace",
+      "component_case_id": "native-poison-rag__0005__index-perturbation-and-retrieval-trace",
+      "claim_to_demonstrate": "tracks whether poisoned material is surfaced, ranked, fused, or suppressed at each retrieval stage",
+      "input_fixture": "embedding index, sparse index, poisoned chunks, clean chunks, reranking, and context-window assembly",
+      "operation_under_test": "tracks whether poisoned material is surfaced, ranked, fused, or suppressed at each retrieval stage",
+      "expected_output": "retrieval trace and contamination exposure map",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "74084a3932894a2b53d3082d",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-poison-rag/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23416,
+            "sha256": "8f2699963cb0ed4442b1b6d118cad8f319a96ad19bd4b4d3ce0cb0c826a983c8"
+          },
+          {
+            "relative_path": "project_blueprints/native-poison-rag/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 15320,
+            "sha256": "3440c27baa8f6b89ac5848b7d419857c9f32a8ad9231b6c17ddea2a9ffde0ea9"
+          },
+          {
+            "relative_path": "project_blueprints/native-poison-rag/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11475,
+            "sha256": "bdab8d746c093a62f02f9abe7b767ba3ba2632bea033ae2b86762b6c1a205568"
+          },
+          {
+            "relative_path": "proof_builds/native-poison-rag/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "b4d565fbb0a5bdef7b67ac1787fc630b49a2c2d849a7c09c942a9539c13f7a98"
+          },
+          {
+            "relative_path": "proof_demos/native-poison-rag/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22426,
+            "sha256": "7a486459c92b77a5b16d05ae2fca010e0e8eb2d65aa085d9ef9a9a63af4277af"
+          },
+          {
+            "relative_path": "proof_demos/native-poison-rag/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6149,
+            "sha256": "650842640a7e3e2a49d3447077ab4f5bcb989087cd41dd343e10a33d3579dd22"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-poison-rag/blueprint.json",
+          "project_blueprints/native-poison-rag/instrument_map.json",
+          "project_blueprints/native-poison-rag/README.md",
+          "proof_builds/native-poison-rag/proof_build.json",
+          "proof_demos/native-poison-rag/demo_cases.json",
+          "proof_demos/native-poison-rag/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2670f2f28fdbc6bb576943cf"
+    },
+    {
+      "receipt_id": "native-poison-rag__receipt_0006",
+      "project_id": "native-poison-rag",
+      "project_title": "Retrieval Integrity and Poison-RAG Defense",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Generation Uptake And Deformation Review",
+      "component_case_id": "native-poison-rag__0006__generation-uptake-and-deformation-review",
+      "claim_to_demonstrate": "measures whether the answer absorbs, paraphrases, amplifies, hides, or resists the poison",
+      "input_fixture": "retrieved context, model answer, source citations, omitted contrary evidence, and analyst review",
+      "operation_under_test": "measures whether the answer absorbs, paraphrases, amplifies, hides, or resists the poison",
+      "expected_output": "uptake, deformation, omission, and review-burden score",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "840341227c0d7d0c1aa1175b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-poison-rag/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23416,
+            "sha256": "8f2699963cb0ed4442b1b6d118cad8f319a96ad19bd4b4d3ce0cb0c826a983c8"
+          },
+          {
+            "relative_path": "project_blueprints/native-poison-rag/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 15320,
+            "sha256": "3440c27baa8f6b89ac5848b7d419857c9f32a8ad9231b6c17ddea2a9ffde0ea9"
+          },
+          {
+            "relative_path": "project_blueprints/native-poison-rag/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11475,
+            "sha256": "bdab8d746c093a62f02f9abe7b767ba3ba2632bea033ae2b86762b6c1a205568"
+          },
+          {
+            "relative_path": "proof_builds/native-poison-rag/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "b4d565fbb0a5bdef7b67ac1787fc630b49a2c2d849a7c09c942a9539c13f7a98"
+          },
+          {
+            "relative_path": "proof_demos/native-poison-rag/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22426,
+            "sha256": "7a486459c92b77a5b16d05ae2fca010e0e8eb2d65aa085d9ef9a9a63af4277af"
+          },
+          {
+            "relative_path": "proof_demos/native-poison-rag/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6149,
+            "sha256": "650842640a7e3e2a49d3447077ab4f5bcb989087cd41dd343e10a33d3579dd22"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-poison-rag/blueprint.json",
+          "project_blueprints/native-poison-rag/instrument_map.json",
+          "project_blueprints/native-poison-rag/README.md",
+          "proof_builds/native-poison-rag/proof_build.json",
+          "proof_demos/native-poison-rag/demo_cases.json",
+          "proof_demos/native-poison-rag/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c292b766f45d0a3aaa5545ee"
+    },
+    {
+      "receipt_id": "native-poison-rag__receipt_0007",
+      "project_id": "native-poison-rag",
+      "project_title": "Retrieval Integrity and Poison-RAG Defense",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Human / LLM Validation Gate",
+      "component_case_id": "native-poison-rag__0007__human-llm-validation-gate",
+      "claim_to_demonstrate": "separates what the model accepted from what a reviewer caught, missed, blocked, or escalated",
+      "input_fixture": "model output, retrieved evidence, human analyst judgment, and adversarial condition label",
+      "operation_under_test": "separates what the model accepted from what a reviewer caught, missed, blocked, or escalated",
+      "expected_output": "validation decision and reviewer-burden record",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "976b19d1104f75bf68dd9ce2",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-poison-rag/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23416,
+            "sha256": "8f2699963cb0ed4442b1b6d118cad8f319a96ad19bd4b4d3ce0cb0c826a983c8"
+          },
+          {
+            "relative_path": "project_blueprints/native-poison-rag/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 15320,
+            "sha256": "3440c27baa8f6b89ac5848b7d419857c9f32a8ad9231b6c17ddea2a9ffde0ea9"
+          },
+          {
+            "relative_path": "project_blueprints/native-poison-rag/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11475,
+            "sha256": "bdab8d746c093a62f02f9abe7b767ba3ba2632bea033ae2b86762b6c1a205568"
+          },
+          {
+            "relative_path": "proof_builds/native-poison-rag/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "b4d565fbb0a5bdef7b67ac1787fc630b49a2c2d849a7c09c942a9539c13f7a98"
+          },
+          {
+            "relative_path": "proof_demos/native-poison-rag/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22426,
+            "sha256": "7a486459c92b77a5b16d05ae2fca010e0e8eb2d65aa085d9ef9a9a63af4277af"
+          },
+          {
+            "relative_path": "proof_demos/native-poison-rag/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6149,
+            "sha256": "650842640a7e3e2a49d3447077ab4f5bcb989087cd41dd343e10a33d3579dd22"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-poison-rag/blueprint.json",
+          "project_blueprints/native-poison-rag/instrument_map.json",
+          "project_blueprints/native-poison-rag/README.md",
+          "proof_builds/native-poison-rag/proof_build.json",
+          "proof_demos/native-poison-rag/demo_cases.json",
+          "proof_demos/native-poison-rag/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "de778d57d373d593093225c4"
+    },
+    {
+      "receipt_id": "native-poison-rag__receipt_0008",
+      "project_id": "native-poison-rag",
+      "project_title": "Retrieval Integrity and Poison-RAG Defense",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Mixed-Salvo Air-Defense Stress",
+      "component_case_id": "native-poison-rag__0008__mixed-salvo-air-defense-stress",
+      "claim_to_demonstrate": "uses layered air-defense logic to test whether cheap attacks can waste expensive review and detection resources while precision poison slips through",
+      "input_fixture": "slow poison, fast injection, decoys, saturation material, precision poison, and detector budget",
+      "operation_under_test": "uses layered air-defense logic to test whether cheap attacks can waste expensive review and detection resources while precision poison slips through",
+      "expected_output": "detector/reviewer burden result and resource-allocation warning",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a77fb79717a5c8f550e6a62a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-poison-rag/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23416,
+            "sha256": "8f2699963cb0ed4442b1b6d118cad8f319a96ad19bd4b4d3ce0cb0c826a983c8"
+          },
+          {
+            "relative_path": "project_blueprints/native-poison-rag/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 15320,
+            "sha256": "3440c27baa8f6b89ac5848b7d419857c9f32a8ad9231b6c17ddea2a9ffde0ea9"
+          },
+          {
+            "relative_path": "project_blueprints/native-poison-rag/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11475,
+            "sha256": "bdab8d746c093a62f02f9abe7b767ba3ba2632bea033ae2b86762b6c1a205568"
+          },
+          {
+            "relative_path": "proof_builds/native-poison-rag/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "b4d565fbb0a5bdef7b67ac1787fc630b49a2c2d849a7c09c942a9539c13f7a98"
+          },
+          {
+            "relative_path": "proof_demos/native-poison-rag/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22426,
+            "sha256": "7a486459c92b77a5b16d05ae2fca010e0e8eb2d65aa085d9ef9a9a63af4277af"
+          },
+          {
+            "relative_path": "proof_demos/native-poison-rag/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6149,
+            "sha256": "650842640a7e3e2a49d3447077ab4f5bcb989087cd41dd343e10a33d3579dd22"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-poison-rag/blueprint.json",
+          "project_blueprints/native-poison-rag/instrument_map.json",
+          "project_blueprints/native-poison-rag/README.md",
+          "proof_builds/native-poison-rag/proof_build.json",
+          "proof_demos/native-poison-rag/demo_cases.json",
+          "proof_demos/native-poison-rag/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8c44abb61d936efb4d1f727a"
+    },
+    {
+      "receipt_id": "native-poison-rag__receipt_0009",
+      "project_id": "native-poison-rag",
+      "project_title": "Retrieval Integrity and Poison-RAG Defense",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Replay And Benchmark Harness",
+      "component_case_id": "native-poison-rag__0009__replay-and-benchmark-harness",
+      "claim_to_demonstrate": "keeps the adversarial episode reproducible so future defenses can be compared against the same contamination path",
+      "input_fixture": "attack condition, source packet, retrieval trace, model output, reviewer decision, and gate result",
+      "operation_under_test": "keeps the adversarial episode reproducible so future defenses can be compared against the same contamination path",
+      "expected_output": "replayable Poison-RAG evaluation case as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f0593f14a5ccfcdc763c89da",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-poison-rag/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23416,
+            "sha256": "8f2699963cb0ed4442b1b6d118cad8f319a96ad19bd4b4d3ce0cb0c826a983c8"
+          },
+          {
+            "relative_path": "project_blueprints/native-poison-rag/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 15320,
+            "sha256": "3440c27baa8f6b89ac5848b7d419857c9f32a8ad9231b6c17ddea2a9ffde0ea9"
+          },
+          {
+            "relative_path": "project_blueprints/native-poison-rag/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11475,
+            "sha256": "bdab8d746c093a62f02f9abe7b767ba3ba2632bea033ae2b86762b6c1a205568"
+          },
+          {
+            "relative_path": "proof_builds/native-poison-rag/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "b4d565fbb0a5bdef7b67ac1787fc630b49a2c2d849a7c09c942a9539c13f7a98"
+          },
+          {
+            "relative_path": "proof_demos/native-poison-rag/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22426,
+            "sha256": "7a486459c92b77a5b16d05ae2fca010e0e8eb2d65aa085d9ef9a9a63af4277af"
+          },
+          {
+            "relative_path": "proof_demos/native-poison-rag/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6149,
+            "sha256": "650842640a7e3e2a49d3447077ab4f5bcb989087cd41dd343e10a33d3579dd22"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-poison-rag/blueprint.json",
+          "project_blueprints/native-poison-rag/instrument_map.json",
+          "project_blueprints/native-poison-rag/README.md",
+          "proof_builds/native-poison-rag/proof_build.json",
+          "proof_demos/native-poison-rag/demo_cases.json",
+          "proof_demos/native-poison-rag/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1205fcdf4810e9f66c07c60e"
+    }
+  ]
+}

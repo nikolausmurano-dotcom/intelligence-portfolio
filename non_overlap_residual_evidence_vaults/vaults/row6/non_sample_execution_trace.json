@@ -1,0 +1,53 @@
+{
+  "evidence_type": "non_sample_runtime_execution_trace",
+  "evidence_boundary": "Deterministic non-sample execution trace generated from the runtime manifest and a project-specific validation fixture. This is not hosted deployment proof and not independent human review.",
+  "runtime_id": "RTS-EB0544B38798",
+  "project_id": "row6",
+  "product_name": "Scholarly Retrieval System - cross-disciplinary research library with a twelve-stage analytical-governance plane",
+  "instrument_name": "Scholarly retrieval warrant workbench",
+  "run_time": "2026-05-17T01:47:54+00:00",
+  "input_summary": "A retrieval system must answer a cross-disciplinary query while ranking source roles, abstaining where evidence is weak, and preserving the difference between search and judgment.",
+  "operation_under_test": "Claim boundary",
+  "evidence_or_constraint": "Validation fixture only: the case tests whether the runtime can preserve claim boundaries, method constraints, and next-evidence needs. It does not assert that the substantive case has been independently adjudicated.",
+  "reviewer_standard": "The output must distinguish retrieval hit, source role, warrant strength, and abstention condition.",
+  "generated_result": {
+    "working_judgment": "The instrument processed a non-sample project case through Claim boundary and produced a bounded operational record.",
+    "mechanism_trace": "Scholarly retrieval warrant workbench -> Claim boundary -> Claim-to-source warrant note",
+    "acceptance_decision": "PASS",
+    "next_required_evidence": "Hosted deployment smoke and clearly labeled review or technical audit remain separate open gates.",
+    "claim_boundary": "Local runtime slice and deterministic non-sample trace only; not multi-user deployment, public-site byte match, or external validation."
+  },
+  "acceptance_checks": [
+    {
+      "name": "non_sample_fixture",
+      "pass": true,
+      "evidence": "case text is project-specific and not copied from sample_fixture.json"
+    },
+    {
+      "name": "input_length",
+      "pass": true,
+      "evidence": "179 characters"
+    },
+    {
+      "name": "operation_selected",
+      "pass": true,
+      "evidence": "Claim boundary"
+    },
+    {
+      "name": "evidence_or_constraint_note",
+      "pass": true,
+      "evidence": "216 characters"
+    },
+    {
+      "name": "reviewer_standard_present",
+      "pass": true,
+      "evidence": "The output must distinguish retrieval hit, source role, warrant strength, and abstention condition."
+    },
+    {
+      "name": "trace_schema_fields",
+      "pass": true,
+      "evidence": "runtime_id, project_id, input, operation, output, checks, and trace hash are present"
+    }
+  ],
+  "trace_hash": "74095d23"
+}

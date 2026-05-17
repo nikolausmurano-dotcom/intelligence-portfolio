@@ -1,0 +1,31 @@
+{
+  "project_id": "mb-dialectic-engine-room-pass1-handoff",
+  "generated_at": "2026-05-17T01:48:29+00:00",
+  "scope": "local_static_package_preview",
+  "satisfies_hosted_deployment_gate": false,
+  "reason": "This confirms the packaged local static route, not a public hosted Porkbun deployment.",
+  "url_path": "/non_overlap_runtime_slices/apps/mb-dialectic-engine-room-pass1-handoff/index.html",
+  "http_status": 200,
+  "desktop_screenshot": {
+    "url": "http://127.0.0.1:1882/non_overlap_runtime_slices/apps/mb-dialectic-engine-room-pass1-handoff/index.html",
+    "output_file": "desktop_screenshot.png",
+    "width": 1280,
+    "height": 820,
+    "returncode": 0,
+    "stderr_tail": "op_screenshot_1280x820\\Default\\Extensions\\Temp\\scoped_dir25688_501007667\\CRX_INSTALL failed.\n[25688:44960:0516/220310.035:ERROR:extensions\\common\\file_util.cc:144] Moving extension from : [local-path-redacted]",
+    "exists": true,
+    "size_bytes": 74728,
+    "sha256": "774886bfecfa635025e1da6abdf4425ae83bd128f963a7380c330306f17a1142"
+  },
+  "mobile_screenshot": {
+    "url": "http://127.0.0.1:1882/non_overlap_runtime_slices/apps/mb-dialectic-engine-room-pass1-handoff/index.html",
+    "output_file": "mobile_screenshot.png",
+    "width": 390,
+    "height": 780,
+    "returncode": 0,
+    "stderr_tail": ":chrome\\browser\\extensions\\external_registry_loader_win.cc:161] File [local-path-redacted]",
+    "exists": true,
+    "size_bytes": 46569,
+    "sha256": "6e6bdd98a2d699c84f13937de82364ca6c41c0f2df0c47fc85d336f3319d17fd"
+  }
+}

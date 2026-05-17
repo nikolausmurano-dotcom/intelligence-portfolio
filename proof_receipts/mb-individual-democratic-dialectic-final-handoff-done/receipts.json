@@ -1,0 +1,1470 @@
+{
+  "project": {
+    "project_id": "mb-individual-democratic-dialectic-final-handoff-done",
+    "title": "IDDD Bibliographic Inventory"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-individual-democratic-dialectic-final-handoff-done__receipt_0001",
+      "project_id": "mb-individual-democratic-dialectic-final-handoff-done",
+      "project_title": "IDDD Bibliographic Inventory",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IDDD Bibliographic Inventory Handoff Identity",
+      "component_case_id": "mb-individual-democratic-dialectic-final-handoff-done__0001__iddd-bibliographic-inventory-handoff-identity",
+      "claim_to_demonstrate": "IDDD Bibliographic Inventory is a source packet for this package is the final handoff of a source-grounded field/discipline inventory extracted from the IDDD manuscript (Individual in the Democratic Dialectic, IDDD.docx, SHA-256.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "IDDD Bibliographic Inventory is a source packet for this package is the final handoff of a source-grounded field/discipline inventory extracted from the IDDD manuscript (Individual in the Democratic Dialectic, IDDD.docx, SHA-256.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45011,
+            "sha256": "45d28c0d1dcce3a62c8c0c683b84df0ac57d664b4f05beb06a591f74d4dbe8df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36450,
+            "sha256": "8b3b03b0b15a45d146a1938a34ead1851a61dc1146aa10c963c9b5c9d128f33c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21689,
+            "sha256": "0a09232b3965de00a9202bf3d5ef673b4d830d4ca2b749b6a89ce134a7b1cda4"
+          },
+          {
+            "relative_path": "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20805,
+            "sha256": "f7dee688d9e1b50d0edd5e4885b4ff2a586d27558d5f84bb2709ce0406166aa2"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45971,
+            "sha256": "efebbc42a448ca6bb0fa74e6fd7657b2fac073ba886190e733100f3d996e00d3"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9934,
+            "sha256": "febdc607e17f394684ff8a182c9f2ef297a549344d0b37bc76fb1397a755cec8"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+          "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7b8ec7d48fe85b17b7b7b0bc"
+    },
+    {
+      "receipt_id": "mb-individual-democratic-dialectic-final-handoff-done__receipt_0002",
+      "project_id": "mb-individual-democratic-dialectic-final-handoff-done",
+      "project_title": "IDDD Bibliographic Inventory",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IDDD Bibliographic Inventory Room Task Model",
+      "component_case_id": "mb-individual-democratic-dialectic-final-handoff-done__0002__iddd-bibliographic-inventory-room-task-model",
+      "claim_to_demonstrate": ", state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival retention",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": ", state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival retention",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45011,
+            "sha256": "45d28c0d1dcce3a62c8c0c683b84df0ac57d664b4f05beb06a591f74d4dbe8df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36450,
+            "sha256": "8b3b03b0b15a45d146a1938a34ead1851a61dc1146aa10c963c9b5c9d128f33c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21689,
+            "sha256": "0a09232b3965de00a9202bf3d5ef673b4d830d4ca2b749b6a89ce134a7b1cda4"
+          },
+          {
+            "relative_path": "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20805,
+            "sha256": "f7dee688d9e1b50d0edd5e4885b4ff2a586d27558d5f84bb2709ce0406166aa2"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45971,
+            "sha256": "efebbc42a448ca6bb0fa74e6fd7657b2fac073ba886190e733100f3d996e00d3"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9934,
+            "sha256": "febdc607e17f394684ff8a182c9f2ef297a549344d0b37bc76fb1397a755cec8"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+          "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "48c4f2c8089316247951f896"
+    },
+    {
+      "receipt_id": "mb-individual-democratic-dialectic-final-handoff-done__receipt_0003",
+      "project_id": "mb-individual-democratic-dialectic-final-handoff-done",
+      "project_title": "IDDD Bibliographic Inventory",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IDDD Bibliographic Inventory Data Schema And Persistence Plan",
+      "component_case_id": "mb-individual-democratic-dialectic-final-handoff-done__0003__iddd-bibliographic-inventory-data-schema-and-persistence-plan",
+      "claim_to_demonstrate": "Political theory, democracy, individuality, and civic formation. Use source library political theory as a central source reservoir for the Book Trilogy and democratic-formation pages. Vision: Give Book II, democracy, and civic-formation pages a.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Political theory, democracy, individuality, and civic formation. Use source library political theory as a central source reservoir for the Book Trilogy and democratic-formation pages. Vision: Give Book II, democracy, and civic-formation pages a.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45011,
+            "sha256": "45d28c0d1dcce3a62c8c0c683b84df0ac57d664b4f05beb06a591f74d4dbe8df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36450,
+            "sha256": "8b3b03b0b15a45d146a1938a34ead1851a61dc1146aa10c963c9b5c9d128f33c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21689,
+            "sha256": "0a09232b3965de00a9202bf3d5ef673b4d830d4ca2b749b6a89ce134a7b1cda4"
+          },
+          {
+            "relative_path": "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20805,
+            "sha256": "f7dee688d9e1b50d0edd5e4885b4ff2a586d27558d5f84bb2709ce0406166aa2"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45971,
+            "sha256": "efebbc42a448ca6bb0fa74e6fd7657b2fac073ba886190e733100f3d996e00d3"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9934,
+            "sha256": "febdc607e17f394684ff8a182c9f2ef297a549344d0b37bc76fb1397a755cec8"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+          "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "158b69444c9a4c8c20a95ec1"
+    },
+    {
+      "receipt_id": "mb-individual-democratic-dialectic-final-handoff-done__receipt_0004",
+      "project_id": "mb-individual-democratic-dialectic-final-handoff-done",
+      "project_title": "IDDD Bibliographic Inventory",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IDDD Bibliographic Inventory Interface And Instrument Plane",
+      "component_case_id": "mb-individual-democratic-dialectic-final-handoff-done__0004__iddd-bibliographic-inventory-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45011,
+            "sha256": "45d28c0d1dcce3a62c8c0c683b84df0ac57d664b4f05beb06a591f74d4dbe8df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36450,
+            "sha256": "8b3b03b0b15a45d146a1938a34ead1851a61dc1146aa10c963c9b5c9d128f33c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21689,
+            "sha256": "0a09232b3965de00a9202bf3d5ef673b4d830d4ca2b749b6a89ce134a7b1cda4"
+          },
+          {
+            "relative_path": "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20805,
+            "sha256": "f7dee688d9e1b50d0edd5e4885b4ff2a586d27558d5f84bb2709ce0406166aa2"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45971,
+            "sha256": "efebbc42a448ca6bb0fa74e6fd7657b2fac073ba886190e733100f3d996e00d3"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9934,
+            "sha256": "febdc607e17f394684ff8a182c9f2ef297a549344d0b37bc76fb1397a755cec8"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+          "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d41f0881e34c14c8972a040d"
+    },
+    {
+      "receipt_id": "mb-individual-democratic-dialectic-final-handoff-done__receipt_0005",
+      "project_id": "mb-individual-democratic-dialectic-final-handoff-done",
+      "project_title": "IDDD Bibliographic Inventory",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IDDD Bibliographic Inventory Integration Path",
+      "component_case_id": "mb-individual-democratic-dialectic-final-handoff-done__0005__iddd-bibliographic-inventory-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. Open 01_README.md for orientation — verify gate in 00_STATUS_DONE.txt — read the full inventory via 02_grouped_inventory.md (human-readable) or.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. Open 01_README.md for orientation — verify gate in 00_STATUS_DONE.txt — read the full inventory via 02_grouped_inventory.md (human-readable) or.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45011,
+            "sha256": "45d28c0d1dcce3a62c8c0c683b84df0ac57d664b4f05beb06a591f74d4dbe8df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36450,
+            "sha256": "8b3b03b0b15a45d146a1938a34ead1851a61dc1146aa10c963c9b5c9d128f33c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21689,
+            "sha256": "0a09232b3965de00a9202bf3d5ef673b4d830d4ca2b749b6a89ce134a7b1cda4"
+          },
+          {
+            "relative_path": "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20805,
+            "sha256": "f7dee688d9e1b50d0edd5e4885b4ff2a586d27558d5f84bb2709ce0406166aa2"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45971,
+            "sha256": "efebbc42a448ca6bb0fa74e6fd7657b2fac073ba886190e733100f3d996e00d3"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9934,
+            "sha256": "febdc607e17f394684ff8a182c9f2ef297a549344d0b37bc76fb1397a755cec8"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+          "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f4932cbf4e0d194731c5e99f"
+    },
+    {
+      "receipt_id": "mb-individual-democratic-dialectic-final-handoff-done__receipt_0006",
+      "project_id": "mb-individual-democratic-dialectic-final-handoff-done",
+      "project_title": "IDDD Bibliographic Inventory",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IDDD Bibliographic Inventory Proof Boundary",
+      "component_case_id": "mb-individual-democratic-dialectic-final-handoff-done__0006__iddd-bibliographic-inventory-proof-boundary",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45011,
+            "sha256": "45d28c0d1dcce3a62c8c0c683b84df0ac57d664b4f05beb06a591f74d4dbe8df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36450,
+            "sha256": "8b3b03b0b15a45d146a1938a34ead1851a61dc1146aa10c963c9b5c9d128f33c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21689,
+            "sha256": "0a09232b3965de00a9202bf3d5ef673b4d830d4ca2b749b6a89ce134a7b1cda4"
+          },
+          {
+            "relative_path": "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20805,
+            "sha256": "f7dee688d9e1b50d0edd5e4885b4ff2a586d27558d5f84bb2709ce0406166aa2"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45971,
+            "sha256": "efebbc42a448ca6bb0fa74e6fd7657b2fac073ba886190e733100f3d996e00d3"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9934,
+            "sha256": "febdc607e17f394684ff8a182c9f2ef297a549344d0b37bc76fb1397a755cec8"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+          "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "324956565f9ec3599e962a2c"
+    },
+    {
+      "receipt_id": "mb-individual-democratic-dialectic-final-handoff-done__receipt_0007",
+      "project_id": "mb-individual-democratic-dialectic-final-handoff-done",
+      "project_title": "IDDD Bibliographic Inventory",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IDDD Bibliographic Inventory Next Build Test",
+      "component_case_id": "mb-individual-democratic-dialectic-final-handoff-done__0007__iddd-bibliographic-inventory-next-build-test",
+      "claim_to_demonstrate": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45011,
+            "sha256": "45d28c0d1dcce3a62c8c0c683b84df0ac57d664b4f05beb06a591f74d4dbe8df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36450,
+            "sha256": "8b3b03b0b15a45d146a1938a34ead1851a61dc1146aa10c963c9b5c9d128f33c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21689,
+            "sha256": "0a09232b3965de00a9202bf3d5ef673b4d830d4ca2b749b6a89ce134a7b1cda4"
+          },
+          {
+            "relative_path": "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20805,
+            "sha256": "f7dee688d9e1b50d0edd5e4885b4ff2a586d27558d5f84bb2709ce0406166aa2"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45971,
+            "sha256": "efebbc42a448ca6bb0fa74e6fd7657b2fac073ba886190e733100f3d996e00d3"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9934,
+            "sha256": "febdc607e17f394684ff8a182c9f2ef297a549344d0b37bc76fb1397a755cec8"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+          "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "905f0a8309fe9d43eabd5c80"
+    },
+    {
+      "receipt_id": "mb-individual-democratic-dialectic-final-handoff-done__receipt_0008",
+      "project_id": "mb-individual-democratic-dialectic-final-handoff-done",
+      "project_title": "IDDD Bibliographic Inventory",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IDDD Bibliographic Inventory / backend/frontend",
+      "component_case_id": "mb-individual-democratic-dialectic-final-handoff-done__0008__iddd-bibliographic-inventory-backend-frontend",
+      "claim_to_demonstrate": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "input_fixture": "project source text and the named component `backend/frontend`",
+      "operation_under_test": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `backend/frontend`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "12b906e53c841f6a071a9002",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45011,
+            "sha256": "45d28c0d1dcce3a62c8c0c683b84df0ac57d664b4f05beb06a591f74d4dbe8df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36450,
+            "sha256": "8b3b03b0b15a45d146a1938a34ead1851a61dc1146aa10c963c9b5c9d128f33c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21689,
+            "sha256": "0a09232b3965de00a9202bf3d5ef673b4d830d4ca2b749b6a89ce134a7b1cda4"
+          },
+          {
+            "relative_path": "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20805,
+            "sha256": "f7dee688d9e1b50d0edd5e4885b4ff2a586d27558d5f84bb2709ce0406166aa2"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45971,
+            "sha256": "efebbc42a448ca6bb0fa74e6fd7657b2fac073ba886190e733100f3d996e00d3"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9934,
+            "sha256": "febdc607e17f394684ff8a182c9f2ef297a549344d0b37bc76fb1397a755cec8"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+          "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6ddf2d1c6dbedde4041e9a2e"
+    },
+    {
+      "receipt_id": "mb-individual-democratic-dialectic-final-handoff-done__receipt_0009",
+      "project_id": "mb-individual-democratic-dialectic-final-handoff-done",
+      "project_title": "IDDD Bibliographic Inventory",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IDDD Bibliographic Inventory / IDDD.docx",
+      "component_case_id": "mb-individual-democratic-dialectic-final-handoff-done__0009__iddd-bibliographic-inventory-iddd-docx",
+      "claim_to_demonstrate": "treats `IDDD.docx` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: This package is the final handoff of a source-grounded field/discipline inventory extracted from the IDDD manuscript (Individual in.",
+      "input_fixture": "project source text and the named component `IDDD.docx`",
+      "operation_under_test": "treats `IDDD.docx` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: This package is the final handoff of a source-grounded field/discipline inventory extracted from the IDDD manuscript (Individual in.",
+      "expected_output": "inspectable implementation evidence tied to `IDDD.docx`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "76449750ebb644a8244d6e23",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45011,
+            "sha256": "45d28c0d1dcce3a62c8c0c683b84df0ac57d664b4f05beb06a591f74d4dbe8df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36450,
+            "sha256": "8b3b03b0b15a45d146a1938a34ead1851a61dc1146aa10c963c9b5c9d128f33c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21689,
+            "sha256": "0a09232b3965de00a9202bf3d5ef673b4d830d4ca2b749b6a89ce134a7b1cda4"
+          },
+          {
+            "relative_path": "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20805,
+            "sha256": "f7dee688d9e1b50d0edd5e4885b4ff2a586d27558d5f84bb2709ce0406166aa2"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45971,
+            "sha256": "efebbc42a448ca6bb0fa74e6fd7657b2fac073ba886190e733100f3d996e00d3"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9934,
+            "sha256": "febdc607e17f394684ff8a182c9f2ef297a549344d0b37bc76fb1397a755cec8"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+          "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f5654a04540df99387aa7bbc"
+    },
+    {
+      "receipt_id": "mb-individual-democratic-dialectic-final-handoff-done__receipt_0010",
+      "project_id": "mb-individual-democratic-dialectic-final-handoff-done",
+      "project_title": "IDDD Bibliographic Inventory",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IDDD Bibliographic Inventory / 08_rejected_unverified_candidates.csv",
+      "component_case_id": "mb-individual-democratic-dialectic-final-handoff-done__0010__iddd-bibliographic-inventory-08-rejected-unverified-candidates-csv",
+      "claim_to_demonstrate": "treats `08_rejected_unverified_candidates.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Candidates that could not be directly located using the final verification terms are not kept — they.",
+      "input_fixture": "project source text and the named component `08_rejected_unverified_candidates.csv`",
+      "operation_under_test": "treats `08_rejected_unverified_candidates.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Candidates that could not be directly located using the final verification terms are not kept — they.",
+      "expected_output": "inspectable implementation evidence tied to `08_rejected_unverified_candidates.csv`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8be5b05a2a4bc4e236b5527a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45011,
+            "sha256": "45d28c0d1dcce3a62c8c0c683b84df0ac57d664b4f05beb06a591f74d4dbe8df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36450,
+            "sha256": "8b3b03b0b15a45d146a1938a34ead1851a61dc1146aa10c963c9b5c9d128f33c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21689,
+            "sha256": "0a09232b3965de00a9202bf3d5ef673b4d830d4ca2b749b6a89ce134a7b1cda4"
+          },
+          {
+            "relative_path": "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20805,
+            "sha256": "f7dee688d9e1b50d0edd5e4885b4ff2a586d27558d5f84bb2709ce0406166aa2"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45971,
+            "sha256": "efebbc42a448ca6bb0fa74e6fd7657b2fac073ba886190e733100f3d996e00d3"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9934,
+            "sha256": "febdc607e17f394684ff8a182c9f2ef297a549344d0b37bc76fb1397a755cec8"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+          "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b7bfc8efb7b7ecf3092ff98f"
+    },
+    {
+      "receipt_id": "mb-individual-democratic-dialectic-final-handoff-done__receipt_0011",
+      "project_id": "mb-individual-democratic-dialectic-final-handoff-done",
+      "project_title": "IDDD Bibliographic Inventory",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IDDD Bibliographic Inventory / 01_README.md",
+      "component_case_id": "mb-individual-democratic-dialectic-final-handoff-done__0011__iddd-bibliographic-inventory-01-readme-md",
+      "claim_to_demonstrate": "treats `01_README.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Open 01_README.md for orientation — verify gate in 00_STATUS_DONE.txt — read the full inventory via 02_grouped_inventory.md.",
+      "input_fixture": "project source text and the named component `01_README.md`",
+      "operation_under_test": "treats `01_README.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Open 01_README.md for orientation — verify gate in 00_STATUS_DONE.txt — read the full inventory via 02_grouped_inventory.md.",
+      "expected_output": "inspectable implementation evidence tied to `01_README.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "23af8f286dff979d3f86425d",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45011,
+            "sha256": "45d28c0d1dcce3a62c8c0c683b84df0ac57d664b4f05beb06a591f74d4dbe8df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36450,
+            "sha256": "8b3b03b0b15a45d146a1938a34ead1851a61dc1146aa10c963c9b5c9d128f33c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21689,
+            "sha256": "0a09232b3965de00a9202bf3d5ef673b4d830d4ca2b749b6a89ce134a7b1cda4"
+          },
+          {
+            "relative_path": "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20805,
+            "sha256": "f7dee688d9e1b50d0edd5e4885b4ff2a586d27558d5f84bb2709ce0406166aa2"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45971,
+            "sha256": "efebbc42a448ca6bb0fa74e6fd7657b2fac073ba886190e733100f3d996e00d3"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9934,
+            "sha256": "febdc607e17f394684ff8a182c9f2ef297a549344d0b37bc76fb1397a755cec8"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+          "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2d8e7648bb1448d9cb52ec8f"
+    },
+    {
+      "receipt_id": "mb-individual-democratic-dialectic-final-handoff-done__receipt_0012",
+      "project_id": "mb-individual-democratic-dialectic-final-handoff-done",
+      "project_title": "IDDD Bibliographic Inventory",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IDDD Bibliographic Inventory / 02_grouped_inventory.md",
+      "component_case_id": "mb-individual-democratic-dialectic-final-handoff-done__0012__iddd-bibliographic-inventory-02-grouped-inventory-md",
+      "claim_to_demonstrate": "treats `02_grouped_inventory.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Open 01_README.md for orientation — verify gate in 00_STATUS_DONE.txt — read the full inventory via.",
+      "input_fixture": "project source text and the named component `02_grouped_inventory.md`",
+      "operation_under_test": "treats `02_grouped_inventory.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Open 01_README.md for orientation — verify gate in 00_STATUS_DONE.txt — read the full inventory via.",
+      "expected_output": "inspectable implementation evidence tied to `02_grouped_inventory.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "23af8f286dff979d3f86425d",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45011,
+            "sha256": "45d28c0d1dcce3a62c8c0c683b84df0ac57d664b4f05beb06a591f74d4dbe8df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36450,
+            "sha256": "8b3b03b0b15a45d146a1938a34ead1851a61dc1146aa10c963c9b5c9d128f33c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21689,
+            "sha256": "0a09232b3965de00a9202bf3d5ef673b4d830d4ca2b749b6a89ce134a7b1cda4"
+          },
+          {
+            "relative_path": "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20805,
+            "sha256": "f7dee688d9e1b50d0edd5e4885b4ff2a586d27558d5f84bb2709ce0406166aa2"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45971,
+            "sha256": "efebbc42a448ca6bb0fa74e6fd7657b2fac073ba886190e733100f3d996e00d3"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9934,
+            "sha256": "febdc607e17f394684ff8a182c9f2ef297a549344d0b37bc76fb1397a755cec8"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+          "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "05b64fccba1778c4dc039085"
+    },
+    {
+      "receipt_id": "mb-individual-democratic-dialectic-final-handoff-done__receipt_0013",
+      "project_id": "mb-individual-democratic-dialectic-final-handoff-done",
+      "project_title": "IDDD Bibliographic Inventory",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IDDD Bibliographic Inventory / 03_master_inventory.csv",
+      "component_case_id": "mb-individual-democratic-dialectic-final-handoff-done__0013__iddd-bibliographic-inventory-03-master-inventory-csv",
+      "claim_to_demonstrate": "treats `03_master_inventory.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Open 01_README.md for orientation — verify gate in 00_STATUS_DONE.txt — read the full inventory via.",
+      "input_fixture": "project source text and the named component `03_master_inventory.csv`",
+      "operation_under_test": "treats `03_master_inventory.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Open 01_README.md for orientation — verify gate in 00_STATUS_DONE.txt — read the full inventory via.",
+      "expected_output": "inspectable implementation evidence tied to `03_master_inventory.csv`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "23af8f286dff979d3f86425d",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45011,
+            "sha256": "45d28c0d1dcce3a62c8c0c683b84df0ac57d664b4f05beb06a591f74d4dbe8df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36450,
+            "sha256": "8b3b03b0b15a45d146a1938a34ead1851a61dc1146aa10c963c9b5c9d128f33c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21689,
+            "sha256": "0a09232b3965de00a9202bf3d5ef673b4d830d4ca2b749b6a89ce134a7b1cda4"
+          },
+          {
+            "relative_path": "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20805,
+            "sha256": "f7dee688d9e1b50d0edd5e4885b4ff2a586d27558d5f84bb2709ce0406166aa2"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45971,
+            "sha256": "efebbc42a448ca6bb0fa74e6fd7657b2fac073ba886190e733100f3d996e00d3"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9934,
+            "sha256": "febdc607e17f394684ff8a182c9f2ef297a549344d0b37bc76fb1397a755cec8"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+          "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "302fca0a239fec12f3f119f6"
+    },
+    {
+      "receipt_id": "mb-individual-democratic-dialectic-final-handoff-done__receipt_0014",
+      "project_id": "mb-individual-democratic-dialectic-final-handoff-done",
+      "project_title": "IDDD Bibliographic Inventory",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IDDD Bibliographic Inventory / 07_scope_counts.csv",
+      "component_case_id": "mb-individual-democratic-dialectic-final-handoff-done__0014__iddd-bibliographic-inventory-07-scope-counts-csv",
+      "claim_to_demonstrate": "treats `07_scope_counts.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Use 07_scope_counts.csv to understand balance (283 core / 120 applied / 45 project-specific / 9 boundary). Use.",
+      "input_fixture": "project source text and the named component `07_scope_counts.csv`",
+      "operation_under_test": "treats `07_scope_counts.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Use 07_scope_counts.csv to understand balance (283 core / 120 applied / 45 project-specific / 9 boundary). Use.",
+      "expected_output": "inspectable implementation evidence tied to `07_scope_counts.csv`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "9f16176f76eb4d6ab0dfa2ab",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45011,
+            "sha256": "45d28c0d1dcce3a62c8c0c683b84df0ac57d664b4f05beb06a591f74d4dbe8df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36450,
+            "sha256": "8b3b03b0b15a45d146a1938a34ead1851a61dc1146aa10c963c9b5c9d128f33c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21689,
+            "sha256": "0a09232b3965de00a9202bf3d5ef673b4d830d4ca2b749b6a89ce134a7b1cda4"
+          },
+          {
+            "relative_path": "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20805,
+            "sha256": "f7dee688d9e1b50d0edd5e4885b4ff2a586d27558d5f84bb2709ce0406166aa2"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45971,
+            "sha256": "efebbc42a448ca6bb0fa74e6fd7657b2fac073ba886190e733100f3d996e00d3"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9934,
+            "sha256": "febdc607e17f394684ff8a182c9f2ef297a549344d0b37bc76fb1397a755cec8"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+          "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "afb3ec19b683d98d3b09c511"
+    },
+    {
+      "receipt_id": "mb-individual-democratic-dialectic-final-handoff-done__receipt_0015",
+      "project_id": "mb-individual-democratic-dialectic-final-handoff-done",
+      "project_title": "IDDD Bibliographic Inventory",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IDDD Bibliographic Inventory / 09_72_chapter_domain_map.csv",
+      "component_case_id": "mb-individual-democratic-dialectic-final-handoff-done__0015__iddd-bibliographic-inventory-09-72-chapter-domain-map-csv",
+      "claim_to_demonstrate": "treats `09_72_chapter_domain_map.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Use 09_72_chapter_domain_map.csv when you need to trace a chapter to its domains. Consult.",
+      "input_fixture": "project source text and the named component `09_72_chapter_domain_map.csv`",
+      "operation_under_test": "treats `09_72_chapter_domain_map.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Use 09_72_chapter_domain_map.csv when you need to trace a chapter to its domains. Consult.",
+      "expected_output": "inspectable implementation evidence tied to `09_72_chapter_domain_map.csv`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d4d1e4ba3e1c6a2e702d3865",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45011,
+            "sha256": "45d28c0d1dcce3a62c8c0c683b84df0ac57d664b4f05beb06a591f74d4dbe8df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36450,
+            "sha256": "8b3b03b0b15a45d146a1938a34ead1851a61dc1146aa10c963c9b5c9d128f33c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21689,
+            "sha256": "0a09232b3965de00a9202bf3d5ef673b4d830d4ca2b749b6a89ce134a7b1cda4"
+          },
+          {
+            "relative_path": "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20805,
+            "sha256": "f7dee688d9e1b50d0edd5e4885b4ff2a586d27558d5f84bb2709ce0406166aa2"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45971,
+            "sha256": "efebbc42a448ca6bb0fa74e6fd7657b2fac073ba886190e733100f3d996e00d3"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9934,
+            "sha256": "febdc607e17f394684ff8a182c9f2ef297a549344d0b37bc76fb1397a755cec8"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+          "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "817adbb927b65a3480e112f7"
+    },
+    {
+      "receipt_id": "mb-individual-democratic-dialectic-final-handoff-done__receipt_0016",
+      "project_id": "mb-individual-democratic-dialectic-final-handoff-done",
+      "project_title": "IDDD Bibliographic Inventory",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IDDD Bibliographic Inventory / 11_integrity_manifest.json",
+      "component_case_id": "mb-individual-democratic-dialectic-final-handoff-done__0016__iddd-bibliographic-inventory-11-integrity-manifest-json",
+      "claim_to_demonstrate": "treats `11_integrity_manifest.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Verify package integrity with qa/11_integrity_manifest.json. Wire or preserve the implementation files: None —.",
+      "input_fixture": "project source text and the named component `11_integrity_manifest.json`",
+      "operation_under_test": "treats `11_integrity_manifest.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Verify package integrity with qa/11_integrity_manifest.json. Wire or preserve the implementation files: None —.",
+      "expected_output": "inspectable implementation evidence tied to `11_integrity_manifest.json`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "01c44834468c8877babd9bea",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45011,
+            "sha256": "45d28c0d1dcce3a62c8c0c683b84df0ac57d664b4f05beb06a591f74d4dbe8df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36450,
+            "sha256": "8b3b03b0b15a45d146a1938a34ead1851a61dc1146aa10c963c9b5c9d128f33c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21689,
+            "sha256": "0a09232b3965de00a9202bf3d5ef673b4d830d4ca2b749b6a89ce134a7b1cda4"
+          },
+          {
+            "relative_path": "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20805,
+            "sha256": "f7dee688d9e1b50d0edd5e4885b4ff2a586d27558d5f84bb2709ce0406166aa2"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45971,
+            "sha256": "efebbc42a448ca6bb0fa74e6fd7657b2fac073ba886190e733100f3d996e00d3"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9934,
+            "sha256": "febdc607e17f394684ff8a182c9f2ef297a549344d0b37bc76fb1397a755cec8"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+          "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "15c874e547c7851f497abb99"
+    },
+    {
+      "receipt_id": "mb-individual-democratic-dialectic-final-handoff-done__receipt_0017",
+      "project_id": "mb-individual-democratic-dialectic-final-handoff-done",
+      "project_title": "IDDD Bibliographic Inventory",
+      "proof_tier": "source-backed-proof-build",
+      "component": "IDDD Bibliographic Inventory / Democratic Dialectic",
+      "component_case_id": "mb-individual-democratic-dialectic-final-handoff-done__0017__iddd-bibliographic-inventory-democratic-dialectic",
+      "claim_to_demonstrate": "uses `Democratic Dialectic` as a named project component with a traceable role in the public mechanism. Source context: This package is the final handoff of a source-grounded field/discipline inventory extracted from the IDDD manuscript (Individual in the.",
+      "input_fixture": "project source text and the named component `Democratic Dialectic`",
+      "operation_under_test": "uses `Democratic Dialectic` as a named project component with a traceable role in the public mechanism. Source context: This package is the final handoff of a source-grounded field/discipline inventory extracted from the IDDD manuscript (Individual in the.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Democratic Dialectic`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "76449750ebb644a8244d6e23",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45011,
+            "sha256": "45d28c0d1dcce3a62c8c0c683b84df0ac57d664b4f05beb06a591f74d4dbe8df"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36450,
+            "sha256": "8b3b03b0b15a45d146a1938a34ead1851a61dc1146aa10c963c9b5c9d128f33c"
+          },
+          {
+            "relative_path": "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21689,
+            "sha256": "0a09232b3965de00a9202bf3d5ef673b4d830d4ca2b749b6a89ce134a7b1cda4"
+          },
+          {
+            "relative_path": "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20805,
+            "sha256": "f7dee688d9e1b50d0edd5e4885b4ff2a586d27558d5f84bb2709ce0406166aa2"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45971,
+            "sha256": "efebbc42a448ca6bb0fa74e6fd7657b2fac073ba886190e733100f3d996e00d3"
+          },
+          {
+            "relative_path": "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9934,
+            "sha256": "febdc607e17f394684ff8a182c9f2ef297a549344d0b37bc76fb1397a755cec8"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/blueprint.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/instrument_map.json",
+          "project_blueprints/mb-individual-democratic-dialectic-final-handoff-done/README.md",
+          "proof_builds/mb-individual-democratic-dialectic-final-handoff-done/proof_build.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/demo_cases.json",
+          "proof_demos/mb-individual-democratic-dialectic-final-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ede5c0be5159acec92ea4033"
+    }
+  ]
+}

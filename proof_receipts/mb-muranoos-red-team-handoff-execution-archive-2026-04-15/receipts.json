@@ -1,0 +1,1464 @@
+{
+  "project": {
+    "project_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15",
+    "title": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__receipt_0001",
+      "project_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15",
+      "project_title": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker Handoff Identity",
+      "component_case_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__0001__adds-execution-charter-7-gate-acceptance-rt-01a-b-02-03-04-tracker-handoff-identity",
+      "claim_to_demonstrate": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker is a preserved project packet for this is the RC1 lineage's \"execution readiness\" successor.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker is a preserved project packet for this is the RC1 lineage's \"execution readiness\" successor.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45487,
+            "sha256": "f11ef1d2243b908ab8f4d7fb46578aedab2a123c31db8c8a78b7c310498a317d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37473,
+            "sha256": "62d570ceadd321b6535aa336b8909940e9ecd56695c257567f0bfd4ffc79890d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22245,
+            "sha256": "424085fb50dbc97247e40a846689d9a11659dc5a11fec509a0a3ed1de7653103"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "1bacf9446acc1064da9bb81410511fd4fcdce3127667ba01cba1dfa07af8cefe"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48727,
+            "sha256": "db1a1e8e0fff1489b9540432570540daa43981c06aa256b4e17996463c44a3ba"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11174,
+            "sha256": "5a1983f298e33632a40d3c99afdb5b622e68e4d2172e0d10a0d9a13229454360"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "acdd8b86a1d381277ef04de1"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__receipt_0002",
+      "project_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15",
+      "project_title": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker Room Task Model",
+      "component_case_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__0002__adds-execution-charter-7-gate-acceptance-rt-01a-b-02-03-04-tracker-room-task-model",
+      "claim_to_demonstrate": "It converts an archive or handoff into three inspectable decisions: what the work product is for, which component pieces carry the work, and what action would turn it into a live room, paper, method, or software instrument.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "It converts an archive or handoff into three inspectable decisions: what the work product is for, which component pieces carry the work, and what action would turn it into a live room, paper, method, or software instrument.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45487,
+            "sha256": "f11ef1d2243b908ab8f4d7fb46578aedab2a123c31db8c8a78b7c310498a317d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37473,
+            "sha256": "62d570ceadd321b6535aa336b8909940e9ecd56695c257567f0bfd4ffc79890d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22245,
+            "sha256": "424085fb50dbc97247e40a846689d9a11659dc5a11fec509a0a3ed1de7653103"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "1bacf9446acc1064da9bb81410511fd4fcdce3127667ba01cba1dfa07af8cefe"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48727,
+            "sha256": "db1a1e8e0fff1489b9540432570540daa43981c06aa256b4e17996463c44a3ba"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11174,
+            "sha256": "5a1983f298e33632a40d3c99afdb5b622e68e4d2172e0d10a0d9a13229454360"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "45bd79902145a126131037b6"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__receipt_0003",
+      "project_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15",
+      "project_title": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker Data Schema And Persistence Plan",
+      "component_case_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__0003__adds-execution-charter-7-gate-acceptance-rt-01a-b-02-03-04-tracker-data-schema-and-persist",
+      "claim_to_demonstrate": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45487,
+            "sha256": "f11ef1d2243b908ab8f4d7fb46578aedab2a123c31db8c8a78b7c310498a317d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37473,
+            "sha256": "62d570ceadd321b6535aa336b8909940e9ecd56695c257567f0bfd4ffc79890d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22245,
+            "sha256": "424085fb50dbc97247e40a846689d9a11659dc5a11fec509a0a3ed1de7653103"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "1bacf9446acc1064da9bb81410511fd4fcdce3127667ba01cba1dfa07af8cefe"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48727,
+            "sha256": "db1a1e8e0fff1489b9540432570540daa43981c06aa256b4e17996463c44a3ba"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11174,
+            "sha256": "5a1983f298e33632a40d3c99afdb5b622e68e4d2172e0d10a0d9a13229454360"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9825c13e0c97d4a04a23a878"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__receipt_0004",
+      "project_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15",
+      "project_title": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker Interface And Instrument Plane",
+      "component_case_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__0004__adds-execution-charter-7-gate-acceptance-rt-01a-b-02-03-04-tracker-interface-and-instrumen",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45487,
+            "sha256": "f11ef1d2243b908ab8f4d7fb46578aedab2a123c31db8c8a78b7c310498a317d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37473,
+            "sha256": "62d570ceadd321b6535aa336b8909940e9ecd56695c257567f0bfd4ffc79890d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22245,
+            "sha256": "424085fb50dbc97247e40a846689d9a11659dc5a11fec509a0a3ed1de7653103"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "1bacf9446acc1064da9bb81410511fd4fcdce3127667ba01cba1dfa07af8cefe"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48727,
+            "sha256": "db1a1e8e0fff1489b9540432570540daa43981c06aa256b4e17996463c44a3ba"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11174,
+            "sha256": "5a1983f298e33632a40d3c99afdb5b622e68e4d2172e0d10a0d9a13229454360"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f90b0c1d34b377c3226cfc99"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__receipt_0005",
+      "project_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15",
+      "project_title": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker Integration Path",
+      "component_case_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__0005__adds-execution-charter-7-gate-acceptance-rt-01a-b-02-03-04-tracker-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. Read the 14-doc order: 07_Execution_Readiness audit — delta map — tranche — file-change map — acceptance gates — execution charter —.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. Read the 14-doc order: 07_Execution_Readiness audit — delta map — tranche — file-change map — acceptance gates — execution charter —.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45487,
+            "sha256": "f11ef1d2243b908ab8f4d7fb46578aedab2a123c31db8c8a78b7c310498a317d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37473,
+            "sha256": "62d570ceadd321b6535aa336b8909940e9ecd56695c257567f0bfd4ffc79890d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22245,
+            "sha256": "424085fb50dbc97247e40a846689d9a11659dc5a11fec509a0a3ed1de7653103"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "1bacf9446acc1064da9bb81410511fd4fcdce3127667ba01cba1dfa07af8cefe"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48727,
+            "sha256": "db1a1e8e0fff1489b9540432570540daa43981c06aa256b4e17996463c44a3ba"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11174,
+            "sha256": "5a1983f298e33632a40d3c99afdb5b622e68e4d2172e0d10a0d9a13229454360"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5178025f4a6f277320bd909b"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__receipt_0006",
+      "project_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15",
+      "project_title": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker Proof Boundary",
+      "component_case_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__0006__adds-execution-charter-7-gate-acceptance-rt-01a-b-02-03-04-tracker-proof-boundary",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45487,
+            "sha256": "f11ef1d2243b908ab8f4d7fb46578aedab2a123c31db8c8a78b7c310498a317d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37473,
+            "sha256": "62d570ceadd321b6535aa336b8909940e9ecd56695c257567f0bfd4ffc79890d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22245,
+            "sha256": "424085fb50dbc97247e40a846689d9a11659dc5a11fec509a0a3ed1de7653103"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "1bacf9446acc1064da9bb81410511fd4fcdce3127667ba01cba1dfa07af8cefe"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48727,
+            "sha256": "db1a1e8e0fff1489b9540432570540daa43981c06aa256b4e17996463c44a3ba"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11174,
+            "sha256": "5a1983f298e33632a40d3c99afdb5b622e68e4d2172e0d10a0d9a13229454360"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e4b4ecaece9fea3d02998313"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__receipt_0007",
+      "project_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15",
+      "project_title": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker Next Build Test",
+      "component_case_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__0007__adds-execution-charter-7-gate-acceptance-rt-01a-b-02-03-04-tracker-next-build-test",
+      "claim_to_demonstrate": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45487,
+            "sha256": "f11ef1d2243b908ab8f4d7fb46578aedab2a123c31db8c8a78b7c310498a317d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37473,
+            "sha256": "62d570ceadd321b6535aa336b8909940e9ecd56695c257567f0bfd4ffc79890d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22245,
+            "sha256": "424085fb50dbc97247e40a846689d9a11659dc5a11fec509a0a3ed1de7653103"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "1bacf9446acc1064da9bb81410511fd4fcdce3127667ba01cba1dfa07af8cefe"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48727,
+            "sha256": "db1a1e8e0fff1489b9540432570540daa43981c06aa256b4e17996463c44a3ba"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11174,
+            "sha256": "5a1983f298e33632a40d3c99afdb5b622e68e4d2172e0d10a0d9a13229454360"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "471b58d9fb09195f9ad68c80"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__receipt_0008",
+      "project_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15",
+      "project_title": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker / PROMPT_IMPLEMENTATION_FIRST.md",
+      "component_case_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__0008__adds-execution-charter-7-gate-acceptance-rt-01a-b-02-03-04-tracker-prompt-implementation-f",
+      "claim_to_demonstrate": "treats `PROMPT_IMPLEMENTATION_FIRST.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Choose PROMPT_IMPLEMENTATION_FIRST.md or ..._DESIGN_EXPANSION_FIRST.md depending on next pass mode. Wire or.",
+      "input_fixture": "project source text and the named component `PROMPT_IMPLEMENTATION_FIRST.md`",
+      "operation_under_test": "treats `PROMPT_IMPLEMENTATION_FIRST.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Choose PROMPT_IMPLEMENTATION_FIRST.md or ..._DESIGN_EXPANSION_FIRST.md depending on next pass mode. Wire or.",
+      "expected_output": "inspectable implementation evidence tied to `PROMPT_IMPLEMENTATION_FIRST.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f2d31b7769cfd34766c03986",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45487,
+            "sha256": "f11ef1d2243b908ab8f4d7fb46578aedab2a123c31db8c8a78b7c310498a317d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37473,
+            "sha256": "62d570ceadd321b6535aa336b8909940e9ecd56695c257567f0bfd4ffc79890d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22245,
+            "sha256": "424085fb50dbc97247e40a846689d9a11659dc5a11fec509a0a3ed1de7653103"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "1bacf9446acc1064da9bb81410511fd4fcdce3127667ba01cba1dfa07af8cefe"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48727,
+            "sha256": "db1a1e8e0fff1489b9540432570540daa43981c06aa256b4e17996463c44a3ba"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11174,
+            "sha256": "5a1983f298e33632a40d3c99afdb5b622e68e4d2172e0d10a0d9a13229454360"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0b13e9e12b6bab59e596fa6b"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__receipt_0009",
+      "project_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15",
+      "project_title": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker / _DESIGN_EXPANSION_FIRST.md",
+      "component_case_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__0009__adds-execution-charter-7-gate-acceptance-rt-01a-b-02-03-04-tracker-design-expansion-first-",
+      "claim_to_demonstrate": "treats `_DESIGN_EXPANSION_FIRST.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Choose PROMPT_IMPLEMENTATION_FIRST.md or ..._DESIGN_EXPANSION_FIRST.md depending on next pass mode. Wire or.",
+      "input_fixture": "project source text and the named component `_DESIGN_EXPANSION_FIRST.md`",
+      "operation_under_test": "treats `_DESIGN_EXPANSION_FIRST.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Choose PROMPT_IMPLEMENTATION_FIRST.md or ..._DESIGN_EXPANSION_FIRST.md depending on next pass mode. Wire or.",
+      "expected_output": "inspectable implementation evidence tied to `_DESIGN_EXPANSION_FIRST.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f2d31b7769cfd34766c03986",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45487,
+            "sha256": "f11ef1d2243b908ab8f4d7fb46578aedab2a123c31db8c8a78b7c310498a317d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37473,
+            "sha256": "62d570ceadd321b6535aa336b8909940e9ecd56695c257567f0bfd4ffc79890d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22245,
+            "sha256": "424085fb50dbc97247e40a846689d9a11659dc5a11fec509a0a3ed1de7653103"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "1bacf9446acc1064da9bb81410511fd4fcdce3127667ba01cba1dfa07af8cefe"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48727,
+            "sha256": "db1a1e8e0fff1489b9540432570540daa43981c06aa256b4e17996463c44a3ba"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11174,
+            "sha256": "5a1983f298e33632a40d3c99afdb5b622e68e4d2172e0d10a0d9a13229454360"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "92f3a7f7f100d2cdfc2ba17f"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__receipt_0010",
+      "project_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15",
+      "project_title": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker / Execution Readiness",
+      "component_case_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__0010__adds-execution-charter-7-gate-acceptance-rt-01a-b-02-03-04-tracker-execution-readiness",
+      "claim_to_demonstrate": "uses `Execution Readiness` as a named project component with a traceable role in the public mechanism. Source context: This is the RC1 lineage's \"execution readiness\" successor. Where RC1 front-loads an audit/delta/tranche/sequence/acceptance block of six.",
+      "input_fixture": "project source text and the named component `Execution Readiness`",
+      "operation_under_test": "uses `Execution Readiness` as a named project component with a traceable role in the public mechanism. Source context: This is the RC1 lineage's \"execution readiness\" successor. Where RC1 front-loads an audit/delta/tranche/sequence/acceptance block of six.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Execution Readiness`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "75a0a3094e366afd29ab4c80",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45487,
+            "sha256": "f11ef1d2243b908ab8f4d7fb46578aedab2a123c31db8c8a78b7c310498a317d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37473,
+            "sha256": "62d570ceadd321b6535aa336b8909940e9ecd56695c257567f0bfd4ffc79890d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22245,
+            "sha256": "424085fb50dbc97247e40a846689d9a11659dc5a11fec509a0a3ed1de7653103"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "1bacf9446acc1064da9bb81410511fd4fcdce3127667ba01cba1dfa07af8cefe"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48727,
+            "sha256": "db1a1e8e0fff1489b9540432570540daa43981c06aa256b4e17996463c44a3ba"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11174,
+            "sha256": "5a1983f298e33632a40d3c99afdb5b622e68e4d2172e0d10a0d9a13229454360"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2ee9c0b3bbf9d7fd90516269"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__receipt_0011",
+      "project_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15",
+      "project_title": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker / Here's The Current State",
+      "component_case_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__0011__adds-execution-charter-7-gate-acceptance-rt-01a-b-02-03-04-tracker-here-s-the-current-stat",
+      "claim_to_demonstrate": "uses `Here's The Current State` as a named project component with a traceable role in the public mechanism. Source context: Its differentiator is turning handoff from \"here's the current state\" into \"here are the gates a next pass must pass before calling.",
+      "input_fixture": "project source text and the named component `Here's The Current State`",
+      "operation_under_test": "uses `Here's The Current State` as a named project component with a traceable role in the public mechanism. Source context: Its differentiator is turning handoff from \"here's the current state\" into \"here are the gates a next pass must pass before calling.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Here's The Current State`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "6747e848b90dfc3e844a30d9",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45487,
+            "sha256": "f11ef1d2243b908ab8f4d7fb46578aedab2a123c31db8c8a78b7c310498a317d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37473,
+            "sha256": "62d570ceadd321b6535aa336b8909940e9ecd56695c257567f0bfd4ffc79890d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22245,
+            "sha256": "424085fb50dbc97247e40a846689d9a11659dc5a11fec509a0a3ed1de7653103"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "1bacf9446acc1064da9bb81410511fd4fcdce3127667ba01cba1dfa07af8cefe"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48727,
+            "sha256": "db1a1e8e0fff1489b9540432570540daa43981c06aa256b4e17996463c44a3ba"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11174,
+            "sha256": "5a1983f298e33632a40d3c99afdb5b622e68e4d2172e0d10a0d9a13229454360"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "fc504323ee00f5511befdf00"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__receipt_0012",
+      "project_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15",
+      "project_title": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker / Execution Charter",
+      "component_case_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__0012__adds-execution-charter-7-gate-acceptance-rt-01a-b-02-03-04-tracker-execution-charter",
+      "claim_to_demonstrate": "uses `Execution Charter` as a named project component with a traceable role in the public mechanism. Source context: Where RC1 front-loads an audit/delta/tranche/sequence/acceptance block of six docs, this package adds an 11-document 07_Execution_Readiness/.",
+      "input_fixture": "project source text and the named component `Execution Charter`",
+      "operation_under_test": "uses `Execution Charter` as a named project component with a traceable role in the public mechanism. Source context: Where RC1 front-loads an audit/delta/tranche/sequence/acceptance block of six docs, this package adds an 11-document 07_Execution_Readiness/.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Execution Charter`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "9cf8b173dadff9b65e1c3782",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45487,
+            "sha256": "f11ef1d2243b908ab8f4d7fb46578aedab2a123c31db8c8a78b7c310498a317d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37473,
+            "sha256": "62d570ceadd321b6535aa336b8909940e9ecd56695c257567f0bfd4ffc79890d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22245,
+            "sha256": "424085fb50dbc97247e40a846689d9a11659dc5a11fec509a0a3ed1de7653103"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "1bacf9446acc1064da9bb81410511fd4fcdce3127667ba01cba1dfa07af8cefe"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48727,
+            "sha256": "db1a1e8e0fff1489b9540432570540daa43981c06aa256b4e17996463c44a3ba"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11174,
+            "sha256": "5a1983f298e33632a40d3c99afdb5b622e68e4d2172e0d10a0d9a13229454360"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3af3c131d0a4d261e611616d"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__receipt_0013",
+      "project_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15",
+      "project_title": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker / Read the",
+      "component_case_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__0013__adds-execution-charter-7-gate-acceptance-rt-01a-b-02-03-04-tracker-read-the",
+      "claim_to_demonstrate": "uses `Read the` as a named project component with a traceable role in the public mechanism. Source context: Read the 14-doc order: 07_Execution_Readiness audit — delta map — tranche — file-change map — acceptance gates — execution charter —.",
+      "input_fixture": "project source text and the named component `Read the`",
+      "operation_under_test": "uses `Read the` as a named project component with a traceable role in the public mechanism. Source context: Read the 14-doc order: 07_Execution_Readiness audit — delta map — tranche — file-change map — acceptance gates — execution charter —.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Read the`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4d72d531c95e9d8f97c2439e",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45487,
+            "sha256": "f11ef1d2243b908ab8f4d7fb46578aedab2a123c31db8c8a78b7c310498a317d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37473,
+            "sha256": "62d570ceadd321b6535aa336b8909940e9ecd56695c257567f0bfd4ffc79890d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22245,
+            "sha256": "424085fb50dbc97247e40a846689d9a11659dc5a11fec509a0a3ed1de7653103"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "1bacf9446acc1064da9bb81410511fd4fcdce3127667ba01cba1dfa07af8cefe"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48727,
+            "sha256": "db1a1e8e0fff1489b9540432570540daa43981c06aa256b4e17996463c44a3ba"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11174,
+            "sha256": "5a1983f298e33632a40d3c99afdb5b622e68e4d2172e0d10a0d9a13229454360"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "169c7aa064c770216399a622"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__receipt_0014",
+      "project_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15",
+      "project_title": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker / Preserves the",
+      "component_case_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__0014__adds-execution-charter-7-gate-acceptance-rt-01a-b-02-03-04-tracker-preserves-the",
+      "claim_to_demonstrate": "uses `Preserves the` as a named project component with a traceable role in the public mechanism. Source context: Preserves the full 02_Current_Implementation_State/ pair (live_repo_current + live_repo_snapshot, 11 files each) identical to the 03-30 snapshot —.",
+      "input_fixture": "project source text and the named component `Preserves the`",
+      "operation_under_test": "uses `Preserves the` as a named project component with a traceable role in the public mechanism. Source context: Preserves the full 02_Current_Implementation_State/ pair (live_repo_current + live_repo_snapshot, 11 files each) identical to the 03-30 snapshot —.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Preserves the`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "cfd37a0eef5bec8cd2edd525",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45487,
+            "sha256": "f11ef1d2243b908ab8f4d7fb46578aedab2a123c31db8c8a78b7c310498a317d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37473,
+            "sha256": "62d570ceadd321b6535aa336b8909940e9ecd56695c257567f0bfd4ffc79890d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22245,
+            "sha256": "424085fb50dbc97247e40a846689d9a11659dc5a11fec509a0a3ed1de7653103"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "1bacf9446acc1064da9bb81410511fd4fcdce3127667ba01cba1dfa07af8cefe"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48727,
+            "sha256": "db1a1e8e0fff1489b9540432570540daa43981c06aa256b4e17996463c44a3ba"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11174,
+            "sha256": "5a1983f298e33632a40d3c99afdb5b622e68e4d2172e0d10a0d9a13229454360"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "08381bb099aaf8700791192c"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__receipt_0015",
+      "project_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15",
+      "project_title": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker / Explain Nexus and Personal OS",
+      "component_case_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__0015__adds-execution-charter-7-gate-acceptance-rt-01a-b-02-03-04-tracker-explain-nexus-and-perso",
+      "claim_to_demonstrate": "uses `Explain Nexus and Personal OS` as a named project component with a traceable role in the public mechanism. Source context: Explain Nexus and Personal OS as project-development and discovery infrastructure, not miscellaneous personal tooling. Mechanism.",
+      "input_fixture": "project source text and the named component `Explain Nexus and Personal OS`",
+      "operation_under_test": "uses `Explain Nexus and Personal OS` as a named project component with a traceable role in the public mechanism. Source context: Explain Nexus and Personal OS as project-development and discovery infrastructure, not miscellaneous personal tooling. Mechanism.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Explain Nexus and Personal OS`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "43bbe99078db3098289d7fc7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45487,
+            "sha256": "f11ef1d2243b908ab8f4d7fb46578aedab2a123c31db8c8a78b7c310498a317d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37473,
+            "sha256": "62d570ceadd321b6535aa336b8909940e9ecd56695c257567f0bfd4ffc79890d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22245,
+            "sha256": "424085fb50dbc97247e40a846689d9a11659dc5a11fec509a0a3ed1de7653103"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "1bacf9446acc1064da9bb81410511fd4fcdce3127667ba01cba1dfa07af8cefe"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48727,
+            "sha256": "db1a1e8e0fff1489b9540432570540daa43981c06aa256b4e17996463c44a3ba"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11174,
+            "sha256": "5a1983f298e33632a40d3c99afdb5b622e68e4d2172e0d10a0d9a13229454360"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8e14e4d761dd536e8ab28fd8"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__receipt_0016",
+      "project_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15",
+      "project_title": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker / Creativity Research",
+      "component_case_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__0016__adds-execution-charter-7-gate-acceptance-rt-01a-b-02-03-04-tracker-creativity-research",
+      "claim_to_demonstrate": "uses `Creativity Research` as a named project component with a traceable role in the public mechanism. Source context: Creativity Research; The Heritage, Creativity and Innovation Nexus. Intelligence tradecraft, counterintelligence, and analytic method. Use.",
+      "input_fixture": "project source text and the named component `Creativity Research`",
+      "operation_under_test": "uses `Creativity Research` as a named project component with a traceable role in the public mechanism. Source context: Creativity Research; The Heritage, Creativity and Innovation Nexus. Intelligence tradecraft, counterintelligence, and analytic method. Use.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Creativity Research`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "6f8460f72b9b7fcf9c959977",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45487,
+            "sha256": "f11ef1d2243b908ab8f4d7fb46578aedab2a123c31db8c8a78b7c310498a317d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37473,
+            "sha256": "62d570ceadd321b6535aa336b8909940e9ecd56695c257567f0bfd4ffc79890d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22245,
+            "sha256": "424085fb50dbc97247e40a846689d9a11659dc5a11fec509a0a3ed1de7653103"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "1bacf9446acc1064da9bb81410511fd4fcdce3127667ba01cba1dfa07af8cefe"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48727,
+            "sha256": "db1a1e8e0fff1489b9540432570540daa43981c06aa256b4e17996463c44a3ba"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11174,
+            "sha256": "5a1983f298e33632a40d3c99afdb5b622e68e4d2172e0d10a0d9a13229454360"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0f18b81a7b249f4fd92ae8d5"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__receipt_0017",
+      "project_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15",
+      "project_title": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Adds Execution Charter + 7-gate acceptance + RT-01A/B/02/03/04 tracker / The Heritage",
+      "component_case_id": "mb-muranoos-red-team-handoff-execution-archive-2026-04-15__0017__adds-execution-charter-7-gate-acceptance-rt-01a-b-02-03-04-tracker-the-heritage",
+      "claim_to_demonstrate": "uses `The Heritage` as a named project component with a traceable role in the public mechanism. Source context: The Heritage, Creativity and Innovation Nexus. Intelligence tradecraft, counterintelligence, and analytic method. Use source library intelligence.",
+      "input_fixture": "project source text and the named component `The Heritage`",
+      "operation_under_test": "uses `The Heritage` as a named project component with a traceable role in the public mechanism. Source context: The Heritage, Creativity and Innovation Nexus. Intelligence tradecraft, counterintelligence, and analytic method. Use source library intelligence.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `The Heritage`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "45f852bc371749f4e50a650f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45487,
+            "sha256": "f11ef1d2243b908ab8f4d7fb46578aedab2a123c31db8c8a78b7c310498a317d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37473,
+            "sha256": "62d570ceadd321b6535aa336b8909940e9ecd56695c257567f0bfd4ffc79890d"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22245,
+            "sha256": "424085fb50dbc97247e40a846689d9a11659dc5a11fec509a0a3ed1de7653103"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "1bacf9446acc1064da9bb81410511fd4fcdce3127667ba01cba1dfa07af8cefe"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48727,
+            "sha256": "db1a1e8e0fff1489b9540432570540daa43981c06aa256b4e17996463c44a3ba"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11174,
+            "sha256": "5a1983f298e33632a40d3c99afdb5b622e68e4d2172e0d10a0d9a13229454360"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-handoff-execution-archive-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4f8a73b7e81bff47574f6a14"
+    }
+  ]
+}

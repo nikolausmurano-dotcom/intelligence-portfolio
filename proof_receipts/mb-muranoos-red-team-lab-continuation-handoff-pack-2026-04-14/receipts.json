@@ -1,0 +1,1465 @@
+{
+  "project": {
+    "project_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14",
+    "title": "Introduces Vivarium codename; contradiction-graph table"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__receipt_0001",
+      "project_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14",
+      "project_title": "Introduces Vivarium codename; contradiction-graph table",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Introduces Vivarium codename; contradiction-graph table Handoff Identity",
+      "component_case_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__0001__introduces-vivarium-codename-contradiction-graph-table-handoff-identity",
+      "claim_to_demonstrate": "Vivarium continuation pack is a Red Team Lab handoff introducing the Vivarium visual-system codename and contradiction-graph table.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "Vivarium continuation pack is a Red Team Lab handoff introducing the Vivarium visual-system codename and contradiction-graph table.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45825,
+            "sha256": "3e123a27ec049618fab9955fcb45972486955f0579df65366a10a6b2e482e167"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37871,
+            "sha256": "863d18af982c9cfd0ac329297c562afa515fbd7a5eb1f4eb98ff8e4115653dae"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21616,
+            "sha256": "ad7a2be33f40b80d8f1c2e5d5cdd483da077bba6e8189c804485a16769612502"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21558,
+            "sha256": "b8f0fee8b9f9d94a6fc2db0f11d88f1c152434ba18876714d874f34b94b41ba5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48499,
+            "sha256": "5dac04938da3ccd19b3a495842420c1c09e3bd04e5d3b81e5192fae9e1801363"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11230,
+            "sha256": "1474ec4b63cf4352445506df6eaa08c44267d359d096415e1ceed4696885ec40"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "25008105c324037d3c57bad2"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__receipt_0002",
+      "project_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14",
+      "project_title": "Introduces Vivarium codename; contradiction-graph table",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Introduces Vivarium codename; contradiction-graph table Room Task Model",
+      "component_case_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__0002__introduces-vivarium-codename-contradiction-graph-table-room-task-model",
+      "claim_to_demonstrate": "It preserves a seven-directory foundation, Vivarium component manifest JSON, Vivarium room schematic SVG, command-contract JSON, release-readiness annex, and continuation logic for fresh Red Team Lab work.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "It preserves a seven-directory foundation, Vivarium component manifest JSON, Vivarium room schematic SVG, command-contract JSON, release-readiness annex, and continuation logic for fresh Red Team Lab work.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45825,
+            "sha256": "3e123a27ec049618fab9955fcb45972486955f0579df65366a10a6b2e482e167"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37871,
+            "sha256": "863d18af982c9cfd0ac329297c562afa515fbd7a5eb1f4eb98ff8e4115653dae"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21616,
+            "sha256": "ad7a2be33f40b80d8f1c2e5d5cdd483da077bba6e8189c804485a16769612502"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21558,
+            "sha256": "b8f0fee8b9f9d94a6fc2db0f11d88f1c152434ba18876714d874f34b94b41ba5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48499,
+            "sha256": "5dac04938da3ccd19b3a495842420c1c09e3bd04e5d3b81e5192fae9e1801363"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11230,
+            "sha256": "1474ec4b63cf4352445506df6eaa08c44267d359d096415e1ceed4696885ec40"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5911dac6d15b42e853fa1e88"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__receipt_0003",
+      "project_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14",
+      "project_title": "Introduces Vivarium codename; contradiction-graph table",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Introduces Vivarium codename; contradiction-graph table Data Schema And Persistence Plan",
+      "component_case_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__0003__introduces-vivarium-codename-contradiction-graph-table-data-schema-and-persistence-plan",
+      "claim_to_demonstrate": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45825,
+            "sha256": "3e123a27ec049618fab9955fcb45972486955f0579df65366a10a6b2e482e167"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37871,
+            "sha256": "863d18af982c9cfd0ac329297c562afa515fbd7a5eb1f4eb98ff8e4115653dae"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21616,
+            "sha256": "ad7a2be33f40b80d8f1c2e5d5cdd483da077bba6e8189c804485a16769612502"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21558,
+            "sha256": "b8f0fee8b9f9d94a6fc2db0f11d88f1c152434ba18876714d874f34b94b41ba5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48499,
+            "sha256": "5dac04938da3ccd19b3a495842420c1c09e3bd04e5d3b81e5192fae9e1801363"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11230,
+            "sha256": "1474ec4b63cf4352445506df6eaa08c44267d359d096415e1ceed4696885ec40"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7a79c9a76dedac00ba4992a5"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__receipt_0004",
+      "project_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14",
+      "project_title": "Introduces Vivarium codename; contradiction-graph table",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Introduces Vivarium codename; contradiction-graph table Interface And Instrument Plane",
+      "component_case_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__0004__introduces-vivarium-codename-contradiction-graph-table-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45825,
+            "sha256": "3e123a27ec049618fab9955fcb45972486955f0579df65366a10a6b2e482e167"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37871,
+            "sha256": "863d18af982c9cfd0ac329297c562afa515fbd7a5eb1f4eb98ff8e4115653dae"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21616,
+            "sha256": "ad7a2be33f40b80d8f1c2e5d5cdd483da077bba6e8189c804485a16769612502"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21558,
+            "sha256": "b8f0fee8b9f9d94a6fc2db0f11d88f1c152434ba18876714d874f34b94b41ba5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48499,
+            "sha256": "5dac04938da3ccd19b3a495842420c1c09e3bd04e5d3b81e5192fae9e1801363"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11230,
+            "sha256": "1474ec4b63cf4352445506df6eaa08c44267d359d096415e1ceed4696885ec40"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e61d28105aef371a14f2074c"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__receipt_0005",
+      "project_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14",
+      "project_title": "Introduces Vivarium codename; contradiction-graph table",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Introduces Vivarium codename; contradiction-graph table Integration Path",
+      "component_case_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__0005__introduces-vivarium-codename-contradiction-graph-table-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. Upload when the implementer needs to run the schema migration first and then build UI against it. The .sql file can be ingested directly by red_team_db.rs helper.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. Upload when the implementer needs to run the schema migration first and then build UI against it. The .sql file can be ingested directly by red_team_db.rs helper.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45825,
+            "sha256": "3e123a27ec049618fab9955fcb45972486955f0579df65366a10a6b2e482e167"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37871,
+            "sha256": "863d18af982c9cfd0ac329297c562afa515fbd7a5eb1f4eb98ff8e4115653dae"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21616,
+            "sha256": "ad7a2be33f40b80d8f1c2e5d5cdd483da077bba6e8189c804485a16769612502"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21558,
+            "sha256": "b8f0fee8b9f9d94a6fc2db0f11d88f1c152434ba18876714d874f34b94b41ba5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48499,
+            "sha256": "5dac04938da3ccd19b3a495842420c1c09e3bd04e5d3b81e5192fae9e1801363"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11230,
+            "sha256": "1474ec4b63cf4352445506df6eaa08c44267d359d096415e1ceed4696885ec40"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6f0376f2736c6baf666ea1fd"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__receipt_0006",
+      "project_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14",
+      "project_title": "Introduces Vivarium codename; contradiction-graph table",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Introduces Vivarium codename; contradiction-graph table Proof Boundary",
+      "component_case_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__0006__introduces-vivarium-codename-contradiction-graph-table-proof-boundary",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45825,
+            "sha256": "3e123a27ec049618fab9955fcb45972486955f0579df65366a10a6b2e482e167"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37871,
+            "sha256": "863d18af982c9cfd0ac329297c562afa515fbd7a5eb1f4eb98ff8e4115653dae"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21616,
+            "sha256": "ad7a2be33f40b80d8f1c2e5d5cdd483da077bba6e8189c804485a16769612502"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21558,
+            "sha256": "b8f0fee8b9f9d94a6fc2db0f11d88f1c152434ba18876714d874f34b94b41ba5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48499,
+            "sha256": "5dac04938da3ccd19b3a495842420c1c09e3bd04e5d3b81e5192fae9e1801363"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11230,
+            "sha256": "1474ec4b63cf4352445506df6eaa08c44267d359d096415e1ceed4696885ec40"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7ff087203749c292bbbe57bc"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__receipt_0007",
+      "project_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14",
+      "project_title": "Introduces Vivarium codename; contradiction-graph table",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Introduces Vivarium codename; contradiction-graph table Next Build Test",
+      "component_case_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__0007__introduces-vivarium-codename-contradiction-graph-table-next-build-test",
+      "claim_to_demonstrate": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45825,
+            "sha256": "3e123a27ec049618fab9955fcb45972486955f0579df65366a10a6b2e482e167"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37871,
+            "sha256": "863d18af982c9cfd0ac329297c562afa515fbd7a5eb1f4eb98ff8e4115653dae"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21616,
+            "sha256": "ad7a2be33f40b80d8f1c2e5d5cdd483da077bba6e8189c804485a16769612502"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21558,
+            "sha256": "b8f0fee8b9f9d94a6fc2db0f11d88f1c152434ba18876714d874f34b94b41ba5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48499,
+            "sha256": "5dac04938da3ccd19b3a495842420c1c09e3bd04e5d3b81e5192fae9e1801363"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11230,
+            "sha256": "1474ec4b63cf4352445506df6eaa08c44267d359d096415e1ceed4696885ec40"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "38509f765af6424ddbd21778"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__receipt_0008",
+      "project_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14",
+      "project_title": "Introduces Vivarium codename; contradiction-graph table",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Introduces Vivarium codename; contradiction-graph table / MuranoOS_Red_Team_Lab_Tranche_A_Schema_Delta_v1.sql",
+      "component_case_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__0008__introduces-vivarium-codename-contradiction-graph-table-muranoos-red-team-lab-tranche-a-sch",
+      "claim_to_demonstrate": "treats `MuranoOS_Red_Team_Lab_Tranche_A_Schema_Delta_v1.sql` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: MuranoOS_Red_Team_Lab_Tranche_A_Schema_Delta_v1.sql It converts an archive or handoff.",
+      "input_fixture": "project source text and the named component `MuranoOS_Red_Team_Lab_Tranche_A_Schema_Delta_v1.sql`",
+      "operation_under_test": "treats `MuranoOS_Red_Team_Lab_Tranche_A_Schema_Delta_v1.sql` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: MuranoOS_Red_Team_Lab_Tranche_A_Schema_Delta_v1.sql It converts an archive or handoff.",
+      "expected_output": "inspectable implementation evidence tied to `MuranoOS_Red_Team_Lab_Tranche_A_Schema_Delta_v1.sql`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "1cf08efe8facf5f3f8743811",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45825,
+            "sha256": "3e123a27ec049618fab9955fcb45972486955f0579df65366a10a6b2e482e167"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37871,
+            "sha256": "863d18af982c9cfd0ac329297c562afa515fbd7a5eb1f4eb98ff8e4115653dae"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21616,
+            "sha256": "ad7a2be33f40b80d8f1c2e5d5cdd483da077bba6e8189c804485a16769612502"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21558,
+            "sha256": "b8f0fee8b9f9d94a6fc2db0f11d88f1c152434ba18876714d874f34b94b41ba5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48499,
+            "sha256": "5dac04938da3ccd19b3a495842420c1c09e3bd04e5d3b81e5192fae9e1801363"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11230,
+            "sha256": "1474ec4b63cf4352445506df6eaa08c44267d359d096415e1ceed4696885ec40"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "eb379145315fa2c4eb209a08"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__receipt_0009",
+      "project_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14",
+      "project_title": "Introduces Vivarium codename; contradiction-graph table",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Introduces Vivarium codename; contradiction-graph table / MuranoOS_Red_Team_Lab_Tranche_A_Command_Contract_v1.json",
+      "component_case_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__0009__introduces-vivarium-codename-contradiction-graph-table-muranoos-red-team-lab-tranche-a-com",
+      "claim_to_demonstrate": "treats `MuranoOS_Red_Team_Lab_Tranche_A_Command_Contract_v1.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Committed .sql delta (actionable, not .md spec) -.",
+      "input_fixture": "project source text and the named component `MuranoOS_Red_Team_Lab_Tranche_A_Command_Contract_v1.json`",
+      "operation_under_test": "treats `MuranoOS_Red_Team_Lab_Tranche_A_Command_Contract_v1.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Committed .sql delta (actionable, not .md spec) -.",
+      "expected_output": "inspectable implementation evidence tied to `MuranoOS_Red_Team_Lab_Tranche_A_Command_Contract_v1.json`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "11ecfcb9afef8e05eb20a2de",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45825,
+            "sha256": "3e123a27ec049618fab9955fcb45972486955f0579df65366a10a6b2e482e167"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37871,
+            "sha256": "863d18af982c9cfd0ac329297c562afa515fbd7a5eb1f4eb98ff8e4115653dae"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21616,
+            "sha256": "ad7a2be33f40b80d8f1c2e5d5cdd483da077bba6e8189c804485a16769612502"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21558,
+            "sha256": "b8f0fee8b9f9d94a6fc2db0f11d88f1c152434ba18876714d874f34b94b41ba5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48499,
+            "sha256": "5dac04938da3ccd19b3a495842420c1c09e3bd04e5d3b81e5192fae9e1801363"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11230,
+            "sha256": "1474ec4b63cf4352445506df6eaa08c44267d359d096415e1ceed4696885ec40"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+          "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2758e077d27274bab4290b0b"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__receipt_0010",
+      "project_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14",
+      "project_title": "Introduces Vivarium codename; contradiction-graph table",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Introduces Vivarium codename; contradiction-graph table / MuranoOS_Red_Team_Lab_Tranche_A_Release_Readiness_Annex_v1.md",
+      "component_case_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__0010__introduces-vivarium-codename-contradiction-graph-table-muranoos-red-team-lab-tranche-a-rel",
+      "claim_to_demonstrate": "treats `MuranoOS_Red_Team_Lab_Tranche_A_Release_Readiness_Annex_v1.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Committed .sql delta (actionable, not .md spec) -.",
+      "input_fixture": "project source text and the named component `MuranoOS_Red_Team_Lab_Tranche_A_Release_Readiness_Annex_v1.md`",
+      "operation_under_test": "treats `MuranoOS_Red_Team_Lab_Tranche_A_Release_Readiness_Annex_v1.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Committed .sql delta (actionable, not .md spec) -.",
+      "expected_output": "inspectable implementation evidence tied to `MuranoOS_Red_Team_Lab_Tranche_A_Release_Readiness_Annex_v1.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "11ecfcb9afef8e05eb20a2de",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45825,
+            "sha256": "3e123a27ec049618fab9955fcb45972486955f0579df65366a10a6b2e482e167"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37871,
+            "sha256": "863d18af982c9cfd0ac329297c562afa515fbd7a5eb1f4eb98ff8e4115653dae"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21616,
+            "sha256": "ad7a2be33f40b80d8f1c2e5d5cdd483da077bba6e8189c804485a16769612502"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21558,
+            "sha256": "b8f0fee8b9f9d94a6fc2db0f11d88f1c152434ba18876714d874f34b94b41ba5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48499,
+            "sha256": "5dac04938da3ccd19b3a495842420c1c09e3bd04e5d3b81e5192fae9e1801363"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11230,
+            "sha256": "1474ec4b63cf4352445506df6eaa08c44267d359d096415e1ceed4696885ec40"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+          "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "afcfb6722b4cd656ad8f0890"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__receipt_0011",
+      "project_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14",
+      "project_title": "Introduces Vivarium codename; contradiction-graph table",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Introduces Vivarium codename; contradiction-graph table / Vivarium",
+      "component_case_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__0011__introduces-vivarium-codename-contradiction-graph-table-vivarium",
+      "claim_to_demonstrate": "uses `Vivarium` as a named project component with a traceable role in the public mechanism. Source context: This package is the first to introduce the \"Vivarium\" visual-system codename for Red Team Lab and to ship a committed SQL schema-delta file as an.",
+      "input_fixture": "project source text and the named component `Vivarium`",
+      "operation_under_test": "uses `Vivarium` as a named project component with a traceable role in the public mechanism. Source context: This package is the first to introduce the \"Vivarium\" visual-system codename for Red Team Lab and to ship a committed SQL schema-delta file as an.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Vivarium`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c6f8d0f0023f64fa9a8d310b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45825,
+            "sha256": "3e123a27ec049618fab9955fcb45972486955f0579df65366a10a6b2e482e167"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37871,
+            "sha256": "863d18af982c9cfd0ac329297c562afa515fbd7a5eb1f4eb98ff8e4115653dae"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21616,
+            "sha256": "ad7a2be33f40b80d8f1c2e5d5cdd483da077bba6e8189c804485a16769612502"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21558,
+            "sha256": "b8f0fee8b9f9d94a6fc2db0f11d88f1c152434ba18876714d874f34b94b41ba5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48499,
+            "sha256": "5dac04938da3ccd19b3a495842420c1c09e3bd04e5d3b81e5192fae9e1801363"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11230,
+            "sha256": "1474ec4b63cf4352445506df6eaa08c44267d359d096415e1ceed4696885ec40"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "58ac7ecaa60c2d2eb4c64df6"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__receipt_0012",
+      "project_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14",
+      "project_title": "Introduces Vivarium codename; contradiction-graph table",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Introduces Vivarium codename; contradiction-graph table / Red Team Lab and to",
+      "component_case_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__0012__introduces-vivarium-codename-contradiction-graph-table-red-team-lab-and-to",
+      "claim_to_demonstrate": "treats `Red Team Lab and to` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: This package is the first to introduce the \"Vivarium\" visual-system codename for Red Team Lab and to.",
+      "input_fixture": "project source text and the named component `Red Team Lab and to`",
+      "operation_under_test": "treats `Red Team Lab and to` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: This package is the first to introduce the \"Vivarium\" visual-system codename for Red Team Lab and to.",
+      "expected_output": "a room, workbench, or interface function tied to `Red Team Lab and to`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c6f8d0f0023f64fa9a8d310b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45825,
+            "sha256": "3e123a27ec049618fab9955fcb45972486955f0579df65366a10a6b2e482e167"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37871,
+            "sha256": "863d18af982c9cfd0ac329297c562afa515fbd7a5eb1f4eb98ff8e4115653dae"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21616,
+            "sha256": "ad7a2be33f40b80d8f1c2e5d5cdd483da077bba6e8189c804485a16769612502"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21558,
+            "sha256": "b8f0fee8b9f9d94a6fc2db0f11d88f1c152434ba18876714d874f34b94b41ba5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48499,
+            "sha256": "5dac04938da3ccd19b3a495842420c1c09e3bd04e5d3b81e5192fae9e1801363"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11230,
+            "sha256": "1474ec4b63cf4352445506df6eaa08c44267d359d096415e1ceed4696885ec40"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "dd3bebd49a43ab941edcffe4"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__receipt_0013",
+      "project_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14",
+      "project_title": "Introduces Vivarium codename; contradiction-graph table",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Introduces Vivarium codename; contradiction-graph table / Vivarium Room Spec Packet",
+      "component_case_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__0013__introduces-vivarium-codename-contradiction-graph-table-vivarium-room-spec-packet",
+      "claim_to_demonstrate": "treats `Vivarium Room Spec Packet` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Vivarium Room Spec Packet v1 (large design document), a Vivarium Component Manifest JSON.",
+      "input_fixture": "project source text and the named component `Vivarium Room Spec Packet`",
+      "operation_under_test": "treats `Vivarium Room Spec Packet` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Vivarium Room Spec Packet v1 (large design document), a Vivarium Component Manifest JSON.",
+      "expected_output": "a room, workbench, or interface function tied to `Vivarium Room Spec Packet`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c0e808ed6875a4f8dca9bd2e",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45825,
+            "sha256": "3e123a27ec049618fab9955fcb45972486955f0579df65366a10a6b2e482e167"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37871,
+            "sha256": "863d18af982c9cfd0ac329297c562afa515fbd7a5eb1f4eb98ff8e4115653dae"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21616,
+            "sha256": "ad7a2be33f40b80d8f1c2e5d5cdd483da077bba6e8189c804485a16769612502"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21558,
+            "sha256": "b8f0fee8b9f9d94a6fc2db0f11d88f1c152434ba18876714d874f34b94b41ba5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48499,
+            "sha256": "5dac04938da3ccd19b3a495842420c1c09e3bd04e5d3b81e5192fae9e1801363"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11230,
+            "sha256": "1474ec4b63cf4352445506df6eaa08c44267d359d096415e1ceed4696885ec40"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "82e5e36776c8f20367d348fc"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__receipt_0014",
+      "project_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14",
+      "project_title": "Introduces Vivarium codename; contradiction-graph table",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Introduces Vivarium codename; contradiction-graph table / Vivarium Component Manifest JSON",
+      "component_case_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__0014__introduces-vivarium-codename-contradiction-graph-table-vivarium-component-manifest-json",
+      "claim_to_demonstrate": "uses `Vivarium Component Manifest JSON` as a named project component with a traceable role in the public mechanism. Source context: Vivarium Component Manifest JSON (listing room_id, visual_codename, route_family, placement, core_axioms, zones), and a.",
+      "input_fixture": "project source text and the named component `Vivarium Component Manifest JSON`",
+      "operation_under_test": "uses `Vivarium Component Manifest JSON` as a named project component with a traceable role in the public mechanism. Source context: Vivarium Component Manifest JSON (listing room_id, visual_codename, route_family, placement, core_axioms, zones), and a.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Vivarium Component Manifest JSON`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a451eea0485bfcd6d3f8b5eb",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45825,
+            "sha256": "3e123a27ec049618fab9955fcb45972486955f0579df65366a10a6b2e482e167"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37871,
+            "sha256": "863d18af982c9cfd0ac329297c562afa515fbd7a5eb1f4eb98ff8e4115653dae"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21616,
+            "sha256": "ad7a2be33f40b80d8f1c2e5d5cdd483da077bba6e8189c804485a16769612502"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21558,
+            "sha256": "b8f0fee8b9f9d94a6fc2db0f11d88f1c152434ba18876714d874f34b94b41ba5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48499,
+            "sha256": "5dac04938da3ccd19b3a495842420c1c09e3bd04e5d3b81e5192fae9e1801363"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11230,
+            "sha256": "1474ec4b63cf4352445506df6eaa08c44267d359d096415e1ceed4696885ec40"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e8c0f44d2c86882849eb9c54"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__receipt_0015",
+      "project_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14",
+      "project_title": "Introduces Vivarium codename; contradiction-graph table",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Introduces Vivarium codename; contradiction-graph table / Vivarium Room Schematic SVG",
+      "component_case_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__0015__introduces-vivarium-codename-contradiction-graph-table-vivarium-room-schematic-svg",
+      "claim_to_demonstrate": "treats `Vivarium Room Schematic SVG` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Vivarium Room Schematic SVG - 02_Tranche_A_Impl/ — a Canon-vs-Live-vs-TrancheA delta map, a.",
+      "input_fixture": "project source text and the named component `Vivarium Room Schematic SVG`",
+      "operation_under_test": "treats `Vivarium Room Schematic SVG` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Vivarium Room Schematic SVG - 02_Tranche_A_Impl/ — a Canon-vs-Live-vs-TrancheA delta map, a.",
+      "expected_output": "a room, workbench, or interface function tied to `Vivarium Room Schematic SVG`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "1e19005714cbbf493b89e3d2",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45825,
+            "sha256": "3e123a27ec049618fab9955fcb45972486955f0579df65366a10a6b2e482e167"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37871,
+            "sha256": "863d18af982c9cfd0ac329297c562afa515fbd7a5eb1f4eb98ff8e4115653dae"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21616,
+            "sha256": "ad7a2be33f40b80d8f1c2e5d5cdd483da077bba6e8189c804485a16769612502"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21558,
+            "sha256": "b8f0fee8b9f9d94a6fc2db0f11d88f1c152434ba18876714d874f34b94b41ba5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48499,
+            "sha256": "5dac04938da3ccd19b3a495842420c1c09e3bd04e5d3b81e5192fae9e1801363"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11230,
+            "sha256": "1474ec4b63cf4352445506df6eaa08c44267d359d096415e1ceed4696885ec40"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "aa4c8e815760830c8651f32d"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__receipt_0016",
+      "project_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14",
+      "project_title": "Introduces Vivarium codename; contradiction-graph table",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Introduces Vivarium codename; contradiction-graph table / Tranche A Command Contract JSON",
+      "component_case_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__0016__introduces-vivarium-codename-contradiction-graph-table-tranche-a-command-contract-json",
+      "claim_to_demonstrate": "uses `Tranche A Command Contract JSON` as a named project component with a traceable role in the public mechanism. Source context: Tranche A Command Contract JSON, a Tranche A Implementation Packet, a Tranche A Release Readiness Annex, and.",
+      "input_fixture": "project source text and the named component `Tranche A Command Contract JSON`",
+      "operation_under_test": "uses `Tranche A Command Contract JSON` as a named project component with a traceable role in the public mechanism. Source context: Tranche A Command Contract JSON, a Tranche A Implementation Packet, a Tranche A Release Readiness Annex, and.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Tranche A Command Contract JSON`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c7bacc8e6549589c9f77faf7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45825,
+            "sha256": "3e123a27ec049618fab9955fcb45972486955f0579df65366a10a6b2e482e167"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37871,
+            "sha256": "863d18af982c9cfd0ac329297c562afa515fbd7a5eb1f4eb98ff8e4115653dae"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21616,
+            "sha256": "ad7a2be33f40b80d8f1c2e5d5cdd483da077bba6e8189c804485a16769612502"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21558,
+            "sha256": "b8f0fee8b9f9d94a6fc2db0f11d88f1c152434ba18876714d874f34b94b41ba5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48499,
+            "sha256": "5dac04938da3ccd19b3a495842420c1c09e3bd04e5d3b81e5192fae9e1801363"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11230,
+            "sha256": "1474ec4b63cf4352445506df6eaa08c44267d359d096415e1ceed4696885ec40"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0836972e3b9e5ebc0f5c464d"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__receipt_0017",
+      "project_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14",
+      "project_title": "Introduces Vivarium codename; contradiction-graph table",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Introduces Vivarium codename; contradiction-graph table / Tranche A Implementation Packet",
+      "component_case_id": "mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14__0017__introduces-vivarium-codename-contradiction-graph-table-tranche-a-implementation-packet",
+      "claim_to_demonstrate": "uses `Tranche A Implementation Packet` as a named project component with a traceable role in the public mechanism. Source context: Tranche A Implementation Packet, a Tranche A Release Readiness Annex, and MuranoOS_Red_Team_Lab_Tranche_A_Schema_Delta_v1.sql It.",
+      "input_fixture": "project source text and the named component `Tranche A Implementation Packet`",
+      "operation_under_test": "uses `Tranche A Implementation Packet` as a named project component with a traceable role in the public mechanism. Source context: Tranche A Implementation Packet, a Tranche A Release Readiness Annex, and MuranoOS_Red_Team_Lab_Tranche_A_Schema_Delta_v1.sql It.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Tranche A Implementation Packet`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "9bb36a3416a2ed07a123e87a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45825,
+            "sha256": "3e123a27ec049618fab9955fcb45972486955f0579df65366a10a6b2e482e167"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37871,
+            "sha256": "863d18af982c9cfd0ac329297c562afa515fbd7a5eb1f4eb98ff8e4115653dae"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21616,
+            "sha256": "ad7a2be33f40b80d8f1c2e5d5cdd483da077bba6e8189c804485a16769612502"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21558,
+            "sha256": "b8f0fee8b9f9d94a6fc2db0f11d88f1c152434ba18876714d874f34b94b41ba5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48499,
+            "sha256": "5dac04938da3ccd19b3a495842420c1c09e3bd04e5d3b81e5192fae9e1801363"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11230,
+            "sha256": "1474ec4b63cf4352445506df6eaa08c44267d359d096415e1ceed4696885ec40"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/README.md",
+          "proof_builds/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-lab-continuation-handoff-pack-2026-04-14/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "02b94e1bd831f4468aea483a"
+    }
+  ]
+}

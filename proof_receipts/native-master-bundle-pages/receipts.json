@@ -1,0 +1,1470 @@
+{
+  "project": {
+    "project_id": "native-master-bundle-pages",
+    "title": "Master Bundle Pages"
+  },
+  "receipts": [
+    {
+      "receipt_id": "native-master-bundle-pages__receipt_0001",
+      "project_id": "native-master-bundle-pages",
+      "project_title": "Master Bundle Pages",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Pages Artifact Identity Register",
+      "component_case_id": "native-master-bundle-pages__0001__master-bundle-pages-artifact-identity-register",
+      "claim_to_demonstrate": "A public atlas of the Master Bundle packets, showing which archives are live inputs, authority layers, handoffs, or reference materials.",
+      "input_fixture": "packet name, source files, version signal, scope, and intended destination",
+      "operation_under_test": "A public atlas of the Master Bundle packets, showing which archives are live inputs, authority layers, handoffs, or reference materials.",
+      "expected_output": "what the packet is and what decision it can still change",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0fdf86a6d1416d594a048c5f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45386,
+            "sha256": "7dffafb6896d334e6d6d455d6afaa7a6a70fc3fa94975c2164c273c37c304494"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38317,
+            "sha256": "86ceaa32500bc504dc507835c91fbbf097839eb24d9acd468938a4fb3912b080"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19867,
+            "sha256": "1f40256c8e9893f036eef3f885ede968dc1413eb8e8f5da06932f2d3c3d1a506"
+          },
+          {
+            "relative_path": "proof_builds/native-master-bundle-pages/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20708,
+            "sha256": "ea5ac901ea074ad5102e70d2de13e079b6bc2231c9fc247970f1f56eaa39bc58"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "7a3484d73ceb96e9dbaca9dcefd5e2e29b5b9aefabc50a71223e2140dc4c2596"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9146,
+            "sha256": "c44b56c7006fe4d1150c1315f67c167200afb436d76de8f0b4aaecd73af05a93"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-master-bundle-pages/blueprint.json",
+          "project_blueprints/native-master-bundle-pages/instrument_map.json",
+          "project_blueprints/native-master-bundle-pages/README.md",
+          "proof_builds/native-master-bundle-pages/proof_build.json",
+          "proof_demos/native-master-bundle-pages/demo_cases.json",
+          "proof_demos/native-master-bundle-pages/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "147ac28259e270ee668bc9ea"
+    },
+    {
+      "receipt_id": "native-master-bundle-pages__receipt_0002",
+      "project_id": "native-master-bundle-pages",
+      "project_title": "Master Bundle Pages",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Pages Extraction And Manifest Layer",
+      "component_case_id": "native-master-bundle-pages__0002__master-bundle-pages-extraction-and-manifest-layer",
+      "claim_to_demonstrate": "Heuer. Loads cognitive-bias and intelligence-analysis failure modes. CIA Tradecraft Primer. Loads structured analytic technique selection and use conditions. Pherson and Pherson. Loads practical tradecraft: indicators, ACH, key assumptions, diagnosticity, and.",
+      "input_fixture": "files, tables, text, screenshots, source notes, and provenance markers",
+      "operation_under_test": "Heuer. Loads cognitive-bias and intelligence-analysis failure modes. CIA Tradecraft Primer. Loads structured analytic technique selection and use conditions. Pherson and Pherson. Loads practical tradecraft: indicators, ACH, key assumptions, diagnosticity, and.",
+      "expected_output": "what can be safely mined from the packet as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d4064f8284d42db167c077d8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45386,
+            "sha256": "7dffafb6896d334e6d6d455d6afaa7a6a70fc3fa94975c2164c273c37c304494"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38317,
+            "sha256": "86ceaa32500bc504dc507835c91fbbf097839eb24d9acd468938a4fb3912b080"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19867,
+            "sha256": "1f40256c8e9893f036eef3f885ede968dc1413eb8e8f5da06932f2d3c3d1a506"
+          },
+          {
+            "relative_path": "proof_builds/native-master-bundle-pages/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20708,
+            "sha256": "ea5ac901ea074ad5102e70d2de13e079b6bc2231c9fc247970f1f56eaa39bc58"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "7a3484d73ceb96e9dbaca9dcefd5e2e29b5b9aefabc50a71223e2140dc4c2596"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9146,
+            "sha256": "c44b56c7006fe4d1150c1315f67c167200afb436d76de8f0b4aaecd73af05a93"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-master-bundle-pages/blueprint.json",
+          "project_blueprints/native-master-bundle-pages/instrument_map.json",
+          "project_blueprints/native-master-bundle-pages/README.md",
+          "proof_builds/native-master-bundle-pages/proof_build.json",
+          "proof_demos/native-master-bundle-pages/demo_cases.json",
+          "proof_demos/native-master-bundle-pages/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6369480a7ecfb7e9c5e19926"
+    },
+    {
+      "receipt_id": "native-master-bundle-pages__receipt_0003",
+      "project_id": "native-master-bundle-pages",
+      "project_title": "Master Bundle Pages",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Pages Mechanism Or Claim Distillation",
+      "component_case_id": "native-master-bundle-pages__0003__master-bundle-pages-mechanism-or-claim-distillation",
+      "claim_to_demonstrate": "It converts a large archive set into navigable project records with title, role, implementation state, source-use implications, and next action.",
+      "input_fixture": "the packet's central method, model, concept, or design rule",
+      "operation_under_test": "It converts a large archive set into navigable project records with title, role, implementation state, source-use implications, and next action.",
+      "expected_output": "the distinctive idea that should not disappear in public summary",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "23247414e5c922324046d909",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45386,
+            "sha256": "7dffafb6896d334e6d6d455d6afaa7a6a70fc3fa94975c2164c273c37c304494"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38317,
+            "sha256": "86ceaa32500bc504dc507835c91fbbf097839eb24d9acd468938a4fb3912b080"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19867,
+            "sha256": "1f40256c8e9893f036eef3f885ede968dc1413eb8e8f5da06932f2d3c3d1a506"
+          },
+          {
+            "relative_path": "proof_builds/native-master-bundle-pages/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20708,
+            "sha256": "ea5ac901ea074ad5102e70d2de13e079b6bc2231c9fc247970f1f56eaa39bc58"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "7a3484d73ceb96e9dbaca9dcefd5e2e29b5b9aefabc50a71223e2140dc4c2596"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9146,
+            "sha256": "c44b56c7006fe4d1150c1315f67c167200afb436d76de8f0b4aaecd73af05a93"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-master-bundle-pages/blueprint.json",
+          "project_blueprints/native-master-bundle-pages/instrument_map.json",
+          "project_blueprints/native-master-bundle-pages/README.md",
+          "proof_builds/native-master-bundle-pages/proof_build.json",
+          "proof_demos/native-master-bundle-pages/demo_cases.json",
+          "proof_demos/native-master-bundle-pages/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c538d1d5d73a5382f31cc763"
+    },
+    {
+      "receipt_id": "native-master-bundle-pages__receipt_0004",
+      "project_id": "native-master-bundle-pages",
+      "project_title": "Master Bundle Pages",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Pages Proof Boundary",
+      "component_case_id": "native-master-bundle-pages__0004__master-bundle-pages-proof-boundary",
+      "claim_to_demonstrate": "Visible public components: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains text-focused and does not claim unverified runtime state.",
+      "input_fixture": "built assets, partial assets, archive-only assets, and unsupported claims",
+      "operation_under_test": "Visible public components: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains text-focused and does not claim unverified runtime state.",
+      "expected_output": "what the packet proves now as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3f75a54cf5b9a997a4e640e7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45386,
+            "sha256": "7dffafb6896d334e6d6d455d6afaa7a6a70fc3fa94975c2164c273c37c304494"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38317,
+            "sha256": "86ceaa32500bc504dc507835c91fbbf097839eb24d9acd468938a4fb3912b080"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19867,
+            "sha256": "1f40256c8e9893f036eef3f885ede968dc1413eb8e8f5da06932f2d3c3d1a506"
+          },
+          {
+            "relative_path": "proof_builds/native-master-bundle-pages/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20708,
+            "sha256": "ea5ac901ea074ad5102e70d2de13e079b6bc2231c9fc247970f1f56eaa39bc58"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "7a3484d73ceb96e9dbaca9dcefd5e2e29b5b9aefabc50a71223e2140dc4c2596"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9146,
+            "sha256": "c44b56c7006fe4d1150c1315f67c167200afb436d76de8f0b4aaecd73af05a93"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-master-bundle-pages/blueprint.json",
+          "project_blueprints/native-master-bundle-pages/instrument_map.json",
+          "project_blueprints/native-master-bundle-pages/README.md",
+          "proof_builds/native-master-bundle-pages/proof_build.json",
+          "proof_demos/native-master-bundle-pages/demo_cases.json",
+          "proof_demos/native-master-bundle-pages/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "462e78f01f0aed57e0538a98"
+    },
+    {
+      "receipt_id": "native-master-bundle-pages__receipt_0005",
+      "project_id": "native-master-bundle-pages",
+      "project_title": "Master Bundle Pages",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Pages Promotion Route",
+      "component_case_id": "native-master-bundle-pages__0005__master-bundle-pages-promotion-route",
+      "claim_to_demonstrate": "Plan: turn infrastructure evidence into plain-language project status, distinguish internal tooling from public claims, and keep every completion claim tied to a file, route, ledger, or gate. The project source notes below should be converted into authored.",
+      "input_fixture": "website room, MuranoOS room, Nexus task, paper, source bank, or archive",
+      "operation_under_test": "Plan: turn infrastructure evidence into plain-language project status, distinguish internal tooling from public claims, and keep every completion claim tied to a file, route, ledger, or gate. The project source notes below should be converted into authored.",
+      "expected_output": "where the packet should go next as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e05552ce50ffd3271b5a69f7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45386,
+            "sha256": "7dffafb6896d334e6d6d455d6afaa7a6a70fc3fa94975c2164c273c37c304494"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38317,
+            "sha256": "86ceaa32500bc504dc507835c91fbbf097839eb24d9acd468938a4fb3912b080"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19867,
+            "sha256": "1f40256c8e9893f036eef3f885ede968dc1413eb8e8f5da06932f2d3c3d1a506"
+          },
+          {
+            "relative_path": "proof_builds/native-master-bundle-pages/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20708,
+            "sha256": "ea5ac901ea074ad5102e70d2de13e079b6bc2231c9fc247970f1f56eaa39bc58"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "7a3484d73ceb96e9dbaca9dcefd5e2e29b5b9aefabc50a71223e2140dc4c2596"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9146,
+            "sha256": "c44b56c7006fe4d1150c1315f67c167200afb436d76de8f0b4aaecd73af05a93"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-master-bundle-pages/blueprint.json",
+          "project_blueprints/native-master-bundle-pages/instrument_map.json",
+          "project_blueprints/native-master-bundle-pages/README.md",
+          "proof_builds/native-master-bundle-pages/proof_build.json",
+          "proof_demos/native-master-bundle-pages/demo_cases.json",
+          "proof_demos/native-master-bundle-pages/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "fa8ef786066bfd9c76fb64bd"
+    },
+    {
+      "receipt_id": "native-master-bundle-pages__receipt_0006",
+      "project_id": "native-master-bundle-pages",
+      "project_title": "Master Bundle Pages",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Pages Current Authority State",
+      "component_case_id": "native-master-bundle-pages__0006__master-bundle-pages-current-authority-state",
+      "claim_to_demonstrate": "Status: native public port complete for upload and navigation; substantive source-project verification remains limited by the source lineage ceiling and the original project governance records. The page separates public presentation from project completion.",
+      "input_fixture": "canonical, superseded, derivative, draft, or context-only status",
+      "operation_under_test": "Status: native public port complete for upload and navigation; substantive source-project verification remains limited by the source lineage ceiling and the original project governance records. The page separates public presentation from project completion.",
+      "expected_output": "how strongly the packet may govern a public page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4bf580d68c94f0235cd07355",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45386,
+            "sha256": "7dffafb6896d334e6d6d455d6afaa7a6a70fc3fa94975c2164c273c37c304494"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38317,
+            "sha256": "86ceaa32500bc504dc507835c91fbbf097839eb24d9acd468938a4fb3912b080"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19867,
+            "sha256": "1f40256c8e9893f036eef3f885ede968dc1413eb8e8f5da06932f2d3c3d1a506"
+          },
+          {
+            "relative_path": "proof_builds/native-master-bundle-pages/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20708,
+            "sha256": "ea5ac901ea074ad5102e70d2de13e079b6bc2231c9fc247970f1f56eaa39bc58"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "7a3484d73ceb96e9dbaca9dcefd5e2e29b5b9aefabc50a71223e2140dc4c2596"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9146,
+            "sha256": "c44b56c7006fe4d1150c1315f67c167200afb436d76de8f0b4aaecd73af05a93"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-master-bundle-pages/blueprint.json",
+          "project_blueprints/native-master-bundle-pages/instrument_map.json",
+          "project_blueprints/native-master-bundle-pages/README.md",
+          "proof_builds/native-master-bundle-pages/proof_build.json",
+          "proof_demos/native-master-bundle-pages/demo_cases.json",
+          "proof_demos/native-master-bundle-pages/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "50b07600e67c34466762a79a"
+    },
+    {
+      "receipt_id": "native-master-bundle-pages__receipt_0007",
+      "project_id": "native-master-bundle-pages",
+      "project_title": "Master Bundle Pages",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Pages Gap And Reconciliation Queue",
+      "component_case_id": "native-master-bundle-pages__0007__master-bundle-pages-gap-and-reconciliation-queue",
+      "claim_to_demonstrate": "Remaining gaps: some infrastructure pages still need human-authored connective prose so a first-time reviewer can see why the machinery matters. The kept Evidence Sections below preserve project substance for close reading; final public prose should be.",
+      "input_fixture": "missing source reads, duplicate resolution, version adjudication, or implementation work",
+      "operation_under_test": "Remaining gaps: some infrastructure pages still need human-authored connective prose so a first-time reviewer can see why the machinery matters. The kept Evidence Sections below preserve project substance for close reading; final public prose should be.",
+      "expected_output": "next step before stronger public use as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d860491541934d3d70c14bc6",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45386,
+            "sha256": "7dffafb6896d334e6d6d455d6afaa7a6a70fc3fa94975c2164c273c37c304494"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38317,
+            "sha256": "86ceaa32500bc504dc507835c91fbbf097839eb24d9acd468938a4fb3912b080"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19867,
+            "sha256": "1f40256c8e9893f036eef3f885ede968dc1413eb8e8f5da06932f2d3c3d1a506"
+          },
+          {
+            "relative_path": "proof_builds/native-master-bundle-pages/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20708,
+            "sha256": "ea5ac901ea074ad5102e70d2de13e079b6bc2231c9fc247970f1f56eaa39bc58"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "7a3484d73ceb96e9dbaca9dcefd5e2e29b5b9aefabc50a71223e2140dc4c2596"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9146,
+            "sha256": "c44b56c7006fe4d1150c1315f67c167200afb436d76de8f0b4aaecd73af05a93"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-master-bundle-pages/blueprint.json",
+          "project_blueprints/native-master-bundle-pages/instrument_map.json",
+          "project_blueprints/native-master-bundle-pages/README.md",
+          "proof_builds/native-master-bundle-pages/proof_build.json",
+          "proof_demos/native-master-bundle-pages/demo_cases.json",
+          "proof_demos/native-master-bundle-pages/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "cfdff1be8af669fe4186c2ab"
+    },
+    {
+      "receipt_id": "native-master-bundle-pages__receipt_0008",
+      "project_id": "native-master-bundle-pages",
+      "project_title": "Master Bundle Pages",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Pages / The Red Team Lab",
+      "component_case_id": "native-master-bundle-pages__0008__master-bundle-pages-the-red-team-lab",
+      "claim_to_demonstrate": "treats `The Red Team Lab` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: The Red Team Lab is valuable when challenge, scope lock, source custody, contradiction pressure, and.",
+      "input_fixture": "project source text and the named component `The Red Team Lab`",
+      "operation_under_test": "treats `The Red Team Lab` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: The Red Team Lab is valuable when challenge, scope lock, source custody, contradiction pressure, and.",
+      "expected_output": "a room, workbench, or interface function tied to `The Red Team Lab`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0cafcc57bda3c8db1b8c5f0f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45386,
+            "sha256": "7dffafb6896d334e6d6d455d6afaa7a6a70fc3fa94975c2164c273c37c304494"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38317,
+            "sha256": "86ceaa32500bc504dc507835c91fbbf097839eb24d9acd468938a4fb3912b080"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19867,
+            "sha256": "1f40256c8e9893f036eef3f885ede968dc1413eb8e8f5da06932f2d3c3d1a506"
+          },
+          {
+            "relative_path": "proof_builds/native-master-bundle-pages/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20708,
+            "sha256": "ea5ac901ea074ad5102e70d2de13e079b6bc2231c9fc247970f1f56eaa39bc58"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "7a3484d73ceb96e9dbaca9dcefd5e2e29b5b9aefabc50a71223e2140dc4c2596"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9146,
+            "sha256": "c44b56c7006fe4d1150c1315f67c167200afb436d76de8f0b4aaecd73af05a93"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-master-bundle-pages/blueprint.json",
+          "project_blueprints/native-master-bundle-pages/instrument_map.json",
+          "project_blueprints/native-master-bundle-pages/README.md",
+          "proof_builds/native-master-bundle-pages/proof_build.json",
+          "proof_demos/native-master-bundle-pages/demo_cases.json",
+          "proof_demos/native-master-bundle-pages/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "dfc0b8ce2b260fa06ef6b3e9"
+    },
+    {
+      "receipt_id": "native-master-bundle-pages__receipt_0009",
+      "project_id": "native-master-bundle-pages",
+      "project_title": "Master Bundle Pages",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Pages / Evidence Sections",
+      "component_case_id": "native-master-bundle-pages__0009__master-bundle-pages-evidence-sections",
+      "claim_to_demonstrate": "uses `Evidence Sections` as a named project component with a traceable role in the public mechanism. Source context: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "input_fixture": "project source text and the named component `Evidence Sections`",
+      "operation_under_test": "uses `Evidence Sections` as a named project component with a traceable role in the public mechanism. Source context: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Evidence Sections`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c79c3f41d4eb5a23fefe1239",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45386,
+            "sha256": "7dffafb6896d334e6d6d455d6afaa7a6a70fc3fa94975c2164c273c37c304494"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38317,
+            "sha256": "86ceaa32500bc504dc507835c91fbbf097839eb24d9acd468938a4fb3912b080"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19867,
+            "sha256": "1f40256c8e9893f036eef3f885ede968dc1413eb8e8f5da06932f2d3c3d1a506"
+          },
+          {
+            "relative_path": "proof_builds/native-master-bundle-pages/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20708,
+            "sha256": "ea5ac901ea074ad5102e70d2de13e079b6bc2231c9fc247970f1f56eaa39bc58"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "7a3484d73ceb96e9dbaca9dcefd5e2e29b5b9aefabc50a71223e2140dc4c2596"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9146,
+            "sha256": "c44b56c7006fe4d1150c1315f67c167200afb436d76de8f0b4aaecd73af05a93"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-master-bundle-pages/blueprint.json",
+          "project_blueprints/native-master-bundle-pages/instrument_map.json",
+          "project_blueprints/native-master-bundle-pages/README.md",
+          "proof_builds/native-master-bundle-pages/proof_build.json",
+          "proof_demos/native-master-bundle-pages/demo_cases.json",
+          "proof_demos/native-master-bundle-pages/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d440e23bff0d029f8b342591"
+    },
+    {
+      "receipt_id": "native-master-bundle-pages__receipt_0010",
+      "project_id": "native-master-bundle-pages",
+      "project_title": "Master Bundle Pages",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Pages / Review Notes",
+      "component_case_id": "native-master-bundle-pages__0010__master-bundle-pages-review-notes",
+      "claim_to_demonstrate": "uses `Review Notes` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The.",
+      "input_fixture": "project source text and the named component `Review Notes`",
+      "operation_under_test": "uses `Review Notes` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `Review Notes`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c79c3f41d4eb5a23fefe1239",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45386,
+            "sha256": "7dffafb6896d334e6d6d455d6afaa7a6a70fc3fa94975c2164c273c37c304494"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38317,
+            "sha256": "86ceaa32500bc504dc507835c91fbbf097839eb24d9acd468938a4fb3912b080"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19867,
+            "sha256": "1f40256c8e9893f036eef3f885ede968dc1413eb8e8f5da06932f2d3c3d1a506"
+          },
+          {
+            "relative_path": "proof_builds/native-master-bundle-pages/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20708,
+            "sha256": "ea5ac901ea074ad5102e70d2de13e079b6bc2231c9fc247970f1f56eaa39bc58"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "7a3484d73ceb96e9dbaca9dcefd5e2e29b5b9aefabc50a71223e2140dc4c2596"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9146,
+            "sha256": "c44b56c7006fe4d1150c1315f67c167200afb436d76de8f0b4aaecd73af05a93"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-master-bundle-pages/blueprint.json",
+          "project_blueprints/native-master-bundle-pages/instrument_map.json",
+          "project_blueprints/native-master-bundle-pages/README.md",
+          "proof_builds/native-master-bundle-pages/proof_build.json",
+          "proof_demos/native-master-bundle-pages/demo_cases.json",
+          "proof_demos/native-master-bundle-pages/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "03fcc3e14210e181d56531a4"
+    },
+    {
+      "receipt_id": "native-master-bundle-pages__receipt_0011",
+      "project_id": "native-master-bundle-pages",
+      "project_title": "Master Bundle Pages",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Pages / Master Bundle",
+      "component_case_id": "native-master-bundle-pages__0011__master-bundle-pages-master-bundle",
+      "claim_to_demonstrate": "uses `Master Bundle` as a named project component with a traceable role in the public mechanism. Source context: Master Bundle Pages is presented as a portfolio infrastructure and source-system page. Its public purpose is to show the infrastructure that lets.",
+      "input_fixture": "project source text and the named component `Master Bundle`",
+      "operation_under_test": "uses `Master Bundle` as a named project component with a traceable role in the public mechanism. Source context: Master Bundle Pages is presented as a portfolio infrastructure and source-system page. Its public purpose is to show the infrastructure that lets.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Master Bundle`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c24f26074672a593be982122",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45386,
+            "sha256": "7dffafb6896d334e6d6d455d6afaa7a6a70fc3fa94975c2164c273c37c304494"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38317,
+            "sha256": "86ceaa32500bc504dc507835c91fbbf097839eb24d9acd468938a4fb3912b080"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19867,
+            "sha256": "1f40256c8e9893f036eef3f885ede968dc1413eb8e8f5da06932f2d3c3d1a506"
+          },
+          {
+            "relative_path": "proof_builds/native-master-bundle-pages/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20708,
+            "sha256": "ea5ac901ea074ad5102e70d2de13e079b6bc2231c9fc247970f1f56eaa39bc58"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "7a3484d73ceb96e9dbaca9dcefd5e2e29b5b9aefabc50a71223e2140dc4c2596"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9146,
+            "sha256": "c44b56c7006fe4d1150c1315f67c167200afb436d76de8f0b4aaecd73af05a93"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-master-bundle-pages/blueprint.json",
+          "project_blueprints/native-master-bundle-pages/instrument_map.json",
+          "project_blueprints/native-master-bundle-pages/README.md",
+          "proof_builds/native-master-bundle-pages/proof_build.json",
+          "proof_demos/native-master-bundle-pages/demo_cases.json",
+          "proof_demos/native-master-bundle-pages/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f691691c909740e362985195"
+    },
+    {
+      "receipt_id": "native-master-bundle-pages__receipt_0012",
+      "project_id": "native-master-bundle-pages",
+      "project_title": "Master Bundle Pages",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Pages / Native Navigation",
+      "component_case_id": "native-master-bundle-pages__0012__master-bundle-pages-native-navigation",
+      "claim_to_demonstrate": "uses `Native Navigation` as a named project component with a traceable role in the public mechanism. Source context: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "input_fixture": "project source text and the named component `Native Navigation`",
+      "operation_under_test": "uses `Native Navigation` as a named project component with a traceable role in the public mechanism. Source context: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Native Navigation`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c79c3f41d4eb5a23fefe1239",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45386,
+            "sha256": "7dffafb6896d334e6d6d455d6afaa7a6a70fc3fa94975c2164c273c37c304494"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38317,
+            "sha256": "86ceaa32500bc504dc507835c91fbbf097839eb24d9acd468938a4fb3912b080"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19867,
+            "sha256": "1f40256c8e9893f036eef3f885ede968dc1413eb8e8f5da06932f2d3c3d1a506"
+          },
+          {
+            "relative_path": "proof_builds/native-master-bundle-pages/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20708,
+            "sha256": "ea5ac901ea074ad5102e70d2de13e079b6bc2231c9fc247970f1f56eaa39bc58"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "7a3484d73ceb96e9dbaca9dcefd5e2e29b5b9aefabc50a71223e2140dc4c2596"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9146,
+            "sha256": "c44b56c7006fe4d1150c1315f67c167200afb436d76de8f0b4aaecd73af05a93"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-master-bundle-pages/blueprint.json",
+          "project_blueprints/native-master-bundle-pages/instrument_map.json",
+          "project_blueprints/native-master-bundle-pages/README.md",
+          "proof_builds/native-master-bundle-pages/proof_build.json",
+          "proof_demos/native-master-bundle-pages/demo_cases.json",
+          "proof_demos/native-master-bundle-pages/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3333d538bbe9c5ac05f4a04c"
+    },
+    {
+      "receipt_id": "native-master-bundle-pages__receipt_0013",
+      "project_id": "native-master-bundle-pages",
+      "project_title": "Master Bundle Pages",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Pages / APA lineage",
+      "component_case_id": "native-master-bundle-pages__0013__master-bundle-pages-apa-lineage",
+      "claim_to_demonstrate": "uses `APA lineage` as a named project component with a traceable role in the public mechanism. Source context: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "input_fixture": "project source text and the named component `APA lineage`",
+      "operation_under_test": "uses `APA lineage` as a named project component with a traceable role in the public mechanism. Source context: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `APA lineage`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c79c3f41d4eb5a23fefe1239",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45386,
+            "sha256": "7dffafb6896d334e6d6d455d6afaa7a6a70fc3fa94975c2164c273c37c304494"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38317,
+            "sha256": "86ceaa32500bc504dc507835c91fbbf097839eb24d9acd468938a4fb3912b080"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19867,
+            "sha256": "1f40256c8e9893f036eef3f885ede968dc1413eb8e8f5da06932f2d3c3d1a506"
+          },
+          {
+            "relative_path": "proof_builds/native-master-bundle-pages/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20708,
+            "sha256": "ea5ac901ea074ad5102e70d2de13e079b6bc2231c9fc247970f1f56eaa39bc58"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "7a3484d73ceb96e9dbaca9dcefd5e2e29b5b9aefabc50a71223e2140dc4c2596"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9146,
+            "sha256": "c44b56c7006fe4d1150c1315f67c167200afb436d76de8f0b4aaecd73af05a93"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-master-bundle-pages/blueprint.json",
+          "project_blueprints/native-master-bundle-pages/instrument_map.json",
+          "project_blueprints/native-master-bundle-pages/README.md",
+          "proof_builds/native-master-bundle-pages/proof_build.json",
+          "proof_demos/native-master-bundle-pages/demo_cases.json",
+          "proof_demos/native-master-bundle-pages/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5ffb96c6b5a300550041df82"
+    },
+    {
+      "receipt_id": "native-master-bundle-pages__receipt_0014",
+      "project_id": "native-master-bundle-pages",
+      "project_title": "Master Bundle Pages",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Pages / source lineage claim limit. The public package remains text",
+      "component_case_id": "native-master-bundle-pages__0014__master-bundle-pages-source-lineage-claim-limit-the-public-package-remains-text",
+      "claim_to_demonstrate": "uses `source lineage claim limit. The public package remains text` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA.",
+      "input_fixture": "project source text and the named component `source lineage claim limit. The public package remains text`",
+      "operation_under_test": "uses `source lineage claim limit. The public package remains text` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `source lineage claim limit. The public package remains text`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c79c3f41d4eb5a23fefe1239",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45386,
+            "sha256": "7dffafb6896d334e6d6d455d6afaa7a6a70fc3fa94975c2164c273c37c304494"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38317,
+            "sha256": "86ceaa32500bc504dc507835c91fbbf097839eb24d9acd468938a4fb3912b080"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19867,
+            "sha256": "1f40256c8e9893f036eef3f885ede968dc1413eb8e8f5da06932f2d3c3d1a506"
+          },
+          {
+            "relative_path": "proof_builds/native-master-bundle-pages/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20708,
+            "sha256": "ea5ac901ea074ad5102e70d2de13e079b6bc2231c9fc247970f1f56eaa39bc58"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "7a3484d73ceb96e9dbaca9dcefd5e2e29b5b9aefabc50a71223e2140dc4c2596"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9146,
+            "sha256": "c44b56c7006fe4d1150c1315f67c167200afb436d76de8f0b4aaecd73af05a93"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-master-bundle-pages/blueprint.json",
+          "project_blueprints/native-master-bundle-pages/instrument_map.json",
+          "project_blueprints/native-master-bundle-pages/README.md",
+          "proof_builds/native-master-bundle-pages/proof_build.json",
+          "proof_demos/native-master-bundle-pages/demo_cases.json",
+          "proof_demos/native-master-bundle-pages/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9d0488b3a2f103e809cd045c"
+    },
+    {
+      "receipt_id": "native-master-bundle-pages__receipt_0015",
+      "project_id": "native-master-bundle-pages",
+      "project_title": "Master Bundle Pages",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Pages / Language Project Status",
+      "component_case_id": "native-master-bundle-pages__0015__master-bundle-pages-language-project-status",
+      "claim_to_demonstrate": "uses `Language Project Status` as a named project component with a traceable role in the public mechanism. Source context: turn infrastructure evidence into plain-language project status, distinguish internal tooling from public claims, and keep every.",
+      "input_fixture": "project source text and the named component `Language Project Status`",
+      "operation_under_test": "uses `Language Project Status` as a named project component with a traceable role in the public mechanism. Source context: turn infrastructure evidence into plain-language project status, distinguish internal tooling from public claims, and keep every.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Language Project Status`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4b561b2f32216a3e8821a649",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45386,
+            "sha256": "7dffafb6896d334e6d6d455d6afaa7a6a70fc3fa94975c2164c273c37c304494"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38317,
+            "sha256": "86ceaa32500bc504dc507835c91fbbf097839eb24d9acd468938a4fb3912b080"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19867,
+            "sha256": "1f40256c8e9893f036eef3f885ede968dc1413eb8e8f5da06932f2d3c3d1a506"
+          },
+          {
+            "relative_path": "proof_builds/native-master-bundle-pages/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20708,
+            "sha256": "ea5ac901ea074ad5102e70d2de13e079b6bc2231c9fc247970f1f56eaa39bc58"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "7a3484d73ceb96e9dbaca9dcefd5e2e29b5b9aefabc50a71223e2140dc4c2596"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9146,
+            "sha256": "c44b56c7006fe4d1150c1315f67c167200afb436d76de8f0b4aaecd73af05a93"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-master-bundle-pages/blueprint.json",
+          "project_blueprints/native-master-bundle-pages/instrument_map.json",
+          "project_blueprints/native-master-bundle-pages/README.md",
+          "proof_builds/native-master-bundle-pages/proof_build.json",
+          "proof_demos/native-master-bundle-pages/demo_cases.json",
+          "proof_demos/native-master-bundle-pages/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a97fea73a875f2c22bf8fffa"
+    },
+    {
+      "receipt_id": "native-master-bundle-pages__receipt_0016",
+      "project_id": "native-master-bundle-pages",
+      "project_title": "Master Bundle Pages",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Pages / Distinguish Internal Tooling From Public Claims",
+      "component_case_id": "native-master-bundle-pages__0016__master-bundle-pages-distinguish-internal-tooling-from-public-claims",
+      "claim_to_demonstrate": "uses `Distinguish Internal Tooling From Public Claims` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: turn infrastructure evidence into plain-language project status, distinguish internal tooling.",
+      "input_fixture": "project source text and the named component `Distinguish Internal Tooling From Public Claims`",
+      "operation_under_test": "uses `Distinguish Internal Tooling From Public Claims` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: turn infrastructure evidence into plain-language project status, distinguish internal tooling.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `Distinguish Internal Tooling From Public Claims`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4b561b2f32216a3e8821a649",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45386,
+            "sha256": "7dffafb6896d334e6d6d455d6afaa7a6a70fc3fa94975c2164c273c37c304494"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38317,
+            "sha256": "86ceaa32500bc504dc507835c91fbbf097839eb24d9acd468938a4fb3912b080"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19867,
+            "sha256": "1f40256c8e9893f036eef3f885ede968dc1413eb8e8f5da06932f2d3c3d1a506"
+          },
+          {
+            "relative_path": "proof_builds/native-master-bundle-pages/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20708,
+            "sha256": "ea5ac901ea074ad5102e70d2de13e079b6bc2231c9fc247970f1f56eaa39bc58"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "7a3484d73ceb96e9dbaca9dcefd5e2e29b5b9aefabc50a71223e2140dc4c2596"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9146,
+            "sha256": "c44b56c7006fe4d1150c1315f67c167200afb436d76de8f0b4aaecd73af05a93"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-master-bundle-pages/blueprint.json",
+          "project_blueprints/native-master-bundle-pages/instrument_map.json",
+          "project_blueprints/native-master-bundle-pages/README.md",
+          "proof_builds/native-master-bundle-pages/proof_build.json",
+          "proof_demos/native-master-bundle-pages/demo_cases.json",
+          "proof_demos/native-master-bundle-pages/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8ec31f4e11c1952908322aaa"
+    },
+    {
+      "receipt_id": "native-master-bundle-pages__receipt_0017",
+      "project_id": "native-master-bundle-pages",
+      "project_title": "Master Bundle Pages",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Master Bundle Pages / Keep Every Completion Claim Tied To A File",
+      "component_case_id": "native-master-bundle-pages__0017__master-bundle-pages-keep-every-completion-claim-tied-to-a-file",
+      "claim_to_demonstrate": "uses `Keep Every Completion Claim Tied To A File` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: turn infrastructure evidence into plain-language project status, distinguish internal tooling from.",
+      "input_fixture": "project source text and the named component `Keep Every Completion Claim Tied To A File`",
+      "operation_under_test": "uses `Keep Every Completion Claim Tied To A File` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: turn infrastructure evidence into plain-language project status, distinguish internal tooling from.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `Keep Every Completion Claim Tied To A File`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4b561b2f32216a3e8821a649",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45386,
+            "sha256": "7dffafb6896d334e6d6d455d6afaa7a6a70fc3fa94975c2164c273c37c304494"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38317,
+            "sha256": "86ceaa32500bc504dc507835c91fbbf097839eb24d9acd468938a4fb3912b080"
+          },
+          {
+            "relative_path": "project_blueprints/native-master-bundle-pages/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19867,
+            "sha256": "1f40256c8e9893f036eef3f885ede968dc1413eb8e8f5da06932f2d3c3d1a506"
+          },
+          {
+            "relative_path": "proof_builds/native-master-bundle-pages/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20708,
+            "sha256": "ea5ac901ea074ad5102e70d2de13e079b6bc2231c9fc247970f1f56eaa39bc58"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45261,
+            "sha256": "7a3484d73ceb96e9dbaca9dcefd5e2e29b5b9aefabc50a71223e2140dc4c2596"
+          },
+          {
+            "relative_path": "proof_demos/native-master-bundle-pages/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9146,
+            "sha256": "c44b56c7006fe4d1150c1315f67c167200afb436d76de8f0b4aaecd73af05a93"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-master-bundle-pages/blueprint.json",
+          "project_blueprints/native-master-bundle-pages/instrument_map.json",
+          "project_blueprints/native-master-bundle-pages/README.md",
+          "proof_builds/native-master-bundle-pages/proof_build.json",
+          "proof_demos/native-master-bundle-pages/demo_cases.json",
+          "proof_demos/native-master-bundle-pages/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "adebd0c5cacbdd04e561dea7"
+    }
+  ]
+}

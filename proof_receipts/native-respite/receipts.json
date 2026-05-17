@@ -1,0 +1,1467 @@
+{
+  "project": {
+    "project_id": "native-respite",
+    "title": "Recovery Respite Facility Operations"
+  },
+  "receipts": [
+    {
+      "receipt_id": "native-respite__receipt_0001",
+      "project_id": "native-respite",
+      "project_title": "Recovery Respite Facility Operations",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Recovery Respite Facility Operations Runtime Or Interface Surface",
+      "component_case_id": "native-respite__0001__recovery-respite-facility-operations-runtime-or-interface-surface",
+      "claim_to_demonstrate": "Recovery Respite Facility Operations is presented as a historical or operational case-study room.",
+      "input_fixture": "local app, web room, data surface, or workstation entry point",
+      "operation_under_test": "Recovery Respite Facility Operations is presented as a historical or operational case-study room.",
+      "expected_output": "reader-facing definition of the software object and its intended user",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8fd882083e0f8259b8a06f60",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-respite/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47169,
+            "sha256": "4ef7a3df31f8fa252929c200110221440381df7c7204b1b1373211eb92891042"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39266,
+            "sha256": "cb9c044144ef9ee260283ce7c564d57ef570372f8cd8d580757f5bea2bba7ac5"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20704,
+            "sha256": "3a5f057fd13c1e2154dfaa5f24b442986b96a43a4f3e3d08e34906a2dc486c59"
+          },
+          {
+            "relative_path": "proof_builds/native-respite/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21521,
+            "sha256": "d1b508ac0d0edfcece06fabd3134d0864a134b93f59f6794150069d305eb1a88"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46700,
+            "sha256": "d37f5b29451e158d0e6718042de20c24f6e6bb2a7d1f9025c59f9e09f888e07c"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9800,
+            "sha256": "56f04cf1a7f3631c93f818bc676d29555fddf4943c574115dc47033fef2e70fd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-respite/blueprint.json",
+          "project_blueprints/native-respite/instrument_map.json",
+          "project_blueprints/native-respite/README.md",
+          "proof_builds/native-respite/proof_build.json",
+          "proof_demos/native-respite/demo_cases.json",
+          "proof_demos/native-respite/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b48702505e0df52d26e74147"
+    },
+    {
+      "receipt_id": "native-respite__receipt_0002",
+      "project_id": "native-respite",
+      "project_title": "Recovery Respite Facility Operations",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Recovery Respite Facility Operations Data And State Model",
+      "component_case_id": "native-respite__0002__recovery-respite-facility-operations-data-and-state-model",
+      "claim_to_demonstrate": "George and Bennett. Loads case-study design, process tracing, and theory-development discipline. Allison and Zelikow. Loads decision-model plurality: rational actor, organizational process, and bureaucratic politics. Jervis. Loads perception, misperception.",
+      "input_fixture": "records, files, indexes, tables, project state, source state, and user decisions",
+      "operation_under_test": "George and Bennett. Loads case-study design, process tracing, and theory-development discipline. Allison and Zelikow. Loads decision-model plurality: rational actor, organizational process, and bureaucratic politics. Jervis. Loads perception, misperception.",
+      "expected_output": "state model that explains what the tool remembers and what it refuses to infer",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4da81596b91ff65b95cc789b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-respite/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47169,
+            "sha256": "4ef7a3df31f8fa252929c200110221440381df7c7204b1b1373211eb92891042"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39266,
+            "sha256": "cb9c044144ef9ee260283ce7c564d57ef570372f8cd8d580757f5bea2bba7ac5"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20704,
+            "sha256": "3a5f057fd13c1e2154dfaa5f24b442986b96a43a4f3e3d08e34906a2dc486c59"
+          },
+          {
+            "relative_path": "proof_builds/native-respite/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21521,
+            "sha256": "d1b508ac0d0edfcece06fabd3134d0864a134b93f59f6794150069d305eb1a88"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46700,
+            "sha256": "d37f5b29451e158d0e6718042de20c24f6e6bb2a7d1f9025c59f9e09f888e07c"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9800,
+            "sha256": "56f04cf1a7f3631c93f818bc676d29555fddf4943c574115dc47033fef2e70fd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-respite/blueprint.json",
+          "project_blueprints/native-respite/instrument_map.json",
+          "project_blueprints/native-respite/README.md",
+          "proof_builds/native-respite/proof_build.json",
+          "proof_demos/native-respite/demo_cases.json",
+          "proof_demos/native-respite/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "bd8fadd05b149fe2294e375c"
+    },
+    {
+      "receipt_id": "native-respite__receipt_0003",
+      "project_id": "native-respite",
+      "project_title": "Recovery Respite Facility Operations",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Recovery Respite Facility Operations Core Instrument Panel",
+      "component_case_id": "native-respite__0003__recovery-respite-facility-operations-core-instrument-panel",
+      "claim_to_demonstrate": "The working mechanism is to move from case definition to actors, constraints, causal mechanism, analogy limits, operational decision point, and limited lesson. The reader should be able to ask what enters the room, what transformation occurs, what judgment or.",
+      "input_fixture": "tool buttons, rooms, workflow steps, analytical controls, and review surfaces",
+      "operation_under_test": "The working mechanism is to move from case definition to actors, constraints, causal mechanism, analogy limits, operational decision point, and limited lesson. The reader should be able to ask what enters the room, what transformation occurs, what judgment or.",
+      "expected_output": "named instruments that perform the useful work rather than generic navigation",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0f34fd9a5a44ba183928e1ab",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-respite/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47169,
+            "sha256": "4ef7a3df31f8fa252929c200110221440381df7c7204b1b1373211eb92891042"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39266,
+            "sha256": "cb9c044144ef9ee260283ce7c564d57ef570372f8cd8d580757f5bea2bba7ac5"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20704,
+            "sha256": "3a5f057fd13c1e2154dfaa5f24b442986b96a43a4f3e3d08e34906a2dc486c59"
+          },
+          {
+            "relative_path": "proof_builds/native-respite/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21521,
+            "sha256": "d1b508ac0d0edfcece06fabd3134d0864a134b93f59f6794150069d305eb1a88"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46700,
+            "sha256": "d37f5b29451e158d0e6718042de20c24f6e6bb2a7d1f9025c59f9e09f888e07c"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9800,
+            "sha256": "56f04cf1a7f3631c93f818bc676d29555fddf4943c574115dc47033fef2e70fd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-respite/blueprint.json",
+          "project_blueprints/native-respite/instrument_map.json",
+          "project_blueprints/native-respite/README.md",
+          "proof_builds/native-respite/proof_build.json",
+          "proof_demos/native-respite/demo_cases.json",
+          "proof_demos/native-respite/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4c7a43f832e434570eaca59b"
+    },
+    {
+      "receipt_id": "native-respite__receipt_0004",
+      "project_id": "native-respite",
+      "project_title": "Recovery Respite Facility Operations",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Recovery Respite Facility Operations Workflow Orchestration",
+      "component_case_id": "native-respite__0004__recovery-respite-facility-operations-workflow-orchestration",
+      "claim_to_demonstrate": "Plan: name the governing case, distinguish evidence from analogy, state the transfer rule, add counter-analogies, and document which operational or historical claims remain provisional. The project source notes below should be converted into authored.",
+      "input_fixture": "upstream inputs, intermediate decisions, downstream products, and stale-state conditions",
+      "operation_under_test": "Plan: name the governing case, distinguish evidence from analogy, state the transfer rule, add counter-analogies, and document which operational or historical claims remain provisional. The project source notes below should be converted into authored.",
+      "expected_output": "pipeline path showing how work moves and when earlier decisions must be reopened",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fd96493f227a13a744bbc6d4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-respite/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47169,
+            "sha256": "4ef7a3df31f8fa252929c200110221440381df7c7204b1b1373211eb92891042"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39266,
+            "sha256": "cb9c044144ef9ee260283ce7c564d57ef570372f8cd8d580757f5bea2bba7ac5"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20704,
+            "sha256": "3a5f057fd13c1e2154dfaa5f24b442986b96a43a4f3e3d08e34906a2dc486c59"
+          },
+          {
+            "relative_path": "proof_builds/native-respite/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21521,
+            "sha256": "d1b508ac0d0edfcece06fabd3134d0864a134b93f59f6794150069d305eb1a88"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46700,
+            "sha256": "d37f5b29451e158d0e6718042de20c24f6e6bb2a7d1f9025c59f9e09f888e07c"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9800,
+            "sha256": "56f04cf1a7f3631c93f818bc676d29555fddf4943c574115dc47033fef2e70fd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-respite/blueprint.json",
+          "project_blueprints/native-respite/instrument_map.json",
+          "project_blueprints/native-respite/README.md",
+          "proof_builds/native-respite/proof_build.json",
+          "proof_demos/native-respite/demo_cases.json",
+          "proof_demos/native-respite/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d49bfb582d37775b898bf089"
+    },
+    {
+      "receipt_id": "native-respite__receipt_0005",
+      "project_id": "native-respite",
+      "project_title": "Recovery Respite Facility Operations",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Recovery Respite Facility Operations Review And Governance Gate",
+      "component_case_id": "native-respite__0005__recovery-respite-facility-operations-review-and-governance-gate",
+      "claim_to_demonstrate": "Status: native public port complete for upload and navigation; substantive source-project verification remains limited by the source lineage ceiling and the original project governance records. The page separates public presentation from project completion.",
+      "input_fixture": "quality rules, source checks, claim ceilings, reviewer steps, and failure states",
+      "operation_under_test": "Status: native public port complete for upload and navigation; substantive source-project verification remains limited by the source lineage ceiling and the original project governance records. The page separates public presentation from project completion.",
+      "expected_output": "decision gate that makes the output inspectable before it is trusted",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f0a9b7ff3262d180291ae4ca",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-respite/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47169,
+            "sha256": "4ef7a3df31f8fa252929c200110221440381df7c7204b1b1373211eb92891042"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39266,
+            "sha256": "cb9c044144ef9ee260283ce7c564d57ef570372f8cd8d580757f5bea2bba7ac5"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20704,
+            "sha256": "3a5f057fd13c1e2154dfaa5f24b442986b96a43a4f3e3d08e34906a2dc486c59"
+          },
+          {
+            "relative_path": "proof_builds/native-respite/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21521,
+            "sha256": "d1b508ac0d0edfcece06fabd3134d0864a134b93f59f6794150069d305eb1a88"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46700,
+            "sha256": "d37f5b29451e158d0e6718042de20c24f6e6bb2a7d1f9025c59f9e09f888e07c"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9800,
+            "sha256": "56f04cf1a7f3631c93f818bc676d29555fddf4943c574115dc47033fef2e70fd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-respite/blueprint.json",
+          "project_blueprints/native-respite/instrument_map.json",
+          "project_blueprints/native-respite/README.md",
+          "proof_builds/native-respite/proof_build.json",
+          "proof_demos/native-respite/demo_cases.json",
+          "proof_demos/native-respite/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e94d07f8a0f36da4d36f1689"
+    },
+    {
+      "receipt_id": "native-respite__receipt_0006",
+      "project_id": "native-respite",
+      "project_title": "Recovery Respite Facility Operations",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Recovery Respite Facility Operations Export Or Integration Surface",
+      "component_case_id": "native-respite__0006__recovery-respite-facility-operations-export-or-integration-surface",
+      "claim_to_demonstrate": "Visible public components: 53 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains text-focused and does not claim unverified runtime state.",
+      "input_fixture": "brief, paper, room, dataset, packet, rendered page, or external handoff",
+      "operation_under_test": "Visible public components: 53 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains text-focused and does not claim unverified runtime state.",
+      "expected_output": "usable output that another project, professor, employer, or collaborator can inspect",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "577c94f4228762f7478a15a0",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-respite/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47169,
+            "sha256": "4ef7a3df31f8fa252929c200110221440381df7c7204b1b1373211eb92891042"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39266,
+            "sha256": "cb9c044144ef9ee260283ce7c564d57ef570372f8cd8d580757f5bea2bba7ac5"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20704,
+            "sha256": "3a5f057fd13c1e2154dfaa5f24b442986b96a43a4f3e3d08e34906a2dc486c59"
+          },
+          {
+            "relative_path": "proof_builds/native-respite/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21521,
+            "sha256": "d1b508ac0d0edfcece06fabd3134d0864a134b93f59f6794150069d305eb1a88"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46700,
+            "sha256": "d37f5b29451e158d0e6718042de20c24f6e6bb2a7d1f9025c59f9e09f888e07c"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9800,
+            "sha256": "56f04cf1a7f3631c93f818bc676d29555fddf4943c574115dc47033fef2e70fd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-respite/blueprint.json",
+          "project_blueprints/native-respite/instrument_map.json",
+          "project_blueprints/native-respite/README.md",
+          "proof_builds/native-respite/proof_build.json",
+          "proof_demos/native-respite/demo_cases.json",
+          "proof_demos/native-respite/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a26ad26c68b6060aa959f3ce"
+    },
+    {
+      "receipt_id": "native-respite__receipt_0007",
+      "project_id": "native-respite",
+      "project_title": "Recovery Respite Facility Operations",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Recovery Respite Facility Operations Build Verification Queue",
+      "component_case_id": "native-respite__0007__recovery-respite-facility-operations-build-verification-queue",
+      "claim_to_demonstrate": "Remaining gaps: several pages still need cleaner public explanation of why each case was chosen and what exact decision problem it is meant to illuminate. The kept Evidence Sections below preserve project substance for close reading; final public prose should.",
+      "input_fixture": "unbuilt modules, missing walkthroughs, test cases, and validation evidence",
+      "operation_under_test": "Remaining gaps: several pages still need cleaner public explanation of why each case was chosen and what exact decision problem it is meant to illuminate. The kept Evidence Sections below preserve project substance for close reading; final public prose should.",
+      "expected_output": "next proof needed before broader claims about the tool are safe",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e350b0e07ab7b9d385896d3e",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-respite/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47169,
+            "sha256": "4ef7a3df31f8fa252929c200110221440381df7c7204b1b1373211eb92891042"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39266,
+            "sha256": "cb9c044144ef9ee260283ce7c564d57ef570372f8cd8d580757f5bea2bba7ac5"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20704,
+            "sha256": "3a5f057fd13c1e2154dfaa5f24b442986b96a43a4f3e3d08e34906a2dc486c59"
+          },
+          {
+            "relative_path": "proof_builds/native-respite/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21521,
+            "sha256": "d1b508ac0d0edfcece06fabd3134d0864a134b93f59f6794150069d305eb1a88"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46700,
+            "sha256": "d37f5b29451e158d0e6718042de20c24f6e6bb2a7d1f9025c59f9e09f888e07c"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9800,
+            "sha256": "56f04cf1a7f3631c93f818bc676d29555fddf4943c574115dc47033fef2e70fd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-respite/blueprint.json",
+          "project_blueprints/native-respite/instrument_map.json",
+          "project_blueprints/native-respite/README.md",
+          "proof_builds/native-respite/proof_build.json",
+          "proof_demos/native-respite/demo_cases.json",
+          "proof_demos/native-respite/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c7aa931748770cdf070c6762"
+    },
+    {
+      "receipt_id": "native-respite__receipt_0008",
+      "project_id": "native-respite",
+      "project_title": "Recovery Respite Facility Operations",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Recovery Respite Facility Operations / Evidence Sections",
+      "component_case_id": "native-respite__0008__recovery-respite-facility-operations-evidence-sections",
+      "claim_to_demonstrate": "uses `Evidence Sections` as a named project component with a traceable role in the public mechanism. Source context: 53 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "input_fixture": "project source text and the named component `Evidence Sections`",
+      "operation_under_test": "uses `Evidence Sections` as a named project component with a traceable role in the public mechanism. Source context: 53 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Evidence Sections`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8951d1151e7982d9f41fc5c6",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-respite/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47169,
+            "sha256": "4ef7a3df31f8fa252929c200110221440381df7c7204b1b1373211eb92891042"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39266,
+            "sha256": "cb9c044144ef9ee260283ce7c564d57ef570372f8cd8d580757f5bea2bba7ac5"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20704,
+            "sha256": "3a5f057fd13c1e2154dfaa5f24b442986b96a43a4f3e3d08e34906a2dc486c59"
+          },
+          {
+            "relative_path": "proof_builds/native-respite/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21521,
+            "sha256": "d1b508ac0d0edfcece06fabd3134d0864a134b93f59f6794150069d305eb1a88"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46700,
+            "sha256": "d37f5b29451e158d0e6718042de20c24f6e6bb2a7d1f9025c59f9e09f888e07c"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9800,
+            "sha256": "56f04cf1a7f3631c93f818bc676d29555fddf4943c574115dc47033fef2e70fd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-respite/blueprint.json",
+          "project_blueprints/native-respite/instrument_map.json",
+          "project_blueprints/native-respite/README.md",
+          "proof_builds/native-respite/proof_build.json",
+          "proof_demos/native-respite/demo_cases.json",
+          "proof_demos/native-respite/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "83bc0f2787dd1f5e42542fa2"
+    },
+    {
+      "receipt_id": "native-respite__receipt_0009",
+      "project_id": "native-respite",
+      "project_title": "Recovery Respite Facility Operations",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Recovery Respite Facility Operations / Review Notes",
+      "component_case_id": "native-respite__0009__recovery-respite-facility-operations-review-notes",
+      "claim_to_demonstrate": "uses `Review Notes` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 53 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The.",
+      "input_fixture": "project source text and the named component `Review Notes`",
+      "operation_under_test": "uses `Review Notes` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 53 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `Review Notes`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8951d1151e7982d9f41fc5c6",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-respite/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47169,
+            "sha256": "4ef7a3df31f8fa252929c200110221440381df7c7204b1b1373211eb92891042"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39266,
+            "sha256": "cb9c044144ef9ee260283ce7c564d57ef570372f8cd8d580757f5bea2bba7ac5"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20704,
+            "sha256": "3a5f057fd13c1e2154dfaa5f24b442986b96a43a4f3e3d08e34906a2dc486c59"
+          },
+          {
+            "relative_path": "proof_builds/native-respite/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21521,
+            "sha256": "d1b508ac0d0edfcece06fabd3134d0864a134b93f59f6794150069d305eb1a88"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46700,
+            "sha256": "d37f5b29451e158d0e6718042de20c24f6e6bb2a7d1f9025c59f9e09f888e07c"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9800,
+            "sha256": "56f04cf1a7f3631c93f818bc676d29555fddf4943c574115dc47033fef2e70fd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-respite/blueprint.json",
+          "project_blueprints/native-respite/instrument_map.json",
+          "project_blueprints/native-respite/README.md",
+          "proof_builds/native-respite/proof_build.json",
+          "proof_demos/native-respite/demo_cases.json",
+          "proof_demos/native-respite/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "14a743c0f7b128ca98d7a6f3"
+    },
+    {
+      "receipt_id": "native-respite__receipt_0010",
+      "project_id": "native-respite",
+      "project_title": "Recovery Respite Facility Operations",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Recovery Respite Facility Operations / Native Navigation",
+      "component_case_id": "native-respite__0010__recovery-respite-facility-operations-native-navigation",
+      "claim_to_demonstrate": "uses `Native Navigation` as a named project component with a traceable role in the public mechanism. Source context: 53 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "input_fixture": "project source text and the named component `Native Navigation`",
+      "operation_under_test": "uses `Native Navigation` as a named project component with a traceable role in the public mechanism. Source context: 53 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Native Navigation`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8951d1151e7982d9f41fc5c6",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-respite/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47169,
+            "sha256": "4ef7a3df31f8fa252929c200110221440381df7c7204b1b1373211eb92891042"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39266,
+            "sha256": "cb9c044144ef9ee260283ce7c564d57ef570372f8cd8d580757f5bea2bba7ac5"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20704,
+            "sha256": "3a5f057fd13c1e2154dfaa5f24b442986b96a43a4f3e3d08e34906a2dc486c59"
+          },
+          {
+            "relative_path": "proof_builds/native-respite/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21521,
+            "sha256": "d1b508ac0d0edfcece06fabd3134d0864a134b93f59f6794150069d305eb1a88"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46700,
+            "sha256": "d37f5b29451e158d0e6718042de20c24f6e6bb2a7d1f9025c59f9e09f888e07c"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9800,
+            "sha256": "56f04cf1a7f3631c93f818bc676d29555fddf4943c574115dc47033fef2e70fd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-respite/blueprint.json",
+          "project_blueprints/native-respite/instrument_map.json",
+          "project_blueprints/native-respite/README.md",
+          "proof_builds/native-respite/proof_build.json",
+          "proof_demos/native-respite/demo_cases.json",
+          "proof_demos/native-respite/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c2adb2898c0304e5493c303a"
+    },
+    {
+      "receipt_id": "native-respite__receipt_0011",
+      "project_id": "native-respite",
+      "project_title": "Recovery Respite Facility Operations",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Recovery Respite Facility Operations / APA lineage",
+      "component_case_id": "native-respite__0011__recovery-respite-facility-operations-apa-lineage",
+      "claim_to_demonstrate": "uses `APA lineage` as a named project component with a traceable role in the public mechanism. Source context: 53 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains.",
+      "input_fixture": "project source text and the named component `APA lineage`",
+      "operation_under_test": "uses `APA lineage` as a named project component with a traceable role in the public mechanism. Source context: 53 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `APA lineage`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8951d1151e7982d9f41fc5c6",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-respite/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47169,
+            "sha256": "4ef7a3df31f8fa252929c200110221440381df7c7204b1b1373211eb92891042"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39266,
+            "sha256": "cb9c044144ef9ee260283ce7c564d57ef570372f8cd8d580757f5bea2bba7ac5"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20704,
+            "sha256": "3a5f057fd13c1e2154dfaa5f24b442986b96a43a4f3e3d08e34906a2dc486c59"
+          },
+          {
+            "relative_path": "proof_builds/native-respite/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21521,
+            "sha256": "d1b508ac0d0edfcece06fabd3134d0864a134b93f59f6794150069d305eb1a88"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46700,
+            "sha256": "d37f5b29451e158d0e6718042de20c24f6e6bb2a7d1f9025c59f9e09f888e07c"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9800,
+            "sha256": "56f04cf1a7f3631c93f818bc676d29555fddf4943c574115dc47033fef2e70fd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-respite/blueprint.json",
+          "project_blueprints/native-respite/instrument_map.json",
+          "project_blueprints/native-respite/README.md",
+          "proof_builds/native-respite/proof_build.json",
+          "proof_demos/native-respite/demo_cases.json",
+          "proof_demos/native-respite/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c37c6779f6e9e61fb3314d1d"
+    },
+    {
+      "receipt_id": "native-respite__receipt_0012",
+      "project_id": "native-respite",
+      "project_title": "Recovery Respite Facility Operations",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Recovery Respite Facility Operations / source lineage claim limit. The public package remains text",
+      "component_case_id": "native-respite__0012__recovery-respite-facility-operations-source-lineage-claim-limit-the-public-package-remains",
+      "claim_to_demonstrate": "uses `source lineage claim limit. The public package remains text` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 53 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA.",
+      "input_fixture": "project source text and the named component `source lineage claim limit. The public package remains text`",
+      "operation_under_test": "uses `source lineage claim limit. The public package remains text` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 53 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `source lineage claim limit. The public package remains text`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8951d1151e7982d9f41fc5c6",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-respite/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47169,
+            "sha256": "4ef7a3df31f8fa252929c200110221440381df7c7204b1b1373211eb92891042"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39266,
+            "sha256": "cb9c044144ef9ee260283ce7c564d57ef570372f8cd8d580757f5bea2bba7ac5"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20704,
+            "sha256": "3a5f057fd13c1e2154dfaa5f24b442986b96a43a4f3e3d08e34906a2dc486c59"
+          },
+          {
+            "relative_path": "proof_builds/native-respite/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21521,
+            "sha256": "d1b508ac0d0edfcece06fabd3134d0864a134b93f59f6794150069d305eb1a88"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46700,
+            "sha256": "d37f5b29451e158d0e6718042de20c24f6e6bb2a7d1f9025c59f9e09f888e07c"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9800,
+            "sha256": "56f04cf1a7f3631c93f818bc676d29555fddf4943c574115dc47033fef2e70fd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-respite/blueprint.json",
+          "project_blueprints/native-respite/instrument_map.json",
+          "project_blueprints/native-respite/README.md",
+          "proof_builds/native-respite/proof_build.json",
+          "proof_demos/native-respite/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "425362075fadd8a2c8e6f50f"
+    },
+    {
+      "receipt_id": "native-respite__receipt_0013",
+      "project_id": "native-respite",
+      "project_title": "Recovery Respite Facility Operations",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Recovery Respite Facility Operations / focused and does not claim unverified runtime state. Plan: name the governing case",
+      "component_case_id": "native-respite__0013__recovery-respite-facility-operations-focused-and-does-not-claim-unverified-runtime-state-p",
+      "claim_to_demonstrate": "uses `focused and does not claim unverified runtime state. Plan: name the governing case` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: The public package remains text-focused and does not claim.",
+      "input_fixture": "project source text and the named component `focused and does not claim unverified runtime state. Plan: name the governing case`",
+      "operation_under_test": "uses `focused and does not claim unverified runtime state. Plan: name the governing case` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: The public package remains text-focused and does not claim.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `focused and does not claim unverified runtime state. Plan: name the governing case`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "da5adbbc03042fb3cb9f0e14",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-respite/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47169,
+            "sha256": "4ef7a3df31f8fa252929c200110221440381df7c7204b1b1373211eb92891042"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39266,
+            "sha256": "cb9c044144ef9ee260283ce7c564d57ef570372f8cd8d580757f5bea2bba7ac5"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20704,
+            "sha256": "3a5f057fd13c1e2154dfaa5f24b442986b96a43a4f3e3d08e34906a2dc486c59"
+          },
+          {
+            "relative_path": "proof_builds/native-respite/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21521,
+            "sha256": "d1b508ac0d0edfcece06fabd3134d0864a134b93f59f6794150069d305eb1a88"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46700,
+            "sha256": "d37f5b29451e158d0e6718042de20c24f6e6bb2a7d1f9025c59f9e09f888e07c"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9800,
+            "sha256": "56f04cf1a7f3631c93f818bc676d29555fddf4943c574115dc47033fef2e70fd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-respite/blueprint.json",
+          "project_blueprints/native-respite/instrument_map.json",
+          "proof_builds/native-respite/proof_build.json",
+          "proof_demos/native-respite/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5da56c4a4c94647972f3c0b6"
+    },
+    {
+      "receipt_id": "native-respite__receipt_0014",
+      "project_id": "native-respite",
+      "project_title": "Recovery Respite Facility Operations",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Recovery Respite Facility Operations / Distinguish Evidence From Analogy",
+      "component_case_id": "native-respite__0014__recovery-respite-facility-operations-distinguish-evidence-from-analogy",
+      "claim_to_demonstrate": "uses `Distinguish Evidence From Analogy` as a named project component with a traceable role in the public mechanism. Source context: name the governing case, distinguish evidence from analogy, state the transfer rule, add counter-analogies, and document which.",
+      "input_fixture": "project source text and the named component `Distinguish Evidence From Analogy`",
+      "operation_under_test": "uses `Distinguish Evidence From Analogy` as a named project component with a traceable role in the public mechanism. Source context: name the governing case, distinguish evidence from analogy, state the transfer rule, add counter-analogies, and document which.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Distinguish Evidence From Analogy`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a788fb5c8f048e258a8c2d36",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-respite/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47169,
+            "sha256": "4ef7a3df31f8fa252929c200110221440381df7c7204b1b1373211eb92891042"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39266,
+            "sha256": "cb9c044144ef9ee260283ce7c564d57ef570372f8cd8d580757f5bea2bba7ac5"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20704,
+            "sha256": "3a5f057fd13c1e2154dfaa5f24b442986b96a43a4f3e3d08e34906a2dc486c59"
+          },
+          {
+            "relative_path": "proof_builds/native-respite/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21521,
+            "sha256": "d1b508ac0d0edfcece06fabd3134d0864a134b93f59f6794150069d305eb1a88"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46700,
+            "sha256": "d37f5b29451e158d0e6718042de20c24f6e6bb2a7d1f9025c59f9e09f888e07c"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9800,
+            "sha256": "56f04cf1a7f3631c93f818bc676d29555fddf4943c574115dc47033fef2e70fd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-respite/blueprint.json",
+          "project_blueprints/native-respite/instrument_map.json",
+          "project_blueprints/native-respite/README.md",
+          "proof_builds/native-respite/proof_build.json",
+          "proof_demos/native-respite/demo_cases.json",
+          "proof_demos/native-respite/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6c1c9b562bf6a700994d4ac7"
+    },
+    {
+      "receipt_id": "native-respite__receipt_0015",
+      "project_id": "native-respite",
+      "project_title": "Recovery Respite Facility Operations",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Recovery Respite Facility Operations / State The Transfer Rule",
+      "component_case_id": "native-respite__0015__recovery-respite-facility-operations-state-the-transfer-rule",
+      "claim_to_demonstrate": "uses `State The Transfer Rule` as a named project component with a traceable role in the public mechanism. Source context: name the governing case, distinguish evidence from analogy, state the transfer rule, add counter-analogies, and document which.",
+      "input_fixture": "project source text and the named component `State The Transfer Rule`",
+      "operation_under_test": "uses `State The Transfer Rule` as a named project component with a traceable role in the public mechanism. Source context: name the governing case, distinguish evidence from analogy, state the transfer rule, add counter-analogies, and document which.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `State The Transfer Rule`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a788fb5c8f048e258a8c2d36",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-respite/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47169,
+            "sha256": "4ef7a3df31f8fa252929c200110221440381df7c7204b1b1373211eb92891042"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39266,
+            "sha256": "cb9c044144ef9ee260283ce7c564d57ef570372f8cd8d580757f5bea2bba7ac5"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20704,
+            "sha256": "3a5f057fd13c1e2154dfaa5f24b442986b96a43a4f3e3d08e34906a2dc486c59"
+          },
+          {
+            "relative_path": "proof_builds/native-respite/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21521,
+            "sha256": "d1b508ac0d0edfcece06fabd3134d0864a134b93f59f6794150069d305eb1a88"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46700,
+            "sha256": "d37f5b29451e158d0e6718042de20c24f6e6bb2a7d1f9025c59f9e09f888e07c"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9800,
+            "sha256": "56f04cf1a7f3631c93f818bc676d29555fddf4943c574115dc47033fef2e70fd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-respite/blueprint.json",
+          "project_blueprints/native-respite/instrument_map.json",
+          "project_blueprints/native-respite/README.md",
+          "proof_builds/native-respite/proof_build.json",
+          "proof_demos/native-respite/demo_cases.json",
+          "proof_demos/native-respite/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "23ebc262f3e125bd0de6a686"
+    },
+    {
+      "receipt_id": "native-respite__receipt_0016",
+      "project_id": "native-respite",
+      "project_title": "Recovery Respite Facility Operations",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Recovery Respite Facility Operations / Add Counter",
+      "component_case_id": "native-respite__0016__recovery-respite-facility-operations-add-counter",
+      "claim_to_demonstrate": "uses `Add Counter` as a named project component with a traceable role in the public mechanism. Source context: name the governing case, distinguish evidence from analogy, state the transfer rule, add counter-analogies, and document which operational or.",
+      "input_fixture": "project source text and the named component `Add Counter`",
+      "operation_under_test": "uses `Add Counter` as a named project component with a traceable role in the public mechanism. Source context: name the governing case, distinguish evidence from analogy, state the transfer rule, add counter-analogies, and document which operational or.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Add Counter`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a788fb5c8f048e258a8c2d36",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-respite/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47169,
+            "sha256": "4ef7a3df31f8fa252929c200110221440381df7c7204b1b1373211eb92891042"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39266,
+            "sha256": "cb9c044144ef9ee260283ce7c564d57ef570372f8cd8d580757f5bea2bba7ac5"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20704,
+            "sha256": "3a5f057fd13c1e2154dfaa5f24b442986b96a43a4f3e3d08e34906a2dc486c59"
+          },
+          {
+            "relative_path": "proof_builds/native-respite/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21521,
+            "sha256": "d1b508ac0d0edfcece06fabd3134d0864a134b93f59f6794150069d305eb1a88"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46700,
+            "sha256": "d37f5b29451e158d0e6718042de20c24f6e6bb2a7d1f9025c59f9e09f888e07c"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9800,
+            "sha256": "56f04cf1a7f3631c93f818bc676d29555fddf4943c574115dc47033fef2e70fd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-respite/blueprint.json",
+          "project_blueprints/native-respite/instrument_map.json",
+          "project_blueprints/native-respite/README.md",
+          "proof_builds/native-respite/proof_build.json",
+          "proof_demos/native-respite/demo_cases.json",
+          "proof_demos/native-respite/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "34e7a9aa9f6befd72d333e8f"
+    },
+    {
+      "receipt_id": "native-respite__receipt_0017",
+      "project_id": "native-respite",
+      "project_title": "Recovery Respite Facility Operations",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Recovery Respite Facility Operations / Analogies",
+      "component_case_id": "native-respite__0017__recovery-respite-facility-operations-analogies",
+      "claim_to_demonstrate": "uses `Analogies` as a named project component with a traceable role in the public mechanism. Source context: name the governing case, distinguish evidence from analogy, state the transfer rule, add counter-analogies, and document which operational or.",
+      "input_fixture": "project source text and the named component `Analogies`",
+      "operation_under_test": "uses `Analogies` as a named project component with a traceable role in the public mechanism. Source context: name the governing case, distinguish evidence from analogy, state the transfer rule, add counter-analogies, and document which operational or.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Analogies`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a788fb5c8f048e258a8c2d36",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-respite/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47169,
+            "sha256": "4ef7a3df31f8fa252929c200110221440381df7c7204b1b1373211eb92891042"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39266,
+            "sha256": "cb9c044144ef9ee260283ce7c564d57ef570372f8cd8d580757f5bea2bba7ac5"
+          },
+          {
+            "relative_path": "project_blueprints/native-respite/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20704,
+            "sha256": "3a5f057fd13c1e2154dfaa5f24b442986b96a43a4f3e3d08e34906a2dc486c59"
+          },
+          {
+            "relative_path": "proof_builds/native-respite/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21521,
+            "sha256": "d1b508ac0d0edfcece06fabd3134d0864a134b93f59f6794150069d305eb1a88"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46700,
+            "sha256": "d37f5b29451e158d0e6718042de20c24f6e6bb2a7d1f9025c59f9e09f888e07c"
+          },
+          {
+            "relative_path": "proof_demos/native-respite/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9800,
+            "sha256": "56f04cf1a7f3631c93f818bc676d29555fddf4943c574115dc47033fef2e70fd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-respite/blueprint.json",
+          "project_blueprints/native-respite/instrument_map.json",
+          "project_blueprints/native-respite/README.md",
+          "proof_builds/native-respite/proof_build.json",
+          "proof_demos/native-respite/demo_cases.json",
+          "proof_demos/native-respite/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5d783d442073897482d1ac2e"
+    }
+  ]
+}

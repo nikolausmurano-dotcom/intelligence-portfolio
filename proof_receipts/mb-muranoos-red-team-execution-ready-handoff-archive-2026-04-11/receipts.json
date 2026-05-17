@@ -1,0 +1,1469 @@
+{
+  "project": {
+    "project_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11",
+    "title": "Only one with Build_02-Build_05 sequenced operator guides"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__receipt_0001",
+      "project_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11",
+      "project_title": "Only one with Build_02-Build_05 sequenced operator guides",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Only one with Build_02-Build_05 sequenced operator guides Handoff Identity",
+      "component_case_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__0001__only-one-with-build-02-build-05-sequenced-operator-guides-handoff-identity",
+      "claim_to_demonstrate": "Red Team execution-ready archive is an operator-guide packet for sequenced Build 02 through Build 05 work.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "Red Team execution-ready archive is an operator-guide packet for sequenced Build 02 through Build 05 work.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44553,
+            "sha256": "68d5740b8cb3e357ad3e4616f4b181dfc8e196b579f6398a053f04a9993d0924"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36794,
+            "sha256": "247b1b673e8bfaa15aa198ab109cc68a05d39c99f68b7718456e9fedc9dc332b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21450,
+            "sha256": "80568f72a33992ae50c1a5917263634207a0360290c6ae821df23a9c06b0c37d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "1520972434b7927351358bcb3443e5526e18f7971859b7d8dd7e2fece03fcd1a"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47722,
+            "sha256": "781d90c1d0bfd439eaf1271ed5a949a5f3ba6cf9e8fddbcd2bb904fb525e928d"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "6a56229307c35c04af29cd415779396ccf549e1bc141b3aaca63c232eeb271bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "94c011676b28e45705a794ac"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__receipt_0002",
+      "project_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11",
+      "project_title": "Only one with Build_02-Build_05 sequenced operator guides",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Only one with Build_02-Build_05 sequenced operator guides Room Task Model",
+      "component_case_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__0002__only-one-with-build-02-build-05-sequenced-operator-guides-room-task-model",
+      "claim_to_demonstrate": "It carries standalone build sheets, PASS-state language, Red Team Lab sequencing, and operator guides so implementation can be resumed without losing order, dependencies, or validation intent.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "It carries standalone build sheets, PASS-state language, Red Team Lab sequencing, and operator guides so implementation can be resumed without losing order, dependencies, or validation intent.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44553,
+            "sha256": "68d5740b8cb3e357ad3e4616f4b181dfc8e196b579f6398a053f04a9993d0924"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36794,
+            "sha256": "247b1b673e8bfaa15aa198ab109cc68a05d39c99f68b7718456e9fedc9dc332b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21450,
+            "sha256": "80568f72a33992ae50c1a5917263634207a0360290c6ae821df23a9c06b0c37d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "1520972434b7927351358bcb3443e5526e18f7971859b7d8dd7e2fece03fcd1a"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47722,
+            "sha256": "781d90c1d0bfd439eaf1271ed5a949a5f3ba6cf9e8fddbcd2bb904fb525e928d"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "6a56229307c35c04af29cd415779396ccf549e1bc141b3aaca63c232eeb271bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2cdc9de03d10c97df75be1b0"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__receipt_0003",
+      "project_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11",
+      "project_title": "Only one with Build_02-Build_05 sequenced operator guides",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Only one with Build_02-Build_05 sequenced operator guides Data Schema And Persistence Plan",
+      "component_case_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__0003__only-one-with-build-02-build-05-sequenced-operator-guides-data-schema-and-persistence-plan",
+      "claim_to_demonstrate": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44553,
+            "sha256": "68d5740b8cb3e357ad3e4616f4b181dfc8e196b579f6398a053f04a9993d0924"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36794,
+            "sha256": "247b1b673e8bfaa15aa198ab109cc68a05d39c99f68b7718456e9fedc9dc332b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21450,
+            "sha256": "80568f72a33992ae50c1a5917263634207a0360290c6ae821df23a9c06b0c37d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "1520972434b7927351358bcb3443e5526e18f7971859b7d8dd7e2fece03fcd1a"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47722,
+            "sha256": "781d90c1d0bfd439eaf1271ed5a949a5f3ba6cf9e8fddbcd2bb904fb525e928d"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "6a56229307c35c04af29cd415779396ccf549e1bc141b3aaca63c232eeb271bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "851e99f752b984bdb684bc7e"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__receipt_0004",
+      "project_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11",
+      "project_title": "Only one with Build_02-Build_05 sequenced operator guides",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Only one with Build_02-Build_05 sequenced operator guides Interface And Instrument Plane",
+      "component_case_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__0004__only-one-with-build-02-build-05-sequenced-operator-guides-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44553,
+            "sha256": "68d5740b8cb3e357ad3e4616f4b181dfc8e196b579f6398a053f04a9993d0924"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36794,
+            "sha256": "247b1b673e8bfaa15aa198ab109cc68a05d39c99f68b7718456e9fedc9dc332b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21450,
+            "sha256": "80568f72a33992ae50c1a5917263634207a0360290c6ae821df23a9c06b0c37d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "1520972434b7927351358bcb3443e5526e18f7971859b7d8dd7e2fece03fcd1a"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47722,
+            "sha256": "781d90c1d0bfd439eaf1271ed5a949a5f3ba6cf9e8fddbcd2bb904fb525e928d"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "6a56229307c35c04af29cd415779396ccf549e1bc141b3aaca63c232eeb271bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "89adb556bbcff6b7e5dcc189"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__receipt_0005",
+      "project_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11",
+      "project_title": "Only one with Build_02-Build_05 sequenced operator guides",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Only one with Build_02-Build_05 sequenced operator guides Integration Path",
+      "component_case_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__0005__only-one-with-build-02-build-05-sequenced-operator-guides-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. Reach for this when starting from zero and wanting the longest runway: four sequenced builds, extracted canon you can grep, and explicit readiness decision.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. Reach for this when starting from zero and wanting the longest runway: four sequenced builds, extracted canon you can grep, and explicit readiness decision.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44553,
+            "sha256": "68d5740b8cb3e357ad3e4616f4b181dfc8e196b579f6398a053f04a9993d0924"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36794,
+            "sha256": "247b1b673e8bfaa15aa198ab109cc68a05d39c99f68b7718456e9fedc9dc332b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21450,
+            "sha256": "80568f72a33992ae50c1a5917263634207a0360290c6ae821df23a9c06b0c37d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "1520972434b7927351358bcb3443e5526e18f7971859b7d8dd7e2fece03fcd1a"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47722,
+            "sha256": "781d90c1d0bfd439eaf1271ed5a949a5f3ba6cf9e8fddbcd2bb904fb525e928d"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "6a56229307c35c04af29cd415779396ccf549e1bc141b3aaca63c232eeb271bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5f0ff6eb16ed2f9a40772b68"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__receipt_0006",
+      "project_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11",
+      "project_title": "Only one with Build_02-Build_05 sequenced operator guides",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Only one with Build_02-Build_05 sequenced operator guides Proof Boundary",
+      "component_case_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__0006__only-one-with-build-02-build-05-sequenced-operator-guides-proof-boundary",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44553,
+            "sha256": "68d5740b8cb3e357ad3e4616f4b181dfc8e196b579f6398a053f04a9993d0924"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36794,
+            "sha256": "247b1b673e8bfaa15aa198ab109cc68a05d39c99f68b7718456e9fedc9dc332b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21450,
+            "sha256": "80568f72a33992ae50c1a5917263634207a0360290c6ae821df23a9c06b0c37d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "1520972434b7927351358bcb3443e5526e18f7971859b7d8dd7e2fece03fcd1a"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47722,
+            "sha256": "781d90c1d0bfd439eaf1271ed5a949a5f3ba6cf9e8fddbcd2bb904fb525e928d"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "6a56229307c35c04af29cd415779396ccf549e1bc141b3aaca63c232eeb271bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "352bf9c52fa5d8d6183dd01d"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__receipt_0007",
+      "project_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11",
+      "project_title": "Only one with Build_02-Build_05 sequenced operator guides",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Only one with Build_02-Build_05 sequenced operator guides Next Build Test",
+      "component_case_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__0007__only-one-with-build-02-build-05-sequenced-operator-guides-next-build-test",
+      "claim_to_demonstrate": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44553,
+            "sha256": "68d5740b8cb3e357ad3e4616f4b181dfc8e196b579f6398a053f04a9993d0924"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36794,
+            "sha256": "247b1b673e8bfaa15aa198ab109cc68a05d39c99f68b7718456e9fedc9dc332b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21450,
+            "sha256": "80568f72a33992ae50c1a5917263634207a0360290c6ae821df23a9c06b0c37d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "1520972434b7927351358bcb3443e5526e18f7971859b7d8dd7e2fece03fcd1a"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47722,
+            "sha256": "781d90c1d0bfd439eaf1271ed5a949a5f3ba6cf9e8fddbcd2bb904fb525e928d"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "6a56229307c35c04af29cd415779396ccf549e1bc141b3aaca63c232eeb271bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "60fd283585bac521ab81dc4b"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__receipt_0008",
+      "project_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11",
+      "project_title": "Only one with Build_02-Build_05 sequenced operator guides",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Only one with Build_02-Build_05 sequenced operator guides / PASS_STATUS.json",
+      "component_case_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__0008__only-one-with-build-02-build-05-sequenced-operator-guides-pass-status-json",
+      "claim_to_demonstrate": "treats `PASS_STATUS.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: The PASS_STATUS.json declares \"decision\": \"DONE\", \"passes_remaining_after_this_build\": 0. It converts an archive or handoff.",
+      "input_fixture": "project source text and the named component `PASS_STATUS.json`",
+      "operation_under_test": "treats `PASS_STATUS.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: The PASS_STATUS.json declares \"decision\": \"DONE\", \"passes_remaining_after_this_build\": 0. It converts an archive or handoff.",
+      "expected_output": "inspectable implementation evidence tied to `PASS_STATUS.json`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "83dae252d7837af9fb5ad4ad",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44553,
+            "sha256": "68d5740b8cb3e357ad3e4616f4b181dfc8e196b579f6398a053f04a9993d0924"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36794,
+            "sha256": "247b1b673e8bfaa15aa198ab109cc68a05d39c99f68b7718456e9fedc9dc332b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21450,
+            "sha256": "80568f72a33992ae50c1a5917263634207a0360290c6ae821df23a9c06b0c37d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "1520972434b7927351358bcb3443e5526e18f7971859b7d8dd7e2fece03fcd1a"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47722,
+            "sha256": "781d90c1d0bfd439eaf1271ed5a949a5f3ba6cf9e8fddbcd2bb904fb525e928d"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "6a56229307c35c04af29cd415779396ccf549e1bc141b3aaca63c232eeb271bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b011df9a7ccc6328b2dd8e9b"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__receipt_0009",
+      "project_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11",
+      "project_title": "Only one with Build_02-Build_05 sequenced operator guides",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Only one with Build_02-Build_05 sequenced operator guides / EXECUTION_START_HERE.md",
+      "component_case_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__0009__only-one-with-build-02-build-05-sequenced-operator-guides-execution-start-here-md",
+      "claim_to_demonstrate": "treats `EXECUTION_START_HERE.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 06_Operator_Guides/EXECUTION_START_HERE.md — IMPLEMENTATION_TRANCHE_INDEX.md — pick a BUILD_0N sheet. Integration.",
+      "input_fixture": "project source text and the named component `EXECUTION_START_HERE.md`",
+      "operation_under_test": "treats `EXECUTION_START_HERE.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 06_Operator_Guides/EXECUTION_START_HERE.md — IMPLEMENTATION_TRANCHE_INDEX.md — pick a BUILD_0N sheet. Integration.",
+      "expected_output": "inspectable implementation evidence tied to `EXECUTION_START_HERE.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "9ffda23de4ff0684f8624c93",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44553,
+            "sha256": "68d5740b8cb3e357ad3e4616f4b181dfc8e196b579f6398a053f04a9993d0924"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36794,
+            "sha256": "247b1b673e8bfaa15aa198ab109cc68a05d39c99f68b7718456e9fedc9dc332b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21450,
+            "sha256": "80568f72a33992ae50c1a5917263634207a0360290c6ae821df23a9c06b0c37d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "1520972434b7927351358bcb3443e5526e18f7971859b7d8dd7e2fece03fcd1a"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47722,
+            "sha256": "781d90c1d0bfd439eaf1271ed5a949a5f3ba6cf9e8fddbcd2bb904fb525e928d"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "6a56229307c35c04af29cd415779396ccf549e1bc141b3aaca63c232eeb271bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8e01c3335f1fd5c56b2f5ae7"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__receipt_0010",
+      "project_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11",
+      "project_title": "Only one with Build_02-Build_05 sequenced operator guides",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Only one with Build_02-Build_05 sequenced operator guides / IMPLEMENTATION_TRANCHE_INDEX.md",
+      "component_case_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__0010__only-one-with-build-02-build-05-sequenced-operator-guides-implementation-tranche-index-md",
+      "claim_to_demonstrate": "treats `IMPLEMENTATION_TRANCHE_INDEX.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 06_Operator_Guides/EXECUTION_START_HERE.md — IMPLEMENTATION_TRANCHE_INDEX.md — pick a BUILD_0N sheet.",
+      "input_fixture": "project source text and the named component `IMPLEMENTATION_TRANCHE_INDEX.md`",
+      "operation_under_test": "treats `IMPLEMENTATION_TRANCHE_INDEX.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 06_Operator_Guides/EXECUTION_START_HERE.md — IMPLEMENTATION_TRANCHE_INDEX.md — pick a BUILD_0N sheet.",
+      "expected_output": "inspectable implementation evidence tied to `IMPLEMENTATION_TRANCHE_INDEX.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "9ffda23de4ff0684f8624c93",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44553,
+            "sha256": "68d5740b8cb3e357ad3e4616f4b181dfc8e196b579f6398a053f04a9993d0924"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36794,
+            "sha256": "247b1b673e8bfaa15aa198ab109cc68a05d39c99f68b7718456e9fedc9dc332b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21450,
+            "sha256": "80568f72a33992ae50c1a5917263634207a0360290c6ae821df23a9c06b0c37d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "1520972434b7927351358bcb3443e5526e18f7971859b7d8dd7e2fece03fcd1a"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47722,
+            "sha256": "781d90c1d0bfd439eaf1271ed5a949a5f3ba6cf9e8fddbcd2bb904fb525e928d"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "6a56229307c35c04af29cd415779396ccf549e1bc141b3aaca63c232eeb271bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c82f0c53b3211dad8a3bcb9b"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__receipt_0011",
+      "project_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11",
+      "project_title": "Only one with Build_02-Build_05 sequenced operator guides",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Only one with Build_02-Build_05 sequenced operator guides / LIVE_REPO_ALIGNMENT.md",
+      "component_case_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__0011__only-one-with-build-02-build-05-sequenced-operator-guides-live-repo-alignment-md",
+      "claim_to_demonstrate": "treats `LIVE_REPO_ALIGNMENT.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: MuranoOS repo at the specific HEAD documented in LIVE_REPO_ALIGNMENT.md. Wire or preserve the implementation files.",
+      "input_fixture": "project source text and the named component `LIVE_REPO_ALIGNMENT.md`",
+      "operation_under_test": "treats `LIVE_REPO_ALIGNMENT.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: MuranoOS repo at the specific HEAD documented in LIVE_REPO_ALIGNMENT.md. Wire or preserve the implementation files.",
+      "expected_output": "inspectable implementation evidence tied to `LIVE_REPO_ALIGNMENT.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ba6048d8796575c3368f084c",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44553,
+            "sha256": "68d5740b8cb3e357ad3e4616f4b181dfc8e196b579f6398a053f04a9993d0924"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36794,
+            "sha256": "247b1b673e8bfaa15aa198ab109cc68a05d39c99f68b7718456e9fedc9dc332b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21450,
+            "sha256": "80568f72a33992ae50c1a5917263634207a0360290c6ae821df23a9c06b0c37d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "1520972434b7927351358bcb3443e5526e18f7971859b7d8dd7e2fece03fcd1a"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47722,
+            "sha256": "781d90c1d0bfd439eaf1271ed5a949a5f3ba6cf9e8fddbcd2bb904fb525e928d"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "6a56229307c35c04af29cd415779396ccf549e1bc141b3aaca63c232eeb271bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "516204ac3ff094435b0afb96"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__receipt_0012",
+      "project_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11",
+      "project_title": "Only one with Build_02-Build_05 sequenced operator guides",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Only one with Build_02-Build_05 sequenced operator guides / PhaseProgressStepper.tsx",
+      "component_case_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__0012__only-one-with-build-02-build-05-sequenced-operator-guides-phaseprogressstepper-tsx",
+      "claim_to_demonstrate": "treats `PhaseProgressStepper.tsx` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: React components (PhaseProgressStepper.tsx, ProjectHeader.tsx, WorkspaceTabs.tsx), Zustand store.",
+      "input_fixture": "project source text and the named component `PhaseProgressStepper.tsx`",
+      "operation_under_test": "treats `PhaseProgressStepper.tsx` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: React components (PhaseProgressStepper.tsx, ProjectHeader.tsx, WorkspaceTabs.tsx), Zustand store.",
+      "expected_output": "inspectable implementation evidence tied to `PhaseProgressStepper.tsx`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "abc931eb089061bca23abcb6",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44553,
+            "sha256": "68d5740b8cb3e357ad3e4616f4b181dfc8e196b579f6398a053f04a9993d0924"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36794,
+            "sha256": "247b1b673e8bfaa15aa198ab109cc68a05d39c99f68b7718456e9fedc9dc332b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21450,
+            "sha256": "80568f72a33992ae50c1a5917263634207a0360290c6ae821df23a9c06b0c37d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "1520972434b7927351358bcb3443e5526e18f7971859b7d8dd7e2fece03fcd1a"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47722,
+            "sha256": "781d90c1d0bfd439eaf1271ed5a949a5f3ba6cf9e8fddbcd2bb904fb525e928d"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "6a56229307c35c04af29cd415779396ccf549e1bc141b3aaca63c232eeb271bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8cfc074561f03773eb8bb9c5"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__receipt_0013",
+      "project_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11",
+      "project_title": "Only one with Build_02-Build_05 sequenced operator guides",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Only one with Build_02-Build_05 sequenced operator guides / ProjectHeader.tsx",
+      "component_case_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__0013__only-one-with-build-02-build-05-sequenced-operator-guides-projectheader-tsx",
+      "claim_to_demonstrate": "treats `ProjectHeader.tsx` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: React components (PhaseProgressStepper.tsx, ProjectHeader.tsx, WorkspaceTabs.tsx), Zustand store (useRedTeamStore.ts).",
+      "input_fixture": "project source text and the named component `ProjectHeader.tsx`",
+      "operation_under_test": "treats `ProjectHeader.tsx` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: React components (PhaseProgressStepper.tsx, ProjectHeader.tsx, WorkspaceTabs.tsx), Zustand store (useRedTeamStore.ts).",
+      "expected_output": "inspectable implementation evidence tied to `ProjectHeader.tsx`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "abc931eb089061bca23abcb6",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44553,
+            "sha256": "68d5740b8cb3e357ad3e4616f4b181dfc8e196b579f6398a053f04a9993d0924"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36794,
+            "sha256": "247b1b673e8bfaa15aa198ab109cc68a05d39c99f68b7718456e9fedc9dc332b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21450,
+            "sha256": "80568f72a33992ae50c1a5917263634207a0360290c6ae821df23a9c06b0c37d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "1520972434b7927351358bcb3443e5526e18f7971859b7d8dd7e2fece03fcd1a"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47722,
+            "sha256": "781d90c1d0bfd439eaf1271ed5a949a5f3ba6cf9e8fddbcd2bb904fb525e928d"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "6a56229307c35c04af29cd415779396ccf549e1bc141b3aaca63c232eeb271bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a8d12de967769d9d1b6a581b"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__receipt_0014",
+      "project_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11",
+      "project_title": "Only one with Build_02-Build_05 sequenced operator guides",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Only one with Build_02-Build_05 sequenced operator guides / WorkspaceTabs.tsx",
+      "component_case_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__0014__only-one-with-build-02-build-05-sequenced-operator-guides-workspacetabs-tsx",
+      "claim_to_demonstrate": "treats `WorkspaceTabs.tsx` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: React components (PhaseProgressStepper.tsx, ProjectHeader.tsx, WorkspaceTabs.tsx), Zustand store (useRedTeamStore.ts).",
+      "input_fixture": "project source text and the named component `WorkspaceTabs.tsx`",
+      "operation_under_test": "treats `WorkspaceTabs.tsx` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: React components (PhaseProgressStepper.tsx, ProjectHeader.tsx, WorkspaceTabs.tsx), Zustand store (useRedTeamStore.ts).",
+      "expected_output": "inspectable implementation evidence tied to `WorkspaceTabs.tsx`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "abc931eb089061bca23abcb6",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44553,
+            "sha256": "68d5740b8cb3e357ad3e4616f4b181dfc8e196b579f6398a053f04a9993d0924"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36794,
+            "sha256": "247b1b673e8bfaa15aa198ab109cc68a05d39c99f68b7718456e9fedc9dc332b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21450,
+            "sha256": "80568f72a33992ae50c1a5917263634207a0360290c6ae821df23a9c06b0c37d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "1520972434b7927351358bcb3443e5526e18f7971859b7d8dd7e2fece03fcd1a"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47722,
+            "sha256": "781d90c1d0bfd439eaf1271ed5a949a5f3ba6cf9e8fddbcd2bb904fb525e928d"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "6a56229307c35c04af29cd415779396ccf549e1bc141b3aaca63c232eeb271bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "05f01a7b85205e98077e474f"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__receipt_0015",
+      "project_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11",
+      "project_title": "Only one with Build_02-Build_05 sequenced operator guides",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Only one with Build_02-Build_05 sequenced operator guides / useRedTeamStore.ts",
+      "component_case_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__0015__only-one-with-build-02-build-05-sequenced-operator-guides-useredteamstore-ts",
+      "claim_to_demonstrate": "treats `useRedTeamStore.ts` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: React components (PhaseProgressStepper.tsx, ProjectHeader.tsx, WorkspaceTabs.tsx), Zustand store (useRedTeamStore.ts).",
+      "input_fixture": "project source text and the named component `useRedTeamStore.ts`",
+      "operation_under_test": "treats `useRedTeamStore.ts` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: React components (PhaseProgressStepper.tsx, ProjectHeader.tsx, WorkspaceTabs.tsx), Zustand store (useRedTeamStore.ts).",
+      "expected_output": "inspectable implementation evidence tied to `useRedTeamStore.ts`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "abc931eb089061bca23abcb6",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44553,
+            "sha256": "68d5740b8cb3e357ad3e4616f4b181dfc8e196b579f6398a053f04a9993d0924"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36794,
+            "sha256": "247b1b673e8bfaa15aa198ab109cc68a05d39c99f68b7718456e9fedc9dc332b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21450,
+            "sha256": "80568f72a33992ae50c1a5917263634207a0360290c6ae821df23a9c06b0c37d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "1520972434b7927351358bcb3443e5526e18f7971859b7d8dd7e2fece03fcd1a"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47722,
+            "sha256": "781d90c1d0bfd439eaf1271ed5a949a5f3ba6cf9e8fddbcd2bb904fb525e928d"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "6a56229307c35c04af29cd415779396ccf549e1bc141b3aaca63c232eeb271bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "dd8a22857bd52313caaf7be8"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__receipt_0016",
+      "project_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11",
+      "project_title": "Only one with Build_02-Build_05 sequenced operator guides",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Only one with Build_02-Build_05 sequenced operator guides / Last Missing Operational Layer",
+      "component_case_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__0016__only-one-with-build-02-build-05-sequenced-operator-guides-last-missing-operational-layer",
+      "claim_to_demonstrate": "uses `Last Missing Operational Layer` as a named project component with a traceable role in the public mechanism. Source context: This is the execution-ready wrapper — the archive that adds the \"last missing operational layer\" on top of the already-extracted.",
+      "input_fixture": "project source text and the named component `Last Missing Operational Layer`",
+      "operation_under_test": "uses `Last Missing Operational Layer` as a named project component with a traceable role in the public mechanism. Source context: This is the execution-ready wrapper — the archive that adds the \"last missing operational layer\" on top of the already-extracted.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Last Missing Operational Layer`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "72e1c420b38a542bad29db04",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44553,
+            "sha256": "68d5740b8cb3e357ad3e4616f4b181dfc8e196b579f6398a053f04a9993d0924"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36794,
+            "sha256": "247b1b673e8bfaa15aa198ab109cc68a05d39c99f68b7718456e9fedc9dc332b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21450,
+            "sha256": "80568f72a33992ae50c1a5917263634207a0360290c6ae821df23a9c06b0c37d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "1520972434b7927351358bcb3443e5526e18f7971859b7d8dd7e2fece03fcd1a"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47722,
+            "sha256": "781d90c1d0bfd439eaf1271ed5a949a5f3ba6cf9e8fddbcd2bb904fb525e928d"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "6a56229307c35c04af29cd415779396ccf549e1bc141b3aaca63c232eeb271bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4a169e790d0a93481f9520b0"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__receipt_0017",
+      "project_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11",
+      "project_title": "Only one with Build_02-Build_05 sequenced operator guides",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Only one with Build_02-Build_05 sequenced operator guides / What Next",
+      "component_case_id": "mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11__0017__only-one-with-build-02-build-05-sequenced-operator-guides-what-next",
+      "claim_to_demonstrate": "uses `What Next` as a named project component with a traceable role in the public mechanism. Source context: it doesn't just say \"what next\" — it sequences four full Build phases (02 — 05) as separate build sheets, each as a standalone operator guide.",
+      "input_fixture": "project source text and the named component `What Next`",
+      "operation_under_test": "uses `What Next` as a named project component with a traceable role in the public mechanism. Source context: it doesn't just say \"what next\" — it sequences four full Build phases (02 — 05) as separate build sheets, each as a standalone operator guide.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `What Next`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "832953a9501ccd2c3c24cf73",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44553,
+            "sha256": "68d5740b8cb3e357ad3e4616f4b181dfc8e196b579f6398a053f04a9993d0924"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36794,
+            "sha256": "247b1b673e8bfaa15aa198ab109cc68a05d39c99f68b7718456e9fedc9dc332b"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21450,
+            "sha256": "80568f72a33992ae50c1a5917263634207a0360290c6ae821df23a9c06b0c37d"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21022,
+            "sha256": "1520972434b7927351358bcb3443e5526e18f7971859b7d8dd7e2fece03fcd1a"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47722,
+            "sha256": "781d90c1d0bfd439eaf1271ed5a949a5f3ba6cf9e8fddbcd2bb904fb525e928d"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10863,
+            "sha256": "6a56229307c35c04af29cd415779396ccf549e1bc141b3aaca63c232eeb271bd"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/README.md",
+          "proof_builds/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-execution-ready-handoff-archive-2026-04-11/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "aac21ec8232295e09f721479"
+    }
+  ]
+}

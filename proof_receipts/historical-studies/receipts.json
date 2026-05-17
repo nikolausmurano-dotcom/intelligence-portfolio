@@ -1,0 +1,857 @@
+{
+  "project": {
+    "project_id": "historical-studies",
+    "title": "Historical Studies — eleven historical and operational case studies, including the manuscript Trilogy"
+  },
+  "receipts": [
+    {
+      "receipt_id": "historical-studies__receipt_0001",
+      "project_id": "historical-studies",
+      "project_title": "Historical Studies — eleven historical and operational case studies, including the manuscript Trilogy",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Historical Studies — eleven historical and operational case studies, including the manuscript Trilogy Runtime Or Interface Surface",
+      "component_case_id": "historical-studies__0001__historical-studies-eleven-historical-and-operational-case-studies-including-the-manuscript",
+      "claim_to_demonstrate": "A historical-studies index for manuscript, diplomacy, war theory, international law, peacebuilding, and operational case pages.",
+      "input_fixture": "local app, web room, data surface, or workstation entry point",
+      "operation_under_test": "A historical-studies index for manuscript, diplomacy, war theory, international law, peacebuilding, and operational case pages.",
+      "expected_output": "reader-facing definition of the software object and its intended user",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8fd882083e0f8259b8a06f60",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/historical-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 28356,
+            "sha256": "4993c49c54e9e4bb2e131f6d111126303b83468d2d0437c14c34cafa265a697c"
+          },
+          {
+            "relative_path": "project_blueprints/historical-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22247,
+            "sha256": "5d7221e22241dc459535c56a2832052c2316c106da720b8972762492e5ec1478"
+          },
+          {
+            "relative_path": "project_blueprints/historical-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13774,
+            "sha256": "18f8e849548c4fd5086f2b07b66934655fcac305ec15fb27654f1890afa8e816"
+          },
+          {
+            "relative_path": "proof_builds/historical-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13690,
+            "sha256": "257551cf7587b222fa5aa3705a0cbc9bfbebe94c4d2457290dd23f501d15bb00"
+          },
+          {
+            "relative_path": "proof_demos/historical-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 28352,
+            "sha256": "3d63604b9b940034332b90aa1b4381fc324fde818018961fa16581d8b3b88ce9"
+          },
+          {
+            "relative_path": "proof_demos/historical-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6704,
+            "sha256": "d1ce48ec510f0d810bb3350a06ac9c3da4b02d475fde4f739cab4b7c4aa03363"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/historical-studies/blueprint.json",
+          "project_blueprints/historical-studies/instrument_map.json",
+          "proof_builds/historical-studies/proof_build.json",
+          "proof_demos/historical-studies/demo_cases.json",
+          "proof_demos/historical-studies/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d4177c79ede546cc44f812a7"
+    },
+    {
+      "receipt_id": "historical-studies__receipt_0002",
+      "project_id": "historical-studies",
+      "project_title": "Historical Studies — eleven historical and operational case studies, including the manuscript Trilogy",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Historical Studies — eleven historical and operational case studies, including the manuscript Trilogy Data And State Model",
+      "component_case_id": "historical-studies__0002__historical-studies-eleven-historical-and-operational-case-studies-including-the-manuscript",
+      "claim_to_demonstrate": "Source use is organized by role: method authorities, domain evidence, technical background, implementation evidence, and claim limits. The page should show why each source matters; direct quotations and stronger factual claims still require exact passage.",
+      "input_fixture": "records, files, indexes, tables, project state, source state, and user decisions",
+      "operation_under_test": "Source use is organized by role: method authorities, domain evidence, technical background, implementation evidence, and claim limits. The page should show why each source matters; direct quotations and stronger factual claims still require exact passage.",
+      "expected_output": "state model that explains what the tool remembers and what it refuses to infer",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4da81596b91ff65b95cc789b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/historical-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 28356,
+            "sha256": "4993c49c54e9e4bb2e131f6d111126303b83468d2d0437c14c34cafa265a697c"
+          },
+          {
+            "relative_path": "project_blueprints/historical-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22247,
+            "sha256": "5d7221e22241dc459535c56a2832052c2316c106da720b8972762492e5ec1478"
+          },
+          {
+            "relative_path": "project_blueprints/historical-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13774,
+            "sha256": "18f8e849548c4fd5086f2b07b66934655fcac305ec15fb27654f1890afa8e816"
+          },
+          {
+            "relative_path": "proof_builds/historical-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13690,
+            "sha256": "257551cf7587b222fa5aa3705a0cbc9bfbebe94c4d2457290dd23f501d15bb00"
+          },
+          {
+            "relative_path": "proof_demos/historical-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 28352,
+            "sha256": "3d63604b9b940034332b90aa1b4381fc324fde818018961fa16581d8b3b88ce9"
+          },
+          {
+            "relative_path": "proof_demos/historical-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6704,
+            "sha256": "d1ce48ec510f0d810bb3350a06ac9c3da4b02d475fde4f739cab4b7c4aa03363"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/historical-studies/blueprint.json",
+          "project_blueprints/historical-studies/instrument_map.json",
+          "project_blueprints/historical-studies/README.md",
+          "proof_builds/historical-studies/proof_build.json",
+          "proof_demos/historical-studies/demo_cases.json",
+          "proof_demos/historical-studies/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e13e33670eb4f322072ff208"
+    },
+    {
+      "receipt_id": "historical-studies__receipt_0003",
+      "project_id": "historical-studies",
+      "project_title": "Historical Studies — eleven historical and operational case studies, including the manuscript Trilogy",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Historical Studies — eleven historical and operational case studies, including the manuscript Trilogy Core Instrument Panel",
+      "component_case_id": "historical-studies__0003__historical-studies-eleven-historical-and-operational-case-studies-including-the-manuscript",
+      "claim_to_demonstrate": "It distinguishes long-form scholarship, international-affairs historical analysis, and operational simulations instead of presenting all history-facing work as one kind of object.",
+      "input_fixture": "tool buttons, rooms, workflow steps, analytical controls, and review surfaces",
+      "operation_under_test": "It distinguishes long-form scholarship, international-affairs historical analysis, and operational simulations instead of presenting all history-facing work as one kind of object.",
+      "expected_output": "named instruments that perform the useful work rather than generic navigation",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0f34fd9a5a44ba183928e1ab",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/historical-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 28356,
+            "sha256": "4993c49c54e9e4bb2e131f6d111126303b83468d2d0437c14c34cafa265a697c"
+          },
+          {
+            "relative_path": "project_blueprints/historical-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22247,
+            "sha256": "5d7221e22241dc459535c56a2832052c2316c106da720b8972762492e5ec1478"
+          },
+          {
+            "relative_path": "project_blueprints/historical-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13774,
+            "sha256": "18f8e849548c4fd5086f2b07b66934655fcac305ec15fb27654f1890afa8e816"
+          },
+          {
+            "relative_path": "proof_builds/historical-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13690,
+            "sha256": "257551cf7587b222fa5aa3705a0cbc9bfbebe94c4d2457290dd23f501d15bb00"
+          },
+          {
+            "relative_path": "proof_demos/historical-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 28352,
+            "sha256": "3d63604b9b940034332b90aa1b4381fc324fde818018961fa16581d8b3b88ce9"
+          },
+          {
+            "relative_path": "proof_demos/historical-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6704,
+            "sha256": "d1ce48ec510f0d810bb3350a06ac9c3da4b02d475fde4f739cab4b7c4aa03363"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/historical-studies/blueprint.json",
+          "project_blueprints/historical-studies/instrument_map.json",
+          "proof_builds/historical-studies/proof_build.json",
+          "proof_demos/historical-studies/demo_cases.json",
+          "proof_demos/historical-studies/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f12f3a2a742dac12d5e5af11"
+    },
+    {
+      "receipt_id": "historical-studies__receipt_0004",
+      "project_id": "historical-studies",
+      "project_title": "Historical Studies — eleven historical and operational case studies, including the manuscript Trilogy",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Historical Studies — eleven historical and operational case studies, including the manuscript Trilogy Workflow Orchestration",
+      "component_case_id": "historical-studies__0004__historical-studies-eleven-historical-and-operational-case-studies-including-the-manuscript",
+      "claim_to_demonstrate": "Continue scholarly depth on the long-form historical surfaces. Bind every claim to its source register through the same source-register pipeline. The operational simulations are stable; the long-form historical work continues to develop case-study density and.",
+      "input_fixture": "upstream inputs, intermediate decisions, downstream products, and stale-state conditions",
+      "operation_under_test": "Continue scholarly depth on the long-form historical surfaces. Bind every claim to its source register through the same source-register pipeline. The operational simulations are stable; the long-form historical work continues to develop case-study density and.",
+      "expected_output": "pipeline path showing how work moves and when earlier decisions must be reopened",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fd96493f227a13a744bbc6d4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/historical-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 28356,
+            "sha256": "4993c49c54e9e4bb2e131f6d111126303b83468d2d0437c14c34cafa265a697c"
+          },
+          {
+            "relative_path": "project_blueprints/historical-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22247,
+            "sha256": "5d7221e22241dc459535c56a2832052c2316c106da720b8972762492e5ec1478"
+          },
+          {
+            "relative_path": "project_blueprints/historical-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13774,
+            "sha256": "18f8e849548c4fd5086f2b07b66934655fcac305ec15fb27654f1890afa8e816"
+          },
+          {
+            "relative_path": "proof_builds/historical-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13690,
+            "sha256": "257551cf7587b222fa5aa3705a0cbc9bfbebe94c4d2457290dd23f501d15bb00"
+          },
+          {
+            "relative_path": "proof_demos/historical-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 28352,
+            "sha256": "3d63604b9b940034332b90aa1b4381fc324fde818018961fa16581d8b3b88ce9"
+          },
+          {
+            "relative_path": "proof_demos/historical-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6704,
+            "sha256": "d1ce48ec510f0d810bb3350a06ac9c3da4b02d475fde4f739cab4b7c4aa03363"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/historical-studies/blueprint.json",
+          "project_blueprints/historical-studies/instrument_map.json",
+          "proof_builds/historical-studies/proof_build.json",
+          "proof_demos/historical-studies/demo_cases.json",
+          "proof_demos/historical-studies/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "607e223e8585a327a8609083"
+    },
+    {
+      "receipt_id": "historical-studies__receipt_0005",
+      "project_id": "historical-studies",
+      "project_title": "Historical Studies — eleven historical and operational case studies, including the manuscript Trilogy",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Historical Studies — eleven historical and operational case studies, including the manuscript Trilogy Review And Governance Gate",
+      "component_case_id": "historical-studies__0005__historical-studies-eleven-historical-and-operational-case-studies-including-the-manuscript",
+      "claim_to_demonstrate": "Status: The eleven historical and operational study pages are represented here as a native index. Trilogy (the flagship) is the deepest at the full manuscript corpus across 72 chapters. The operational-simulation pages (Habitat, Pharm, Respite, Uscri) are.",
+      "input_fixture": "quality rules, source checks, claim ceilings, reviewer steps, and failure states",
+      "operation_under_test": "Status: The eleven historical and operational study pages are represented here as a native index. Trilogy (the flagship) is the deepest at the full manuscript corpus across 72 chapters. The operational-simulation pages (Habitat, Pharm, Respite, Uscri) are.",
+      "expected_output": "decision gate that makes the output inspectable before it is trusted",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f0a9b7ff3262d180291ae4ca",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/historical-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 28356,
+            "sha256": "4993c49c54e9e4bb2e131f6d111126303b83468d2d0437c14c34cafa265a697c"
+          },
+          {
+            "relative_path": "project_blueprints/historical-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22247,
+            "sha256": "5d7221e22241dc459535c56a2832052c2316c106da720b8972762492e5ec1478"
+          },
+          {
+            "relative_path": "project_blueprints/historical-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13774,
+            "sha256": "18f8e849548c4fd5086f2b07b66934655fcac305ec15fb27654f1890afa8e816"
+          },
+          {
+            "relative_path": "proof_builds/historical-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13690,
+            "sha256": "257551cf7587b222fa5aa3705a0cbc9bfbebe94c4d2457290dd23f501d15bb00"
+          },
+          {
+            "relative_path": "proof_demos/historical-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 28352,
+            "sha256": "3d63604b9b940034332b90aa1b4381fc324fde818018961fa16581d8b3b88ce9"
+          },
+          {
+            "relative_path": "proof_demos/historical-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6704,
+            "sha256": "d1ce48ec510f0d810bb3350a06ac9c3da4b02d475fde4f739cab4b7c4aa03363"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/historical-studies/blueprint.json",
+          "project_blueprints/historical-studies/instrument_map.json",
+          "proof_builds/historical-studies/proof_build.json",
+          "proof_demos/historical-studies/demo_cases.json",
+          "proof_demos/historical-studies/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "de5ddcf9cb872da22b61df6d"
+    },
+    {
+      "receipt_id": "historical-studies__receipt_0006",
+      "project_id": "historical-studies",
+      "project_title": "Historical Studies — eleven historical and operational case studies, including the manuscript Trilogy",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Historical Studies — eleven historical and operational case studies, including the manuscript Trilogy Export Or Integration Surface",
+      "component_case_id": "historical-studies__0006__historical-studies-eleven-historical-and-operational-case-studies-including-the-manuscript",
+      "claim_to_demonstrate": "The eleven historical and operational study pages are represented here as a native index. Trilogy (the flagship) is the deepest at the full manuscript corpus across 72 chapters. The operational-simulation pages (Habitat, Pharm, Respite, Uscri) are complete.",
+      "input_fixture": "brief, paper, room, dataset, packet, rendered page, or external handoff",
+      "operation_under_test": "The eleven historical and operational study pages are represented here as a native index. Trilogy (the flagship) is the deepest at the full manuscript corpus across 72 chapters. The operational-simulation pages (Habitat, Pharm, Respite, Uscri) are complete.",
+      "expected_output": "usable output that another project, professor, employer, or collaborator can inspect",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "577c94f4228762f7478a15a0",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/historical-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 28356,
+            "sha256": "4993c49c54e9e4bb2e131f6d111126303b83468d2d0437c14c34cafa265a697c"
+          },
+          {
+            "relative_path": "project_blueprints/historical-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22247,
+            "sha256": "5d7221e22241dc459535c56a2832052c2316c106da720b8972762492e5ec1478"
+          },
+          {
+            "relative_path": "project_blueprints/historical-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13774,
+            "sha256": "18f8e849548c4fd5086f2b07b66934655fcac305ec15fb27654f1890afa8e816"
+          },
+          {
+            "relative_path": "proof_builds/historical-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13690,
+            "sha256": "257551cf7587b222fa5aa3705a0cbc9bfbebe94c4d2457290dd23f501d15bb00"
+          },
+          {
+            "relative_path": "proof_demos/historical-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 28352,
+            "sha256": "3d63604b9b940034332b90aa1b4381fc324fde818018961fa16581d8b3b88ce9"
+          },
+          {
+            "relative_path": "proof_demos/historical-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6704,
+            "sha256": "d1ce48ec510f0d810bb3350a06ac9c3da4b02d475fde4f739cab4b7c4aa03363"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/historical-studies/blueprint.json",
+          "project_blueprints/historical-studies/instrument_map.json",
+          "proof_builds/historical-studies/proof_build.json",
+          "proof_demos/historical-studies/demo_cases.json",
+          "proof_demos/historical-studies/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6b684a144fd54b8952fbd58b"
+    },
+    {
+      "receipt_id": "historical-studies__receipt_0007",
+      "project_id": "historical-studies",
+      "project_title": "Historical Studies — eleven historical and operational case studies, including the manuscript Trilogy",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Historical Studies — eleven historical and operational case studies, including the manuscript Trilogy Build Verification Queue",
+      "component_case_id": "historical-studies__0007__historical-studies-eleven-historical-and-operational-case-studies-including-the-manuscript",
+      "claim_to_demonstrate": "Remaining gaps: continue scholarly depth on the long-form historical surfaces. Bind every claim to its source register through the same source-register pipeline.",
+      "input_fixture": "unbuilt modules, missing walkthroughs, test cases, and validation evidence",
+      "operation_under_test": "Remaining gaps: continue scholarly depth on the long-form historical surfaces. Bind every claim to its source register through the same source-register pipeline.",
+      "expected_output": "next proof needed before broader claims about the tool are safe",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e350b0e07ab7b9d385896d3e",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/historical-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 28356,
+            "sha256": "4993c49c54e9e4bb2e131f6d111126303b83468d2d0437c14c34cafa265a697c"
+          },
+          {
+            "relative_path": "project_blueprints/historical-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22247,
+            "sha256": "5d7221e22241dc459535c56a2832052c2316c106da720b8972762492e5ec1478"
+          },
+          {
+            "relative_path": "project_blueprints/historical-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13774,
+            "sha256": "18f8e849548c4fd5086f2b07b66934655fcac305ec15fb27654f1890afa8e816"
+          },
+          {
+            "relative_path": "proof_builds/historical-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13690,
+            "sha256": "257551cf7587b222fa5aa3705a0cbc9bfbebe94c4d2457290dd23f501d15bb00"
+          },
+          {
+            "relative_path": "proof_demos/historical-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 28352,
+            "sha256": "3d63604b9b940034332b90aa1b4381fc324fde818018961fa16581d8b3b88ce9"
+          },
+          {
+            "relative_path": "proof_demos/historical-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6704,
+            "sha256": "d1ce48ec510f0d810bb3350a06ac9c3da4b02d475fde4f739cab4b7c4aa03363"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/historical-studies/blueprint.json",
+          "project_blueprints/historical-studies/instrument_map.json",
+          "proof_builds/historical-studies/proof_build.json",
+          "proof_demos/historical-studies/demo_cases.json",
+          "proof_demos/historical-studies/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c99997eb33b65e8b2727523f"
+    },
+    {
+      "receipt_id": "historical-studies__receipt_0008",
+      "project_id": "historical-studies",
+      "project_title": "Historical Studies — eleven historical and operational case studies, including the manuscript Trilogy",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Historical Studies — eleven historical and operational case studies, including the manuscript Trilogy / War Theory",
+      "component_case_id": "historical-studies__0008__historical-studies-eleven-historical-and-operational-case-studies-including-the-manuscript",
+      "claim_to_demonstrate": "uses `War Theory` as a named project component with a traceable role in the public mechanism. Source context: An eleven-surface historical-studies pillar that pairs three traditions: long-form historical scholarship (the Trilogy, Crusades, War Theory, the.",
+      "input_fixture": "project source text and the named component `War Theory`",
+      "operation_under_test": "uses `War Theory` as a named project component with a traceable role in the public mechanism. Source context: An eleven-surface historical-studies pillar that pairs three traditions: long-form historical scholarship (the Trilogy, Crusades, War Theory, the.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `War Theory`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "2dbd3f1c038541462594abf6",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/historical-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 28356,
+            "sha256": "4993c49c54e9e4bb2e131f6d111126303b83468d2d0437c14c34cafa265a697c"
+          },
+          {
+            "relative_path": "project_blueprints/historical-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22247,
+            "sha256": "5d7221e22241dc459535c56a2832052c2316c106da720b8972762492e5ec1478"
+          },
+          {
+            "relative_path": "project_blueprints/historical-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13774,
+            "sha256": "18f8e849548c4fd5086f2b07b66934655fcac305ec15fb27654f1890afa8e816"
+          },
+          {
+            "relative_path": "proof_builds/historical-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13690,
+            "sha256": "257551cf7587b222fa5aa3705a0cbc9bfbebe94c4d2457290dd23f501d15bb00"
+          },
+          {
+            "relative_path": "proof_demos/historical-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 28352,
+            "sha256": "3d63604b9b940034332b90aa1b4381fc324fde818018961fa16581d8b3b88ce9"
+          },
+          {
+            "relative_path": "proof_demos/historical-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6704,
+            "sha256": "d1ce48ec510f0d810bb3350a06ac9c3da4b02d475fde4f739cab4b7c4aa03363"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/historical-studies/blueprint.json",
+          "project_blueprints/historical-studies/instrument_map.json",
+          "proof_builds/historical-studies/proof_build.json",
+          "proof_demos/historical-studies/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "87d9f488340d2c23ea4ae48a"
+    },
+    {
+      "receipt_id": "historical-studies__receipt_0009",
+      "project_id": "historical-studies",
+      "project_title": "Historical Studies — eleven historical and operational case studies, including the manuscript Trilogy",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Historical Studies — eleven historical and operational case studies, including the manuscript Trilogy / Track II",
+      "component_case_id": "historical-studies__0009__historical-studies-eleven-historical-and-operational-case-studies-including-the-manuscript",
+      "claim_to_demonstrate": "uses `Track II` as a named project component with a traceable role in the public mechanism. Source context: Track II diplomacy and confidence-building), and operational simulation cases (running a Habitat for Humanity build day, managing a high-volume.",
+      "input_fixture": "project source text and the named component `Track II`",
+      "operation_under_test": "uses `Track II` as a named project component with a traceable role in the public mechanism. Source context: Track II diplomacy and confidence-building), and operational simulation cases (running a Habitat for Humanity build day, managing a high-volume.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Track II`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c349b2ef0c8fb4b64e221c2a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/historical-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 28356,
+            "sha256": "4993c49c54e9e4bb2e131f6d111126303b83468d2d0437c14c34cafa265a697c"
+          },
+          {
+            "relative_path": "project_blueprints/historical-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22247,
+            "sha256": "5d7221e22241dc459535c56a2832052c2316c106da720b8972762492e5ec1478"
+          },
+          {
+            "relative_path": "project_blueprints/historical-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13774,
+            "sha256": "18f8e849548c4fd5086f2b07b66934655fcac305ec15fb27654f1890afa8e816"
+          },
+          {
+            "relative_path": "proof_builds/historical-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13690,
+            "sha256": "257551cf7587b222fa5aa3705a0cbc9bfbebe94c4d2457290dd23f501d15bb00"
+          },
+          {
+            "relative_path": "proof_demos/historical-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 28352,
+            "sha256": "3d63604b9b940034332b90aa1b4381fc324fde818018961fa16581d8b3b88ce9"
+          },
+          {
+            "relative_path": "proof_demos/historical-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6704,
+            "sha256": "d1ce48ec510f0d810bb3350a06ac9c3da4b02d475fde4f739cab4b7c4aa03363"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/historical-studies/blueprint.json",
+          "project_blueprints/historical-studies/instrument_map.json",
+          "project_blueprints/historical-studies/README.md",
+          "proof_builds/historical-studies/proof_build.json",
+          "proof_demos/historical-studies/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "798871be0aab801c034bd9d5"
+    },
+    {
+      "receipt_id": "historical-studies__receipt_0010",
+      "project_id": "historical-studies",
+      "project_title": "Historical Studies — eleven historical and operational case studies, including the manuscript Trilogy",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Historical Studies — eleven historical and operational case studies, including the manuscript Trilogy / Habitat for Humanity",
+      "component_case_id": "historical-studies__0010__historical-studies-eleven-historical-and-operational-case-studies-including-the-manuscript",
+      "claim_to_demonstrate": "uses `Habitat for Humanity` as a named project component with a traceable role in the public mechanism. Source context: Habitat for Humanity build day, managing a high-volume pandemic vaccination site, running a substance-recovery respite facility.",
+      "input_fixture": "project source text and the named component `Habitat for Humanity`",
+      "operation_under_test": "uses `Habitat for Humanity` as a named project component with a traceable role in the public mechanism. Source context: Habitat for Humanity build day, managing a high-volume pandemic vaccination site, running a substance-recovery respite facility.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Habitat for Humanity`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "6e0fc2c0849c8ef92e90afda",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/historical-studies/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 28356,
+            "sha256": "4993c49c54e9e4bb2e131f6d111126303b83468d2d0437c14c34cafa265a697c"
+          },
+          {
+            "relative_path": "project_blueprints/historical-studies/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22247,
+            "sha256": "5d7221e22241dc459535c56a2832052c2316c106da720b8972762492e5ec1478"
+          },
+          {
+            "relative_path": "project_blueprints/historical-studies/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13774,
+            "sha256": "18f8e849548c4fd5086f2b07b66934655fcac305ec15fb27654f1890afa8e816"
+          },
+          {
+            "relative_path": "proof_builds/historical-studies/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13690,
+            "sha256": "257551cf7587b222fa5aa3705a0cbc9bfbebe94c4d2457290dd23f501d15bb00"
+          },
+          {
+            "relative_path": "proof_demos/historical-studies/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 28352,
+            "sha256": "3d63604b9b940034332b90aa1b4381fc324fde818018961fa16581d8b3b88ce9"
+          },
+          {
+            "relative_path": "proof_demos/historical-studies/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6704,
+            "sha256": "d1ce48ec510f0d810bb3350a06ac9c3da4b02d475fde4f739cab4b7c4aa03363"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/historical-studies/blueprint.json",
+          "project_blueprints/historical-studies/instrument_map.json",
+          "proof_builds/historical-studies/proof_build.json",
+          "proof_demos/historical-studies/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "39b8e13f6658ce0aa84a45c5"
+    }
+  ]
+}

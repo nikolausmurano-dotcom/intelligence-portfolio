@@ -1,0 +1,1470 @@
+{
+  "project": {
+    "project_id": "mb-dialectic-engine-room-pass1-handoff",
+    "title": "Dialectic Engine"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-dialectic-engine-room-pass1-handoff__receipt_0001",
+      "project_id": "mb-dialectic-engine-room-pass1-handoff",
+      "project_title": "Dialectic Engine",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Engine Handoff Identity",
+      "component_case_id": "mb-dialectic-engine-room-pass1-handoff__0001__dialectic-engine-handoff-identity",
+      "claim_to_demonstrate": "Dialectic Engine is a MuranoOS cognitive-engine-room handoff for preserving narrative, philosophical, and argument-state relations.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "Dialectic Engine is a MuranoOS cognitive-engine-room handoff for preserving narrative, philosophical, and argument-state relations.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44226,
+            "sha256": "48ff56b00311a4a57bee590138f5065dfdd9f41f1955cb352070828cf31af1ca"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35923,
+            "sha256": "74ba5b513998d5489e132565696ed57f577a343c9e5fd065736a191fb77d4fc4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21208,
+            "sha256": "c0a03609615f31eac2e9d49d1e994cf20a4a3ad137aca54b9d690c827fa89827"
+          },
+          {
+            "relative_path": "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20635,
+            "sha256": "0e8689b22d9cbe86587d4f7a0af5aa4c45bfee5d9bb17b556d876917f7a35a3d"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45283,
+            "sha256": "2097d9463dc7d746a3785d009d77213633ac8fccddac1740bfd3ef223ce3a4ed"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9235,
+            "sha256": "63ec50474a0c2c525986448f73586e5440752d3100597c617eda37da734d47fe"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+          "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c55aee57ac53005efdf07f11"
+    },
+    {
+      "receipt_id": "mb-dialectic-engine-room-pass1-handoff__receipt_0002",
+      "project_id": "mb-dialectic-engine-room-pass1-handoff",
+      "project_title": "Dialectic Engine",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Engine Room Task Model",
+      "component_case_id": "mb-dialectic-engine-room-pass1-handoff__0002__dialectic-engine-room-task-model",
+      "claim_to_demonstrate": "It defines a relation grammar, synchronized view topology, interaction model, UI/UX path, MVP implementation phasing, and MuranoOS protocol so a story, chapter, or argument can be inspected through tensions, positions, transformations, and continuity rather.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "It defines a relation grammar, synchronized view topology, interaction model, UI/UX path, MVP implementation phasing, and MuranoOS protocol so a story, chapter, or argument can be inspected through tensions, positions, transformations, and continuity rather.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44226,
+            "sha256": "48ff56b00311a4a57bee590138f5065dfdd9f41f1955cb352070828cf31af1ca"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35923,
+            "sha256": "74ba5b513998d5489e132565696ed57f577a343c9e5fd065736a191fb77d4fc4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21208,
+            "sha256": "c0a03609615f31eac2e9d49d1e994cf20a4a3ad137aca54b9d690c827fa89827"
+          },
+          {
+            "relative_path": "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20635,
+            "sha256": "0e8689b22d9cbe86587d4f7a0af5aa4c45bfee5d9bb17b556d876917f7a35a3d"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45283,
+            "sha256": "2097d9463dc7d746a3785d009d77213633ac8fccddac1740bfd3ef223ce3a4ed"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9235,
+            "sha256": "63ec50474a0c2c525986448f73586e5440752d3100597c617eda37da734d47fe"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+          "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "fa43d5615f000c371dc10d46"
+    },
+    {
+      "receipt_id": "mb-dialectic-engine-room-pass1-handoff__receipt_0003",
+      "project_id": "mb-dialectic-engine-room-pass1-handoff",
+      "project_title": "Dialectic Engine",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Engine Data Schema And Persistence Plan",
+      "component_case_id": "mb-dialectic-engine-room-pass1-handoff__0003__dialectic-engine-data-schema-and-persistence-plan",
+      "claim_to_demonstrate": "Political theory, democracy, individuality, and civic formation. Use source library political theory as a central source reservoir for the Book Trilogy and democratic-formation pages. Vision: Give Book II, democracy, and civic-formation pages a.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Political theory, democracy, individuality, and civic formation. Use source library political theory as a central source reservoir for the Book Trilogy and democratic-formation pages. Vision: Give Book II, democracy, and civic-formation pages a.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44226,
+            "sha256": "48ff56b00311a4a57bee590138f5065dfdd9f41f1955cb352070828cf31af1ca"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35923,
+            "sha256": "74ba5b513998d5489e132565696ed57f577a343c9e5fd065736a191fb77d4fc4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21208,
+            "sha256": "c0a03609615f31eac2e9d49d1e994cf20a4a3ad137aca54b9d690c827fa89827"
+          },
+          {
+            "relative_path": "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20635,
+            "sha256": "0e8689b22d9cbe86587d4f7a0af5aa4c45bfee5d9bb17b556d876917f7a35a3d"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45283,
+            "sha256": "2097d9463dc7d746a3785d009d77213633ac8fccddac1740bfd3ef223ce3a4ed"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9235,
+            "sha256": "63ec50474a0c2c525986448f73586e5440752d3100597c617eda37da734d47fe"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+          "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6cf695e5ffee93faf22fb61d"
+    },
+    {
+      "receipt_id": "mb-dialectic-engine-room-pass1-handoff__receipt_0004",
+      "project_id": "mb-dialectic-engine-room-pass1-handoff",
+      "project_title": "Dialectic Engine",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Engine Interface And Instrument Plane",
+      "component_case_id": "mb-dialectic-engine-room-pass1-handoff__0004__dialectic-engine-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44226,
+            "sha256": "48ff56b00311a4a57bee590138f5065dfdd9f41f1955cb352070828cf31af1ca"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35923,
+            "sha256": "74ba5b513998d5489e132565696ed57f577a343c9e5fd065736a191fb77d4fc4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21208,
+            "sha256": "c0a03609615f31eac2e9d49d1e994cf20a4a3ad137aca54b9d690c827fa89827"
+          },
+          {
+            "relative_path": "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20635,
+            "sha256": "0e8689b22d9cbe86587d4f7a0af5aa4c45bfee5d9bb17b556d876917f7a35a3d"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45283,
+            "sha256": "2097d9463dc7d746a3785d009d77213633ac8fccddac1740bfd3ef223ce3a4ed"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9235,
+            "sha256": "63ec50474a0c2c525986448f73586e5440752d3100597c617eda37da734d47fe"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+          "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7a61e2c595892b10fda00d71"
+    },
+    {
+      "receipt_id": "mb-dialectic-engine-room-pass1-handoff__receipt_0005",
+      "project_id": "mb-dialectic-engine-room-pass1-handoff",
+      "project_title": "Dialectic Engine",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Engine Integration Path",
+      "component_case_id": "mb-dialectic-engine-room-pass1-handoff__0005__dialectic-engine-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. When to reach for this: You have a substantial story/philosophical work (novel, screenplay, mythopoetic project) and want to design a MuranoOS room that.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. When to reach for this: You have a substantial story/philosophical work (novel, screenplay, mythopoetic project) and want to design a MuranoOS room that.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44226,
+            "sha256": "48ff56b00311a4a57bee590138f5065dfdd9f41f1955cb352070828cf31af1ca"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35923,
+            "sha256": "74ba5b513998d5489e132565696ed57f577a343c9e5fd065736a191fb77d4fc4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21208,
+            "sha256": "c0a03609615f31eac2e9d49d1e994cf20a4a3ad137aca54b9d690c827fa89827"
+          },
+          {
+            "relative_path": "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20635,
+            "sha256": "0e8689b22d9cbe86587d4f7a0af5aa4c45bfee5d9bb17b556d876917f7a35a3d"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45283,
+            "sha256": "2097d9463dc7d746a3785d009d77213633ac8fccddac1740bfd3ef223ce3a4ed"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9235,
+            "sha256": "63ec50474a0c2c525986448f73586e5440752d3100597c617eda37da734d47fe"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+          "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "864846d9418745e8e009afb8"
+    },
+    {
+      "receipt_id": "mb-dialectic-engine-room-pass1-handoff__receipt_0006",
+      "project_id": "mb-dialectic-engine-room-pass1-handoff",
+      "project_title": "Dialectic Engine",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Engine Proof Boundary",
+      "component_case_id": "mb-dialectic-engine-room-pass1-handoff__0006__dialectic-engine-proof-boundary",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44226,
+            "sha256": "48ff56b00311a4a57bee590138f5065dfdd9f41f1955cb352070828cf31af1ca"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35923,
+            "sha256": "74ba5b513998d5489e132565696ed57f577a343c9e5fd065736a191fb77d4fc4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21208,
+            "sha256": "c0a03609615f31eac2e9d49d1e994cf20a4a3ad137aca54b9d690c827fa89827"
+          },
+          {
+            "relative_path": "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20635,
+            "sha256": "0e8689b22d9cbe86587d4f7a0af5aa4c45bfee5d9bb17b556d876917f7a35a3d"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45283,
+            "sha256": "2097d9463dc7d746a3785d009d77213633ac8fccddac1740bfd3ef223ce3a4ed"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9235,
+            "sha256": "63ec50474a0c2c525986448f73586e5440752d3100597c617eda37da734d47fe"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+          "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2f767c42a1c9ee5efe9b3ab7"
+    },
+    {
+      "receipt_id": "mb-dialectic-engine-room-pass1-handoff__receipt_0007",
+      "project_id": "mb-dialectic-engine-room-pass1-handoff",
+      "project_title": "Dialectic Engine",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Engine Next Build Test",
+      "component_case_id": "mb-dialectic-engine-room-pass1-handoff__0007__dialectic-engine-next-build-test",
+      "claim_to_demonstrate": "Promote the packet from documented handoff to live implementation only after the declared caveats are resolved: apply or wire the scaffold, run the stated validation or smoke-test sequence, and keep unresolved assumptions visible.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Promote the packet from documented handoff to live implementation only after the declared caveats are resolved: apply or wire the scaffold, run the stated validation or smoke-test sequence, and keep unresolved assumptions visible.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44226,
+            "sha256": "48ff56b00311a4a57bee590138f5065dfdd9f41f1955cb352070828cf31af1ca"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35923,
+            "sha256": "74ba5b513998d5489e132565696ed57f577a343c9e5fd065736a191fb77d4fc4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21208,
+            "sha256": "c0a03609615f31eac2e9d49d1e994cf20a4a3ad137aca54b9d690c827fa89827"
+          },
+          {
+            "relative_path": "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20635,
+            "sha256": "0e8689b22d9cbe86587d4f7a0af5aa4c45bfee5d9bb17b556d876917f7a35a3d"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45283,
+            "sha256": "2097d9463dc7d746a3785d009d77213633ac8fccddac1740bfd3ef223ce3a4ed"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9235,
+            "sha256": "63ec50474a0c2c525986448f73586e5440752d3100597c617eda37da734d47fe"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+          "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ed42db31630f504535743460"
+    },
+    {
+      "receipt_id": "mb-dialectic-engine-room-pass1-handoff__receipt_0008",
+      "project_id": "mb-dialectic-engine-room-pass1-handoff",
+      "project_title": "Dialectic Engine",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Engine / backend/frontend",
+      "component_case_id": "mb-dialectic-engine-room-pass1-handoff__0008__dialectic-engine-backend-frontend",
+      "claim_to_demonstrate": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "input_fixture": "project source text and the named component `backend/frontend`",
+      "operation_under_test": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `backend/frontend`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "159237ca04c59f3c702c0e3d",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44226,
+            "sha256": "48ff56b00311a4a57bee590138f5065dfdd9f41f1955cb352070828cf31af1ca"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35923,
+            "sha256": "74ba5b513998d5489e132565696ed57f577a343c9e5fd065736a191fb77d4fc4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21208,
+            "sha256": "c0a03609615f31eac2e9d49d1e994cf20a4a3ad137aca54b9d690c827fa89827"
+          },
+          {
+            "relative_path": "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20635,
+            "sha256": "0e8689b22d9cbe86587d4f7a0af5aa4c45bfee5d9bb17b556d876917f7a35a3d"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45283,
+            "sha256": "2097d9463dc7d746a3785d009d77213633ac8fccddac1740bfd3ef223ce3a4ed"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9235,
+            "sha256": "63ec50474a0c2c525986448f73586e5440752d3100597c617eda37da734d47fe"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+          "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6afa7e0bf3dec8a76ceea068"
+    },
+    {
+      "receipt_id": "mb-dialectic-engine-room-pass1-handoff__receipt_0009",
+      "project_id": "mb-dialectic-engine-room-pass1-handoff",
+      "project_title": "Dialectic Engine",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Engine / 00_STATUS_MANIFEST.md",
+      "component_case_id": "mb-dialectic-engine-room-pass1-handoff__0009__dialectic-engine-00-status-manifest-md",
+      "claim_to_demonstrate": "treats `00_STATUS_MANIFEST.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 00_STATUS_MANIFEST.md (to confirm NOT DONE) — 01_ROOM_OVERVIEW.md — 02_INTERFACE_BLUEPRINT.md —.",
+      "input_fixture": "project source text and the named component `00_STATUS_MANIFEST.md`",
+      "operation_under_test": "treats `00_STATUS_MANIFEST.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 00_STATUS_MANIFEST.md (to confirm NOT DONE) — 01_ROOM_OVERVIEW.md — 02_INTERFACE_BLUEPRINT.md —.",
+      "expected_output": "inspectable implementation evidence tied to `00_STATUS_MANIFEST.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "53bf412a360b15dabd464e64",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44226,
+            "sha256": "48ff56b00311a4a57bee590138f5065dfdd9f41f1955cb352070828cf31af1ca"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35923,
+            "sha256": "74ba5b513998d5489e132565696ed57f577a343c9e5fd065736a191fb77d4fc4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21208,
+            "sha256": "c0a03609615f31eac2e9d49d1e994cf20a4a3ad137aca54b9d690c827fa89827"
+          },
+          {
+            "relative_path": "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20635,
+            "sha256": "0e8689b22d9cbe86587d4f7a0af5aa4c45bfee5d9bb17b556d876917f7a35a3d"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45283,
+            "sha256": "2097d9463dc7d746a3785d009d77213633ac8fccddac1740bfd3ef223ce3a4ed"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9235,
+            "sha256": "63ec50474a0c2c525986448f73586e5440752d3100597c617eda37da734d47fe"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+          "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "08aa503a6d0e06a30120bad6"
+    },
+    {
+      "receipt_id": "mb-dialectic-engine-room-pass1-handoff__receipt_0010",
+      "project_id": "mb-dialectic-engine-room-pass1-handoff",
+      "project_title": "Dialectic Engine",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Engine / 01_ROOM_OVERVIEW.md",
+      "component_case_id": "mb-dialectic-engine-room-pass1-handoff__0010__dialectic-engine-01-room-overview-md",
+      "claim_to_demonstrate": "treats `01_ROOM_OVERVIEW.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 00_STATUS_MANIFEST.md (to confirm NOT DONE) — 01_ROOM_OVERVIEW.md — 02_INTERFACE_BLUEPRINT.md —.",
+      "input_fixture": "project source text and the named component `01_ROOM_OVERVIEW.md`",
+      "operation_under_test": "treats `01_ROOM_OVERVIEW.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 00_STATUS_MANIFEST.md (to confirm NOT DONE) — 01_ROOM_OVERVIEW.md — 02_INTERFACE_BLUEPRINT.md —.",
+      "expected_output": "inspectable implementation evidence tied to `01_ROOM_OVERVIEW.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "53bf412a360b15dabd464e64",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44226,
+            "sha256": "48ff56b00311a4a57bee590138f5065dfdd9f41f1955cb352070828cf31af1ca"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35923,
+            "sha256": "74ba5b513998d5489e132565696ed57f577a343c9e5fd065736a191fb77d4fc4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21208,
+            "sha256": "c0a03609615f31eac2e9d49d1e994cf20a4a3ad137aca54b9d690c827fa89827"
+          },
+          {
+            "relative_path": "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20635,
+            "sha256": "0e8689b22d9cbe86587d4f7a0af5aa4c45bfee5d9bb17b556d876917f7a35a3d"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45283,
+            "sha256": "2097d9463dc7d746a3785d009d77213633ac8fccddac1740bfd3ef223ce3a4ed"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9235,
+            "sha256": "63ec50474a0c2c525986448f73586e5440752d3100597c617eda37da734d47fe"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+          "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "423e4e65d08f8b6351a21d22"
+    },
+    {
+      "receipt_id": "mb-dialectic-engine-room-pass1-handoff__receipt_0011",
+      "project_id": "mb-dialectic-engine-room-pass1-handoff",
+      "project_title": "Dialectic Engine",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Engine / 02_INTERFACE_BLUEPRINT.md",
+      "component_case_id": "mb-dialectic-engine-room-pass1-handoff__0011__dialectic-engine-02-interface-blueprint-md",
+      "claim_to_demonstrate": "treats `02_INTERFACE_BLUEPRINT.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 00_STATUS_MANIFEST.md (to confirm NOT DONE) — 01_ROOM_OVERVIEW.md — 02_INTERFACE_BLUEPRINT.md —.",
+      "input_fixture": "project source text and the named component `02_INTERFACE_BLUEPRINT.md`",
+      "operation_under_test": "treats `02_INTERFACE_BLUEPRINT.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 00_STATUS_MANIFEST.md (to confirm NOT DONE) — 01_ROOM_OVERVIEW.md — 02_INTERFACE_BLUEPRINT.md —.",
+      "expected_output": "inspectable implementation evidence tied to `02_INTERFACE_BLUEPRINT.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "53bf412a360b15dabd464e64",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44226,
+            "sha256": "48ff56b00311a4a57bee590138f5065dfdd9f41f1955cb352070828cf31af1ca"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35923,
+            "sha256": "74ba5b513998d5489e132565696ed57f577a343c9e5fd065736a191fb77d4fc4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21208,
+            "sha256": "c0a03609615f31eac2e9d49d1e994cf20a4a3ad137aca54b9d690c827fa89827"
+          },
+          {
+            "relative_path": "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20635,
+            "sha256": "0e8689b22d9cbe86587d4f7a0af5aa4c45bfee5d9bb17b556d876917f7a35a3d"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45283,
+            "sha256": "2097d9463dc7d746a3785d009d77213633ac8fccddac1740bfd3ef223ce3a4ed"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9235,
+            "sha256": "63ec50474a0c2c525986448f73586e5440752d3100597c617eda37da734d47fe"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+          "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6a9ce8b1eb43c0106662da71"
+    },
+    {
+      "receipt_id": "mb-dialectic-engine-room-pass1-handoff__receipt_0012",
+      "project_id": "mb-dialectic-engine-room-pass1-handoff",
+      "project_title": "Dialectic Engine",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Engine / 07_MURANOOS_PROTOCOL_ADDENDUM.md",
+      "component_case_id": "mb-dialectic-engine-room-pass1-handoff__0012__dialectic-engine-07-muranoos-protocol-addendum-md",
+      "claim_to_demonstrate": "treats `07_MURANOOS_PROTOCOL_ADDENDUM.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 00_STATUS_MANIFEST.md (to confirm NOT DONE) — 01_ROOM_OVERVIEW.md — 02_INTERFACE_BLUEPRINT.md —.",
+      "input_fixture": "project source text and the named component `07_MURANOOS_PROTOCOL_ADDENDUM.md`",
+      "operation_under_test": "treats `07_MURANOOS_PROTOCOL_ADDENDUM.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: 00_STATUS_MANIFEST.md (to confirm NOT DONE) — 01_ROOM_OVERVIEW.md — 02_INTERFACE_BLUEPRINT.md —.",
+      "expected_output": "inspectable implementation evidence tied to `07_MURANOOS_PROTOCOL_ADDENDUM.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "53bf412a360b15dabd464e64",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44226,
+            "sha256": "48ff56b00311a4a57bee590138f5065dfdd9f41f1955cb352070828cf31af1ca"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35923,
+            "sha256": "74ba5b513998d5489e132565696ed57f577a343c9e5fd065736a191fb77d4fc4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21208,
+            "sha256": "c0a03609615f31eac2e9d49d1e994cf20a4a3ad137aca54b9d690c827fa89827"
+          },
+          {
+            "relative_path": "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20635,
+            "sha256": "0e8689b22d9cbe86587d4f7a0af5aa4c45bfee5d9bb17b556d876917f7a35a3d"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45283,
+            "sha256": "2097d9463dc7d746a3785d009d77213633ac8fccddac1740bfd3ef223ce3a4ed"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9235,
+            "sha256": "63ec50474a0c2c525986448f73586e5440752d3100597c617eda37da734d47fe"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+          "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "82407521a460698e7f9da3b5"
+    },
+    {
+      "receipt_id": "mb-dialectic-engine-room-pass1-handoff__receipt_0013",
+      "project_id": "mb-dialectic-engine-room-pass1-handoff",
+      "project_title": "Dialectic Engine",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Engine / Lossless Narrative-philosophical Cognition Chamber",
+      "component_case_id": "mb-dialectic-engine-room-pass1-handoff__0013__dialectic-engine-lossless-narrative-philosophical-cognition-chamber",
+      "claim_to_demonstrate": "treats `Lossless Narrative-philosophical Cognition Chamber` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: The Dialectic Engine Room is a \"lossless narrative-philosophical.",
+      "input_fixture": "project source text and the named component `Lossless Narrative-philosophical Cognition Chamber`",
+      "operation_under_test": "treats `Lossless Narrative-philosophical Cognition Chamber` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: The Dialectic Engine Room is a \"lossless narrative-philosophical.",
+      "expected_output": "a room, workbench, or interface function tied to `Lossless Narrative-philosophical Cognition Chamber`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8e801efca1d98ce970919789",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44226,
+            "sha256": "48ff56b00311a4a57bee590138f5065dfdd9f41f1955cb352070828cf31af1ca"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35923,
+            "sha256": "74ba5b513998d5489e132565696ed57f577a343c9e5fd065736a191fb77d4fc4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21208,
+            "sha256": "c0a03609615f31eac2e9d49d1e994cf20a4a3ad137aca54b9d690c827fa89827"
+          },
+          {
+            "relative_path": "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20635,
+            "sha256": "0e8689b22d9cbe86587d4f7a0af5aa4c45bfee5d9bb17b556d876917f7a35a3d"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45283,
+            "sha256": "2097d9463dc7d746a3785d009d77213633ac8fccddac1740bfd3ef223ce3a4ed"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9235,
+            "sha256": "63ec50474a0c2c525986448f73586e5440752d3100597c617eda37da734d47fe"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+          "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d13f088bb1bd532299f37f82"
+    },
+    {
+      "receipt_id": "mb-dialectic-engine-room-pass1-handoff__receipt_0014",
+      "project_id": "mb-dialectic-engine-room-pass1-handoff",
+      "project_title": "Dialectic Engine",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Engine / The Dialectic Engine Room",
+      "component_case_id": "mb-dialectic-engine-room-pass1-handoff__0014__dialectic-engine-the-dialectic-engine-room",
+      "claim_to_demonstrate": "treats `The Dialectic Engine Room` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: The Dialectic Engine Room is a \"lossless narrative-philosophical cognition chamber\" for.",
+      "input_fixture": "project source text and the named component `The Dialectic Engine Room`",
+      "operation_under_test": "treats `The Dialectic Engine Room` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: The Dialectic Engine Room is a \"lossless narrative-philosophical cognition chamber\" for.",
+      "expected_output": "a room, workbench, or interface function tied to `The Dialectic Engine Room`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8e801efca1d98ce970919789",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44226,
+            "sha256": "48ff56b00311a4a57bee590138f5065dfdd9f41f1955cb352070828cf31af1ca"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35923,
+            "sha256": "74ba5b513998d5489e132565696ed57f577a343c9e5fd065736a191fb77d4fc4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21208,
+            "sha256": "c0a03609615f31eac2e9d49d1e994cf20a4a3ad137aca54b9d690c827fa89827"
+          },
+          {
+            "relative_path": "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20635,
+            "sha256": "0e8689b22d9cbe86587d4f7a0af5aa4c45bfee5d9bb17b556d876917f7a35a3d"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45283,
+            "sha256": "2097d9463dc7d746a3785d009d77213633ac8fccddac1740bfd3ef223ce3a4ed"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9235,
+            "sha256": "63ec50474a0c2c525986448f73586e5440752d3100597c617eda37da734d47fe"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+          "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "78c83c8b07081c80abbc0e51"
+    },
+    {
+      "receipt_id": "mb-dialectic-engine-room-pass1-handoff__receipt_0015",
+      "project_id": "mb-dialectic-engine-room-pass1-handoff",
+      "project_title": "Dialectic Engine",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Engine / Cognitive Engine Room",
+      "component_case_id": "mb-dialectic-engine-room-pass1-handoff__0015__dialectic-engine-cognitive-engine-room",
+      "claim_to_demonstrate": "treats `Cognitive Engine Room` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: It is explicitly classified as a Cognitive Engine Room — not an operational app room — and the.",
+      "input_fixture": "project source text and the named component `Cognitive Engine Room`",
+      "operation_under_test": "treats `Cognitive Engine Room` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: It is explicitly classified as a Cognitive Engine Room — not an operational app room — and the.",
+      "expected_output": "a room, workbench, or interface function tied to `Cognitive Engine Room`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "bc98642a7239163ed1bc4d59",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44226,
+            "sha256": "48ff56b00311a4a57bee590138f5065dfdd9f41f1955cb352070828cf31af1ca"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35923,
+            "sha256": "74ba5b513998d5489e132565696ed57f577a343c9e5fd065736a191fb77d4fc4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21208,
+            "sha256": "c0a03609615f31eac2e9d49d1e994cf20a4a3ad137aca54b9d690c827fa89827"
+          },
+          {
+            "relative_path": "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20635,
+            "sha256": "0e8689b22d9cbe86587d4f7a0af5aa4c45bfee5d9bb17b556d876917f7a35a3d"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45283,
+            "sha256": "2097d9463dc7d746a3785d009d77213633ac8fccddac1740bfd3ef223ce3a4ed"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9235,
+            "sha256": "63ec50474a0c2c525986448f73586e5440752d3100597c617eda37da734d47fe"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+          "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "45f23c10408ba83f47d0e267"
+    },
+    {
+      "receipt_id": "mb-dialectic-engine-room-pass1-handoff__receipt_0016",
+      "project_id": "mb-dialectic-engine-room-pass1-handoff",
+      "project_title": "Dialectic Engine",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Engine / NOT DONE. The",
+      "component_case_id": "mb-dialectic-engine-room-pass1-handoff__0016__dialectic-engine-not-done-the",
+      "claim_to_demonstrate": "uses `NOT DONE. The` as a named project component with a traceable role in the public mechanism. Source context: This is Pass 1 of a 3-to-4-pass sequence and is explicitly NOT DONE. The pack converts vision into a concrete handoff foundation: room identity.",
+      "input_fixture": "project source text and the named component `NOT DONE. The`",
+      "operation_under_test": "uses `NOT DONE. The` as a named project component with a traceable role in the public mechanism. Source context: This is Pass 1 of a 3-to-4-pass sequence and is explicitly NOT DONE. The pack converts vision into a concrete handoff foundation: room identity.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `NOT DONE. The`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "541d923eb3343fdf2de905a9",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44226,
+            "sha256": "48ff56b00311a4a57bee590138f5065dfdd9f41f1955cb352070828cf31af1ca"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35923,
+            "sha256": "74ba5b513998d5489e132565696ed57f577a343c9e5fd065736a191fb77d4fc4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21208,
+            "sha256": "c0a03609615f31eac2e9d49d1e994cf20a4a3ad137aca54b9d690c827fa89827"
+          },
+          {
+            "relative_path": "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20635,
+            "sha256": "0e8689b22d9cbe86587d4f7a0af5aa4c45bfee5d9bb17b556d876917f7a35a3d"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45283,
+            "sha256": "2097d9463dc7d746a3785d009d77213633ac8fccddac1740bfd3ef223ce3a4ed"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9235,
+            "sha256": "63ec50474a0c2c525986448f73586e5440752d3100597c617eda37da734d47fe"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+          "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8be3499a2fd1d7ee19007b9b"
+    },
+    {
+      "receipt_id": "mb-dialectic-engine-room-pass1-handoff__receipt_0017",
+      "project_id": "mb-dialectic-engine-room-pass1-handoff",
+      "project_title": "Dialectic Engine",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Engine / NOT DONE",
+      "component_case_id": "mb-dialectic-engine-room-pass1-handoff__0017__dialectic-engine-not-done",
+      "claim_to_demonstrate": "uses `NOT DONE` as a named project component with a traceable role in the public mechanism. Source context: This is Pass 1 of a 3-to-4-pass sequence and is explicitly NOT DONE. The pack converts vision into a concrete handoff foundation: room identity, UI/UX.",
+      "input_fixture": "project source text and the named component `NOT DONE`",
+      "operation_under_test": "uses `NOT DONE` as a named project component with a traceable role in the public mechanism. Source context: This is Pass 1 of a 3-to-4-pass sequence and is explicitly NOT DONE. The pack converts vision into a concrete handoff foundation: room identity, UI/UX.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `NOT DONE`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "541d923eb3343fdf2de905a9",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 44226,
+            "sha256": "48ff56b00311a4a57bee590138f5065dfdd9f41f1955cb352070828cf31af1ca"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35923,
+            "sha256": "74ba5b513998d5489e132565696ed57f577a343c9e5fd065736a191fb77d4fc4"
+          },
+          {
+            "relative_path": "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21208,
+            "sha256": "c0a03609615f31eac2e9d49d1e994cf20a4a3ad137aca54b9d690c827fa89827"
+          },
+          {
+            "relative_path": "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20635,
+            "sha256": "0e8689b22d9cbe86587d4f7a0af5aa4c45bfee5d9bb17b556d876917f7a35a3d"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45283,
+            "sha256": "2097d9463dc7d746a3785d009d77213633ac8fccddac1740bfd3ef223ce3a4ed"
+          },
+          {
+            "relative_path": "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9235,
+            "sha256": "63ec50474a0c2c525986448f73586e5440752d3100597c617eda37da734d47fe"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/blueprint.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/instrument_map.json",
+          "project_blueprints/mb-dialectic-engine-room-pass1-handoff/README.md",
+          "proof_builds/mb-dialectic-engine-room-pass1-handoff/proof_build.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/demo_cases.json",
+          "proof_demos/mb-dialectic-engine-room-pass1-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d3eea0b8eec8bda99645a588"
+    }
+  ]
+}

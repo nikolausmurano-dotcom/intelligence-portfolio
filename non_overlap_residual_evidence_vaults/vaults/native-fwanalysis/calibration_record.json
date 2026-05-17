@@ -1,0 +1,19 @@
+{
+  "project_id": "native-fwanalysis",
+  "product_name": "Foreign Warning Analysis",
+  "generated_at": "2026-05-17T01:47:56+00:00",
+  "evidence_type": "live_case_calibration_record",
+  "case_count": 3,
+  "calibration_decision": "PASS_WITH_LIMITS",
+  "calibration_boundary": "The cases are realistic owner-generated calibration cases. They close live-case calibration evidence, but not qualified expert review.",
+  "expected_behavior": "Cases should preserve evidence, inference, uncertainty, failure mode, and next-action boundaries.",
+  "observed_behavior": "Cases were routed into structured calibration fields with explicit limits and reviewer-needed language.",
+  "calibration_drift": {
+    "risk": "Medium",
+    "description": "Future changes to public page copy or instrument language could drift away from the calibration assumptions unless rerun after each material edit."
+  },
+  "false_positive_risk": "The workflow may mark a weakly supported public claim as ready if source ceilings are not read alongside the calibration record.",
+  "false_negative_risk": "The workflow may reject useful exploratory claims too early if all incomplete evidence is treated as failure rather than as pending research.",
+  "brittle_behavior": "The calibration is text-structured; stronger operation will require executable page-specific instruments or independent reviewer case trials.",
+  "case_hash": "9e3221cf"
+}

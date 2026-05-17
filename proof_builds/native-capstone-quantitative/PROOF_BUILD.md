@@ -1,0 +1,41 @@
+# Proof Build: Quantitative Capstone Workbench
+
+**Project ID.** `native-capstone-quantitative`
+
+**Proof tier.** source-backed-proof-build
+
+**Public claim.** A future-work quantitative capstone workbench, not the submitted qualitative capstone.
+
+**Distinctive mechanism.** It organizes future condition testing around retrieval modes, corruption conditions, prompt supports, scoring rules, reliability gates, ambiguity handling, and interpretation thresholds.
+
+**Use value.** It shows how the qualitative capstone could become a controlled experimental branch while making clear that no validated quantitative finding is being claimed here.
+
+**Minimum public demo.** Open or inspect the local runtime path for Quantitative Capstone Workbench Runtime Or Interface Surface; confirm a room, action, or state record traces to the governing contract.
+
+**Claim ceiling.** The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.
+
+## Flagship Proof Builds
+
+No special flagship proof build has been authored yet; this project is governed by the component proof table below.
+
+## Component Proof Table
+
+| Component | Status | Input | Expected Output | Verification Check |
+|---|---|---|---|---|
+| Quantitative Capstone Workbench Runtime Or Interface Surface | specified-output-needs-demo | local app, web room, data surface, or workstation entry point | reader-facing definition of the software object and its intended user | Open or inspect the local runtime path for Quantitative Capstone Workbench Runtime Or Interface Surface; confirm a room, action, or state record traces to the governing. |
+| Quantitative Capstone Workbench Data And State Model | specified-output-needs-demo | records, files, indexes, tables, project state, source state, and user decisions | state model that explains what the tool remembers and what it refuses to infer | Test one representative case; confirm input (records, files, indexes, tables, project state, source...) produces output (state model that explains what the tool. |
+| Quantitative Capstone Workbench Core Instrument Panel | specified-output-needs-demo | tool buttons, rooms, workflow steps, analytical controls, and review surfaces | named instruments that perform the useful work rather than generic navigation | Test one representative case; confirm input (tool buttons, rooms, workflow steps, analytical...) produces output (named instruments that perform the useful work. |
+| Quantitative Capstone Workbench Workflow Orchestration | specified-output-needs-demo | upstream inputs, intermediate decisions, downstream products, and stale-state conditions | pipeline path showing how work moves and when earlier decisions must be reopened | Test one representative case; confirm input (upstream inputs, intermediate decisions, downstream...) produces output (pipeline path showing how work moves and when. |
+| Quantitative Capstone Workbench Review And Governance Gate | specified-output-needs-demo | quality rules, source checks, claim ceilings, reviewer steps, and failure states | decision gate that makes the output inspectable before it is trusted | Test one representative case; confirm input (quality rules, source checks, claim ceilings, reviewer...) produces output (decision gate that makes the output inspectable. |
+| Quantitative Capstone Workbench Export Or Integration Surface | specified-output-needs-demo | brief, paper, room, dataset, packet, rendered page, or external handoff | usable output that another project, professor, employer, or collaborator can inspect | Test one representative case; confirm input (brief, paper, room, dataset, packet, rendered page...) produces output (usable output that another project, professor...). |
+| Quantitative Capstone Workbench Build Verification Queue | specified-output-needs-demo | unbuilt modules, missing walkthroughs, test cases, and validation evidence | next proof needed before broader claims about the tool are safe | Test one representative case; confirm input (unbuilt modules, missing walkthroughs, test cases...) produces output (next proof needed before broader claims about the. |
+| Quantitative Capstone Workbench / Evidence Sections | source-context-backed | project source text and the named component `Evidence Sections` | a project-specific work product, decision, or proof surface tied to `Evidence Sections` | Confirm `Evidence Sections` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Quantitative Capstone Workbench / Review Notes | source-context-backed | project source text and the named component `Review Notes` | a review decision, claim ceiling, or release boundary tied to `Review Notes` | Confirm `Review Notes` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Quantitative Capstone Workbench / Clarifies the | source-context-backed | project source text and the named component `Clarifies the` | a project-specific work product, decision, or proof surface tied to `Clarifies the` | Confirm `Clarifies the` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Quantitative Capstone Workbench / Supplies the | source-context-backed | project source text and the named component `Supplies the` | a project-specific work product, decision, or proof surface tied to `Supplies the` | Confirm `Supplies the` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Quantitative Capstone Workbench / Russia Desk | source-context-backed | project source text and the named component `Russia Desk` | a room, workbench, or interface function tied to `Russia Desk` | Confirm `Russia Desk` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Quantitative Capstone Workbench / Native Navigation | source-context-backed | project source text and the named component `Native Navigation` | a project-specific work product, decision, or proof surface tied to `Native Navigation` | Confirm `Native Navigation` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Quantitative Capstone Workbench / APA lineage | source-context-backed | project source text and the named component `APA lineage` | a project-specific work product, decision, or proof surface tied to `APA lineage` | Confirm `APA lineage` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Quantitative Capstone Workbench / source lineage claim limit. The public package remains. | source-context-backed | project source text and the named component `source lineage claim limit. The public package remains text` | a review decision, claim ceiling, or release boundary tied to `source lineage claim limit. The public package remains text` | Confirm `source lineage claim limit. The public package remains text` appears in the cited source context and that the public page explains what output, decision, or. |
+| Quantitative Capstone Workbench / focused and does not claim unverified runtime state. | source-context-backed | project source text and the named component `focused and does not claim unverified runtime state. Plan: identify the region` | a review decision, claim ceiling, or release boundary tied to `focused and does not claim unverified runtime state. Plan. | Confirm `focused and does not claim unverified runtime state. Plan: identify the region` appears in the cited source context and that the public page explains what. |
+| Quantitative Capstone Workbench / Specific Source Spine | source-context-backed | project source text and the named component `Specific Source Spine` | a project-specific work product, decision, or proof surface tied to `Specific Source Spine` | Confirm `Specific Source Spine` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |

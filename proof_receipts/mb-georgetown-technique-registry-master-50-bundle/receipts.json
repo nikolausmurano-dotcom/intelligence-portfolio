@@ -1,0 +1,1446 @@
+{
+  "project": {
+    "project_id": "mb-georgetown-technique-registry-master-50-bundle",
+    "title": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G]"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-georgetown-technique-registry-master-50-bundle__receipt_0001",
+      "project_id": "mb-georgetown-technique-registry-master-50-bundle",
+      "project_title": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G]",
+      "proof_tier": "source-backed-proof-build",
+      "component": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G] Handoff Identity",
+      "component_case_id": "mb-georgetown-technique-registry-master-50-bundle__0001__50-course-georgetown-ssp-registry-7-500-technique-lines-capstone-plug-tags-sr-ep-ir-sc-g-h",
+      "claim_to_demonstrate": "Georgetown technique registry is a method-authority packet covering all 50 SSP courses and thousands of course-derived technique lines.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "Georgetown technique registry is a method-authority packet covering all 50 SSP courses and thousands of course-derived technique lines.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46373,
+            "sha256": "a8e0ac486de9fe37ee5bc17d1f065cf0305fc73fd84b81d30d0f1b155454c387"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37931,
+            "sha256": "637053cca5a758618006592583cd49baa5a173fddc0f0d1713a1b5d58001ebf0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22309,
+            "sha256": "c1de271f93ce0c659daf444552f8ed23f08311ef6889b922daf2701d64056433"
+          },
+          {
+            "relative_path": "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22041,
+            "sha256": "a2c7c57427f1265f53311ebca4ed003a842a108a54f484a17d7820ff9c87c450"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49167,
+            "sha256": "dc0aff506c7c06447d2361b05748f5073c4da09674a7b20d0f9fd1cdc1ea4f4c"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11130,
+            "sha256": "e5b33cfbe24d0959b9cee9ec621518ec3222ac3fa4b381372ecb371bac591bd5"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+          "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+          "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "104fd2bf9a6cc34c0ea2b48d"
+    },
+    {
+      "receipt_id": "mb-georgetown-technique-registry-master-50-bundle__receipt_0002",
+      "project_id": "mb-georgetown-technique-registry-master-50-bundle",
+      "project_title": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G]",
+      "proof_tier": "source-backed-proof-build",
+      "component": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G] Room Task Model",
+      "component_case_id": "mb-georgetown-technique-registry-master-50-bundle__0002__50-course-georgetown-ssp-registry-7-500-technique-lines-capstone-plug-tags-sr-ep-ir-sc-g-r",
+      "claim_to_demonstrate": "It preserves U.S. National Security Policy through Intelligence and War, including the Research-Methods, Statistics, SAT, Operations Research, Game-Theory, Disruptive-Analytics, Forecasting, Modeling-Complexity, Political-Analyst, and Writing-for-Intel spine.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "It preserves U.S. National Security Policy through Intelligence and War, including the Research-Methods, Statistics, SAT, Operations Research, Game-Theory, Disruptive-Analytics, Forecasting, Modeling-Complexity, Political-Analyst, and Writing-for-Intel spine.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46373,
+            "sha256": "a8e0ac486de9fe37ee5bc17d1f065cf0305fc73fd84b81d30d0f1b155454c387"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37931,
+            "sha256": "637053cca5a758618006592583cd49baa5a173fddc0f0d1713a1b5d58001ebf0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22309,
+            "sha256": "c1de271f93ce0c659daf444552f8ed23f08311ef6889b922daf2701d64056433"
+          },
+          {
+            "relative_path": "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22041,
+            "sha256": "a2c7c57427f1265f53311ebca4ed003a842a108a54f484a17d7820ff9c87c450"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49167,
+            "sha256": "dc0aff506c7c06447d2361b05748f5073c4da09674a7b20d0f9fd1cdc1ea4f4c"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11130,
+            "sha256": "e5b33cfbe24d0959b9cee9ec621518ec3222ac3fa4b381372ecb371bac591bd5"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+          "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+          "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0f47f36d007fe1be0901b735"
+    },
+    {
+      "receipt_id": "mb-georgetown-technique-registry-master-50-bundle__receipt_0003",
+      "project_id": "mb-georgetown-technique-registry-master-50-bundle",
+      "project_title": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G]",
+      "proof_tier": "source-backed-proof-build",
+      "component": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G] Data Schema And Persistence Plan",
+      "component_case_id": "mb-georgetown-technique-registry-master-50-bundle__0003__50-course-georgetown-ssp-registry-7-500-technique-lines-capstone-plug-tags-sr-ep-ir-sc-g-d",
+      "claim_to_demonstrate": "Intelligence tradecraft, counterintelligence, and analytic method. Use source library intelligence titles as method authority and intelligence-domain stressors. Vision: Present intelligence pages as disciplined analytic-method and tradecraft demonstrations.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Intelligence tradecraft, counterintelligence, and analytic method. Use source library intelligence titles as method authority and intelligence-domain stressors. Vision: Present intelligence pages as disciplined analytic-method and tradecraft demonstrations.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46373,
+            "sha256": "a8e0ac486de9fe37ee5bc17d1f065cf0305fc73fd84b81d30d0f1b155454c387"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37931,
+            "sha256": "637053cca5a758618006592583cd49baa5a173fddc0f0d1713a1b5d58001ebf0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22309,
+            "sha256": "c1de271f93ce0c659daf444552f8ed23f08311ef6889b922daf2701d64056433"
+          },
+          {
+            "relative_path": "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22041,
+            "sha256": "a2c7c57427f1265f53311ebca4ed003a842a108a54f484a17d7820ff9c87c450"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49167,
+            "sha256": "dc0aff506c7c06447d2361b05748f5073c4da09674a7b20d0f9fd1cdc1ea4f4c"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11130,
+            "sha256": "e5b33cfbe24d0959b9cee9ec621518ec3222ac3fa4b381372ecb371bac591bd5"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+          "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+          "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "00acec23b7a71e05f7bc5f80"
+    },
+    {
+      "receipt_id": "mb-georgetown-technique-registry-master-50-bundle__receipt_0004",
+      "project_id": "mb-georgetown-technique-registry-master-50-bundle",
+      "project_title": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G]",
+      "proof_tier": "source-backed-proof-build",
+      "component": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G] Interface And Instrument Plane",
+      "component_case_id": "mb-georgetown-technique-registry-master-50-bundle__0004__50-course-georgetown-ssp-registry-7-500-technique-lines-capstone-plug-tags-sr-ep-ir-sc-g-i",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46373,
+            "sha256": "a8e0ac486de9fe37ee5bc17d1f065cf0305fc73fd84b81d30d0f1b155454c387"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37931,
+            "sha256": "637053cca5a758618006592583cd49baa5a173fddc0f0d1713a1b5d58001ebf0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22309,
+            "sha256": "c1de271f93ce0c659daf444552f8ed23f08311ef6889b922daf2701d64056433"
+          },
+          {
+            "relative_path": "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22041,
+            "sha256": "a2c7c57427f1265f53311ebca4ed003a842a108a54f484a17d7820ff9c87c450"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49167,
+            "sha256": "dc0aff506c7c06447d2361b05748f5073c4da09674a7b20d0f9fd1cdc1ea4f4c"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11130,
+            "sha256": "e5b33cfbe24d0959b9cee9ec621518ec3222ac3fa4b381372ecb371bac591bd5"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+          "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+          "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "15d047c53602c54bbf084e6c"
+    },
+    {
+      "receipt_id": "mb-georgetown-technique-registry-master-50-bundle__receipt_0005",
+      "project_id": "mb-georgetown-technique-registry-master-50-bundle",
+      "project_title": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G]",
+      "proof_tier": "source-backed-proof-build",
+      "component": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G] Integration Path",
+      "component_case_id": "mb-georgetown-technique-registry-master-50-bundle__0005__50-course-georgetown-ssp-registry-7-500-technique-lines-capstone-plug-tags-sr-ep-ir-sc-g-i",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. 1. Look up a Georgetown SSP course by old OR new SEST code in index.csv. 2. Open the corresponding Part_ _SEST_ _*.md for the full lossless technique inventory.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. 1. Look up a Georgetown SSP course by old OR new SEST code in index.csv. 2. Open the corresponding Part_ _SEST_ _*.md for the full lossless technique inventory.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46373,
+            "sha256": "a8e0ac486de9fe37ee5bc17d1f065cf0305fc73fd84b81d30d0f1b155454c387"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37931,
+            "sha256": "637053cca5a758618006592583cd49baa5a173fddc0f0d1713a1b5d58001ebf0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22309,
+            "sha256": "c1de271f93ce0c659daf444552f8ed23f08311ef6889b922daf2701d64056433"
+          },
+          {
+            "relative_path": "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22041,
+            "sha256": "a2c7c57427f1265f53311ebca4ed003a842a108a54f484a17d7820ff9c87c450"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49167,
+            "sha256": "dc0aff506c7c06447d2361b05748f5073c4da09674a7b20d0f9fd1cdc1ea4f4c"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11130,
+            "sha256": "e5b33cfbe24d0959b9cee9ec621518ec3222ac3fa4b381372ecb371bac591bd5"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+          "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+          "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "87f7b904c32befdb7586b4ec"
+    },
+    {
+      "receipt_id": "mb-georgetown-technique-registry-master-50-bundle__receipt_0006",
+      "project_id": "mb-georgetown-technique-registry-master-50-bundle",
+      "project_title": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G]",
+      "proof_tier": "source-backed-proof-build",
+      "component": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G] Proof Boundary",
+      "component_case_id": "mb-georgetown-technique-registry-master-50-bundle__0006__50-course-georgetown-ssp-registry-7-500-technique-lines-capstone-plug-tags-sr-ep-ir-sc-g-p",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46373,
+            "sha256": "a8e0ac486de9fe37ee5bc17d1f065cf0305fc73fd84b81d30d0f1b155454c387"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37931,
+            "sha256": "637053cca5a758618006592583cd49baa5a173fddc0f0d1713a1b5d58001ebf0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22309,
+            "sha256": "c1de271f93ce0c659daf444552f8ed23f08311ef6889b922daf2701d64056433"
+          },
+          {
+            "relative_path": "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22041,
+            "sha256": "a2c7c57427f1265f53311ebca4ed003a842a108a54f484a17d7820ff9c87c450"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49167,
+            "sha256": "dc0aff506c7c06447d2361b05748f5073c4da09674a7b20d0f9fd1cdc1ea4f4c"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11130,
+            "sha256": "e5b33cfbe24d0959b9cee9ec621518ec3222ac3fa4b381372ecb371bac591bd5"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+          "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+          "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9bc81edb955edceb9d7e1c81"
+    },
+    {
+      "receipt_id": "mb-georgetown-technique-registry-master-50-bundle__receipt_0007",
+      "project_id": "mb-georgetown-technique-registry-master-50-bundle",
+      "project_title": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G]",
+      "proof_tier": "source-backed-proof-build",
+      "component": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G] Next Build Test",
+      "component_case_id": "mb-georgetown-technique-registry-master-50-bundle__0007__50-course-georgetown-ssp-registry-7-500-technique-lines-capstone-plug-tags-sr-ep-ir-sc-g-n",
+      "claim_to_demonstrate": "Read the entry-point materials, classify the packet's authority level, and decide whether the next move is build, consolidation, archival retention, or public synthesis.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Read the entry-point materials, classify the packet's authority level, and decide whether the next move is build, consolidation, archival retention, or public synthesis.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46373,
+            "sha256": "a8e0ac486de9fe37ee5bc17d1f065cf0305fc73fd84b81d30d0f1b155454c387"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37931,
+            "sha256": "637053cca5a758618006592583cd49baa5a173fddc0f0d1713a1b5d58001ebf0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22309,
+            "sha256": "c1de271f93ce0c659daf444552f8ed23f08311ef6889b922daf2701d64056433"
+          },
+          {
+            "relative_path": "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22041,
+            "sha256": "a2c7c57427f1265f53311ebca4ed003a842a108a54f484a17d7820ff9c87c450"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49167,
+            "sha256": "dc0aff506c7c06447d2361b05748f5073c4da09674a7b20d0f9fd1cdc1ea4f4c"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11130,
+            "sha256": "e5b33cfbe24d0959b9cee9ec621518ec3222ac3fa4b381372ecb371bac591bd5"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+          "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+          "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "58718c55e7e1e170e5f050c1"
+    },
+    {
+      "receipt_id": "mb-georgetown-technique-registry-master-50-bundle__receipt_0008",
+      "project_id": "mb-georgetown-technique-registry-master-50-bundle",
+      "project_title": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G]",
+      "proof_tier": "source-backed-proof-build",
+      "component": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G] / capstone_plugs.csv",
+      "component_case_id": "mb-georgetown-technique-registry-master-50-bundle__0008__50-course-georgetown-ssp-registry-7-500-technique-lines-capstone-plug-tags-sr-ep-ir-sc-g-c",
+      "claim_to_demonstrate": "treats `capstone_plugs.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: a parallel capstone_plugs.csv/.json maps technique lines into five capstone work product categories — [SR] Scenario.",
+      "input_fixture": "project source text and the named component `capstone_plugs.csv`",
+      "operation_under_test": "treats `capstone_plugs.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: a parallel capstone_plugs.csv/.json maps technique lines into five capstone work product categories — [SR] Scenario.",
+      "expected_output": "inspectable implementation evidence tied to `capstone_plugs.csv`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "dbc5073d0b8c07c0b7d7c7a1",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46373,
+            "sha256": "a8e0ac486de9fe37ee5bc17d1f065cf0305fc73fd84b81d30d0f1b155454c387"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37931,
+            "sha256": "637053cca5a758618006592583cd49baa5a173fddc0f0d1713a1b5d58001ebf0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22309,
+            "sha256": "c1de271f93ce0c659daf444552f8ed23f08311ef6889b922daf2701d64056433"
+          },
+          {
+            "relative_path": "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22041,
+            "sha256": "a2c7c57427f1265f53311ebca4ed003a842a108a54f484a17d7820ff9c87c450"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49167,
+            "sha256": "dc0aff506c7c06447d2361b05748f5073c4da09674a7b20d0f9fd1cdc1ea4f4c"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11130,
+            "sha256": "e5b33cfbe24d0959b9cee9ec621518ec3222ac3fa4b381372ecb371bac591bd5"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+          "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+          "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ca11e0de71803b3f82dae183"
+    },
+    {
+      "receipt_id": "mb-georgetown-technique-registry-master-50-bundle__receipt_0009",
+      "project_id": "mb-georgetown-technique-registry-master-50-bundle",
+      "project_title": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G]",
+      "proof_tier": "source-backed-proof-build",
+      "component": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G] / index.csv",
+      "component_case_id": "mb-georgetown-technique-registry-master-50-bundle__0009__50-course-georgetown-ssp-registry-7-500-technique-lines-capstone-plug-tags-sr-ep-ir-sc-g-i",
+      "claim_to_demonstrate": "treats `index.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Look up a Georgetown SSP course by old OR new SEST code in index.csv. 2. Open the corresponding Part_ _SEST_ _*.md for the full.",
+      "input_fixture": "project source text and the named component `index.csv`",
+      "operation_under_test": "treats `index.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Look up a Georgetown SSP course by old OR new SEST code in index.csv. 2. Open the corresponding Part_ _SEST_ _*.md for the full.",
+      "expected_output": "inspectable implementation evidence tied to `index.csv`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "b76d51d7b1dee4692d5c5b6b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46373,
+            "sha256": "a8e0ac486de9fe37ee5bc17d1f065cf0305fc73fd84b81d30d0f1b155454c387"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37931,
+            "sha256": "637053cca5a758618006592583cd49baa5a173fddc0f0d1713a1b5d58001ebf0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22309,
+            "sha256": "c1de271f93ce0c659daf444552f8ed23f08311ef6889b922daf2701d64056433"
+          },
+          {
+            "relative_path": "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22041,
+            "sha256": "a2c7c57427f1265f53311ebca4ed003a842a108a54f484a17d7820ff9c87c450"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49167,
+            "sha256": "dc0aff506c7c06447d2361b05748f5073c4da09674a7b20d0f9fd1cdc1ea4f4c"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11130,
+            "sha256": "e5b33cfbe24d0959b9cee9ec621518ec3222ac3fa4b381372ecb371bac591bd5"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+          "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+          "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "15d004150121574daf496e8b"
+    },
+    {
+      "receipt_id": "mb-georgetown-technique-registry-master-50-bundle__receipt_0010",
+      "project_id": "mb-georgetown-technique-registry-master-50-bundle",
+      "project_title": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G]",
+      "proof_tier": "source-backed-proof-build",
+      "component": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G] / technique_lines.csv",
+      "component_case_id": "mb-georgetown-technique-registry-master-50-bundle__0010__50-course-georgetown-ssp-registry-7-500-technique-lines-capstone-plug-tags-sr-ep-ir-sc-g-t",
+      "claim_to_demonstrate": "treats `technique_lines.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Use technique_lines.csv for full-text search or boolean-plug filtering in Excel/pandas. Wire or preserve the.",
+      "input_fixture": "project source text and the named component `technique_lines.csv`",
+      "operation_under_test": "treats `technique_lines.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Use technique_lines.csv for full-text search or boolean-plug filtering in Excel/pandas. Wire or preserve the.",
+      "expected_output": "inspectable implementation evidence tied to `technique_lines.csv`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0309b150282432fec752fd33",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46373,
+            "sha256": "a8e0ac486de9fe37ee5bc17d1f065cf0305fc73fd84b81d30d0f1b155454c387"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37931,
+            "sha256": "637053cca5a758618006592583cd49baa5a173fddc0f0d1713a1b5d58001ebf0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22309,
+            "sha256": "c1de271f93ce0c659daf444552f8ed23f08311ef6889b922daf2701d64056433"
+          },
+          {
+            "relative_path": "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22041,
+            "sha256": "a2c7c57427f1265f53311ebca4ed003a842a108a54f484a17d7820ff9c87c450"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49167,
+            "sha256": "dc0aff506c7c06447d2361b05748f5073c4da09674a7b20d0f9fd1cdc1ea4f4c"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11130,
+            "sha256": "e5b33cfbe24d0959b9cee9ec621518ec3222ac3fa4b381372ecb371bac591bd5"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+          "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+          "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7fd57586767d1b1db04c9f99"
+    },
+    {
+      "receipt_id": "mb-georgetown-technique-registry-master-50-bundle__receipt_0011",
+      "project_id": "mb-georgetown-technique-registry-master-50-bundle",
+      "project_title": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G]",
+      "proof_tier": "source-backed-proof-build",
+      "component": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G] / U.S. National Security Policy",
+      "component_case_id": "mb-georgetown-technique-registry-master-50-bundle__0011__50-course-georgetown-ssp-registry-7-500-technique-lines-capstone-plug-tags-sr-ep-ir-sc-g-u",
+      "claim_to_demonstrate": "uses `U.S. National Security Policy` as a named project component with a traceable role in the public mechanism. Source context: A lossless, per-course technique registry covering all 50 SSP courses at Georgetown (from SEST 5100 U.S. National Security Policy.",
+      "input_fixture": "project source text and the named component `U.S. National Security Policy`",
+      "operation_under_test": "uses `U.S. National Security Policy` as a named project component with a traceable role in the public mechanism. Source context: A lossless, per-course technique registry covering all 50 SSP courses at Georgetown (from SEST 5100 U.S. National Security Policy.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `U.S. National Security Policy`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "84f3d5077b045786ead41338",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46373,
+            "sha256": "a8e0ac486de9fe37ee5bc17d1f065cf0305fc73fd84b81d30d0f1b155454c387"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37931,
+            "sha256": "637053cca5a758618006592583cd49baa5a173fddc0f0d1713a1b5d58001ebf0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22309,
+            "sha256": "c1de271f93ce0c659daf444552f8ed23f08311ef6889b922daf2701d64056433"
+          },
+          {
+            "relative_path": "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22041,
+            "sha256": "a2c7c57427f1265f53311ebca4ed003a842a108a54f484a17d7820ff9c87c450"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49167,
+            "sha256": "dc0aff506c7c06447d2361b05748f5073c4da09674a7b20d0f9fd1cdc1ea4f4c"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11130,
+            "sha256": "e5b33cfbe24d0959b9cee9ec621518ec3222ac3fa4b381372ecb371bac591bd5"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+          "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+          "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "87905f40f7e974019249d9f7"
+    },
+    {
+      "receipt_id": "mb-georgetown-technique-registry-master-50-bundle__receipt_0012",
+      "project_id": "mb-georgetown-technique-registry-master-50-bundle",
+      "project_title": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G]",
+      "proof_tier": "source-backed-proof-build",
+      "component": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G] / Scenario Registry",
+      "component_case_id": "mb-georgetown-technique-registry-master-50-bundle__0012__50-course-georgetown-ssp-registry-7-500-technique-lines-capstone-plug-tags-sr-ep-ir-sc-g-s",
+      "claim_to_demonstrate": "uses `Scenario Registry` as a named project component with a traceable role in the public mechanism. Source context: a parallel capstone_plugs.csv/.json maps technique lines into five capstone work product categories — [SR] Scenario Registry, [EP] Evidence.",
+      "input_fixture": "project source text and the named component `Scenario Registry`",
+      "operation_under_test": "uses `Scenario Registry` as a named project component with a traceable role in the public mechanism. Source context: a parallel capstone_plugs.csv/.json maps technique lines into five capstone work product categories — [SR] Scenario Registry, [EP] Evidence.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Scenario Registry`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "dbc5073d0b8c07c0b7d7c7a1",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46373,
+            "sha256": "a8e0ac486de9fe37ee5bc17d1f065cf0305fc73fd84b81d30d0f1b155454c387"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37931,
+            "sha256": "637053cca5a758618006592583cd49baa5a173fddc0f0d1713a1b5d58001ebf0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22309,
+            "sha256": "c1de271f93ce0c659daf444552f8ed23f08311ef6889b922daf2701d64056433"
+          },
+          {
+            "relative_path": "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22041,
+            "sha256": "a2c7c57427f1265f53311ebca4ed003a842a108a54f484a17d7820ff9c87c450"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49167,
+            "sha256": "dc0aff506c7c06447d2361b05748f5073c4da09674a7b20d0f9fd1cdc1ea4f4c"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11130,
+            "sha256": "e5b33cfbe24d0959b9cee9ec621518ec3222ac3fa4b381372ecb371bac591bd5"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+          "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+          "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9ebdba18d9bb2c9b02c2605b"
+    },
+    {
+      "receipt_id": "mb-georgetown-technique-registry-master-50-bundle__receipt_0013",
+      "project_id": "mb-georgetown-technique-registry-master-50-bundle",
+      "project_title": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G]",
+      "proof_tier": "source-backed-proof-build",
+      "component": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G] / Evidence Packets",
+      "component_case_id": "mb-georgetown-technique-registry-master-50-bundle__0013__50-course-georgetown-ssp-registry-7-500-technique-lines-capstone-plug-tags-sr-ep-ir-sc-g-e",
+      "claim_to_demonstrate": "uses `Evidence Packets` as a named project component with a traceable role in the public mechanism. Source context: a parallel capstone_plugs.csv/.json maps technique lines into five capstone work product categories — [SR] Scenario Registry, [EP] Evidence.",
+      "input_fixture": "project source text and the named component `Evidence Packets`",
+      "operation_under_test": "uses `Evidence Packets` as a named project component with a traceable role in the public mechanism. Source context: a parallel capstone_plugs.csv/.json maps technique lines into five capstone work product categories — [SR] Scenario Registry, [EP] Evidence.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Evidence Packets`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "dbc5073d0b8c07c0b7d7c7a1",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46373,
+            "sha256": "a8e0ac486de9fe37ee5bc17d1f065cf0305fc73fd84b81d30d0f1b155454c387"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37931,
+            "sha256": "637053cca5a758618006592583cd49baa5a173fddc0f0d1713a1b5d58001ebf0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22309,
+            "sha256": "c1de271f93ce0c659daf444552f8ed23f08311ef6889b922daf2701d64056433"
+          },
+          {
+            "relative_path": "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22041,
+            "sha256": "a2c7c57427f1265f53311ebca4ed003a842a108a54f484a17d7820ff9c87c450"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49167,
+            "sha256": "dc0aff506c7c06447d2361b05748f5073c4da09674a7b20d0f9fd1cdc1ea4f4c"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11130,
+            "sha256": "e5b33cfbe24d0959b9cee9ec621518ec3222ac3fa4b381372ecb371bac591bd5"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+          "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+          "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "03d96ce19ae4d4750356469a"
+    },
+    {
+      "receipt_id": "mb-georgetown-technique-registry-master-50-bundle__receipt_0014",
+      "project_id": "mb-georgetown-technique-registry-master-50-bundle",
+      "project_title": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G]",
+      "proof_tier": "source-backed-proof-build",
+      "component": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G] / Interagency Roles",
+      "component_case_id": "mb-georgetown-technique-registry-master-50-bundle__0014__50-course-georgetown-ssp-registry-7-500-technique-lines-capstone-plug-tags-sr-ep-ir-sc-g-i",
+      "claim_to_demonstrate": "uses `Interagency Roles` as a named project component with a traceable role in the public mechanism. Source context: a parallel capstone_plugs.csv/.json maps technique lines into five capstone work product categories — [SR] Scenario Registry, [EP] Evidence.",
+      "input_fixture": "project source text and the named component `Interagency Roles`",
+      "operation_under_test": "uses `Interagency Roles` as a named project component with a traceable role in the public mechanism. Source context: a parallel capstone_plugs.csv/.json maps technique lines into five capstone work product categories — [SR] Scenario Registry, [EP] Evidence.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Interagency Roles`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "dbc5073d0b8c07c0b7d7c7a1",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46373,
+            "sha256": "a8e0ac486de9fe37ee5bc17d1f065cf0305fc73fd84b81d30d0f1b155454c387"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37931,
+            "sha256": "637053cca5a758618006592583cd49baa5a173fddc0f0d1713a1b5d58001ebf0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22309,
+            "sha256": "c1de271f93ce0c659daf444552f8ed23f08311ef6889b922daf2701d64056433"
+          },
+          {
+            "relative_path": "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22041,
+            "sha256": "a2c7c57427f1265f53311ebca4ed003a842a108a54f484a17d7820ff9c87c450"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49167,
+            "sha256": "dc0aff506c7c06447d2361b05748f5073c4da09674a7b20d0f9fd1cdc1ea4f4c"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11130,
+            "sha256": "e5b33cfbe24d0959b9cee9ec621518ec3222ac3fa4b381372ecb371bac591bd5"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+          "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+          "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2c933f7b1689576796f0eb7a"
+    },
+    {
+      "receipt_id": "mb-georgetown-technique-registry-master-50-bundle__receipt_0015",
+      "project_id": "mb-georgetown-technique-registry-master-50-bundle",
+      "project_title": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G]",
+      "proof_tier": "source-backed-proof-build",
+      "component": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G] / Intelligence and War",
+      "component_case_id": "mb-georgetown-technique-registry-master-50-bundle__0015__50-course-georgetown-ssp-registry-7-500-technique-lines-capstone-plug-tags-sr-ep-ir-sc-g-i",
+      "claim_to_demonstrate": "uses `Intelligence and War` as a named project component with a traceable role in the public mechanism. Source context: National Security Policy through Intelligence and War, including the Research-Methods, Statistics, SAT, Operations Research, Game-Theory.",
+      "input_fixture": "project source text and the named component `Intelligence and War`",
+      "operation_under_test": "uses `Intelligence and War` as a named project component with a traceable role in the public mechanism. Source context: National Security Policy through Intelligence and War, including the Research-Methods, Statistics, SAT, Operations Research, Game-Theory.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Intelligence and War`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "9d69a5923f8f122f99538ed8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46373,
+            "sha256": "a8e0ac486de9fe37ee5bc17d1f065cf0305fc73fd84b81d30d0f1b155454c387"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37931,
+            "sha256": "637053cca5a758618006592583cd49baa5a173fddc0f0d1713a1b5d58001ebf0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22309,
+            "sha256": "c1de271f93ce0c659daf444552f8ed23f08311ef6889b922daf2701d64056433"
+          },
+          {
+            "relative_path": "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22041,
+            "sha256": "a2c7c57427f1265f53311ebca4ed003a842a108a54f484a17d7820ff9c87c450"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49167,
+            "sha256": "dc0aff506c7c06447d2361b05748f5073c4da09674a7b20d0f9fd1cdc1ea4f4c"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11130,
+            "sha256": "e5b33cfbe24d0959b9cee9ec621518ec3222ac3fa4b381372ecb371bac591bd5"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+          "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+          "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "cedb4e8722b23664d3bb67d4"
+    },
+    {
+      "receipt_id": "mb-georgetown-technique-registry-master-50-bundle__receipt_0016",
+      "project_id": "mb-georgetown-technique-registry-master-50-bundle",
+      "project_title": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G]",
+      "proof_tier": "source-backed-proof-build",
+      "component": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G] / Operations Research",
+      "component_case_id": "mb-georgetown-technique-registry-master-50-bundle__0016__50-course-georgetown-ssp-registry-7-500-technique-lines-capstone-plug-tags-sr-ep-ir-sc-g-o",
+      "claim_to_demonstrate": "uses `Operations Research` as a named project component with a traceable role in the public mechanism. Source context: National Security Policy through Intelligence and War, including the Research-Methods, Statistics, SAT, Operations Research, Game-Theory.",
+      "input_fixture": "project source text and the named component `Operations Research`",
+      "operation_under_test": "uses `Operations Research` as a named project component with a traceable role in the public mechanism. Source context: National Security Policy through Intelligence and War, including the Research-Methods, Statistics, SAT, Operations Research, Game-Theory.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Operations Research`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "9d69a5923f8f122f99538ed8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46373,
+            "sha256": "a8e0ac486de9fe37ee5bc17d1f065cf0305fc73fd84b81d30d0f1b155454c387"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37931,
+            "sha256": "637053cca5a758618006592583cd49baa5a173fddc0f0d1713a1b5d58001ebf0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22309,
+            "sha256": "c1de271f93ce0c659daf444552f8ed23f08311ef6889b922daf2701d64056433"
+          },
+          {
+            "relative_path": "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22041,
+            "sha256": "a2c7c57427f1265f53311ebca4ed003a842a108a54f484a17d7820ff9c87c450"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49167,
+            "sha256": "dc0aff506c7c06447d2361b05748f5073c4da09674a7b20d0f9fd1cdc1ea4f4c"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11130,
+            "sha256": "e5b33cfbe24d0959b9cee9ec621518ec3222ac3fa4b381372ecb371bac591bd5"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+          "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+          "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0832c816d2342042aca436d6"
+    },
+    {
+      "receipt_id": "mb-georgetown-technique-registry-master-50-bundle__receipt_0017",
+      "project_id": "mb-georgetown-technique-registry-master-50-bundle",
+      "project_title": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G]",
+      "proof_tier": "source-backed-proof-build",
+      "component": "50-course Georgetown SSP registry; 7,500+ technique lines; capstone plug tags [SR/EP/IR/SC/G] / Evidence Packet",
+      "component_case_id": "mb-georgetown-technique-registry-master-50-bundle__0017__50-course-georgetown-ssp-registry-7-500-technique-lines-capstone-plug-tags-sr-ep-ir-sc-g-e",
+      "claim_to_demonstrate": "uses `Evidence Packet` as a named project component with a traceable role in the public mechanism. Source context: a parallel capstone_plugs.csv/.json maps technique lines into five capstone work product categories — [SR] Scenario Registry, [EP] Evidence.",
+      "input_fixture": "project source text and the named component `Evidence Packet`",
+      "operation_under_test": "uses `Evidence Packet` as a named project component with a traceable role in the public mechanism. Source context: a parallel capstone_plugs.csv/.json maps technique lines into five capstone work product categories — [SR] Scenario Registry, [EP] Evidence.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Evidence Packet`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "dbc5073d0b8c07c0b7d7c7a1",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46373,
+            "sha256": "a8e0ac486de9fe37ee5bc17d1f065cf0305fc73fd84b81d30d0f1b155454c387"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37931,
+            "sha256": "637053cca5a758618006592583cd49baa5a173fddc0f0d1713a1b5d58001ebf0"
+          },
+          {
+            "relative_path": "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22309,
+            "sha256": "c1de271f93ce0c659daf444552f8ed23f08311ef6889b922daf2701d64056433"
+          },
+          {
+            "relative_path": "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22041,
+            "sha256": "a2c7c57427f1265f53311ebca4ed003a842a108a54f484a17d7820ff9c87c450"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 49167,
+            "sha256": "dc0aff506c7c06447d2361b05748f5073c4da09674a7b20d0f9fd1cdc1ea4f4c"
+          },
+          {
+            "relative_path": "proof_demos/mb-georgetown-technique-registry-master-50-bundle/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11130,
+            "sha256": "e5b33cfbe24d0959b9cee9ec621518ec3222ac3fa4b381372ecb371bac591bd5"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/blueprint.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/instrument_map.json",
+          "project_blueprints/mb-georgetown-technique-registry-master-50-bundle/README.md",
+          "proof_builds/mb-georgetown-technique-registry-master-50-bundle/proof_build.json",
+          "proof_demos/mb-georgetown-technique-registry-master-50-bundle/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "eccf81f5c9ce119f4a6f3853"
+    }
+  ]
+}

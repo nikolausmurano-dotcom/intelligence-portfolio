@@ -1,0 +1,41 @@
+# Proof Build: Prism Chamber
+
+**Project ID.** `mb-muranoos-prism-chamber-murano-ready-package-2026-04-14`
+
+**Proof tier.** source-backed-proof-build
+
+**Public claim.** Implementation-ready handoff for the Prism Chamber doctrine — a vNext extension of the existing live Red Team Lab MuranoOS room.
+
+**Distinctive mechanism.** It converts an archive or handoff into three inspectable decisions: what the work product is for, which component pieces carry the work, and what action would turn it into a live room, paper, method, or software instrument.
+
+**Use value.** It supports multi-perspective review: the same material can be inspected through competing lenses before it hardens into a public claim.
+
+**Minimum public demo.** Open or inspect the local runtime path for Prism Chamber Handoff Identity; confirm a room, action, or state record traces to the governing contract.
+
+**Claim ceiling.** The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.
+
+## Flagship Proof Builds
+
+No special flagship proof build has been authored yet; this project is governed by the component proof table below.
+
+## Component Proof Table
+
+| Component | Status | Input | Expected Output | Verification Check |
+|---|---|---|---|---|
+| Prism Chamber Handoff Identity | specified-output-needs-demo | source packet, code-ready room description, scope, and intended runtime | bounded definition of what the handoff asks a builder to construct | Open or inspect the local runtime path for Prism Chamber Handoff Identity; confirm a room, action, or state record traces to the governing contract. |
+| Prism Chamber Room Task Model | specified-output-needs-demo | user roles, task sequence, room state, and domain objects | room logic that turns the concept into a repeatable workflow | Open or inspect the local runtime path for Prism Chamber Room Task Model; confirm a room, action, or state record traces to the governing contract. |
+| Prism Chamber Data Schema And Persistence Plan | specified-output-needs-demo | entities, records, IDs, tables, JSON structures, indexes, and state transitions | data model that lets the room preserve work instead of acting like a static page | Open or inspect the local runtime path for Prism Chamber Data Schema And Persistence Plan; confirm a room, action, or state record traces to the governing contract. |
+| Prism Chamber Interface And Instrument Plane | specified-output-needs-demo | panels, command palette, drawers, matrices, visualizations, and review widgets | named interface instruments that make the room useful to a researcher or analyst | Open or inspect the local runtime path for Prism Chamber Interface And Instrument Plane; confirm a room, action, or state record traces to the governing contract. |
+| Prism Chamber Integration Path | specified-output-needs-demo | frontend, backend, storage, retrieval, auth, export, and portfolio linkage | build sequence for turning the handoff into working software | Open or inspect the local runtime path for Prism Chamber Integration Path; confirm a room, action, or state record traces to the governing contract. |
+| Prism Chamber Proof Boundary | specified-output-needs-demo | completed packet, code readiness, unimplemented backend, missing live capture, or partial status | honest current claim ceiling for the handoff as a reviewable artifact | Open or inspect the local runtime path for Prism Chamber Proof Boundary; confirm a room, action, or state record traces to the governing contract. |
+| Prism Chamber Next Build Test | specified-output-needs-demo | minimal executable path, seeded fixture, UI walkthrough, and validation gate | specific test that would show the handoff has become a functioning room | Open or inspect the local runtime path for Prism Chamber Next Build Test; confirm a room, action, or state record traces to the governing contract. |
+| Prism Chamber / Migration_Plan.sql | source-context-backed | project source text and the named component `Migration_Plan.sql` | inspectable implementation evidence tied to `Migration_Plan.sql` | Confirm `Migration_Plan.sql` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Prism Chamber / Red Team Lab MuranoOS | source-context-backed | project source text and the named component `Red Team Lab MuranoOS` | a room, workbench, or interface function tied to `Red Team Lab MuranoOS` | Confirm `Red Team Lab MuranoOS` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Prism Chamber / Red Team Lab | source-context-backed | project source text and the named component `Red Team Lab` | a room, workbench, or interface function tied to `Red Team Lab` | Confirm `Red Team Lab` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Prism Chamber / Red Team | source-context-backed | project source text and the named component `Red Team` | a project-specific work product, decision, or proof surface tied to `Red Team` | Confirm `Red Team` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Prism Chamber / Work Products | source-context-backed | project source text and the named component `Work Products` | a project-specific work product, decision, or proof surface tied to `Work Products` | Confirm `Work Products` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Prism Chamber / Explain Nexus and Personal OS | source-context-backed | project source text and the named component `Explain Nexus and Personal OS` | a project-specific work product, decision, or proof surface tied to `Explain Nexus and Personal OS` | Confirm `Explain Nexus and Personal OS` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Prism Chamber / Creativity Research | source-context-backed | project source text and the named component `Creativity Research` | a project-specific work product, decision, or proof surface tied to `Creativity Research` | Confirm `Creativity Research` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Prism Chamber / The Heritage | source-context-backed | project source text and the named component `The Heritage` | a project-specific work product, decision, or proof surface tied to `The Heritage` | Confirm `The Heritage` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Prism Chamber / Creativity and Innovation Nexus. Intelligence | source-context-backed | project source text and the named component `Creativity and Innovation Nexus. Intelligence` | a project-specific work product, decision, or proof surface tied to `Creativity and Innovation Nexus. Intelligence` | Confirm `Creativity and Innovation Nexus. Intelligence` appears in the cited source context and that the public page explains what output, decision, or project function. |
+| Prism Chamber / Prioritize Capstone | source-context-backed | project source text and the named component `Prioritize Capstone` | a project-specific work product, decision, or proof surface tied to `Prioritize Capstone` | Confirm `Prioritize Capstone` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |

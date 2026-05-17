@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-05-15T04:25:45",
+  "packet_purpose": "portfolio proof-engineering evidence for expert review",
+  "required_tabs": [
+    {
+      "tab": "Proof maturity control plane",
+      "path": "proof_maturity_control_plane/index.html",
+      "status": "present"
+    },
+    {
+      "tab": "Project proof maturity",
+      "path": "proof_maturity_control_plane/project_proof_maturity.csv",
+      "status": "present"
+    },
+    {
+      "tab": "Component proof maturity",
+      "path": "proof_maturity_control_plane/component_proof_maturity.csv",
+      "status": "present"
+    },
+    {
+      "tab": "Distinctive component backlog",
+      "path": "proof_maturity_control_plane/distinctive_component_backlog.csv",
+      "status": "present"
+    },
+    {
+      "tab": "Kernel source contracts",
+      "path": "source_to_build_bindings/kernel_source_contracts.html",
+      "status": "present"
+    },
+    {
+      "tab": "Full build control plane",
+      "path": "full_build_control_plane/index.html",
+      "status": "present"
+    }
+  ],
+  "claim_boundary": "This packet proves proof-engineering coverage, not passage-level source completion or full operational deployment for every project."
+}

@@ -1,0 +1,1467 @@
+{
+  "project": {
+    "project_id": "native-cmanalysis",
+    "title": "Collection Management Analysis"
+  },
+  "receipts": [
+    {
+      "receipt_id": "native-cmanalysis__receipt_0001",
+      "project_id": "native-cmanalysis",
+      "project_title": "Collection Management Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Collection Management Analysis Runtime Or Interface Surface",
+      "component_case_id": "native-cmanalysis__0001__collection-management-analysis-runtime-or-interface-surface",
+      "claim_to_demonstrate": "A collection-management analysis page for turning intelligence needs into collection priorities.",
+      "input_fixture": "local app, web room, data surface, or workstation entry point",
+      "operation_under_test": "A collection-management analysis page for turning intelligence needs into collection priorities.",
+      "expected_output": "reader-facing definition of the software object and its intended user",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8fd882083e0f8259b8a06f60",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46792,
+            "sha256": "1b85bda5e4568875f15ce31136b39381b33b488ea4bfd0d5ef2ac64e9316c6ec"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39179,
+            "sha256": "a7387ce4d33c6e79b9449c37d9c99475e3164948a3dee8e9a2a85f2952ede6fe"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20304,
+            "sha256": "f6ab091c74e980ff686ddc4ee86ac99f48876e5d602030590410cf67ed6d69d2"
+          },
+          {
+            "relative_path": "proof_builds/native-cmanalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21221,
+            "sha256": "814a65e4f4fa53bb44b993b3a6f7372ee21459c81d6269cf16500f57db9b22c6"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46320,
+            "sha256": "09d07c674048c524c601e208d2db96332393e4c8ab895e0a29466303e255dae4"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9625,
+            "sha256": "7463f172073ec3dc86fd2d0318b9791eacbfde369e35c19c9e1c843cb6ef9708"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cmanalysis/blueprint.json",
+          "project_blueprints/native-cmanalysis/instrument_map.json",
+          "project_blueprints/native-cmanalysis/README.md",
+          "proof_builds/native-cmanalysis/proof_build.json",
+          "proof_demos/native-cmanalysis/demo_cases.json",
+          "proof_demos/native-cmanalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "defeca1e8f922a4a9fda820e"
+    },
+    {
+      "receipt_id": "native-cmanalysis__receipt_0002",
+      "project_id": "native-cmanalysis",
+      "project_title": "Collection Management Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Collection Management Analysis Data And State Model",
+      "component_case_id": "native-cmanalysis__0002__collection-management-analysis-data-and-state-model",
+      "claim_to_demonstrate": "Heuer. Loads cognitive-bias and intelligence-analysis failure modes. CIA Tradecraft Primer. Loads structured analytic technique selection and use conditions. Pherson and Pherson. Loads practical tradecraft: indicators, ACH, key assumptions, diagnosticity, and.",
+      "input_fixture": "records, files, indexes, tables, project state, source state, and user decisions",
+      "operation_under_test": "Heuer. Loads cognitive-bias and intelligence-analysis failure modes. CIA Tradecraft Primer. Loads structured analytic technique selection and use conditions. Pherson and Pherson. Loads practical tradecraft: indicators, ACH, key assumptions, diagnosticity, and.",
+      "expected_output": "state model that explains what the tool remembers and what it refuses to infer",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4da81596b91ff65b95cc789b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46792,
+            "sha256": "1b85bda5e4568875f15ce31136b39381b33b488ea4bfd0d5ef2ac64e9316c6ec"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39179,
+            "sha256": "a7387ce4d33c6e79b9449c37d9c99475e3164948a3dee8e9a2a85f2952ede6fe"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20304,
+            "sha256": "f6ab091c74e980ff686ddc4ee86ac99f48876e5d602030590410cf67ed6d69d2"
+          },
+          {
+            "relative_path": "proof_builds/native-cmanalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21221,
+            "sha256": "814a65e4f4fa53bb44b993b3a6f7372ee21459c81d6269cf16500f57db9b22c6"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46320,
+            "sha256": "09d07c674048c524c601e208d2db96332393e4c8ab895e0a29466303e255dae4"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9625,
+            "sha256": "7463f172073ec3dc86fd2d0318b9791eacbfde369e35c19c9e1c843cb6ef9708"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cmanalysis/blueprint.json",
+          "project_blueprints/native-cmanalysis/instrument_map.json",
+          "project_blueprints/native-cmanalysis/README.md",
+          "proof_builds/native-cmanalysis/proof_build.json",
+          "proof_demos/native-cmanalysis/demo_cases.json",
+          "proof_demos/native-cmanalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1c54642a42fe1ffc3a393661"
+    },
+    {
+      "receipt_id": "native-cmanalysis__receipt_0003",
+      "project_id": "native-cmanalysis",
+      "project_title": "Collection Management Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Collection Management Analysis Core Instrument Panel",
+      "component_case_id": "native-cmanalysis__0003__collection-management-analysis-core-instrument-panel",
+      "claim_to_demonstrate": "It links requirements, priority intelligence requirements, source fit, collection gaps, reporting value, and feedback so collection is judged by decision utility rather than activity volume.",
+      "input_fixture": "tool buttons, rooms, workflow steps, analytical controls, and review surfaces",
+      "operation_under_test": "It links requirements, priority intelligence requirements, source fit, collection gaps, reporting value, and feedback so collection is judged by decision utility rather than activity volume.",
+      "expected_output": "named instruments that perform the useful work rather than generic navigation",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0f34fd9a5a44ba183928e1ab",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46792,
+            "sha256": "1b85bda5e4568875f15ce31136b39381b33b488ea4bfd0d5ef2ac64e9316c6ec"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39179,
+            "sha256": "a7387ce4d33c6e79b9449c37d9c99475e3164948a3dee8e9a2a85f2952ede6fe"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20304,
+            "sha256": "f6ab091c74e980ff686ddc4ee86ac99f48876e5d602030590410cf67ed6d69d2"
+          },
+          {
+            "relative_path": "proof_builds/native-cmanalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21221,
+            "sha256": "814a65e4f4fa53bb44b993b3a6f7372ee21459c81d6269cf16500f57db9b22c6"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46320,
+            "sha256": "09d07c674048c524c601e208d2db96332393e4c8ab895e0a29466303e255dae4"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9625,
+            "sha256": "7463f172073ec3dc86fd2d0318b9791eacbfde369e35c19c9e1c843cb6ef9708"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cmanalysis/blueprint.json",
+          "project_blueprints/native-cmanalysis/instrument_map.json",
+          "project_blueprints/native-cmanalysis/README.md",
+          "proof_builds/native-cmanalysis/proof_build.json",
+          "proof_demos/native-cmanalysis/demo_cases.json",
+          "proof_demos/native-cmanalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e7236f0dd9ccdac42656c40e"
+    },
+    {
+      "receipt_id": "native-cmanalysis__receipt_0004",
+      "project_id": "native-cmanalysis",
+      "project_title": "Collection Management Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Collection Management Analysis Workflow Orchestration",
+      "component_case_id": "native-cmanalysis__0004__collection-management-analysis-workflow-orchestration",
+      "claim_to_demonstrate": "Plan: identify the region-specific source spine, state what the page can and cannot claim, preserve source-register lineage, and close any remaining source lineage or case-selection gaps before treating the page as final. The project source notes below should.",
+      "input_fixture": "upstream inputs, intermediate decisions, downstream products, and stale-state conditions",
+      "operation_under_test": "Plan: identify the region-specific source spine, state what the page can and cannot claim, preserve source-register lineage, and close any remaining source lineage or case-selection gaps before treating the page as final. The project source notes below should.",
+      "expected_output": "pipeline path showing how work moves and when earlier decisions must be reopened",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fd96493f227a13a744bbc6d4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46792,
+            "sha256": "1b85bda5e4568875f15ce31136b39381b33b488ea4bfd0d5ef2ac64e9316c6ec"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39179,
+            "sha256": "a7387ce4d33c6e79b9449c37d9c99475e3164948a3dee8e9a2a85f2952ede6fe"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20304,
+            "sha256": "f6ab091c74e980ff686ddc4ee86ac99f48876e5d602030590410cf67ed6d69d2"
+          },
+          {
+            "relative_path": "proof_builds/native-cmanalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21221,
+            "sha256": "814a65e4f4fa53bb44b993b3a6f7372ee21459c81d6269cf16500f57db9b22c6"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46320,
+            "sha256": "09d07c674048c524c601e208d2db96332393e4c8ab895e0a29466303e255dae4"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9625,
+            "sha256": "7463f172073ec3dc86fd2d0318b9791eacbfde369e35c19c9e1c843cb6ef9708"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cmanalysis/blueprint.json",
+          "project_blueprints/native-cmanalysis/instrument_map.json",
+          "project_blueprints/native-cmanalysis/README.md",
+          "proof_builds/native-cmanalysis/proof_build.json",
+          "proof_demos/native-cmanalysis/demo_cases.json",
+          "proof_demos/native-cmanalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "237d0bffeee3fd697f4771de"
+    },
+    {
+      "receipt_id": "native-cmanalysis__receipt_0005",
+      "project_id": "native-cmanalysis",
+      "project_title": "Collection Management Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Collection Management Analysis Review And Governance Gate",
+      "component_case_id": "native-cmanalysis__0005__collection-management-analysis-review-and-governance-gate",
+      "claim_to_demonstrate": "Status: native public port complete for upload and navigation; substantive source-project verification remains limited by the source lineage ceiling and the original project governance records. The page separates public presentation from project completion.",
+      "input_fixture": "quality rules, source checks, claim ceilings, reviewer steps, and failure states",
+      "operation_under_test": "Status: native public port complete for upload and navigation; substantive source-project verification remains limited by the source lineage ceiling and the original project governance records. The page separates public presentation from project completion.",
+      "expected_output": "decision gate that makes the output inspectable before it is trusted",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f0a9b7ff3262d180291ae4ca",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46792,
+            "sha256": "1b85bda5e4568875f15ce31136b39381b33b488ea4bfd0d5ef2ac64e9316c6ec"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39179,
+            "sha256": "a7387ce4d33c6e79b9449c37d9c99475e3164948a3dee8e9a2a85f2952ede6fe"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20304,
+            "sha256": "f6ab091c74e980ff686ddc4ee86ac99f48876e5d602030590410cf67ed6d69d2"
+          },
+          {
+            "relative_path": "proof_builds/native-cmanalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21221,
+            "sha256": "814a65e4f4fa53bb44b993b3a6f7372ee21459c81d6269cf16500f57db9b22c6"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46320,
+            "sha256": "09d07c674048c524c601e208d2db96332393e4c8ab895e0a29466303e255dae4"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9625,
+            "sha256": "7463f172073ec3dc86fd2d0318b9791eacbfde369e35c19c9e1c843cb6ef9708"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cmanalysis/blueprint.json",
+          "project_blueprints/native-cmanalysis/instrument_map.json",
+          "project_blueprints/native-cmanalysis/README.md",
+          "proof_builds/native-cmanalysis/proof_build.json",
+          "proof_demos/native-cmanalysis/demo_cases.json",
+          "proof_demos/native-cmanalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "dfa79355cfdfcba2fdd192b4"
+    },
+    {
+      "receipt_id": "native-cmanalysis__receipt_0006",
+      "project_id": "native-cmanalysis",
+      "project_title": "Collection Management Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Collection Management Analysis Export Or Integration Surface",
+      "component_case_id": "native-cmanalysis__0006__collection-management-analysis-export-or-integration-surface",
+      "claim_to_demonstrate": "Visible public components: 40 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains text-focused and does not claim unverified runtime state.",
+      "input_fixture": "brief, paper, room, dataset, packet, rendered page, or external handoff",
+      "operation_under_test": "Visible public components: 40 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains text-focused and does not claim unverified runtime state.",
+      "expected_output": "usable output that another project, professor, employer, or collaborator can inspect",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "577c94f4228762f7478a15a0",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46792,
+            "sha256": "1b85bda5e4568875f15ce31136b39381b33b488ea4bfd0d5ef2ac64e9316c6ec"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39179,
+            "sha256": "a7387ce4d33c6e79b9449c37d9c99475e3164948a3dee8e9a2a85f2952ede6fe"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20304,
+            "sha256": "f6ab091c74e980ff686ddc4ee86ac99f48876e5d602030590410cf67ed6d69d2"
+          },
+          {
+            "relative_path": "proof_builds/native-cmanalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21221,
+            "sha256": "814a65e4f4fa53bb44b993b3a6f7372ee21459c81d6269cf16500f57db9b22c6"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46320,
+            "sha256": "09d07c674048c524c601e208d2db96332393e4c8ab895e0a29466303e255dae4"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9625,
+            "sha256": "7463f172073ec3dc86fd2d0318b9791eacbfde369e35c19c9e1c843cb6ef9708"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cmanalysis/blueprint.json",
+          "project_blueprints/native-cmanalysis/instrument_map.json",
+          "project_blueprints/native-cmanalysis/README.md",
+          "proof_builds/native-cmanalysis/proof_build.json",
+          "proof_demos/native-cmanalysis/demo_cases.json",
+          "proof_demos/native-cmanalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "acb41a81ac4e48e291f09d4b"
+    },
+    {
+      "receipt_id": "native-cmanalysis__receipt_0007",
+      "project_id": "native-cmanalysis",
+      "project_title": "Collection Management Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Collection Management Analysis Build Verification Queue",
+      "component_case_id": "native-cmanalysis__0007__collection-management-analysis-build-verification-queue",
+      "claim_to_demonstrate": "Remaining gaps: not every regional page has the same mature source lineage foundation as the Russia Desk; thinner pages need page-specific bibliographies and clearer case-selection warrants. The kept Evidence Sections below preserve project substance for.",
+      "input_fixture": "unbuilt modules, missing walkthroughs, test cases, and validation evidence",
+      "operation_under_test": "Remaining gaps: not every regional page has the same mature source lineage foundation as the Russia Desk; thinner pages need page-specific bibliographies and clearer case-selection warrants. The kept Evidence Sections below preserve project substance for.",
+      "expected_output": "next proof needed before broader claims about the tool are safe",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e350b0e07ab7b9d385896d3e",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46792,
+            "sha256": "1b85bda5e4568875f15ce31136b39381b33b488ea4bfd0d5ef2ac64e9316c6ec"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39179,
+            "sha256": "a7387ce4d33c6e79b9449c37d9c99475e3164948a3dee8e9a2a85f2952ede6fe"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20304,
+            "sha256": "f6ab091c74e980ff686ddc4ee86ac99f48876e5d602030590410cf67ed6d69d2"
+          },
+          {
+            "relative_path": "proof_builds/native-cmanalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21221,
+            "sha256": "814a65e4f4fa53bb44b993b3a6f7372ee21459c81d6269cf16500f57db9b22c6"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46320,
+            "sha256": "09d07c674048c524c601e208d2db96332393e4c8ab895e0a29466303e255dae4"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9625,
+            "sha256": "7463f172073ec3dc86fd2d0318b9791eacbfde369e35c19c9e1c843cb6ef9708"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cmanalysis/blueprint.json",
+          "project_blueprints/native-cmanalysis/instrument_map.json",
+          "project_blueprints/native-cmanalysis/README.md",
+          "proof_builds/native-cmanalysis/proof_build.json",
+          "proof_demos/native-cmanalysis/demo_cases.json",
+          "proof_demos/native-cmanalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4f92499902cea5d54ccce054"
+    },
+    {
+      "receipt_id": "native-cmanalysis__receipt_0008",
+      "project_id": "native-cmanalysis",
+      "project_title": "Collection Management Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Collection Management Analysis / Intelligence Assessment",
+      "component_case_id": "native-cmanalysis__0008__collection-management-analysis-intelligence-assessment",
+      "claim_to_demonstrate": "uses `Intelligence Assessment` as a named project component with a traceable role in the public mechanism. Source context: Intelligence Assessment: Country X Military Procurement Shift Toward Russian Defense Systems The working mechanism is to move from.",
+      "input_fixture": "project source text and the named component `Intelligence Assessment`",
+      "operation_under_test": "uses `Intelligence Assessment` as a named project component with a traceable role in the public mechanism. Source context: Intelligence Assessment: Country X Military Procurement Shift Toward Russian Defense Systems The working mechanism is to move from.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Intelligence Assessment`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a32164830cb40b4f0024b137",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46792,
+            "sha256": "1b85bda5e4568875f15ce31136b39381b33b488ea4bfd0d5ef2ac64e9316c6ec"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39179,
+            "sha256": "a7387ce4d33c6e79b9449c37d9c99475e3164948a3dee8e9a2a85f2952ede6fe"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20304,
+            "sha256": "f6ab091c74e980ff686ddc4ee86ac99f48876e5d602030590410cf67ed6d69d2"
+          },
+          {
+            "relative_path": "proof_builds/native-cmanalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21221,
+            "sha256": "814a65e4f4fa53bb44b993b3a6f7372ee21459c81d6269cf16500f57db9b22c6"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46320,
+            "sha256": "09d07c674048c524c601e208d2db96332393e4c8ab895e0a29466303e255dae4"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9625,
+            "sha256": "7463f172073ec3dc86fd2d0318b9791eacbfde369e35c19c9e1c843cb6ef9708"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cmanalysis/blueprint.json",
+          "project_blueprints/native-cmanalysis/instrument_map.json",
+          "project_blueprints/native-cmanalysis/README.md",
+          "proof_builds/native-cmanalysis/proof_build.json",
+          "proof_demos/native-cmanalysis/demo_cases.json",
+          "proof_demos/native-cmanalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "13548589ba173aabedf8262f"
+    },
+    {
+      "receipt_id": "native-cmanalysis__receipt_0009",
+      "project_id": "native-cmanalysis",
+      "project_title": "Collection Management Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Collection Management Analysis / Country X Military Procurement Shift Toward Russian Defense",
+      "component_case_id": "native-cmanalysis__0009__collection-management-analysis-country-x-military-procurement-shift-toward-russian-defense",
+      "claim_to_demonstrate": "uses `Country X Military Procurement Shift Toward Russian Defense` as a named project component with a traceable role in the public mechanism. Source context: Country X Military Procurement Shift Toward Russian Defense Systems The working mechanism is to move.",
+      "input_fixture": "project source text and the named component `Country X Military Procurement Shift Toward Russian Defense`",
+      "operation_under_test": "uses `Country X Military Procurement Shift Toward Russian Defense` as a named project component with a traceable role in the public mechanism. Source context: Country X Military Procurement Shift Toward Russian Defense Systems The working mechanism is to move.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Country X Military Procurement Shift Toward Russian Defense`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f437e9c951a37676c9199e9e",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46792,
+            "sha256": "1b85bda5e4568875f15ce31136b39381b33b488ea4bfd0d5ef2ac64e9316c6ec"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39179,
+            "sha256": "a7387ce4d33c6e79b9449c37d9c99475e3164948a3dee8e9a2a85f2952ede6fe"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20304,
+            "sha256": "f6ab091c74e980ff686ddc4ee86ac99f48876e5d602030590410cf67ed6d69d2"
+          },
+          {
+            "relative_path": "proof_builds/native-cmanalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21221,
+            "sha256": "814a65e4f4fa53bb44b993b3a6f7372ee21459c81d6269cf16500f57db9b22c6"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46320,
+            "sha256": "09d07c674048c524c601e208d2db96332393e4c8ab895e0a29466303e255dae4"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9625,
+            "sha256": "7463f172073ec3dc86fd2d0318b9791eacbfde369e35c19c9e1c843cb6ef9708"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cmanalysis/blueprint.json",
+          "project_blueprints/native-cmanalysis/instrument_map.json",
+          "project_blueprints/native-cmanalysis/README.md",
+          "proof_builds/native-cmanalysis/proof_build.json",
+          "proof_demos/native-cmanalysis/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b7234eac6de28b0f8ad71d39"
+    },
+    {
+      "receipt_id": "native-cmanalysis__receipt_0010",
+      "project_id": "native-cmanalysis",
+      "project_title": "Collection Management Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Collection Management Analysis / Systems The",
+      "component_case_id": "native-cmanalysis__0010__collection-management-analysis-systems-the",
+      "claim_to_demonstrate": "uses `Systems The` as a named project component with a traceable role in the public mechanism. Source context: Country X Military Procurement Shift Toward Russian Defense Systems The working mechanism is to move from source intake and domain framing to case.",
+      "input_fixture": "project source text and the named component `Systems The`",
+      "operation_under_test": "uses `Systems The` as a named project component with a traceable role in the public mechanism. Source context: Country X Military Procurement Shift Toward Russian Defense Systems The working mechanism is to move from source intake and domain framing to case.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Systems The`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f437e9c951a37676c9199e9e",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46792,
+            "sha256": "1b85bda5e4568875f15ce31136b39381b33b488ea4bfd0d5ef2ac64e9316c6ec"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39179,
+            "sha256": "a7387ce4d33c6e79b9449c37d9c99475e3164948a3dee8e9a2a85f2952ede6fe"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20304,
+            "sha256": "f6ab091c74e980ff686ddc4ee86ac99f48876e5d602030590410cf67ed6d69d2"
+          },
+          {
+            "relative_path": "proof_builds/native-cmanalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21221,
+            "sha256": "814a65e4f4fa53bb44b993b3a6f7372ee21459c81d6269cf16500f57db9b22c6"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46320,
+            "sha256": "09d07c674048c524c601e208d2db96332393e4c8ab895e0a29466303e255dae4"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9625,
+            "sha256": "7463f172073ec3dc86fd2d0318b9791eacbfde369e35c19c9e1c843cb6ef9708"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cmanalysis/blueprint.json",
+          "project_blueprints/native-cmanalysis/instrument_map.json",
+          "project_blueprints/native-cmanalysis/README.md",
+          "proof_builds/native-cmanalysis/proof_build.json",
+          "proof_demos/native-cmanalysis/demo_cases.json",
+          "proof_demos/native-cmanalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d3bcb5648709c5818075b4ce"
+    },
+    {
+      "receipt_id": "native-cmanalysis__receipt_0011",
+      "project_id": "native-cmanalysis",
+      "project_title": "Collection Management Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Collection Management Analysis / Evidence Sections",
+      "component_case_id": "native-cmanalysis__0011__collection-management-analysis-evidence-sections",
+      "claim_to_demonstrate": "uses `Evidence Sections` as a named project component with a traceable role in the public mechanism. Source context: 40 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "input_fixture": "project source text and the named component `Evidence Sections`",
+      "operation_under_test": "uses `Evidence Sections` as a named project component with a traceable role in the public mechanism. Source context: 40 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Evidence Sections`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d611fa3d789400b453a6d359",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46792,
+            "sha256": "1b85bda5e4568875f15ce31136b39381b33b488ea4bfd0d5ef2ac64e9316c6ec"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39179,
+            "sha256": "a7387ce4d33c6e79b9449c37d9c99475e3164948a3dee8e9a2a85f2952ede6fe"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20304,
+            "sha256": "f6ab091c74e980ff686ddc4ee86ac99f48876e5d602030590410cf67ed6d69d2"
+          },
+          {
+            "relative_path": "proof_builds/native-cmanalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21221,
+            "sha256": "814a65e4f4fa53bb44b993b3a6f7372ee21459c81d6269cf16500f57db9b22c6"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46320,
+            "sha256": "09d07c674048c524c601e208d2db96332393e4c8ab895e0a29466303e255dae4"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9625,
+            "sha256": "7463f172073ec3dc86fd2d0318b9791eacbfde369e35c19c9e1c843cb6ef9708"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cmanalysis/blueprint.json",
+          "project_blueprints/native-cmanalysis/instrument_map.json",
+          "project_blueprints/native-cmanalysis/README.md",
+          "proof_builds/native-cmanalysis/proof_build.json",
+          "proof_demos/native-cmanalysis/demo_cases.json",
+          "proof_demos/native-cmanalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e234b7953fd314b8aebc0cc3"
+    },
+    {
+      "receipt_id": "native-cmanalysis__receipt_0012",
+      "project_id": "native-cmanalysis",
+      "project_title": "Collection Management Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Collection Management Analysis / Review Notes",
+      "component_case_id": "native-cmanalysis__0012__collection-management-analysis-review-notes",
+      "claim_to_demonstrate": "uses `Review Notes` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 40 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The.",
+      "input_fixture": "project source text and the named component `Review Notes`",
+      "operation_under_test": "uses `Review Notes` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 40 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `Review Notes`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d611fa3d789400b453a6d359",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46792,
+            "sha256": "1b85bda5e4568875f15ce31136b39381b33b488ea4bfd0d5ef2ac64e9316c6ec"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39179,
+            "sha256": "a7387ce4d33c6e79b9449c37d9c99475e3164948a3dee8e9a2a85f2952ede6fe"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20304,
+            "sha256": "f6ab091c74e980ff686ddc4ee86ac99f48876e5d602030590410cf67ed6d69d2"
+          },
+          {
+            "relative_path": "proof_builds/native-cmanalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21221,
+            "sha256": "814a65e4f4fa53bb44b993b3a6f7372ee21459c81d6269cf16500f57db9b22c6"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46320,
+            "sha256": "09d07c674048c524c601e208d2db96332393e4c8ab895e0a29466303e255dae4"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9625,
+            "sha256": "7463f172073ec3dc86fd2d0318b9791eacbfde369e35c19c9e1c843cb6ef9708"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cmanalysis/blueprint.json",
+          "project_blueprints/native-cmanalysis/instrument_map.json",
+          "project_blueprints/native-cmanalysis/README.md",
+          "proof_builds/native-cmanalysis/proof_build.json",
+          "proof_demos/native-cmanalysis/demo_cases.json",
+          "proof_demos/native-cmanalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "57b43dac1902fc254798a633"
+    },
+    {
+      "receipt_id": "native-cmanalysis__receipt_0013",
+      "project_id": "native-cmanalysis",
+      "project_title": "Collection Management Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Collection Management Analysis / Russia Desk",
+      "component_case_id": "native-cmanalysis__0013__collection-management-analysis-russia-desk",
+      "claim_to_demonstrate": "treats `Russia Desk` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: not every regional page has the same mature source lineage foundation as the Russia Desk; thinner pages need.",
+      "input_fixture": "project source text and the named component `Russia Desk`",
+      "operation_under_test": "treats `Russia Desk` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: not every regional page has the same mature source lineage foundation as the Russia Desk; thinner pages need.",
+      "expected_output": "a room, workbench, or interface function tied to `Russia Desk`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "7af0e9755c491dc861187c88",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46792,
+            "sha256": "1b85bda5e4568875f15ce31136b39381b33b488ea4bfd0d5ef2ac64e9316c6ec"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39179,
+            "sha256": "a7387ce4d33c6e79b9449c37d9c99475e3164948a3dee8e9a2a85f2952ede6fe"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20304,
+            "sha256": "f6ab091c74e980ff686ddc4ee86ac99f48876e5d602030590410cf67ed6d69d2"
+          },
+          {
+            "relative_path": "proof_builds/native-cmanalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21221,
+            "sha256": "814a65e4f4fa53bb44b993b3a6f7372ee21459c81d6269cf16500f57db9b22c6"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46320,
+            "sha256": "09d07c674048c524c601e208d2db96332393e4c8ab895e0a29466303e255dae4"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9625,
+            "sha256": "7463f172073ec3dc86fd2d0318b9791eacbfde369e35c19c9e1c843cb6ef9708"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cmanalysis/blueprint.json",
+          "project_blueprints/native-cmanalysis/instrument_map.json",
+          "project_blueprints/native-cmanalysis/README.md",
+          "proof_builds/native-cmanalysis/proof_build.json",
+          "proof_demos/native-cmanalysis/demo_cases.json",
+          "proof_demos/native-cmanalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "66fa958312e50c9f5256af69"
+    },
+    {
+      "receipt_id": "native-cmanalysis__receipt_0014",
+      "project_id": "native-cmanalysis",
+      "project_title": "Collection Management Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Collection Management Analysis / Native Navigation",
+      "component_case_id": "native-cmanalysis__0014__collection-management-analysis-native-navigation",
+      "claim_to_demonstrate": "uses `Native Navigation` as a named project component with a traceable role in the public mechanism. Source context: 40 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "input_fixture": "project source text and the named component `Native Navigation`",
+      "operation_under_test": "uses `Native Navigation` as a named project component with a traceable role in the public mechanism. Source context: 40 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Native Navigation`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d611fa3d789400b453a6d359",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46792,
+            "sha256": "1b85bda5e4568875f15ce31136b39381b33b488ea4bfd0d5ef2ac64e9316c6ec"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39179,
+            "sha256": "a7387ce4d33c6e79b9449c37d9c99475e3164948a3dee8e9a2a85f2952ede6fe"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20304,
+            "sha256": "f6ab091c74e980ff686ddc4ee86ac99f48876e5d602030590410cf67ed6d69d2"
+          },
+          {
+            "relative_path": "proof_builds/native-cmanalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21221,
+            "sha256": "814a65e4f4fa53bb44b993b3a6f7372ee21459c81d6269cf16500f57db9b22c6"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46320,
+            "sha256": "09d07c674048c524c601e208d2db96332393e4c8ab895e0a29466303e255dae4"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9625,
+            "sha256": "7463f172073ec3dc86fd2d0318b9791eacbfde369e35c19c9e1c843cb6ef9708"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cmanalysis/blueprint.json",
+          "project_blueprints/native-cmanalysis/instrument_map.json",
+          "project_blueprints/native-cmanalysis/README.md",
+          "proof_builds/native-cmanalysis/proof_build.json",
+          "proof_demos/native-cmanalysis/demo_cases.json",
+          "proof_demos/native-cmanalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "83d5d93b335806470cfea2ac"
+    },
+    {
+      "receipt_id": "native-cmanalysis__receipt_0015",
+      "project_id": "native-cmanalysis",
+      "project_title": "Collection Management Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Collection Management Analysis / APA lineage",
+      "component_case_id": "native-cmanalysis__0015__collection-management-analysis-apa-lineage",
+      "claim_to_demonstrate": "uses `APA lineage` as a named project component with a traceable role in the public mechanism. Source context: 40 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains.",
+      "input_fixture": "project source text and the named component `APA lineage`",
+      "operation_under_test": "uses `APA lineage` as a named project component with a traceable role in the public mechanism. Source context: 40 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `APA lineage`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d611fa3d789400b453a6d359",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46792,
+            "sha256": "1b85bda5e4568875f15ce31136b39381b33b488ea4bfd0d5ef2ac64e9316c6ec"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39179,
+            "sha256": "a7387ce4d33c6e79b9449c37d9c99475e3164948a3dee8e9a2a85f2952ede6fe"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20304,
+            "sha256": "f6ab091c74e980ff686ddc4ee86ac99f48876e5d602030590410cf67ed6d69d2"
+          },
+          {
+            "relative_path": "proof_builds/native-cmanalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21221,
+            "sha256": "814a65e4f4fa53bb44b993b3a6f7372ee21459c81d6269cf16500f57db9b22c6"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46320,
+            "sha256": "09d07c674048c524c601e208d2db96332393e4c8ab895e0a29466303e255dae4"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9625,
+            "sha256": "7463f172073ec3dc86fd2d0318b9791eacbfde369e35c19c9e1c843cb6ef9708"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cmanalysis/blueprint.json",
+          "project_blueprints/native-cmanalysis/instrument_map.json",
+          "project_blueprints/native-cmanalysis/README.md",
+          "proof_builds/native-cmanalysis/proof_build.json",
+          "proof_demos/native-cmanalysis/demo_cases.json",
+          "proof_demos/native-cmanalysis/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8f5390100a25e9e2221fef97"
+    },
+    {
+      "receipt_id": "native-cmanalysis__receipt_0016",
+      "project_id": "native-cmanalysis",
+      "project_title": "Collection Management Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Collection Management Analysis / source lineage claim limit. The public package remains text",
+      "component_case_id": "native-cmanalysis__0016__collection-management-analysis-source-lineage-claim-limit-the-public-package-remains-text",
+      "claim_to_demonstrate": "uses `source lineage claim limit. The public package remains text` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 40 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA.",
+      "input_fixture": "project source text and the named component `source lineage claim limit. The public package remains text`",
+      "operation_under_test": "uses `source lineage claim limit. The public package remains text` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 40 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `source lineage claim limit. The public package remains text`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d611fa3d789400b453a6d359",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46792,
+            "sha256": "1b85bda5e4568875f15ce31136b39381b33b488ea4bfd0d5ef2ac64e9316c6ec"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39179,
+            "sha256": "a7387ce4d33c6e79b9449c37d9c99475e3164948a3dee8e9a2a85f2952ede6fe"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20304,
+            "sha256": "f6ab091c74e980ff686ddc4ee86ac99f48876e5d602030590410cf67ed6d69d2"
+          },
+          {
+            "relative_path": "proof_builds/native-cmanalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21221,
+            "sha256": "814a65e4f4fa53bb44b993b3a6f7372ee21459c81d6269cf16500f57db9b22c6"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46320,
+            "sha256": "09d07c674048c524c601e208d2db96332393e4c8ab895e0a29466303e255dae4"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9625,
+            "sha256": "7463f172073ec3dc86fd2d0318b9791eacbfde369e35c19c9e1c843cb6ef9708"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cmanalysis/blueprint.json",
+          "project_blueprints/native-cmanalysis/instrument_map.json",
+          "project_blueprints/native-cmanalysis/README.md",
+          "proof_builds/native-cmanalysis/proof_build.json",
+          "proof_demos/native-cmanalysis/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2c58c7d088ccf7dc2810910c"
+    },
+    {
+      "receipt_id": "native-cmanalysis__receipt_0017",
+      "project_id": "native-cmanalysis",
+      "project_title": "Collection Management Analysis",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Collection Management Analysis / focused and does not claim unverified runtime state. Plan: identify the region",
+      "component_case_id": "native-cmanalysis__0017__collection-management-analysis-focused-and-does-not-claim-unverified-runtime-state-plan-id",
+      "claim_to_demonstrate": "uses `focused and does not claim unverified runtime state. Plan: identify the region` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: The public package remains text-focused and does not claim.",
+      "input_fixture": "project source text and the named component `focused and does not claim unverified runtime state. Plan: identify the region`",
+      "operation_under_test": "uses `focused and does not claim unverified runtime state. Plan: identify the region` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: The public package remains text-focused and does not claim.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `focused and does not claim unverified runtime state. Plan: identify the region`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "6025132c7b3c25d8b485f235",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46792,
+            "sha256": "1b85bda5e4568875f15ce31136b39381b33b488ea4bfd0d5ef2ac64e9316c6ec"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 39179,
+            "sha256": "a7387ce4d33c6e79b9449c37d9c99475e3164948a3dee8e9a2a85f2952ede6fe"
+          },
+          {
+            "relative_path": "project_blueprints/native-cmanalysis/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20304,
+            "sha256": "f6ab091c74e980ff686ddc4ee86ac99f48876e5d602030590410cf67ed6d69d2"
+          },
+          {
+            "relative_path": "proof_builds/native-cmanalysis/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21221,
+            "sha256": "814a65e4f4fa53bb44b993b3a6f7372ee21459c81d6269cf16500f57db9b22c6"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46320,
+            "sha256": "09d07c674048c524c601e208d2db96332393e4c8ab895e0a29466303e255dae4"
+          },
+          {
+            "relative_path": "proof_demos/native-cmanalysis/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9625,
+            "sha256": "7463f172073ec3dc86fd2d0318b9791eacbfde369e35c19c9e1c843cb6ef9708"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-cmanalysis/blueprint.json",
+          "project_blueprints/native-cmanalysis/instrument_map.json",
+          "project_blueprints/native-cmanalysis/README.md",
+          "proof_builds/native-cmanalysis/proof_build.json",
+          "proof_demos/native-cmanalysis/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c82024f1828d9acdfd430e9a"
+    }
+  ]
+}

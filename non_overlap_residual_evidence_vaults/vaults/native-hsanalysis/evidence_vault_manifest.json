@@ -1,0 +1,30 @@
+{
+  "project_id": "native-hsanalysis",
+  "closure_lane": "live_case_calibration",
+  "generated_at": "2026-05-17T01:46:48+00:00",
+  "automated_evidence_hash": "2a697b1a3707dcf2",
+  "required_slots": [
+    {
+      "slot_id": "live_case_runs",
+      "required_file": "live_case_runs.csv",
+      "proves": "Instrument was exercised on live or realistic cases, not only synthetic cases."
+    },
+    {
+      "slot_id": "calibration_record",
+      "required_file": "calibration_record.json",
+      "proves": "Outputs were compared across cases and calibration behavior was recorded."
+    },
+    {
+      "slot_id": "failure_mode_note",
+      "required_file": "failure_mode_note.md",
+      "proves": "Known failure modes were identified and tested."
+    },
+    {
+      "slot_id": "expert_review_note",
+      "required_file": "expert_review_note.md",
+      "proves": "A qualified reviewer examined the calibration result."
+    }
+  ],
+  "promotion_rule": "Promotion requires all required files to exist and survive clearly labeled review or technical audit. A complete vault is necessary but not alone sufficient for expert-facing claims.",
+  "vault_hash": "f6b0472bb0ad6626"
+}

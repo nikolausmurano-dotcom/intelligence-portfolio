@@ -1,0 +1,41 @@
+# Proof Build: Colonial Archive Explorer
+
+**Project ID.** `native-london`
+
+**Proof tier.** source-backed-proof-build
+
+**Public claim.** Colonial Archive Explorer is presented as a regional and security-studies page.
+
+**Distinctive mechanism.** The working mechanism is to move from source intake and domain framing to case structure, institutional interpretation, evidence limits, and public analytical synthesis. The reader should be able to ask what enters the room, what transformation occurs, what judgment or work product leaves, and which gate prevents overclaiming.
+
+**Use value.** It shows the utility of Colonial Archive Explorer by tying the project purpose to the mechanism that makes it inspectable, reusable, or professionally valuable.
+
+**Minimum public demo.** Test one representative case; confirm input (packet name, source files, version signal, scope...) produces output (what the packet is and what decision it can still...) and leaves a visible decision or artifact.
+
+**Claim ceiling.** The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.
+
+## Flagship Proof Builds
+
+No special flagship proof build has been authored yet; this project is governed by the component proof table below.
+
+## Component Proof Table
+
+| Component | Status | Input | Expected Output | Verification Check |
+|---|---|---|---|---|
+| Colonial Archive Explorer Artifact Identity Register | specified-output-needs-demo | packet name, source files, version signal, scope, and intended destination | what the packet is and what decision it can still change | Test one representative case; confirm input (packet name, source files, version signal, scope...) produces output (what the packet is and what decision it can still...). |
+| Colonial Archive Explorer Extraction And Manifest Layer | specified-output-needs-demo | files, tables, text, screenshots, source notes, and provenance markers | what can be safely mined from the packet as a reviewable artifact | Test one representative case; confirm input (files, tables, text, screenshots, source notes...) produces output (what can be safely mined from the packet...) and leaves. |
+| Colonial Archive Explorer Mechanism Or Claim Distillation | specified-output-needs-demo | the packet's central method, model, concept, or design rule | the distinctive idea that should not disappear in public summary | Test one representative case; confirm input (the packet's central method, model, concept, or design...) produces output (the distinctive idea that should not disappear. |
+| Colonial Archive Explorer Proof Boundary | specified-output-needs-demo | built assets, partial assets, archive-only assets, and unsupported claims | what the packet proves now as a reviewable artifact | Test one representative case; confirm input (built assets, partial assets, archive-only assets...) produces output (what the packet proves now as a reviewable artifact). |
+| Colonial Archive Explorer Promotion Route | specified-output-needs-demo | website room, MuranoOS room, Nexus task, paper, source bank, or archive | where the packet should go next as a reviewable artifact | Test one representative case; confirm input (website room, MuranoOS room, Nexus task, paper, source...) produces output (where the packet should go next as a. |
+| Colonial Archive Explorer Current Authority State | specified-output-needs-demo | canonical, superseded, derivative, draft, or context-only status | how strongly the packet may govern a public page | Test one representative case; confirm input (canonical, superseded, derivative, draft...) produces output (how strongly the packet may govern a public page) and leaves a. |
+| Colonial Archive Explorer Gap And Reconciliation Queue | specified-output-needs-demo | missing source reads, duplicate resolution, version adjudication, or implementation work | next step before stronger public use as a reviewable artifact | Test one representative case; confirm input (missing source reads, duplicate resolution, version...) produces output (next step before stronger public use as a. |
+| Colonial Archive Explorer / Evidence Sections | source-context-backed | project source text and the named component `Evidence Sections` | a project-specific work product, decision, or proof surface tied to `Evidence Sections` | Confirm `Evidence Sections` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Colonial Archive Explorer / Review Notes | source-context-backed | project source text and the named component `Review Notes` | a review decision, claim ceiling, or release boundary tied to `Review Notes` | Confirm `Review Notes` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Colonial Archive Explorer / Russia Desk | source-context-backed | project source text and the named component `Russia Desk` | a room, workbench, or interface function tied to `Russia Desk` | Confirm `Russia Desk` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Colonial Archive Explorer / Native Navigation | source-context-backed | project source text and the named component `Native Navigation` | a project-specific work product, decision, or proof surface tied to `Native Navigation` | Confirm `Native Navigation` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Colonial Archive Explorer / APA lineage | source-context-backed | project source text and the named component `APA lineage` | a project-specific work product, decision, or proof surface tied to `APA lineage` | Confirm `APA lineage` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Colonial Archive Explorer / source lineage claim limit. The public package remains text | source-context-backed | project source text and the named component `source lineage claim limit. The public package remains text` | a review decision, claim ceiling, or release boundary tied to `source lineage claim limit. The public package remains text` | Confirm `source lineage claim limit. The public package remains text` appears in the cited source context and that the public page explains what output, decision, or. |
+| Colonial Archive Explorer / focused and does not claim unverified runtime state. Plan. | source-context-backed | project source text and the named component `focused and does not claim unverified runtime state. Plan: identify the region` | a review decision, claim ceiling, or release boundary tied to `focused and does not claim unverified runtime state. Plan. | Confirm `focused and does not claim unverified runtime state. Plan: identify the region` appears in the cited source context and that the public page explains what. |
+| Colonial Archive Explorer / Specific Source Spine | source-context-backed | project source text and the named component `Specific Source Spine` | a project-specific work product, decision, or proof surface tied to `Specific Source Spine` | Confirm `Specific Source Spine` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |
+| Colonial Archive Explorer / State What The Page Can And Cannot Claim | source-context-backed | project source text and the named component `State What The Page Can And Cannot Claim` | a review decision, claim ceiling, or release boundary tied to `State What The Page Can And Cannot Claim` | Confirm `State What The Page Can And Cannot Claim` appears in the cited source context and that the public page explains what output, decision, or project function it. |
+| Colonial Archive Explorer / Register Lineage | source-context-backed | project source text and the named component `Register Lineage` | an analytical work product or decision surface tied to `Register Lineage` | Confirm `Register Lineage` appears in the cited source context and that the public page explains what output, decision, or project function it supports. |

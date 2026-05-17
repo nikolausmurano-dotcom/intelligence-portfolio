@@ -1,0 +1,954 @@
+{
+  "project": {
+    "project_id": "trilogy",
+    "title": "Book Trilogy"
+  },
+  "receipts": [
+    {
+      "receipt_id": "trilogy__receipt_0001",
+      "project_id": "trilogy",
+      "project_title": "Book Trilogy",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Canonical Chapter Identity",
+      "component_case_id": "trilogy__0001__canonical-chapter-identity",
+      "claim_to_demonstrate": "keeps the three-book system stable while public titles and presentation language are improved",
+      "input_fixture": "72 canonical chapter IDs, public book order, book-title logic, and chapter-title state",
+      "operation_under_test": "keeps the three-book system stable while public titles and presentation language are improved",
+      "expected_output": "chapter identity ledger and public/canonical mapping",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "28a0c05bf85a4fc8388098e7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/trilogy/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 24625,
+            "sha256": "d6eaad3ad859a15862edece284f3a5a55087ff46784e2c6f55ff4b0ed8aab3c2"
+          },
+          {
+            "relative_path": "project_blueprints/trilogy/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17616,
+            "sha256": "a5120b66b5f280b69aec4b76e362ffff03525c80b32275b28f7f9c54e893fddc"
+          },
+          {
+            "relative_path": "project_blueprints/trilogy/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13242,
+            "sha256": "f89b3265ad8e6ca779603d69a41051a2d1bff480435652bfee82dee0a98de7c7"
+          },
+          {
+            "relative_path": "proof_builds/trilogy/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11826,
+            "sha256": "3e8b896d4d06d7e1e6af0f0eb6cb549ce53a67e67ec4bfa0930bddd6f5b9153c"
+          },
+          {
+            "relative_path": "proof_demos/trilogy/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 25042,
+            "sha256": "027f70c0a1a93808e5f79b02a8de1721db903b588737a53933aa17d1e1e26dc5"
+          },
+          {
+            "relative_path": "proof_demos/trilogy/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6602,
+            "sha256": "b4844b8de38f6e7efc071a1806d8e34da7eae6a7097f183b52bb426bb2a1dd48"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/trilogy/blueprint.json",
+          "project_blueprints/trilogy/instrument_map.json",
+          "project_blueprints/trilogy/README.md",
+          "proof_builds/trilogy/proof_build.json",
+          "proof_demos/trilogy/demo_cases.json",
+          "proof_demos/trilogy/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "536023872171296207a19e25"
+    },
+    {
+      "receipt_id": "trilogy__receipt_0002",
+      "project_id": "trilogy",
+      "project_title": "Book Trilogy",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "ReaderEdition Rewrite Target",
+      "component_case_id": "trilogy__0002__readeredition-rewrite-target",
+      "claim_to_demonstrate": "identifies what is readable but flattened, generic, or not yet book-appropriate in voice",
+      "input_fixture": "current public-facing chapter draft",
+      "operation_under_test": "identifies what is readable but flattened, generic, or not yet book-appropriate in voice",
+      "expected_output": "rewrite target with deficits as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "54b81f25a7b75c703705d29a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/trilogy/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 24625,
+            "sha256": "d6eaad3ad859a15862edece284f3a5a55087ff46784e2c6f55ff4b0ed8aab3c2"
+          },
+          {
+            "relative_path": "project_blueprints/trilogy/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17616,
+            "sha256": "a5120b66b5f280b69aec4b76e362ffff03525c80b32275b28f7f9c54e893fddc"
+          },
+          {
+            "relative_path": "project_blueprints/trilogy/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13242,
+            "sha256": "f89b3265ad8e6ca779603d69a41051a2d1bff480435652bfee82dee0a98de7c7"
+          },
+          {
+            "relative_path": "proof_builds/trilogy/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11826,
+            "sha256": "3e8b896d4d06d7e1e6af0f0eb6cb549ce53a67e67ec4bfa0930bddd6f5b9153c"
+          },
+          {
+            "relative_path": "proof_demos/trilogy/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 25042,
+            "sha256": "027f70c0a1a93808e5f79b02a8de1721db903b588737a53933aa17d1e1e26dc5"
+          },
+          {
+            "relative_path": "proof_demos/trilogy/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6602,
+            "sha256": "b4844b8de38f6e7efc071a1806d8e34da7eae6a7097f183b52bb426bb2a1dd48"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/trilogy/blueprint.json",
+          "project_blueprints/trilogy/instrument_map.json",
+          "project_blueprints/trilogy/README.md",
+          "proof_builds/trilogy/proof_build.json",
+          "proof_demos/trilogy/demo_cases.json",
+          "proof_demos/trilogy/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "17aa430c03220521e9778d63"
+    },
+    {
+      "receipt_id": "trilogy__receipt_0003",
+      "project_id": "trilogy",
+      "project_title": "Book Trilogy",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "FinalProof Argument Backbone",
+      "component_case_id": "trilogy__0003__finalproof-argument-backbone",
+      "claim_to_demonstrate": "preserves claim, sequence role, continuity, and dependency inheritance while prose is upgraded",
+      "input_fixture": "argument-complete proof chapter",
+      "operation_under_test": "preserves claim, sequence role, continuity, and dependency inheritance while prose is upgraded",
+      "expected_output": "argument skeleton and non-negotiable continuity guardrails",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "b79683e0836bd991597affe7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/trilogy/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 24625,
+            "sha256": "d6eaad3ad859a15862edece284f3a5a55087ff46784e2c6f55ff4b0ed8aab3c2"
+          },
+          {
+            "relative_path": "project_blueprints/trilogy/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17616,
+            "sha256": "a5120b66b5f280b69aec4b76e362ffff03525c80b32275b28f7f9c54e893fddc"
+          },
+          {
+            "relative_path": "project_blueprints/trilogy/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13242,
+            "sha256": "f89b3265ad8e6ca779603d69a41051a2d1bff480435652bfee82dee0a98de7c7"
+          },
+          {
+            "relative_path": "proof_builds/trilogy/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11826,
+            "sha256": "3e8b896d4d06d7e1e6af0f0eb6cb549ce53a67e67ec4bfa0930bddd6f5b9153c"
+          },
+          {
+            "relative_path": "proof_demos/trilogy/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 25042,
+            "sha256": "027f70c0a1a93808e5f79b02a8de1721db903b588737a53933aa17d1e1e26dc5"
+          },
+          {
+            "relative_path": "proof_demos/trilogy/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6602,
+            "sha256": "b4844b8de38f6e7efc071a1806d8e34da7eae6a7097f183b52bb426bb2a1dd48"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/trilogy/blueprint.json",
+          "project_blueprints/trilogy/instrument_map.json",
+          "project_blueprints/trilogy/README.md",
+          "proof_builds/trilogy/proof_build.json",
+          "proof_demos/trilogy/demo_cases.json",
+          "proof_demos/trilogy/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "afcc23f3ca76c81fcf96d6f2"
+    },
+    {
+      "receipt_id": "trilogy__receipt_0004",
+      "project_id": "trilogy",
+      "project_title": "Book Trilogy",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "ConstructionKit Shape Scaffold",
+      "component_case_id": "trilogy__0004__constructionkit-shape-scaffold",
+      "claim_to_demonstrate": "governs the movement of the chapter rather than letting revision become attractive paragraph replacement",
+      "input_fixture": "chapter construction kit, rhetorical movement, density expectations, opening gambit, turn, closing image, and handoff",
+      "operation_under_test": "governs the movement of the chapter rather than letting revision become attractive paragraph replacement",
+      "expected_output": "chapter shape constraints as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "891f997f671f19b26eaa3c69",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/trilogy/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 24625,
+            "sha256": "d6eaad3ad859a15862edece284f3a5a55087ff46784e2c6f55ff4b0ed8aab3c2"
+          },
+          {
+            "relative_path": "project_blueprints/trilogy/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17616,
+            "sha256": "a5120b66b5f280b69aec4b76e362ffff03525c80b32275b28f7f9c54e893fddc"
+          },
+          {
+            "relative_path": "project_blueprints/trilogy/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13242,
+            "sha256": "f89b3265ad8e6ca779603d69a41051a2d1bff480435652bfee82dee0a98de7c7"
+          },
+          {
+            "relative_path": "proof_builds/trilogy/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11826,
+            "sha256": "3e8b896d4d06d7e1e6af0f0eb6cb549ce53a67e67ec4bfa0930bddd6f5b9153c"
+          },
+          {
+            "relative_path": "proof_demos/trilogy/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 25042,
+            "sha256": "027f70c0a1a93808e5f79b02a8de1721db903b588737a53933aa17d1e1e26dc5"
+          },
+          {
+            "relative_path": "proof_demos/trilogy/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6602,
+            "sha256": "b4844b8de38f6e7efc071a1806d8e34da7eae6a7097f183b52bb426bb2a1dd48"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/trilogy/blueprint.json",
+          "project_blueprints/trilogy/instrument_map.json",
+          "project_blueprints/trilogy/README.md",
+          "proof_builds/trilogy/proof_build.json",
+          "proof_demos/trilogy/demo_cases.json",
+          "proof_demos/trilogy/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6f2f8b08aa86e85de4beff08"
+    },
+    {
+      "receipt_id": "trilogy__receipt_0005",
+      "project_id": "trilogy",
+      "project_title": "Book Trilogy",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "PassageTargets Sentence-Pressure Reservoir",
+      "component_case_id": "trilogy__0005__passagetargets-sentence-pressure-reservoir",
+      "claim_to_demonstrate": "decides which language belongs in main text, note, opening pressure, turn, mechanism clarification, or exclusion",
+      "input_fixture": "priority bands, target type, emotional register, source ethics, sentence directives, harvest function, main-text naming, and endnote tier",
+      "operation_under_test": "decides which language belongs in main text, note, opening pressure, turn, mechanism clarification, or exclusion",
+      "expected_output": "passage-target selection set as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "371c99c81fb10559150021fa",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/trilogy/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 24625,
+            "sha256": "d6eaad3ad859a15862edece284f3a5a55087ff46784e2c6f55ff4b0ed8aab3c2"
+          },
+          {
+            "relative_path": "project_blueprints/trilogy/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17616,
+            "sha256": "a5120b66b5f280b69aec4b76e362ffff03525c80b32275b28f7f9c54e893fddc"
+          },
+          {
+            "relative_path": "project_blueprints/trilogy/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13242,
+            "sha256": "f89b3265ad8e6ca779603d69a41051a2d1bff480435652bfee82dee0a98de7c7"
+          },
+          {
+            "relative_path": "proof_builds/trilogy/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11826,
+            "sha256": "3e8b896d4d06d7e1e6af0f0eb6cb549ce53a67e67ec4bfa0930bddd6f5b9153c"
+          },
+          {
+            "relative_path": "proof_demos/trilogy/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 25042,
+            "sha256": "027f70c0a1a93808e5f79b02a8de1721db903b588737a53933aa17d1e1e26dc5"
+          },
+          {
+            "relative_path": "proof_demos/trilogy/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6602,
+            "sha256": "b4844b8de38f6e7efc071a1806d8e34da7eae6a7097f183b52bb426bb2a1dd48"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/trilogy/blueprint.json",
+          "project_blueprints/trilogy/instrument_map.json",
+          "project_blueprints/trilogy/README.md",
+          "proof_builds/trilogy/proof_build.json",
+          "proof_demos/trilogy/demo_cases.json",
+          "proof_demos/trilogy/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a9cc032f7833fcb288e15499"
+    },
+    {
+      "receipt_id": "trilogy__receipt_0006",
+      "project_id": "trilogy",
+      "project_title": "Book Trilogy",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Democratic Dialectic Salvage Ledger",
+      "component_case_id": "trilogy__0006__democratic-dialectic-salvage-ledger",
+      "claim_to_demonstrate": "mines strong prose without importing private/autobiographical or off-register material into the wrong book",
+      "input_fixture": "voice-bearing formulations, philosophical ore, first-person risk, quotation risk, and overstatement risk",
+      "operation_under_test": "mines strong prose without importing private/autobiographical or off-register material into the wrong book",
+      "expected_output": "admissible formulation candidates as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "88b29b1104917fd878f9da03",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/trilogy/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 24625,
+            "sha256": "d6eaad3ad859a15862edece284f3a5a55087ff46784e2c6f55ff4b0ed8aab3c2"
+          },
+          {
+            "relative_path": "project_blueprints/trilogy/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17616,
+            "sha256": "a5120b66b5f280b69aec4b76e362ffff03525c80b32275b28f7f9c54e893fddc"
+          },
+          {
+            "relative_path": "project_blueprints/trilogy/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13242,
+            "sha256": "f89b3265ad8e6ca779603d69a41051a2d1bff480435652bfee82dee0a98de7c7"
+          },
+          {
+            "relative_path": "proof_builds/trilogy/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11826,
+            "sha256": "3e8b896d4d06d7e1e6af0f0eb6cb549ce53a67e67ec4bfa0930bddd6f5b9153c"
+          },
+          {
+            "relative_path": "proof_demos/trilogy/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 25042,
+            "sha256": "027f70c0a1a93808e5f79b02a8de1721db903b588737a53933aa17d1e1e26dc5"
+          },
+          {
+            "relative_path": "proof_demos/trilogy/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6602,
+            "sha256": "b4844b8de38f6e7efc071a1806d8e34da7eae6a7097f183b52bb426bb2a1dd48"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/trilogy/blueprint.json",
+          "project_blueprints/trilogy/instrument_map.json",
+          "project_blueprints/trilogy/README.md",
+          "proof_builds/trilogy/proof_build.json",
+          "proof_demos/trilogy/demo_cases.json",
+          "proof_demos/trilogy/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "26a5301a3bf26384dd06610b"
+    },
+    {
+      "receipt_id": "trilogy__receipt_0007",
+      "project_id": "trilogy",
+      "project_title": "Book Trilogy",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Book I Security Register Gate",
+      "component_case_id": "trilogy__0007__book-i-security-register-gate",
+      "claim_to_demonstrate": "prevents philosophical or therapeutic prose from contaminating the national-security book",
+      "input_fixture": "national-security chapters, strategy evidence, democratic restraint language, institutional logic, and scholarly-austere register rules",
+      "operation_under_test": "prevents philosophical or therapeutic prose from contaminating the national-security book",
+      "expected_output": "Book I admissible chapter state as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f76d6556f4e051694babd22e",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/trilogy/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 24625,
+            "sha256": "d6eaad3ad859a15862edece284f3a5a55087ff46784e2c6f55ff4b0ed8aab3c2"
+          },
+          {
+            "relative_path": "project_blueprints/trilogy/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17616,
+            "sha256": "a5120b66b5f280b69aec4b76e362ffff03525c80b32275b28f7f9c54e893fddc"
+          },
+          {
+            "relative_path": "project_blueprints/trilogy/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13242,
+            "sha256": "f89b3265ad8e6ca779603d69a41051a2d1bff480435652bfee82dee0a98de7c7"
+          },
+          {
+            "relative_path": "proof_builds/trilogy/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11826,
+            "sha256": "3e8b896d4d06d7e1e6af0f0eb6cb549ce53a67e67ec4bfa0930bddd6f5b9153c"
+          },
+          {
+            "relative_path": "proof_demos/trilogy/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 25042,
+            "sha256": "027f70c0a1a93808e5f79b02a8de1721db903b588737a53933aa17d1e1e26dc5"
+          },
+          {
+            "relative_path": "proof_demos/trilogy/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6602,
+            "sha256": "b4844b8de38f6e7efc071a1806d8e34da7eae6a7097f183b52bb426bb2a1dd48"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/trilogy/blueprint.json",
+          "project_blueprints/trilogy/instrument_map.json",
+          "project_blueprints/trilogy/README.md",
+          "proof_builds/trilogy/proof_build.json",
+          "proof_demos/trilogy/demo_cases.json",
+          "proof_demos/trilogy/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "99805a6f906c1f6861ab22ce"
+    },
+    {
+      "receipt_id": "trilogy__receipt_0008",
+      "project_id": "trilogy",
+      "project_title": "Book Trilogy",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Book II Dialectic Register Gate",
+      "component_case_id": "trilogy__0008__book-ii-dialectic-register-gate",
+      "claim_to_demonstrate": "allows higher voice pressure while keeping argument motion and source discipline intact",
+      "input_fixture": "individual/democratic-dialectic chapters, voice-bearing formulations, philosophical cadence, and civic formation argument",
+      "operation_under_test": "allows higher voice pressure while keeping argument motion and source discipline intact",
+      "expected_output": "Book II admissible chapter state as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3dae90ac40f6883bed859c65",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/trilogy/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 24625,
+            "sha256": "d6eaad3ad859a15862edece284f3a5a55087ff46784e2c6f55ff4b0ed8aab3c2"
+          },
+          {
+            "relative_path": "project_blueprints/trilogy/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17616,
+            "sha256": "a5120b66b5f280b69aec4b76e362ffff03525c80b32275b28f7f9c54e893fddc"
+          },
+          {
+            "relative_path": "project_blueprints/trilogy/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13242,
+            "sha256": "f89b3265ad8e6ca779603d69a41051a2d1bff480435652bfee82dee0a98de7c7"
+          },
+          {
+            "relative_path": "proof_builds/trilogy/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11826,
+            "sha256": "3e8b896d4d06d7e1e6af0f0eb6cb549ce53a67e67ec4bfa0930bddd6f5b9153c"
+          },
+          {
+            "relative_path": "proof_demos/trilogy/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 25042,
+            "sha256": "027f70c0a1a93808e5f79b02a8de1721db903b588737a53933aa17d1e1e26dc5"
+          },
+          {
+            "relative_path": "proof_demos/trilogy/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6602,
+            "sha256": "b4844b8de38f6e7efc071a1806d8e34da7eae6a7097f183b52bb426bb2a1dd48"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/trilogy/blueprint.json",
+          "project_blueprints/trilogy/instrument_map.json",
+          "project_blueprints/trilogy/README.md",
+          "proof_builds/trilogy/proof_build.json",
+          "proof_demos/trilogy/demo_cases.json",
+          "proof_demos/trilogy/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "68169b43cc715ba23c9b70ba"
+    },
+    {
+      "receipt_id": "trilogy__receipt_0009",
+      "project_id": "trilogy",
+      "project_title": "Book Trilogy",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Book III Repair Register Gate",
+      "component_case_id": "trilogy__0009__book-iii-repair-register-gate",
+      "claim_to_demonstrate": "keeps repair analysis conflict- and institution-aware rather than generic healing language",
+      "input_fixture": "violence, trauma, memory, peace/conflict, repair, and scale-transition material",
+      "operation_under_test": "keeps repair analysis conflict- and institution-aware rather than generic healing language",
+      "expected_output": "Book III admissible chapter state as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "2811b463641dbd6ee4a8be60",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/trilogy/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 24625,
+            "sha256": "d6eaad3ad859a15862edece284f3a5a55087ff46784e2c6f55ff4b0ed8aab3c2"
+          },
+          {
+            "relative_path": "project_blueprints/trilogy/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17616,
+            "sha256": "a5120b66b5f280b69aec4b76e362ffff03525c80b32275b28f7f9c54e893fddc"
+          },
+          {
+            "relative_path": "project_blueprints/trilogy/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13242,
+            "sha256": "f89b3265ad8e6ca779603d69a41051a2d1bff480435652bfee82dee0a98de7c7"
+          },
+          {
+            "relative_path": "proof_builds/trilogy/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11826,
+            "sha256": "3e8b896d4d06d7e1e6af0f0eb6cb549ce53a67e67ec4bfa0930bddd6f5b9153c"
+          },
+          {
+            "relative_path": "proof_demos/trilogy/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 25042,
+            "sha256": "027f70c0a1a93808e5f79b02a8de1721db903b588737a53933aa17d1e1e26dc5"
+          },
+          {
+            "relative_path": "proof_demos/trilogy/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6602,
+            "sha256": "b4844b8de38f6e7efc071a1806d8e34da7eae6a7097f183b52bb426bb2a1dd48"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/trilogy/blueprint.json",
+          "project_blueprints/trilogy/instrument_map.json",
+          "project_blueprints/trilogy/README.md",
+          "proof_builds/trilogy/proof_build.json",
+          "proof_demos/trilogy/demo_cases.json",
+          "proof_demos/trilogy/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "25cdbf976e738be5013cee81"
+    },
+    {
+      "receipt_id": "trilogy__receipt_0010",
+      "project_id": "trilogy",
+      "project_title": "Book Trilogy",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Visual And Title Specificity Gate",
+      "component_case_id": "trilogy__0010__visual-and-title-specificity-gate",
+      "claim_to_demonstrate": "tests whether the page's title and visual could belong only to that chapter rather than to any manuscript page",
+      "input_fixture": "page visual, chapter title, book identity, visual narrative, and anti-generic placeholder rules",
+      "operation_under_test": "tests whether the page's title and visual could belong only to that chapter rather than to any manuscript page",
+      "expected_output": "chapter-native visual/title approval or rejection",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "9892dd7a44beb7ac62ffc360",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/trilogy/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 24625,
+            "sha256": "d6eaad3ad859a15862edece284f3a5a55087ff46784e2c6f55ff4b0ed8aab3c2"
+          },
+          {
+            "relative_path": "project_blueprints/trilogy/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17616,
+            "sha256": "a5120b66b5f280b69aec4b76e362ffff03525c80b32275b28f7f9c54e893fddc"
+          },
+          {
+            "relative_path": "project_blueprints/trilogy/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13242,
+            "sha256": "f89b3265ad8e6ca779603d69a41051a2d1bff480435652bfee82dee0a98de7c7"
+          },
+          {
+            "relative_path": "proof_builds/trilogy/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11826,
+            "sha256": "3e8b896d4d06d7e1e6af0f0eb6cb549ce53a67e67ec4bfa0930bddd6f5b9153c"
+          },
+          {
+            "relative_path": "proof_demos/trilogy/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 25042,
+            "sha256": "027f70c0a1a93808e5f79b02a8de1721db903b588737a53933aa17d1e1e26dc5"
+          },
+          {
+            "relative_path": "proof_demos/trilogy/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6602,
+            "sha256": "b4844b8de38f6e7efc071a1806d8e34da7eae6a7097f183b52bb426bb2a1dd48"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/trilogy/blueprint.json",
+          "project_blueprints/trilogy/instrument_map.json",
+          "project_blueprints/trilogy/README.md",
+          "proof_builds/trilogy/proof_build.json",
+          "proof_demos/trilogy/demo_cases.json",
+          "proof_demos/trilogy/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2b5e484fe0525ec38ad3cd6e"
+    },
+    {
+      "receipt_id": "trilogy__receipt_0011",
+      "project_id": "trilogy",
+      "project_title": "Book Trilogy",
+      "proof_tier": "specified-proof-plan-needs-demo",
+      "component": "Chapter Dossier And Cross-Book Handoff",
+      "component_case_id": "trilogy__0011__chapter-dossier-and-cross-book-handoff",
+      "claim_to_demonstrate": "assembles the governed chapter-upgrade packet before rewrite begins; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "ReaderEdition, FinalProof, ConstructionKit, PassageTargets, salvage candidates, source state, contamination warnings, and handoff rules",
+      "operation_under_test": "assembles the governed chapter-upgrade packet before rewrite begins; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "chapter-upgrade dossier as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "6b57523d9f1ecbf564f0b8d0",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/trilogy/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 24625,
+            "sha256": "d6eaad3ad859a15862edece284f3a5a55087ff46784e2c6f55ff4b0ed8aab3c2"
+          },
+          {
+            "relative_path": "project_blueprints/trilogy/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17616,
+            "sha256": "a5120b66b5f280b69aec4b76e362ffff03525c80b32275b28f7f9c54e893fddc"
+          },
+          {
+            "relative_path": "project_blueprints/trilogy/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 13242,
+            "sha256": "f89b3265ad8e6ca779603d69a41051a2d1bff480435652bfee82dee0a98de7c7"
+          },
+          {
+            "relative_path": "proof_builds/trilogy/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11826,
+            "sha256": "3e8b896d4d06d7e1e6af0f0eb6cb549ce53a67e67ec4bfa0930bddd6f5b9153c"
+          },
+          {
+            "relative_path": "proof_demos/trilogy/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 25042,
+            "sha256": "027f70c0a1a93808e5f79b02a8de1721db903b588737a53933aa17d1e1e26dc5"
+          },
+          {
+            "relative_path": "proof_demos/trilogy/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 6602,
+            "sha256": "b4844b8de38f6e7efc071a1806d8e34da7eae6a7097f183b52bb426bb2a1dd48"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/trilogy/blueprint.json",
+          "project_blueprints/trilogy/instrument_map.json",
+          "project_blueprints/trilogy/README.md",
+          "proof_builds/trilogy/proof_build.json",
+          "proof_demos/trilogy/demo_cases.json",
+          "proof_demos/trilogy/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3e580dfcb7be4b0611a43e5d"
+    }
+  ]
+}

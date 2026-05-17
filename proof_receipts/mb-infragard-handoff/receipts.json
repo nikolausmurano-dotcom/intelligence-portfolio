@@ -1,0 +1,610 @@
+{
+  "project": {
+    "project_id": "mb-infragard-handoff",
+    "title": "InfraGard preparatory note (minimal)"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-infragard-handoff__receipt_0001",
+      "project_id": "mb-infragard-handoff",
+      "project_title": "InfraGard preparatory note (minimal)",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "InfraGard preparatory note (minimal) Advertised Artifact Check",
+      "component_case_id": "mb-infragard-handoff__0001__infragard-preparatory-note-minimal-advertised-artifact-check",
+      "claim_to_demonstrate": "This is a compact session-continuity handoff covering a short practical exchange about the user's InfraGard membership application.",
+      "input_fixture": "title, package name, claimed completion signal, and reader expectation",
+      "operation_under_test": "This is a compact session-continuity handoff covering a short practical exchange about the user's InfraGard membership application.",
+      "expected_output": "records what the artifact appears to promise as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "55bb6b5a19e2774da91a2872",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-infragard-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20152,
+            "sha256": "32f3b9a4564ceacd2ef879c2476d4fbd970fa1c97e0c83924347c2fed2b76e13"
+          },
+          {
+            "relative_path": "project_blueprints/mb-infragard-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 12716,
+            "sha256": "af98eb3db10ab10262107e4435c867c7776c785735b1d23def82a4048f249b2e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-infragard-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11039,
+            "sha256": "9dbf8b33014615d0c31e0c689304c87a71159f6eeaccce6fd5f561d5683bf103"
+          },
+          {
+            "relative_path": "proof_builds/mb-infragard-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9059,
+            "sha256": "cfa843776905951dfbf9f0104ab7659d31098531b1c872d03bbe828f5f3dc217"
+          },
+          {
+            "relative_path": "proof_demos/mb-infragard-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17602,
+            "sha256": "ddb79107046ab0b074fb84cbc4fbb89c7c6cea67121f28cce330cfff6a097e89"
+          },
+          {
+            "relative_path": "proof_demos/mb-infragard-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 4485,
+            "sha256": "de56d07a24039e335dffa3abacc90c2367e610a261b4f3c0f3e77b30ab0ea1c0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-infragard-handoff/blueprint.json",
+          "project_blueprints/mb-infragard-handoff/instrument_map.json",
+          "project_blueprints/mb-infragard-handoff/README.md",
+          "proof_builds/mb-infragard-handoff/proof_build.json",
+          "proof_demos/mb-infragard-handoff/demo_cases.json",
+          "proof_demos/mb-infragard-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "32bbb6fba64ebe8027a9b144"
+    },
+    {
+      "receipt_id": "mb-infragard-handoff__receipt_0002",
+      "project_id": "mb-infragard-handoff",
+      "project_title": "InfraGard preparatory note (minimal)",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "InfraGard preparatory note (minimal) Observed Content Check",
+      "component_case_id": "mb-infragard-handoff__0002__infragard-preparatory-note-minimal-observed-content-check",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "actual file count, text depth, source state, and missing substance",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "separates the artifact's name from what it actually contains",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "54bde8efdb9a10b7d4f42be9",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-infragard-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20152,
+            "sha256": "32f3b9a4564ceacd2ef879c2476d4fbd970fa1c97e0c83924347c2fed2b76e13"
+          },
+          {
+            "relative_path": "project_blueprints/mb-infragard-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 12716,
+            "sha256": "af98eb3db10ab10262107e4435c867c7776c785735b1d23def82a4048f249b2e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-infragard-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11039,
+            "sha256": "9dbf8b33014615d0c31e0c689304c87a71159f6eeaccce6fd5f561d5683bf103"
+          },
+          {
+            "relative_path": "proof_builds/mb-infragard-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9059,
+            "sha256": "cfa843776905951dfbf9f0104ab7659d31098531b1c872d03bbe828f5f3dc217"
+          },
+          {
+            "relative_path": "proof_demos/mb-infragard-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17602,
+            "sha256": "ddb79107046ab0b074fb84cbc4fbb89c7c6cea67121f28cce330cfff6a097e89"
+          },
+          {
+            "relative_path": "proof_demos/mb-infragard-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 4485,
+            "sha256": "de56d07a24039e335dffa3abacc90c2367e610a261b4f3c0f3e77b30ab0ea1c0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-infragard-handoff/blueprint.json",
+          "project_blueprints/mb-infragard-handoff/instrument_map.json",
+          "project_blueprints/mb-infragard-handoff/README.md",
+          "proof_builds/mb-infragard-handoff/proof_build.json",
+          "proof_demos/mb-infragard-handoff/demo_cases.json",
+          "proof_demos/mb-infragard-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a4ac6ca3123aa70d5ae520d8"
+    },
+    {
+      "receipt_id": "mb-infragard-handoff__receipt_0003",
+      "project_id": "mb-infragard-handoff",
+      "project_title": "InfraGard preparatory note (minimal)",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "InfraGard preparatory note (minimal) Usable Residue",
+      "component_case_id": "mb-infragard-handoff__0003__infragard-preparatory-note-minimal-usable-residue",
+      "claim_to_demonstrate": "The mechanism is professional-evidence curation: keep career-facing materials limited, unclassified, role-appropriate, and tied to concrete work products without exposing private or unsuitable application material.",
+      "input_fixture": "recoverable titles, taxonomy hints, source pointers, or future project seeds",
+      "operation_under_test": "The mechanism is professional-evidence curation: keep career-facing materials limited, unclassified, role-appropriate, and tied to concrete work products without exposing private or unsuitable application material.",
+      "expected_output": "extracts only the limited value the artifact can support",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d1ba0254fe6f4a2e3a212cf5",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-infragard-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20152,
+            "sha256": "32f3b9a4564ceacd2ef879c2476d4fbd970fa1c97e0c83924347c2fed2b76e13"
+          },
+          {
+            "relative_path": "project_blueprints/mb-infragard-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 12716,
+            "sha256": "af98eb3db10ab10262107e4435c867c7776c785735b1d23def82a4048f249b2e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-infragard-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11039,
+            "sha256": "9dbf8b33014615d0c31e0c689304c87a71159f6eeaccce6fd5f561d5683bf103"
+          },
+          {
+            "relative_path": "proof_builds/mb-infragard-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9059,
+            "sha256": "cfa843776905951dfbf9f0104ab7659d31098531b1c872d03bbe828f5f3dc217"
+          },
+          {
+            "relative_path": "proof_demos/mb-infragard-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17602,
+            "sha256": "ddb79107046ab0b074fb84cbc4fbb89c7c6cea67121f28cce330cfff6a097e89"
+          },
+          {
+            "relative_path": "proof_demos/mb-infragard-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 4485,
+            "sha256": "de56d07a24039e335dffa3abacc90c2367e610a261b4f3c0f3e77b30ab0ea1c0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-infragard-handoff/blueprint.json",
+          "project_blueprints/mb-infragard-handoff/instrument_map.json",
+          "project_blueprints/mb-infragard-handoff/README.md",
+          "proof_builds/mb-infragard-handoff/proof_build.json",
+          "proof_demos/mb-infragard-handoff/demo_cases.json",
+          "proof_demos/mb-infragard-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "554d634c2d4e31fc41829970"
+    },
+    {
+      "receipt_id": "mb-infragard-handoff__receipt_0004",
+      "project_id": "mb-infragard-handoff",
+      "project_title": "InfraGard preparatory note (minimal)",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "InfraGard preparatory note (minimal) Non-Claim Gate",
+      "component_case_id": "mb-infragard-handoff__0004__infragard-preparatory-note-minimal-non-claim-gate",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "unsupported claims, misleading completion language, and public-exclusion rule",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "blocks the packet from governing a page until substance exists",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "9dd31ac2acc1767d9972051e",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-infragard-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20152,
+            "sha256": "32f3b9a4564ceacd2ef879c2476d4fbd970fa1c97e0c83924347c2fed2b76e13"
+          },
+          {
+            "relative_path": "project_blueprints/mb-infragard-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 12716,
+            "sha256": "af98eb3db10ab10262107e4435c867c7776c785735b1d23def82a4048f249b2e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-infragard-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11039,
+            "sha256": "9dbf8b33014615d0c31e0c689304c87a71159f6eeaccce6fd5f561d5683bf103"
+          },
+          {
+            "relative_path": "proof_builds/mb-infragard-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9059,
+            "sha256": "cfa843776905951dfbf9f0104ab7659d31098531b1c872d03bbe828f5f3dc217"
+          },
+          {
+            "relative_path": "proof_demos/mb-infragard-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17602,
+            "sha256": "ddb79107046ab0b074fb84cbc4fbb89c7c6cea67121f28cce330cfff6a097e89"
+          },
+          {
+            "relative_path": "proof_demos/mb-infragard-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 4485,
+            "sha256": "de56d07a24039e335dffa3abacc90c2367e610a261b4f3c0f3e77b30ab0ea1c0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-infragard-handoff/blueprint.json",
+          "project_blueprints/mb-infragard-handoff/instrument_map.json",
+          "project_blueprints/mb-infragard-handoff/README.md",
+          "proof_builds/mb-infragard-handoff/proof_build.json",
+          "proof_demos/mb-infragard-handoff/demo_cases.json",
+          "proof_demos/mb-infragard-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f25a3ac1d1ee51315fa22502"
+    },
+    {
+      "receipt_id": "mb-infragard-handoff__receipt_0005",
+      "project_id": "mb-infragard-handoff",
+      "project_title": "InfraGard preparatory note (minimal)",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "InfraGard preparatory note (minimal) Rebuild Route",
+      "component_case_id": "mb-infragard-handoff__0005__infragard-preparatory-note-minimal-rebuild-route",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. The package is a low-stakes decision-archive. Read order is trivial (status — recap — note). For a downstream agent, the highest-value follow-on is verifying.",
+      "input_fixture": "source search, missing body text, replacement packet, or archive adjudication",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. The package is a low-stakes decision-archive. Read order is trivial (status — recap — note). For a downstream agent, the highest-value follow-on is verifying.",
+      "expected_output": "names the path from stub to usable project as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "cb6ac7f3b509c6db84383c34",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-infragard-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20152,
+            "sha256": "32f3b9a4564ceacd2ef879c2476d4fbd970fa1c97e0c83924347c2fed2b76e13"
+          },
+          {
+            "relative_path": "project_blueprints/mb-infragard-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 12716,
+            "sha256": "af98eb3db10ab10262107e4435c867c7776c785735b1d23def82a4048f249b2e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-infragard-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11039,
+            "sha256": "9dbf8b33014615d0c31e0c689304c87a71159f6eeaccce6fd5f561d5683bf103"
+          },
+          {
+            "relative_path": "proof_builds/mb-infragard-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9059,
+            "sha256": "cfa843776905951dfbf9f0104ab7659d31098531b1c872d03bbe828f5f3dc217"
+          },
+          {
+            "relative_path": "proof_demos/mb-infragard-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17602,
+            "sha256": "ddb79107046ab0b074fb84cbc4fbb89c7c6cea67121f28cce330cfff6a097e89"
+          },
+          {
+            "relative_path": "proof_demos/mb-infragard-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 4485,
+            "sha256": "de56d07a24039e335dffa3abacc90c2367e610a261b4f3c0f3e77b30ab0ea1c0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-infragard-handoff/blueprint.json",
+          "project_blueprints/mb-infragard-handoff/instrument_map.json",
+          "project_blueprints/mb-infragard-handoff/README.md",
+          "proof_builds/mb-infragard-handoff/proof_build.json",
+          "proof_demos/mb-infragard-handoff/demo_cases.json",
+          "proof_demos/mb-infragard-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2cf69a1b010bcbb5f75023f4"
+    },
+    {
+      "receipt_id": "mb-infragard-handoff__receipt_0006",
+      "project_id": "mb-infragard-handoff",
+      "project_title": "InfraGard preparatory note (minimal)",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "InfraGard preparatory note (minimal) Source Recovery Lane",
+      "component_case_id": "mb-infragard-handoff__0006__infragard-preparatory-note-minimal-source-recovery-lane",
+      "claim_to_demonstrate": "Research design, evidence evaluation, forecasting, and judgment. Use source library method and reasoning sources as public method and source background. Vision: Make methodology pages legible as research-design, evidence-control, and interpretive-method.",
+      "input_fixture": "original source folder, authoring history, related packet, or version cluster",
+      "operation_under_test": "Research design, evidence evaluation, forecasting, and judgment. Use source library method and reasoning sources as public method and source background. Vision: Make methodology pages legible as research-design, evidence-control, and interpretive-method.",
+      "expected_output": "finds where the real material might live as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0e3f4361746f1677ddbf0f95",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-infragard-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20152,
+            "sha256": "32f3b9a4564ceacd2ef879c2476d4fbd970fa1c97e0c83924347c2fed2b76e13"
+          },
+          {
+            "relative_path": "project_blueprints/mb-infragard-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 12716,
+            "sha256": "af98eb3db10ab10262107e4435c867c7776c785735b1d23def82a4048f249b2e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-infragard-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11039,
+            "sha256": "9dbf8b33014615d0c31e0c689304c87a71159f6eeaccce6fd5f561d5683bf103"
+          },
+          {
+            "relative_path": "proof_builds/mb-infragard-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9059,
+            "sha256": "cfa843776905951dfbf9f0104ab7659d31098531b1c872d03bbe828f5f3dc217"
+          },
+          {
+            "relative_path": "proof_demos/mb-infragard-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17602,
+            "sha256": "ddb79107046ab0b074fb84cbc4fbb89c7c6cea67121f28cce330cfff6a097e89"
+          },
+          {
+            "relative_path": "proof_demos/mb-infragard-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 4485,
+            "sha256": "de56d07a24039e335dffa3abacc90c2367e610a261b4f3c0f3e77b30ab0ea1c0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-infragard-handoff/blueprint.json",
+          "project_blueprints/mb-infragard-handoff/instrument_map.json",
+          "project_blueprints/mb-infragard-handoff/README.md",
+          "proof_builds/mb-infragard-handoff/proof_build.json",
+          "proof_demos/mb-infragard-handoff/demo_cases.json",
+          "proof_demos/mb-infragard-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ec4d53ebaff3c2fcb8aebf84"
+    },
+    {
+      "receipt_id": "mb-infragard-handoff__receipt_0007",
+      "project_id": "mb-infragard-handoff",
+      "project_title": "InfraGard preparatory note (minimal)",
+      "proof_tier": "limited-proof-or-private-abstraction",
+      "component": "InfraGard preparatory note (minimal) Gap Queue",
+      "component_case_id": "mb-infragard-handoff__0007__infragard-preparatory-note-minimal-gap-queue",
+      "claim_to_demonstrate": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "input_fixture": "unwritten content, absent sources, missing proof, or duplicate-risk review",
+      "operation_under_test": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "expected_output": "next verification step before use as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fa74147857510902a9865b3a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-infragard-handoff/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20152,
+            "sha256": "32f3b9a4564ceacd2ef879c2476d4fbd970fa1c97e0c83924347c2fed2b76e13"
+          },
+          {
+            "relative_path": "project_blueprints/mb-infragard-handoff/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 12716,
+            "sha256": "af98eb3db10ab10262107e4435c867c7776c785735b1d23def82a4048f249b2e"
+          },
+          {
+            "relative_path": "project_blueprints/mb-infragard-handoff/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11039,
+            "sha256": "9dbf8b33014615d0c31e0c689304c87a71159f6eeaccce6fd5f561d5683bf103"
+          },
+          {
+            "relative_path": "proof_builds/mb-infragard-handoff/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9059,
+            "sha256": "cfa843776905951dfbf9f0104ab7659d31098531b1c872d03bbe828f5f3dc217"
+          },
+          {
+            "relative_path": "proof_demos/mb-infragard-handoff/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 17602,
+            "sha256": "ddb79107046ab0b074fb84cbc4fbb89c7c6cea67121f28cce330cfff6a097e89"
+          },
+          {
+            "relative_path": "proof_demos/mb-infragard-handoff/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 4485,
+            "sha256": "de56d07a24039e335dffa3abacc90c2367e610a261b4f3c0f3e77b30ab0ea1c0"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-infragard-handoff/blueprint.json",
+          "project_blueprints/mb-infragard-handoff/instrument_map.json",
+          "project_blueprints/mb-infragard-handoff/README.md",
+          "proof_builds/mb-infragard-handoff/proof_build.json",
+          "proof_demos/mb-infragard-handoff/demo_cases.json",
+          "proof_demos/mb-infragard-handoff/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3bbc95ffab568da8e9efdf0c"
+    }
+  ]
+}

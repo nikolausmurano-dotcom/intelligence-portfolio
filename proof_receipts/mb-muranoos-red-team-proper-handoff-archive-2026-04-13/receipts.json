@@ -1,0 +1,1467 @@
+{
+  "project": {
+    "project_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13",
+    "title": "First fully-exploded Master_Package tree; Baltic Grey Zone materials"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__receipt_0001",
+      "project_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13",
+      "project_title": "First fully-exploded Master_Package tree; Baltic Grey Zone materials",
+      "proof_tier": "source-backed-proof-build",
+      "component": "First fully-exploded Master_Package tree; Baltic Grey Zone materials Handoff Identity",
+      "component_case_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__0001__first-fully-exploded-master-package-tree-baltic-grey-zone-materials-handoff-identity",
+      "claim_to_demonstrate": "Red Team proper archive is a fully exploded Master Package tree with Baltic Grey Zone materials.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "Red Team proper archive is a fully exploded Master Package tree with Baltic Grey Zone materials.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45113,
+            "sha256": "19866c1d117935614a79bd9cf9f76a7a01923ac49a59cbf038cc6ab26e2ad8c7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37078,
+            "sha256": "3e43ea5474ca08a308f2210796713965db52a6793be28927c79782e79d56040f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21691,
+            "sha256": "9016a608bf20ea36ab1f4aa7e85008210841f826217d2191e3d9e0dedade392b"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21382,
+            "sha256": "10a62513b38a6fc6ba1eb3f258dc7fddde8d617523f749a3e1a1c1771db69ab5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48192,
+            "sha256": "7ca274d3511a6cf08caabac3ba286e8089fcf26edadbbd3fbbc487cddc002e99"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11152,
+            "sha256": "01569c5d504c41894866447a9e355322dfacb6cfcdb5117fb3d8b219079a4439"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d0243034a09a3867db4c2f8a"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__receipt_0002",
+      "project_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13",
+      "project_title": "First fully-exploded Master_Package tree; Baltic Grey Zone materials",
+      "proof_tier": "source-backed-proof-build",
+      "component": "First fully-exploded Master_Package tree; Baltic Grey Zone materials Room Task Model",
+      "component_case_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__0002__first-fully-exploded-master-package-tree-baltic-grey-zone-materials-room-task-model",
+      "claim_to_demonstrate": "It separates registry, canon, workspace, current implementation state, live repo snapshots, dual-form evidence, integration patch kit, and exports so the archive can support both source truth and future implementation.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "It separates registry, canon, workspace, current implementation state, live repo snapshots, dual-form evidence, integration patch kit, and exports so the archive can support both source truth and future implementation.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45113,
+            "sha256": "19866c1d117935614a79bd9cf9f76a7a01923ac49a59cbf038cc6ab26e2ad8c7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37078,
+            "sha256": "3e43ea5474ca08a308f2210796713965db52a6793be28927c79782e79d56040f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21691,
+            "sha256": "9016a608bf20ea36ab1f4aa7e85008210841f826217d2191e3d9e0dedade392b"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21382,
+            "sha256": "10a62513b38a6fc6ba1eb3f258dc7fddde8d617523f749a3e1a1c1771db69ab5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48192,
+            "sha256": "7ca274d3511a6cf08caabac3ba286e8089fcf26edadbbd3fbbc487cddc002e99"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11152,
+            "sha256": "01569c5d504c41894866447a9e355322dfacb6cfcdb5117fb3d8b219079a4439"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c0fe9b466cb34c550a343934"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__receipt_0003",
+      "project_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13",
+      "project_title": "First fully-exploded Master_Package tree; Baltic Grey Zone materials",
+      "proof_tier": "source-backed-proof-build",
+      "component": "First fully-exploded Master_Package tree; Baltic Grey Zone materials Data Schema And Persistence Plan",
+      "component_case_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__0003__first-fully-exploded-master-package-tree-baltic-grey-zone-materials-data-schema-and-persis",
+      "claim_to_demonstrate": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45113,
+            "sha256": "19866c1d117935614a79bd9cf9f76a7a01923ac49a59cbf038cc6ab26e2ad8c7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37078,
+            "sha256": "3e43ea5474ca08a308f2210796713965db52a6793be28927c79782e79d56040f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21691,
+            "sha256": "9016a608bf20ea36ab1f4aa7e85008210841f826217d2191e3d9e0dedade392b"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21382,
+            "sha256": "10a62513b38a6fc6ba1eb3f258dc7fddde8d617523f749a3e1a1c1771db69ab5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48192,
+            "sha256": "7ca274d3511a6cf08caabac3ba286e8089fcf26edadbbd3fbbc487cddc002e99"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11152,
+            "sha256": "01569c5d504c41894866447a9e355322dfacb6cfcdb5117fb3d8b219079a4439"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ad0e4780b0741372377c787b"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__receipt_0004",
+      "project_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13",
+      "project_title": "First fully-exploded Master_Package tree; Baltic Grey Zone materials",
+      "proof_tier": "source-backed-proof-build",
+      "component": "First fully-exploded Master_Package tree; Baltic Grey Zone materials Interface And Instrument Plane",
+      "component_case_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__0004__first-fully-exploded-master-package-tree-baltic-grey-zone-materials-interface-and-instrume",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45113,
+            "sha256": "19866c1d117935614a79bd9cf9f76a7a01923ac49a59cbf038cc6ab26e2ad8c7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37078,
+            "sha256": "3e43ea5474ca08a308f2210796713965db52a6793be28927c79782e79d56040f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21691,
+            "sha256": "9016a608bf20ea36ab1f4aa7e85008210841f826217d2191e3d9e0dedade392b"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21382,
+            "sha256": "10a62513b38a6fc6ba1eb3f258dc7fddde8d617523f749a3e1a1c1771db69ab5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48192,
+            "sha256": "7ca274d3511a6cf08caabac3ba286e8089fcf26edadbbd3fbbc487cddc002e99"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11152,
+            "sha256": "01569c5d504c41894866447a9e355322dfacb6cfcdb5117fb3d8b219079a4439"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "52a99dcc13c51e1792b02cb4"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__receipt_0005",
+      "project_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13",
+      "project_title": "First fully-exploded Master_Package tree; Baltic Grey Zone materials",
+      "proof_tier": "source-backed-proof-build",
+      "component": "First fully-exploded Master_Package tree; Baltic Grey Zone materials Integration Path",
+      "component_case_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__0005__first-fully-exploded-master-package-tree-baltic-grey-zone-materials-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. Upload when a new GPT chat needs the fully browsable corpus of Red Team canon without having to open nested zips. README instructs reading order: README —.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. Upload when a new GPT chat needs the fully browsable corpus of Red Team canon without having to open nested zips. README instructs reading order: README —.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45113,
+            "sha256": "19866c1d117935614a79bd9cf9f76a7a01923ac49a59cbf038cc6ab26e2ad8c7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37078,
+            "sha256": "3e43ea5474ca08a308f2210796713965db52a6793be28927c79782e79d56040f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21691,
+            "sha256": "9016a608bf20ea36ab1f4aa7e85008210841f826217d2191e3d9e0dedade392b"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21382,
+            "sha256": "10a62513b38a6fc6ba1eb3f258dc7fddde8d617523f749a3e1a1c1771db69ab5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48192,
+            "sha256": "7ca274d3511a6cf08caabac3ba286e8089fcf26edadbbd3fbbc487cddc002e99"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11152,
+            "sha256": "01569c5d504c41894866447a9e355322dfacb6cfcdb5117fb3d8b219079a4439"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ca2bba289729c197cba43c7a"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__receipt_0006",
+      "project_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13",
+      "project_title": "First fully-exploded Master_Package tree; Baltic Grey Zone materials",
+      "proof_tier": "source-backed-proof-build",
+      "component": "First fully-exploded Master_Package tree; Baltic Grey Zone materials Proof Boundary",
+      "component_case_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__0006__first-fully-exploded-master-package-tree-baltic-grey-zone-materials-proof-boundary",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45113,
+            "sha256": "19866c1d117935614a79bd9cf9f76a7a01923ac49a59cbf038cc6ab26e2ad8c7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37078,
+            "sha256": "3e43ea5474ca08a308f2210796713965db52a6793be28927c79782e79d56040f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21691,
+            "sha256": "9016a608bf20ea36ab1f4aa7e85008210841f826217d2191e3d9e0dedade392b"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21382,
+            "sha256": "10a62513b38a6fc6ba1eb3f258dc7fddde8d617523f749a3e1a1c1771db69ab5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48192,
+            "sha256": "7ca274d3511a6cf08caabac3ba286e8089fcf26edadbbd3fbbc487cddc002e99"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11152,
+            "sha256": "01569c5d504c41894866447a9e355322dfacb6cfcdb5117fb3d8b219079a4439"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "817a16a7f7050084df7077ee"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__receipt_0007",
+      "project_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13",
+      "project_title": "First fully-exploded Master_Package tree; Baltic Grey Zone materials",
+      "proof_tier": "source-backed-proof-build",
+      "component": "First fully-exploded Master_Package tree; Baltic Grey Zone materials Next Build Test",
+      "component_case_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__0007__first-fully-exploded-master-package-tree-baltic-grey-zone-materials-next-build-test",
+      "claim_to_demonstrate": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45113,
+            "sha256": "19866c1d117935614a79bd9cf9f76a7a01923ac49a59cbf038cc6ab26e2ad8c7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37078,
+            "sha256": "3e43ea5474ca08a308f2210796713965db52a6793be28927c79782e79d56040f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21691,
+            "sha256": "9016a608bf20ea36ab1f4aa7e85008210841f826217d2191e3d9e0dedade392b"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21382,
+            "sha256": "10a62513b38a6fc6ba1eb3f258dc7fddde8d617523f749a3e1a1c1771db69ab5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48192,
+            "sha256": "7ca274d3511a6cf08caabac3ba286e8089fcf26edadbbd3fbbc487cddc002e99"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11152,
+            "sha256": "01569c5d504c41894866447a9e355322dfacb6cfcdb5117fb3d8b219079a4439"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "509e990a66f2b4238e856959"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__receipt_0008",
+      "project_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13",
+      "project_title": "First fully-exploded Master_Package tree; Baltic Grey Zone materials",
+      "proof_tier": "source-backed-proof-build",
+      "component": "First fully-exploded Master_Package tree; Baltic Grey Zone materials / frontend/backend",
+      "component_case_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__0008__first-fully-exploded-master-package-tree-baltic-grey-zone-materials-frontend-backend",
+      "claim_to_demonstrate": "uses `frontend/backend` as a named project component with a traceable role in the public mechanism. Source context: It also extracts the Build Packet and Integration Patch Kit into browsable directories of frontend/backend scaffolding.",
+      "input_fixture": "project source text and the named component `frontend/backend`",
+      "operation_under_test": "uses `frontend/backend` as a named project component with a traceable role in the public mechanism. Source context: It also extracts the Build Packet and Integration Patch Kit into browsable directories of frontend/backend scaffolding.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `frontend/backend`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c75ed6f9638578c414562a16",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45113,
+            "sha256": "19866c1d117935614a79bd9cf9f76a7a01923ac49a59cbf038cc6ab26e2ad8c7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37078,
+            "sha256": "3e43ea5474ca08a308f2210796713965db52a6793be28927c79782e79d56040f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21691,
+            "sha256": "9016a608bf20ea36ab1f4aa7e85008210841f826217d2191e3d9e0dedade392b"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21382,
+            "sha256": "10a62513b38a6fc6ba1eb3f258dc7fddde8d617523f749a3e1a1c1771db69ab5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48192,
+            "sha256": "7ca274d3511a6cf08caabac3ba286e8089fcf26edadbbd3fbbc487cddc002e99"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11152,
+            "sha256": "01569c5d504c41894866447a9e355322dfacb6cfcdb5117fb3d8b219079a4439"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "24659fb67a25a814e6606187"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__receipt_0009",
+      "project_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13",
+      "project_title": "First fully-exploded Master_Package tree; Baltic Grey Zone materials",
+      "proof_tier": "source-backed-proof-build",
+      "component": "First fully-exploded Master_Package tree; Baltic Grey Zone materials / Fully Exploded",
+      "component_case_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__0009__first-fully-exploded-master-package-tree-baltic-grey-zone-materials-fully-exploded",
+      "claim_to_demonstrate": "uses `Fully Exploded` as a named project component with a traceable role in the public mechanism. Source context: This is the first \"fully exploded\" archive in the handoff lineage. Unlike the April-11 packages which preserved the 2026-03-30 archive as an.",
+      "input_fixture": "project source text and the named component `Fully Exploded`",
+      "operation_under_test": "uses `Fully Exploded` as a named project component with a traceable role in the public mechanism. Source context: This is the first \"fully exploded\" archive in the handoff lineage. Unlike the April-11 packages which preserved the 2026-03-30 archive as an.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Fully Exploded`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "77209579edc30d4b5272645b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45113,
+            "sha256": "19866c1d117935614a79bd9cf9f76a7a01923ac49a59cbf038cc6ab26e2ad8c7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37078,
+            "sha256": "3e43ea5474ca08a308f2210796713965db52a6793be28927c79782e79d56040f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21691,
+            "sha256": "9016a608bf20ea36ab1f4aa7e85008210841f826217d2191e3d9e0dedade392b"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21382,
+            "sha256": "10a62513b38a6fc6ba1eb3f258dc7fddde8d617523f749a3e1a1c1771db69ab5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48192,
+            "sha256": "7ca274d3511a6cf08caabac3ba286e8089fcf26edadbbd3fbbc487cddc002e99"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11152,
+            "sha256": "01569c5d504c41894866447a9e355322dfacb6cfcdb5117fb3d8b219079a4439"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2387870c12f778a5d5840201"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__receipt_0010",
+      "project_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13",
+      "project_title": "First fully-exploded Master_Package tree; Baltic Grey Zone materials",
+      "proof_tier": "source-backed-proof-build",
+      "component": "First fully-exploded Master_Package tree; Baltic Grey Zone materials / Generic Build Packet Assumptions",
+      "component_case_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__0010__first-fully-exploded-master-package-tree-baltic-grey-zone-materials-generic-build-packet-a",
+      "claim_to_demonstrate": "uses `Generic Build Packet Assumptions` as a named project component with a traceable role in the public mechanism. Source context: This is the source of the \"generic build packet assumptions\" that L-03 warns against importing literally into MuranoOS.",
+      "input_fixture": "project source text and the named component `Generic Build Packet Assumptions`",
+      "operation_under_test": "uses `Generic Build Packet Assumptions` as a named project component with a traceable role in the public mechanism. Source context: This is the source of the \"generic build packet assumptions\" that L-03 warns against importing literally into MuranoOS.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Generic Build Packet Assumptions`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d6cc3c3ee3c4819a7186639f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45113,
+            "sha256": "19866c1d117935614a79bd9cf9f76a7a01923ac49a59cbf038cc6ab26e2ad8c7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37078,
+            "sha256": "3e43ea5474ca08a308f2210796713965db52a6793be28927c79782e79d56040f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21691,
+            "sha256": "9016a608bf20ea36ab1f4aa7e85008210841f826217d2191e3d9e0dedade392b"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21382,
+            "sha256": "10a62513b38a6fc6ba1eb3f258dc7fddde8d617523f749a3e1a1c1771db69ab5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48192,
+            "sha256": "7ca274d3511a6cf08caabac3ba286e8089fcf26edadbbd3fbbc487cddc002e99"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11152,
+            "sha256": "01569c5d504c41894866447a9e355322dfacb6cfcdb5117fb3d8b219079a4439"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e42a940bc676aa6dbeeb5202"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__receipt_0011",
+      "project_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13",
+      "project_title": "First fully-exploded Master_Package tree; Baltic Grey Zone materials",
+      "proof_tier": "source-backed-proof-build",
+      "component": "First fully-exploded Master_Package tree; Baltic Grey Zone materials / Build Packet and Integration Patch Kit",
+      "component_case_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__0011__first-fully-exploded-master-package-tree-baltic-grey-zone-materials-build-packet-and-integ",
+      "claim_to_demonstrate": "uses `Build Packet and Integration Patch Kit` as a named project component with a traceable role in the public mechanism. Source context: It also extracts the Build Packet and Integration Patch Kit into browsable directories of frontend/backend scaffolding.",
+      "input_fixture": "project source text and the named component `Build Packet and Integration Patch Kit`",
+      "operation_under_test": "uses `Build Packet and Integration Patch Kit` as a named project component with a traceable role in the public mechanism. Source context: It also extracts the Build Packet and Integration Patch Kit into browsable directories of frontend/backend scaffolding.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Build Packet and Integration Patch Kit`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c75ed6f9638578c414562a16",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45113,
+            "sha256": "19866c1d117935614a79bd9cf9f76a7a01923ac49a59cbf038cc6ab26e2ad8c7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37078,
+            "sha256": "3e43ea5474ca08a308f2210796713965db52a6793be28927c79782e79d56040f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21691,
+            "sha256": "9016a608bf20ea36ab1f4aa7e85008210841f826217d2191e3d9e0dedade392b"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21382,
+            "sha256": "10a62513b38a6fc6ba1eb3f258dc7fddde8d617523f749a3e1a1c1771db69ab5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48192,
+            "sha256": "7ca274d3511a6cf08caabac3ba286e8089fcf26edadbbd3fbbc487cddc002e99"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11152,
+            "sha256": "01569c5d504c41894866447a9e355322dfacb6cfcdb5117fb3d8b219079a4439"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c8bc503c926abb1d069e5132"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__receipt_0012",
+      "project_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13",
+      "project_title": "First fully-exploded Master_Package tree; Baltic Grey Zone materials",
+      "proof_tier": "source-backed-proof-build",
+      "component": "First fully-exploded Master_Package tree; Baltic Grey Zone materials / Red Team",
+      "component_case_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__0012__first-fully-exploded-master-package-tree-baltic-grey-zone-materials-red-team",
+      "claim_to_demonstrate": "uses `Red Team` as a named project component with a traceable role in the public mechanism. Source context: Upload when a new GPT chat needs the fully browsable corpus of Red Team canon without having to open nested zips. README instructs reading order.",
+      "input_fixture": "project source text and the named component `Red Team`",
+      "operation_under_test": "uses `Red Team` as a named project component with a traceable role in the public mechanism. Source context: Upload when a new GPT chat needs the fully browsable corpus of Red Team canon without having to open nested zips. README instructs reading order.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Red Team`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "32aeb99a8942a428c4967c26",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45113,
+            "sha256": "19866c1d117935614a79bd9cf9f76a7a01923ac49a59cbf038cc6ab26e2ad8c7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37078,
+            "sha256": "3e43ea5474ca08a308f2210796713965db52a6793be28927c79782e79d56040f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21691,
+            "sha256": "9016a608bf20ea36ab1f4aa7e85008210841f826217d2191e3d9e0dedade392b"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21382,
+            "sha256": "10a62513b38a6fc6ba1eb3f258dc7fddde8d617523f749a3e1a1c1771db69ab5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48192,
+            "sha256": "7ca274d3511a6cf08caabac3ba286e8089fcf26edadbbd3fbbc487cddc002e99"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11152,
+            "sha256": "01569c5d504c41894866447a9e355322dfacb6cfcdb5117fb3d8b219079a4439"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "dd002568f23e6b8fe917afc0"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__receipt_0013",
+      "project_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13",
+      "project_title": "First fully-exploded Master_Package tree; Baltic Grey Zone materials",
+      "proof_tier": "source-backed-proof-build",
+      "component": "First fully-exploded Master_Package tree; Baltic Grey Zone materials / The Build Packet",
+      "component_case_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__0013__first-fully-exploded-master-package-tree-baltic-grey-zone-materials-the-build-packet",
+      "claim_to_demonstrate": "uses `The Build Packet` as a named project component with a traceable role in the public mechanism. Source context: It also extracts the Build Packet and Integration Patch Kit into browsable directories of frontend/backend scaffolding.",
+      "input_fixture": "project source text and the named component `The Build Packet`",
+      "operation_under_test": "uses `The Build Packet` as a named project component with a traceable role in the public mechanism. Source context: It also extracts the Build Packet and Integration Patch Kit into browsable directories of frontend/backend scaffolding.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `The Build Packet`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c75ed6f9638578c414562a16",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45113,
+            "sha256": "19866c1d117935614a79bd9cf9f76a7a01923ac49a59cbf038cc6ab26e2ad8c7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37078,
+            "sha256": "3e43ea5474ca08a308f2210796713965db52a6793be28927c79782e79d56040f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21691,
+            "sha256": "9016a608bf20ea36ab1f4aa7e85008210841f826217d2191e3d9e0dedade392b"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21382,
+            "sha256": "10a62513b38a6fc6ba1eb3f258dc7fddde8d617523f749a3e1a1c1771db69ab5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48192,
+            "sha256": "7ca274d3511a6cf08caabac3ba286e8089fcf26edadbbd3fbbc487cddc002e99"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11152,
+            "sha256": "01569c5d504c41894866447a9e355322dfacb6cfcdb5117fb3d8b219079a4439"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7d714fbcd52e95b277da61a8"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__receipt_0014",
+      "project_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13",
+      "project_title": "First fully-exploded Master_Package tree; Baltic Grey Zone materials",
+      "proof_tier": "source-backed-proof-build",
+      "component": "First fully-exploded Master_Package tree; Baltic Grey Zone materials / MuranoOS. Discovery",
+      "component_case_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__0014__first-fully-exploded-master-package-tree-baltic-grey-zone-materials-muranoos-discovery",
+      "claim_to_demonstrate": "uses `MuranoOS. Discovery` as a named project component with a traceable role in the public mechanism. Source context: This is the source of the \"generic build packet assumptions\" that L-03 warns against importing literally into MuranoOS. Discovery.",
+      "input_fixture": "project source text and the named component `MuranoOS. Discovery`",
+      "operation_under_test": "uses `MuranoOS. Discovery` as a named project component with a traceable role in the public mechanism. Source context: This is the source of the \"generic build packet assumptions\" that L-03 warns against importing literally into MuranoOS. Discovery.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `MuranoOS. Discovery`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d6cc3c3ee3c4819a7186639f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45113,
+            "sha256": "19866c1d117935614a79bd9cf9f76a7a01923ac49a59cbf038cc6ab26e2ad8c7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37078,
+            "sha256": "3e43ea5474ca08a308f2210796713965db52a6793be28927c79782e79d56040f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21691,
+            "sha256": "9016a608bf20ea36ab1f4aa7e85008210841f826217d2191e3d9e0dedade392b"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21382,
+            "sha256": "10a62513b38a6fc6ba1eb3f258dc7fddde8d617523f749a3e1a1c1771db69ab5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48192,
+            "sha256": "7ca274d3511a6cf08caabac3ba286e8089fcf26edadbbd3fbbc487cddc002e99"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11152,
+            "sha256": "01569c5d504c41894866447a9e355322dfacb6cfcdb5117fb3d8b219079a4439"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3b364850df7fd9a818751eda"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__receipt_0015",
+      "project_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13",
+      "project_title": "First fully-exploded Master_Package tree; Baltic Grey Zone materials",
+      "proof_tier": "source-backed-proof-build",
+      "component": "First fully-exploded Master_Package tree; Baltic Grey Zone materials / Explain Nexus and Personal OS",
+      "component_case_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__0015__first-fully-exploded-master-package-tree-baltic-grey-zone-materials-explain-nexus-and-pers",
+      "claim_to_demonstrate": "uses `Explain Nexus and Personal OS` as a named project component with a traceable role in the public mechanism. Source context: Explain Nexus and Personal OS as project-development and discovery infrastructure, not miscellaneous personal tooling. Mechanism.",
+      "input_fixture": "project source text and the named component `Explain Nexus and Personal OS`",
+      "operation_under_test": "uses `Explain Nexus and Personal OS` as a named project component with a traceable role in the public mechanism. Source context: Explain Nexus and Personal OS as project-development and discovery infrastructure, not miscellaneous personal tooling. Mechanism.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Explain Nexus and Personal OS`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "43bbe99078db3098289d7fc7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45113,
+            "sha256": "19866c1d117935614a79bd9cf9f76a7a01923ac49a59cbf038cc6ab26e2ad8c7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37078,
+            "sha256": "3e43ea5474ca08a308f2210796713965db52a6793be28927c79782e79d56040f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21691,
+            "sha256": "9016a608bf20ea36ab1f4aa7e85008210841f826217d2191e3d9e0dedade392b"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21382,
+            "sha256": "10a62513b38a6fc6ba1eb3f258dc7fddde8d617523f749a3e1a1c1771db69ab5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48192,
+            "sha256": "7ca274d3511a6cf08caabac3ba286e8089fcf26edadbbd3fbbc487cddc002e99"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11152,
+            "sha256": "01569c5d504c41894866447a9e355322dfacb6cfcdb5117fb3d8b219079a4439"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "791f4a2d8f564cb7fde8e741"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__receipt_0016",
+      "project_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13",
+      "project_title": "First fully-exploded Master_Package tree; Baltic Grey Zone materials",
+      "proof_tier": "source-backed-proof-build",
+      "component": "First fully-exploded Master_Package tree; Baltic Grey Zone materials / Creativity Research",
+      "component_case_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__0016__first-fully-exploded-master-package-tree-baltic-grey-zone-materials-creativity-research",
+      "claim_to_demonstrate": "uses `Creativity Research` as a named project component with a traceable role in the public mechanism. Source context: Creativity Research; The Heritage, Creativity and Innovation Nexus. Intelligence tradecraft, counterintelligence, and analytic method. Use.",
+      "input_fixture": "project source text and the named component `Creativity Research`",
+      "operation_under_test": "uses `Creativity Research` as a named project component with a traceable role in the public mechanism. Source context: Creativity Research; The Heritage, Creativity and Innovation Nexus. Intelligence tradecraft, counterintelligence, and analytic method. Use.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Creativity Research`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "6f8460f72b9b7fcf9c959977",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45113,
+            "sha256": "19866c1d117935614a79bd9cf9f76a7a01923ac49a59cbf038cc6ab26e2ad8c7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37078,
+            "sha256": "3e43ea5474ca08a308f2210796713965db52a6793be28927c79782e79d56040f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21691,
+            "sha256": "9016a608bf20ea36ab1f4aa7e85008210841f826217d2191e3d9e0dedade392b"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21382,
+            "sha256": "10a62513b38a6fc6ba1eb3f258dc7fddde8d617523f749a3e1a1c1771db69ab5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48192,
+            "sha256": "7ca274d3511a6cf08caabac3ba286e8089fcf26edadbbd3fbbc487cddc002e99"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11152,
+            "sha256": "01569c5d504c41894866447a9e355322dfacb6cfcdb5117fb3d8b219079a4439"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "23e43ebcf66c857b371fe5f2"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__receipt_0017",
+      "project_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13",
+      "project_title": "First fully-exploded Master_Package tree; Baltic Grey Zone materials",
+      "proof_tier": "source-backed-proof-build",
+      "component": "First fully-exploded Master_Package tree; Baltic Grey Zone materials / The Heritage",
+      "component_case_id": "mb-muranoos-red-team-proper-handoff-archive-2026-04-13__0017__first-fully-exploded-master-package-tree-baltic-grey-zone-materials-the-heritage",
+      "claim_to_demonstrate": "uses `The Heritage` as a named project component with a traceable role in the public mechanism. Source context: The Heritage, Creativity and Innovation Nexus. Intelligence tradecraft, counterintelligence, and analytic method. Use source library intelligence.",
+      "input_fixture": "project source text and the named component `The Heritage`",
+      "operation_under_test": "uses `The Heritage` as a named project component with a traceable role in the public mechanism. Source context: The Heritage, Creativity and Innovation Nexus. Intelligence tradecraft, counterintelligence, and analytic method. Use source library intelligence.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `The Heritage`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "45f852bc371749f4e50a650f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45113,
+            "sha256": "19866c1d117935614a79bd9cf9f76a7a01923ac49a59cbf038cc6ab26e2ad8c7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 37078,
+            "sha256": "3e43ea5474ca08a308f2210796713965db52a6793be28927c79782e79d56040f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21691,
+            "sha256": "9016a608bf20ea36ab1f4aa7e85008210841f826217d2191e3d9e0dedade392b"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21382,
+            "sha256": "10a62513b38a6fc6ba1eb3f258dc7fddde8d617523f749a3e1a1c1771db69ab5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 48192,
+            "sha256": "7ca274d3511a6cf08caabac3ba286e8089fcf26edadbbd3fbbc487cddc002e99"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11152,
+            "sha256": "01569c5d504c41894866447a9e355322dfacb6cfcdb5117fb3d8b219079a4439"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/README.md",
+          "proof_builds/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-proper-handoff-archive-2026-04-13/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0f9fbeb6d27a0305d2ecc613"
+    }
+  ]
+}

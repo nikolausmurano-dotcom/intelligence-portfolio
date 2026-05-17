@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="data:,"><title>Internal Operating Support Packet 009 Review Workbench</title>
+<style>
+:root{--paper:#f7f4ec;--ink:#132230;--muted:#5d6872;--rule:rgba(31,49,68,.18);--accent:#744c20;--green:#2e6047;--red:#76313a;--white:rgba(255,255,255,.96)}*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#fcfbf7,var(--paper));color:var(--ink);font-family:Georgia,'Times New Roman',serif}main{max-width:1160px;margin:0 auto;padding:34px 18px 70px}h1{font-size:clamp(32px,5vw,54px);line-height:1;font-weight:500;margin:0 0 12px}h2{font-size:23px;margin:0 0 10px}p,label,textarea,button{font-size:15px;line-height:1.5}.kicker{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.1em;text-transform:uppercase;font-size:11px;color:var(--accent)}.lead{font-size:18px;line-height:1.62;max-width:980px}.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(290px,.8fr);gap:16px;align-items:start}.panel{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:16px;margin:14px 0}textarea{width:100%;min-height:110px;border:1px solid var(--rule);border-radius:6px;padding:10px;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}button,.button{border:1px solid rgba(33,79,104,.35);border-radius:6px;padding:10px 12px;background:#fff;color:var(--ink);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;text-decoration:none;cursor:pointer;margin:3px 5px 3px 0}button.primary{background:#17364a;color:#fff}.checks{display:grid;gap:8px}pre{white-space:pre-wrap;word-break:break-word;background:#fff;border:1px solid var(--rule);border-radius:8px;padding:12px;max-height:420px;overflow:auto}.pass{color:var(--green);font-weight:700}.fail{color:var(--red);font-weight:700}@media(max-width:850px){.grid{grid-template-columns:1fr}}
+</style></head><body><main>
+<p class="kicker">Review Workbench | NOCAP-5FFEBDE74C06</p>
+<h1>Internal Operating Support Packet 009</h1>
+<p class="lead">Source-and-claim review instrument. This is a local executable review surface for a package-capture project: it records what was reviewed, which checks passed, the decision, the remaining evidence gap, and an exportable JSON review trace.</p>
+<section class="grid"><div class="panel"><h2>Run Review</h2>
+<label>What source, claim, bibliography, or evidence packet is being reviewed?<textarea id="artifactText"></textarea></label>
+<label>Evidence or proof basis<textarea id="evidenceText"></textarea></label>
+<label>Review decision<textarea id="decisionText"></textarea></label>
+<div class="checks"><label><input type='checkbox' class='reviewCheck'> source role identified</label><label><input type='checkbox' class='reviewCheck'> claim ceiling stated</label><label><input type='checkbox' class='reviewCheck'> verification gap named</label><label><input type='checkbox' class='reviewCheck'> next source action named</label></div>
+<button id="sampleBtn">Load sample</button><button class="primary" id="runBtn">Run review</button><button id="saveBtn">Save trace</button><button id="exportBtn">Export JSON</button><button id="clearBtn">Clear</button>
+</div><aside class="panel"><h2>Status</h2><p id="statusText">Awaiting review.</p><p><strong>Claim boundary:</strong> May claim a package-level first capture exists. May not claim production deployment, external validation, or full operational standing.</p></aside></section>
+<section class="panel"><h2>Review Trace</h2><pre id="output">No output yet.</pre></section>
+<p><a class="button" href="review_manifest.json">Open review manifest</a><a class="button" href="../../index.html">Back to workbench index</a></p>
+<script>
+const PAYLOAD = {"project_id": "mb-internal-operating-support-009", "product_name": "Internal Operating Support Packet 009", "object_family": "source/archive governance", "capture_id": "NOCAP-5FFEBDE74C06", "capture_hash": "538aefdeb557e90e5368aa01231746c3687053c600a082b9ba2b85f15272dc4c", "claim_boundary": "May claim a package-level first capture exists. May not claim production deployment, external validation, or full operational standing.", "blocking_items": "The package can capture identity, authority, route, and claim-ceiling logic, but source quotations and external validation still require human review.", "instrument": "Source-and-claim review instrument", "checks": ["source role identified", "claim ceiling stated", "verification gap named", "next source action named"]};
+const SAMPLE = {"artifact": "Internal Operating Support Packet 009 first-capture packet", "evidence": "The package can capture identity, authority, route, and claim-ceiling logic, but source quotations and external validation still require human review.", "decision": "Accept as package-level evidence; do not promote to full operational standing without the named missing evidence."};
+const storageKey = "nikmurano.review." + PAYLOAD.project_id;
+function hashText(text) { let h = 2166136261; for (let i=0;i<text.length;i++){h^=text.charCodeAt(i); h=Math.imul(h,16777619);} return (h>>>0).toString(16).padStart(8,"0"); }
+function checks() { return Array.from(document.querySelectorAll ? document.querySelectorAll(".reviewCheck") : []).map((el, i) => ({ name: PAYLOAD.checks[i], pass: !!el.checked })); }
+function fallbackChecks() { return PAYLOAD.checks.map(name => ({ name, pass: true })); }
+function buildTrace() {
+  const artifact = document.getElementById("artifactText").value.trim();
+  const evidence = document.getElementById("evidenceText").value.trim();
+  const decision = document.getElementById("decisionText").value.trim();
+  const checkRows = checks().length ? checks() : fallbackChecks();
+  const pass = artifact.length >= 25 && evidence.length >= 25 && decision.length >= 20 && checkRows.every(c => c.pass);
+  const trace = {
+    project_id: PAYLOAD.project_id,
+    product_name: PAYLOAD.product_name,
+    object_family: PAYLOAD.object_family,
+    instrument: PAYLOAD.instrument,
+    capture_id: PAYLOAD.capture_id,
+    capture_hash: PAYLOAD.capture_hash,
+    run_time: new Date().toISOString(),
+    artifact_reviewed: artifact,
+    evidence_basis: evidence,
+    review_decision: decision,
+    checks: checkRows,
+    acceptance_decision: pass ? "PASS" : "NEEDS_MORE_REVIEW",
+    blocking_items_remaining: PAYLOAD.blocking_items,
+    claim_boundary: PAYLOAD.claim_boundary
+  };
+  trace.trace_hash = hashText(JSON.stringify(trace));
+  return trace;
+}
+function render(trace) { document.getElementById("output").textContent = JSON.stringify(trace, null, 2); document.getElementById("statusText").innerHTML = trace.acceptance_decision === "PASS" ? "<span class='pass'>Review trace passed.</span>" : "<span class='fail'>Review trace needs more complete evidence.</span>"; }
+document.getElementById("sampleBtn").addEventListener("click", () => { document.getElementById("artifactText").value = SAMPLE.artifact; document.getElementById("evidenceText").value = SAMPLE.evidence; document.getElementById("decisionText").value = SAMPLE.decision; Array.from(document.querySelectorAll(".reviewCheck")).forEach(el => el.checked = true); render(buildTrace()); });
+document.getElementById("runBtn").addEventListener("click", () => render(buildTrace()));
+document.getElementById("saveBtn").addEventListener("click", () => { const trace = buildTrace(); localStorage.setItem(storageKey, JSON.stringify(trace)); render(trace); });
+document.getElementById("exportBtn").addEventListener("click", () => { const trace = buildTrace(); localStorage.setItem(storageKey, JSON.stringify(trace)); const blob = new Blob([JSON.stringify(trace, null, 2)], {type:"application/json"}); const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = PAYLOAD.project_id + "-review-trace.json"; a.click(); URL.revokeObjectURL(a.href); });
+document.getElementById("clearBtn").addEventListener("click", () => { localStorage.removeItem(storageKey); ["artifactText","evidenceText","decisionText"].forEach(id => document.getElementById(id).value = ""); Array.from(document.querySelectorAll(".reviewCheck")).forEach(el => el.checked = false); document.getElementById("output").textContent = "No output yet."; document.getElementById("statusText").textContent = "Awaiting review."; });
+</script></main></body></html>

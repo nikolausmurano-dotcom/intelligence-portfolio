@@ -1,0 +1,1470 @@
+{
+  "project": {
+    "project_id": "mb-murano-room-handoff-v1",
+    "title": "Room template v1"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-murano-room-handoff-v1__receipt_0001",
+      "project_id": "mb-murano-room-handoff-v1",
+      "project_title": "Room template v1",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Room template v1 Handoff Identity",
+      "component_case_id": "mb-murano-room-handoff-v1__0001__room-template-v1-handoff-identity",
+      "claim_to_demonstrate": "This package specifies \"The Furnace of Language\" — a Murano OS room for turning instinctive high-level literary taste into a reusable, testable, traceable system.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "This package specifies \"The Furnace of Language\" — a Murano OS room for turning instinctive high-level literary taste into a reusable, testable, traceable system.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42353,
+            "sha256": "44a26f2019cd8822e4b1491f4f6e4cc22258f8e4e0d0f2d0d4cd7f9e40223bf7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34704,
+            "sha256": "3865dec8d5e5d6a563bc74186f0b2880baafdfbfaa32643f4a17e8acf0ef96e2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "195ff7cb365c048d20fa25b4a08b51e2b9df64b625f565a362b9a0f4ea119606"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19908,
+            "sha256": "cec1227575cc3fcb632414e9f7afb17b79c4ddd60832d12ae45948e1da109a2a"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43992,
+            "sha256": "346907b77fb1c84e3e9f9464cb84dcaa5a6f09245c400e6d133130f31a766192"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8669,
+            "sha256": "f5868f55eb76a0d678105524eb29b0e69f4326c272c85ad6a3ca69cf5429e706"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-room-handoff-v1/README.md",
+          "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "30a5121adf5c3ea5cea569a3"
+    },
+    {
+      "receipt_id": "mb-murano-room-handoff-v1__receipt_0002",
+      "project_id": "mb-murano-room-handoff-v1",
+      "project_title": "Room template v1",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Room template v1 Room Task Model",
+      "component_case_id": "mb-murano-room-handoff-v1__0002__room-template-v1-room-task-model",
+      "claim_to_demonstrate": ", state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival retention",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": ", state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival retention",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42353,
+            "sha256": "44a26f2019cd8822e4b1491f4f6e4cc22258f8e4e0d0f2d0d4cd7f9e40223bf7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34704,
+            "sha256": "3865dec8d5e5d6a563bc74186f0b2880baafdfbfaa32643f4a17e8acf0ef96e2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "195ff7cb365c048d20fa25b4a08b51e2b9df64b625f565a362b9a0f4ea119606"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19908,
+            "sha256": "cec1227575cc3fcb632414e9f7afb17b79c4ddd60832d12ae45948e1da109a2a"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43992,
+            "sha256": "346907b77fb1c84e3e9f9464cb84dcaa5a6f09245c400e6d133130f31a766192"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8669,
+            "sha256": "f5868f55eb76a0d678105524eb29b0e69f4326c272c85ad6a3ca69cf5429e706"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-room-handoff-v1/README.md",
+          "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2ccfc4acae897d7ff61810e9"
+    },
+    {
+      "receipt_id": "mb-murano-room-handoff-v1__receipt_0003",
+      "project_id": "mb-murano-room-handoff-v1",
+      "project_title": "Room template v1",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Room template v1 Data Schema And Persistence Plan",
+      "component_case_id": "mb-murano-room-handoff-v1__0003__room-template-v1-data-schema-and-persistence-plan",
+      "claim_to_demonstrate": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42353,
+            "sha256": "44a26f2019cd8822e4b1491f4f6e4cc22258f8e4e0d0f2d0d4cd7f9e40223bf7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34704,
+            "sha256": "3865dec8d5e5d6a563bc74186f0b2880baafdfbfaa32643f4a17e8acf0ef96e2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "195ff7cb365c048d20fa25b4a08b51e2b9df64b625f565a362b9a0f4ea119606"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19908,
+            "sha256": "cec1227575cc3fcb632414e9f7afb17b79c4ddd60832d12ae45948e1da109a2a"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43992,
+            "sha256": "346907b77fb1c84e3e9f9464cb84dcaa5a6f09245c400e6d133130f31a766192"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8669,
+            "sha256": "f5868f55eb76a0d678105524eb29b0e69f4326c272c85ad6a3ca69cf5429e706"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-room-handoff-v1/README.md",
+          "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c213a37646e19f937d1c006e"
+    },
+    {
+      "receipt_id": "mb-murano-room-handoff-v1__receipt_0004",
+      "project_id": "mb-murano-room-handoff-v1",
+      "project_title": "Room template v1",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Room template v1 Interface And Instrument Plane",
+      "component_case_id": "mb-murano-room-handoff-v1__0004__room-template-v1-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Buildable handoff; implementation remains to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Buildable handoff; implementation remains to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42353,
+            "sha256": "44a26f2019cd8822e4b1491f4f6e4cc22258f8e4e0d0f2d0d4cd7f9e40223bf7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34704,
+            "sha256": "3865dec8d5e5d6a563bc74186f0b2880baafdfbfaa32643f4a17e8acf0ef96e2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "195ff7cb365c048d20fa25b4a08b51e2b9df64b625f565a362b9a0f4ea119606"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19908,
+            "sha256": "cec1227575cc3fcb632414e9f7afb17b79c4ddd60832d12ae45948e1da109a2a"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43992,
+            "sha256": "346907b77fb1c84e3e9f9464cb84dcaa5a6f09245c400e6d133130f31a766192"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8669,
+            "sha256": "f5868f55eb76a0d678105524eb29b0e69f4326c272c85ad6a3ca69cf5429e706"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-room-handoff-v1/README.md",
+          "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "142e1e91a742bf05757b0d44"
+    },
+    {
+      "receipt_id": "mb-murano-room-handoff-v1__receipt_0005",
+      "project_id": "mb-murano-room-handoff-v1",
+      "project_title": "Room template v1",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Room template v1 Integration Path",
+      "component_case_id": "mb-murano-room-handoff-v1__0005__room-template-v1-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. Reach for this when: (a) setting up a literary craft workbench outside MuranoOS (Notion, Obsidian, Airtable, Coda), and you want an import-ready, opinionated.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. Reach for this when: (a) setting up a literary craft workbench outside MuranoOS (Notion, Obsidian, Airtable, Coda), and you want an import-ready, opinionated.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42353,
+            "sha256": "44a26f2019cd8822e4b1491f4f6e4cc22258f8e4e0d0f2d0d4cd7f9e40223bf7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34704,
+            "sha256": "3865dec8d5e5d6a563bc74186f0b2880baafdfbfaa32643f4a17e8acf0ef96e2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "195ff7cb365c048d20fa25b4a08b51e2b9df64b625f565a362b9a0f4ea119606"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19908,
+            "sha256": "cec1227575cc3fcb632414e9f7afb17b79c4ddd60832d12ae45948e1da109a2a"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43992,
+            "sha256": "346907b77fb1c84e3e9f9464cb84dcaa5a6f09245c400e6d133130f31a766192"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8669,
+            "sha256": "f5868f55eb76a0d678105524eb29b0e69f4326c272c85ad6a3ca69cf5429e706"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-room-handoff-v1/README.md",
+          "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c1934d95cd077f76709095de"
+    },
+    {
+      "receipt_id": "mb-murano-room-handoff-v1__receipt_0006",
+      "project_id": "mb-murano-room-handoff-v1",
+      "project_title": "Room template v1",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Room template v1 Proof Boundary",
+      "component_case_id": "mb-murano-room-handoff-v1__0006__room-template-v1-proof-boundary",
+      "claim_to_demonstrate": "Buildable handoff; implementation remains to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Buildable handoff; implementation remains to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42353,
+            "sha256": "44a26f2019cd8822e4b1491f4f6e4cc22258f8e4e0d0f2d0d4cd7f9e40223bf7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34704,
+            "sha256": "3865dec8d5e5d6a563bc74186f0b2880baafdfbfaa32643f4a17e8acf0ef96e2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "195ff7cb365c048d20fa25b4a08b51e2b9df64b625f565a362b9a0f4ea119606"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19908,
+            "sha256": "cec1227575cc3fcb632414e9f7afb17b79c4ddd60832d12ae45948e1da109a2a"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43992,
+            "sha256": "346907b77fb1c84e3e9f9464cb84dcaa5a6f09245c400e6d133130f31a766192"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8669,
+            "sha256": "f5868f55eb76a0d678105524eb29b0e69f4326c272c85ad6a3ca69cf5429e706"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-room-handoff-v1/README.md",
+          "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6e5cd4ef76269c2d4bb6d168"
+    },
+    {
+      "receipt_id": "mb-murano-room-handoff-v1__receipt_0007",
+      "project_id": "mb-murano-room-handoff-v1",
+      "project_title": "Room template v1",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Room template v1 Next Build Test",
+      "component_case_id": "mb-murano-room-handoff-v1__0007__room-template-v1-next-build-test",
+      "claim_to_demonstrate": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42353,
+            "sha256": "44a26f2019cd8822e4b1491f4f6e4cc22258f8e4e0d0f2d0d4cd7f9e40223bf7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34704,
+            "sha256": "3865dec8d5e5d6a563bc74186f0b2880baafdfbfaa32643f4a17e8acf0ef96e2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "195ff7cb365c048d20fa25b4a08b51e2b9df64b625f565a362b9a0f4ea119606"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19908,
+            "sha256": "cec1227575cc3fcb632414e9f7afb17b79c4ddd60832d12ae45948e1da109a2a"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43992,
+            "sha256": "346907b77fb1c84e3e9f9464cb84dcaa5a6f09245c400e6d133130f31a766192"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8669,
+            "sha256": "f5868f55eb76a0d678105524eb29b0e69f4326c272c85ad6a3ca69cf5429e706"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-room-handoff-v1/README.md",
+          "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "8a909bfc5603ce2c0d051600"
+    },
+    {
+      "receipt_id": "mb-murano-room-handoff-v1__receipt_0008",
+      "project_id": "mb-murano-room-handoff-v1",
+      "project_title": "Room template v1",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Room template v1 / backend/frontend",
+      "component_case_id": "mb-murano-room-handoff-v1__0008__room-template-v1-backend-frontend",
+      "claim_to_demonstrate": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "input_fixture": "project source text and the named component `backend/frontend`",
+      "operation_under_test": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `backend/frontend`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "12b906e53c841f6a071a9002",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42353,
+            "sha256": "44a26f2019cd8822e4b1491f4f6e4cc22258f8e4e0d0f2d0d4cd7f9e40223bf7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34704,
+            "sha256": "3865dec8d5e5d6a563bc74186f0b2880baafdfbfaa32643f4a17e8acf0ef96e2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "195ff7cb365c048d20fa25b4a08b51e2b9df64b625f565a362b9a0f4ea119606"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19908,
+            "sha256": "cec1227575cc3fcb632414e9f7afb17b79c4ddd60832d12ae45948e1da109a2a"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43992,
+            "sha256": "346907b77fb1c84e3e9f9464cb84dcaa5a6f09245c400e6d133130f31a766192"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8669,
+            "sha256": "f5868f55eb76a0d678105524eb29b0e69f4326c272c85ad6a3ca69cf5429e706"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-room-handoff-v1/README.md",
+          "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0e685779fd0a0cbea3549167"
+    },
+    {
+      "receipt_id": "mb-murano-room-handoff-v1__receipt_0009",
+      "project_id": "mb-murano-room-handoff-v1",
+      "project_title": "Room template v1",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Room template v1 / 01_DATABASE_SCHEMAS.md",
+      "component_case_id": "mb-murano-room-handoff-v1__0009__room-template-v1-01-database-schemas-md",
+      "claim_to_demonstrate": "treats `01_DATABASE_SCHEMAS.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: import databases from 01_DATABASE_SCHEMAS.md — import CSV seed data from imports/ — build core dashboard views from.",
+      "input_fixture": "project source text and the named component `01_DATABASE_SCHEMAS.md`",
+      "operation_under_test": "treats `01_DATABASE_SCHEMAS.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: import databases from 01_DATABASE_SCHEMAS.md — import CSV seed data from imports/ — build core dashboard views from.",
+      "expected_output": "inspectable implementation evidence tied to `01_DATABASE_SCHEMAS.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4186e075070c856215c868d3",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42353,
+            "sha256": "44a26f2019cd8822e4b1491f4f6e4cc22258f8e4e0d0f2d0d4cd7f9e40223bf7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34704,
+            "sha256": "3865dec8d5e5d6a563bc74186f0b2880baafdfbfaa32643f4a17e8acf0ef96e2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "195ff7cb365c048d20fa25b4a08b51e2b9df64b625f565a362b9a0f4ea119606"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19908,
+            "sha256": "cec1227575cc3fcb632414e9f7afb17b79c4ddd60832d12ae45948e1da109a2a"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43992,
+            "sha256": "346907b77fb1c84e3e9f9464cb84dcaa5a6f09245c400e6d133130f31a766192"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8669,
+            "sha256": "f5868f55eb76a0d678105524eb29b0e69f4326c272c85ad6a3ca69cf5429e706"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-room-handoff-v1/README.md",
+          "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "23db98818e590b25fe0d554a"
+    },
+    {
+      "receipt_id": "mb-murano-room-handoff-v1__receipt_0010",
+      "project_id": "mb-murano-room-handoff-v1",
+      "project_title": "Room template v1",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Room template v1 / 02_DASHBOARD_AND_VIEWS.md",
+      "component_case_id": "mb-murano-room-handoff-v1__0010__room-template-v1-02-dashboard-and-views-md",
+      "claim_to_demonstrate": "treats `02_DASHBOARD_AND_VIEWS.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: import databases from 01_DATABASE_SCHEMAS.md — import CSV seed data from imports/ — build core dashboard views from.",
+      "input_fixture": "project source text and the named component `02_DASHBOARD_AND_VIEWS.md`",
+      "operation_under_test": "treats `02_DASHBOARD_AND_VIEWS.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: import databases from 01_DATABASE_SCHEMAS.md — import CSV seed data from imports/ — build core dashboard views from.",
+      "expected_output": "inspectable implementation evidence tied to `02_DASHBOARD_AND_VIEWS.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4186e075070c856215c868d3",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42353,
+            "sha256": "44a26f2019cd8822e4b1491f4f6e4cc22258f8e4e0d0f2d0d4cd7f9e40223bf7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34704,
+            "sha256": "3865dec8d5e5d6a563bc74186f0b2880baafdfbfaa32643f4a17e8acf0ef96e2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "195ff7cb365c048d20fa25b4a08b51e2b9df64b625f565a362b9a0f4ea119606"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19908,
+            "sha256": "cec1227575cc3fcb632414e9f7afb17b79c4ddd60832d12ae45948e1da109a2a"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43992,
+            "sha256": "346907b77fb1c84e3e9f9464cb84dcaa5a6f09245c400e6d133130f31a766192"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8669,
+            "sha256": "f5868f55eb76a0d678105524eb29b0e69f4326c272c85ad6a3ca69cf5429e706"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-room-handoff-v1/README.md",
+          "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "32a8f46f5b1082416b1265b0"
+    },
+    {
+      "receipt_id": "mb-murano-room-handoff-v1__receipt_0011",
+      "project_id": "mb-murano-room-handoff-v1",
+      "project_title": "Room template v1",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Room template v1 / VERIFIER.md",
+      "component_case_id": "mb-murano-room-handoff-v1__0011__room-template-v1-verifier-md",
+      "claim_to_demonstrate": "treats `VERIFIER.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Deliberately no code — checks/VERIFIER.md describes the scoring/verifier gates as a manual process. exports/EXPORT_TEMPLATES.md.",
+      "input_fixture": "project source text and the named component `VERIFIER.md`",
+      "operation_under_test": "treats `VERIFIER.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Deliberately no code — checks/VERIFIER.md describes the scoring/verifier gates as a manual process. exports/EXPORT_TEMPLATES.md.",
+      "expected_output": "inspectable implementation evidence tied to `VERIFIER.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "95a5cf70a1163a8dd56fb120",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42353,
+            "sha256": "44a26f2019cd8822e4b1491f4f6e4cc22258f8e4e0d0f2d0d4cd7f9e40223bf7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34704,
+            "sha256": "3865dec8d5e5d6a563bc74186f0b2880baafdfbfaa32643f4a17e8acf0ef96e2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "195ff7cb365c048d20fa25b4a08b51e2b9df64b625f565a362b9a0f4ea119606"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19908,
+            "sha256": "cec1227575cc3fcb632414e9f7afb17b79c4ddd60832d12ae45948e1da109a2a"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43992,
+            "sha256": "346907b77fb1c84e3e9f9464cb84dcaa5a6f09245c400e6d133130f31a766192"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8669,
+            "sha256": "f5868f55eb76a0d678105524eb29b0e69f4326c272c85ad6a3ca69cf5429e706"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-room-handoff-v1/README.md",
+          "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5d81ed4d4c2c4afaa0af4fe1"
+    },
+    {
+      "receipt_id": "mb-murano-room-handoff-v1__receipt_0012",
+      "project_id": "mb-murano-room-handoff-v1",
+      "project_title": "Room template v1",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Room template v1 / EXPORT_TEMPLATES.md",
+      "component_case_id": "mb-murano-room-handoff-v1__0012__room-template-v1-export-templates-md",
+      "claim_to_demonstrate": "treats `EXPORT_TEMPLATES.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: exports/EXPORT_TEMPLATES.md provides starter handbook and canon templates in markdown. Discovery, creativity, systems.",
+      "input_fixture": "project source text and the named component `EXPORT_TEMPLATES.md`",
+      "operation_under_test": "treats `EXPORT_TEMPLATES.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: exports/EXPORT_TEMPLATES.md provides starter handbook and canon templates in markdown. Discovery, creativity, systems.",
+      "expected_output": "inspectable implementation evidence tied to `EXPORT_TEMPLATES.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "8e7015691cdc562b5e6f45de",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42353,
+            "sha256": "44a26f2019cd8822e4b1491f4f6e4cc22258f8e4e0d0f2d0d4cd7f9e40223bf7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34704,
+            "sha256": "3865dec8d5e5d6a563bc74186f0b2880baafdfbfaa32643f4a17e8acf0ef96e2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "195ff7cb365c048d20fa25b4a08b51e2b9df64b625f565a362b9a0f4ea119606"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19908,
+            "sha256": "cec1227575cc3fcb632414e9f7afb17b79c4ddd60832d12ae45948e1da109a2a"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43992,
+            "sha256": "346907b77fb1c84e3e9f9464cb84dcaa5a6f09245c400e6d133130f31a766192"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8669,
+            "sha256": "f5868f55eb76a0d678105524eb29b0e69f4326c272c85ad6a3ca69cf5429e706"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-room-handoff-v1/README.md",
+          "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9c5f131276c1e49016b4aa3f"
+    },
+    {
+      "receipt_id": "mb-murano-room-handoff-v1__receipt_0013",
+      "project_id": "mb-murano-room-handoff-v1",
+      "project_title": "Room template v1",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Room template v1 / The Furnace of Language",
+      "component_case_id": "mb-murano-room-handoff-v1__0013__room-template-v1-the-furnace-of-language",
+      "claim_to_demonstrate": "uses `The Furnace of Language` as a named project component with a traceable role in the public mechanism. Source context: This package specifies \"The Furnace of Language\" — a Murano OS room for turning instinctive high-level literary taste into a reusable.",
+      "input_fixture": "project source text and the named component `The Furnace of Language`",
+      "operation_under_test": "uses `The Furnace of Language` as a named project component with a traceable role in the public mechanism. Source context: This package specifies \"The Furnace of Language\" — a Murano OS room for turning instinctive high-level literary taste into a reusable.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `The Furnace of Language`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "60ed93c2a3281eae485087dd",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42353,
+            "sha256": "44a26f2019cd8822e4b1491f4f6e4cc22258f8e4e0d0f2d0d4cd7f9e40223bf7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34704,
+            "sha256": "3865dec8d5e5d6a563bc74186f0b2880baafdfbfaa32643f4a17e8acf0ef96e2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "195ff7cb365c048d20fa25b4a08b51e2b9df64b625f565a362b9a0f4ea119606"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19908,
+            "sha256": "cec1227575cc3fcb632414e9f7afb17b79c4ddd60832d12ae45948e1da109a2a"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43992,
+            "sha256": "346907b77fb1c84e3e9f9464cb84dcaa5a6f09245c400e6d133130f31a766192"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8669,
+            "sha256": "f5868f55eb76a0d678105524eb29b0e69f4326c272c85ad6a3ca69cf5429e706"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-room-handoff-v1/README.md",
+          "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "deca5a1a231ac9ef8cb8dd51"
+    },
+    {
+      "receipt_id": "mb-murano-room-handoff-v1__receipt_0014",
+      "project_id": "mb-murano-room-handoff-v1",
+      "project_title": "Room template v1",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Room template v1 / Murano OS",
+      "component_case_id": "mb-murano-room-handoff-v1__0014__room-template-v1-murano-os",
+      "claim_to_demonstrate": "uses `Murano OS` as a named project component with a traceable role in the public mechanism. Source context: This package specifies \"The Furnace of Language\" — a Murano OS room for turning instinctive high-level literary taste into a reusable, testable.",
+      "input_fixture": "project source text and the named component `Murano OS`",
+      "operation_under_test": "uses `Murano OS` as a named project component with a traceable role in the public mechanism. Source context: This package specifies \"The Furnace of Language\" — a Murano OS room for turning instinctive high-level literary taste into a reusable, testable.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Murano OS`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "60ed93c2a3281eae485087dd",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42353,
+            "sha256": "44a26f2019cd8822e4b1491f4f6e4cc22258f8e4e0d0f2d0d4cd7f9e40223bf7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34704,
+            "sha256": "3865dec8d5e5d6a563bc74186f0b2880baafdfbfaa32643f4a17e8acf0ef96e2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "195ff7cb365c048d20fa25b4a08b51e2b9df64b625f565a362b9a0f4ea119606"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19908,
+            "sha256": "cec1227575cc3fcb632414e9f7afb17b79c4ddd60832d12ae45948e1da109a2a"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43992,
+            "sha256": "346907b77fb1c84e3e9f9464cb84dcaa5a6f09245c400e6d133130f31a766192"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8669,
+            "sha256": "f5868f55eb76a0d678105524eb29b0e69f4326c272c85ad6a3ca69cf5429e706"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-room-handoff-v1/README.md",
+          "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "cb6b5ab80e04fb9e618f7dc9"
+    },
+    {
+      "receipt_id": "mb-murano-room-handoff-v1__receipt_0015",
+      "project_id": "mb-murano-room-handoff-v1",
+      "project_title": "Room template v1",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Room template v1 / Reach for",
+      "component_case_id": "mb-murano-room-handoff-v1__0015__room-template-v1-reach-for",
+      "claim_to_demonstrate": "uses `Reach for` as a named project component with a traceable role in the public mechanism. Source context: Reach for this when: (a) setting up a literary craft workbench outside MuranoOS (Notion, Obsidian, Airtable, Coda), and you want an import-ready.",
+      "input_fixture": "project source text and the named component `Reach for`",
+      "operation_under_test": "uses `Reach for` as a named project component with a traceable role in the public mechanism. Source context: Reach for this when: (a) setting up a literary craft workbench outside MuranoOS (Notion, Obsidian, Airtable, Coda), and you want an import-ready.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Reach for`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d9d43a00147596d5b05977fc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42353,
+            "sha256": "44a26f2019cd8822e4b1491f4f6e4cc22258f8e4e0d0f2d0d4cd7f9e40223bf7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34704,
+            "sha256": "3865dec8d5e5d6a563bc74186f0b2880baafdfbfaa32643f4a17e8acf0ef96e2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "195ff7cb365c048d20fa25b4a08b51e2b9df64b625f565a362b9a0f4ea119606"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19908,
+            "sha256": "cec1227575cc3fcb632414e9f7afb17b79c4ddd60832d12ae45948e1da109a2a"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43992,
+            "sha256": "346907b77fb1c84e3e9f9464cb84dcaa5a6f09245c400e6d133130f31a766192"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8669,
+            "sha256": "f5868f55eb76a0d678105524eb29b0e69f4326c272c85ad6a3ca69cf5429e706"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-room-handoff-v1/README.md",
+          "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "502ecde6c22ab73f36f38543"
+    },
+    {
+      "receipt_id": "mb-murano-room-handoff-v1__receipt_0016",
+      "project_id": "mb-murano-room-handoff-v1",
+      "project_title": "Room template v1",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Room template v1 / Explain Nexus and Personal OS",
+      "component_case_id": "mb-murano-room-handoff-v1__0016__room-template-v1-explain-nexus-and-personal-os",
+      "claim_to_demonstrate": "uses `Explain Nexus and Personal OS` as a named project component with a traceable role in the public mechanism. Source context: Explain Nexus and Personal OS as project-development and discovery infrastructure, not miscellaneous personal tooling. Mechanism.",
+      "input_fixture": "project source text and the named component `Explain Nexus and Personal OS`",
+      "operation_under_test": "uses `Explain Nexus and Personal OS` as a named project component with a traceable role in the public mechanism. Source context: Explain Nexus and Personal OS as project-development and discovery infrastructure, not miscellaneous personal tooling. Mechanism.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Explain Nexus and Personal OS`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "43bbe99078db3098289d7fc7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42353,
+            "sha256": "44a26f2019cd8822e4b1491f4f6e4cc22258f8e4e0d0f2d0d4cd7f9e40223bf7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34704,
+            "sha256": "3865dec8d5e5d6a563bc74186f0b2880baafdfbfaa32643f4a17e8acf0ef96e2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "195ff7cb365c048d20fa25b4a08b51e2b9df64b625f565a362b9a0f4ea119606"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19908,
+            "sha256": "cec1227575cc3fcb632414e9f7afb17b79c4ddd60832d12ae45948e1da109a2a"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43992,
+            "sha256": "346907b77fb1c84e3e9f9464cb84dcaa5a6f09245c400e6d133130f31a766192"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8669,
+            "sha256": "f5868f55eb76a0d678105524eb29b0e69f4326c272c85ad6a3ca69cf5429e706"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-room-handoff-v1/README.md",
+          "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "ad356bed87ba97bda492543b"
+    },
+    {
+      "receipt_id": "mb-murano-room-handoff-v1__receipt_0017",
+      "project_id": "mb-murano-room-handoff-v1",
+      "project_title": "Room template v1",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Room template v1 / Creativity Research",
+      "component_case_id": "mb-murano-room-handoff-v1__0017__room-template-v1-creativity-research",
+      "claim_to_demonstrate": "uses `Creativity Research` as a named project component with a traceable role in the public mechanism. Source context: Creativity Research; The Heritage, Creativity and Innovation Nexus. source library scholarly-source routing with author correction. Raw.",
+      "input_fixture": "project source text and the named component `Creativity Research`",
+      "operation_under_test": "uses `Creativity Research` as a named project component with a traceable role in the public mechanism. Source context: Creativity Research; The Heritage, Creativity and Innovation Nexus. source library scholarly-source routing with author correction. Raw.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Creativity Research`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4c138e064b2d9b8e8e811e47",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 42353,
+            "sha256": "44a26f2019cd8822e4b1491f4f6e4cc22258f8e4e0d0f2d0d4cd7f9e40223bf7"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 34704,
+            "sha256": "3865dec8d5e5d6a563bc74186f0b2880baafdfbfaa32643f4a17e8acf0ef96e2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-room-handoff-v1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20454,
+            "sha256": "195ff7cb365c048d20fa25b4a08b51e2b9df64b625f565a362b9a0f4ea119606"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19908,
+            "sha256": "cec1227575cc3fcb632414e9f7afb17b79c4ddd60832d12ae45948e1da109a2a"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43992,
+            "sha256": "346907b77fb1c84e3e9f9464cb84dcaa5a6f09245c400e6d133130f31a766192"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 8669,
+            "sha256": "f5868f55eb76a0d678105524eb29b0e69f4326c272c85ad6a3ca69cf5429e706"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-room-handoff-v1/blueprint.json",
+          "project_blueprints/mb-murano-room-handoff-v1/instrument_map.json",
+          "project_blueprints/mb-murano-room-handoff-v1/README.md",
+          "proof_builds/mb-murano-room-handoff-v1/proof_build.json",
+          "proof_demos/mb-murano-room-handoff-v1/demo_cases.json",
+          "proof_demos/mb-murano-room-handoff-v1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "384c79e75a5ecf5e5051cef7"
+    }
+  ]
+}

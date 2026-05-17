@@ -1,0 +1,163 @@
+{
+  "section_id": "native-magnum-opus",
+  "title": "Magnum Opus",
+  "section_type": "native_project",
+  "map_type": "curated_scholarly_retrieval",
+  "proof_tier": "specified-proof-plan-needs-demo",
+  "public_claim": "A local scholarly retrieval and citation-governance system for research corpora.",
+  "distinctive_mechanism": "It ingests a corpus, builds sparse and semantic indexes, exposes a query service, retrieves evidence, scores support, validates citations, runs critique or red-team checks, abstains when support is inadequate, and preserves source influence.",
+  "use_value": "It is meant to be more than search: the point is to make corpus state, retrieval path, evidence scoring, contradiction, citation status, abstention, and answer authority inspectable on a local research machine.",
+  "built_evidence": [
+    {
+      "label": "Blueprint",
+      "path": "project_blueprints/native-magnum-opus/blueprint.json",
+      "status": "present"
+    },
+    {
+      "label": "Instrument map",
+      "path": "project_blueprints/native-magnum-opus/instrument_map.json",
+      "status": "present"
+    },
+    {
+      "label": "Project README",
+      "path": "project_blueprints/native-magnum-opus/README.md",
+      "status": "present"
+    }
+  ],
+  "component_count": 10,
+  "component_status_counts": {
+    "specified-output-needs-demo": 10
+  },
+  "flagship_proof_builds": [
+    {
+      "name": "Corpus admission and authority-control proof",
+      "claim": "Magnum Opus begins before retrieval: it decides what enters the corpus and prevents duplicate files from masquerading as independent evidence.",
+      "input": "one book or paper file with metadata, source path, edition signal, and duplicate-risk signal",
+      "operation": "admit the source, assign identity, classify processing state, and record warnings",
+      "expected_output": "source identity record with admitted / holding / failed / duplicate-risk state",
+      "verification_check": "show one source moving from file path to corpus identity with state and duplicate warning visible"
+    },
+    {
+      "name": "Hybrid retrieval and citation-support proof",
+      "claim": "The system is meant to make retrieval path, evidence score, citation support, contradiction, and abstention inspectable.",
+      "input": "one research query, source filters, BM25/dense candidates, and candidate answer",
+      "operation": "retrieve, fuse, validate support, test contradiction, and narrow or abstain if evidence is inadequate",
+      "expected_output": "ranked evidence packet, claim-support state, contradiction note, and qualified answer or refusal",
+      "verification_check": "run one query and show retrieved passages, support labels, contradiction state, and answer boundary"
+    }
+  ],
+  "component_proofs": [
+    {
+      "component": "Root Registry And Corpus Admission",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated scholarly retrieval",
+      "claim_supported": "decides what belongs in the scholarly corpus, what is stable but unprocessed, what is committed, and what remains excluded or failed",
+      "input": "books, PDFs, Calibre records, manifests, root paths, source hashes, and status classes",
+      "expected_output": "admitted corpus records plus holding, failed, and promotion states",
+      "current_evidence": "Expected proof artifact: admitted corpus records plus holding, failed, and promotion states",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Run one corpus query or source-admission fixture through Root Registry And Corpus Admission; confirm source identity, retrieval path, support state, and output: admitted corpus records plus holding, failed...."
+    },
+    {
+      "component": "Bibliographic Identity And Authority Control",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated scholarly retrieval",
+      "claim_supported": "moves from file identity toward work/edition/source identity so duplicate files do not masquerade as independent evidence",
+      "input": "file paths, internal metadata, editions, duplicate candidates, OCR quality, genre signals, and source typology",
+      "expected_output": "bibliographic identity record and authority-control warning surface",
+      "current_evidence": "Expected proof artifact: bibliographic identity record and authority-control warning surface",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Run one corpus query or source-admission fixture through Bibliographic Identity And Authority Control; confirm source identity, retrieval path, support state, and output: bibliographic identity record and authority-control...."
+    },
+    {
+      "component": "Extraction Pipeline",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated scholarly retrieval",
+      "claim_supported": "turns a book into structured scholarly records before retrieval or synthesis relies on it",
+      "input": "admitted source, profile-only mode, structural detectors, bibliography/index/further-reading/glossary/acknowledgment miners, and optional argumentative extraction",
+      "expected_output": "source profile, structural extraction database records, and argumentative-extraction candidates",
+      "current_evidence": "Expected proof artifact: source profile, structural extraction database records, and argumentative-extraction candidates",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Run one corpus query or source-admission fixture through Extraction Pipeline; confirm source identity, retrieval path, support state, and output: source profile, structural extraction database...."
+    },
+    {
+      "component": "Hybrid Retrieval Plane",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated scholarly retrieval",
+      "claim_supported": "uses hybrid dense/sparse retrieval with fusion and domain-aware constraints where available",
+      "input": "committed corpus records, BM25 index, dense index, query intent, filters, and chunk windows",
+      "expected_output": "ranked evidence candidates with provenance as a reviewable artifact",
+      "current_evidence": "Expected proof artifact: ranked evidence candidates with provenance as a reviewable artifact",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Run one corpus query or source-admission fixture through Hybrid Retrieval Plane; confirm source identity, retrieval path, support state, and output: ranked evidence candidates with provenance...."
+    },
+    {
+      "component": "Query Decomposition And Evidence Search",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated scholarly retrieval",
+      "claim_supported": "breaks broad questions into evidence-searchable subclaims instead of asking one fluent answer from a black box",
+      "input": "research question, subquestions, scope constraints, and retrieval results",
+      "expected_output": "evidence packet organized around answerable claim units",
+      "current_evidence": "Expected proof artifact: evidence packet organized around answerable claim units",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Run one corpus query or source-admission fixture through Query Decomposition And Evidence Search; confirm source identity, retrieval path, support state, and output: evidence packet organized around answerable claim units."
+    },
+    {
+      "component": "Citation Validation And Claim Support",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated scholarly retrieval",
+      "claim_supported": "checks whether claims are supported, weakly supported, contradicted, or unsupported before synthesis is allowed to stand",
+      "input": "candidate answer, retrieved passages, citations, and source lineage",
+      "expected_output": "claim-to-evidence decision packet as a reviewable artifact",
+      "current_evidence": "Expected proof artifact: claim-to-evidence decision packet as a reviewable artifact",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Run one corpus query or source-admission fixture through Citation Validation And Claim Support; confirm source identity, retrieval path, support state, and output: claim-to-evidence decision packet as a reviewable...."
+    },
+    {
+      "component": "Contradiction And Red-Team Review",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated scholarly retrieval",
+      "claim_supported": "looks for source conflict, rival interpretations, and overconfident synthesis before release",
+      "input": "supported claims, rival passages, source families, and uncertainty markers",
+      "expected_output": "contradiction review and narrowed claim ceiling",
+      "current_evidence": "Expected proof artifact: contradiction review and narrowed claim ceiling",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Run one corpus query or source-admission fixture through Contradiction And Red-Team Review; confirm source identity, retrieval path, support state, and output: contradiction review and narrowed claim ceiling."
+    },
+    {
+      "component": "Abstention And Refusal Gate",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated scholarly retrieval",
+      "claim_supported": "refuses or narrows answers when the corpus cannot support the requested claim; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input": "evidence packet, source support state, contradiction state, and user query",
+      "expected_output": "answer, qualified answer, follow-up search plan, or refusal",
+      "current_evidence": "Expected proof artifact: answer, qualified answer, follow-up search plan, or refusal",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Run one corpus query or source-admission fixture through Abstention And Refusal Gate; confirm source identity, retrieval path, support state, and output: answer, qualified answer, follow-up search plan...."
+    },
+    {
+      "component": "Evidence Export And Permission Membrane",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated scholarly retrieval",
+      "claim_supported": "validates that an external package can be issued or shared without raw-text leakage, local-path exposure, or unsupported derived claims",
+      "input": "redacted evidence package, share request, inventory state, operator intent, and retention rules",
+      "expected_output": "share-authorized export package or blocked share decision",
+      "current_evidence": "Expected proof artifact: share-authorized export package or blocked share decision",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Run one corpus query or source-admission fixture through Evidence Export And Permission Membrane; confirm source identity, retrieval path, support state, and output: share-authorized export package or blocked share...."
+    },
+    {
+      "component": "State / Share / Retention Constitution",
+      "phase": "RESEARCH_PROCESS",
+      "form": "curated scholarly retrieval",
+      "claim_supported": "keeps local evidence state and external sharing governed rather than treating retrieval output as freely portable",
+      "input": "evidence states, local-state policies, share-grant requirements, negative-transfer exclusions, and retention rules",
+      "expected_output": "state/share/retention proof record and review-ready audit surface",
+      "current_evidence": "Expected proof artifact: state/share/retention proof record and review-ready audit surface",
+      "proof_status": "specified-output-needs-demo",
+      "verification_check": "Run one corpus query or source-admission fixture through State / Share / Retention Constitution; confirm source identity, retrieval path, support state, and output: state/share/retention proof record and review-ready...."
+    }
+  ],
+  "minimum_public_demo": "show one source moving from file path to corpus identity with state and duplicate warning visible",
+  "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts."
+}

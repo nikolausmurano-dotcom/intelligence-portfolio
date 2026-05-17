@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MuranoOS Proof Exhibit</title>
+<style>
+:root {
+  color-scheme: light;
+  --paper: #f7f5ef;
+  --ink: #152231;
+  --muted: #586474;
+  --rule: rgba(35, 55, 77, .18);
+  --accent: #7a4d18;
+  --blue: #1e4d6b;
+  --green: #2f6048;
+  --red: #7a2730;
+  --white: rgba(255,255,255,.86);
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, 'Times New Roman', serif; background: var(--paper); color: var(--ink); }
+main { max-width: 1180px; margin: 0 auto; padding: 38px 22px 72px; }
+a { color: #183f65; }
+h1 { font-size: clamp(34px, 5vw, 56px); line-height: 1; font-weight: 500; margin: 0 0 14px; }
+h2 { font-size: 26px; margin: 24px 0 10px; }
+h3 { font-size: 15px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 0 0 8px; }
+p, li { line-height: 1.58; }
+.lead { max-width: 920px; font-size: 18px; line-height: 1.62; }
+.topline { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); font-size: 11px; margin-bottom: 12px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.card, .panel, .stage, .result, .case-box { background: var(--white); border: 1px solid var(--rule); border-radius: 8px; padding: 16px; }
+.panel { margin: 18px 0; }
+.stage { min-height: 110px; transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease; }
+.stage.active { border-color: rgba(30,77,107,.72); box-shadow: inset 3px 0 0 var(--blue); transform: translateY(-1px); }
+.stage.stale { border-color: rgba(122,39,48,.65); box-shadow: inset 3px 0 0 var(--red); }
+.stage.done { border-color: rgba(47,96,72,.62); box-shadow: inset 3px 0 0 var(--green); }
+.kicker { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: #667085; }
+.button-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0; }
+button, .button { border: 1px solid rgba(30,77,107,.35); background: #fff; color: var(--ink); border-radius: 6px; padding: 9px 12px; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 12px; cursor: pointer; text-decoration: none; }
+button:hover, .button:hover { border-color: rgba(30,77,107,.8); }
+.meter { height: 9px; border-radius: 99px; background: rgba(21,34,49,.12); overflow: hidden; }
+.meter span { display: block; height: 100%; width: 0%; background: linear-gradient(90deg, #2f6048, #7a4d18, #7a2730); transition: width .25s ease; }
+.mono { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 12px; }
+.trace { white-space: pre-wrap; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 12px; line-height: 1.55; background: #fff; border: 1px solid var(--rule); border-radius: 8px; padding: 14px; }
+.split { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(280px,.9fr); gap: 16px; align-items: start; }
+.small { font-size: 13px; color: var(--muted); }
+input, select { width: 100%; border: 1px solid var(--rule); border-radius: 6px; padding: 10px; background: #fff; color: var(--ink); }
+table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; }
+th, td { padding: 10px; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+th { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+@media (max-width: 780px) {
+  main { padding: 28px 18px 58px; }
+  .split { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<main>
+
+<div class="topline">Executable proof exhibit</div>
+<h1>MuranoOS Research Operating Environment</h1>
+<p class="lead">This exhibit demonstrates MuranoOS as a room-and-command operating environment rather than a personal dashboard. The proof is whether a room action creates state, decision memory, next tasks, and export boundaries.</p>
+<section class="panel">
+<div class="button-row"><button id="openRoom">Open research room</button><button id="invokeCommand">Invoke command</button><button id="recordDecision">Record decision</button><button id="testExport">Test export boundary</button></div>
+<div class="split"><div><h2>Room State</h2><div id="roomState" class="grid"></div></div><div><h2>Persistence Log</h2><div id="roomLog" class="trace"></div></div></div>
+</section>
+
+</main>
+
+<script>
+let state = {room:false, command:false, decision:false, export:false, log:[]};
+function push(msg){ state.log.push(new Date().toISOString().slice(11,19)+' - '+msg); render(); }
+function render(){
+ const cells = [
+  ['Room contract', state.room, 'The room has a declared purpose and allowed actions.'],
+  ['Command bridge', state.command, 'An action is routed through a named command.'],
+  ['Decision record', state.decision, 'The result is preserved as a reviewable decision.'],
+  ['Export boundary', state.export, 'Release is allowed, blocked, or narrowed by claim boundary.']
+ ];
+ document.getElementById('roomState').innerHTML = cells.map(c=>`<div class="stage ${c[1]?'done':''}"><h3>${c[0]}</h3><p>${c[2]}</p><p class="small">${c[1]?'present':'not yet present'}</p></div>`).join('');
+ document.getElementById('roomLog').textContent = state.log.join('\n') || 'No actions yet.';
+}
+document.getElementById('openRoom').onclick=()=>{state.room=true; push('Research room opened with contract.');};
+document.getElementById('invokeCommand').onclick=()=>{state.command=true; push('Command executed: create source review task.');};
+document.getElementById('recordDecision').onclick=()=>{state.decision=true; push('Decision recorded: source requires claim ceiling before publication.');};
+document.getElementById('testExport').onclick=()=>{state.export=state.room&&state.command&&state.decision; push(state.export?'Export allowed as bounded packet.':'Export blocked until room, command, and decision state exist.');};
+render();
+</script>
+
+</body>
+</html>

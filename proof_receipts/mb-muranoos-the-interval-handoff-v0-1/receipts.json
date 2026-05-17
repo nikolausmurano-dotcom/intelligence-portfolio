@@ -1,0 +1,1470 @@
+{
+  "project": {
+    "project_id": "mb-muranoos-the-interval-handoff-v0-1",
+    "title": "The Interval (remote violence)"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-muranoos-the-interval-handoff-v0-1__receipt_0001",
+      "project_id": "mb-muranoos-the-interval-handoff-v0-1",
+      "project_title": "The Interval (remote violence)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "The Interval (remote violence) Handoff Identity",
+      "component_case_id": "mb-muranoos-the-interval-handoff-v0-1__0001__the-interval-remote-violence-handoff-identity",
+      "claim_to_demonstrate": "The Interval is a MuranoOS room handoff for studying remote violence as a structure of separation between perception, command, vulnerability, and consequence.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "The Interval is a MuranoOS room handoff for studying remote violence as a structure of separation between perception, command, vulnerability, and consequence.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43897,
+            "sha256": "7de0547923397cb06506bfc2d3c765f1c1e6406bc39e46ec020d2664f43baf78"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36435,
+            "sha256": "5b452caa0e37f870dca18895d822d90283e45d4f301728fcbfa5b50b22d223fd"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21080,
+            "sha256": "41ef99ad3d236e5fcbc1bef47f1d694147334ca2e67e7c166d069069d4cd26d6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20478,
+            "sha256": "394d2274e83465df0b8161a9c01a601a3a52546cb40a3879a1d015adc7d743eb"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45622,
+            "sha256": "93b82907a477694d912fed4cab29a8d37e917034486487cc18d8318f29d56cf5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9523,
+            "sha256": "f2e03c51c98e6e89076dba628f456ca9ba7c361f84a89a7e4f8ffdcc26cdcb9b"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a8b71ade79fe992c22bea691"
+    },
+    {
+      "receipt_id": "mb-muranoos-the-interval-handoff-v0-1__receipt_0002",
+      "project_id": "mb-muranoos-the-interval-handoff-v0-1",
+      "project_title": "The Interval (remote violence)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "The Interval (remote violence) Room Task Model",
+      "component_case_id": "mb-muranoos-the-interval-handoff-v0-1__0002__the-interval-remote-violence-room-task-model",
+      "claim_to_demonstrate": "It routes remote-violence analysis through distance, mediation, command chain, target vulnerability, perception gap, moral injury, and institutional responsibility.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "It routes remote-violence analysis through distance, mediation, command chain, target vulnerability, perception gap, moral injury, and institutional responsibility.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43897,
+            "sha256": "7de0547923397cb06506bfc2d3c765f1c1e6406bc39e46ec020d2664f43baf78"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36435,
+            "sha256": "5b452caa0e37f870dca18895d822d90283e45d4f301728fcbfa5b50b22d223fd"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21080,
+            "sha256": "41ef99ad3d236e5fcbc1bef47f1d694147334ca2e67e7c166d069069d4cd26d6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20478,
+            "sha256": "394d2274e83465df0b8161a9c01a601a3a52546cb40a3879a1d015adc7d743eb"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45622,
+            "sha256": "93b82907a477694d912fed4cab29a8d37e917034486487cc18d8318f29d56cf5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9523,
+            "sha256": "f2e03c51c98e6e89076dba628f456ca9ba7c361f84a89a7e4f8ffdcc26cdcb9b"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7950e416a33d3c51943a7b8b"
+    },
+    {
+      "receipt_id": "mb-muranoos-the-interval-handoff-v0-1__receipt_0003",
+      "project_id": "mb-muranoos-the-interval-handoff-v0-1",
+      "project_title": "The Interval (remote violence)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "The Interval (remote violence) Data Schema And Persistence Plan",
+      "component_case_id": "mb-muranoos-the-interval-handoff-v0-1__0003__the-interval-remote-violence-data-schema-and-persistence-plan",
+      "claim_to_demonstrate": "Peacebuilding, conflict transformation, trauma, memory, and repair. Use source library peace/conflict, dehumanization, aggression, and memory sources as Book III and peace-room scaffolding. Vision: Make repair and violence pages peace/conflict-first.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Peacebuilding, conflict transformation, trauma, memory, and repair. Use source library peace/conflict, dehumanization, aggression, and memory sources as Book III and peace-room scaffolding. Vision: Make repair and violence pages peace/conflict-first.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43897,
+            "sha256": "7de0547923397cb06506bfc2d3c765f1c1e6406bc39e46ec020d2664f43baf78"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36435,
+            "sha256": "5b452caa0e37f870dca18895d822d90283e45d4f301728fcbfa5b50b22d223fd"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21080,
+            "sha256": "41ef99ad3d236e5fcbc1bef47f1d694147334ca2e67e7c166d069069d4cd26d6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20478,
+            "sha256": "394d2274e83465df0b8161a9c01a601a3a52546cb40a3879a1d015adc7d743eb"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45622,
+            "sha256": "93b82907a477694d912fed4cab29a8d37e917034486487cc18d8318f29d56cf5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9523,
+            "sha256": "f2e03c51c98e6e89076dba628f456ca9ba7c361f84a89a7e4f8ffdcc26cdcb9b"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2de9817adae7a33dc1c9cd5d"
+    },
+    {
+      "receipt_id": "mb-muranoos-the-interval-handoff-v0-1__receipt_0004",
+      "project_id": "mb-muranoos-the-interval-handoff-v0-1",
+      "project_title": "The Interval (remote violence)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "The Interval (remote violence) Interface And Instrument Plane",
+      "component_case_id": "mb-muranoos-the-interval-handoff-v0-1__0004__the-interval-remote-violence-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43897,
+            "sha256": "7de0547923397cb06506bfc2d3c765f1c1e6406bc39e46ec020d2664f43baf78"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36435,
+            "sha256": "5b452caa0e37f870dca18895d822d90283e45d4f301728fcbfa5b50b22d223fd"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21080,
+            "sha256": "41ef99ad3d236e5fcbc1bef47f1d694147334ca2e67e7c166d069069d4cd26d6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20478,
+            "sha256": "394d2274e83465df0b8161a9c01a601a3a52546cb40a3879a1d015adc7d743eb"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45622,
+            "sha256": "93b82907a477694d912fed4cab29a8d37e917034486487cc18d8318f29d56cf5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9523,
+            "sha256": "f2e03c51c98e6e89076dba628f456ca9ba7c361f84a89a7e4f8ffdcc26cdcb9b"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "49dd10c7dd2b62f76e9eeb38"
+    },
+    {
+      "receipt_id": "mb-muranoos-the-interval-handoff-v0-1__receipt_0005",
+      "project_id": "mb-muranoos-the-interval-handoff-v0-1",
+      "project_title": "The Interval (remote violence)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "The Interval (remote violence) Integration Path",
+      "component_case_id": "mb-muranoos-the-interval-handoff-v0-1__0005__the-interval-remote-violence-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. 7-step workflow per README: (1) Read product charter. (2) Read screen specs with SVG wireframes. (3) Open prototype/index.html for concrete visual reference. (4).",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. 7-step workflow per README: (1) Read product charter. (2) Read screen specs with SVG wireframes. (3) Open prototype/index.html for concrete visual reference. (4).",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43897,
+            "sha256": "7de0547923397cb06506bfc2d3c765f1c1e6406bc39e46ec020d2664f43baf78"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36435,
+            "sha256": "5b452caa0e37f870dca18895d822d90283e45d4f301728fcbfa5b50b22d223fd"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21080,
+            "sha256": "41ef99ad3d236e5fcbc1bef47f1d694147334ca2e67e7c166d069069d4cd26d6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20478,
+            "sha256": "394d2274e83465df0b8161a9c01a601a3a52546cb40a3879a1d015adc7d743eb"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45622,
+            "sha256": "93b82907a477694d912fed4cab29a8d37e917034486487cc18d8318f29d56cf5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9523,
+            "sha256": "f2e03c51c98e6e89076dba628f456ca9ba7c361f84a89a7e4f8ffdcc26cdcb9b"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "71ea6968472e2bf002bdefca"
+    },
+    {
+      "receipt_id": "mb-muranoos-the-interval-handoff-v0-1__receipt_0006",
+      "project_id": "mb-muranoos-the-interval-handoff-v0-1",
+      "project_title": "The Interval (remote violence)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "The Interval (remote violence) Proof Boundary",
+      "component_case_id": "mb-muranoos-the-interval-handoff-v0-1__0006__the-interval-remote-violence-proof-boundary",
+      "claim_to_demonstrate": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Documented handoff or prototype; live status still to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43897,
+            "sha256": "7de0547923397cb06506bfc2d3c765f1c1e6406bc39e46ec020d2664f43baf78"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36435,
+            "sha256": "5b452caa0e37f870dca18895d822d90283e45d4f301728fcbfa5b50b22d223fd"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21080,
+            "sha256": "41ef99ad3d236e5fcbc1bef47f1d694147334ca2e67e7c166d069069d4cd26d6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20478,
+            "sha256": "394d2274e83465df0b8161a9c01a601a3a52546cb40a3879a1d015adc7d743eb"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45622,
+            "sha256": "93b82907a477694d912fed4cab29a8d37e917034486487cc18d8318f29d56cf5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9523,
+            "sha256": "f2e03c51c98e6e89076dba628f456ca9ba7c361f84a89a7e4f8ffdcc26cdcb9b"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7c42de2175695a4aa1c0f955"
+    },
+    {
+      "receipt_id": "mb-muranoos-the-interval-handoff-v0-1__receipt_0007",
+      "project_id": "mb-muranoos-the-interval-handoff-v0-1",
+      "project_title": "The Interval (remote violence)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "The Interval (remote violence) Next Build Test",
+      "component_case_id": "mb-muranoos-the-interval-handoff-v0-1__0007__the-interval-remote-violence-next-build-test",
+      "claim_to_demonstrate": "Promote the packet from documented handoff to live implementation only after the declared caveats are resolved: apply or wire the scaffold, run the stated validation or smoke-test sequence, and keep unresolved assumptions visible.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Promote the packet from documented handoff to live implementation only after the declared caveats are resolved: apply or wire the scaffold, run the stated validation or smoke-test sequence, and keep unresolved assumptions visible.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43897,
+            "sha256": "7de0547923397cb06506bfc2d3c765f1c1e6406bc39e46ec020d2664f43baf78"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36435,
+            "sha256": "5b452caa0e37f870dca18895d822d90283e45d4f301728fcbfa5b50b22d223fd"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21080,
+            "sha256": "41ef99ad3d236e5fcbc1bef47f1d694147334ca2e67e7c166d069069d4cd26d6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20478,
+            "sha256": "394d2274e83465df0b8161a9c01a601a3a52546cb40a3879a1d015adc7d743eb"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45622,
+            "sha256": "93b82907a477694d912fed4cab29a8d37e917034486487cc18d8318f29d56cf5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9523,
+            "sha256": "f2e03c51c98e6e89076dba628f456ca9ba7c361f84a89a7e4f8ffdcc26cdcb9b"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7da5b8958c04c0aac033d0f7"
+    },
+    {
+      "receipt_id": "mb-muranoos-the-interval-handoff-v0-1__receipt_0008",
+      "project_id": "mb-muranoos-the-interval-handoff-v0-1",
+      "project_title": "The Interval (remote violence)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "The Interval (remote violence) / backend/frontend",
+      "component_case_id": "mb-muranoos-the-interval-handoff-v0-1__0008__the-interval-remote-violence-backend-frontend",
+      "claim_to_demonstrate": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: \"Authority remains overhead, consequence remains beneath, and the user works in the interval between them.\" This is why the room is named \"The.",
+      "input_fixture": "project source text and the named component `backend/frontend`",
+      "operation_under_test": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: \"Authority remains overhead, consequence remains beneath, and the user works in the interval between them.\" This is why the room is named \"The.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `backend/frontend`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "cd35ffed3983f3c9fdd958b6",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43897,
+            "sha256": "7de0547923397cb06506bfc2d3c765f1c1e6406bc39e46ec020d2664f43baf78"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36435,
+            "sha256": "5b452caa0e37f870dca18895d822d90283e45d4f301728fcbfa5b50b22d223fd"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21080,
+            "sha256": "41ef99ad3d236e5fcbc1bef47f1d694147334ca2e67e7c166d069069d4cd26d6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20478,
+            "sha256": "394d2274e83465df0b8161a9c01a601a3a52546cb40a3879a1d015adc7d743eb"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45622,
+            "sha256": "93b82907a477694d912fed4cab29a8d37e917034486487cc18d8318f29d56cf5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9523,
+            "sha256": "f2e03c51c98e6e89076dba628f456ca9ba7c361f84a89a7e4f8ffdcc26cdcb9b"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "45b9ed59188507bc1074039a"
+    },
+    {
+      "receipt_id": "mb-muranoos-the-interval-handoff-v0-1__receipt_0009",
+      "project_id": "mb-muranoos-the-interval-handoff-v0-1",
+      "project_title": "The Interval (remote violence)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "The Interval (remote violence) / prototype/index.html",
+      "component_case_id": "mb-muranoos-the-interval-handoff-v0-1__0009__the-interval-remote-violence-prototype-index-html",
+      "claim_to_demonstrate": "treats `prototype/index.html` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: (3) Open prototype/index.html for concrete visual reference. (4) Use tokens as implementation starting points. (5) Use.",
+      "input_fixture": "project source text and the named component `prototype/index.html`",
+      "operation_under_test": "treats `prototype/index.html` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: (3) Open prototype/index.html for concrete visual reference. (4) Use tokens as implementation starting points. (5) Use.",
+      "expected_output": "inspectable implementation evidence tied to `prototype/index.html`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a04e9371d539f451ae553fea",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43897,
+            "sha256": "7de0547923397cb06506bfc2d3c765f1c1e6406bc39e46ec020d2664f43baf78"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36435,
+            "sha256": "5b452caa0e37f870dca18895d822d90283e45d4f301728fcbfa5b50b22d223fd"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21080,
+            "sha256": "41ef99ad3d236e5fcbc1bef47f1d694147334ca2e67e7c166d069069d4cd26d6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20478,
+            "sha256": "394d2274e83465df0b8161a9c01a601a3a52546cb40a3879a1d015adc7d743eb"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45622,
+            "sha256": "93b82907a477694d912fed4cab29a8d37e917034486487cc18d8318f29d56cf5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9523,
+            "sha256": "f2e03c51c98e6e89076dba628f456ca9ba7c361f84a89a7e4f8ffdcc26cdcb9b"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1078773c0cc5d5f784fa3dc3"
+    },
+    {
+      "receipt_id": "mb-muranoos-the-interval-handoff-v0-1__receipt_0010",
+      "project_id": "mb-muranoos-the-interval-handoff-v0-1",
+      "project_title": "The Interval (remote violence)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "The Interval (remote violence) / index.html",
+      "component_case_id": "mb-muranoos-the-interval-handoff-v0-1__0010__the-interval-remote-violence-index-html",
+      "claim_to_demonstrate": "treats `index.html` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: (3) Open prototype/index.html for concrete visual reference. (4) Use tokens as implementation starting points. (5) Use component.",
+      "input_fixture": "project source text and the named component `index.html`",
+      "operation_under_test": "treats `index.html` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: (3) Open prototype/index.html for concrete visual reference. (4) Use tokens as implementation starting points. (5) Use component.",
+      "expected_output": "inspectable implementation evidence tied to `index.html`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a04e9371d539f451ae553fea",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43897,
+            "sha256": "7de0547923397cb06506bfc2d3c765f1c1e6406bc39e46ec020d2664f43baf78"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36435,
+            "sha256": "5b452caa0e37f870dca18895d822d90283e45d4f301728fcbfa5b50b22d223fd"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21080,
+            "sha256": "41ef99ad3d236e5fcbc1bef47f1d694147334ca2e67e7c166d069069d4cd26d6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20478,
+            "sha256": "394d2274e83465df0b8161a9c01a601a3a52546cb40a3879a1d015adc7d743eb"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45622,
+            "sha256": "93b82907a477694d912fed4cab29a8d37e917034486487cc18d8318f29d56cf5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9523,
+            "sha256": "f2e03c51c98e6e89076dba628f456ca9ba7c361f84a89a7e4f8ffdcc26cdcb9b"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "101dd36d5d95c85380421da3"
+    },
+    {
+      "receipt_id": "mb-muranoos-the-interval-handoff-v0-1__receipt_0011",
+      "project_id": "mb-muranoos-the-interval-handoff-v0-1",
+      "project_title": "The Interval (remote violence)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "The Interval (remote violence) / components.csv",
+      "component_case_id": "mb-muranoos-the-interval-handoff-v0-1__0011__the-interval-remote-violence-components-csv",
+      "claim_to_demonstrate": "treats `components.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: (5) Use component bible + components.csv to scope frontend work. (6) Use data map + schemas to scope data and API work. (7).",
+      "input_fixture": "project source text and the named component `components.csv`",
+      "operation_under_test": "treats `components.csv` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: (5) Use component bible + components.csv to scope frontend work. (6) Use data map + schemas to scope data and API work. (7).",
+      "expected_output": "inspectable implementation evidence tied to `components.csv`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5bfa73cb2cd38af87bb4e849",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43897,
+            "sha256": "7de0547923397cb06506bfc2d3c765f1c1e6406bc39e46ec020d2664f43baf78"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36435,
+            "sha256": "5b452caa0e37f870dca18895d822d90283e45d4f301728fcbfa5b50b22d223fd"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21080,
+            "sha256": "41ef99ad3d236e5fcbc1bef47f1d694147334ca2e67e7c166d069069d4cd26d6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20478,
+            "sha256": "394d2274e83465df0b8161a9c01a601a3a52546cb40a3879a1d015adc7d743eb"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45622,
+            "sha256": "93b82907a477694d912fed4cab29a8d37e917034486487cc18d8318f29d56cf5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9523,
+            "sha256": "f2e03c51c98e6e89076dba628f456ca9ba7c361f84a89a7e4f8ffdcc26cdcb9b"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1fa12e497a3400661461102e"
+    },
+    {
+      "receipt_id": "mb-muranoos-the-interval-handoff-v0-1__receipt_0012",
+      "project_id": "mb-muranoos-the-interval-handoff-v0-1",
+      "project_title": "The Interval (remote violence)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "The Interval (remote violence) / The Interval",
+      "component_case_id": "mb-muranoos-the-interval-handoff-v0-1__0012__the-interval-remote-violence-the-interval",
+      "claim_to_demonstrate": "uses `The Interval` as a named project component with a traceable role in the public mechanism. Source context: Design-and-engineering handoff for the MuranoOS room The Interval — a chamber for examining remote violence as a structure of separation: between.",
+      "input_fixture": "project source text and the named component `The Interval`",
+      "operation_under_test": "uses `The Interval` as a named project component with a traceable role in the public mechanism. Source context: Design-and-engineering handoff for the MuranoOS room The Interval — a chamber for examining remote violence as a structure of separation: between.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `The Interval`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "51872aa4fa5616e4a78d8589",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43897,
+            "sha256": "7de0547923397cb06506bfc2d3c765f1c1e6406bc39e46ec020d2664f43baf78"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36435,
+            "sha256": "5b452caa0e37f870dca18895d822d90283e45d4f301728fcbfa5b50b22d223fd"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21080,
+            "sha256": "41ef99ad3d236e5fcbc1bef47f1d694147334ca2e67e7c166d069069d4cd26d6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20478,
+            "sha256": "394d2274e83465df0b8161a9c01a601a3a52546cb40a3879a1d015adc7d743eb"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45622,
+            "sha256": "93b82907a477694d912fed4cab29a8d37e917034486487cc18d8318f29d56cf5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9523,
+            "sha256": "f2e03c51c98e6e89076dba628f456ca9ba7c361f84a89a7e4f8ffdcc26cdcb9b"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d516b97db55c2a272e3629ff"
+    },
+    {
+      "receipt_id": "mb-muranoos-the-interval-handoff-v0-1__receipt_0013",
+      "project_id": "mb-muranoos-the-interval-handoff-v0-1",
+      "project_title": "The Interval (remote violence)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "The Interval (remote violence) / Runnable HTML",
+      "component_case_id": "mb-muranoos-the-interval-handoff-v0-1__0013__the-interval-remote-violence-runnable-html",
+      "claim_to_demonstrate": "uses `Runnable HTML` as a named project component with a traceable role in the public mechanism. Source context: Runnable HTML prototype (prototype/index.html) — local reference, no build step required. Only a couple of zips in this bundle ship working.",
+      "input_fixture": "project source text and the named component `Runnable HTML`",
+      "operation_under_test": "uses `Runnable HTML` as a named project component with a traceable role in the public mechanism. Source context: Runnable HTML prototype (prototype/index.html) — local reference, no build step required. Only a couple of zips in this bundle ship working.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Runnable HTML`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e53e341e81dd4caae6a93ba9",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43897,
+            "sha256": "7de0547923397cb06506bfc2d3c765f1c1e6406bc39e46ec020d2664f43baf78"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36435,
+            "sha256": "5b452caa0e37f870dca18895d822d90283e45d4f301728fcbfa5b50b22d223fd"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21080,
+            "sha256": "41ef99ad3d236e5fcbc1bef47f1d694147334ca2e67e7c166d069069d4cd26d6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20478,
+            "sha256": "394d2274e83465df0b8161a9c01a601a3a52546cb40a3879a1d015adc7d743eb"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45622,
+            "sha256": "93b82907a477694d912fed4cab29a8d37e917034486487cc18d8318f29d56cf5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9523,
+            "sha256": "f2e03c51c98e6e89076dba628f456ca9ba7c361f84a89a7e4f8ffdcc26cdcb9b"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4d76cf37996461d944e8959a"
+    },
+    {
+      "receipt_id": "mb-muranoos-the-interval-handoff-v0-1__receipt_0014",
+      "project_id": "mb-muranoos-the-interval-handoff-v0-1",
+      "project_title": "The Interval (remote violence)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "The Interval (remote violence) / Close-read Book III",
+      "component_case_id": "mb-muranoos-the-interval-handoff-v0-1__0014__the-interval-remote-violence-close-read-book-iii",
+      "claim_to_demonstrate": "uses `Close-read Book III` as a named project component with a traceable role in the public mechanism. Source context: Close-read Book III, Peace, violence, trauma, and atrocity pages before status changes. Status: source library identified as candidate.",
+      "input_fixture": "project source text and the named component `Close-read Book III`",
+      "operation_under_test": "uses `Close-read Book III` as a named project component with a traceable role in the public mechanism. Source context: Close-read Book III, Peace, violence, trauma, and atrocity pages before status changes. Status: source library identified as candidate.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Close-read Book III`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "994241446e127282ed8b341c",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43897,
+            "sha256": "7de0547923397cb06506bfc2d3c765f1c1e6406bc39e46ec020d2664f43baf78"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36435,
+            "sha256": "5b452caa0e37f870dca18895d822d90283e45d4f301728fcbfa5b50b22d223fd"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21080,
+            "sha256": "41ef99ad3d236e5fcbc1bef47f1d694147334ca2e67e7c166d069069d4cd26d6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20478,
+            "sha256": "394d2274e83465df0b8161a9c01a601a3a52546cb40a3879a1d015adc7d743eb"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45622,
+            "sha256": "93b82907a477694d912fed4cab29a8d37e917034486487cc18d8318f29d56cf5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9523,
+            "sha256": "f2e03c51c98e6e89076dba628f456ca9ba7c361f84a89a7e4f8ffdcc26cdcb9b"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9c1c39e0bff842de57e65e2f"
+    },
+    {
+      "receipt_id": "mb-muranoos-the-interval-handoff-v0-1__receipt_0015",
+      "project_id": "mb-muranoos-the-interval-handoff-v0-1",
+      "project_title": "The Interval (remote violence)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "The Interval (remote violence) / The SAGE Handbook of Peace and Conflict Studies",
+      "component_case_id": "mb-muranoos-the-interval-handoff-v0-1__0015__the-interval-remote-violence-the-sage-handbook-of-peace-and-conflict-studies",
+      "claim_to_demonstrate": "uses `The SAGE Handbook of Peace and Conflict Studies` as a named project component with a traceable role in the public mechanism. Source context: The SAGE Handbook of Peace and Conflict Studies; Peace and Conflict in Core-Periphery Conflicts. Discovery.",
+      "input_fixture": "project source text and the named component `The SAGE Handbook of Peace and Conflict Studies`",
+      "operation_under_test": "uses `The SAGE Handbook of Peace and Conflict Studies` as a named project component with a traceable role in the public mechanism. Source context: The SAGE Handbook of Peace and Conflict Studies; Peace and Conflict in Core-Periphery Conflicts. Discovery.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `The SAGE Handbook of Peace and Conflict Studies`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "173a68bfbcb5a0ea08293e93",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43897,
+            "sha256": "7de0547923397cb06506bfc2d3c765f1c1e6406bc39e46ec020d2664f43baf78"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36435,
+            "sha256": "5b452caa0e37f870dca18895d822d90283e45d4f301728fcbfa5b50b22d223fd"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21080,
+            "sha256": "41ef99ad3d236e5fcbc1bef47f1d694147334ca2e67e7c166d069069d4cd26d6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20478,
+            "sha256": "394d2274e83465df0b8161a9c01a601a3a52546cb40a3879a1d015adc7d743eb"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45622,
+            "sha256": "93b82907a477694d912fed4cab29a8d37e917034486487cc18d8318f29d56cf5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9523,
+            "sha256": "f2e03c51c98e6e89076dba628f456ca9ba7c361f84a89a7e4f8ffdcc26cdcb9b"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0ae4470f699f10e6d5ffdc60"
+    },
+    {
+      "receipt_id": "mb-muranoos-the-interval-handoff-v0-1__receipt_0016",
+      "project_id": "mb-muranoos-the-interval-handoff-v0-1",
+      "project_title": "The Interval (remote violence)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "The Interval (remote violence) / Peace and Conflict",
+      "component_case_id": "mb-muranoos-the-interval-handoff-v0-1__0016__the-interval-remote-violence-peace-and-conflict",
+      "claim_to_demonstrate": "uses `Peace and Conflict` as a named project component with a traceable role in the public mechanism. Source context: The SAGE Handbook of Peace and Conflict Studies; Peace and Conflict in Core-Periphery Conflicts. Discovery, creativity, systems thinking, and.",
+      "input_fixture": "project source text and the named component `Peace and Conflict`",
+      "operation_under_test": "uses `Peace and Conflict` as a named project component with a traceable role in the public mechanism. Source context: The SAGE Handbook of Peace and Conflict Studies; Peace and Conflict in Core-Periphery Conflicts. Discovery, creativity, systems thinking, and.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Peace and Conflict`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "173a68bfbcb5a0ea08293e93",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43897,
+            "sha256": "7de0547923397cb06506bfc2d3c765f1c1e6406bc39e46ec020d2664f43baf78"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36435,
+            "sha256": "5b452caa0e37f870dca18895d822d90283e45d4f301728fcbfa5b50b22d223fd"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21080,
+            "sha256": "41ef99ad3d236e5fcbc1bef47f1d694147334ca2e67e7c166d069069d4cd26d6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20478,
+            "sha256": "394d2274e83465df0b8161a9c01a601a3a52546cb40a3879a1d015adc7d743eb"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45622,
+            "sha256": "93b82907a477694d912fed4cab29a8d37e917034486487cc18d8318f29d56cf5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9523,
+            "sha256": "f2e03c51c98e6e89076dba628f456ca9ba7c361f84a89a7e4f8ffdcc26cdcb9b"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "631892c5c817eecd31607724"
+    },
+    {
+      "receipt_id": "mb-muranoos-the-interval-handoff-v0-1__receipt_0017",
+      "project_id": "mb-muranoos-the-interval-handoff-v0-1",
+      "project_title": "The Interval (remote violence)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "The Interval (remote violence) / Core-Periphery Conflicts. Discovery",
+      "component_case_id": "mb-muranoos-the-interval-handoff-v0-1__0017__the-interval-remote-violence-core-periphery-conflicts-discovery",
+      "claim_to_demonstrate": "uses `Core-Periphery Conflicts. Discovery` as a named project component with a traceable role in the public mechanism. Source context: Peace and Conflict in Core-Periphery Conflicts. Discovery, creativity, systems thinking, and project generation. Use source.",
+      "input_fixture": "project source text and the named component `Core-Periphery Conflicts. Discovery`",
+      "operation_under_test": "uses `Core-Periphery Conflicts. Discovery` as a named project component with a traceable role in the public mechanism. Source context: Peace and Conflict in Core-Periphery Conflicts. Discovery, creativity, systems thinking, and project generation. Use source.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Core-Periphery Conflicts. Discovery`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "fe24c6b5b623657e3880e3cc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43897,
+            "sha256": "7de0547923397cb06506bfc2d3c765f1c1e6406bc39e46ec020d2664f43baf78"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36435,
+            "sha256": "5b452caa0e37f870dca18895d822d90283e45d4f301728fcbfa5b50b22d223fd"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21080,
+            "sha256": "41ef99ad3d236e5fcbc1bef47f1d694147334ca2e67e7c166d069069d4cd26d6"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20478,
+            "sha256": "394d2274e83465df0b8161a9c01a601a3a52546cb40a3879a1d015adc7d743eb"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45622,
+            "sha256": "93b82907a477694d912fed4cab29a8d37e917034486487cc18d8318f29d56cf5"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9523,
+            "sha256": "f2e03c51c98e6e89076dba628f456ca9ba7c361f84a89a7e4f8ffdcc26cdcb9b"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/blueprint.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/instrument_map.json",
+          "project_blueprints/mb-muranoos-the-interval-handoff-v0-1/README.md",
+          "proof_builds/mb-muranoos-the-interval-handoff-v0-1/proof_build.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/demo_cases.json",
+          "proof_demos/mb-muranoos-the-interval-handoff-v0-1/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "99613862e074d807d778aea1"
+    }
+  ]
+}

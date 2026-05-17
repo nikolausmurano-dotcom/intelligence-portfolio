@@ -1,0 +1,1468 @@
+{
+  "project": {
+    "project_id": "native-capstone-defense-noland",
+    "title": "Cognitive Firewalls Defense Room"
+  },
+  "receipts": [
+    {
+      "receipt_id": "native-capstone-defense-noland__receipt_0001",
+      "project_id": "native-capstone-defense-noland",
+      "project_title": "Cognitive Firewalls Defense Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewalls Defense Room Artifact Identity Register",
+      "component_case_id": "native-capstone-defense-noland__0001__cognitive-firewalls-defense-room-artifact-identity-register",
+      "claim_to_demonstrate": "A defense-room variant for explaining the qualitative capstone to an expert reader.",
+      "input_fixture": "packet name, source files, version signal, scope, and intended destination",
+      "operation_under_test": "A defense-room variant for explaining the qualitative capstone to an expert reader.",
+      "expected_output": "what the packet is and what decision it can still change",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0fdf86a6d1416d594a048c5f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46204,
+            "sha256": "75f0c98a83b2255b2d4c2c4be614bf51911bd55612578740297e4b54ec6a1a20"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38757,
+            "sha256": "e3f7701569b49dfdc038d40bc3000cb4e5fe43f0f9210d6ee9f321685a33c4b9"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19925,
+            "sha256": "3b3bf419016106fea4e96ecd36b98fe11d5a212a55f07a85ed90f3fbbaa3d888"
+          },
+          {
+            "relative_path": "proof_builds/native-capstone-defense-noland/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20858,
+            "sha256": "d2a340ebb518d40b59b21783434f16853476dce3585906323aae9f76741358c6"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45984,
+            "sha256": "7d157ba3a2231088c238cc78cec66adcff0e4922c6ab3f633ed85223510a942f"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9630,
+            "sha256": "76c653a0e245168292675d4a5897961e669745f5e61d6afdcf00b8e8b7404777"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-capstone-defense-noland/blueprint.json",
+          "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+          "project_blueprints/native-capstone-defense-noland/README.md",
+          "proof_builds/native-capstone-defense-noland/proof_build.json",
+          "proof_demos/native-capstone-defense-noland/demo_cases.json",
+          "proof_demos/native-capstone-defense-noland/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a87d357d814fc3a8b8afb3fa"
+    },
+    {
+      "receipt_id": "native-capstone-defense-noland__receipt_0002",
+      "project_id": "native-capstone-defense-noland",
+      "project_title": "Cognitive Firewalls Defense Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewalls Defense Room Extraction And Manifest Layer",
+      "component_case_id": "native-capstone-defense-noland__0002__cognitive-firewalls-defense-room-extraction-and-manifest-layer",
+      "claim_to_demonstrate": "Heuer. Loads cognitive-bias and intelligence-analysis failure modes. CIA Tradecraft Primer. Loads structured analytic technique selection and use conditions. Pherson and Pherson. Loads practical tradecraft: indicators, ACH, key assumptions, diagnosticity, and.",
+      "input_fixture": "files, tables, text, screenshots, source notes, and provenance markers",
+      "operation_under_test": "Heuer. Loads cognitive-bias and intelligence-analysis failure modes. CIA Tradecraft Primer. Loads structured analytic technique selection and use conditions. Pherson and Pherson. Loads practical tradecraft: indicators, ACH, key assumptions, diagnosticity, and.",
+      "expected_output": "what can be safely mined from the packet as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d4064f8284d42db167c077d8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46204,
+            "sha256": "75f0c98a83b2255b2d4c2c4be614bf51911bd55612578740297e4b54ec6a1a20"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38757,
+            "sha256": "e3f7701569b49dfdc038d40bc3000cb4e5fe43f0f9210d6ee9f321685a33c4b9"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19925,
+            "sha256": "3b3bf419016106fea4e96ecd36b98fe11d5a212a55f07a85ed90f3fbbaa3d888"
+          },
+          {
+            "relative_path": "proof_builds/native-capstone-defense-noland/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20858,
+            "sha256": "d2a340ebb518d40b59b21783434f16853476dce3585906323aae9f76741358c6"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45984,
+            "sha256": "7d157ba3a2231088c238cc78cec66adcff0e4922c6ab3f633ed85223510a942f"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9630,
+            "sha256": "76c653a0e245168292675d4a5897961e669745f5e61d6afdcf00b8e8b7404777"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-capstone-defense-noland/blueprint.json",
+          "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+          "project_blueprints/native-capstone-defense-noland/README.md",
+          "proof_builds/native-capstone-defense-noland/proof_build.json",
+          "proof_demos/native-capstone-defense-noland/demo_cases.json",
+          "proof_demos/native-capstone-defense-noland/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3867ac3404d4e36413169738"
+    },
+    {
+      "receipt_id": "native-capstone-defense-noland__receipt_0003",
+      "project_id": "native-capstone-defense-noland",
+      "project_title": "Cognitive Firewalls Defense Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewalls Defense Room Mechanism Or Claim Distillation",
+      "component_case_id": "native-capstone-defense-noland__0003__cognitive-firewalls-defense-room-mechanism-or-claim-distillation",
+      "claim_to_demonstrate": "It routes the study through method, evidence packets, coding decisions, reviewer questions, limitations, and post-defense revisions.",
+      "input_fixture": "the packet's central method, model, concept, or design rule",
+      "operation_under_test": "It routes the study through method, evidence packets, coding decisions, reviewer questions, limitations, and post-defense revisions.",
+      "expected_output": "the distinctive idea that should not disappear in public summary",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "23247414e5c922324046d909",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46204,
+            "sha256": "75f0c98a83b2255b2d4c2c4be614bf51911bd55612578740297e4b54ec6a1a20"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38757,
+            "sha256": "e3f7701569b49dfdc038d40bc3000cb4e5fe43f0f9210d6ee9f321685a33c4b9"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19925,
+            "sha256": "3b3bf419016106fea4e96ecd36b98fe11d5a212a55f07a85ed90f3fbbaa3d888"
+          },
+          {
+            "relative_path": "proof_builds/native-capstone-defense-noland/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20858,
+            "sha256": "d2a340ebb518d40b59b21783434f16853476dce3585906323aae9f76741358c6"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45984,
+            "sha256": "7d157ba3a2231088c238cc78cec66adcff0e4922c6ab3f633ed85223510a942f"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9630,
+            "sha256": "76c653a0e245168292675d4a5897961e669745f5e61d6afdcf00b8e8b7404777"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-capstone-defense-noland/blueprint.json",
+          "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+          "project_blueprints/native-capstone-defense-noland/README.md",
+          "proof_builds/native-capstone-defense-noland/proof_build.json",
+          "proof_demos/native-capstone-defense-noland/demo_cases.json",
+          "proof_demos/native-capstone-defense-noland/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "837569cde29f1fe6d7a8fc93"
+    },
+    {
+      "receipt_id": "native-capstone-defense-noland__receipt_0004",
+      "project_id": "native-capstone-defense-noland",
+      "project_title": "Cognitive Firewalls Defense Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewalls Defense Room Proof Boundary",
+      "component_case_id": "native-capstone-defense-noland__0004__cognitive-firewalls-defense-room-proof-boundary",
+      "claim_to_demonstrate": "Visible public components: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains text-focused and does not claim unverified runtime state.",
+      "input_fixture": "built assets, partial assets, archive-only assets, and unsupported claims",
+      "operation_under_test": "Visible public components: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package remains text-focused and does not claim unverified runtime state.",
+      "expected_output": "what the packet proves now as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3f75a54cf5b9a997a4e640e7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46204,
+            "sha256": "75f0c98a83b2255b2d4c2c4be614bf51911bd55612578740297e4b54ec6a1a20"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38757,
+            "sha256": "e3f7701569b49dfdc038d40bc3000cb4e5fe43f0f9210d6ee9f321685a33c4b9"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19925,
+            "sha256": "3b3bf419016106fea4e96ecd36b98fe11d5a212a55f07a85ed90f3fbbaa3d888"
+          },
+          {
+            "relative_path": "proof_builds/native-capstone-defense-noland/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20858,
+            "sha256": "d2a340ebb518d40b59b21783434f16853476dce3585906323aae9f76741358c6"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45984,
+            "sha256": "7d157ba3a2231088c238cc78cec66adcff0e4922c6ab3f633ed85223510a942f"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9630,
+            "sha256": "76c653a0e245168292675d4a5897961e669745f5e61d6afdcf00b8e8b7404777"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-capstone-defense-noland/blueprint.json",
+          "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+          "project_blueprints/native-capstone-defense-noland/README.md",
+          "proof_builds/native-capstone-defense-noland/proof_build.json",
+          "proof_demos/native-capstone-defense-noland/demo_cases.json",
+          "proof_demos/native-capstone-defense-noland/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "98cb2b8fe027697b68f1331d"
+    },
+    {
+      "receipt_id": "native-capstone-defense-noland__receipt_0005",
+      "project_id": "native-capstone-defense-noland",
+      "project_title": "Cognitive Firewalls Defense Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewalls Defense Room Promotion Route",
+      "component_case_id": "native-capstone-defense-noland__0005__cognitive-firewalls-defense-room-promotion-route",
+      "claim_to_demonstrate": "Plan: identify the region-specific source spine, state what the page can and cannot claim, preserve source-register lineage, and close any remaining source lineage or case-selection gaps before treating the page as final. The project source notes below should.",
+      "input_fixture": "website room, MuranoOS room, Nexus task, paper, source bank, or archive",
+      "operation_under_test": "Plan: identify the region-specific source spine, state what the page can and cannot claim, preserve source-register lineage, and close any remaining source lineage or case-selection gaps before treating the page as final. The project source notes below should.",
+      "expected_output": "where the packet should go next as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e05552ce50ffd3271b5a69f7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46204,
+            "sha256": "75f0c98a83b2255b2d4c2c4be614bf51911bd55612578740297e4b54ec6a1a20"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38757,
+            "sha256": "e3f7701569b49dfdc038d40bc3000cb4e5fe43f0f9210d6ee9f321685a33c4b9"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19925,
+            "sha256": "3b3bf419016106fea4e96ecd36b98fe11d5a212a55f07a85ed90f3fbbaa3d888"
+          },
+          {
+            "relative_path": "proof_builds/native-capstone-defense-noland/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20858,
+            "sha256": "d2a340ebb518d40b59b21783434f16853476dce3585906323aae9f76741358c6"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45984,
+            "sha256": "7d157ba3a2231088c238cc78cec66adcff0e4922c6ab3f633ed85223510a942f"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9630,
+            "sha256": "76c653a0e245168292675d4a5897961e669745f5e61d6afdcf00b8e8b7404777"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-capstone-defense-noland/blueprint.json",
+          "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+          "project_blueprints/native-capstone-defense-noland/README.md",
+          "proof_builds/native-capstone-defense-noland/proof_build.json",
+          "proof_demos/native-capstone-defense-noland/demo_cases.json",
+          "proof_demos/native-capstone-defense-noland/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "229c7f543b94e49bc13852a4"
+    },
+    {
+      "receipt_id": "native-capstone-defense-noland__receipt_0006",
+      "project_id": "native-capstone-defense-noland",
+      "project_title": "Cognitive Firewalls Defense Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewalls Defense Room Current Authority State",
+      "component_case_id": "native-capstone-defense-noland__0006__cognitive-firewalls-defense-room-current-authority-state",
+      "claim_to_demonstrate": "Status: native public port complete for upload and navigation; substantive source-project verification remains limited by the source lineage ceiling and the original project governance records. The page separates public presentation from project completion.",
+      "input_fixture": "canonical, superseded, derivative, draft, or context-only status",
+      "operation_under_test": "Status: native public port complete for upload and navigation; substantive source-project verification remains limited by the source lineage ceiling and the original project governance records. The page separates public presentation from project completion.",
+      "expected_output": "how strongly the packet may govern a public page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "4bf580d68c94f0235cd07355",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46204,
+            "sha256": "75f0c98a83b2255b2d4c2c4be614bf51911bd55612578740297e4b54ec6a1a20"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38757,
+            "sha256": "e3f7701569b49dfdc038d40bc3000cb4e5fe43f0f9210d6ee9f321685a33c4b9"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19925,
+            "sha256": "3b3bf419016106fea4e96ecd36b98fe11d5a212a55f07a85ed90f3fbbaa3d888"
+          },
+          {
+            "relative_path": "proof_builds/native-capstone-defense-noland/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20858,
+            "sha256": "d2a340ebb518d40b59b21783434f16853476dce3585906323aae9f76741358c6"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45984,
+            "sha256": "7d157ba3a2231088c238cc78cec66adcff0e4922c6ab3f633ed85223510a942f"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9630,
+            "sha256": "76c653a0e245168292675d4a5897961e669745f5e61d6afdcf00b8e8b7404777"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-capstone-defense-noland/blueprint.json",
+          "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+          "project_blueprints/native-capstone-defense-noland/README.md",
+          "proof_builds/native-capstone-defense-noland/proof_build.json",
+          "proof_demos/native-capstone-defense-noland/demo_cases.json",
+          "proof_demos/native-capstone-defense-noland/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "94f700375928930571473977"
+    },
+    {
+      "receipt_id": "native-capstone-defense-noland__receipt_0007",
+      "project_id": "native-capstone-defense-noland",
+      "project_title": "Cognitive Firewalls Defense Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewalls Defense Room Gap And Reconciliation Queue",
+      "component_case_id": "native-capstone-defense-noland__0007__cognitive-firewalls-defense-room-gap-and-reconciliation-queue",
+      "claim_to_demonstrate": "Remaining gaps: not every regional page has the same mature source lineage foundation as the Russia Desk; thinner pages need page-specific bibliographies and clearer case-selection warrants. The kept Evidence Sections below preserve project substance for.",
+      "input_fixture": "missing source reads, duplicate resolution, version adjudication, or implementation work",
+      "operation_under_test": "Remaining gaps: not every regional page has the same mature source lineage foundation as the Russia Desk; thinner pages need page-specific bibliographies and clearer case-selection warrants. The kept Evidence Sections below preserve project substance for.",
+      "expected_output": "next step before stronger public use as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d860491541934d3d70c14bc6",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46204,
+            "sha256": "75f0c98a83b2255b2d4c2c4be614bf51911bd55612578740297e4b54ec6a1a20"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38757,
+            "sha256": "e3f7701569b49dfdc038d40bc3000cb4e5fe43f0f9210d6ee9f321685a33c4b9"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19925,
+            "sha256": "3b3bf419016106fea4e96ecd36b98fe11d5a212a55f07a85ed90f3fbbaa3d888"
+          },
+          {
+            "relative_path": "proof_builds/native-capstone-defense-noland/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20858,
+            "sha256": "d2a340ebb518d40b59b21783434f16853476dce3585906323aae9f76741358c6"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45984,
+            "sha256": "7d157ba3a2231088c238cc78cec66adcff0e4922c6ab3f633ed85223510a942f"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9630,
+            "sha256": "76c653a0e245168292675d4a5897961e669745f5e61d6afdcf00b8e8b7404777"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-capstone-defense-noland/blueprint.json",
+          "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+          "project_blueprints/native-capstone-defense-noland/README.md",
+          "proof_builds/native-capstone-defense-noland/proof_build.json",
+          "proof_demos/native-capstone-defense-noland/demo_cases.json",
+          "proof_demos/native-capstone-defense-noland/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "88e926d80421b5eafabde573"
+    },
+    {
+      "receipt_id": "native-capstone-defense-noland__receipt_0008",
+      "project_id": "native-capstone-defense-noland",
+      "project_title": "Cognitive Firewalls Defense Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewalls Defense Room / Structured Analytic Prompting",
+      "component_case_id": "native-capstone-defense-noland__0008__cognitive-firewalls-defense-room-structured-analytic-prompting",
+      "claim_to_demonstrate": "uses `Structured Analytic Prompting` as a named project component with a traceable role in the public mechanism. Source context: Structured Analytic Prompting against Poisoned Evidence in LLM-Assisted Analysis The working mechanism is to move from source.",
+      "input_fixture": "project source text and the named component `Structured Analytic Prompting`",
+      "operation_under_test": "uses `Structured Analytic Prompting` as a named project component with a traceable role in the public mechanism. Source context: Structured Analytic Prompting against Poisoned Evidence in LLM-Assisted Analysis The working mechanism is to move from source.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Structured Analytic Prompting`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "641fe2e8e74959a7f874673d",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46204,
+            "sha256": "75f0c98a83b2255b2d4c2c4be614bf51911bd55612578740297e4b54ec6a1a20"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38757,
+            "sha256": "e3f7701569b49dfdc038d40bc3000cb4e5fe43f0f9210d6ee9f321685a33c4b9"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19925,
+            "sha256": "3b3bf419016106fea4e96ecd36b98fe11d5a212a55f07a85ed90f3fbbaa3d888"
+          },
+          {
+            "relative_path": "proof_builds/native-capstone-defense-noland/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20858,
+            "sha256": "d2a340ebb518d40b59b21783434f16853476dce3585906323aae9f76741358c6"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45984,
+            "sha256": "7d157ba3a2231088c238cc78cec66adcff0e4922c6ab3f633ed85223510a942f"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9630,
+            "sha256": "76c653a0e245168292675d4a5897961e669745f5e61d6afdcf00b8e8b7404777"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-capstone-defense-noland/blueprint.json",
+          "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+          "project_blueprints/native-capstone-defense-noland/README.md",
+          "proof_builds/native-capstone-defense-noland/proof_build.json",
+          "proof_demos/native-capstone-defense-noland/demo_cases.json",
+          "proof_demos/native-capstone-defense-noland/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "28fd852817ef5c248172c621"
+    },
+    {
+      "receipt_id": "native-capstone-defense-noland__receipt_0009",
+      "project_id": "native-capstone-defense-noland",
+      "project_title": "Cognitive Firewalls Defense Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewalls Defense Room / Poisoned Evidence",
+      "component_case_id": "native-capstone-defense-noland__0009__cognitive-firewalls-defense-room-poisoned-evidence",
+      "claim_to_demonstrate": "uses `Poisoned Evidence` as a named project component with a traceable role in the public mechanism. Source context: Structured Analytic Prompting against Poisoned Evidence in LLM-Assisted Analysis The working mechanism is to move from source intake and.",
+      "input_fixture": "project source text and the named component `Poisoned Evidence`",
+      "operation_under_test": "uses `Poisoned Evidence` as a named project component with a traceable role in the public mechanism. Source context: Structured Analytic Prompting against Poisoned Evidence in LLM-Assisted Analysis The working mechanism is to move from source intake and.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Poisoned Evidence`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "641fe2e8e74959a7f874673d",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46204,
+            "sha256": "75f0c98a83b2255b2d4c2c4be614bf51911bd55612578740297e4b54ec6a1a20"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38757,
+            "sha256": "e3f7701569b49dfdc038d40bc3000cb4e5fe43f0f9210d6ee9f321685a33c4b9"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19925,
+            "sha256": "3b3bf419016106fea4e96ecd36b98fe11d5a212a55f07a85ed90f3fbbaa3d888"
+          },
+          {
+            "relative_path": "proof_builds/native-capstone-defense-noland/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20858,
+            "sha256": "d2a340ebb518d40b59b21783434f16853476dce3585906323aae9f76741358c6"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45984,
+            "sha256": "7d157ba3a2231088c238cc78cec66adcff0e4922c6ab3f633ed85223510a942f"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9630,
+            "sha256": "76c653a0e245168292675d4a5897961e669745f5e61d6afdcf00b8e8b7404777"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-capstone-defense-noland/blueprint.json",
+          "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+          "project_blueprints/native-capstone-defense-noland/README.md",
+          "proof_builds/native-capstone-defense-noland/proof_build.json",
+          "proof_demos/native-capstone-defense-noland/demo_cases.json",
+          "proof_demos/native-capstone-defense-noland/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "829ec63558a44bd9bb4d57e4"
+    },
+    {
+      "receipt_id": "native-capstone-defense-noland__receipt_0010",
+      "project_id": "native-capstone-defense-noland",
+      "project_title": "Cognitive Firewalls Defense Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewalls Defense Room / LLM-Assisted Analysis The",
+      "component_case_id": "native-capstone-defense-noland__0010__cognitive-firewalls-defense-room-llm-assisted-analysis-the",
+      "claim_to_demonstrate": "uses `LLM-Assisted Analysis The` as a named project component with a traceable role in the public mechanism. Source context: Structured Analytic Prompting against Poisoned Evidence in LLM-Assisted Analysis The working mechanism is to move from source intake.",
+      "input_fixture": "project source text and the named component `LLM-Assisted Analysis The`",
+      "operation_under_test": "uses `LLM-Assisted Analysis The` as a named project component with a traceable role in the public mechanism. Source context: Structured Analytic Prompting against Poisoned Evidence in LLM-Assisted Analysis The working mechanism is to move from source intake.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `LLM-Assisted Analysis The`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "641fe2e8e74959a7f874673d",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46204,
+            "sha256": "75f0c98a83b2255b2d4c2c4be614bf51911bd55612578740297e4b54ec6a1a20"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38757,
+            "sha256": "e3f7701569b49dfdc038d40bc3000cb4e5fe43f0f9210d6ee9f321685a33c4b9"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19925,
+            "sha256": "3b3bf419016106fea4e96ecd36b98fe11d5a212a55f07a85ed90f3fbbaa3d888"
+          },
+          {
+            "relative_path": "proof_builds/native-capstone-defense-noland/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20858,
+            "sha256": "d2a340ebb518d40b59b21783434f16853476dce3585906323aae9f76741358c6"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45984,
+            "sha256": "7d157ba3a2231088c238cc78cec66adcff0e4922c6ab3f633ed85223510a942f"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9630,
+            "sha256": "76c653a0e245168292675d4a5897961e669745f5e61d6afdcf00b8e8b7404777"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-capstone-defense-noland/blueprint.json",
+          "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+          "project_blueprints/native-capstone-defense-noland/README.md",
+          "proof_builds/native-capstone-defense-noland/proof_build.json",
+          "proof_demos/native-capstone-defense-noland/demo_cases.json",
+          "proof_demos/native-capstone-defense-noland/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "465c944734885761c4547010"
+    },
+    {
+      "receipt_id": "native-capstone-defense-noland__receipt_0011",
+      "project_id": "native-capstone-defense-noland",
+      "project_title": "Cognitive Firewalls Defense Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewalls Defense Room / Evidence Sections",
+      "component_case_id": "native-capstone-defense-noland__0011__cognitive-firewalls-defense-room-evidence-sections",
+      "claim_to_demonstrate": "uses `Evidence Sections` as a named project component with a traceable role in the public mechanism. Source context: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "input_fixture": "project source text and the named component `Evidence Sections`",
+      "operation_under_test": "uses `Evidence Sections` as a named project component with a traceable role in the public mechanism. Source context: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Evidence Sections`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5398195ed0c2c97ba73992f0",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46204,
+            "sha256": "75f0c98a83b2255b2d4c2c4be614bf51911bd55612578740297e4b54ec6a1a20"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38757,
+            "sha256": "e3f7701569b49dfdc038d40bc3000cb4e5fe43f0f9210d6ee9f321685a33c4b9"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19925,
+            "sha256": "3b3bf419016106fea4e96ecd36b98fe11d5a212a55f07a85ed90f3fbbaa3d888"
+          },
+          {
+            "relative_path": "proof_builds/native-capstone-defense-noland/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20858,
+            "sha256": "d2a340ebb518d40b59b21783434f16853476dce3585906323aae9f76741358c6"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45984,
+            "sha256": "7d157ba3a2231088c238cc78cec66adcff0e4922c6ab3f633ed85223510a942f"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9630,
+            "sha256": "76c653a0e245168292675d4a5897961e669745f5e61d6afdcf00b8e8b7404777"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-capstone-defense-noland/blueprint.json",
+          "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+          "project_blueprints/native-capstone-defense-noland/README.md",
+          "proof_builds/native-capstone-defense-noland/proof_build.json",
+          "proof_demos/native-capstone-defense-noland/demo_cases.json",
+          "proof_demos/native-capstone-defense-noland/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "cec0a546746c20066c46e877"
+    },
+    {
+      "receipt_id": "native-capstone-defense-noland__receipt_0012",
+      "project_id": "native-capstone-defense-noland",
+      "project_title": "Cognitive Firewalls Defense Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewalls Defense Room / Review Notes",
+      "component_case_id": "native-capstone-defense-noland__0012__cognitive-firewalls-defense-room-review-notes",
+      "claim_to_demonstrate": "uses `Review Notes` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The.",
+      "input_fixture": "project source text and the named component `Review Notes`",
+      "operation_under_test": "uses `Review Notes` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `Review Notes`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5398195ed0c2c97ba73992f0",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46204,
+            "sha256": "75f0c98a83b2255b2d4c2c4be614bf51911bd55612578740297e4b54ec6a1a20"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38757,
+            "sha256": "e3f7701569b49dfdc038d40bc3000cb4e5fe43f0f9210d6ee9f321685a33c4b9"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19925,
+            "sha256": "3b3bf419016106fea4e96ecd36b98fe11d5a212a55f07a85ed90f3fbbaa3d888"
+          },
+          {
+            "relative_path": "proof_builds/native-capstone-defense-noland/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20858,
+            "sha256": "d2a340ebb518d40b59b21783434f16853476dce3585906323aae9f76741358c6"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45984,
+            "sha256": "7d157ba3a2231088c238cc78cec66adcff0e4922c6ab3f633ed85223510a942f"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9630,
+            "sha256": "76c653a0e245168292675d4a5897961e669745f5e61d6afdcf00b8e8b7404777"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-capstone-defense-noland/blueprint.json",
+          "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+          "project_blueprints/native-capstone-defense-noland/README.md",
+          "proof_builds/native-capstone-defense-noland/proof_build.json",
+          "proof_demos/native-capstone-defense-noland/demo_cases.json",
+          "proof_demos/native-capstone-defense-noland/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "907f2969b4fde9b83f4247a0"
+    },
+    {
+      "receipt_id": "native-capstone-defense-noland__receipt_0013",
+      "project_id": "native-capstone-defense-noland",
+      "project_title": "Cognitive Firewalls Defense Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewalls Defense Room / Russia Desk",
+      "component_case_id": "native-capstone-defense-noland__0013__cognitive-firewalls-defense-room-russia-desk",
+      "claim_to_demonstrate": "treats `Russia Desk` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: not every regional page has the same mature source lineage foundation as the Russia Desk; thinner pages need.",
+      "input_fixture": "project source text and the named component `Russia Desk`",
+      "operation_under_test": "treats `Russia Desk` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: not every regional page has the same mature source lineage foundation as the Russia Desk; thinner pages need.",
+      "expected_output": "a room, workbench, or interface function tied to `Russia Desk`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "7af0e9755c491dc861187c88",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46204,
+            "sha256": "75f0c98a83b2255b2d4c2c4be614bf51911bd55612578740297e4b54ec6a1a20"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38757,
+            "sha256": "e3f7701569b49dfdc038d40bc3000cb4e5fe43f0f9210d6ee9f321685a33c4b9"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19925,
+            "sha256": "3b3bf419016106fea4e96ecd36b98fe11d5a212a55f07a85ed90f3fbbaa3d888"
+          },
+          {
+            "relative_path": "proof_builds/native-capstone-defense-noland/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20858,
+            "sha256": "d2a340ebb518d40b59b21783434f16853476dce3585906323aae9f76741358c6"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45984,
+            "sha256": "7d157ba3a2231088c238cc78cec66adcff0e4922c6ab3f633ed85223510a942f"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9630,
+            "sha256": "76c653a0e245168292675d4a5897961e669745f5e61d6afdcf00b8e8b7404777"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-capstone-defense-noland/blueprint.json",
+          "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+          "project_blueprints/native-capstone-defense-noland/README.md",
+          "proof_builds/native-capstone-defense-noland/proof_build.json",
+          "proof_demos/native-capstone-defense-noland/demo_cases.json",
+          "proof_demos/native-capstone-defense-noland/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "22c53a6c18406b2bc11769bb"
+    },
+    {
+      "receipt_id": "native-capstone-defense-noland__receipt_0014",
+      "project_id": "native-capstone-defense-noland",
+      "project_title": "Cognitive Firewalls Defense Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewalls Defense Room / Native Navigation",
+      "component_case_id": "native-capstone-defense-noland__0014__cognitive-firewalls-defense-room-native-navigation",
+      "claim_to_demonstrate": "uses `Native Navigation` as a named project component with a traceable role in the public mechanism. Source context: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "input_fixture": "project source text and the named component `Native Navigation`",
+      "operation_under_test": "uses `Native Navigation` as a named project component with a traceable role in the public mechanism. Source context: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Native Navigation`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5398195ed0c2c97ba73992f0",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46204,
+            "sha256": "75f0c98a83b2255b2d4c2c4be614bf51911bd55612578740297e4b54ec6a1a20"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38757,
+            "sha256": "e3f7701569b49dfdc038d40bc3000cb4e5fe43f0f9210d6ee9f321685a33c4b9"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19925,
+            "sha256": "3b3bf419016106fea4e96ecd36b98fe11d5a212a55f07a85ed90f3fbbaa3d888"
+          },
+          {
+            "relative_path": "proof_builds/native-capstone-defense-noland/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20858,
+            "sha256": "d2a340ebb518d40b59b21783434f16853476dce3585906323aae9f76741358c6"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45984,
+            "sha256": "7d157ba3a2231088c238cc78cec66adcff0e4922c6ab3f633ed85223510a942f"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9630,
+            "sha256": "76c653a0e245168292675d4a5897961e669745f5e61d6afdcf00b8e8b7404777"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-capstone-defense-noland/blueprint.json",
+          "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+          "project_blueprints/native-capstone-defense-noland/README.md",
+          "proof_builds/native-capstone-defense-noland/proof_build.json",
+          "proof_demos/native-capstone-defense-noland/demo_cases.json",
+          "proof_demos/native-capstone-defense-noland/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1ed4180dcaa7a2ab9888b029"
+    },
+    {
+      "receipt_id": "native-capstone-defense-noland__receipt_0015",
+      "project_id": "native-capstone-defense-noland",
+      "project_title": "Cognitive Firewalls Defense Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewalls Defense Room / APA lineage",
+      "component_case_id": "native-capstone-defense-noland__0015__cognitive-firewalls-defense-room-apa-lineage",
+      "claim_to_demonstrate": "uses `APA lineage` as a named project component with a traceable role in the public mechanism. Source context: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "input_fixture": "project source text and the named component `APA lineage`",
+      "operation_under_test": "uses `APA lineage` as a named project component with a traceable role in the public mechanism. Source context: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA lineage, and source lineage claim limit. The public package.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `APA lineage`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5398195ed0c2c97ba73992f0",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46204,
+            "sha256": "75f0c98a83b2255b2d4c2c4be614bf51911bd55612578740297e4b54ec6a1a20"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38757,
+            "sha256": "e3f7701569b49dfdc038d40bc3000cb4e5fe43f0f9210d6ee9f321685a33c4b9"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19925,
+            "sha256": "3b3bf419016106fea4e96ecd36b98fe11d5a212a55f07a85ed90f3fbbaa3d888"
+          },
+          {
+            "relative_path": "proof_builds/native-capstone-defense-noland/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20858,
+            "sha256": "d2a340ebb518d40b59b21783434f16853476dce3585906323aae9f76741358c6"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45984,
+            "sha256": "7d157ba3a2231088c238cc78cec66adcff0e4922c6ab3f633ed85223510a942f"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9630,
+            "sha256": "76c653a0e245168292675d4a5897961e669745f5e61d6afdcf00b8e8b7404777"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-capstone-defense-noland/blueprint.json",
+          "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+          "project_blueprints/native-capstone-defense-noland/README.md",
+          "proof_builds/native-capstone-defense-noland/proof_build.json",
+          "proof_demos/native-capstone-defense-noland/demo_cases.json",
+          "proof_demos/native-capstone-defense-noland/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e400f17469779878b97f0839"
+    },
+    {
+      "receipt_id": "native-capstone-defense-noland__receipt_0016",
+      "project_id": "native-capstone-defense-noland",
+      "project_title": "Cognitive Firewalls Defense Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewalls Defense Room / source lineage claim limit. The public package remains text",
+      "component_case_id": "native-capstone-defense-noland__0016__cognitive-firewalls-defense-room-source-lineage-claim-limit-the-public-package-remains-tex",
+      "claim_to_demonstrate": "uses `source lineage claim limit. The public package remains text` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA.",
+      "input_fixture": "project source text and the named component `source lineage claim limit. The public package remains text`",
+      "operation_under_test": "uses `source lineage claim limit. The public package remains text` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: 120 kept Evidence Sections, native navigation, Review Notes, source-use plan, APA.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `source lineage claim limit. The public package remains text`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5398195ed0c2c97ba73992f0",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46204,
+            "sha256": "75f0c98a83b2255b2d4c2c4be614bf51911bd55612578740297e4b54ec6a1a20"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38757,
+            "sha256": "e3f7701569b49dfdc038d40bc3000cb4e5fe43f0f9210d6ee9f321685a33c4b9"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19925,
+            "sha256": "3b3bf419016106fea4e96ecd36b98fe11d5a212a55f07a85ed90f3fbbaa3d888"
+          },
+          {
+            "relative_path": "proof_builds/native-capstone-defense-noland/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20858,
+            "sha256": "d2a340ebb518d40b59b21783434f16853476dce3585906323aae9f76741358c6"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45984,
+            "sha256": "7d157ba3a2231088c238cc78cec66adcff0e4922c6ab3f633ed85223510a942f"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9630,
+            "sha256": "76c653a0e245168292675d4a5897961e669745f5e61d6afdcf00b8e8b7404777"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-capstone-defense-noland/blueprint.json",
+          "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+          "project_blueprints/native-capstone-defense-noland/README.md",
+          "proof_builds/native-capstone-defense-noland/proof_build.json",
+          "proof_demos/native-capstone-defense-noland/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4a1faad3813ec58562bf06f8"
+    },
+    {
+      "receipt_id": "native-capstone-defense-noland__receipt_0017",
+      "project_id": "native-capstone-defense-noland",
+      "project_title": "Cognitive Firewalls Defense Room",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Cognitive Firewalls Defense Room / focused and does not claim unverified runtime state. Plan: identify the region",
+      "component_case_id": "native-capstone-defense-noland__0017__cognitive-firewalls-defense-room-focused-and-does-not-claim-unverified-runtime-state-plan-",
+      "claim_to_demonstrate": "uses `focused and does not claim unverified runtime state. Plan: identify the region` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: The public package remains text-focused and does not claim.",
+      "input_fixture": "project source text and the named component `focused and does not claim unverified runtime state. Plan: identify the region`",
+      "operation_under_test": "uses `focused and does not claim unverified runtime state. Plan: identify the region` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: The public package remains text-focused and does not claim.",
+      "expected_output": "a review decision, claim ceiling, or release boundary tied to `focused and does not claim unverified runtime state. Plan: identify the region`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "6025132c7b3c25d8b485f235",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 46204,
+            "sha256": "75f0c98a83b2255b2d4c2c4be614bf51911bd55612578740297e4b54ec6a1a20"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38757,
+            "sha256": "e3f7701569b49dfdc038d40bc3000cb4e5fe43f0f9210d6ee9f321685a33c4b9"
+          },
+          {
+            "relative_path": "project_blueprints/native-capstone-defense-noland/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 19925,
+            "sha256": "3b3bf419016106fea4e96ecd36b98fe11d5a212a55f07a85ed90f3fbbaa3d888"
+          },
+          {
+            "relative_path": "proof_builds/native-capstone-defense-noland/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20858,
+            "sha256": "d2a340ebb518d40b59b21783434f16853476dce3585906323aae9f76741358c6"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45984,
+            "sha256": "7d157ba3a2231088c238cc78cec66adcff0e4922c6ab3f633ed85223510a942f"
+          },
+          {
+            "relative_path": "proof_demos/native-capstone-defense-noland/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9630,
+            "sha256": "76c653a0e245168292675d4a5897961e669745f5e61d6afdcf00b8e8b7404777"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/native-capstone-defense-noland/blueprint.json",
+          "project_blueprints/native-capstone-defense-noland/instrument_map.json",
+          "project_blueprints/native-capstone-defense-noland/README.md",
+          "proof_builds/native-capstone-defense-noland/proof_build.json",
+          "proof_demos/native-capstone-defense-noland/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c760b6fceb89abe79fead567"
+    }
+  ]
+}

@@ -1,0 +1,1466 @@
+{
+  "project": {
+    "project_id": "mb-cia-russian-ci-handoff-packet",
+    "title": "Credential stack + 90-day plan + Competency Tracker CSV"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-cia-russian-ci-handoff-packet__receipt_0001",
+      "project_id": "mb-cia-russian-ci-handoff-packet",
+      "project_title": "Credential stack + 90-day plan + Competency Tracker CSV",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Credential stack + 90-day plan + Competency Tracker CSV Handoff Identity",
+      "component_case_id": "mb-cia-russian-ci-handoff-packet__0001__credential-stack-90-day-plan-competency-tracker-csv-handoff-identity",
+      "claim_to_demonstrate": "This packet specializes in the credential/training architecture of a Russian-counterintelligence-focused CIA candidacy, assembled from a conversation in which the user explicitly rejected cyber/AI as primary tracks and insisted on non-coding preparation.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "This packet specializes in the credential/training architecture of a Russian-counterintelligence-focused CIA candidacy, assembled from a conversation in which the user explicitly rejected cyber/AI as primary tracks and insisted on non-coding preparation.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45057,
+            "sha256": "6fe99363a3f4e5b5dfa9b599fb70502ef4f101d9f4eb7cb38f5c59f0a32c1a81"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36723,
+            "sha256": "64bd88bc9a1dd4f1d66b7a217597e0a63d94ae3257f1246fe7bc317be7c7d954"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21940,
+            "sha256": "0dce8bf1a60a5e30323a7be272f3e4872bb3e84525a4c1b52abae0100ac3bd22"
+          },
+          {
+            "relative_path": "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21478,
+            "sha256": "3e170460ae7f95b60a613f8f0940f4d973647a9b1520a011b153bbef247312fd"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47381,
+            "sha256": "d7016fd7a09699024f063ca03d0e416202ff2c715f55ae388db83b4a698d2f55"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10533,
+            "sha256": "add4df164858ddec7f99f760de1a528058218475f461bb252de84f9d4017465d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+          "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "cf47ea68e20622c779338dac"
+    },
+    {
+      "receipt_id": "mb-cia-russian-ci-handoff-packet__receipt_0002",
+      "project_id": "mb-cia-russian-ci-handoff-packet",
+      "project_title": "Credential stack + 90-day plan + Competency Tracker CSV",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Credential stack + 90-day plan + Competency Tracker CSV Room Task Model",
+      "component_case_id": "mb-cia-russian-ci-handoff-packet__0002__credential-stack-90-day-plan-competency-tracker-csv-room-task-model",
+      "claim_to_demonstrate": "The mechanism is professional-evidence curation: keep career-facing materials limited, unclassified, role-appropriate, and tied to concrete work products without exposing private or unsuitable application material.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "The mechanism is professional-evidence curation: keep career-facing materials limited, unclassified, role-appropriate, and tied to concrete work products without exposing private or unsuitable application material.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45057,
+            "sha256": "6fe99363a3f4e5b5dfa9b599fb70502ef4f101d9f4eb7cb38f5c59f0a32c1a81"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36723,
+            "sha256": "64bd88bc9a1dd4f1d66b7a217597e0a63d94ae3257f1246fe7bc317be7c7d954"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21940,
+            "sha256": "0dce8bf1a60a5e30323a7be272f3e4872bb3e84525a4c1b52abae0100ac3bd22"
+          },
+          {
+            "relative_path": "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21478,
+            "sha256": "3e170460ae7f95b60a613f8f0940f4d973647a9b1520a011b153bbef247312fd"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47381,
+            "sha256": "d7016fd7a09699024f063ca03d0e416202ff2c715f55ae388db83b4a698d2f55"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10533,
+            "sha256": "add4df164858ddec7f99f760de1a528058218475f461bb252de84f9d4017465d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+          "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7871e85fd85ebcb6cc59b9dd"
+    },
+    {
+      "receipt_id": "mb-cia-russian-ci-handoff-packet__receipt_0003",
+      "project_id": "mb-cia-russian-ci-handoff-packet",
+      "project_title": "Credential stack + 90-day plan + Competency Tracker CSV",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Credential stack + 90-day plan + Competency Tracker CSV Data Schema And Persistence Plan",
+      "component_case_id": "mb-cia-russian-ci-handoff-packet__0003__credential-stack-90-day-plan-competency-tracker-csv-data-schema-and-persistence-plan",
+      "claim_to_demonstrate": "Intelligence tradecraft, counterintelligence, and analytic method. Use source library intelligence titles as method authority and intelligence-domain stressors. Vision: Present intelligence pages as disciplined analytic-method and tradecraft demonstrations.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Intelligence tradecraft, counterintelligence, and analytic method. Use source library intelligence titles as method authority and intelligence-domain stressors. Vision: Present intelligence pages as disciplined analytic-method and tradecraft demonstrations.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45057,
+            "sha256": "6fe99363a3f4e5b5dfa9b599fb70502ef4f101d9f4eb7cb38f5c59f0a32c1a81"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36723,
+            "sha256": "64bd88bc9a1dd4f1d66b7a217597e0a63d94ae3257f1246fe7bc317be7c7d954"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21940,
+            "sha256": "0dce8bf1a60a5e30323a7be272f3e4872bb3e84525a4c1b52abae0100ac3bd22"
+          },
+          {
+            "relative_path": "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21478,
+            "sha256": "3e170460ae7f95b60a613f8f0940f4d973647a9b1520a011b153bbef247312fd"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47381,
+            "sha256": "d7016fd7a09699024f063ca03d0e416202ff2c715f55ae388db83b4a698d2f55"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10533,
+            "sha256": "add4df164858ddec7f99f760de1a528058218475f461bb252de84f9d4017465d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+          "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "fa504a5010b5a03be7e8cbd8"
+    },
+    {
+      "receipt_id": "mb-cia-russian-ci-handoff-packet__receipt_0004",
+      "project_id": "mb-cia-russian-ci-handoff-packet",
+      "project_title": "Credential stack + 90-day plan + Competency Tracker CSV",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Credential stack + 90-day plan + Competency Tracker CSV Interface And Instrument Plane",
+      "component_case_id": "mb-cia-russian-ci-handoff-packet__0004__credential-stack-90-day-plan-competency-tracker-csv-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45057,
+            "sha256": "6fe99363a3f4e5b5dfa9b599fb70502ef4f101d9f4eb7cb38f5c59f0a32c1a81"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36723,
+            "sha256": "64bd88bc9a1dd4f1d66b7a217597e0a63d94ae3257f1246fe7bc317be7c7d954"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21940,
+            "sha256": "0dce8bf1a60a5e30323a7be272f3e4872bb3e84525a4c1b52abae0100ac3bd22"
+          },
+          {
+            "relative_path": "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21478,
+            "sha256": "3e170460ae7f95b60a613f8f0940f4d973647a9b1520a011b153bbef247312fd"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47381,
+            "sha256": "d7016fd7a09699024f063ca03d0e416202ff2c715f55ae388db83b4a698d2f55"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10533,
+            "sha256": "add4df164858ddec7f99f760de1a528058218475f461bb252de84f9d4017465d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+          "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "86544f458c1d57484b10b224"
+    },
+    {
+      "receipt_id": "mb-cia-russian-ci-handoff-packet__receipt_0005",
+      "project_id": "mb-cia-russian-ci-handoff-packet",
+      "project_title": "Credential stack + 90-day plan + Competency Tracker CSV",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Credential stack + 90-day plan + Competency Tracker CSV Integration Path",
+      "component_case_id": "mb-cia-russian-ci-handoff-packet__0005__credential-stack-90-day-plan-competency-tracker-csv-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. When to reach for this: building a non-coding CI-focused credential stack; explaining in a cover letter or interview why this stack was chosen; drafting an.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. When to reach for this: building a non-coding CI-focused credential stack; explaining in a cover letter or interview why this stack was chosen; drafting an.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45057,
+            "sha256": "6fe99363a3f4e5b5dfa9b599fb70502ef4f101d9f4eb7cb38f5c59f0a32c1a81"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36723,
+            "sha256": "64bd88bc9a1dd4f1d66b7a217597e0a63d94ae3257f1246fe7bc317be7c7d954"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21940,
+            "sha256": "0dce8bf1a60a5e30323a7be272f3e4872bb3e84525a4c1b52abae0100ac3bd22"
+          },
+          {
+            "relative_path": "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21478,
+            "sha256": "3e170460ae7f95b60a613f8f0940f4d973647a9b1520a011b153bbef247312fd"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47381,
+            "sha256": "d7016fd7a09699024f063ca03d0e416202ff2c715f55ae388db83b4a698d2f55"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10533,
+            "sha256": "add4df164858ddec7f99f760de1a528058218475f461bb252de84f9d4017465d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+          "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0b833e71983a2a9b0a44bf79"
+    },
+    {
+      "receipt_id": "mb-cia-russian-ci-handoff-packet__receipt_0006",
+      "project_id": "mb-cia-russian-ci-handoff-packet",
+      "project_title": "Credential stack + 90-day plan + Competency Tracker CSV",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Credential stack + 90-day plan + Competency Tracker CSV Proof Boundary",
+      "component_case_id": "mb-cia-russian-ci-handoff-packet__0006__credential-stack-90-day-plan-competency-tracker-csv-proof-boundary",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45057,
+            "sha256": "6fe99363a3f4e5b5dfa9b599fb70502ef4f101d9f4eb7cb38f5c59f0a32c1a81"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36723,
+            "sha256": "64bd88bc9a1dd4f1d66b7a217597e0a63d94ae3257f1246fe7bc317be7c7d954"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21940,
+            "sha256": "0dce8bf1a60a5e30323a7be272f3e4872bb3e84525a4c1b52abae0100ac3bd22"
+          },
+          {
+            "relative_path": "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21478,
+            "sha256": "3e170460ae7f95b60a613f8f0940f4d973647a9b1520a011b153bbef247312fd"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47381,
+            "sha256": "d7016fd7a09699024f063ca03d0e416202ff2c715f55ae388db83b4a698d2f55"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10533,
+            "sha256": "add4df164858ddec7f99f760de1a528058218475f461bb252de84f9d4017465d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+          "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "76da721a8b026b4a692b21de"
+    },
+    {
+      "receipt_id": "mb-cia-russian-ci-handoff-packet__receipt_0007",
+      "project_id": "mb-cia-russian-ci-handoff-packet",
+      "project_title": "Credential stack + 90-day plan + Competency Tracker CSV",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Credential stack + 90-day plan + Competency Tracker CSV Next Build Test",
+      "component_case_id": "mb-cia-russian-ci-handoff-packet__0007__credential-stack-90-day-plan-competency-tracker-csv-next-build-test",
+      "claim_to_demonstrate": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45057,
+            "sha256": "6fe99363a3f4e5b5dfa9b599fb70502ef4f101d9f4eb7cb38f5c59f0a32c1a81"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36723,
+            "sha256": "64bd88bc9a1dd4f1d66b7a217597e0a63d94ae3257f1246fe7bc317be7c7d954"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21940,
+            "sha256": "0dce8bf1a60a5e30323a7be272f3e4872bb3e84525a4c1b52abae0100ac3bd22"
+          },
+          {
+            "relative_path": "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21478,
+            "sha256": "3e170460ae7f95b60a613f8f0940f4d973647a9b1520a011b153bbef247312fd"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47381,
+            "sha256": "d7016fd7a09699024f063ca03d0e416202ff2c715f55ae388db83b4a698d2f55"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10533,
+            "sha256": "add4df164858ddec7f99f760de1a528058218475f461bb252de84f9d4017465d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+          "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "456c50225e567b6f1830fe66"
+    },
+    {
+      "receipt_id": "mb-cia-russian-ci-handoff-packet__receipt_0008",
+      "project_id": "mb-cia-russian-ci-handoff-packet",
+      "project_title": "Credential stack + 90-day plan + Competency Tracker CSV",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Credential stack + 90-day plan + Competency Tracker CSV / README.md",
+      "component_case_id": "mb-cia-russian-ci-handoff-packet__0008__credential-stack-90-day-plan-competency-tracker-csv-readme-md",
+      "claim_to_demonstrate": "treats `README.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 01_Project_Card.md — 05_Priority_Stack_and_90_Day_Plan.md for execution — 07_Application_Narrative_Template.md for.",
+      "input_fixture": "project source text and the named component `README.md`",
+      "operation_under_test": "treats `README.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 01_Project_Card.md — 05_Priority_Stack_and_90_Day_Plan.md for execution — 07_Application_Narrative_Template.md for.",
+      "expected_output": "inspectable implementation evidence tied to `README.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c3f258272ab84053ef2e75b0",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45057,
+            "sha256": "6fe99363a3f4e5b5dfa9b599fb70502ef4f101d9f4eb7cb38f5c59f0a32c1a81"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36723,
+            "sha256": "64bd88bc9a1dd4f1d66b7a217597e0a63d94ae3257f1246fe7bc317be7c7d954"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21940,
+            "sha256": "0dce8bf1a60a5e30323a7be272f3e4872bb3e84525a4c1b52abae0100ac3bd22"
+          },
+          {
+            "relative_path": "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21478,
+            "sha256": "3e170460ae7f95b60a613f8f0940f4d973647a9b1520a011b153bbef247312fd"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47381,
+            "sha256": "d7016fd7a09699024f063ca03d0e416202ff2c715f55ae388db83b4a698d2f55"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10533,
+            "sha256": "add4df164858ddec7f99f760de1a528058218475f461bb252de84f9d4017465d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+          "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "628fb3a0e116b1cc6b929109"
+    },
+    {
+      "receipt_id": "mb-cia-russian-ci-handoff-packet__receipt_0009",
+      "project_id": "mb-cia-russian-ci-handoff-packet",
+      "project_title": "Credential stack + 90-day plan + Competency Tracker CSV",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Credential stack + 90-day plan + Competency Tracker CSV / 01_Project_Card.md",
+      "component_case_id": "mb-cia-russian-ci-handoff-packet__0009__credential-stack-90-day-plan-competency-tracker-csv-01-project-card-md",
+      "claim_to_demonstrate": "treats `01_Project_Card.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 01_Project_Card.md — 05_Priority_Stack_and_90_Day_Plan.md for execution — 07_Application_Narrative_Template.md.",
+      "input_fixture": "project source text and the named component `01_Project_Card.md`",
+      "operation_under_test": "treats `01_Project_Card.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 01_Project_Card.md — 05_Priority_Stack_and_90_Day_Plan.md for execution — 07_Application_Narrative_Template.md.",
+      "expected_output": "inspectable implementation evidence tied to `01_Project_Card.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c3f258272ab84053ef2e75b0",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45057,
+            "sha256": "6fe99363a3f4e5b5dfa9b599fb70502ef4f101d9f4eb7cb38f5c59f0a32c1a81"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36723,
+            "sha256": "64bd88bc9a1dd4f1d66b7a217597e0a63d94ae3257f1246fe7bc317be7c7d954"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21940,
+            "sha256": "0dce8bf1a60a5e30323a7be272f3e4872bb3e84525a4c1b52abae0100ac3bd22"
+          },
+          {
+            "relative_path": "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21478,
+            "sha256": "3e170460ae7f95b60a613f8f0940f4d973647a9b1520a011b153bbef247312fd"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47381,
+            "sha256": "d7016fd7a09699024f063ca03d0e416202ff2c715f55ae388db83b4a698d2f55"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10533,
+            "sha256": "add4df164858ddec7f99f760de1a528058218475f461bb252de84f9d4017465d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+          "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "028b806556d63af0bb41f0a2"
+    },
+    {
+      "receipt_id": "mb-cia-russian-ci-handoff-packet__receipt_0010",
+      "project_id": "mb-cia-russian-ci-handoff-packet",
+      "project_title": "Credential stack + 90-day plan + Competency Tracker CSV",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Credential stack + 90-day plan + Competency Tracker CSV / 05_Priority_Stack_and_90_Day_Plan.md",
+      "component_case_id": "mb-cia-russian-ci-handoff-packet__0010__credential-stack-90-day-plan-competency-tracker-csv-05-priority-stack-and-90-day-plan-md",
+      "claim_to_demonstrate": "treats `05_Priority_Stack_and_90_Day_Plan.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 01_Project_Card.md — 05_Priority_Stack_and_90_Day_Plan.md for execution —.",
+      "input_fixture": "project source text and the named component `05_Priority_Stack_and_90_Day_Plan.md`",
+      "operation_under_test": "treats `05_Priority_Stack_and_90_Day_Plan.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 01_Project_Card.md — 05_Priority_Stack_and_90_Day_Plan.md for execution —.",
+      "expected_output": "inspectable implementation evidence tied to `05_Priority_Stack_and_90_Day_Plan.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c3f258272ab84053ef2e75b0",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45057,
+            "sha256": "6fe99363a3f4e5b5dfa9b599fb70502ef4f101d9f4eb7cb38f5c59f0a32c1a81"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36723,
+            "sha256": "64bd88bc9a1dd4f1d66b7a217597e0a63d94ae3257f1246fe7bc317be7c7d954"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21940,
+            "sha256": "0dce8bf1a60a5e30323a7be272f3e4872bb3e84525a4c1b52abae0100ac3bd22"
+          },
+          {
+            "relative_path": "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21478,
+            "sha256": "3e170460ae7f95b60a613f8f0940f4d973647a9b1520a011b153bbef247312fd"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47381,
+            "sha256": "d7016fd7a09699024f063ca03d0e416202ff2c715f55ae388db83b4a698d2f55"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10533,
+            "sha256": "add4df164858ddec7f99f760de1a528058218475f461bb252de84f9d4017465d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+          "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a6bf10ade5425d87e21a973f"
+    },
+    {
+      "receipt_id": "mb-cia-russian-ci-handoff-packet__receipt_0011",
+      "project_id": "mb-cia-russian-ci-handoff-packet",
+      "project_title": "Credential stack + 90-day plan + Competency Tracker CSV",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Credential stack + 90-day plan + Competency Tracker CSV / 07_Application_Narrative_Template.md",
+      "component_case_id": "mb-cia-russian-ci-handoff-packet__0011__credential-stack-90-day-plan-competency-tracker-csv-07-application-narrative-template-md",
+      "claim_to_demonstrate": "treats `07_Application_Narrative_Template.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 01_Project_Card.md — 05_Priority_Stack_and_90_Day_Plan.md for execution —.",
+      "input_fixture": "project source text and the named component `07_Application_Narrative_Template.md`",
+      "operation_under_test": "treats `07_Application_Narrative_Template.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 01_Project_Card.md — 05_Priority_Stack_and_90_Day_Plan.md for execution —.",
+      "expected_output": "inspectable implementation evidence tied to `07_Application_Narrative_Template.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "c3f258272ab84053ef2e75b0",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45057,
+            "sha256": "6fe99363a3f4e5b5dfa9b599fb70502ef4f101d9f4eb7cb38f5c59f0a32c1a81"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36723,
+            "sha256": "64bd88bc9a1dd4f1d66b7a217597e0a63d94ae3257f1246fe7bc317be7c7d954"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21940,
+            "sha256": "0dce8bf1a60a5e30323a7be272f3e4872bb3e84525a4c1b52abae0100ac3bd22"
+          },
+          {
+            "relative_path": "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21478,
+            "sha256": "3e170460ae7f95b60a613f8f0940f4d973647a9b1520a011b153bbef247312fd"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47381,
+            "sha256": "d7016fd7a09699024f063ca03d0e416202ff2c715f55ae388db83b4a698d2f55"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10533,
+            "sha256": "add4df164858ddec7f99f760de1a528058218475f461bb252de84f9d4017465d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+          "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1423748eaeed221171d00a39"
+    },
+    {
+      "receipt_id": "mb-cia-russian-ci-handoff-packet__receipt_0012",
+      "project_id": "mb-cia-russian-ci-handoff-packet",
+      "project_title": "Credential stack + 90-day plan + Competency Tracker CSV",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Credential stack + 90-day plan + Competency Tracker CSV / CI analyst at the DO",
+      "component_case_id": "mb-cia-russian-ci-handoff-packet__0012__credential-stack-90-day-plan-competency-tracker-csv-ci-analyst-at-the-do",
+      "claim_to_demonstrate": "uses `CI analyst at the DO` as a named project component with a traceable role in the public mechanism. Source context: The packet converts the advisory chat into a signal-vs-substance framework, a 90-day execution schedule, a target-role taxonomy that flags.",
+      "input_fixture": "project source text and the named component `CI analyst at the DO`",
+      "operation_under_test": "uses `CI analyst at the DO` as a named project component with a traceable role in the public mechanism. Source context: The packet converts the advisory chat into a signal-vs-substance framework, a 90-day execution schedule, a target-role taxonomy that flags.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `CI analyst at the DO`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "ba1e2a3235857fd92c04457a",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45057,
+            "sha256": "6fe99363a3f4e5b5dfa9b599fb70502ef4f101d9f4eb7cb38f5c59f0a32c1a81"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36723,
+            "sha256": "64bd88bc9a1dd4f1d66b7a217597e0a63d94ae3257f1246fe7bc317be7c7d954"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21940,
+            "sha256": "0dce8bf1a60a5e30323a7be272f3e4872bb3e84525a4c1b52abae0100ac3bd22"
+          },
+          {
+            "relative_path": "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21478,
+            "sha256": "3e170460ae7f95b60a613f8f0940f4d973647a9b1520a011b153bbef247312fd"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47381,
+            "sha256": "d7016fd7a09699024f063ca03d0e416202ff2c715f55ae388db83b4a698d2f55"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10533,
+            "sha256": "add4df164858ddec7f99f760de1a528058218475f461bb252de84f9d4017465d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+          "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e83cdcbed68d70d0bbc757e6"
+    },
+    {
+      "receipt_id": "mb-cia-russian-ci-handoff-packet__receipt_0013",
+      "project_id": "mb-cia-russian-ci-handoff-packet",
+      "project_title": "Credential stack + 90-day plan + Competency Tracker CSV",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Credential stack + 90-day plan + Competency Tracker CSV / Counterintelligence and Security Development",
+      "component_case_id": "mb-cia-russian-ci-handoff-packet__0013__credential-stack-90-day-plan-competency-tracker-csv-counterintelligence-and-security-devel",
+      "claim_to_demonstrate": "uses `Counterintelligence and Security Development` as a named project component with a traceable role in the public mechanism. Source context: resume's \"Counterintelligence and Security Development\" section; cover-letter narrative spine. Wire or preserve the.",
+      "input_fixture": "project source text and the named component `Counterintelligence and Security Development`",
+      "operation_under_test": "uses `Counterintelligence and Security Development` as a named project component with a traceable role in the public mechanism. Source context: resume's \"Counterintelligence and Security Development\" section; cover-letter narrative spine. Wire or preserve the.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Counterintelligence and Security Development`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a025f0400ec11003efde2f84",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45057,
+            "sha256": "6fe99363a3f4e5b5dfa9b599fb70502ef4f101d9f4eb7cb38f5c59f0a32c1a81"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36723,
+            "sha256": "64bd88bc9a1dd4f1d66b7a217597e0a63d94ae3257f1246fe7bc317be7c7d954"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21940,
+            "sha256": "0dce8bf1a60a5e30323a7be272f3e4872bb3e84525a4c1b52abae0100ac3bd22"
+          },
+          {
+            "relative_path": "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21478,
+            "sha256": "3e170460ae7f95b60a613f8f0940f4d973647a9b1520a011b153bbef247312fd"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47381,
+            "sha256": "d7016fd7a09699024f063ca03d0e416202ff2c715f55ae388db83b4a698d2f55"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10533,
+            "sha256": "add4df164858ddec7f99f760de1a528058218475f461bb252de84f9d4017465d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+          "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "113c71796a3628fc95121a43"
+    },
+    {
+      "receipt_id": "mb-cia-russian-ci-handoff-packet__receipt_0014",
+      "project_id": "mb-cia-russian-ci-handoff-packet",
+      "project_title": "Credential stack + 90-day plan + Competency Tracker CSV",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Credential stack + 90-day plan + Competency Tracker CSV / Russian-counterintelligence-focused CIA",
+      "component_case_id": "mb-cia-russian-ci-handoff-packet__0014__credential-stack-90-day-plan-competency-tracker-csv-russian-counterintelligence-focused-ci",
+      "claim_to_demonstrate": "uses `Russian-counterintelligence-focused CIA` as a named project component with a traceable role in the public mechanism. Source context: This packet specializes in the credential/training architecture of a Russian-counterintelligence-focused CIA candidacy.",
+      "input_fixture": "project source text and the named component `Russian-counterintelligence-focused CIA`",
+      "operation_under_test": "uses `Russian-counterintelligence-focused CIA` as a named project component with a traceable role in the public mechanism. Source context: This packet specializes in the credential/training architecture of a Russian-counterintelligence-focused CIA candidacy.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Russian-counterintelligence-focused CIA`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "aaf8262550777d13e0017492",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45057,
+            "sha256": "6fe99363a3f4e5b5dfa9b599fb70502ef4f101d9f4eb7cb38f5c59f0a32c1a81"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36723,
+            "sha256": "64bd88bc9a1dd4f1d66b7a217597e0a63d94ae3257f1246fe7bc317be7c7d954"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21940,
+            "sha256": "0dce8bf1a60a5e30323a7be272f3e4872bb3e84525a4c1b52abae0100ac3bd22"
+          },
+          {
+            "relative_path": "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21478,
+            "sha256": "3e170460ae7f95b60a613f8f0940f4d973647a9b1520a011b153bbef247312fd"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47381,
+            "sha256": "d7016fd7a09699024f063ca03d0e416202ff2c715f55ae388db83b4a698d2f55"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10533,
+            "sha256": "add4df164858ddec7f99f760de1a528058218475f461bb252de84f9d4017465d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+          "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "75336576234d3ac25169e968"
+    },
+    {
+      "receipt_id": "mb-cia-russian-ci-handoff-packet__receipt_0015",
+      "project_id": "mb-cia-russian-ci-handoff-packet",
+      "project_title": "Credential stack + 90-day plan + Competency Tracker CSV",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Credential stack + 90-day plan + Competency Tracker CSV / EXPORT DISCIPLINE",
+      "component_case_id": "mb-cia-russian-ci-handoff-packet__0015__credential-stack-90-day-plan-competency-tracker-csv-export-discipline",
+      "claim_to_demonstrate": "uses `EXPORT DISCIPLINE` as a named project component with a traceable role in the public mechanism. Source context: It operates under the same EXPORT DISCIPLINE v2... The mechanism is professional-evidence curation: keep career-facing materials limited.",
+      "input_fixture": "project source text and the named component `EXPORT DISCIPLINE`",
+      "operation_under_test": "uses `EXPORT DISCIPLINE` as a named project component with a traceable role in the public mechanism. Source context: It operates under the same EXPORT DISCIPLINE v2... The mechanism is professional-evidence curation: keep career-facing materials limited.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `EXPORT DISCIPLINE`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0d3a3b1f21d3438fc961fde6",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45057,
+            "sha256": "6fe99363a3f4e5b5dfa9b599fb70502ef4f101d9f4eb7cb38f5c59f0a32c1a81"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36723,
+            "sha256": "64bd88bc9a1dd4f1d66b7a217597e0a63d94ae3257f1246fe7bc317be7c7d954"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21940,
+            "sha256": "0dce8bf1a60a5e30323a7be272f3e4872bb3e84525a4c1b52abae0100ac3bd22"
+          },
+          {
+            "relative_path": "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21478,
+            "sha256": "3e170460ae7f95b60a613f8f0940f4d973647a9b1520a011b153bbef247312fd"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47381,
+            "sha256": "d7016fd7a09699024f063ca03d0e416202ff2c715f55ae388db83b4a698d2f55"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10533,
+            "sha256": "add4df164858ddec7f99f760de1a528058218475f461bb252de84f9d4017465d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+          "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7d8093ff761acd2c8b526376"
+    },
+    {
+      "receipt_id": "mb-cia-russian-ci-handoff-packet__receipt_0016",
+      "project_id": "mb-cia-russian-ci-handoff-packet",
+      "project_title": "Credential stack + 90-day plan + Competency Tracker CSV",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Credential stack + 90-day plan + Competency Tracker CSV / Kanban/tracker for",
+      "component_case_id": "mb-cia-russian-ci-handoff-packet__0016__credential-stack-90-day-plan-competency-tracker-csv-kanban-tracker-for",
+      "claim_to_demonstrate": "uses `Kanban/tracker for` as a named project component with a traceable role in the public mechanism. Source context: personal Kanban/tracker for 90-day plan; resume's \"Counterintelligence and Security Development\" section; cover-letter narrative spine. Wire.",
+      "input_fixture": "project source text and the named component `Kanban/tracker for`",
+      "operation_under_test": "uses `Kanban/tracker for` as a named project component with a traceable role in the public mechanism. Source context: personal Kanban/tracker for 90-day plan; resume's \"Counterintelligence and Security Development\" section; cover-letter narrative spine. Wire.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Kanban/tracker for`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "7ce1f89c6956e7114bb83618",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45057,
+            "sha256": "6fe99363a3f4e5b5dfa9b599fb70502ef4f101d9f4eb7cb38f5c59f0a32c1a81"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36723,
+            "sha256": "64bd88bc9a1dd4f1d66b7a217597e0a63d94ae3257f1246fe7bc317be7c7d954"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21940,
+            "sha256": "0dce8bf1a60a5e30323a7be272f3e4872bb3e84525a4c1b52abae0100ac3bd22"
+          },
+          {
+            "relative_path": "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21478,
+            "sha256": "3e170460ae7f95b60a613f8f0940f4d973647a9b1520a011b153bbef247312fd"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47381,
+            "sha256": "d7016fd7a09699024f063ca03d0e416202ff2c715f55ae388db83b4a698d2f55"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10533,
+            "sha256": "add4df164858ddec7f99f760de1a528058218475f461bb252de84f9d4017465d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+          "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "aee9ad6abfc2356024046b97"
+    },
+    {
+      "receipt_id": "mb-cia-russian-ci-handoff-packet__receipt_0017",
+      "project_id": "mb-cia-russian-ci-handoff-packet",
+      "project_title": "Credential stack + 90-day plan + Competency Tracker CSV",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Credential stack + 90-day plan + Competency Tracker CSV / Prioritize Capstone",
+      "component_case_id": "mb-cia-russian-ci-handoff-packet__0017__credential-stack-90-day-plan-competency-tracker-csv-prioritize-capstone",
+      "claim_to_demonstrate": "uses `Prioritize Capstone` as a named project component with a traceable role in the public mechanism. Source context: Prioritize Capstone, SATS, CI, RAG integrity, and analyst-assurance pages for close-reading. Status: source library identified as candidate.",
+      "input_fixture": "project source text and the named component `Prioritize Capstone`",
+      "operation_under_test": "uses `Prioritize Capstone` as a named project component with a traceable role in the public mechanism. Source context: Prioritize Capstone, SATS, CI, RAG integrity, and analyst-assurance pages for close-reading. Status: source library identified as candidate.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Prioritize Capstone`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "da6aee46b4a86df2749d7951",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45057,
+            "sha256": "6fe99363a3f4e5b5dfa9b599fb70502ef4f101d9f4eb7cb38f5c59f0a32c1a81"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36723,
+            "sha256": "64bd88bc9a1dd4f1d66b7a217597e0a63d94ae3257f1246fe7bc317be7c7d954"
+          },
+          {
+            "relative_path": "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21940,
+            "sha256": "0dce8bf1a60a5e30323a7be272f3e4872bb3e84525a4c1b52abae0100ac3bd22"
+          },
+          {
+            "relative_path": "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21478,
+            "sha256": "3e170460ae7f95b60a613f8f0940f4d973647a9b1520a011b153bbef247312fd"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47381,
+            "sha256": "d7016fd7a09699024f063ca03d0e416202ff2c715f55ae388db83b4a698d2f55"
+          },
+          {
+            "relative_path": "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 10533,
+            "sha256": "add4df164858ddec7f99f760de1a528058218475f461bb252de84f9d4017465d"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/blueprint.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/instrument_map.json",
+          "project_blueprints/mb-cia-russian-ci-handoff-packet/README.md",
+          "proof_builds/mb-cia-russian-ci-handoff-packet/proof_build.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/demo_cases.json",
+          "proof_demos/mb-cia-russian-ci-handoff-packet/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7a3c8fe8334934ab4a8e95f0"
+    }
+  ]
+}

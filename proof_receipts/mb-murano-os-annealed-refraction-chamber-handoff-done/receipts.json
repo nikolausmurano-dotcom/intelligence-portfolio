@@ -1,0 +1,1470 @@
+{
+  "project": {
+    "project_id": "mb-murano-os-annealed-refraction-chamber-handoff-done",
+    "title": "Annealed Refraction Chamber"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__receipt_0001",
+      "project_id": "mb-murano-os-annealed-refraction-chamber-handoff-done",
+      "project_title": "Annealed Refraction Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Annealed Refraction Chamber Handoff Identity",
+      "component_case_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__0001__annealed-refraction-chamber-handoff-identity",
+      "claim_to_demonstrate": "Specifies the Annealed Refraction Chamber, a Murano OS room for loss-minimizing design-research governance.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "Specifies the Annealed Refraction Chamber, a Murano OS room for loss-minimizing design-research governance.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43468,
+            "sha256": "7a46be9dd1ab673f5cfb9610ea27657bfe6189da2bda37992a61551cdef0e149"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35705,
+            "sha256": "1376636c0e12ef76a21e70b8ea2696a5bb4df5bdfacb1ca155b13745326fd9e3"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20793,
+            "sha256": "d4f884b98b5a504b25a41fdb64d4303b2ced48443271e7a18759d9a419ce4b5f"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20276,
+            "sha256": "1e5a36d571792a54154da7953ebb4953683e8818bb891ec1eb999f0c0b1b2567"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45702,
+            "sha256": "b825329606769f708b53237bddc9efc99beae71add7d43f65dc1cdffbf4770d2"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9792,
+            "sha256": "0eb6127796eaca98173e7a9b4e82a2b3186cb8b9843f064df232700cc755fb8f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+          "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "361575f6d2040c5646f89249"
+    },
+    {
+      "receipt_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__receipt_0002",
+      "project_id": "mb-murano-os-annealed-refraction-chamber-handoff-done",
+      "project_title": "Annealed Refraction Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Annealed Refraction Chamber Room Task Model",
+      "component_case_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__0002__annealed-refraction-chamber-room-task-model",
+      "claim_to_demonstrate": ", state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival retention",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": ", state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival retention",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43468,
+            "sha256": "7a46be9dd1ab673f5cfb9610ea27657bfe6189da2bda37992a61551cdef0e149"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35705,
+            "sha256": "1376636c0e12ef76a21e70b8ea2696a5bb4df5bdfacb1ca155b13745326fd9e3"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20793,
+            "sha256": "d4f884b98b5a504b25a41fdb64d4303b2ced48443271e7a18759d9a419ce4b5f"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20276,
+            "sha256": "1e5a36d571792a54154da7953ebb4953683e8818bb891ec1eb999f0c0b1b2567"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45702,
+            "sha256": "b825329606769f708b53237bddc9efc99beae71add7d43f65dc1cdffbf4770d2"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9792,
+            "sha256": "0eb6127796eaca98173e7a9b4e82a2b3186cb8b9843f064df232700cc755fb8f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+          "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9aac0d517c290158a6059393"
+    },
+    {
+      "receipt_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__receipt_0003",
+      "project_id": "mb-murano-os-annealed-refraction-chamber-handoff-done",
+      "project_title": "Annealed Refraction Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Annealed Refraction Chamber Data Schema And Persistence Plan",
+      "component_case_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__0003__annealed-refraction-chamber-data-schema-and-persistence-plan",
+      "claim_to_demonstrate": "Writing, rhetoric, narrative design, visual culture, and presentation. Use source library writing/visual/cinema sources to strengthen public exposition and Trilogy visual/storytelling logic. Vision: Make public pages read as curated intellectual exhibits.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Writing, rhetoric, narrative design, visual culture, and presentation. Use source library writing/visual/cinema sources to strengthen public exposition and Trilogy visual/storytelling logic. Vision: Make public pages read as curated intellectual exhibits.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43468,
+            "sha256": "7a46be9dd1ab673f5cfb9610ea27657bfe6189da2bda37992a61551cdef0e149"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35705,
+            "sha256": "1376636c0e12ef76a21e70b8ea2696a5bb4df5bdfacb1ca155b13745326fd9e3"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20793,
+            "sha256": "d4f884b98b5a504b25a41fdb64d4303b2ced48443271e7a18759d9a419ce4b5f"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20276,
+            "sha256": "1e5a36d571792a54154da7953ebb4953683e8818bb891ec1eb999f0c0b1b2567"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45702,
+            "sha256": "b825329606769f708b53237bddc9efc99beae71add7d43f65dc1cdffbf4770d2"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9792,
+            "sha256": "0eb6127796eaca98173e7a9b4e82a2b3186cb8b9843f064df232700cc755fb8f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+          "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "cc2b70fca6083abab83f3c3c"
+    },
+    {
+      "receipt_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__receipt_0004",
+      "project_id": "mb-murano-os-annealed-refraction-chamber-handoff-done",
+      "project_title": "Annealed Refraction Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Annealed Refraction Chamber Interface And Instrument Plane",
+      "component_case_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__0004__annealed-refraction-chamber-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43468,
+            "sha256": "7a46be9dd1ab673f5cfb9610ea27657bfe6189da2bda37992a61551cdef0e149"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35705,
+            "sha256": "1376636c0e12ef76a21e70b8ea2696a5bb4df5bdfacb1ca155b13745326fd9e3"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20793,
+            "sha256": "d4f884b98b5a504b25a41fdb64d4303b2ced48443271e7a18759d9a419ce4b5f"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20276,
+            "sha256": "1e5a36d571792a54154da7953ebb4953683e8818bb891ec1eb999f0c0b1b2567"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45702,
+            "sha256": "b825329606769f708b53237bddc9efc99beae71add7d43f65dc1cdffbf4770d2"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9792,
+            "sha256": "0eb6127796eaca98173e7a9b4e82a2b3186cb8b9843f064df232700cc755fb8f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+          "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "474f7fcac01f50a7e35760ab"
+    },
+    {
+      "receipt_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__receipt_0005",
+      "project_id": "mb-murano-os-annealed-refraction-chamber-handoff-done",
+      "project_title": "Annealed Refraction Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Annealed Refraction Chamber Integration Path",
+      "component_case_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__0005__annealed-refraction-chamber-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. When to reach for this: architecture/design-research work where equity trade-offs, tacit judgment, hostile review, and rhetorical assembly all need audit-grade.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. When to reach for this: architecture/design-research work where equity trade-offs, tacit judgment, hostile review, and rhetorical assembly all need audit-grade.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43468,
+            "sha256": "7a46be9dd1ab673f5cfb9610ea27657bfe6189da2bda37992a61551cdef0e149"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35705,
+            "sha256": "1376636c0e12ef76a21e70b8ea2696a5bb4df5bdfacb1ca155b13745326fd9e3"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20793,
+            "sha256": "d4f884b98b5a504b25a41fdb64d4303b2ced48443271e7a18759d9a419ce4b5f"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20276,
+            "sha256": "1e5a36d571792a54154da7953ebb4953683e8818bb891ec1eb999f0c0b1b2567"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45702,
+            "sha256": "b825329606769f708b53237bddc9efc99beae71add7d43f65dc1cdffbf4770d2"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9792,
+            "sha256": "0eb6127796eaca98173e7a9b4e82a2b3186cb8b9843f064df232700cc755fb8f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+          "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3b85cbd886220a2c035bf0cf"
+    },
+    {
+      "receipt_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__receipt_0006",
+      "project_id": "mb-murano-os-annealed-refraction-chamber-handoff-done",
+      "project_title": "Annealed Refraction Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Annealed Refraction Chamber Proof Boundary",
+      "component_case_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__0006__annealed-refraction-chamber-proof-boundary",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43468,
+            "sha256": "7a46be9dd1ab673f5cfb9610ea27657bfe6189da2bda37992a61551cdef0e149"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35705,
+            "sha256": "1376636c0e12ef76a21e70b8ea2696a5bb4df5bdfacb1ca155b13745326fd9e3"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20793,
+            "sha256": "d4f884b98b5a504b25a41fdb64d4303b2ced48443271e7a18759d9a419ce4b5f"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20276,
+            "sha256": "1e5a36d571792a54154da7953ebb4953683e8818bb891ec1eb999f0c0b1b2567"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45702,
+            "sha256": "b825329606769f708b53237bddc9efc99beae71add7d43f65dc1cdffbf4770d2"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9792,
+            "sha256": "0eb6127796eaca98173e7a9b4e82a2b3186cb8b9843f064df232700cc755fb8f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+          "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d42dfe292c5194248d6538ed"
+    },
+    {
+      "receipt_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__receipt_0007",
+      "project_id": "mb-murano-os-annealed-refraction-chamber-handoff-done",
+      "project_title": "Annealed Refraction Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Annealed Refraction Chamber Next Build Test",
+      "component_case_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__0007__annealed-refraction-chamber-next-build-test",
+      "claim_to_demonstrate": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43468,
+            "sha256": "7a46be9dd1ab673f5cfb9610ea27657bfe6189da2bda37992a61551cdef0e149"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35705,
+            "sha256": "1376636c0e12ef76a21e70b8ea2696a5bb4df5bdfacb1ca155b13745326fd9e3"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20793,
+            "sha256": "d4f884b98b5a504b25a41fdb64d4303b2ced48443271e7a18759d9a419ce4b5f"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20276,
+            "sha256": "1e5a36d571792a54154da7953ebb4953683e8818bb891ec1eb999f0c0b1b2567"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45702,
+            "sha256": "b825329606769f708b53237bddc9efc99beae71add7d43f65dc1cdffbf4770d2"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9792,
+            "sha256": "0eb6127796eaca98173e7a9b4e82a2b3186cb8b9843f064df232700cc755fb8f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+          "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "a325ea19a5af94d7ab02b0b0"
+    },
+    {
+      "receipt_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__receipt_0008",
+      "project_id": "mb-murano-os-annealed-refraction-chamber-handoff-done",
+      "project_title": "Annealed Refraction Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Annealed Refraction Chamber / backend/frontend",
+      "component_case_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__0008__annealed-refraction-chamber-backend-frontend",
+      "claim_to_demonstrate": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "input_fixture": "project source text and the named component `backend/frontend`",
+      "operation_under_test": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `backend/frontend`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "12b906e53c841f6a071a9002",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43468,
+            "sha256": "7a46be9dd1ab673f5cfb9610ea27657bfe6189da2bda37992a61551cdef0e149"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35705,
+            "sha256": "1376636c0e12ef76a21e70b8ea2696a5bb4df5bdfacb1ca155b13745326fd9e3"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20793,
+            "sha256": "d4f884b98b5a504b25a41fdb64d4303b2ced48443271e7a18759d9a419ce4b5f"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20276,
+            "sha256": "1e5a36d571792a54154da7953ebb4953683e8818bb891ec1eb999f0c0b1b2567"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45702,
+            "sha256": "b825329606769f708b53237bddc9efc99beae71add7d43f65dc1cdffbf4770d2"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9792,
+            "sha256": "0eb6127796eaca98173e7a9b4e82a2b3186cb8b9843f064df232700cc755fb8f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+          "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5d251d919a95d27cccf2d68f"
+    },
+    {
+      "receipt_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__receipt_0009",
+      "project_id": "mb-murano-os-annealed-refraction-chamber-handoff-done",
+      "project_title": "Annealed Refraction Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Annealed Refraction Chamber / schemas/map_schema.json",
+      "component_case_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__0009__annealed-refraction-chamber-schemas-map-schema-json",
+      "claim_to_demonstrate": "treats `schemas/map_schema.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> 01_Room_Charter_and_Design_Thesis.md -> 04_Object_Ontology_and_Event_Model.md -> schemas/map_schema.json.",
+      "input_fixture": "project source text and the named component `schemas/map_schema.json`",
+      "operation_under_test": "treats `schemas/map_schema.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> 01_Room_Charter_and_Design_Thesis.md -> 04_Object_Ontology_and_Event_Model.md -> schemas/map_schema.json.",
+      "expected_output": "inspectable implementation evidence tied to `schemas/map_schema.json`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0be27ffcaf9a9156802befec",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43468,
+            "sha256": "7a46be9dd1ab673f5cfb9610ea27657bfe6189da2bda37992a61551cdef0e149"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35705,
+            "sha256": "1376636c0e12ef76a21e70b8ea2696a5bb4df5bdfacb1ca155b13745326fd9e3"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20793,
+            "sha256": "d4f884b98b5a504b25a41fdb64d4303b2ced48443271e7a18759d9a419ce4b5f"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20276,
+            "sha256": "1e5a36d571792a54154da7953ebb4953683e8818bb891ec1eb999f0c0b1b2567"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45702,
+            "sha256": "b825329606769f708b53237bddc9efc99beae71add7d43f65dc1cdffbf4770d2"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9792,
+            "sha256": "0eb6127796eaca98173e7a9b4e82a2b3186cb8b9843f064df232700cc755fb8f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+          "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "2c2810c873574d6be80b3069"
+    },
+    {
+      "receipt_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__receipt_0010",
+      "project_id": "mb-murano-os-annealed-refraction-chamber-handoff-done",
+      "project_title": "Annealed Refraction Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Annealed Refraction Chamber / README.md",
+      "component_case_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__0010__annealed-refraction-chamber-readme-md",
+      "claim_to_demonstrate": "treats `README.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> 01_Room_Charter_and_Design_Thesis.md -> 04_Object_Ontology_and_Event_Model.md -> schemas/map_schema.json Integration.",
+      "input_fixture": "project source text and the named component `README.md`",
+      "operation_under_test": "treats `README.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> 01_Room_Charter_and_Design_Thesis.md -> 04_Object_Ontology_and_Event_Model.md -> schemas/map_schema.json Integration.",
+      "expected_output": "inspectable implementation evidence tied to `README.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0be27ffcaf9a9156802befec",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43468,
+            "sha256": "7a46be9dd1ab673f5cfb9610ea27657bfe6189da2bda37992a61551cdef0e149"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35705,
+            "sha256": "1376636c0e12ef76a21e70b8ea2696a5bb4df5bdfacb1ca155b13745326fd9e3"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20793,
+            "sha256": "d4f884b98b5a504b25a41fdb64d4303b2ced48443271e7a18759d9a419ce4b5f"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20276,
+            "sha256": "1e5a36d571792a54154da7953ebb4953683e8818bb891ec1eb999f0c0b1b2567"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45702,
+            "sha256": "b825329606769f708b53237bddc9efc99beae71add7d43f65dc1cdffbf4770d2"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9792,
+            "sha256": "0eb6127796eaca98173e7a9b4e82a2b3186cb8b9843f064df232700cc755fb8f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+          "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "11244d18f5746165c6d0b445"
+    },
+    {
+      "receipt_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__receipt_0011",
+      "project_id": "mb-murano-os-annealed-refraction-chamber-handoff-done",
+      "project_title": "Annealed Refraction Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Annealed Refraction Chamber / 01_Room_Charter_and_Design_Thesis.md",
+      "component_case_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__0011__annealed-refraction-chamber-01-room-charter-and-design-thesis-md",
+      "claim_to_demonstrate": "treats `01_Room_Charter_and_Design_Thesis.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> 01_Room_Charter_and_Design_Thesis.md -> 04_Object_Ontology_and_Event_Model.md ->.",
+      "input_fixture": "project source text and the named component `01_Room_Charter_and_Design_Thesis.md`",
+      "operation_under_test": "treats `01_Room_Charter_and_Design_Thesis.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> 01_Room_Charter_and_Design_Thesis.md -> 04_Object_Ontology_and_Event_Model.md ->.",
+      "expected_output": "inspectable implementation evidence tied to `01_Room_Charter_and_Design_Thesis.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0be27ffcaf9a9156802befec",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43468,
+            "sha256": "7a46be9dd1ab673f5cfb9610ea27657bfe6189da2bda37992a61551cdef0e149"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35705,
+            "sha256": "1376636c0e12ef76a21e70b8ea2696a5bb4df5bdfacb1ca155b13745326fd9e3"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20793,
+            "sha256": "d4f884b98b5a504b25a41fdb64d4303b2ced48443271e7a18759d9a419ce4b5f"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20276,
+            "sha256": "1e5a36d571792a54154da7953ebb4953683e8818bb891ec1eb999f0c0b1b2567"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45702,
+            "sha256": "b825329606769f708b53237bddc9efc99beae71add7d43f65dc1cdffbf4770d2"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9792,
+            "sha256": "0eb6127796eaca98173e7a9b4e82a2b3186cb8b9843f064df232700cc755fb8f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+          "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9d14031ab5fd1dbc84bd4228"
+    },
+    {
+      "receipt_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__receipt_0012",
+      "project_id": "mb-murano-os-annealed-refraction-chamber-handoff-done",
+      "project_title": "Annealed Refraction Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Annealed Refraction Chamber / 04_Object_Ontology_and_Event_Model.md",
+      "component_case_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__0012__annealed-refraction-chamber-04-object-ontology-and-event-model-md",
+      "claim_to_demonstrate": "treats `04_Object_Ontology_and_Event_Model.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> 01_Room_Charter_and_Design_Thesis.md -> 04_Object_Ontology_and_Event_Model.md ->.",
+      "input_fixture": "project source text and the named component `04_Object_Ontology_and_Event_Model.md`",
+      "operation_under_test": "treats `04_Object_Ontology_and_Event_Model.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> 01_Room_Charter_and_Design_Thesis.md -> 04_Object_Ontology_and_Event_Model.md ->.",
+      "expected_output": "inspectable implementation evidence tied to `04_Object_Ontology_and_Event_Model.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0be27ffcaf9a9156802befec",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43468,
+            "sha256": "7a46be9dd1ab673f5cfb9610ea27657bfe6189da2bda37992a61551cdef0e149"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35705,
+            "sha256": "1376636c0e12ef76a21e70b8ea2696a5bb4df5bdfacb1ca155b13745326fd9e3"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20793,
+            "sha256": "d4f884b98b5a504b25a41fdb64d4303b2ced48443271e7a18759d9a419ce4b5f"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20276,
+            "sha256": "1e5a36d571792a54154da7953ebb4953683e8818bb891ec1eb999f0c0b1b2567"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45702,
+            "sha256": "b825329606769f708b53237bddc9efc99beae71add7d43f65dc1cdffbf4770d2"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9792,
+            "sha256": "0eb6127796eaca98173e7a9b4e82a2b3186cb8b9843f064df232700cc755fb8f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+          "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "56c2d6c5dc3ff03b610f7fac"
+    },
+    {
+      "receipt_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__receipt_0013",
+      "project_id": "mb-murano-os-annealed-refraction-chamber-handoff-done",
+      "project_title": "Annealed Refraction Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Annealed Refraction Chamber / map_schema.json",
+      "component_case_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__0013__annealed-refraction-chamber-map-schema-json",
+      "claim_to_demonstrate": "treats `map_schema.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> 01_Room_Charter_and_Design_Thesis.md -> 04_Object_Ontology_and_Event_Model.md -> schemas/map_schema.json.",
+      "input_fixture": "project source text and the named component `map_schema.json`",
+      "operation_under_test": "treats `map_schema.json` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md -> 01_Room_Charter_and_Design_Thesis.md -> 04_Object_Ontology_and_Event_Model.md -> schemas/map_schema.json.",
+      "expected_output": "inspectable implementation evidence tied to `map_schema.json`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0be27ffcaf9a9156802befec",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43468,
+            "sha256": "7a46be9dd1ab673f5cfb9610ea27657bfe6189da2bda37992a61551cdef0e149"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35705,
+            "sha256": "1376636c0e12ef76a21e70b8ea2696a5bb4df5bdfacb1ca155b13745326fd9e3"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20793,
+            "sha256": "d4f884b98b5a504b25a41fdb64d4303b2ced48443271e7a18759d9a419ce4b5f"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20276,
+            "sha256": "1e5a36d571792a54154da7953ebb4953683e8818bb891ec1eb999f0c0b1b2567"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45702,
+            "sha256": "b825329606769f708b53237bddc9efc99beae71add7d43f65dc1cdffbf4770d2"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9792,
+            "sha256": "0eb6127796eaca98173e7a9b4e82a2b3186cb8b9843f064df232700cc755fb8f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+          "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d7c62bd4654b7eaddae80af6"
+    },
+    {
+      "receipt_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__receipt_0014",
+      "project_id": "mb-murano-os-annealed-refraction-chamber-handoff-done",
+      "project_title": "Annealed Refraction Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Annealed Refraction Chamber / index.html",
+      "component_case_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__0014__annealed-refraction-chamber-index-html",
+      "claim_to_demonstrate": "treats `index.html` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: assets/index.html is a static work product (not a working prototype). Four SVG diagrams cover event flow, mode map, object graph.",
+      "input_fixture": "project source text and the named component `index.html`",
+      "operation_under_test": "treats `index.html` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: assets/index.html is a static work product (not a working prototype). Four SVG diagrams cover event flow, mode map, object graph.",
+      "expected_output": "inspectable implementation evidence tied to `index.html`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "df965f7ec210d750feb6046f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43468,
+            "sha256": "7a46be9dd1ab673f5cfb9610ea27657bfe6189da2bda37992a61551cdef0e149"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35705,
+            "sha256": "1376636c0e12ef76a21e70b8ea2696a5bb4df5bdfacb1ca155b13745326fd9e3"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20793,
+            "sha256": "d4f884b98b5a504b25a41fdb64d4303b2ced48443271e7a18759d9a419ce4b5f"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20276,
+            "sha256": "1e5a36d571792a54154da7953ebb4953683e8818bb891ec1eb999f0c0b1b2567"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45702,
+            "sha256": "b825329606769f708b53237bddc9efc99beae71add7d43f65dc1cdffbf4770d2"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9792,
+            "sha256": "0eb6127796eaca98173e7a9b4e82a2b3186cb8b9843f064df232700cc755fb8f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+          "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "9586d5abee6d7aa83d03e620"
+    },
+    {
+      "receipt_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__receipt_0015",
+      "project_id": "mb-murano-os-annealed-refraction-chamber-handoff-done",
+      "project_title": "Annealed Refraction Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Annealed Refraction Chamber / Research Becomes Decorative And Does Not Alter The Design",
+      "component_case_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__0015__annealed-refraction-chamber-research-becomes-decorative-and-does-not-alter-the-design",
+      "claim_to_demonstrate": "uses `Research Becomes Decorative And Does Not Alter The Design` as a named project component with a traceable role in the public mechanism. Source context: Also appropriate for any domain where \"research becomes decorative and does not alter the design\" is a.",
+      "input_fixture": "project source text and the named component `Research Becomes Decorative And Does Not Alter The Design`",
+      "operation_under_test": "uses `Research Becomes Decorative And Does Not Alter The Design` as a named project component with a traceable role in the public mechanism. Source context: Also appropriate for any domain where \"research becomes decorative and does not alter the design\" is a.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Research Becomes Decorative And Does Not Alter The Design`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "d44df401d2bb1ea9d3ab2ed8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43468,
+            "sha256": "7a46be9dd1ab673f5cfb9610ea27657bfe6189da2bda37992a61551cdef0e149"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35705,
+            "sha256": "1376636c0e12ef76a21e70b8ea2696a5bb4df5bdfacb1ca155b13745326fd9e3"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20793,
+            "sha256": "d4f884b98b5a504b25a41fdb64d4303b2ced48443271e7a18759d9a419ce4b5f"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20276,
+            "sha256": "1e5a36d571792a54154da7953ebb4953683e8818bb891ec1eb999f0c0b1b2567"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45702,
+            "sha256": "b825329606769f708b53237bddc9efc99beae71add7d43f65dc1cdffbf4770d2"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9792,
+            "sha256": "0eb6127796eaca98173e7a9b4e82a2b3186cb8b9843f064df232700cc755fb8f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+          "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f427a69d3d31fc500c0354c2"
+    },
+    {
+      "receipt_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__receipt_0016",
+      "project_id": "mb-murano-os-annealed-refraction-chamber-handoff-done",
+      "project_title": "Annealed Refraction Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Annealed Refraction Chamber / Specifies the Annealed Refraction Chamber",
+      "component_case_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__0016__annealed-refraction-chamber-specifies-the-annealed-refraction-chamber",
+      "claim_to_demonstrate": "treats `Specifies the Annealed Refraction Chamber` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Specifies the Annealed Refraction Chamber, a Murano OS room for loss-minimizing.",
+      "input_fixture": "project source text and the named component `Specifies the Annealed Refraction Chamber`",
+      "operation_under_test": "treats `Specifies the Annealed Refraction Chamber` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: Specifies the Annealed Refraction Chamber, a Murano OS room for loss-minimizing.",
+      "expected_output": "a room, workbench, or interface function tied to `Specifies the Annealed Refraction Chamber`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0082b8428c0843b2e8956425",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43468,
+            "sha256": "7a46be9dd1ab673f5cfb9610ea27657bfe6189da2bda37992a61551cdef0e149"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35705,
+            "sha256": "1376636c0e12ef76a21e70b8ea2696a5bb4df5bdfacb1ca155b13745326fd9e3"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20793,
+            "sha256": "d4f884b98b5a504b25a41fdb64d4303b2ced48443271e7a18759d9a419ce4b5f"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20276,
+            "sha256": "1e5a36d571792a54154da7953ebb4953683e8818bb891ec1eb999f0c0b1b2567"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45702,
+            "sha256": "b825329606769f708b53237bddc9efc99beae71add7d43f65dc1cdffbf4770d2"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9792,
+            "sha256": "0eb6127796eaca98173e7a9b4e82a2b3186cb8b9843f064df232700cc755fb8f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+          "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b95b446d2d77dfe3fc553895"
+    },
+    {
+      "receipt_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__receipt_0017",
+      "project_id": "mb-murano-os-annealed-refraction-chamber-handoff-done",
+      "project_title": "Annealed Refraction Chamber",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Annealed Refraction Chamber / Murano OS",
+      "component_case_id": "mb-murano-os-annealed-refraction-chamber-handoff-done__0017__annealed-refraction-chamber-murano-os",
+      "claim_to_demonstrate": "uses `Murano OS` as a named project component with a traceable role in the public mechanism. Source context: Specifies the Annealed Refraction Chamber, a Murano OS room for loss-minimizing design-research governance. Preserves the full transformation by which.",
+      "input_fixture": "project source text and the named component `Murano OS`",
+      "operation_under_test": "uses `Murano OS` as a named project component with a traceable role in the public mechanism. Source context: Specifies the Annealed Refraction Chamber, a Murano OS room for loss-minimizing design-research governance. Preserves the full transformation by which.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Murano OS`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0082b8428c0843b2e8956425",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 43468,
+            "sha256": "7a46be9dd1ab673f5cfb9610ea27657bfe6189da2bda37992a61551cdef0e149"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 35705,
+            "sha256": "1376636c0e12ef76a21e70b8ea2696a5bb4df5bdfacb1ca155b13745326fd9e3"
+          },
+          {
+            "relative_path": "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20793,
+            "sha256": "d4f884b98b5a504b25a41fdb64d4303b2ced48443271e7a18759d9a419ce4b5f"
+          },
+          {
+            "relative_path": "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20276,
+            "sha256": "1e5a36d571792a54154da7953ebb4953683e8818bb891ec1eb999f0c0b1b2567"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45702,
+            "sha256": "b825329606769f708b53237bddc9efc99beae71add7d43f65dc1cdffbf4770d2"
+          },
+          {
+            "relative_path": "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9792,
+            "sha256": "0eb6127796eaca98173e7a9b4e82a2b3186cb8b9843f064df232700cc755fb8f"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/blueprint.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/instrument_map.json",
+          "project_blueprints/mb-murano-os-annealed-refraction-chamber-handoff-done/README.md",
+          "proof_builds/mb-murano-os-annealed-refraction-chamber-handoff-done/proof_build.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/demo_cases.json",
+          "proof_demos/mb-murano-os-annealed-refraction-chamber-handoff-done/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c944c6ba368fa9530b58da5e"
+    }
+  ]
+}

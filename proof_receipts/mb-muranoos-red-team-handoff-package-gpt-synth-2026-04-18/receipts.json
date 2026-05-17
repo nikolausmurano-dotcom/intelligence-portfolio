@@ -1,0 +1,1446 @@
+{
+  "project": {
+    "project_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18",
+    "title": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine)"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__receipt_0001",
+      "project_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18",
+      "project_title": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine) Handoff Identity",
+      "component_case_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__0001__smallest-pure-spec-gpt-bridge-9-files-7-stage-ingest-export-workflow-breaks-from-red-team-",
+      "claim_to_demonstrate": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine) is a preserved project packet for this is the GPT-synthesis variant of the handoff — a distilled 8-section brief authored from a single GPT pass over the.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine) is a preserved project packet for this is the GPT-synthesis variant of the handoff — a distilled 8-section brief authored from a single GPT pass over the.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47028,
+            "sha256": "9e0e1c4985847e21d60b70bbba982a05611d96386c04e5443ba20d6c3adfe540"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38857,
+            "sha256": "5714dc2fc9b2286f3ac577da7e0120f0f17d87c48b8524c65a153c6b20567804"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22978,
+            "sha256": "eeb3a5c0c2d33e285a3a9919902803ba968cccdd47aa156673614bd4b66bf3a3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23101,
+            "sha256": "209cb5a3a19279929bc64cc6cc521148fe0ea2139de43df00cea0b536a6b291f"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50874,
+            "sha256": "5c46650b37842210fbc8ca1b6ac4135a075b07d018b355cad71834f0459c648e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11596,
+            "sha256": "eec6c969cc902d1fca730a8fe96635bc99367c87600d05819e1178975bca4001"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/README.md",
+          "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "3010cdc36d959bba3943f44a"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__receipt_0002",
+      "project_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18",
+      "project_title": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine) Room Task Model",
+      "component_case_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__0002__smallest-pure-spec-gpt-bridge-9-files-7-stage-ingest-export-workflow-breaks-from-red-team-",
+      "claim_to_demonstrate": "It converts an archive or handoff into three inspectable decisions: what the work product is for, which component pieces carry the work, and what action would turn it into a live room, paper, method, or software instrument.",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": "It converts an archive or handoff into three inspectable decisions: what the work product is for, which component pieces carry the work, and what action would turn it into a live room, paper, method, or software instrument.",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47028,
+            "sha256": "9e0e1c4985847e21d60b70bbba982a05611d96386c04e5443ba20d6c3adfe540"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38857,
+            "sha256": "5714dc2fc9b2286f3ac577da7e0120f0f17d87c48b8524c65a153c6b20567804"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22978,
+            "sha256": "eeb3a5c0c2d33e285a3a9919902803ba968cccdd47aa156673614bd4b66bf3a3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23101,
+            "sha256": "209cb5a3a19279929bc64cc6cc521148fe0ea2139de43df00cea0b536a6b291f"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50874,
+            "sha256": "5c46650b37842210fbc8ca1b6ac4135a075b07d018b355cad71834f0459c648e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11596,
+            "sha256": "eec6c969cc902d1fca730a8fe96635bc99367c87600d05819e1178975bca4001"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/README.md",
+          "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "e07b5a425b1a18ea99ee3663"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__receipt_0003",
+      "project_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18",
+      "project_title": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine) Data Schema And Persistence Plan",
+      "component_case_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__0003__smallest-pure-spec-gpt-bridge-9-files-7-stage-ingest-export-workflow-breaks-from-red-team-",
+      "claim_to_demonstrate": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Discovery, creativity, systems thinking, and project generation. Use source library creativity/innovation/network sources to professionalize the project-development account. Vision: Explain Nexus and Personal OS as project-development and discovery.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47028,
+            "sha256": "9e0e1c4985847e21d60b70bbba982a05611d96386c04e5443ba20d6c3adfe540"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38857,
+            "sha256": "5714dc2fc9b2286f3ac577da7e0120f0f17d87c48b8524c65a153c6b20567804"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22978,
+            "sha256": "eeb3a5c0c2d33e285a3a9919902803ba968cccdd47aa156673614bd4b66bf3a3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23101,
+            "sha256": "209cb5a3a19279929bc64cc6cc521148fe0ea2139de43df00cea0b536a6b291f"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50874,
+            "sha256": "5c46650b37842210fbc8ca1b6ac4135a075b07d018b355cad71834f0459c648e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11596,
+            "sha256": "eec6c969cc902d1fca730a8fe96635bc99367c87600d05819e1178975bca4001"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+          "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "4201421b801866573f670217"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__receipt_0004",
+      "project_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18",
+      "project_title": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine) Interface And Instrument Plane",
+      "component_case_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__0004__smallest-pure-spec-gpt-bridge-9-files-7-stage-ingest-export-workflow-breaks-from-red-team-",
+      "claim_to_demonstrate": "Buildable handoff; implementation remains to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Buildable handoff; implementation remains to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47028,
+            "sha256": "9e0e1c4985847e21d60b70bbba982a05611d96386c04e5443ba20d6c3adfe540"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38857,
+            "sha256": "5714dc2fc9b2286f3ac577da7e0120f0f17d87c48b8524c65a153c6b20567804"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22978,
+            "sha256": "eeb3a5c0c2d33e285a3a9919902803ba968cccdd47aa156673614bd4b66bf3a3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23101,
+            "sha256": "209cb5a3a19279929bc64cc6cc521148fe0ea2139de43df00cea0b536a6b291f"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50874,
+            "sha256": "5c46650b37842210fbc8ca1b6ac4135a075b07d018b355cad71834f0459c648e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11596,
+            "sha256": "eec6c969cc902d1fca730a8fe96635bc99367c87600d05819e1178975bca4001"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+          "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c9fd400c8f9a39cc0bf3d943"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__receipt_0005",
+      "project_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18",
+      "project_title": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine) Integration Path",
+      "component_case_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__0005__smallest-pure-spec-gpt-bridge-9-files-7-stage-ingest-export-workflow-breaks-from-red-team-",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. Best for rapid re-onboarding of a new LLM or an architectural reviewer who needs the room's shape without code or implementation doctrine. Reading order follows.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. Best for rapid re-onboarding of a new LLM or an architectural reviewer who needs the room's shape without code or implementation doctrine. Reading order follows.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47028,
+            "sha256": "9e0e1c4985847e21d60b70bbba982a05611d96386c04e5443ba20d6c3adfe540"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38857,
+            "sha256": "5714dc2fc9b2286f3ac577da7e0120f0f17d87c48b8524c65a153c6b20567804"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22978,
+            "sha256": "eeb3a5c0c2d33e285a3a9919902803ba968cccdd47aa156673614bd4b66bf3a3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23101,
+            "sha256": "209cb5a3a19279929bc64cc6cc521148fe0ea2139de43df00cea0b536a6b291f"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50874,
+            "sha256": "5c46650b37842210fbc8ca1b6ac4135a075b07d018b355cad71834f0459c648e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11596,
+            "sha256": "eec6c969cc902d1fca730a8fe96635bc99367c87600d05819e1178975bca4001"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/README.md",
+          "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "260d8294487d9029777c2aa7"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__receipt_0006",
+      "project_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18",
+      "project_title": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine) Proof Boundary",
+      "component_case_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__0006__smallest-pure-spec-gpt-bridge-9-files-7-stage-ingest-export-workflow-breaks-from-red-team-",
+      "claim_to_demonstrate": "Buildable handoff; implementation remains to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Buildable handoff; implementation remains to verify; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47028,
+            "sha256": "9e0e1c4985847e21d60b70bbba982a05611d96386c04e5443ba20d6c3adfe540"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38857,
+            "sha256": "5714dc2fc9b2286f3ac577da7e0120f0f17d87c48b8524c65a153c6b20567804"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22978,
+            "sha256": "eeb3a5c0c2d33e285a3a9919902803ba968cccdd47aa156673614bd4b66bf3a3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23101,
+            "sha256": "209cb5a3a19279929bc64cc6cc521148fe0ea2139de43df00cea0b536a6b291f"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50874,
+            "sha256": "5c46650b37842210fbc8ca1b6ac4135a075b07d018b355cad71834f0459c648e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11596,
+            "sha256": "eec6c969cc902d1fca730a8fe96635bc99367c87600d05819e1178975bca4001"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/README.md",
+          "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "c9ee07931ca56da0e50adcc9"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__receipt_0007",
+      "project_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18",
+      "project_title": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine) Next Build Test",
+      "component_case_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__0007__smallest-pure-spec-gpt-bridge-9-files-7-stage-ingest-export-workflow-breaks-from-red-team-",
+      "claim_to_demonstrate": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Retain the packet as a completed authority layer, then decide whether it should remain a reference file or become a live room, method page, or public proof object.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47028,
+            "sha256": "9e0e1c4985847e21d60b70bbba982a05611d96386c04e5443ba20d6c3adfe540"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38857,
+            "sha256": "5714dc2fc9b2286f3ac577da7e0120f0f17d87c48b8524c65a153c6b20567804"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22978,
+            "sha256": "eeb3a5c0c2d33e285a3a9919902803ba968cccdd47aa156673614bd4b66bf3a3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23101,
+            "sha256": "209cb5a3a19279929bc64cc6cc521148fe0ea2139de43df00cea0b536a6b291f"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50874,
+            "sha256": "5c46650b37842210fbc8ca1b6ac4135a075b07d018b355cad71834f0459c648e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11596,
+            "sha256": "eec6c969cc902d1fca730a8fe96635bc99367c87600d05819e1178975bca4001"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/README.md",
+          "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json",
+          "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "721d9c41ca9ebe4c4535012c"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__receipt_0008",
+      "project_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18",
+      "project_title": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine) / Workflow Spine",
+      "component_case_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__0008__smallest-pure-spec-gpt-bridge-9-files-7-stage-ingest-export-workflow-breaks-from-red-team-",
+      "claim_to_demonstrate": "uses `Workflow Spine` as a named project component with a traceable role in the public mechanism. Source context: Its distinguishing feature is the Workflow Spine generalization — unlike other packs which specify implementation tranches (Tranche A/II/Workflow.",
+      "input_fixture": "project source text and the named component `Workflow Spine`",
+      "operation_under_test": "uses `Workflow Spine` as a named project component with a traceable role in the public mechanism. Source context: Its distinguishing feature is the Workflow Spine generalization — unlike other packs which specify implementation tranches (Tranche A/II/Workflow.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Workflow Spine`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e1f24280d7c9d88184b93ebb",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47028,
+            "sha256": "9e0e1c4985847e21d60b70bbba982a05611d96386c04e5443ba20d6c3adfe540"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38857,
+            "sha256": "5714dc2fc9b2286f3ac577da7e0120f0f17d87c48b8524c65a153c6b20567804"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22978,
+            "sha256": "eeb3a5c0c2d33e285a3a9919902803ba968cccdd47aa156673614bd4b66bf3a3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23101,
+            "sha256": "209cb5a3a19279929bc64cc6cc521148fe0ea2139de43df00cea0b536a6b291f"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50874,
+            "sha256": "5c46650b37842210fbc8ca1b6ac4135a075b07d018b355cad71834f0459c648e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11596,
+            "sha256": "eec6c969cc902d1fca730a8fe96635bc99367c87600d05819e1178975bca4001"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+          "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "dc8645d0e2ec614cc07a041f"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__receipt_0009",
+      "project_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18",
+      "project_title": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine) / Tranche A/II/Workflow Foundation/Workflow Spine",
+      "component_case_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__0009__smallest-pure-spec-gpt-bridge-9-files-7-stage-ingest-export-workflow-breaks-from-red-team-",
+      "claim_to_demonstrate": "uses `Tranche A/II/Workflow Foundation/Workflow Spine` as a named project component with a traceable role in the public mechanism. Source context: Its distinguishing feature is the Workflow Spine generalization — unlike other packs which specify.",
+      "input_fixture": "project source text and the named component `Tranche A/II/Workflow Foundation/Workflow Spine`",
+      "operation_under_test": "uses `Tranche A/II/Workflow Foundation/Workflow Spine` as a named project component with a traceable role in the public mechanism. Source context: Its distinguishing feature is the Workflow Spine generalization — unlike other packs which specify.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Tranche A/II/Workflow Foundation/Workflow Spine`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e1f24280d7c9d88184b93ebb",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47028,
+            "sha256": "9e0e1c4985847e21d60b70bbba982a05611d96386c04e5443ba20d6c3adfe540"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38857,
+            "sha256": "5714dc2fc9b2286f3ac577da7e0120f0f17d87c48b8524c65a153c6b20567804"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22978,
+            "sha256": "eeb3a5c0c2d33e285a3a9919902803ba968cccdd47aa156673614bd4b66bf3a3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23101,
+            "sha256": "209cb5a3a19279929bc64cc6cc521148fe0ea2139de43df00cea0b536a6b291f"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50874,
+            "sha256": "5c46650b37842210fbc8ca1b6ac4135a075b07d018b355cad71834f0459c648e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11596,
+            "sha256": "eec6c969cc902d1fca730a8fe96635bc99367c87600d05819e1178975bca4001"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+          "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "7101933e23fa07d0c77e60fe"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__receipt_0010",
+      "project_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18",
+      "project_title": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine) / Export. This",
+      "component_case_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__0010__smallest-pure-spec-gpt-bridge-9-files-7-stage-ingest-export-workflow-breaks-from-red-team-",
+      "claim_to_demonstrate": "uses `Export. This` as a named project component with a traceable role in the public mechanism. Source context: Ingest — Structure — Model — Analyze — Simulate — Evaluate — Export. This is the only pack to articulate the room that way. It converts an archive.",
+      "input_fixture": "project source text and the named component `Export. This`",
+      "operation_under_test": "uses `Export. This` as a named project component with a traceable role in the public mechanism. Source context: Ingest — Structure — Model — Analyze — Simulate — Evaluate — Export. This is the only pack to articulate the room that way. It converts an archive.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Export. This`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "b2220e3300ae283a96ae6258",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47028,
+            "sha256": "9e0e1c4985847e21d60b70bbba982a05611d96386c04e5443ba20d6c3adfe540"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38857,
+            "sha256": "5714dc2fc9b2286f3ac577da7e0120f0f17d87c48b8524c65a153c6b20567804"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22978,
+            "sha256": "eeb3a5c0c2d33e285a3a9919902803ba968cccdd47aa156673614bd4b66bf3a3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23101,
+            "sha256": "209cb5a3a19279929bc64cc6cc521148fe0ea2139de43df00cea0b536a6b291f"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50874,
+            "sha256": "5c46650b37842210fbc8ca1b6ac4135a075b07d018b355cad71834f0459c648e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11596,
+            "sha256": "eec6c969cc902d1fca730a8fe96635bc99367c87600d05819e1178975bca4001"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+          "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "d88148d585d9016968583e43"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__receipt_0011",
+      "project_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18",
+      "project_title": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine) / Best for",
+      "component_case_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__0011__smallest-pure-spec-gpt-bridge-9-files-7-stage-ingest-export-workflow-breaks-from-red-team-",
+      "claim_to_demonstrate": "uses `Best for` as a named project component with a traceable role in the public mechanism. Source context: Best for rapid re-onboarding of a new LLM or an architectural reviewer who needs the room's shape without code or implementation doctrine. Reading.",
+      "input_fixture": "project source text and the named component `Best for`",
+      "operation_under_test": "uses `Best for` as a named project component with a traceable role in the public mechanism. Source context: Best for rapid re-onboarding of a new LLM or an architectural reviewer who needs the room's shape without code or implementation doctrine. Reading.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Best for`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "433d8c4f9e3d27e92f801e41",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47028,
+            "sha256": "9e0e1c4985847e21d60b70bbba982a05611d96386c04e5443ba20d6c3adfe540"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38857,
+            "sha256": "5714dc2fc9b2286f3ac577da7e0120f0f17d87c48b8524c65a153c6b20567804"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22978,
+            "sha256": "eeb3a5c0c2d33e285a3a9919902803ba968cccdd47aa156673614bd4b66bf3a3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23101,
+            "sha256": "209cb5a3a19279929bc64cc6cc521148fe0ea2139de43df00cea0b536a6b291f"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50874,
+            "sha256": "5c46650b37842210fbc8ca1b6ac4135a075b07d018b355cad71834f0459c648e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11596,
+            "sha256": "eec6c969cc902d1fca730a8fe96635bc99367c87600d05819e1178975bca4001"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+          "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "61701ed39f07e34d8dc66f13"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__receipt_0012",
+      "project_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18",
+      "project_title": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine) / Explain Nexus and Personal OS",
+      "component_case_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__0012__smallest-pure-spec-gpt-bridge-9-files-7-stage-ingest-export-workflow-breaks-from-red-team-",
+      "claim_to_demonstrate": "uses `Explain Nexus and Personal OS` as a named project component with a traceable role in the public mechanism. Source context: Explain Nexus and Personal OS as project-development and discovery infrastructure, not miscellaneous personal tooling. Mechanism.",
+      "input_fixture": "project source text and the named component `Explain Nexus and Personal OS`",
+      "operation_under_test": "uses `Explain Nexus and Personal OS` as a named project component with a traceable role in the public mechanism. Source context: Explain Nexus and Personal OS as project-development and discovery infrastructure, not miscellaneous personal tooling. Mechanism.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Explain Nexus and Personal OS`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "43bbe99078db3098289d7fc7",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47028,
+            "sha256": "9e0e1c4985847e21d60b70bbba982a05611d96386c04e5443ba20d6c3adfe540"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38857,
+            "sha256": "5714dc2fc9b2286f3ac577da7e0120f0f17d87c48b8524c65a153c6b20567804"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22978,
+            "sha256": "eeb3a5c0c2d33e285a3a9919902803ba968cccdd47aa156673614bd4b66bf3a3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23101,
+            "sha256": "209cb5a3a19279929bc64cc6cc521148fe0ea2139de43df00cea0b536a6b291f"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50874,
+            "sha256": "5c46650b37842210fbc8ca1b6ac4135a075b07d018b355cad71834f0459c648e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11596,
+            "sha256": "eec6c969cc902d1fca730a8fe96635bc99367c87600d05819e1178975bca4001"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+          "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "441dd3323cd1da3e9c4779e0"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__receipt_0013",
+      "project_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18",
+      "project_title": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine) / Creativity Research",
+      "component_case_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__0013__smallest-pure-spec-gpt-bridge-9-files-7-stage-ingest-export-workflow-breaks-from-red-team-",
+      "claim_to_demonstrate": "uses `Creativity Research` as a named project component with a traceable role in the public mechanism. Source context: Creativity Research; The Heritage, Creativity and Innovation Nexus. Intelligence tradecraft, counterintelligence, and analytic method. Use.",
+      "input_fixture": "project source text and the named component `Creativity Research`",
+      "operation_under_test": "uses `Creativity Research` as a named project component with a traceable role in the public mechanism. Source context: Creativity Research; The Heritage, Creativity and Innovation Nexus. Intelligence tradecraft, counterintelligence, and analytic method. Use.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Creativity Research`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "6f8460f72b9b7fcf9c959977",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47028,
+            "sha256": "9e0e1c4985847e21d60b70bbba982a05611d96386c04e5443ba20d6c3adfe540"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38857,
+            "sha256": "5714dc2fc9b2286f3ac577da7e0120f0f17d87c48b8524c65a153c6b20567804"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22978,
+            "sha256": "eeb3a5c0c2d33e285a3a9919902803ba968cccdd47aa156673614bd4b66bf3a3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23101,
+            "sha256": "209cb5a3a19279929bc64cc6cc521148fe0ea2139de43df00cea0b536a6b291f"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50874,
+            "sha256": "5c46650b37842210fbc8ca1b6ac4135a075b07d018b355cad71834f0459c648e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11596,
+            "sha256": "eec6c969cc902d1fca730a8fe96635bc99367c87600d05819e1178975bca4001"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+          "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "b28d5e11091fe00c62043e10"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__receipt_0014",
+      "project_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18",
+      "project_title": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine) / The Heritage",
+      "component_case_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__0014__smallest-pure-spec-gpt-bridge-9-files-7-stage-ingest-export-workflow-breaks-from-red-team-",
+      "claim_to_demonstrate": "uses `The Heritage` as a named project component with a traceable role in the public mechanism. Source context: The Heritage, Creativity and Innovation Nexus. Intelligence tradecraft, counterintelligence, and analytic method. Use source library intelligence.",
+      "input_fixture": "project source text and the named component `The Heritage`",
+      "operation_under_test": "uses `The Heritage` as a named project component with a traceable role in the public mechanism. Source context: The Heritage, Creativity and Innovation Nexus. Intelligence tradecraft, counterintelligence, and analytic method. Use source library intelligence.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `The Heritage`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "45f852bc371749f4e50a650f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47028,
+            "sha256": "9e0e1c4985847e21d60b70bbba982a05611d96386c04e5443ba20d6c3adfe540"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38857,
+            "sha256": "5714dc2fc9b2286f3ac577da7e0120f0f17d87c48b8524c65a153c6b20567804"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22978,
+            "sha256": "eeb3a5c0c2d33e285a3a9919902803ba968cccdd47aa156673614bd4b66bf3a3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23101,
+            "sha256": "209cb5a3a19279929bc64cc6cc521148fe0ea2139de43df00cea0b536a6b291f"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50874,
+            "sha256": "5c46650b37842210fbc8ca1b6ac4135a075b07d018b355cad71834f0459c648e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11596,
+            "sha256": "eec6c969cc902d1fca730a8fe96635bc99367c87600d05819e1178975bca4001"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+          "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "000963dbc3a928e647d0c7da"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__receipt_0015",
+      "project_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18",
+      "project_title": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine) / Creativity and Innovation Nexus. Intelligence",
+      "component_case_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__0015__smallest-pure-spec-gpt-bridge-9-files-7-stage-ingest-export-workflow-breaks-from-red-team-",
+      "claim_to_demonstrate": "uses `Creativity and Innovation Nexus. Intelligence` as a named project component with a traceable role in the public mechanism. Source context: The Heritage, Creativity and Innovation Nexus. Intelligence tradecraft, counterintelligence, and analytic method.",
+      "input_fixture": "project source text and the named component `Creativity and Innovation Nexus. Intelligence`",
+      "operation_under_test": "uses `Creativity and Innovation Nexus. Intelligence` as a named project component with a traceable role in the public mechanism. Source context: The Heritage, Creativity and Innovation Nexus. Intelligence tradecraft, counterintelligence, and analytic method.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Creativity and Innovation Nexus. Intelligence`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "45f852bc371749f4e50a650f",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47028,
+            "sha256": "9e0e1c4985847e21d60b70bbba982a05611d96386c04e5443ba20d6c3adfe540"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38857,
+            "sha256": "5714dc2fc9b2286f3ac577da7e0120f0f17d87c48b8524c65a153c6b20567804"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22978,
+            "sha256": "eeb3a5c0c2d33e285a3a9919902803ba968cccdd47aa156673614bd4b66bf3a3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23101,
+            "sha256": "209cb5a3a19279929bc64cc6cc521148fe0ea2139de43df00cea0b536a6b291f"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50874,
+            "sha256": "5c46650b37842210fbc8ca1b6ac4135a075b07d018b355cad71834f0459c648e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11596,
+            "sha256": "eec6c969cc902d1fca730a8fe96635bc99367c87600d05819e1178975bca4001"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+          "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "68a5fa62642e80c25f703f8a"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__receipt_0016",
+      "project_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18",
+      "project_title": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine) / Prioritize Capstone",
+      "component_case_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__0016__smallest-pure-spec-gpt-bridge-9-files-7-stage-ingest-export-workflow-breaks-from-red-team-",
+      "claim_to_demonstrate": "uses `Prioritize Capstone` as a named project component with a traceable role in the public mechanism. Source context: Prioritize Capstone, SATS, CI, RAG integrity, and analyst-assurance pages for close-reading. Status: source library identified as candidate.",
+      "input_fixture": "project source text and the named component `Prioritize Capstone`",
+      "operation_under_test": "uses `Prioritize Capstone` as a named project component with a traceable role in the public mechanism. Source context: Prioritize Capstone, SATS, CI, RAG integrity, and analyst-assurance pages for close-reading. Status: source library identified as candidate.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Prioritize Capstone`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "da6aee46b4a86df2749d7951",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47028,
+            "sha256": "9e0e1c4985847e21d60b70bbba982a05611d96386c04e5443ba20d6c3adfe540"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38857,
+            "sha256": "5714dc2fc9b2286f3ac577da7e0120f0f17d87c48b8524c65a153c6b20567804"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22978,
+            "sha256": "eeb3a5c0c2d33e285a3a9919902803ba968cccdd47aa156673614bd4b66bf3a3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23101,
+            "sha256": "209cb5a3a19279929bc64cc6cc521148fe0ea2139de43df00cea0b536a6b291f"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50874,
+            "sha256": "5c46650b37842210fbc8ca1b6ac4135a075b07d018b355cad71834f0459c648e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11596,
+            "sha256": "eec6c969cc902d1fca730a8fe96635bc99367c87600d05819e1178975bca4001"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+          "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "adb3046a1f3242e0f3a6babb"
+    },
+    {
+      "receipt_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__receipt_0017",
+      "project_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18",
+      "project_title": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine)",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Smallest, pure-spec GPT bridge (9 files); 7-stage Ingest-Export workflow (breaks from red_team_* spine) / Improving Intelligence Analysis",
+      "component_case_id": "mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18__0017__smallest-pure-spec-gpt-bridge-9-files-7-stage-ingest-export-workflow-breaks-from-red-team-",
+      "claim_to_demonstrate": "uses `Improving Intelligence Analysis` as a named project component with a traceable role in the public mechanism. Source context: Improving Intelligence Analysis; Leading Intelligence Analysis. source library scholarly-source routing with author correction.",
+      "input_fixture": "project source text and the named component `Improving Intelligence Analysis`",
+      "operation_under_test": "uses `Improving Intelligence Analysis` as a named project component with a traceable role in the public mechanism. Source context: Improving Intelligence Analysis; Leading Intelligence Analysis. source library scholarly-source routing with author correction.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `Improving Intelligence Analysis`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "367fdbca15baef63fbef498d",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 47028,
+            "sha256": "9e0e1c4985847e21d60b70bbba982a05611d96386c04e5443ba20d6c3adfe540"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 38857,
+            "sha256": "5714dc2fc9b2286f3ac577da7e0120f0f17d87c48b8524c65a153c6b20567804"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 22978,
+            "sha256": "eeb3a5c0c2d33e285a3a9919902803ba968cccdd47aa156673614bd4b66bf3a3"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 23101,
+            "sha256": "209cb5a3a19279929bc64cc6cc521148fe0ea2139de43df00cea0b536a6b291f"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 50874,
+            "sha256": "5c46650b37842210fbc8ca1b6ac4135a075b07d018b355cad71834f0459c648e"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 11596,
+            "sha256": "eec6c969cc902d1fca730a8fe96635bc99367c87600d05819e1178975bca4001"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/blueprint.json",
+          "project_blueprints/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/instrument_map.json",
+          "proof_builds/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/proof_build.json",
+          "proof_demos/mb-muranoos-red-team-handoff-package-gpt-synth-2026-04-18/demo_cases.json"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "514c3400d1d018c5342b2f0b"
+    }
+  ]
+}

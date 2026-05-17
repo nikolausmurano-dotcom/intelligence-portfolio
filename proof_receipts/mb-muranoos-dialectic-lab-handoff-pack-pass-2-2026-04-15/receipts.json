@@ -1,0 +1,1470 @@
+{
+  "project": {
+    "project_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15",
+    "title": "Dialectic Lab"
+  },
+  "receipts": [
+    {
+      "receipt_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__receipt_0001",
+      "project_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15",
+      "project_title": "Dialectic Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Lab Handoff Identity",
+      "component_case_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__0001__dialectic-lab-handoff-identity",
+      "claim_to_demonstrate": "The Dialectic Lab (canonical Room ID dialectic-lab, display name \"Dialectic Lab\", experiential title \"The Democratic Dialectic Chamber\") is a MuranoOS room for a specific authorial project: a high-density, poetically interwoven, philosophically and.",
+      "input_fixture": "source packet, code-ready room description, scope, and intended runtime",
+      "operation_under_test": "The Dialectic Lab (canonical Room ID dialectic-lab, display name \"Dialectic Lab\", experiential title \"The Democratic Dialectic Chamber\") is a MuranoOS room for a specific authorial project: a high-density, poetically interwoven, philosophically and.",
+      "expected_output": "bounded definition of what the handoff asks a builder to construct",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "79c952c272edf33897980697",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45484,
+            "sha256": "c93dfcd3abd976d81e0135ae124e51137c0bba2b8c3d2da151aa61962e6f2fc2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36661,
+            "sha256": "0c4d4ac874af0a01399667be3f4f4f80fbecea4c5448c986d4093e416cfb660f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "fed36ba142891dc9c4892b588597dbc9390896dcb48c285e9c14e40552c617c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20364,
+            "sha256": "f94443d1d1fdcbc4c3c87f1399343d7be8ac1229dfc51d5a033e710580d636d7"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45496,
+            "sha256": "239bf654ba2d0f79edff888797126035d9aeecf67245f4b88c50cebc7102d889"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9617,
+            "sha256": "0f781fae5b66034219805286eb0ee7a9e40d3468a74987e76fefe821b71a9e2a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0e9ff8c4e874b5cd738cd810"
+    },
+    {
+      "receipt_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__receipt_0002",
+      "project_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15",
+      "project_title": "Dialectic Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Lab Room Task Model",
+      "component_case_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__0002__dialectic-lab-room-task-model",
+      "claim_to_demonstrate": ", state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival retention",
+      "input_fixture": "user roles, task sequence, room state, and domain objects",
+      "operation_under_test": ", state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival retention",
+      "expected_output": "room logic that turns the concept into a repeatable workflow",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "3bdf9971729ba178c5ca1233",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45484,
+            "sha256": "c93dfcd3abd976d81e0135ae124e51137c0bba2b8c3d2da151aa61962e6f2fc2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36661,
+            "sha256": "0c4d4ac874af0a01399667be3f4f4f80fbecea4c5448c986d4093e416cfb660f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "fed36ba142891dc9c4892b588597dbc9390896dcb48c285e9c14e40552c617c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20364,
+            "sha256": "f94443d1d1fdcbc4c3c87f1399343d7be8ac1229dfc51d5a033e710580d636d7"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45496,
+            "sha256": "239bf654ba2d0f79edff888797126035d9aeecf67245f4b88c50cebc7102d889"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9617,
+            "sha256": "0f781fae5b66034219805286eb0ee7a9e40d3468a74987e76fefe821b71a9e2a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "88ac9c85eb5084c3d30307cf"
+    },
+    {
+      "receipt_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__receipt_0003",
+      "project_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15",
+      "project_title": "Dialectic Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Lab Data Schema And Persistence Plan",
+      "component_case_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__0003__dialectic-lab-data-schema-and-persistence-plan",
+      "claim_to_demonstrate": "Writing, rhetoric, narrative design, visual culture, and presentation. Use source library writing/visual/cinema sources to strengthen public exposition and Trilogy visual/storytelling logic. Vision: Make public pages read as curated intellectual exhibits.",
+      "input_fixture": "entities, records, IDs, tables, JSON structures, indexes, and state transitions",
+      "operation_under_test": "Writing, rhetoric, narrative design, visual culture, and presentation. Use source library writing/visual/cinema sources to strengthen public exposition and Trilogy visual/storytelling logic. Vision: Make public pages read as curated intellectual exhibits.",
+      "expected_output": "data model that lets the room preserve work instead of acting like a static page",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "e90bf0949467d1a38f76fcbc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45484,
+            "sha256": "c93dfcd3abd976d81e0135ae124e51137c0bba2b8c3d2da151aa61962e6f2fc2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36661,
+            "sha256": "0c4d4ac874af0a01399667be3f4f4f80fbecea4c5448c986d4093e416cfb660f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "fed36ba142891dc9c4892b588597dbc9390896dcb48c285e9c14e40552c617c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20364,
+            "sha256": "f94443d1d1fdcbc4c3c87f1399343d7be8ac1229dfc51d5a033e710580d636d7"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45496,
+            "sha256": "239bf654ba2d0f79edff888797126035d9aeecf67245f4b88c50cebc7102d889"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9617,
+            "sha256": "0f781fae5b66034219805286eb0ee7a9e40d3468a74987e76fefe821b71a9e2a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1d9393f1228d2d10a6799a9a"
+    },
+    {
+      "receipt_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__receipt_0004",
+      "project_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15",
+      "project_title": "Dialectic Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Lab Interface And Instrument Plane",
+      "component_case_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__0004__dialectic-lab-interface-and-instrument-plane",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "panels, command palette, drawers, matrices, visualizations, and review widgets",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "named interface instruments that make the room useful to a researcher or analyst",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "0325436c31837a8e8c86abf8",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45484,
+            "sha256": "c93dfcd3abd976d81e0135ae124e51137c0bba2b8c3d2da151aa61962e6f2fc2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36661,
+            "sha256": "0c4d4ac874af0a01399667be3f4f4f80fbecea4c5448c986d4093e416cfb660f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "fed36ba142891dc9c4892b588597dbc9390896dcb48c285e9c14e40552c617c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20364,
+            "sha256": "f94443d1d1fdcbc4c3c87f1399343d7be8ac1229dfc51d5a033e710580d636d7"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45496,
+            "sha256": "239bf654ba2d0f79edff888797126035d9aeecf67245f4b88c50cebc7102d889"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9617,
+            "sha256": "0f781fae5b66034219805286eb0ee7a9e40d3468a74987e76fefe821b71a9e2a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "1c6b451062ca4ecbcdd03e7c"
+    },
+    {
+      "receipt_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__receipt_0005",
+      "project_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15",
+      "project_title": "Dialectic Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Lab Integration Path",
+      "component_case_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__0005__dialectic-lab-integration-path",
+      "claim_to_demonstrate": "How this briefing says the vision should be accomplished, translated into a public project route. Reach for this when: (a) you need a paragraph-ledger + move-only editorial workflow pattern — the immutable_flag on canonical paragraph units is the key schema.",
+      "input_fixture": "frontend, backend, storage, retrieval, auth, export, and portfolio linkage",
+      "operation_under_test": "How this briefing says the vision should be accomplished, translated into a public project route. Reach for this when: (a) you need a paragraph-ledger + move-only editorial workflow pattern — the immutable_flag on canonical paragraph units is the key schema.",
+      "expected_output": "build sequence for turning the handoff into working software",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "f6c4d35b6945f247d5327b8b",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45484,
+            "sha256": "c93dfcd3abd976d81e0135ae124e51137c0bba2b8c3d2da151aa61962e6f2fc2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36661,
+            "sha256": "0c4d4ac874af0a01399667be3f4f4f80fbecea4c5448c986d4093e416cfb660f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "fed36ba142891dc9c4892b588597dbc9390896dcb48c285e9c14e40552c617c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20364,
+            "sha256": "f94443d1d1fdcbc4c3c87f1399343d7be8ac1229dfc51d5a033e710580d636d7"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45496,
+            "sha256": "239bf654ba2d0f79edff888797126035d9aeecf67245f4b88c50cebc7102d889"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9617,
+            "sha256": "0f781fae5b66034219805286eb0ee7a9e40d3468a74987e76fefe821b71a9e2a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "92d7b0b514d2b6d1741d8913"
+    },
+    {
+      "receipt_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__receipt_0006",
+      "project_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15",
+      "project_title": "Dialectic Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Lab Proof Boundary",
+      "component_case_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__0006__dialectic-lab-proof-boundary",
+      "claim_to_demonstrate": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "input_fixture": "completed packet, code readiness, unimplemented backend, missing live capture, or partial status",
+      "operation_under_test": "Completed packet or authority layer; the step records the decision path so the reader can see how the project moves from input to governed output.",
+      "expected_output": "honest current claim ceiling for the handoff as a reviewable artifact",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "5370614725c114eb8fa0edc4",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45484,
+            "sha256": "c93dfcd3abd976d81e0135ae124e51137c0bba2b8c3d2da151aa61962e6f2fc2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36661,
+            "sha256": "0c4d4ac874af0a01399667be3f4f4f80fbecea4c5448c986d4093e416cfb660f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "fed36ba142891dc9c4892b588597dbc9390896dcb48c285e9c14e40552c617c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20364,
+            "sha256": "f94443d1d1fdcbc4c3c87f1399343d7be8ac1229dfc51d5a033e710580d636d7"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45496,
+            "sha256": "239bf654ba2d0f79edff888797126035d9aeecf67245f4b88c50cebc7102d889"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9617,
+            "sha256": "0f781fae5b66034219805286eb0ee7a9e40d3468a74987e76fefe821b71a9e2a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "12460c305821bbbdabeb7e0d"
+    },
+    {
+      "receipt_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__receipt_0007",
+      "project_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15",
+      "project_title": "Dialectic Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Lab Next Build Test",
+      "component_case_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__0007__dialectic-lab-next-build-test",
+      "claim_to_demonstrate": "Promote the packet from documented handoff to live implementation only after the declared caveats are resolved: apply or wire the scaffold, run the stated validation or smoke-test sequence, and keep unresolved assumptions visible.",
+      "input_fixture": "minimal executable path, seeded fixture, UI walkthrough, and validation gate",
+      "operation_under_test": "Promote the packet from documented handoff to live implementation only after the declared caveats are resolved: apply or wire the scaffold, run the stated validation or smoke-test sequence, and keep unresolved assumptions visible.",
+      "expected_output": "specific test that would show the handoff has become a functioning room",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "specified-output-needs-demo",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "659be7ab87f416cd7e0f4178",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45484,
+            "sha256": "c93dfcd3abd976d81e0135ae124e51137c0bba2b8c3d2da151aa61962e6f2fc2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36661,
+            "sha256": "0c4d4ac874af0a01399667be3f4f4f80fbecea4c5448c986d4093e416cfb660f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "fed36ba142891dc9c4892b588597dbc9390896dcb48c285e9c14e40552c617c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20364,
+            "sha256": "f94443d1d1fdcbc4c3c87f1399343d7be8ac1229dfc51d5a033e710580d636d7"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45496,
+            "sha256": "239bf654ba2d0f79edff888797126035d9aeecf67245f4b88c50cebc7102d889"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9617,
+            "sha256": "0f781fae5b66034219805286eb0ee7a9e40d3468a74987e76fefe821b71a9e2a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "98b3a2ba1aefff30091ddbee"
+    },
+    {
+      "receipt_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__receipt_0008",
+      "project_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15",
+      "project_title": "Dialectic Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Lab / backend/frontend",
+      "component_case_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__0008__dialectic-lab-backend-frontend",
+      "claim_to_demonstrate": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "input_fixture": "project source text and the named component `backend/frontend`",
+      "operation_under_test": "uses `backend/frontend` as a named project component with a traceable role in the public mechanism. Source context: , state the backend/frontend or packet components, and decide whether the handoff is ready for engineering, public explanation, or archival.",
+      "expected_output": "a project-specific work product, decision, or proof surface tied to `backend/frontend`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "12b906e53c841f6a071a9002",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45484,
+            "sha256": "c93dfcd3abd976d81e0135ae124e51137c0bba2b8c3d2da151aa61962e6f2fc2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36661,
+            "sha256": "0c4d4ac874af0a01399667be3f4f4f80fbecea4c5448c986d4093e416cfb660f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "fed36ba142891dc9c4892b588597dbc9390896dcb48c285e9c14e40552c617c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20364,
+            "sha256": "f94443d1d1fdcbc4c3c87f1399343d7be8ac1229dfc51d5a033e710580d636d7"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45496,
+            "sha256": "239bf654ba2d0f79edff888797126035d9aeecf67245f4b88c50cebc7102d889"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9617,
+            "sha256": "0f781fae5b66034219805286eb0ee7a9e40d3468a74987e76fefe821b71a9e2a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "6fab424047cdf72cb506f180"
+    },
+    {
+      "receipt_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__receipt_0009",
+      "project_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15",
+      "project_title": "Dialectic Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Lab / README.md",
+      "component_case_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__0009__dialectic-lab-readme-md",
+      "claim_to_demonstrate": "treats `README.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 05_OPERATOR/READING_ORDER_AND_USAGE.md — 00_STATUS/HANDOFF_CERTIFICATION.md —.",
+      "input_fixture": "project source text and the named component `README.md`",
+      "operation_under_test": "treats `README.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 05_OPERATOR/READING_ORDER_AND_USAGE.md — 00_STATUS/HANDOFF_CERTIFICATION.md —.",
+      "expected_output": "inspectable implementation evidence tied to `README.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a8b60070251f7877c6ff35aa",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45484,
+            "sha256": "c93dfcd3abd976d81e0135ae124e51137c0bba2b8c3d2da151aa61962e6f2fc2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36661,
+            "sha256": "0c4d4ac874af0a01399667be3f4f4f80fbecea4c5448c986d4093e416cfb660f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "fed36ba142891dc9c4892b588597dbc9390896dcb48c285e9c14e40552c617c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20364,
+            "sha256": "f94443d1d1fdcbc4c3c87f1399343d7be8ac1229dfc51d5a033e710580d636d7"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45496,
+            "sha256": "239bf654ba2d0f79edff888797126035d9aeecf67245f4b88c50cebc7102d889"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9617,
+            "sha256": "0f781fae5b66034219805286eb0ee7a9e40d3468a74987e76fefe821b71a9e2a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f1b19fc42377ea5e6071700b"
+    },
+    {
+      "receipt_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__receipt_0010",
+      "project_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15",
+      "project_title": "Dialectic Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Lab / READING_ORDER_AND_USAGE.md",
+      "component_case_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__0010__dialectic-lab-reading-order-and-usage-md",
+      "claim_to_demonstrate": "treats `READING_ORDER_AND_USAGE.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 05_OPERATOR/READING_ORDER_AND_USAGE.md — 00_STATUS/HANDOFF_CERTIFICATION.md —.",
+      "input_fixture": "project source text and the named component `READING_ORDER_AND_USAGE.md`",
+      "operation_under_test": "treats `READING_ORDER_AND_USAGE.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 05_OPERATOR/READING_ORDER_AND_USAGE.md — 00_STATUS/HANDOFF_CERTIFICATION.md —.",
+      "expected_output": "inspectable implementation evidence tied to `READING_ORDER_AND_USAGE.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a8b60070251f7877c6ff35aa",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45484,
+            "sha256": "c93dfcd3abd976d81e0135ae124e51137c0bba2b8c3d2da151aa61962e6f2fc2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36661,
+            "sha256": "0c4d4ac874af0a01399667be3f4f4f80fbecea4c5448c986d4093e416cfb660f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "fed36ba142891dc9c4892b588597dbc9390896dcb48c285e9c14e40552c617c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20364,
+            "sha256": "f94443d1d1fdcbc4c3c87f1399343d7be8ac1229dfc51d5a033e710580d636d7"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45496,
+            "sha256": "239bf654ba2d0f79edff888797126035d9aeecf67245f4b88c50cebc7102d889"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9617,
+            "sha256": "0f781fae5b66034219805286eb0ee7a9e40d3468a74987e76fefe821b71a9e2a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "07b962c79ab5867a7a97599b"
+    },
+    {
+      "receipt_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__receipt_0011",
+      "project_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15",
+      "project_title": "Dialectic Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Lab / HANDOFF_CERTIFICATION.md",
+      "component_case_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__0011__dialectic-lab-handoff-certification-md",
+      "claim_to_demonstrate": "treats `HANDOFF_CERTIFICATION.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 05_OPERATOR/READING_ORDER_AND_USAGE.md — 00_STATUS/HANDOFF_CERTIFICATION.md —.",
+      "input_fixture": "project source text and the named component `HANDOFF_CERTIFICATION.md`",
+      "operation_under_test": "treats `HANDOFF_CERTIFICATION.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 05_OPERATOR/READING_ORDER_AND_USAGE.md — 00_STATUS/HANDOFF_CERTIFICATION.md —.",
+      "expected_output": "inspectable implementation evidence tied to `HANDOFF_CERTIFICATION.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a8b60070251f7877c6ff35aa",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45484,
+            "sha256": "c93dfcd3abd976d81e0135ae124e51137c0bba2b8c3d2da151aa61962e6f2fc2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36661,
+            "sha256": "0c4d4ac874af0a01399667be3f4f4f80fbecea4c5448c986d4093e416cfb660f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "fed36ba142891dc9c4892b588597dbc9390896dcb48c285e9c14e40552c617c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20364,
+            "sha256": "f94443d1d1fdcbc4c3c87f1399343d7be8ac1229dfc51d5a033e710580d636d7"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45496,
+            "sha256": "239bf654ba2d0f79edff888797126035d9aeecf67245f4b88c50cebc7102d889"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9617,
+            "sha256": "0f781fae5b66034219805286eb0ee7a9e40d3468a74987e76fefe821b71a9e2a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "06141cb4bc1dba29a9bc61f9"
+    },
+    {
+      "receipt_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__receipt_0012",
+      "project_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15",
+      "project_title": "Dialectic Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Lab / Dialectic_Lab_Phase_I_Conceptual_Spec.md",
+      "component_case_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__0012__dialectic-lab-dialectic-lab-phase-i-conceptual-spec-md",
+      "claim_to_demonstrate": "treats `Dialectic_Lab_Phase_I_Conceptual_Spec.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 05_OPERATOR/READING_ORDER_AND_USAGE.md — 00_STATUS/HANDOFF_CERTIFICATION.md —.",
+      "input_fixture": "project source text and the named component `Dialectic_Lab_Phase_I_Conceptual_Spec.md`",
+      "operation_under_test": "treats `Dialectic_Lab_Phase_I_Conceptual_Spec.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 05_OPERATOR/READING_ORDER_AND_USAGE.md — 00_STATUS/HANDOFF_CERTIFICATION.md —.",
+      "expected_output": "inspectable implementation evidence tied to `Dialectic_Lab_Phase_I_Conceptual_Spec.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a8b60070251f7877c6ff35aa",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45484,
+            "sha256": "c93dfcd3abd976d81e0135ae124e51137c0bba2b8c3d2da151aa61962e6f2fc2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36661,
+            "sha256": "0c4d4ac874af0a01399667be3f4f4f80fbecea4c5448c986d4093e416cfb660f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "fed36ba142891dc9c4892b588597dbc9390896dcb48c285e9c14e40552c617c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20364,
+            "sha256": "f94443d1d1fdcbc4c3c87f1399343d7be8ac1229dfc51d5a033e710580d636d7"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45496,
+            "sha256": "239bf654ba2d0f79edff888797126035d9aeecf67245f4b88c50cebc7102d889"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9617,
+            "sha256": "0f781fae5b66034219805286eb0ee7a9e40d3468a74987e76fefe821b71a9e2a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "44a8c12dc7685e48db969441"
+    },
+    {
+      "receipt_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__receipt_0013",
+      "project_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15",
+      "project_title": "Dialectic Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Lab / Dialectic_Lab_Entity_Model.md",
+      "component_case_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__0013__dialectic-lab-dialectic-lab-entity-model-md",
+      "claim_to_demonstrate": "treats `Dialectic_Lab_Entity_Model.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 05_OPERATOR/READING_ORDER_AND_USAGE.md — 00_STATUS/HANDOFF_CERTIFICATION.md —.",
+      "input_fixture": "project source text and the named component `Dialectic_Lab_Entity_Model.md`",
+      "operation_under_test": "treats `Dialectic_Lab_Entity_Model.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: README.md — 05_OPERATOR/READING_ORDER_AND_USAGE.md — 00_STATUS/HANDOFF_CERTIFICATION.md —.",
+      "expected_output": "inspectable implementation evidence tied to `Dialectic_Lab_Entity_Model.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "a8b60070251f7877c6ff35aa",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45484,
+            "sha256": "c93dfcd3abd976d81e0135ae124e51137c0bba2b8c3d2da151aa61962e6f2fc2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36661,
+            "sha256": "0c4d4ac874af0a01399667be3f4f4f80fbecea4c5448c986d4093e416cfb660f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "fed36ba142891dc9c4892b588597dbc9390896dcb48c285e9c14e40552c617c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20364,
+            "sha256": "f94443d1d1fdcbc4c3c87f1399343d7be8ac1229dfc51d5a033e710580d636d7"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45496,
+            "sha256": "239bf654ba2d0f79edff888797126035d9aeecf67245f4b88c50cebc7102d889"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9617,
+            "sha256": "0f781fae5b66034219805286eb0ee7a9e40d3468a74987e76fefe821b71a9e2a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "0aa930b46df7bf9f8dbf9767"
+    },
+    {
+      "receipt_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__receipt_0014",
+      "project_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15",
+      "project_title": "Dialectic Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Lab / Dialectic_Lab_Implementation_Tranche_Plan.md",
+      "component_case_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__0014__dialectic-lab-dialectic-lab-implementation-tranche-plan-md",
+      "claim_to_demonstrate": "treats `Dialectic_Lab_Implementation_Tranche_Plan.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Dialectic_Lab_Implementation_Tranche_Plan.md. Wire or preserve the implementation files: None —.",
+      "input_fixture": "project source text and the named component `Dialectic_Lab_Implementation_Tranche_Plan.md`",
+      "operation_under_test": "treats `Dialectic_Lab_Implementation_Tranche_Plan.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Dialectic_Lab_Implementation_Tranche_Plan.md. Wire or preserve the implementation files: None —.",
+      "expected_output": "inspectable implementation evidence tied to `Dialectic_Lab_Implementation_Tranche_Plan.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "51b37fa7d64ad4fb56b6e487",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45484,
+            "sha256": "c93dfcd3abd976d81e0135ae124e51137c0bba2b8c3d2da151aa61962e6f2fc2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36661,
+            "sha256": "0c4d4ac874af0a01399667be3f4f4f80fbecea4c5448c986d4093e416cfb660f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "fed36ba142891dc9c4892b588597dbc9390896dcb48c285e9c14e40552c617c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20364,
+            "sha256": "f94443d1d1fdcbc4c3c87f1399343d7be8ac1229dfc51d5a033e710580d636d7"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45496,
+            "sha256": "239bf654ba2d0f79edff888797126035d9aeecf67245f4b88c50cebc7102d889"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9617,
+            "sha256": "0f781fae5b66034219805286eb0ee7a9e40d3468a74987e76fefe821b71a9e2a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "48407ab5e34f60e1c376a46f"
+    },
+    {
+      "receipt_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__receipt_0015",
+      "project_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15",
+      "project_title": "Dialectic Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Lab / Exact_File_Targets_And_Precedent_Map.md",
+      "component_case_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__0015__dialectic-lab-exact-file-targets-and-precedent-map-md",
+      "claim_to_demonstrate": "treats `Exact_File_Targets_And_Precedent_Map.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: None — but 02_IMPLEMENTATION/Exact_File_Targets_And_Precedent_Map.md is unusually precise about where.",
+      "input_fixture": "project source text and the named component `Exact_File_Targets_And_Precedent_Map.md`",
+      "operation_under_test": "treats `Exact_File_Targets_And_Precedent_Map.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: None — but 02_IMPLEMENTATION/Exact_File_Targets_And_Precedent_Map.md is unusually precise about where.",
+      "expected_output": "inspectable implementation evidence tied to `Exact_File_Targets_And_Precedent_Map.md`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "adfcb05514a40090d58d4862",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45484,
+            "sha256": "c93dfcd3abd976d81e0135ae124e51137c0bba2b8c3d2da151aa61962e6f2fc2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36661,
+            "sha256": "0c4d4ac874af0a01399667be3f4f4f80fbecea4c5448c986d4093e416cfb660f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "fed36ba142891dc9c4892b588597dbc9390896dcb48c285e9c14e40552c617c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20364,
+            "sha256": "f94443d1d1fdcbc4c3c87f1399343d7be8ac1229dfc51d5a033e710580d636d7"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45496,
+            "sha256": "239bf654ba2d0f79edff888797126035d9aeecf67245f4b88c50cebc7102d889"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9617,
+            "sha256": "0f781fae5b66034219805286eb0ee7a9e40d3468a74987e76fefe821b71a9e2a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5aa6f359a9df39509aecd6f9"
+    },
+    {
+      "receipt_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__receipt_0016",
+      "project_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15",
+      "project_title": "Dialectic Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Lab / The Democratic Dialectic Chamber",
+      "component_case_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__0016__dialectic-lab-the-democratic-dialectic-chamber",
+      "claim_to_demonstrate": "treats `The Democratic Dialectic Chamber` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: The Dialectic Lab (canonical Room ID dialectic-lab, display name \"Dialectic Lab\".",
+      "input_fixture": "project source text and the named component `The Democratic Dialectic Chamber`",
+      "operation_under_test": "treats `The Democratic Dialectic Chamber` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: The Dialectic Lab (canonical Room ID dialectic-lab, display name \"Dialectic Lab\".",
+      "expected_output": "a room, workbench, or interface function tied to `The Democratic Dialectic Chamber`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "26c0bf73546810ba46c6f4bc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45484,
+            "sha256": "c93dfcd3abd976d81e0135ae124e51137c0bba2b8c3d2da151aa61962e6f2fc2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36661,
+            "sha256": "0c4d4ac874af0a01399667be3f4f4f80fbecea4c5448c986d4093e416cfb660f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "fed36ba142891dc9c4892b588597dbc9390896dcb48c285e9c14e40552c617c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20364,
+            "sha256": "f94443d1d1fdcbc4c3c87f1399343d7be8ac1229dfc51d5a033e710580d636d7"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45496,
+            "sha256": "239bf654ba2d0f79edff888797126035d9aeecf67245f4b88c50cebc7102d889"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9617,
+            "sha256": "0f781fae5b66034219805286eb0ee7a9e40d3468a74987e76fefe821b71a9e2a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "5787f24d0d1992eea4aa2cc7"
+    },
+    {
+      "receipt_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__receipt_0017",
+      "project_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15",
+      "project_title": "Dialectic Lab",
+      "proof_tier": "source-backed-proof-build",
+      "component": "Dialectic Lab / The Dialectic Lab",
+      "component_case_id": "mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15__0017__dialectic-lab-the-dialectic-lab",
+      "claim_to_demonstrate": "treats `The Dialectic Lab` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: The Dialectic Lab (canonical Room ID dialectic-lab, display name \"Dialectic Lab\", experiential title.",
+      "input_fixture": "project source text and the named component `The Dialectic Lab`",
+      "operation_under_test": "treats `The Dialectic Lab` as a room or workbench component that gives the project a usable surface rather than only a written description. Source context: The Dialectic Lab (canonical Room ID dialectic-lab, display name \"Dialectic Lab\", experiential title.",
+      "expected_output": "a room, workbench, or interface function tied to `The Dialectic Lab`",
+      "acceptance_criteria": [
+        "The input, operation, and expected output are all visible.",
+        "The evidence locator is present or the missing evidence is explicitly named.",
+        "The result supports the component claim without implying broader completion."
+      ],
+      "claim_ceiling": "The page may claim proof-structured components and visible verification targets. It may not claim external validation, production deployment, or completed empirical findings unless the project-specific record states those facts.",
+      "proof_status_declared": "source-context-backed",
+      "evidence": {
+        "status": "no_explicit_local_path",
+        "private_locator_fingerprint": "26c0bf73546810ba46c6f4bc",
+        "private_path_count": 0,
+        "public_locator_note": "Raw workstation paths are intentionally not reproduced in this share-safe receipt.",
+        "observed_artifacts": [],
+        "artifact_status_counts": {}
+      },
+      "deploy_evidence": {
+        "status": "component_anchor_verified_in_deploy_artifacts",
+        "required_artifacts": [
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45484,
+            "sha256": "c93dfcd3abd976d81e0135ae124e51137c0bba2b8c3d2da151aa61962e6f2fc2"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 36661,
+            "sha256": "0c4d4ac874af0a01399667be3f4f4f80fbecea4c5448c986d4093e416cfb660f"
+          },
+          {
+            "relative_path": "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 21762,
+            "sha256": "fed36ba142891dc9c4892b588597dbc9390896dcb48c285e9c14e40552c617c5"
+          },
+          {
+            "relative_path": "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 20364,
+            "sha256": "f94443d1d1fdcbc4c3c87f1399343d7be8ac1229dfc51d5a033e710580d636d7"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 45496,
+            "sha256": "239bf654ba2d0f79edff888797126035d9aeecf67245f4b88c50cebc7102d889"
+          },
+          {
+            "relative_path": "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md",
+            "exists": true,
+            "kind": "verified_deploy_file",
+            "size_bytes": 9617,
+            "sha256": "0f781fae5b66034219805286eb0ee7a9e40d3468a74987e76fefe821b71a9e2a"
+          }
+        ],
+        "component_anchor_hits": [
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/blueprint.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/instrument_map.json",
+          "project_blueprints/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/README.md",
+          "proof_builds/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/proof_build.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/demo_cases.json",
+          "proof_demos/mb-muranoos-dialectic-lab-handoff-pack-pass-2-2026-04-15/DEMO_CASES.md"
+        ]
+      },
+      "receipt_grade": "P: package artifact and component anchor verified; live execution trace still required",
+      "falsification_rule": "If no artifact, dataset, source packet, or run trace is attached, the component may not be presented as built beyond a proof plan.",
+      "next_strengthening_action": "Promote from package-verified receipt to live proof by attaching one run trace, screenshot packet, or executable replay.",
+      "receipt_hash": "f99d77cb161ee0258d110d4a"
+    }
+  ]
+}

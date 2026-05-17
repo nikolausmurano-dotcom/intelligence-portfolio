@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Rigor Detection - framework that detects performative rigor in AI-generated analysis; publication status is separated from validation status</title>
+<style>
+:root {
+  color-scheme: light;
+  --paper: #f7f5ef;
+  --ink: #152231;
+  --muted: #596575;
+  --rule: rgba(35, 55, 77, .18);
+  --accent: #7a4d18;
+  --blue: #1e4d6b;
+  --green: #2f6048;
+  --red: #7a2730;
+  --white: rgba(255,255,255,.88);
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: Georgia, 'Times New Roman', serif; }
+main { max-width: 1220px; margin: 0 auto; padding: 38px 22px 70px; }
+h1 { font-size: clamp(34px, 5vw, 56px); line-height: 1; font-weight: 500; margin: 0 0 14px; }
+h2 { font-size: 25px; line-height: 1.18; margin: 24px 0 10px; }
+h3 { font-size: 14px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 0 0 8px; }
+p, li { line-height: 1.58; }
+a { color: #183f65; }
+.topline, .kicker { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .12em; text-transform: uppercase; font-size: 11px; color: var(--accent); }
+.lead { max-width: 930px; font-size: 18px; line-height: 1.62; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 14px; }
+.card, .panel, .component, .trace, .source-box { background: var(--white); border: 1px solid var(--rule); border-radius: 8px; padding: 16px; }
+.panel { margin: 18px 0; }
+.summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 24px 0; }
+.score { font-size: 30px; line-height: 1; }
+.small { color: var(--muted); font-size: 13px; }
+.button { display: inline-block; border: 1px solid rgba(30,77,107,.35); border-radius: 6px; padding: 9px 12px; text-decoration: none; background: #fff; color: var(--ink); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 12px; margin: 3px 6px 3px 0; }
+button { border: 1px solid rgba(30,77,107,.35); border-radius: 6px; padding: 9px 12px; background: #fff; color: var(--ink); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 12px; cursor: pointer; }
+button:hover, .button:hover { border-color: rgba(30,77,107,.82); }
+table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; }
+th, td { padding: 10px; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+th { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.trace { white-space: pre-wrap; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 12px; line-height: 1.55; }
+.stage { border-left: 4px solid var(--blue); }
+.risk { border-left: 4px solid var(--red); }
+.ready { border-left: 4px solid var(--green); }
+.meter { height: 9px; border-radius: 999px; background: rgba(21,34,49,.12); overflow: hidden; }
+.meter span { display: block; height: 100%; background: linear-gradient(90deg, var(--green), var(--accent), var(--red)); }
+input, select { width: 100%; border: 1px solid var(--rule); border-radius: 6px; padding: 10px; background: #fff; color: var(--ink); }
+@media (max-width: 760px) { main { padding: 28px 18px 58px; } }
+</style>
+</head>
+<body><main>
+<div class="topline">Project proof lab</div>
+<h1>AI Rigor Detection - framework that detects performative rigor in AI-generated analysis; publication status is separated from validation status</h1>
+<p class="lead">A rigor-detection framework for AI outputs that look scholarly, structured, or cited while failing to do the underlying evidentiary work.</p>
+<section class="summary">
+  <div class="card"><h3>Kind</h3><p>policy / governance proposal</p></div>
+  <div class="card"><h3>Potential</h3><p class="score">7.99</p></div>
+  <div class="card"><h3>Current Proof</h3><p class="score">6.97</p></div>
+  <div class="card"><h3>State</h3><p>component-protocol-ready</p></div>
+</section>
+<section class="panel stage">
+<h2>Distinctive Mechanism To Prove</h2>
+<p>It separates the appearance of rigor from actual warrant: citation binding, source relevance, reasoning continuity, rubric fit, counterclaim handling, claim strength, Goodhart risk, adversarial-gaming flags, and validation limits are inspected as distinct failure surfaces.</p>
+</section>
+<section class="panel ready">
+<h2>Highest-Leverage Proof Upgrade</h2>
+<p>Add one implementation scenario: policy problem, decision rule, control point, abuse case, measurable criterion, and revision trigger.</p>
+</section>
+<section class="source-box">
+<h2>Source And Theory Lenses</h2>
+<p class="small">These are not passage-level citations. They are the methodological or theoretical lenses that should govern stronger proof construction.</p>
+<ul><li>policy implementation analysis</li><li>abuse-case review</li><li>measurable controls</li><li>governance feedback loops</li></ul>
+</section>
+<h2>Component Proof Cases</h2>
+
+<section class="grid"><article class="component">
+<div class="kicker">implementation scenario</div>
+<h2>AI Rigor Detection - framework that detects performative rigor in AI-generated analysis; publication status is separated from validation status Runtime Or Interface Surface</h2>
+<p><strong>Input.</strong> local app, web room, data surface, or workstation entry point</p>
+<p><strong>Operation.</strong> A rigor-detection framework for AI outputs that look scholarly, structured, or cited while failing to do the underlying evidentiary work.</p>
+<p><strong>Output to prove.</strong> reader-facing definition of the software object and its intended user</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Open or inspect the local runtime path for AI Rigor Detection - framework that detects performative rigor in AI-generated analysis; publication status is separated from validation status Runtime Or Interface Surface; confirm a room, action, or state record.</p>
+</article><article class="component">
+<div class="kicker">implementation scenario</div>
+<h2>AI Rigor Detection - framework that detects performative rigor in AI-generated analysis; publication status is separated from validation status Data And State Model</h2>
+<p><strong>Input.</strong> records, files, indexes, tables, project state, source state, and user decisions</p>
+<p><strong>Operation.</strong> Source use is organized by role: method authorities, domain evidence, technical background, implementation evidence, and claim limits. The page should show why each source matters; direct quotations and stronger factual claims still require exact passage.</p>
+<p><strong>Output to prove.</strong> state model that explains what the tool remembers and what it refuses to infer</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Test one representative case; confirm input (records, files, indexes, tables, project state, source...) produces output (state model that explains what the tool remembers...) and leaves a visible decision or artifact.</p>
+</article><article class="component">
+<div class="kicker">implementation scenario</div>
+<h2>AI Rigor Detection - framework that detects performative rigor in AI-generated analysis; publication status is separated from validation status Core Instrument Panel</h2>
+<p><strong>Input.</strong> tool buttons, rooms, workflow steps, analytical controls, and review surfaces</p>
+<p><strong>Operation.</strong> It separates the appearance of rigor from actual warrant: citation binding, source relevance, reasoning continuity, rubric fit, counterclaim handling, claim strength, Goodhart risk, adversarial-gaming flags, and validation limits are inspected as distinct.</p>
+<p><strong>Output to prove.</strong> named instruments that perform the useful work rather than generic navigation</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Test one representative case; confirm input (tool buttons, rooms, workflow steps, analytical...) produces output (named instruments that perform the useful work rather...) and leaves a visible decision or artifact.</p>
+</article><article class="component">
+<div class="kicker">implementation scenario</div>
+<h2>AI Rigor Detection - framework that detects performative rigor in AI-generated analysis; publication status is separated from validation status Workflow Orchestration</h2>
+<p><strong>Input.</strong> upstream inputs, intermediate decisions, downstream products, and stale-state conditions</p>
+<p><strong>Operation.</strong> From specification-with-measured-validation to calibrated framework with multi-rater authority. Four discrete next studies move the framework forward; each is a contained piece of work, not a re-architecture. Step 01 Multi-rater pilot Lock authoritative.</p>
+<p><strong>Output to prove.</strong> pipeline path showing how work moves and when earlier decisions must be reopened</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Test one representative case; confirm input (upstream inputs, intermediate decisions, downstream...) produces output (pipeline path showing how work moves and when earlier...) and leaves a visible decision or artifact.</p>
+</article><article class="component">
+<div class="kicker">implementation scenario</div>
+<h2>AI Rigor Detection - framework that detects performative rigor in AI-generated analysis; publication status is separated from validation status Review And Governance Gate</h2>
+<p><strong>Input.</strong> quality rules, source checks, claim ceilings, reviewer steps, and failure states</p>
+<p><strong>Operation.</strong> Framework specified and validation claim kept as measured in the page; journal-publication status is not asserted without an official record.</p>
+<p><strong>Output to prove.</strong> decision gate that makes the output inspectable before it is trusted</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Test one representative case; confirm input (quality rules, source checks, claim ceilings, reviewer...) produces output (decision gate that makes the output inspectable before...) and leaves a visible decision or artifact.</p>
+</article><article class="component">
+<div class="kicker">implementation scenario</div>
+<h2>AI Rigor Detection - framework that detects performative rigor in AI-generated analysis; publication status is separated from validation status Export Or Integration Surface</h2>
+<p><strong>Input.</strong> brief, paper, room, dataset, packet, rendered page, or external handoff</p>
+<p><strong>Operation.</strong> The specification is in place and the validation infrastructure reports measured performance at F1 0.84 under its current labeled test-set conditions. Publication status is not used as proof of the validation claim. Open questions, surfaced by the framework.</p>
+<p><strong>Output to prove.</strong> usable output that another project, professor, employer, or collaborator can inspect</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Test one representative case; confirm input (brief, paper, room, dataset, packet, rendered page...) produces output (usable output that another project, professor...) and leaves a visible decision or artifact.</p>
+</article><article class="component">
+<div class="kicker">implementation scenario</div>
+<h2>AI Rigor Detection - framework that detects performative rigor in AI-generated analysis; publication status is separated from validation status Build Verification Queue</h2>
+<p><strong>Input.</strong> unbuilt modules, missing walkthroughs, test cases, and validation evidence</p>
+<p><strong>Operation.</strong> Confirm any journal submission or publication record before using published-article language; close multi-rater calibration and Goodhart-blocking gaps before strengthening the validation claim.</p>
+<p><strong>Output to prove.</strong> next proof needed before broader claims about the tool are safe</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Test one representative case; confirm input (unbuilt modules, missing walkthroughs, test cases...) produces output (next proof needed before broader claims about the tool...) and leaves a visible decision or artifact.</p>
+</article><article class="component">
+<div class="kicker">implementation scenario</div>
+<h2>AI Rigor Detection - framework that detects performative rigor in AI-generated analysis; publication status is separated from validation status / Point the</h2>
+<p><strong>Input.</strong> project source text and the named component `Point the`</p>
+<p><strong>Operation.</strong> uses `Point the` as a named project component with a traceable role in the public mechanism. Source context: Point the framework at an AI-generated output. Each of twelve contracts hunts for a specific failure mode of fake rigor. It separates the appearance.</p>
+<p><strong>Output to prove.</strong> a project-specific work product, decision, or proof surface tied to `Point the`</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Confirm `Point the` appears in the cited source context and that the public page explains what output, decision, or project function it supports.</p>
+</article><article class="component">
+<div class="kicker">implementation scenario</div>
+<h2>AI Rigor Detection - framework that detects performative rigor in AI-generated analysis; publication status is separated from validation status / Each of</h2>
+<p><strong>Input.</strong> project source text and the named component `Each of`</p>
+<p><strong>Operation.</strong> uses `Each of` as a named project component with a traceable role in the public mechanism. Source context: Each of twelve contracts hunts for a specific failure mode of fake rigor. It separates the appearance of rigor from actual warrant: citation binding.</p>
+<p><strong>Output to prove.</strong> a project-specific work product, decision, or proof surface tied to `Each of`</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Confirm `Each of` appears in the cited source context and that the public page explains what output, decision, or project function it supports.</p>
+</article><article class="component">
+<div class="kicker">implementation scenario</div>
+<h2>AI Rigor Detection - framework that detects performative rigor in AI-generated analysis; publication status is separated from validation status / The Goodhart</h2>
+<p><strong>Input.</strong> project source text and the named component `The Goodhart`</p>
+<p><strong>Operation.</strong> uses `The Goodhart` as a named project component with a traceable role in the public mechanism. Source context: The Goodhart blocking gap is unresolved — the framework flags Goodhart-style adversarial gaming but doesn't yet block it. And RSC-001 honestly.</p>
+<p><strong>Output to prove.</strong> a project-specific work product, decision, or proof surface tied to `The Goodhart`</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Confirm `The Goodhart` appears in the cited source context and that the public page explains what output, decision, or project function it supports.</p>
+</article><article class="component">
+<div class="kicker">implementation scenario</div>
+<h2>AI Rigor Detection - framework that detects performative rigor in AI-generated analysis; publication status is separated from validation status / RSC-001</h2>
+<p><strong>Input.</strong> project source text and the named component `RSC-001`</p>
+<p><strong>Operation.</strong> uses `RSC-001` as a named project component with a traceable role in the public mechanism. Source context: And RSC-001 honestly named its own zero recall and meets its own retirement clause; the framework's self-discipline is what surfaced the failure. From.</p>
+<p><strong>Output to prove.</strong> a project-specific work product, decision, or proof surface tied to `RSC-001`</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Confirm `RSC-001` appears in the cited source context and that the public page explains what output, decision, or project function it supports.</p>
+</article><article class="component">
+<div class="kicker">implementation scenario</div>
+<h2>AI Rigor Detection - framework that detects performative rigor in AI-generated analysis; publication status is separated from validation status / Close the Goodhart</h2>
+<p><strong>Input.</strong> project source text and the named component `Close the Goodhart`</p>
+<p><strong>Operation.</strong> uses `Close the Goodhart` as a named project component with a traceable role in the public mechanism. Source context: Step 02 LLM-as-judge module Close the Goodhart gap — convert adversarial-gaming flags into blocks rather than alerts. Step 03 RSC-001.</p>
+<p><strong>Output to prove.</strong> a project-specific work product, decision, or proof surface tied to `Close the Goodhart`</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Confirm `Close the Goodhart` appears in the cited source context and that the public page explains what output, decision, or project function it supports.</p>
+</article><article class="component">
+<div class="kicker">implementation scenario</div>
+<h2>AI Rigor Detection - framework that detects performative rigor in AI-generated analysis; publication status is separated from validation status / Reasoning Continuity</h2>
+<p><strong>Input.</strong> project source text and the named component `Reasoning Continuity`</p>
+<p><strong>Operation.</strong> uses `Reasoning Continuity` as a named project component with a traceable role in the public mechanism. Source context: citation binding, source relevance, reasoning continuity, rubric fit, counterclaim handling, claim strength, Goodhart risk.</p>
+<p><strong>Output to prove.</strong> a project-specific work product, decision, or proof surface tied to `Reasoning Continuity`</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Confirm `Reasoning Continuity` appears in the cited source context and that the public page explains what output, decision, or project function it supports.</p>
+</article><article class="component">
+<div class="kicker">implementation scenario</div>
+<h2>AI Rigor Detection - framework that detects performative rigor in AI-generated analysis; publication status is separated from validation status / Rubric Fit</h2>
+<p><strong>Input.</strong> project source text and the named component `Rubric Fit`</p>
+<p><strong>Operation.</strong> uses `Rubric Fit` as a named project component with a traceable role in the public mechanism. Source context: citation binding, source relevance, reasoning continuity, rubric fit, counterclaim handling, claim strength, Goodhart risk, adversarial-gaming flags.</p>
+<p><strong>Output to prove.</strong> a project-specific work product, decision, or proof surface tied to `Rubric Fit`</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Confirm `Rubric Fit` appears in the cited source context and that the public page explains what output, decision, or project function it supports.</p>
+</article><article class="component">
+<div class="kicker">implementation scenario</div>
+<h2>AI Rigor Detection - framework that detects performative rigor in AI-generated analysis; publication status is separated from validation status / Counterclaim Handling</h2>
+<p><strong>Input.</strong> project source text and the named component `Counterclaim Handling`</p>
+<p><strong>Operation.</strong> uses `Counterclaim Handling` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: citation binding, source relevance, reasoning continuity, rubric fit, counterclaim handling, claim strength, Goodhart.</p>
+<p><strong>Output to prove.</strong> a review decision, claim ceiling, or release boundary tied to `Counterclaim Handling`</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Confirm `Counterclaim Handling` appears in the cited source context and that the public page explains what output, decision, or project function it supports.</p>
+</article><article class="component">
+<div class="kicker">implementation scenario</div>
+<h2>AI Rigor Detection - framework that detects performative rigor in AI-generated analysis; publication status is separated from validation status / Claim Strength</h2>
+<p><strong>Input.</strong> project source text and the named component `Claim Strength`</p>
+<p><strong>Operation.</strong> uses `Claim Strength` as a gate for claim discipline, validation, review, warrant strength, or release permission. Source context: citation binding, source relevance, reasoning continuity, rubric fit, counterclaim handling, claim strength, Goodhart risk.</p>
+<p><strong>Output to prove.</strong> a review decision, claim ceiling, or release boundary tied to `Claim Strength`</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Confirm `Claim Strength` appears in the cited source context and that the public page explains what output, decision, or project function it supports.</p>
+</article><article class="component">
+<div class="kicker">implementation scenario</div>
+<h2>AI Rigor Detection - framework that detects performative rigor in AI-generated analysis; publication status is separated from validation status / Goodhart risk</h2>
+<p><strong>Input.</strong> project source text and the named component `Goodhart risk`</p>
+<p><strong>Operation.</strong> uses `Goodhart risk` as a named project component with a traceable role in the public mechanism. Source context: citation binding, source relevance, reasoning continuity, rubric fit, counterclaim handling, claim strength, Goodhart risk, adversarial-gaming.</p>
+<p><strong>Output to prove.</strong> a project-specific work product, decision, or proof surface tied to `Goodhart risk`</p>
+<p><strong>Acceptance.</strong> The input, operation, and expected output are all visible.; The evidence locator is present or the missing evidence is explicitly named.; The result supports the component claim without implying broader completion.</p>
+<p><strong>Next proof build.</strong> Confirm `Goodhart risk` appears in the cited source context and that the public page explains what output, decision, or project function it supports.</p>
+</article></section>
+<p><a class="button" href="../index.html">Back to proof lab</a><a class="button" href="../../proof_demos/row2/DEMO_CASES.md">Open demo cases</a><a class="button" href="../../project_blueprints/row2/README.md">Open blueprint</a></p>
+</main></body>
+</html>
