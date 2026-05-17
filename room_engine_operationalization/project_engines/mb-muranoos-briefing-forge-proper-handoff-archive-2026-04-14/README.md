@@ -1,0 +1,5 @@
+# Briefing Forge
+
+This folder contains the package-level room-engine slice for `mb-muranoos-briefing-forge-proper-handoff-archive-2026-04-14`.
+
+It proves named instruments, fixture logic, acceptance tests, export schema, and claim boundary. It does not prove the full external system is complete.

@@ -1,0 +1,85 @@
+{
+  "engine_id": "native-icanalysis-room-engine",
+  "project_id": "native-icanalysis",
+  "project_title": "Intelligence Community Analysis",
+  "product_name": "Intelligence Community Analysis",
+  "project_kind": "structured analysis room",
+  "build_mode": "analytic instrument build",
+  "final_object_type": "analytic method or human-AI evaluation module",
+  "runtime_target": "structured public page plus project-specific data packet and proof runner",
+  "operational_end_state": "A user can apply a method, compare baseline and method-supported reasoning, record human judgment, and preserve the claim boundary.",
+  "minimum_operational_release": "A usable instrument for Intelligence Community Analysis: sample input, analytic rule, analyst or model action, output, scoring or review gate, and falsification test.",
+  "full_build_definition": "An instrument with input, rule or rubric, analyst action, scoring or classification output, replay log, falsifier, and evidence-bound acceptance criteria.",
+  "source_actions_before_claim": "Carry 5 source-application role(s) into the first build release and convert the most load-bearing source into a close-read contract before any quotation, page-specific citation, or strong literature-positioning claim.",
+  "claim_boundary": "This is a full-build plan, not a claim that the full operational system has already been completed.",
+  "public_claim_now": "May claim a prototype-to-full-build path exists; do not claim completed operational system.",
+  "current_status": "source-backed proof build; needs source-to-output capture and close-read strengthening",
+  "blocking_gates": "live capture and outside-use evidence before deployment or validation claims",
+  "first_full_build": "Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.",
+  "launch_or_review_path": "Open the instrument contract for `native-icanalysis`, run the sample input through the rule/rubric, and capture the output and falsifier.",
+  "instrument_count": 4,
+  "acceptance_test_count": 4,
+  "instruments": [
+    {
+      "instrument_id": "native-icanalysis-instrument-01",
+      "instrument_name": "baseline answer",
+      "purpose": "Turn the `baseline answer` module into a concrete input-operation-output step for Intelligence Community Analysis.",
+      "input_contract": "Project fixture, source duty, current claim boundary, and required output state.",
+      "operation": "Execute or inspect the baseline answer step against the project fixture and record the state change it is supposed to produce.",
+      "output_contract": "A reviewer-visible state record, output artifact, or decision boundary tied to the project acceptance tests.",
+      "acceptance_condition": "The baseline answer instrument is present, named, connected to the fixture, and has an output or decision field that can be reviewed.",
+      "production_slice_status": "built_as_static_operational_slice"
+    },
+    {
+      "instrument_id": "native-icanalysis-instrument-02",
+      "instrument_name": "structured review",
+      "purpose": "Turn the `structured review` module into a concrete input-operation-output step for Intelligence Community Analysis.",
+      "input_contract": "Project fixture, source duty, current claim boundary, and required output state.",
+      "operation": "Execute or inspect the structured review step against the project fixture and record the state change it is supposed to produce.",
+      "output_contract": "A reviewer-visible state record, output artifact, or decision boundary tied to the project acceptance tests.",
+      "acceptance_condition": "The structured review instrument is present, named, connected to the fixture, and has an output or decision field that can be reviewed.",
+      "production_slice_status": "built_as_static_operational_slice"
+    },
+    {
+      "instrument_id": "native-icanalysis-instrument-03",
+      "instrument_name": "human delta",
+      "purpose": "Turn the `human delta` module into a concrete input-operation-output step for Intelligence Community Analysis.",
+      "input_contract": "Project fixture, source duty, current claim boundary, and required output state.",
+      "operation": "Execute or inspect the human delta step against the project fixture and record the state change it is supposed to produce.",
+      "output_contract": "A reviewer-visible state record, output artifact, or decision boundary tied to the project acceptance tests.",
+      "acceptance_condition": "The human delta instrument is present, named, connected to the fixture, and has an output or decision field that can be reviewed.",
+      "production_slice_status": "built_as_static_operational_slice"
+    },
+    {
+      "instrument_id": "native-icanalysis-instrument-04",
+      "instrument_name": "confidence gate",
+      "purpose": "Turn the `confidence gate` module into a concrete input-operation-output step for Intelligence Community Analysis.",
+      "input_contract": "Project fixture, source duty, current claim boundary, and required output state.",
+      "operation": "Execute or inspect the confidence gate step against the project fixture and record the state change it is supposed to produce.",
+      "output_contract": "A reviewer-visible state record, output artifact, or decision boundary tied to the project acceptance tests.",
+      "acceptance_condition": "The confidence gate instrument is present, named, connected to the fixture, and has an output or decision field that can be reviewed.",
+      "production_slice_status": "built_as_static_operational_slice"
+    }
+  ],
+  "acceptance_tests": [
+    "claim ceiling test: public claims cannot exceed built evidence",
+    "source test: metadata-routed sources require close reading before citation or quotation",
+    "privacy test: no local paths or private directories in public deploy",
+    "human-AI delta test: structured human review changes, narrows, blocks, or justifies output"
+  ],
+  "fixture": {
+    "fixture_name": "Intelligence Community Analysis first operational slice",
+    "input": "Add a compact source-to-judgment example: input source, analytic instrument, inference made, rival interpretation, confidence limit, and downstream use.",
+    "operation": "Run the room engine through each required instrument, then produce a reviewer-visible state record and claim boundary.",
+    "expected_output": "A usable instrument for Intelligence Community Analysis: sample input, analytic rule, analyst or model action, output, scoring or review gate, and falsification test."
+  },
+  "export_schema": {
+    "project_id": "stable project identifier",
+    "instrument_results": "one result object per required module",
+    "acceptance_results": "one result object per required test",
+    "claim_boundary": "public claim ceiling after this run",
+    "full_underlying_system_complete": "always false unless backed by actual external runtime evidence"
+  },
+  "package_operational_slice_status": "built",
+  "full_underlying_system_complete": false
+}

@@ -1,0 +1,84 @@
+{
+  "engine_id": "project-hardening-room-engine",
+  "project_id": "project-hardening",
+  "project_title": "Quality Review - checking project claims against evidence, scope, and readiness",
+  "product_name": "Quality Review - checking project claims against evidence, scope, and readiness",
+  "project_kind": "public project blueprint",
+  "build_mode": "source governance build",
+  "final_object_type": "source governance or packet-routing system",
+  "runtime_target": "packet registry, routing table, and promotion decision board",
+  "operational_end_state": "A reviewer can see source identity, authority, route, output impact, and next build decision.",
+  "minimum_operational_release": "A promotion-ready source packet for Quality Review - checking project claims against evidence, scope, and readiness: inventory, authority classification, routing rule, claim ceiling, and reconciliation report.",
+  "full_build_definition": "A source or packet system with inventory, provenance, authority status, routing logic, claim ceiling, promotion rule, and reconciliation tests.",
+  "source_actions_before_claim": "Complete 1 close-read contract(s), update 3 linked proof-capsule field(s), and preserve the current claim ceiling until passage notes exist.",
+  "claim_boundary": "This is a full-build plan, not a claim that the full operational system has already been completed.",
+  "public_claim_now": "May claim a prototype-to-full-build path exists; do not claim completed operational system.",
+  "current_status": "proof build required",
+  "blocking_gates": "passage-level close-read notes",
+  "first_full_build": "Capture a concrete run trace or exported proof artifact for this project type; the project is currently more specified than demonstrated.",
+  "launch_or_review_path": "Open the source packet contract for `project-hardening`, reconcile source inventory, and render the promotion decision.",
+  "instrument_count": 4,
+  "acceptance_test_count": 3,
+  "instruments": [
+    {
+      "instrument_id": "project-hardening-instrument-01",
+      "instrument_name": "source registry",
+      "purpose": "Turn the `source registry` module into a concrete input-operation-output step for Quality Review - checking project claims against evidence, scope, and readiness.",
+      "input_contract": "Project fixture, source duty, current claim boundary, and required output state.",
+      "operation": "Execute or inspect the source registry step against the project fixture and record the state change it is supposed to produce.",
+      "output_contract": "A reviewer-visible state record, output artifact, or decision boundary tied to the project acceptance tests.",
+      "acceptance_condition": "The source registry instrument is present, named, connected to the fixture, and has an output or decision field that can be reviewed.",
+      "production_slice_status": "built_as_static_operational_slice"
+    },
+    {
+      "instrument_id": "project-hardening-instrument-02",
+      "instrument_name": "output mapping",
+      "purpose": "Turn the `output mapping` module into a concrete input-operation-output step for Quality Review - checking project claims against evidence, scope, and readiness.",
+      "input_contract": "Project fixture, source duty, current claim boundary, and required output state.",
+      "operation": "Execute or inspect the output mapping step against the project fixture and record the state change it is supposed to produce.",
+      "output_contract": "A reviewer-visible state record, output artifact, or decision boundary tied to the project acceptance tests.",
+      "acceptance_condition": "The output mapping instrument is present, named, connected to the fixture, and has an output or decision field that can be reviewed.",
+      "production_slice_status": "built_as_static_operational_slice"
+    },
+    {
+      "instrument_id": "project-hardening-instrument-03",
+      "instrument_name": "claim boundary",
+      "purpose": "Turn the `claim boundary` module into a concrete input-operation-output step for Quality Review - checking project claims against evidence, scope, and readiness.",
+      "input_contract": "Project fixture, source duty, current claim boundary, and required output state.",
+      "operation": "Execute or inspect the claim boundary step against the project fixture and record the state change it is supposed to produce.",
+      "output_contract": "A reviewer-visible state record, output artifact, or decision boundary tied to the project acceptance tests.",
+      "acceptance_condition": "The claim boundary instrument is present, named, connected to the fixture, and has an output or decision field that can be reviewed.",
+      "production_slice_status": "built_as_static_operational_slice"
+    },
+    {
+      "instrument_id": "project-hardening-instrument-04",
+      "instrument_name": "close-read queue",
+      "purpose": "Turn the `close-read queue` module into a concrete input-operation-output step for Quality Review - checking project claims against evidence, scope, and readiness.",
+      "input_contract": "Project fixture, source duty, current claim boundary, and required output state.",
+      "operation": "Execute or inspect the close-read queue step against the project fixture and record the state change it is supposed to produce.",
+      "output_contract": "A reviewer-visible state record, output artifact, or decision boundary tied to the project acceptance tests.",
+      "acceptance_condition": "The close-read queue instrument is present, named, connected to the fixture, and has an output or decision field that can be reviewed.",
+      "production_slice_status": "built_as_static_operational_slice"
+    }
+  ],
+  "acceptance_tests": [
+    "claim ceiling test: public claims cannot exceed built evidence",
+    "source test: metadata-routed sources require close reading before citation or quotation",
+    "privacy test: no local paths or private directories in public deploy"
+  ],
+  "fixture": {
+    "fixture_name": "Quality Review - checking project claims against evidence, scope, and readiness first operational slice",
+    "input": "Capture a concrete run trace or exported proof artifact for this project type; the project is currently more specified than demonstrated.",
+    "operation": "Run the room engine through each required instrument, then produce a reviewer-visible state record and claim boundary.",
+    "expected_output": "A promotion-ready source packet for Quality Review - checking project claims against evidence, scope, and readiness: inventory, authority classification, routing rule, claim ceiling, and reconciliation report."
+  },
+  "export_schema": {
+    "project_id": "stable project identifier",
+    "instrument_results": "one result object per required module",
+    "acceptance_results": "one result object per required test",
+    "claim_boundary": "public claim ceiling after this run",
+    "full_underlying_system_complete": "always false unless backed by actual external runtime evidence"
+  },
+  "package_operational_slice_status": "built",
+  "full_underlying_system_complete": false
+}

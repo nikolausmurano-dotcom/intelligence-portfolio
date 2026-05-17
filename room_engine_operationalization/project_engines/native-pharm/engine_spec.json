@@ -1,0 +1,84 @@
+{
+  "engine_id": "native-pharm-room-engine",
+  "project_id": "native-pharm",
+  "project_title": "Vaccine Distribution Planner",
+  "product_name": "Vaccine Distribution Planner",
+  "project_kind": "operational simulation / planning tool",
+  "build_mode": "source governance build",
+  "final_object_type": "research project or professional workbench",
+  "runtime_target": "structured public page plus project-specific data packet and proof runner",
+  "operational_end_state": "A reviewer can inspect what the project is, what it produces, what is built now, and what must be built next.",
+  "minimum_operational_release": "A promotion-ready source packet for Vaccine Distribution Planner: inventory, authority classification, routing rule, claim ceiling, and reconciliation report.",
+  "full_build_definition": "A source or packet system with inventory, provenance, authority status, routing logic, claim ceiling, promotion rule, and reconciliation tests.",
+  "source_actions_before_claim": "Complete 1 close-read contract(s), update 3 linked proof-capsule field(s), and preserve the current claim ceiling until passage notes exist.",
+  "claim_boundary": "This is a full-build plan, not a claim that the full operational system has already been completed.",
+  "public_claim_now": "May claim a prototype-to-full-build path exists; do not claim completed operational system.",
+  "current_status": "source-backed proof build; needs source-to-output capture and close-read strengthening",
+  "blocking_gates": "passage-level close-read notes",
+  "first_full_build": "Add one replayable scenario: initial condition, decision variable, constraint, model operation, output, and after-action review.",
+  "launch_or_review_path": "Open the source packet contract for `native-pharm`, reconcile source inventory, and render the promotion decision.",
+  "instrument_count": 4,
+  "acceptance_test_count": 3,
+  "instruments": [
+    {
+      "instrument_id": "native-pharm-instrument-01",
+      "instrument_name": "input fixture",
+      "purpose": "Turn the `input fixture` module into a concrete input-operation-output step for Vaccine Distribution Planner.",
+      "input_contract": "Project fixture, source duty, current claim boundary, and required output state.",
+      "operation": "Execute or inspect the input fixture step against the project fixture and record the state change it is supposed to produce.",
+      "output_contract": "A reviewer-visible state record, output artifact, or decision boundary tied to the project acceptance tests.",
+      "acceptance_condition": "The input fixture instrument is present, named, connected to the fixture, and has an output or decision field that can be reviewed.",
+      "production_slice_status": "built_as_static_operational_slice"
+    },
+    {
+      "instrument_id": "native-pharm-instrument-02",
+      "instrument_name": "operation trace",
+      "purpose": "Turn the `operation trace` module into a concrete input-operation-output step for Vaccine Distribution Planner.",
+      "input_contract": "Project fixture, source duty, current claim boundary, and required output state.",
+      "operation": "Execute or inspect the operation trace step against the project fixture and record the state change it is supposed to produce.",
+      "output_contract": "A reviewer-visible state record, output artifact, or decision boundary tied to the project acceptance tests.",
+      "acceptance_condition": "The operation trace instrument is present, named, connected to the fixture, and has an output or decision field that can be reviewed.",
+      "production_slice_status": "built_as_static_operational_slice"
+    },
+    {
+      "instrument_id": "native-pharm-instrument-03",
+      "instrument_name": "output artifact",
+      "purpose": "Turn the `output artifact` module into a concrete input-operation-output step for Vaccine Distribution Planner.",
+      "input_contract": "Project fixture, source duty, current claim boundary, and required output state.",
+      "operation": "Execute or inspect the output artifact step against the project fixture and record the state change it is supposed to produce.",
+      "output_contract": "A reviewer-visible state record, output artifact, or decision boundary tied to the project acceptance tests.",
+      "acceptance_condition": "The output artifact instrument is present, named, connected to the fixture, and has an output or decision field that can be reviewed.",
+      "production_slice_status": "built_as_static_operational_slice"
+    },
+    {
+      "instrument_id": "native-pharm-instrument-04",
+      "instrument_name": "review gate",
+      "purpose": "Turn the `review gate` module into a concrete input-operation-output step for Vaccine Distribution Planner.",
+      "input_contract": "Project fixture, source duty, current claim boundary, and required output state.",
+      "operation": "Execute or inspect the review gate step against the project fixture and record the state change it is supposed to produce.",
+      "output_contract": "A reviewer-visible state record, output artifact, or decision boundary tied to the project acceptance tests.",
+      "acceptance_condition": "The review gate instrument is present, named, connected to the fixture, and has an output or decision field that can be reviewed.",
+      "production_slice_status": "built_as_static_operational_slice"
+    }
+  ],
+  "acceptance_tests": [
+    "claim ceiling test: public claims cannot exceed built evidence",
+    "source test: metadata-routed sources require close reading before citation or quotation",
+    "privacy test: no local paths or private directories in public deploy"
+  ],
+  "fixture": {
+    "fixture_name": "Vaccine Distribution Planner first operational slice",
+    "input": "Add one replayable scenario: initial condition, decision variable, constraint, model operation, output, and after-action review.",
+    "operation": "Run the room engine through each required instrument, then produce a reviewer-visible state record and claim boundary.",
+    "expected_output": "A promotion-ready source packet for Vaccine Distribution Planner: inventory, authority classification, routing rule, claim ceiling, and reconciliation report."
+  },
+  "export_schema": {
+    "project_id": "stable project identifier",
+    "instrument_results": "one result object per required module",
+    "acceptance_results": "one result object per required test",
+    "claim_boundary": "public claim ceiling after this run",
+    "full_underlying_system_complete": "always false unless backed by actual external runtime evidence"
+  },
+  "package_operational_slice_status": "built",
+  "full_underlying_system_complete": false
+}

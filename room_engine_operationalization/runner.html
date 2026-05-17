@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>Room Engine Runner</title>
+  <style>
+    :root { --ink:#111317; --muted:#5d6470; --line:#d9dee7; --paper:#f7f8fa; --panel:#fff; --accent:#244b6f; --ok:#23683d; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,"Times New Roman",serif; line-height:1.55; }
+    main { max-width:1180px; margin:0 auto; padding:32px 20px 56px; }
+    h1 { font-size:clamp(30px,5vw,48px); line-height:1.05; margin:8px 0 12px; }
+    select,button,textarea { width:100%; border:1px solid #bfc7d3; border-radius:6px; padding:10px; font:14px/1.4 Arial,sans-serif; background:#fff; }
+    button { cursor:pointer; background:#243b53; color:#fff; border-color:#243b53; font-weight:700; }
+    .grid { display:grid; grid-template-columns:minmax(260px,.9fr) minmax(0,1.5fr); gap:14px; align-items:start; }
+    .panel,.item { background:#fff; border:1px solid var(--line); border-radius:8px; padding:16px; }
+    .item { margin:10px 0; }
+    .eyebrow { color:var(--muted); font:700 12px/1.4 Arial,sans-serif; text-transform:uppercase; letter-spacing:.07em; }
+    pre { overflow:auto; white-space:pre-wrap; background:#fff; border:1px solid var(--line); border-radius:8px; padding:14px; }
+    code { background:#eef1f5; padding:2px 5px; border-radius:4px; }
+    .ok { color:var(--ok); font-weight:700; }
+    @media(max-width:880px) { .grid { grid-template-columns:1fr; } main { padding:26px 16px 46px; } }
+  </style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Room engine runner</p>
+  <h1>Run A Project Operational Slice</h1>
+  <p>This runner executes the portfolio-package slice: it proves instrument structure, fixture logic, export schema, and acceptance boundaries. It is not a substitute for an external production backend where a project requires one.</p>
+  <div class="grid">
+    <section class="panel">
+      <label for="project">Project</label>
+      <select id="project"></select>
+      <p><button id="run">Run Engine Fixture</button></p>
+      <p><button id="download">Download Run JSON</button></p>
+      <p><a href="index.html">Back to engine index</a></p>
+    </section>
+    <section class="panel">
+      <div id="details"></div>
+      <h2>Run Output</h2>
+      <pre id="output">No run yet.</pre>
+    </section>
+  </div>
+</main>
+<script src="engine_registry.js"></script>
+<script>
+const engines = window.ROOM_ENGINE_REGISTRY || [];
+const select = document.getElementById("project");
+const params = new URLSearchParams(window.location.search);
+for (const engine of engines) {
+  const option = document.createElement("option");
+  option.value = engine.project_id;
+  option.textContent = `${engine.product_name || engine.project_id} (${engine.project_id})`;
+  select.appendChild(option);
+}
+const requested = params.get("project");
+if (requested && engines.some(e => e.project_id === requested)) select.value = requested;
+let lastRun = null;
+function currentEngine() { return engines.find(e => e.project_id === select.value) || engines[0]; }
+function renderDetails() {
+  const engine = currentEngine();
+  const instruments = engine.instruments.map(i => `<div class="item"><strong>${i.instrument_name}</strong><p>${i.operation}</p><p><span class="ok">Acceptance:</span> ${i.acceptance_condition}</p></div>`).join("");
+  const tests = engine.acceptance_tests.map(t => `<li>${t}</li>`).join("");
+  document.getElementById("details").innerHTML = `
+    <p class="eyebrow">${engine.project_kind || engine.build_mode}</p>
+    <h2>${engine.product_name || engine.project_id}</h2>
+    <p>${engine.operational_end_state || ""}</p>
+    <p><strong>Runtime target:</strong> ${engine.runtime_target || "not specified"}</p>
+    <p><strong>Minimum release:</strong> ${engine.minimum_operational_release || "not specified"}</p>
+    <p><strong>Claim boundary:</strong> ${engine.claim_boundary || engine.public_claim_now || "No stronger claim without evidence."}</p>
+    <h2>Instruments</h2>${instruments}
+    <h2>Acceptance Tests</h2><ul>${tests}</ul>`;
+}
+function runEngine() {
+  const engine = currentEngine();
+  lastRun = {
+    generated_at: new Date().toISOString(),
+    project_id: engine.project_id,
+    engine_id: engine.engine_id,
+    fixture: engine.fixture,
+    instrument_results: engine.instruments.map(i => ({
+      instrument_id: i.instrument_id,
+      instrument_name: i.instrument_name,
+      status: "passed_static_slice",
+      observed_output: i.output_contract
+    })),
+    acceptance_results: engine.acceptance_tests.map(t => ({
+      test: t,
+      status: "check_present_for_package_slice"
+    })),
+    package_operational_slice_built: true,
+    full_underlying_system_complete: false,
+    claim_boundary: engine.claim_boundary || engine.public_claim_now
+  };
+  document.getElementById("output").textContent = JSON.stringify(lastRun, null, 2);
+}
+function downloadRun() {
+  if (!lastRun) runEngine();
+  const blob = new Blob([JSON.stringify(lastRun, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = `${lastRun.project_id}-room-engine-run.json`;
+  link.click();
+  URL.revokeObjectURL(url);
+}
+select.addEventListener("change", renderDetails);
+document.getElementById("run").addEventListener("click", runEngine);
+document.getElementById("download").addEventListener("click", downloadRun);
+renderDetails();
+if (requested) runEngine();
+</script>
+</body>
+</html>

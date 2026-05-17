@@ -4,3 +4,4 @@
 - `production_completion_execution_packs/`: per-project production completion runbooks and evidence checklists.
 - `hosted_deployment_smoke_runner/`: post-upload hosted route and artifact smoke runner for runtime projects.
 - `active_lane_production_complete/`: active-only production campaign for the 131 projects, excluding external-owner work.
+- `room_engine_operationalization/`: per-project room-engine slices with instruments, fixtures, acceptance tests, runner, and receipts; this proves package-level operational slices, not full external-system completion.
