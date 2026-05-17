@@ -1,6 +1,6 @@
 # Post-Upload Hosted Smoke Instructions
 
-Generated: 2026-05-17T05:47:43+00:00
+Generated: 2026-05-17T06:09:53+00:00
 
 1. Upload the latest ZIP package to the public site root.
 2. Open `/hosted_deployment_smoke_runner/runner.html` from the hosted domain.
