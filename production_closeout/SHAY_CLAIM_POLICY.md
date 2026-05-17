@@ -11,7 +11,7 @@ What I can claim now:
 - `131` active projects are production-complete under the current gate policy.
 - `0` active projects remain blocked by hosted deployment evidence.
 - The package remains under the 40 MB deployment ceiling.
-- Current closeout ZIP: `UPLOAD_TO_PORKBUN_ROOT_NIKMURANO_PROFESSIONAL_20260517_PRODUCTION_CLOSEOUT.zip` (38.666 MB). The SHA-256 is recorded outside the package in the closeout audit output to avoid a self-referential hash.
+- Current closeout ZIP: `UPLOAD_TO_PORKBUN_ROOT_NIKMURANO_PROFESSIONAL_20260517_PRODUCTION_CLOSEOUT.zip` (38.672 MB). The SHA-256 is recorded outside the package in the closeout audit output to avoid a self-referential hash.
 
 
 ## What Would Be False Or Premature
@@ -22,6 +22,8 @@ Do not say:
 - "Every underlying bespoke external system is fully operational." The control plane records active-lane package production and public proof-surface operation, not total external system completion.
 - "nikmurano.com serves this release." The verified public deployment is the GitHub Pages URL unless DNS or Porkbun static hosting is separately updated and smoked.
 - "All pages have independent external human review." Codex technical review notes are labeled as such.
+
+The current domain-cutover state is tracked in `domain_cutover_control_plane/`. That layer must report passing custom-domain route smoke before any `nikmurano.com` production claim is made.
 
 ## Required Safe Wording
 

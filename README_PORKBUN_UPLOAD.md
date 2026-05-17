@@ -61,3 +61,4 @@ Public packaging rule: this upload folder should not expose local workstation pa
 - `room_project_workbenches/execution_ledger/`: compact browser-executed ledger proving all 243 generated room workbenches ran their instruments and preserved the external-completion boundary.
 - `instrument_implementation_layer/`: typed operation, schema, deterministic-step, acceptance-predicate, and falsifier layer for all room instruments.
 - `instrument_validation_layer/`: positive-case and falsifier-case validation for every typed room instrument.
+- `domain_cutover_control_plane/` records whether `nikmurano.com` itself serves the verified release and lists the exact DNS or FTP/GitHub-Connect action still required.

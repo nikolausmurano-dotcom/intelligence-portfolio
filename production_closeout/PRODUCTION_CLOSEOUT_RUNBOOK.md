@@ -15,6 +15,8 @@ DEPLOY_TO_PORKBUN_FTP_20260517.cmd
 
 The FTP uploader writes an audit manifest and does not print the password.
 
+The package includes `domain_cutover_control_plane/`, which records whether `nikmurano.com` itself serves the verified release, the current DNS state, and the exact external action still required.
+
 ## Phase 2: Hosted Smoke
 
 Preferred one-command finalizer after upload, run from the local `SHAY_PACKAGE` working folder:
