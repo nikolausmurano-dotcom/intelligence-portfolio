@@ -1,24 +1,26 @@
 # Production Completion Runbook: native-africa
 
-Generated: 2026-05-17T02:29:24+00:00
+Generated: 2026-05-17T20:33:59+00:00
 
 ## Project
 
 - Product name: Colonial Encounter in Africa
 - Project class: software_or_instrument
 - Final object type: research workflow software module
-- Production state: proof_surface_operational_evidence_incomplete
+- Production state: production_complete
 - Closure lane: runtime_deployment_validation
-- Production complete: no
+- Production complete: yes
 
 ## Blocking Gates
 
-- **G8 - Deployment or reproducibility smoke**: The route, packet, script, or local runtime can be opened and its required artifacts can be fetched or reproduced.
-- **G10 - No unresolved blocking gaps**: The production ledger has no missing blocking gate and no residual evidence slot required for promotion.
+- None recorded.
 
 ## Evidence Files To Supply
 
-- `hosted_deployment_smoke.json`: Records public hosted-route status and required artifact fetches after upload.
+- `desktop_screenshot.png`: Shows desktop rendering of the real project surface.
+- `mobile_screenshot.png`: Shows mobile rendering of the real project surface.
+- `hosted_deployment_smoke.json`: Records HTTP status and required artifact fetches after upload.
+- `reviewer_validation_note.md`: Records clearly labeled review or technical audit result and remaining defects.
 
 ## Execution Steps
 

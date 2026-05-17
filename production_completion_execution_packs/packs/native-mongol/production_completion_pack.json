@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T02:29:24+00:00",
+  "generated_at": "2026-05-17T20:34:03+00:00",
   "project": {
     "project_id": "native-mongol",
     "product_name": "Mongol Empire Military Systems",
@@ -7,49 +7,38 @@
     "final_object_type": "research workflow software module",
     "owner_lane": "active_non_overlap",
     "closure_lane": "runtime_deployment_validation",
-    "production_state": "proof_surface_operational_evidence_incomplete",
-    "production_complete": "no",
+    "production_state": "production_complete",
+    "production_complete": "yes",
     "public_proof_surface_operational": "yes",
     "harness_executes": "yes",
     "regression_case_count": "3",
     "residual_required_slots": "4",
-    "residual_present_slots": "3",
-    "residual_missing_slots": "1",
-    "residual_missing_files": "hosted_deployment_smoke.json",
-    "blocking_gate_count": "2",
-    "blocking_gates": "G8; G10",
-    "blocking_gate_names": "Deployment or reproducibility smoke; No unresolved blocking gaps",
+    "residual_present_slots": "4",
+    "residual_missing_slots": "0",
+    "residual_missing_files": "",
+    "blocking_gate_count": "0",
+    "blocking_gates": "",
+    "blocking_gate_names": "",
     "exclusion_reason": "",
-    "next_production_action": "Supply the 1 required residual evidence files for the runtime_deployment_validation lane, then rerun the validator."
+    "next_production_action": "Maintain regression, reviewer, and deployment evidence; no blocking action recorded."
   },
-  "blocking_gates": [
-    {
-      "project_id": "native-mongol",
-      "product_name": "Mongol Empire Military Systems",
-      "production_state": "proof_surface_operational_evidence_incomplete",
-      "closure_lane": "runtime_deployment_validation",
-      "gate_id": "G8",
-      "gate_name": "Deployment or reproducibility smoke",
-      "required_evidence": "The route, packet, script, or local runtime can be opened and its required artifacts can be fetched or reproduced.",
-      "status": "missing",
-      "next_action": "Supply the 1 required residual evidence files for the runtime_deployment_validation lane, then rerun the validator."
-    },
-    {
-      "project_id": "native-mongol",
-      "product_name": "Mongol Empire Military Systems",
-      "production_state": "proof_surface_operational_evidence_incomplete",
-      "closure_lane": "runtime_deployment_validation",
-      "gate_id": "G10",
-      "gate_name": "No unresolved blocking gaps",
-      "required_evidence": "The production ledger has no missing blocking gate and no residual evidence slot required for promotion.",
-      "status": "missing",
-      "next_action": "Supply the 1 required residual evidence files for the runtime_deployment_validation lane, then rerun the validator."
-    }
-  ],
+  "blocking_gates": [],
   "evidence_file_plan": [
     {
+      "file": "desktop_screenshot.png",
+      "purpose": "Shows desktop rendering of the real project surface."
+    },
+    {
+      "file": "mobile_screenshot.png",
+      "purpose": "Shows mobile rendering of the real project surface."
+    },
+    {
       "file": "hosted_deployment_smoke.json",
-      "purpose": "Records public hosted-route status and required artifact fetches after upload."
+      "purpose": "Records HTTP status and required artifact fetches after upload."
+    },
+    {
+      "file": "reviewer_validation_note.md",
+      "purpose": "Records clearly labeled review or technical audit result and remaining defects."
     }
   ],
   "execution_steps": [

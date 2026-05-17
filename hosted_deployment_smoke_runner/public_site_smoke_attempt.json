@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T20:25:17+00:00",
+  "generated_at": "2026-05-17T20:31:35+00:00",
   "base_url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio",
   "sentinel_results": [
     {
@@ -18,29 +18,674 @@
       "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/production_complete_control_plane/production_completion_summary.json",
       "status": 200,
       "ok": true,
-      "bytes": 288,
-      "sha256": "0bb1eb567af5097a3f5394ddf68dfbedb5959d66f34ee0bab710bb6205cae431",
-      "text_equivalent_sha256": "0bb1eb567af5097a3f5394ddf68dfbedb5959d66f34ee0bab710bb6205cae431",
+      "bytes": 287,
+      "sha256": "2999df61bee4643aa9ce5742e6006c1dd7663f0d3e50fe333f5d8f67c5c52008",
+      "text_equivalent_sha256": "2999df61bee4643aa9ce5742e6006c1dd7663f0d3e50fe333f5d8f67c5c52008",
       "local_sha256": "85510ef94d5b5776174666144ed630f726132b17dade4881b4c5a968b48e69ee",
       "local_text_equivalent_sha256": "2999df61bee4643aa9ce5742e6006c1dd7663f0d3e50fe333f5d8f67c5c52008",
       "match_mode": "text_equivalent_sha256",
-      "matches_local": false
+      "matches_local": true
     },
     {
       "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_evidence_vault_validator/promotion_ledger_current.json",
       "status": 200,
       "ok": true,
-      "bytes": 63112,
-      "sha256": "4005a43658f86b9605a2ea6c13d350064225181e21f0b0fb122857d6422b3efd",
-      "text_equivalent_sha256": "4005a43658f86b9605a2ea6c13d350064225181e21f0b0fb122857d6422b3efd",
+      "bytes": 62813,
+      "sha256": "91d2eb50351e341417e3dd5e8f2949b4fce2868f32c3fa2c830074497336ea1a",
+      "text_equivalent_sha256": "91d2eb50351e341417e3dd5e8f2949b4fce2868f32c3fa2c830074497336ea1a",
       "local_sha256": "e4298231c5769a26bf6f1922337fe67203ee405a29d00fa432a0721ac4c4fc3c",
       "local_text_equivalent_sha256": "91d2eb50351e341417e3dd5e8f2949b4fce2868f32c3fa2c830074497336ea1a",
       "match_mode": "text_equivalent_sha256",
-      "matches_local": false
+      "matches_local": true
     }
   ],
-  "current_package_deployed": false,
-  "route_results": [],
-  "hosted_smoke_ready_count": 0,
-  "reason": "Current public site does not byte-match the local release sentinels; vault hosted-smoke files were not written."
+  "current_package_deployed": true,
+  "route_results": [
+    {
+      "project_id": "applied-history",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/applied-history/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 11885,
+        "sha256": "a717d8222b604a35608e34a34706bb73fa6d6b4ac40dc8208fe3495d21ef5644",
+        "text_equivalent_sha256": "a717d8222b604a35608e34a34706bb73fa6d6b4ac40dc8208fe3495d21ef5644"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/applied-history/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 104878,
+        "sha256": "6f537849af041d357c3da7b69e46ef42e8f94c78622182c25a5431cf6ede8c1c",
+        "text_equivalent_sha256": "ef5a8ccece89232ae473f79653e5fc29dbcaafd48c134ffee62756aa7e7d22c7"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/applied-history/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 61755,
+        "sha256": "b9def7a7e90b7293116916f66752f1c327d0af5cc609c4fe7048a4297193763a",
+        "text_equivalent_sha256": "14d5ad94aedb475318b56ac24907a764d6ae48c78158c6c00f7ffbb344fed534"
+      },
+      "hosted_smoke_ready": true
+    },
+    {
+      "project_id": "native-aiprompt-eng",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/native-aiprompt-eng/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 11662,
+        "sha256": "8edb5cb6d1bdd850b6f1f81ee1e750928c0b7bb199f4827c3833c072c60a1388",
+        "text_equivalent_sha256": "8edb5cb6d1bdd850b6f1f81ee1e750928c0b7bb199f4827c3833c072c60a1388"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/native-aiprompt-eng/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 79562,
+        "sha256": "2b2d03f7531a5086f732b4578c8f7f01191044380c9fab099e7505d8335a843a",
+        "text_equivalent_sha256": "4413f0c07dc51cbf36add11814590a2959bc029a13e406f7cc5b76ce56480cb3"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/native-aiprompt-eng/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 48600,
+        "sha256": "cbc3eabb9414715b22aa9e8a92fd8b5e6e9b669af37409ab6567d65be46949f1",
+        "text_equivalent_sha256": "ecf88432ff16e81c4f02fb3a096ae1b049370dda1e25f1e719894874a9ebd0fa"
+      },
+      "hosted_smoke_ready": true
+    },
+    {
+      "project_id": "native-analyst-assurance-desk",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/native-analyst-assurance-desk/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 11580,
+        "sha256": "4a32d8ff0a484aeb45046951c52347ba9e878ec2903a26c5522e9adc0e4b6e13",
+        "text_equivalent_sha256": "4a32d8ff0a484aeb45046951c52347ba9e878ec2903a26c5522e9adc0e4b6e13"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/native-analyst-assurance-desk/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 79635,
+        "sha256": "a9274d2bf5031227677ad4e7841d707bdaa6075c076430718b28d7c229c10136",
+        "text_equivalent_sha256": "320daf318f00f208fc334a0ec5ab7349d582a877e3ba5be8def8a855a86033c5"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/native-analyst-assurance-desk/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 47491,
+        "sha256": "4c74e03dcd65ba8d03b9dad6d3678dc2c8025fabf07ecfab0770585d0a84b25e",
+        "text_equivalent_sha256": "792af52a4c51a7b803da699397d5379823941c44a76ddd0dbf0a885ead836584"
+      },
+      "hosted_smoke_ready": true
+    },
+    {
+      "project_id": "native-berlin",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/native-berlin/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 11691,
+        "sha256": "99e5e5c5ce54250ec13a97b245e39541ea2ce0c0ea924857a6390a5abe6adc25",
+        "text_equivalent_sha256": "99e5e5c5ce54250ec13a97b245e39541ea2ce0c0ea924857a6390a5abe6adc25"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/native-berlin/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 91756,
+        "sha256": "e1ade7f42a7b3565b5dc8c9043251a5d19f9df6ac0c7f025cfbd7df407e1b533",
+        "text_equivalent_sha256": "81040043e0d498b24bc08e1aa9d08429b6716bf26b0dc237e1bcc87ff980ddae"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/native-berlin/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 53611,
+        "sha256": "7d59abffd643c5443f67f9ce6e12648b0ea41b75ee8158060bc9508fc32a023a",
+        "text_equivalent_sha256": "bdce8194136fb5b422be05b1082e174a32844c185d080de97f5819f1210c59ce"
+      },
+      "hosted_smoke_ready": true
+    },
+    {
+      "project_id": "native-russia",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/native-russia/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 11596,
+        "sha256": "e1f7980cc732858223153f7352eb158d30bf9043ace3686709155b04d9f3e81a",
+        "text_equivalent_sha256": "e1f7980cc732858223153f7352eb158d30bf9043ace3686709155b04d9f3e81a"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/native-russia/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 71176,
+        "sha256": "2ab786c9e951f27e8fd4baa01428858b8292076381578031d22ad3098516b973",
+        "text_equivalent_sha256": "d2db55b9913a9acdcadb26b8d8506266cd8941742c270b583a081266f48de68c"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/native-russia/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 44440,
+        "sha256": "2f03c6f63044f6cda507ad350c287d8463413139678ebcf9d6c19b423242f126",
+        "text_equivalent_sha256": "3af76efaecf08a20f5bd6c0a916abf746ad0698a6dde5fe5e40c85b9e59084ae"
+      },
+      "hosted_smoke_ready": true
+    },
+    {
+      "project_id": "native-russia-history-room",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/native-russia-history-room/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 11705,
+        "sha256": "5483e0799e266715354108200f8431ce557bf9fbba4df29d1614e5bba23b9840",
+        "text_equivalent_sha256": "5483e0799e266715354108200f8431ce557bf9fbba4df29d1614e5bba23b9840"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/native-russia-history-room/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 84320,
+        "sha256": "abb4c983a1b5bb14d9541941ed94d13ba8818c92ccfac1c99985432133d7fa6a",
+        "text_equivalent_sha256": "bda48c342618960b072a4043f7a69ef22bbadeaab49a6f711acf0c281443c910"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/native-russia-history-room/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 50567,
+        "sha256": "98b6e8055d9966eae7c09dcbc8205c37f1f25700074c16ecdcbfdc3c9420575b",
+        "text_equivalent_sha256": "9c6729fac0abcfffcb7abe583d9971cfd0343561a687bb25ab4623643a60e4e4"
+      },
+      "hosted_smoke_ready": true
+    },
+    {
+      "project_id": "row6",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/row6/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 12009,
+        "sha256": "0c06de3c22ecd0bda75e1b8ac5c7b327ec164d9d1eb73f9926676dabf6dc9ba1",
+        "text_equivalent_sha256": "0c06de3c22ecd0bda75e1b8ac5c7b327ec164d9d1eb73f9926676dabf6dc9ba1"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/row6/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 124204,
+        "sha256": "20e7236263de9445ee3f017534c0dabbe057861144813052a6d0331dc1fad39c",
+        "text_equivalent_sha256": "df63269fd0042bb5613de2ca9ab0fbe3640636599a1c9102960343485ac7e441"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/row6/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 70577,
+        "sha256": "74ccf73af807dc0c2a5596814e49b4274c59dd3c5e15db87bac993014305e09a",
+        "text_equivalent_sha256": "8d276921f602a12c94ce94c6dd5f7a4e2e385787ab00c291540919fcdc7fb71f"
+      },
+      "hosted_smoke_ready": true
+    },
+    {
+      "project_id": "cognitive-warfare",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/cognitive-warfare/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 11996,
+        "sha256": "ebf46acfb3b10a4025369d4d39ce2bbb2bc26fb2cbb20652876b48164c2b0ddc",
+        "text_equivalent_sha256": "ebf46acfb3b10a4025369d4d39ce2bbb2bc26fb2cbb20652876b48164c2b0ddc"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/cognitive-warfare/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 109487,
+        "sha256": "27cd6e65ba5dcf24a1f294e9cb90f2788910fe05ca7b50bc255c07947c16d637",
+        "text_equivalent_sha256": "eb60ef2e4df3cdc7f7543587e038c12a91f9d3ecbf8a45c4c9210ee1d8a6b9e8"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/cognitive-warfare/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 64275,
+        "sha256": "f0b219d585dee980ae81225532c4bed32406442c8b644134d3f7809f6f3c1944",
+        "text_equivalent_sha256": "df07ecb4fe72731199c2cee8a065377fd31d729cc2a3170407f969974558cc5d"
+      },
+      "hosted_smoke_ready": true
+    },
+    {
+      "project_id": "historical-studies",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/historical-studies/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 11896,
+        "sha256": "33b49bdf0f0057db7a09959db03f585be884c62b975b75a7079f9e73bf083ec2",
+        "text_equivalent_sha256": "33b49bdf0f0057db7a09959db03f585be884c62b975b75a7079f9e73bf083ec2"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/historical-studies/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 114457,
+        "sha256": "3ecb4b4b777cd1e6584ca3329e393d4c7f4e0988787deb0c35bc7cc9fe9daf82",
+        "text_equivalent_sha256": "9cf6f163efb534e13967454487bd16c1b17398bff22c1cd3cd803876f13021ee"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/historical-studies/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 65260,
+        "sha256": "3db4755be3b8ee3bb74c3e27f85504904e49bd6ff9ebaf20742d68e50706b01e",
+        "text_equivalent_sha256": "9400ffd2fe291a656fa58de0b0ba31fe82442ab2d8185b3b4ad40661a390d930"
+      },
+      "hosted_smoke_ready": true
+    },
+    {
+      "project_id": "ir-lexicon",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/ir-lexicon/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 11826,
+        "sha256": "f3a6f6db543b7546103b6395e00081f4146bf708fec96890a962acac0d9ef726",
+        "text_equivalent_sha256": "f3a6f6db543b7546103b6395e00081f4146bf708fec96890a962acac0d9ef726"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/ir-lexicon/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 99198,
+        "sha256": "faaf25d876a19c3375bcc068b3d4c3542c0cdb4851d013670d1c51f4fa798adf",
+        "text_equivalent_sha256": "2c4be2639d291b45c02a656876fce4fb63265fdccfa2bb9b78e7cd27fa681e34"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/ir-lexicon/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 59129,
+        "sha256": "126c1f0198742614045527e8fb42acaaeb2bf6cde2436dc3b7ffa688d146993c",
+        "text_equivalent_sha256": "08b9d11e3ad5c86ab2ee616ffcb03ffcf90ee8c26696f37974f18184f674b56c"
+      },
+      "hosted_smoke_ready": true
+    },
+    {
+      "project_id": "native-africa",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/native-africa/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 11635,
+        "sha256": "c17736de877bdbcbd4a5734d870cc813e6c3ce1c28851ce3b1aec40eaf0425be",
+        "text_equivalent_sha256": "c17736de877bdbcbd4a5734d870cc813e6c3ce1c28851ce3b1aec40eaf0425be"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/native-africa/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 81389,
+        "sha256": "b40dd6801a411db45ab2c54aeaba167f3fb36e0e6308007cf9a9f83ce5e8ea50",
+        "text_equivalent_sha256": "7fec6c929ea75a21d54bda6c56d7a98ba112a34af90690c5934c9f41edea3ac8"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/native-africa/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 49001,
+        "sha256": "88290c517c97ccfaa874dfe8be4ee13c0dafd2347af4eb468bab049306729c40",
+        "text_equivalent_sha256": "69c86d488495be1b8f74e549e7c1cb87b2885a6d47ee23ae1702cc1375d932ce"
+      },
+      "hosted_smoke_ready": true
+    },
+    {
+      "project_id": "native-east-asia",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/native-east-asia/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 11678,
+        "sha256": "418e4f63799a6e2b2723d8091e38c1098adfaf44750f97cee659f2a3ede6192c",
+        "text_equivalent_sha256": "418e4f63799a6e2b2723d8091e38c1098adfaf44750f97cee659f2a3ede6192c"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/native-east-asia/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 88509,
+        "sha256": "54c12043d04170123d2069d8ae52eb4923e7e56a47203a398642eb08ce90eef0",
+        "text_equivalent_sha256": "3f3d1edfa66cf9f2fd5e8502d8217e636a9934b81113a6f50fdebfec996b259a"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/native-east-asia/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 51487,
+        "sha256": "925adbf842767fb391b80de0d01f0ca229a33f4e1073f726dbe8f9b96a4d37af",
+        "text_equivalent_sha256": "9878063418f8a4993039fc8f38d6d35737a7e84002c120102349f6fa0f3ac9cd"
+      },
+      "hosted_smoke_ready": true
+    },
+    {
+      "project_id": "native-mideast",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/native-mideast/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 11664,
+        "sha256": "b389a9d2843cba227af81e094561d5f07c05b7418a82ebf81fa56b27fcffa703",
+        "text_equivalent_sha256": "b389a9d2843cba227af81e094561d5f07c05b7418a82ebf81fa56b27fcffa703"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/native-mideast/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 85603,
+        "sha256": "a5ae3c1b1ae06120ac2d05dcbf8b7c2ff40027a6d0fb65a1ffcb97d88f78b018",
+        "text_equivalent_sha256": "7e294b2d5d5e5f7c7cfb42c42cc43849053f035fb74fa9b9670ff0e6bf29e418"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/native-mideast/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 51079,
+        "sha256": "8a91f4cc998f884b38d9b6170511690b61be3752d0cd02fe571ae03e4a65f625",
+        "text_equivalent_sha256": "8c2fbe4aabf5ebda49a9d8f736d3094a40a05a8e6b56e4b6958afd937ba5501d"
+      },
+      "hosted_smoke_ready": true
+    },
+    {
+      "project_id": "native-mongol",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/native-mongol/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 11643,
+        "sha256": "542d5df43b72fdb0e895b7de89ffc2530b0e2ce44c11d04165bb5cf049ad94f1",
+        "text_equivalent_sha256": "542d5df43b72fdb0e895b7de89ffc2530b0e2ce44c11d04165bb5cf049ad94f1"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/native-mongol/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 86030,
+        "sha256": "2fd85bbd2182c756abac5795e39888531c65796b6997c890ff6ee4e29780e33e",
+        "text_equivalent_sha256": "37e3efc12c4fd5e5d58e32939f835cc584a189d63d4c2fbe46f6b30f7125ee4f"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/native-mongol/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 51871,
+        "sha256": "4cbbbaf261c76627fe994027e5f57d4edcb5bf5ebb4b7e87fc00ead2d934136f",
+        "text_equivalent_sha256": "b48067eb37988f35ef45d95bb2586ad38ff1cc0276ade2edc4fb2caa7e574aac"
+      },
+      "hosted_smoke_ready": true
+    },
+    {
+      "project_id": "native-western",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/native-western/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 11704,
+        "sha256": "20382fd7ba46bfb8d2f9770a2918a4a0f0d1e40118e443a75078abe6aff3de52",
+        "text_equivalent_sha256": "20382fd7ba46bfb8d2f9770a2918a4a0f0d1e40118e443a75078abe6aff3de52"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/native-western/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 89997,
+        "sha256": "43a8d9bd1c1ba20b6c494f2be6efbdd178b126e5cc8269e223df3bf3641b597f",
+        "text_equivalent_sha256": "631a06819444b1279c4443e6256f96a91ff66f88715ad7f5526037d99f3b90fd"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/native-western/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 53857,
+        "sha256": "2e6f7b5c36a15448ff7e5974a69b76de275322905567352c2f47154490cb7681",
+        "text_equivalent_sha256": "0e0da741049fb257fb19f46296960460bfa871909bd90a20f5c13a98a2e4555a"
+      },
+      "hosted_smoke_ready": true
+    },
+    {
+      "project_id": "russia-desk",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/russia-desk/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 11690,
+        "sha256": "a88e3eb1d61d1c1df9b6173480fb4ba5a52f2450b52e5b11c98095c4796370eb",
+        "text_equivalent_sha256": "a88e3eb1d61d1c1df9b6173480fb4ba5a52f2450b52e5b11c98095c4796370eb"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/russia-desk/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 86098,
+        "sha256": "74f10bf35e0e2ae9e1c4d6babfaa4c2a40b00815c7847f3d0155afba759ce9e6",
+        "text_equivalent_sha256": "f8840fc4858222e5a6b8db754f911157492d4e9ddc6a487fdc6afe9ab0c87367"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/russia-desk/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 51154,
+        "sha256": "80590dc6d3e84c2406127bcfe608703ec354c68672608bdef752073cc8547b5f",
+        "text_equivalent_sha256": "67c394752b5e1f3e9137f82e980bf386f79664d9fda570ce4e73aaea4de1a457"
+      },
+      "hosted_smoke_ready": true
+    },
+    {
+      "project_id": "analytical-methodology",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/analytical-methodology/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 12130,
+        "sha256": "ac9e8d1366f2c77fa3ae62f7281f9210904debd93da5c3a2742be82590ccde88",
+        "text_equivalent_sha256": "ac9e8d1366f2c77fa3ae62f7281f9210904debd93da5c3a2742be82590ccde88"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/analytical-methodology/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 144845,
+        "sha256": "f25f7bce7245cd10d4916660d46acf960f2dc8fc52cf356810168d26f9ab965a",
+        "text_equivalent_sha256": "94ec5e1ccdd9ca7828148627c440f4ddc737ef695b73b00bc7199b558583f055"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/analytical-methodology/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 76041,
+        "sha256": "6197f0e58379ca56d1010e10129fdd133083e725c815ccfa6c8bfb8ddff957f5",
+        "text_equivalent_sha256": "8b860adac26cdc86eaa1539b4169b0118e293ab46649f3d5ddb21bc323515cab"
+      },
+      "hosted_smoke_ready": true
+    },
+    {
+      "project_id": "regional-studies",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/regional-studies/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 12067,
+        "sha256": "e04946ee6e584489226b66dee830c90eddd9cf0f5a72195bb69a50b15c35455d",
+        "text_equivalent_sha256": "e04946ee6e584489226b66dee830c90eddd9cf0f5a72195bb69a50b15c35455d"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/regional-studies/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 131246,
+        "sha256": "7472d903c2435b50d3076ccdd6bf186cf7ff8c90359b1da81472f3d099820ca5",
+        "text_equivalent_sha256": "67a2613adc9abce0041dd067703c59d8fecd2018f3789b4c1c66e710302aaa50"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/regional-studies/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 72012,
+        "sha256": "91ebfd3b481b913b6fd4686edf03e63a43c18b9ca737259af23143de8be7bc36",
+        "text_equivalent_sha256": "55a3fdc760ff08525767c0bcb3a229ae4bfdd49f094349826d397f09cb70a341"
+      },
+      "hosted_smoke_ready": true
+    },
+    {
+      "project_id": "decision-advantage-system",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/decision-advantage-system/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 11959,
+        "sha256": "4e795e3fe49849536376612ac82eaa3410a7a311438b38794af3ccf3d7f34134",
+        "text_equivalent_sha256": "4e795e3fe49849536376612ac82eaa3410a7a311438b38794af3ccf3d7f34134"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/decision-advantage-system/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 113909,
+        "sha256": "4d1b415e41eb530f58c342fc112cf3e290b17acc553bf997364e40e39d6ac555",
+        "text_equivalent_sha256": "562783c7bb495928d84cb8dc22dfad1fbfaf62331ed3d37ecda94573de7174d0"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/decision-advantage-system/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 66573,
+        "sha256": "07cd6e2130781d697cc76602c7887428abb00b7d86495f59108de37832450365",
+        "text_equivalent_sha256": "4c43e23348a3650a474a895523badc416ed5b1523e99fce8add4d9c5e63edeb5"
+      },
+      "hosted_smoke_ready": true
+    },
+    {
+      "project_id": "mb-dialectic-engine-room-pass1-handoff",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/mb-dialectic-engine-room-pass1-handoff/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 11591,
+        "sha256": "3ebc2bd5c6d18c402725ca2371d2514e14f7faba2e9149c3735fb858786b639e",
+        "text_equivalent_sha256": "3ebc2bd5c6d18c402725ca2371d2514e14f7faba2e9149c3735fb858786b639e"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/mb-dialectic-engine-room-pass1-handoff/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 74728,
+        "sha256": "774886bfecfa635025e1da6abdf4425ae83bd128f963a7380c330306f17a1142",
+        "text_equivalent_sha256": "f7d16219cd492b762a97ef82e576d521aa974c6bcbc463350526742d045a214b"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/mb-dialectic-engine-room-pass1-handoff/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 46569,
+        "sha256": "6e6bdd98a2d699c84f13937de82364ca6c41c0f2df0c47fc85d336f3319d17fd",
+        "text_equivalent_sha256": "200cebfa75574ea314f5e89aefd83b63e0f4c174675a7773fdda21fd23a08d23"
+      },
+      "hosted_smoke_ready": true
+    },
+    {
+      "project_id": "native-russia-security-desk",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/native-russia-security-desk/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 11666,
+        "sha256": "f44a35cb61b0aac71a4bd5bd1926930a1455d430ca4b40ac146e765dcc9c8037",
+        "text_equivalent_sha256": "f44a35cb61b0aac71a4bd5bd1926930a1455d430ca4b40ac146e765dcc9c8037"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/native-russia-security-desk/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 80440,
+        "sha256": "6eac9ed1aceca4fb59b8b61642fe79c37fb64a135b45a27e524a4279db45cab4",
+        "text_equivalent_sha256": "d0e07a7810ca73dfa1778fdd8a113c6c249d1b6c984b3a017d6416a5ec31f02b"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/native-russia-security-desk/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 48600,
+        "sha256": "0cd8c242e7f5282b85eda5870759b4c7767281d36375697583d2462d5ec770e0",
+        "text_equivalent_sha256": "5cbc61d9c2b1d0d4c49bb9fdbde61a21d4ea937a981577aed9b46fb00043f0d6"
+      },
+      "hosted_smoke_ready": true
+    },
+    {
+      "project_id": "mb-infragard-handoff",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/mb-infragard-handoff/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 11665,
+        "sha256": "8563be9a2e2db5ecb2d5ccae4bcc45d60a0ce2fffd524b7c45a85a6b15f3b2a2",
+        "text_equivalent_sha256": "8563be9a2e2db5ecb2d5ccae4bcc45d60a0ce2fffd524b7c45a85a6b15f3b2a2"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/mb-infragard-handoff/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 87719,
+        "sha256": "5cd801b3dd24e908775fab6f6c36449ef5e5493f0015a18fc2988fff410d73cb",
+        "text_equivalent_sha256": "1a84ff2dbcd33f71dc8af8b59f8a5e97084fada1da473066c3800411a43b56cd"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/mb-infragard-handoff/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 52699,
+        "sha256": "de04ef121d24d793dbffb7e5cdc81fff4e81863f8039a60682dd5be4216a5ba1",
+        "text_equivalent_sha256": "23ffab8e4bb32638c05c1490a3b4634827e8839f4c0e1bf047b37dfa3eed0329"
+      },
+      "hosted_smoke_ready": true
+    },
+    {
+      "project_id": "mb-insinuationengineroom-handoff-done",
+      "runtime": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_runtime_slices/apps/mb-insinuationengineroom-handoff-done/index.html",
+        "status": 200,
+        "ok": true,
+        "bytes": 11682,
+        "sha256": "c6754fa797135ebbbcf8c6b4c5902e1af17ecca79b88fc6c55a5a991dc77e723",
+        "text_equivalent_sha256": "c6754fa797135ebbbcf8c6b4c5902e1af17ecca79b88fc6c55a5a991dc77e723"
+      },
+      "desktop": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/mb-insinuationengineroom-handoff-done/desktop_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 77167,
+        "sha256": "806c870c51165bdb41ba7f892f143ee3e9f774bf8ba38810cd09176b63a93e63",
+        "text_equivalent_sha256": "1e4113f2c5054e69ad670b319a9771ff99744d42f1f39f61ab5037dd405bc3b1"
+      },
+      "mobile": {
+        "url": "https://nikolausmurano-dotcom.github.io/intelligence-portfolio/non_overlap_residual_evidence_vaults/vaults/mb-insinuationengineroom-handoff-done/mobile_screenshot.png",
+        "status": 200,
+        "ok": true,
+        "bytes": 47213,
+        "sha256": "ee50121a570829f09d66b9400f3bfae21191b32aeba4bfd65c68accca6c59e10",
+        "text_equivalent_sha256": "72a62cc543ef8eb7fdedbc89c39b0a344cfd5e746367e24185380521512c99e0"
+      },
+      "hosted_smoke_ready": true
+    }
+  ],
+  "hosted_smoke_ready_count": 23,
+  "reason": "All sentinel files match local package."
 }
