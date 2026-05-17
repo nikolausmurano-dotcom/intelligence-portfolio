@@ -1,6 +1,6 @@
 # Production-Complete Standard
 
-Generated: 2026-05-17T02:19:08+00:00
+Generated: 2026-05-17T20:24:24+00:00
 
 ## Verified Current State
 
@@ -8,7 +8,7 @@ Generated: 2026-05-17T02:19:08+00:00
 - Active non-overlap projects in this lane: 131
 - External-owner projects held for another track: 112
 - Public proof surfaces operational: 131
-- Production-complete projects: 108
+- Production-complete projects: 131
 
 ## Definition
 

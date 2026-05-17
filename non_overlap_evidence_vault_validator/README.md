@@ -1,6 +1,6 @@
 # Non-Overlap Evidence Vault Validator
 
-Generated: 2026-05-17T02:08:27+00:00
+Generated: 2026-05-17T20:24:07+00:00
 
 This layer turns the residual evidence vaults into an executable promotion gate.
 
@@ -8,8 +8,8 @@ This layer turns the residual evidence vaults into an executable promotion gate.
 
 - Projects governed: 131
 - Required evidence slots: 524
-- Missing evidence slots: 23
-- Promotion-eligible projects: 108
+- Missing evidence slots: 0
+- Promotion-eligible projects: 131
 
 ## Promotion Rule
 
