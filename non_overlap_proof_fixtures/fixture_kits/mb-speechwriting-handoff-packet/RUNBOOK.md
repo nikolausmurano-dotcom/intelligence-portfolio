@@ -1,4 +1,4 @@
-# 25×25 matrix framework (Warning labels populated, cell content NOT) - Proof Fixture Kit
+# 25x25 matrix framework (Warning labels populated, cell content NOT) - Proof Fixture Kit
 
 ## Purpose
 

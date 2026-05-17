@@ -1,4 +1,4 @@
-# 25×25 matrix framework (Warning labels populated, cell content NOT) - Proof Receipts
+# 25x25 matrix framework (Warning labels populated, cell content NOT) - Proof Receipts
 
 This folder contains share-safe proof receipts for the component demo cases. Raw workstation paths are not reproduced; local artifact evidence is represented by file names, hashes where feasible, status counts, and private locator fingerprints.
 

@@ -3,7 +3,7 @@
 ## Project
 
 - Project ID: `mb-russian-reference-handoff-final`
-- Product: 100-item ranked bibliography with verification levels A/B/C × core/extended
+- Product: 100-item ranked bibliography with verification levels A/B/C x core/extended
 - Fixture ID: `NOF-C64D19DD32F6`
 
 ## Run Record

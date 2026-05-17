@@ -3,7 +3,7 @@
 ## Review Identity
 
 - Project ID: `mb-russian-reference-handoff-final`
-- Product name: 100-item ranked bibliography with verification levels A/B/C × core/extended
+- Product name: 100-item ranked bibliography with verification levels A/B/C x core/extended
 - Closure lane: `source_verification_external_review`
 - Required evidence file: `external_review_note.md`
 - Generated: 2026-05-17T01:47:56+00:00

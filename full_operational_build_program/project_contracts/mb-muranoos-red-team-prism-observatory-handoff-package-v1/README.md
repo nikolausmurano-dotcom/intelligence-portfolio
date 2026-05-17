@@ -1,4 +1,4 @@
-# Doctrinally richest: 13 named subspaces × 10 modes; claim-evidence-confidence governance
+# Doctrinally richest: 13 named subspaces x 10 modes; claim-evidence-confidence governance
 
 - Project ID: `mb-muranoos-red-team-prism-observatory-handoff-package-v1`
 - Build mode: software or application build
@@ -11,7 +11,7 @@ A runnable local or web application with a defined user flow, input fixture, per
 
 ## Minimum Operational Release
 
-A runnable slice of Doctrinally richest: 13 named subspaces × 10 modes; claim-evidence-confidence governance: one complete workflow from input to output, with fixture, state record, export, acceptance test, and source-bound claim boundary.
+A runnable slice of Doctrinally richest: 13 named subspaces x 10 modes; claim-evidence-confidence governance: one complete workflow from input to output, with fixture, state record, export, acceptance test, and source-bound claim boundary.
 
 ## Acceptance Tests
 

@@ -1,4 +1,4 @@
-# Doctrinally richest: 13 named subspaces × 10 modes; claim-evidence-confidence governance - Proof Receipts
+# Doctrinally richest: 13 named subspaces x 10 modes; claim-evidence-confidence governance - Proof Receipts
 
 This folder contains share-safe proof receipts for the component demo cases. Raw workstation paths are not reproduced; local artifact evidence is represented by file names, hashes where feasible, status counts, and private locator fingerprints.
 

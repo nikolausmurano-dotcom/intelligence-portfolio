@@ -1,4 +1,4 @@
-# 100-item ranked bibliography with verification levels A/B/C × core/extended - First Capture Packet
+# 100-item ranked bibliography with verification levels A/B/C x core/extended - First Capture Packet
 
 ## Capture Status
 

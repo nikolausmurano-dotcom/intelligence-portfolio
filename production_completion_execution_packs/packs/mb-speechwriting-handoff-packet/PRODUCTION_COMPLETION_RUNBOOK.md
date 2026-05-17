@@ -4,7 +4,7 @@ Generated: 2026-05-17T02:29:24+00:00
 
 ## Project
 
-- Product name: 25×25 matrix framework (Warning labels populated, cell content NOT)
+- Product name: 25x25 matrix framework (Warning labels populated, cell content NOT)
 - Project class: source_or_evidence_system
 - Final object type: source governance or packet-routing system
 - Production state: production_complete

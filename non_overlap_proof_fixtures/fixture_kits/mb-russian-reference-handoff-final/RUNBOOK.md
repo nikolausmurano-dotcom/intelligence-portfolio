@@ -1,4 +1,4 @@
-# 100-item ranked bibliography with verification levels A/B/C × core/extended - Proof Fixture Kit
+# 100-item ranked bibliography with verification levels A/B/C x core/extended - Proof Fixture Kit
 
 ## Purpose
 

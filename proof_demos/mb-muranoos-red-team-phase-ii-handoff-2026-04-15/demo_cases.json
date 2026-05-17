@@ -268,12 +268,12 @@
       "input_fixture": "project source text and the named component `PROMPT_FOR_NEXT_CHAT.md`",
       "operation_under_test": "treats `PROMPT_FOR_NEXT_CHAT.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: A future GPT chat starts from PROMPT_FOR_NEXT_CHAT.md in 03_Handoff/. Wire or preserve the implementation files.",
       "expected_output": "inspectable implementation evidence tied to `PROMPT_FOR_NEXT_CHAT.md`",
-      "evidence_locator": "A future GPT chat starts from PROMPT_FOR_NEXT_CHAT.md in 03_Handoff/. Wire or preserve the implementation files: Draft Rust (.additive_migration.rs, .phase2_draft.rs) and draft TypeScript (.phase2_draft.ts, 5 × TSX view.",
+      "evidence_locator": "A future GPT chat starts from PROMPT_FOR_NEXT_CHAT.md in 03_Handoff/. Wire or preserve the implementation files: Draft Rust (.additive_migration.rs, .phase2_draft.rs) and draft TypeScript (.phase2_draft.ts, 5 x TSX view.",
       "runbook": [
         "verify the cited source context and show what public function the component supports",
         "Use this input fixture: project source text and the named component `PROMPT_FOR_NEXT_CHAT.md`",
         "Verify that the component produces: inspectable implementation evidence tied to `PROMPT_FOR_NEXT_CHAT.md`",
-        "Preserve the evidence at or beside: A future GPT chat starts from PROMPT_FOR_NEXT_CHAT.md in 03_Handoff/. Wire or preserve the implementation files: Draft Rust (.additive_migration.rs, .phase2_draft.rs) and draft TypeScript (.phase2_draft.ts, 5 × TSX view."
+        "Preserve the evidence at or beside: A future GPT chat starts from PROMPT_FOR_NEXT_CHAT.md in 03_Handoff/. Wire or preserve the implementation files: Draft Rust (.additive_migration.rs, .phase2_draft.rs) and draft TypeScript (.phase2_draft.ts, 5 x TSX view."
       ],
       "acceptance_criteria": [
         "The input, operation, and expected output are all visible.",
@@ -289,16 +289,16 @@
       "project_title": "Smallest doc-pack; paired .md + .rs/.ts draft patches",
       "component": "Smallest doc-pack; paired .md + .rs/.ts draft patches / phase2_draft.ts",
       "proof_status": "source-context-backed",
-      "claim_to_demonstrate": "treats `phase2_draft.ts` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Draft Rust (.additive_migration.rs, .phase2_draft.rs) and draft TypeScript (.phase2_draft.ts, 5 × TSX view skeletons). These.",
+      "claim_to_demonstrate": "treats `phase2_draft.ts` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Draft Rust (.additive_migration.rs, .phase2_draft.rs) and draft TypeScript (.phase2_draft.ts, 5 x TSX view skeletons). These.",
       "input_fixture": "project source text and the named component `phase2_draft.ts`",
-      "operation_under_test": "treats `phase2_draft.ts` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Draft Rust (.additive_migration.rs, .phase2_draft.rs) and draft TypeScript (.phase2_draft.ts, 5 × TSX view skeletons). These.",
+      "operation_under_test": "treats `phase2_draft.ts` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Draft Rust (.additive_migration.rs, .phase2_draft.rs) and draft TypeScript (.phase2_draft.ts, 5 x TSX view skeletons). These.",
       "expected_output": "inspectable implementation evidence tied to `phase2_draft.ts`",
-      "evidence_locator": "Draft Rust (.additive_migration.rs, .phase2_draft.rs) and draft TypeScript (.phase2_draft.ts, 5 × TSX view skeletons). These are marked \"drafts\" intentionally; not byte-for-byte the Tranche_Alpha patch files. Research.",
+      "evidence_locator": "Draft Rust (.additive_migration.rs, .phase2_draft.rs) and draft TypeScript (.phase2_draft.ts, 5 x TSX view skeletons). These are marked \"drafts\" intentionally; not byte-for-byte the Tranche_Alpha patch files. Research.",
       "runbook": [
         "verify the cited source context and show what public function the component supports",
         "Use this input fixture: project source text and the named component `phase2_draft.ts`",
         "Verify that the component produces: inspectable implementation evidence tied to `phase2_draft.ts`",
-        "Preserve the evidence at or beside: Draft Rust (.additive_migration.rs, .phase2_draft.rs) and draft TypeScript (.phase2_draft.ts, 5 × TSX view skeletons). These are marked \"drafts\" intentionally; not byte-for-byte the Tranche_Alpha patch files. Research."
+        "Preserve the evidence at or beside: Draft Rust (.additive_migration.rs, .phase2_draft.rs) and draft TypeScript (.phase2_draft.ts, 5 x TSX view skeletons). These are marked \"drafts\" intentionally; not byte-for-byte the Tranche_Alpha patch files. Research."
       ],
       "acceptance_criteria": [
         "The input, operation, and expected output are all visible.",

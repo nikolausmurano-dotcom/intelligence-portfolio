@@ -5,7 +5,7 @@ Generated: 2026-05-17T01:47:55+00:00
 ## Project
 
 - Project ID: mb-speechwriting-handoff-packet
-- Product name: 25×25 matrix framework (Warning labels populated, cell content NOT)
+- Product name: 25x25 matrix framework (Warning labels populated, cell content NOT)
 - Closure lane: source_verification_external_review
 
 ## Check

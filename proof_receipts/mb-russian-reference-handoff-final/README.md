@@ -1,4 +1,4 @@
-# 100-item ranked bibliography with verification levels A/B/C × core/extended - Proof Receipts
+# 100-item ranked bibliography with verification levels A/B/C x core/extended - Proof Receipts
 
 This folder contains share-safe proof receipts for the component demo cases. Raw workstation paths are not reproduced; local artifact evidence is represented by file names, hashes where feasible, status counts, and private locator fingerprints.
 

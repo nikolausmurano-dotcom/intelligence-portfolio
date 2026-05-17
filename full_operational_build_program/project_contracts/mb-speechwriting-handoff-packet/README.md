@@ -1,4 +1,4 @@
-# 25×25 matrix framework (Warning labels populated, cell content NOT)
+# 25x25 matrix framework (Warning labels populated, cell content NOT)
 
 - Project ID: `mb-speechwriting-handoff-packet`
 - Build mode: source governance build
@@ -11,7 +11,7 @@ A source or packet system with inventory, provenance, authority status, routing 
 
 ## Minimum Operational Release
 
-A promotion-ready source packet for 25×25 matrix framework (Warning labels populated, cell content NOT): inventory, authority classification, routing rule, claim ceiling, and reconciliation report.
+A promotion-ready source packet for 25x25 matrix framework (Warning labels populated, cell content NOT): inventory, authority classification, routing rule, claim ceiling, and reconciliation report.
 
 ## Acceptance Tests
 

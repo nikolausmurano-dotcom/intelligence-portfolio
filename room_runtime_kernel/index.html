@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>Room Runtime Kernel</title>
+  <style>
+    :root { --ink:#111820; --muted:#596575; --line:#d8dee8; --paper:#f6f4ee; --panel:#fff; --accent:#264d70; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,"Times New Roman",serif; line-height:1.55; }
+    main { max-width:1160px; margin:0 auto; padding:36px 22px 64px; }
+    h1 { font-size:clamp(34px,5vw,56px); line-height:1.05; margin:8px 0 12px; font-weight:500; }
+    h2 { font-size:22px; margin:24px 0 10px; }
+    a { color:var(--accent); }
+    .eyebrow { color:var(--muted); font:700 12px/1.4 Arial,sans-serif; text-transform:uppercase; letter-spacing:.07em; }
+    .lead { max-width:900px; font-size:18px; }
+    .grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin:22px 0; }
+    .card,.panel { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:16px; }
+    .card strong { display:block; font-size:32px; line-height:1; }
+    code { background:#eef1f5; border-radius:4px; padding:2px 5px; overflow-wrap:anywhere; }
+    @media(max-width:820px) { .grid { grid-template-columns:1fr; } main { padding:28px 16px 48px; } }
+  </style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Stateful proof runtime</p>
+  <h1>Room Runtime Kernel</h1>
+  <p class="lead">This kernel turns every room-engine specification into a browser-executable package instrument. It selects a project, runs the listed instruments, records state in local browser storage, evaluates acceptance checks, and exports a proof receipt.</p>
+  <p><a href="kernel.html">Open runtime kernel</a> | <a href="../room_engine_operationalization/index.html">Room engine specifications</a> | <a href="../proof_workbench.html">Proof workbench</a></p>
+  <section class="grid">
+    <article class="card"><strong>243</strong><span>Projects loadable</span></article>
+    <article class="card"><strong>998</strong><span>Instruments executable</span></article>
+    <article class="card"><strong>940</strong><span>Acceptance checks</span></article>
+    <article class="card"><strong>0</strong><span>Full external systems complete</span></article>
+  </section>
+  <section class="panel">
+    <h2>Claim Boundary</h2>
+    <p>The kernel is production-useful as a proof and review instrument inside the static package. It is not evidence that every underlying research platform, corpus service, manuscript system, or hosted application has been completed.</p>
+  </section>
+  <section class="panel">
+    <h2>Files</h2>
+    <p><code>instrument_runtime_manifest.json</code> and <code>project_runtime_manifest.json</code> are the machine-readable manifests. <code>runtime_kernel_summary.json</code> records the audit boundary.</p>
+  </section>
+</main>
+</body>
+</html>

@@ -1,4 +1,4 @@
-# 25×25 matrix framework (Warning labels populated, cell content NOT) - First Capture Packet
+# 25x25 matrix framework (Warning labels populated, cell content NOT) - First Capture Packet
 
 ## Capture Status
 

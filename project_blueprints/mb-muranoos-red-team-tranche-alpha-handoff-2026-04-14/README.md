@@ -28,7 +28,7 @@ Research design, evidence evaluation, forecasting, and judgment. Use source libr
 
 ### Plan
 
-How this briefing says the vision should be accomplished, translated into a public project route. This is the zip to hand to a developer, not to a fresh GPT chat. Standard flow: upload to implementor — git apply diffs/unified_diff.patch (or manual file copy per APPLY_INSTRUCTIONS.md) — build live repo — run acceptance smoke test — if green, begin Tranche Beta per doctrine note. Wire or preserve the implementation files: red_team_cmds.rs grows from ~9.7 KB in the 03-30 snapshot to 29.3 KB (a ~3× expansion of the Tauri command surface). red_team_db.rs grows from 4.0 KB to 8.5 KB. RedTeamLabRoom.tsx grows from 14.1 KB to 21.6 KB. The five new tab components (Intake/Scope/Assumptions/Sources/Sessions) add ~37 KB of net new frontend code.
+How this briefing says the vision should be accomplished, translated into a public project route. This is the zip to hand to a developer, not to a fresh GPT chat. Standard flow: upload to implementor — git apply diffs/unified_diff.patch (or manual file copy per APPLY_INSTRUCTIONS.md) — build live repo — run acceptance smoke test — if green, begin Tranche Beta per doctrine note. Wire or preserve the implementation files: red_team_cmds.rs grows from ~9.7 KB in the 03-30 snapshot to 29.3 KB (a ~3x expansion of the Tauri command surface). red_team_db.rs grows from 4.0 KB to 8.5 KB. RedTeamLabRoom.tsx grows from 14.1 KB to 21.6 KB. The five new tab components (Intake/Scope/Assumptions/Sources/Sessions) add ~37 KB of net new frontend code.
 
 ### Status
 

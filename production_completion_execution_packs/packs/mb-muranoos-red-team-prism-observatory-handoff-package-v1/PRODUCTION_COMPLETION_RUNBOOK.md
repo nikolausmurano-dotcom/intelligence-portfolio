@@ -4,7 +4,7 @@ Generated: 2026-05-17T02:29:24+00:00
 
 ## Project
 
-- Product name: Doctrinally richest: 13 named subspaces × 10 modes; claim-evidence-confidence governance
+- Product name: Doctrinally richest: 13 named subspaces x 10 modes; claim-evidence-confidence governance
 - Project class: external_owner_track
 - Final object type: research workflow software module
 - Production state: external_owner_track_hold

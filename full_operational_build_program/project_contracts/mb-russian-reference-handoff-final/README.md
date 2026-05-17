@@ -1,4 +1,4 @@
-# 100-item ranked bibliography with verification levels A/B/C × core/extended
+# 100-item ranked bibliography with verification levels A/B/C x core/extended
 
 - Project ID: `mb-russian-reference-handoff-final`
 - Build mode: source governance build
@@ -11,7 +11,7 @@ A source or packet system with inventory, provenance, authority status, routing 
 
 ## Minimum Operational Release
 
-A promotion-ready source packet for 100-item ranked bibliography with verification levels A/B/C × core/extended: inventory, authority classification, routing rule, claim ceiling, and reconciliation report.
+A promotion-ready source packet for 100-item ranked bibliography with verification levels A/B/C x core/extended: inventory, authority classification, routing rule, claim ceiling, and reconciliation report.
 
 ## Acceptance Tests
 

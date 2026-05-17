@@ -1,4 +1,4 @@
-# 100-item ranked bibliography with verification levels A/B/C × core/extended
+# 100-item ranked bibliography with verification levels A/B/C x core/extended
 
 This folder contains the package-level room-engine slice for `mb-russian-reference-handoff-final`.
 

@@ -1,4 +1,4 @@
-# Doctrinally richest: 13 named subspaces × 10 modes; claim-evidence-confidence governance
+# Doctrinally richest: 13 named subspaces x 10 modes; claim-evidence-confidence governance
 
 This folder contains the package-level room-engine slice for `mb-muranoos-red-team-prism-observatory-handoff-package-v1`.
 

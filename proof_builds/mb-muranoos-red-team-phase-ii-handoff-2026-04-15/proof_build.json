@@ -148,7 +148,7 @@
       "claim_supported": "treats `PROMPT_FOR_NEXT_CHAT.md` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: A future GPT chat starts from PROMPT_FOR_NEXT_CHAT.md in 03_Handoff/. Wire or preserve the implementation files.",
       "input": "project source text and the named component `PROMPT_FOR_NEXT_CHAT.md`",
       "expected_output": "inspectable implementation evidence tied to `PROMPT_FOR_NEXT_CHAT.md`",
-      "current_evidence": "A future GPT chat starts from PROMPT_FOR_NEXT_CHAT.md in 03_Handoff/. Wire or preserve the implementation files: Draft Rust (.additive_migration.rs, .phase2_draft.rs) and draft TypeScript (.phase2_draft.ts, 5 × TSX view.",
+      "current_evidence": "A future GPT chat starts from PROMPT_FOR_NEXT_CHAT.md in 03_Handoff/. Wire or preserve the implementation files: Draft Rust (.additive_migration.rs, .phase2_draft.rs) and draft TypeScript (.phase2_draft.ts, 5 x TSX view.",
       "proof_status": "source-context-backed",
       "verification_check": "Confirm `PROMPT_FOR_NEXT_CHAT.md` appears in the cited source context and that the public page explains what output, decision, or project function it supports."
     },
@@ -156,10 +156,10 @@
       "component": "Smallest doc-pack; paired .md + .rs/.ts draft patches / phase2_draft.ts",
       "phase": "SOURCE_ANCHORED_MECHANISM",
       "form": "implementation artifact or schema",
-      "claim_supported": "treats `phase2_draft.ts` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Draft Rust (.additive_migration.rs, .phase2_draft.rs) and draft TypeScript (.phase2_draft.ts, 5 × TSX view skeletons). These.",
+      "claim_supported": "treats `phase2_draft.ts` as implementation evidence for how the project is structured, stored, rendered, or executed. Source context: Draft Rust (.additive_migration.rs, .phase2_draft.rs) and draft TypeScript (.phase2_draft.ts, 5 x TSX view skeletons). These.",
       "input": "project source text and the named component `phase2_draft.ts`",
       "expected_output": "inspectable implementation evidence tied to `phase2_draft.ts`",
-      "current_evidence": "Draft Rust (.additive_migration.rs, .phase2_draft.rs) and draft TypeScript (.phase2_draft.ts, 5 × TSX view skeletons). These are marked \"drafts\" intentionally; not byte-for-byte the Tranche_Alpha patch files. Research.",
+      "current_evidence": "Draft Rust (.additive_migration.rs, .phase2_draft.rs) and draft TypeScript (.phase2_draft.ts, 5 x TSX view skeletons). These are marked \"drafts\" intentionally; not byte-for-byte the Tranche_Alpha patch files. Research.",
       "proof_status": "source-context-backed",
       "verification_check": "Confirm `phase2_draft.ts` appears in the cited source context and that the public page explains what output, decision, or project function it supports."
     },

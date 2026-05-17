@@ -4,7 +4,7 @@ Generated: 2026-05-17T02:29:24+00:00
 
 ## Project
 
-- Product name: 100-item ranked bibliography with verification levels A/B/C × core/extended
+- Product name: 100-item ranked bibliography with verification levels A/B/C x core/extended
 - Project class: source_or_evidence_system
 - Final object type: source governance or packet-routing system
 - Production state: production_complete

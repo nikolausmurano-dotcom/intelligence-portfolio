@@ -1,4 +1,4 @@
-# 25×25 matrix framework (Warning labels populated, cell content NOT)
+# 25x25 matrix framework (Warning labels populated, cell content NOT)
 
 This folder contains the package-level room-engine slice for `mb-speechwriting-handoff-packet`.
 
