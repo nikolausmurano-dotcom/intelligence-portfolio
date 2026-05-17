@@ -11,7 +11,7 @@ What I can claim now:
 - `108` active projects are production-complete under the current gate policy.
 - `23` active projects remain blocked by hosted deployment evidence only. Review notes are present as clearly labeled Codex technical review notes, not as independent external human review.
 - The package remains under the 40 MB deployment ceiling.
-- Current closeout ZIP: `UPLOAD_TO_PORKBUN_ROOT_NIKMURANO_PROFESSIONAL_20260517_PRODUCTION_CLOSEOUT.zip` (38.536 MB). The SHA-256 is recorded outside the package in the closeout audit output to avoid a self-referential hash.
+- Current closeout ZIP: `UPLOAD_TO_PORKBUN_ROOT_NIKMURANO_PROFESSIONAL_20260517_PRODUCTION_CLOSEOUT.zip` (38.644 MB). The SHA-256 is recorded outside the package in the closeout audit output to avoid a self-referential hash.
 
 
 ## What Would Be False Or Premature

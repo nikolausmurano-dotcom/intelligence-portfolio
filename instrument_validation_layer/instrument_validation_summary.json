@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-05-17T18:43:23+00:00",
+  "instruments_expected": 998,
+  "instruments_validated": 998,
+  "instruments_passed": 998,
+  "instruments_failed": 0,
+  "positive_cases_passed": 998,
+  "negative_cases_rejected": 998,
+  "operation_type_counts": {
+    "classifier": 2,
+    "mapper": 2,
+    "registry_builder": 89,
+    "retrieval_trace": 510,
+    "scenario_replay": 7,
+    "source_admission_gate": 388
+  },
+  "full_underlying_system_complete_claims": 0,
+  "claim_boundary": "All typed instruments have package-level positive and falsifier validation. This does not prove full external production completion.",
+  "pass": true,
+  "summary_sha256": "9c0ac159f77a4fe4758c3a77586fa819ef6e769e72e25cc231a31479fcf2e5f0"
+}

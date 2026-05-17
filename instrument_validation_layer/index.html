@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>Instrument Validation Layer</title>
+  <style>
+    :root { --ink:#101721; --muted:#5f6977; --line:#d8dee8; --paper:#f6f4ee; --panel:#fff; --accent:#294f73; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,"Times New Roman",serif; line-height:1.55; }
+    main { max-width:1120px; margin:0 auto; padding:34px 20px 62px; }
+    h1 { font-size:clamp(34px,5vw,54px); line-height:1.05; margin:8px 0 12px; font-weight:500; }
+    a { color:var(--accent); }
+    .eyebrow { color:var(--muted); font:700 12px/1.4 Arial,sans-serif; text-transform:uppercase; letter-spacing:.07em; }
+    .lead { max-width:920px; font-size:18px; }
+    .grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin:22px 0; }
+    .card,.panel { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:16px; }
+    .card strong { display:block; font-size:32px; line-height:1; }
+    table { width:100%; border-collapse:collapse; table-layout:fixed; background:#fff; border:1px solid var(--line); }
+    th,td { border-bottom:1px solid var(--line); padding:9px 10px; text-align:left; vertical-align:top; overflow-wrap:anywhere; }
+    th { background:#eef2f6; font:700 12px/1.4 Arial,sans-serif; text-transform:uppercase; letter-spacing:.05em; }
+    @media(max-width:860px) { .grid { grid-template-columns:1fr; } main { padding:28px 14px 48px; } }
+  </style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Positive and falsifier validation</p>
+  <h1>Instrument Validation Layer</h1>
+  <p class="lead">Every typed instrument is tested with a valid default fixture and an invalid falsifier fixture. A professional instrument must produce a structured output for valid input and reject missing fixture/claim-boundary input.</p>
+  <p><a href="../instrument_implementation_layer/index.html">Implementation layer</a> | <a href="../proof_workbench.html">Proof workbench</a> | <a href="instrument_validation_ledger.json">Validation JSON</a> | <a href="instrument_validation_ledger.csv">Validation CSV</a></p>
+  <section class="grid">
+    <article class="card"><strong>998</strong><span>Instruments expected</span></article>
+    <article class="card"><strong>998</strong><span>Instruments passed</span></article>
+    <article class="card"><strong>998</strong><span>Positive cases passed</span></article>
+    <article class="card"><strong>998</strong><span>Negative cases rejected</span></article>
+  </section>
+  <section class="panel">
+    <h2>Claim Boundary</h2>
+    <p>All typed instruments have package-level positive and falsifier validation. This does not prove full external production completion.</p>
+  </section>
+  <h2>Failures</h2>
+  <table><thead><tr><th>Project</th><th>Instrument</th><th>Reason</th></tr></thead><tbody><tr><td colspan='3'>No validation failures.</td></tr></tbody></table>
+</main>
+</body>
+</html>
