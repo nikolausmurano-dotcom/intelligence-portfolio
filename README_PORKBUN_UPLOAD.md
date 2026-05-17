@@ -58,3 +58,4 @@ Public packaging rule: this upload folder should not expose local workstation pa
 - `non_overlap_automated_closure_evidence/` supplies local automated evidence for the mechanically testable portions of each completion-closure packet.
 
 - `non_overlap_residual_evidence_vaults/` provides per-project evidence intake and validation slots for the residual human, source, deployment, calibration, and publication gates.
+- `room_project_workbenches/execution_ledger/`: compact browser-executed ledger proving all 243 generated room workbenches ran their instruments and preserved the external-completion boundary.
