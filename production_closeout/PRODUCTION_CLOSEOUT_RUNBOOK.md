@@ -4,6 +4,17 @@
 
 Upload the latest active-lane ZIP to the Porkbun web root.
 
+Two deployment paths are supported:
+
+1. GitHub Connect: the deployment repo has been updated and pushed. If Porkbun is connected to that repo and branch, it should publish the pushed commit automatically.
+2. FTP/FTPS: if GitHub Connect is not active, set `PORKBUN_FTP_HOST`, `PORKBUN_FTP_USERNAME`, and `PORKBUN_FTP_PASSWORD`, then run from the local `SHAY_PACKAGE` folder:
+
+```powershell
+DEPLOY_TO_PORKBUN_FTP_20260517.cmd
+```
+
+The FTP uploader writes an audit manifest and does not print the password.
+
 ## Phase 2: Hosted Smoke
 
 Preferred one-command finalizer after upload, run from the local `SHAY_PACKAGE` working folder:
