@@ -6,3 +6,4 @@
 - `active_lane_production_complete/`: active-only production campaign for the 131 projects, excluding external-owner work.
 - `room_engine_operationalization/`: per-project room-engine slices with instruments, fixtures, acceptance tests, runner, and receipts; this proves package-level operational slices, not full external-system completion.
 - `room_runtime_kernel/`: shared browser runtime for the room-engine layer; it runs project instruments, persists state locally, evaluates package-slice acceptance checks, and exports reviewer-visible JSON receipts.
+- `room_project_workbenches/`: one executable room workbench per project, backed by the room-engine registry and shared runtime code; each page runs that room's instruments and exports a receipt.
